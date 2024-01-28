@@ -1,0 +1,10 @@
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\YGO Card Collector 5.exe.config
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\YGO Card Collector 5.exe
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\YGO Card Collector 5.pdb
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.csproj.AssemblyReference.cache
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.FormLauncher.resources
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.Properties.Resources.resources
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.csproj.GenerateResource.cache
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.exe
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.pdb
