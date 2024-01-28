@@ -8,10 +8,14 @@ namespace YGO_Card_Collector_5
 {
     public static class Database
     {
-        public static Dictionary<string, MasterCard> MasterCardDict = new Dictionary<string, MasterCard>();
+        public static Dictionary<string, MasterCard> MasterCardByName = new Dictionary<string, MasterCard>();
+        public static Dictionary<string, MasterCard> MasterCardByCode = new Dictionary<string, MasterCard>();
         public static List<MasterCard> MasterCards = new List<MasterCard>();
 
+        public static Dictionary<string, SetPack> SetPackByName = new Dictionary<string, SetPack>();        
+        public static List<SetPack> SetPacks = new List<SetPack>();
 
+        #region Card Group Lists
         public static List<MasterCard> AquaMonsters = new List<MasterCard>();
         public static List<MasterCard> BeastMonsters = new List<MasterCard>();
         public static List<MasterCard> BeastWarriorMonsters = new List<MasterCard>();
@@ -78,5 +82,6 @@ namespace YGO_Card_Collector_5
         public static List<MasterCard> Wind = new List<MasterCard>();
         public static List<MasterCard> Earth = new List<MasterCard>();
         public static List<MasterCard> Divine = new List<MasterCard>();
+        #endregion
     }
 }

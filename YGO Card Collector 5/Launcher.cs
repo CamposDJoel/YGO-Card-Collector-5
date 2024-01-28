@@ -49,7 +49,7 @@ namespace YGO_Card_Collector_5
                 lblCardSorting.Text = string.Format("Sorting Card: {0}/{1}", counter, Database.MasterCards.Count);
 
                 //Step 1: Add this card to the dictionary for quick search by name
-                Database.MasterCardDict.Add(ThisMasterCard.Name, ThisMasterCard);
+                Database.MasterCardByName.Add(ThisMasterCard.Name, ThisMasterCard);
 
                 //Step 2: Add this Master Card into its corresponding Card Group
                 string Group = ThisMasterCard.Type;
@@ -119,8 +119,30 @@ namespace YGO_Card_Collector_5
                 }
 
                 //Step 3: Sort each MasterCard's SetCards into its respective sets
+                foreach(SetCard thisSetCard in ThisMasterCard.SetCards)
+                {
+                    //Save the SetCode to the MasterCardByCodo to quick searces of Master Cards by a Set Code
+                    if(!Database.MasterCardByCode.ContainsKey(thisSetCard.Code)) 
+                    {
+                        Database.MasterCardByCode.Add(thisSetCard.Code, ThisMasterCard);
+                    }                   
 
+                    //Extract the Pack Name and check if it exists in the DB
+                    string SetPackName = thisSetCard.Name;
 
+                    if(!Database.SetPackByName.ContainsKey(SetPackName))
+                    {
+                        //Create the set pack
+                        SetPack NewPack = new SetPack(thisSetCard.Name, thisSetCard.Code, thisSetCard.ReleaseDate);
+                        Database.SetPacks.Add(NewPack);
+                        Database.SetPackByName.Add(SetPackName, NewPack);
+                    }
+
+                    //Now you can add the SetCard to the SetPack
+                    SetPack SetToAddTo = Database.SetPackByName[SetPackName];
+                    SetToAddTo.AddCard(thisSetCard);
+                }
+               
                 //Last Step: Update progress bar
                 BarProgress.Value = counter;
                 counter++;
