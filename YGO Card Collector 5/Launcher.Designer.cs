@@ -31,9 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormLauncher));
             this.lblCredits = new System.Windows.Forms.Label();
             this.btnLoadDB = new System.Windows.Forms.Button();
-            this.lblOutput = new System.Windows.Forms.Label();
+            this.lblJsonStatus = new System.Windows.Forms.Label();
             this.BarProgress = new System.Windows.Forms.ProgressBar();
             this.PanelOutput = new System.Windows.Forms.Panel();
+            this.lblCardSorting = new System.Windows.Forms.Label();
             this.PanelOutput.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,15 +62,14 @@
             this.btnLoadDB.UseVisualStyleBackColor = false;
             this.btnLoadDB.Click += new System.EventHandler(this.btnLoadDB_Click);
             // 
-            // lblOutput
+            // lblJsonStatus
             // 
-            this.lblOutput.AutoSize = true;
-            this.lblOutput.BackColor = System.Drawing.Color.Transparent;
-            this.lblOutput.ForeColor = System.Drawing.Color.White;
-            this.lblOutput.Location = new System.Drawing.Point(0, 0);
-            this.lblOutput.Name = "lblOutput";
-            this.lblOutput.Size = new System.Drawing.Size(0, 12);
-            this.lblOutput.TabIndex = 2;
+            this.lblJsonStatus.BackColor = System.Drawing.Color.Transparent;
+            this.lblJsonStatus.ForeColor = System.Drawing.Color.White;
+            this.lblJsonStatus.Location = new System.Drawing.Point(0, 0);
+            this.lblJsonStatus.Name = "lblJsonStatus";
+            this.lblJsonStatus.Size = new System.Drawing.Size(343, 18);
+            this.lblJsonStatus.TabIndex = 2;
             // 
             // BarProgress
             // 
@@ -83,12 +83,22 @@
             // 
             this.PanelOutput.BackColor = System.Drawing.Color.Black;
             this.PanelOutput.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PanelOutput.Controls.Add(this.lblOutput);
+            this.PanelOutput.Controls.Add(this.lblCardSorting);
+            this.PanelOutput.Controls.Add(this.lblJsonStatus);
             this.PanelOutput.Location = new System.Drawing.Point(66, 90);
             this.PanelOutput.Name = "PanelOutput";
             this.PanelOutput.Size = new System.Drawing.Size(350, 76);
             this.PanelOutput.TabIndex = 4;
             this.PanelOutput.Visible = false;
+            // 
+            // lblCardSorting
+            // 
+            this.lblCardSorting.BackColor = System.Drawing.Color.Transparent;
+            this.lblCardSorting.ForeColor = System.Drawing.Color.White;
+            this.lblCardSorting.Location = new System.Drawing.Point(2, 20);
+            this.lblCardSorting.Name = "lblCardSorting";
+            this.lblCardSorting.Size = new System.Drawing.Size(343, 18);
+            this.lblCardSorting.TabIndex = 3;
             // 
             // FormLauncher
             // 
@@ -109,7 +119,6 @@
             this.Name = "FormLauncher";
             this.Text = "Welcome! - YGO Card Collector 5";
             this.PanelOutput.ResumeLayout(false);
-            this.PanelOutput.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,9 +128,10 @@
 
         private System.Windows.Forms.Label lblCredits;
         private System.Windows.Forms.Button btnLoadDB;
-        private System.Windows.Forms.Label lblOutput;
+        private System.Windows.Forms.Label lblJsonStatus;
         private System.Windows.Forms.ProgressBar BarProgress;
         private System.Windows.Forms.Panel PanelOutput;
+        private System.Windows.Forms.Label lblCardSorting;
     }
 }
 

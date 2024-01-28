@@ -24,12 +24,6 @@ namespace YGO_Card_Collector_5
             InitializeComponent();
         }
 
-        private void PrintOutputLine(StringBuilder sb, string text)
-        {
-            sb.AppendLine(text);
-            lblOutput.Text = sb.ToString();
-        }
-
         private void btnLoadDB_Click(object sender, EventArgs e)
         {
             string jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\CardDB.json";
@@ -39,25 +33,28 @@ namespace YGO_Card_Collector_5
             PanelOutput.Visible = true;
             Tools.WaitNSeconds(1000);
 
-            StringBuilder sb = new StringBuilder();
             //Attempt to deserialize the JSON. If it fail simply show error.
             try 
             {               
                 Database.MasterCards = JsonConvert.DeserializeObject<List<MasterCard>>(rawdata);
-                PrintOutputLine(sb, "JSON DB Deserialization Successful!");          
+                lblJsonStatus.Text = "JSON DB Deserialization Successful!";          
             }
-            catch (Exception ex) 
+            catch (Exception)
             {
                 btnLoadDB.Visible = true;
                 BarProgress.Visible= false;
-                PrintOutputLine(sb, string.Format("JSON DB Deserialization Failed! Review exception: {0}", ex.Message));
-                PrintOutputLine(sb, "Please fix JSON and try again.");
+                lblJsonStatus.Text = "JSON DB Deserialization Failed! - Fix JSON!";
                 return;
             }
 
             //Continue to sorting the master card list
-            foreach(MasterCard ThisMasterCard in Database.MasterCards) 
+            int counter = 1;
+            BarProgress.Maximum = Database.MasterCards.Count;
+            foreach (MasterCard ThisMasterCard in Database.MasterCards) 
             {
+                //Message
+                lblCardSorting.Text = string.Format("Sorting Card: {0}/{1}", counter, Database.MasterCards.Count);
+
                 //Step 1: Add this card to the dictionary for quick search by name
                 Database.MasterCardDict.Add(ThisMasterCard.Name, ThisMasterCard);
 
@@ -129,6 +126,11 @@ namespace YGO_Card_Collector_5
                 }
 
                 //Step 3: Sort each MasterCard's SetCards into its respective sets
+
+
+                //Last Step: Update progress bar
+                BarProgress.Value = counter;
+                counter++;
             }
             
         }
