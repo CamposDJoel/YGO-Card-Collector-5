@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YGO Card Collector 5", "YGO Card Collector 5.csproj", "{C253E3F4-09AF-48C2-9A08-9F20D4766B66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C253E3F4-09AF-48C2-9A08-9F20D4766B66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C253E3F4-09AF-48C2-9A08-9F20D4766B66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C253E3F4-09AF-48C2-9A08-9F20D4766B66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C253E3F4-09AF-48C2-9A08-9F20D4766B66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA349838-C1AC-4BB4-A817-C76FE56F1644}
+	EndGlobalSection
+EndGlobal
