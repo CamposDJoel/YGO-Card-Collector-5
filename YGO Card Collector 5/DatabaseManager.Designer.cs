@@ -114,9 +114,61 @@
             this.btnUpdatePrices = new System.Windows.Forms.Button();
             this.btnUpdateFullDB = new System.Windows.Forms.Button();
             this.label37 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnFilterZombie = new System.Windows.Forms.Button();
+            this.btnFilterWyrm = new System.Windows.Forms.Button();
+            this.btnFilterWingedBeast = new System.Windows.Forms.Button();
+            this.btnFilterWarrior = new System.Windows.Forms.Button();
+            this.btnFilterThunder = new System.Windows.Forms.Button();
+            this.btnFilterSpellcaster = new System.Windows.Forms.Button();
+            this.btnFilterPsychic = new System.Windows.Forms.Button();
+            this.btnFilterFiend = new System.Windows.Forms.Button();
+            this.btnFilterCyberce = new System.Windows.Forms.Button();
+            this.btnFilterSeaSerpent = new System.Windows.Forms.Button();
+            this.btnFilterPlant = new System.Windows.Forms.Button();
+            this.btnFilterFairy = new System.Windows.Forms.Button();
+            this.btnFilterRock = new System.Windows.Forms.Button();
+            this.btnFilterReptile = new System.Windows.Forms.Button();
+            this.btnFilterPyro = new System.Windows.Forms.Button();
+            this.btnFilterMachine = new System.Windows.Forms.Button();
+            this.btnFilterInsect = new System.Windows.Forms.Button();
+            this.btnFilterFish = new System.Windows.Forms.Button();
+            this.btnFilterDragon = new System.Windows.Forms.Button();
+            this.btnFilterDivine = new System.Windows.Forms.Button();
+            this.btnFilterDinosaur = new System.Windows.Forms.Button();
+            this.btnFilterBeastWarrior = new System.Windows.Forms.Button();
+            this.btnFilterBeast = new System.Windows.Forms.Button();
+            this.btnFilterAqua = new System.Windows.Forms.Button();
+            this.groupSpell = new System.Windows.Forms.GroupBox();
+            this.btnRitualSpell = new System.Windows.Forms.Button();
+            this.btnEquipSpell = new System.Windows.Forms.Button();
+            this.btnQuickPlaySpell = new System.Windows.Forms.Button();
+            this.btnFieldSpell = new System.Windows.Forms.Button();
+            this.btnContinousSpell = new System.Windows.Forms.Button();
+            this.btnNormalSpell = new System.Windows.Forms.Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnCounterTrap = new System.Windows.Forms.Button();
+            this.btnContinuosTrap = new System.Windows.Forms.Button();
+            this.btnNormalTrap = new System.Windows.Forms.Button();
+            this.label38 = new System.Windows.Forms.Label();
+            this.lblGroupTotals = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.btnGroupUpdatePrices = new System.Windows.Forms.Button();
+            this.btnGroupUpdateURLs = new System.Windows.Forms.Button();
+            this.btnGroupUpdateKonamiList = new System.Windows.Forms.Button();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
             this.PanelFullTotals.SuspendLayout();
             this.TabMasterTotals.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupSpell.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTotalAqua
@@ -1163,6 +1215,17 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Black;
+            this.tabPage2.Controls.Add(this.label43);
+            this.tabPage2.Controls.Add(this.label42);
+            this.tabPage2.Controls.Add(this.label41);
+            this.tabPage2.Controls.Add(this.btnGroupUpdatePrices);
+            this.tabPage2.Controls.Add(this.btnGroupUpdateURLs);
+            this.tabPage2.Controls.Add(this.btnGroupUpdateKonamiList);
+            this.tabPage2.Controls.Add(this.label39);
+            this.tabPage2.Controls.Add(this.label40);
+            this.tabPage2.Controls.Add(this.lblGroupTotals);
+            this.tabPage2.Controls.Add(this.label38);
+            this.tabPage2.Controls.Add(this.groupBox1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -1259,6 +1322,560 @@
     "asscodes, Prodeck and TCG Player URLs.\r\nUpdates the prices of ALL Set Cards. \r\n\r" +
     "\nEstimate execution time: 26 Hrs.";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.groupSpell);
+            this.groupBox1.Controls.Add(this.groupBox3);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(8, 10);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(353, 125);
+            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Select Card Group";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.btnFilterZombie);
+            this.groupBox2.Controls.Add(this.btnFilterWyrm);
+            this.groupBox2.Controls.Add(this.btnFilterWingedBeast);
+            this.groupBox2.Controls.Add(this.btnFilterWarrior);
+            this.groupBox2.Controls.Add(this.btnFilterThunder);
+            this.groupBox2.Controls.Add(this.btnFilterSpellcaster);
+            this.groupBox2.Controls.Add(this.btnFilterPsychic);
+            this.groupBox2.Controls.Add(this.btnFilterFiend);
+            this.groupBox2.Controls.Add(this.btnFilterCyberce);
+            this.groupBox2.Controls.Add(this.btnFilterSeaSerpent);
+            this.groupBox2.Controls.Add(this.btnFilterPlant);
+            this.groupBox2.Controls.Add(this.btnFilterFairy);
+            this.groupBox2.Controls.Add(this.btnFilterRock);
+            this.groupBox2.Controls.Add(this.btnFilterReptile);
+            this.groupBox2.Controls.Add(this.btnFilterPyro);
+            this.groupBox2.Controls.Add(this.btnFilterMachine);
+            this.groupBox2.Controls.Add(this.btnFilterInsect);
+            this.groupBox2.Controls.Add(this.btnFilterFish);
+            this.groupBox2.Controls.Add(this.btnFilterDragon);
+            this.groupBox2.Controls.Add(this.btnFilterDivine);
+            this.groupBox2.Controls.Add(this.btnFilterDinosaur);
+            this.groupBox2.Controls.Add(this.btnFilterBeastWarrior);
+            this.groupBox2.Controls.Add(this.btnFilterBeast);
+            this.groupBox2.Controls.Add(this.btnFilterAqua);
+            this.groupBox2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Yellow;
+            this.groupBox2.Location = new System.Drawing.Point(6, 11);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(241, 109);
+            this.groupBox2.TabIndex = 209;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Monsters";
+            // 
+            // btnFilterZombie
+            // 
+            this.btnFilterZombie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterZombie.BackgroundImage")));
+            this.btnFilterZombie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterZombie.Location = new System.Drawing.Point(206, 72);
+            this.btnFilterZombie.Name = "btnFilterZombie";
+            this.btnFilterZombie.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterZombie.TabIndex = 24;
+            this.btnFilterZombie.Tag = "23";
+            this.btnFilterZombie.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterWyrm
+            // 
+            this.btnFilterWyrm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterWyrm.BackgroundImage")));
+            this.btnFilterWyrm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterWyrm.Location = new System.Drawing.Point(177, 72);
+            this.btnFilterWyrm.Name = "btnFilterWyrm";
+            this.btnFilterWyrm.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterWyrm.TabIndex = 23;
+            this.btnFilterWyrm.Tag = "22";
+            this.btnFilterWyrm.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterWingedBeast
+            // 
+            this.btnFilterWingedBeast.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterWingedBeast.BackgroundImage")));
+            this.btnFilterWingedBeast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterWingedBeast.Location = new System.Drawing.Point(148, 72);
+            this.btnFilterWingedBeast.Name = "btnFilterWingedBeast";
+            this.btnFilterWingedBeast.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterWingedBeast.TabIndex = 22;
+            this.btnFilterWingedBeast.Tag = "21";
+            this.btnFilterWingedBeast.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterWarrior
+            // 
+            this.btnFilterWarrior.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterWarrior.BackgroundImage")));
+            this.btnFilterWarrior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterWarrior.Location = new System.Drawing.Point(119, 72);
+            this.btnFilterWarrior.Name = "btnFilterWarrior";
+            this.btnFilterWarrior.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterWarrior.TabIndex = 21;
+            this.btnFilterWarrior.Tag = "20";
+            this.btnFilterWarrior.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterThunder
+            // 
+            this.btnFilterThunder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterThunder.BackgroundImage")));
+            this.btnFilterThunder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterThunder.Location = new System.Drawing.Point(90, 72);
+            this.btnFilterThunder.Name = "btnFilterThunder";
+            this.btnFilterThunder.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterThunder.TabIndex = 20;
+            this.btnFilterThunder.Tag = "19";
+            this.btnFilterThunder.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterSpellcaster
+            // 
+            this.btnFilterSpellcaster.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterSpellcaster.BackgroundImage")));
+            this.btnFilterSpellcaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterSpellcaster.Location = new System.Drawing.Point(61, 72);
+            this.btnFilterSpellcaster.Name = "btnFilterSpellcaster";
+            this.btnFilterSpellcaster.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterSpellcaster.TabIndex = 19;
+            this.btnFilterSpellcaster.Tag = "18";
+            this.btnFilterSpellcaster.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterPsychic
+            // 
+            this.btnFilterPsychic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterPsychic.BackgroundImage")));
+            this.btnFilterPsychic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterPsychic.Location = new System.Drawing.Point(148, 43);
+            this.btnFilterPsychic.Name = "btnFilterPsychic";
+            this.btnFilterPsychic.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterPsychic.TabIndex = 18;
+            this.btnFilterPsychic.Tag = "13";
+            this.btnFilterPsychic.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterFiend
+            // 
+            this.btnFilterFiend.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterFiend.BackgroundImage")));
+            this.btnFilterFiend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterFiend.Location = new System.Drawing.Point(3, 43);
+            this.btnFilterFiend.Name = "btnFilterFiend";
+            this.btnFilterFiend.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterFiend.TabIndex = 17;
+            this.btnFilterFiend.Tag = "8";
+            this.btnFilterFiend.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterCyberce
+            // 
+            this.btnFilterCyberce.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterCyberce.BackgroundImage")));
+            this.btnFilterCyberce.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterCyberce.Location = new System.Drawing.Point(90, 14);
+            this.btnFilterCyberce.Name = "btnFilterCyberce";
+            this.btnFilterCyberce.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterCyberce.TabIndex = 16;
+            this.btnFilterCyberce.Tag = "3";
+            this.btnFilterCyberce.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterSeaSerpent
+            // 
+            this.btnFilterSeaSerpent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterSeaSerpent.BackgroundImage")));
+            this.btnFilterSeaSerpent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterSeaSerpent.Location = new System.Drawing.Point(32, 72);
+            this.btnFilterSeaSerpent.Name = "btnFilterSeaSerpent";
+            this.btnFilterSeaSerpent.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterSeaSerpent.TabIndex = 15;
+            this.btnFilterSeaSerpent.Tag = "17";
+            this.btnFilterSeaSerpent.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterPlant
+            // 
+            this.btnFilterPlant.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterPlant.BackgroundImage")));
+            this.btnFilterPlant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterPlant.Location = new System.Drawing.Point(119, 43);
+            this.btnFilterPlant.Name = "btnFilterPlant";
+            this.btnFilterPlant.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterPlant.TabIndex = 14;
+            this.btnFilterPlant.Tag = "12";
+            this.btnFilterPlant.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterFairy
+            // 
+            this.btnFilterFairy.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterFairy.BackgroundImage")));
+            this.btnFilterFairy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterFairy.Location = new System.Drawing.Point(206, 14);
+            this.btnFilterFairy.Name = "btnFilterFairy";
+            this.btnFilterFairy.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterFairy.TabIndex = 13;
+            this.btnFilterFairy.Tag = "7";
+            this.btnFilterFairy.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterRock
+            // 
+            this.btnFilterRock.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterRock.BackgroundImage")));
+            this.btnFilterRock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterRock.Location = new System.Drawing.Point(3, 72);
+            this.btnFilterRock.Name = "btnFilterRock";
+            this.btnFilterRock.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterRock.TabIndex = 11;
+            this.btnFilterRock.Tag = "16";
+            this.btnFilterRock.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterReptile
+            // 
+            this.btnFilterReptile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterReptile.BackgroundImage")));
+            this.btnFilterReptile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterReptile.Location = new System.Drawing.Point(206, 43);
+            this.btnFilterReptile.Name = "btnFilterReptile";
+            this.btnFilterReptile.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterReptile.TabIndex = 10;
+            this.btnFilterReptile.Tag = "15";
+            this.btnFilterReptile.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterPyro
+            // 
+            this.btnFilterPyro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterPyro.BackgroundImage")));
+            this.btnFilterPyro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterPyro.Location = new System.Drawing.Point(177, 43);
+            this.btnFilterPyro.Name = "btnFilterPyro";
+            this.btnFilterPyro.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterPyro.TabIndex = 9;
+            this.btnFilterPyro.Tag = "14";
+            this.btnFilterPyro.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterMachine
+            // 
+            this.btnFilterMachine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterMachine.BackgroundImage")));
+            this.btnFilterMachine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterMachine.Location = new System.Drawing.Point(90, 43);
+            this.btnFilterMachine.Name = "btnFilterMachine";
+            this.btnFilterMachine.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterMachine.TabIndex = 8;
+            this.btnFilterMachine.Tag = "11";
+            this.btnFilterMachine.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterInsect
+            // 
+            this.btnFilterInsect.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterInsect.BackgroundImage")));
+            this.btnFilterInsect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterInsect.Location = new System.Drawing.Point(61, 43);
+            this.btnFilterInsect.Name = "btnFilterInsect";
+            this.btnFilterInsect.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterInsect.TabIndex = 7;
+            this.btnFilterInsect.Tag = "10";
+            this.btnFilterInsect.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterFish
+            // 
+            this.btnFilterFish.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterFish.BackgroundImage")));
+            this.btnFilterFish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterFish.Location = new System.Drawing.Point(32, 43);
+            this.btnFilterFish.Name = "btnFilterFish";
+            this.btnFilterFish.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterFish.TabIndex = 6;
+            this.btnFilterFish.Tag = "9";
+            this.btnFilterFish.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterDragon
+            // 
+            this.btnFilterDragon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterDragon.BackgroundImage")));
+            this.btnFilterDragon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterDragon.Location = new System.Drawing.Point(177, 14);
+            this.btnFilterDragon.Name = "btnFilterDragon";
+            this.btnFilterDragon.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterDragon.TabIndex = 5;
+            this.btnFilterDragon.Tag = "6";
+            this.btnFilterDragon.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterDivine
+            // 
+            this.btnFilterDivine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterDivine.BackgroundImage")));
+            this.btnFilterDivine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterDivine.Location = new System.Drawing.Point(148, 14);
+            this.btnFilterDivine.Name = "btnFilterDivine";
+            this.btnFilterDivine.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterDivine.TabIndex = 4;
+            this.btnFilterDivine.Tag = "5";
+            this.btnFilterDivine.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterDinosaur
+            // 
+            this.btnFilterDinosaur.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterDinosaur.BackgroundImage")));
+            this.btnFilterDinosaur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterDinosaur.Location = new System.Drawing.Point(119, 14);
+            this.btnFilterDinosaur.Name = "btnFilterDinosaur";
+            this.btnFilterDinosaur.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterDinosaur.TabIndex = 3;
+            this.btnFilterDinosaur.Tag = "4";
+            this.btnFilterDinosaur.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterBeastWarrior
+            // 
+            this.btnFilterBeastWarrior.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterBeastWarrior.BackgroundImage")));
+            this.btnFilterBeastWarrior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterBeastWarrior.Location = new System.Drawing.Point(61, 14);
+            this.btnFilterBeastWarrior.Name = "btnFilterBeastWarrior";
+            this.btnFilterBeastWarrior.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterBeastWarrior.TabIndex = 2;
+            this.btnFilterBeastWarrior.Tag = "2";
+            this.btnFilterBeastWarrior.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterBeast
+            // 
+            this.btnFilterBeast.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterBeast.BackgroundImage")));
+            this.btnFilterBeast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterBeast.Location = new System.Drawing.Point(32, 14);
+            this.btnFilterBeast.Name = "btnFilterBeast";
+            this.btnFilterBeast.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterBeast.TabIndex = 1;
+            this.btnFilterBeast.Tag = "1";
+            this.btnFilterBeast.UseVisualStyleBackColor = true;
+            // 
+            // btnFilterAqua
+            // 
+            this.btnFilterAqua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterAqua.BackgroundImage")));
+            this.btnFilterAqua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterAqua.Location = new System.Drawing.Point(3, 14);
+            this.btnFilterAqua.Name = "btnFilterAqua";
+            this.btnFilterAqua.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterAqua.TabIndex = 0;
+            this.btnFilterAqua.Tag = "0";
+            this.btnFilterAqua.UseVisualStyleBackColor = true;
+            // 
+            // groupSpell
+            // 
+            this.groupSpell.BackColor = System.Drawing.Color.Transparent;
+            this.groupSpell.Controls.Add(this.btnRitualSpell);
+            this.groupSpell.Controls.Add(this.btnEquipSpell);
+            this.groupSpell.Controls.Add(this.btnQuickPlaySpell);
+            this.groupSpell.Controls.Add(this.btnFieldSpell);
+            this.groupSpell.Controls.Add(this.btnContinousSpell);
+            this.groupSpell.Controls.Add(this.btnNormalSpell);
+            this.groupSpell.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupSpell.ForeColor = System.Drawing.Color.Yellow;
+            this.groupSpell.Location = new System.Drawing.Point(252, 5);
+            this.groupSpell.Name = "groupSpell";
+            this.groupSpell.Size = new System.Drawing.Size(90, 72);
+            this.groupSpell.TabIndex = 210;
+            this.groupSpell.TabStop = false;
+            this.groupSpell.Text = "Spells";
+            // 
+            // btnRitualSpell
+            // 
+            this.btnRitualSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRitualSpell.BackgroundImage")));
+            this.btnRitualSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRitualSpell.Location = new System.Drawing.Point(57, 41);
+            this.btnRitualSpell.Name = "btnRitualSpell";
+            this.btnRitualSpell.Size = new System.Drawing.Size(28, 28);
+            this.btnRitualSpell.TabIndex = 6;
+            this.btnRitualSpell.Tag = "30";
+            this.btnRitualSpell.UseVisualStyleBackColor = true;
+            // 
+            // btnEquipSpell
+            // 
+            this.btnEquipSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEquipSpell.BackgroundImage")));
+            this.btnEquipSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEquipSpell.Location = new System.Drawing.Point(57, 14);
+            this.btnEquipSpell.Name = "btnEquipSpell";
+            this.btnEquipSpell.Size = new System.Drawing.Size(28, 28);
+            this.btnEquipSpell.TabIndex = 5;
+            this.btnEquipSpell.Tag = "27";
+            this.btnEquipSpell.UseVisualStyleBackColor = true;
+            // 
+            // btnQuickPlaySpell
+            // 
+            this.btnQuickPlaySpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnQuickPlaySpell.BackgroundImage")));
+            this.btnQuickPlaySpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnQuickPlaySpell.Location = new System.Drawing.Point(30, 41);
+            this.btnQuickPlaySpell.Name = "btnQuickPlaySpell";
+            this.btnQuickPlaySpell.Size = new System.Drawing.Size(28, 28);
+            this.btnQuickPlaySpell.TabIndex = 4;
+            this.btnQuickPlaySpell.Tag = "29";
+            this.btnQuickPlaySpell.UseVisualStyleBackColor = true;
+            // 
+            // btnFieldSpell
+            // 
+            this.btnFieldSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFieldSpell.BackgroundImage")));
+            this.btnFieldSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFieldSpell.Location = new System.Drawing.Point(3, 41);
+            this.btnFieldSpell.Name = "btnFieldSpell";
+            this.btnFieldSpell.Size = new System.Drawing.Size(28, 28);
+            this.btnFieldSpell.TabIndex = 3;
+            this.btnFieldSpell.Tag = "28";
+            this.btnFieldSpell.UseVisualStyleBackColor = true;
+            // 
+            // btnContinousSpell
+            // 
+            this.btnContinousSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnContinousSpell.BackgroundImage")));
+            this.btnContinousSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnContinousSpell.Location = new System.Drawing.Point(30, 14);
+            this.btnContinousSpell.Name = "btnContinousSpell";
+            this.btnContinousSpell.Size = new System.Drawing.Size(28, 28);
+            this.btnContinousSpell.TabIndex = 2;
+            this.btnContinousSpell.Tag = "26";
+            this.btnContinousSpell.UseVisualStyleBackColor = true;
+            // 
+            // btnNormalSpell
+            // 
+            this.btnNormalSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNormalSpell.BackgroundImage")));
+            this.btnNormalSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNormalSpell.Location = new System.Drawing.Point(3, 14);
+            this.btnNormalSpell.Name = "btnNormalSpell";
+            this.btnNormalSpell.Size = new System.Drawing.Size(28, 28);
+            this.btnNormalSpell.TabIndex = 1;
+            this.btnNormalSpell.Tag = "25";
+            this.btnNormalSpell.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.btnCounterTrap);
+            this.groupBox3.Controls.Add(this.btnContinuosTrap);
+            this.groupBox3.Controls.Add(this.btnNormalTrap);
+            this.groupBox3.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.Color.Yellow;
+            this.groupBox3.Location = new System.Drawing.Point(252, 73);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(90, 47);
+            this.groupBox3.TabIndex = 211;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Traps";
+            // 
+            // btnCounterTrap
+            // 
+            this.btnCounterTrap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCounterTrap.BackgroundImage")));
+            this.btnCounterTrap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCounterTrap.Location = new System.Drawing.Point(58, 14);
+            this.btnCounterTrap.Name = "btnCounterTrap";
+            this.btnCounterTrap.Size = new System.Drawing.Size(28, 28);
+            this.btnCounterTrap.TabIndex = 5;
+            this.btnCounterTrap.Tag = "34";
+            this.btnCounterTrap.UseVisualStyleBackColor = true;
+            // 
+            // btnContinuosTrap
+            // 
+            this.btnContinuosTrap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnContinuosTrap.BackgroundImage")));
+            this.btnContinuosTrap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnContinuosTrap.Location = new System.Drawing.Point(31, 14);
+            this.btnContinuosTrap.Name = "btnContinuosTrap";
+            this.btnContinuosTrap.Size = new System.Drawing.Size(28, 28);
+            this.btnContinuosTrap.TabIndex = 2;
+            this.btnContinuosTrap.Tag = "33";
+            this.btnContinuosTrap.UseVisualStyleBackColor = true;
+            // 
+            // btnNormalTrap
+            // 
+            this.btnNormalTrap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNormalTrap.BackgroundImage")));
+            this.btnNormalTrap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNormalTrap.Location = new System.Drawing.Point(4, 14);
+            this.btnNormalTrap.Name = "btnNormalTrap";
+            this.btnNormalTrap.Size = new System.Drawing.Size(28, 28);
+            this.btnNormalTrap.TabIndex = 1;
+            this.btnNormalTrap.Tag = "32";
+            this.btnNormalTrap.UseVisualStyleBackColor = true;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.Color.Transparent;
+            this.label38.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(367, 41);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(245, 24);
+            this.label38.TabIndex = 1;
+            this.label38.Text = "Master Cards in Group:";
+            // 
+            // lblGroupTotals
+            // 
+            this.lblGroupTotals.AutoSize = true;
+            this.lblGroupTotals.BackColor = System.Drawing.Color.Transparent;
+            this.lblGroupTotals.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGroupTotals.Location = new System.Drawing.Point(631, 41);
+            this.lblGroupTotals.Name = "lblGroupTotals";
+            this.lblGroupTotals.Size = new System.Drawing.Size(58, 24);
+            this.lblGroupTotals.TabIndex = 2;
+            this.lblGroupTotals.Text = "0000";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.Color.Transparent;
+            this.label39.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(549, 15);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(63, 24);
+            this.label39.TabIndex = 4;
+            this.label39.Text = "Aqua";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.Transparent;
+            this.label40.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(367, 15);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(166, 24);
+            this.label40.TabIndex = 3;
+            this.label40.Text = "Current Group:";
+            // 
+            // btnGroupUpdatePrices
+            // 
+            this.btnGroupUpdatePrices.BackColor = System.Drawing.Color.Olive;
+            this.btnGroupUpdatePrices.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGroupUpdatePrices.ForeColor = System.Drawing.Color.Black;
+            this.btnGroupUpdatePrices.Location = new System.Drawing.Point(17, 237);
+            this.btnGroupUpdatePrices.Name = "btnGroupUpdatePrices";
+            this.btnGroupUpdatePrices.Size = new System.Drawing.Size(175, 26);
+            this.btnGroupUpdatePrices.TabIndex = 8;
+            this.btnGroupUpdatePrices.Text = "Update TCG Player Prices";
+            this.btnGroupUpdatePrices.UseVisualStyleBackColor = false;
+            // 
+            // btnGroupUpdateURLs
+            // 
+            this.btnGroupUpdateURLs.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnGroupUpdateURLs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGroupUpdateURLs.ForeColor = System.Drawing.Color.Black;
+            this.btnGroupUpdateURLs.Location = new System.Drawing.Point(17, 195);
+            this.btnGroupUpdateURLs.Name = "btnGroupUpdateURLs";
+            this.btnGroupUpdateURLs.Size = new System.Drawing.Size(175, 26);
+            this.btnGroupUpdateURLs.TabIndex = 7;
+            this.btnGroupUpdateURLs.Text = "Update Prodeck+TCG URLs";
+            this.btnGroupUpdateURLs.UseVisualStyleBackColor = false;
+            // 
+            // btnGroupUpdateKonamiList
+            // 
+            this.btnGroupUpdateKonamiList.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnGroupUpdateKonamiList.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGroupUpdateKonamiList.ForeColor = System.Drawing.Color.Black;
+            this.btnGroupUpdateKonamiList.Location = new System.Drawing.Point(17, 154);
+            this.btnGroupUpdateKonamiList.Name = "btnGroupUpdateKonamiList";
+            this.btnGroupUpdateKonamiList.Size = new System.Drawing.Size(175, 26);
+            this.btnGroupUpdateKonamiList.TabIndex = 6;
+            this.btnGroupUpdateKonamiList.Text = "Update Konami\'s Card List";
+            this.btnGroupUpdateKonamiList.UseVisualStyleBackColor = false;
+            this.btnGroupUpdateKonamiList.Click += new System.EventHandler(this.btnGroupUpdateKonamiList_Click);
+            // 
+            // label41
+            // 
+            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label41.Location = new System.Drawing.Point(198, 148);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(233, 39);
+            this.label41.TabIndex = 9;
+            this.label41.Text = "Update the Konami Card List from the Card Group Only.";
+            // 
+            // label42
+            // 
+            this.label42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label42.Location = new System.Drawing.Point(198, 190);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(233, 39);
+            this.label42.TabIndex = 10;
+            this.label42.Text = "Search for both missing Prodeck and TCG Player URLS.";
+            // 
+            // label43
+            // 
+            this.label43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label43.Location = new System.Drawing.Point(198, 233);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(233, 39);
+            this.label43.TabIndex = 11;
+            this.label43.Text = "Update all the prices for this group only.";
+            // 
             // DatabaseManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1278,6 +1895,12 @@
             this.PanelFullTotals.ResumeLayout(false);
             this.TabMasterTotals.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupSpell.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1370,5 +1993,52 @@
         private System.Windows.Forms.Button btnUpdatePrices;
         private System.Windows.Forms.Button btnUpdateFullDB;
         private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Button btnFilterZombie;
+        private System.Windows.Forms.Button btnFilterWyrm;
+        private System.Windows.Forms.Button btnFilterWingedBeast;
+        private System.Windows.Forms.Button btnFilterWarrior;
+        private System.Windows.Forms.Button btnFilterThunder;
+        private System.Windows.Forms.Button btnFilterSpellcaster;
+        private System.Windows.Forms.Button btnFilterPsychic;
+        private System.Windows.Forms.Button btnFilterFiend;
+        private System.Windows.Forms.Button btnFilterCyberce;
+        private System.Windows.Forms.Button btnFilterSeaSerpent;
+        private System.Windows.Forms.Button btnFilterPlant;
+        private System.Windows.Forms.Button btnFilterFairy;
+        private System.Windows.Forms.Button btnFilterRock;
+        private System.Windows.Forms.Button btnFilterReptile;
+        private System.Windows.Forms.Button btnFilterPyro;
+        private System.Windows.Forms.Button btnFilterMachine;
+        private System.Windows.Forms.Button btnFilterInsect;
+        private System.Windows.Forms.Button btnFilterFish;
+        private System.Windows.Forms.Button btnFilterDragon;
+        private System.Windows.Forms.Button btnFilterDivine;
+        private System.Windows.Forms.Button btnFilterDinosaur;
+        private System.Windows.Forms.Button btnFilterBeastWarrior;
+        private System.Windows.Forms.Button btnFilterBeast;
+        private System.Windows.Forms.Button btnFilterAqua;
+        private System.Windows.Forms.GroupBox groupSpell;
+        private System.Windows.Forms.Button btnRitualSpell;
+        private System.Windows.Forms.Button btnEquipSpell;
+        private System.Windows.Forms.Button btnQuickPlaySpell;
+        private System.Windows.Forms.Button btnFieldSpell;
+        private System.Windows.Forms.Button btnContinousSpell;
+        private System.Windows.Forms.Button btnNormalSpell;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btnCounterTrap;
+        private System.Windows.Forms.Button btnContinuosTrap;
+        private System.Windows.Forms.Button btnNormalTrap;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label lblGroupTotals;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Button btnGroupUpdatePrices;
+        private System.Windows.Forms.Button btnGroupUpdateURLs;
+        private System.Windows.Forms.Button btnGroupUpdateKonamiList;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label41;
     }
 }

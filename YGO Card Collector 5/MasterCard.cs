@@ -11,6 +11,17 @@ namespace YGO_Card_Collector_5
     {
         #region Constructors
         public MasterCard() { }
+        public MasterCard(string name, string attribute, string species, string levelranklink, string ata, string def, string pen, string url)
+        {
+            _Name = name;
+            _Attribute = attribute;
+            _Type = species;
+            _LevelRankLink = levelranklink;
+            _Attack = ata;
+            _Defense = def;
+            _Pendulum = pen;
+            _KonamiURL = url;
+        }
         #endregion
 
         #region Public Accessors
@@ -26,6 +37,18 @@ namespace YGO_Card_Collector_5
         public string KonamiURL { get { return _KonamiURL; } set { _KonamiURL = value; } }
         public bool Obtained { get { return _Obtained; } set { _Obtained = value; } }
         public List<SetCard> SetCards { get { return _SetCards; } }
+        #endregion
+
+        #region Public Methods
+        public void AddSetCard(string date, string code, string name, string rarity)
+        {
+            _SetCards.Add(new SetCard(date, code, name, rarity));
+
+        }
+        public void InsertSetCard(string date, string code, string name, string rarity)
+        {
+            _SetCards.Insert(0, new SetCard(date, code, name, rarity));
+        }
         #endregion
 
         #region Internal Data
@@ -65,6 +88,14 @@ namespace YGO_Card_Collector_5
         #region Constructors
         public SetCard() 
         { 
+        }
+
+        public SetCard(string date, string code, string name, string rarity)
+        {
+            _ReleaseDate = date;
+            _Code = code;
+            _Name = name;
+            _Rarity = rarity;
         }
         #endregion
 
