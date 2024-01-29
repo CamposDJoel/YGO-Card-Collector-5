@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,9 +9,14 @@ namespace YGO_Card_Collector_5
 {
     public static class Database
     {
+        //Master Cards
         public static Dictionary<string, MasterCard> MasterCardByName = new Dictionary<string, MasterCard>();
         public static Dictionary<string, MasterCard> MasterCardByCode = new Dictionary<string, MasterCard>();
         public static List<MasterCard> MasterCards = new List<MasterCard>();
+
+        //Set Cards
+        public static Dictionary<string, SetCard> SetCardByKey = new Dictionary<string, SetCard>();
+        public static List<SetCard> SetCards = new List<SetCard>();
 
         public static Dictionary<string, SetPack> SetPackByName = new Dictionary<string, SetPack>();        
         public static List<SetPack> SetPacks = new List<SetPack>();

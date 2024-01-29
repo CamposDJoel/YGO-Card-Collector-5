@@ -50,6 +50,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database.cs" />
+    <Compile Include="DatabaseManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseManager.Designer.cs">
+      <DependentUpon>DatabaseManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="Launcher.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SetPack.cs" />
     <Compile Include="Tools.cs" />
+    <EmbeddedResource Include="DatabaseManager.resx">
+      <DependentUpon>DatabaseManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Launcher.resx">
       <DependentUpon>Launcher.cs</DependentUpon>
     </EmbeddedResource>
