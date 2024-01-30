@@ -49,6 +49,22 @@ namespace YGO_Card_Collector_5
         {
             _SetCards.Insert(0, new SetCard(date, code, name, rarity));
         }
+        public bool HasProDeckURL()
+        {
+            return !ProdeckURLIsUnavailable() && !ProdeckURLIsMissing(); 
+        }
+        public bool ProdeckURLIsUnavailable()
+        {
+            return _ProdeckURL == "Unavailable";
+        }
+        public bool ProdeckURLIsMissing()
+        {
+            return _ProdeckURL == "Missing";
+        }
+        public SetCard GetCardAtIndex(int index)
+        {
+            return _SetCards[index];
+        }
         #endregion
 
         #region Internal Data
@@ -97,7 +113,12 @@ namespace YGO_Card_Collector_5
             _Name = name;
             _Rarity = rarity;
         }
-        #endregion
+        #endregion       
+
+        public bool TCGPlayerURLIsMissing()
+        {
+            return _TCGPlayerURL == "Missing";
+        }
 
         #region Public Accessors
         public string ReleaseDate { get { return _ReleaseDate; } set { _ReleaseDate = value; } }

@@ -11,6 +11,7 @@ using System.Text;
 using System.Windows.Forms;
 
 namespace YGO_Card_Collector_5
+
 {
     public partial class DatabaseManager : Form
     {
@@ -19,6 +20,29 @@ namespace YGO_Card_Collector_5
         {
             InitializeComponent();
 
+            ReloadStats();
+        }
+        #endregion
+
+        #region Internal Data
+        private CardGroup _CurrentSelectedCardGroup = CardGroup.Aqua_Monsters;
+        private DBUpdateHoldScren DBUpdateform;
+
+        private MasterCard _CurrentMasterCardSelected;
+        private SetCard _CurrentSetCardSelected;
+        #endregion
+
+        #region Public Methods
+        public void ReloadStats()
+        {
+            LoadMasterListStats();
+            LoadGroupViewStats();
+        }
+        #endregion
+
+        #region Private Methods
+        private void LoadMasterListStats()
+        {
             lblTotalMasterCards.Text = Database.MasterCards.Count.ToString();
             lblTotalSetCards.Text = Database.SetCards.Count.ToString();
 
@@ -56,17 +80,24 @@ namespace YGO_Card_Collector_5
             lblTotalsNormalTraps.Text = Database.NormalTraps.Count.ToString();
             lblTotalsContTraps.Text = Database.ContinuousTraps.Count.ToString();
             lblTotalsCounterTraps.Text = Database.CounterTraps.Count.ToString();
-
-            lblGroupTotals.Text = Database.AquaMonsters.Count.ToString();
         }
-        #endregion
+        private void LoadGroupViewStats()
+        {
+            //Set the group total card count
+            lblGroupTotals.Text = Database.GroupCardListByGroupName[_CurrentSelectedCardGroup].Count.ToString();
 
-        #region Internal Data
-        private CardGroup _CurrentSelectedCardGroup = CardGroup.SeaSerpent_Monsters;
-        private DBUpdateHoldScren DBUpdateform;
-        #endregion
+            lblCardGroupName.Text = Database.CardGroupToString(_CurrentSelectedCardGroup);
 
-        #region Private Methods
+            listCardList.Items.Clear();
+            List<MasterCard> currentList = Database.GroupCardListByGroupName[_CurrentSelectedCardGroup];
+            foreach(MasterCard ThisCard in currentList) 
+            {
+                listCardList.Items.Add(ThisCard.Name);
+            }
+
+            //Select the first item
+            listCardList.SetSelected(0, true);
+        }
         private void btnUpdateKonamiList_Click(object sender, EventArgs e)
         {
             Hide();
@@ -276,43 +307,287 @@ namespace YGO_Card_Collector_5
             Application.Exit();
         }
         #endregion
-    }
-    public enum CardGroup
-    {
-        AllCards,
-        Aqua_Monsters = 0,
-        Beast_Monsters,
-        BeastWarrior_Monsters,
-        Cyberse_Monsters,
-        Dinosaur_Monsters,
-        DivineBeast_Monsters,
-        Dragon_Monsters,
-        Fairy_Monsters,
-        Fiend_Monsters,
-        Fish_Monsters,
-        IllusionType_Monsters,
-        Insect_Monsters,
-        Machine_Monsters,
-        Plant_Monsters,
-        Psychic_Monsters,
-        Pyro_Monsters,
-        Reptile_Monsters,
-        Rock_Monsters,
-        SeaSerpent_Monsters,
-        Spellcaster_Monsters,
-        Thunder_Monsters,
-        Warrior_Monsters,
-        WingedBeast_Monsters,
-        Wyrm_Monsters,
-        Zombie_Monsters,
-        Normal_Spells,
-        Continuous_Spells,
-        QuickPlay_Spells,
-        Equip_Spells,
-        Field_Spells,
-        Ritual_Spells,
-        Normal_Traps,
-        Continuous_Traps,
-        Counter_Traps
+
+        #region Filters Event Handlers
+        private void btnFilterAqua_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Aqua_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterBeast_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Beast_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterBeastWarrior_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.BeastWarrior_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterCyberce_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Cyberse_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterDinosaur_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Dinosaur_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterDivine_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.DivineBeast_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterDragon_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Dragon_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterFairy_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Fairy_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterFiend_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Fiend_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterFish_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Fish_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterIllusion_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.IllusionType_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterInsect_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Insect_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterMachine_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Machine_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterPlant_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Plant_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterPsychic_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Psychic_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterPyro_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Pyro_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterReptile_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Reptile_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterRock_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Rock_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterSeaSerpent_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.SeaSerpent_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterSpellcaster_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Spellcaster_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterThunder_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Thunder_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterWarrior_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Warrior_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterWingedBeast_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.WingedBeast_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterWyrm_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Wyrm_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnFilterZombie_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Zombie_Monsters;
+            LoadGroupViewStats();
+        }
+        private void btnNormalSpell_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Normal_Spells;
+            LoadGroupViewStats();
+        }
+        private void btnContinousSpell_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Continuous_Spells;
+            LoadGroupViewStats();
+        }
+        private void btnEquipSpell_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Equip_Spells;
+            LoadGroupViewStats();
+        }
+        private void btnFieldSpell_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Field_Spells;
+            LoadGroupViewStats();
+        }
+        private void btnQuickPlaySpell_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.QuickPlay_Spells;
+            LoadGroupViewStats();
+        }
+        private void btnRitualSpell_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Ritual_Spells;
+            LoadGroupViewStats();
+        }
+        private void btnNormalTrap_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Normal_Traps;
+            LoadGroupViewStats();
+        }
+        private void btnContinuosTrap_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Continuous_Traps;
+            LoadGroupViewStats();
+        }
+        private void btnCounterTrap_Click(object sender, EventArgs e)
+        {
+            _CurrentSelectedCardGroup = CardGroup.Counter_Traps;
+            LoadGroupViewStats();
+        }
+        #endregion
+
+        #region Event Listeners
+        private void listCardList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            listSetCards.Items.Clear();
+
+            //Get the card name from the list item selected
+            _CurrentMasterCardSelected = Database.MasterCardByName[listCardList.SelectedItem.ToString()];
+
+            foreach(SetCard ThisSetCard in _CurrentMasterCardSelected.SetCards) 
+            {
+                string item = ThisSetCard.Code + "|" + ThisSetCard.Rarity;
+                listSetCards.Items.Add(item);
+            }
+
+            listSetCards.SetSelected(0, true);
+            checkProdeckEnableOverride.Checked = false;
+            checkTCGEnableOverride.Checked = false;
+        }
+        private void listSetCards_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            _CurrentSetCardSelected = _CurrentMasterCardSelected.GetCardAtIndex(listSetCards.SelectedIndex);
+            txtKonamiURL.Text = _CurrentMasterCardSelected.KonamiURL;
+            txtProdeckURL.Text = _CurrentMasterCardSelected.ProdeckURL;
+            txtTCGURL.Text = _CurrentSetCardSelected.TCGPlayerURL;
+            lblMarketPrice.Text = _CurrentSetCardSelected.MarketPrice;
+            lblMedianPrice.Text = _CurrentSetCardSelected.MediamPrice;
+            checkProdeckEnableOverride.Checked = false;
+            checkTCGEnableOverride.Checked = false;
+        }
+        private void checkProdeckEnableOverride_CheckedChanged(object sender, EventArgs e)
+        {            
+            if(checkProdeckEnableOverride.Checked == true)
+            {
+                txtProdeckURL.Enabled = true;
+                btnProdeckOverride.Visible = true;
+                if (_CurrentMasterCardSelected.ProdeckURLIsMissing())
+                {
+                    btnProdeckUnavailable.Visible = true;
+                }
+            }
+            else
+            {
+                btnProdeckOverride.Visible = false;
+                btnProdeckUnavailable.Visible = false;
+                txtProdeckURL.Enabled = false;
+                btnProdeckOverride.Visible = false;
+                txtProdeckURL.Text = _CurrentMasterCardSelected.ProdeckURL;
+            }           
+        }
+        private void checkTCGEnableOverride_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkTCGEnableOverride.Checked == true)
+            {
+                txtTCGURL.Enabled = true;
+                btnTCGOverride.Visible = true;
+                if (_CurrentSetCardSelected.TCGPlayerURLIsMissing())
+                {
+                    btnTCGUnavailable.Visible = true;
+                }
+            }
+            else
+            {
+                btnTCGOverride.Visible = false;
+                btnTCGUnavailable.Visible = false;
+                txtTCGURL.Enabled = false;
+                btnTCGOverride.Visible = false;
+                txtTCGURL.Text = _CurrentSetCardSelected.TCGPlayerURL;
+            }
+        }
+        private void btnProdeckOverride_Click(object sender, EventArgs e)
+        {
+            string input = txtProdeckURL.Text;
+            if(input.StartsWith("https://ygoprodeck.com/card/"))
+            {
+                //Valid ulr, proceed
+                _CurrentMasterCardSelected.ProdeckURL = input;
+                checkProdeckEnableOverride.Checked = false;
+            }
+            else
+            {
+                txtProdeckURL.Text = "Not a Prodeck URL.";
+            }
+        }
+        private void btnProdeckUnavailable_Click(object sender, EventArgs e)
+        {
+            _CurrentMasterCardSelected.ProdeckURL = "Unavailable";
+            checkProdeckEnableOverride.Checked = false;
+        }
+        private void btnTCGOverride_Click(object sender, EventArgs e)
+        {
+            string input = txtTCGURL.Text;
+            if (input.StartsWith("https://tcgplayer"))
+            {
+                //Valid ulr, proceed
+                _CurrentSetCardSelected.TCGPlayerURL = input;
+                checkTCGEnableOverride.Checked = false;
+            }
+            else
+            {
+                txtTCGURL.Text = "Not a TCG Player URL.";
+            }
+        }
+        private void btnTCGUnavailable_Click(object sender, EventArgs e)
+        {
+            _CurrentSetCardSelected.TCGPlayerURL = "Unavailable";
+            checkTCGEnableOverride.Checked = false;
+        }
+        #endregion
     }
 }

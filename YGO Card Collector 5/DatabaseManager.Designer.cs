@@ -105,17 +105,45 @@
             this.lblTotalsInsect = new System.Windows.Forms.Label();
             this.TabMasterTotals = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.btnUpdateKonamiList = new System.Windows.Forms.Button();
-            this.lblKonamiUpdateWarning = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.btnExtractURLs = new System.Windows.Forms.Button();
+            this.label37 = new System.Windows.Forms.Label();
+            this.btnUpdateFullDB = new System.Windows.Forms.Button();
             this.label36 = new System.Windows.Forms.Label();
             this.btnUpdatePrices = new System.Windows.Forms.Button();
-            this.btnUpdateFullDB = new System.Windows.Forms.Button();
-            this.label37 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.btnExtractURLs = new System.Windows.Forms.Button();
+            this.lblKonamiUpdateWarning = new System.Windows.Forms.Label();
+            this.btnUpdateKonamiList = new System.Windows.Forms.Button();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnTCGUnavailable = new System.Windows.Forms.Button();
+            this.btnProdeckUnavailable = new System.Windows.Forms.Button();
+            this.GroupPrices = new System.Windows.Forms.GroupBox();
+            this.lblMedianPrice = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.lblMarketPrice = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.btnTCGOverride = new System.Windows.Forms.Button();
+            this.checkTCGEnableOverride = new System.Windows.Forms.CheckBox();
+            this.btnProdeckOverride = new System.Windows.Forms.Button();
+            this.checkProdeckEnableOverride = new System.Windows.Forms.CheckBox();
+            this.txtTCGURL = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.txtProdeckURL = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.txtKonamiURL = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.listSetCards = new System.Windows.Forms.ListBox();
+            this.listCardList = new System.Windows.Forms.ListBox();
+            this.btnGroupUpdatePrices = new System.Windows.Forms.Button();
+            this.btnGroupUpdateURLs = new System.Windows.Forms.Button();
+            this.btnGroupUpdateKonamiList = new System.Windows.Forms.Button();
+            this.lblCardGroupName = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.lblGroupTotals = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.btnFilterIllusion = new System.Windows.Forms.Button();
             this.btnFilterZombie = new System.Windows.Forms.Button();
             this.btnFilterWyrm = new System.Windows.Forms.Button();
             this.btnFilterWingedBeast = new System.Windows.Forms.Button();
@@ -151,24 +179,20 @@
             this.btnCounterTrap = new System.Windows.Forms.Button();
             this.btnContinuosTrap = new System.Windows.Forms.Button();
             this.btnNormalTrap = new System.Windows.Forms.Button();
-            this.label38 = new System.Windows.Forms.Label();
-            this.lblGroupTotals = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.btnGroupUpdatePrices = new System.Windows.Forms.Button();
-            this.btnGroupUpdateURLs = new System.Windows.Forms.Button();
-            this.btnGroupUpdateKonamiList = new System.Windows.Forms.Button();
-            this.label41 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label44 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.PanelFullTotals.SuspendLayout();
             this.TabMasterTotals.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.GroupPrices.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupSpell.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTotalAqua
@@ -1186,10 +1210,11 @@
             // 
             this.TabMasterTotals.Controls.Add(this.tabPage1);
             this.TabMasterTotals.Controls.Add(this.tabPage2);
-            this.TabMasterTotals.Location = new System.Drawing.Point(14, 42);
+            this.TabMasterTotals.Controls.Add(this.tabPage3);
+            this.TabMasterTotals.Location = new System.Drawing.Point(4, 42);
             this.TabMasterTotals.Name = "TabMasterTotals";
             this.TabMasterTotals.SelectedIndex = 0;
-            this.TabMasterTotals.Size = new System.Drawing.Size(744, 441);
+            this.TabMasterTotals.Size = new System.Drawing.Size(794, 441);
             this.TabMasterTotals.TabIndex = 2;
             // 
             // tabPage1
@@ -1212,70 +1237,28 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Master Card List Totals";
             // 
-            // tabPage2
+            // label37
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.Black;
-            this.tabPage2.Controls.Add(this.label43);
-            this.tabPage2.Controls.Add(this.label42);
-            this.tabPage2.Controls.Add(this.label41);
-            this.tabPage2.Controls.Add(this.btnGroupUpdatePrices);
-            this.tabPage2.Controls.Add(this.btnGroupUpdateURLs);
-            this.tabPage2.Controls.Add(this.btnGroupUpdateKonamiList);
-            this.tabPage2.Controls.Add(this.label39);
-            this.tabPage2.Controls.Add(this.label40);
-            this.tabPage2.Controls.Add(this.lblGroupTotals);
-            this.tabPage2.Controls.Add(this.label38);
-            this.tabPage2.Controls.Add(this.groupBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(736, 415);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Totals By Group";
+            this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label37.Location = new System.Drawing.Point(381, 319);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(342, 87);
+            this.label37.TabIndex = 8;
+            this.label37.Text = "Updates the entire DB. Like everything!\r\nUpdates Konami\'s Card List, finds Card P" +
+    "asscodes, Prodeck and TCG Player URLs.\r\nUpdates the prices of ALL Set Cards. \r\n\r" +
+    "\nEstimate execution time: 26 Hrs.";
             // 
-            // btnUpdateKonamiList
+            // btnUpdateFullDB
             // 
-            this.btnUpdateKonamiList.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnUpdateKonamiList.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateKonamiList.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateKonamiList.Location = new System.Drawing.Point(375, 9);
-            this.btnUpdateKonamiList.Name = "btnUpdateKonamiList";
-            this.btnUpdateKonamiList.Size = new System.Drawing.Size(94, 72);
-            this.btnUpdateKonamiList.TabIndex = 1;
-            this.btnUpdateKonamiList.Text = "Update Konami\'s Card List";
-            this.btnUpdateKonamiList.UseVisualStyleBackColor = false;
-            this.btnUpdateKonamiList.Click += new System.EventHandler(this.btnUpdateKonamiList_Click);
-            // 
-            // lblKonamiUpdateWarning
-            // 
-            this.lblKonamiUpdateWarning.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblKonamiUpdateWarning.Location = new System.Drawing.Point(475, 9);
-            this.lblKonamiUpdateWarning.Name = "lblKonamiUpdateWarning";
-            this.lblKonamiUpdateWarning.Size = new System.Drawing.Size(233, 72);
-            this.lblKonamiUpdateWarning.TabIndex = 2;
-            this.lblKonamiUpdateWarning.Text = resources.GetString("lblKonamiUpdateWarning.Text");
-            // 
-            // label34
-            // 
-            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label34.Location = new System.Drawing.Point(475, 91);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(233, 72);
-            this.label34.TabIndex = 4;
-            this.label34.Text = "Searches for all the Missing Card Passcodes, Prodeck and TCG Player URLs.\r\nThis a" +
-    "pplies to the current existing Card List.";
-            // 
-            // btnExtractURLs
-            // 
-            this.btnExtractURLs.BackColor = System.Drawing.Color.RosyBrown;
-            this.btnExtractURLs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExtractURLs.ForeColor = System.Drawing.Color.Black;
-            this.btnExtractURLs.Location = new System.Drawing.Point(375, 91);
-            this.btnExtractURLs.Name = "btnExtractURLs";
-            this.btnExtractURLs.Size = new System.Drawing.Size(94, 72);
-            this.btnExtractURLs.TabIndex = 3;
-            this.btnExtractURLs.Text = "Update Passcodes and TCG Player URLs.";
-            this.btnExtractURLs.UseVisualStyleBackColor = false;
+            this.btnUpdateFullDB.BackColor = System.Drawing.Color.DarkRed;
+            this.btnUpdateFullDB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateFullDB.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateFullDB.Location = new System.Drawing.Point(465, 260);
+            this.btnUpdateFullDB.Name = "btnUpdateFullDB";
+            this.btnUpdateFullDB.Size = new System.Drawing.Size(160, 57);
+            this.btnUpdateFullDB.TabIndex = 7;
+            this.btnUpdateFullDB.Text = "Update FULL Database";
+            this.btnUpdateFullDB.UseVisualStyleBackColor = false;
             // 
             // label36
             // 
@@ -1299,28 +1282,400 @@
             this.btnUpdatePrices.Text = "Update TCG Player Prices";
             this.btnUpdatePrices.UseVisualStyleBackColor = false;
             // 
-            // btnUpdateFullDB
+            // label34
             // 
-            this.btnUpdateFullDB.BackColor = System.Drawing.Color.DarkRed;
-            this.btnUpdateFullDB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateFullDB.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateFullDB.Location = new System.Drawing.Point(465, 260);
-            this.btnUpdateFullDB.Name = "btnUpdateFullDB";
-            this.btnUpdateFullDB.Size = new System.Drawing.Size(160, 57);
-            this.btnUpdateFullDB.TabIndex = 7;
-            this.btnUpdateFullDB.Text = "Update FULL Database";
-            this.btnUpdateFullDB.UseVisualStyleBackColor = false;
+            this.label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label34.Location = new System.Drawing.Point(475, 91);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(233, 72);
+            this.label34.TabIndex = 4;
+            this.label34.Text = "Searches for all the Missing Card Passcodes, Prodeck and TCG Player URLs.\r\nThis a" +
+    "pplies to the current existing Card List.";
             // 
-            // label37
+            // btnExtractURLs
             // 
-            this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label37.Location = new System.Drawing.Point(381, 319);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(342, 87);
-            this.label37.TabIndex = 8;
-            this.label37.Text = "Updates the entire DB. Like everything!\r\nUpdates Konami\'s Card List, finds Card P" +
-    "asscodes, Prodeck and TCG Player URLs.\r\nUpdates the prices of ALL Set Cards. \r\n\r" +
-    "\nEstimate execution time: 26 Hrs.";
+            this.btnExtractURLs.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnExtractURLs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExtractURLs.ForeColor = System.Drawing.Color.Black;
+            this.btnExtractURLs.Location = new System.Drawing.Point(375, 91);
+            this.btnExtractURLs.Name = "btnExtractURLs";
+            this.btnExtractURLs.Size = new System.Drawing.Size(94, 72);
+            this.btnExtractURLs.TabIndex = 3;
+            this.btnExtractURLs.Text = "Update Passcodes and TCG Player URLs.";
+            this.btnExtractURLs.UseVisualStyleBackColor = false;
+            // 
+            // lblKonamiUpdateWarning
+            // 
+            this.lblKonamiUpdateWarning.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblKonamiUpdateWarning.Location = new System.Drawing.Point(475, 9);
+            this.lblKonamiUpdateWarning.Name = "lblKonamiUpdateWarning";
+            this.lblKonamiUpdateWarning.Size = new System.Drawing.Size(233, 72);
+            this.lblKonamiUpdateWarning.TabIndex = 2;
+            this.lblKonamiUpdateWarning.Text = resources.GetString("lblKonamiUpdateWarning.Text");
+            // 
+            // btnUpdateKonamiList
+            // 
+            this.btnUpdateKonamiList.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnUpdateKonamiList.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateKonamiList.ForeColor = System.Drawing.Color.Black;
+            this.btnUpdateKonamiList.Location = new System.Drawing.Point(375, 9);
+            this.btnUpdateKonamiList.Name = "btnUpdateKonamiList";
+            this.btnUpdateKonamiList.Size = new System.Drawing.Size(94, 72);
+            this.btnUpdateKonamiList.TabIndex = 1;
+            this.btnUpdateKonamiList.Text = "Update Konami\'s Card List";
+            this.btnUpdateKonamiList.UseVisualStyleBackColor = false;
+            this.btnUpdateKonamiList.Click += new System.EventHandler(this.btnUpdateKonamiList_Click);
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.Black;
+            this.tabPage2.Controls.Add(this.label43);
+            this.tabPage2.Controls.Add(this.label42);
+            this.tabPage2.Controls.Add(this.btnTCGUnavailable);
+            this.tabPage2.Controls.Add(this.btnProdeckUnavailable);
+            this.tabPage2.Controls.Add(this.GroupPrices);
+            this.tabPage2.Controls.Add(this.btnTCGOverride);
+            this.tabPage2.Controls.Add(this.checkTCGEnableOverride);
+            this.tabPage2.Controls.Add(this.btnProdeckOverride);
+            this.tabPage2.Controls.Add(this.checkProdeckEnableOverride);
+            this.tabPage2.Controls.Add(this.txtTCGURL);
+            this.tabPage2.Controls.Add(this.label47);
+            this.tabPage2.Controls.Add(this.txtProdeckURL);
+            this.tabPage2.Controls.Add(this.label46);
+            this.tabPage2.Controls.Add(this.txtKonamiURL);
+            this.tabPage2.Controls.Add(this.label45);
+            this.tabPage2.Controls.Add(this.label39);
+            this.tabPage2.Controls.Add(this.listSetCards);
+            this.tabPage2.Controls.Add(this.listCardList);
+            this.tabPage2.Controls.Add(this.btnGroupUpdatePrices);
+            this.tabPage2.Controls.Add(this.btnGroupUpdateURLs);
+            this.tabPage2.Controls.Add(this.btnGroupUpdateKonamiList);
+            this.tabPage2.Controls.Add(this.lblCardGroupName);
+            this.tabPage2.Controls.Add(this.label40);
+            this.tabPage2.Controls.Add(this.lblGroupTotals);
+            this.tabPage2.Controls.Add(this.label38);
+            this.tabPage2.Controls.Add(this.groupBox1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(786, 415);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Totals By Group";
+            // 
+            // btnTCGUnavailable
+            // 
+            this.btnTCGUnavailable.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTCGUnavailable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnTCGUnavailable.Location = new System.Drawing.Point(615, 303);
+            this.btnTCGUnavailable.Name = "btnTCGUnavailable";
+            this.btnTCGUnavailable.Size = new System.Drawing.Size(79, 18);
+            this.btnTCGUnavailable.TabIndex = 32;
+            this.btnTCGUnavailable.Text = "Unavailable";
+            this.btnTCGUnavailable.UseVisualStyleBackColor = true;
+            this.btnTCGUnavailable.Visible = false;
+            this.btnTCGUnavailable.Click += new System.EventHandler(this.btnTCGUnavailable_Click);
+            // 
+            // btnProdeckUnavailable
+            // 
+            this.btnProdeckUnavailable.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProdeckUnavailable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnProdeckUnavailable.Location = new System.Drawing.Point(615, 242);
+            this.btnProdeckUnavailable.Name = "btnProdeckUnavailable";
+            this.btnProdeckUnavailable.Size = new System.Drawing.Size(79, 18);
+            this.btnProdeckUnavailable.TabIndex = 31;
+            this.btnProdeckUnavailable.Text = "Unavailable";
+            this.btnProdeckUnavailable.UseVisualStyleBackColor = true;
+            this.btnProdeckUnavailable.Visible = false;
+            this.btnProdeckUnavailable.Click += new System.EventHandler(this.btnProdeckUnavailable_Click);
+            // 
+            // GroupPrices
+            // 
+            this.GroupPrices.Controls.Add(this.lblMedianPrice);
+            this.GroupPrices.Controls.Add(this.label48);
+            this.GroupPrices.Controls.Add(this.lblMarketPrice);
+            this.GroupPrices.Controls.Add(this.label41);
+            this.GroupPrices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.GroupPrices.Location = new System.Drawing.Point(710, 59);
+            this.GroupPrices.Name = "GroupPrices";
+            this.GroupPrices.Size = new System.Drawing.Size(74, 93);
+            this.GroupPrices.TabIndex = 30;
+            this.GroupPrices.TabStop = false;
+            this.GroupPrices.Text = "Prices";
+            // 
+            // lblMedianPrice
+            // 
+            this.lblMedianPrice.AutoSize = true;
+            this.lblMedianPrice.BackColor = System.Drawing.Color.Transparent;
+            this.lblMedianPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblMedianPrice.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMedianPrice.ForeColor = System.Drawing.Color.White;
+            this.lblMedianPrice.Location = new System.Drawing.Point(3, 63);
+            this.lblMedianPrice.Name = "lblMedianPrice";
+            this.lblMedianPrice.Size = new System.Drawing.Size(60, 14);
+            this.lblMedianPrice.TabIndex = 32;
+            this.lblMedianPrice.Text = "$9999.99";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.BackColor = System.Drawing.Color.Transparent;
+            this.label48.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label48.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.White;
+            this.label48.Location = new System.Drawing.Point(3, 48);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(53, 14);
+            this.label48.TabIndex = 31;
+            this.label48.Text = "Median:";
+            // 
+            // lblMarketPrice
+            // 
+            this.lblMarketPrice.AutoSize = true;
+            this.lblMarketPrice.BackColor = System.Drawing.Color.Transparent;
+            this.lblMarketPrice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblMarketPrice.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarketPrice.ForeColor = System.Drawing.Color.White;
+            this.lblMarketPrice.Location = new System.Drawing.Point(3, 29);
+            this.lblMarketPrice.Name = "lblMarketPrice";
+            this.lblMarketPrice.Size = new System.Drawing.Size(60, 14);
+            this.lblMarketPrice.TabIndex = 30;
+            this.lblMarketPrice.Text = "$9999.99";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.BackColor = System.Drawing.Color.Transparent;
+            this.label41.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label41.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.White;
+            this.label41.Location = new System.Drawing.Point(3, 15);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(51, 14);
+            this.label41.TabIndex = 29;
+            this.label41.Text = "Market:";
+            // 
+            // btnTCGOverride
+            // 
+            this.btnTCGOverride.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTCGOverride.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnTCGOverride.Location = new System.Drawing.Point(543, 303);
+            this.btnTCGOverride.Name = "btnTCGOverride";
+            this.btnTCGOverride.Size = new System.Drawing.Size(69, 18);
+            this.btnTCGOverride.TabIndex = 28;
+            this.btnTCGOverride.Text = "Override";
+            this.btnTCGOverride.UseVisualStyleBackColor = true;
+            this.btnTCGOverride.Visible = false;
+            this.btnTCGOverride.Click += new System.EventHandler(this.btnTCGOverride_Click);
+            // 
+            // checkTCGEnableOverride
+            // 
+            this.checkTCGEnableOverride.AutoSize = true;
+            this.checkTCGEnableOverride.Location = new System.Drawing.Point(443, 303);
+            this.checkTCGEnableOverride.Name = "checkTCGEnableOverride";
+            this.checkTCGEnableOverride.Size = new System.Drawing.Size(102, 17);
+            this.checkTCGEnableOverride.TabIndex = 27;
+            this.checkTCGEnableOverride.Text = "Enable Override";
+            this.checkTCGEnableOverride.UseVisualStyleBackColor = true;
+            this.checkTCGEnableOverride.CheckedChanged += new System.EventHandler(this.checkTCGEnableOverride_CheckedChanged);
+            // 
+            // btnProdeckOverride
+            // 
+            this.btnProdeckOverride.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProdeckOverride.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnProdeckOverride.Location = new System.Drawing.Point(543, 242);
+            this.btnProdeckOverride.Name = "btnProdeckOverride";
+            this.btnProdeckOverride.Size = new System.Drawing.Size(69, 18);
+            this.btnProdeckOverride.TabIndex = 26;
+            this.btnProdeckOverride.Text = "Override";
+            this.btnProdeckOverride.UseVisualStyleBackColor = true;
+            this.btnProdeckOverride.Visible = false;
+            this.btnProdeckOverride.Click += new System.EventHandler(this.btnProdeckOverride_Click);
+            // 
+            // checkProdeckEnableOverride
+            // 
+            this.checkProdeckEnableOverride.AutoSize = true;
+            this.checkProdeckEnableOverride.Location = new System.Drawing.Point(443, 243);
+            this.checkProdeckEnableOverride.Name = "checkProdeckEnableOverride";
+            this.checkProdeckEnableOverride.Size = new System.Drawing.Size(102, 17);
+            this.checkProdeckEnableOverride.TabIndex = 25;
+            this.checkProdeckEnableOverride.Text = "Enable Override";
+            this.checkProdeckEnableOverride.UseVisualStyleBackColor = true;
+            this.checkProdeckEnableOverride.CheckedChanged += new System.EventHandler(this.checkProdeckEnableOverride_CheckedChanged);
+            // 
+            // txtTCGURL
+            // 
+            this.txtTCGURL.Enabled = false;
+            this.txtTCGURL.Location = new System.Drawing.Point(444, 280);
+            this.txtTCGURL.Name = "txtTCGURL";
+            this.txtTCGURL.Size = new System.Drawing.Size(336, 20);
+            this.txtTCGURL.TabIndex = 20;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.BackColor = System.Drawing.Color.Transparent;
+            this.label47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label47.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.Location = new System.Drawing.Point(441, 266);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(84, 14);
+            this.label47.TabIndex = 19;
+            this.label47.Text = "TCG Pl. URL:";
+            // 
+            // txtProdeckURL
+            // 
+            this.txtProdeckURL.Enabled = false;
+            this.txtProdeckURL.Location = new System.Drawing.Point(444, 220);
+            this.txtProdeckURL.Name = "txtProdeckURL";
+            this.txtProdeckURL.Size = new System.Drawing.Size(336, 20);
+            this.txtProdeckURL.TabIndex = 18;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.BackColor = System.Drawing.Color.Transparent;
+            this.label46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label46.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.Location = new System.Drawing.Point(441, 205);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(88, 14);
+            this.label46.TabIndex = 17;
+            this.label46.Text = "Prodeck URL:";
+            // 
+            // txtKonamiURL
+            // 
+            this.txtKonamiURL.Enabled = false;
+            this.txtKonamiURL.Location = new System.Drawing.Point(444, 176);
+            this.txtKonamiURL.Name = "txtKonamiURL";
+            this.txtKonamiURL.Size = new System.Drawing.Size(336, 20);
+            this.txtKonamiURL.TabIndex = 16;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.BackColor = System.Drawing.Color.Transparent;
+            this.label45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label45.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.Location = new System.Drawing.Point(441, 162);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(83, 14);
+            this.label45.TabIndex = 15;
+            this.label45.Text = "Konami URL:";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(424, 105);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(15, 15);
+            this.label39.TabIndex = 14;
+            this.label39.Text = ">";
+            // 
+            // listSetCards
+            // 
+            this.listSetCards.BackColor = System.Drawing.Color.Silver;
+            this.listSetCards.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listSetCards.FormattingEnabled = true;
+            this.listSetCards.ItemHeight = 14;
+            this.listSetCards.Location = new System.Drawing.Point(443, 64);
+            this.listSetCards.Name = "listSetCards";
+            this.listSetCards.Size = new System.Drawing.Size(264, 88);
+            this.listSetCards.TabIndex = 13;
+            this.listSetCards.SelectedIndexChanged += new System.EventHandler(this.listSetCards_SelectedIndexChanged);
+            // 
+            // listCardList
+            // 
+            this.listCardList.BackColor = System.Drawing.Color.Silver;
+            this.listCardList.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listCardList.FormattingEnabled = true;
+            this.listCardList.ItemHeight = 14;
+            this.listCardList.Location = new System.Drawing.Point(149, 62);
+            this.listCardList.Name = "listCardList";
+            this.listCardList.Size = new System.Drawing.Size(273, 256);
+            this.listCardList.TabIndex = 12;
+            this.listCardList.SelectedIndexChanged += new System.EventHandler(this.listCardList_SelectedIndexChanged);
+            // 
+            // btnGroupUpdatePrices
+            // 
+            this.btnGroupUpdatePrices.BackColor = System.Drawing.Color.Olive;
+            this.btnGroupUpdatePrices.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGroupUpdatePrices.ForeColor = System.Drawing.Color.Black;
+            this.btnGroupUpdatePrices.Location = new System.Drawing.Point(554, 378);
+            this.btnGroupUpdatePrices.Name = "btnGroupUpdatePrices";
+            this.btnGroupUpdatePrices.Size = new System.Drawing.Size(175, 26);
+            this.btnGroupUpdatePrices.TabIndex = 8;
+            this.btnGroupUpdatePrices.Text = "Update TCG Player Prices";
+            this.btnGroupUpdatePrices.UseVisualStyleBackColor = false;
+            // 
+            // btnGroupUpdateURLs
+            // 
+            this.btnGroupUpdateURLs.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnGroupUpdateURLs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGroupUpdateURLs.ForeColor = System.Drawing.Color.Black;
+            this.btnGroupUpdateURLs.Location = new System.Drawing.Point(354, 377);
+            this.btnGroupUpdateURLs.Name = "btnGroupUpdateURLs";
+            this.btnGroupUpdateURLs.Size = new System.Drawing.Size(175, 26);
+            this.btnGroupUpdateURLs.TabIndex = 7;
+            this.btnGroupUpdateURLs.Text = "Update Prodeck+TCG URLs";
+            this.btnGroupUpdateURLs.UseVisualStyleBackColor = false;
+            // 
+            // btnGroupUpdateKonamiList
+            // 
+            this.btnGroupUpdateKonamiList.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnGroupUpdateKonamiList.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGroupUpdateKonamiList.ForeColor = System.Drawing.Color.Black;
+            this.btnGroupUpdateKonamiList.Location = new System.Drawing.Point(154, 377);
+            this.btnGroupUpdateKonamiList.Name = "btnGroupUpdateKonamiList";
+            this.btnGroupUpdateKonamiList.Size = new System.Drawing.Size(175, 26);
+            this.btnGroupUpdateKonamiList.TabIndex = 6;
+            this.btnGroupUpdateKonamiList.Text = "Update Konami\'s Card List";
+            this.btnGroupUpdateKonamiList.UseVisualStyleBackColor = false;
+            this.btnGroupUpdateKonamiList.Click += new System.EventHandler(this.btnGroupUpdateKonamiList_Click);
+            // 
+            // lblCardGroupName
+            // 
+            this.lblCardGroupName.AutoSize = true;
+            this.lblCardGroupName.BackColor = System.Drawing.Color.Transparent;
+            this.lblCardGroupName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCardGroupName.Location = new System.Drawing.Point(332, 6);
+            this.lblCardGroupName.Name = "lblCardGroupName";
+            this.lblCardGroupName.Size = new System.Drawing.Size(63, 24);
+            this.lblCardGroupName.TabIndex = 4;
+            this.lblCardGroupName.Text = "Aqua";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.Transparent;
+            this.label40.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(150, 6);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(166, 24);
+            this.label40.TabIndex = 3;
+            this.label40.Text = "Current Group:";
+            // 
+            // lblGroupTotals
+            // 
+            this.lblGroupTotals.AutoSize = true;
+            this.lblGroupTotals.BackColor = System.Drawing.Color.Transparent;
+            this.lblGroupTotals.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGroupTotals.Location = new System.Drawing.Point(414, 32);
+            this.lblGroupTotals.Name = "lblGroupTotals";
+            this.lblGroupTotals.Size = new System.Drawing.Size(58, 24);
+            this.lblGroupTotals.TabIndex = 2;
+            this.lblGroupTotals.Text = "0000";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.Color.Transparent;
+            this.label38.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(150, 32);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(245, 24);
+            this.label38.TabIndex = 1;
+            this.label38.Text = "Master Cards in Group:";
             // 
             // groupBox1
             // 
@@ -1329,9 +1684,9 @@
             this.groupBox1.Controls.Add(this.groupSpell);
             this.groupBox1.Controls.Add(this.groupBox3);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(8, 10);
+            this.groupBox1.Location = new System.Drawing.Point(6, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(353, 125);
+            this.groupBox1.Size = new System.Drawing.Size(137, 392);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select Card Group";
@@ -1339,6 +1694,7 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.btnFilterIllusion);
             this.groupBox2.Controls.Add(this.btnFilterZombie);
             this.groupBox2.Controls.Add(this.btnFilterWyrm);
             this.groupBox2.Controls.Add(this.btnFilterWingedBeast);
@@ -1367,274 +1723,310 @@
             this.groupBox2.ForeColor = System.Drawing.Color.Yellow;
             this.groupBox2.Location = new System.Drawing.Point(6, 11);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(241, 109);
+            this.groupBox2.Size = new System.Drawing.Size(124, 225);
             this.groupBox2.TabIndex = 209;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Monsters";
+            // 
+            // btnFilterIllusion
+            // 
+            this.btnFilterIllusion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterIllusion.BackgroundImage")));
+            this.btnFilterIllusion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnFilterIllusion.Location = new System.Drawing.Point(61, 76);
+            this.btnFilterIllusion.Name = "btnFilterIllusion";
+            this.btnFilterIllusion.Size = new System.Drawing.Size(30, 30);
+            this.btnFilterIllusion.TabIndex = 25;
+            this.btnFilterIllusion.Tag = "11";
+            this.btnFilterIllusion.UseVisualStyleBackColor = true;
+            this.btnFilterIllusion.Click += new System.EventHandler(this.btnFilterIllusion_Click);
             // 
             // btnFilterZombie
             // 
             this.btnFilterZombie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterZombie.BackgroundImage")));
             this.btnFilterZombie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterZombie.Location = new System.Drawing.Point(206, 72);
+            this.btnFilterZombie.Location = new System.Drawing.Point(46, 192);
             this.btnFilterZombie.Name = "btnFilterZombie";
             this.btnFilterZombie.Size = new System.Drawing.Size(30, 30);
             this.btnFilterZombie.TabIndex = 24;
             this.btnFilterZombie.Tag = "23";
             this.btnFilterZombie.UseVisualStyleBackColor = true;
+            this.btnFilterZombie.Click += new System.EventHandler(this.btnFilterZombie_Click);
             // 
             // btnFilterWyrm
             // 
             this.btnFilterWyrm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterWyrm.BackgroundImage")));
             this.btnFilterWyrm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterWyrm.Location = new System.Drawing.Point(177, 72);
+            this.btnFilterWyrm.Location = new System.Drawing.Point(90, 163);
             this.btnFilterWyrm.Name = "btnFilterWyrm";
             this.btnFilterWyrm.Size = new System.Drawing.Size(30, 30);
             this.btnFilterWyrm.TabIndex = 23;
             this.btnFilterWyrm.Tag = "22";
             this.btnFilterWyrm.UseVisualStyleBackColor = true;
+            this.btnFilterWyrm.Click += new System.EventHandler(this.btnFilterWyrm_Click);
             // 
             // btnFilterWingedBeast
             // 
             this.btnFilterWingedBeast.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterWingedBeast.BackgroundImage")));
             this.btnFilterWingedBeast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterWingedBeast.Location = new System.Drawing.Point(148, 72);
+            this.btnFilterWingedBeast.Location = new System.Drawing.Point(61, 163);
             this.btnFilterWingedBeast.Name = "btnFilterWingedBeast";
             this.btnFilterWingedBeast.Size = new System.Drawing.Size(30, 30);
             this.btnFilterWingedBeast.TabIndex = 22;
             this.btnFilterWingedBeast.Tag = "21";
             this.btnFilterWingedBeast.UseVisualStyleBackColor = true;
+            this.btnFilterWingedBeast.Click += new System.EventHandler(this.btnFilterWingedBeast_Click);
             // 
             // btnFilterWarrior
             // 
             this.btnFilterWarrior.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterWarrior.BackgroundImage")));
             this.btnFilterWarrior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterWarrior.Location = new System.Drawing.Point(119, 72);
+            this.btnFilterWarrior.Location = new System.Drawing.Point(32, 163);
             this.btnFilterWarrior.Name = "btnFilterWarrior";
             this.btnFilterWarrior.Size = new System.Drawing.Size(30, 30);
             this.btnFilterWarrior.TabIndex = 21;
             this.btnFilterWarrior.Tag = "20";
             this.btnFilterWarrior.UseVisualStyleBackColor = true;
+            this.btnFilterWarrior.Click += new System.EventHandler(this.btnFilterWarrior_Click);
             // 
             // btnFilterThunder
             // 
             this.btnFilterThunder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterThunder.BackgroundImage")));
             this.btnFilterThunder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterThunder.Location = new System.Drawing.Point(90, 72);
+            this.btnFilterThunder.Location = new System.Drawing.Point(3, 163);
             this.btnFilterThunder.Name = "btnFilterThunder";
             this.btnFilterThunder.Size = new System.Drawing.Size(30, 30);
             this.btnFilterThunder.TabIndex = 20;
             this.btnFilterThunder.Tag = "19";
             this.btnFilterThunder.UseVisualStyleBackColor = true;
+            this.btnFilterThunder.Click += new System.EventHandler(this.btnFilterThunder_Click);
             // 
             // btnFilterSpellcaster
             // 
             this.btnFilterSpellcaster.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterSpellcaster.BackgroundImage")));
             this.btnFilterSpellcaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterSpellcaster.Location = new System.Drawing.Point(61, 72);
+            this.btnFilterSpellcaster.Location = new System.Drawing.Point(90, 134);
             this.btnFilterSpellcaster.Name = "btnFilterSpellcaster";
             this.btnFilterSpellcaster.Size = new System.Drawing.Size(30, 30);
             this.btnFilterSpellcaster.TabIndex = 19;
             this.btnFilterSpellcaster.Tag = "18";
             this.btnFilterSpellcaster.UseVisualStyleBackColor = true;
+            this.btnFilterSpellcaster.Click += new System.EventHandler(this.btnFilterSpellcaster_Click);
             // 
             // btnFilterPsychic
             // 
             this.btnFilterPsychic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterPsychic.BackgroundImage")));
             this.btnFilterPsychic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterPsychic.Location = new System.Drawing.Point(148, 43);
+            this.btnFilterPsychic.Location = new System.Drawing.Point(61, 105);
             this.btnFilterPsychic.Name = "btnFilterPsychic";
             this.btnFilterPsychic.Size = new System.Drawing.Size(30, 30);
             this.btnFilterPsychic.TabIndex = 18;
             this.btnFilterPsychic.Tag = "13";
             this.btnFilterPsychic.UseVisualStyleBackColor = true;
+            this.btnFilterPsychic.Click += new System.EventHandler(this.btnFilterPsychic_Click);
             // 
             // btnFilterFiend
             // 
             this.btnFilterFiend.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterFiend.BackgroundImage")));
             this.btnFilterFiend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterFiend.Location = new System.Drawing.Point(3, 43);
+            this.btnFilterFiend.Location = new System.Drawing.Point(3, 76);
             this.btnFilterFiend.Name = "btnFilterFiend";
             this.btnFilterFiend.Size = new System.Drawing.Size(30, 30);
             this.btnFilterFiend.TabIndex = 17;
             this.btnFilterFiend.Tag = "8";
             this.btnFilterFiend.UseVisualStyleBackColor = true;
+            this.btnFilterFiend.Click += new System.EventHandler(this.btnFilterFiend_Click);
             // 
             // btnFilterCyberce
             // 
             this.btnFilterCyberce.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterCyberce.BackgroundImage")));
             this.btnFilterCyberce.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterCyberce.Location = new System.Drawing.Point(90, 14);
+            this.btnFilterCyberce.Location = new System.Drawing.Point(90, 18);
             this.btnFilterCyberce.Name = "btnFilterCyberce";
             this.btnFilterCyberce.Size = new System.Drawing.Size(30, 30);
             this.btnFilterCyberce.TabIndex = 16;
             this.btnFilterCyberce.Tag = "3";
             this.btnFilterCyberce.UseVisualStyleBackColor = true;
+            this.btnFilterCyberce.Click += new System.EventHandler(this.btnFilterCyberce_Click);
             // 
             // btnFilterSeaSerpent
             // 
             this.btnFilterSeaSerpent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterSeaSerpent.BackgroundImage")));
             this.btnFilterSeaSerpent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterSeaSerpent.Location = new System.Drawing.Point(32, 72);
+            this.btnFilterSeaSerpent.Location = new System.Drawing.Point(61, 134);
             this.btnFilterSeaSerpent.Name = "btnFilterSeaSerpent";
             this.btnFilterSeaSerpent.Size = new System.Drawing.Size(30, 30);
             this.btnFilterSeaSerpent.TabIndex = 15;
             this.btnFilterSeaSerpent.Tag = "17";
             this.btnFilterSeaSerpent.UseVisualStyleBackColor = true;
+            this.btnFilterSeaSerpent.Click += new System.EventHandler(this.btnFilterSeaSerpent_Click);
             // 
             // btnFilterPlant
             // 
             this.btnFilterPlant.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterPlant.BackgroundImage")));
             this.btnFilterPlant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterPlant.Location = new System.Drawing.Point(119, 43);
+            this.btnFilterPlant.Location = new System.Drawing.Point(32, 105);
             this.btnFilterPlant.Name = "btnFilterPlant";
             this.btnFilterPlant.Size = new System.Drawing.Size(30, 30);
             this.btnFilterPlant.TabIndex = 14;
             this.btnFilterPlant.Tag = "12";
             this.btnFilterPlant.UseVisualStyleBackColor = true;
+            this.btnFilterPlant.Click += new System.EventHandler(this.btnFilterPlant_Click);
             // 
             // btnFilterFairy
             // 
             this.btnFilterFairy.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterFairy.BackgroundImage")));
             this.btnFilterFairy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterFairy.Location = new System.Drawing.Point(206, 14);
+            this.btnFilterFairy.Location = new System.Drawing.Point(90, 47);
             this.btnFilterFairy.Name = "btnFilterFairy";
             this.btnFilterFairy.Size = new System.Drawing.Size(30, 30);
             this.btnFilterFairy.TabIndex = 13;
             this.btnFilterFairy.Tag = "7";
             this.btnFilterFairy.UseVisualStyleBackColor = true;
+            this.btnFilterFairy.Click += new System.EventHandler(this.btnFilterFairy_Click);
             // 
             // btnFilterRock
             // 
             this.btnFilterRock.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterRock.BackgroundImage")));
             this.btnFilterRock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterRock.Location = new System.Drawing.Point(3, 72);
+            this.btnFilterRock.Location = new System.Drawing.Point(32, 134);
             this.btnFilterRock.Name = "btnFilterRock";
             this.btnFilterRock.Size = new System.Drawing.Size(30, 30);
             this.btnFilterRock.TabIndex = 11;
             this.btnFilterRock.Tag = "16";
             this.btnFilterRock.UseVisualStyleBackColor = true;
+            this.btnFilterRock.Click += new System.EventHandler(this.btnFilterRock_Click);
             // 
             // btnFilterReptile
             // 
             this.btnFilterReptile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterReptile.BackgroundImage")));
             this.btnFilterReptile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterReptile.Location = new System.Drawing.Point(206, 43);
+            this.btnFilterReptile.Location = new System.Drawing.Point(3, 134);
             this.btnFilterReptile.Name = "btnFilterReptile";
             this.btnFilterReptile.Size = new System.Drawing.Size(30, 30);
             this.btnFilterReptile.TabIndex = 10;
             this.btnFilterReptile.Tag = "15";
             this.btnFilterReptile.UseVisualStyleBackColor = true;
+            this.btnFilterReptile.Click += new System.EventHandler(this.btnFilterReptile_Click);
             // 
             // btnFilterPyro
             // 
             this.btnFilterPyro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterPyro.BackgroundImage")));
             this.btnFilterPyro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterPyro.Location = new System.Drawing.Point(177, 43);
+            this.btnFilterPyro.Location = new System.Drawing.Point(90, 105);
             this.btnFilterPyro.Name = "btnFilterPyro";
             this.btnFilterPyro.Size = new System.Drawing.Size(30, 30);
             this.btnFilterPyro.TabIndex = 9;
             this.btnFilterPyro.Tag = "14";
             this.btnFilterPyro.UseVisualStyleBackColor = true;
+            this.btnFilterPyro.Click += new System.EventHandler(this.btnFilterPyro_Click);
             // 
             // btnFilterMachine
             // 
             this.btnFilterMachine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterMachine.BackgroundImage")));
             this.btnFilterMachine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterMachine.Location = new System.Drawing.Point(90, 43);
+            this.btnFilterMachine.Location = new System.Drawing.Point(3, 105);
             this.btnFilterMachine.Name = "btnFilterMachine";
             this.btnFilterMachine.Size = new System.Drawing.Size(30, 30);
             this.btnFilterMachine.TabIndex = 8;
             this.btnFilterMachine.Tag = "11";
             this.btnFilterMachine.UseVisualStyleBackColor = true;
+            this.btnFilterMachine.Click += new System.EventHandler(this.btnFilterMachine_Click);
             // 
             // btnFilterInsect
             // 
             this.btnFilterInsect.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterInsect.BackgroundImage")));
             this.btnFilterInsect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterInsect.Location = new System.Drawing.Point(61, 43);
+            this.btnFilterInsect.Location = new System.Drawing.Point(90, 76);
             this.btnFilterInsect.Name = "btnFilterInsect";
             this.btnFilterInsect.Size = new System.Drawing.Size(30, 30);
             this.btnFilterInsect.TabIndex = 7;
             this.btnFilterInsect.Tag = "10";
             this.btnFilterInsect.UseVisualStyleBackColor = true;
+            this.btnFilterInsect.Click += new System.EventHandler(this.btnFilterInsect_Click);
             // 
             // btnFilterFish
             // 
             this.btnFilterFish.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterFish.BackgroundImage")));
             this.btnFilterFish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterFish.Location = new System.Drawing.Point(32, 43);
+            this.btnFilterFish.Location = new System.Drawing.Point(32, 76);
             this.btnFilterFish.Name = "btnFilterFish";
             this.btnFilterFish.Size = new System.Drawing.Size(30, 30);
             this.btnFilterFish.TabIndex = 6;
             this.btnFilterFish.Tag = "9";
             this.btnFilterFish.UseVisualStyleBackColor = true;
+            this.btnFilterFish.Click += new System.EventHandler(this.btnFilterFish_Click);
             // 
             // btnFilterDragon
             // 
             this.btnFilterDragon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterDragon.BackgroundImage")));
             this.btnFilterDragon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterDragon.Location = new System.Drawing.Point(177, 14);
+            this.btnFilterDragon.Location = new System.Drawing.Point(61, 47);
             this.btnFilterDragon.Name = "btnFilterDragon";
             this.btnFilterDragon.Size = new System.Drawing.Size(30, 30);
             this.btnFilterDragon.TabIndex = 5;
             this.btnFilterDragon.Tag = "6";
             this.btnFilterDragon.UseVisualStyleBackColor = true;
+            this.btnFilterDragon.Click += new System.EventHandler(this.btnFilterDragon_Click);
             // 
             // btnFilterDivine
             // 
             this.btnFilterDivine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterDivine.BackgroundImage")));
             this.btnFilterDivine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterDivine.Location = new System.Drawing.Point(148, 14);
+            this.btnFilterDivine.Location = new System.Drawing.Point(32, 47);
             this.btnFilterDivine.Name = "btnFilterDivine";
             this.btnFilterDivine.Size = new System.Drawing.Size(30, 30);
             this.btnFilterDivine.TabIndex = 4;
             this.btnFilterDivine.Tag = "5";
             this.btnFilterDivine.UseVisualStyleBackColor = true;
+            this.btnFilterDivine.Click += new System.EventHandler(this.btnFilterDivine_Click);
             // 
             // btnFilterDinosaur
             // 
             this.btnFilterDinosaur.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterDinosaur.BackgroundImage")));
             this.btnFilterDinosaur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterDinosaur.Location = new System.Drawing.Point(119, 14);
+            this.btnFilterDinosaur.Location = new System.Drawing.Point(3, 47);
             this.btnFilterDinosaur.Name = "btnFilterDinosaur";
             this.btnFilterDinosaur.Size = new System.Drawing.Size(30, 30);
             this.btnFilterDinosaur.TabIndex = 3;
             this.btnFilterDinosaur.Tag = "4";
             this.btnFilterDinosaur.UseVisualStyleBackColor = true;
+            this.btnFilterDinosaur.Click += new System.EventHandler(this.btnFilterDinosaur_Click);
             // 
             // btnFilterBeastWarrior
             // 
             this.btnFilterBeastWarrior.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterBeastWarrior.BackgroundImage")));
             this.btnFilterBeastWarrior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterBeastWarrior.Location = new System.Drawing.Point(61, 14);
+            this.btnFilterBeastWarrior.Location = new System.Drawing.Point(61, 18);
             this.btnFilterBeastWarrior.Name = "btnFilterBeastWarrior";
             this.btnFilterBeastWarrior.Size = new System.Drawing.Size(30, 30);
             this.btnFilterBeastWarrior.TabIndex = 2;
             this.btnFilterBeastWarrior.Tag = "2";
             this.btnFilterBeastWarrior.UseVisualStyleBackColor = true;
+            this.btnFilterBeastWarrior.Click += new System.EventHandler(this.btnFilterBeastWarrior_Click);
             // 
             // btnFilterBeast
             // 
             this.btnFilterBeast.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterBeast.BackgroundImage")));
             this.btnFilterBeast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterBeast.Location = new System.Drawing.Point(32, 14);
+            this.btnFilterBeast.Location = new System.Drawing.Point(32, 18);
             this.btnFilterBeast.Name = "btnFilterBeast";
             this.btnFilterBeast.Size = new System.Drawing.Size(30, 30);
             this.btnFilterBeast.TabIndex = 1;
             this.btnFilterBeast.Tag = "1";
             this.btnFilterBeast.UseVisualStyleBackColor = true;
+            this.btnFilterBeast.Click += new System.EventHandler(this.btnFilterBeast_Click);
             // 
             // btnFilterAqua
             // 
             this.btnFilterAqua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterAqua.BackgroundImage")));
             this.btnFilterAqua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterAqua.Location = new System.Drawing.Point(3, 14);
+            this.btnFilterAqua.Location = new System.Drawing.Point(3, 18);
             this.btnFilterAqua.Name = "btnFilterAqua";
             this.btnFilterAqua.Size = new System.Drawing.Size(30, 30);
             this.btnFilterAqua.TabIndex = 0;
             this.btnFilterAqua.Tag = "0";
             this.btnFilterAqua.UseVisualStyleBackColor = true;
+            this.btnFilterAqua.Click += new System.EventHandler(this.btnFilterAqua_Click);
             // 
             // groupSpell
             // 
@@ -1647,9 +2039,9 @@
             this.groupSpell.Controls.Add(this.btnNormalSpell);
             this.groupSpell.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupSpell.ForeColor = System.Drawing.Color.Yellow;
-            this.groupSpell.Location = new System.Drawing.Point(252, 5);
+            this.groupSpell.Location = new System.Drawing.Point(6, 246);
             this.groupSpell.Name = "groupSpell";
-            this.groupSpell.Size = new System.Drawing.Size(90, 72);
+            this.groupSpell.Size = new System.Drawing.Size(124, 89);
             this.groupSpell.TabIndex = 210;
             this.groupSpell.TabStop = false;
             this.groupSpell.Text = "Spells";
@@ -1658,67 +2050,73 @@
             // 
             this.btnRitualSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRitualSpell.BackgroundImage")));
             this.btnRitualSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRitualSpell.Location = new System.Drawing.Point(57, 41);
+            this.btnRitualSpell.Location = new System.Drawing.Point(60, 48);
             this.btnRitualSpell.Name = "btnRitualSpell";
             this.btnRitualSpell.Size = new System.Drawing.Size(28, 28);
             this.btnRitualSpell.TabIndex = 6;
             this.btnRitualSpell.Tag = "30";
             this.btnRitualSpell.UseVisualStyleBackColor = true;
+            this.btnRitualSpell.Click += new System.EventHandler(this.btnRitualSpell_Click);
             // 
             // btnEquipSpell
             // 
             this.btnEquipSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEquipSpell.BackgroundImage")));
             this.btnEquipSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEquipSpell.Location = new System.Drawing.Point(57, 14);
+            this.btnEquipSpell.Location = new System.Drawing.Point(60, 20);
             this.btnEquipSpell.Name = "btnEquipSpell";
             this.btnEquipSpell.Size = new System.Drawing.Size(28, 28);
             this.btnEquipSpell.TabIndex = 5;
             this.btnEquipSpell.Tag = "27";
             this.btnEquipSpell.UseVisualStyleBackColor = true;
+            this.btnEquipSpell.Click += new System.EventHandler(this.btnEquipSpell_Click);
             // 
             // btnQuickPlaySpell
             // 
             this.btnQuickPlaySpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnQuickPlaySpell.BackgroundImage")));
             this.btnQuickPlaySpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnQuickPlaySpell.Location = new System.Drawing.Point(30, 41);
+            this.btnQuickPlaySpell.Location = new System.Drawing.Point(33, 48);
             this.btnQuickPlaySpell.Name = "btnQuickPlaySpell";
             this.btnQuickPlaySpell.Size = new System.Drawing.Size(28, 28);
             this.btnQuickPlaySpell.TabIndex = 4;
             this.btnQuickPlaySpell.Tag = "29";
             this.btnQuickPlaySpell.UseVisualStyleBackColor = true;
+            this.btnQuickPlaySpell.Click += new System.EventHandler(this.btnQuickPlaySpell_Click);
             // 
             // btnFieldSpell
             // 
             this.btnFieldSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFieldSpell.BackgroundImage")));
             this.btnFieldSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFieldSpell.Location = new System.Drawing.Point(3, 41);
+            this.btnFieldSpell.Location = new System.Drawing.Point(6, 48);
             this.btnFieldSpell.Name = "btnFieldSpell";
             this.btnFieldSpell.Size = new System.Drawing.Size(28, 28);
             this.btnFieldSpell.TabIndex = 3;
             this.btnFieldSpell.Tag = "28";
             this.btnFieldSpell.UseVisualStyleBackColor = true;
+            this.btnFieldSpell.Click += new System.EventHandler(this.btnFieldSpell_Click);
             // 
             // btnContinousSpell
             // 
             this.btnContinousSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnContinousSpell.BackgroundImage")));
             this.btnContinousSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnContinousSpell.Location = new System.Drawing.Point(30, 14);
+            this.btnContinousSpell.Location = new System.Drawing.Point(33, 20);
             this.btnContinousSpell.Name = "btnContinousSpell";
             this.btnContinousSpell.Size = new System.Drawing.Size(28, 28);
             this.btnContinousSpell.TabIndex = 2;
             this.btnContinousSpell.Tag = "26";
             this.btnContinousSpell.UseVisualStyleBackColor = true;
+            this.btnContinousSpell.Click += new System.EventHandler(this.btnContinousSpell_Click);
             // 
             // btnNormalSpell
             // 
             this.btnNormalSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNormalSpell.BackgroundImage")));
             this.btnNormalSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNormalSpell.Location = new System.Drawing.Point(3, 14);
+            this.btnNormalSpell.Location = new System.Drawing.Point(6, 20);
             this.btnNormalSpell.Name = "btnNormalSpell";
             this.btnNormalSpell.Size = new System.Drawing.Size(28, 28);
             this.btnNormalSpell.TabIndex = 1;
             this.btnNormalSpell.Tag = "25";
             this.btnNormalSpell.UseVisualStyleBackColor = true;
+            this.btnNormalSpell.Click += new System.EventHandler(this.btnNormalSpell_Click);
             // 
             // groupBox3
             // 
@@ -1728,9 +2126,9 @@
             this.groupBox3.Controls.Add(this.btnNormalTrap);
             this.groupBox3.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.Yellow;
-            this.groupBox3.Location = new System.Drawing.Point(252, 73);
+            this.groupBox3.Location = new System.Drawing.Point(6, 341);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(90, 47);
+            this.groupBox3.Size = new System.Drawing.Size(124, 47);
             this.groupBox3.TabIndex = 211;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Traps";
@@ -1745,6 +2143,7 @@
             this.btnCounterTrap.TabIndex = 5;
             this.btnCounterTrap.Tag = "34";
             this.btnCounterTrap.UseVisualStyleBackColor = true;
+            this.btnCounterTrap.Click += new System.EventHandler(this.btnCounterTrap_Click);
             // 
             // btnContinuosTrap
             // 
@@ -1756,6 +2155,7 @@
             this.btnContinuosTrap.TabIndex = 2;
             this.btnContinuosTrap.Tag = "33";
             this.btnContinuosTrap.UseVisualStyleBackColor = true;
+            this.btnContinuosTrap.Click += new System.EventHandler(this.btnContinuosTrap_Click);
             // 
             // btnNormalTrap
             // 
@@ -1767,114 +2167,49 @@
             this.btnNormalTrap.TabIndex = 1;
             this.btnNormalTrap.Tag = "32";
             this.btnNormalTrap.UseVisualStyleBackColor = true;
+            this.btnNormalTrap.Click += new System.EventHandler(this.btnNormalTrap_Click);
             // 
-            // label38
+            // tabPage3
             // 
-            this.label38.AutoSize = true;
-            this.label38.BackColor = System.Drawing.Color.Transparent;
-            this.label38.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(367, 41);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(245, 24);
-            this.label38.TabIndex = 1;
-            this.label38.Text = "Master Cards in Group:";
+            this.tabPage3.BackColor = System.Drawing.Color.Black;
+            this.tabPage3.Controls.Add(this.label44);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(736, 415);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Missing URLs";
             // 
-            // lblGroupTotals
+            // label44
             // 
-            this.lblGroupTotals.AutoSize = true;
-            this.lblGroupTotals.BackColor = System.Drawing.Color.Transparent;
-            this.lblGroupTotals.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGroupTotals.Location = new System.Drawing.Point(631, 41);
-            this.lblGroupTotals.Name = "lblGroupTotals";
-            this.lblGroupTotals.Size = new System.Drawing.Size(58, 24);
-            this.lblGroupTotals.TabIndex = 2;
-            this.lblGroupTotals.Text = "0000";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.BackColor = System.Drawing.Color.Transparent;
-            this.label39.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(549, 15);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(63, 24);
-            this.label39.TabIndex = 4;
-            this.label39.Text = "Aqua";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.BackColor = System.Drawing.Color.Transparent;
-            this.label40.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(367, 15);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(166, 24);
-            this.label40.TabIndex = 3;
-            this.label40.Text = "Current Group:";
-            // 
-            // btnGroupUpdatePrices
-            // 
-            this.btnGroupUpdatePrices.BackColor = System.Drawing.Color.Olive;
-            this.btnGroupUpdatePrices.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGroupUpdatePrices.ForeColor = System.Drawing.Color.Black;
-            this.btnGroupUpdatePrices.Location = new System.Drawing.Point(17, 237);
-            this.btnGroupUpdatePrices.Name = "btnGroupUpdatePrices";
-            this.btnGroupUpdatePrices.Size = new System.Drawing.Size(175, 26);
-            this.btnGroupUpdatePrices.TabIndex = 8;
-            this.btnGroupUpdatePrices.Text = "Update TCG Player Prices";
-            this.btnGroupUpdatePrices.UseVisualStyleBackColor = false;
-            // 
-            // btnGroupUpdateURLs
-            // 
-            this.btnGroupUpdateURLs.BackColor = System.Drawing.Color.RosyBrown;
-            this.btnGroupUpdateURLs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGroupUpdateURLs.ForeColor = System.Drawing.Color.Black;
-            this.btnGroupUpdateURLs.Location = new System.Drawing.Point(17, 195);
-            this.btnGroupUpdateURLs.Name = "btnGroupUpdateURLs";
-            this.btnGroupUpdateURLs.Size = new System.Drawing.Size(175, 26);
-            this.btnGroupUpdateURLs.TabIndex = 7;
-            this.btnGroupUpdateURLs.Text = "Update Prodeck+TCG URLs";
-            this.btnGroupUpdateURLs.UseVisualStyleBackColor = false;
-            // 
-            // btnGroupUpdateKonamiList
-            // 
-            this.btnGroupUpdateKonamiList.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnGroupUpdateKonamiList.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGroupUpdateKonamiList.ForeColor = System.Drawing.Color.Black;
-            this.btnGroupUpdateKonamiList.Location = new System.Drawing.Point(17, 154);
-            this.btnGroupUpdateKonamiList.Name = "btnGroupUpdateKonamiList";
-            this.btnGroupUpdateKonamiList.Size = new System.Drawing.Size(175, 26);
-            this.btnGroupUpdateKonamiList.TabIndex = 6;
-            this.btnGroupUpdateKonamiList.Text = "Update Konami\'s Card List";
-            this.btnGroupUpdateKonamiList.UseVisualStyleBackColor = false;
-            this.btnGroupUpdateKonamiList.Click += new System.EventHandler(this.btnGroupUpdateKonamiList_Click);
-            // 
-            // label41
-            // 
-            this.label41.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label41.Location = new System.Drawing.Point(198, 148);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(233, 39);
-            this.label41.TabIndex = 9;
-            this.label41.Text = "Update the Konami Card List from the Card Group Only.";
+            this.label44.AutoSize = true;
+            this.label44.BackColor = System.Drawing.Color.Transparent;
+            this.label44.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.Location = new System.Drawing.Point(5, 5);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(369, 24);
+            this.label44.TabIndex = 1;
+            this.label44.Text = "Database Manager and Update Tool";
             // 
             // label42
             // 
-            this.label42.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label42.Location = new System.Drawing.Point(198, 190);
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(335, 383);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(233, 39);
-            this.label42.TabIndex = 10;
-            this.label42.Text = "Search for both missing Prodeck and TCG Player URLS.";
+            this.label42.Size = new System.Drawing.Size(15, 15);
+            this.label42.TabIndex = 33;
+            this.label42.Text = ">";
             // 
             // label43
             // 
-            this.label43.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label43.Location = new System.Drawing.Point(198, 233);
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(533, 385);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(233, 39);
-            this.label43.TabIndex = 11;
-            this.label43.Text = "Update all the prices for this group only.";
+            this.label43.Size = new System.Drawing.Size(15, 15);
+            this.label43.TabIndex = 34;
+            this.label43.Text = ">";
             // 
             // DatabaseManager
             // 
@@ -1882,7 +2217,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(767, 491);
+            this.ClientSize = new System.Drawing.Size(802, 491);
             this.Controls.Add(this.TabMasterTotals);
             this.Controls.Add(this.lblTotalAqua);
             this.ForeColor = System.Drawing.Color.White;
@@ -1897,10 +2232,14 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.GroupPrices.ResumeLayout(false);
+            this.GroupPrices.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupSpell.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2030,15 +2369,37 @@
         private System.Windows.Forms.Button btnCounterTrap;
         private System.Windows.Forms.Button btnContinuosTrap;
         private System.Windows.Forms.Button btnNormalTrap;
-        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label lblCardGroupName;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label lblGroupTotals;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Button btnGroupUpdatePrices;
         private System.Windows.Forms.Button btnGroupUpdateURLs;
         private System.Windows.Forms.Button btnGroupUpdateKonamiList;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Button btnFilterIllusion;
+        private System.Windows.Forms.ListBox listCardList;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.ListBox listSetCards;
+        private System.Windows.Forms.Button btnProdeckOverride;
+        private System.Windows.Forms.CheckBox checkProdeckEnableOverride;
+        private System.Windows.Forms.TextBox txtTCGURL;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.TextBox txtProdeckURL;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.TextBox txtKonamiURL;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.GroupBox GroupPrices;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Button btnTCGOverride;
+        private System.Windows.Forms.CheckBox checkTCGEnableOverride;
+        private System.Windows.Forms.Label lblMedianPrice;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label lblMarketPrice;
+        private System.Windows.Forms.Button btnTCGUnavailable;
+        private System.Windows.Forms.Button btnProdeckUnavailable;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label41;
     }
 }

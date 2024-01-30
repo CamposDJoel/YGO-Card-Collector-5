@@ -2,7 +2,10 @@
 //1/29/2024
 //Database Class
 
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace YGO_Card_Collector_5
 {
@@ -19,6 +22,133 @@ namespace YGO_Card_Collector_5
 
         public static Dictionary<string, SetPack> SetPackByName = new Dictionary<string, SetPack>();        
         public static List<SetPack> SetPacks = new List<SetPack>();
+
+        public static List<string> CardsWithoutProdeckURL = new List<string>();
+
+        public static bool LoadDB()
+        {
+            string jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\CardDB.json";
+            string rawdata = File.ReadAllText(jsonFilePath);
+
+            //Attempt to deserialize the JSON. If it fail simply show error.
+            try
+            {
+                MasterCards = JsonConvert.DeserializeObject<List<MasterCard>>(rawdata);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+
+            //Continue to sorting the master card list
+            foreach (MasterCard ThisMasterCard in MasterCards)
+            {
+                //Step 1: Add this card to the dictionary for quick search by name
+                MasterCardByName.Add(ThisMasterCard.Name, ThisMasterCard);
+
+                //Step 2: Check if this card has a missing Prodeck URL and add it to the list
+                if (ThisMasterCard.ProdeckURLIsMissing()) { CardsWithoutProdeckURL.Add(ThisMasterCard.Name); }
+
+                //Step 3: Add this Master Card into its corresponding Card Group
+                AddCardIntoCardGroup(ThisMasterCard);
+
+                //Step 4: Sort each MasterCard's SetCards into its respective sets
+                foreach (SetCard thisSetCard in ThisMasterCard.SetCards)
+                {
+                    //if this setCard in has no CODE, dont do shit with it
+                    if (thisSetCard.Code == "")
+                    {
+                        //JUST IGNORE IT!
+                    }
+                    else
+                    {
+                        //Set a "Key" for this set card
+                        string setCardKey = thisSetCard.Code + "|" + thisSetCard.Rarity + "|" + thisSetCard.Name;
+
+                        //Konami has duplicate card sets in the DB (suckers!), to handle this, ignore any card with
+                        //an already existing key in the DB
+                        if (SetCardByKey.ContainsKey(setCardKey))
+                        {
+                            //Ignore this set card
+                        }
+                        else
+                        {
+                            //Actually sort this set card
+
+                            //Add this card to the DB Set list and dictionary
+                            SetCards.Add(thisSetCard);
+                            SetCardByKey.Add(setCardKey, thisSetCard);
+
+                            //Save the SetCode to the MasterCardByCode to quick searces of Master Cards by a Set Code
+                            if (!MasterCardByCode.ContainsKey(thisSetCard.Code))
+                            {
+                                MasterCardByCode.Add(thisSetCard.Code, ThisMasterCard);
+                            }
+
+                            //Extract the Pack Name and check if it exists in the DB
+                            string SetPackName = thisSetCard.Name;
+
+                            if (!SetPackByName.ContainsKey(SetPackName))
+                            {
+                                //Create the set pack
+                                SetPack NewPack = new SetPack(thisSetCard.Name, thisSetCard.Code, thisSetCard.ReleaseDate);
+                                SetPacks.Add(NewPack);
+                                SetPackByName.Add(SetPackName, NewPack);
+                            }
+
+                            //Now you can add the SetCard to the SetPack
+                            SetPack SetToAddTo = SetPackByName[SetPackName];
+                            SetToAddTo.AddCard(thisSetCard);
+                        }
+                    }
+                }
+            }
+
+            //Initialize the CardGroupList dictionary for clean code access to these lists
+            InitalizeCardGroupListsDict();
+
+            return true;
+
+            void InitalizeCardGroupListsDict()
+            {
+                GroupCardListByGroupName.Add(CardGroup.Aqua_Monsters, AquaMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Beast_Monsters, BeastMonsters);
+                GroupCardListByGroupName.Add(CardGroup.BeastWarrior_Monsters, BeastWarriorMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Cyberse_Monsters, CyberseMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Dinosaur_Monsters, DinosaurMonsters);
+                GroupCardListByGroupName.Add(CardGroup.DivineBeast_Monsters, DivineBeastMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Dragon_Monsters, DragonMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Fairy_Monsters, FairyMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Fiend_Monsters, FiendMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Fish_Monsters, FishMonsters);
+                GroupCardListByGroupName.Add(CardGroup.IllusionType_Monsters, IllusionMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Insect_Monsters, InsectMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Machine_Monsters, MachineMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Plant_Monsters, PlantMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Psychic_Monsters, PsychicMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Pyro_Monsters, PyroMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Reptile_Monsters, ReptileMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Rock_Monsters, RockMonsters);
+                GroupCardListByGroupName.Add(CardGroup.SeaSerpent_Monsters, SeaSerpentMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Spellcaster_Monsters, SpellcasterMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Thunder_Monsters, ThunderMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Warrior_Monsters, WarriorMonsters);
+                GroupCardListByGroupName.Add(CardGroup.WingedBeast_Monsters, WingedBeastMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Wyrm_Monsters, WyrmMonsters);
+                GroupCardListByGroupName.Add(CardGroup.Zombie_Monsters, ZombieMonsters);
+
+                GroupCardListByGroupName.Add(CardGroup.Normal_Spells, NormalSpells);
+                GroupCardListByGroupName.Add(CardGroup.Continuous_Spells, ContinuousSpells);
+                GroupCardListByGroupName.Add(CardGroup.QuickPlay_Spells, QuickPlaySpells);
+                GroupCardListByGroupName.Add(CardGroup.Equip_Spells, EquipSpells);
+                GroupCardListByGroupName.Add(CardGroup.Field_Spells, FieldSpells);
+                GroupCardListByGroupName.Add(CardGroup.Ritual_Spells, RitualSpells);
+
+                GroupCardListByGroupName.Add(CardGroup.Normal_Traps, NormalTraps);
+                GroupCardListByGroupName.Add(CardGroup.Continuous_Traps, ContinuousTraps);
+                GroupCardListByGroupName.Add(CardGroup.Counter_Traps, CounterTraps);
+            }
+        }
 
         public static bool CardExists(string cardName)
         {
@@ -174,8 +304,52 @@ namespace YGO_Card_Collector_5
                     break;
             }
         }
+        public static string CardGroupToString(CardGroup group)
+        {
+            switch (group)
+            {
+                case CardGroup.Aqua_Monsters: return "Aqua";
+                case CardGroup.Beast_Monsters: return "Beast";
+                case CardGroup.BeastWarrior_Monsters: return "Beast-Warrior";
+                case CardGroup.Cyberse_Monsters: return "Cyberse";
+                case CardGroup.Dinosaur_Monsters: return "Dinosaur";
+                case CardGroup.DivineBeast_Monsters: return "Divine-Beast";
+                case CardGroup.Dragon_Monsters: return "Dragon";
+                case CardGroup.Fairy_Monsters: return "Fairy";
+                case CardGroup.Fiend_Monsters: return "Fiend";
+                case CardGroup.Fish_Monsters: return "Fish";
+                case CardGroup.IllusionType_Monsters: return "Illusion";
+                case CardGroup.Insect_Monsters: return "Insect";
+                case CardGroup.Machine_Monsters: return "Machine";
+                case CardGroup.Plant_Monsters: return "Plant";
+                case CardGroup.Psychic_Monsters: return "Psychic";
+                case CardGroup.Pyro_Monsters: return "Pyro";
+                case CardGroup.Reptile_Monsters: return "Reptile";
+                case CardGroup.Rock_Monsters: return "Rock";
+                case CardGroup.SeaSerpent_Monsters: return "Sea Serpent";
+                case CardGroup.Spellcaster_Monsters: return "Spellcaster";
+                case CardGroup.Thunder_Monsters: return "Thunder";
+                case CardGroup.Warrior_Monsters: return "Warrior";
+                case CardGroup.WingedBeast_Monsters: return "Winged Beast";
+                case CardGroup.Wyrm_Monsters: return "Wyrm";
+                case CardGroup.Zombie_Monsters: return "Zombie";
+
+                case CardGroup.Normal_Spells: return "Normal Spells";
+                case CardGroup.Continuous_Spells: return "Continuous Spells";
+                case CardGroup.QuickPlay_Spells: return "Quick-Play Spells";
+                case CardGroup.Equip_Spells: return "Equip Spells";
+                case CardGroup.Field_Spells: return "Field Spells";
+                case CardGroup.Ritual_Spells: return "Ritual Spells";
+
+                case CardGroup.Normal_Traps: return "Normal Traps";
+                case CardGroup.Continuous_Traps: return "Continuous Traps";
+                case CardGroup.Counter_Traps: return "Counter Traps";
+                default: return group.ToString();
+            }
+        }        
 
         #region Card Group Lists
+        public static Dictionary<CardGroup, List<MasterCard>> GroupCardListByGroupName = new Dictionary<CardGroup, List<MasterCard>>();
         public static List<MasterCard> AquaMonsters = new List<MasterCard>();
         public static List<MasterCard> BeastMonsters = new List<MasterCard>();
         public static List<MasterCard> BeastWarriorMonsters = new List<MasterCard>();
@@ -244,4 +418,45 @@ namespace YGO_Card_Collector_5
         public static List<MasterCard> Divine = new List<MasterCard>();
         #endregion
     }
+
+    #region CardGroupEnum
+    public enum CardGroup
+    {
+        AllCards,
+        Aqua_Monsters = 0,
+        Beast_Monsters,
+        BeastWarrior_Monsters,
+        Cyberse_Monsters,
+        Dinosaur_Monsters,
+        DivineBeast_Monsters,
+        Dragon_Monsters,
+        Fairy_Monsters,
+        Fiend_Monsters,
+        Fish_Monsters,
+        IllusionType_Monsters,
+        Insect_Monsters,
+        Machine_Monsters,
+        Plant_Monsters,
+        Psychic_Monsters,
+        Pyro_Monsters,
+        Reptile_Monsters,
+        Rock_Monsters,
+        SeaSerpent_Monsters,
+        Spellcaster_Monsters,
+        Thunder_Monsters,
+        Warrior_Monsters,
+        WingedBeast_Monsters,
+        Wyrm_Monsters,
+        Zombie_Monsters,
+        Normal_Spells,
+        Continuous_Spells,
+        QuickPlay_Spells,
+        Equip_Spells,
+        Field_Spells,
+        Ritual_Spells,
+        Normal_Traps,
+        Continuous_Traps,
+        Counter_Traps
+    }
+    #endregion
 }
