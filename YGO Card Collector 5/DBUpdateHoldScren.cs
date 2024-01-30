@@ -22,7 +22,6 @@ namespace YGO_Card_Collector_5
         {
             lblOutput.Text = message; 
         }
-
         public void SendCardCompletionSignal()
         {
             _cardIterator++;
@@ -30,7 +29,6 @@ namespace YGO_Card_Collector_5
 
             lblOutput.Text = string.Format("Updating Card: {0}/{1}", barProgress.Value, _cardlistAmount);
         }
-
         public void SendFullCompletionSignal()
         {
             StringBuilder sb = new StringBuilder();
@@ -38,8 +36,16 @@ namespace YGO_Card_Collector_5
             {
                 sb.AppendLine(line);
             }
-            lblLogs.Text = sb.ToString();
 
+            if(Driver.Log.Count > 1500)
+            {
+                lblLogs.Text = "Log trace is too large.\nReview the output file at \\Output Files\\LOG.txt";
+            }
+            else
+            {
+                lblLogs.Text = sb.ToString();
+            }
+         
             btnFinish.Visible = true;
             lblWarning.Visible = false;
             //show logs
@@ -53,5 +59,17 @@ namespace YGO_Card_Collector_5
         private DatabaseManager _managerForm;
         private int _cardIterator = 1;
         private int _cardlistAmount = 0;
+
+        private void btnFinish_Click(object sender, System.EventArgs e)
+        {
+            //Return to the DB Manager
+            _managerForm.Show();
+            Dispose();            
+        }
+
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
