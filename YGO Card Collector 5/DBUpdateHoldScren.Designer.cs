@@ -94,6 +94,7 @@
             this.btnFinish.Text = "Update Complete, return to DB Manager";
             this.btnFinish.UseVisualStyleBackColor = false;
             this.btnFinish.Visible = false;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // PanelLogs
             // 
