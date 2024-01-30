@@ -21,14 +21,16 @@ namespace YGO_Card_Collector_5
         {
             //this "option" will allow the browser to Maximize opun launching
             ChromeOptions options = new ChromeOptions();
+            options.AddArgument("--window-size=1920,1080");
             options.AddArgument("--start-maximized");
-            //options.EnableMobileEmulation(deviceName);
+            options.AddArgument("headless");
             options.AddArgument("no-sandbox");
 
             ChromeDriver drv = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
             drv.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(30));
 
             ChromeDriver = drv;
+
         }
         public static void GoToURL(string url)
         {
