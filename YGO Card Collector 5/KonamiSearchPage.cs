@@ -41,33 +41,36 @@ namespace YGO_Card_Collector_5
         }
         public static void SearchCardGroup(CardGroup group)
         {
-            //Convert the group enum to its string counterpart
-            string groupString = CardGroupToString(group);
+            if(!(group == CardGroup.AllCards)) 
+            {
+                //Convert the group enum to its string counterpart
+                string groupString = CardGroupToString(group);
 
-            string basexpath = "";
-            //Click the Designated Monster/Spell/Trap submenu
-            if (group == CardGroup.Normal_Traps || group == CardGroup.Continuous_Traps || group == CardGroup.Counter_Traps)
-            {
-                Element.ClickByXpath(Xpath_TrapGroup);
-                basexpath = "//ul[@class=\"fliter_btns filter_effect_trap\"]";
-            }
-            else if (group == CardGroup.Normal_Spells || group == CardGroup.Continuous_Spells || group == CardGroup.QuickPlay_Spells ||
-                group == CardGroup.Equip_Spells || group == CardGroup.Field_Spells || group == CardGroup.Ritual_Spells)
-            {
-                Element.ClickByXpath(Xpath_SpellGroup);
-                basexpath = "//ul[@class=\"fliter_btns filter_effect_magic\"]";
-            }
-            else
-            {
-                Element.ClickByXpath(Xpath_MonsterGroup);
-            }
+                string basexpath = "";
+                //Click the Designated Monster/Spell/Trap submenu
+                if (group == CardGroup.Normal_Traps || group == CardGroup.Continuous_Traps || group == CardGroup.Counter_Traps)
+                {
+                    Element.ClickByXpath(Xpath_TrapGroup);
+                    basexpath = "//ul[@class=\"fliter_btns filter_effect_trap\"]";
+                }
+                else if (group == CardGroup.Normal_Spells || group == CardGroup.Continuous_Spells || group == CardGroup.QuickPlay_Spells ||
+                    group == CardGroup.Equip_Spells || group == CardGroup.Field_Spells || group == CardGroup.Ritual_Spells)
+                {
+                    Element.ClickByXpath(Xpath_SpellGroup);
+                    basexpath = "//ul[@class=\"fliter_btns filter_effect_magic\"]";
+                }
+                else
+                {
+                    Element.ClickByXpath(Xpath_MonsterGroup);
+                }
 
-            //Click the respective group
-            if (group == CardGroup.Beast_Monsters) { Element.ClickByXpath(Xpath_BeastTypeButton); }
-            else if (group == CardGroup.Warrior_Monsters) { Element.ClickByXpath(Xpath_WarriorTypeButton); }
-            else
-            {
-                Element.ClickByXpath(basexpath + "//span[contains(text(), \"" + groupString + "\")]");
+                //Click the respective group
+                if (group == CardGroup.Beast_Monsters) { Element.ClickByXpath(Xpath_BeastTypeButton); }
+                else if (group == CardGroup.Warrior_Monsters) { Element.ClickByXpath(Xpath_WarriorTypeButton); }
+                else
+                {
+                    Element.ClickByXpath(basexpath + "//span[contains(text(), \"" + groupString + "\")]");
+                }
             }
 
             //Click Search
