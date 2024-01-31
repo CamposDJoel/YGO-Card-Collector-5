@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Security.Policy;
 using System.Text;
 using System.Web;
 using System.Windows.Forms;
@@ -126,6 +127,7 @@ namespace YGO_Card_Collector_5
             if(Database.CardsWithoutTCGURLs.Count == 0)
             {
                 listTCGMissingURLs.Items.Add("No Cards - Good Job! Database is up to date!");
+                listTCGMissingURLsSets.Visible = false;
             }
             else
             {
@@ -135,7 +137,15 @@ namespace YGO_Card_Collector_5
                 }
             }
             listTCGMissingURLs.SetSelected(0, true);
+        }       
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
+        #endregion
+
+        #region Automation Scrips Methods
+        //Konami Card List Update Methods
         private void TEST_SETUP_KONAMIUPDATE(CardGroup CurrentTestGroup)
         {
             //Log
@@ -153,21 +163,11 @@ namespace YGO_Card_Collector_5
             //Search for the Card Group
             KonamiSearchPage.SearchCardGroup(CurrentTestGroup);
         }
-        private void TEST_SETUP_URLsUPDATE()
-        {
-            //Log
-            AddLog("---MISSING URLS UPDATE---");
-            DBUpdateform.SetOutputMessage("Starting...");
-
-            //Open Prodeck Advance Search Page up
-            Driver.GoToProdeckSearchPage();
-            ProDeckCardSearchPage.WaitUntilPageIsLoaded();
-        }
         private void UpdateKomaniDB(CardGroup Group)
         {
             Driver.Log.Clear();
             var watch = new Stopwatch();
-            watch.Start();          
+            watch.Start();
 
             int newCardsCount = 0;
             int cardsWithNewSetsCount = 0;
@@ -322,6 +322,18 @@ namespace YGO_Card_Collector_5
             DBUpdateform.SendFullCompletionSignal();
             WriteOutputFiles();
         }
+        
+        //Missing URLs Update Methods
+        private void TEST_SETUP_URLsUPDATE()
+        {
+            //Log
+            AddLog("---MISSING URLS UPDATE---");
+            DBUpdateform.SetOutputMessage("Starting...");
+
+            //Open Prodeck Advance Search Page up
+            Driver.GoToProdeckSearchPage();
+            ProDeckCardSearchPage.WaitUntilPageIsLoaded();
+        }
         private void UpdateURLsDB()
         {
             //START
@@ -332,10 +344,11 @@ namespace YGO_Card_Collector_5
             //Open Driver and Setup
             Driver.OpenBrowser();
             TEST_SETUP_URLsUPDATE();
+            AddLog("--------------Missing Prodeck URLs---------------------");
 
             //Search for each card
-            List<string> successList = new List<string>();
-            foreach(string CardName in Database.CardsWithoutProdeckURL)
+            List<string> successListProdeck = new List<string>();
+            foreach (string CardName in Database.CardsWithoutProdeckURL)
             {
                 StringBuilder sb = new StringBuilder();
                 sb.Append(string.Format("Card:{0}|", CardName));
@@ -358,21 +371,21 @@ namespace YGO_Card_Collector_5
                     //save the url of this card so we dont have to search for it again
                     string currentURL = Driver.ChromeDriver.Url;
                     ThisMasterCard.ProdeckURL = currentURL;
-                    successList.Add(CardName);
+                    successListProdeck.Add(CardName);
                     sb.Append("Prodeck URL saved!|");
                 }
                 else
                 {
                     sb.Append("Prodeck search failed!|");
                 }
-              
+
                 //Log it and send the card completion signal
                 AddLog(sb.ToString());
                 DBUpdateform.SendCardCompletionSignal();
             }
 
             //Post run, remove the sucess searches from the CardsWithoutProdeckURL list
-            foreach(string cardname in successList)
+            foreach (string cardname in successListProdeck)
             {
                 Database.CardsWithoutProdeckURL.Remove(cardname);
             }
@@ -380,9 +393,144 @@ namespace YGO_Card_Collector_5
             //Reload the list in the DBManager UI
             LoadMissingURLsLists();
 
+            AddLog("--------------Missing TCG Player URLs---------------------");
+
             //Now search for the TCG Player URLs
-            //TODO:
-         
+            List<string> successListTCG = new List<string>();
+            foreach(string CardName in Database.CardsWithoutTCGURLs) 
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine(string.Format("Card:{0}", CardName));
+                
+                //Save a ref to the Master Card for quick access/clean code
+                MasterCard ThisMasterCard = Database.GetCard(CardName);
+              
+                //Go to the Card's Prodeck URL, if available
+                if (ThisMasterCard.HasProDeckURL())
+                {
+                    //Go to the page
+                    Driver.GoToURL(ThisMasterCard.ProdeckURL);
+                    ProdeckCardInfoPage.WaitUntilPageIsLoaded();
+
+                    //Open the View more URLs if has so
+                    bool viewmore = false;
+                    if (ProdeckCardInfoPage.PageContainsTCGPrices())
+                    {
+                        if (ProdeckCardInfoPage.TCGPricesHasViewMore())
+                        {
+                            //Click the view more and flag it for later
+                            ProdeckCardInfoPage.ClickViewMore();
+                            viewmore = true;                           
+                        }
+                    }
+
+                    //For each card with missing TCG URL check if you can extract the URLs that match the set
+                    foreach(SetCard ThisSetCard in ThisMasterCard.SetCards) 
+                    {                        
+                        //Only search for Set Cards that are "Missing"
+                        if (ThisSetCard.TCGPlayerURLIsMissing())
+                        {
+                            sb.Append(string.Format("Searching For Code: {0} Rarity: {1} |", ThisSetCard.Code, ThisSetCard.Rarity));
+
+                            //Extract available URLs from the page
+                            List<string> URLsToCheck = new List<string>();
+                            if (viewmore)
+                            {
+                                URLsToCheck = ProdeckCardInfoPage.GetPricesURLsViewMore(ThisSetCard.Name);
+                            }
+                            else
+                            {
+                                //extract the links directly from the page.
+                                URLsToCheck = ProdeckCardInfoPage.GetPricesURLsFromPage();
+                            }
+                            sb.Append(string.Format("URLs extracted to check: {0}|", URLsToCheck.Count));
+
+                            //Now check all the URL for matches
+                            bool MathcURLFound = false;
+                            foreach (string TestURL in URLsToCheck)
+                            {                               
+                                //Go to the test URL
+                                try
+                                {
+                                    Driver.GoToURL(TestURL);
+                                }
+                                catch (Exception)
+                                {
+                                    Driver.ChromeDriver.Close();
+                                    Driver.OpenBrowser();
+                                    Driver.GoToURL(TestURL);
+                                }
+
+                                //if the URL is a valid TCG Player listing page, check the code and rarity
+                                if (TCGCardInfoPage.IsAValidPage())
+                                {
+                                    bool PageLoadedCorrectly = TCGCardInfoPage.WaitUntilPageIsLoaded();
+
+                                    if (PageLoadedCorrectly)
+                                    {
+                                        //If the page corresponds to the code AND Rarity, then extract its price
+                                        string CodeInPage = TCGCardInfoPage.GetCode();
+                                        string RarityInPage = TCGCardInfoPage.GetRarity();
+                                        if (ThisSetCard.Code == CodeInPage && Tools.CompareInLowerCase(ThisSetCard.Rarity, RarityInPage))
+                                        {
+                                            //Save the URL and Update prices
+                                            ThisSetCard.TCGPlayerURL = TestURL;
+                                            //Add this card to the "success" list to remove the master card from the
+                                            //Missing TCG urls list
+                                            if(ThisMasterCard.HasNoMissingTCGURLs())
+                                            {
+                                                successListTCG.Add(ThisMasterCard.Name);
+                                            }
+                                            //Update prices since we are here.
+                                            string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                                            string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+                                            double priceInPageMarket = Tools.CovertPriceToDouble(priceInPageMarketstr);
+                                            double priceInPageMedian = Tools.CovertPriceToDouble(priceInPageMedianstr);
+                                            ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                                            MathcURLFound = true;
+                                        }
+                                    }
+                                }
+
+                                if(MathcURLFound)
+                                {
+                                    //Break the loop and move to the next code                                    
+                                    break;
+                                }
+                            }
+
+                            if (MathcURLFound)
+                            {
+                                sb.AppendLine("Match URL FOUND!!!");
+                            }
+                            else
+                            {
+                                sb.AppendLine("No Matches, find this URL manually...");
+                            }
+                        }                       
+                    }                   
+                }
+                else
+                {
+                    sb.AppendLine("NO PRODECK URL - Search Skip until card has one.");
+                }
+
+                sb.AppendLine("---------------------------------------------------------");
+
+                //Log it and send the card completion signal
+                DBUpdateform.SendCardCompletionSignal();
+                AddLog(sb.ToString());
+            }
+
+            //Post run, remove the sucess searches from the CardsWithoutTCGkURL list
+            foreach (string cardname in successListTCG)
+            {
+                Database.CardsWithoutTCGURLs.Remove(cardname);
+            }
+            
+            //END: CLose the Browser and Console
+            Driver.CloseDriver();
+
             //Stop watch
             watch.Stop();
             AddLog($"Execution Time for card group was: {watch.Elapsed}");
@@ -391,9 +539,11 @@ namespace YGO_Card_Collector_5
             DBUpdateform.SendFullCompletionSignal();
             WriteOutputFiles();
         }
+
+        //Logs and Post-Run Methods
         private void AddLog(string line)
         {
-            Console.WriteLine(line);
+            //Console.WriteLine(line);
             Driver.Log.Add(line);
         }
         private void WriteOutputFiles()
@@ -404,10 +554,6 @@ namespace YGO_Card_Collector_5
             //Save the New JSON DB
             string output = JsonConvert.SerializeObject(Database.MasterCards);
             File.WriteAllText(Directory.GetCurrentDirectory() + "\\Output Files\\CardDB_Output.json", output);
-        }
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            Application.Exit();
         }
         #endregion
 
@@ -422,8 +568,9 @@ namespace YGO_Card_Collector_5
         }
         private void btnExtractURLs_Click(object sender, EventArgs e)
         {
+            int totalcardstocheck = Database.CardsWithoutProdeckURL.Count + Database.CardsWithoutTCGURLs.Count;
             Hide();
-            DBUpdateform = new DBUpdateHoldScren(this, Database.CardsWithoutProdeckURL.Count);
+            DBUpdateform = new DBUpdateHoldScren(this, totalcardstocheck);
             DBUpdateform.Show();
 
             UpdateURLsDB();

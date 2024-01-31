@@ -134,7 +134,12 @@ namespace YGO_Card_Collector_5
         public bool TCGPlayerURLIsUnavailable()
         {
             return _TCGPlayerURL == "Unavailable";
-        }       
+        }
+        public void OverridePrices(string market, string median)
+        {
+            _MarketPrice = market;
+            _MediamPrice = median;
+        }
 
         #region Public Accessors
         public string ReleaseDate { get { return _ReleaseDate; } set { _ReleaseDate = value; } }
