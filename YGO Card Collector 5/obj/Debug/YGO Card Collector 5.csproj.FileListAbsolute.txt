@@ -1,20 +1,20 @@
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\selenium-manager\linux\selenium-manager
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\selenium-manager\macos\selenium-manager
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\selenium-manager\windows\selenium-manager.exe
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\YGO Card Collector 5.exe.config
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\YGO Card Collector 5.exe
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\YGO Card Collector 5.pdb
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\Newtonsoft.Json.dll
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\WebDriver.dll
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\Newtonsoft.Json.xml
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\WebDriver.xml
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.csproj.AssemblyReference.cache
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.DatabaseManager.resources
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.DBUpdateHoldScren.resources
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.FormLauncher.resources
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.Properties.Resources.resources
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.csproj.GenerateResource.cache
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.csproj.CopyComplete
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.exe
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.pdb
-D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\Newtonsoft.Json.dll
-D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\Newtonsoft.Json.xml
-D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.csproj.CopyComplete
-D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.DatabaseManager.resources
-D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\selenium-manager\linux\selenium-manager
-D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\selenium-manager\macos\selenium-manager
-D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\selenium-manager\windows\selenium-manager.exe
-D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\WebDriver.dll
-D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\WebDriver.xml
-D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.DBUpdateHoldScren.resources
