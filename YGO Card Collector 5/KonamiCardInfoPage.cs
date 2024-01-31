@@ -1,8 +1,12 @@
-﻿using System;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace YGO_Card_Collector_5
 {
@@ -92,42 +96,22 @@ namespace YGO_Card_Collector_5
         }
         public static string GetRarity(int index)
         {
-            //return Element.GetText("//div[@id=\"update_list\"]/div[@class=\"t_body\"]/div[" + index + "]//span");
+            Element.ScrollToView("//div[@id=\"update_list\"]/div[@class=\"t_body\"]/div[" + index + "]//div[@class=\"icon\"]");
+            Actions actions = new Actions(Driver.ChromeDriver);
+            IWebElement rarityIcon = Driver.ChromeDriver.FindElement(By.XPath("//div[@id=\"update_list\"]/div[@class=\"t_body\"]/div[" + index + "]//div[@class=\"icon\"]"));
+            IWebElement setname = Driver.ChromeDriver.FindElement(By.XPath("//div[@id=\"update_list\"]/div[@class=\"t_body\"]/div[" + index + "]//div[@class=\"flex_1 contents \"]"));
+            actions.MoveToElement(rarityIcon).Build().Perform();           
 
-            bool HasNonCommonLabel = Element.ElementExist("//div[@id=\"update_list\"]//div[@class=\"t_body\"]/div[@class=\"t_row\"][" + index + "]//div[3]/div");
+            string text = Element.GetText("//div[@id=\"update_list\"]/div[@class=\"t_body\"]/div[" + index + "]//span");
 
-            if (HasNonCommonLabel)
+            //I need to "unhover" by hovering to a different element
+            actions.MoveToElement(setname).Build().Perform();
+
+            //div[@id="main980"]
+
+            if (text != "")
             {
-                string attribute = Element.GetElementAttribute("//div[@id=\"update_list\"]//div[@class=\"t_body\"]/div[@class=\"t_row\"][" + index + "]//div[3]/div", "class");
-
-                switch (attribute)
-                {
-                    case "lr_icon rid_1": return "Common";
-                    case "lr_icon rid_2": return "Rare";
-                    case "lr_icon rid_3": return "Super Rare";
-                    case "lr_icon rid_4": return "Ultra Rare";
-                    case "lr_icon rid_5": return "Secret Rare";
-                    case "lr_icon rid_6": return "Ultimate Rare";
-                    case "lr_icon rid_7": return "Ghost Rare";
-                    case "lr_icon rid_8": return "Gold Rare";
-                    case "lr_icon rid_9": return "Hobby";
-                    case "lr_icon rid_14": return "Gold Secret";
-                    case "lr_icon rid_15": return "Platinum Secret Rare";
-                    case "lr_icon rid_16": return "COLLECTOR'S RARE";
-                    case "lr_icon rid_17": return "Platinum Rare";
-                    case "lr_icon rid_18": return "Starfoil";
-                    case "lr_icon rid_19": return "Mosaic Rare";
-                    case "lr_icon rid_20": return "Shattefoil";
-                    case "lr_icon rid_36": return "Prismatic Secret Rare";
-                    case "lr_icon rid_37": return "10000 SECRET RARE";
-                    case "lr_icon rid_38": return "Ultra Rare (Pharaoh's Rare)";
-                    case "lr_icon rid_51": return "Quarter Century Secret Rare";
-                    case "lr_icon rid_44": return "Ultra Rare (Pharaoh's Rare)";
-                    case "lr_icon rid_45": return "Ultra Rare（Hobby League Version)";
-                    case "lr_icon rid_46": return "Ultra Rare (Duelist Saga Version)";
-                    case "lr_icon rid_47": return "Starlight Rare";
-                    default: return "?";
-                }
+                return text;
             }
             else
             {
