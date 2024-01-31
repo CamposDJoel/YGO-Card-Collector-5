@@ -114,6 +114,13 @@
             this.lblKonamiUpdateWarning = new System.Windows.Forms.Label();
             this.btnUpdateKonamiList = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lblMisingPasscodeWarning = new System.Windows.Forms.Label();
+            this.btnPasscodeOverride = new System.Windows.Forms.Button();
+            this.checkPasscodeEnableOverride = new System.Windows.Forms.CheckBox();
+            this.txtPasscode = new System.Windows.Forms.TextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
             this.btnTCGUnavailable = new System.Windows.Forms.Button();
             this.btnProdeckUnavailable = new System.Windows.Forms.Button();
             this.GroupPrices = new System.Windows.Forms.GroupBox();
@@ -180,9 +187,32 @@
             this.btnContinuosTrap = new System.Windows.Forms.Button();
             this.btnNormalTrap = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.GroupMissingTCGOverride = new System.Windows.Forms.GroupBox();
+            this.btnTCGUnavailable2 = new System.Windows.Forms.Button();
+            this.btnTCGOverride2 = new System.Windows.Forms.Button();
+            this.checkTCGEnableOverride2 = new System.Windows.Forms.CheckBox();
+            this.txtTCGURL2 = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.listTCGMissingURLsSets = new System.Windows.Forms.ListBox();
+            this.GroupMissingProdeckOverride = new System.Windows.Forms.GroupBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.lblMisingPasscodeWarning2 = new System.Windows.Forms.Label();
+            this.txtPasscode2 = new System.Windows.Forms.TextBox();
+            this.btnProdeckUnavailable2 = new System.Windows.Forms.Button();
+            this.btnPasscodeOverride2 = new System.Windows.Forms.Button();
+            this.btnProdeckOverride2 = new System.Windows.Forms.Button();
+            this.checkPasscodeEnableOverride2 = new System.Windows.Forms.CheckBox();
+            this.checkProdeckEnableOverride2 = new System.Windows.Forms.CheckBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.txtProdeckURL2 = new System.Windows.Forms.TextBox();
+            this.listTCGMissingURLs = new System.Windows.Forms.ListBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.listProdeckMissingURLs = new System.Windows.Forms.ListBox();
+            this.label49 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.PanelFullTotals.SuspendLayout();
             this.TabMasterTotals.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -193,6 +223,8 @@
             this.groupSpell.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.GroupMissingTCGOverride.SuspendLayout();
+            this.GroupMissingProdeckOverride.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTotalAqua
@@ -1211,6 +1243,7 @@
             this.TabMasterTotals.Controls.Add(this.tabPage1);
             this.TabMasterTotals.Controls.Add(this.tabPage2);
             this.TabMasterTotals.Controls.Add(this.tabPage3);
+            this.TabMasterTotals.Controls.Add(this.tabPage4);
             this.TabMasterTotals.Location = new System.Drawing.Point(4, 42);
             this.TabMasterTotals.Name = "TabMasterTotals";
             this.TabMasterTotals.SelectedIndex = 0;
@@ -1233,7 +1266,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(736, 415);
+            this.tabPage1.Size = new System.Drawing.Size(786, 415);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Master Card List Totals";
             // 
@@ -1303,6 +1336,7 @@
             this.btnExtractURLs.TabIndex = 3;
             this.btnExtractURLs.Text = "Update Passcodes and TCG Player URLs.";
             this.btnExtractURLs.UseVisualStyleBackColor = false;
+            this.btnExtractURLs.Click += new System.EventHandler(this.btnExtractURLs_Click);
             // 
             // lblKonamiUpdateWarning
             // 
@@ -1329,6 +1363,11 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Black;
+            this.tabPage2.Controls.Add(this.lblMisingPasscodeWarning);
+            this.tabPage2.Controls.Add(this.btnPasscodeOverride);
+            this.tabPage2.Controls.Add(this.checkPasscodeEnableOverride);
+            this.tabPage2.Controls.Add(this.txtPasscode);
+            this.tabPage2.Controls.Add(this.label52);
             this.tabPage2.Controls.Add(this.label43);
             this.tabPage2.Controls.Add(this.label42);
             this.tabPage2.Controls.Add(this.btnTCGUnavailable);
@@ -1360,13 +1399,91 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(786, 415);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Totals By Group";
+            this.tabPage2.Text = "Card List Explorer";
+            // 
+            // lblMisingPasscodeWarning
+            // 
+            this.lblMisingPasscodeWarning.AutoSize = true;
+            this.lblMisingPasscodeWarning.BackColor = System.Drawing.Color.Transparent;
+            this.lblMisingPasscodeWarning.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblMisingPasscodeWarning.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMisingPasscodeWarning.ForeColor = System.Drawing.Color.Red;
+            this.lblMisingPasscodeWarning.Location = new System.Drawing.Point(442, 294);
+            this.lblMisingPasscodeWarning.Name = "lblMisingPasscodeWarning";
+            this.lblMisingPasscodeWarning.Size = new System.Drawing.Size(334, 12);
+            this.lblMisingPasscodeWarning.TabIndex = 39;
+            this.lblMisingPasscodeWarning.Text = "Override missing Passcode to enable Prodeck URL overide.";
+            this.lblMisingPasscodeWarning.Visible = false;
+            // 
+            // btnPasscodeOverride
+            // 
+            this.btnPasscodeOverride.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPasscodeOverride.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnPasscodeOverride.Location = new System.Drawing.Point(543, 233);
+            this.btnPasscodeOverride.Name = "btnPasscodeOverride";
+            this.btnPasscodeOverride.Size = new System.Drawing.Size(69, 18);
+            this.btnPasscodeOverride.TabIndex = 38;
+            this.btnPasscodeOverride.Text = "Override";
+            this.btnPasscodeOverride.UseVisualStyleBackColor = true;
+            this.btnPasscodeOverride.Visible = false;
+            this.btnPasscodeOverride.Click += new System.EventHandler(this.btnPasscodeOverride_Click);
+            // 
+            // checkPasscodeEnableOverride
+            // 
+            this.checkPasscodeEnableOverride.AutoSize = true;
+            this.checkPasscodeEnableOverride.Location = new System.Drawing.Point(443, 234);
+            this.checkPasscodeEnableOverride.Name = "checkPasscodeEnableOverride";
+            this.checkPasscodeEnableOverride.Size = new System.Drawing.Size(102, 17);
+            this.checkPasscodeEnableOverride.TabIndex = 37;
+            this.checkPasscodeEnableOverride.Text = "Enable Override";
+            this.checkPasscodeEnableOverride.UseVisualStyleBackColor = true;
+            this.checkPasscodeEnableOverride.CheckedChanged += new System.EventHandler(this.checkPasscodeEnableOverride_CheckedChanged);
+            // 
+            // txtPasscode
+            // 
+            this.txtPasscode.Enabled = false;
+            this.txtPasscode.Location = new System.Drawing.Point(444, 211);
+            this.txtPasscode.Name = "txtPasscode";
+            this.txtPasscode.Size = new System.Drawing.Size(336, 20);
+            this.txtPasscode.TabIndex = 36;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.BackColor = System.Drawing.Color.Transparent;
+            this.label52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label52.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.Location = new System.Drawing.Point(441, 196);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(125, 14);
+            this.label52.TabIndex = 35;
+            this.label52.Text = "Passcode (Card ID):";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(533, 385);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(15, 15);
+            this.label43.TabIndex = 34;
+            this.label43.Text = ">";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(335, 383);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(15, 15);
+            this.label42.TabIndex = 33;
+            this.label42.Text = ">";
             // 
             // btnTCGUnavailable
             // 
             this.btnTCGUnavailable.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTCGUnavailable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnTCGUnavailable.Location = new System.Drawing.Point(615, 303);
+            this.btnTCGUnavailable.Location = new System.Drawing.Point(615, 347);
             this.btnTCGUnavailable.Name = "btnTCGUnavailable";
             this.btnTCGUnavailable.Size = new System.Drawing.Size(79, 18);
             this.btnTCGUnavailable.TabIndex = 32;
@@ -1379,7 +1496,7 @@
             // 
             this.btnProdeckUnavailable.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProdeckUnavailable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnProdeckUnavailable.Location = new System.Drawing.Point(615, 242);
+            this.btnProdeckUnavailable.Location = new System.Drawing.Point(615, 293);
             this.btnProdeckUnavailable.Name = "btnProdeckUnavailable";
             this.btnProdeckUnavailable.Size = new System.Drawing.Size(79, 18);
             this.btnProdeckUnavailable.TabIndex = 31;
@@ -1458,7 +1575,7 @@
             // 
             this.btnTCGOverride.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTCGOverride.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnTCGOverride.Location = new System.Drawing.Point(543, 303);
+            this.btnTCGOverride.Location = new System.Drawing.Point(543, 347);
             this.btnTCGOverride.Name = "btnTCGOverride";
             this.btnTCGOverride.Size = new System.Drawing.Size(69, 18);
             this.btnTCGOverride.TabIndex = 28;
@@ -1470,7 +1587,7 @@
             // checkTCGEnableOverride
             // 
             this.checkTCGEnableOverride.AutoSize = true;
-            this.checkTCGEnableOverride.Location = new System.Drawing.Point(443, 303);
+            this.checkTCGEnableOverride.Location = new System.Drawing.Point(442, 348);
             this.checkTCGEnableOverride.Name = "checkTCGEnableOverride";
             this.checkTCGEnableOverride.Size = new System.Drawing.Size(102, 17);
             this.checkTCGEnableOverride.TabIndex = 27;
@@ -1482,7 +1599,7 @@
             // 
             this.btnProdeckOverride.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProdeckOverride.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnProdeckOverride.Location = new System.Drawing.Point(543, 242);
+            this.btnProdeckOverride.Location = new System.Drawing.Point(543, 293);
             this.btnProdeckOverride.Name = "btnProdeckOverride";
             this.btnProdeckOverride.Size = new System.Drawing.Size(69, 18);
             this.btnProdeckOverride.TabIndex = 26;
@@ -1494,7 +1611,7 @@
             // checkProdeckEnableOverride
             // 
             this.checkProdeckEnableOverride.AutoSize = true;
-            this.checkProdeckEnableOverride.Location = new System.Drawing.Point(443, 243);
+            this.checkProdeckEnableOverride.Location = new System.Drawing.Point(443, 292);
             this.checkProdeckEnableOverride.Name = "checkProdeckEnableOverride";
             this.checkProdeckEnableOverride.Size = new System.Drawing.Size(102, 17);
             this.checkProdeckEnableOverride.TabIndex = 25;
@@ -1505,7 +1622,7 @@
             // txtTCGURL
             // 
             this.txtTCGURL.Enabled = false;
-            this.txtTCGURL.Location = new System.Drawing.Point(444, 280);
+            this.txtTCGURL.Location = new System.Drawing.Point(443, 325);
             this.txtTCGURL.Name = "txtTCGURL";
             this.txtTCGURL.Size = new System.Drawing.Size(336, 20);
             this.txtTCGURL.TabIndex = 20;
@@ -1516,7 +1633,7 @@
             this.label47.BackColor = System.Drawing.Color.Transparent;
             this.label47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label47.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(441, 266);
+            this.label47.Location = new System.Drawing.Point(440, 311);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(84, 14);
             this.label47.TabIndex = 19;
@@ -1525,7 +1642,7 @@
             // txtProdeckURL
             // 
             this.txtProdeckURL.Enabled = false;
-            this.txtProdeckURL.Location = new System.Drawing.Point(444, 220);
+            this.txtProdeckURL.Location = new System.Drawing.Point(444, 269);
             this.txtProdeckURL.Name = "txtProdeckURL";
             this.txtProdeckURL.Size = new System.Drawing.Size(336, 20);
             this.txtProdeckURL.TabIndex = 18;
@@ -1536,7 +1653,7 @@
             this.label46.BackColor = System.Drawing.Color.Transparent;
             this.label46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label46.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(441, 205);
+            this.label46.Location = new System.Drawing.Point(441, 254);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(88, 14);
             this.label46.TabIndex = 17;
@@ -1545,7 +1662,7 @@
             // txtKonamiURL
             // 
             this.txtKonamiURL.Enabled = false;
-            this.txtKonamiURL.Location = new System.Drawing.Point(444, 176);
+            this.txtKonamiURL.Location = new System.Drawing.Point(444, 171);
             this.txtKonamiURL.Name = "txtKonamiURL";
             this.txtKonamiURL.Size = new System.Drawing.Size(336, 20);
             this.txtKonamiURL.TabIndex = 16;
@@ -1556,7 +1673,7 @@
             this.label45.BackColor = System.Drawing.Color.Transparent;
             this.label45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label45.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(441, 162);
+            this.label45.Location = new System.Drawing.Point(441, 157);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(83, 14);
             this.label45.TabIndex = 15;
@@ -1592,7 +1709,7 @@
             this.listCardList.ItemHeight = 14;
             this.listCardList.Location = new System.Drawing.Point(149, 62);
             this.listCardList.Name = "listCardList";
-            this.listCardList.Size = new System.Drawing.Size(273, 256);
+            this.listCardList.Size = new System.Drawing.Size(273, 284);
             this.listCardList.TabIndex = 12;
             this.listCardList.SelectedIndexChanged += new System.EventHandler(this.listCardList_SelectedIndexChanged);
             // 
@@ -2172,13 +2289,305 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Black;
+            this.tabPage3.Controls.Add(this.label57);
+            this.tabPage3.Controls.Add(this.GroupMissingTCGOverride);
+            this.tabPage3.Controls.Add(this.label53);
+            this.tabPage3.Controls.Add(this.listTCGMissingURLsSets);
+            this.tabPage3.Controls.Add(this.GroupMissingProdeckOverride);
+            this.tabPage3.Controls.Add(this.listTCGMissingURLs);
+            this.tabPage3.Controls.Add(this.label50);
+            this.tabPage3.Controls.Add(this.listProdeckMissingURLs);
+            this.tabPage3.Controls.Add(this.label49);
             this.tabPage3.Controls.Add(this.label44);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(736, 415);
+            this.tabPage3.Size = new System.Drawing.Size(786, 415);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Missing URLs";
+            // 
+            // GroupMissingTCGOverride
+            // 
+            this.GroupMissingTCGOverride.Controls.Add(this.btnTCGUnavailable2);
+            this.GroupMissingTCGOverride.Controls.Add(this.btnTCGOverride2);
+            this.GroupMissingTCGOverride.Controls.Add(this.checkTCGEnableOverride2);
+            this.GroupMissingTCGOverride.Controls.Add(this.txtTCGURL2);
+            this.GroupMissingTCGOverride.Controls.Add(this.label56);
+            this.GroupMissingTCGOverride.ForeColor = System.Drawing.Color.Silver;
+            this.GroupMissingTCGOverride.Location = new System.Drawing.Point(416, 310);
+            this.GroupMissingTCGOverride.Name = "GroupMissingTCGOverride";
+            this.GroupMissingTCGOverride.Size = new System.Drawing.Size(343, 86);
+            this.GroupMissingTCGOverride.TabIndex = 53;
+            this.GroupMissingTCGOverride.TabStop = false;
+            this.GroupMissingTCGOverride.Text = "Override Options";
+            this.GroupMissingTCGOverride.Visible = false;
+            // 
+            // btnTCGUnavailable2
+            // 
+            this.btnTCGUnavailable2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTCGUnavailable2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnTCGUnavailable2.Location = new System.Drawing.Point(181, 52);
+            this.btnTCGUnavailable2.Name = "btnTCGUnavailable2";
+            this.btnTCGUnavailable2.Size = new System.Drawing.Size(79, 18);
+            this.btnTCGUnavailable2.TabIndex = 37;
+            this.btnTCGUnavailable2.Text = "Unavailable";
+            this.btnTCGUnavailable2.UseVisualStyleBackColor = true;
+            this.btnTCGUnavailable2.Visible = false;
+            this.btnTCGUnavailable2.Click += new System.EventHandler(this.btnTCGUnavailable2_Click);
+            // 
+            // btnTCGOverride2
+            // 
+            this.btnTCGOverride2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTCGOverride2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnTCGOverride2.Location = new System.Drawing.Point(109, 52);
+            this.btnTCGOverride2.Name = "btnTCGOverride2";
+            this.btnTCGOverride2.Size = new System.Drawing.Size(69, 18);
+            this.btnTCGOverride2.TabIndex = 36;
+            this.btnTCGOverride2.Text = "Override";
+            this.btnTCGOverride2.UseVisualStyleBackColor = true;
+            this.btnTCGOverride2.Visible = false;
+            this.btnTCGOverride2.Click += new System.EventHandler(this.btnTCGOverride2_Click);
+            // 
+            // checkTCGEnableOverride2
+            // 
+            this.checkTCGEnableOverride2.AutoSize = true;
+            this.checkTCGEnableOverride2.Location = new System.Drawing.Point(8, 53);
+            this.checkTCGEnableOverride2.Name = "checkTCGEnableOverride2";
+            this.checkTCGEnableOverride2.Size = new System.Drawing.Size(102, 17);
+            this.checkTCGEnableOverride2.TabIndex = 35;
+            this.checkTCGEnableOverride2.Text = "Enable Override";
+            this.checkTCGEnableOverride2.UseVisualStyleBackColor = true;
+            this.checkTCGEnableOverride2.CheckedChanged += new System.EventHandler(this.checkTCGEnableOverride2_CheckedChanged);
+            // 
+            // txtTCGURL2
+            // 
+            this.txtTCGURL2.Enabled = false;
+            this.txtTCGURL2.Location = new System.Drawing.Point(9, 30);
+            this.txtTCGURL2.Name = "txtTCGURL2";
+            this.txtTCGURL2.Size = new System.Drawing.Size(293, 20);
+            this.txtTCGURL2.TabIndex = 34;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.BackColor = System.Drawing.Color.Transparent;
+            this.label56.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label56.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(6, 16);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(84, 14);
+            this.label56.TabIndex = 33;
+            this.label56.Text = "TCG Pl. URL:";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(558, 160);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(15, 15);
+            this.label53.TabIndex = 52;
+            this.label53.Text = ">";
+            // 
+            // listTCGMissingURLsSets
+            // 
+            this.listTCGMissingURLsSets.BackColor = System.Drawing.Color.Silver;
+            this.listTCGMissingURLsSets.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listTCGMissingURLsSets.FormattingEnabled = true;
+            this.listTCGMissingURLsSets.ItemHeight = 14;
+            this.listTCGMissingURLsSets.Items.AddRange(new object[] {
+            "Sets"});
+            this.listTCGMissingURLsSets.Location = new System.Drawing.Point(576, 77);
+            this.listTCGMissingURLsSets.Name = "listTCGMissingURLsSets";
+            this.listTCGMissingURLsSets.Size = new System.Drawing.Size(204, 228);
+            this.listTCGMissingURLsSets.TabIndex = 51;
+            this.listTCGMissingURLsSets.SelectedIndexChanged += new System.EventHandler(this.listTCGMissingURLsSets_SelectedIndexChanged);
+            // 
+            // GroupMissingProdeckOverride
+            // 
+            this.GroupMissingProdeckOverride.Controls.Add(this.label54);
+            this.GroupMissingProdeckOverride.Controls.Add(this.lblMisingPasscodeWarning2);
+            this.GroupMissingProdeckOverride.Controls.Add(this.txtPasscode2);
+            this.GroupMissingProdeckOverride.Controls.Add(this.btnProdeckUnavailable2);
+            this.GroupMissingProdeckOverride.Controls.Add(this.btnPasscodeOverride2);
+            this.GroupMissingProdeckOverride.Controls.Add(this.btnProdeckOverride2);
+            this.GroupMissingProdeckOverride.Controls.Add(this.checkPasscodeEnableOverride2);
+            this.GroupMissingProdeckOverride.Controls.Add(this.checkProdeckEnableOverride2);
+            this.GroupMissingProdeckOverride.Controls.Add(this.label55);
+            this.GroupMissingProdeckOverride.Controls.Add(this.txtProdeckURL2);
+            this.GroupMissingProdeckOverride.ForeColor = System.Drawing.Color.Silver;
+            this.GroupMissingProdeckOverride.Location = new System.Drawing.Point(6, 257);
+            this.GroupMissingProdeckOverride.Name = "GroupMissingProdeckOverride";
+            this.GroupMissingProdeckOverride.Size = new System.Drawing.Size(343, 152);
+            this.GroupMissingProdeckOverride.TabIndex = 50;
+            this.GroupMissingProdeckOverride.TabStop = false;
+            this.GroupMissingProdeckOverride.Text = "Override Options";
+            this.GroupMissingProdeckOverride.Visible = false;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.BackColor = System.Drawing.Color.Transparent;
+            this.label54.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label54.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(6, 16);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(125, 14);
+            this.label54.TabIndex = 45;
+            this.label54.Text = "Passcode (Card ID):";
+            // 
+            // lblMisingPasscodeWarning2
+            // 
+            this.lblMisingPasscodeWarning2.AutoSize = true;
+            this.lblMisingPasscodeWarning2.BackColor = System.Drawing.Color.Transparent;
+            this.lblMisingPasscodeWarning2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblMisingPasscodeWarning2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMisingPasscodeWarning2.ForeColor = System.Drawing.Color.Red;
+            this.lblMisingPasscodeWarning2.Location = new System.Drawing.Point(6, 105);
+            this.lblMisingPasscodeWarning2.Name = "lblMisingPasscodeWarning2";
+            this.lblMisingPasscodeWarning2.Size = new System.Drawing.Size(334, 12);
+            this.lblMisingPasscodeWarning2.TabIndex = 49;
+            this.lblMisingPasscodeWarning2.Text = "Override missing Passcode to enable Prodeck URL overide.";
+            this.lblMisingPasscodeWarning2.Visible = false;
+            // 
+            // txtPasscode2
+            // 
+            this.txtPasscode2.Enabled = false;
+            this.txtPasscode2.Location = new System.Drawing.Point(9, 31);
+            this.txtPasscode2.Name = "txtPasscode2";
+            this.txtPasscode2.Size = new System.Drawing.Size(285, 20);
+            this.txtPasscode2.TabIndex = 46;
+            // 
+            // btnProdeckUnavailable2
+            // 
+            this.btnProdeckUnavailable2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProdeckUnavailable2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnProdeckUnavailable2.Location = new System.Drawing.Point(179, 125);
+            this.btnProdeckUnavailable2.Name = "btnProdeckUnavailable2";
+            this.btnProdeckUnavailable2.Size = new System.Drawing.Size(79, 18);
+            this.btnProdeckUnavailable2.TabIndex = 44;
+            this.btnProdeckUnavailable2.Text = "Unavailable";
+            this.btnProdeckUnavailable2.UseVisualStyleBackColor = true;
+            this.btnProdeckUnavailable2.Visible = false;
+            this.btnProdeckUnavailable2.Click += new System.EventHandler(this.btnProdeckUnavailable2_Click);
+            // 
+            // btnPasscodeOverride2
+            // 
+            this.btnPasscodeOverride2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPasscodeOverride2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnPasscodeOverride2.Location = new System.Drawing.Point(108, 53);
+            this.btnPasscodeOverride2.Name = "btnPasscodeOverride2";
+            this.btnPasscodeOverride2.Size = new System.Drawing.Size(69, 18);
+            this.btnPasscodeOverride2.TabIndex = 48;
+            this.btnPasscodeOverride2.Text = "Override";
+            this.btnPasscodeOverride2.UseVisualStyleBackColor = true;
+            this.btnPasscodeOverride2.Visible = false;
+            this.btnPasscodeOverride2.Click += new System.EventHandler(this.btnMissingPasscodeOverride_Click);
+            // 
+            // btnProdeckOverride2
+            // 
+            this.btnProdeckOverride2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProdeckOverride2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnProdeckOverride2.Location = new System.Drawing.Point(107, 125);
+            this.btnProdeckOverride2.Name = "btnProdeckOverride2";
+            this.btnProdeckOverride2.Size = new System.Drawing.Size(69, 18);
+            this.btnProdeckOverride2.TabIndex = 43;
+            this.btnProdeckOverride2.Text = "Override";
+            this.btnProdeckOverride2.UseVisualStyleBackColor = true;
+            this.btnProdeckOverride2.Visible = false;
+            this.btnProdeckOverride2.Click += new System.EventHandler(this.btnProdeckOverride2_Click);
+            // 
+            // checkPasscodeEnableOverride2
+            // 
+            this.checkPasscodeEnableOverride2.AutoSize = true;
+            this.checkPasscodeEnableOverride2.Location = new System.Drawing.Point(8, 54);
+            this.checkPasscodeEnableOverride2.Name = "checkPasscodeEnableOverride2";
+            this.checkPasscodeEnableOverride2.Size = new System.Drawing.Size(102, 17);
+            this.checkPasscodeEnableOverride2.TabIndex = 47;
+            this.checkPasscodeEnableOverride2.Text = "Enable Override";
+            this.checkPasscodeEnableOverride2.UseVisualStyleBackColor = true;
+            this.checkPasscodeEnableOverride2.CheckedChanged += new System.EventHandler(this.checkMissingPasscodeEnableOverride_CheckedChanged);
+            // 
+            // checkProdeckEnableOverride2
+            // 
+            this.checkProdeckEnableOverride2.AutoSize = true;
+            this.checkProdeckEnableOverride2.Location = new System.Drawing.Point(7, 124);
+            this.checkProdeckEnableOverride2.Name = "checkProdeckEnableOverride2";
+            this.checkProdeckEnableOverride2.Size = new System.Drawing.Size(102, 17);
+            this.checkProdeckEnableOverride2.TabIndex = 42;
+            this.checkProdeckEnableOverride2.Text = "Enable Override";
+            this.checkProdeckEnableOverride2.UseVisualStyleBackColor = true;
+            this.checkProdeckEnableOverride2.CheckedChanged += new System.EventHandler(this.checkMissingProdeckEnableOverride_CheckedChanged);
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.BackColor = System.Drawing.Color.Transparent;
+            this.label55.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label55.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(5, 86);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(88, 14);
+            this.label55.TabIndex = 40;
+            this.label55.Text = "Prodeck URL:";
+            // 
+            // txtProdeckURL2
+            // 
+            this.txtProdeckURL2.Enabled = false;
+            this.txtProdeckURL2.Location = new System.Drawing.Point(8, 101);
+            this.txtProdeckURL2.Name = "txtProdeckURL2";
+            this.txtProdeckURL2.Size = new System.Drawing.Size(285, 20);
+            this.txtProdeckURL2.TabIndex = 41;
+            // 
+            // listTCGMissingURLs
+            // 
+            this.listTCGMissingURLs.BackColor = System.Drawing.Color.Silver;
+            this.listTCGMissingURLs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listTCGMissingURLs.FormattingEnabled = true;
+            this.listTCGMissingURLs.ItemHeight = 14;
+            this.listTCGMissingURLs.Items.AddRange(new object[] {
+            "No Cards - Good Job! Database is up to date!"});
+            this.listTCGMissingURLs.Location = new System.Drawing.Point(355, 77);
+            this.listTCGMissingURLs.Name = "listTCGMissingURLs";
+            this.listTCGMissingURLs.Size = new System.Drawing.Size(200, 228);
+            this.listTCGMissingURLs.TabIndex = 15;
+            this.listTCGMissingURLs.SelectedIndexChanged += new System.EventHandler(this.listTCGMissingURLs_SelectedIndexChanged);
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.BackColor = System.Drawing.Color.Transparent;
+            this.label50.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.Location = new System.Drawing.Point(352, 56);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(237, 18);
+            this.label50.TabIndex = 14;
+            this.label50.Text = "TCG Player URL Missing List:";
+            // 
+            // listProdeckMissingURLs
+            // 
+            this.listProdeckMissingURLs.BackColor = System.Drawing.Color.Silver;
+            this.listProdeckMissingURLs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listProdeckMissingURLs.FormattingEnabled = true;
+            this.listProdeckMissingURLs.ItemHeight = 14;
+            this.listProdeckMissingURLs.Items.AddRange(new object[] {
+            "No Cards - Good Job! Database is up to date!"});
+            this.listProdeckMissingURLs.Location = new System.Drawing.Point(7, 77);
+            this.listProdeckMissingURLs.Name = "listProdeckMissingURLs";
+            this.listProdeckMissingURLs.Size = new System.Drawing.Size(339, 172);
+            this.listProdeckMissingURLs.TabIndex = 13;
+            this.listProdeckMissingURLs.SelectedIndexChanged += new System.EventHandler(this.listProdeckMissingURLs_SelectedIndexChanged);
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.BackColor = System.Drawing.Color.Transparent;
+            this.label49.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.Location = new System.Drawing.Point(4, 56);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(214, 18);
+            this.label49.TabIndex = 2;
+            this.label49.Text = "Prodeck URL Missing List:";
             // 
             // label44
             // 
@@ -2191,25 +2600,27 @@
             this.label44.TabIndex = 1;
             this.label44.Text = "Database Manager and Update Tool";
             // 
-            // label42
+            // label57
             // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(335, 383);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(15, 15);
-            this.label42.TabIndex = 33;
-            this.label42.Text = ">";
+            this.label57.AutoSize = true;
+            this.label57.BackColor = System.Drawing.Color.Transparent;
+            this.label57.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.Color.Yellow;
+            this.label57.Location = new System.Drawing.Point(595, 59);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(183, 12);
+            this.label57.TabIndex = 54;
+            this.label57.Text = "[ ! ] = Set Card with missing URL.";
             // 
-            // label43
+            // tabPage4
             // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(533, 385);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(15, 15);
-            this.label43.TabIndex = 34;
-            this.label43.Text = ">";
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(786, 415);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "tabPage4";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // DatabaseManager
             // 
@@ -2240,6 +2651,10 @@
             this.groupBox3.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.GroupMissingTCGOverride.ResumeLayout(false);
+            this.GroupMissingTCGOverride.PerformLayout();
+            this.GroupMissingProdeckOverride.ResumeLayout(false);
+            this.GroupMissingProdeckOverride.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2401,5 +2816,35 @@
         private System.Windows.Forms.Button btnProdeckUnavailable;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.ListBox listTCGMissingURLs;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.ListBox listProdeckMissingURLs;
+        private System.Windows.Forms.Button btnPasscodeOverride;
+        private System.Windows.Forms.CheckBox checkPasscodeEnableOverride;
+        private System.Windows.Forms.TextBox txtPasscode;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label lblMisingPasscodeWarning;
+        private System.Windows.Forms.GroupBox GroupMissingProdeckOverride;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label lblMisingPasscodeWarning2;
+        private System.Windows.Forms.TextBox txtPasscode2;
+        private System.Windows.Forms.Button btnProdeckUnavailable2;
+        private System.Windows.Forms.Button btnPasscodeOverride2;
+        private System.Windows.Forms.Button btnProdeckOverride2;
+        private System.Windows.Forms.CheckBox checkPasscodeEnableOverride2;
+        private System.Windows.Forms.CheckBox checkProdeckEnableOverride2;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.TextBox txtProdeckURL2;
+        private System.Windows.Forms.ListBox listTCGMissingURLsSets;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.GroupBox GroupMissingTCGOverride;
+        private System.Windows.Forms.Button btnTCGUnavailable2;
+        private System.Windows.Forms.Button btnTCGOverride2;
+        private System.Windows.Forms.CheckBox checkTCGEnableOverride2;
+        private System.Windows.Forms.TextBox txtTCGURL2;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.TabPage tabPage4;
     }
 }

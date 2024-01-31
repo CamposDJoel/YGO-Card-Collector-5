@@ -57,7 +57,7 @@ namespace YGO_Card_Collector_5
         }
 
         private DatabaseManager _managerForm;
-        private int _cardIterator = 1;
+        private int _cardIterator = 0;
         private int _cardlistAmount = 0;
 
         private void btnFinish_Click(object sender, System.EventArgs e)

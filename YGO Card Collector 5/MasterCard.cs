@@ -61,6 +61,18 @@ namespace YGO_Card_Collector_5
         {
             return _ProdeckURL == "Missing";
         }
+        public bool HasNoMissingTCGURLs()
+        {
+            bool missingFound = false;
+            foreach(SetCard ThisSetCard in _SetCards)
+            {
+               if(ThisSetCard.TCGPlayerURLIsMissing()) 
+               {
+                    missingFound = true; break;
+               }
+            }
+            return !missingFound;
+        }
         public SetCard GetCardAtIndex(int index)
         {
             return _SetCards[index];
@@ -119,6 +131,10 @@ namespace YGO_Card_Collector_5
         {
             return _TCGPlayerURL == "Missing";
         }
+        public bool TCGPlayerURLIsUnavailable()
+        {
+            return _TCGPlayerURL == "Unavailable";
+        }       
 
         #region Public Accessors
         public string ReleaseDate { get { return _ReleaseDate; } set { _ReleaseDate = value; } }

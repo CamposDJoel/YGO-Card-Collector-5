@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Text;
+using System.Web;
 using System.Windows.Forms;
 
 namespace YGO_Card_Collector_5
@@ -28,8 +29,12 @@ namespace YGO_Card_Collector_5
         private CardGroup _CurrentSelectedCardGroup = CardGroup.Aqua_Monsters;
         private DBUpdateHoldScren DBUpdateform;
 
-        private MasterCard _CurrentMasterCardSelected;
-        private SetCard _CurrentSetCardSelected;
+        private MasterCard _Explorer_CurrentMasterCardSelected;
+        private SetCard _Explorer_CurrentSetCardSelected;
+
+        private MasterCard _MissingURL_CurrentProdeckMasterCardSelected;
+        private MasterCard _MissingURL_CurrentTCGMasterCardSelected;
+        private SetCard _MissingURL_CurrentSetCardSelected;
         #endregion
 
         #region Public Methods
@@ -37,6 +42,7 @@ namespace YGO_Card_Collector_5
         {
             LoadMasterListStats();
             LoadGroupViewStats();
+            LoadMissingURLsLists();
         }
         #endregion
 
@@ -97,24 +103,40 @@ namespace YGO_Card_Collector_5
 
             //Select the first item
             listCardList.SetSelected(0, true);
-        }
-        private void btnUpdateKonamiList_Click(object sender, EventArgs e)
+        }     
+        private void LoadMissingURLsLists()
         {
-            Hide();
-            DBUpdateform = new DBUpdateHoldScren(this, Database.MasterCards.Count);
-            DBUpdateform.Show();
+            //Prodeck list
+            listProdeckMissingURLs.Items.Clear();
+            if (Database.CardsWithoutProdeckURL.Count == 0)
+            {
+                listProdeckMissingURLs.Items.Add("No Cards - Good Job! Database is up to date!");
+            }
+            else
+            {
+                foreach(string CardName in Database.CardsWithoutProdeckURL) 
+                {
+                    listProdeckMissingURLs.Items.Add(CardName);
+                }
+            }
+            listProdeckMissingURLs.SetSelected(0, true);
 
-            UpdateKomaniDB(CardGroup.AllCards);
+            //TCG list
+            listTCGMissingURLs.Items.Clear();
+            if(Database.CardsWithoutTCGURLs.Count == 0)
+            {
+                listTCGMissingURLs.Items.Add("No Cards - Good Job! Database is up to date!");
+            }
+            else
+            {
+                foreach(string entry in Database.CardsWithoutTCGURLs) 
+                {
+                    listTCGMissingURLs.Items.Add(entry);
+                }
+            }
+            listTCGMissingURLs.SetSelected(0, true);
         }
-        private void btnGroupUpdateKonamiList_Click(object sender, EventArgs e)
-        {
-            Hide();
-            DBUpdateform = new DBUpdateHoldScren(this, Database.SeaSerpentMonsters.Count);
-            DBUpdateform.Show();
-
-            UpdateKomaniDB(_CurrentSelectedCardGroup);          
-        }
-        private void TEST_SETUP(CardGroup CurrentTestGroup)
+        private void TEST_SETUP_KONAMIUPDATE(CardGroup CurrentTestGroup)
         {
             //Log
             AddLog("---TEST SETUP START---");
@@ -131,8 +153,19 @@ namespace YGO_Card_Collector_5
             //Search for the Card Group
             KonamiSearchPage.SearchCardGroup(CurrentTestGroup);
         }
+        private void TEST_SETUP_URLsUPDATE()
+        {
+            //Log
+            AddLog("---MISSING URLS UPDATE---");
+            DBUpdateform.SetOutputMessage("Starting...");
+
+            //Open Prodeck Advance Search Page up
+            Driver.GoToProdeckSearchPage();
+            ProDeckCardSearchPage.WaitUntilPageIsLoaded();
+        }
         private void UpdateKomaniDB(CardGroup Group)
         {
+            Driver.Log.Clear();
             var watch = new Stopwatch();
             watch.Start();          
 
@@ -143,7 +176,7 @@ namespace YGO_Card_Collector_5
             Driver.OpenBrowser();
 
             //Test Setup: Go To Konamis Search Page and search for the Card Group               
-            TEST_SETUP(Group);
+            TEST_SETUP_KONAMIUPDATE(Group);
 
             //Test Should start at the KonamiCardListPage of the respective group
 
@@ -168,6 +201,7 @@ namespace YGO_Card_Collector_5
                 if (x < totalPages) { KonamiCardListPage.ClickNextPage(); }
                 else { KonamiCardListPage.ResetPageNumber(); }
             }
+
 
             //Now Access each individual Card
             foreach (KeyValuePair<string, string> ThisCard in CardList)
@@ -288,6 +322,75 @@ namespace YGO_Card_Collector_5
             DBUpdateform.SendFullCompletionSignal();
             WriteOutputFiles();
         }
+        private void UpdateURLsDB()
+        {
+            //START
+            Driver.Log.Clear();
+            var watch = new Stopwatch();
+            watch.Start();
+
+            //Open Driver and Setup
+            Driver.OpenBrowser();
+            TEST_SETUP_URLsUPDATE();
+
+            //Search for each card
+            List<string> successList = new List<string>();
+            foreach(string CardName in Database.CardsWithoutProdeckURL)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.Append(string.Format("Card:{0}|", CardName));
+
+                //Save a ref to the Master Card for quick access/clean code
+                MasterCard ThisMasterCard = Database.GetCard(CardName);
+
+                //Perform the search
+                bool SearchSucess = ProDeckCardSearchPage.SearchCard(CardName);
+
+                //if successful, save the Prodeck URL and Card ID, otherwise flag the fail on the log
+                if (SearchSucess)
+                {
+                    sb.Append("Prodeck Search Success!|");
+
+                    //Extract the card ID and override the ID
+                    int ID = ProdeckCardInfoPage.GetCardID();
+                    ThisMasterCard.ID = ID;
+
+                    //save the url of this card so we dont have to search for it again
+                    string currentURL = Driver.ChromeDriver.Url;
+                    ThisMasterCard.ProdeckURL = currentURL;
+                    successList.Add(CardName);
+                    sb.Append("Prodeck URL saved!|");
+                }
+                else
+                {
+                    sb.Append("Prodeck search failed!|");
+                }
+              
+                //Log it and send the card completion signal
+                AddLog(sb.ToString());
+                DBUpdateform.SendCardCompletionSignal();
+            }
+
+            //Post run, remove the sucess searches from the CardsWithoutProdeckURL list
+            foreach(string cardname in successList)
+            {
+                Database.CardsWithoutProdeckURL.Remove(cardname);
+            }
+
+            //Reload the list in the DBManager UI
+            LoadMissingURLsLists();
+
+            //Now search for the TCG Player URLs
+            //TODO:
+         
+            //Stop watch
+            watch.Stop();
+            AddLog($"Execution Time for card group was: {watch.Elapsed}");
+
+            //Be done
+            DBUpdateform.SendFullCompletionSignal();
+            WriteOutputFiles();
+        }
         private void AddLog(string line)
         {
             Console.WriteLine(line);
@@ -308,7 +411,34 @@ namespace YGO_Card_Collector_5
         }
         #endregion
 
-        #region Filters Event Handlers
+        #region Event Listeners (Master Card List Total Tab)
+        private void btnUpdateKonamiList_Click(object sender, EventArgs e)
+        {
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this, Database.MasterCards.Count);
+            DBUpdateform.Show();
+
+            UpdateKomaniDB(CardGroup.AllCards);
+        }
+        private void btnExtractURLs_Click(object sender, EventArgs e)
+        {
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this, Database.CardsWithoutProdeckURL.Count);
+            DBUpdateform.Show();
+
+            UpdateURLsDB();
+        }
+        private void btnGroupUpdateKonamiList_Click(object sender, EventArgs e)
+        {
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this, Database.SeaSerpentMonsters.Count);
+            DBUpdateform.Show();
+
+            UpdateKomaniDB(_CurrentSelectedCardGroup);
+        }
+        #endregion
+
+        #region Event Listeners (Card List Explorer Tab - Filters)
         private void btnFilterAqua_Click(object sender, EventArgs e)
         {
             _CurrentSelectedCardGroup = CardGroup.Aqua_Monsters;
@@ -481,15 +611,16 @@ namespace YGO_Card_Collector_5
         }
         #endregion
 
-        #region Event Listeners
+        #region Event Listeners (Card List Explorer Tab - Rest)
+        //2 Lists containers
         private void listCardList_SelectedIndexChanged(object sender, EventArgs e)
         {
             listSetCards.Items.Clear();
 
             //Get the card name from the list item selected
-            _CurrentMasterCardSelected = Database.MasterCardByName[listCardList.SelectedItem.ToString()];
+            _Explorer_CurrentMasterCardSelected = Database.MasterCardByName[listCardList.SelectedItem.ToString()];
 
-            foreach(SetCard ThisSetCard in _CurrentMasterCardSelected.SetCards) 
+            foreach(SetCard ThisSetCard in _Explorer_CurrentMasterCardSelected.SetCards) 
             {
                 string item = ThisSetCard.Code + "|" + ThisSetCard.Rarity;
                 listSetCards.Items.Add(item);
@@ -501,22 +632,85 @@ namespace YGO_Card_Collector_5
         }
         private void listSetCards_SelectedIndexChanged(object sender, EventArgs e)
         {
-            _CurrentSetCardSelected = _CurrentMasterCardSelected.GetCardAtIndex(listSetCards.SelectedIndex);
-            txtKonamiURL.Text = _CurrentMasterCardSelected.KonamiURL;
-            txtProdeckURL.Text = _CurrentMasterCardSelected.ProdeckURL;
-            txtTCGURL.Text = _CurrentSetCardSelected.TCGPlayerURL;
-            lblMarketPrice.Text = _CurrentSetCardSelected.MarketPrice;
-            lblMedianPrice.Text = _CurrentSetCardSelected.MediamPrice;
+            _Explorer_CurrentSetCardSelected = _Explorer_CurrentMasterCardSelected.GetCardAtIndex(listSetCards.SelectedIndex);
+            //populate the 4 text  fields
+            txtKonamiURL.Text = _Explorer_CurrentMasterCardSelected.KonamiURL;
+            txtPasscode.Text = _Explorer_CurrentMasterCardSelected.ID.ToString();
+            txtProdeckURL.Text = _Explorer_CurrentMasterCardSelected.ProdeckURL;
+            txtTCGURL.Text = _Explorer_CurrentSetCardSelected.TCGPlayerURL;
+            //populate prices
+            lblMarketPrice.Text = _Explorer_CurrentSetCardSelected.MarketPrice;
+            lblMedianPrice.Text = _Explorer_CurrentSetCardSelected.MediamPrice;
+            //check override buttons to false to lock everything out
             checkProdeckEnableOverride.Checked = false;
             checkTCGEnableOverride.Checked = false;
+            checkPasscodeEnableOverride.Checked = false;
+            //but the passcode overide should be hiden if the card has already a set Passcode
+            if(_Explorer_CurrentMasterCardSelected.ID == -1) 
+            {
+                lblMisingPasscodeWarning.Visible = true;
+                checkPasscodeEnableOverride.Visible = true;
+                //disable prodeck
+                checkProdeckEnableOverride.Visible = false;
+            }
+            else
+            {
+                lblMisingPasscodeWarning.Visible = false;
+                checkPasscodeEnableOverride.Visible = false;
+                //enable prodeck
+                checkProdeckEnableOverride.Visible = true;
+            }
         }
+        //Passcode Override Section Elements
+        private void checkPasscodeEnableOverride_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkPasscodeEnableOverride.Checked)
+            {
+                txtPasscode.Enabled = true;
+                btnPasscodeOverride.Visible = true;
+            }
+            else
+            {
+                txtPasscode.Text = _Explorer_CurrentMasterCardSelected.ID.ToString();
+                txtPasscode.Enabled = false;
+                btnPasscodeOverride.Visible = false;
+            }
+        }
+        private void btnPasscodeOverride_Click(object sender, EventArgs e)
+        {
+            //overide if the input is not -1 or a non-numeric
+            string input = txtPasscode.Text;
+            if (input == "-1")
+            {
+                //invalid value
+                txtPasscode.Text = "Invalid ID input. Must be numeric and not -1";
+            }
+            else
+            {
+                try
+                {
+                    int idinput = Convert.ToInt32(input);
+                    _Explorer_CurrentMasterCardSelected.ID = idinput;
+                    //Success, update the UI
+                    checkPasscodeEnableOverride.Checked = false;
+                    checkPasscodeEnableOverride.Visible = false;
+                    lblMisingPasscodeWarning.Visible = false;
+                    checkProdeckEnableOverride.Visible = true;
+                }
+                catch (Exception)
+                {
+                    txtPasscode.Text = "Invalid ID input. Must be numeric and not -1";
+                }
+            }
+        }
+        //Prodeck Override Section Elements
         private void checkProdeckEnableOverride_CheckedChanged(object sender, EventArgs e)
         {            
-            if(checkProdeckEnableOverride.Checked == true)
+            if(checkProdeckEnableOverride.Checked)
             {
                 txtProdeckURL.Enabled = true;
                 btnProdeckOverride.Visible = true;
-                if (_CurrentMasterCardSelected.ProdeckURLIsMissing())
+                if (_Explorer_CurrentMasterCardSelected.ProdeckURLIsMissing())
                 {
                     btnProdeckUnavailable.Visible = true;
                 }
@@ -526,17 +720,45 @@ namespace YGO_Card_Collector_5
                 btnProdeckOverride.Visible = false;
                 btnProdeckUnavailable.Visible = false;
                 txtProdeckURL.Enabled = false;
-                btnProdeckOverride.Visible = false;
-                txtProdeckURL.Text = _CurrentMasterCardSelected.ProdeckURL;
+                txtProdeckURL.Text = _Explorer_CurrentMasterCardSelected.ProdeckURL;
             }           
         }
+        private void btnProdeckOverride_Click(object sender, EventArgs e)
+        {
+            string input = txtProdeckURL.Text;
+            if (input.StartsWith("https://ygoprodeck.com/card/"))
+            {
+                //Valid ulr, proceed
+                _Explorer_CurrentMasterCardSelected.ProdeckURL = input;
+                checkProdeckEnableOverride.Checked = false;
+                //Remove card from the missing URL list
+                Database.CardsWithoutProdeckURL.Remove(_Explorer_CurrentMasterCardSelected.Name);
+                //Reload the Missing URL tab's UI
+                LoadMissingURLsLists();
+            }
+            else
+            {
+                txtProdeckURL.Text = "Not a Prodeck URL.";
+            }
+        }
+        private void btnProdeckUnavailable_Click(object sender, EventArgs e)
+        {
+            _Explorer_CurrentMasterCardSelected.ProdeckURL = "Unavailable";
+            checkProdeckEnableOverride.Checked = false;
+            //Remove this card from the missing url list and add it to the unavailable list
+            Database.CardsWithoutProdeckURL.Remove(_Explorer_CurrentMasterCardSelected.Name);
+            Database.CardsWithUnavailableProdeckURL.Add(_Explorer_CurrentMasterCardSelected.Name);
+            //Reload this Tabs UI
+            LoadGroupViewStats();
+        }
+        //TCG Override section Elements
         private void checkTCGEnableOverride_CheckedChanged(object sender, EventArgs e)
         {
-            if (checkTCGEnableOverride.Checked == true)
+            if (checkTCGEnableOverride.Checked)
             {
                 txtTCGURL.Enabled = true;
                 btnTCGOverride.Visible = true;
-                if (_CurrentSetCardSelected.TCGPlayerURLIsMissing())
+                if (_Explorer_CurrentSetCardSelected.TCGPlayerURLIsMissing())
                 {
                     btnTCGUnavailable.Visible = true;
                 }
@@ -546,37 +768,25 @@ namespace YGO_Card_Collector_5
                 btnTCGOverride.Visible = false;
                 btnTCGUnavailable.Visible = false;
                 txtTCGURL.Enabled = false;
-                btnTCGOverride.Visible = false;
-                txtTCGURL.Text = _CurrentSetCardSelected.TCGPlayerURL;
+                txtTCGURL.Text = _Explorer_CurrentSetCardSelected.TCGPlayerURL;
             }
-        }
-        private void btnProdeckOverride_Click(object sender, EventArgs e)
-        {
-            string input = txtProdeckURL.Text;
-            if(input.StartsWith("https://ygoprodeck.com/card/"))
-            {
-                //Valid ulr, proceed
-                _CurrentMasterCardSelected.ProdeckURL = input;
-                checkProdeckEnableOverride.Checked = false;
-            }
-            else
-            {
-                txtProdeckURL.Text = "Not a Prodeck URL.";
-            }
-        }
-        private void btnProdeckUnavailable_Click(object sender, EventArgs e)
-        {
-            _CurrentMasterCardSelected.ProdeckURL = "Unavailable";
-            checkProdeckEnableOverride.Checked = false;
-        }
+        }        
         private void btnTCGOverride_Click(object sender, EventArgs e)
         {
             string input = txtTCGURL.Text;
-            if (input.StartsWith("https://tcgplayer"))
+            if (input.StartsWith("https://tcgplayer") || input.StartsWith("https://www.tcgplayer.com/product/"))
             {
                 //Valid ulr, proceed
-                _CurrentSetCardSelected.TCGPlayerURL = input;
+                _Explorer_CurrentSetCardSelected.TCGPlayerURL = input;
                 checkTCGEnableOverride.Checked = false;
+                //Remove card from the TCG missing URL list if no missing urls left from this card
+                if(_Explorer_CurrentMasterCardSelected.HasNoMissingTCGURLs())
+                {
+                    Database.CardsWithoutTCGURLs.Remove(_Explorer_CurrentMasterCardSelected.Name);
+                }
+
+                //Reload the Missing URL tab's UI
+                LoadMissingURLsLists();
             }
             else
             {
@@ -585,8 +795,243 @@ namespace YGO_Card_Collector_5
         }
         private void btnTCGUnavailable_Click(object sender, EventArgs e)
         {
-            _CurrentSetCardSelected.TCGPlayerURL = "Unavailable";
+            _Explorer_CurrentSetCardSelected.TCGPlayerURL = "Unavailable";
             checkTCGEnableOverride.Checked = false;
+            //Remove this card from the missing url list and add it to the unavailable list
+            Database.CardsWithoutTCGURLs.Remove(_Explorer_CurrentMasterCardSelected.Name);
+            Database.CardsWithUnavailableTCGURLs.Add(_Explorer_CurrentMasterCardSelected.Name);
+            //Reload this Tabs UI
+            LoadGroupViewStats();
+        }
+        #endregion
+
+        #region Event Listeners (Missing URLs Tab)
+        //3 List Containers
+        private void listProdeckMissingURLs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string cardname = listProdeckMissingURLs.Text;
+
+            if(cardname != "No Cards - Good Job! Database is up to date!")
+            {
+                _MissingURL_CurrentProdeckMasterCardSelected = Database.GetCard(cardname);
+                txtPasscode.Text = _Explorer_CurrentMasterCardSelected.ID.ToString();
+                GroupMissingProdeckOverride.Visible = true;
+
+                //set up the override UI
+                txtPasscode2.Text = _MissingURL_CurrentProdeckMasterCardSelected.ID.ToString();
+                txtProdeckURL2.Text = _MissingURL_CurrentProdeckMasterCardSelected.ProdeckURL;
+                //set the checks to false to lock fields at start
+                checkPasscodeEnableOverride2.Checked = false;
+                checkProdeckEnableOverride2.Checked = false;
+                //but the passcode overide should be hiden if the card has already a set Passcode
+                if (_MissingURL_CurrentProdeckMasterCardSelected.ID == -1)
+                {
+                    lblMisingPasscodeWarning2.Visible = true;
+                    checkPasscodeEnableOverride2.Visible = true;
+                    //disable prodeck
+                    checkProdeckEnableOverride2.Visible = false;
+                }
+                else
+                {
+                    lblMisingPasscodeWarning2.Visible = false;
+                    checkPasscodeEnableOverride2.Visible = false;
+                    //enable prodeck
+                    checkProdeckEnableOverride2.Visible = true;
+                }
+            }
+            else
+            {
+                GroupMissingProdeckOverride.Visible = false;
+            }
+        }
+        private void listTCGMissingURLs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string cardname = listTCGMissingURLs.Text;
+
+            if (cardname != "No Cards - Good Job! Database is up to date!")
+            {
+                //Populate the set card list
+                listTCGMissingURLsSets.Items.Clear();
+                _MissingURL_CurrentTCGMasterCardSelected = Database.GetCard(cardname);
+
+                foreach (SetCard ThisSetCard in _MissingURL_CurrentTCGMasterCardSelected.SetCards)
+                {
+                    string item = ThisSetCard.Code + "|" + ThisSetCard.Rarity;
+                    if(ThisSetCard.TCGPlayerURLIsMissing())
+                    {
+                        item = "[!] - " + item;
+                    }
+                    listTCGMissingURLsSets.Items.Add(item);
+                }
+
+                listTCGMissingURLsSets.SetSelected(0, true);
+            }
+            else
+            {
+                GroupMissingTCGOverride.Visible = false;
+            }
+        }
+        private void listTCGMissingURLsSets_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int setCardIndex = listTCGMissingURLsSets.SelectedIndex;
+            _MissingURL_CurrentSetCardSelected = _MissingURL_CurrentTCGMasterCardSelected.GetCardAtIndex(setCardIndex);
+
+            if(_MissingURL_CurrentSetCardSelected.TCGPlayerURLIsMissing())
+            {
+                //Diplay the override submenu
+                GroupMissingTCGOverride.Visible = true;
+
+                txtTCGURL2.Text = _MissingURL_CurrentSetCardSelected.TCGPlayerURL;
+                checkTCGEnableOverride2.Checked = false;
+            }
+            else
+            {
+                GroupMissingTCGOverride.Visible = false;
+            }
+        }
+        //Passcode Overide Section
+        private void checkMissingPasscodeEnableOverride_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkPasscodeEnableOverride2.Checked)
+            {
+                txtPasscode2.Enabled = true;
+                btnPasscodeOverride2.Visible = true;
+            }
+            else
+            {
+                txtPasscode2.Text = _MissingURL_CurrentProdeckMasterCardSelected.ID.ToString();
+                txtPasscode2.Enabled = false;
+                btnPasscodeOverride2.Visible = false;
+            }
+        }
+        private void btnMissingPasscodeOverride_Click(object sender, EventArgs e)
+        {
+            //overide if the input is not -1 or a non-numeric
+            string input = txtPasscode2.Text;
+            if (input == "-1")
+            {
+                //invalid value
+                txtPasscode2.Text = "Invalid ID input. Must be numeric and not -1";
+            }
+            else
+            {
+                try
+                {
+                    int idinput = Convert.ToInt32(input);
+                    _MissingURL_CurrentProdeckMasterCardSelected.ID = idinput;
+                    //Success, update the UI
+                    checkPasscodeEnableOverride2.Checked = false;
+                    checkPasscodeEnableOverride2.Visible = false;
+                    lblMisingPasscodeWarning2.Visible = false;
+                    checkProdeckEnableOverride2.Visible = true;
+                }
+                catch (Exception)
+                {
+                    txtPasscode2.Text = "Invalid ID input. Must be numeric and not -1";
+                }
+            }
+        }
+        //Prodeck Override Section
+        private void checkMissingProdeckEnableOverride_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkProdeckEnableOverride2.Checked)
+            {
+                txtProdeckURL2.Enabled = true;
+                btnProdeckOverride2.Visible = true;
+                if (_MissingURL_CurrentProdeckMasterCardSelected.ProdeckURLIsMissing())
+                {
+                    btnProdeckUnavailable2.Visible = true;
+                }
+            }
+            else
+            {
+                btnProdeckOverride2.Visible = false;
+                btnProdeckUnavailable2.Visible = false;
+                txtProdeckURL2.Enabled = false;
+                txtProdeckURL2.Text = _MissingURL_CurrentProdeckMasterCardSelected.ProdeckURL;
+            }
+        }
+        private void btnProdeckOverride2_Click(object sender, EventArgs e)
+        {
+            string input = txtProdeckURL2.Text;
+            if (input.StartsWith("https://ygoprodeck.com/card/"))
+            {
+                //Valid ulr, proceed
+                _MissingURL_CurrentProdeckMasterCardSelected.ProdeckURL = input;
+                checkProdeckEnableOverride2.Checked = false;
+                //Remove this card from the list now!!
+                Database.CardsWithoutProdeckURL.Remove(_MissingURL_CurrentProdeckMasterCardSelected.Name);
+                //Reload the UI
+                ReloadStats();
+            }
+            else
+            {
+                txtProdeckURL2.Text = "Not a Prodeck URL.";
+            }
+        }
+        private void btnProdeckUnavailable2_Click(object sender, EventArgs e)
+        {
+            _MissingURL_CurrentProdeckMasterCardSelected.ProdeckURL = "Unavailable";
+            checkProdeckEnableOverride2.Checked = false;
+            //Remove this card from the list now!!
+            Database.CardsWithoutProdeckURL.Remove(_MissingURL_CurrentProdeckMasterCardSelected.Name);
+            //Reload the UI
+            ReloadStats();
+            //Add this card to the unavailable list
+            Database.CardsWithUnavailableProdeckURL.Remove(_MissingURL_CurrentProdeckMasterCardSelected.Name);
+        }
+        //TCG Override Section
+        private void checkTCGEnableOverride2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkTCGEnableOverride2.Checked)
+            {
+                txtTCGURL2.Enabled = true;
+                btnTCGOverride2.Visible = true;
+                if (_MissingURL_CurrentSetCardSelected.TCGPlayerURLIsMissing())
+                {
+                    btnTCGUnavailable2.Visible = true;
+                }
+            }
+            else
+            {
+                btnTCGOverride2.Visible = false;
+                btnTCGUnavailable2.Visible = false;
+                txtTCGURL2.Enabled = false;
+                txtTCGURL2.Text = _MissingURL_CurrentSetCardSelected.TCGPlayerURL;
+            }
+        }
+        private void btnTCGOverride2_Click(object sender, EventArgs e)
+        {
+            string input = txtTCGURL2.Text;
+            if (input.StartsWith("https://tcgplayer") || input.StartsWith("https://www.tcgplayer.com/product/"))
+            {
+                //Valid ulr, proceed
+                _MissingURL_CurrentSetCardSelected.TCGPlayerURL = input;
+                checkTCGEnableOverride2.Checked = false;
+                //Remove card from the TCG missing URL list if no missing urls left from this card
+                if (_MissingURL_CurrentTCGMasterCardSelected.HasNoMissingTCGURLs())
+                {
+                    Database.CardsWithoutTCGURLs.Remove(_MissingURL_CurrentTCGMasterCardSelected.Name);
+                }
+
+                //Reload the Missing URL tab's UI
+                LoadMissingURLsLists();
+            }
+            else
+            {
+                txtTCGURL2.Text = "Not a TCG Player URL.";
+            }
+        }
+        private void btnTCGUnavailable2_Click(object sender, EventArgs e)
+        {
+            _MissingURL_CurrentSetCardSelected.TCGPlayerURL = "Unavailable";
+            checkTCGEnableOverride2.Checked = false;
+            //Remove this card from the list now!!
+            Database.CardsWithoutTCGURLs.Remove(_MissingURL_CurrentTCGMasterCardSelected.Name);
+            //Reload the UI
+            ReloadStats();
+            //Add this card to the unavailable list
+            Database.CardsWithUnavailableTCGURLs.Remove(_MissingURL_CurrentTCGMasterCardSelected.Name);
         }
         #endregion
     }

@@ -24,6 +24,9 @@ namespace YGO_Card_Collector_5
         public static List<SetPack> SetPacks = new List<SetPack>();
 
         public static List<string> CardsWithoutProdeckURL = new List<string>();
+        public static List<string> CardsWithoutTCGURLs = new List<string>();
+        public static List<string> CardsWithUnavailableProdeckURL = new List<string>();
+        public static List<string> CardsWithUnavailableTCGURLs = new List<string>();
 
         public static bool LoadDB()
         {
@@ -46,8 +49,10 @@ namespace YGO_Card_Collector_5
                 //Step 1: Add this card to the dictionary for quick search by name
                 MasterCardByName.Add(ThisMasterCard.Name, ThisMasterCard);
 
-                //Step 2: Check if this card has a missing Prodeck URL and add it to the list
+                //Step 2A: Check if this card has a missing Prodeck URL and add it to the list
                 if (ThisMasterCard.ProdeckURLIsMissing()) { CardsWithoutProdeckURL.Add(ThisMasterCard.Name); }
+                //Step 2B: Check if this card has a Prodeck URL mark as "Unavailable" and add it to the list
+                if (ThisMasterCard.ProdeckURLIsUnavailable()) { CardsWithUnavailableProdeckURL.Add(ThisMasterCard.Name); }
 
                 //Step 3: Add this Master Card into its corresponding Card Group
                 AddCardIntoCardGroup(ThisMasterCard);
@@ -78,6 +83,23 @@ namespace YGO_Card_Collector_5
                             //Add this card to the DB Set list and dictionary
                             SetCards.Add(thisSetCard);
                             SetCardByKey.Add(setCardKey, thisSetCard);
+
+                            //Check if this Set Card has a TCG URL, if not, add it to the list of missing urls
+                            if(thisSetCard.TCGPlayerURLIsMissing())
+                            {
+                                if (!CardsWithoutTCGURLs.Contains(ThisMasterCard.Name))
+                                {
+                                    CardsWithoutTCGURLs.Add(ThisMasterCard.Name);
+                                }
+                            }
+                            //Check if this Set Card has a TCG URL mark as "Unavailable", if so, add it to the list of unavailable urls
+                            if (thisSetCard.TCGPlayerURLIsUnavailable())
+                            {
+                                if(!CardsWithUnavailableTCGURLs.Contains(ThisMasterCard.Name))
+                                {
+                                    CardsWithUnavailableTCGURLs.Add(ThisMasterCard.Name);
+                                }
+                            }
 
                             //Save the SetCode to the MasterCardByCode to quick searces of Master Cards by a Set Code
                             if (!MasterCardByCode.ContainsKey(thisSetCard.Code))

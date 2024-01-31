@@ -51,7 +51,7 @@ namespace YGO_Card_Collector_5
 
             void ScrollTo(int xPosition = 0, int yPosition = 0)
             {
-                IJavaScriptExecutor js = (IJavaScriptExecutor)Driver.ChromeDriver; js.ExecuteScript(String.Format("window.scrollTo({0}, {1})", xPosition, yPosition));
+                IJavaScriptExecutor js = (IJavaScriptExecutor)Driver.ChromeDriver; js.ExecuteScript(string.Format("window.scrollTo({0}, {1})", xPosition, yPosition));
             }
         }
         public static bool ElementExist(string xpath)
