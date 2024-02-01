@@ -22,9 +22,9 @@ namespace YGO_Card_Collector_5
         {
             //this "option" will allow the browser to Maximize opun launching
             ChromeOptions options = new ChromeOptions();
-            //options.AddArgument("--window-size=1920,1080");
+            options.AddArgument("--window-size=1920,1080");
             options.AddArgument("--start-maximized");
-            //options.AddArgument("headless");
+            options.AddArgument("headless");
             options.AddArgument("no-sandbox");
 
             ChromeDriver drv = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
@@ -38,18 +38,12 @@ namespace YGO_Card_Collector_5
             try
             {
                 ChromeDriver.Navigate().GoToUrl(url);
-                ((IJavaScriptExecutor)ChromeDriver).ExecuteScript("window.resizeTo(1024, 768);");
             }
             catch (Exception)
             {
-                Console.WriteLine("");
-                Console.WriteLine("CHROME DRIVER FAILED - Closing and reopening again...");
-                Console.WriteLine("");
                 ChromeDriver.Quit();
                 OpenBrowser();
-
                 ChromeDriver.Navigate().GoToUrl(url);
-                ((IJavaScriptExecutor)ChromeDriver).ExecuteScript("window.resizeTo(1024, 768);");
             }
 
         }

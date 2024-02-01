@@ -127,6 +127,10 @@ namespace YGO_Card_Collector_5
         }
         #endregion       
 
+        public bool HasTCGURL()
+        {
+            return !TCGPlayerURLIsMissing() && !TCGPlayerURLIsUnavailable();
+        }
         public bool TCGPlayerURLIsMissing()
         {
             return _TCGPlayerURL == "Missing";

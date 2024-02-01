@@ -29,13 +29,17 @@ namespace YGO_Card_Collector_5
                 //Element.WaitUntilElementIsVisble(Xpath_ProductDetailsContainer);
                 Element.WaitUntilElementIsVisble(Xpath_PricesHeader);
 
+                /*
                 //Click 
-                bool HasREadMore = Element.ElementExist(Xpath_ReadMore);
-                if(HasREadMore) 
-                { 
+                try
+                {
                     Element.ClickByXpath(Xpath_ReadMore);
                     Tools.WaitNSeconds(1000);
                 }
+                catch(Exception)
+                {
+                    //DO nothing
+                }  */             
                 return true;
             }
             catch (Exception)

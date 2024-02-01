@@ -540,6 +540,87 @@ namespace YGO_Card_Collector_5
             WriteOutputFiles();
         }
 
+        //Update Prices Update
+        private void TEST_SETUP_UpdatePrices()
+        {
+            //Log
+            AddLog("---UPDATING PRICES---");
+            DBUpdateform.SetOutputMessage("Starting...");
+        }
+        private void UpdatePricesDB(CardGroup Group)
+        {
+            //START
+            Driver.Log.Clear();
+            var watch = new Stopwatch();
+            watch.Start();
+
+            //Open Driver and Setup
+            Driver.OpenBrowser();
+            TEST_SETUP_UpdatePrices();
+
+            //Set the cardlist
+            List<MasterCard> TestCardList = Database.GroupCardListByGroupName[Group];
+
+            DBUpdateform.SetOutputMessage(string.Format("Updating Card: 1/{0}", TestCardList.Count));
+            //Scan each set card for each master card
+            foreach (MasterCard ThisMasterCard in TestCardList)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine(string.Format("Card:{0}", ThisMasterCard.Name));
+
+                foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
+                {
+                    sb.Append(string.Format("Code:{0} Rarity: {1}|", ThisSetCard.Code, ThisSetCard.Rarity));
+                    if (ThisSetCard.HasTCGURL())
+                    {
+                        //Go to the test URL
+                        Driver.GoToURL(ThisSetCard.TCGPlayerURL);
+                        TCGCardInfoPage.WaitUntilPageIsLoaded();
+
+                        //If the page corresponds to the code AND Rarity, then extract its price
+                        string CodeInPage = TCGCardInfoPage.GetCode();
+                        string RarityInPage = TCGCardInfoPage.GetRarity();
+                        if (ThisSetCard.Code == CodeInPage && Tools.CompareInLowerCase(ThisSetCard.Rarity, RarityInPage))
+                        {
+                            //Update prices since we are here.
+                            string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                            string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+                            ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                            sb.AppendLine("Prices Update!");
+                        }
+                        else
+                        {
+                            //Found a card with code/rarity not matching
+                            sb.AppendLine("Code/Rarity didnt match, switching this SetCard's TCG URL to \"Missing\"|" + ThisSetCard.TCGPlayerURL);
+                            ThisSetCard.TCGPlayerURL = "Missing";
+                            Database.TCGPagesThatDidntMatchRarity.Add(ThisMasterCard.Name + "|" + ThisSetCard.Code + "|" + ThisSetCard.Rarity);
+                        }
+                    }
+                    else
+                    {
+                        if(ThisSetCard.TCGPlayerURLIsUnavailable()) { sb.AppendLine("URL Is Unavailable|"); }
+                        if(ThisSetCard.TCGPlayerURLIsMissing()) { sb.AppendLine("URL is Missing|"); }
+
+                    }
+                }
+
+                sb.AppendLine("---------------------------");
+                AddLog(sb.ToString());
+                DBUpdateform.SendCardCompletionSignal();
+            }
+
+            //END: CLose the Browser and Console
+            Driver.CloseDriver();
+
+            //Stop watch
+            watch.Stop();
+            AddLog($"Execution Time for card group was: {watch.Elapsed}");
+
+            //Be done
+            DBUpdateform.SendFullCompletionSignal();
+            WriteOutputFiles();
+        }
+
         //Logs and Post-Run Methods
         private void AddLog(string line)
         {
@@ -550,6 +631,9 @@ namespace YGO_Card_Collector_5
         {
             //save the log file
             File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\LOG.txt", Driver.Log);
+
+            //Save TCG rarity matching list
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\TCGRecordsThatDidntMathcRarity.txt", Database.TCGPagesThatDidntMatchRarity);
 
             //Save the New JSON DB
             string output = JsonConvert.SerializeObject(Database.MasterCards);
@@ -575,14 +659,15 @@ namespace YGO_Card_Collector_5
 
             UpdateURLsDB();
         }
-        private void btnGroupUpdateKonamiList_Click(object sender, EventArgs e)
+        private void btnUpdatePrices_Click(object sender, EventArgs e)
         {
+            int cardcount = Database.GroupCardListByGroupName[CardGroup.AllCards].Count;
             Hide();
-            DBUpdateform = new DBUpdateHoldScren(this, Database.SeaSerpentMonsters.Count);
+            DBUpdateform = new DBUpdateHoldScren(this, cardcount);
             DBUpdateform.Show();
 
-            UpdateKomaniDB(_CurrentSelectedCardGroup);
-        }
+            UpdatePricesDB(CardGroup.AllCards);
+        }       
         #endregion
 
         #region Event Listeners (Card List Explorer Tab - Filters)
@@ -759,6 +844,15 @@ namespace YGO_Card_Collector_5
         #endregion
 
         #region Event Listeners (Card List Explorer Tab - Rest)
+        //Update Buttons
+        private void btnGroupUpdateKonamiList_Click(object sender, EventArgs e)
+        {
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this, Database.SeaSerpentMonsters.Count);
+            DBUpdateform.Show();
+
+            UpdateKomaniDB(_CurrentSelectedCardGroup);
+        }
         //2 Lists containers
         private void listCardList_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -1181,5 +1275,15 @@ namespace YGO_Card_Collector_5
             Database.CardsWithUnavailableTCGURLs.Remove(_MissingURL_CurrentTCGMasterCardSelected.Name);
         }
         #endregion
+
+        private void btnGroupUpdatePrices_Click(object sender, EventArgs e)
+        {
+            int cardcount = Database.GroupCardListByGroupName[_CurrentSelectedCardGroup].Count;
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this, cardcount);
+            DBUpdateform.Show();
+
+            UpdatePricesDB(_CurrentSelectedCardGroup);
+        }
     }
 }

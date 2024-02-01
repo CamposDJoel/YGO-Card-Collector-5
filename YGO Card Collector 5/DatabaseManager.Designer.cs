@@ -187,6 +187,7 @@
             this.btnContinuosTrap = new System.Windows.Forms.Button();
             this.btnNormalTrap = new System.Windows.Forms.Button();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label57 = new System.Windows.Forms.Label();
             this.GroupMissingTCGOverride = new System.Windows.Forms.GroupBox();
             this.btnTCGUnavailable2 = new System.Windows.Forms.Button();
             this.btnTCGOverride2 = new System.Windows.Forms.Button();
@@ -211,7 +212,6 @@
             this.listProdeckMissingURLs = new System.Windows.Forms.ListBox();
             this.label49 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.PanelFullTotals.SuspendLayout();
             this.TabMasterTotals.SuspendLayout();
@@ -1314,6 +1314,7 @@
             this.btnUpdatePrices.TabIndex = 5;
             this.btnUpdatePrices.Text = "Update TCG Player Prices";
             this.btnUpdatePrices.UseVisualStyleBackColor = false;
+            this.btnUpdatePrices.Click += new System.EventHandler(this.btnUpdatePrices_Click);
             // 
             // label34
             // 
@@ -1724,6 +1725,7 @@
             this.btnGroupUpdatePrices.TabIndex = 8;
             this.btnGroupUpdatePrices.Text = "Update TCG Player Prices";
             this.btnGroupUpdatePrices.UseVisualStyleBackColor = false;
+            this.btnGroupUpdatePrices.Click += new System.EventHandler(this.btnGroupUpdatePrices_Click);
             // 
             // btnGroupUpdateURLs
             // 
@@ -2306,6 +2308,18 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Missing URLs";
             // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.BackColor = System.Drawing.Color.Transparent;
+            this.label57.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.Color.Yellow;
+            this.label57.Location = new System.Drawing.Point(595, 59);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(183, 12);
+            this.label57.TabIndex = 54;
+            this.label57.Text = "[ ! ] = Set Card with missing URL.";
+            // 
             // GroupMissingTCGOverride
             // 
             this.GroupMissingTCGOverride.Controls.Add(this.btnTCGUnavailable2);
@@ -2599,18 +2613,6 @@
             this.label44.Size = new System.Drawing.Size(369, 24);
             this.label44.TabIndex = 1;
             this.label44.Text = "Database Manager and Update Tool";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.BackColor = System.Drawing.Color.Transparent;
-            this.label57.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.Color.Yellow;
-            this.label57.Location = new System.Drawing.Point(595, 59);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(183, 12);
-            this.label57.TabIndex = 54;
-            this.label57.Text = "[ ! ] = Set Card with missing URL.";
             // 
             // tabPage4
             // 

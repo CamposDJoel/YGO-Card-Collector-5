@@ -1,0 +1,461 @@
+---UPDATING PRICES---
+Card:Abyss Dweller
+Code:OP20-EN020 Rarity: Common|Prices Update!
+Code:OP13-EN002 Rarity: Ultimate Rare|Prices Update!
+Code:DUDE-EN016 Rarity: Ultra Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:PGL3-EN068 Rarity: Gold Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:THSF-EN047 Rarity: Super Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:ABYR-EN084 Rarity: Super Rare|Prices Update!
+---------------------------
+
+Card:Airorca
+Code:SBC1-ENC02 Rarity: Common|Prices Update!
+Code:BP03-EN087 Rarity: Common|Prices Update!
+Code:BP03-EN087 Rarity: Shattefoil|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:GENF-EN021 Rarity: Rare|Prices Update!
+---------------------------
+
+Card:Aqua Dragon
+Code:MDP2-EN013 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Armed Sea Hunter
+Code:SDRE-EN008 Rarity: Common|Prices Update!
+Code:ANPR-EN025 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Atlantean Attack Squad
+Code:SDRE-EN006 Rarity: Common|Prices Update!
+Code:REDU-EN036 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Atlantean Dragoons
+Code:OP14-EN013 Rarity: Common|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:AP02-EN001 Rarity: Ultimate Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:SDRE-EN002 Rarity: Super Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Atlantean Heavy Infantry
+Code:AP02-EN006 Rarity: Super Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:SDRE-EN004 Rarity: Common|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Atlantean Marksman
+Code:AP03-EN001 Rarity: Ultimate Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:SDRE-EN003 Rarity: Common|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Atlantean Pikeman
+Code:SDRE-EN005 Rarity: Common|Prices Update!
+Code:5DS1-EN009 Rarity: Common|Prices Update!
+Code:PTDN-EN002 Rarity: Common|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Bahamut Shark
+Code:LED9-EN011 Rarity: Rare|Prices Update!
+Code:OP13-EN009 Rarity: Super Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:PGL3-EN069 Rarity: Gold Rare|Prices Update!
+Code:ABYR-EN099 Rarity: Secret Rare|Prices Update!
+---------------------------
+
+Card:Blue Dragon Ninja
+Code:REDU-EN083 Rarity: Super Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Brinegir
+Code:CHIM-EN026 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Brionac, Dragon of the Ice Barrier
+Code:HAC1-EN051 Rarity: Ultra Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:SDFC-EN043 Rarity: Super Rare|Prices Update!
+Code:DUDE-EN008 Rarity: Ultra Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:DUSA-EN073 Rarity: Ultra Rare (Duelist Saga Version)|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:GLD5-EN031 Rarity: Gold Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:H5SE-EN001 Rarity: Super Rare|Prices Update!
+Code:DT01-EN031 Rarity: Ultra Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:HA01-EN022 Rarity: Secret Rare|Prices Update!
+---------------------------
+
+Card:Caravan of the Ice Barrier
+Code:HAC1-EN040 Rarity: Common|Prices Update!
+Code:HA03-EN021 Rarity: Super Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:DT03-EN028 Rarity: Common|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Chaos Daedalus
+Code:BLCR-EN071 Rarity: Ultra Rare|Prices Update!
+Code:TOCH-EN007 Rarity: Ultra Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:TOCH-EN007 Rarity: COLLECTOR'S RARE|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Click & Echo
+Code:DUNE-EN030 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Codarus
+Code:SDRE-EN012 Rarity: Common|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:ABPF-EN032 Rarity: Common|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Danger! Ogopogo!
+Code:MP20-EN001 Rarity: Prismatic Secret Rare|Prices Update!
+Code:SAST-EN000 Rarity: Ultra Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Deep Sea Artisan
+Code:MP21-EN049 Rarity: Common|Prices Update!
+Code:ETCO-EN013 Rarity: Common|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Deep Sea Diva
+Code:MGED-EN130 Rarity: Gold Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:OP13-EN004 Rarity: Super Rare|Prices Update!
+Code:DUSA-EN079 Rarity: Ultra Rare (Duelist Saga Version)|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:SDRE-EN010 Rarity: Common|Prices Update!
+Code:TU04-EN004 Rarity: Super Rare|Prices Update!
+Code:RGBT-EN035 Rarity: Rare|Prices Update!
+---------------------------
+
+Card:Deep Sea Minstrel
+Code:MP21-EN051 Rarity: Common|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:ETCO-EN015 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Deep Sea Prima Donna
+Code:MP21-EN066 Rarity: Common|Prices Update!
+Code:ETCO-EN042 Rarity: Ultra Rare|Prices Update!
+---------------------------
+
+Card:Deep Sea Repetiteur
+Code:HAC1-EN175 Rarity: Secret Rare|Prices Update!
+---------------------------
+
+Card:Deep Sea Sentry
+Code:MP21-EN050 Rarity: Common|Prices Update!
+Code:ETCO-EN014 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Divine Dragon Aquabizarre
+Code:ANPR-EN026 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Gemini Lancer
+Code:PTDN-EN025 Rarity: Common|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Gishki Chain
+Code:THSF-EN041 Rarity: Super Rare|Prices Update!
+Code:HA05-EN034 Rarity: Secret Rare|Prices Update!
+Code:DT05-EN067 Rarity: Super Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Gishki Diviner
+Code:GENF-EN027 Rarity: Rare|Prices Update!
+---------------------------
+
+Card:Gishki Shadow
+Code:THSF-EN042 Rarity: Super Rare|Prices Update!
+Code:HA05-EN036 Rarity: Super Rare|Prices Update!
+Code:DT05-EN069 Rarity: Common|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Gishki Vision
+Code:THSF-EN045 Rarity: Super Rare|Prices Update!
+Code:HA06-EN040 Rarity: Super Rare|Prices Update!
+Code:DT06-EN076 Rarity: Common|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Gladiator Beast Domitianus
+Code:MP20-EN165 Rarity: Ultra Rare|Prices Update!
+Code:CHIM-EN033 Rarity: Super Rare|Prices Update!
+---------------------------
+
+Card:Gladiator Beast Vespasius
+Code:MP20-EN157 Rarity: Common|Prices Update!
+Code:CHIM-EN013 Rarity: Rare|Prices Update!
+Code:CHIM-ENSP1 Rarity: Ultra Rare|Prices Update!
+---------------------------
+
+Card:Guardian Kay'est
+Code:DCR-EN009 Rarity: Common|Prices Update!
+Code:LCYW-EN133 Rarity: Common|Prices Update!
+Code:DCR-EN009 Rarity: Common|Prices Update!
+Code:DR1-EN171 Rarity: Common|Prices Update!
+Code:DCR-009 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Guitar Gurnards Duonigis
+Code:MP22-EN020 Rarity: Common|Prices Update!
+Code:BLVO-EN034 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Hexa Spirit of the Ice Barrier
+Code:SDFC-EN004 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Imairuka
+Code:SBAD-EN028 Rarity: Common|Prices Update!
+Code:REDU-EN084 Rarity: Rare|Prices Update!
+---------------------------
+
+Card:Kairyu-Shin
+Code:SBTK-EN003 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Kaiser Sea Horse
+Code:SGX2-END12 Rarity: Common|Prices Update!
+Code:YSKR-EN016 Rarity: Common|Prices Update!
+Code:SDBE-EN016 Rarity: Common|Prices Update!
+Code:DPKB-EN017 Rarity: Rare|Prices Update!
+Code:RP02-EN087 Rarity: Rare|Prices Update!
+Code:SDRL-EN008 Rarity: Common|Prices Update!
+Code:DB2-EN115 Rarity: Common|Prices Update!
+Code:SKE-015 Rarity: Ultra Rare|Prices Update!
+---------------------------
+
+Card:Kaiser Sea Snake
+Code:MP18-EN025 Rarity: Common|Prices Update!
+Code:MACR-EN091 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Koa'ki Meiru Sea Panther
+Code:SOVR-EN027 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Lappis Dragon
+Code:SAST-EN027 Rarity: Rare|Prices Update!
+---------------------------
+
+Card:Lavalval Chain
+Code:PGL2-EN044 Rarity: Gold Rare|Prices Update!
+Code:HA07-EN019 Rarity: Secret Rare|Prices Update!
+Code:DT07-EN035 Rarity: Ultra Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:DT07-EN035 Rarity: Secret Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Legendary Atlantean Tridon
+Code:MP14-EN019 Rarity: Common|Prices Update!
+Code:LTGY-EN033 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Levia-Dragon - Daedalus
+Code:IOC-EN083 Rarity: Ultra Rare|Prices Update!
+Code:STP4-EN018 Rarity: Common|Prices Update!
+Code:LED9-EN047 Rarity: Rare|Prices Update!
+Code:SBAD-EN025 Rarity: Ultra Rare|Prices Update!
+Code:LCYW-EN249 Rarity: Secret Rare|Prices Update!
+Code:DR2-EN084 Rarity: Ultra Rare|Prices Update!
+Code:SD4-EN010 Rarity: Common|Prices Update!
+Code:HL1-EN004 Rarity: Super Rare|Prices Update!
+Code:IOC-083 Rarity: Ultra Rare|Prices Update!
+Code:IOC-EN083 Rarity: Ultra Rare|Prices Update!
+---------------------------
+
+Card:Lightray Daedalus
+Code:SDLI-EN018 Rarity: Common|Prices Update!
+Code:GAOV-EN033 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Lost Blue Breaker
+Code:SBAD-EN026 Rarity: Common|Prices Update!
+Code:SDRE-EN007 Rarity: Common|Prices Update!
+Code:GENF-EN083 Rarity: Secret Rare|Prices Update!
+---------------------------
+
+Card:Magikey Spirit - Vepartu
+Code:MP22-EN213 Rarity: Rare|Prices Update!
+Code:BODE-EN047 Rarity: Super Rare|Prices Update!
+---------------------------
+
+Card:Mermaid Archer
+Code:SDRE-EN011 Rarity: Common|Prices Update!
+Code:RGBT-EN036 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Mermail Abyssalacia
+Code:MP20-EN095 Rarity: Super Rare|Prices Update!
+Code:DANE-EN094 Rarity: Ultra Rare|Prices Update!
+---------------------------
+
+Card:Mermail Abyssleed
+Code:SHVA-EN038 Rarity: Super Rare|Prices Update!
+Code:CBLZ-EN034 Rarity: Secret Rare|Prices Update!
+---------------------------
+
+Card:Mermail Abyssmegalo
+Code:SHVA-EN037 Rarity: Super Rare|Prices Update!
+Code:BP02-EN117 Rarity: Rare|Prices Update!
+Code:BP02-EN117 Rarity: Mosaic Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:ABYR-EN020 Rarity: Secret Rare|Prices Update!
+---------------------------
+
+Card:Mermail Abysstrite
+Code:CBLZ-EN050 Rarity: Super Rare|Prices Update!
+---------------------------
+
+Card:Moulinglacia the Elemental Lord
+Code:SDFC-EN025 Rarity: Common|Prices Update!
+Code:FLOD-ENSE2 Rarity: Super Rare|Prices Update!
+Code:ABYR-EN035 Rarity: Secret Rare|Prices Update!
+---------------------------
+
+Card:Neptabyss, the Atlantean Prince
+Code:MP16-EN236 Rarity: Ultra Rare|Prices Update!
+Code:BOSH-EN092 Rarity: Ultra Rare|Prices Update!
+---------------------------
+
+Card:Number 32: Shark Drake
+Code:PGLD-EN044 Rarity: Gold Rare|Prices Update!
+Code:SP14-EN023 Rarity: Common|Prices Update!
+Code:SP14-EN023 Rarity: Starfoil|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:GAOV-EN042 Rarity: Ultra Rare|Prices Update!
+Code:GAOV-EN042 Rarity: Ultimate Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Number 37: Hope Woven Dragon Spider Shark
+Code:PGL3-EN007 Rarity: Gold Secret|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Number 47: Nightmare Shark
+Code:CT11-EN004 Rarity: Super Rare|Prices Update!
+Code:YZ04-EN001 Rarity: Ultra Rare|Prices Update!
+---------------------------
+
+Card:Number C32: Shark Drake Veiss
+Code:MP23-EN279 Rarity: Super Rare|Prices Update!
+Code:ABYR-EN039 Rarity: Ultra Rare|Prices Update!
+Code:ABYR-EN039 Rarity: Ultimate Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:ABYR-EN039 Rarity: Ghost Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Ocean Dragon Lord - Kairyu-Shin
+Code:LED9-EN017 Rarity: Ultra Rare|Prices Update!
+---------------------------
+
+Card:Ocean Dragon Lord - Neo-Daedalus
+Code:WCPP-EN012 Rarity: Rare|Prices Update!
+Code:SD4-EN001 Rarity: Ultra Rare|Prices Update!
+---------------------------
+
+Card:Orca Mega-Fortress of Darkness
+Code:IOC-EN084 Rarity: Super Rare|Prices Update!
+Code:DR2-EN085 Rarity: Rare|Prices Update!
+Code:IOC-084 Rarity: Super Rare|Prices Update!
+Code:IOC-EN084 Rarity: Super Rare|Prices Update!
+---------------------------
+
+Card:Poseidra, the Atlantean Dragon
+Code:SDRE-EN001 Rarity: Ultra Rare|Prices Update!
+---------------------------
+
+Card:Reese the Ice Mistress
+Code:SDRE-EN020 Rarity: Common|Prices Update!
+Code:GLD3-EN030 Rarity: Common|Prices Update!
+Code:DT01-EN064 Rarity: Common|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Sea Dragon Lord Gishilnodon
+Code:RGBT-EN044 Rarity: Super Rare|Prices Update!
+---------------------------
+
+Card:Sea Dragoons of Draconia
+Code:CROS-EN000 Rarity: Rare|Prices Update!
+Code:CROS-ENSP1 Rarity: Ultra Rare|Prices Update!
+---------------------------
+
+Card:Sea Serpent Warrior of Darkness
+Code:IOC-EN059 Rarity: Common|Prices Update!
+Code:DR2-EN060 Rarity: Common|Prices Update!
+Code:SD4-EN003 Rarity: Common|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:IOC-059 Rarity: Common|Prices Update!
+Code:IOC-EN059 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Skystarray
+Code:BPW2-EN042 Rarity: Common|Prices Update!
+Code:WGRT-EN042 Rarity: Common|URL Is Unavailable|
+Code:GENF-EN020 Rarity: Rare|Prices Update!
+---------------------------
+
+Card:Spearfish Soldier
+Code:GENF-EN018 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Spike Seadra
+Code:LOB-EN103 Rarity: Common|Prices Update!
+Code:LOB-103 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Spined Gillman
+Code:BP03-EN059 Rarity: Rare|Prices Update!
+Code:BP03-EN059 Rarity: Shattefoil|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:SDRE-EN009 Rarity: Common|Prices Update!
+Code:RGBT-EN034 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Spiral Serpent
+Code:5DS1-EN007 Rarity: Common|Prices Update!
+Code:STON-EN003 Rarity: Rare|Prices Update!
+Code:STON-EN003 Rarity: Ultimate Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Subterror Behemoth Stygokraken
+Code:INOV-EN083 Rarity: Super Rare|Prices Update!
+---------------------------
+
+Card:T.G. Screw Serpent
+Code:SAST-EN009 Rarity: Rare|Prices Update!
+---------------------------
+
+Card:Takriminos
+Code:LCYW-EN223 Rarity: Super Rare|Prices Update!
+Code:MP1-006 Rarity: Super Rare|Prices Update!
+---------------------------
+
+Card:The Dragon Dwelling in the Deep
+Code:ABPF-EN086 Rarity: Super Rare|Prices Update!
+---------------------------
+
+Card:Tri-Edge Levia
+Code:BP03-EN132 Rarity: Shattefoil|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:PGLD-EN026 Rarity: Gold Secret|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Ukiyoe-P.U.N.K. Amazing Dragon
+Code:BLMR-EN075 Rarity: Secret Rare|Prices Update!
+Code:GRCR-EN008 Rarity: Ultra Rare|Prices Update!
+Code:GRCR-EN008 Rarity: COLLECTOR'S RARE|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Water Dragon
+Code:SGX2-ENC01 Rarity: Common|Prices Update!
+Code:SGX2-ENC01 Rarity: Secret Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:LEDU-EN042 Rarity: Common|Prices Update!
+Code:DR04-EN075 Rarity: Rare|Prices Update!
+Code:MF02-EN004 Rarity: Hobby|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+Code:EEN-EN015 Rarity: Super Rare|Prices Update!
+Code:EEN-EN015 Rarity: Ultimate Rare|Code/Rarity didnt match, switching this SetCard's TCG URL to "Missing"|
+---------------------------
+
+Card:Water Dragon Cluster
+Code:SGX2-ENC09 Rarity: Common|Prices Update!
+Code:LEDU-EN036 Rarity: Super Rare|Prices Update!
+---------------------------
+
+Card:Worldsea Dragon Zealantis
+Code:MP23-EN193 Rarity: Prismatic Secret Rare|Prices Update!
+Code:DABL-EN050 Rarity: Secret Rare|Prices Update!
+---------------------------
+
+Card:Xyz Slidolphin
+Code:MP20-EN061 Rarity: Common|Prices Update!
+Code:DANE-EN023 Rarity: Common|Prices Update!
+---------------------------
+
+Card:Yamatako Orochi
+Code:MP23-EN078 Rarity: Super Rare|Prices Update!
+Code:DIFO-EN032 Rarity: Common|Prices Update!
+---------------------------
+
+Execution Time for card group was: 00:13:15.4218687

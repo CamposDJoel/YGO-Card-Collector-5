@@ -28,6 +28,8 @@ namespace YGO_Card_Collector_5
         public static List<string> CardsWithUnavailableProdeckURL = new List<string>();
         public static List<string> CardsWithUnavailableTCGURLs = new List<string>();
 
+        public static List<string> TCGPagesThatDidntMatchRarity = new List<string>();
+
         public static bool LoadDB()
         {
             string jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\CardDB.json";
@@ -133,6 +135,7 @@ namespace YGO_Card_Collector_5
 
             void InitalizeCardGroupListsDict()
             {
+                GroupCardListByGroupName.Add(CardGroup.AllCards, MasterCards);
                 GroupCardListByGroupName.Add(CardGroup.Aqua_Monsters, AquaMonsters);
                 GroupCardListByGroupName.Add(CardGroup.Beast_Monsters, BeastMonsters);
                 GroupCardListByGroupName.Add(CardGroup.BeastWarrior_Monsters, BeastWarriorMonsters);
@@ -444,8 +447,8 @@ namespace YGO_Card_Collector_5
     #region CardGroupEnum
     public enum CardGroup
     {
-        AllCards,
-        Aqua_Monsters = 0,
+        AllCards = 0,
+        Aqua_Monsters,
         Beast_Monsters,
         BeastWarrior_Monsters,
         Cyberse_Monsters,
