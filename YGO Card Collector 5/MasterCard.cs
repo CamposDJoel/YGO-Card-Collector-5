@@ -73,6 +73,18 @@ namespace YGO_Card_Collector_5
             }
             return !missingFound;
         }
+        public bool HasNoNnavaliableTCGURLs()
+        {
+            bool missingFound = false;
+            foreach (SetCard ThisSetCard in _SetCards)
+            {
+                if (ThisSetCard.TCGPlayerURLIsUnavailable())
+                {
+                    missingFound = true; break;
+                }
+            }
+            return !missingFound;
+        }
         public SetCard GetCardAtIndex(int index)
         {
             return _SetCards[index];

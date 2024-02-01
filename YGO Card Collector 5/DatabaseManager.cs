@@ -36,6 +36,10 @@ namespace YGO_Card_Collector_5
         private MasterCard _MissingURL_CurrentProdeckMasterCardSelected;
         private MasterCard _MissingURL_CurrentTCGMasterCardSelected;
         private SetCard _MissingURL_CurrentSetCardSelected;
+
+        private MasterCard _UnavaURL_CurrentProdeckMasterCardSelected;
+        private MasterCard _UnavaURL_CurrentTCGMasterCardSelected;
+        private SetCard _UnavaURL_CurrentSetCardSelected;
         #endregion
 
         #region Public Methods
@@ -44,6 +48,7 @@ namespace YGO_Card_Collector_5
             LoadMasterListStats();
             LoadGroupViewStats();
             LoadMissingURLsLists();
+            LoadUnavailableURLsLists();
         }
         #endregion
 
@@ -128,16 +133,63 @@ namespace YGO_Card_Collector_5
             {
                 listTCGMissingURLs.Items.Add("No Cards - Good Job! Database is up to date!");
                 listTCGMissingURLsSets.Visible = false;
+                listTCGMissingURLs.Size = new System.Drawing.Size(408, 228);
+                lblMissingTabArrow.Visible = false;
+                lblMissingTabNote.Visible = false;
             }
             else
             {
-                foreach(string entry in Database.CardsWithoutTCGURLs) 
+                listTCGMissingURLs.Size = new System.Drawing.Size(200, 228);
+                lblMissingTabArrow.Visible = true;
+                lblMissingTabNote.Visible = true;
+                foreach (string entry in Database.CardsWithoutTCGURLs) 
                 {
                     listTCGMissingURLs.Items.Add(entry);
                 }
             }
             listTCGMissingURLs.SetSelected(0, true);
         }       
+        private void LoadUnavailableURLsLists()
+        {
+            //Prodeck lists
+            listProdeckUnavailable.Items.Clear();
+            if(Database.CardsWithUnavailableProdeckURL.Count == 0) 
+            {
+                listProdeckUnavailable.Items.Add("No Cards - Good Job! Database is up to date!");
+            }
+            else
+            {
+                foreach (string ThisCardsName in Database.CardsWithUnavailableProdeckURL)
+                {
+                    listProdeckUnavailable.Items.Add(ThisCardsName);
+
+                }
+            }           
+            listProdeckUnavailable.SetSelected(0, true);
+
+
+
+            listTCGUnavailableList.Items.Clear();
+            if(Database.CardsWithUnavailableTCGURLs.Count == 0) 
+            {
+                listTCGUnavailableList.Items.Add("No Cards - Good Job! Database is up to date!");
+                listTCGUnavailableURLsSets.Visible = false;
+                listTCGUnavailableList.Size = new System.Drawing.Size(408, 228);
+                lblMissingTabArrow2.Visible = false;
+                lblMissingTabNote2.Visible = false;
+            }
+            else
+            {
+                listTCGUnavailableList.Size = new System.Drawing.Size(200, 228);
+                lblMissingTabArrow2.Visible = true;
+                lblMissingTabNote2.Visible = true;
+                foreach (string ThisCardsName in Database.CardsWithUnavailableTCGURLs)
+                {
+                    listTCGUnavailableList.Items.Add(ThisCardsName);
+                }
+            }            
+            listTCGUnavailableList.SetSelected(0, true);
+        }
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             Application.Exit();
@@ -333,7 +385,7 @@ namespace YGO_Card_Collector_5
             Driver.GoToProdeckSearchPage();
             ProDeckCardSearchPage.WaitUntilPageIsLoaded();
         }
-        private void UpdateURLsDB()
+        private void UpdateURLsDB(List<string> MissingProdeckURLsTest, List<string> MissingTCGPlayerURLsTest)
         {
             //START
             Driver.Log.Clear();
@@ -347,7 +399,7 @@ namespace YGO_Card_Collector_5
 
             //Search for each card
             List<string> successListProdeck = new List<string>();
-            foreach (string CardName in Database.CardsWithoutProdeckURL)
+            foreach (string CardName in MissingProdeckURLsTest)
             {
                 DBUpdateform.SendCardStartSignal();
                 StringBuilder sb = new StringBuilder();
@@ -396,7 +448,7 @@ namespace YGO_Card_Collector_5
 
             //Now search for the TCG Player URLs
             List<string> successListTCG = new List<string>();
-            foreach(string CardName in Database.CardsWithoutTCGURLs) 
+            foreach(string CardName in MissingTCGPlayerURLsTest) 
             {
                 DBUpdateform.SendCardStartSignal();
                 StringBuilder sb = new StringBuilder();
@@ -662,7 +714,7 @@ namespace YGO_Card_Collector_5
             DBUpdateform = new DBUpdateHoldScren(this, totalcardstocheck);
             DBUpdateform.Show();
 
-            UpdateURLsDB();
+            UpdateURLsDB(Database.CardsWithoutProdeckURL, Database.CardsWithoutTCGURLs);
         }
         private void btnUpdatePrices_Click(object sender, EventArgs e)
         {
@@ -857,6 +909,42 @@ namespace YGO_Card_Collector_5
             DBUpdateform.Show();
 
             UpdateKomaniDB(_CurrentSelectedCardGroup);
+        }
+        private void btnGroupUpdateURLs_Click(object sender, EventArgs e)
+        {
+            //Generate the test list
+            List<string> CardsWithoutProdeckURL = new List<string>();
+            List<string> CardsWithoutTCGURLs = new List<string>();
+
+            List<MasterCard> TestCardList = Database.GroupCardListByGroupName[_CurrentSelectedCardGroup];
+            foreach (MasterCard ThisMasterCard in TestCardList)
+            {
+                if (ThisMasterCard.ProdeckURLIsMissing()) { CardsWithoutProdeckURL.Add(ThisMasterCard.Name); }
+
+                foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
+                {
+                    if (ThisSetCard.Code != "")
+                    {
+                        if (ThisSetCard.TCGPlayerURLIsMissing()) { CardsWithoutTCGURLs.Add(ThisMasterCard.Name); }
+                    }
+                }
+            }
+
+
+            int totalcardstocheck = CardsWithoutProdeckURL.Count + CardsWithoutTCGURLs.Count;
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this, totalcardstocheck);
+            DBUpdateform.Show();
+            UpdateURLsDB(CardsWithoutProdeckURL, CardsWithoutTCGURLs);
+        }
+        private void btnGroupUpdatePrices_Click(object sender, EventArgs e)
+        {
+            int cardcount = Database.GroupCardListByGroupName[_CurrentSelectedCardGroup].Count;
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this, cardcount);
+            DBUpdateform.Show();
+
+            UpdatePricesDB(_CurrentSelectedCardGroup);
         }
         //2 Lists containers
         private void listCardList_SelectedIndexChanged(object sender, EventArgs e)
@@ -1060,7 +1148,7 @@ namespace YGO_Card_Collector_5
             if(cardname != "No Cards - Good Job! Database is up to date!")
             {
                 _MissingURL_CurrentProdeckMasterCardSelected = Database.GetCard(cardname);
-                txtPasscode.Text = _Explorer_CurrentMasterCardSelected.ID.ToString();
+                txtPasscode2.Text = _MissingURL_CurrentProdeckMasterCardSelected.ID.ToString();
                 GroupMissingProdeckOverride.Visible = true;
 
                 //set up the override UI
@@ -1260,8 +1348,8 @@ namespace YGO_Card_Collector_5
                     Database.CardsWithoutTCGURLs.Remove(_MissingURL_CurrentTCGMasterCardSelected.Name);
                 }
 
-                //Reload the Missing URL tab's UI
-                LoadMissingURLsLists();
+                //Reload stats
+                ReloadStats();
             }
             else
             {
@@ -1281,14 +1369,203 @@ namespace YGO_Card_Collector_5
         }
         #endregion
 
-        private void btnGroupUpdatePrices_Click(object sender, EventArgs e)
+        #region Event Listeners (Unavailable URLs Tab)
+        //3 List Containers
+        private void listProdeckUnavailable_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int cardcount = Database.GroupCardListByGroupName[_CurrentSelectedCardGroup].Count;
-            Hide();
-            DBUpdateform = new DBUpdateHoldScren(this, cardcount);
-            DBUpdateform.Show();
+            string cardname = listProdeckUnavailable.Text;
 
-            UpdatePricesDB(_CurrentSelectedCardGroup);
+            if (cardname != "No Cards - Good Job! Database is up to date!")
+            {
+                _UnavaURL_CurrentProdeckMasterCardSelected = Database.GetCard(cardname);
+                txtPasscode3.Text = _UnavaURL_CurrentProdeckMasterCardSelected.ID.ToString();
+                GroupUnavailableProdeckOverride.Visible = true;
+
+                //set up the override UI
+                txtPasscode3.Text = _UnavaURL_CurrentProdeckMasterCardSelected.ID.ToString();
+                txtProdeckURL3.Text = _UnavaURL_CurrentProdeckMasterCardSelected.ProdeckURL;
+                //set the checks to false to lock fields at start
+                checkPasscodeEnableOverride3.Checked = false;
+                checkProdeckEnableOverride3.Checked = false;
+                //but the passcode overide should be hiden if the card has already a set Passcode
+                if (_UnavaURL_CurrentProdeckMasterCardSelected.ID == -1)
+                {
+                    lblMisingPasscodeWarning3.Visible = true;
+                    checkPasscodeEnableOverride3.Visible = true;
+                    //disable prodeck
+                    checkProdeckEnableOverride3.Visible = false;
+                }
+                else
+                {
+                    lblMisingPasscodeWarning3.Visible = false;
+                    checkPasscodeEnableOverride3.Visible = false;
+                    //enable prodeck
+                    checkProdeckEnableOverride3.Visible = true;
+                }
+            }
+            else
+            {
+                GroupUnavailableProdeckOverride.Visible = false;
+            }
         }
+        private void listTCGUnavailableList_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string cardname = listTCGUnavailableList.Text;
+
+            if (cardname != "No Cards - Good Job! Database is up to date!")
+            {
+                //Populate the set card list
+                listTCGUnavailableURLsSets.Items.Clear();
+                _UnavaURL_CurrentTCGMasterCardSelected = Database.GetCard(cardname);
+
+                foreach (SetCard ThisSetCard in _UnavaURL_CurrentTCGMasterCardSelected.SetCards)
+                {
+                    string item = ThisSetCard.Code + "|" + ThisSetCard.Rarity;
+                    if (ThisSetCard.TCGPlayerURLIsUnavailable())
+                    {
+                        item = "[!] - " + item;
+                    }
+                    listTCGUnavailableURLsSets.Items.Add(item);
+                }
+
+                listTCGUnavailableURLsSets.SetSelected(0, true);
+            }
+            else
+            {
+                GroupUnavailableTCGOverride.Visible = false;
+            }
+        }
+        private void listTCGUnavailableURLsSets_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int setCardIndex = listTCGUnavailableURLsSets.SelectedIndex;
+
+            _UnavaURL_CurrentSetCardSelected = _UnavaURL_CurrentTCGMasterCardSelected.GetCardAtIndex(setCardIndex);
+
+            if (_UnavaURL_CurrentSetCardSelected.TCGPlayerURLIsUnavailable())
+            {
+                //Diplay the override submenu
+                GroupUnavailableTCGOverride.Visible = true;
+
+                txtTCGURL3.Text = _UnavaURL_CurrentSetCardSelected.TCGPlayerURL;
+                checkTCGEnableOverride3.Checked = false;
+            }
+            else
+            {
+                GroupUnavailableTCGOverride.Visible = false;
+            }
+        }
+        //Passcode Overide Section
+        private void checkPasscodeEnableOverride3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkPasscodeEnableOverride3.Checked)
+            {
+                txtPasscode3.Enabled = true;
+                btnPasscodeOverride3.Visible = true;
+            }
+            else
+            {
+                txtPasscode3.Text = _UnavaURL_CurrentProdeckMasterCardSelected.ID.ToString();
+                txtPasscode3.Enabled = false;
+                btnPasscodeOverride3.Visible = false;
+            }
+        }
+        private void btnPasscodeOverride3_Click(object sender, EventArgs e)
+        {
+            //overide if the input is not -1 or a non-numeric
+            string input = txtPasscode3.Text;
+            if (input == "-1")
+            {
+                //invalid value
+                txtPasscode3.Text = "Invalid ID input. Must be numeric and not -1";
+            }
+            else
+            {
+                try
+                {
+                    int idinput = Convert.ToInt32(input);
+                    _UnavaURL_CurrentProdeckMasterCardSelected.ID = idinput;
+                    //Success, update the UI
+                    checkPasscodeEnableOverride3.Checked = false;
+                    checkPasscodeEnableOverride3.Visible = false;
+                    lblMisingPasscodeWarning3.Visible = false;
+                    checkProdeckEnableOverride3.Visible = true;
+                }
+                catch (Exception)
+                {
+                    txtPasscode3.Text = "Invalid ID input. Must be numeric and not -1";
+                }
+            }
+        }
+        //Prodeck Override Section
+        private void checkProdeckEnableOverride3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkProdeckEnableOverride3.Checked)
+            {
+                txtProdeckURL3.Enabled = true;
+                btnProdeckOverride3.Visible = true;
+            }
+            else
+            {
+                btnProdeckOverride3.Visible = false;
+                txtProdeckURL3.Enabled = false;
+                txtProdeckURL3.Text = _UnavaURL_CurrentProdeckMasterCardSelected.ProdeckURL;
+            }
+        }
+        private void btnProdeckOverride3_Click(object sender, EventArgs e)
+        {
+            string input = txtProdeckURL3.Text;
+            if (input.StartsWith("https://ygoprodeck.com/card/"))
+            {
+                //Valid ulr, proceed
+                _UnavaURL_CurrentProdeckMasterCardSelected.ProdeckURL = input;
+                checkProdeckEnableOverride3.Checked = false;
+                //Remove this card from the list now!!
+                Database.CardsWithUnavailableProdeckURL.Remove(_UnavaURL_CurrentProdeckMasterCardSelected.Name);
+                //Reload the UI
+                ReloadStats();
+            }
+            else
+            {
+                txtProdeckURL3.Text = "Not a Prodeck URL.";
+            }
+        }
+        //TCG Override Section
+        private void checkTCGEnableOverride3_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkTCGEnableOverride3.Checked)
+            {
+                txtTCGURL3.Enabled = true;
+                btnTCGOverride3.Visible = true;
+            }
+            else
+            {
+                btnTCGOverride3.Visible = false;
+                txtTCGURL3.Enabled = false;
+                txtTCGURL3.Text = _UnavaURL_CurrentSetCardSelected.TCGPlayerURL;
+            }
+        }
+        private void btnTCGOverride3_Click(object sender, EventArgs e)
+        {
+            string input = txtTCGURL3.Text;
+            if (input.StartsWith("https://tcgplayer") || input.StartsWith("https://www.tcgplayer.com/product/"))
+            {
+                //Valid ulr, proceed
+                _UnavaURL_CurrentSetCardSelected.TCGPlayerURL = input;
+                checkTCGEnableOverride3.Checked = false;
+                //Remove card from the TCG Unavaliable URL list if no missing urls left from this card
+                if (_UnavaURL_CurrentTCGMasterCardSelected.HasNoNnavaliableTCGURLs())
+                {
+                    Database.CardsWithUnavailableTCGURLs.Remove(_UnavaURL_CurrentTCGMasterCardSelected.Name);
+                }
+
+                //reload stats
+                ReloadStats();
+            }
+            else
+            {
+                txtTCGURL3.Text = "Not a TCG Player URL.";
+            }
+        }
+        #endregion
     }
 }
