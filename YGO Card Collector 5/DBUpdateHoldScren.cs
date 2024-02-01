@@ -22,11 +22,10 @@ namespace YGO_Card_Collector_5
         {
             lblOutput.Text = message; 
         }
-        public void SendCardCompletionSignal()
+        public void SendCardStartSignal()
         {
             _cardIterator++;
-            if(barProgress.Value < barProgress.Maximum) { barProgress.Value = _cardIterator; }
-
+            barProgress.Value = _cardIterator;
             lblOutput.Text = string.Format("Updating Card: {0}/{1}", barProgress.Value, _cardlistAmount);
         }
         public void SendFullCompletionSignal()

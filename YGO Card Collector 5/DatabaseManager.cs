@@ -206,6 +206,7 @@ namespace YGO_Card_Collector_5
             //Now Access each individual Card
             foreach (KeyValuePair<string, string> ThisCard in CardList)
             {
+                DBUpdateform.SendCardStartSignal();
                 StringBuilder sb = new StringBuilder();
 
                 //set the card name for readibility and use
@@ -305,8 +306,6 @@ namespace YGO_Card_Collector_5
                 }
 
                 AddLog(sb.ToString());
-                //Send the completion flag
-                DBUpdateform.SendCardCompletionSignal();
             }
 
             //END: CLose the Browser and Console
@@ -350,6 +349,7 @@ namespace YGO_Card_Collector_5
             List<string> successListProdeck = new List<string>();
             foreach (string CardName in Database.CardsWithoutProdeckURL)
             {
+                DBUpdateform.SendCardStartSignal();
                 StringBuilder sb = new StringBuilder();
                 sb.Append(string.Format("Card:{0}|", CardName));
 
@@ -381,7 +381,6 @@ namespace YGO_Card_Collector_5
 
                 //Log it and send the card completion signal
                 AddLog(sb.ToString());
-                DBUpdateform.SendCardCompletionSignal();
             }
 
             //Post run, remove the sucess searches from the CardsWithoutProdeckURL list
@@ -399,6 +398,7 @@ namespace YGO_Card_Collector_5
             List<string> successListTCG = new List<string>();
             foreach(string CardName in Database.CardsWithoutTCGURLs) 
             {
+                DBUpdateform.SendCardStartSignal();
                 StringBuilder sb = new StringBuilder();
                 sb.AppendLine(string.Format("Card:{0}", CardName));
                 
@@ -517,8 +517,7 @@ namespace YGO_Card_Collector_5
 
                 sb.AppendLine("---------------------------------------------------------");
 
-                //Log it and send the card completion signal
-                DBUpdateform.SendCardCompletionSignal();
+                //Log it
                 AddLog(sb.ToString());
             }
 
@@ -561,52 +560,58 @@ namespace YGO_Card_Collector_5
             //Set the cardlist
             List<MasterCard> TestCardList = Database.GroupCardListByGroupName[Group];
 
-            DBUpdateform.SetOutputMessage(string.Format("Updating Card: 1/{0}", TestCardList.Count));
             //Scan each set card for each master card
             foreach (MasterCard ThisMasterCard in TestCardList)
             {
+                DBUpdateform.SendCardStartSignal();
                 StringBuilder sb = new StringBuilder();
                 sb.AppendLine(string.Format("Card:{0}", ThisMasterCard.Name));
 
                 foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
                 {
                     sb.Append(string.Format("Code:{0} Rarity: {1}|", ThisSetCard.Code, ThisSetCard.Rarity));
-                    if (ThisSetCard.HasTCGURL())
-                    {
-                        //Go to the test URL
-                        Driver.GoToURL(ThisSetCard.TCGPlayerURL);
-                        TCGCardInfoPage.WaitUntilPageIsLoaded();
 
-                        //If the page corresponds to the code AND Rarity, then extract its price
-                        string CodeInPage = TCGCardInfoPage.GetCode();
-                        string RarityInPage = TCGCardInfoPage.GetRarity();
-                        if (ThisSetCard.Code == CodeInPage && Tools.CompareInLowerCase(ThisSetCard.Rarity, RarityInPage))
+                    try
+                    {
+                        if (ThisSetCard.HasTCGURL())
                         {
-                            //Update prices since we are here.
-                            string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
-                            string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
-                            ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
-                            sb.AppendLine("Prices Update!");
+                            //Go to the test URL
+                            Driver.GoToURL(ThisSetCard.TCGPlayerURL);
+                            TCGCardInfoPage.WaitUntilPageIsLoaded();
+
+                            //If the page corresponds to the code AND Rarity, then extract its price
+                            string CodeInPage = TCGCardInfoPage.GetCode();
+                            string RarityInPage = TCGCardInfoPage.GetRarity();
+                            if (ThisSetCard.Code == CodeInPage && Tools.CompareInLowerCase(ThisSetCard.Rarity, RarityInPage))
+                            {
+                                //Update prices since we are here.
+                                string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                                string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+                                ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                                sb.AppendLine("Prices Update!");
+                            }
+                            else
+                            {
+                                //Found a card with code/rarity not matching
+                                Database.TCGPagesThatDidntMatchRarity.Add(ThisMasterCard.Name + "|" + ThisSetCard.Code + "|" + ThisSetCard.Rarity + "|" + ThisSetCard.TCGPlayerURL);
+                                sb.AppendLine("Code/Rarity didnt match, flagging the card|");
+                            }
                         }
                         else
                         {
-                            //Found a card with code/rarity not matching
-                            sb.AppendLine("Code/Rarity didnt match, switching this SetCard's TCG URL to \"Missing\"|" + ThisSetCard.TCGPlayerURL);
-                            ThisSetCard.TCGPlayerURL = "Missing";
-                            Database.TCGPagesThatDidntMatchRarity.Add(ThisMasterCard.Name + "|" + ThisSetCard.Code + "|" + ThisSetCard.Rarity);
+                            if (ThisSetCard.TCGPlayerURLIsUnavailable()) { sb.AppendLine("URL Is Unavailable|"); }
+                            if (ThisSetCard.TCGPlayerURLIsMissing()) { sb.AppendLine("URL is Missing|"); }
+
                         }
                     }
-                    else
+                    catch (Exception)
                     {
-                        if(ThisSetCard.TCGPlayerURLIsUnavailable()) { sb.AppendLine("URL Is Unavailable|"); }
-                        if(ThisSetCard.TCGPlayerURLIsMissing()) { sb.AppendLine("URL is Missing|"); }
-
-                    }
+                        sb.AppendLine("Unhandled exception occurred, skipping this setcard");
+                    }                   
                 }
 
                 sb.AppendLine("---------------------------");
                 AddLog(sb.ToString());
-                DBUpdateform.SendCardCompletionSignal();
             }
 
             //END: CLose the Browser and Console
