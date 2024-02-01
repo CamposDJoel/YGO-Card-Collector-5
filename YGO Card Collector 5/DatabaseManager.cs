@@ -49,6 +49,7 @@ namespace YGO_Card_Collector_5
             LoadGroupViewStats();
             LoadMissingURLsLists();
             LoadUnavailableURLsLists();
+            LoadMissingCardsUrlsList();
         }
         #endregion
 
@@ -189,6 +190,33 @@ namespace YGO_Card_Collector_5
                 }
             }            
             listTCGUnavailableList.SetSelected(0, true);
+        }
+        private void LoadMissingCardsUrlsList()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            foreach(MasterCard ThisMasterCard in Database.MasterCards) 
+            {
+                int passcode = ThisMasterCard.ID;
+               if(passcode != -1)
+               {
+                    //Check if the file exists
+                    if (!File.Exists(Directory.GetCurrentDirectory() + "\\Images\\Cards\\" + passcode + ".jpg"))
+                    {
+                        sb.AppendLine("https://images.ygoprodeck.com/images/cards/" + passcode + ".jpg");
+                    }
+
+                }
+            }
+
+            if(sb.Length ==  0)
+            {
+                txtCardImagesURLoutput.Text = "NO Card Passcodes without Card Images, check this list once new Card Passcodes (IDs) are added to the DB.";
+            }
+            else
+            {
+                txtCardImagesURLoutput.Text = sb.ToString();
+            }          
         }
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
@@ -516,7 +544,7 @@ namespace YGO_Card_Collector_5
                                 //if the URL is a valid TCG Player listing page, check the code and rarity
                                 if (TCGCardInfoPage.IsAValidPage())
                                 {
-                                    bool PageLoadedCorrectly = TCGCardInfoPage.WaitUntilPageIsLoaded();
+                                    bool PageLoadedCorrectly = TCGCardInfoPage.WaitUntilPageIsLoaded(true);
 
                                     if (PageLoadedCorrectly)
                                     {
@@ -629,7 +657,74 @@ namespace YGO_Card_Collector_5
                         {
                             //Go to the test URL
                             Driver.GoToURL(ThisSetCard.TCGPlayerURL);
-                            TCGCardInfoPage.WaitUntilPageIsLoaded();
+                            TCGCardInfoPage.WaitUntilPageIsLoaded(false);
+
+                            //Update prices since
+                            string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                            string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+                            ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                            sb.AppendLine("Prices Update!");
+                        }
+                        else
+                        {
+                            if (ThisSetCard.TCGPlayerURLIsUnavailable()) { sb.AppendLine("URL Is Unavailable|"); }
+                            if (ThisSetCard.TCGPlayerURLIsMissing()) { sb.AppendLine("URL is Missing|"); }
+
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        sb.AppendLine("Unhandled exception occurred, skipping this setcard");
+                    }                   
+                }
+
+                sb.AppendLine("---------------------------");
+                AddLog(sb.ToString());
+            }
+
+            //END: CLose the Browser and Console
+            Driver.CloseDriver();
+
+            //Stop watch
+            watch.Stop();
+            AddLog($"Execution Time for card group was: {watch.Elapsed}");
+
+            //Be done
+            DBUpdateform.SendFullCompletionSignal();
+            WriteOutputFiles();
+        }
+        private void UpdatePricesDB_RariryCheck(CardGroup Group)
+        {
+            //START
+            Driver.Log.Clear();
+            var watch = new Stopwatch();
+            watch.Start();
+
+            //Open Driver and Setup
+            Driver.OpenBrowser();
+            TEST_SETUP_UpdatePrices();
+
+            //Set the cardlist
+            List<MasterCard> TestCardList = Database.GroupCardListByGroupName[Group];
+
+            //Scan each set card for each master card
+            foreach (MasterCard ThisMasterCard in TestCardList)
+            {
+                DBUpdateform.SendCardStartSignal();
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine(string.Format("Card:{0}", ThisMasterCard.Name));
+
+                foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
+                {
+                    sb.Append(string.Format("Code:{0} Rarity: {1}|", ThisSetCard.Code, ThisSetCard.Rarity));
+
+                    try
+                    {
+                        if (ThisSetCard.HasTCGURL())
+                        {
+                            //Go to the test URL
+                            Driver.GoToURL(ThisSetCard.TCGPlayerURL);
+                            TCGCardInfoPage.WaitUntilPageIsLoaded(true);
 
                             //If the page corresponds to the code AND Rarity, then extract its price
                             string CodeInPage = TCGCardInfoPage.GetCode();
@@ -659,7 +754,7 @@ namespace YGO_Card_Collector_5
                     catch (Exception)
                     {
                         sb.AppendLine("Unhandled exception occurred, skipping this setcard");
-                    }                   
+                    }
                 }
 
                 sb.AppendLine("---------------------------");
@@ -1567,5 +1662,10 @@ namespace YGO_Card_Collector_5
             }
         }
         #endregion
+
+        private void btnRefreshImagesURLS_Click(object sender, EventArgs e)
+        {
+            LoadMissingCardsUrlsList();
+        }
     }
 }

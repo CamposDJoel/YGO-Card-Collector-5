@@ -21,7 +21,7 @@ namespace YGO_Card_Collector_5
         public static string Xpath_InvalidPage = "//span[.='Sorry but that page does not exist on our site!']";
         public static string Xpath_404Page = "//h1[.=' Sorry, we couldn’t find that page. ']";
 
-        public static bool WaitUntilPageIsLoaded()
+        public static bool WaitUntilPageIsLoaded(bool rarityCheck)
         {
             try
             {
@@ -29,20 +29,23 @@ namespace YGO_Card_Collector_5
                 //Element.WaitUntilElementIsVisble(Xpath_ProductDetailsContainer);
                 Element.WaitUntilElementIsVisble(Xpath_PricesHeader);
 
-                
-                //Click 
-                try
+                if(rarityCheck) 
                 {
-                    if(Element.ElementExist(Xpath_ReadMore))
+                    //Click the read more element to expose the Rarity label
+                    try
                     {
-                        Element.ClickByXpath(Xpath_ReadMore);
-                        Tools.WaitNSeconds(1000);
-                    }                   
+                        if (Element.ElementExist(Xpath_ReadMore))
+                        {
+                            Element.ClickByXpath(Xpath_ReadMore);
+                            Tools.WaitNSeconds(1000);
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        //DO nothing
+                    }
                 }
-                catch(Exception)
-                {
-                    //DO nothing
-                }          
+                      
                 return true;
             }
             catch (Exception)

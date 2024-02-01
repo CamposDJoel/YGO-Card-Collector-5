@@ -82,6 +82,7 @@
             this.lblWarning.Size = new System.Drawing.Size(280, 17);
             this.lblWarning.TabIndex = 3;
             this.lblWarning.Text = "*Do not disturb the Chrome window...\r\n";
+            this.lblWarning.Visible = false;
             // 
             // btnFinish
             // 
@@ -102,9 +103,9 @@
             this.PanelLogs.BackColor = System.Drawing.Color.Black;
             this.PanelLogs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelLogs.Controls.Add(this.lblLogs);
-            this.PanelLogs.Location = new System.Drawing.Point(21, 22);
+            this.PanelLogs.Location = new System.Drawing.Point(10, 22);
             this.PanelLogs.Name = "PanelLogs";
-            this.PanelLogs.Size = new System.Drawing.Size(343, 100);
+            this.PanelLogs.Size = new System.Drawing.Size(366, 100);
             this.PanelLogs.TabIndex = 5;
             this.PanelLogs.Visible = false;
             // 

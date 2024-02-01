@@ -23001,6 +23001,13 @@ This is the fastest way to update the DB.</value>
         APTThDUX4SipAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="label61.Text" xml:space="preserve">
+    <value>Instructions:
+Copy all  the URLs on the left and paste them into JDownloader (If you dont have it, go download it, it's free.
+
+Start the download and once done, drag the images from Downloads into the //Images/Cards folder. 
+Refresh the list once done.</value>
+  </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYa
