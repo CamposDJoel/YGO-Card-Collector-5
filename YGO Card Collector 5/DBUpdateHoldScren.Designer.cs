@@ -37,6 +37,8 @@
             this.PanelLogs = new System.Windows.Forms.Panel();
             this.lblLogs = new System.Windows.Forms.Label();
             this.lblResults = new System.Windows.Forms.Label();
+            this.lblJob = new System.Windows.Forms.Label();
+            this.lblCardName = new System.Windows.Forms.Label();
             this.PanelLogs.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +67,7 @@
             this.lblPleaseWait.BackColor = System.Drawing.Color.Transparent;
             this.lblPleaseWait.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPleaseWait.ForeColor = System.Drawing.Color.Yellow;
-            this.lblPleaseWait.Location = new System.Drawing.Point(24, 105);
+            this.lblPleaseWait.Location = new System.Drawing.Point(24, 121);
             this.lblPleaseWait.Name = "lblPleaseWait";
             this.lblPleaseWait.Size = new System.Drawing.Size(106, 17);
             this.lblPleaseWait.TabIndex = 2;
@@ -103,7 +105,7 @@
             this.PanelLogs.BackColor = System.Drawing.Color.Black;
             this.PanelLogs.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelLogs.Controls.Add(this.lblLogs);
-            this.PanelLogs.Location = new System.Drawing.Point(10, 22);
+            this.PanelLogs.Location = new System.Drawing.Point(8, 22);
             this.PanelLogs.Name = "PanelLogs";
             this.PanelLogs.Size = new System.Drawing.Size(366, 100);
             this.PanelLogs.TabIndex = 5;
@@ -131,13 +133,38 @@
             this.lblResults.Text = "Results:";
             this.lblResults.Visible = false;
             // 
+            // lblJob
+            // 
+            this.lblJob.AutoSize = true;
+            this.lblJob.BackColor = System.Drawing.Color.Transparent;
+            this.lblJob.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJob.ForeColor = System.Drawing.Color.Yellow;
+            this.lblJob.Location = new System.Drawing.Point(23, 31);
+            this.lblJob.Name = "lblJob";
+            this.lblJob.Size = new System.Drawing.Size(264, 17);
+            this.lblJob.TabIndex = 7;
+            this.lblJob.Text = "Job 1/3: Updating Konami Card List";
+            this.lblJob.Visible = false;
+            // 
+            // lblCardName
+            // 
+            this.lblCardName.AutoSize = true;
+            this.lblCardName.BackColor = System.Drawing.Color.Transparent;
+            this.lblCardName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCardName.ForeColor = System.Drawing.Color.Yellow;
+            this.lblCardName.Location = new System.Drawing.Point(24, 103);
+            this.lblCardName.Name = "lblCardName";
+            this.lblCardName.Size = new System.Drawing.Size(95, 17);
+            this.lblCardName.TabIndex = 8;
+            this.lblCardName.Text = "No Card Yet";
+            // 
             // DBUpdateHoldScren
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(385, 210);
+            this.ClientSize = new System.Drawing.Size(383, 210);
             this.Controls.Add(this.lblResults);
             this.Controls.Add(this.PanelLogs);
             this.Controls.Add(this.lblOutput);
@@ -145,6 +172,8 @@
             this.Controls.Add(this.lblWarning);
             this.Controls.Add(this.lblPleaseWait);
             this.Controls.Add(this.barProgress);
+            this.Controls.Add(this.lblJob);
+            this.Controls.Add(this.lblCardName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -167,5 +196,7 @@
         private System.Windows.Forms.Panel PanelLogs;
         private System.Windows.Forms.Label lblLogs;
         private System.Windows.Forms.Label lblResults;
+        private System.Windows.Forms.Label lblJob;
+        private System.Windows.Forms.Label lblCardName;
     }
 }

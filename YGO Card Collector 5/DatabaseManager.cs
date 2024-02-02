@@ -2,14 +2,12 @@
 //1/29/2024
 //DatabaseManager Class
 
-using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Security.Policy;
+using System.Linq;
 using System.Text;
-using System.Web;
 using System.Windows.Forms;
 
 namespace YGO_Card_Collector_5
@@ -226,12 +224,20 @@ namespace YGO_Card_Collector_5
 
         #region Automation Scrips Methods
         //Konami Card List Update Methods
-        private void TEST_SETUP_KONAMIUPDATE(CardGroup CurrentTestGroup)
+        private void UpdateKomaniDB(CardGroup TestGroup, int startIndex)
         {
+            #region JOB #1 SETUP (Konami Card List Update)
+            //Timer
+            Driver.ClearLogs();
+            var Masterwatch = new Stopwatch();
+            Masterwatch.Start();
+
             //Log
-            AddLog("---TEST SETUP START---");
-            AddLog("---TEST GROUP: " + CurrentTestGroup.ToString() + "---");
-            DBUpdateform.SetOutputMessage("Searching Card Group...");
+            Driver.AddToFullLog("---UPDATE ENTIRE DB---");
+            DBUpdateform.SetOutputMessage("Extracting Current Konami Card List...");
+
+            //Launch the Chrome Driver to update Konami's Card list only (For the entire DB)
+            Driver.OpenBrowser();
 
             //Open Konami's Card Search Page
             Driver.GoToKonamiSearchPage();
@@ -241,34 +247,22 @@ namespace YGO_Card_Collector_5
             KonamiSearchPage.AcceptCookiesBanner();
 
             //Search for the Card Group
-            KonamiSearchPage.SearchCardGroup(CurrentTestGroup);
-        }
-        private void UpdateKomaniDB(CardGroup Group)
-        {
-            Driver.Log.Clear();
-            var watch = new Stopwatch();
-            watch.Start();
-
-            int newCardsCount = 0;
-            int cardsWithNewSetsCount = 0;
-
-            //Launch the Chrome Driver to update Konami's Card list only (For the entire DB)
-            Driver.OpenBrowser();
-
-            //Test Setup: Go To Konamis Search Page and search for the Card Group               
-            TEST_SETUP_KONAMIUPDATE(Group);
-
-            //Test Should start at the KonamiCardListPage of the respective group
+            //KonamiSearchPage.SearchCardGroup(CardGroup.AllCards);
+            KonamiSearchPage.SearchCardGroup(TestGroup);
 
             //Extract how many cards in total are in this group
             int totalCards = KonamiCardListPage.GetCardListTotalCards();
-            AddLog(string.Format("Card Count in Page: {0}", totalCards));
+            Driver.AddToFullLog(string.Format("Total Card Count Konami's DB: {0}", totalCards));
+            DBUpdateform.SetTotalCardsToScan(totalCards);
+            #endregion
 
+            #region JOB #1: KONAMI CARD LIST UPDATE
+            //Test Start at Konami's Card List Page
             int totalPages = KonamiCardListPage.GetPageCount();
             Dictionary<string, string> CardList = new Dictionary<string, string>();
-            DBUpdateform.SetOutputMessage("Extracting Card List...");
             for (int x = 1; x <= totalPages; x++)
             {
+                DBUpdateform.SetOutputMessage(string.Format("Extracting Card Names on Page {0}/{1}", x, totalPages));
                 int cardsInPage = KonamiCardListPage.GetCardsCountInCurrentPage();
                 for (int y = 1; y <= cardsInPage; y++)
                 {
@@ -281,20 +275,22 @@ namespace YGO_Card_Collector_5
                 if (x < totalPages) { KonamiCardListPage.ClickNextPage(); }
                 else { KonamiCardListPage.ResetPageNumber(); }
             }
-
+            DBUpdateform.SetTotalCardsToScan(CardList.Count);
+            Driver.AddToFullLog("----------------------------------");
 
             //Now Access each individual Card
-            foreach (KeyValuePair<string, string> ThisCard in CardList)
+            int NewCardsCounter = 0;
+            int CardsWithNewSetCardsCounter = 0;
+            for (int i = startIndex; i < CardList.Count; i++)
             {
-                DBUpdateform.SendCardStartSignal();
                 StringBuilder sb = new StringBuilder();
 
                 //set the card name for readibility and use
-                string CardName = ThisCard.Key;
-                string KomaniURL = "https://www.db.yugioh-card.com/" + ThisCard.Value;
-                sb.Append(string.Format("Card Name: {0}|", CardName));
+                string CardName = CardList.ElementAt(i).Key;
+                string KomaniURL = "https://www.db.yugioh-card.com/" + CardList.ElementAt(i).Value;
+                sb.Append(string.Format("Index: [{0}] | Card Name: {1}|", i, CardName));
+                DBUpdateform.SendCardStartSignal(CardName);
 
-                //Go to the card info page
                 Driver.GoToURL(KomaniURL);
                 KonamiCardInfoPage.WaitUntilPageIsLoaded();
 
@@ -314,11 +310,13 @@ namespace YGO_Card_Collector_5
                     if (SetCardsInPage > SetCardsInDB)
                     {
                         //Extract the set cards
-                        cardsWithNewSetsCount++;
+                        CardsWithNewSetCardsCounter++;
 
                         int NewSetCardsAmount = SetCardsInPage - SetCardsInDB;
 
                         sb.Append(string.Format("New Set Cards found: {0}|", NewSetCardsAmount));
+                        StringBuilder updatesLogssb = new StringBuilder();
+                        updatesLogssb.Append(string.Format("EXISTING MASTERCARD: {0} | NEW SETCARDS:", CardName));
                         //Add any new set to this card set list
                         for (int x = NewSetCardsAmount; x >= 1; x--)
                         {
@@ -331,7 +329,10 @@ namespace YGO_Card_Collector_5
                             //Add this set to it
                             ThisMasterCard.InsertSetCard(releaseDate, code, setName, rarity);
                             sb.Append(string.Format("Code: {0}|", code));
+                            updatesLogssb.Append(string.Format("[{0}|{1}]", code, rarity));
                         }
+                        updatesLogssb.AppendLine("");
+                        Driver.AddToUpdatesLog(updatesLogssb.ToString());
                     }
                     else
                     {
@@ -343,7 +344,7 @@ namespace YGO_Card_Collector_5
                 {
                     MasterCard NewCARD;
                     sb.Append("New Card!|");
-                    newCardsCount++;
+                    NewCardsCounter++;
 
                     //Otherwise, extract the whole card
                     if (KonamiCardInfoPage.IsThisPageNonMonster())
@@ -367,6 +368,8 @@ namespace YGO_Card_Collector_5
 
                     //Add the sets
                     sb.Append(string.Format("Sets Count {0}|", SetCardsInPage));
+                    StringBuilder updatesLogssb = new StringBuilder();
+                    updatesLogssb.Append(string.Format("NEW MASTERCARD: {0} | SETCARDS:", CardName));
                     for (int x = 1; x <= SetCardsInPage; x++)
                     {
                         //Pull the data
@@ -377,61 +380,56 @@ namespace YGO_Card_Collector_5
 
                         //Add this set to it
                         NewCARD.AddSetCard(releaseDate, code, setName, rarity);
-
                         sb.Append(string.Format("Code: {0}|", code));
+                        updatesLogssb.Append(string.Format("[{0}|{1}]", code, rarity));
                     }
+                    updatesLogssb.AppendLine("");
+                    Driver.AddToUpdatesLog(updatesLogssb.ToString());
 
                     //Add the Card to the DB
                     Database.AddNewCardToDB(NewCARD);
                 }
 
-                AddLog(sb.ToString());
+                Driver.AddToFullLog(sb.ToString());
             }
+            #endregion
 
-            //END: CLose the Browser and Console
+            #region JOB #1 END
+            DBUpdateform.SendJobFinishSignal();
+            Driver.AddToFullLog(string.Format("New Cards Found: {0}", NewCardsCounter));
+            Driver.AddToFullLog(string.Format("Cards with new Sets Found: {0}", CardsWithNewSetCardsCounter));
+            Driver.AddToFullLog("----------------------------------");
+            Masterwatch.Stop();
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Tools.FormatTimeElapsed(Masterwatch.Elapsed.ToString())}");
             Driver.CloseDriver();
-
-            AddLog("----------------------------------");
-            AddLog(string.Format("New Cards Found: {0}", newCardsCount));
-            AddLog(string.Format("Cards with new Sets Found: {0}", cardsWithNewSetsCount));
-
-            watch.Stop();
-            AddLog($"Execution Time for card group was: {watch.Elapsed} |");
-
-            DBUpdateform.SendFullCompletionSignal();
             WriteOutputFiles();
+            #endregion
         }
-        
-        //Missing URLs Update Methods
-        private void TEST_SETUP_URLsUPDATE()
+        private void SearchMissingURLs(List<string> CardsWithoutProdeckURL, List<string> CardsWithoutTCGURLs)
         {
-            //Log
-            AddLog("---MISSING URLS UPDATE---");
-            DBUpdateform.SetOutputMessage("Starting...");
-
-            //Open Prodeck Advance Search Page up
-            Driver.GoToProdeckSearchPage();
-            ProDeckCardSearchPage.WaitUntilPageIsLoaded();
-        }
-        private void UpdateURLsDB(List<string> MissingProdeckURLsTest, List<string> MissingTCGPlayerURLsTest)
-        {
-            //START
-            Driver.Log.Clear();
-            var watch = new Stopwatch();
-            watch.Start();
-
-            //Open Driver and Setup
+            #region JOB #2 SETUP
+            Driver.ClearLogs();
+            var Masterwatch = new Stopwatch();
+            Masterwatch.Start();
             Driver.OpenBrowser();
-            TEST_SETUP_URLsUPDATE();
-            AddLog("--------------Missing Prodeck URLs---------------------");
+            Driver.AddToFullLog("--------------Missing Prodeck URLs---------------------");
+            //Set the total cards to scan; total = missingproeckurlscard.count + missingTCGUrlsCards.count
+            int misingURLTotalCardCount = CardsWithoutProdeckURL.Count + CardsWithoutTCGURLs.Count;
+            DBUpdateform.SetTotalCardsToScan(misingURLTotalCardCount);
+            #endregion
 
-            //Search for each card
-            List<string> successListProdeck = new List<string>();
-            foreach (string CardName in MissingProdeckURLsTest)
+            #region JOB #2: MISSING URLs SEARCH          
+            //Perform a manual Prodeck search to obtain URLs and Passcodes
+            List<string> ProdeckUpdateSuccessList = new List<string>();
+            foreach (string CardName in CardsWithoutProdeckURL)
             {
-                DBUpdateform.SendCardStartSignal();
+                //Open Prodeck Advance Search Page up
+                Driver.GoToProdeckSearchPage();
+                ProDeckCardSearchPage.WaitUntilPageIsLoaded();
+
                 StringBuilder sb = new StringBuilder();
-                sb.Append(string.Format("Card:{0}|", CardName));
+                sb.Append(string.Format("Card:{0} | ", CardName));
+                DBUpdateform.SendCardStartSignal(CardName);
 
                 //Save a ref to the Master Card for quick access/clean code
                 MasterCard ThisMasterCard = Database.GetCard(CardName);
@@ -451,40 +449,37 @@ namespace YGO_Card_Collector_5
                     //save the url of this card so we dont have to search for it again
                     string currentURL = Driver.ChromeDriver.Url;
                     ThisMasterCard.ProdeckURL = currentURL;
-                    successListProdeck.Add(CardName);
-                    sb.Append("Prodeck URL saved!|");
+                    ProdeckUpdateSuccessList.Add(CardName);
+                    sb.Append("Prodeck URL saved!");
+                    Driver.AddToUpdatesLog(string.Format("New PRODECK URL and PASSCODE Set for Card: {0}", CardName));
                 }
                 else
                 {
-                    sb.Append("Prodeck search failed!|");
+                    sb.Append("Prodeck search failed!");
                 }
 
                 //Log it and send the card completion signal
-                AddLog(sb.ToString());
+                Driver.AddToFullLog(sb.ToString());
             }
-
-            //Post run, remove the sucess searches from the CardsWithoutProdeckURL list
-            foreach (string cardname in successListProdeck)
+            //Remove the the CardsWithoutProdeckURL list any card in the Success List
+            foreach (string CardName in ProdeckUpdateSuccessList)
             {
-                Database.CardsWithoutProdeckURL.Remove(cardname);
+                Database.CardsWithoutProdeckURL.Remove(CardName);
             }
 
-            //Reload the list in the DBManager UI
-            LoadMissingURLsLists();
-
-            AddLog("--------------Missing TCG Player URLs---------------------");
+            Driver.AddToFullLog("--------------Missing TCG Player URLs---------------------");
 
             //Now search for the TCG Player URLs
             List<string> successListTCG = new List<string>();
-            foreach(string CardName in MissingTCGPlayerURLsTest) 
+            foreach (string CardName in CardsWithoutTCGURLs)
             {
-                DBUpdateform.SendCardStartSignal();
                 StringBuilder sb = new StringBuilder();
                 sb.AppendLine(string.Format("Card:{0}", CardName));
-                
+                DBUpdateform.SendCardStartSignal(CardName);
+
                 //Save a ref to the Master Card for quick access/clean code
                 MasterCard ThisMasterCard = Database.GetCard(CardName);
-              
+
                 //Go to the Card's Prodeck URL, if available
                 if (ThisMasterCard.HasProDeckURL())
                 {
@@ -500,13 +495,13 @@ namespace YGO_Card_Collector_5
                         {
                             //Click the view more and flag it for later
                             ProdeckCardInfoPage.ClickViewMore();
-                            viewmore = true;                           
+                            viewmore = true;
                         }
                     }
 
                     //For each card with missing TCG URL check if you can extract the URLs that match the set
-                    foreach(SetCard ThisSetCard in ThisMasterCard.SetCards) 
-                    {                        
+                    foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
+                    {
                         //Only search for Set Cards that are "Missing"
                         if (ThisSetCard.TCGPlayerURLIsMissing())
                         {
@@ -528,7 +523,7 @@ namespace YGO_Card_Collector_5
                             //Now check all the URL for matches
                             bool MathcURLFound = false;
                             foreach (string TestURL in URLsToCheck)
-                            {                               
+                            {
                                 //Go to the test URL
                                 try
                                 {
@@ -557,7 +552,7 @@ namespace YGO_Card_Collector_5
                                             ThisSetCard.TCGPlayerURL = TestURL;
                                             //Add this card to the "success" list to remove the master card from the
                                             //Missing TCG urls list
-                                            if(ThisMasterCard.HasNoMissingTCGURLs())
+                                            if (ThisMasterCard.HasNoMissingTCGURLs())
                                             {
                                                 successListTCG.Add(ThisMasterCard.Name);
                                             }
@@ -572,7 +567,7 @@ namespace YGO_Card_Collector_5
                                     }
                                 }
 
-                                if(MathcURLFound)
+                                if (MathcURLFound)
                                 {
                                     //Break the loop and move to the next code                                    
                                     break;
@@ -582,13 +577,14 @@ namespace YGO_Card_Collector_5
                             if (MathcURLFound)
                             {
                                 sb.AppendLine("Match URL FOUND!!!");
+                                Driver.AddToUpdatesLog(string.Format("TCG Player URL extracted for SetCard: [{0}|{1}] - {2}", ThisSetCard.Code, ThisSetCard.Rarity, CardName));
                             }
                             else
                             {
                                 sb.AppendLine("No Matches, find this URL manually...");
                             }
-                        }                       
-                    }                   
+                        }
+                    }
                 }
                 else
                 {
@@ -598,58 +594,54 @@ namespace YGO_Card_Collector_5
                 sb.AppendLine("---------------------------------------------------------");
 
                 //Log it
-                AddLog(sb.ToString());
+                Driver.AddToFullLog(sb.ToString());
             }
-
             //Post run, remove the sucess searches from the CardsWithoutTCGkURL list
             foreach (string cardname in successListTCG)
             {
                 Database.CardsWithoutTCGURLs.Remove(cardname);
             }
-            
-            //END: CLose the Browser and Console
+            #endregion
+
+            #region JOB #3 END
+            DBUpdateform.SendJobFinishSignal();
+            Driver.AddToFullLog(string.Format("Prodeck URLs and Passcodes Found: {0}", ProdeckUpdateSuccessList.Count));
+            Driver.AddToFullLog(string.Format("TCG Player URLs Found: {0}", successListTCG.Count));
+            Driver.AddToFullLog("----------------------------------");
+            Masterwatch.Stop();
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Tools.FormatTimeElapsed(Masterwatch.Elapsed.ToString())}");
             Driver.CloseDriver();
-
-            //Stop watch
-            watch.Stop();
-            AddLog($"Execution Time for card group was: {watch.Elapsed}");
-
-            //Be done
-            DBUpdateform.SendFullCompletionSignal();
             WriteOutputFiles();
+            #endregion
         }
-
-        //Update Prices Update
-        private void TEST_SETUP_UpdatePrices()
+        private void UpdatePrices(CardGroup TestGroup, int startIndex)
         {
-            //Log
-            AddLog("---UPDATING PRICES---");
-            DBUpdateform.SetOutputMessage("Starting...");
-        }
-        private void UpdatePricesDB(CardGroup Group)
-        {
-            //START
-            Driver.Log.Clear();
-            var watch = new Stopwatch();
-            watch.Start();
-
-            //Open Driver and Setup
+            #region JOB #3 SETUP
+            Driver.ClearLogs();
+            var Masterwatch = new Stopwatch();
+            Masterwatch.Start();
             Driver.OpenBrowser();
-            TEST_SETUP_UpdatePrices();
+            #endregion
 
-            //Set the cardlist
-            List<MasterCard> TestCardList = Database.GroupCardListByGroupName[Group];
+            #region JOB #3: Prices Update
+            List<MasterCard> PriceUpdateTestGroup = Database.GroupCardListByGroupName[TestGroup];
 
+            DBUpdateform.SetTotalCardsToScan(PriceUpdateTestGroup.Count);
+
+            int PriceUpdateCounter = 0;
             //Scan each set card for each master card
-            foreach (MasterCard ThisMasterCard in TestCardList)
+            for (int i = startIndex; i < PriceUpdateTestGroup.Count; i++)
             {
-                DBUpdateform.SendCardStartSignal();
+                //Set the MasterCard for quick access
+                MasterCard ThisMasterCard = PriceUpdateTestGroup[i];
+
                 StringBuilder sb = new StringBuilder();
-                sb.AppendLine(string.Format("Card:{0}", ThisMasterCard.Name));
+                sb.AppendLine(string.Format("Index: [{0}] | Card:{1}", i, ThisMasterCard.Name));
+                DBUpdateform.SendCardStartSignal(ThisMasterCard.Name);
 
                 foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
                 {
-                    sb.Append(string.Format("Code:{0} Rarity: {1}|", ThisSetCard.Code, ThisSetCard.Rarity));
+                    sb.Append(string.Format("Code:{0} Rarity: {1} | ", ThisSetCard.Code, ThisSetCard.Rarity));
 
                     try
                     {
@@ -664,59 +656,61 @@ namespace YGO_Card_Collector_5
                             string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
                             ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
                             sb.AppendLine("Prices Update!");
+                            PriceUpdateCounter++;
                         }
                         else
                         {
-                            if (ThisSetCard.TCGPlayerURLIsUnavailable()) { sb.AppendLine("URL Is Unavailable|"); }
-                            if (ThisSetCard.TCGPlayerURLIsMissing()) { sb.AppendLine("URL is Missing|"); }
+                            if (ThisSetCard.TCGPlayerURLIsUnavailable()) { sb.AppendLine("URL Is Unavailable."); }
+                            if (ThisSetCard.TCGPlayerURLIsMissing()) { sb.AppendLine("URL is Missing."); }
 
                         }
                     }
                     catch (Exception)
                     {
-                        sb.AppendLine("Unhandled exception occurred, skipping this setcard");
-                    }                   
+                        sb.AppendLine("Unhandled exception occurred, skipping this SetCard");
+                    }
                 }
 
                 sb.AppendLine("---------------------------");
-                AddLog(sb.ToString());
+                Driver.AddToFullLog(sb.ToString());
             }
+            #endregion
 
-            //END: CLose the Browser and Console
+            #region JOB #3 END
+            Driver.AddToFullLog(string.Format("SetCards with Successful Price Update: {0}", PriceUpdateCounter));
+            Driver.AddToFullLog("----------------------------------");
+            Masterwatch.Stop();
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Tools.FormatTimeElapsed(Masterwatch.Elapsed.ToString())}");
             Driver.CloseDriver();
-
-            //Stop watch
-            watch.Stop();
-            AddLog($"Execution Time for card group was: {watch.Elapsed}");
-
-            //Be done
-            DBUpdateform.SendFullCompletionSignal();
             WriteOutputFiles();
+            #endregion
         }
-        private void UpdatePricesDB_RariryCheck(CardGroup Group)
+        private void UpdatePricesDB_RarityCheck(CardGroup Group, int startIndex)
         {
             //START
-            Driver.Log.Clear();
+            Driver.ClearLogs();
             var watch = new Stopwatch();
             watch.Start();
 
-            //Open Driver and Setup
-            Driver.OpenBrowser();
-            TEST_SETUP_UpdatePrices();
+            //Setup
+            //TODO: FIX TEST_SETUP_UpdatePrices();
 
             //Set the cardlist
             List<MasterCard> TestCardList = Database.GroupCardListByGroupName[Group];
 
             //Scan each set card for each master card
-            foreach (MasterCard ThisMasterCard in TestCardList)
+            for (int i = startIndex; i < TestCardList.Count; i++)
             {
-                DBUpdateform.SendCardStartSignal();
+                //Set the MasterCard for quick access
+                MasterCard ThisMasterCard = TestCardList[i];
+
                 StringBuilder sb = new StringBuilder();
-                sb.AppendLine(string.Format("Card:{0}", ThisMasterCard.Name));
+                sb.AppendLine(string.Format("Index: [{0}] | Card:{1}", i, ThisMasterCard.Name));
+                DBUpdateform.SendCardStartSignal(ThisMasterCard.Name);
 
                 foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
                 {
-                    sb.Append(string.Format("Code:{0} Rarity: {1}|", ThisSetCard.Code, ThisSetCard.Rarity));
+                    sb.Append(string.Format("Code:{0} Rarity: {1} | ", ThisSetCard.Code, ThisSetCard.Rarity));
 
                     try
                     {
@@ -731,7 +725,7 @@ namespace YGO_Card_Collector_5
                             string RarityInPage = TCGCardInfoPage.GetRarity();
                             if (ThisSetCard.Code == CodeInPage && Tools.CompareInLowerCase(ThisSetCard.Rarity, RarityInPage))
                             {
-                                //Update prices since we are here.
+                                //Update prices since
                                 string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
                                 string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
                                 ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
@@ -743,53 +737,514 @@ namespace YGO_Card_Collector_5
                                 Database.TCGPagesThatDidntMatchRarity.Add(ThisMasterCard.Name + "|" + ThisSetCard.Code + "|" + ThisSetCard.Rarity + "|" + ThisSetCard.TCGPlayerURL);
                                 sb.AppendLine("Code/Rarity didnt match, flagging the card|");
                             }
+
+                                
                         }
                         else
                         {
-                            if (ThisSetCard.TCGPlayerURLIsUnavailable()) { sb.AppendLine("URL Is Unavailable|"); }
-                            if (ThisSetCard.TCGPlayerURLIsMissing()) { sb.AppendLine("URL is Missing|"); }
+                            if (ThisSetCard.TCGPlayerURLIsUnavailable()) { sb.AppendLine("URL Is Unavailable."); }
+                            if (ThisSetCard.TCGPlayerURLIsMissing()) { sb.AppendLine("URL is Missing."); }
 
                         }
                     }
                     catch (Exception)
                     {
-                        sb.AppendLine("Unhandled exception occurred, skipping this setcard");
+                        sb.AppendLine("Unhandled exception occurred, skipping this SetCard");
                     }
                 }
 
                 sb.AppendLine("---------------------------");
-                AddLog(sb.ToString());
+                Driver.AddToFullLog(sb.ToString());
             }
 
-            //END: CLose the Browser and Console
+            //END
             Driver.CloseDriver();
-
-            //Stop watch
             watch.Stop();
-            AddLog($"Execution Time for card group was: {watch.Elapsed}");
-
-            //Be done
+            Driver.AddToFullLog($"Execution Time for WHOLE Script was: {Tools.FormatTimeElapsed(watch.Elapsed.ToString())}");
             DBUpdateform.SendFullCompletionSignal();
             WriteOutputFiles();
-        }
-
-        //Logs and Post-Run Methods
-        private void AddLog(string line)
-        {
-            //Console.WriteLine(line);
-            Driver.Log.Add(line);
-        }
-        private void WriteOutputFiles()
-        {
-            //save the log file
-            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\LOG.txt", Driver.Log);
 
             //Save TCG rarity matching list
             File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\TCGRecordsThatDidntMathcRarity.txt", Database.TCGPagesThatDidntMatchRarity);
 
+        }
+        private void UpdateEntireDatabase(CardGroup TestGroup)
+        {
+            //Start
+            Driver.ClearLogs();
+            var Masterwatch = new Stopwatch();
+            Masterwatch.Start();
+
+            //-----------------------------------------------------------
+
+            # region JOB #1 SETUP (Konami Card List Update)
+            //Log
+            Driver.AddToFullLog("---UPDATE ENTIRE DB---");
+            DBUpdateform.SetOutputMessage("Extracting Current Konami Card List...");
+
+            //Launch the Chrome Driver to update Konami's Card list only (For the entire DB)
+            Driver.OpenBrowser();
+
+            //Open Konami's Card Search Page
+            Driver.GoToKonamiSearchPage();
+            KonamiSearchPage.WaitUntilPageIsLoaded();
+
+            //Clear Cookies Banner
+            KonamiSearchPage.AcceptCookiesBanner();
+
+            //Search for the Card Group
+            //KonamiSearchPage.SearchCardGroup(CardGroup.AllCards);
+            KonamiSearchPage.SearchCardGroup(TestGroup);
+
+            //Extract how many cards in total are in this group
+            int totalCards = KonamiCardListPage.GetCardListTotalCards();
+            Driver.AddToFullLog(string.Format("Total Card Count Konami's DB: {0}", totalCards));
+            DBUpdateform.SetTotalCardsToScan(totalCards);
+            #endregion
+
+            #region JOB #1: KONAMI CARD LIST UPDATE
+            DBUpdateform.SendJobStartSignal("Job 1/3: Updating Konami Card List");
+            //Test Start at Konami's Card List Page
+            int totalPages = KonamiCardListPage.GetPageCount();
+            var CardListExtractionwatch = new Stopwatch();
+            CardListExtractionwatch.Start();
+            Dictionary<string, string> CardList = new Dictionary<string, string>();            
+            for (int x = 1; x <= totalPages; x++)
+            {
+                DBUpdateform.SetOutputMessage(string.Format("Extracting Card Names on Page {0}/{1}",x,totalPages));
+                int cardsInPage = KonamiCardListPage.GetCardsCountInCurrentPage();
+                for (int y = 1; y <= cardsInPage; y++)
+                {
+                    string cardName = KonamiCardListPage.GetCardName(y);
+                    string cardURL = KonamiCardListPage.GetCardURL(y);
+                    //Add the Name/URL combo into the dictionary
+                    CardList.Add(cardName, cardURL);
+                }
+                //Move to the next page except if we already on the last page
+                if (x < totalPages) { KonamiCardListPage.ClickNextPage(); }
+                else { KonamiCardListPage.ResetPageNumber(); }
+            }
+            CardListExtractionwatch.Stop();
+            DBUpdateform.SetTotalCardsToScan(CardList.Count);
+            Driver.AddToFullLog($"Execution Time for Card List Name Extraction was: {Tools.FormatTimeElapsed(CardListExtractionwatch.Elapsed.ToString())}");
+            Driver.AddToFullLog("----------------------------------");
+
+            //Now Access each individual Card
+            var CardListUpdatewatch = new Stopwatch();
+            CardListUpdatewatch.Start();
+            int NewCardsCounter = 0;
+            int CardsWithNewSetCardsCounter = 0;
+            for(int i = 0; i < CardList.Count; i++)
+            {               
+                StringBuilder sb = new StringBuilder();
+
+                //set the card name for readibility and use
+                string CardName = CardList.ElementAt(i).Key;
+                string KomaniURL = "https://www.db.yugioh-card.com/" + CardList.ElementAt(i).Value;                            
+                sb.Append(string.Format("Index: [{0}] | Card Name: {1}|", i, CardName));
+                DBUpdateform.SendCardStartSignal(CardName);
+
+                Driver.GoToURL(KomaniURL);
+                KonamiCardInfoPage.WaitUntilPageIsLoaded();
+
+                //Extract the amount of sets (we already have the name)
+                int SetCardsInPage = KonamiCardInfoPage.GetSetsCount();
+
+                //Check this card against the current DB
+                if (Database.CardExists(CardName))
+                {
+                    //Save a ref to the MasterCard in DB for quick access
+                    MasterCard ThisMasterCard = Database.GetCard(CardName);
+
+                    //Check its sets
+                    int SetCardsInDB = ThisMasterCard.SetCards.Count;
+
+                    //Make comparison
+                    if (SetCardsInPage > SetCardsInDB)
+                    {
+                        //Extract the set cards
+                        CardsWithNewSetCardsCounter++;
+
+                        int NewSetCardsAmount = SetCardsInPage - SetCardsInDB;
+
+                        sb.Append(string.Format("New Set Cards found: {0}|", NewSetCardsAmount));
+                        StringBuilder updatesLogssb = new StringBuilder();
+                        updatesLogssb.Append(string.Format("EXISTING MASTERCARD: {0} | NEW SETCARDS:", CardName));
+                        //Add any new set to this card set list
+                        for (int x = NewSetCardsAmount; x >= 1; x--)
+                        {
+                            //Pull the data
+                            string releaseDate = KonamiCardInfoPage.GetSetReleaseDate(x);
+                            string code = KonamiCardInfoPage.GetSetCode(x);
+                            string setName = KonamiCardInfoPage.GetSetName(x);
+                            string rarity = KonamiCardInfoPage.GetRarity(x);
+
+                            //Add this set to it
+                            ThisMasterCard.InsertSetCard(releaseDate, code, setName, rarity);
+                            sb.Append(string.Format("Code: {0}|", code));
+                            updatesLogssb.Append(string.Format("[{0}|{1}]", code, rarity));                            
+                        }
+                        updatesLogssb.AppendLine("");
+                        Driver.AddToUpdatesLog(updatesLogssb.ToString());
+                    }
+                    else
+                    {
+                        //Do nothing, there is nothing to update
+                        sb.Append("No updates");
+                    }
+                }
+                else
+                {
+                    MasterCard NewCARD;
+                    sb.Append("New Card!|");
+                    NewCardsCounter++;
+
+                    //Otherwise, extract the whole card
+                    if (KonamiCardInfoPage.IsThisPageNonMonster())
+                    {
+                        //Extract spell/trap
+                        string species = KonamiCardInfoPage.GetSpecies();
+                        NewCARD = new MasterCard(CardName, "NONE", species, "0", "0", "0", "0", KomaniURL);
+                    }
+                    else
+                    {
+                        //extract monster
+                        //ORDER: ${CARDNAME}|${ATTRIBUTE}|${SPECIES}|${LEVELRANKLINK}|${ATA}|${DEF}|${PEND}|${SETSCOUNT}
+                        string attribute = KonamiCardInfoPage.GetAttribute();
+                        string species = KonamiCardInfoPage.GetSpecies();
+                        string levelranklink = KonamiCardInfoPage.GetLevelRankLink();
+                        string attack = KonamiCardInfoPage.GetAttack();
+                        string defense = KonamiCardInfoPage.GetDefense();
+                        string pendulum = KonamiCardInfoPage.GetPendulum();
+                        NewCARD = new MasterCard(CardName, attribute, species, levelranklink, attack, defense, pendulum, KomaniURL);
+                    }
+
+                    //Add the sets
+                    sb.Append(string.Format("Sets Count {0}|", SetCardsInPage));
+                    StringBuilder updatesLogssb = new StringBuilder();
+                    updatesLogssb.Append(string.Format("NEW MASTERCARD: {0} | SETCARDS:", CardName));
+                    for (int x = 1; x <= SetCardsInPage; x++)
+                    {
+                        //Pull the data
+                        string releaseDate = KonamiCardInfoPage.GetSetReleaseDate(x);
+                        string code = KonamiCardInfoPage.GetSetCode(x);
+                        string setName = KonamiCardInfoPage.GetSetName(x);
+                        string rarity = KonamiCardInfoPage.GetRarity(x);
+
+                        //Add this set to it
+                        NewCARD.AddSetCard(releaseDate, code, setName, rarity);
+                        sb.Append(string.Format("Code: {0}|", code));
+                        updatesLogssb.Append(string.Format("[{0}|{1}]", code, rarity));
+                    }
+                    updatesLogssb.AppendLine("");
+                    Driver.AddToUpdatesLog(updatesLogssb.ToString());
+
+                    //Add the Card to the DB
+                    Database.AddNewCardToDB(NewCARD);
+                }
+
+                Driver.AddToFullLog(sb.ToString());
+            }
+            #endregion
+
+            #region JOB #1 END
+            DBUpdateform.SendJobFinishSignal();
+            CardListUpdatewatch.Stop();
+            Driver.AddToFullLog(">>>>>>>>>>>>>>>>>>>Konami Card List Update Finished<<<<<<<<<<<<<<<<<<<<<<<<<");
+            Driver.AddToFullLog($"Execution Time for Card List DB Update was: {Tools.FormatTimeElapsed(CardListUpdatewatch.Elapsed.ToString())}");
+            Driver.AddToFullLog("----------------------------------");
+            #endregion
+
+            //-----------------------------------------------------------
+
+            #region JOB #2: MISSING URLs SEARCH
+            DBUpdateform.SendJobStartSignal("Job 2/3: Updating Prodeck and TCG URLs");
+            var URLsUpdatewatch = new Stopwatch();
+            URLsUpdatewatch.Start();
+
+            Driver.AddToFullLog("--------------Missing Prodeck URLs---------------------");
+            //Set the total cards to scan; total = missingproeckurlscard.count + missingTCGUrlsCards.count
+            int misingURLTotalCardCount = Database.CardsWithoutProdeckURL.Count + Database.CardsWithoutTCGURLs.Count;
+            DBUpdateform.SetTotalCardsToScan(misingURLTotalCardCount);
+
+            //Perform a manual Prodeck search to obtain URLs and Passcodes
+            List<string> ProdeckUpdateSuccessList = new List<string>();
+            foreach (string CardName in Database.CardsWithoutProdeckURL)
+            {
+                //Open Prodeck Advance Search Page up
+                Driver.GoToProdeckSearchPage();
+                ProDeckCardSearchPage.WaitUntilPageIsLoaded();
+
+                StringBuilder sb = new StringBuilder();
+                sb.Append(string.Format("Card:{0} | ", CardName));
+                DBUpdateform.SendCardStartSignal(CardName);
+
+                //Save a ref to the Master Card for quick access/clean code
+                MasterCard ThisMasterCard = Database.GetCard(CardName);
+
+                //Perform the search
+                bool SearchSucess = ProDeckCardSearchPage.SearchCard(CardName);
+
+                //if successful, save the Prodeck URL and Card ID, otherwise flag the fail on the log
+                if (SearchSucess)
+                {
+                    sb.Append("Prodeck Search Success!|");
+
+                    //Extract the card ID and override the ID
+                    int ID = ProdeckCardInfoPage.GetCardID();
+                    ThisMasterCard.ID = ID;
+
+                    //save the url of this card so we dont have to search for it again
+                    string currentURL = Driver.ChromeDriver.Url;
+                    ThisMasterCard.ProdeckURL = currentURL;
+                    ProdeckUpdateSuccessList.Add(CardName);
+                    sb.Append("Prodeck URL saved!");
+                    Driver.AddToUpdatesLog(string.Format("New PRODECK URL and PASSCODE Set for Card: {0}", CardName));
+                }
+                else
+                {
+                    sb.Append("Prodeck search failed!");
+                }
+
+                //Log it and send the card completion signal
+                Driver.AddToFullLog(sb.ToString());
+            }      
+            //Remove the the CardsWithoutProdeckURL list any card in the Success List
+            foreach(string CardName in ProdeckUpdateSuccessList) 
+            {
+                Database.CardsWithoutProdeckURL.Remove(CardName);
+            }
+
+            Driver.AddToFullLog("--------------Missing TCG Player URLs---------------------");
+
+            //Now search for the TCG Player URLs
+            List<string> successListTCG = new List<string>();
+            foreach (string CardName in Database.CardsWithoutTCGURLs)
+            {
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine(string.Format("Card:{0}", CardName));
+                DBUpdateform.SendCardStartSignal(CardName);
+
+                //Save a ref to the Master Card for quick access/clean code
+                MasterCard ThisMasterCard = Database.GetCard(CardName);
+
+                //Go to the Card's Prodeck URL, if available
+                if (ThisMasterCard.HasProDeckURL())
+                {
+                    //Go to the page
+                    Driver.GoToURL(ThisMasterCard.ProdeckURL);
+                    ProdeckCardInfoPage.WaitUntilPageIsLoaded();
+
+                    //Open the View more URLs if has so
+                    bool viewmore = false;
+                    if (ProdeckCardInfoPage.PageContainsTCGPrices())
+                    {
+                        if (ProdeckCardInfoPage.TCGPricesHasViewMore())
+                        {
+                            //Click the view more and flag it for later
+                            ProdeckCardInfoPage.ClickViewMore();
+                            viewmore = true;
+                        }
+                    }
+
+                    //For each card with missing TCG URL check if you can extract the URLs that match the set
+                    foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
+                    {
+                        //Only search for Set Cards that are "Missing"
+                        if (ThisSetCard.TCGPlayerURLIsMissing())
+                        {
+                            sb.Append(string.Format("Searching For Code: {0} Rarity: {1} |", ThisSetCard.Code, ThisSetCard.Rarity));
+
+                            //Extract available URLs from the page
+                            List<string> URLsToCheck = new List<string>();
+                            if (viewmore)
+                            {
+                                URLsToCheck = ProdeckCardInfoPage.GetPricesURLsViewMore(ThisSetCard.Name);
+                            }
+                            else
+                            {
+                                //extract the links directly from the page.
+                                URLsToCheck = ProdeckCardInfoPage.GetPricesURLsFromPage();
+                            }
+                            sb.Append(string.Format("URLs extracted to check: {0}|", URLsToCheck.Count));
+
+                            //Now check all the URL for matches
+                            bool MathcURLFound = false;
+                            foreach (string TestURL in URLsToCheck)
+                            {
+                                //Go to the test URL
+                                try
+                                {
+                                    Driver.GoToURL(TestURL);
+                                }
+                                catch (Exception)
+                                {
+                                    Driver.ChromeDriver.Close();
+                                    Driver.OpenBrowser();
+                                    Driver.GoToURL(TestURL);
+                                }
+
+                                //if the URL is a valid TCG Player listing page, check the code and rarity
+                                if (TCGCardInfoPage.IsAValidPage())
+                                {
+                                    bool PageLoadedCorrectly = TCGCardInfoPage.WaitUntilPageIsLoaded(true);
+
+                                    if (PageLoadedCorrectly)
+                                    {
+                                        //If the page corresponds to the code AND Rarity, then extract its price
+                                        string CodeInPage = TCGCardInfoPage.GetCode();
+                                        string RarityInPage = TCGCardInfoPage.GetRarity();
+                                        if (ThisSetCard.Code == CodeInPage && Tools.CompareInLowerCase(ThisSetCard.Rarity, RarityInPage))
+                                        {
+                                            //Save the URL and Update prices
+                                            ThisSetCard.TCGPlayerURL = TestURL;
+                                            //Add this card to the "success" list to remove the master card from the
+                                            //Missing TCG urls list
+                                            if (ThisMasterCard.HasNoMissingTCGURLs())
+                                            {
+                                                successListTCG.Add(ThisMasterCard.Name);
+                                            }
+                                            //Update prices since we are here.
+                                            string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                                            string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+                                            double priceInPageMarket = Tools.CovertPriceToDouble(priceInPageMarketstr);
+                                            double priceInPageMedian = Tools.CovertPriceToDouble(priceInPageMedianstr);
+                                            ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                                            MathcURLFound = true;
+                                        }
+                                    }
+                                }
+
+                                if (MathcURLFound)
+                                {
+                                    //Break the loop and move to the next code                                    
+                                    break;
+                                }
+                            }
+
+                            if (MathcURLFound)
+                            {
+                                sb.AppendLine("Match URL FOUND!!!");
+                                Driver.AddToUpdatesLog(string.Format("TCG Player URL extracted for SetCard: [{0}|{1}] - {2}", ThisSetCard.Code, ThisSetCard.Rarity, CardName));
+                            }
+                            else
+                            {
+                                sb.AppendLine("No Matches, find this URL manually...");
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    sb.AppendLine("NO PRODECK URL - Search Skip until card has one.");
+                }
+
+                sb.AppendLine("---------------------------------------------------------");
+
+                //Log it
+                Driver.AddToFullLog(sb.ToString());
+            }
+            //Post run, remove the sucess searches from the CardsWithoutTCGkURL list
+            foreach (string cardname in successListTCG)
+            {
+                Database.CardsWithoutTCGURLs.Remove(cardname);
+            }
+
+            //Log end results
+            DBUpdateform.SendJobFinishSignal();
+            URLsUpdatewatch.Stop();
+            Driver.AddToFullLog(">>>>>>>>>>>>>>>>>>>Missing URLs Update Finished<<<<<<<<<<<<<<<<<<<<<<<<<");
+            Driver.AddToFullLog($"Execution Time for Missing URLs Extraction was: {Tools.FormatTimeElapsed(URLsUpdatewatch.Elapsed.ToString())}");
+            Driver.AddToFullLog("----------------------------------");
+            #endregion
+
+            #region JOB #3: Prices Update
+            DBUpdateform.SendJobStartSignal("Job 3/3: All Cards' Prices");
+            var PricesUpdatewatch = new Stopwatch();
+            PricesUpdatewatch.Start();
+
+            List<MasterCard> PriceUpdateTestGroup = Database.GroupCardListByGroupName[TestGroup];
+
+            DBUpdateform.SetTotalCardsToScan(PriceUpdateTestGroup.Count);
+
+            int PriceUpdateCounter = 0;
+            //Scan each set card for each master card
+            for (int i = 0; i < PriceUpdateTestGroup.Count; i++)
+            {
+                //Set the MasterCard for quick access
+                MasterCard ThisMasterCard = PriceUpdateTestGroup[i];
+
+                StringBuilder sb = new StringBuilder();
+                sb.AppendLine(string.Format("Index: [{0}] | Card:{1}", i, ThisMasterCard.Name));
+                DBUpdateform.SendCardStartSignal(ThisMasterCard.Name);
+
+                foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
+                {
+                    sb.Append(string.Format("Code:{0} Rarity: {1} | ", ThisSetCard.Code, ThisSetCard.Rarity));
+
+                    try
+                    {
+                        if (ThisSetCard.HasTCGURL())
+                        {
+                            //Go to the test URL
+                            Driver.GoToURL(ThisSetCard.TCGPlayerURL);
+                            TCGCardInfoPage.WaitUntilPageIsLoaded(false);
+
+                            //Update prices since
+                            string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                            string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+                            ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                            sb.AppendLine("Prices Update!");
+                            PriceUpdateCounter++;
+                        }
+                        else
+                        {
+                            if (ThisSetCard.TCGPlayerURLIsUnavailable()) { sb.AppendLine("URL Is Unavailable."); }
+                            if (ThisSetCard.TCGPlayerURLIsMissing()) { sb.AppendLine("URL is Missing."); }
+
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        sb.AppendLine("Unhandled exception occurred, skipping this SetCard");
+                    }
+                }
+
+                sb.AppendLine("---------------------------");
+                Driver.AddToFullLog(sb.ToString());
+            }
+
+            //Log end results
+            Driver.AddToUpdatesLog(string.Format("{0} SetCards' Prices have been updated!!", PriceUpdateCounter));
+            PricesUpdatewatch.Stop();
+            Driver.AddToFullLog(">>>>>>>>>>>>>>>>>>>Prices Update Finished<<<<<<<<<<<<<<<<<<<<<<<<<");
+            Driver.AddToFullLog($"Execution Time for Prices Update was: {Tools.FormatTimeElapsed(PricesUpdatewatch.Elapsed.ToString())}");
+            Driver.AddToFullLog("----------------------------------");
+            #endregion
+
+            //END
+            Driver.AddToFullLog(string.Format("New Cards Found: {0}", NewCardsCounter));
+            Driver.AddToFullLog(string.Format("Cards with new Sets Found: {0}", CardsWithNewSetCardsCounter));
+            Driver.AddToFullLog(string.Format("Prodeck URLs and Passcodes Found: {0}", ProdeckUpdateSuccessList.Count));
+            Driver.AddToFullLog(string.Format("TCG Player URLs Found: {0}", successListTCG.Count));
+            Driver.AddToFullLog(string.Format("SetCards with Successful Price Update: {0}", PriceUpdateCounter));
+            Driver.AddToFullLog("----------------------------------");
+            Masterwatch.Stop();
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Tools.FormatTimeElapsed(Masterwatch.Elapsed.ToString())}");
+            Driver.CloseDriver();
+            WriteOutputFiles();
+        }
+        private void WriteOutputFiles()
+        {
+            //save the log file
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\FullLOG.txt", Driver.GetFullLogs());
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\UpdateLOG.txt", Driver.GetUpdateLogs());
+          
             //Save the New JSON DB
-            string output = JsonConvert.SerializeObject(Database.MasterCards);
-            File.WriteAllText(Directory.GetCurrentDirectory() + "\\Output Files\\CardDB_Output.json", output);
+            Database.SaveDatabaseInJSON();
+
+            //Reload the entire UI stats and such
+            ReloadStats();
         }
         #endregion
 
@@ -797,29 +1252,51 @@ namespace YGO_Card_Collector_5
         private void btnUpdateKonamiList_Click(object sender, EventArgs e)
         {
             Hide();
-            DBUpdateform = new DBUpdateHoldScren(this, Database.MasterCards.Count);
+            DBUpdateform = new DBUpdateHoldScren(this);
             DBUpdateform.Show();
 
-            UpdateKomaniDB(CardGroup.AllCards);
+            UpdateKomaniDB(CardGroup.AllCards, 0);
         }
         private void btnExtractURLs_Click(object sender, EventArgs e)
         {
-            int totalcardstocheck = Database.CardsWithoutProdeckURL.Count + Database.CardsWithoutTCGURLs.Count;
             Hide();
-            DBUpdateform = new DBUpdateHoldScren(this, totalcardstocheck);
+            DBUpdateform = new DBUpdateHoldScren(this);
             DBUpdateform.Show();
 
-            UpdateURLsDB(Database.CardsWithoutProdeckURL, Database.CardsWithoutTCGURLs);
+            SearchMissingURLs(Database.CardsWithoutProdeckURL, Database.CardsWithoutTCGURLs);
         }
         private void btnUpdatePrices_Click(object sender, EventArgs e)
         {
-            int cardcount = Database.GroupCardListByGroupName[CardGroup.AllCards].Count;
             Hide();
-            DBUpdateform = new DBUpdateHoldScren(this, cardcount);
+            DBUpdateform = new DBUpdateHoldScren(this);
             DBUpdateform.Show();
 
-            UpdatePricesDB(CardGroup.AllCards);
-        }       
+            UpdatePrices(CardGroup.AllCards, 0);
+        }
+        private void btnUpdateFullDB_Click(object sender, EventArgs e)
+        {
+            //RUN THE WHOLE EFFING THING
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this);
+            DBUpdateform.Show();
+
+            try 
+            {
+                UpdateEntireDatabase(CardGroup.AllCards);
+            }
+            catch(Exception ex) 
+            {
+                //If anything unhandle happens still write out the current data
+                Driver.AddToFullLog("An unhandle exception happened...");
+                Driver.AddToFullLog("Review exception below:");               
+                Driver.AddToFullLog("Message: "+ ex.Message);
+                Driver.AddToFullLog("Stack Trace: "+ ex.StackTrace);
+                WriteOutputFiles();
+            }
+
+            DBUpdateform.SendFullCompletionSignal();
+
+        }
         #endregion
 
         #region Event Listeners (Card List Explorer Tab - Filters)
@@ -1000,10 +1477,10 @@ namespace YGO_Card_Collector_5
         private void btnGroupUpdateKonamiList_Click(object sender, EventArgs e)
         {
             Hide();
-            DBUpdateform = new DBUpdateHoldScren(this, Database.SeaSerpentMonsters.Count);
+            DBUpdateform = new DBUpdateHoldScren(this);
             DBUpdateform.Show();
 
-            UpdateKomaniDB(_CurrentSelectedCardGroup);
+            UpdateKomaniDB(_CurrentSelectedCardGroup, 0);
         }
         private void btnGroupUpdateURLs_Click(object sender, EventArgs e)
         {
@@ -1025,21 +1502,42 @@ namespace YGO_Card_Collector_5
                 }
             }
 
-
-            int totalcardstocheck = CardsWithoutProdeckURL.Count + CardsWithoutTCGURLs.Count;
             Hide();
-            DBUpdateform = new DBUpdateHoldScren(this, totalcardstocheck);
+            DBUpdateform = new DBUpdateHoldScren(this);
             DBUpdateform.Show();
-            UpdateURLsDB(CardsWithoutProdeckURL, CardsWithoutTCGURLs);
+            SearchMissingURLs(CardsWithoutProdeckURL, CardsWithoutTCGURLs);
         }
         private void btnGroupUpdatePrices_Click(object sender, EventArgs e)
         {
-            int cardcount = Database.GroupCardListByGroupName[_CurrentSelectedCardGroup].Count;
             Hide();
-            DBUpdateform = new DBUpdateHoldScren(this, cardcount);
+            DBUpdateform = new DBUpdateHoldScren(this);
             DBUpdateform.Show();
 
-            UpdatePricesDB(_CurrentSelectedCardGroup);
+            UpdatePrices(_CurrentSelectedCardGroup, 0);
+            //UpdatePricesDB_RarityCheck(_CurrentSelectedCardGroup, 0);
+        }
+        private void btnUpdateFullGroup_Click(object sender, EventArgs e)
+        {
+            //RUN THE WHOLE EFFING THING (For the current group)
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this);
+            DBUpdateform.Show();
+
+            try
+            {
+                UpdateEntireDatabase(_CurrentSelectedCardGroup);
+            }
+            catch (Exception ex)
+            {
+                //If anything unhandle happens still write out the current data
+                Driver.AddToFullLog("An unhandle exception happened...");
+                Driver.AddToFullLog("Review exception below:");
+                Driver.AddToFullLog("Message: " + ex.Message);
+                Driver.AddToFullLog("Stack Trace: " + ex.StackTrace);
+                WriteOutputFiles();
+            }
+
+            DBUpdateform.SendFullCompletionSignal();
         }
         //2 Lists containers
         private void listCardList_SelectedIndexChanged(object sender, EventArgs e)
@@ -1125,6 +1623,8 @@ namespace YGO_Card_Collector_5
                     checkPasscodeEnableOverride.Visible = false;
                     lblMisingPasscodeWarning.Visible = false;
                     checkProdeckEnableOverride.Visible = true;
+                    //Update DB file
+                    Database.SaveDatabaseInJSON();
                 }
                 catch (Exception)
                 {
@@ -1164,6 +1664,8 @@ namespace YGO_Card_Collector_5
                 Database.CardsWithoutProdeckURL.Remove(_Explorer_CurrentMasterCardSelected.Name);
                 //Reload the Missing URL tab's UI
                 LoadMissingURLsLists();
+                //Update DB file
+                Database.SaveDatabaseInJSON();
             }
             else
             {
@@ -1179,6 +1681,8 @@ namespace YGO_Card_Collector_5
             Database.CardsWithUnavailableProdeckURL.Add(_Explorer_CurrentMasterCardSelected.Name);
             //Reload this Tabs UI
             LoadGroupViewStats();
+            //Update DB file
+            Database.SaveDatabaseInJSON();
         }
         //TCG Override section Elements
         private void checkTCGEnableOverride_CheckedChanged(object sender, EventArgs e)
@@ -1216,6 +1720,8 @@ namespace YGO_Card_Collector_5
 
                 //Reload the Missing URL tab's UI
                 LoadMissingURLsLists();
+                //Update DB file
+                Database.SaveDatabaseInJSON();
             }
             else
             {
@@ -1231,6 +1737,8 @@ namespace YGO_Card_Collector_5
             Database.CardsWithUnavailableTCGURLs.Add(_Explorer_CurrentMasterCardSelected.Name);
             //Reload this Tabs UI
             LoadGroupViewStats();
+            //Update DB file
+            Database.SaveDatabaseInJSON();
         }
         #endregion
 
@@ -1353,6 +1861,8 @@ namespace YGO_Card_Collector_5
                     checkPasscodeEnableOverride2.Visible = false;
                     lblMisingPasscodeWarning2.Visible = false;
                     checkProdeckEnableOverride2.Visible = true;
+                    //Update DB file
+                    Database.SaveDatabaseInJSON();
                 }
                 catch (Exception)
                 {
@@ -1392,6 +1902,8 @@ namespace YGO_Card_Collector_5
                 Database.CardsWithoutProdeckURL.Remove(_MissingURL_CurrentProdeckMasterCardSelected.Name);
                 //Reload the UI
                 ReloadStats();
+                //Update DB file
+                Database.SaveDatabaseInJSON();
             }
             else
             {
@@ -1408,6 +1920,8 @@ namespace YGO_Card_Collector_5
             ReloadStats();
             //Add this card to the unavailable list
             Database.CardsWithUnavailableProdeckURL.Remove(_MissingURL_CurrentProdeckMasterCardSelected.Name);
+            //Update DB file
+            Database.SaveDatabaseInJSON();
         }
         //TCG Override Section
         private void checkTCGEnableOverride2_CheckedChanged(object sender, EventArgs e)
@@ -1445,6 +1959,8 @@ namespace YGO_Card_Collector_5
 
                 //Reload stats
                 ReloadStats();
+                //Update DB file
+                Database.SaveDatabaseInJSON();
             }
             else
             {
@@ -1461,6 +1977,8 @@ namespace YGO_Card_Collector_5
             ReloadStats();
             //Add this card to the unavailable list
             Database.CardsWithUnavailableTCGURLs.Remove(_MissingURL_CurrentTCGMasterCardSelected.Name);
+            //Update DB file
+            Database.SaveDatabaseInJSON();
         }
         #endregion
 
@@ -1584,6 +2102,8 @@ namespace YGO_Card_Collector_5
                     checkPasscodeEnableOverride3.Visible = false;
                     lblMisingPasscodeWarning3.Visible = false;
                     checkProdeckEnableOverride3.Visible = true;
+                    //Update DB file
+                    Database.SaveDatabaseInJSON();
                 }
                 catch (Exception)
                 {
@@ -1618,6 +2138,8 @@ namespace YGO_Card_Collector_5
                 Database.CardsWithUnavailableProdeckURL.Remove(_UnavaURL_CurrentProdeckMasterCardSelected.Name);
                 //Reload the UI
                 ReloadStats();
+                //Update DB file
+                Database.SaveDatabaseInJSON();
             }
             else
             {
@@ -1655,6 +2177,8 @@ namespace YGO_Card_Collector_5
 
                 //reload stats
                 ReloadStats();
+                //Update DB file
+                Database.SaveDatabaseInJSON();
             }
             else
             {
@@ -1663,9 +2187,11 @@ namespace YGO_Card_Collector_5
         }
         #endregion
 
+        #region Event Listeners (URLs For Missing Card Images Tab)
         private void btnRefreshImagesURLS_Click(object sender, EventArgs e)
         {
             LoadMissingCardsUrlsList();
         }
+        #endregion      
     }
 }

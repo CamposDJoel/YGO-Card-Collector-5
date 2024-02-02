@@ -119,7 +119,6 @@
             this.checkPasscodeEnableOverride = new System.Windows.Forms.CheckBox();
             this.txtPasscode = new System.Windows.Forms.TextBox();
             this.label52 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.btnTCGUnavailable = new System.Windows.Forms.Button();
             this.btnProdeckUnavailable = new System.Windows.Forms.Button();
@@ -237,10 +236,18 @@
             this.label58 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.label61 = new System.Windows.Forms.Label();
             this.btnRefreshImagesURLS = new System.Windows.Forms.Button();
             this.label57 = new System.Windows.Forms.Label();
             this.txtCardImagesURLoutput = new System.Windows.Forms.TextBox();
-            this.label61 = new System.Windows.Forms.Label();
+            this.btnUpdateFullGroup = new System.Windows.Forms.Button();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
             this.PanelFullTotals.SuspendLayout();
             this.TabMasterTotals.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -264,7 +271,7 @@
             this.lblTotalAqua.AutoSize = true;
             this.lblTotalAqua.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalAqua.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalAqua.Location = new System.Drawing.Point(10, 15);
+            this.lblTotalAqua.Location = new System.Drawing.Point(4, 3);
             this.lblTotalAqua.Name = "lblTotalAqua";
             this.lblTotalAqua.Size = new System.Drawing.Size(369, 24);
             this.lblTotalAqua.TabIndex = 0;
@@ -1277,15 +1284,22 @@
             this.TabMasterTotals.Controls.Add(this.tabPage3);
             this.TabMasterTotals.Controls.Add(this.tabPage4);
             this.TabMasterTotals.Controls.Add(this.tabPage5);
-            this.TabMasterTotals.Location = new System.Drawing.Point(4, 42);
+            this.TabMasterTotals.Location = new System.Drawing.Point(4, 27);
             this.TabMasterTotals.Name = "TabMasterTotals";
             this.TabMasterTotals.SelectedIndex = 0;
-            this.TabMasterTotals.Size = new System.Drawing.Size(794, 441);
+            this.TabMasterTotals.Size = new System.Drawing.Size(796, 432);
             this.TabMasterTotals.TabIndex = 2;
             // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Black;
+            this.tabPage1.Controls.Add(this.label68);
+            this.tabPage1.Controls.Add(this.label67);
+            this.tabPage1.Controls.Add(this.label66);
+            this.tabPage1.Controls.Add(this.label65);
+            this.tabPage1.Controls.Add(this.label63);
+            this.tabPage1.Controls.Add(this.label59);
+            this.tabPage1.Controls.Add(this.label43);
             this.tabPage1.Controls.Add(this.label37);
             this.tabPage1.Controls.Add(this.btnUpdateFullDB);
             this.tabPage1.Controls.Add(this.label36);
@@ -1299,51 +1313,50 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(786, 415);
+            this.tabPage1.Size = new System.Drawing.Size(788, 406);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Master Card List Totals";
             // 
             // label37
             // 
             this.label37.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label37.Location = new System.Drawing.Point(381, 319);
+            this.label37.Location = new System.Drawing.Point(399, 362);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(342, 87);
+            this.label37.Size = new System.Drawing.Size(342, 38);
             this.label37.TabIndex = 8;
-            this.label37.Text = "Updates the entire DB. Like everything!\r\nUpdates Konami\'s Card List, finds Card P" +
-    "asscodes, Prodeck and TCG Player URLs.\r\nUpdates the prices of ALL Set Cards. \r\n\r" +
-    "\nEstimate execution time: 26 Hrs.";
+            this.label37.Text = "Update the ENTIRE Database. Like EVERYTHING in a single job.\r\nEsti. Execution tim" +
+    "e: 12Hr.";
             // 
             // btnUpdateFullDB
             // 
             this.btnUpdateFullDB.BackColor = System.Drawing.Color.DarkRed;
             this.btnUpdateFullDB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateFullDB.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateFullDB.Location = new System.Drawing.Point(465, 260);
+            this.btnUpdateFullDB.Location = new System.Drawing.Point(476, 304);
             this.btnUpdateFullDB.Name = "btnUpdateFullDB";
             this.btnUpdateFullDB.Size = new System.Drawing.Size(160, 57);
             this.btnUpdateFullDB.TabIndex = 7;
-            this.btnUpdateFullDB.Text = "Update FULL Database";
+            this.btnUpdateFullDB.Text = "Update Full Database";
             this.btnUpdateFullDB.UseVisualStyleBackColor = false;
+            this.btnUpdateFullDB.Click += new System.EventHandler(this.btnUpdateFullDB_Click);
             // 
             // label36
             // 
             this.label36.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label36.Location = new System.Drawing.Point(475, 174);
+            this.label36.Location = new System.Drawing.Point(445, 258);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(233, 72);
+            this.label36.Size = new System.Drawing.Size(239, 29);
             this.label36.TabIndex = 6;
-            this.label36.Text = "Updates the prices of all the Set Cards in the DB (Cards with available TCG Playe" +
-    "r URLs)";
+            this.label36.Text = "Updates the prices of ALL SetCards with a TCG URL saved.";
             // 
             // btnUpdatePrices
             // 
             this.btnUpdatePrices.BackColor = System.Drawing.Color.Olive;
             this.btnUpdatePrices.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdatePrices.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdatePrices.Location = new System.Drawing.Point(375, 174);
+            this.btnUpdatePrices.Location = new System.Drawing.Point(445, 225);
             this.btnUpdatePrices.Name = "btnUpdatePrices";
-            this.btnUpdatePrices.Size = new System.Drawing.Size(94, 72);
+            this.btnUpdatePrices.Size = new System.Drawing.Size(239, 32);
             this.btnUpdatePrices.TabIndex = 5;
             this.btnUpdatePrices.Text = "Update TCG Player Prices";
             this.btnUpdatePrices.UseVisualStyleBackColor = false;
@@ -1352,43 +1365,44 @@
             // label34
             // 
             this.label34.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label34.Location = new System.Drawing.Point(475, 91);
+            this.label34.Location = new System.Drawing.Point(446, 154);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(233, 72);
+            this.label34.Size = new System.Drawing.Size(239, 51);
             this.label34.TabIndex = 4;
-            this.label34.Text = "Searches for all the Missing Card Passcodes, Prodeck and TCG Player URLs.\r\nThis a" +
-    "pplies to the current existing Card List.";
+            this.label34.Text = "Attempts to find all the Prodeck and TCG URLs.\r\nIt will also update the Passcodes" +
+    " of new MasterCards.";
             // 
             // btnExtractURLs
             // 
             this.btnExtractURLs.BackColor = System.Drawing.Color.RosyBrown;
             this.btnExtractURLs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExtractURLs.ForeColor = System.Drawing.Color.Black;
-            this.btnExtractURLs.Location = new System.Drawing.Point(375, 91);
+            this.btnExtractURLs.Location = new System.Drawing.Point(446, 121);
             this.btnExtractURLs.Name = "btnExtractURLs";
-            this.btnExtractURLs.Size = new System.Drawing.Size(94, 72);
+            this.btnExtractURLs.Size = new System.Drawing.Size(239, 32);
             this.btnExtractURLs.TabIndex = 3;
-            this.btnExtractURLs.Text = "Update Passcodes and TCG Player URLs.";
+            this.btnExtractURLs.Text = "Search Missing URLs";
             this.btnExtractURLs.UseVisualStyleBackColor = false;
             this.btnExtractURLs.Click += new System.EventHandler(this.btnExtractURLs_Click);
             // 
             // lblKonamiUpdateWarning
             // 
             this.lblKonamiUpdateWarning.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblKonamiUpdateWarning.Location = new System.Drawing.Point(475, 9);
+            this.lblKonamiUpdateWarning.Location = new System.Drawing.Point(447, 54);
             this.lblKonamiUpdateWarning.Name = "lblKonamiUpdateWarning";
-            this.lblKonamiUpdateWarning.Size = new System.Drawing.Size(233, 72);
+            this.lblKonamiUpdateWarning.Size = new System.Drawing.Size(238, 44);
             this.lblKonamiUpdateWarning.TabIndex = 2;
-            this.lblKonamiUpdateWarning.Text = resources.GetString("lblKonamiUpdateWarning.Text");
+            this.lblKonamiUpdateWarning.Text = "Updates the card list from Konami\'s DB.\r\nNew MasterCards/SetCards will be missing" +
+    " their Prodeck and TCG URLs (and thus Prices)\r\n";
             // 
             // btnUpdateKonamiList
             // 
             this.btnUpdateKonamiList.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnUpdateKonamiList.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnUpdateKonamiList.ForeColor = System.Drawing.Color.Black;
-            this.btnUpdateKonamiList.Location = new System.Drawing.Point(375, 9);
+            this.btnUpdateKonamiList.Location = new System.Drawing.Point(446, 21);
             this.btnUpdateKonamiList.Name = "btnUpdateKonamiList";
-            this.btnUpdateKonamiList.Size = new System.Drawing.Size(94, 72);
+            this.btnUpdateKonamiList.Size = new System.Drawing.Size(239, 32);
             this.btnUpdateKonamiList.TabIndex = 1;
             this.btnUpdateKonamiList.Text = "Update Konami\'s Card List";
             this.btnUpdateKonamiList.UseVisualStyleBackColor = false;
@@ -1397,12 +1411,12 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Black;
+            this.tabPage2.Controls.Add(this.btnUpdateFullGroup);
             this.tabPage2.Controls.Add(this.lblMisingPasscodeWarning);
             this.tabPage2.Controls.Add(this.btnPasscodeOverride);
             this.tabPage2.Controls.Add(this.checkPasscodeEnableOverride);
             this.tabPage2.Controls.Add(this.txtPasscode);
             this.tabPage2.Controls.Add(this.label52);
-            this.tabPage2.Controls.Add(this.label43);
             this.tabPage2.Controls.Add(this.label42);
             this.tabPage2.Controls.Add(this.btnTCGUnavailable);
             this.tabPage2.Controls.Add(this.btnProdeckUnavailable);
@@ -1431,9 +1445,9 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(786, 415);
+            this.tabPage2.Size = new System.Drawing.Size(788, 406);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Card List Explorer";
+            this.tabPage2.Text = "Card Group Explorer";
             // 
             // lblMisingPasscodeWarning
             // 
@@ -1442,7 +1456,7 @@
             this.lblMisingPasscodeWarning.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblMisingPasscodeWarning.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMisingPasscodeWarning.ForeColor = System.Drawing.Color.Red;
-            this.lblMisingPasscodeWarning.Location = new System.Drawing.Point(442, 294);
+            this.lblMisingPasscodeWarning.Location = new System.Drawing.Point(442, 285);
             this.lblMisingPasscodeWarning.Name = "lblMisingPasscodeWarning";
             this.lblMisingPasscodeWarning.Size = new System.Drawing.Size(334, 12);
             this.lblMisingPasscodeWarning.TabIndex = 39;
@@ -1453,7 +1467,7 @@
             // 
             this.btnPasscodeOverride.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPasscodeOverride.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnPasscodeOverride.Location = new System.Drawing.Point(543, 233);
+            this.btnPasscodeOverride.Location = new System.Drawing.Point(543, 224);
             this.btnPasscodeOverride.Name = "btnPasscodeOverride";
             this.btnPasscodeOverride.Size = new System.Drawing.Size(69, 18);
             this.btnPasscodeOverride.TabIndex = 38;
@@ -1465,7 +1479,7 @@
             // checkPasscodeEnableOverride
             // 
             this.checkPasscodeEnableOverride.AutoSize = true;
-            this.checkPasscodeEnableOverride.Location = new System.Drawing.Point(443, 234);
+            this.checkPasscodeEnableOverride.Location = new System.Drawing.Point(443, 225);
             this.checkPasscodeEnableOverride.Name = "checkPasscodeEnableOverride";
             this.checkPasscodeEnableOverride.Size = new System.Drawing.Size(102, 17);
             this.checkPasscodeEnableOverride.TabIndex = 37;
@@ -1476,7 +1490,7 @@
             // txtPasscode
             // 
             this.txtPasscode.Enabled = false;
-            this.txtPasscode.Location = new System.Drawing.Point(444, 211);
+            this.txtPasscode.Location = new System.Drawing.Point(444, 202);
             this.txtPasscode.Name = "txtPasscode";
             this.txtPasscode.Size = new System.Drawing.Size(336, 20);
             this.txtPasscode.TabIndex = 36;
@@ -1487,37 +1501,27 @@
             this.label52.BackColor = System.Drawing.Color.Transparent;
             this.label52.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label52.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(441, 196);
+            this.label52.Location = new System.Drawing.Point(441, 187);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(125, 14);
             this.label52.TabIndex = 35;
             this.label52.Text = "Passcode (Card ID):";
             // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(533, 385);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(15, 15);
-            this.label43.TabIndex = 34;
-            this.label43.Text = ">";
-            // 
             // label42
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(335, 383);
+            this.label42.Location = new System.Drawing.Point(325, 365);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(15, 15);
+            this.label42.Size = new System.Drawing.Size(26, 15);
             this.label42.TabIndex = 33;
-            this.label42.Text = ">";
+            this.label42.Text = "OR";
             // 
             // btnTCGUnavailable
             // 
             this.btnTCGUnavailable.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTCGUnavailable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnTCGUnavailable.Location = new System.Drawing.Point(615, 347);
+            this.btnTCGUnavailable.Location = new System.Drawing.Point(615, 338);
             this.btnTCGUnavailable.Name = "btnTCGUnavailable";
             this.btnTCGUnavailable.Size = new System.Drawing.Size(79, 18);
             this.btnTCGUnavailable.TabIndex = 32;
@@ -1530,7 +1534,7 @@
             // 
             this.btnProdeckUnavailable.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProdeckUnavailable.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnProdeckUnavailable.Location = new System.Drawing.Point(615, 293);
+            this.btnProdeckUnavailable.Location = new System.Drawing.Point(615, 284);
             this.btnProdeckUnavailable.Name = "btnProdeckUnavailable";
             this.btnProdeckUnavailable.Size = new System.Drawing.Size(79, 18);
             this.btnProdeckUnavailable.TabIndex = 31;
@@ -1546,7 +1550,7 @@
             this.GroupPrices.Controls.Add(this.lblMarketPrice);
             this.GroupPrices.Controls.Add(this.label41);
             this.GroupPrices.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.GroupPrices.Location = new System.Drawing.Point(710, 59);
+            this.GroupPrices.Location = new System.Drawing.Point(710, 50);
             this.GroupPrices.Name = "GroupPrices";
             this.GroupPrices.Size = new System.Drawing.Size(74, 93);
             this.GroupPrices.TabIndex = 30;
@@ -1609,7 +1613,7 @@
             // 
             this.btnTCGOverride.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTCGOverride.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnTCGOverride.Location = new System.Drawing.Point(543, 347);
+            this.btnTCGOverride.Location = new System.Drawing.Point(543, 338);
             this.btnTCGOverride.Name = "btnTCGOverride";
             this.btnTCGOverride.Size = new System.Drawing.Size(69, 18);
             this.btnTCGOverride.TabIndex = 28;
@@ -1621,7 +1625,7 @@
             // checkTCGEnableOverride
             // 
             this.checkTCGEnableOverride.AutoSize = true;
-            this.checkTCGEnableOverride.Location = new System.Drawing.Point(442, 348);
+            this.checkTCGEnableOverride.Location = new System.Drawing.Point(442, 339);
             this.checkTCGEnableOverride.Name = "checkTCGEnableOverride";
             this.checkTCGEnableOverride.Size = new System.Drawing.Size(102, 17);
             this.checkTCGEnableOverride.TabIndex = 27;
@@ -1633,7 +1637,7 @@
             // 
             this.btnProdeckOverride.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProdeckOverride.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnProdeckOverride.Location = new System.Drawing.Point(543, 293);
+            this.btnProdeckOverride.Location = new System.Drawing.Point(543, 284);
             this.btnProdeckOverride.Name = "btnProdeckOverride";
             this.btnProdeckOverride.Size = new System.Drawing.Size(69, 18);
             this.btnProdeckOverride.TabIndex = 26;
@@ -1645,7 +1649,7 @@
             // checkProdeckEnableOverride
             // 
             this.checkProdeckEnableOverride.AutoSize = true;
-            this.checkProdeckEnableOverride.Location = new System.Drawing.Point(443, 292);
+            this.checkProdeckEnableOverride.Location = new System.Drawing.Point(443, 283);
             this.checkProdeckEnableOverride.Name = "checkProdeckEnableOverride";
             this.checkProdeckEnableOverride.Size = new System.Drawing.Size(102, 17);
             this.checkProdeckEnableOverride.TabIndex = 25;
@@ -1656,7 +1660,7 @@
             // txtTCGURL
             // 
             this.txtTCGURL.Enabled = false;
-            this.txtTCGURL.Location = new System.Drawing.Point(443, 325);
+            this.txtTCGURL.Location = new System.Drawing.Point(443, 316);
             this.txtTCGURL.Name = "txtTCGURL";
             this.txtTCGURL.Size = new System.Drawing.Size(336, 20);
             this.txtTCGURL.TabIndex = 20;
@@ -1667,7 +1671,7 @@
             this.label47.BackColor = System.Drawing.Color.Transparent;
             this.label47.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label47.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(440, 311);
+            this.label47.Location = new System.Drawing.Point(440, 302);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(84, 14);
             this.label47.TabIndex = 19;
@@ -1676,7 +1680,7 @@
             // txtProdeckURL
             // 
             this.txtProdeckURL.Enabled = false;
-            this.txtProdeckURL.Location = new System.Drawing.Point(444, 269);
+            this.txtProdeckURL.Location = new System.Drawing.Point(444, 260);
             this.txtProdeckURL.Name = "txtProdeckURL";
             this.txtProdeckURL.Size = new System.Drawing.Size(336, 20);
             this.txtProdeckURL.TabIndex = 18;
@@ -1687,7 +1691,7 @@
             this.label46.BackColor = System.Drawing.Color.Transparent;
             this.label46.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label46.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(441, 254);
+            this.label46.Location = new System.Drawing.Point(441, 245);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(88, 14);
             this.label46.TabIndex = 17;
@@ -1696,7 +1700,7 @@
             // txtKonamiURL
             // 
             this.txtKonamiURL.Enabled = false;
-            this.txtKonamiURL.Location = new System.Drawing.Point(444, 171);
+            this.txtKonamiURL.Location = new System.Drawing.Point(444, 162);
             this.txtKonamiURL.Name = "txtKonamiURL";
             this.txtKonamiURL.Size = new System.Drawing.Size(336, 20);
             this.txtKonamiURL.TabIndex = 16;
@@ -1707,7 +1711,7 @@
             this.label45.BackColor = System.Drawing.Color.Transparent;
             this.label45.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label45.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(441, 157);
+            this.label45.Location = new System.Drawing.Point(441, 148);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(83, 14);
             this.label45.TabIndex = 15;
@@ -1717,7 +1721,7 @@
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(424, 105);
+            this.label39.Location = new System.Drawing.Point(424, 96);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(15, 15);
             this.label39.TabIndex = 14;
@@ -1729,7 +1733,7 @@
             this.listSetCards.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listSetCards.FormattingEnabled = true;
             this.listSetCards.ItemHeight = 14;
-            this.listSetCards.Location = new System.Drawing.Point(443, 64);
+            this.listSetCards.Location = new System.Drawing.Point(443, 55);
             this.listSetCards.Name = "listSetCards";
             this.listSetCards.Size = new System.Drawing.Size(264, 88);
             this.listSetCards.TabIndex = 13;
@@ -1741,7 +1745,7 @@
             this.listCardList.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listCardList.FormattingEnabled = true;
             this.listCardList.ItemHeight = 14;
-            this.listCardList.Location = new System.Drawing.Point(149, 62);
+            this.listCardList.Location = new System.Drawing.Point(149, 53);
             this.listCardList.Name = "listCardList";
             this.listCardList.Size = new System.Drawing.Size(273, 284);
             this.listCardList.TabIndex = 12;
@@ -1752,9 +1756,9 @@
             this.btnGroupUpdatePrices.BackColor = System.Drawing.Color.Olive;
             this.btnGroupUpdatePrices.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGroupUpdatePrices.ForeColor = System.Drawing.Color.Black;
-            this.btnGroupUpdatePrices.Location = new System.Drawing.Point(554, 378);
+            this.btnGroupUpdatePrices.Location = new System.Drawing.Point(149, 384);
             this.btnGroupUpdatePrices.Name = "btnGroupUpdatePrices";
-            this.btnGroupUpdatePrices.Size = new System.Drawing.Size(175, 26);
+            this.btnGroupUpdatePrices.Size = new System.Drawing.Size(175, 22);
             this.btnGroupUpdatePrices.TabIndex = 8;
             this.btnGroupUpdatePrices.Text = "Update TCG Player Prices";
             this.btnGroupUpdatePrices.UseVisualStyleBackColor = false;
@@ -1765,11 +1769,11 @@
             this.btnGroupUpdateURLs.BackColor = System.Drawing.Color.RosyBrown;
             this.btnGroupUpdateURLs.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGroupUpdateURLs.ForeColor = System.Drawing.Color.Black;
-            this.btnGroupUpdateURLs.Location = new System.Drawing.Point(354, 377);
+            this.btnGroupUpdateURLs.Location = new System.Drawing.Point(149, 361);
             this.btnGroupUpdateURLs.Name = "btnGroupUpdateURLs";
-            this.btnGroupUpdateURLs.Size = new System.Drawing.Size(175, 26);
+            this.btnGroupUpdateURLs.Size = new System.Drawing.Size(175, 22);
             this.btnGroupUpdateURLs.TabIndex = 7;
-            this.btnGroupUpdateURLs.Text = "Update Prodeck+TCG URLs";
+            this.btnGroupUpdateURLs.Text = "Search Missing URLs";
             this.btnGroupUpdateURLs.UseVisualStyleBackColor = false;
             this.btnGroupUpdateURLs.Click += new System.EventHandler(this.btnGroupUpdateURLs_Click);
             // 
@@ -1778,9 +1782,9 @@
             this.btnGroupUpdateKonamiList.BackColor = System.Drawing.Color.DodgerBlue;
             this.btnGroupUpdateKonamiList.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGroupUpdateKonamiList.ForeColor = System.Drawing.Color.Black;
-            this.btnGroupUpdateKonamiList.Location = new System.Drawing.Point(154, 377);
+            this.btnGroupUpdateKonamiList.Location = new System.Drawing.Point(149, 338);
             this.btnGroupUpdateKonamiList.Name = "btnGroupUpdateKonamiList";
-            this.btnGroupUpdateKonamiList.Size = new System.Drawing.Size(175, 26);
+            this.btnGroupUpdateKonamiList.Size = new System.Drawing.Size(175, 22);
             this.btnGroupUpdateKonamiList.TabIndex = 6;
             this.btnGroupUpdateKonamiList.Text = "Update Konami\'s Card List";
             this.btnGroupUpdateKonamiList.UseVisualStyleBackColor = false;
@@ -1791,7 +1795,7 @@
             this.lblCardGroupName.AutoSize = true;
             this.lblCardGroupName.BackColor = System.Drawing.Color.Transparent;
             this.lblCardGroupName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCardGroupName.Location = new System.Drawing.Point(332, 6);
+            this.lblCardGroupName.Location = new System.Drawing.Point(332, 3);
             this.lblCardGroupName.Name = "lblCardGroupName";
             this.lblCardGroupName.Size = new System.Drawing.Size(63, 24);
             this.lblCardGroupName.TabIndex = 4;
@@ -1802,7 +1806,7 @@
             this.label40.AutoSize = true;
             this.label40.BackColor = System.Drawing.Color.Transparent;
             this.label40.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(150, 6);
+            this.label40.Location = new System.Drawing.Point(150, 3);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(166, 24);
             this.label40.TabIndex = 3;
@@ -1813,7 +1817,7 @@
             this.lblGroupTotals.AutoSize = true;
             this.lblGroupTotals.BackColor = System.Drawing.Color.Transparent;
             this.lblGroupTotals.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblGroupTotals.Location = new System.Drawing.Point(414, 32);
+            this.lblGroupTotals.Location = new System.Drawing.Point(414, 29);
             this.lblGroupTotals.Name = "lblGroupTotals";
             this.lblGroupTotals.Size = new System.Drawing.Size(58, 24);
             this.lblGroupTotals.TabIndex = 2;
@@ -1824,7 +1828,7 @@
             this.label38.AutoSize = true;
             this.label38.BackColor = System.Drawing.Color.Transparent;
             this.label38.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(150, 32);
+            this.label38.Location = new System.Drawing.Point(150, 29);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(245, 24);
             this.label38.TabIndex = 1;
@@ -2644,9 +2648,9 @@
             this.label44.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label44.Location = new System.Drawing.Point(5, 5);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(193, 24);
+            this.label44.Size = new System.Drawing.Size(200, 24);
             this.label44.TabIndex = 1;
-            this.label44.Text = "Missing URls Lists";
+            this.label44.Text = "Missing URLs Lists";
             // 
             // tabPage4
             // 
@@ -2960,6 +2964,16 @@
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "URLs For Missing Card Images";
             // 
+            // label61
+            // 
+            this.label61.BackColor = System.Drawing.Color.Transparent;
+            this.label61.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(386, 36);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(316, 176);
+            this.label61.TabIndex = 18;
+            this.label61.Text = resources.GetString("label61.Text");
+            // 
             // btnRefreshImagesURLS
             // 
             this.btnRefreshImagesURLS.BackColor = System.Drawing.Color.Green;
@@ -2992,15 +3006,85 @@
             this.txtCardImagesURLoutput.Size = new System.Drawing.Size(352, 358);
             this.txtCardImagesURLoutput.TabIndex = 0;
             // 
-            // label61
+            // btnUpdateFullGroup
             // 
-            this.label61.BackColor = System.Drawing.Color.Transparent;
-            this.label61.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.Location = new System.Drawing.Point(386, 36);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(316, 176);
-            this.label61.TabIndex = 18;
-            this.label61.Text = resources.GetString("label61.Text");
+            this.btnUpdateFullGroup.BackColor = System.Drawing.Color.DarkRed;
+            this.btnUpdateFullGroup.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateFullGroup.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateFullGroup.Location = new System.Drawing.Point(351, 346);
+            this.btnUpdateFullGroup.Name = "btnUpdateFullGroup";
+            this.btnUpdateFullGroup.Size = new System.Drawing.Size(86, 53);
+            this.btnUpdateFullGroup.TabIndex = 40;
+            this.btnUpdateFullGroup.Text = "Update Group\'s Full Database";
+            this.btnUpdateFullGroup.UseVisualStyleBackColor = false;
+            this.btnUpdateFullGroup.Click += new System.EventHandler(this.btnUpdateFullGroup_Click);
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(535, 6);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(44, 14);
+            this.label43.TabIndex = 9;
+            this.label43.Text = "Step 1";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(536, 107);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(44, 14);
+            this.label59.TabIndex = 10;
+            this.label59.Text = "Step 2";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(535, 210);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(44, 14);
+            this.label63.TabIndex = 11;
+            this.label63.Text = "Step 3";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Location = new System.Drawing.Point(543, 289);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(26, 14);
+            this.label65.TabIndex = 12;
+            this.label65.Text = "OR";
+            // 
+            // label66
+            // 
+            this.label66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label66.Location = new System.Drawing.Point(691, 54);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(91, 44);
+            this.label66.TabIndex = 13;
+            this.label66.Text = "Appr. Execution Time: 3hr 20mins";
+            // 
+            // label67
+            // 
+            this.label67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label67.Location = new System.Drawing.Point(691, 154);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(91, 44);
+            this.label67.TabIndex = 14;
+            this.label67.Text = "Appr. Execution Time: Depends\r\n";
+            // 
+            // label68
+            // 
+            this.label68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label68.Location = new System.Drawing.Point(690, 259);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(91, 44);
+            this.label68.TabIndex = 15;
+            this.label68.Text = "Appr. Execution Time: TBD";
             // 
             // DatabaseManager
             // 
@@ -3008,7 +3092,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(802, 491);
+            this.ClientSize = new System.Drawing.Size(804, 461);
             this.Controls.Add(this.TabMasterTotals);
             this.Controls.Add(this.lblTotalAqua);
             this.ForeColor = System.Drawing.Color.White;
@@ -3021,6 +3105,7 @@
             this.PanelFullTotals.ResumeLayout(false);
             this.TabMasterTotals.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.GroupPrices.ResumeLayout(false);
@@ -3202,7 +3287,6 @@
         private System.Windows.Forms.Label lblMarketPrice;
         private System.Windows.Forms.Button btnTCGUnavailable;
         private System.Windows.Forms.Button btnProdeckUnavailable;
-        private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.ListBox listTCGMissingURLs;
@@ -3262,5 +3346,13 @@
         private System.Windows.Forms.Button btnRefreshImagesURLS;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Button btnUpdateFullGroup;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label68;
     }
 }

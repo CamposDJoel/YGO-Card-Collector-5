@@ -43,11 +43,14 @@ namespace YGO_Card_Collector_5
         public void AddSetCard(string date, string code, string name, string rarity)
         {
             _SetCards.Add(new SetCard(date, code, name, rarity));
-
+            //this SetCard wont have a TCGPlayer URL set, add it to the list of missing URLs
+            Database.CardsWithoutTCGURLs.Add(_Name);
         }
         public void InsertSetCard(string date, string code, string name, string rarity)
         {
             _SetCards.Insert(0, new SetCard(date, code, name, rarity));
+            //this SetCard wont have a TCGPlayer URL set, add it to the list of missing URLs
+            Database.CardsWithoutTCGURLs.Add(_Name);
         }
         public bool HasProDeckURL()
         {

@@ -15,20 +15,20 @@ namespace YGO_Card_Collector_5
         public static Dictionary<string, MasterCard> MasterCardByName = new Dictionary<string, MasterCard>();
         public static Dictionary<string, MasterCard> MasterCardByCode = new Dictionary<string, MasterCard>();
         public static List<MasterCard> MasterCards = new List<MasterCard>();
-
         //Set Cards
         public static Dictionary<string, SetCard> SetCardByKey = new Dictionary<string, SetCard>();
         public static List<SetCard> SetCards = new List<SetCard>();
-
+        //Set Packs
         public static Dictionary<string, SetPack> SetPackByName = new Dictionary<string, SetPack>();        
         public static List<SetPack> SetPacks = new List<SetPack>();
-
+        //Missing URL lists
         public static List<string> CardsWithoutProdeckURL = new List<string>();
         public static List<string> CardsWithoutTCGURLs = new List<string>();
         public static List<string> CardsWithUnavailableProdeckURL = new List<string>();
         public static List<string> CardsWithUnavailableTCGURLs = new List<string>();
-
+        //test data
         public static List<string> TCGPagesThatDidntMatchRarity = new List<string>();
+        private  static bool ApplicationInTestMode = true;
 
         public static bool LoadDB()
         {
@@ -174,6 +174,22 @@ namespace YGO_Card_Collector_5
                 GroupCardListByGroupName.Add(CardGroup.Counter_Traps, CounterTraps);
             }
         }
+        public static void SaveDatabaseInJSON()
+        {
+            string output = JsonConvert.SerializeObject(MasterCards);
+
+            if (ApplicationInTestMode)
+            {
+                File.WriteAllText(Directory.GetCurrentDirectory() + "\\Output Files\\CardDB_Output.json", output);
+            }
+            else
+            {
+                //Override the actual DB file
+                File.WriteAllText(Directory.GetCurrentDirectory() + "\\Database\\CardDB.json", output);
+            }
+
+            
+        }
 
         public static bool CardExists(string cardName)
         {
@@ -189,6 +205,9 @@ namespace YGO_Card_Collector_5
             MasterCards.Add(card);
             MasterCardByName.Add(card.Name, card);
             MasterCards.Sort(new MasterCard.SortByName());
+
+            //This new card wont have a Prodeck URL, add it to the list of missing URLs
+            CardsWithoutProdeckURL.Add(card.Name);
 
             //Add the card into its card group list and sort it
             AddCardIntoCardGroup(card);

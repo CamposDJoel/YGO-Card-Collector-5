@@ -1,0 +1,1597 @@
+---UPDATE ENTIRE DB---
+Total Card Count Konami's DB: 244
+Execution Time for Card List Name Extraction was: 00 hrs. 00mns. 13secs.
+----------------------------------
+Index: [0] | Card Name: Abyss Soldier|No updates
+Index: [1] | Card Name: Abyss Warrior|No updates
+Index: [2] | Card Name: Advanced Crystal Beast Emerald Tortoise|No updates
+Index: [3] | Card Name: Ameba|No updates
+Index: [4] | Card Name: Amphibious Bugroth|No updates
+Index: [5] | Card Name: Aqua Spirit|No updates
+Index: [6] | Card Name: Aquaactress Arowana|No updates
+Index: [7] | Card Name: Aquaactress Guppy|No updates
+Index: [8] | Card Name: Aquaactress Tetra|No updates
+Index: [9] | Card Name: Aquarian Alessa|No updates
+Index: [10] | Card Name: Armored Starfish|No updates
+Index: [11] | Card Name: Artillery Catapult Turtle|No updates
+Index: [12] | Card Name: Barrier Statue of the Torrent|No updates
+Index: [13] | Card Name: Beastking of the Swamps|No updates
+Index: [14] | Card Name: Beelze Frog|No updates
+Index: [15] | Card Name: Behegon|No updates
+Index: [16] | Card Name: Blizzed, Defender of the Ice Barrier|No updates
+Index: [17] | Card Name: Boneheimer|No updates
+Index: [18] | Card Name: Cannonball Spear Shellfish|No updates
+Index: [19] | Card Name: Catapult Turtle|No updates
+Index: [20] | Card Name: Centerfrog|No updates
+Index: [21] | Card Name: Change Slime|No updates
+Index: [22] | Card Name: Chemicritter Carbo Crab|No updates
+Index: [23] | Card Name: Cloudian - Eye of the Typhoon|No updates
+Index: [24] | Card Name: Cold Enchanter|No updates
+Index: [25] | Card Name: Crab Turtle|No updates
+Index: [26] | Card Name: Cryomancer of the Ice Barrier|No updates
+Index: [27] | Card Name: Crystal Beast Emerald Tortoise|No updates
+Index: [28] | Card Name: Crystal God Tistina|No updates
+Index: [29] | Card Name: CXyz N.As.Ch. Knight|No updates
+Index: [30] | Card Name: D.3.S. Frog|No updates
+Index: [31] | Card Name: Danger! Nessie!|No updates
+Index: [32] | Card Name: Deep Diver|No updates
+Index: [33] | Card Name: Defender of the Ice Barrier|No updates
+Index: [34] | Card Name: Demigod of the Tistina|No updates
+Index: [35] | Card Name: Des Frog|No updates
+Index: [36] | Card Name: Dewdark of the Ice Barrier|No updates
+Index: [37] | Card Name: Doom Kraken|No updates
+Index: [38] | Card Name: Drill Barnacle|No updates
+Index: [39] | Card Name: Dupe Frog|No updates
+Index: [40] | Card Name: Egyptian God Slime|No updates
+Index: [41] | Card Name: Electric Jellyfish|No updates
+Index: [42] | Card Name: Escher the Frost Vassal|No updates
+Index: [43] | Card Name: Evigishki Gustkraken|No updates
+Index: [44] | Card Name: Evigishki Levianima|No updates
+Index: [45] | Card Name: Evigishki Merrowgeist|No updates
+Index: [46] | Card Name: Evigishki Mind Augus|No updates
+Index: [47] | Card Name: Evigishki Soul Ogre|No updates
+Index: [48] | Card Name: Evigishki Tetrogre|No updates
+Index: [49] | Card Name: Evilswarm Ketos|No updates
+Index: [50] | Card Name: Fallen of the Tistina|No updates
+Index: [51] | Card Name: Fiend Kraken|No updates
+Index: [52] | Card Name: Fire Kraken|No updates
+Index: [53] | Card Name: Flip Flop Frog|No updates
+Index: [54] | Card Name: Flying Penguin|No updates
+Index: [55] | Card Name: Freezing Beast|No updates
+Index: [56] | Card Name: Full Armored Dark Knight Lancer|No updates
+Index: [57] | Card Name: Gameciel, the Sea Turtle Kaiju|No updates
+Index: [58] | Card Name: Gate Guardian of Water and Thunder|No updates
+Index: [59] | Card Name: Gem-Knight Amethyst|No updates
+Index: [60] | Card Name: Gem-Knight Aquamarine|No updates
+Index: [61] | Card Name: Gem-Knight Iolite|No updates
+Index: [62] | Card Name: Gem-Knight Sapphire|No updates
+Index: [63] | Card Name: Genex Undine|No updates
+Index: [64] | Card Name: Giant Red Seasnake|No updates
+Index: [65] | Card Name: Giant Turtle Who Feeds on Flames|No updates
+Index: [66] | Card Name: Gishki Marker|No updates
+Index: [67] | Card Name: Gishki Mollusk|No updates
+Index: [68] | Card Name: Gishki Reliever|No updates
+Index: [69] | Card Name: Gishki Vanity|No updates
+Index: [70] | Card Name: Gishki Zielgigas|No updates
+Index: [71] | Card Name: Glacial Beast Blizzard Wolf|No updates
+Index: [72] | Card Name: Glacial Beast Iceberg Narwhal|No updates
+Index: [73] | Card Name: Glacial Beast Polar Penguin|No updates
+Index: [74] | Card Name: Gladiator Beast Retiari|No updates
+Index: [75] | Card Name: Gold Pride - Chariot Carrie|No updates
+Index: [76] | Card Name: Gora Turtle|No updates
+Index: [77] | Card Name: Gora Turtle of Illusion|No updates
+Index: [78] | Card Name: Graydle Alligator|No updates
+Index: [79] | Card Name: Graydle Cobra|No updates
+Index: [80] | Card Name: Graydle Dragon|No updates
+Index: [81] | Card Name: Graydle Eagle|No updates
+Index: [82] | Card Name: Graydle Slime|No updates
+Index: [83] | Card Name: Graydle Slime Jr.|No updates
+Index: [84] | Card Name: Gruesome Goo|No updates
+Index: [85] | Card Name: Guardian Slime|No updates
+Index: [86] | Card Name: Gunkan Suship Ikura|No updates
+Index: [87] | Card Name: Gunkan Suship Ikura-class Dreadnought|No updates
+Index: [88] | Card Name: Gunkan Suship Shari|No updates
+Index: [89] | Card Name: Gunkan Suship Shari Red|No updates
+Index: [90] | Card Name: Gunkan Suship Shirauo|No updates
+Index: [91] | Card Name: Gunkan Suship Shirauo-class Carrier|No updates
+Index: [92] | Card Name: Gunkan Suship Uni|No updates
+Index: [93] | Card Name: Gunkan Suship Uni-class Super-Dreadnought|No updates
+Index: [94] | Card Name: Hebo, Lord of the River|No updates
+Index: [95] | Card Name: Helmer, Helmsman Fur Hire|No updates
+Index: [96] | Card Name: High Tide Gyojin|No updates
+Index: [97] | Card Name: Hound of the Tistina|No updates
+Index: [98] | Card Name: Humanoid Slime|No updates
+Index: [99] | Card Name: Humanoid Worm Drake|No updates
+Index: [100] | Card Name: Hyosube|No updates
+Index: [101] | Card Name: Ice Hand|No updates
+Index: [102] | Card Name: Ice Knight|No updates
+Index: [103] | Card Name: Icejade Acti|No updates
+Index: [104] | Card Name: Icejade Aegirine|No updates
+Index: [105] | Card Name: Icejade Creation Aegirocassis|No updates
+Index: [106] | Card Name: Icejade Creation Kingfisher|No updates
+Index: [107] | Card Name: Icejade Gymir Aegirine|No updates
+Index: [108] | Card Name: Icejade Kosmochlor|No updates
+Index: [109] | Card Name: Icejade Ran Aegirine|No updates
+Index: [110] | Card Name: Icejade Tinola|No updates
+Index: [111] | Card Name: Icejade Tremora|No updates
+Index: [112] | Card Name: Impcantation Chalislime|No updates
+Index: [113] | Card Name: Island Turtle|No updates
+Index: [114] | Card Name: Jellyfish|No updates
+Index: [115] | Card Name: King of the Swamp|No updates
+Index: [116] | Card Name: Koa'ki Meiru Hydro Barrier|No updates
+Index: [117] | Card Name: Koa'ki Meiru Ice|No updates
+Index: [118] | Card Name: Lady of the Lake|No updates
+Index: [119] | Card Name: Leviair the Sea Dragon|No updates
+Index: [120] | Card Name: Liquid Beast|No updates
+Index: [121] | Card Name: Live☆Twin Ki-sikil Frost|No updates
+Index: [122] | Card Name: Mad Lobster|No updates
+Index: [123] | Card Name: Magical Reflect Slime|No updates
+Index: [124] | Card Name: Maiden of the Aqua|No updates
+Index: [125] | Card Name: Maryokutai|No updates
+Index: [126] | Card Name: Mermaid Knight|No updates
+Index: [127] | Card Name: Mermail Abyssbalaen|No updates
+Index: [128] | Card Name: Mermail Abyssdine|No updates
+Index: [129] | Card Name: Mermail Abyssgaios|No updates
+Index: [130] | Card Name: Mermail Abyssgunde|No updates
+Index: [131] | Card Name: Mermail Abysshilde|No updates
+Index: [132] | Card Name: Mermail Abysslinde|No updates
+Index: [133] | Card Name: Mermail Abyssnerei|No updates
+Index: [134] | Card Name: Mermail Abyssocea|No updates
+Index: [135] | Card Name: Mermail Abyssteus|No updates
+Index: [136] | Card Name: Metallizing Parasite - Lunatite|No updates
+Index: [137] | Card Name: Metallizing Parasite - Soltite|No updates
+Index: [138] | Card Name: Mistar Boy|No updates
+Index: [139] | Card Name: Mobius the Frost Monarch|No updates
+Index: [140] | Card Name: Mobius the Mega Monarch|No updates
+Index: [141] | Card Name: Mucus Yolk|No updates
+Index: [142] | Card Name: N.As.H. Knight|No updates
+Index: [143] | Card Name: Nemeses Umbrella|No updates
+Index: [144] | Card Name: Nightmare Penguin|No updates
+Index: [145] | Card Name: Nopenguin|No updates
+Index: [146] | Card Name: Number 101: Silent Honor ARK|No updates
+Index: [147] | Card Name: Number 21: Frozen Lady Justice|No updates
+Index: [148] | Card Name: Number 4: Stealth Kragen|No updates
+Index: [149] | Card Name: Number C101: Silent Honor DARK|No updates
+Index: [150] | Card Name: Numen erat Testudo|No updates
+Index: [151] | Card Name: Octoberser|No updates
+Index: [152] | Card Name: Ooguchi|No updates
+Index: [153] | Card Name: Oppressed People|No updates
+Index: [154] | Card Name: Paleozoic Anomalocaris|No updates
+Index: [155] | Card Name: Paleozoic Cambroraster|No updates
+Index: [156] | Card Name: Paleozoic Opabinia|No updates
+Index: [157] | Card Name: Penguin Brave|No updates
+Index: [158] | Card Name: Penguin Cleric|No updates
+Index: [159] | Card Name: Penguin Knight|No updates
+Index: [160] | Card Name: Penguin Ninja|No updates
+Index: [161] | Card Name: Penguin Soldier|No updates
+Index: [162] | Card Name: Penguin Squire|No updates
+Index: [163] | Card Name: Penguin Torpedo|No updates
+Index: [164] | Card Name: Performapal Guitartle|No updates
+Index: [165] | Card Name: Performapal Sellshell Crab|No updates
+Index: [166] | Card Name: Performapal Stamp Turtle|No updates
+Index: [167] | Card Name: Performapal Turn Toad|No updates
+Index: [168] | Card Name: Piwraithe the Ghost Pirate|No updates
+Index: [169] | Card Name: Poison Draw Frog|No updates
+Index: [170] | Card Name: Prank-Kids Dropsies|No updates
+Index: [171] | Card Name: Prank-Kids Rip-Roarin-Roaster|No updates
+Index: [172] | Card Name: Prank-Kids Weather Washer|No updates
+Index: [173] | Card Name: Prior of the Ice Barrier|No updates
+Index: [174] | Card Name: Psychic Kappa|No updates
+Index: [175] | Card Name: Puny Penguin|No updates
+Index: [176] | Card Name: Reactor Slime|No updates
+Index: [177] | Card Name: Red Archery Girl|No updates
+Index: [178] | Card Name: Returned of the Tistina|No updates
+Index: [179] | Card Name: Revival Jam|No updates
+Index: [180] | Card Name: Ritual Beast Ulti-Pettlephin|No updates
+Index: [181] | Card Name: Roaring Ocean Snake|No updates
+Index: [182] | Card Name: Ronintoadin|No updates
+Index: [183] | Card Name: Sea Kamen|No updates
+Index: [184] | Card Name: Secret Guards of the Ice Barrier|No updates
+Index: [185] | Card Name: Sentinel of the Seas|No updates
+Index: [186] | Card Name: Sentinel of the Tistina|No updates
+Index: [187] | Card Name: Servant of Catabolism|No updates
+Index: [188] | Card Name: Silent Sea Nettle|No updates
+Index: [189] | Card Name: Skull Kraken|No updates
+Index: [190] | Card Name: Slime Toad|No updates
+Index: [191] | Card Name: Slushy|No updates
+Index: [192] | Card Name: Snowman Eater|No updates
+Index: [193] | Card Name: Spiritual Beast Pettlephin|No updates
+Index: [194] | Card Name: Squirt Squid|No updates
+Index: [195] | Card Name: Star Boy|No updates
+Index: [196] | Card Name: Starfish|No updates
+Index: [197] | Card Name: Stealth Kragen Spawn|No updates
+Index: [198] | Card Name: Submarine Frog|No updates
+Index: [199] | Card Name: Substitoad|No updates
+Index: [200] | Card Name: Subterror Behemoth Phospheroglacier|No updates
+Index: [201] | Card Name: Suijin|No updates
+Index: [202] | Card Name: Supreme Sea Mare|No updates
+Index: [203] | Card Name: Swap Frog|No updates
+Index: [204] | Card Name: T.A.D.P.O.L.E.|No updates
+Index: [205] | Card Name: Tainted of the Tistina|No updates
+Index: [206] | Card Name: Tearlaments Havnis|No updates
+Index: [207] | Card Name: Tearlaments Kitkallos|No updates
+Index: [208] | Card Name: Tearlaments Merrli|No updates
+Index: [209] | Card Name: Tearlaments Rulkallos|No updates
+Index: [210] | Card Name: Tearlaments Scheiren|No updates
+Index: [211] | Card Name: Testudo erat Numen|No updates
+Index: [212] | Card Name: The Furious Sea King|No updates
+Index: [213] | Card Name: The Great Emperor Penguin|No updates
+Index: [214] | Card Name: The Tripper Mercury|No updates
+Index: [215] | Card Name: Therion "Reaper" Fum|No updates
+Index: [216] | Card Name: Tistina, the Divinity that Defies Darkness|No updates
+Index: [217] | Card Name: Toadally Awesome|No updates
+Index: [218] | Card Name: Toon Mermaid|No updates
+Index: [219] | Card Name: Tradetoad|No updates
+Index: [220] | Card Name: Treeborn Frog|No updates
+Index: [221] | Card Name: Tribe-Infecting Virus|No updates
+Index: [222] | Card Name: Turtle Bird|No updates
+Index: [223] | Card Name: Turtle Tiger|No updates
+Index: [224] | Card Name: Turu-Purun|No updates
+Index: [225] | Card Name: Twin Long Rods #2|No updates
+Index: [226] | Card Name: Uminotaurus|No updates
+Index: [227] | Card Name: Unformed Void|No updates
+Index: [228] | Card Name: Unifrog|No updates
+Index: [229] | Card Name: Violent Rain|No updates
+Index: [230] | Card Name: Vortex Trooper|No updates
+Index: [231] | Card Name: Warrior of Atlantis|No updates
+Index: [232] | Card Name: Water Magician|No updates
+Index: [233] | Card Name: Water Omotics|No updates
+Index: [234] | Card Name: Water Spirit|No updates
+Index: [235] | Card Name: Weather Report|No updates
+Index: [236] | Card Name: Wetha|No updates
+Index: [237] | Card Name: Wind-Up Snail|No updates
+Index: [238] | Card Name: Wingtortoise|No updates
+Index: [239] | Card Name: Yado Karu|No updates
+Index: [240] | Card Name: Yomi Ship|No updates
+Index: [241] | Card Name: Yorishiro of the Aqua|No updates
+Index: [242] | Card Name: Zone Eater|No updates
+Index: [243] | Card Name: ZW - Ultimate Shield|No updates
+>>>>>>>>>>>>>>>>>>>Konami Card List Update Finished<<<<<<<<<<<<<<<<<<<<<<<<<
+Execution Time for Card List DB Update was: 00 hrs. 04mns. 33secs.
+----------------------------------
+--------------Missing Prodeck URLs---------------------
+--------------Missing TCG Player URLs---------------------
+>>>>>>>>>>>>>>>>>>>Missing URLs Update Finished<<<<<<<<<<<<<<<<<<<<<<<<<
+Execution Time for Missing URLs Extraction was: 00 hrs. 00mns. 00secs.
+----------------------------------
+Index: [0] | Card:Abyss Soldier
+Code:SDRE-EN014 Rarity: Common | Prices Update!
+Code:DT06-EN065 Rarity: Common | Prices Update!
+Code:CP02-EN007 Rarity: Rare | Prices Update!
+Code:CMC-EN001 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [1] | Card:Abyss Warrior
+Code:ABYR-EN028 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [2] | Card:Advanced Crystal Beast Emerald Tortoise
+Code:BLCR-EN012 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [3] | Card:Ameba
+Code:SRL-EN010 Rarity: Rare | Prices Update!
+Code:DB1-EN008 Rarity: Common | Prices Update!
+Code:MRL-010 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [4] | Card:Amphibious Bugroth
+Code:MDP2-EN012 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [5] | Card:Aqua Spirit
+Code:SGX3-ENI20 Rarity: Common | Prices Update!
+Code:SDFC-EN021 Rarity: Common | Prices Update!
+Code:DB2-EN006 Rarity: Common | Prices Update!
+Code:LON-068 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [6] | Card:Aquaactress Arowana
+Code:DLCS-EN092 Rarity: Common | Prices Update!
+Code:DRL2-EN041 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [7] | Card:Aquaactress Guppy
+Code:DLCS-EN091 Rarity: Common | Prices Update!
+Code:DRL2-EN040 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [8] | Card:Aquaactress Tetra
+Code:DLCS-EN090 Rarity: Common | Prices Update!
+Code:DRL2-EN039 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [9] | Card:Aquarian Alessa
+Code:TAEV-EN020 Rarity: Super Rare | Prices Update!
+Code:TAEV-EN020 Rarity: Ultimate Rare | Prices Update!
+---------------------------
+
+Index: [10] | Card:Armored Starfish
+Code:LOB-EN116 Rarity: Common | Prices Update!
+Code:LOB-116 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [11] | Card:Artillery Catapult Turtle
+Code:MP21-EN099 Rarity: Super Rare | Prices Update!
+Code:ROTD-EN003 Rarity: Ultra Rare | Prices Update!
+---------------------------
+
+Index: [12] | Card:Barrier Statue of the Torrent
+Code:MAGO-EN112 Rarity: Gold Rare | Prices Update!
+Code:OP04-EN017 Rarity: Common | Prices Update!
+Code:CDIP-EN019 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [13] | Card:Beastking of the Swamps
+Code:GLD4-EN005 Rarity: Common | Prices Update!
+Code:TP5-EN014 Rarity: Common | Prices Update!
+Code:TP1-014 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [14] | Card:Beelze Frog
+Code:DR04-EN146 Rarity: Common | Prices Update!
+Code:SOI-EN026 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [15] | Card:Behegon
+Code:OP04-EN015 Rarity: Common | Prices Update!
+Code:TP8-EN014 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [16] | Card:Blizzed, Defender of the Ice Barrier
+Code:HAC1-EN029 Rarity: Common | Prices Update!
+Code:SDFC-EN006 Rarity: Common | Prices Update!
+Code:DT01-EN010 Rarity: Super Rare | Prices Update!
+Code:HA01-EN001 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [17] | Card:Boneheimer
+Code:LON-057 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [18] | Card:Cannonball Spear Shellfish
+Code:IOC-EN085 Rarity: Common | Prices Update!
+Code:DR2-EN086 Rarity: Common | Prices Update!
+Code:IOC-085 Rarity: Common | Prices Update!
+Code:IOC-EN085 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [19] | Card:Catapult Turtle
+Code:MRD-EN075 Rarity: Super Rare | Prices Update!
+Code:YGLD-ENA08 Rarity: Common | Prices Update!
+Code:DL18-EN001 Rarity: Rare | Prices Update!
+Code:LCYW-EN019 Rarity: Rare | Prices Update!
+Code:DPYG-EN006 Rarity: Common | Prices Update!
+Code:DLG1-EN039 Rarity: Rare | Prices Update!
+Code:RP01-EN038 Rarity: Super Rare | Prices Update!
+Code:DB2-EN047 Rarity: Super Rare | Prices Update!
+Code:MRD-075 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [20] | Card:Centerfrog
+Code:MP19-EN094 Rarity: Rare | Prices Update!
+Code:CYHO-EN025 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [21] | Card:Change Slime
+Code:SBTK-EN006 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [22] | Card:Chemicritter Carbo Crab
+Code:INOV-EN024 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [23] | Card:Cloudian - Eye of the Typhoon
+Code:SGX3-ENH02 Rarity: Common | Prices Update!
+Code:GLAS-EN005 Rarity: Super Rare | Prices Update!
+Code:GLAS-EN005 Rarity: Ultimate Rare | Prices Update!
+---------------------------
+
+Index: [24] | Card:Cold Enchanter
+Code:LCGX-EN201 Rarity: Common | Prices Update!
+Code:TDGS-EN096 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [25] | Card:Crab Turtle
+Code:SRL-EN069 Rarity: Common | Prices Update!
+Code:MRL-069 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [26] | Card:Cryomancer of the Ice Barrier
+Code:HAC1-EN031 Rarity: Common | Prices Update!
+Code:SDFC-EN007 Rarity: Common | Prices Update!
+Code:DT01-EN012 Rarity: Rare | Prices Update!
+Code:HA01-EN003 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [27] | Card:Crystal Beast Emerald Tortoise
+Code:BLCR-EN049 Rarity: Ultra Rare | Prices Update!
+Code:SDCB-EN003 Rarity: Common | Prices Update!
+Code:SGX1-ENF05 Rarity: Common | Prices Update!
+Code:LDS1-EN095 Rarity: Common | Prices Update!
+Code:RYMP-EN042 Rarity: Super Rare | Prices Update!
+Code:LCGX-EN157 Rarity: Common | Prices Update!
+Code:DP07-EN003 Rarity: Common | Prices Update!
+Code:FOTB-EN003 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [28] | Card:Crystal God Tistina
+Code:DUNE-EN089 Rarity: Secret Rare | Prices Update!
+Code:DUNE-EN089 Rarity: Quarter Century Secret Rare | Prices Update!
+---------------------------
+
+Index: [29] | Card:CXyz N.As.Ch. Knight
+Code:LED9-EN004 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [30] | Card:D.3.S. Frog
+Code:DR04-EN156 Rarity: Common | Prices Update!
+Code:SOI-EN036 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [31] | Card:Danger! Nessie!
+Code:SDCK-EN022 Rarity: Common | Prices Update!
+Code:BLMR-EN059 Rarity: Secret Rare | Prices Update!
+Code:BLMR-EN059 Rarity: Quarter Century Secret Rare | Prices Update!
+Code:MGED-EN019 Rarity: Ultra Rare (Pharaoh's Rare) | Prices Update!
+Code:MP19-EN137 Rarity: Ultra Rare | Prices Update!
+Code:CYHO-EN083 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [32] | Card:Deep Diver
+Code:SDRE-EN019 Rarity: Common | Prices Update!
+Code:BP01-EN017 Rarity: Rare | Prices Update!
+Code:BP01-EN017 Rarity: Starfoil | Prices Update!
+Code:WC08-EN001 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [33] | Card:Defender of the Ice Barrier
+Code:HAC1-EN043 Rarity: Common | Prices Update!
+Code:SDFC-EN009 Rarity: Common | Prices Update!
+Code:HA04-EN022 Rarity: Super Rare | Prices Update!
+Code:DT04-EN032 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [34] | Card:Demigod of the Tistina
+Code:DUNE-EN088 Rarity: Ultra Rare | Prices Update!
+Code:DUNE-EN088 Rarity: Quarter Century Secret Rare | Prices Update!
+---------------------------
+
+Index: [35] | Card:Des Frog
+Code:DR04-EN026 Rarity: Common | Prices Update!
+Code:CRV-EN026 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [36] | Card:Dewdark of the Ice Barrier
+Code:HAC1-EN039 Rarity: Common | Prices Update!
+Code:HA03-EN020 Rarity: Super Rare | Prices Update!
+Code:DT03-EN027 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [37] | Card:Doom Kraken
+Code:LED9-EN018 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [38] | Card:Drill Barnacle
+Code:GENF-EN007 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [39] | Card:Dupe Frog
+Code:SDFC-EN022 Rarity: Common | Prices Update!
+Code:OP03-EN005 Rarity: Super Rare | Prices Update!
+Code:CRMS-EN028 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [40] | Card:Egyptian God Slime
+Code:RA01-EN029 Rarity: Super Rare | Prices Update!
+Code:RA01-EN029 Rarity: Ultra Rare | Prices Update!
+Code:RA01-EN029 Rarity: Secret Rare | Prices Update!
+Code:RA01-EN029 Rarity: Ultimate Rare | Prices Update!
+Code:RA01-EN029 Rarity: Platinum Secret Rare | Prices Update!
+Code:RA01-EN029 Rarity: COLLECTOR'S RARE | Prices Update!
+Code:RA01-EN029 Rarity: Quarter Century Secret Rare | Prices Update!
+Code:LED7-EN001 Rarity: Common | Prices Update!
+Code:LED7-EN001 Rarity: Ultra Rare | Prices Update!
+---------------------------
+
+Index: [41] | Card:Electric Jellyfish
+Code:LED9-EN019 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [42] | Card:Escher the Frost Vassal
+Code:SR01-EN013 Rarity: Common | Prices Update!
+Code:CORE-EN091 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [43] | Card:Evigishki Gustkraken
+Code:HA06-EN046 Rarity: Secret Rare | Prices Update!
+Code:DT06-EN082 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [44] | Card:Evigishki Levianima
+Code:HA07-EN017 Rarity: Secret Rare | Prices Update!
+Code:DT07-EN031 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [45] | Card:Evigishki Merrowgeist
+Code:BP03-EN121 Rarity: Shattefoil | Prices Update!
+Code:HA06-EN053 Rarity: Secret Rare | Prices Update!
+Code:DT06-EN089 Rarity: Ultra Rare | Prices Update!
+Code:DT06-EN089 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [46] | Card:Evigishki Mind Augus
+Code:HA05-EN051 Rarity: Secret Rare | Prices Update!
+Code:DT05-EN084 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [47] | Card:Evigishki Soul Ogre
+Code:HA05-EN052 Rarity: Secret Rare | Prices Update!
+Code:DT05-EN085 Rarity: Ultra Rare | Prices Update!
+Code:DT05-EN085 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [48] | Card:Evigishki Tetrogre
+Code:HA06-EN018 Rarity: Secret Rare | Prices Update!
+Code:DT06-EN033 Rarity: Ultra Rare | Prices Update!
+Code:DT06-EN033 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [49] | Card:Evilswarm Ketos
+Code:BP03-EN098 Rarity: Rare | Prices Update!
+Code:BP03-EN098 Rarity: Shattefoil | Prices Update!
+Code:BPW2-EN050 Rarity: Super Rare | Prices Update!
+Code:WGRT-EN050 Rarity: Super Rare | URL Is Unavailable.
+Code:HA07-EN013 Rarity: Super Rare | Prices Update!
+Code:DT07-EN026 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [50] | Card:Fallen of the Tistina
+Code:AGOV-EN086 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [51] | Card:Fiend Kraken
+Code:SBC1-ENC08 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [52] | Card:Fire Kraken
+Code:SRL-EN014 Rarity: Common | Prices Update!
+Code:MRL-014 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [53] | Card:Flip Flop Frog
+Code:CRMS-EN029 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [54] | Card:Flying Penguin
+Code:MP1-011 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [55] | Card:Freezing Beast
+Code:DR1-EN072 Rarity: Common | Prices Update!
+Code:MFC-017 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [56] | Card:Full Armored Dark Knight Lancer
+Code:AGOV-EN041 Rarity: Ultra Rare | Prices Update!
+Code:AGOV-EN041 Rarity: Quarter Century Secret Rare | Prices Update!
+---------------------------
+
+Index: [57] | Card:Gameciel, the Sea Turtle Kaiju
+Code:DUDE-EN037 Rarity: Ultra Rare | Prices Update!
+Code:BLRR-EN075 Rarity: Secret Rare | Prices Update!
+Code:MP16-EN164 Rarity: Rare | Prices Update!
+Code:OP02-EN004 Rarity: Super Rare | Prices Update!
+Code:DOCS-EN088 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [58] | Card:Gate Guardian of Water and Thunder
+Code:MAZE-EN006 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [59] | Card:Gem-Knight Amethyst
+Code:HA06-EN047 Rarity: Secret Rare | Prices Update!
+Code:DT06-EN083 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [60] | Card:Gem-Knight Aquamarine
+Code:HA05-EN020 Rarity: Secret Rare | Prices Update!
+Code:DT05-EN035 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [61] | Card:Gem-Knight Iolite
+Code:HA06-EN032 Rarity: Super Rare | Prices Update!
+Code:DT06-EN068 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [62] | Card:Gem-Knight Sapphire
+Code:HA05-EN002 Rarity: Super Rare | Prices Update!
+Code:DT05-EN017 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [63] | Card:Genex Undine
+Code:SDFC-EN020 Rarity: Common | Prices Update!
+Code:AP01-EN005 Rarity: Super Rare | Prices Update!
+Code:TSHD-EN091 Rarity: Common | Prices Update!
+Code:DT01-EN060 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [64] | Card:Giant Red Seasnake
+Code:LCKC-EN097 Rarity: Ultra Rare | Prices Update!
+Code:TP4-007 Rarity: Rare | Prices Update!
+Code:TP2-003 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [65] | Card:Giant Turtle Who Feeds on Flames
+Code:SRL-EN022 Rarity: Common | Prices Update!
+Code:MRL-022 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [66] | Card:Gishki Marker
+Code:HA05-EN033 Rarity: Super Rare | Prices Update!
+Code:DT05-EN066 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [67] | Card:Gishki Mollusk
+Code:HA06-EN042 Rarity: Super Rare | Prices Update!
+Code:DT06-EN078 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [68] | Card:Gishki Reliever
+Code:HA06-EN009 Rarity: Super Rare | Prices Update!
+Code:DT06-EN024 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [69] | Card:Gishki Vanity
+Code:HA05-EN032 Rarity: Super Rare | Prices Update!
+Code:DT05-EN065 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [70] | Card:Gishki Zielgigas
+Code:HA07-EN057 Rarity: Secret Rare | Prices Update!
+Code:DT07-EN081 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [71] | Card:Glacial Beast Blizzard Wolf
+Code:BLAR-EN031 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [72] | Card:Glacial Beast Iceberg Narwhal
+Code:BLAR-EN033 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [73] | Card:Glacial Beast Polar Penguin
+Code:BLAR-EN032 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [74] | Card:Gladiator Beast Retiari
+Code:TU03-EN006 Rarity: Rare | Prices Update!
+Code:CSOC-EN086 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [75] | Card:Gold Pride - Chariot Carrie
+Code:CYAC-EN088 Rarity: Ultra Rare | Prices Update!
+Code:CYAC-EN088 Rarity: Starlight Rare | Prices Update!
+---------------------------
+
+Index: [76] | Card:Gora Turtle
+Code:DB2-EN215 Rarity: Common | Prices Update!
+Code:PGD-014 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [77] | Card:Gora Turtle of Illusion
+Code:IOC-EN066 Rarity: Common | Prices Update!
+Code:DR2-EN067 Rarity: Common | Prices Update!
+Code:IOC-066 Rarity: Common | Prices Update!
+Code:IOC-EN066 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [78] | Card:Graydle Alligator
+Code:DOCS-EN033 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [79] | Card:Graydle Cobra
+Code:DOCS-EN034 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [80] | Card:Graydle Dragon
+Code:DOCS-EN048 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [81] | Card:Graydle Eagle
+Code:DOCS-EN035 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [82] | Card:Graydle Slime
+Code:DOCS-EN032 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [83] | Card:Graydle Slime Jr.
+Code:INOV-EN030 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [84] | Card:Gruesome Goo
+Code:AP06-EN015 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [85] | Card:Guardian Slime
+Code:LED7-EN003 Rarity: Ultra Rare | Prices Update!
+---------------------------
+
+Index: [86] | Card:Gunkan Suship Ikura
+Code:MP22-EN128 Rarity: Common | Prices Update!
+Code:DAMA-EN012 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [87] | Card:Gunkan Suship Ikura-class Dreadnought
+Code:MP22-EN148 Rarity: Common | Prices Update!
+Code:DAMA-EN043 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [88] | Card:Gunkan Suship Shari
+Code:MP22-EN127 Rarity: Super Rare | Prices Update!
+Code:DAMA-EN011 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [89] | Card:Gunkan Suship Shari Red
+Code:POTE-EN026 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [90] | Card:Gunkan Suship Shirauo
+Code:MP22-EN202 Rarity: Common | Prices Update!
+Code:BODE-EN023 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [91] | Card:Gunkan Suship Shirauo-class Carrier
+Code:MP22-EN215 Rarity: Common | Prices Update!
+Code:BODE-EN049 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [92] | Card:Gunkan Suship Uni
+Code:MP22-EN201 Rarity: Common | Prices Update!
+Code:BODE-EN022 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [93] | Card:Gunkan Suship Uni-class Super-Dreadnought
+Code:MP22-EN214 Rarity: Common | Prices Update!
+Code:BODE-EN048 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [94] | Card:Hebo, Lord of the River
+Code:MP17-EN195 Rarity: Common | Prices Update!
+Code:RATE-EN030 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [95] | Card:Helmer, Helmsman Fur Hire
+Code:MP19-EN246 Rarity: Common | Prices Update!
+Code:DASA-EN016 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [96] | Card:High Tide Gyojin
+Code:SRL-EN025 Rarity: Common | Prices Update!
+Code:SBAD-EN022 Rarity: Common | Prices Update!
+Code:MRL-025 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [97] | Card:Hound of the Tistina
+Code:DUNE-EN087 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [98] | Card:Humanoid Slime
+Code:SBC1-ENH03 Rarity: Common | Prices Update!
+Code:DB1-EN207 Rarity: Common | Prices Update!
+Code:LON-003 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [99] | Card:Humanoid Worm Drake
+Code:SBC1-ENH19 Rarity: Common | Prices Update!
+Code:DB1-EN209 Rarity: Common | Prices Update!
+Code:LON-005 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [100] | Card:Hyosube
+Code:MRD-EN054 Rarity: Common | Prices Update!
+Code:MRD-054 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [101] | Card:Ice Hand
+Code:SDBT-EN021 Rarity: Common | Prices Update!
+Code:DLCS-EN049 Rarity: Common | Prices Update!
+Code:PGL3-EN023 Rarity: Gold Secret | Prices Update!
+Code:DRLG-EN047 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [102] | Card:Ice Knight
+Code:BROL-EN014 Rarity: Ultra Rare | Prices Update!
+---------------------------
+
+Index: [103] | Card:Icejade Acti
+Code:MP22-EN189 Rarity: Common | Prices Update!
+Code:BODE-EN008 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [104] | Card:Icejade Aegirine
+Code:MP23-EN007 Rarity: Super Rare | Prices Update!
+Code:BACH-EN007 Rarity: Ultra Rare | Prices Update!
+---------------------------
+
+Index: [105] | Card:Icejade Creation Aegirocassis
+Code:MP23-EN121 Rarity: Common | Prices Update!
+Code:POTE-EN010 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [106] | Card:Icejade Creation Kingfisher
+Code:MP23-EN008 Rarity: Common | Prices Update!
+Code:BACH-EN008 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [107] | Card:Icejade Gymir Aegirine
+Code:PHHY-EN038 Rarity: Ultra Rare | Prices Update!
+---------------------------
+
+Index: [108] | Card:Icejade Kosmochlor
+Code:MP23-EN006 Rarity: Ultra Rare | Prices Update!
+Code:BACH-EN006 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [109] | Card:Icejade Ran Aegirine
+Code:CYAC-EN010 Rarity: Ultra Rare | Prices Update!
+---------------------------
+
+Index: [110] | Card:Icejade Tinola
+Code:MP22-EN190 Rarity: Common | Prices Update!
+Code:BODE-EN009 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [111] | Card:Icejade Tremora
+Code:MP22-EN191 Rarity: Super Rare | Prices Update!
+Code:BODE-EN010 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [112] | Card:Impcantation Chalislime
+Code:WISU-EN051 Rarity: Rare | Prices Update!
+Code:GEIM-EN047 Rarity: Super Rare | Prices Update!
+Code:SAST-EN032 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [113] | Card:Island Turtle
+Code:PSV-EN095 Rarity: Common | Prices Update!
+Code:SDJ-005 Rarity: Common | Prices Update!
+Code:PSV-095 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [114] | Card:Jellyfish
+Code:MRD-EN072 Rarity: Common | Prices Update!
+Code:MRD-072 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [115] | Card:King of the Swamp
+Code:OP20-EN014 Rarity: Common | Prices Update!
+Code:FUEN-EN040 Rarity: Super Rare | Prices Update!
+Code:LDK2-ENK17 Rarity: Common | Prices Update!
+Code:LCYW-EN256 Rarity: Common | Prices Update!
+Code:DT04-EN055 Rarity: Common | Prices Update!
+Code:DR2-EN195 Rarity: Common | Prices Update!
+Code:HL1-EN006 Rarity: Super Rare | Prices Update!
+Code:AST-082 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [116] | Card:Koa'ki Meiru Hydro Barrier
+Code:ANPR-EN022 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [117] | Card:Koa'ki Meiru Ice
+Code:RGBT-EN025 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [118] | Card:Lady of the Lake
+Code:NKRT-EN013 Rarity: ? | Prices Update!
+Code:SHSP-EN084 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [119] | Card:Leviair the Sea Dragon
+Code:LEHD-ENC38 Rarity: Common | Prices Update!
+Code:BP03-EN117 Rarity: Shattefoil | Prices Update!
+Code:CT09-EN018 Rarity: Super Rare | Prices Update!
+Code:GENF-EN043 Rarity: Ultra Rare | Prices Update!
+Code:GENF-EN043 Rarity: Ultimate Rare | Prices Update!
+---------------------------
+
+Index: [120] | Card:Liquid Beast
+Code:SRL-EN023 Rarity: Common | Prices Update!
+Code:MRL-023 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [121] | Card:Live☆Twin Ki-sikil Frost
+Code:MP22-EN064 Rarity: Super Rare | Prices Update!
+Code:LIOV-EN017 Rarity: Ultra Rare | Prices Update!
+Code:LIOV-EN017 Rarity: Starlight Rare | Prices Update!
+---------------------------
+
+Index: [122] | Card:Mad Lobster
+Code:DR04-EN003 Rarity: Common | Prices Update!
+Code:CRV-EN003 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [123] | Card:Magical Reflect Slime
+Code:SBC1-ENH08 Rarity: Common | Prices Update!
+Code:GLAS-EN028 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [124] | Card:Maiden of the Aqua
+Code:SBC1-ENC07 Rarity: Common | Prices Update!
+Code:DB2-EN211 Rarity: Common | Prices Update!
+Code:PGD-008 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [125] | Card:Maryokutai
+Code:SBTK-EN014 Rarity: Common | Prices Update!
+Code:DB2-EN011 Rarity: Common | Prices Update!
+Code:LON-076 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [126] | Card:Mermaid Knight
+Code:DR2-EN137 Rarity: Rare | Prices Update!
+Code:SD4-EN011 Rarity: Common | Prices Update!
+Code:AST-025 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [127] | Card:Mermail Abyssbalaen
+Code:MP14-EN055 Rarity: Ultra Rare | Prices Update!
+Code:LTGY-EN083 Rarity: Ultra Rare | Prices Update!
+Code:LTGY-EN083 Rarity: Ultimate Rare | Prices Update!
+---------------------------
+
+Index: [128] | Card:Mermail Abyssdine
+Code:CBLZ-EN032 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [129] | Card:Mermail Abyssgaios
+Code:ABYR-EN046 Rarity: Ultra Rare | Prices Update!
+Code:ABYR-EN046 Rarity: Ultimate Rare | Prices Update!
+---------------------------
+
+Index: [130] | Card:Mermail Abyssgunde
+Code:AP03-EN005 Rarity: Super Rare | Prices Update!
+Code:ABYR-EN015 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [131] | Card:Mermail Abysshilde
+Code:ABYR-EN016 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [132] | Card:Mermail Abysslinde
+Code:ABYR-EN014 Rarity: Ultra Rare | Prices Update!
+Code:ABYR-EN014 Rarity: Ultimate Rare | Prices Update!
+---------------------------
+
+Index: [133] | Card:Mermail Abyssnerei
+Code:MP18-EN118 Rarity: Common | Prices Update!
+Code:CIBR-EN028 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [134] | Card:Mermail Abyssocea
+Code:MP14-EN016 Rarity: Common | Prices Update!
+Code:LTGY-EN030 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [135] | Card:Mermail Abyssteus
+Code:SHVA-EN039 Rarity: Super Rare | Prices Update!
+Code:BLLR-EN051 Rarity: Secret Rare | Prices Update!
+Code:CBLZ-EN083 Rarity: Ultra Rare | Prices Update!
+Code:CBLZ-EN083 Rarity: Ultimate Rare | Prices Update!
+---------------------------
+
+Index: [136] | Card:Metallizing Parasite - Lunatite
+Code:DCR-EN074 Rarity: Rare | Prices Update!
+Code:DCR-EN074 Rarity: Rare | Prices Update!
+Code:DR1-EN236 Rarity: Common | Prices Update!
+Code:DCR-074 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [137] | Card:Metallizing Parasite - Soltite
+Code:ABYR-EN034 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [138] | Card:Mistar Boy
+Code:CIBR-EN052 Rarity: Common | Prices Update!
+Code:COTD-ENSE3 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [139] | Card:Mobius the Frost Monarch
+Code:STAS-EN029 Rarity: Common | Prices Update!
+Code:SR01-EN007 Rarity: Common | Prices Update!
+Code:SP15-EN004 Rarity: Common | Prices Update!
+Code:SP15-EN004 Rarity: Shattefoil | Prices Update!
+Code:BP01-EN009 Rarity: Rare | Prices Update!
+Code:BP01-EN009 Rarity: Starfoil | Prices Update!
+Code:DL11-EN010 Rarity: Rare | Prices Update!
+Code:GLD2-EN007 Rarity: Common | Prices Update!
+Code:DR3-EN022 Rarity: Super Rare | Prices Update!
+Code:TP8-EN008 Rarity: Rare | Prices Update!
+Code:SD4-EN012 Rarity: Common | Prices Update!
+Code:SOD-EN022 Rarity: Super Rare | Prices Update!
+Code:SOD-EN022 Rarity: Ultimate Rare | Prices Update!
+---------------------------
+
+Index: [140] | Card:Mobius the Mega Monarch
+Code:SP15-EN009 Rarity: Common | Prices Update!
+Code:SP15-EN009 Rarity: Shattefoil | Prices Update!
+Code:MP14-EN217 Rarity: Secret Rare | Prices Update!
+Code:LVAL-EN040 Rarity: Secret Rare | Prices Update!
+Code:LVAL-EN040 Rarity: Ghost Rare | Prices Update!
+---------------------------
+
+Index: [141] | Card:Mucus Yolk
+Code:DB2-EN213 Rarity: Common | Prices Update!
+Code:PGD-011 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [142] | Card:N.As.H. Knight
+Code:LED9-EN003 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [143] | Card:Nemeses Umbrella
+Code:ETCO-EN011 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [144] | Card:Nightmare Penguin
+Code:SDRE-EN017 Rarity: Common | Prices Update!
+Code:DT04-EN005 Rarity: Common | Prices Update!
+Code:GLD1-EN021 Rarity: Common | Prices Update!
+Code:DR3-EN070 Rarity: Common | Prices Update!
+Code:RDS-EN010 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [145] | Card:Nopenguin
+Code:PRIO-EN037 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [146] | Card:Number 101: Silent Honor ARK
+Code:LED9-EN000 Rarity: Ghost Rare | Prices Update!
+Code:MAGO-EN060 Rarity: Gold Rare | Prices Update!
+Code:DUDE-EN017 Rarity: Ultra Rare | Prices Update!
+Code:WIRA-EN047 Rarity: Super Rare | Prices Update!
+Code:PGL2-EN046 Rarity: Gold Rare | Prices Update!
+Code:MP14-EN219 Rarity: Ultra Rare | Prices Update!
+Code:LVAL-EN047 Rarity: Ultra Rare | Prices Update!
+Code:LVAL-EN047 Rarity: Ultimate Rare | Prices Update!
+---------------------------
+
+Index: [147] | Card:Number 21: Frozen Lady Justice
+Code:PGL2-EN018 Rarity: Gold Secret | Prices Update!
+---------------------------
+
+Index: [148] | Card:Number 4: Stealth Kragen
+Code:BROL-EN030 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [149] | Card:Number C101: Silent Honor DARK
+Code:LED9-EN010 Rarity: Common | Prices Update!
+Code:MAGO-EN061 Rarity: Gold Rare | Prices Update!
+Code:MP14-EN218 Rarity: Ultra Rare | Prices Update!
+Code:LVAL-EN046 Rarity: Ultra Rare | Prices Update!
+Code:LVAL-EN046 Rarity: Ultimate Rare | Prices Update!
+---------------------------
+
+Index: [150] | Card:Numen erat Testudo
+Code:ORCS-EN038 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [151] | Card:Octoberser
+Code:SRL-EN052 Rarity: Common | Prices Update!
+Code:MRL-052 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [152] | Card:Ooguchi
+Code:MRD-EN032 Rarity: Common | Prices Update!
+Code:MRD-032 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [153] | Card:Oppressed People
+Code:DR1-EN057 Rarity: Common | Prices Update!
+Code:MFC-002 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [154] | Card:Paleozoic Anomalocaris
+Code:MP17-EN126 Rarity: Super Rare | Prices Update!
+Code:TDIL-EN099 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [155] | Card:Paleozoic Cambroraster
+Code:MP22-EN088 Rarity: Super Rare | Prices Update!
+Code:LIOV-EN047 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [156] | Card:Paleozoic Opabinia
+Code:MP17-EN172 Rarity: Super Rare | Prices Update!
+Code:INOV-EN099 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [157] | Card:Penguin Brave
+Code:OP17-EN010 Rarity: Super Rare | Prices Update!
+Code:MP21-EN189 Rarity: Common | Prices Update!
+Code:PHRA-EN039 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [158] | Card:Penguin Cleric
+Code:BODE-EN026 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [159] | Card:Penguin Knight
+Code:SRL-EN001 Rarity: Common | Prices Update!
+Code:DB1-EN001 Rarity: Common | Prices Update!
+Code:MRL-001 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [160] | Card:Penguin Ninja
+Code:BODE-EN025 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [161] | Card:Penguin Soldier
+Code:STAX-EN023 Rarity: Common | Prices Update!
+Code:OP17-EN013 Rarity: Common | Prices Update!
+Code:DL18-EN002 Rarity: Rare | Prices Update!
+Code:SDRE-EN018 Rarity: Common | Prices Update!
+Code:BP01-EN057 Rarity: Common | Prices Update!
+Code:BP01-EN057 Rarity: Starfoil | Prices Update!
+Code:DT06-EN060 Rarity: Common | Prices Update!
+Code:YS12-EN015 Rarity: Common | Prices Update!
+Code:DL09-EN002 Rarity: Rare | Prices Update!
+Code:5DS2-EN009 Rarity: Common | Prices Update!
+Code:DLG1-EN090 Rarity: Rare | Prices Update!
+Code:RP01-EN089 Rarity: Super Rare | Prices Update!
+Code:DB2-EN105 Rarity: Rare | Prices Update!
+Code:SDJ-022 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [162] | Card:Penguin Squire
+Code:BODE-EN024 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [163] | Card:Penguin Torpedo
+Code:BLAR-EN004 Rarity: Ultra Rare | Prices Update!
+---------------------------
+
+Index: [164] | Card:Performapal Guitartle
+Code:MP16-EN175 Rarity: Rare | Prices Update!
+Code:OP01-EN009 Rarity: Super Rare | Prices Update!
+Code:BOSH-EN004 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [165] | Card:Performapal Sellshell Crab
+Code:MP17-EN002 Rarity: Common | Prices Update!
+Code:SHVI-EN002 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [166] | Card:Performapal Stamp Turtle
+Code:MP15-EN195 Rarity: Common | Prices Update!
+Code:SECE-EN005 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [167] | Card:Performapal Turn Toad
+Code:MP15-EN066 Rarity: Rare | Prices Update!
+Code:DUEA-EN010 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [168] | Card:Piwraithe the Ghost Pirate
+Code:ETCO-EN000 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [169] | Card:Poison Draw Frog
+Code:DR04-EN028 Rarity: Common | Prices Update!
+Code:CRV-EN028 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [170] | Card:Prank-Kids Dropsies
+Code:MGED-EN108 Rarity: Gold Rare | Prices Update!
+Code:HISU-EN016 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [171] | Card:Prank-Kids Rip-Roarin-Roaster
+Code:HISU-EN022 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [172] | Card:Prank-Kids Weather Washer
+Code:MGED-EN112 Rarity: Gold Rare | Prices Update!
+Code:HISU-EN018 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [173] | Card:Prior of the Ice Barrier
+Code:SDFC-EN008 Rarity: Common | Prices Update!
+Code:PHSW-EN030 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [174] | Card:Psychic Kappa
+Code:SRL-EN053 Rarity: Common | Prices Update!
+Code:MRL-053 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [175] | Card:Puny Penguin
+Code:ABYR-EN037 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [176] | Card:Reactor Slime
+Code:SBC1-ENH05 Rarity: Common | Prices Update!
+Code:EGS1-EN020 Rarity: Super Rare | Prices Update!
+Code:LED7-EN002 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [177] | Card:Red Archery Girl
+Code:SRL-EN030 Rarity: Common | Prices Update!
+Code:SS04-ENB04 Rarity: Common | Prices Update!
+Code:DB1-EN016 Rarity: Common | Prices Update!
+Code:SDP-002 Rarity: Common | Prices Update!
+Code:MRL-030 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [178] | Card:Returned of the Tistina
+Code:AGOV-EN087 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [179] | Card:Revival Jam
+Code:SBC1-ENH02 Rarity: Common | Prices Update!
+Code:LCJW-EN113 Rarity: Common | Prices Update!
+Code:BP02-EN010 Rarity: Common | Prices Update!
+Code:BP02-EN010 Rarity: Mosaic Rare | Prices Update!
+Code:RP02-EN028 Rarity: Rare | Prices Update!
+Code:DB1-EN210 Rarity: Common | Prices Update!
+Code:LON-006 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [180] | Card:Ritual Beast Ulti-Pettlephin
+Code:THSF-EN029 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [181] | Card:Roaring Ocean Snake
+Code:MRD-EN020 Rarity: Common | Prices Update!
+Code:MRD-020 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [182] | Card:Ronintoadin
+Code:SDFC-EN023 Rarity: Common | Prices Update!
+Code:OP04-EN005 Rarity: Super Rare | Prices Update!
+Code:TSHD-EN033 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [183] | Card:Sea Kamen
+Code:AP06-EN014 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [184] | Card:Secret Guards of the Ice Barrier
+Code:HAC1-EN048 Rarity: Common | Prices Update!
+Code:HA04-EN053 Rarity: Super Rare | Prices Update!
+Code:DT04-EN083 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [185] | Card:Sentinel of the Seas
+Code:CP06-EN012 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [186] | Card:Sentinel of the Tistina
+Code:DUNE-EN086 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [187] | Card:Servant of Catabolism
+Code:PGD-012 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [188] | Card:Silent Sea Nettle
+Code:BROL-EN029 Rarity: Ultra Rare | Prices Update!
+---------------------------
+
+Index: [189] | Card:Skull Kraken
+Code:BPW2-EN041 Rarity: Common | Prices Update!
+Code:WGRT-EN041 Rarity: Common | URL Is Unavailable.
+Code:SP13-EN007 Rarity: Common | Prices Update!
+Code:SP13-EN007 Rarity: Starfoil | Prices Update!
+Code:GENF-EN006 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [190] | Card:Slime Toad
+Code:OP03-EN015 Rarity: Common | Prices Update!
+Code:MP1-004 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [191] | Card:Slushy
+Code:STP2-EN013 Rarity: Super Rare | Prices Update!
+Code:SBAD-EN029 Rarity: Common | Prices Update!
+Code:AP02-EN007 Rarity: Super Rare | Prices Update!
+Code:ABYR-EN083 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [192] | Card:Snowman Eater
+Code:AC18-EN008 Rarity: Super Rare | Prices Update!
+Code:SDRE-EN016 Rarity: Common | Prices Update!
+Code:BP01-EN064 Rarity: Common | Prices Update!
+Code:BP01-EN064 Rarity: Starfoil | Prices Update!
+Code:TU05-EN003 Rarity: Super Rare | Prices Update!
+Code:RGBT-EN094 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [193] | Card:Spiritual Beast Pettlephin
+Code:THSF-EN026 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [194] | Card:Squirt Squid
+Code:SAST-EN029 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [195] | Card:Star Boy
+Code:MRD-EN109 Rarity: Rare | Prices Update!
+Code:DB2-EN064 Rarity: Common | Prices Update!
+Code:SD4-EN006 Rarity: Common | Prices Update!
+Code:MRD-109 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [196] | Card:Starfish
+Code:LTGY-EN009 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [197] | Card:Stealth Kragen Spawn
+Code:BROL-EN031 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [198] | Card:Submarine Frog
+Code:CRMS-EN087 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [199] | Card:Substitoad
+Code:LODT-EN028 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [200] | Card:Subterror Behemoth Phospheroglacier
+Code:MACR-EN083 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [201] | Card:Suijin
+Code:MRD-EN027 Rarity: Super Rare | Prices Update!
+Code:MAZE-EN034 Rarity: Rare | Prices Update!
+Code:SGX2-END09 Rarity: Common | Prices Update!
+Code:SGX2-END09 Rarity: Secret Rare | Prices Update!
+Code:LCJW-EN226 Rarity: Common | Prices Update!
+Code:DLG1-EN033 Rarity: Rare | Prices Update!
+Code:RP01-EN032 Rarity: Rare | Prices Update!
+Code:DB1-EN159 Rarity: Common | Prices Update!
+Code:MRD-027 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [202] | Card:Supreme Sea Mare
+Code:MP23-EN076 Rarity: Common | Prices Update!
+Code:DIFO-EN030 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [203] | Card:Swap Frog
+Code:DUOV-EN063 Rarity: Ultra Rare | Prices Update!
+Code:OP03-EN001 Rarity: Ultimate Rare | Prices Update!
+Code:SOVR-EN034 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [204] | Card:T.A.D.P.O.L.E.
+Code:DR04-EN027 Rarity: Common | Prices Update!
+Code:CRV-EN027 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [205] | Card:Tainted of the Tistina
+Code:AGOV-EN088 Rarity: Ultra Rare | Prices Update!
+Code:AGOV-EN088 Rarity: Quarter Century Secret Rare | Prices Update!
+---------------------------
+
+Index: [206] | Card:Tearlaments Havnis
+Code:OP21-EN006 Rarity: Super Rare | Prices Update!
+Code:POTE-EN013 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [207] | Card:Tearlaments Kitkallos
+Code:POTE-EN042 Rarity: Ultra Rare | Prices Update!
+---------------------------
+
+Index: [208] | Card:Tearlaments Merrli
+Code:OP21-EN005 Rarity: Super Rare | Prices Update!
+Code:POTE-EN012 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [209] | Card:Tearlaments Rulkallos
+Code:DABL-EN039 Rarity: Secret Rare | Prices Update!
+Code:DABL-EN039 Rarity: Starlight Rare | Prices Update!
+---------------------------
+
+Index: [210] | Card:Tearlaments Scheiren
+Code:POTE-EN014 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [211] | Card:Testudo erat Numen
+Code:OP21-EN014 Rarity: Common | Prices Update!
+Code:TSHD-EN032 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [212] | Card:The Furious Sea King
+Code:LOB-EN033 Rarity: Common | Prices Update!
+Code:LOB-033 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [213] | Card:The Great Emperor Penguin
+Code:OP17-EN005 Rarity: Super Rare | Prices Update!
+Code:GENF-EN037 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [214] | Card:The Tripper Mercury
+Code:DLCS-EN102 Rarity: Common | Prices Update!
+Code:DRL3-EN006 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [215] | Card:Therion "Reaper" Fum
+Code:MP23-EN060 Rarity: Ultra Rare | Prices Update!
+Code:DIFO-EN004 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [216] | Card:Tistina, the Divinity that Defies Darkness
+Code:AGOV-EN089 Rarity: Ultra Rare | Prices Update!
+Code:AGOV-EN089 Rarity: Quarter Century Secret Rare | Prices Update!
+---------------------------
+
+Index: [217] | Card:Toadally Awesome
+Code:MAMA-EN068 Rarity: Ultra Rare | Prices Update!
+Code:MAGO-EN134 Rarity: Gold Rare | Prices Update!
+Code:MP17-EN150 Rarity: Secret Rare | Prices Update!
+Code:INOV-EN052 Rarity: Secret Rare | Prices Update!
+---------------------------
+
+Index: [218] | Card:Toon Mermaid
+Code:SRL-EN072 Rarity: Ultra Rare | Prices Update!
+Code:LDS1-EN054 Rarity: Common | Prices Update!
+Code:SS04-ENB10 Rarity: Common | Prices Update!
+Code:SS01-ENC06 Rarity: Common | Prices Update!
+Code:LCYW-EN105 Rarity: Rare | Prices Update!
+Code:DLG1-EN064 Rarity: Common | Prices Update!
+Code:RP01-EN063 Rarity: Common | Prices Update!
+Code:DB1-EN039 Rarity: Common | Prices Update!
+Code:SDP-023 Rarity: Common | Prices Update!
+Code:MRL-072 Rarity: Ultra Rare | Prices Update!
+---------------------------
+
+Index: [219] | Card:Tradetoad
+Code:EXVC-EN033 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [220] | Card:Treeborn Frog
+Code:DUSA-EN058 Rarity: ? | Prices Update!
+Code:BP02-EN043 Rarity: Common | Prices Update!
+Code:BP02-EN043 Rarity: Mosaic Rare | Prices Update!
+Code:BP01-EN012 Rarity: Rare | Prices Update!
+Code:BP01-EN012 Rarity: Starfoil | Prices Update!
+Code:GLD2-EN010 Rarity: Common | Prices Update!
+Code:DR04-EN145 Rarity: Ultra Rare | Prices Update!
+Code:CP04-EN020 Rarity: Common | Prices Update!
+Code:SOI-EN025 Rarity: Rare | Prices Update!
+Code:SOI-EN025 Rarity: Ultimate Rare | Prices Update!
+---------------------------
+
+Index: [221] | Card:Tribe-Infecting Virus
+Code:SD4-EN007 Rarity: Common | Prices Update!
+Code:DR1-EN131 Rarity: Rare | Prices Update!
+Code:MFC-076 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [222] | Card:Turtle Bird
+Code:MP1-014 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [223] | Card:Turtle Tiger
+Code:LOB-EN023 Rarity: Common | Prices Update!
+Code:LOB-023 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [224] | Card:Turu-Purun
+Code:TP2-017 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [225] | Card:Twin Long Rods #2
+Code:SRL-EN057 Rarity: Common | Prices Update!
+Code:MRL-057 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [226] | Card:Uminotaurus
+Code:BP03-EN101 Rarity: Common | Prices Update!
+Code:BP03-EN101 Rarity: Shattefoil | Prices Update!
+Code:ABYR-EN095 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [227] | Card:Unformed Void
+Code:NUMH-EN049 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [228] | Card:Unifrog
+Code:LODT-EN029 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [229] | Card:Violent Rain
+Code:TP8-EN015 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [230] | Card:Vortex Trooper
+Code:SGX3-ENH11 Rarity: Common | Prices Update!
+Code:LED2-EN046 Rarity: Common | Prices Update!
+Code:BP01-EN199 Rarity: Common | Prices Update!
+Code:BP01-EN199 Rarity: Starfoil | Prices Update!
+Code:GLAS-ENSE2 Rarity: Super Rare | Prices Update!
+---------------------------
+
+Index: [231] | Card:Warrior of Atlantis
+Code:SBC1-ENI12 Rarity: Common | Prices Update!
+Code:SDRE-EN013 Rarity: Common | Prices Update!
+Code:FOTB-EN016 Rarity: Rare | Prices Update!
+Code:FOTB-EN016 Rarity: Ultimate Rare | Prices Update!
+---------------------------
+
+Index: [232] | Card:Water Magician
+Code:OP04-EN014 Rarity: Common | Prices Update!
+Code:TP2-030 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [233] | Card:Water Omotics
+Code:MRD-EN021 Rarity: Common | Prices Update!
+Code:MRD-021 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [234] | Card:Water Spirit
+Code:5DS1-EN002 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [235] | Card:Weather Report
+Code:SRL-EN020 Rarity: Common | Prices Update!
+Code:MRL-020 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [236] | Card:Wetha
+Code:SBTK-EN005 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [237] | Card:Wind-Up Snail
+Code:GENF-EN017 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [238] | Card:Wingtortoise
+Code:GENF-EN022 Rarity: Rare | Prices Update!
+---------------------------
+
+Index: [239] | Card:Yado Karu
+Code:MRD-EN104 Rarity: Common | Prices Update!
+Code:MRD-104 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [240] | Card:Yomi Ship
+Code:STP5-EN019 Rarity: Common | Prices Update!
+Code:SBAD-EN024 Rarity: Super Rare | Prices Update!
+Code:LEDU-EN044 Rarity: Common | Prices Update!
+Code:BPW2-EN006 Rarity: Super Rare | Prices Update!
+Code:WGRT-EN006 Rarity: Super Rare | URL Is Unavailable.
+Code:YSKR-EN014 Rarity: Common | Prices Update!
+Code:DR1-EN019 Rarity: Common | Prices Update!
+Code:PGD-071 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [241] | Card:Yorishiro of the Aqua
+Code:MP23-EN218 Rarity: Ultra Rare | Prices Update!
+Code:DABL-EN092 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [242] | Card:Zone Eater
+Code:MDP2-EN015 Rarity: Common | Prices Update!
+---------------------------
+
+Index: [243] | Card:ZW - Ultimate Shield
+Code:KICO-EN036 Rarity: Rare | Prices Update!
+Code:CBLZ-EN007 Rarity: Common | Prices Update!
+---------------------------
+
+>>>>>>>>>>>>>>>>>>>Prices Update Finished<<<<<<<<<<<<<<<<<<<<<<<<<
+Execution Time for Prices Update was: 00 hrs. 34mns. 08secs.
+----------------------------------
+New Cards Found: 0
+Cards with new Sets Found: 0
+Prodeck URLs and Passcodes Found: 0
+TCG Player URLs Found: 0
+SetCards with Successful Price Update: 596
+----------------------------------
+Execution Time for the WHOLE script was: 00 hrs. 39mns. 12secs.
