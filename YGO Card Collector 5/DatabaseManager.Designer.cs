@@ -105,6 +105,13 @@
             this.lblTotalsInsect = new System.Windows.Forms.Label();
             this.TabMasterTotals = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.btnUpdateFullDB = new System.Windows.Forms.Button();
             this.label36 = new System.Windows.Forms.Label();
@@ -114,6 +121,7 @@
             this.lblKonamiUpdateWarning = new System.Windows.Forms.Label();
             this.btnUpdateKonamiList = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.btnUpdateFullGroup = new System.Windows.Forms.Button();
             this.lblMisingPasscodeWarning = new System.Windows.Forms.Label();
             this.btnPasscodeOverride = new System.Windows.Forms.Button();
             this.checkPasscodeEnableOverride = new System.Windows.Forms.CheckBox();
@@ -240,14 +248,15 @@
             this.btnRefreshImagesURLS = new System.Windows.Forms.Button();
             this.label57 = new System.Windows.Forms.Label();
             this.txtCardImagesURLoutput = new System.Windows.Forms.TextBox();
-            this.btnUpdateFullGroup = new System.Windows.Forms.Button();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.ListTop1000Report = new System.Windows.Forms.ListBox();
+            this.ListTop1000ReportMedian = new System.Windows.Forms.ListBox();
+            this.label71 = new System.Windows.Forms.Label();
+            this.lblMarketPriceTotalValue = new System.Windows.Forms.Label();
+            this.lblMedianPriceTotalValue = new System.Windows.Forms.Label();
             this.PanelFullTotals.SuspendLayout();
             this.TabMasterTotals.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -264,6 +273,7 @@
             this.GroupUnavailableTCGOverride.SuspendLayout();
             this.GroupUnavailableProdeckOverride.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTotalAqua
@@ -1284,6 +1294,8 @@
             this.TabMasterTotals.Controls.Add(this.tabPage3);
             this.TabMasterTotals.Controls.Add(this.tabPage4);
             this.TabMasterTotals.Controls.Add(this.tabPage5);
+            this.TabMasterTotals.Controls.Add(this.tabPage6);
+            this.TabMasterTotals.Controls.Add(this.tabPage7);
             this.TabMasterTotals.Location = new System.Drawing.Point(4, 27);
             this.TabMasterTotals.Name = "TabMasterTotals";
             this.TabMasterTotals.SelectedIndex = 0;
@@ -1316,6 +1328,73 @@
             this.tabPage1.Size = new System.Drawing.Size(788, 406);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Master Card List Totals";
+            // 
+            // label68
+            // 
+            this.label68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label68.Location = new System.Drawing.Point(690, 259);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(91, 44);
+            this.label68.TabIndex = 15;
+            this.label68.Text = "Appr. Execution Time: TBD";
+            // 
+            // label67
+            // 
+            this.label67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label67.Location = new System.Drawing.Point(691, 154);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(91, 44);
+            this.label67.TabIndex = 14;
+            this.label67.Text = "Appr. Execution Time: Depends\r\n";
+            // 
+            // label66
+            // 
+            this.label66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label66.Location = new System.Drawing.Point(691, 54);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(91, 44);
+            this.label66.TabIndex = 13;
+            this.label66.Text = "Appr. Execution Time: 3hr 20mins";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Location = new System.Drawing.Point(543, 289);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(26, 14);
+            this.label65.TabIndex = 12;
+            this.label65.Text = "OR";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(535, 210);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(44, 14);
+            this.label63.TabIndex = 11;
+            this.label63.Text = "Step 3";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(536, 107);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(44, 14);
+            this.label59.TabIndex = 10;
+            this.label59.Text = "Step 2";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(535, 6);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(44, 14);
+            this.label43.TabIndex = 9;
+            this.label43.Text = "Step 1";
             // 
             // label37
             // 
@@ -1448,6 +1527,19 @@
             this.tabPage2.Size = new System.Drawing.Size(788, 406);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Card Group Explorer";
+            // 
+            // btnUpdateFullGroup
+            // 
+            this.btnUpdateFullGroup.BackColor = System.Drawing.Color.DarkRed;
+            this.btnUpdateFullGroup.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateFullGroup.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateFullGroup.Location = new System.Drawing.Point(351, 346);
+            this.btnUpdateFullGroup.Name = "btnUpdateFullGroup";
+            this.btnUpdateFullGroup.Size = new System.Drawing.Size(86, 53);
+            this.btnUpdateFullGroup.TabIndex = 40;
+            this.btnUpdateFullGroup.Text = "Update Group\'s Full Database";
+            this.btnUpdateFullGroup.UseVisualStyleBackColor = false;
+            this.btnUpdateFullGroup.Click += new System.EventHandler(this.btnUpdateFullGroup_Click);
             // 
             // lblMisingPasscodeWarning
             // 
@@ -2342,7 +2434,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(786, 415);
+            this.tabPage3.Size = new System.Drawing.Size(788, 406);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Missing URLs";
             // 
@@ -2668,7 +2760,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(786, 415);
+            this.tabPage4.Size = new System.Drawing.Size(788, 406);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "Unavailable URLs";
             // 
@@ -2960,7 +3052,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(786, 415);
+            this.tabPage5.Size = new System.Drawing.Size(788, 406);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "URLs For Missing Card Images";
             // 
@@ -3006,85 +3098,105 @@
             this.txtCardImagesURLoutput.Size = new System.Drawing.Size(352, 358);
             this.txtCardImagesURLoutput.TabIndex = 0;
             // 
-            // btnUpdateFullGroup
+            // tabPage6
             // 
-            this.btnUpdateFullGroup.BackColor = System.Drawing.Color.DarkRed;
-            this.btnUpdateFullGroup.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateFullGroup.ForeColor = System.Drawing.Color.White;
-            this.btnUpdateFullGroup.Location = new System.Drawing.Point(351, 346);
-            this.btnUpdateFullGroup.Name = "btnUpdateFullGroup";
-            this.btnUpdateFullGroup.Size = new System.Drawing.Size(86, 53);
-            this.btnUpdateFullGroup.TabIndex = 40;
-            this.btnUpdateFullGroup.Text = "Update Group\'s Full Database";
-            this.btnUpdateFullGroup.UseVisualStyleBackColor = false;
-            this.btnUpdateFullGroup.Click += new System.EventHandler(this.btnUpdateFullGroup_Click);
+            this.tabPage6.BackColor = System.Drawing.Color.Black;
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(788, 406);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Set Packs Explorer";
             // 
-            // label43
+            // tabPage7
             // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(535, 6);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(44, 14);
-            this.label43.TabIndex = 9;
-            this.label43.Text = "Step 1";
+            this.tabPage7.BackColor = System.Drawing.Color.Black;
+            this.tabPage7.Controls.Add(this.lblMedianPriceTotalValue);
+            this.tabPage7.Controls.Add(this.lblMarketPriceTotalValue);
+            this.tabPage7.Controls.Add(this.ListTop1000ReportMedian);
+            this.tabPage7.Controls.Add(this.label71);
+            this.tabPage7.Controls.Add(this.ListTop1000Report);
+            this.tabPage7.Controls.Add(this.label70);
+            this.tabPage7.Controls.Add(this.label69);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(788, 406);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Prices Report";
             // 
-            // label59
+            // label69
             // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.Location = new System.Drawing.Point(536, 107);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(44, 14);
-            this.label59.TabIndex = 10;
-            this.label59.Text = "Step 2";
+            this.label69.AutoSize = true;
+            this.label69.BackColor = System.Drawing.Color.Transparent;
+            this.label69.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Location = new System.Drawing.Point(6, 10);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(184, 24);
+            this.label69.TabIndex = 4;
+            this.label69.Text = "DB Prices Report";
             // 
-            // label63
+            // label70
             // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.Location = new System.Drawing.Point(535, 210);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(44, 14);
-            this.label63.TabIndex = 11;
-            this.label63.Text = "Step 3";
+            this.label70.AutoSize = true;
+            this.label70.BackColor = System.Drawing.Color.Transparent;
+            this.label70.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Location = new System.Drawing.Point(6, 35);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(144, 24);
+            this.label70.TabIndex = 5;
+            this.label70.Text = "Market Price:";
             // 
-            // label65
+            // ListTop1000Report
             // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.Location = new System.Drawing.Point(543, 289);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(26, 14);
-            this.label65.TabIndex = 12;
-            this.label65.Text = "OR";
+            this.ListTop1000Report.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ListTop1000Report.FormattingEnabled = true;
+            this.ListTop1000Report.Location = new System.Drawing.Point(10, 62);
+            this.ListTop1000Report.Name = "ListTop1000Report";
+            this.ListTop1000Report.Size = new System.Drawing.Size(355, 303);
+            this.ListTop1000Report.TabIndex = 8;
             // 
-            // label66
+            // ListTop1000ReportMedian
             // 
-            this.label66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label66.Location = new System.Drawing.Point(691, 54);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(91, 44);
-            this.label66.TabIndex = 13;
-            this.label66.Text = "Appr. Execution Time: 3hr 20mins";
+            this.ListTop1000ReportMedian.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ListTop1000ReportMedian.FormattingEnabled = true;
+            this.ListTop1000ReportMedian.Location = new System.Drawing.Point(411, 62);
+            this.ListTop1000ReportMedian.Name = "ListTop1000ReportMedian";
+            this.ListTop1000ReportMedian.Size = new System.Drawing.Size(355, 303);
+            this.ListTop1000ReportMedian.TabIndex = 10;
             // 
-            // label67
+            // label71
             // 
-            this.label67.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label67.Location = new System.Drawing.Point(691, 154);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(91, 44);
-            this.label67.TabIndex = 14;
-            this.label67.Text = "Appr. Execution Time: Depends\r\n";
+            this.label71.AutoSize = true;
+            this.label71.BackColor = System.Drawing.Color.Transparent;
+            this.label71.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.Location = new System.Drawing.Point(407, 35);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(148, 24);
+            this.label71.TabIndex = 9;
+            this.label71.Text = "Median Price:";
             // 
-            // label68
+            // lblMarketPriceTotalValue
             // 
-            this.label68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label68.Location = new System.Drawing.Point(690, 259);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(91, 44);
-            this.label68.TabIndex = 15;
-            this.label68.Text = "Appr. Execution Time: TBD";
+            this.lblMarketPriceTotalValue.AutoSize = true;
+            this.lblMarketPriceTotalValue.BackColor = System.Drawing.Color.Transparent;
+            this.lblMarketPriceTotalValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarketPriceTotalValue.Location = new System.Drawing.Point(6, 368);
+            this.lblMarketPriceTotalValue.Name = "lblMarketPriceTotalValue";
+            this.lblMarketPriceTotalValue.Size = new System.Drawing.Size(130, 24);
+            this.lblMarketPriceTotalValue.TabIndex = 11;
+            this.lblMarketPriceTotalValue.Text = "Total Value:";
+            // 
+            // lblMedianPriceTotalValue
+            // 
+            this.lblMedianPriceTotalValue.AutoSize = true;
+            this.lblMedianPriceTotalValue.BackColor = System.Drawing.Color.Transparent;
+            this.lblMedianPriceTotalValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMedianPriceTotalValue.Location = new System.Drawing.Point(407, 368);
+            this.lblMedianPriceTotalValue.Name = "lblMedianPriceTotalValue";
+            this.lblMedianPriceTotalValue.Size = new System.Drawing.Size(130, 24);
+            this.lblMedianPriceTotalValue.TabIndex = 12;
+            this.lblMedianPriceTotalValue.Text = "Total Value:";
             // 
             // DatabaseManager
             // 
@@ -3128,6 +3240,8 @@
             this.GroupUnavailableProdeckOverride.PerformLayout();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3354,5 +3468,14 @@
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.ListBox ListTop1000Report;
+        private System.Windows.Forms.ListBox ListTop1000ReportMedian;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label lblMedianPriceTotalValue;
+        private System.Windows.Forms.Label lblMarketPriceTotalValue;
     }
 }

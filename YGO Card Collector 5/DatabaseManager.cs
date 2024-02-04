@@ -48,6 +48,7 @@ namespace YGO_Card_Collector_5
             LoadMissingURLsLists();
             LoadUnavailableURLsLists();
             LoadMissingCardsUrlsList();
+            LoadPriceReportLists();
         }
         #endregion
 
@@ -215,6 +216,52 @@ namespace YGO_Card_Collector_5
             {
                 txtCardImagesURLoutput.Text = sb.ToString();
             }          
+        }
+        private void LoadPriceReportLists()
+        {
+            //StringBuilder sb = new StringBuilder();
+            List<SetCard> PriceList = new List<SetCard>();
+            List<SetCard> PriceListMedian = new List<SetCard>();
+            foreach (MasterCard ThisMasterCard in Database.MasterCards)
+            {
+                foreach(SetCard ThisSetCard in ThisMasterCard.SetCards) 
+                {
+                    if(ThisSetCard.Code != "")
+                    {
+                        PriceList.Add(ThisSetCard);
+                        PriceListMedian.Add(ThisSetCard);
+                    }                  
+                }
+            }
+
+            PriceList.Sort(new SetCard.SortByPrice());
+            PriceListMedian.Sort(new SetCard.SortByMedianPrice());
+
+            //display the cards
+            ListTop1000Report.Items.Clear();
+            ListTop1000ReportMedian.Items.Clear();
+
+            int marketPriceTotalValue = 0;
+            int medianPriceTotalValue = 0;
+            foreach(SetCard ThisSetCard in PriceList)
+            {
+                string cardname = Database.MasterCardByCode[ThisSetCard.Code].Name;
+                string obtainedmark = "";
+                if (ThisSetCard.Obtained) { obtainedmark = "- [x] "; }
+                ListTop1000Report.Items.Add(string.Format("[{0}] {1}- [{2} | {3}] - {4}", ThisSetCard.MarketPrice, obtainedmark, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
+                marketPriceTotalValue += (int)ThisSetCard.DoubleMarkPrice;
+            }
+            foreach (SetCard ThisSetCard in PriceListMedian)
+            {
+                string cardname = Database.MasterCardByCode[ThisSetCard.Code].Name;
+                string obtainedmark = "";
+                if (ThisSetCard.Obtained) { obtainedmark = "- [x] "; }
+                ListTop1000ReportMedian.Items.Add(string.Format("[{0}] {1}- [{2} | {3}] - {4}", ThisSetCard.MediamPrice, obtainedmark, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
+                medianPriceTotalValue += (int)ThisSetCard.DoubleMedianPrice;
+            }
+
+            lblMarketPriceTotalValue.Text = string.Format("Total Value: ${0}", marketPriceTotalValue.ToString());
+            lblMedianPriceTotalValue.Text = string.Format("Total Value: ${0}", medianPriceTotalValue.ToString());
         }
         protected override void OnFormClosing(FormClosingEventArgs e)
         {

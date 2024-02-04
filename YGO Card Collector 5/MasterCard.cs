@@ -126,7 +126,7 @@ namespace YGO_Card_Collector_5
         #endregion
     }
 
-    public class SetCard
+    public class SetCard: IComparable
     {
         #region Constructors
         public SetCard() 
@@ -169,6 +169,8 @@ namespace YGO_Card_Collector_5
         public string MediamPrice { get { return _MediamPrice; } set { _MediamPrice = value; } }
         public bool Obtained { get { return _Obtained; } set { _Obtained = value; } }
         public string TCGPlayerURL { get { return _TCGPlayerURL; } set { _TCGPlayerURL = value; } }
+        public double DoubleMarkPrice { get { return Tools.CovertPriceToDouble(_MarketPrice); } }
+        public double DoubleMedianPrice { get { return Tools.CovertPriceToDouble(_MediamPrice); } }
         #endregion
 
         #region Internal Data
@@ -181,5 +183,34 @@ namespace YGO_Card_Collector_5
         private bool _Obtained = false;
         private string _TCGPlayerURL = "Missing";
         #endregion
+        
+        public int CompareTo(object obj)
+        {
+            SetCard otherPriceItem = obj as SetCard;
+            return otherPriceItem._Code.CompareTo(_Code);
+        }
+
+        public class SortByPrice : IComparer<SetCard>
+        {
+            public int Compare(SetCard c1, SetCard c2)
+            {
+                double card1price = c1.DoubleMarkPrice;
+                double card2price = c2.DoubleMarkPrice;
+                if (card1price < card2price) { return 1; }
+                else if (card1price > card2price) { return -1; } 
+                else { return 0; }
+            }
+        }
+        public class SortByMedianPrice : IComparer<SetCard>
+        {
+            public int Compare(SetCard c1, SetCard c2)
+            {
+                double card1price = c1.DoubleMedianPrice;
+                double card2price = c2.DoubleMedianPrice;
+                if (card1price < card2price) { return 1; }
+                else if (card1price > card2price) { return -1; }
+                else { return 0; }
+            }
+        }
     }
 }
