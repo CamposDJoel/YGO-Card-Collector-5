@@ -400,7 +400,7 @@ namespace YGO_Card_Collector_5
             Driver.AddToFullLog(string.Format("Cards with new Sets Found: {0}", CardsWithNewSetCardsCounter));
             Driver.AddToFullLog("----------------------------------");
             Masterwatch.Stop();
-            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Tools.FormatTimeElapsed(Masterwatch.Elapsed.ToString())}");
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
             Driver.CloseDriver();
             WriteOutputFiles();
             #endregion
@@ -609,7 +609,7 @@ namespace YGO_Card_Collector_5
             Driver.AddToFullLog(string.Format("TCG Player URLs Found: {0}", successListTCG.Count));
             Driver.AddToFullLog("----------------------------------");
             Masterwatch.Stop();
-            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Tools.FormatTimeElapsed(Masterwatch.Elapsed.ToString())}");
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
             Driver.CloseDriver();
             WriteOutputFiles();
             #endregion
@@ -680,7 +680,7 @@ namespace YGO_Card_Collector_5
             Driver.AddToFullLog(string.Format("SetCards with Successful Price Update: {0}", PriceUpdateCounter));
             Driver.AddToFullLog("----------------------------------");
             Masterwatch.Stop();
-            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Tools.FormatTimeElapsed(Masterwatch.Elapsed.ToString())}");
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
             Driver.CloseDriver();
             WriteOutputFiles();
             #endregion
@@ -760,7 +760,7 @@ namespace YGO_Card_Collector_5
             //END
             Driver.CloseDriver();
             watch.Stop();
-            Driver.AddToFullLog($"Execution Time for WHOLE Script was: {Tools.FormatTimeElapsed(watch.Elapsed.ToString())}");
+            Driver.AddToFullLog($"Execution Time for WHOLE Script was: {watch.Elapsed}");
             DBUpdateform.SendFullCompletionSignal();
             WriteOutputFiles();
 
@@ -826,7 +826,7 @@ namespace YGO_Card_Collector_5
             }
             CardListExtractionwatch.Stop();
             DBUpdateform.SetTotalCardsToScan(CardList.Count);
-            Driver.AddToFullLog($"Execution Time for Card List Name Extraction was: {Tools.FormatTimeElapsed(CardListExtractionwatch.Elapsed.ToString())}");
+            Driver.AddToFullLog($"Execution Time for Card List Name Extraction was: {CardListExtractionwatch.Elapsed}");
             Driver.AddToFullLog("----------------------------------");
 
             //Now Access each individual Card
@@ -951,7 +951,7 @@ namespace YGO_Card_Collector_5
             DBUpdateform.SendJobFinishSignal();
             CardListUpdatewatch.Stop();
             Driver.AddToFullLog(">>>>>>>>>>>>>>>>>>>Konami Card List Update Finished<<<<<<<<<<<<<<<<<<<<<<<<<");
-            Driver.AddToFullLog($"Execution Time for Card List DB Update was: {Tools.FormatTimeElapsed(CardListUpdatewatch.Elapsed.ToString())}");
+            Driver.AddToFullLog($"Execution Time for Card List DB Update was: {CardListUpdatewatch.Elapsed}");
             Driver.AddToFullLog("----------------------------------");
             #endregion
 
@@ -1154,7 +1154,7 @@ namespace YGO_Card_Collector_5
             DBUpdateform.SendJobFinishSignal();
             URLsUpdatewatch.Stop();
             Driver.AddToFullLog(">>>>>>>>>>>>>>>>>>>Missing URLs Update Finished<<<<<<<<<<<<<<<<<<<<<<<<<");
-            Driver.AddToFullLog($"Execution Time for Missing URLs Extraction was: {Tools.FormatTimeElapsed(URLsUpdatewatch.Elapsed.ToString())}");
+            Driver.AddToFullLog($"Execution Time for Missing URLs Extraction was: {URLsUpdatewatch.Elapsed}");
             Driver.AddToFullLog("----------------------------------");
             #endregion
 
@@ -1218,7 +1218,7 @@ namespace YGO_Card_Collector_5
             Driver.AddToUpdatesLog(string.Format("{0} SetCards' Prices have been updated!!", PriceUpdateCounter));
             PricesUpdatewatch.Stop();
             Driver.AddToFullLog(">>>>>>>>>>>>>>>>>>>Prices Update Finished<<<<<<<<<<<<<<<<<<<<<<<<<");
-            Driver.AddToFullLog($"Execution Time for Prices Update was: {Tools.FormatTimeElapsed(PricesUpdatewatch.Elapsed.ToString())}");
+            Driver.AddToFullLog($"Execution Time for Prices Update was: {PricesUpdatewatch.Elapsed}");
             Driver.AddToFullLog("----------------------------------");
             #endregion
 
@@ -1230,7 +1230,7 @@ namespace YGO_Card_Collector_5
             Driver.AddToFullLog(string.Format("SetCards with Successful Price Update: {0}", PriceUpdateCounter));
             Driver.AddToFullLog("----------------------------------");
             Masterwatch.Stop();
-            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Tools.FormatTimeElapsed(Masterwatch.Elapsed.ToString())}");
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
             Driver.CloseDriver();
             WriteOutputFiles();
         }

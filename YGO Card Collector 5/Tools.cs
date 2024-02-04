@@ -31,13 +31,5 @@ namespace YGO_Card_Collector_5
             price = price.Replace("$", "");
             return Convert.ToDouble(price);
         }
-
-        public static string FormatTimeElapsed(string time)
-        {
-            //sample input: "00:05:41.2025073"
-            string withoutMillisecond = time.Split('.')[0];
-            string[] tokens = withoutMillisecond.Split(':');
-            return tokens[0] + " hrs. " + tokens[1] + "mns. " + tokens[2] + "secs.";
-        }
     }
 }
