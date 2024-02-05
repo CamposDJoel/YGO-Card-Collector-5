@@ -735,6 +735,67 @@ namespace YGO_Card_Collector_5
             #endregion
 
             #region JOB #3 END
+            DBUpdateform.SendJobFinishSignal();
+            Driver.AddToFullLog(string.Format("SetCards with Successful Price Update: {0}", PriceUpdateCounter));
+            Driver.AddToFullLog("----------------------------------");
+            Masterwatch.Stop();
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
+            Driver.CloseDriver();
+            WriteOutputFiles();
+            #endregion
+        }
+        private void UpdateSetPrices(List<SetCard> CardList)
+        {
+            #region JOB #3 SETUP
+            Driver.ClearLogs();
+            var Masterwatch = new Stopwatch();
+            Masterwatch.Start();
+            Driver.OpenBrowser();
+            #endregion
+
+            #region JOB #3: Prices Update
+            DBUpdateform.SetTotalCardsToScan(CardList.Count);
+            int PriceUpdateCounter = 0;
+            foreach (SetCard ThisSetCard in CardList)
+            {
+                DBUpdateform.SendCardStartSignal(ThisSetCard.GetCardName());
+                StringBuilder sb = new StringBuilder();
+                sb.Append(string.Format("Code:{0} Rarity: {1} | ", ThisSetCard.Code, ThisSetCard.Rarity));
+
+                try
+                {
+                    if (ThisSetCard.HasTCGURL())
+                    {
+                        //Go to the test URL
+                        Driver.GoToURL(ThisSetCard.TCGPlayerURL);
+                        TCGCardInfoPage.WaitUntilPageIsLoaded(false);
+
+                        //Update prices since
+                        string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                        string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+                        ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                        sb.AppendLine("Prices Update!");
+                        PriceUpdateCounter++;
+                    }
+                    else
+                    {
+                        if (ThisSetCard.TCGPlayerURLIsUnavailable()) { sb.AppendLine("URL Is Unavailable."); }
+                        if (ThisSetCard.TCGPlayerURLIsMissing()) { sb.AppendLine("URL is Missing."); }
+
+                    }
+                }
+                catch (Exception)
+                {
+                    sb.AppendLine("Unhandled exception occurred, skipping this SetCard");
+                }
+
+                Driver.AddToFullLog(sb.ToString());
+                Driver.AddToUpdatesLog(sb.ToString());
+            }
+            #endregion
+
+            #region JOB #3 END
+            DBUpdateform.SendJobFinishSignal();
             Driver.AddToFullLog(string.Format("SetCards with Successful Price Update: {0}", PriceUpdateCounter));
             Driver.AddToFullLog("----------------------------------");
             Masterwatch.Stop();
@@ -2506,7 +2567,7 @@ namespace YGO_Card_Collector_5
                 //Name label
                 Label packname = new Label();
                 PanelSetInfo.Controls.Add(packname);
-                packname.Text = ThisSetCard.CardName;
+                packname.Text = ThisSetCard.GetCardName();
                 packname.ForeColor = Color.White;
                 packname.BorderStyle = BorderStyle.FixedSingle;
                 packname.AutoSize = false;
@@ -2614,6 +2675,17 @@ namespace YGO_Card_Collector_5
                 obtainedLabel.Location = new Point(510, CurrentY_Axis);
                 _SetDetailsLabels.Add(obtainedLabel);
             }
+        }
+        private void btnUpdateSetCardListPrices_Click(object sender, EventArgs e)
+        {
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this);
+            DBUpdateform.Show();
+
+            int CardSetIndex = ListSets.SelectedIndex;
+            string SetName = _CurrentSetInfoListSelected[CardSetIndex].Name;
+            SetPack packToTest = Database.SetPackByName[SetName];
+            UpdateSetPrices(packToTest.FullCardList);
         }
         #endregion
     }

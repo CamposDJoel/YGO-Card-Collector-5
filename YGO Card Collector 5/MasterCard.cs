@@ -159,12 +159,15 @@ namespace YGO_Card_Collector_5
             _MarketPrice = market;
             _MediamPrice = median;
         }
+        public string GetCardName()
+        {
+            return Database.MasterCardByCode[_Code].Name;
+        }
 
         #region Public Accessors
         public string ReleaseDate { get { return _ReleaseDate; } set { _ReleaseDate = value; } }
         public string Code { get { return _Code; } set { _Code = value; } }
         public string Name { get { return _Name; } set { _Name = value; } }
-        public string CardName { get { return Database.MasterCardByCode[_Code].Name; } }
         public string Rarity { get { return _Rarity; } set { _Rarity = value; } }
         public string MarketPrice { get { return _MarketPrice; } set { _MarketPrice = value; } }
         public string MediamPrice { get { return _MediamPrice; } set { _MediamPrice = value; } }

@@ -50,6 +50,23 @@ namespace YGO_Card_Collector_5
             }
         }
         public string Code { get { return _prefixCode; } }
+        public List<SetCard> FullCardList
+        {
+            get
+            {
+                List<SetCard> outputlist = new List<SetCard>();
+
+                foreach(SetCard card in MainCardList)
+                {
+                    outputlist.Add(card);
+                }
+                foreach (SetCard card in ExtraCardList)
+                {
+                    outputlist.Add(card);
+                }
+                return outputlist;
+            }
+        }
         public int SetMainListMarketValue
         {
             get
