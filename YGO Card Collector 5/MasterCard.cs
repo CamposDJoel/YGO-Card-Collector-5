@@ -164,6 +164,7 @@ namespace YGO_Card_Collector_5
         public string ReleaseDate { get { return _ReleaseDate; } set { _ReleaseDate = value; } }
         public string Code { get { return _Code; } set { _Code = value; } }
         public string Name { get { return _Name; } set { _Name = value; } }
+        public string CardName { get { return Database.MasterCardByCode[_Code].Name; } }
         public string Rarity { get { return _Rarity; } set { _Rarity = value; } }
         public string MarketPrice { get { return _MarketPrice; } set { _MarketPrice = value; } }
         public string MediamPrice { get { return _MediamPrice; } set { _MediamPrice = value; } }
@@ -183,7 +184,7 @@ namespace YGO_Card_Collector_5
         private bool _Obtained = false;
         private string _TCGPlayerURL = "Missing";
         #endregion
-        
+
         public int CompareTo(object obj)
         {
             SetCard otherPriceItem = obj as SetCard;
@@ -210,6 +211,16 @@ namespace YGO_Card_Collector_5
                 if (card1price < card2price) { return 1; }
                 else if (card1price > card2price) { return -1; }
                 else { return 0; }
+            }
+        }
+
+        public class SortByCode : IComparer<SetCard>
+        {
+            public int Compare(SetCard c1, SetCard c2)
+            {
+                string card1code = c1.Code;
+                string card2code = c2.Code;
+                return string.Compare(card1code, card2code);
             }
         }
     }

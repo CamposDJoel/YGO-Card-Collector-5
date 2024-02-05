@@ -3,6 +3,7 @@
 //Database Class
 
 using Newtonsoft.Json;
+using OpenQA.Selenium.DevTools.V119.Page;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -11,6 +12,7 @@ namespace YGO_Card_Collector_5
 {
     public static class Database
     {
+        #region Internal Data
         //Master Cards
         public static Dictionary<string, MasterCard> MasterCardByName = new Dictionary<string, MasterCard>();
         public static Dictionary<string, MasterCard> MasterCardByCode = new Dictionary<string, MasterCard>();
@@ -29,7 +31,9 @@ namespace YGO_Card_Collector_5
         //test data
         public static List<string> TCGPagesThatDidntMatchRarity = new List<string>();
         private  static bool ApplicationInTestMode = true;
+        #endregion
 
+        #region Public Methods
         public static bool LoadDB()
         {
             string jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\CardDB.json";
@@ -44,6 +48,9 @@ namespace YGO_Card_Collector_5
             {
                 return false;
             }
+
+            //Load the Sets File
+            LoadSetsNames();
 
             //Continue to sorting the master card list
             foreach (MasterCard ThisMasterCard in MasterCards)
@@ -126,6 +133,16 @@ namespace YGO_Card_Collector_5
                         }
                     }
                 }
+
+                //NOTE: Sorting all the sets at this point take a FULL minute... 
+                //Sorting will be done "per request" each time a set card list is going to be
+                //displayer, a sort function will be called, but the sort will only perform the sort the first
+                //time and ONLY ONCE.
+                //Step 5: Sort the Card of each SetPack to go by code order
+                /*foreach(SetPack thiSetPack in  SetPacks)
+                {
+                    thiSetPack.SortByCode();
+                }*/
             }
 
             //Initialize the CardGroupList dictionary for clean code access to these lists
@@ -174,6 +191,83 @@ namespace YGO_Card_Collector_5
                 GroupCardListByGroupName.Add(CardGroup.Counter_Traps, CounterTraps);
             }
         }
+
+        public static void LoadSetsNames()
+        {
+            //Load the sets names into each group
+            List<string> fileNames = new List<string>();
+            fileNames.Add("Booster Packs.txt");
+            fileNames.Add("Duel Termina Cards.txt");
+            fileNames.Add("Duelist Packs.txt");
+            fileNames.Add("Magazines, Books, Comics.txt");
+            fileNames.Add("Others.txt");
+            fileNames.Add("Promotional Cards.txt");
+            fileNames.Add("Special Edition Boxes.txt");
+            fileNames.Add("SPEED DUEL.txt");
+            fileNames.Add("Starter Decks.txt");
+            fileNames.Add("Structure Decks.txt");
+            fileNames.Add("Tins.txt");
+            fileNames.Add("Tournaments.txt");
+            fileNames.Add("Video Game Bundles.txt");
+
+            foreach(string name in fileNames) 
+            {
+                LoadFile(name);
+            }
+
+            void LoadFile(string fileName)
+            {
+                //Set the list that this is going to be added to
+                List<string> thisNameList = new List<string>();
+                List<SetInfo> thisSetList = new List<SetInfo>();
+                switch (fileName)
+                {
+                    case "Booster Packs.txt": thisSetList = BoosterPacks; break;
+                    case "Duel Termina Cards.txt":thisSetList = DuelTerminal; break;
+                    case "Duelist Packs.txt": thisSetList = DuelistPacks; break;
+                    case "Magazines, Books, Comics.txt": thisSetList = MBC; break;
+                    case "Others.txt": thisSetList = Others; break;
+                    case "Promotional Cards.txt": thisSetList = Promos; break;
+                    case "Special Edition Boxes.txt": thisSetList = SpEditionBoxes; break;
+                    case "SPEED DUEL.txt": thisSetList = SpeedDuel; break;
+                    case "Starter Decks.txt": thisSetList = StarterDecks; break;
+                    case "Structure Decks.txt": thisSetList = StructureDecks; break;
+                    case "Tins.txt": thisSetList = Tins; break;
+                    case "Tournaments.txt": thisSetList = Tournaments; break;
+                    case "Video Game Bundles.txt": thisSetList = VideoGames; break;
+                }
+
+                //Open the file
+                StreamReader SR_SaveFile = new StreamReader(
+                    Directory.GetCurrentDirectory() + "\\Database\\Sets\\" + fileName);
+
+                //String that hold the data of one line of the txt file
+                string line = "";
+
+                //Extract the data
+                line = SR_SaveFile.ReadLine(); //Line[0] = Group Name; dont need it
+                line = SR_SaveFile.ReadLine(); //# of year lines count
+                int yearCount = Convert.ToInt32(line);
+
+                for (int x = 0; x < yearCount; x++)
+                {
+                    string thisYearLine = SR_SaveFile.ReadLine();
+                    //Separator used by Split()
+                    string[] tokens = thisYearLine.Split('|');
+
+                    string year = tokens[0];
+                    int setCount = Convert.ToInt32(tokens[1]);
+
+                    for (int y = 0; y < setCount; y++)
+                    {
+                        string setname = tokens[y + 2];
+                        //thisSetList.Add(new SetInfo(setname, year));
+                        thisSetList.Insert(0, new SetInfo(setname, year));
+                    }
+                }
+            }
+        }
+
         public static void SaveDatabaseInJSON()
         {
             string output = JsonConvert.SerializeObject(MasterCards);
@@ -190,7 +284,6 @@ namespace YGO_Card_Collector_5
 
             
         }
-
         public static bool CardExists(string cardName)
         {
             return MasterCardByName.ContainsKey(cardName);
@@ -390,7 +483,8 @@ namespace YGO_Card_Collector_5
                 case CardGroup.Counter_Traps: return "Counter Traps";
                 default: return group.ToString();
             }
-        }        
+        }
+        #endregion
 
         #region Card Group Lists
         public static Dictionary<CardGroup, List<MasterCard>> GroupCardListByGroupName = new Dictionary<CardGroup, List<MasterCard>>();
@@ -461,6 +555,54 @@ namespace YGO_Card_Collector_5
         public static List<MasterCard> Earth = new List<MasterCard>();
         public static List<MasterCard> Divine = new List<MasterCard>();
         #endregion
+
+        #region SetGroups Name Lists
+        public static List<SetInfo> BoosterPacks = new List<SetInfo>();
+        public static List<SetInfo> SpEditionBoxes = new List<SetInfo>();
+        public static List<SetInfo> StarterDecks = new List<SetInfo>();
+        public static List<SetInfo> StructureDecks = new List<SetInfo>();
+        public static List<SetInfo> Tins = new List<SetInfo>();
+        public static List<SetInfo> SpeedDuel = new List<SetInfo>();
+        public static List<SetInfo> DuelistPacks = new List<SetInfo>();
+        public static List<SetInfo> DuelTerminal = new List<SetInfo>();
+        public static List<SetInfo> Others = new List<SetInfo>();
+        public static List<SetInfo> MBC = new List<SetInfo>();
+        public static List<SetInfo> Tournaments = new List<SetInfo>();
+        public static List<SetInfo> Promos = new List<SetInfo>();
+        public static List<SetInfo> VideoGames = new List<SetInfo>();
+        #endregion
+
+        
+    }
+    public class SetInfo
+    {
+        public SetInfo(string name, string year)
+        {
+            _SetName = name;
+            _SetYear = year;
+        }
+
+        public string GetInfoLine()
+        {
+            return string.Format("[{0}] [{1}] - {2}", _SetYear, GetCode(), _SetName);
+        }
+        public string Name { get { return _SetName; } }
+
+        private string GetCode()
+        {
+            if (Database.SetPackByName.ContainsKey(_SetName))
+            {
+                SetPack ThisSetPack = Database.SetPackByName[_SetName];
+                return ThisSetPack.Code;
+            }
+            else
+            {
+                return "XXXX";
+            }
+        }
+
+        private string _SetName = "NONE";
+        private string _SetYear = "0000";
     }
 
     #region CardGroupEnum

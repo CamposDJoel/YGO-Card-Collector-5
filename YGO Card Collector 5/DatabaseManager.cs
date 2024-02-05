@@ -5,10 +5,13 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace YGO_Card_Collector_5
 
@@ -38,6 +41,9 @@ namespace YGO_Card_Collector_5
         private MasterCard _UnavaURL_CurrentProdeckMasterCardSelected;
         private MasterCard _UnavaURL_CurrentTCGMasterCardSelected;
         private SetCard _UnavaURL_CurrentSetCardSelected;
+
+        private List<SetInfo> _CurrentSetInfoListSelected;
+        private List<Label> _SetDetailsLabels = new List<Label>();
         #endregion
 
         #region Public Methods
@@ -48,6 +54,7 @@ namespace YGO_Card_Collector_5
             LoadMissingURLsLists();
             LoadUnavailableURLsLists();
             LoadMissingCardsUrlsList();
+            LoadSetsExplorer();
             LoadPriceReportLists();
         }
         #endregion
@@ -216,6 +223,10 @@ namespace YGO_Card_Collector_5
             {
                 txtCardImagesURLoutput.Text = sb.ToString();
             }          
+        }
+        private void LoadSetsExplorer()
+        {
+            ListSetGroups.SetSelected(0, true);
         }
         private void LoadPriceReportLists()
         {
@@ -2239,6 +2250,371 @@ namespace YGO_Card_Collector_5
         {
             LoadMissingCardsUrlsList();
         }
-        #endregion      
+        #endregion
+
+        #region Event Listeners (Set Pack Explorer Tab)
+        private void ListSetGroups_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int indexSelected = ListSetGroups.SelectedIndex;
+
+            List<SetInfo> SetList = new List<SetInfo>();
+            switch(indexSelected) 
+            {
+                case 0: SetList = Database.BoosterPacks; break;
+                case 1: SetList = Database.SpEditionBoxes; break;
+                case 2: SetList = Database.StarterDecks; break;
+                case 3: SetList = Database.StructureDecks; break;
+                case 4: SetList = Database.Tins; break;
+                case 5: SetList = Database.SpeedDuel; break;
+                case 6: SetList = Database.DuelistPacks; break;
+                case 7: SetList = Database.DuelTerminal; break;
+                case 8: SetList = Database.Others; break;
+                case 9: SetList = Database.MBC; break;
+                case 10: SetList = Database.Tournaments; break;
+                case 11: SetList = Database.Promos; break;
+                case 12: SetList = Database.VideoGames; break;
+            }
+
+            //Save a ref of this list for the SelectedIndexChanged event of the ListSets
+            _CurrentSetInfoListSelected = SetList;
+
+            ListSets.Items.Clear();
+            foreach(SetInfo set in SetList) 
+            {
+                ListSets.Items.Add(set.GetInfoLine());
+            }
+            ListSets.SetSelected(0, true);
+        }
+        private void ListSets_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //Hide this list selector until the price panel is loaded
+            ListSetGroups.Visible = false;
+            ListSets.Visible = false;
+
+            int CardSetIndex = ListSets.SelectedIndex;
+            string SetName = _CurrentSetInfoListSelected[CardSetIndex].Name;
+            if(Database.SetPackByName.ContainsKey(SetName))
+            {
+                //Dispose all the existing labels
+                foreach(Label label in _SetDetailsLabels)
+                {
+                    label.Dispose();
+                }
+                _SetDetailsLabels.Clear();
+
+                SetPack CurrentSetPack = Database.SetPackByName[SetName];
+                CurrentSetPack.SortByCode();
+
+                //Display the main card list
+                PanelSetInfo.Visible = true;
+                int CurrentY_Axis = 40;
+                int Ysize = 15;
+                foreach (SetCard ThisSetCard in CurrentSetPack.MainCardList)
+                {
+                    //Paint the row
+                    PaintCardRow(ThisSetCard, CurrentY_Axis, Ysize);
+
+                    //Move the Y Axis
+                    CurrentY_Axis += 15;
+                }
+
+                //display the totals
+                CurrentY_Axis += 15;
+                //Totals Name
+                Label totalsName = new Label();
+                PanelSetInfo.Controls.Add(totalsName);
+                totalsName.Text = "Total value of this set:";
+                totalsName.ForeColor = Color.White;
+                totalsName.BorderStyle = BorderStyle.FixedSingle;
+                totalsName.AutoSize = false;
+                totalsName.Size = new Size(220, Ysize);
+                totalsName.Location = new Point(90, CurrentY_Axis);
+                _SetDetailsLabels.Add(totalsName);
+
+                //Totals Market
+                Label totalsMarket = new Label();
+                PanelSetInfo.Controls.Add(totalsMarket);
+                totalsMarket.Text = "$" + CurrentSetPack.SetMainListMarketValue.ToString();
+                totalsMarket.BorderStyle = BorderStyle.FixedSingle;
+                totalsMarket.ForeColor = Color.White;
+                totalsMarket.AutoSize = false;
+                totalsMarket.Size = new Size(60, Ysize);
+                totalsMarket.Location = new Point(390, CurrentY_Axis);
+                _SetDetailsLabels.Add(totalsMarket);
+
+                //Totals Median
+                Label totalsMedian = new Label();
+                PanelSetInfo.Controls.Add(totalsMedian);
+                totalsMedian.Text = "$" + CurrentSetPack.SetMainListMedianValue.ToString();
+                totalsMedian.BorderStyle = BorderStyle.FixedSingle;
+                totalsMedian.ForeColor = Color.White;
+                totalsMedian.AutoSize = false;
+                totalsMedian.Size = new Size(60, Ysize);
+                totalsMedian.Location = new Point(450, CurrentY_Axis);
+                _SetDetailsLabels.Add(totalsMedian);
+
+                CurrentY_Axis += 15;
+                //Totals Name
+                Label totalsName2 = new Label();
+                PanelSetInfo.Controls.Add(totalsName2);
+                totalsName2.Text = "Total value of your collection:";
+                totalsName2.ForeColor = Color.White;
+                totalsName2.BorderStyle = BorderStyle.FixedSingle;
+                totalsName2.AutoSize = false;
+                totalsName2.Size = new Size(220, Ysize);
+                totalsName2.Location = new Point(90, CurrentY_Axis);
+                _SetDetailsLabels.Add(totalsName2);
+
+                //Totals Market
+                Label totalsMarket2 = new Label();
+                PanelSetInfo.Controls.Add(totalsMarket2);
+                totalsMarket2.Text = "$" + CurrentSetPack.SetMainListMarketValueObtained.ToString();
+                totalsMarket2.BorderStyle = BorderStyle.FixedSingle;
+                totalsMarket2.ForeColor = Color.White;
+                totalsMarket2.AutoSize = false;
+                totalsMarket2.Size = new Size(60, Ysize);
+                totalsMarket2.Location = new Point(390, CurrentY_Axis);
+                _SetDetailsLabels.Add(totalsMarket2);
+
+                //Totals Median
+                Label totalsMedian2 = new Label();
+                PanelSetInfo.Controls.Add(totalsMedian2);
+                totalsMedian2.Text = "$" + CurrentSetPack.SetMainListMedianValueObtained.ToString();
+                totalsMedian2.BorderStyle = BorderStyle.FixedSingle;
+                totalsMedian2.ForeColor = Color.White;
+                totalsMedian2.AutoSize = false;
+                totalsMedian2.Size = new Size(60, Ysize);
+                totalsMedian2.Location = new Point(450, CurrentY_Axis);
+                _SetDetailsLabels.Add(totalsMedian2);
+
+
+
+                //Display the Extra Card List Label
+                CurrentY_Axis += 30;
+                Label ExtraCardsHeader = new Label();
+                PanelSetInfo.Controls.Add(ExtraCardsHeader);
+                ExtraCardsHeader.Text = "Extra Rairty Cards:";
+                ExtraCardsHeader.ForeColor = Color.White;
+                ExtraCardsHeader.BorderStyle = BorderStyle.None;
+                ExtraCardsHeader.AutoSize = false;
+                ExtraCardsHeader.Size = new Size(300, 17);
+                ExtraCardsHeader.Location = new Point(10, CurrentY_Axis);
+                _SetDetailsLabels.Add(ExtraCardsHeader);
+                CurrentY_Axis += 25;
+
+                //Display the extra card list
+                foreach (SetCard ThisSetCard in CurrentSetPack.ExtraCardList)
+                {
+                    //Paint the row
+                    PaintCardRow(ThisSetCard, CurrentY_Axis, Ysize);
+
+                    //Move the Y Axis
+                    CurrentY_Axis += 15;
+                }
+
+                //display the totals
+                CurrentY_Axis += 15;
+                //Totals Name
+                Label totalsName3 = new Label();
+                PanelSetInfo.Controls.Add(totalsName3);
+                totalsName3.Text = "Total value of this set:";
+                totalsName3.ForeColor = Color.White;
+                totalsName3.BorderStyle = BorderStyle.FixedSingle;
+                totalsName3.AutoSize = false;
+                totalsName3.Size = new Size(220, Ysize);
+                totalsName3.Location = new Point(90, CurrentY_Axis);
+                _SetDetailsLabels.Add(totalsName3);
+
+                //Totals Market
+                Label totalsMarket3 = new Label();
+                PanelSetInfo.Controls.Add(totalsMarket3);
+                totalsMarket3.Text = "$" + CurrentSetPack.SetExtraListMarketValue.ToString();
+                totalsMarket3.BorderStyle = BorderStyle.FixedSingle;
+                totalsMarket3.ForeColor = Color.White;
+                totalsMarket3.AutoSize = false;
+                totalsMarket3.Size = new Size(60, Ysize);
+                totalsMarket3.Location = new Point(390, CurrentY_Axis);
+                _SetDetailsLabels.Add(totalsMarket3);
+
+                //Totals Median
+                Label totalsMedian3 = new Label();
+                PanelSetInfo.Controls.Add(totalsMedian3);
+                totalsMedian3.Text = "$" + CurrentSetPack.SetExtraListMedianValue.ToString();
+                totalsMedian3.BorderStyle = BorderStyle.FixedSingle;
+                totalsMedian3.ForeColor = Color.White;
+                totalsMedian3.AutoSize = false;
+                totalsMedian3.Size = new Size(60, Ysize);
+                totalsMedian3.Location = new Point(450, CurrentY_Axis);
+                _SetDetailsLabels.Add(totalsMedian3);
+
+                CurrentY_Axis += 15;
+                //Totals Name
+                Label totalsName4 = new Label();
+                PanelSetInfo.Controls.Add(totalsName4);
+                totalsName4.Text = "Total value of your collection:";
+                totalsName4.ForeColor = Color.White;
+                totalsName4.BorderStyle = BorderStyle.FixedSingle;
+                totalsName4.AutoSize = false;
+                totalsName4.Size = new Size(220, Ysize);
+                totalsName4.Location = new Point(90, CurrentY_Axis);
+                _SetDetailsLabels.Add(totalsName4);
+
+                //Totals Market
+                Label totalsMarket4 = new Label();
+                PanelSetInfo.Controls.Add(totalsMarket4);
+                totalsMarket4.Text = "$" + CurrentSetPack.SetExtraListMarketValueObtained.ToString();
+                totalsMarket4.BorderStyle = BorderStyle.FixedSingle;
+                totalsMarket4.ForeColor = Color.White;
+                totalsMarket4.AutoSize = false;
+                totalsMarket4.Size = new Size(60, Ysize);
+                totalsMarket4.Location = new Point(390, CurrentY_Axis);
+                _SetDetailsLabels.Add(totalsMarket4);
+
+                //Totals Median
+                Label totalsMedian4 = new Label();
+                PanelSetInfo.Controls.Add(totalsMedian4);
+                totalsMedian4.Text = "$" + CurrentSetPack.SetExtraListMedianValueObtained.ToString();
+                totalsMedian4.BorderStyle = BorderStyle.FixedSingle;
+                totalsMedian4.ForeColor = Color.White;
+                totalsMedian4.AutoSize = false;
+                totalsMedian4.Size = new Size(60, Ysize);
+                totalsMedian4.Location = new Point(450, CurrentY_Axis);
+                _SetDetailsLabels.Add(totalsMedian4);
+            }
+            else
+            {
+                PanelSetInfo.Visible = false;
+            }
+
+            //okay now show it again
+            ListSetGroups.Visible = true;
+            ListSets.Visible = true;
+
+            void PaintCardRow(SetCard ThisSetCard, int CurrentY_Axis, int Ysize)
+            {
+                //Code
+                Label codeLabel = new Label();
+                PanelSetInfo.Controls.Add(codeLabel);
+                codeLabel.Text = ThisSetCard.Code;
+                codeLabel.ForeColor = Color.White;
+                codeLabel.BorderStyle = BorderStyle.FixedSingle;
+                codeLabel.AutoSize = false;
+                codeLabel.Size = new Size(80, Ysize);
+                codeLabel.Location = new Point(10, CurrentY_Axis);
+                _SetDetailsLabels.Add(codeLabel);
+
+                //Name label
+                Label packname = new Label();
+                PanelSetInfo.Controls.Add(packname);
+                packname.Text = ThisSetCard.CardName;
+                packname.ForeColor = Color.White;
+                packname.BorderStyle = BorderStyle.FixedSingle;
+                packname.AutoSize = false;
+                packname.Size = new Size(220, Ysize);
+                packname.Location = new Point(90, CurrentY_Axis);
+                _SetDetailsLabels.Add(packname);
+
+                //Rarity Label
+                Label rarityLabel = new Label();
+                PanelSetInfo.Controls.Add(rarityLabel);
+                rarityLabel.Text = ThisSetCard.Rarity;
+                rarityLabel.BorderStyle = BorderStyle.FixedSingle;
+                rarityLabel.ForeColor = Color.White;
+                rarityLabel.AutoSize = false;
+                rarityLabel.Size = new Size(80, Ysize);
+                rarityLabel.Location = new Point(310, CurrentY_Axis);
+                _SetDetailsLabels.Add(rarityLabel);
+
+                switch (ThisSetCard.Rarity)
+                {
+                    case "Common": rarityLabel.ForeColor = Color.White; break;
+                    case "Rare": rarityLabel.ForeColor = Color.PaleGreen; break;
+                    case "Ultra Rare": rarityLabel.ForeColor = Color.Moccasin; break;
+                    case "Ultimate Rare": rarityLabel.ForeColor = Color.HotPink; break;
+                    case "Gold Rare": rarityLabel.ForeColor = Color.Gold; break;
+                    case "Hobby": rarityLabel.ForeColor = Color.MediumPurple; break;
+                    case "Millennium Secret Rare": rarityLabel.ForeColor = Color.Goldenrod; break;
+                    case "Platinum Secret Rare": rarityLabel.ForeColor = Color.LightSkyBlue; break;
+                    case "Starfoil": rarityLabel.ForeColor = Color.BlueViolet; break;
+                    case "Shattefoil": rarityLabel.ForeColor = Color.MediumTurquoise; break;
+                    case "Super Rare": rarityLabel.ForeColor = Color.SteelBlue; break;
+                    case "Secret Rare": rarityLabel.ForeColor = Color.Pink; break;
+                    case "Ghost Rare": rarityLabel.ForeColor = Color.PowderBlue; break;
+                    case "Gold Secret": rarityLabel.ForeColor = Color.Yellow; break;
+                    case "Platinum Rare": rarityLabel.ForeColor = Color.Aqua; break;
+                    case "Mosaic Rare": rarityLabel.ForeColor = Color.DarkViolet; break;
+                    case "Prismatic Secret Rare": rarityLabel.ForeColor = Color.Plum; break;
+                    default: rarityLabel.ForeColor = Color.White; break;
+                }
+
+                //market Label
+                Label marketLabel = new Label();
+                PanelSetInfo.Controls.Add(marketLabel);
+                marketLabel.Text = ThisSetCard.MarketPrice;
+                marketLabel.BorderStyle = BorderStyle.FixedSingle;
+                marketLabel.ForeColor = Color.White;
+                marketLabel.AutoSize = false;
+                marketLabel.Size = new Size(60, Ysize);
+                marketLabel.Location = new Point(390, CurrentY_Axis);
+                _SetDetailsLabels.Add(marketLabel);
+
+                if (ThisSetCard.DoubleMarkPrice < 1)
+                {
+                    marketLabel.ForeColor = Color.White;
+                }
+                else if (ThisSetCard.DoubleMarkPrice < 5)
+                {
+                    marketLabel.ForeColor = Color.LightGreen;
+                }
+                else if (ThisSetCard.DoubleMarkPrice < 50)
+                {
+                    marketLabel.ForeColor = Color.HotPink;
+                }
+                else
+                {
+                    marketLabel.ForeColor = Color.Gold;
+                }
+
+                //median Label
+                Label medianLabel = new Label();
+                PanelSetInfo.Controls.Add(medianLabel);
+                medianLabel.Text = ThisSetCard.MediamPrice;
+                medianLabel.BorderStyle = BorderStyle.FixedSingle;
+                medianLabel.ForeColor = Color.White;
+                medianLabel.AutoSize = false;
+                medianLabel.Size = new Size(60, Ysize);
+                medianLabel.Location = new Point(450, CurrentY_Axis);
+                _SetDetailsLabels.Add(medianLabel);
+
+                if (ThisSetCard.DoubleMedianPrice < 1)
+                {
+                    medianLabel.ForeColor = Color.White;
+                }
+                else if (ThisSetCard.DoubleMedianPrice < 5)
+                {
+                    medianLabel.ForeColor = Color.LightGreen;
+                }
+                else if (ThisSetCard.DoubleMedianPrice < 50)
+                {
+                    medianLabel.ForeColor = Color.HotPink;
+                }
+                else
+                {
+                    medianLabel.ForeColor = Color.Gold;
+                }
+
+                //obtained Label
+                Label obtainedLabel = new Label();
+                PanelSetInfo.Controls.Add(obtainedLabel);
+                if (ThisSetCard.Obtained) { obtainedLabel.Text = "X"; }
+                obtainedLabel.BorderStyle = BorderStyle.FixedSingle;
+                obtainedLabel.ForeColor = Color.White;
+                obtainedLabel.AutoSize = false;
+                obtainedLabel.Size = new Size(30, Ysize);
+                obtainedLabel.Location = new Point(510, CurrentY_Axis);
+                _SetDetailsLabels.Add(obtainedLabel);
+            }
+        }
+        #endregion
     }
 }

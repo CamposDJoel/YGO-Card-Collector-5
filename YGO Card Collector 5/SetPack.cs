@@ -39,12 +39,152 @@ namespace YGO_Card_Collector_5
                 _mainSetByCode.Add(newCard.Code, newCard);
             }
         }
+        public void SortByCode()
+        {
+            if(!_sorted)
+            {
+                //you want to sort both the main and extra cards
+                MainCardList.Sort(new SetCard.SortByCode());
+                ExtraCardList.Sort(new SetCard.SortByCode());
+                _sorted = true;
+            }
+        }
+        public string Code { get { return _prefixCode; } }
+        public int SetMainListMarketValue
+        {
+            get
+            {
+                int totals = 0;
+
+                foreach(SetCard card in _mainSetCards)
+                {
+                    totals = totals + (int)card.DoubleMarkPrice;
+                }
+
+                return totals;
+            }
+        }
+        public int SetMainListMedianValue
+        {
+            get
+            {
+                int totals = 0;
+
+                foreach (SetCard card in _mainSetCards)
+                {
+                    totals = totals + (int)card.DoubleMedianPrice;
+                }
+
+                return totals;
+            }
+        }
+        public int SetMainListMarketValueObtained
+        {
+            get
+            {
+                int totals = 0;
+
+                foreach (SetCard card in _mainSetCards)
+                {
+                    if(card.Obtained) 
+                    {
+                        totals = totals + (int)card.DoubleMarkPrice;
+                    }                   
+                }
+
+                return totals;
+            }
+        }
+        public int SetMainListMedianValueObtained
+        {
+            get
+            {
+                int totals = 0;
+
+                foreach (SetCard card in _mainSetCards)
+                {
+                    if(card.Obtained)
+                    {
+                        totals = totals + (int)card.DoubleMedianPrice;
+                    }                  
+                }
+
+                return totals;
+            }
+        }
+
+        public int SetExtraListMarketValue
+        {
+            get
+            {
+                int totals = 0;
+
+                foreach (SetCard card in _extraCards)
+                {
+                    totals = totals + (int)card.DoubleMarkPrice;
+                }
+
+                return totals;
+            }
+        }
+        public int SetExtraListMedianValue
+        {
+            get
+            {
+                int totals = 0;
+
+                foreach (SetCard card in _extraCards)
+                {
+                    totals = totals + (int)card.DoubleMedianPrice;
+                }
+
+                return totals;
+            }
+        }
+        public int SetExtraListMarketValueObtained
+        {
+            get
+            {
+                int totals = 0;
+
+                foreach (SetCard card in _extraCards)
+                {
+                    if (card.Obtained)
+                    {
+                        totals = totals + (int)card.DoubleMarkPrice;
+                    }
+                }
+
+                return totals;
+            }
+        }
+        public int SetExtraListMedianValueObtained
+        {
+            get
+            {
+                int totals = 0;
+
+                foreach (SetCard card in _extraCards)
+                {
+                    if (card.Obtained)
+                    {
+                        totals = totals + (int)card.DoubleMedianPrice;
+                    }
+                }
+
+                return totals;
+            }
+        }
+
+        public List<SetCard> MainCardList { get { return _mainSetCards; } }
+        public List<SetCard> ExtraCardList { get { return _extraCards; } }
 
         
 
         private string _name;
         private string _releaseYear;
         private string _prefixCode;
+        private bool _sorted = false;
         private Dictionary<string, SetCard> _mainSetByCode = new Dictionary<string, SetCard>();
         private List<SetCard> _mainSetCards = new List<SetCard>();
         private List<SetCard> _extraCards = new List<SetCard> ();

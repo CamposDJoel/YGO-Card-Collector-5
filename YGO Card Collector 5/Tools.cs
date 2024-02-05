@@ -2,6 +2,7 @@
 //1/27/2024
 //Tools Class
 
+using OpenQA.Selenium.DevTools.V119.DOM;
 using System;
 using System.Windows.Forms;
 
@@ -30,6 +31,11 @@ namespace YGO_Card_Collector_5
         {
             price = price.Replace("$", "");
             return Convert.ToDouble(price);
+        }
+
+        public static void LaunchURLIntoBrowser(string url)
+        {
+            System.Diagnostics.Process.Start(url);
         }
     }
 }
