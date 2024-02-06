@@ -13,6 +13,7 @@ namespace YGO_Card_Collector_5
     public static class Database
     {
         #region Internal Data
+        private static bool Initialized = false;
         //Master Cards
         public static Dictionary<string, MasterCard> MasterCardByName = new Dictionary<string, MasterCard>();
         public static Dictionary<string, MasterCard> MasterCardByCode = new Dictionary<string, MasterCard>();
@@ -30,126 +31,124 @@ namespace YGO_Card_Collector_5
         public static List<string> CardsWithUnavailableTCGURLs = new List<string>();
         //test data
         public static List<string> TCGPagesThatDidntMatchRarity = new List<string>();
-        private  static bool ApplicationInTestMode = true;
         #endregion
 
         #region Public Methods
         public static bool LoadDB()
         {
-            string jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\CardDB.json";
-            string rawdata = File.ReadAllText(jsonFilePath);
-
-            //Attempt to deserialize the JSON. If it fail simply show error.
-            try
+            if(!Initialized)
             {
-                MasterCards = JsonConvert.DeserializeObject<List<MasterCard>>(rawdata);
-            }
-            catch (Exception)
-            {
-                return false;
-            }
+                string jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\CardDB.json";
+                string rawdata = File.ReadAllText(jsonFilePath);
 
-            //Load the Sets File
-            LoadSetsNames();
-
-            //Continue to sorting the master card list
-            foreach (MasterCard ThisMasterCard in MasterCards)
-            {
-                //Step 1: Add this card to the dictionary for quick search by name
-                MasterCardByName.Add(ThisMasterCard.Name, ThisMasterCard);
-
-                //Step 2A: Check if this card has a missing Prodeck URL and add it to the list
-                if (ThisMasterCard.ProdeckURLIsMissing()) { CardsWithoutProdeckURL.Add(ThisMasterCard.Name); }
-                //Step 2B: Check if this card has a Prodeck URL mark as "Unavailable" and add it to the list
-                if (ThisMasterCard.ProdeckURLIsUnavailable()) { CardsWithUnavailableProdeckURL.Add(ThisMasterCard.Name); }
-
-                //Step 3: Add this Master Card into its corresponding Card Group
-                AddCardIntoCardGroup(ThisMasterCard);
-
-                //Step 4: Sort each MasterCard's SetCards into its respective sets
-                foreach (SetCard thisSetCard in ThisMasterCard.SetCards)
+                //Attempt to deserialize the JSON. If it fail simply show error.
+                try
                 {
-                    //if this setCard in has no CODE, dont do shit with it
-                    if (thisSetCard.Code == "")
-                    {
-                        //JUST IGNORE IT!
-                    }
-                    else
-                    {
-                        //Set a "Key" for this set card
-                        string setCardKey = thisSetCard.Code + "|" + thisSetCard.Rarity + "|" + thisSetCard.Name;
+                    MasterCards = JsonConvert.DeserializeObject<List<MasterCard>>(rawdata);
+                }
+                catch (Exception)
+                {
+                    return false;
+                }
 
-                        //Konami has duplicate card sets in the DB (suckers!), to handle this, ignore any card with
-                        //an already existing key in the DB
-                        if (SetCardByKey.ContainsKey(setCardKey))
+                //Load the Sets File
+                LoadSetsNames();
+
+                //Continue to sorting the master card list
+                foreach (MasterCard ThisMasterCard in MasterCards)
+                {
+                    //Step 1: Add this card to the dictionary for quick search by name
+                    MasterCardByName.Add(ThisMasterCard.Name, ThisMasterCard);
+
+                    //Step 2A: Check if this card has a missing Prodeck URL and add it to the list
+                    if (ThisMasterCard.ProdeckURLIsMissing()) { CardsWithoutProdeckURL.Add(ThisMasterCard.Name); }
+                    //Step 2B: Check if this card has a Prodeck URL mark as "Unavailable" and add it to the list
+                    if (ThisMasterCard.ProdeckURLIsUnavailable()) { CardsWithUnavailableProdeckURL.Add(ThisMasterCard.Name); }
+
+                    //Step 3: Add this Master Card into its corresponding Card Group
+                    AddCardIntoCardGroup(ThisMasterCard);
+
+                    //Step 4: Sort each MasterCard's SetCards into its respective sets
+                    foreach (SetCard thisSetCard in ThisMasterCard.SetCards)
+                    {
+                        //if this setCard in has no CODE, dont do shit with it
+                        if (thisSetCard.Code == "")
                         {
-                            //Ignore this set card
+                            //JUST IGNORE IT!
                         }
                         else
                         {
-                            //Actually sort this set card
+                            //Set a "Key" for this set card
+                            string setCardKey = thisSetCard.Code + "|" + thisSetCard.Rarity + "|" + thisSetCard.Name;
 
-                            //Add this card to the DB Set list and dictionary
-                            SetCards.Add(thisSetCard);
-                            SetCardByKey.Add(setCardKey, thisSetCard);
-
-                            //Check if this Set Card has a TCG URL, if not, add it to the list of missing urls
-                            if(thisSetCard.TCGPlayerURLIsMissing())
+                            //Konami has duplicate card sets in the DB (suckers!), to handle this, ignore any card with
+                            //an already existing key in the DB
+                            if (SetCardByKey.ContainsKey(setCardKey))
                             {
-                                if (!CardsWithoutTCGURLs.Contains(ThisMasterCard.Name))
+                                //Ignore this set card
+                            }
+                            else
+                            {
+                                //Actually sort this set card
+
+                                //Add this card to the DB Set list and dictionary
+                                SetCards.Add(thisSetCard);
+                                SetCardByKey.Add(setCardKey, thisSetCard);
+
+                                //Check if this Set Card has a TCG URL, if not, add it to the list of missing urls
+                                if (thisSetCard.TCGPlayerURLIsMissing())
                                 {
-                                    CardsWithoutTCGURLs.Add(ThisMasterCard.Name);
+                                    if (!CardsWithoutTCGURLs.Contains(ThisMasterCard.Name))
+                                    {
+                                        CardsWithoutTCGURLs.Add(ThisMasterCard.Name);
+                                    }
                                 }
-                            }
-                            //Check if this Set Card has a TCG URL mark as "Unavailable", if so, add it to the list of unavailable urls
-                            if (thisSetCard.TCGPlayerURLIsUnavailable())
-                            {
-                                if(!CardsWithUnavailableTCGURLs.Contains(ThisMasterCard.Name))
+                                //Check if this Set Card has a TCG URL mark as "Unavailable", if so, add it to the list of unavailable urls
+                                if (thisSetCard.TCGPlayerURLIsUnavailable())
                                 {
-                                    CardsWithUnavailableTCGURLs.Add(ThisMasterCard.Name);
+                                    if (!CardsWithUnavailableTCGURLs.Contains(ThisMasterCard.Name))
+                                    {
+                                        CardsWithUnavailableTCGURLs.Add(ThisMasterCard.Name);
+                                    }
                                 }
+
+                                //Save the SetCode to the MasterCardByCode to quick searces of Master Cards by a Set Code
+                                if (!MasterCardByCode.ContainsKey(thisSetCard.Code))
+                                {
+                                    MasterCardByCode.Add(thisSetCard.Code, ThisMasterCard);
+                                }
+
+                                //Extract the Pack Name and check if it exists in the DB
+                                string SetPackName = thisSetCard.Name;
+
+                                if (!SetPackByName.ContainsKey(SetPackName))
+                                {
+                                    //Create the set pack
+                                    SetPack NewPack = new SetPack(thisSetCard.Name, thisSetCard.Code, thisSetCard.ReleaseDate);
+                                    SetPacks.Add(NewPack);
+                                    SetPackByName.Add(SetPackName, NewPack);
+                                }
+
+                                //Now you can add the SetCard to the SetPack
+                                SetPack SetToAddTo = SetPackByName[SetPackName];
+                                SetToAddTo.AddCard(thisSetCard);
                             }
-
-                            //Save the SetCode to the MasterCardByCode to quick searces of Master Cards by a Set Code
-                            if (!MasterCardByCode.ContainsKey(thisSetCard.Code))
-                            {
-                                MasterCardByCode.Add(thisSetCard.Code, ThisMasterCard);
-                            }
-
-                            //Extract the Pack Name and check if it exists in the DB
-                            string SetPackName = thisSetCard.Name;
-
-                            if (!SetPackByName.ContainsKey(SetPackName))
-                            {
-                                //Create the set pack
-                                SetPack NewPack = new SetPack(thisSetCard.Name, thisSetCard.Code, thisSetCard.ReleaseDate);
-                                SetPacks.Add(NewPack);
-                                SetPackByName.Add(SetPackName, NewPack);
-                            }
-
-                            //Now you can add the SetCard to the SetPack
-                            SetPack SetToAddTo = SetPackByName[SetPackName];
-                            SetToAddTo.AddCard(thisSetCard);
                         }
                     }
                 }
 
-                //NOTE: Sorting all the sets at this point take a FULL minute... 
-                //Sorting will be done "per request" each time a set card list is going to be
-                //displayer, a sort function will be called, but the sort will only perform the sort the first
-                //time and ONLY ONCE.
-                //Step 5: Sort the Card of each SetPack to go by code order
-                /*foreach(SetPack thiSetPack in  SetPacks)
-                {
-                    thiSetPack.SortByCode();
-                }*/
+                //Initialize the CardGroupList dictionary for clean code access to these lists
+                InitalizeCardGroupListsDict();
+
+                //Flag the DB as "Initialized" so we dont reload it
+                Initialized = true;
+                return true;
             }
-
-            //Initialize the CardGroupList dictionary for clean code access to these lists
-            InitalizeCardGroupListsDict();
-
-            return true;
-
+            else
+            {
+                return true;
+            }
+            
             void InitalizeCardGroupListsDict()
             {
                 GroupCardListByGroupName.Add(CardGroup.AllCards, MasterCards);
@@ -261,8 +260,18 @@ namespace YGO_Card_Collector_5
                     for (int y = 0; y < setCount; y++)
                     {
                         string setname = tokens[y + 2];
+
+                        if(SettingsData.SetPackListSortingOLDToNEW)
+                        {
+                            thisSetList.Insert(0, new SetInfo(setname, year));
+                        }
+                        else
+                        {
+                            thisSetList.Add(new SetInfo(setname, year));
+                        }
+
                         //thisSetList.Add(new SetInfo(setname, year));
-                        thisSetList.Insert(0, new SetInfo(setname, year));
+                        //thisSetList.Insert(0, new SetInfo(setname, year));
                     }
                 }
             }
@@ -272,7 +281,7 @@ namespace YGO_Card_Collector_5
         {
             string output = JsonConvert.SerializeObject(MasterCards);
 
-            if (ApplicationInTestMode)
+            if (SettingsData.DBUpdateTestMode)
             {
                 File.WriteAllText(Directory.GetCurrentDirectory() + "\\Output Files\\CardDB_Output.json", output);
             }
@@ -570,9 +579,7 @@ namespace YGO_Card_Collector_5
         public static List<SetInfo> Tournaments = new List<SetInfo>();
         public static List<SetInfo> Promos = new List<SetInfo>();
         public static List<SetInfo> VideoGames = new List<SetInfo>();
-        #endregion
-
-        
+        #endregion       
     }
     public class SetInfo
     {

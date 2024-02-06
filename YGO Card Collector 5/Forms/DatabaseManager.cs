@@ -19,10 +19,10 @@ namespace YGO_Card_Collector_5
     public partial class DatabaseManager : Form
     {
         #region Constructors
-        public DatabaseManager()
+        public DatabaseManager(FormLauncher mainmenuform)
         {
             InitializeComponent();
-
+            _MainMenuForm = mainmenuform;
             ReloadStats();
         }
         #endregion
@@ -44,6 +44,8 @@ namespace YGO_Card_Collector_5
 
         private List<SetInfo> _CurrentSetInfoListSelected;
         private List<Label> _SetDetailsLabels = new List<Label>();
+
+        private FormLauncher _MainMenuForm;
         #endregion
 
         #region Public Methods
@@ -273,11 +275,7 @@ namespace YGO_Card_Collector_5
 
             lblMarketPriceTotalValue.Text = string.Format("Total Value: ${0}", marketPriceTotalValue.ToString());
             lblMedianPriceTotalValue.Text = string.Format("Total Value: ${0}", medianPriceTotalValue.ToString());
-        }
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
+        }        
         #endregion
 
         #region Automation Scrips Methods
@@ -2689,6 +2687,7 @@ namespace YGO_Card_Collector_5
         }
         #endregion
 
+        #region Other Event Listeners
         private void btnTest_Click(object sender, EventArgs e)
         {
             Hide();
@@ -2818,5 +2817,15 @@ namespace YGO_Card_Collector_5
             Driver.CloseDriver();
             WriteOutputFiles();
         }
+        private void btnBackToMainMenu_Click(object sender, EventArgs e)
+        {
+            Dispose();
+            _MainMenuForm.Show();
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+        #endregion
     }
 }

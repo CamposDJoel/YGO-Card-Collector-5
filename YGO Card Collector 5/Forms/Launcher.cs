@@ -25,20 +25,16 @@ namespace YGO_Card_Collector_5
 
         private void LoadDB()
         {
-
-            //lblProgress.Visible = true;
-            //BarProgress.Visible = true;
-            //PanelOutput.Visible = true;
-
             //Hide the menu options
             lblLaunchAppOption.Visible = false;
             lblSettingsOption.Visible = false;
             lblDatabaseOption.Visible = false;
+            lblJsonStatus.Visible = false;
 
             bool Success = Database.LoadDB();
             if(!Success) 
             {
-                lblJsonStatus.Text = "JSON Failed to load\nPlease review DB file.";
+                lblJsonStatus.Visible = true;
                 lblLaunchAppOption.Visible = true;
                 lblSettingsOption.Visible = true;
                 lblDatabaseOption.Visible = true;
@@ -56,7 +52,6 @@ namespace YGO_Card_Collector_5
             Label thisLabel = (Label)sender;
             thisLabel.BorderStyle = BorderStyle.None;
         }
-
         private void lblLaunchAppOption_Click(object sender, EventArgs e)
         {
             LoadDB();
@@ -69,8 +64,19 @@ namespace YGO_Card_Collector_5
 
             //Open Database Manager
             Hide();
-            DatabaseManager DM = new DatabaseManager();
+            DatabaseManager DM = new DatabaseManager(this);
             DM.Show();
+
+            //Hide the menu options
+            lblLaunchAppOption.Visible = true;
+            lblSettingsOption.Visible = true;
+            lblDatabaseOption.Visible = true;
+        }
+        private void lblSettingsOption_Click(object sender, EventArgs e)
+        {
+            Hide();
+            SettingsForm SF = new SettingsForm(this);
+            SF.Show();
         }
     }
 }

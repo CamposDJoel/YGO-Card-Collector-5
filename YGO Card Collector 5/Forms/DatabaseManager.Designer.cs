@@ -105,6 +105,7 @@
             this.lblTotalsInsect = new System.Windows.Forms.Label();
             this.TabMasterTotals = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnTest = new System.Windows.Forms.Button();
             this.label68 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
@@ -270,7 +271,7 @@
             this.ListTop1000Report = new System.Windows.Forms.ListBox();
             this.label70 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
-            this.btnTest = new System.Windows.Forms.Button();
+            this.btnBackToMainMenu = new System.Windows.Forms.Button();
             this.PanelFullTotals.SuspendLayout();
             this.TabMasterTotals.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -297,7 +298,7 @@
             this.lblTotalAqua.AutoSize = true;
             this.lblTotalAqua.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalAqua.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalAqua.Location = new System.Drawing.Point(4, 3);
+            this.lblTotalAqua.Location = new System.Drawing.Point(208, 2);
             this.lblTotalAqua.Name = "lblTotalAqua";
             this.lblTotalAqua.Size = new System.Drawing.Size(369, 24);
             this.lblTotalAqua.TabIndex = 0;
@@ -1345,6 +1346,17 @@
             this.tabPage1.Size = new System.Drawing.Size(788, 406);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Master Card List Totals";
+            // 
+            // btnTest
+            // 
+            this.btnTest.ForeColor = System.Drawing.Color.Black;
+            this.btnTest.Location = new System.Drawing.Point(373, 51);
+            this.btnTest.Name = "btnTest";
+            this.btnTest.Size = new System.Drawing.Size(67, 38);
+            this.btnTest.TabIndex = 16;
+            this.btnTest.Text = "TEST";
+            this.btnTest.UseVisualStyleBackColor = true;
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
             // label68
             // 
@@ -3385,16 +3397,16 @@
             this.label69.TabIndex = 4;
             this.label69.Text = "DB Prices Report";
             // 
-            // btnTest
+            // btnBackToMainMenu
             // 
-            this.btnTest.ForeColor = System.Drawing.Color.Black;
-            this.btnTest.Location = new System.Drawing.Point(373, 51);
-            this.btnTest.Name = "btnTest";
-            this.btnTest.Size = new System.Drawing.Size(67, 38);
-            this.btnTest.TabIndex = 16;
-            this.btnTest.Text = "TEST";
-            this.btnTest.UseVisualStyleBackColor = true;
-            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
+            this.btnBackToMainMenu.BackColor = System.Drawing.Color.Maroon;
+            this.btnBackToMainMenu.Location = new System.Drawing.Point(4, 3);
+            this.btnBackToMainMenu.Name = "btnBackToMainMenu";
+            this.btnBackToMainMenu.Size = new System.Drawing.Size(125, 22);
+            this.btnBackToMainMenu.TabIndex = 3;
+            this.btnBackToMainMenu.Text = "<-- Back to Main Menu";
+            this.btnBackToMainMenu.UseVisualStyleBackColor = false;
+            this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
             // 
             // DatabaseManager
             // 
@@ -3403,6 +3415,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(804, 461);
+            this.Controls.Add(this.btnBackToMainMenu);
             this.Controls.Add(this.TabMasterTotals);
             this.Controls.Add(this.lblTotalAqua);
             this.ForeColor = System.Drawing.Color.White;
@@ -3693,5 +3706,6 @@
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Button btnUpdateSetCardListPrices;
         private System.Windows.Forms.Button btnTest;
+        private System.Windows.Forms.Button btnBackToMainMenu;
     }
 }
