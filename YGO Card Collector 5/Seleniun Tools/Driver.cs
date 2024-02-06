@@ -4,6 +4,7 @@
 
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.DevTools.V119.DOM;
 using OpenQA.Selenium.DevTools.V119.Storage;
 using System;
 using System.Collections.Generic;
@@ -26,12 +27,15 @@ namespace YGO_Card_Collector_5
         #region Browser Public Methods
         public static void OpenBrowser()
         {
-            //this "option" will allow the browser to Maximize opun launching
+            //Set the browser options [Maximazed at high reso and Headless if the setting is On)
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("--window-size=1920,1080");
-            options.AddArgument("--start-maximized");
-            options.AddArgument("headless");
+            options.AddArgument("--start-maximized");            
             options.AddArgument("no-sandbox");
+            if(SettingsData.AutomationHeadless)
+            {
+                options.AddArgument("headless");
+            }
 
             ChromeDriver drv = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
             drv.Manage().Timeouts().PageLoad.Add(TimeSpan.FromSeconds(30));
