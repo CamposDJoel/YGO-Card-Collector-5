@@ -4,6 +4,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Windows.Forms;
 
 namespace YGO_Card_Collector_5
 {
@@ -101,6 +102,36 @@ namespace YGO_Card_Collector_5
             }
             return card;
         }
+        public bool HasAllSetCardsObtained()
+        {
+            bool allObtained = true;
+            foreach(SetCard SetCard in _SetCards)
+            {
+                if(SetCard.Code != "")
+                {
+                    if(!SetCard.Obtained) 
+                    {
+                        allObtained = false; break;
+                    }
+                }
+            }    
+            return allObtained;
+        }
+        public bool HasOneCardsObtained()
+        {
+            bool oneObtained = false;
+            foreach (SetCard SetCard in _SetCards)
+            {
+                if (SetCard.Code != "")
+                {
+                    if (SetCard.Obtained)
+                    {
+                        oneObtained = true; break;
+                    }
+                }
+            }
+            return oneObtained;
+        }
         #endregion
 
         #region Internal Data
@@ -172,6 +203,30 @@ namespace YGO_Card_Collector_5
         {
             return Database.MasterCardByCode[_Code].Name;
         }
+        public string GetCardID()
+        {
+            return Database.MasterCardByCode[_Code].ID.ToString();
+        }
+        public string GetKonamiDBURL()
+        {
+            return Database.MasterCardByCode[_Code].KonamiURL;
+        }
+        public string GetProdeckURL()
+        {
+            return Database.MasterCardByCode[_Code].ProdeckURL;
+        }
+        public bool MasterCardHasProdeckURL()
+        {
+            return Database.MasterCardByCode[_Code].HasProDeckURL();
+        }
+        public double GetDoubleMarketPrice()
+        {
+            return Tools.CovertPriceToDouble(_MarketPrice);
+        }
+        public double GetDoubleMedianPrice()
+        {
+            return Tools.CovertPriceToDouble(_MediamPrice);
+        }
 
         #region Public Accessors
         public string ReleaseDate { get { return _ReleaseDate; } set { _ReleaseDate = value; } }
@@ -182,8 +237,6 @@ namespace YGO_Card_Collector_5
         public string MediamPrice { get { return _MediamPrice; } set { _MediamPrice = value; } }
         public bool Obtained { get { return _Obtained; } set { _Obtained = value; } }
         public string TCGPlayerURL { get { return _TCGPlayerURL; } set { _TCGPlayerURL = value; } }
-        public double DoubleMarkPrice { get { return Tools.CovertPriceToDouble(_MarketPrice); } }
-        public double DoubleMedianPrice { get { return Tools.CovertPriceToDouble(_MediamPrice); } }
         #endregion
 
         #region Internal Data
@@ -202,13 +255,12 @@ namespace YGO_Card_Collector_5
             SetCard otherPriceItem = obj as SetCard;
             return otherPriceItem._Code.CompareTo(_Code);
         }
-
         public class SortByPrice : IComparer<SetCard>
         {
             public int Compare(SetCard c1, SetCard c2)
             {
-                double card1price = c1.DoubleMarkPrice;
-                double card2price = c2.DoubleMarkPrice;
+                double card1price = c1.GetDoubleMarketPrice();
+                double card2price = c2.GetDoubleMarketPrice();
                 if (card1price < card2price) { return 1; }
                 else if (card1price > card2price) { return -1; } 
                 else { return 0; }
@@ -218,14 +270,13 @@ namespace YGO_Card_Collector_5
         {
             public int Compare(SetCard c1, SetCard c2)
             {
-                double card1price = c1.DoubleMedianPrice;
-                double card2price = c2.DoubleMedianPrice;
+                double card1price = c1.GetDoubleMedianPrice();
+                double card2price = c2.GetDoubleMedianPrice();
                 if (card1price < card2price) { return 1; }
                 else if (card1price > card2price) { return -1; }
                 else { return 0; }
             }
         }
-
         public class SortByCode : IComparer<SetCard>
         {
             public int Compare(SetCard c1, SetCard c2)

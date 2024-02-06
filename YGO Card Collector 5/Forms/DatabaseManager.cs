@@ -262,7 +262,7 @@ namespace YGO_Card_Collector_5
                 string obtainedmark = "";
                 if (ThisSetCard.Obtained) { obtainedmark = "- [x] "; }
                 ListTop1000Report.Items.Add(string.Format("[{0}] {1}- [{2} | {3}] - {4}", ThisSetCard.MarketPrice, obtainedmark, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
-                marketPriceTotalValue += (int)ThisSetCard.DoubleMarkPrice;
+                marketPriceTotalValue += (int)ThisSetCard.GetDoubleMarketPrice();
             }
             foreach (SetCard ThisSetCard in PriceListMedian)
             {
@@ -270,7 +270,7 @@ namespace YGO_Card_Collector_5
                 string obtainedmark = "";
                 if (ThisSetCard.Obtained) { obtainedmark = "- [x] "; }
                 ListTop1000ReportMedian.Items.Add(string.Format("[{0}] {1}- [{2} | {3}] - {4}", ThisSetCard.MediamPrice, obtainedmark, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
-                medianPriceTotalValue += (int)ThisSetCard.DoubleMedianPrice;
+                medianPriceTotalValue += (int)ThisSetCard.GetDoubleMarketPrice();
             }
 
             lblMarketPriceTotalValue.Text = string.Format("Total Value: ${0}", marketPriceTotalValue.ToString());
@@ -2617,15 +2617,15 @@ namespace YGO_Card_Collector_5
                 marketLabel.Location = new Point(390, CurrentY_Axis);
                 _SetDetailsLabels.Add(marketLabel);
 
-                if (ThisSetCard.DoubleMarkPrice < 1)
+                if (ThisSetCard.GetDoubleMarketPrice() < 1)
                 {
                     marketLabel.ForeColor = Color.White;
                 }
-                else if (ThisSetCard.DoubleMarkPrice < 5)
+                else if (ThisSetCard.GetDoubleMarketPrice() < 5)
                 {
                     marketLabel.ForeColor = Color.LightGreen;
                 }
-                else if (ThisSetCard.DoubleMarkPrice < 50)
+                else if (ThisSetCard.GetDoubleMarketPrice() < 50)
                 {
                     marketLabel.ForeColor = Color.HotPink;
                 }
@@ -2645,15 +2645,15 @@ namespace YGO_Card_Collector_5
                 medianLabel.Location = new Point(450, CurrentY_Axis);
                 _SetDetailsLabels.Add(medianLabel);
 
-                if (ThisSetCard.DoubleMedianPrice < 1)
+                if (ThisSetCard.GetDoubleMedianPrice() < 1)
                 {
                     medianLabel.ForeColor = Color.White;
                 }
-                else if (ThisSetCard.DoubleMedianPrice < 5)
+                else if (ThisSetCard.GetDoubleMedianPrice() < 5)
                 {
                     medianLabel.ForeColor = Color.LightGreen;
                 }
-                else if (ThisSetCard.DoubleMedianPrice < 50)
+                else if (ThisSetCard.GetDoubleMedianPrice() < 50)
                 {
                     medianLabel.ForeColor = Color.HotPink;
                 }

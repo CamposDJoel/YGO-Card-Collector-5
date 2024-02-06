@@ -75,7 +75,7 @@ namespace YGO_Card_Collector_5
 
                 foreach(SetCard card in _mainSetCards)
                 {
-                    totals = totals + (int)card.DoubleMarkPrice;
+                    totals = totals + (int)card.GetDoubleMarketPrice();
                 }
 
                 return totals;
@@ -89,7 +89,7 @@ namespace YGO_Card_Collector_5
 
                 foreach (SetCard card in _mainSetCards)
                 {
-                    totals = totals + (int)card.DoubleMedianPrice;
+                    totals = totals + (int)card.GetDoubleMedianPrice();
                 }
 
                 return totals;
@@ -105,7 +105,7 @@ namespace YGO_Card_Collector_5
                 {
                     if(card.Obtained) 
                     {
-                        totals = totals + (int)card.DoubleMarkPrice;
+                        totals = totals + (int)card.GetDoubleMarketPrice();
                     }                   
                 }
 
@@ -122,14 +122,13 @@ namespace YGO_Card_Collector_5
                 {
                     if(card.Obtained)
                     {
-                        totals = totals + (int)card.DoubleMedianPrice;
+                        totals = totals + (int)card.GetDoubleMedianPrice();
                     }                  
                 }
 
                 return totals;
             }
         }
-
         public int SetExtraListMarketValue
         {
             get
@@ -138,7 +137,7 @@ namespace YGO_Card_Collector_5
 
                 foreach (SetCard card in _extraCards)
                 {
-                    totals = totals + (int)card.DoubleMarkPrice;
+                    totals = totals + (int)card.GetDoubleMarketPrice();
                 }
 
                 return totals;
@@ -152,7 +151,7 @@ namespace YGO_Card_Collector_5
 
                 foreach (SetCard card in _extraCards)
                 {
-                    totals = totals + (int)card.DoubleMedianPrice;
+                    totals = totals + (int)card.GetDoubleMedianPrice();
                 }
 
                 return totals;
@@ -168,7 +167,7 @@ namespace YGO_Card_Collector_5
                 {
                     if (card.Obtained)
                     {
-                        totals = totals + (int)card.DoubleMarkPrice;
+                        totals = totals + (int)card.GetDoubleMarketPrice();
                     }
                 }
 
@@ -185,7 +184,7 @@ namespace YGO_Card_Collector_5
                 {
                     if (card.Obtained)
                     {
-                        totals = totals + (int)card.DoubleMedianPrice;
+                        totals = totals + (int)card.GetDoubleMedianPrice();
                     }
                 }
 

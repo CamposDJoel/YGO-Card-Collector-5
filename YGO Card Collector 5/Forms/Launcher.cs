@@ -57,6 +57,9 @@ namespace YGO_Card_Collector_5
             LoadDB();
 
             //Open Collection tracker
+            Hide();
+            Collector Co = new Collector();
+            Co.Show();
         }
         private void lblDatabaseOption_Click(object sender, EventArgs e)
         {

@@ -31,19 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsForm));
             this.lblTotalAqua = new System.Windows.Forms.Label();
             this.GroupTestMode = new System.Windows.Forms.GroupBox();
-            this.RadioTestModeON = new System.Windows.Forms.RadioButton();
             this.RadioTestModeOFF = new System.Windows.Forms.RadioButton();
+            this.RadioTestModeON = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.RadioHeadlessOFF = new System.Windows.Forms.RadioButton();
             this.RadioHeadlessON = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.RadioPackSortingNEW = new System.Windows.Forms.RadioButton();
             this.RadioPackSortingOLD = new System.Windows.Forms.RadioButton();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.RadioThemeDM = new System.Windows.Forms.RadioButton();
             this.GroupTestMode.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTotalAqua
@@ -72,17 +75,6 @@
             this.GroupTestMode.TabStop = false;
             this.GroupTestMode.Text = "DB Update Test Mode";
             // 
-            // RadioTestModeON
-            // 
-            this.RadioTestModeON.AutoSize = true;
-            this.RadioTestModeON.Location = new System.Drawing.Point(15, 24);
-            this.RadioTestModeON.Name = "RadioTestModeON";
-            this.RadioTestModeON.Size = new System.Drawing.Size(45, 19);
-            this.RadioTestModeON.TabIndex = 0;
-            this.RadioTestModeON.Text = "ON";
-            this.RadioTestModeON.UseVisualStyleBackColor = true;
-            this.RadioTestModeON.CheckedChanged += new System.EventHandler(this.RadioTestModeON_CheckedChanged);
-            // 
             // RadioTestModeOFF
             // 
             this.RadioTestModeOFF.AutoSize = true;
@@ -93,6 +85,17 @@
             this.RadioTestModeOFF.Text = "OFF";
             this.RadioTestModeOFF.UseVisualStyleBackColor = true;
             this.RadioTestModeOFF.CheckedChanged += new System.EventHandler(this.RadioTestModeOFF_CheckedChanged);
+            // 
+            // RadioTestModeON
+            // 
+            this.RadioTestModeON.AutoSize = true;
+            this.RadioTestModeON.Location = new System.Drawing.Point(15, 24);
+            this.RadioTestModeON.Name = "RadioTestModeON";
+            this.RadioTestModeON.Size = new System.Drawing.Size(45, 19);
+            this.RadioTestModeON.TabIndex = 0;
+            this.RadioTestModeON.Text = "ON";
+            this.RadioTestModeON.UseVisualStyleBackColor = true;
+            this.RadioTestModeON.CheckedChanged += new System.EventHandler(this.RadioTestModeON_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -145,6 +148,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Sorting SetPack Lists";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(11, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(230, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Applies to the first DB Initialization";
+            // 
             // RadioPackSortingNEW
             // 
             this.RadioPackSortingNEW.AutoSize = true;
@@ -179,15 +192,28 @@
             this.btnBackToMainMenu.UseVisualStyleBackColor = false;
             this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
             // 
-            // label1
+            // groupBox3
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(11, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(230, 15);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Applies to the first DB Initialization";
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.RadioThemeDM);
+            this.groupBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.ForeColor = System.Drawing.Color.Yellow;
+            this.groupBox3.Location = new System.Drawing.Point(327, 43);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(392, 262);
+            this.groupBox3.TabIndex = 5;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Theme";
+            // 
+            // RadioThemeDM
+            // 
+            this.RadioThemeDM.AutoSize = true;
+            this.RadioThemeDM.Location = new System.Drawing.Point(15, 24);
+            this.RadioThemeDM.Name = "RadioThemeDM";
+            this.RadioThemeDM.Size = new System.Drawing.Size(118, 19);
+            this.RadioThemeDM.TabIndex = 0;
+            this.RadioThemeDM.Text = "Dark Magician";
+            this.RadioThemeDM.UseVisualStyleBackColor = true;
             // 
             // SettingsForm
             // 
@@ -196,6 +222,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(804, 461);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnBackToMainMenu);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -213,6 +240,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,5 +261,7 @@
         private System.Windows.Forms.RadioButton RadioPackSortingOLD;
         private System.Windows.Forms.Button btnBackToMainMenu;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton RadioThemeDM;
     }
 }

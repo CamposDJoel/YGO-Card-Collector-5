@@ -15,10 +15,12 @@ namespace YGO_Card_Collector_5
         private static bool _SetListSortingOldToNew = true;
         private static bool _DBUpdateTestMode = true;
         private static bool _AutomationHeadless = true;
+        private static AppTheme _CurrentTheme = AppTheme.DarkMacigian;
 
         public static bool SetPackListSortingOLDToNEW { get { return _SetListSortingOldToNew; } }
         public static bool DBUpdateTestMode { get { return _DBUpdateTestMode; } }
         public static bool AutomationHeadless { get { return _AutomationHeadless; } }
+        public static AppTheme CurrentTheme { get {  return _CurrentTheme; } }
 
         public static void SwitchSetListSortingSetting(bool value)
         {
@@ -32,5 +34,10 @@ namespace YGO_Card_Collector_5
         {
             _AutomationHeadless = value;
         }
+    }
+
+    public enum AppTheme
+    {
+        DarkMacigian
     }
 }

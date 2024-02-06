@@ -29,6 +29,14 @@ namespace YGO_Card_Collector_5
             RadioTestModeOFF.Checked = !SettingsData.DBUpdateTestMode;
             RadioHeadlessON.Checked = SettingsData.AutomationHeadless;
             RadioHeadlessOFF.Checked = !SettingsData.AutomationHeadless;
+
+            AppTheme _CurrentTHeme = SettingsData.CurrentTheme;
+            switch(SettingsData.CurrentTheme) 
+            {
+                case AppTheme.DarkMacigian: RadioThemeDM.Checked = true; break;
+            }
+
+            
         }
 
         private void RadioPackSortingOLD_CheckedChanged(object sender, EventArgs e)
