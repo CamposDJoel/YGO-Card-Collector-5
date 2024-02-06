@@ -92,6 +92,15 @@ namespace YGO_Card_Collector_5
         {
             return _SetCards[index];
         }
+        public SetCard GetCardWithCodeAndRarity(string code, string rarity)
+        {
+            SetCard card = null;
+            foreach(SetCard setCard in _SetCards) 
+            {
+                if(setCard.Code == code && setCard.Rarity == rarity) { card = setCard; }
+            }
+            return card;
+        }
         #endregion
 
         #region Internal Data

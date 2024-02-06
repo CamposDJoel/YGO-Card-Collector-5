@@ -2688,5 +2688,135 @@ namespace YGO_Card_Collector_5
             UpdateSetPrices(packToTest.FullCardList);
         }
         #endregion
+
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this);
+            DBUpdateform.Show();
+
+            Driver.ClearLogs();
+            var Masterwatch = new Stopwatch();
+            Masterwatch.Start();
+            Driver.OpenBrowser();
+
+            List<string> SuccesfulLines = new List<string>();
+            List<string> unSuccesfulLines = new List<string>();
+
+            //Open the file
+            StreamReader SR_SaveFile = new StreamReader(
+                Directory.GetCurrentDirectory() + "\\Database\\FixList.txt");
+
+            //String that hold the data of one line of the txt file
+            string line = "";
+
+            line = SR_SaveFile.ReadLine();
+            int cardCount = Convert.ToInt32(line);
+
+            DBUpdateform.SetTotalCardsToScan(cardCount);
+
+            for (int i = 0; i < cardCount; i++)
+            {
+                line = SR_SaveFile.ReadLine();
+                string[] tokens = line.Split('|');
+                string cardname = tokens[0];
+                string code = tokens[1];
+                string rarity = tokens[2];
+
+                if(code.StartsWith("DUSA") || code.StartsWith("NKRT") || code.StartsWith("DT") || code.StartsWith("HL"))
+                {
+                    //skip
+                    unSuccesfulLines.Add(line);
+                }
+                else
+                {
+                    DBUpdateform.SendCardStartSignal(cardname);
+                    MasterCard ThisMasterCard = Database.MasterCardByName[cardname];
+                    if (ThisMasterCard.HasProDeckURL())
+                    {
+                        //Set the SetCard Ref
+                        SetCard ThisSetCard = ThisMasterCard.GetCardWithCodeAndRarity(code, rarity);
+
+                        Driver.GoToURL(ThisMasterCard.ProdeckURL);
+                        ProdeckCardInfoPage.WaitUntilPageIsLoaded();
+
+                        //Open the View more URLs if has so
+                        bool viewmore = false;
+                        if (ProdeckCardInfoPage.PageContainsTCGPrices())
+                        {
+                            if (ProdeckCardInfoPage.TCGPricesHasViewMore())
+                            {
+                                //Click the view more and flag it for later
+                                ProdeckCardInfoPage.ClickViewMore();
+                                viewmore = true;
+                            }
+                        }
+
+                        //Extract available URLs from the page
+                        List<string> URLsToCheck = new List<string>();
+                        if (viewmore)
+                        {
+                            URLsToCheck = ProdeckCardInfoPage.GetPricesURLsViewMore(ThisSetCard.Name);
+                        }
+                        else
+                        {
+                            //extract the links directly from the page.
+                            URLsToCheck = ProdeckCardInfoPage.GetPricesURLsFromPage();
+                        }
+
+
+                        bool succesfulMatch = false;
+                        //Now check all the URL for matches                  
+                        foreach (string TestURL in URLsToCheck)
+                        {
+                            Driver.GoToURL(TestURL);
+
+                            if (TCGCardInfoPage.IsAValidPage())
+                            {
+                                bool PageLoadedCorrectly = TCGCardInfoPage.WaitUntilPageIsLoaded(true);
+
+                                if (PageLoadedCorrectly)
+                                {
+                                    //If the page corresponds to the code AND Rarity, then extract its price
+                                    string CodeInPage = TCGCardInfoPage.GetCode();
+                                    string RarityInPage = TCGCardInfoPage.GetRarity();
+                                    if (ThisSetCard.Code == CodeInPage && Tools.CompareInLowerCase(ThisSetCard.Rarity, RarityInPage))
+                                    {
+                                        //Save the URL and Update prices
+                                        ThisSetCard.TCGPlayerURL = TestURL;
+
+                                        //Update prices since we are here.
+                                        string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                                        string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+                                        double priceInPageMarket = Tools.CovertPriceToDouble(priceInPageMarketstr);
+                                        double priceInPageMedian = Tools.CovertPriceToDouble(priceInPageMedianstr);
+                                        ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                                        succesfulMatch = true;
+                                    }
+                                }
+                            }
+                        }
+
+                        if (succesfulMatch)
+                        {
+                            SuccesfulLines.Add(line);
+                        }
+                        else
+                        {
+                            unSuccesfulLines.Add(line);
+                        }
+                    }
+                }              
+            }
+
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\SuccessfullLines.txt", SuccesfulLines);
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\UnSuccessfullLines.txt", unSuccesfulLines);
+
+            DBUpdateform.SendJobFinishSignal();
+            Masterwatch.Stop();
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
+            Driver.CloseDriver();
+            WriteOutputFiles();
+        }
     }
 }

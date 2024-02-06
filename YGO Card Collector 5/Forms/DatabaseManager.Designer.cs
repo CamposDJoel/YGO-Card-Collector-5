@@ -270,6 +270,7 @@
             this.ListTop1000Report = new System.Windows.Forms.ListBox();
             this.label70 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
+            this.btnTest = new System.Windows.Forms.Button();
             this.PanelFullTotals.SuspendLayout();
             this.TabMasterTotals.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -1320,6 +1321,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Black;
+            this.tabPage1.Controls.Add(this.btnTest);
             this.tabPage1.Controls.Add(this.label68);
             this.tabPage1.Controls.Add(this.label67);
             this.tabPage1.Controls.Add(this.label66);
@@ -3383,6 +3385,17 @@
             this.label69.TabIndex = 4;
             this.label69.Text = "DB Prices Report";
             // 
+            // btnTest
+            // 
+            this.btnTest.ForeColor = System.Drawing.Color.Black;
+            this.btnTest.Location = new System.Drawing.Point(373, 51);
+            this.btnTest.Name = "btnTest";
+            this.btnTest.Size = new System.Drawing.Size(67, 38);
+            this.btnTest.TabIndex = 16;
+            this.btnTest.Text = "TEST";
+            this.btnTest.UseVisualStyleBackColor = true;
+            this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
+            // 
             // DatabaseManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3679,5 +3692,6 @@
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Button btnUpdateSetCardListPrices;
+        private System.Windows.Forms.Button btnTest;
     }
 }
