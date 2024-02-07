@@ -5,6 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Reflection;
 using System.Windows.Forms;
 
 namespace YGO_Card_Collector_5
@@ -271,73 +272,74 @@ namespace YGO_Card_Collector_5
                     string ActiveSetRarity = ThisMasterCard.GetCardAtIndex(x).Rarity;
                     bool ActiveSetObtained = ThisMasterCard.GetCardAtIndex(x).Obtained;
 
-                    if (ActiveSetCode != "")
+                    Panel TagContainer = new Panel();
+                    PanelTagList.Controls.Add(TagContainer);
+                    TagContainer.Location = new Point(1, Y_Location);
+                    TagContainer.BorderStyle = BorderStyle.FixedSingle;
+                    TagContainer.BackColor = Color.Black;
+                    TagContainer.Size = new Size(109, 36);
+                    TagContainer.AutoSize = false;
+                    TagContainer.Tag = x;
+                    _TagContainerList.Add(TagContainer);
+
+
+                    Label tagLabel = new Label();
+                    TagContainer.Controls.Add(tagLabel);
+                    tagLabel.Location = new Point(1, 1);
+                    tagLabel.BorderStyle = BorderStyle.None;
+                    tagLabel.BackColor = Color.Transparent;
+                    tagLabel.Size = new Size(107, 17);
+                    tagLabel.AutoSize = false;
+                    tagLabel.Font = new Font("Arial", 9);
+                    tagLabel.Text = ActiveSetCode;
+                    tagLabel.TextAlign = ContentAlignment.MiddleLeft;
+                    tagLabel.ForeColor = Color.White;
+                    tagLabel.Tag = x;
+                    tagLabel.Click += new EventHandler(SetCardLabel_clicked);
+                    _TagLabelList.Add(tagLabel);
+
+                    ////////////////////////////////////
+
+                    Label tagLabel2 = new Label();
+                    TagContainer.Controls.Add(tagLabel2);
+                    tagLabel2.Location = new Point(1, 18);
+                    tagLabel2.BorderStyle = BorderStyle.None;
+                    tagLabel2.BackColor = Color.Transparent;
+                    tagLabel2.Size = new Size(107, 17);
+                    tagLabel2.AutoSize = false;
+                    tagLabel2.Font = new Font("Arial", 9);
+                    if (ActiveSetRarity.Length > 13)
                     {
-                        Panel TagContainer = new Panel();
-                        PanelTagList.Controls.Add(TagContainer);
-                        TagContainer.Location = new Point(1, Y_Location);
-                        TagContainer.BorderStyle = BorderStyle.FixedSingle;
-                        TagContainer.Size = new Size(109, 36);
-                        TagContainer.AutoSize = false;
-                        _TagContainerList.Add(TagContainer);
+                        tagLabel2.Font = new Font("Arial", 6);
+                    }
+                    tagLabel2.Text = ActiveSetRarity;
+                    tagLabel2.TextAlign = ContentAlignment.MiddleRight;
+                    tagLabel2.ForeColor = Color.White;
+                    tagLabel2.Tag = x;
+                    tagLabel2.Click += new EventHandler(SetCardLabel_clicked);
+                    _TagLabelList.Add(tagLabel2);
+                  
 
-
-                        Label tagLabel = new Label();
-                        TagContainer.Controls.Add(tagLabel);
-                        tagLabel.Location = new Point(1, 1);
-                        tagLabel.BorderStyle = BorderStyle.None;
-                        tagLabel.Size = new Size(107, 17);
-                        tagLabel.AutoSize = false;
-                        tagLabel.Font = new Font("Arial", 9);
-                        tagLabel.Text = ActiveSetCode;
-                        tagLabel.TextAlign = ContentAlignment.MiddleLeft;
-                        tagLabel.ForeColor = Color.White;
-                        tagLabel.Tag = x;
-                        //TODO: tagLabel.Click += new EventHandler(this.SetCodeLabel_clicked);
-                        _TagLabelList.Add(tagLabel);
-
-                        //Set Color base on if it is obtained or not
-                        if (ActiveSetObtained)
-                        {
-                            tagLabel.ForeColor = Color.Green;
-                        }
-                        else
-                        {
-                            tagLabel.ForeColor = Color.White;
-                        }
-
-                        ////////////////////////////////////
-
-                        Label tagLabel2 = new Label();
-                        TagContainer.Controls.Add(tagLabel2);
-                        tagLabel2.Location = new Point(1, 18);
-                        tagLabel2.BorderStyle = BorderStyle.None;
-                        tagLabel2.Size = new Size(107, 17);
-                        tagLabel2.AutoSize = false;
-                        tagLabel2.Font = new Font("Arial", 9);
-                        if (ActiveSetRarity.Length > 13)
-                        {
-                            tagLabel2.Font = new Font("Arial", 6);
-                        }
-                        tagLabel2.Text = ActiveSetRarity;
-                        tagLabel2.TextAlign = ContentAlignment.MiddleRight;
-                        tagLabel2.ForeColor = Color.White;
-                        tagLabel2.Tag = x;
-                        //TODO: tagLabel.Click += new EventHandler(this.SetCodeLabel_clicked);
-                        _TagLabelList.Add(tagLabel2);
-
-                        //Set Color base on if it is obtained or not
-                        if (ActiveSetObtained)
-                        {
-                            tagLabel2.ForeColor = Color.Green;
-                        }
-                        else
-                        {
-                            tagLabel2.ForeColor = Color.White;
-                        }
+                    //If the code for this set has an empty code, hide it,
+                    //and dont move the Y_Location so the next tag takes it location
+                    if (ActiveSetCode == "")
+                    {
+                        TagContainer.Visible = false;
+                    }
+                    else
+                    {
+                        Y_Location += 36;
                     }
 
-                    Y_Location += 36;
+                    //Set Color base on if it is obtained or not
+                    if (ActiveSetObtained)
+                    {
+                        TagContainer.BackColor = Color.MidnightBlue;
+                    }
+                    else
+                    {
+                        TagContainer.BackColor = Color.Black;
+                    }                   
                 }
 
                 //Resize the TagList Container
@@ -511,12 +513,43 @@ namespace YGO_Card_Collector_5
         private List<Panel> _TagContainerList = new List<Panel>();
         #endregion
 
-        void Image_click(object sender, EventArgs e)
+        #region Event Listeners (Card/Set Clicking Events)
+        private void Image_click(object sender, EventArgs e)
         {
             //Initialize the Card Selected based on the TAG of the image clicked.
             PictureBox ThisPictureBox = (PictureBox)sender;
             InitializeSelectedCard((int)ThisPictureBox.Tag);
         }
+        private void SetCardLabel_clicked(object sender, EventArgs e)
+        {
+            Label thisLabel = (Label)sender;
+            int Index = (int)thisLabel.Tag;
+
+            //Mark it
+            if (_MasterCardViewMode)
+            {
+                _CurrentMasterCardInView.GetCardAtIndex(Index).FlipObtainedStatus();
+            }
+            else
+            {
+                _CurrentSetCardInView.FlipObtainedStatus();
+            }
+            
+
+            //Change the Container Label
+            if(_TagContainerList[Index].BackColor == Color.MidnightBlue)
+            {
+                _TagContainerList[Index].BackColor = Color.Black;
+            }
+            else
+            {
+                _TagContainerList[Index].BackColor = Color.MidnightBlue;
+            }
+
+            //TODO: Rewrite save file
+            Database.SaveDatabaseInJSON();
+        }
+        #endregion
 
         #region Event Listeners (Links Button Labels)
         private void lblKonamiLink_Click(object sender, EventArgs e)

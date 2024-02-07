@@ -317,7 +317,22 @@ namespace YGO_Card_Collector_5
                 File.WriteAllText(Directory.GetCurrentDirectory() + "\\Database\\CardDB.json", output);
             }
 
-            
+            //Save the external txt file
+            List<string> obtainedcardlist = new List<string>(); 
+            foreach(MasterCard masterCard in MasterCards) 
+            {
+                foreach(SetCard setCard in masterCard.SetCards)
+                {
+                    if(setCard.Obtained)
+                    {
+                        obtainedcardlist.Add(string.Format("{0}|{1}|{2}",setCard.Code,setCard.Rarity,masterCard.Name));
+                    }
+                }
+            }
+            obtainedcardlist.Insert(0, obtainedcardlist.Count.ToString());
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\SaveFile.txt", obtainedcardlist);
+
+
         }
         public static bool CardExists(string cardName)
         {

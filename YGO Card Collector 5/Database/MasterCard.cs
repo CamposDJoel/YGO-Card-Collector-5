@@ -227,6 +227,24 @@ namespace YGO_Card_Collector_5
         {
             return Tools.CovertPriceToDouble(_MediamPrice);
         }
+        public void FlipObtainedStatus()
+        {
+            if(_Obtained) 
+            { 
+                _Obtained = false;
+                //Remove the MasterCard obtained flag is no setcard are obtained anymore
+                if(Database.MasterCardByCode[_Code].HasOneCardsObtained())
+                {
+                    Database.MasterCardByCode[_Code].Obtained = false;
+                }
+            }
+            else
+            {
+                _Obtained = true;
+                //Mark the MasterCard as obtained
+                Database.MasterCardByCode[_Code].Obtained = true;
+            }
+        }
 
         #region Public Accessors
         public string ReleaseDate { get { return _ReleaseDate; } set { _ReleaseDate = value; } }
