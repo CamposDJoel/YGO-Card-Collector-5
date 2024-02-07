@@ -7,6 +7,7 @@ using OpenQA.Selenium.DevTools.V119.Page;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using static YGO_Card_Collector_5.SetCard;
 
 namespace YGO_Card_Collector_5
 {
@@ -135,6 +136,13 @@ namespace YGO_Card_Collector_5
                             }
                         }
                     }
+
+                    /*Step 5: Sort each SetPack by code order << DONT DO THIS. SORTING IS PER REQUEST BASIS
+                    foreach(SetPack ThisPack in SetPacks)
+                    {
+                        ThisPack.MainCardList.Sort(new SortByCode());
+                        ThisPack.ExtraCardList.Sort(new SortByCode());
+                    }*/
                 }
 
                 //Initialize the CardGroupList dictionary for clean code access to these lists
@@ -663,11 +671,11 @@ namespace YGO_Card_Collector_5
 
         public string GetInfoLine()
         {
-            return string.Format("[{0}] [{1}] - {2}", _SetYear, GetCode(), _SetName);
+            return string.Format("{0} | {1} - {2}", _SetYear, GetCode(), _SetName);
         }
         public string Name { get { return _SetName; } }
 
-        private string GetCode()
+        public string GetCode()
         {
             if (Database.SetPackByName.ContainsKey(_SetName))
             {

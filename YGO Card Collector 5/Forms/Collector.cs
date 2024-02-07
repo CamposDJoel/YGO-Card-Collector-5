@@ -5,7 +5,6 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
-using System.Reflection;
 using System.Windows.Forms;
 
 namespace YGO_Card_Collector_5
@@ -19,6 +18,7 @@ namespace YGO_Card_Collector_5
             InitializeComponent();           
             InitializeCardViewImages();
             LoadMasterCardList(CardGroup.AllCards);
+            listSetGroups.SetSelected(0, true);
 
             void InitializeCardViewImages()
             {
@@ -503,6 +503,7 @@ namespace YGO_Card_Collector_5
 
         private MasterCard _CurrentMasterCardInView;
         private SetCard _CurrentSetCardInView;
+        private List<SetInfo> _CurrentSetInfoListSelected;
 
         private List<Panel> _CardPanelList = new List<Panel>();
         private List<PictureBox> _IconImageList = new List<PictureBox>();
@@ -1005,6 +1006,60 @@ namespace YGO_Card_Collector_5
 
                 LoadPage();
             }
+        }
+        #endregion
+
+        #region Event Listeners (Set Filtering)
+        private void listSetGroups_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int indexSelected = listSetGroups.SelectedIndex;
+
+            List<SetInfo> SetList = new List<SetInfo>();
+            switch (indexSelected)
+            {
+                case 0: SetList = Database.BoosterPacks; break;
+                case 1: SetList = Database.SpEditionBoxes; break;
+                case 2: SetList = Database.StarterDecks; break;
+                case 3: SetList = Database.StructureDecks; break;
+                case 4: SetList = Database.Tins; break;
+                case 5: SetList = Database.SpeedDuel; break;
+                case 6: SetList = Database.DuelistPacks; break;
+                case 7: SetList = Database.DuelTerminal; break;
+                case 8: SetList = Database.Others; break;
+                case 9: SetList = Database.MBC; break;
+                case 10: SetList = Database.Tournaments; break;
+                case 11: SetList = Database.Promos; break;
+                case 12: SetList = Database.VideoGames; break;
+            }
+
+            //Save a ref of this list for the SelectedIndexChanged event of the ListSets
+            _CurrentSetInfoListSelected = SetList;
+
+            listSetlist.Items.Clear();
+            foreach (SetInfo set in SetList)
+            {
+                listSetlist.Items.Add(set.GetInfoLine());
+            }
+            listSetlist.SetSelected(0, true);
+        }
+        private void btnFilterSet_Click(object sender, EventArgs e)
+        {
+            _MasterCardViewMode = false;
+            btnClear.Visible = true;
+            int index = listSetlist.SelectedIndex;
+            string SetName = _CurrentSetInfoListSelected[index].Name;
+            string Code = _CurrentSetInfoListSelected[index].GetCode();
+            SetPack ThisSetPack = Database.SetPackByName[SetName];
+
+            int MainSetCardCount = ThisSetPack.MainCardList.Count;
+            int ExtraCardCount = ThisSetPack.ExtraCardList.Count;
+
+            ThisSetPack.SortByCode();
+            _CurrentSetCardList = ThisSetPack.FullCardList;
+            _CurrentCardPage = 1;
+            //Update the Card Viewer Card Page/Card Count header
+            GroupCardView.Text = string.Format("PAGE: {0}  -  CODE: \"{1}\"  - Main Cards: {2} - Variant Cards: {3}", _CurrentCardPage, Code, MainSetCardCount, ExtraCardCount);
+            LoadPage();
         }
         #endregion
     }

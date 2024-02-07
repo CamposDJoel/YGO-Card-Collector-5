@@ -143,6 +143,7 @@
             this.panel24 = new System.Windows.Forms.Panel();
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel26 = new System.Windows.Forms.Panel();
+            this.btnFilterSet = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.MonsterType.SuspendLayout();
@@ -159,7 +160,7 @@
             // 
             // GroupCardView
             // 
-            this.GroupCardView.BackColor = System.Drawing.Color.Transparent;
+            this.GroupCardView.BackColor = System.Drawing.Color.Black;
             this.GroupCardView.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupCardView.ForeColor = System.Drawing.Color.Lime;
             this.GroupCardView.Location = new System.Drawing.Point(5, 17);
@@ -264,7 +265,7 @@
             this.tabControl2.Location = new System.Drawing.Point(5, 362);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(406, 142);
+            this.tabControl2.Size = new System.Drawing.Size(374, 142);
             this.tabControl2.TabIndex = 240;
             // 
             // MonsterType
@@ -277,7 +278,7 @@
             this.MonsterType.Location = new System.Drawing.Point(4, 22);
             this.MonsterType.Name = "MonsterType";
             this.MonsterType.Padding = new System.Windows.Forms.Padding(3);
-            this.MonsterType.Size = new System.Drawing.Size(398, 116);
+            this.MonsterType.Size = new System.Drawing.Size(366, 116);
             this.MonsterType.TabIndex = 0;
             this.MonsterType.Text = "Main Card Filters";
             // 
@@ -311,9 +312,9 @@
             this.groupBox1.Controls.Add(this.btnFilterAqua);
             this.groupBox1.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Yellow;
-            this.groupBox1.Location = new System.Drawing.Point(6, 1);
+            this.groupBox1.Location = new System.Drawing.Point(2, -1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(276, 109);
+            this.groupBox1.Size = new System.Drawing.Size(266, 109);
             this.groupBox1.TabIndex = 205;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filter by Monster Type";
@@ -322,7 +323,7 @@
             // 
             this.btnFilterIllusion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterIllusion.BackgroundImage")));
             this.btnFilterIllusion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterIllusion.Location = new System.Drawing.Point(34, 43);
+            this.btnFilterIllusion.Location = new System.Drawing.Point(31, 43);
             this.btnFilterIllusion.Name = "btnFilterIllusion";
             this.btnFilterIllusion.Size = new System.Drawing.Size(30, 30);
             this.btnFilterIllusion.TabIndex = 26;
@@ -334,7 +335,7 @@
             // 
             this.btnFilterZombie.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterZombie.BackgroundImage")));
             this.btnFilterZombie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterZombie.Location = new System.Drawing.Point(208, 72);
+            this.btnFilterZombie.Location = new System.Drawing.Point(205, 72);
             this.btnFilterZombie.Name = "btnFilterZombie";
             this.btnFilterZombie.Size = new System.Drawing.Size(30, 30);
             this.btnFilterZombie.TabIndex = 24;
@@ -346,7 +347,7 @@
             // 
             this.btnFilterWyrm.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterWyrm.BackgroundImage")));
             this.btnFilterWyrm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterWyrm.Location = new System.Drawing.Point(179, 72);
+            this.btnFilterWyrm.Location = new System.Drawing.Point(176, 72);
             this.btnFilterWyrm.Name = "btnFilterWyrm";
             this.btnFilterWyrm.Size = new System.Drawing.Size(30, 30);
             this.btnFilterWyrm.TabIndex = 23;
@@ -358,7 +359,7 @@
             // 
             this.btnFilterWingedBeast.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterWingedBeast.BackgroundImage")));
             this.btnFilterWingedBeast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterWingedBeast.Location = new System.Drawing.Point(150, 72);
+            this.btnFilterWingedBeast.Location = new System.Drawing.Point(147, 72);
             this.btnFilterWingedBeast.Name = "btnFilterWingedBeast";
             this.btnFilterWingedBeast.Size = new System.Drawing.Size(30, 30);
             this.btnFilterWingedBeast.TabIndex = 22;
@@ -370,7 +371,7 @@
             // 
             this.btnFilterWarrior.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterWarrior.BackgroundImage")));
             this.btnFilterWarrior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterWarrior.Location = new System.Drawing.Point(121, 72);
+            this.btnFilterWarrior.Location = new System.Drawing.Point(118, 72);
             this.btnFilterWarrior.Name = "btnFilterWarrior";
             this.btnFilterWarrior.Size = new System.Drawing.Size(30, 30);
             this.btnFilterWarrior.TabIndex = 21;
@@ -382,7 +383,7 @@
             // 
             this.btnFilterThunder.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterThunder.BackgroundImage")));
             this.btnFilterThunder.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterThunder.Location = new System.Drawing.Point(92, 72);
+            this.btnFilterThunder.Location = new System.Drawing.Point(89, 72);
             this.btnFilterThunder.Name = "btnFilterThunder";
             this.btnFilterThunder.Size = new System.Drawing.Size(30, 30);
             this.btnFilterThunder.TabIndex = 20;
@@ -394,7 +395,7 @@
             // 
             this.btnFilterSpellcaster.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterSpellcaster.BackgroundImage")));
             this.btnFilterSpellcaster.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterSpellcaster.Location = new System.Drawing.Point(63, 72);
+            this.btnFilterSpellcaster.Location = new System.Drawing.Point(60, 72);
             this.btnFilterSpellcaster.Name = "btnFilterSpellcaster";
             this.btnFilterSpellcaster.Size = new System.Drawing.Size(30, 30);
             this.btnFilterSpellcaster.TabIndex = 19;
@@ -406,7 +407,7 @@
             // 
             this.btnFilterPsychic.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterPsychic.BackgroundImage")));
             this.btnFilterPsychic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterPsychic.Location = new System.Drawing.Point(150, 43);
+            this.btnFilterPsychic.Location = new System.Drawing.Point(147, 43);
             this.btnFilterPsychic.Name = "btnFilterPsychic";
             this.btnFilterPsychic.Size = new System.Drawing.Size(30, 30);
             this.btnFilterPsychic.TabIndex = 18;
@@ -418,7 +419,7 @@
             // 
             this.btnFilterFiend.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterFiend.BackgroundImage")));
             this.btnFilterFiend.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterFiend.Location = new System.Drawing.Point(237, 14);
+            this.btnFilterFiend.Location = new System.Drawing.Point(234, 14);
             this.btnFilterFiend.Name = "btnFilterFiend";
             this.btnFilterFiend.Size = new System.Drawing.Size(30, 30);
             this.btnFilterFiend.TabIndex = 17;
@@ -430,7 +431,7 @@
             // 
             this.btnFilterCyberce.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterCyberce.BackgroundImage")));
             this.btnFilterCyberce.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterCyberce.Location = new System.Drawing.Point(92, 14);
+            this.btnFilterCyberce.Location = new System.Drawing.Point(89, 14);
             this.btnFilterCyberce.Name = "btnFilterCyberce";
             this.btnFilterCyberce.Size = new System.Drawing.Size(30, 30);
             this.btnFilterCyberce.TabIndex = 16;
@@ -442,7 +443,7 @@
             // 
             this.btnFilterSeaSerpent.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterSeaSerpent.BackgroundImage")));
             this.btnFilterSeaSerpent.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterSeaSerpent.Location = new System.Drawing.Point(34, 72);
+            this.btnFilterSeaSerpent.Location = new System.Drawing.Point(31, 72);
             this.btnFilterSeaSerpent.Name = "btnFilterSeaSerpent";
             this.btnFilterSeaSerpent.Size = new System.Drawing.Size(30, 30);
             this.btnFilterSeaSerpent.TabIndex = 15;
@@ -454,7 +455,7 @@
             // 
             this.btnFilterPlant.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterPlant.BackgroundImage")));
             this.btnFilterPlant.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterPlant.Location = new System.Drawing.Point(121, 43);
+            this.btnFilterPlant.Location = new System.Drawing.Point(118, 43);
             this.btnFilterPlant.Name = "btnFilterPlant";
             this.btnFilterPlant.Size = new System.Drawing.Size(30, 30);
             this.btnFilterPlant.TabIndex = 14;
@@ -466,7 +467,7 @@
             // 
             this.btnFilterFairy.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterFairy.BackgroundImage")));
             this.btnFilterFairy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterFairy.Location = new System.Drawing.Point(208, 14);
+            this.btnFilterFairy.Location = new System.Drawing.Point(205, 14);
             this.btnFilterFairy.Name = "btnFilterFairy";
             this.btnFilterFairy.Size = new System.Drawing.Size(30, 30);
             this.btnFilterFairy.TabIndex = 13;
@@ -478,7 +479,7 @@
             // 
             this.btnFilterRock.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterRock.BackgroundImage")));
             this.btnFilterRock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterRock.Location = new System.Drawing.Point(237, 43);
+            this.btnFilterRock.Location = new System.Drawing.Point(234, 43);
             this.btnFilterRock.Name = "btnFilterRock";
             this.btnFilterRock.Size = new System.Drawing.Size(30, 30);
             this.btnFilterRock.TabIndex = 11;
@@ -490,7 +491,7 @@
             // 
             this.btnFilterReptile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterReptile.BackgroundImage")));
             this.btnFilterReptile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterReptile.Location = new System.Drawing.Point(208, 43);
+            this.btnFilterReptile.Location = new System.Drawing.Point(205, 43);
             this.btnFilterReptile.Name = "btnFilterReptile";
             this.btnFilterReptile.Size = new System.Drawing.Size(30, 30);
             this.btnFilterReptile.TabIndex = 10;
@@ -502,7 +503,7 @@
             // 
             this.btnFilterPyro.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterPyro.BackgroundImage")));
             this.btnFilterPyro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterPyro.Location = new System.Drawing.Point(179, 43);
+            this.btnFilterPyro.Location = new System.Drawing.Point(176, 43);
             this.btnFilterPyro.Name = "btnFilterPyro";
             this.btnFilterPyro.Size = new System.Drawing.Size(30, 30);
             this.btnFilterPyro.TabIndex = 9;
@@ -514,7 +515,7 @@
             // 
             this.btnFilterMachine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterMachine.BackgroundImage")));
             this.btnFilterMachine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterMachine.Location = new System.Drawing.Point(92, 43);
+            this.btnFilterMachine.Location = new System.Drawing.Point(89, 43);
             this.btnFilterMachine.Name = "btnFilterMachine";
             this.btnFilterMachine.Size = new System.Drawing.Size(30, 30);
             this.btnFilterMachine.TabIndex = 8;
@@ -526,7 +527,7 @@
             // 
             this.btnFilterInsect.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterInsect.BackgroundImage")));
             this.btnFilterInsect.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterInsect.Location = new System.Drawing.Point(63, 43);
+            this.btnFilterInsect.Location = new System.Drawing.Point(60, 43);
             this.btnFilterInsect.Name = "btnFilterInsect";
             this.btnFilterInsect.Size = new System.Drawing.Size(30, 30);
             this.btnFilterInsect.TabIndex = 7;
@@ -538,7 +539,7 @@
             // 
             this.btnFilterFish.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterFish.BackgroundImage")));
             this.btnFilterFish.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterFish.Location = new System.Drawing.Point(5, 43);
+            this.btnFilterFish.Location = new System.Drawing.Point(2, 43);
             this.btnFilterFish.Name = "btnFilterFish";
             this.btnFilterFish.Size = new System.Drawing.Size(30, 30);
             this.btnFilterFish.TabIndex = 6;
@@ -550,7 +551,7 @@
             // 
             this.btnFilterDragon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterDragon.BackgroundImage")));
             this.btnFilterDragon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterDragon.Location = new System.Drawing.Point(179, 14);
+            this.btnFilterDragon.Location = new System.Drawing.Point(176, 14);
             this.btnFilterDragon.Name = "btnFilterDragon";
             this.btnFilterDragon.Size = new System.Drawing.Size(30, 30);
             this.btnFilterDragon.TabIndex = 5;
@@ -562,7 +563,7 @@
             // 
             this.btnFilterDivine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterDivine.BackgroundImage")));
             this.btnFilterDivine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterDivine.Location = new System.Drawing.Point(150, 14);
+            this.btnFilterDivine.Location = new System.Drawing.Point(147, 14);
             this.btnFilterDivine.Name = "btnFilterDivine";
             this.btnFilterDivine.Size = new System.Drawing.Size(30, 30);
             this.btnFilterDivine.TabIndex = 4;
@@ -574,7 +575,7 @@
             // 
             this.btnFilterDinosaur.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterDinosaur.BackgroundImage")));
             this.btnFilterDinosaur.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterDinosaur.Location = new System.Drawing.Point(121, 14);
+            this.btnFilterDinosaur.Location = new System.Drawing.Point(118, 14);
             this.btnFilterDinosaur.Name = "btnFilterDinosaur";
             this.btnFilterDinosaur.Size = new System.Drawing.Size(30, 30);
             this.btnFilterDinosaur.TabIndex = 3;
@@ -586,7 +587,7 @@
             // 
             this.btnFilterBeastWarrior.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterBeastWarrior.BackgroundImage")));
             this.btnFilterBeastWarrior.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterBeastWarrior.Location = new System.Drawing.Point(63, 14);
+            this.btnFilterBeastWarrior.Location = new System.Drawing.Point(60, 14);
             this.btnFilterBeastWarrior.Name = "btnFilterBeastWarrior";
             this.btnFilterBeastWarrior.Size = new System.Drawing.Size(30, 30);
             this.btnFilterBeastWarrior.TabIndex = 2;
@@ -598,7 +599,7 @@
             // 
             this.btnFilterBeast.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterBeast.BackgroundImage")));
             this.btnFilterBeast.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterBeast.Location = new System.Drawing.Point(34, 14);
+            this.btnFilterBeast.Location = new System.Drawing.Point(31, 14);
             this.btnFilterBeast.Name = "btnFilterBeast";
             this.btnFilterBeast.Size = new System.Drawing.Size(30, 30);
             this.btnFilterBeast.TabIndex = 1;
@@ -610,7 +611,7 @@
             // 
             this.btnFilterAqua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFilterAqua.BackgroundImage")));
             this.btnFilterAqua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFilterAqua.Location = new System.Drawing.Point(5, 14);
+            this.btnFilterAqua.Location = new System.Drawing.Point(2, 14);
             this.btnFilterAqua.Name = "btnFilterAqua";
             this.btnFilterAqua.Size = new System.Drawing.Size(30, 30);
             this.btnFilterAqua.TabIndex = 0;
@@ -629,9 +630,9 @@
             this.groupSpell.Controls.Add(this.btnNormalSpell);
             this.groupSpell.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupSpell.ForeColor = System.Drawing.Color.Yellow;
-            this.groupSpell.Location = new System.Drawing.Point(289, -2);
+            this.groupSpell.Location = new System.Drawing.Point(270, -1);
             this.groupSpell.Name = "groupSpell";
-            this.groupSpell.Size = new System.Drawing.Size(104, 77);
+            this.groupSpell.Size = new System.Drawing.Size(93, 77);
             this.groupSpell.TabIndex = 207;
             this.groupSpell.TabStop = false;
             this.groupSpell.Text = "Filter by Spell";
@@ -640,7 +641,7 @@
             // 
             this.btnRitualSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRitualSpell.BackgroundImage")));
             this.btnRitualSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRitualSpell.Location = new System.Drawing.Point(66, 43);
+            this.btnRitualSpell.Location = new System.Drawing.Point(60, 43);
             this.btnRitualSpell.Name = "btnRitualSpell";
             this.btnRitualSpell.Size = new System.Drawing.Size(30, 30);
             this.btnRitualSpell.TabIndex = 6;
@@ -652,7 +653,7 @@
             // 
             this.btnEquipSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEquipSpell.BackgroundImage")));
             this.btnEquipSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEquipSpell.Location = new System.Drawing.Point(66, 14);
+            this.btnEquipSpell.Location = new System.Drawing.Point(60, 14);
             this.btnEquipSpell.Name = "btnEquipSpell";
             this.btnEquipSpell.Size = new System.Drawing.Size(30, 30);
             this.btnEquipSpell.TabIndex = 5;
@@ -664,7 +665,7 @@
             // 
             this.btnQuickPlaySpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnQuickPlaySpell.BackgroundImage")));
             this.btnQuickPlaySpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnQuickPlaySpell.Location = new System.Drawing.Point(37, 43);
+            this.btnQuickPlaySpell.Location = new System.Drawing.Point(31, 43);
             this.btnQuickPlaySpell.Name = "btnQuickPlaySpell";
             this.btnQuickPlaySpell.Size = new System.Drawing.Size(30, 30);
             this.btnQuickPlaySpell.TabIndex = 4;
@@ -676,7 +677,7 @@
             // 
             this.btnFieldSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFieldSpell.BackgroundImage")));
             this.btnFieldSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFieldSpell.Location = new System.Drawing.Point(8, 43);
+            this.btnFieldSpell.Location = new System.Drawing.Point(2, 43);
             this.btnFieldSpell.Name = "btnFieldSpell";
             this.btnFieldSpell.Size = new System.Drawing.Size(30, 30);
             this.btnFieldSpell.TabIndex = 3;
@@ -688,7 +689,7 @@
             // 
             this.btnContinousSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnContinousSpell.BackgroundImage")));
             this.btnContinousSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnContinousSpell.Location = new System.Drawing.Point(37, 14);
+            this.btnContinousSpell.Location = new System.Drawing.Point(31, 14);
             this.btnContinousSpell.Name = "btnContinousSpell";
             this.btnContinousSpell.Size = new System.Drawing.Size(30, 30);
             this.btnContinousSpell.TabIndex = 2;
@@ -700,7 +701,7 @@
             // 
             this.btnNormalSpell.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNormalSpell.BackgroundImage")));
             this.btnNormalSpell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNormalSpell.Location = new System.Drawing.Point(8, 14);
+            this.btnNormalSpell.Location = new System.Drawing.Point(2, 14);
             this.btnNormalSpell.Name = "btnNormalSpell";
             this.btnNormalSpell.Size = new System.Drawing.Size(30, 30);
             this.btnNormalSpell.TabIndex = 1;
@@ -716,9 +717,9 @@
             this.groupBox2.Controls.Add(this.btnNormalTrap);
             this.groupBox2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Yellow;
-            this.groupBox2.Location = new System.Drawing.Point(288, 72);
+            this.groupBox2.Location = new System.Drawing.Point(270, 72);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(105, 47);
+            this.groupBox2.Size = new System.Drawing.Size(93, 47);
             this.groupBox2.TabIndex = 208;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Filter by Trap";
@@ -727,7 +728,7 @@
             // 
             this.btnCounterTrap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCounterTrap.BackgroundImage")));
             this.btnCounterTrap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCounterTrap.Location = new System.Drawing.Point(66, 14);
+            this.btnCounterTrap.Location = new System.Drawing.Point(60, 14);
             this.btnCounterTrap.Name = "btnCounterTrap";
             this.btnCounterTrap.Size = new System.Drawing.Size(30, 30);
             this.btnCounterTrap.TabIndex = 5;
@@ -739,7 +740,7 @@
             // 
             this.btnContinuosTrap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnContinuosTrap.BackgroundImage")));
             this.btnContinuosTrap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnContinuosTrap.Location = new System.Drawing.Point(37, 14);
+            this.btnContinuosTrap.Location = new System.Drawing.Point(31, 14);
             this.btnContinuosTrap.Name = "btnContinuosTrap";
             this.btnContinuosTrap.Size = new System.Drawing.Size(30, 30);
             this.btnContinuosTrap.TabIndex = 2;
@@ -751,7 +752,7 @@
             // 
             this.btnNormalTrap.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNormalTrap.BackgroundImage")));
             this.btnNormalTrap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNormalTrap.Location = new System.Drawing.Point(8, 14);
+            this.btnNormalTrap.Location = new System.Drawing.Point(2, 14);
             this.btnNormalTrap.Name = "btnNormalTrap";
             this.btnNormalTrap.Size = new System.Drawing.Size(30, 30);
             this.btnNormalTrap.TabIndex = 1;
@@ -771,7 +772,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(398, 116);
+            this.tabPage2.Size = new System.Drawing.Size(366, 116);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Other Filters";
             // 
@@ -787,9 +788,9 @@
             this.groupBox3.Controls.Add(this.btnDark);
             this.groupBox3.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.Yellow;
-            this.groupBox3.Location = new System.Drawing.Point(248, 6);
+            this.groupBox3.Location = new System.Drawing.Point(239, 1);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(128, 83);
+            this.groupBox3.Size = new System.Drawing.Size(123, 83);
             this.groupBox3.TabIndex = 226;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Card Attribute";
@@ -799,7 +800,7 @@
             this.btnDivine.BackColor = System.Drawing.Color.White;
             this.btnDivine.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDivine.BackgroundImage")));
             this.btnDivine.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDivine.Location = new System.Drawing.Point(76, 46);
+            this.btnDivine.Location = new System.Drawing.Point(73, 46);
             this.btnDivine.Name = "btnDivine";
             this.btnDivine.Size = new System.Drawing.Size(30, 30);
             this.btnDivine.TabIndex = 8;
@@ -812,7 +813,7 @@
             this.btnWind.BackColor = System.Drawing.Color.White;
             this.btnWind.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnWind.BackgroundImage")));
             this.btnWind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnWind.Location = new System.Drawing.Point(47, 46);
+            this.btnWind.Location = new System.Drawing.Point(44, 46);
             this.btnWind.Name = "btnWind";
             this.btnWind.Size = new System.Drawing.Size(30, 30);
             this.btnWind.TabIndex = 7;
@@ -825,7 +826,7 @@
             this.btnFire.BackColor = System.Drawing.Color.White;
             this.btnFire.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFire.BackgroundImage")));
             this.btnFire.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFire.Location = new System.Drawing.Point(17, 46);
+            this.btnFire.Location = new System.Drawing.Point(14, 46);
             this.btnFire.Name = "btnFire";
             this.btnFire.Size = new System.Drawing.Size(30, 30);
             this.btnFire.TabIndex = 6;
@@ -838,7 +839,7 @@
             this.btnWater.BackColor = System.Drawing.Color.White;
             this.btnWater.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnWater.BackgroundImage")));
             this.btnWater.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnWater.Location = new System.Drawing.Point(94, 17);
+            this.btnWater.Location = new System.Drawing.Point(91, 17);
             this.btnWater.Name = "btnWater";
             this.btnWater.Size = new System.Drawing.Size(30, 30);
             this.btnWater.TabIndex = 5;
@@ -851,7 +852,7 @@
             this.btnEarth.BackColor = System.Drawing.Color.White;
             this.btnEarth.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEarth.BackgroundImage")));
             this.btnEarth.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEarth.Location = new System.Drawing.Point(64, 17);
+            this.btnEarth.Location = new System.Drawing.Point(61, 17);
             this.btnEarth.Name = "btnEarth";
             this.btnEarth.Size = new System.Drawing.Size(30, 30);
             this.btnEarth.TabIndex = 4;
@@ -864,7 +865,7 @@
             this.btnLight.BackColor = System.Drawing.Color.White;
             this.btnLight.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLight.BackgroundImage")));
             this.btnLight.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnLight.Location = new System.Drawing.Point(34, 17);
+            this.btnLight.Location = new System.Drawing.Point(31, 17);
             this.btnLight.Name = "btnLight";
             this.btnLight.Size = new System.Drawing.Size(30, 30);
             this.btnLight.TabIndex = 3;
@@ -877,7 +878,7 @@
             this.btnDark.BackColor = System.Drawing.Color.White;
             this.btnDark.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDark.BackgroundImage")));
             this.btnDark.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDark.Location = new System.Drawing.Point(4, 17);
+            this.btnDark.Location = new System.Drawing.Point(1, 17);
             this.btnDark.Name = "btnDark";
             this.btnDark.Size = new System.Drawing.Size(30, 30);
             this.btnDark.TabIndex = 2;
@@ -950,7 +951,7 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.Location = new System.Drawing.Point(137, 75);
+            this.txtSearch.Location = new System.Drawing.Point(134, 75);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(103, 20);
             this.txtSearch.TabIndex = 224;
@@ -960,7 +961,7 @@
             this.btnTextSearch.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnTextSearch.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTextSearch.ForeColor = System.Drawing.Color.White;
-            this.btnTextSearch.Location = new System.Drawing.Point(136, 96);
+            this.btnTextSearch.Location = new System.Drawing.Point(134, 96);
             this.btnTextSearch.Name = "btnTextSearch";
             this.btnTextSearch.Size = new System.Drawing.Size(106, 22);
             this.btnTextSearch.TabIndex = 225;
@@ -1094,7 +1095,7 @@
             this.groupBox8.Controls.Add(this.btnSpirit);
             this.groupBox8.Controls.Add(this.btnFlip);
             this.groupBox8.ForeColor = System.Drawing.Color.Yellow;
-            this.groupBox8.Location = new System.Drawing.Point(136, 1);
+            this.groupBox8.Location = new System.Drawing.Point(131, 2);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.Size = new System.Drawing.Size(106, 74);
             this.groupBox8.TabIndex = 210;
@@ -1189,21 +1190,21 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(411, 363);
+            this.label2.Location = new System.Drawing.Point(378, 362);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 16);
+            this.label2.Size = new System.Drawing.Size(114, 20);
             this.label2.TabIndex = 247;
-            this.label2.Text = "Select Set Group";
+            this.label2.Text = "Select Set Group:";
             // 
             // listSetGroups
             // 
             this.listSetGroups.BackColor = System.Drawing.Color.Black;
-            this.listSetGroups.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listSetGroups.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listSetGroups.ForeColor = System.Drawing.Color.White;
             this.listSetGroups.FormattingEnabled = true;
-            this.listSetGroups.ItemHeight = 15;
+            this.listSetGroups.ItemHeight = 14;
             this.listSetGroups.Items.AddRange(new object[] {
             "Booster Packs",
             "Special Edition Boxes",
@@ -1218,10 +1219,11 @@
             "Tournaments",
             "Promotional Cards",
             "Video Game Bundles"});
-            this.listSetGroups.Location = new System.Drawing.Point(413, 381);
+            this.listSetGroups.Location = new System.Drawing.Point(380, 381);
             this.listSetGroups.Name = "listSetGroups";
-            this.listSetGroups.Size = new System.Drawing.Size(131, 124);
+            this.listSetGroups.Size = new System.Drawing.Size(122, 116);
             this.listSetGroups.TabIndex = 246;
+            this.listSetGroups.SelectedIndexChanged += new System.EventHandler(this.listSetGroups_SelectedIndexChanged);
             // 
             // label4
             // 
@@ -1229,7 +1231,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Yellow;
-            this.label4.Location = new System.Drawing.Point(541, 361);
+            this.label4.Location = new System.Drawing.Point(502, 362);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 20);
             this.label4.TabIndex = 249;
@@ -1238,13 +1240,13 @@
             // listSetlist
             // 
             this.listSetlist.BackColor = System.Drawing.Color.Black;
-            this.listSetlist.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listSetlist.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listSetlist.ForeColor = System.Drawing.Color.White;
             this.listSetlist.FormattingEnabled = true;
-            this.listSetlist.ItemHeight = 15;
-            this.listSetlist.Location = new System.Drawing.Point(545, 381);
+            this.listSetlist.ItemHeight = 14;
+            this.listSetlist.Location = new System.Drawing.Point(503, 381);
             this.listSetlist.Name = "listSetlist";
-            this.listSetlist.Size = new System.Drawing.Size(226, 124);
+            this.listSetlist.Size = new System.Drawing.Size(269, 116);
             this.listSetlist.TabIndex = 248;
             // 
             // groupBox4
@@ -1607,6 +1609,20 @@
             this.panel26.Size = new System.Drawing.Size(47, 60);
             this.panel26.TabIndex = 265;
             // 
+            // btnFilterSet
+            // 
+            this.btnFilterSet.BackColor = System.Drawing.Color.Purple;
+            this.btnFilterSet.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFilterSet.ForeColor = System.Drawing.Color.White;
+            this.btnFilterSet.Location = new System.Drawing.Point(661, 361);
+            this.btnFilterSet.Name = "btnFilterSet";
+            this.btnFilterSet.Size = new System.Drawing.Size(109, 20);
+            this.btnFilterSet.TabIndex = 278;
+            this.btnFilterSet.Text = "Show Selected Set";
+            this.btnFilterSet.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnFilterSet.UseVisualStyleBackColor = false;
+            this.btnFilterSet.Click += new System.EventHandler(this.btnFilterSet_Click);
+            // 
             // Collector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1614,6 +1630,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(775, 508);
+            this.Controls.Add(this.btnFilterSet);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel16);
@@ -1785,5 +1802,6 @@
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Label lblCardInfo_Name;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnFilterSet;
     }
 }
