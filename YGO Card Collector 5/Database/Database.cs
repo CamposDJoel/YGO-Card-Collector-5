@@ -515,7 +515,14 @@ namespace YGO_Card_Collector_5
                     else if (Group.Contains("Zombie")) { ZombieMonsters.Add(ThisMasterCard); }
                     //Subtypes
                     if (Group.Contains("Normal")) { Normal.Add(ThisMasterCard); }
-                    if (Group.Contains("Effect")) { Effect.Add(ThisMasterCard); }
+                    if (Group.Contains("Effect")) 
+                    { 
+                        if(!Group.Contains("Normal") && !Group.Contains("Fusion") && !Group.Contains("Ritual") && !Group.Contains("Synchro")
+                            && !Group.Contains("Xyz") && !Group.Contains("Pendulum") && !Group.Contains("Link"))
+                        {
+                            Effect.Add(ThisMasterCard);
+                        }                        
+                    }
                     if (Group.Contains("Fusion")) { Fusion.Add(ThisMasterCard); }
                     if (Group.Contains("Ritual")) { Ritual.Add(ThisMasterCard); }
                     if (Group.Contains("Synchro")) { Synchro.Add(ThisMasterCard); }
