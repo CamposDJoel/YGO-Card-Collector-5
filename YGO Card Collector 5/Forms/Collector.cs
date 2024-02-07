@@ -257,8 +257,10 @@ namespace YGO_Card_Collector_5
             void InitializeTags(MasterCard ThisMasterCard)
             {
                 //Clear all existing tags
-                for (int x = 0; x < _TagLabelList.Count; x++) { _TagLabelList[x].Dispose(); }
+                foreach(Label label in _TagLabelList) { label.Dispose(); }
                 _TagLabelList.Clear();
+                foreach (Panel panel in _TagContainerList) { panel.Dispose(); }
+                _TagContainerList.Clear();
 
                 int SetCardCount = ThisMasterCard.SetCards.Count;
 
@@ -271,18 +273,23 @@ namespace YGO_Card_Collector_5
 
                     if (ActiveSetCode != "")
                     {
+                        Panel TagContainer = new Panel();
+                        PanelTagList.Controls.Add(TagContainer);
+                        TagContainer.Location = new Point(1, Y_Location);
+                        TagContainer.BorderStyle = BorderStyle.FixedSingle;
+                        TagContainer.Size = new Size(109, 36);
+                        TagContainer.AutoSize = false;
+                        _TagContainerList.Add(TagContainer);
+
+
                         Label tagLabel = new Label();
-                        PanelTagList.Controls.Add(tagLabel);
-                        tagLabel.Location = new Point(1, Y_Location);
-                        tagLabel.BorderStyle = BorderStyle.FixedSingle;
-                        tagLabel.Size = new Size(109, 40);
+                        TagContainer.Controls.Add(tagLabel);
+                        tagLabel.Location = new Point(1, 1);
+                        tagLabel.BorderStyle = BorderStyle.None;
+                        tagLabel.Size = new Size(107, 17);
                         tagLabel.AutoSize = false;
                         tagLabel.Font = new Font("Arial", 9);
-                        if(ActiveSetRarity.Length > 13)
-                        {
-                            tagLabel.Font = new Font("Arial", 6);
-                        }
-                        tagLabel.Text = ActiveSetCode + "\n" + ActiveSetRarity;
+                        tagLabel.Text = ActiveSetCode;
                         tagLabel.TextAlign = ContentAlignment.MiddleLeft;
                         tagLabel.ForeColor = Color.White;
                         tagLabel.Tag = x;
@@ -298,16 +305,46 @@ namespace YGO_Card_Collector_5
                         {
                             tagLabel.ForeColor = Color.White;
                         }
+
+                        ////////////////////////////////////
+
+                        Label tagLabel2 = new Label();
+                        TagContainer.Controls.Add(tagLabel2);
+                        tagLabel2.Location = new Point(1, 18);
+                        tagLabel2.BorderStyle = BorderStyle.None;
+                        tagLabel2.Size = new Size(107, 17);
+                        tagLabel2.AutoSize = false;
+                        tagLabel2.Font = new Font("Arial", 9);
+                        if (ActiveSetRarity.Length > 13)
+                        {
+                            tagLabel2.Font = new Font("Arial", 6);
+                        }
+                        tagLabel2.Text = ActiveSetRarity;
+                        tagLabel2.TextAlign = ContentAlignment.MiddleRight;
+                        tagLabel2.ForeColor = Color.White;
+                        tagLabel2.Tag = x;
+                        //TODO: tagLabel.Click += new EventHandler(this.SetCodeLabel_clicked);
+                        _TagLabelList.Add(tagLabel2);
+
+                        //Set Color base on if it is obtained or not
+                        if (ActiveSetObtained)
+                        {
+                            tagLabel2.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            tagLabel2.ForeColor = Color.White;
+                        }
                     }
 
-                    Y_Location += 40;
+                    Y_Location += 36;
                 }
 
                 //Resize the TagList Container
                 int width = 133;
                 if (SetCardCount < 7) { width = 113; }
                 int height = 250;
-                if (SetCardCount < 7) { height = ((SetCardCount * 40) + 4); }
+                if (SetCardCount < 7) { height = ((SetCardCount * 36) + 4); }
                 PanelTagList.Size = new Size(width, height);
             }
         }
@@ -469,7 +506,9 @@ namespace YGO_Card_Collector_5
         private List<PictureBox> _IconImageList = new List<PictureBox>();
         private List<PictureBox> _CardImageList = new List<PictureBox>();
         private List<PictureBox> _CardRaritiesList = new List<PictureBox>();
-        private List<Label> _TagLabelList = new List<Label>();
+
+        private List<Label> _TagLabelList = new List<Label>(); 
+        private List<Panel> _TagContainerList = new List<Panel>();
         #endregion
 
         void Image_click(object sender, EventArgs e)
