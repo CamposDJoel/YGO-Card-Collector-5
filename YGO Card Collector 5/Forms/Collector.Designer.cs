@@ -160,7 +160,7 @@
             // GroupCardView
             // 
             this.GroupCardView.BackColor = System.Drawing.Color.Transparent;
-            this.GroupCardView.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupCardView.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupCardView.ForeColor = System.Drawing.Color.Lime;
             this.GroupCardView.Location = new System.Drawing.Point(12, 17);
             this.GroupCardView.Name = "GroupCardView";
@@ -214,6 +214,7 @@
             this.chkCollected.TabIndex = 236;
             this.chkCollected.Text = "Your Collection View";
             this.chkCollected.UseVisualStyleBackColor = false;
+            this.chkCollected.CheckedChanged += new System.EventHandler(this.chkCollected_CheckedChanged);
             // 
             // btnClear
             // 
@@ -228,6 +229,7 @@
             this.btnClear.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Visible = false;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnNextPage
             // 
@@ -240,6 +242,7 @@
             this.btnNextPage.TabIndex = 238;
             this.btnNextPage.Text = " Next Page >>";
             this.btnNextPage.UseVisualStyleBackColor = false;
+            this.btnNextPage.Click += new System.EventHandler(this.btnNextPage_Click);
             // 
             // btnPreviousPage
             // 
@@ -252,6 +255,7 @@
             this.btnPreviousPage.TabIndex = 237;
             this.btnPreviousPage.Text = "<< Previous Page";
             this.btnPreviousPage.UseVisualStyleBackColor = false;
+            this.btnPreviousPage.Click += new System.EventHandler(this.btnPreviousPage_Click);
             // 
             // tabControl2
             // 
