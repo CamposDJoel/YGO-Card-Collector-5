@@ -148,7 +148,92 @@ namespace YGO_Card_Collector_5
             {
                 return true;
             }
-            
+
+            void LoadSetsNames()
+            {
+                //Load the sets names into each group
+                List<string> fileNames = new List<string>();
+                fileNames.Add("Booster Packs.txt");
+                fileNames.Add("Duel Termina Cards.txt");
+                fileNames.Add("Duelist Packs.txt");
+                fileNames.Add("Magazines, Books, Comics.txt");
+                fileNames.Add("Others.txt");
+                fileNames.Add("Promotional Cards.txt");
+                fileNames.Add("Special Edition Boxes.txt");
+                fileNames.Add("SPEED DUEL.txt");
+                fileNames.Add("Starter Decks.txt");
+                fileNames.Add("Structure Decks.txt");
+                fileNames.Add("Tins.txt");
+                fileNames.Add("Tournaments.txt");
+                fileNames.Add("Video Game Bundles.txt");
+
+                foreach (string name in fileNames)
+                {
+                    LoadFile(name);
+                }
+
+                void LoadFile(string fileName)
+                {
+                    //Set the list that this is going to be added to
+                    List<string> thisNameList = new List<string>();
+                    List<SetInfo> thisSetList = new List<SetInfo>();
+                    switch (fileName)
+                    {
+                        case "Booster Packs.txt": thisSetList = BoosterPacks; break;
+                        case "Duel Termina Cards.txt": thisSetList = DuelTerminal; break;
+                        case "Duelist Packs.txt": thisSetList = DuelistPacks; break;
+                        case "Magazines, Books, Comics.txt": thisSetList = MBC; break;
+                        case "Others.txt": thisSetList = Others; break;
+                        case "Promotional Cards.txt": thisSetList = Promos; break;
+                        case "Special Edition Boxes.txt": thisSetList = SpEditionBoxes; break;
+                        case "SPEED DUEL.txt": thisSetList = SpeedDuel; break;
+                        case "Starter Decks.txt": thisSetList = StarterDecks; break;
+                        case "Structure Decks.txt": thisSetList = StructureDecks; break;
+                        case "Tins.txt": thisSetList = Tins; break;
+                        case "Tournaments.txt": thisSetList = Tournaments; break;
+                        case "Video Game Bundles.txt": thisSetList = VideoGames; break;
+                    }
+
+                    //Open the file
+                    StreamReader SR_SaveFile = new StreamReader(
+                        Directory.GetCurrentDirectory() + "\\Database\\Sets\\" + fileName);
+
+                    //String that hold the data of one line of the txt file
+                    string line = "";
+
+                    //Extract the data
+                    line = SR_SaveFile.ReadLine(); //Line[0] = Group Name; dont need it
+                    line = SR_SaveFile.ReadLine(); //# of year lines count
+                    int yearCount = Convert.ToInt32(line);
+
+                    for (int x = 0; x < yearCount; x++)
+                    {
+                        string thisYearLine = SR_SaveFile.ReadLine();
+                        //Separator used by Split()
+                        string[] tokens = thisYearLine.Split('|');
+
+                        string year = tokens[0];
+                        int setCount = Convert.ToInt32(tokens[1]);
+
+                        for (int y = 0; y < setCount; y++)
+                        {
+                            string setname = tokens[y + 2];
+
+                            if (SettingsData.SetPackListSortingOLDToNEW)
+                            {
+                                thisSetList.Insert(0, new SetInfo(setname, year));
+                            }
+                            else
+                            {
+                                thisSetList.Add(new SetInfo(setname, year));
+                            }
+
+                            //thisSetList.Add(new SetInfo(setname, year));
+                            //thisSetList.Insert(0, new SetInfo(setname, year));
+                        }
+                    }
+                }
+            }
             void InitalizeCardGroupListsDict()
             {
                 GroupCardListByGroupName.Add(CardGroup.AllCards, MasterCards);
@@ -188,95 +273,36 @@ namespace YGO_Card_Collector_5
                 GroupCardListByGroupName.Add(CardGroup.Normal_Traps, NormalTraps);
                 GroupCardListByGroupName.Add(CardGroup.Continuous_Traps, ContinuousTraps);
                 GroupCardListByGroupName.Add(CardGroup.Counter_Traps, CounterTraps);
+
+                GroupCardListByGroupName.Add(CardGroup.All_Monsters, Monsters);
+                GroupCardListByGroupName.Add(CardGroup.All_Spells, Spells);
+                GroupCardListByGroupName.Add(CardGroup.All_Trap, Traps);
+
+                GroupCardListByGroupName.Add(CardGroup.Normal_Monsters, Normal);
+                GroupCardListByGroupName.Add(CardGroup.Effect_Monsters, Effect);
+                GroupCardListByGroupName.Add(CardGroup.Fusion_Monsters, Fusion);
+                GroupCardListByGroupName.Add(CardGroup.Ritual_Monsters, Ritual);
+                GroupCardListByGroupName.Add(CardGroup.Synchro_Monsters, Synchro);
+                GroupCardListByGroupName.Add(CardGroup.Xyz_Monsters, Xyz);
+                GroupCardListByGroupName.Add(CardGroup.Pendulum_Monsters, Pendulum);
+                GroupCardListByGroupName.Add(CardGroup.Link_Monsters, Link);
+
+                GroupCardListByGroupName.Add(CardGroup.Flip_Monsters, Flip);
+                GroupCardListByGroupName.Add(CardGroup.Spirit_Monsters, Spirit);
+                GroupCardListByGroupName.Add(CardGroup.Toon_Monsters, Toon);
+                GroupCardListByGroupName.Add(CardGroup.Union_Monsters, Union);
+                GroupCardListByGroupName.Add(CardGroup.Tuner_Monsters, Tuner);
+                GroupCardListByGroupName.Add(CardGroup.Gemini_Monsters, Gemini);
+
+                GroupCardListByGroupName.Add(CardGroup.Light_Attribute, Light);
+                GroupCardListByGroupName.Add(CardGroup.Dark_Attribute, Dark);
+                GroupCardListByGroupName.Add(CardGroup.Water_Attribute, Water);
+                GroupCardListByGroupName.Add(CardGroup.Fire_Attribute, Fire);
+                GroupCardListByGroupName.Add(CardGroup.Earth_Attribute, Earth);
+                GroupCardListByGroupName.Add(CardGroup.Wind_Attribute, Wind);
+                GroupCardListByGroupName.Add(CardGroup.Divine_Attribute, Divine);
             }
         }
-
-        public static void LoadSetsNames()
-        {
-            //Load the sets names into each group
-            List<string> fileNames = new List<string>();
-            fileNames.Add("Booster Packs.txt");
-            fileNames.Add("Duel Termina Cards.txt");
-            fileNames.Add("Duelist Packs.txt");
-            fileNames.Add("Magazines, Books, Comics.txt");
-            fileNames.Add("Others.txt");
-            fileNames.Add("Promotional Cards.txt");
-            fileNames.Add("Special Edition Boxes.txt");
-            fileNames.Add("SPEED DUEL.txt");
-            fileNames.Add("Starter Decks.txt");
-            fileNames.Add("Structure Decks.txt");
-            fileNames.Add("Tins.txt");
-            fileNames.Add("Tournaments.txt");
-            fileNames.Add("Video Game Bundles.txt");
-
-            foreach(string name in fileNames) 
-            {
-                LoadFile(name);
-            }
-
-            void LoadFile(string fileName)
-            {
-                //Set the list that this is going to be added to
-                List<string> thisNameList = new List<string>();
-                List<SetInfo> thisSetList = new List<SetInfo>();
-                switch (fileName)
-                {
-                    case "Booster Packs.txt": thisSetList = BoosterPacks; break;
-                    case "Duel Termina Cards.txt":thisSetList = DuelTerminal; break;
-                    case "Duelist Packs.txt": thisSetList = DuelistPacks; break;
-                    case "Magazines, Books, Comics.txt": thisSetList = MBC; break;
-                    case "Others.txt": thisSetList = Others; break;
-                    case "Promotional Cards.txt": thisSetList = Promos; break;
-                    case "Special Edition Boxes.txt": thisSetList = SpEditionBoxes; break;
-                    case "SPEED DUEL.txt": thisSetList = SpeedDuel; break;
-                    case "Starter Decks.txt": thisSetList = StarterDecks; break;
-                    case "Structure Decks.txt": thisSetList = StructureDecks; break;
-                    case "Tins.txt": thisSetList = Tins; break;
-                    case "Tournaments.txt": thisSetList = Tournaments; break;
-                    case "Video Game Bundles.txt": thisSetList = VideoGames; break;
-                }
-
-                //Open the file
-                StreamReader SR_SaveFile = new StreamReader(
-                    Directory.GetCurrentDirectory() + "\\Database\\Sets\\" + fileName);
-
-                //String that hold the data of one line of the txt file
-                string line = "";
-
-                //Extract the data
-                line = SR_SaveFile.ReadLine(); //Line[0] = Group Name; dont need it
-                line = SR_SaveFile.ReadLine(); //# of year lines count
-                int yearCount = Convert.ToInt32(line);
-
-                for (int x = 0; x < yearCount; x++)
-                {
-                    string thisYearLine = SR_SaveFile.ReadLine();
-                    //Separator used by Split()
-                    string[] tokens = thisYearLine.Split('|');
-
-                    string year = tokens[0];
-                    int setCount = Convert.ToInt32(tokens[1]);
-
-                    for (int y = 0; y < setCount; y++)
-                    {
-                        string setname = tokens[y + 2];
-
-                        if(SettingsData.SetPackListSortingOLDToNEW)
-                        {
-                            thisSetList.Insert(0, new SetInfo(setname, year));
-                        }
-                        else
-                        {
-                            thisSetList.Add(new SetInfo(setname, year));
-                        }
-
-                        //thisSetList.Add(new SetInfo(setname, year));
-                        //thisSetList.Insert(0, new SetInfo(setname, year));
-                    }
-                }
-            }
-        }
-
         public static void SaveDatabaseInJSON()
         {
             string output = JsonConvert.SerializeObject(MasterCards);
@@ -314,10 +340,140 @@ namespace YGO_Card_Collector_5
             //Add the card into its card group list and sort it
             AddCardIntoCardGroup(card);
             SortCardGroupList(card.Type);
+
+            void SortCardGroupList(string Group)
+            {
+                switch (Group)
+                {
+                    case "Normal Spell": NormalSpells.Sort(new MasterCard.SortByName()); Spells.Sort(new MasterCard.SortByName()); break;
+                    case "Continuous Spell": ContinuousSpells.Sort(new MasterCard.SortByName()); Spells.Sort(new MasterCard.SortByName()); break;
+                    case "Quick-Play Spell": QuickPlaySpells.Sort(new MasterCard.SortByName()); Spells.Sort(new MasterCard.SortByName()); break;
+                    case "Equip Spell": EquipSpells.Sort(new MasterCard.SortByName()); Spells.Sort(new MasterCard.SortByName()); break;
+                    case "Field Spell": FieldSpells.Sort(new MasterCard.SortByName()); Spells.Sort(new MasterCard.SortByName()); break;
+                    case "Ritual Spell": RitualSpells.Sort(new MasterCard.SortByName()); Spells.Sort(new MasterCard.SortByName()); break;
+                    case "Normal Trap": NormalTraps.Sort(new MasterCard.SortByName()); Traps.Sort(new MasterCard.SortByName()); break;
+                    case "Continuous Trap": ContinuousTraps.Sort(new MasterCard.SortByName()); Traps.Sort(new MasterCard.SortByName()); break;
+                    case "Counter Trap": CounterTraps.Sort(new MasterCard.SortByName()); Traps.Sort(new MasterCard.SortByName()); break;
+                    default:
+                        //Sort by Monster Type and subtypes
+                        Monsters.Sort(new MasterCard.SortByName());
+                        if (Group.Contains("Aqua")) { AquaMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Beast-Warrior")) { BeastWarriorMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Winged Beast")) { WingedBeastMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Divine-Beast")) { DivineBeastMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Beast")) { BeastMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Cyberse")) { CyberseMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Dinosaur")) { DinosaurMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Dragon")) { DragonMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Fairy")) { FairyMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Fiend")) { FiendMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Fish")) { FishMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Illusion")) { IllusionMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Insect")) { InsectMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Machine")) { MachineMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Plant")) { PlantMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Psychic")) { PsychicMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Pyro")) { PyroMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Reptile")) { ReptileMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Rock")) { RockMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Sea Serpent")) { SeaSerpentMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Spellcaster")) { SpellcasterMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Thunder")) { ThunderMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Warrior")) { WarriorMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Wyrm")) { WyrmMonsters.Sort(new MasterCard.SortByName()); }
+                        else if (Group.Contains("Zombie")) { ZombieMonsters.Sort(new MasterCard.SortByName()); }
+                        //Subtypes
+                        if (Group.Contains("Normal")) { Normal.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("Effect")) { Effect.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("Fusion")) { Fusion.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("Ritual")) { Ritual.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("Synchro")) { Synchro.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("Xyz")) { Xyz.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("Pendulum")) { Pendulum.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("Link")) { Link.Sort(new MasterCard.SortByName()); }
+                        //Subtype 2
+                        if (Group.Contains("Flip")) { Flip.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("Spirit")) { Spirit.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("Toon")) { Toon.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("Union")) { Union.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("Gemini")) { Gemini.Sort(new MasterCard.SortByName()); }
+                        //Attribute
+                        if (Group.Contains("LIGHT")) { Light.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("DARK")) { Dark.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("WATER")) { Water.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("FIRE")) { Fire.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("WIND")) { Wind.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("EARTH")) { Earth.Sort(new MasterCard.SortByName()); }
+                        if (Group.Contains("DIVINE")) { Divine.Sort(new MasterCard.SortByName()); }
+                        break;
+                }
+            }
         }
-        public static void AddCardIntoCardGroup(MasterCard ThisMasterCard)
+        public static string CardGroupToString(CardGroup group)
+        {
+            switch (group)
+            {
+                case CardGroup.Aqua_Monsters: return "Aqua";
+                case CardGroup.Beast_Monsters: return "Beast";
+                case CardGroup.BeastWarrior_Monsters: return "Beast-Warrior";
+                case CardGroup.Cyberse_Monsters: return "Cyberse";
+                case CardGroup.Dinosaur_Monsters: return "Dinosaur";
+                case CardGroup.DivineBeast_Monsters: return "Divine-Beast";
+                case CardGroup.Dragon_Monsters: return "Dragon";
+                case CardGroup.Fairy_Monsters: return "Fairy";
+                case CardGroup.Fiend_Monsters: return "Fiend";
+                case CardGroup.Fish_Monsters: return "Fish";
+                case CardGroup.IllusionType_Monsters: return "Illusion";
+                case CardGroup.Insect_Monsters: return "Insect";
+                case CardGroup.Machine_Monsters: return "Machine";
+                case CardGroup.Plant_Monsters: return "Plant";
+                case CardGroup.Psychic_Monsters: return "Psychic";
+                case CardGroup.Pyro_Monsters: return "Pyro";
+                case CardGroup.Reptile_Monsters: return "Reptile";
+                case CardGroup.Rock_Monsters: return "Rock";
+                case CardGroup.SeaSerpent_Monsters: return "Sea Serpent";
+                case CardGroup.Spellcaster_Monsters: return "Spellcaster";
+                case CardGroup.Thunder_Monsters: return "Thunder";
+                case CardGroup.Warrior_Monsters: return "Warrior";
+                case CardGroup.WingedBeast_Monsters: return "Winged Beast";
+                case CardGroup.Wyrm_Monsters: return "Wyrm";
+                case CardGroup.Zombie_Monsters: return "Zombie";
+
+                case CardGroup.Normal_Spells: return "Normal Spells";
+                case CardGroup.Continuous_Spells: return "Continuous Spells";
+                case CardGroup.QuickPlay_Spells: return "Quick-Play Spells";
+                case CardGroup.Equip_Spells: return "Equip Spells";
+                case CardGroup.Field_Spells: return "Field Spells";
+                case CardGroup.Ritual_Spells: return "Ritual Spells";
+
+                case CardGroup.Normal_Traps: return "Normal Traps";
+                case CardGroup.Continuous_Traps: return "Continuous Traps";
+                case CardGroup.Counter_Traps: return "Counter Traps";
+                default: return group.ToString();
+            }
+        }
+        public static List<MasterCard> GetCardListWithSearchTerm(string searchTerm)
+        {
+            List<MasterCard> matchList = new List<MasterCard>();
+            foreach(MasterCard ThisMasterCard in MasterCards) 
+            {
+                searchTerm = searchTerm.ToLower();
+                string cardname = ThisMasterCard.Name;
+                cardname = cardname.ToLower();
+                if (cardname.Contains(searchTerm))
+                {
+                    matchList.Add(ThisMasterCard);
+                }
+            }
+            return matchList;
+        }
+        #endregion
+
+        #region Private Methods
+        private static void AddCardIntoCardGroup(MasterCard ThisMasterCard)
         {
             string Group = ThisMasterCard.Type;
+            string Attribute = ThisMasterCard.Attribute;
             switch (Group)
             {
                 case "Normal Spell": NormalSpells.Add(ThisMasterCard); Spells.Add(ThisMasterCard); break;
@@ -370,199 +526,93 @@ namespace YGO_Card_Collector_5
                     if (Group.Contains("Flip")) { Flip.Add(ThisMasterCard); }
                     if (Group.Contains("Spirit")) { Spirit.Add(ThisMasterCard); }
                     if (Group.Contains("Toon")) { Toon.Add(ThisMasterCard); }
+                    if (Group.Contains("Tuner")) { Tuner.Add(ThisMasterCard); }
                     if (Group.Contains("Union")) { Union.Add(ThisMasterCard); }
-                    if (Group.Contains("Gemini")) { Gemini.Add(ThisMasterCard); }
-                    //Attribute
-                    if (Group.Contains("LIGHT")) { Light.Add(ThisMasterCard); }
-                    if (Group.Contains("DARK")) { Dark.Add(ThisMasterCard); }
-                    if (Group.Contains("WATER")) { Water.Add(ThisMasterCard); }
-                    if (Group.Contains("FIRE")) { Fire.Add(ThisMasterCard); }
-                    if (Group.Contains("WIND")) { Wind.Add(ThisMasterCard); }
-                    if (Group.Contains("EARTH")) { Earth.Add(ThisMasterCard); }
-                    if (Group.Contains("DIVINE")) { Divine.Add(ThisMasterCard); }
+                    if (Group.Contains("Gemini")) { Gemini.Add(ThisMasterCard); }                    
                     break;
             }
-        }
-        public static void SortCardGroupList(string Group)
-        {
-            switch (Group)
-            {
-                case "Normal Spell": NormalSpells.Sort(new MasterCard.SortByName()); Spells.Sort(new MasterCard.SortByName()); break;
-                case "Continuous Spell": ContinuousSpells.Sort(new MasterCard.SortByName()); Spells.Sort(new MasterCard.SortByName()); break;
-                case "Quick-Play Spell": QuickPlaySpells.Sort(new MasterCard.SortByName()); Spells.Sort(new MasterCard.SortByName()); break;
-                case "Equip Spell": EquipSpells.Sort(new MasterCard.SortByName()); Spells.Sort(new MasterCard.SortByName()); break;
-                case "Field Spell": FieldSpells.Sort(new MasterCard.SortByName()); Spells.Sort(new MasterCard.SortByName()); break;
-                case "Ritual Spell": RitualSpells.Sort(new MasterCard.SortByName()); Spells.Sort(new MasterCard.SortByName()); break;
-                case "Normal Trap": NormalTraps.Sort(new MasterCard.SortByName()); Traps.Sort(new MasterCard.SortByName()); break;
-                case "Continuous Trap": ContinuousTraps.Sort(new MasterCard.SortByName()); Traps.Sort(new MasterCard.SortByName()); break;
-                case "Counter Trap": CounterTraps.Sort(new MasterCard.SortByName()); Traps.Sort(new MasterCard.SortByName()); break;
-                default:
-                    //Sort by Monster Type and subtypes
-                    Monsters.Sort(new MasterCard.SortByName());
-                    if (Group.Contains("Aqua")) { AquaMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Beast-Warrior")) { BeastWarriorMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Winged Beast")) { WingedBeastMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Divine-Beast")) { DivineBeastMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Beast")) { BeastMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Cyberse")) { CyberseMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Dinosaur")) { DinosaurMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Dragon")) { DragonMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Fairy")) { FairyMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Fiend")) { FiendMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Fish")) { FishMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Illusion")) { IllusionMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Insect")) { InsectMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Machine")) { MachineMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Plant")) { PlantMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Psychic")) { PsychicMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Pyro")) { PyroMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Reptile")) { ReptileMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Rock")) { RockMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Sea Serpent")) { SeaSerpentMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Spellcaster")) { SpellcasterMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Thunder")) { ThunderMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Warrior")) { WarriorMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Wyrm")) { WyrmMonsters.Sort(new MasterCard.SortByName()); }
-                    else if (Group.Contains("Zombie")) { ZombieMonsters.Sort(new MasterCard.SortByName()); }
-                    //Subtypes
-                    if (Group.Contains("Normal")) { Normal.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("Effect")) { Effect.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("Fusion")) { Fusion.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("Ritual")) { Ritual.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("Synchro")) { Synchro.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("Xyz")) { Xyz.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("Pendulum")) { Pendulum.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("Link")) { Link.Sort(new MasterCard.SortByName()); }
-                    //Subtype 2
-                    if (Group.Contains("Flip")) { Flip.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("Spirit")) { Spirit.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("Toon")) { Toon.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("Union")) { Union.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("Gemini")) { Gemini.Sort(new MasterCard.SortByName()); }
-                    //Attribute
-                    if (Group.Contains("LIGHT")) { Light.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("DARK")) { Dark.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("WATER")) { Water.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("FIRE")) { Fire.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("WIND")) { Wind.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("EARTH")) { Earth.Sort(new MasterCard.SortByName()); }
-                    if (Group.Contains("DIVINE")) { Divine.Sort(new MasterCard.SortByName()); }
-                    break;
-            }
-        }
-        public static string CardGroupToString(CardGroup group)
-        {
-            switch (group)
-            {
-                case CardGroup.Aqua_Monsters: return "Aqua";
-                case CardGroup.Beast_Monsters: return "Beast";
-                case CardGroup.BeastWarrior_Monsters: return "Beast-Warrior";
-                case CardGroup.Cyberse_Monsters: return "Cyberse";
-                case CardGroup.Dinosaur_Monsters: return "Dinosaur";
-                case CardGroup.DivineBeast_Monsters: return "Divine-Beast";
-                case CardGroup.Dragon_Monsters: return "Dragon";
-                case CardGroup.Fairy_Monsters: return "Fairy";
-                case CardGroup.Fiend_Monsters: return "Fiend";
-                case CardGroup.Fish_Monsters: return "Fish";
-                case CardGroup.IllusionType_Monsters: return "Illusion";
-                case CardGroup.Insect_Monsters: return "Insect";
-                case CardGroup.Machine_Monsters: return "Machine";
-                case CardGroup.Plant_Monsters: return "Plant";
-                case CardGroup.Psychic_Monsters: return "Psychic";
-                case CardGroup.Pyro_Monsters: return "Pyro";
-                case CardGroup.Reptile_Monsters: return "Reptile";
-                case CardGroup.Rock_Monsters: return "Rock";
-                case CardGroup.SeaSerpent_Monsters: return "Sea Serpent";
-                case CardGroup.Spellcaster_Monsters: return "Spellcaster";
-                case CardGroup.Thunder_Monsters: return "Thunder";
-                case CardGroup.Warrior_Monsters: return "Warrior";
-                case CardGroup.WingedBeast_Monsters: return "Winged Beast";
-                case CardGroup.Wyrm_Monsters: return "Wyrm";
-                case CardGroup.Zombie_Monsters: return "Zombie";
 
-                case CardGroup.Normal_Spells: return "Normal Spells";
-                case CardGroup.Continuous_Spells: return "Continuous Spells";
-                case CardGroup.QuickPlay_Spells: return "Quick-Play Spells";
-                case CardGroup.Equip_Spells: return "Equip Spells";
-                case CardGroup.Field_Spells: return "Field Spells";
-                case CardGroup.Ritual_Spells: return "Ritual Spells";
-
-                case CardGroup.Normal_Traps: return "Normal Traps";
-                case CardGroup.Continuous_Traps: return "Continuous Traps";
-                case CardGroup.Counter_Traps: return "Counter Traps";
-                default: return group.ToString();
+            switch(Attribute)
+            {
+                case "LIGHT": Light.Add(ThisMasterCard); break;
+                case "DARK": Dark.Add(ThisMasterCard); break;
+                case "WATER": Water.Add(ThisMasterCard); break;
+                case "FIRE": Fire.Add(ThisMasterCard); break;
+                case "WIND": Wind.Add(ThisMasterCard); break;
+                case "EARTH": Earth.Add(ThisMasterCard); break;
+                case "DIVINE": Divine.Add(ThisMasterCard); break;
             }
         }
         #endregion
 
         #region Card Group Lists
         public static Dictionary<CardGroup, List<MasterCard>> GroupCardListByGroupName = new Dictionary<CardGroup, List<MasterCard>>();
-        public static List<MasterCard> AquaMonsters = new List<MasterCard>();
-        public static List<MasterCard> BeastMonsters = new List<MasterCard>();
-        public static List<MasterCard> BeastWarriorMonsters = new List<MasterCard>();
-        public static List<MasterCard> CyberseMonsters = new List<MasterCard>();
-        public static List<MasterCard> DinosaurMonsters = new List<MasterCard>();
-        public static List<MasterCard> DivineBeastMonsters = new List<MasterCard>();
-        public static List<MasterCard> DragonMonsters = new List<MasterCard>();
-        public static List<MasterCard> FairyMonsters = new List<MasterCard>();
-        public static List<MasterCard> FiendMonsters = new List<MasterCard>();
-        public static List<MasterCard> FishMonsters = new List<MasterCard>();
-        public static List<MasterCard> IllusionMonsters = new List<MasterCard>();
-        public static List<MasterCard> InsectMonsters = new List<MasterCard>();
-        public static List<MasterCard> MachineMonsters = new List<MasterCard>();
-        public static List<MasterCard> PlantMonsters = new List<MasterCard>();
-        public static List<MasterCard> PsychicMonsters = new List<MasterCard>();
-        public static List<MasterCard> PyroMonsters = new List<MasterCard>();
-        public static List<MasterCard> ReptileMonsters = new List<MasterCard>();
-        public static List<MasterCard> RockMonsters = new List<MasterCard>();
-        public static List<MasterCard> SeaSerpentMonsters = new List<MasterCard>();
-        public static List<MasterCard> SpellcasterMonsters = new List<MasterCard>();
-        public static List<MasterCard> ThunderMonsters = new List<MasterCard>();
-        public static List<MasterCard> WarriorMonsters = new List<MasterCard>();
-        public static List<MasterCard> WingedBeastMonsters = new List<MasterCard>();
-        public static List<MasterCard> WyrmMonsters = new List<MasterCard>();
-        public static List<MasterCard> ZombieMonsters = new List<MasterCard>();
-        public static List<MasterCard> NormalSpells = new List<MasterCard>();
-        public static List<MasterCard> ContinuousSpells = new List<MasterCard>();
-        public static List<MasterCard> QuickPlaySpells = new List<MasterCard>();
-        public static List<MasterCard> EquipSpells = new List<MasterCard>();
-        public static List<MasterCard> FieldSpells = new List<MasterCard>();
-        public static List<MasterCard> RitualSpells = new List<MasterCard>();
-        public static List<MasterCard> NormalTraps = new List<MasterCard>();
-        public static List<MasterCard> ContinuousTraps = new List<MasterCard>();
-        public static List<MasterCard> CounterTraps = new List<MasterCard>();
+        private static List<MasterCard> AquaMonsters = new List<MasterCard>();
+        private static List<MasterCard> BeastMonsters = new List<MasterCard>();
+        private static List<MasterCard> BeastWarriorMonsters = new List<MasterCard>();
+        private static List<MasterCard> CyberseMonsters = new List<MasterCard>();
+        private static List<MasterCard> DinosaurMonsters = new List<MasterCard>();
+        private static List<MasterCard> DivineBeastMonsters = new List<MasterCard>();
+        private static List<MasterCard> DragonMonsters = new List<MasterCard>();
+        private static List<MasterCard> FairyMonsters = new List<MasterCard>();
+        private static List<MasterCard> FiendMonsters = new List<MasterCard>();
+        private static List<MasterCard> FishMonsters = new List<MasterCard>();
+        private static List<MasterCard> IllusionMonsters = new List<MasterCard>();
+        private static List<MasterCard> InsectMonsters = new List<MasterCard>();
+        private static List<MasterCard> MachineMonsters = new List<MasterCard>();
+        private static List<MasterCard> PlantMonsters = new List<MasterCard>();
+        private static List<MasterCard> PsychicMonsters = new List<MasterCard>();
+        private static List<MasterCard> PyroMonsters = new List<MasterCard>();
+        private static List<MasterCard> ReptileMonsters = new List<MasterCard>();
+        private static List<MasterCard> RockMonsters = new List<MasterCard>();
+        private static List<MasterCard> SeaSerpentMonsters = new List<MasterCard>();
+        private static List<MasterCard> SpellcasterMonsters = new List<MasterCard>();
+        private static List<MasterCard> ThunderMonsters = new List<MasterCard>();
+        private static List<MasterCard> WarriorMonsters = new List<MasterCard>();
+        private static List<MasterCard> WingedBeastMonsters = new List<MasterCard>();
+        private static List<MasterCard> WyrmMonsters = new List<MasterCard>();
+        private static List<MasterCard> ZombieMonsters = new List<MasterCard>();
+        private static List<MasterCard> NormalSpells = new List<MasterCard>();
+        private static List<MasterCard> ContinuousSpells = new List<MasterCard>();
+        private static List<MasterCard> QuickPlaySpells = new List<MasterCard>();
+        private static List<MasterCard> EquipSpells = new List<MasterCard>();
+        private static List<MasterCard> FieldSpells = new List<MasterCard>();
+        private static List<MasterCard> RitualSpells = new List<MasterCard>();
+        private static List<MasterCard> NormalTraps = new List<MasterCard>();
+        private static List<MasterCard> ContinuousTraps = new List<MasterCard>();
+        private static List<MasterCard> CounterTraps = new List<MasterCard>();
 
         //3 Card Groups
-        public static List<MasterCard> Monsters = new List<MasterCard>();
-        public static List<MasterCard> Spells = new List<MasterCard>();
-        public static List<MasterCard> Traps = new List<MasterCard>();
+        private static List<MasterCard> Monsters = new List<MasterCard>();
+        private static List<MasterCard> Spells = new List<MasterCard>();
+        private static List<MasterCard> Traps = new List<MasterCard>();
 
         //subtypes
-        public static List<MasterCard> Normal = new List<MasterCard>();
-        public static List<MasterCard> Effect = new List<MasterCard>();
-        public static List<MasterCard> Fusion = new List<MasterCard>();
-        public static List<MasterCard> Ritual = new List<MasterCard>();
-        public static List<MasterCard> Synchro = new List<MasterCard>();
-        public static List<MasterCard> Xyz = new List<MasterCard>();
-        public static List<MasterCard> Pendulum = new List<MasterCard>();
-        public static List<MasterCard> Link = new List<MasterCard>();
+        private static List<MasterCard> Normal = new List<MasterCard>();
+        private static List<MasterCard> Effect = new List<MasterCard>();
+        private static List<MasterCard> Fusion = new List<MasterCard>();
+        private static List<MasterCard> Ritual = new List<MasterCard>();
+        private static List<MasterCard> Synchro = new List<MasterCard>();
+        private static List<MasterCard> Xyz = new List<MasterCard>();
+        private static List<MasterCard> Pendulum = new List<MasterCard>();
+        private static List<MasterCard> Link = new List<MasterCard>();
 
         //subtypes 2
-        public static List<MasterCard> Flip = new List<MasterCard>();
-        public static List<MasterCard> Spirit = new List<MasterCard>();
-        public static List<MasterCard> Toon = new List<MasterCard>();
-        public static List<MasterCard> Union = new List<MasterCard>();
-        public static List<MasterCard> Tuner = new List<MasterCard>();
-        public static List<MasterCard> Gemini = new List<MasterCard>();
+        private static List<MasterCard> Flip = new List<MasterCard>();
+        private static List<MasterCard> Spirit = new List<MasterCard>();
+        private static List<MasterCard> Toon = new List<MasterCard>();
+        private static List<MasterCard> Union = new List<MasterCard>();
+        private static List<MasterCard> Tuner = new List<MasterCard>();
+        private static List<MasterCard> Gemini = new List<MasterCard>();
 
         //Attributes
-        public static List<MasterCard> Light = new List<MasterCard>();
-        public static List<MasterCard> Dark = new List<MasterCard>();
-        public static List<MasterCard> Water = new List<MasterCard>();
-        public static List<MasterCard> Fire = new List<MasterCard>();
-        public static List<MasterCard> Wind = new List<MasterCard>();
-        public static List<MasterCard> Earth = new List<MasterCard>();
-        public static List<MasterCard> Divine = new List<MasterCard>();
+        private static List<MasterCard> Light = new List<MasterCard>();
+        private static List<MasterCard> Dark = new List<MasterCard>();
+        private static List<MasterCard> Water = new List<MasterCard>();
+        private static List<MasterCard> Fire = new List<MasterCard>();
+        private static List<MasterCard> Wind = new List<MasterCard>();
+        private static List<MasterCard> Earth = new List<MasterCard>();
+        private static List<MasterCard> Divine = new List<MasterCard>();
         #endregion
 
         #region SetGroups Name Lists
@@ -649,7 +699,31 @@ namespace YGO_Card_Collector_5
         Ritual_Spells,
         Normal_Traps,
         Continuous_Traps,
-        Counter_Traps
+        Counter_Traps,
+        All_Monsters,
+        All_Spells,
+        All_Trap,
+        Normal_Monsters,
+        Effect_Monsters,
+        Fusion_Monsters,
+        Ritual_Monsters,
+        Synchro_Monsters,
+        Xyz_Monsters,
+        Pendulum_Monsters,
+        Link_Monsters,
+        Flip_Monsters,
+        Spirit_Monsters,
+        Toon_Monsters,
+        Union_Monsters,
+        Tuner_Monsters,
+        Gemini_Monsters,
+        Light_Attribute,
+        Dark_Attribute,
+        Earth_Attribute,
+        Water_Attribute,
+        Fire_Attribute,
+        Wind_Attribute,
+        Divine_Attribute
     }
     #endregion
 }

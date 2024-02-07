@@ -86,6 +86,12 @@ namespace YGO_Card_Collector_5
             //Pull the correct MasterCard list
             _MasterCardViewMode = true;
             _CurrentMasterCardList = Database.GroupCardListByGroupName[CurrentGroup];
+            //Reset the card page to 1 and hide the Clear Filter button if displaying all card list
+            _CurrentCardPage = 1;
+            if(CurrentGroup == CardGroup.AllCards) { btnClear.Visible = false; }
+            //Update the Card Viewer Card Page/Card Count header
+            GroupCardView.Text = string.Format("PAGE: {0}  -  CARD GROUP: {1}  -  Total Cards: {2}", _CurrentCardPage, Database.CardGroupToString(_CurrentCardGroup), _CurrentMasterCardList.Count);
+
             //Reload the page contents with the new list loaded
             LoadPage();
             //And Click on the card on the firs page
@@ -241,11 +247,10 @@ namespace YGO_Card_Collector_5
         }
         private void LoadPage()
         {
-            //Set the group info at the Card View Group Box
+            //Set the total Card Count
             int TotalCardCount = 0;
             if (_MasterCardViewMode) { TotalCardCount = _CurrentMasterCardList.Count; }
-            else { TotalCardCount = _CurrentSetCardList.Count; }          
-            GroupCardView.Text = string.Format("PAGE: {0}  -  CARD GROUP: {1}  -  Total Cards: {2}", _CurrentCardPage, Database.CardGroupToString(_CurrentCardGroup), TotalCardCount);
+            else { TotalCardCount = _CurrentSetCardList.Count; }           
 
             //Start the iterator
             int PageIntialIndex = (_CurrentCardPage * 45) - 45;
@@ -385,9 +390,9 @@ namespace YGO_Card_Collector_5
         private FormLauncher _MainMenuForm;
         private List<MasterCard> _CurrentMasterCardList;
         private List<SetCard> _CurrentSetCardList;
+        private CardGroup _CurrentCardGroup = CardGroup.AllCards;
         private bool _MasterCardViewMode = true;
         private int _CurrentCardPage = 1;
-        private CardGroup _CurrentCardGroup = CardGroup.AllCards;
         private bool _YouCollectionViewON = false;
         private int _PreviousCardInViewIndex = 0;
 
@@ -455,7 +460,8 @@ namespace YGO_Card_Collector_5
         private void btnClear_Click(object sender, EventArgs e)
         {
             //Reset the card list to the Master Card List (All Cards)
-            LoadMasterCardList(CardGroup.AllCards);
+            _CurrentCardGroup = CardGroup.AllCards;
+            LoadMasterCardList(_CurrentCardGroup);
         }
         private void btnPreviousPage_Click(object sender, EventArgs e)
         {
@@ -492,6 +498,375 @@ namespace YGO_Card_Collector_5
         {
             Application.Exit();
         }
-        #endregion    
+        #endregion
+
+        #region Event Listerner (Master Filters)
+        private void btnFilterAqua_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Aqua_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterBeast_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Beast_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterBeastWarrior_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.BeastWarrior_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterCyberce_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Cyberse_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterDinosaur_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Dinosaur_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterDivine_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.DivineBeast_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterDragon_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Dragon_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterFairy_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Fairy_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterFiend_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Fiend_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterFish_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Fish_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterIllusion_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.IllusionType_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterInsect_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Insect_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterMachine_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Machine_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterPlant_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Plant_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterPsychic_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Psychic_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterPyro_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Pyro_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterReptile_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Reptile_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterRock_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Rock_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterSeaSerpent_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.SeaSerpent_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterSpellcaster_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Spellcaster_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterThunder_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Thunder_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterWarrior_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Warrior_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterWingedBeast_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.WingedBeast_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterWyrm_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Wyrm_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFilterZombie_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Zombie_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnNormalSpell_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Normal_Spells;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnContinousSpell_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Continuous_Spells;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnEquipSpell_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Equip_Spells;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFieldSpell_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Field_Spells;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnQuickPlaySpell_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.QuickPlay_Spells;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnRitualSpell_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Ritual_Spells;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnNormalTrap_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Normal_Traps;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnContinuosTrap_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Continuous_Traps;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnCounterTrap_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Counter_Traps;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnMonster_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.All_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnSpells_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.All_Spells;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnTraps_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.All_Trap;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnNormal_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Normal_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnEffect_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Effect_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFusion_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Fusion_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnRitual_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Ritual_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnSynchro_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Synchro_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnXyz_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Xyz_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnPendulum_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Pendulum_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnLink_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Link_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFlip_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Flip_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnSpirit_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Spirit_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnToon_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Toon_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnUnion_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Union_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnTuner_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Tuner_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnGemini_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Gemini_Monsters;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnDark_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Dark_Attribute;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnLight_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Light_Attribute;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnEarth_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Earth_Attribute;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnWater_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Water_Attribute;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnFire_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Fire_Attribute;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnWind_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Wind_Attribute;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnDivine_Click(object sender, EventArgs e)
+        {
+            _CurrentCardGroup = CardGroup.Divine_Attribute;
+            LoadMasterCardList(_CurrentCardGroup);
+            btnClear.Visible = true;
+        }
+        private void btnTextSearch_Click(object sender, EventArgs e)
+        {
+            if (txtSearch.Text != "")
+            {
+                string SearchTerm = txtSearch.Text;
+                _CurrentMasterCardList = Database.GetCardListWithSearchTerm(SearchTerm);
+               
+                //Set Flags
+                _MasterCardViewMode = true;
+                _CurrentCardPage = 1;
+                btnClear.Visible = true;
+
+                //Update the Card Viewer Card Page/Card Count header
+                GroupCardView.Text = string.Format("PAGE: {0}  -  SEARCH TERM: \"{1}\"  -  Total Cards: {2}", _CurrentCardPage, SearchTerm, _CurrentMasterCardList.Count);
+
+                LoadPage();
+            }
+        }
+        #endregion
     }
 }

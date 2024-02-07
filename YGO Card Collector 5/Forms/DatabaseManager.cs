@@ -67,40 +67,40 @@ namespace YGO_Card_Collector_5
             lblTotalMasterCards.Text = Database.MasterCards.Count.ToString();
             lblTotalSetCards.Text = Database.SetCards.Count.ToString();
 
-            lblTotalsAqua.Text = Database.AquaMonsters.Count.ToString();
-            lblTotalsBeast.Text = Database.BeastMonsters.Count.ToString();
-            lblTotalsBeastWarrior.Text = Database.BeastWarriorMonsters.Count.ToString();
-            lblTotalsCyberse.Text = Database.CyberseMonsters.Count.ToString();
-            lblTotalsDinosaur.Text = Database.DinosaurMonsters.Count.ToString();
-            lblTotalsDivineBeast.Text = Database.DivineBeastMonsters.Count.ToString();
-            lblTotalsDragon.Text = Database.DragonMonsters.Count.ToString();
-            lblTotalsFairy.Text = Database.FairyMonsters.Count.ToString();
-            lblTotalsFiend.Text = Database.FiendMonsters.Count.ToString();
-            lblTotalsFish.Text = Database.FishMonsters.Count.ToString();
-            lblTotalsIllusion.Text = Database.IllusionMonsters.Count.ToString();
-            lblTotalsInsect.Text = Database.InsectMonsters.Count.ToString();
-            lblTotalsMachine.Text = Database.MachineMonsters.Count.ToString();
-            lblTotalsPlant.Text = Database.PlantMonsters.Count.ToString();
-            lblTotalsPsychic.Text = Database.PsychicMonsters.Count.ToString();
-            lblTotalsPyro.Text = Database.PyroMonsters.Count.ToString();
-            lblTotalsReptile.Text = Database.ReptileMonsters.Count.ToString();
-            lblTotalsRock.Text = Database.RockMonsters.Count.ToString();
-            lblTotalsSeaSerpent.Text = Database.SeaSerpentMonsters.Count.ToString();
-            lblTotalsSpellcaster.Text = Database.SpellcasterMonsters.Count.ToString();
-            lblTotalsThunder.Text = Database.ThunderMonsters.Count.ToString();
-            lblTotalsWarrior.Text = Database.WarriorMonsters.Count.ToString();
-            lblTotalsWingedBeast.Text = Database.WingedBeastMonsters.Count.ToString();
-            lblTotalsWyrm.Text = Database.WyrmMonsters.Count.ToString();
-            lblTotalsZombie.Text = Database.ZombieMonsters.Count.ToString();
-            lblTotalsNormalSpells.Text = Database.NormalSpells.Count.ToString();
-            lblTotalsContSpells.Text = Database.ContinuousSpells.Count.ToString();
-            lblTotalsQuickSpells.Text = Database.QuickPlaySpells.Count.ToString();
-            lblTotalsEquipSpells.Text = Database.EquipSpells.Count.ToString();
-            lblTotalsFieldSpells.Text = Database.FieldSpells.Count.ToString();
-            lblTotalsRitualSpells.Text = Database.RitualSpells.Count.ToString();
-            lblTotalsNormalTraps.Text = Database.NormalTraps.Count.ToString();
-            lblTotalsContTraps.Text = Database.ContinuousTraps.Count.ToString();
-            lblTotalsCounterTraps.Text = Database.CounterTraps.Count.ToString();
+            lblTotalsAqua.Text = Database.GroupCardListByGroupName[CardGroup.Aqua_Monsters].Count.ToString();
+            lblTotalsBeast.Text = Database.GroupCardListByGroupName[CardGroup.Beast_Monsters].Count.ToString();
+            lblTotalsBeastWarrior.Text = Database.GroupCardListByGroupName[CardGroup.BeastWarrior_Monsters].Count.ToString();
+            lblTotalsCyberse.Text = Database.GroupCardListByGroupName[CardGroup.Cyberse_Monsters].Count.ToString();
+            lblTotalsDinosaur.Text = Database.GroupCardListByGroupName[CardGroup.Dinosaur_Monsters].Count.ToString();
+            lblTotalsDivineBeast.Text = Database.GroupCardListByGroupName[CardGroup.DivineBeast_Monsters].Count.ToString();
+            lblTotalsDragon.Text = Database.GroupCardListByGroupName[CardGroup.Dragon_Monsters].Count.ToString();
+            lblTotalsFairy.Text = Database.GroupCardListByGroupName[CardGroup.Fairy_Monsters].Count.ToString();
+            lblTotalsFiend.Text = Database.GroupCardListByGroupName[CardGroup.Fiend_Monsters].Count.ToString();
+            lblTotalsFish.Text = Database.GroupCardListByGroupName[CardGroup.Fish_Monsters].Count.ToString();
+            lblTotalsIllusion.Text = Database.GroupCardListByGroupName[CardGroup.IllusionType_Monsters].Count.ToString();
+            lblTotalsInsect.Text = Database.GroupCardListByGroupName[CardGroup.Insect_Monsters].Count.ToString();
+            lblTotalsMachine.Text = Database.GroupCardListByGroupName[CardGroup.Machine_Monsters].Count.ToString();
+            lblTotalsPlant.Text = Database.GroupCardListByGroupName[CardGroup.Plant_Monsters].Count.ToString();
+            lblTotalsPsychic.Text = Database.GroupCardListByGroupName[CardGroup.Psychic_Monsters].Count.ToString();
+            lblTotalsPyro.Text = Database.GroupCardListByGroupName[CardGroup.Psychic_Monsters].Count.ToString();
+            lblTotalsReptile.Text = Database.GroupCardListByGroupName[CardGroup.Reptile_Monsters].Count.ToString();
+            lblTotalsRock.Text = Database.GroupCardListByGroupName[CardGroup.Rock_Monsters].Count.ToString();
+            lblTotalsSeaSerpent.Text = Database.GroupCardListByGroupName[CardGroup.SeaSerpent_Monsters].Count.ToString();
+            lblTotalsSpellcaster.Text = Database.GroupCardListByGroupName[CardGroup.Spellcaster_Monsters].Count.ToString();
+            lblTotalsThunder.Text = Database.GroupCardListByGroupName[CardGroup.Thunder_Monsters].Count.ToString();
+            lblTotalsWarrior.Text = Database.GroupCardListByGroupName[CardGroup.Warrior_Monsters].Count.ToString();
+            lblTotalsWingedBeast.Text = Database.GroupCardListByGroupName[CardGroup.WingedBeast_Monsters].Count.ToString();
+            lblTotalsWyrm.Text = Database.GroupCardListByGroupName[CardGroup.Wyrm_Monsters].Count.ToString();
+            lblTotalsZombie.Text = Database.GroupCardListByGroupName[CardGroup.Zombie_Monsters].Count.ToString();
+            lblTotalsNormalSpells.Text = Database.GroupCardListByGroupName[CardGroup.Normal_Spells].Count.ToString();
+            lblTotalsContSpells.Text = Database.GroupCardListByGroupName[CardGroup.Continuous_Spells].Count.ToString();
+            lblTotalsQuickSpells.Text = Database.GroupCardListByGroupName[CardGroup.QuickPlay_Spells].Count.ToString();
+            lblTotalsEquipSpells.Text = Database.GroupCardListByGroupName[CardGroup.Equip_Spells].Count.ToString();
+            lblTotalsFieldSpells.Text = Database.GroupCardListByGroupName[CardGroup.Field_Spells].Count.ToString();
+            lblTotalsRitualSpells.Text = Database.GroupCardListByGroupName[CardGroup.Ritual_Spells].Count.ToString();
+            lblTotalsNormalTraps.Text = Database.GroupCardListByGroupName[CardGroup.Normal_Spells].Count.ToString();
+            lblTotalsContTraps.Text = Database.GroupCardListByGroupName[CardGroup.Continuous_Traps].Count.ToString();
+            lblTotalsCounterTraps.Text = Database.GroupCardListByGroupName[CardGroup.Counter_Traps].Count.ToString();
         }
         private void LoadGroupViewStats()
         {
@@ -2722,10 +2722,13 @@ namespace YGO_Card_Collector_5
                 string code = tokens[1];
                 string rarity = tokens[2];
 
-                if(code.StartsWith("DUSA") || code.StartsWith("NKRT") || code.StartsWith("DT") || code.StartsWith("HL"))
+                Driver.AddToFullLog(string.Format("This Code: {0} | Rarity: {1}", code, rarity));
+
+                if (code.StartsWith("DUSA") || code.StartsWith("NKRT") || code.StartsWith("DT") || code.StartsWith("HL"))
                 {
                     //skip
                     unSuccesfulLines.Add(line);
+                    Driver.AddToFullLog("SetCard in skip list");
                 }
                 else
                 {
@@ -2764,11 +2767,14 @@ namespace YGO_Card_Collector_5
                         }
 
 
+                        Driver.AddToFullLog(string.Format("URLS to verify: {0}", URLsToCheck.Count));
                         bool succesfulMatch = false;
+                        int urlcheckcounter = 0;
                         //Now check all the URL for matches                  
                         foreach (string TestURL in URLsToCheck)
                         {
                             Driver.GoToURL(TestURL);
+                            urlcheckcounter++;
 
                             if (TCGCardInfoPage.IsAValidPage())
                             {
@@ -2791,6 +2797,8 @@ namespace YGO_Card_Collector_5
                                         double priceInPageMedian = Tools.CovertPriceToDouble(priceInPageMedianstr);
                                         ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
                                         succesfulMatch = true;
+                                        Driver.AddToFullLog(string.Format("Found URL's Counter: {0}", urlcheckcounter));
+                                        break;
                                     }
                                 }
                             }
@@ -2799,19 +2807,23 @@ namespace YGO_Card_Collector_5
                         if (succesfulMatch)
                         {
                             SuccesfulLines.Add(line);
+                            Driver.AddToFullLog("------------------------>>>>>>>>URL FIXED!!");
                         }
                         else
                         {
                             unSuccesfulLines.Add(line);
                         }
                     }
-                }              
+                }
+                Driver.AddToFullLog("-----------------------------------");
             }
 
             File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\SuccessfullLines.txt", SuccesfulLines);
             File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\UnSuccessfullLines.txt", unSuccesfulLines);
 
-            DBUpdateform.SendJobFinishSignal();
+            DBUpdateform.SendFullCompletionSignal();
+            Driver.AddToFullLog(string.Format("Successful Fixed URLS: {0}", SuccesfulLines.Count));
+            Driver.AddToFullLog(string.Format("UnSuccessful Fixed URLS: {0}", unSuccesfulLines.Count));
             Masterwatch.Stop();
             Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
             Driver.CloseDriver();

@@ -162,7 +162,7 @@
             this.GroupCardView.BackColor = System.Drawing.Color.Transparent;
             this.GroupCardView.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupCardView.ForeColor = System.Drawing.Color.Lime;
-            this.GroupCardView.Location = new System.Drawing.Point(12, 17);
+            this.GroupCardView.Location = new System.Drawing.Point(5, 17);
             this.GroupCardView.Name = "GroupCardView";
             this.GroupCardView.Size = new System.Drawing.Size(456, 320);
             this.GroupCardView.TabIndex = 1;
@@ -175,7 +175,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(652, 3);
+            this.label3.Location = new System.Drawing.Point(644, 4);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 20);
             this.label3.TabIndex = 231;
@@ -186,9 +186,9 @@
             this.PanelTagList.AutoScroll = true;
             this.PanelTagList.BackColor = System.Drawing.Color.Black;
             this.PanelTagList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanelTagList.Location = new System.Drawing.Point(655, 24);
+            this.PanelTagList.Location = new System.Drawing.Point(648, 26);
             this.PanelTagList.Name = "PanelTagList";
-            this.PanelTagList.Size = new System.Drawing.Size(115, 248);
+            this.PanelTagList.Size = new System.Drawing.Size(123, 248);
             this.PanelTagList.TabIndex = 233;
             // 
             // PicImage
@@ -196,7 +196,7 @@
             this.PicImage.BackColor = System.Drawing.Color.Transparent;
             this.PicImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PicImage.Image = ((System.Drawing.Image)(resources.GetObject("PicImage.Image")));
-            this.PicImage.Location = new System.Drawing.Point(474, 24);
+            this.PicImage.Location = new System.Drawing.Point(467, 26);
             this.PicImage.Name = "PicImage";
             this.PicImage.Size = new System.Drawing.Size(176, 248);
             this.PicImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -208,7 +208,7 @@
             this.chkCollected.BackColor = System.Drawing.Color.Black;
             this.chkCollected.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkCollected.ForeColor = System.Drawing.Color.White;
-            this.chkCollected.Location = new System.Drawing.Point(124, 337);
+            this.chkCollected.Location = new System.Drawing.Point(117, 337);
             this.chkCollected.Name = "chkCollected";
             this.chkCollected.Size = new System.Drawing.Size(145, 22);
             this.chkCollected.TabIndex = 236;
@@ -221,7 +221,7 @@
             this.btnClear.BackColor = System.Drawing.Color.Red;
             this.btnClear.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Black;
-            this.btnClear.Location = new System.Drawing.Point(271, 336);
+            this.btnClear.Location = new System.Drawing.Point(264, 336);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(94, 25);
             this.btnClear.TabIndex = 239;
@@ -236,7 +236,7 @@
             this.btnNextPage.BackColor = System.Drawing.Color.Green;
             this.btnNextPage.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNextPage.ForeColor = System.Drawing.Color.White;
-            this.btnNextPage.Location = new System.Drawing.Point(365, 336);
+            this.btnNextPage.Location = new System.Drawing.Point(359, 336);
             this.btnNextPage.Name = "btnNextPage";
             this.btnNextPage.Size = new System.Drawing.Size(103, 25);
             this.btnNextPage.TabIndex = 238;
@@ -249,7 +249,7 @@
             this.btnPreviousPage.BackColor = System.Drawing.Color.Green;
             this.btnPreviousPage.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPreviousPage.ForeColor = System.Drawing.Color.White;
-            this.btnPreviousPage.Location = new System.Drawing.Point(11, 336);
+            this.btnPreviousPage.Location = new System.Drawing.Point(4, 336);
             this.btnPreviousPage.Name = "btnPreviousPage";
             this.btnPreviousPage.Size = new System.Drawing.Size(110, 25);
             this.btnPreviousPage.TabIndex = 237;
@@ -261,10 +261,10 @@
             // 
             this.tabControl2.Controls.Add(this.MonsterType);
             this.tabControl2.Controls.Add(this.tabPage2);
-            this.tabControl2.Location = new System.Drawing.Point(12, 362);
+            this.tabControl2.Location = new System.Drawing.Point(5, 362);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(406, 146);
+            this.tabControl2.Size = new System.Drawing.Size(406, 142);
             this.tabControl2.TabIndex = 240;
             // 
             // MonsterType
@@ -277,7 +277,7 @@
             this.MonsterType.Location = new System.Drawing.Point(4, 22);
             this.MonsterType.Name = "MonsterType";
             this.MonsterType.Padding = new System.Windows.Forms.Padding(3);
-            this.MonsterType.Size = new System.Drawing.Size(398, 120);
+            this.MonsterType.Size = new System.Drawing.Size(398, 116);
             this.MonsterType.TabIndex = 0;
             this.MonsterType.Text = "Main Card Filters";
             // 
@@ -328,6 +328,7 @@
             this.btnFilterIllusion.TabIndex = 26;
             this.btnFilterIllusion.Tag = "11";
             this.btnFilterIllusion.UseVisualStyleBackColor = true;
+            this.btnFilterIllusion.Click += new System.EventHandler(this.btnFilterIllusion_Click);
             // 
             // btnFilterZombie
             // 
@@ -339,6 +340,7 @@
             this.btnFilterZombie.TabIndex = 24;
             this.btnFilterZombie.Tag = "23";
             this.btnFilterZombie.UseVisualStyleBackColor = true;
+            this.btnFilterZombie.Click += new System.EventHandler(this.btnFilterZombie_Click);
             // 
             // btnFilterWyrm
             // 
@@ -350,6 +352,7 @@
             this.btnFilterWyrm.TabIndex = 23;
             this.btnFilterWyrm.Tag = "22";
             this.btnFilterWyrm.UseVisualStyleBackColor = true;
+            this.btnFilterWyrm.Click += new System.EventHandler(this.btnFilterWyrm_Click);
             // 
             // btnFilterWingedBeast
             // 
@@ -361,6 +364,7 @@
             this.btnFilterWingedBeast.TabIndex = 22;
             this.btnFilterWingedBeast.Tag = "21";
             this.btnFilterWingedBeast.UseVisualStyleBackColor = true;
+            this.btnFilterWingedBeast.Click += new System.EventHandler(this.btnFilterWingedBeast_Click);
             // 
             // btnFilterWarrior
             // 
@@ -372,6 +376,7 @@
             this.btnFilterWarrior.TabIndex = 21;
             this.btnFilterWarrior.Tag = "20";
             this.btnFilterWarrior.UseVisualStyleBackColor = true;
+            this.btnFilterWarrior.Click += new System.EventHandler(this.btnFilterWarrior_Click);
             // 
             // btnFilterThunder
             // 
@@ -383,6 +388,7 @@
             this.btnFilterThunder.TabIndex = 20;
             this.btnFilterThunder.Tag = "19";
             this.btnFilterThunder.UseVisualStyleBackColor = true;
+            this.btnFilterThunder.Click += new System.EventHandler(this.btnFilterThunder_Click);
             // 
             // btnFilterSpellcaster
             // 
@@ -394,6 +400,7 @@
             this.btnFilterSpellcaster.TabIndex = 19;
             this.btnFilterSpellcaster.Tag = "18";
             this.btnFilterSpellcaster.UseVisualStyleBackColor = true;
+            this.btnFilterSpellcaster.Click += new System.EventHandler(this.btnFilterSpellcaster_Click);
             // 
             // btnFilterPsychic
             // 
@@ -405,6 +412,7 @@
             this.btnFilterPsychic.TabIndex = 18;
             this.btnFilterPsychic.Tag = "13";
             this.btnFilterPsychic.UseVisualStyleBackColor = true;
+            this.btnFilterPsychic.Click += new System.EventHandler(this.btnFilterPsychic_Click);
             // 
             // btnFilterFiend
             // 
@@ -416,6 +424,7 @@
             this.btnFilterFiend.TabIndex = 17;
             this.btnFilterFiend.Tag = "8";
             this.btnFilterFiend.UseVisualStyleBackColor = true;
+            this.btnFilterFiend.Click += new System.EventHandler(this.btnFilterFiend_Click);
             // 
             // btnFilterCyberce
             // 
@@ -427,6 +436,7 @@
             this.btnFilterCyberce.TabIndex = 16;
             this.btnFilterCyberce.Tag = "3";
             this.btnFilterCyberce.UseVisualStyleBackColor = true;
+            this.btnFilterCyberce.Click += new System.EventHandler(this.btnFilterCyberce_Click);
             // 
             // btnFilterSeaSerpent
             // 
@@ -438,6 +448,7 @@
             this.btnFilterSeaSerpent.TabIndex = 15;
             this.btnFilterSeaSerpent.Tag = "17";
             this.btnFilterSeaSerpent.UseVisualStyleBackColor = true;
+            this.btnFilterSeaSerpent.Click += new System.EventHandler(this.btnFilterSeaSerpent_Click);
             // 
             // btnFilterPlant
             // 
@@ -449,6 +460,7 @@
             this.btnFilterPlant.TabIndex = 14;
             this.btnFilterPlant.Tag = "12";
             this.btnFilterPlant.UseVisualStyleBackColor = true;
+            this.btnFilterPlant.Click += new System.EventHandler(this.btnFilterPlant_Click);
             // 
             // btnFilterFairy
             // 
@@ -460,6 +472,7 @@
             this.btnFilterFairy.TabIndex = 13;
             this.btnFilterFairy.Tag = "7";
             this.btnFilterFairy.UseVisualStyleBackColor = true;
+            this.btnFilterFairy.Click += new System.EventHandler(this.btnFilterFairy_Click);
             // 
             // btnFilterRock
             // 
@@ -471,6 +484,7 @@
             this.btnFilterRock.TabIndex = 11;
             this.btnFilterRock.Tag = "16";
             this.btnFilterRock.UseVisualStyleBackColor = true;
+            this.btnFilterRock.Click += new System.EventHandler(this.btnFilterRock_Click);
             // 
             // btnFilterReptile
             // 
@@ -482,6 +496,7 @@
             this.btnFilterReptile.TabIndex = 10;
             this.btnFilterReptile.Tag = "15";
             this.btnFilterReptile.UseVisualStyleBackColor = true;
+            this.btnFilterReptile.Click += new System.EventHandler(this.btnFilterReptile_Click);
             // 
             // btnFilterPyro
             // 
@@ -493,6 +508,7 @@
             this.btnFilterPyro.TabIndex = 9;
             this.btnFilterPyro.Tag = "14";
             this.btnFilterPyro.UseVisualStyleBackColor = true;
+            this.btnFilterPyro.Click += new System.EventHandler(this.btnFilterPyro_Click);
             // 
             // btnFilterMachine
             // 
@@ -504,6 +520,7 @@
             this.btnFilterMachine.TabIndex = 8;
             this.btnFilterMachine.Tag = "11";
             this.btnFilterMachine.UseVisualStyleBackColor = true;
+            this.btnFilterMachine.Click += new System.EventHandler(this.btnFilterMachine_Click);
             // 
             // btnFilterInsect
             // 
@@ -515,6 +532,7 @@
             this.btnFilterInsect.TabIndex = 7;
             this.btnFilterInsect.Tag = "10";
             this.btnFilterInsect.UseVisualStyleBackColor = true;
+            this.btnFilterInsect.Click += new System.EventHandler(this.btnFilterInsect_Click);
             // 
             // btnFilterFish
             // 
@@ -526,6 +544,7 @@
             this.btnFilterFish.TabIndex = 6;
             this.btnFilterFish.Tag = "9";
             this.btnFilterFish.UseVisualStyleBackColor = true;
+            this.btnFilterFish.Click += new System.EventHandler(this.btnFilterFish_Click);
             // 
             // btnFilterDragon
             // 
@@ -537,6 +556,7 @@
             this.btnFilterDragon.TabIndex = 5;
             this.btnFilterDragon.Tag = "6";
             this.btnFilterDragon.UseVisualStyleBackColor = true;
+            this.btnFilterDragon.Click += new System.EventHandler(this.btnFilterDragon_Click);
             // 
             // btnFilterDivine
             // 
@@ -548,6 +568,7 @@
             this.btnFilterDivine.TabIndex = 4;
             this.btnFilterDivine.Tag = "5";
             this.btnFilterDivine.UseVisualStyleBackColor = true;
+            this.btnFilterDivine.Click += new System.EventHandler(this.btnFilterDivine_Click);
             // 
             // btnFilterDinosaur
             // 
@@ -559,6 +580,7 @@
             this.btnFilterDinosaur.TabIndex = 3;
             this.btnFilterDinosaur.Tag = "4";
             this.btnFilterDinosaur.UseVisualStyleBackColor = true;
+            this.btnFilterDinosaur.Click += new System.EventHandler(this.btnFilterDinosaur_Click);
             // 
             // btnFilterBeastWarrior
             // 
@@ -570,6 +592,7 @@
             this.btnFilterBeastWarrior.TabIndex = 2;
             this.btnFilterBeastWarrior.Tag = "2";
             this.btnFilterBeastWarrior.UseVisualStyleBackColor = true;
+            this.btnFilterBeastWarrior.Click += new System.EventHandler(this.btnFilterBeastWarrior_Click);
             // 
             // btnFilterBeast
             // 
@@ -581,6 +604,7 @@
             this.btnFilterBeast.TabIndex = 1;
             this.btnFilterBeast.Tag = "1";
             this.btnFilterBeast.UseVisualStyleBackColor = true;
+            this.btnFilterBeast.Click += new System.EventHandler(this.btnFilterBeast_Click);
             // 
             // btnFilterAqua
             // 
@@ -592,6 +616,7 @@
             this.btnFilterAqua.TabIndex = 0;
             this.btnFilterAqua.Tag = "0";
             this.btnFilterAqua.UseVisualStyleBackColor = true;
+            this.btnFilterAqua.Click += new System.EventHandler(this.btnFilterAqua_Click);
             // 
             // groupSpell
             // 
@@ -621,6 +646,7 @@
             this.btnRitualSpell.TabIndex = 6;
             this.btnRitualSpell.Tag = "30";
             this.btnRitualSpell.UseVisualStyleBackColor = true;
+            this.btnRitualSpell.Click += new System.EventHandler(this.btnRitualSpell_Click);
             // 
             // btnEquipSpell
             // 
@@ -632,6 +658,7 @@
             this.btnEquipSpell.TabIndex = 5;
             this.btnEquipSpell.Tag = "27";
             this.btnEquipSpell.UseVisualStyleBackColor = true;
+            this.btnEquipSpell.Click += new System.EventHandler(this.btnEquipSpell_Click);
             // 
             // btnQuickPlaySpell
             // 
@@ -643,6 +670,7 @@
             this.btnQuickPlaySpell.TabIndex = 4;
             this.btnQuickPlaySpell.Tag = "29";
             this.btnQuickPlaySpell.UseVisualStyleBackColor = true;
+            this.btnQuickPlaySpell.Click += new System.EventHandler(this.btnQuickPlaySpell_Click);
             // 
             // btnFieldSpell
             // 
@@ -654,6 +682,7 @@
             this.btnFieldSpell.TabIndex = 3;
             this.btnFieldSpell.Tag = "28";
             this.btnFieldSpell.UseVisualStyleBackColor = true;
+            this.btnFieldSpell.Click += new System.EventHandler(this.btnFieldSpell_Click);
             // 
             // btnContinousSpell
             // 
@@ -665,6 +694,7 @@
             this.btnContinousSpell.TabIndex = 2;
             this.btnContinousSpell.Tag = "26";
             this.btnContinousSpell.UseVisualStyleBackColor = true;
+            this.btnContinousSpell.Click += new System.EventHandler(this.btnContinousSpell_Click);
             // 
             // btnNormalSpell
             // 
@@ -676,6 +706,7 @@
             this.btnNormalSpell.TabIndex = 1;
             this.btnNormalSpell.Tag = "25";
             this.btnNormalSpell.UseVisualStyleBackColor = true;
+            this.btnNormalSpell.Click += new System.EventHandler(this.btnNormalSpell_Click);
             // 
             // groupBox2
             // 
@@ -702,6 +733,7 @@
             this.btnCounterTrap.TabIndex = 5;
             this.btnCounterTrap.Tag = "34";
             this.btnCounterTrap.UseVisualStyleBackColor = true;
+            this.btnCounterTrap.Click += new System.EventHandler(this.btnCounterTrap_Click);
             // 
             // btnContinuosTrap
             // 
@@ -713,6 +745,7 @@
             this.btnContinuosTrap.TabIndex = 2;
             this.btnContinuosTrap.Tag = "33";
             this.btnContinuosTrap.UseVisualStyleBackColor = true;
+            this.btnContinuosTrap.Click += new System.EventHandler(this.btnContinuosTrap_Click);
             // 
             // btnNormalTrap
             // 
@@ -724,6 +757,7 @@
             this.btnNormalTrap.TabIndex = 1;
             this.btnNormalTrap.Tag = "32";
             this.btnNormalTrap.UseVisualStyleBackColor = true;
+            this.btnNormalTrap.Click += new System.EventHandler(this.btnNormalTrap_Click);
             // 
             // tabPage2
             // 
@@ -737,7 +771,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(398, 120);
+            this.tabPage2.Size = new System.Drawing.Size(398, 116);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Other Filters";
             // 
@@ -771,6 +805,7 @@
             this.btnDivine.TabIndex = 8;
             this.btnDivine.Tag = "25";
             this.btnDivine.UseVisualStyleBackColor = false;
+            this.btnDivine.Click += new System.EventHandler(this.btnDivine_Click);
             // 
             // btnWind
             // 
@@ -783,6 +818,7 @@
             this.btnWind.TabIndex = 7;
             this.btnWind.Tag = "25";
             this.btnWind.UseVisualStyleBackColor = false;
+            this.btnWind.Click += new System.EventHandler(this.btnWind_Click);
             // 
             // btnFire
             // 
@@ -795,6 +831,7 @@
             this.btnFire.TabIndex = 6;
             this.btnFire.Tag = "25";
             this.btnFire.UseVisualStyleBackColor = false;
+            this.btnFire.Click += new System.EventHandler(this.btnFire_Click);
             // 
             // btnWater
             // 
@@ -807,6 +844,7 @@
             this.btnWater.TabIndex = 5;
             this.btnWater.Tag = "25";
             this.btnWater.UseVisualStyleBackColor = false;
+            this.btnWater.Click += new System.EventHandler(this.btnWater_Click);
             // 
             // btnEarth
             // 
@@ -819,6 +857,7 @@
             this.btnEarth.TabIndex = 4;
             this.btnEarth.Tag = "25";
             this.btnEarth.UseVisualStyleBackColor = false;
+            this.btnEarth.Click += new System.EventHandler(this.btnEarth_Click);
             // 
             // btnLight
             // 
@@ -831,6 +870,7 @@
             this.btnLight.TabIndex = 3;
             this.btnLight.Tag = "25";
             this.btnLight.UseVisualStyleBackColor = false;
+            this.btnLight.Click += new System.EventHandler(this.btnLight_Click);
             // 
             // btnDark
             // 
@@ -843,6 +883,7 @@
             this.btnDark.TabIndex = 2;
             this.btnDark.Tag = "25";
             this.btnDark.UseVisualStyleBackColor = false;
+            this.btnDark.Click += new System.EventHandler(this.btnDark_Click);
             // 
             // groupBox9
             // 
@@ -873,6 +914,7 @@
             this.btnTraps.Text = "T";
             this.btnTraps.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnTraps.UseVisualStyleBackColor = false;
+            this.btnTraps.Click += new System.EventHandler(this.btnTraps_Click);
             // 
             // btnSpells
             // 
@@ -888,6 +930,7 @@
             this.btnSpells.Text = "S";
             this.btnSpells.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSpells.UseVisualStyleBackColor = false;
+            this.btnSpells.Click += new System.EventHandler(this.btnSpells_Click);
             // 
             // btnMonster
             // 
@@ -903,6 +946,7 @@
             this.btnMonster.Text = "M";
             this.btnMonster.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMonster.UseVisualStyleBackColor = false;
+            this.btnMonster.Click += new System.EventHandler(this.btnMonster_Click);
             // 
             // txtSearch
             // 
@@ -922,6 +966,7 @@
             this.btnTextSearch.TabIndex = 225;
             this.btnTextSearch.Text = "Search by Text";
             this.btnTextSearch.UseVisualStyleBackColor = false;
+            this.btnTextSearch.Click += new System.EventHandler(this.btnTextSearch_Click);
             // 
             // groupColor
             // 
@@ -953,6 +998,7 @@
             this.btnEffect.TabIndex = 8;
             this.btnEffect.Tag = "38";
             this.btnEffect.UseVisualStyleBackColor = false;
+            this.btnEffect.Click += new System.EventHandler(this.btnEffect_Click);
             // 
             // btnLink
             // 
@@ -964,6 +1010,7 @@
             this.btnLink.TabIndex = 7;
             this.btnLink.Tag = "44";
             this.btnLink.UseVisualStyleBackColor = false;
+            this.btnLink.Click += new System.EventHandler(this.btnLink_Click);
             // 
             // btnPendulum
             // 
@@ -975,6 +1022,7 @@
             this.btnPendulum.TabIndex = 6;
             this.btnPendulum.Tag = "43";
             this.btnPendulum.UseVisualStyleBackColor = false;
+            this.btnPendulum.Click += new System.EventHandler(this.btnPendulum_Click);
             // 
             // btnXyz
             // 
@@ -986,6 +1034,7 @@
             this.btnXyz.TabIndex = 5;
             this.btnXyz.Tag = "42";
             this.btnXyz.UseVisualStyleBackColor = false;
+            this.btnXyz.Click += new System.EventHandler(this.btnXyz_Click);
             // 
             // btnSynchro
             // 
@@ -997,6 +1046,7 @@
             this.btnSynchro.TabIndex = 4;
             this.btnSynchro.Tag = "41";
             this.btnSynchro.UseVisualStyleBackColor = false;
+            this.btnSynchro.Click += new System.EventHandler(this.btnSynchro_Click);
             // 
             // btnRitual
             // 
@@ -1008,6 +1058,7 @@
             this.btnRitual.TabIndex = 3;
             this.btnRitual.Tag = "40";
             this.btnRitual.UseVisualStyleBackColor = false;
+            this.btnRitual.Click += new System.EventHandler(this.btnRitual_Click);
             // 
             // btnFusion
             // 
@@ -1019,6 +1070,7 @@
             this.btnFusion.TabIndex = 2;
             this.btnFusion.Tag = "39";
             this.btnFusion.UseVisualStyleBackColor = false;
+            this.btnFusion.Click += new System.EventHandler(this.btnFusion_Click);
             // 
             // btnNormal
             // 
@@ -1030,6 +1082,7 @@
             this.btnNormal.TabIndex = 1;
             this.btnNormal.Tag = "37";
             this.btnNormal.UseVisualStyleBackColor = false;
+            this.btnNormal.Click += new System.EventHandler(this.btnNormal_Click);
             // 
             // groupBox8
             // 
@@ -1060,6 +1113,7 @@
             this.btnToon.Tag = "47";
             this.btnToon.Text = "Toon";
             this.btnToon.UseVisualStyleBackColor = false;
+            this.btnToon.Click += new System.EventHandler(this.btnToon_Click);
             // 
             // btnTuner
             // 
@@ -1073,6 +1127,7 @@
             this.btnTuner.Tag = "49";
             this.btnTuner.Text = "Tuner";
             this.btnTuner.UseVisualStyleBackColor = false;
+            this.btnTuner.Click += new System.EventHandler(this.btnTuner_Click);
             // 
             // btnUnion
             // 
@@ -1086,6 +1141,7 @@
             this.btnUnion.Tag = "48";
             this.btnUnion.Text = "Union";
             this.btnUnion.UseVisualStyleBackColor = false;
+            this.btnUnion.Click += new System.EventHandler(this.btnUnion_Click);
             // 
             // btnGemini
             // 
@@ -1099,6 +1155,7 @@
             this.btnGemini.Tag = "50";
             this.btnGemini.Text = "Gemini";
             this.btnGemini.UseVisualStyleBackColor = false;
+            this.btnGemini.Click += new System.EventHandler(this.btnGemini_Click);
             // 
             // btnSpirit
             // 
@@ -1112,6 +1169,7 @@
             this.btnSpirit.Tag = "46";
             this.btnSpirit.Text = "Spirit";
             this.btnSpirit.UseVisualStyleBackColor = false;
+            this.btnSpirit.Click += new System.EventHandler(this.btnSpirit_Click);
             // 
             // btnFlip
             // 
@@ -1125,6 +1183,7 @@
             this.btnFlip.Tag = "45";
             this.btnFlip.Text = "Flip";
             this.btnFlip.UseVisualStyleBackColor = false;
+            this.btnFlip.Click += new System.EventHandler(this.btnFlip_Click);
             // 
             // label2
             // 
@@ -1132,7 +1191,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(424, 363);
+            this.label2.Location = new System.Drawing.Point(411, 363);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 16);
             this.label2.TabIndex = 247;
@@ -1159,9 +1218,9 @@
             "Tournaments",
             "Promotional Cards",
             "Video Game Bundles"});
-            this.listSetGroups.Location = new System.Drawing.Point(426, 381);
+            this.listSetGroups.Location = new System.Drawing.Point(413, 381);
             this.listSetGroups.Name = "listSetGroups";
-            this.listSetGroups.Size = new System.Drawing.Size(147, 124);
+            this.listSetGroups.Size = new System.Drawing.Size(131, 124);
             this.listSetGroups.TabIndex = 246;
             // 
             // label4
@@ -1170,7 +1229,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Yellow;
-            this.label4.Location = new System.Drawing.Point(579, 359);
+            this.label4.Location = new System.Drawing.Point(541, 361);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(75, 20);
             this.label4.TabIndex = 249;
@@ -1183,9 +1242,9 @@
             this.listSetlist.ForeColor = System.Drawing.Color.White;
             this.listSetlist.FormattingEnabled = true;
             this.listSetlist.ItemHeight = 15;
-            this.listSetlist.Location = new System.Drawing.Point(579, 381);
+            this.listSetlist.Location = new System.Drawing.Point(545, 381);
             this.listSetlist.Name = "listSetlist";
-            this.listSetlist.Size = new System.Drawing.Size(191, 124);
+            this.listSetlist.Size = new System.Drawing.Size(226, 124);
             this.listSetlist.TabIndex = 248;
             // 
             // groupBox4
@@ -1206,9 +1265,9 @@
             this.groupBox4.Controls.Add(this.lblRarity);
             this.groupBox4.Controls.Add(this.lblRariryLabel);
             this.groupBox4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox4.Location = new System.Drawing.Point(475, 274);
+            this.groupBox4.Location = new System.Drawing.Point(468, 276);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(295, 85);
+            this.groupBox4.Size = new System.Drawing.Size(303, 85);
             this.groupBox4.TabIndex = 250;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Card Info:";
