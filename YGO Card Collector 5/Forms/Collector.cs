@@ -133,8 +133,17 @@ namespace YGO_Card_Collector_5
             //Show the Name in the UI
             lblCardInfo_Name.Text = CardName;
 
-            //Initialize this card's tags
-            //InitializeTags(_CardObjectInView);
+            //Initialize this card's tags            
+            if (_MasterCardViewMode)
+            {
+                InitializeTags(_CurrentMasterCardInView);
+            }
+            else
+            {
+                MasterCard ThisSetCardsMasterCard = Database.MasterCardByCode[_CurrentSetCardInView.Code];
+                InitializeTags(ThisSetCardsMasterCard);
+            }
+
 
             //Show the rariry and prices if in set view
             if (_MasterCardViewMode)
@@ -243,6 +252,63 @@ namespace YGO_Card_Collector_5
                 {
                     lblTCGLink.Visible = true;
                 }
+            }
+
+            void InitializeTags(MasterCard ThisMasterCard)
+            {
+                //Clear all existing tags
+                for (int x = 0; x < _TagLabelList.Count; x++) { _TagLabelList[x].Dispose(); }
+                _TagLabelList.Clear();
+
+                int SetCardCount = ThisMasterCard.SetCards.Count;
+
+                int Y_Location = 1;
+                for (int x = 0; x < SetCardCount; x++)
+                {
+                    string ActiveSetCode = ThisMasterCard.GetCardAtIndex(x).Code;
+                    string ActiveSetRarity = ThisMasterCard.GetCardAtIndex(x).Rarity;
+                    bool ActiveSetObtained = ThisMasterCard.GetCardAtIndex(x).Obtained;
+
+                    if (ActiveSetCode != "")
+                    {
+                        Label tagLabel = new Label();
+                        PanelTagList.Controls.Add(tagLabel);
+                        tagLabel.Location = new Point(1, Y_Location);
+                        tagLabel.BorderStyle = BorderStyle.FixedSingle;
+                        tagLabel.Size = new Size(109, 40);
+                        tagLabel.AutoSize = false;
+                        tagLabel.Font = new Font("Arial", 9);
+                        if(ActiveSetRarity.Length > 13)
+                        {
+                            tagLabel.Font = new Font("Arial", 6);
+                        }
+                        tagLabel.Text = ActiveSetCode + "\n" + ActiveSetRarity;
+                        tagLabel.TextAlign = ContentAlignment.MiddleLeft;
+                        tagLabel.ForeColor = Color.White;
+                        tagLabel.Tag = x;
+                        //TODO: tagLabel.Click += new EventHandler(this.SetCodeLabel_clicked);
+                        _TagLabelList.Add(tagLabel);
+
+                        //Set Color base on if it is obtained or not
+                        if (ActiveSetObtained)
+                        {
+                            tagLabel.ForeColor = Color.Green;
+                        }
+                        else
+                        {
+                            tagLabel.ForeColor = Color.White;
+                        }
+                    }
+
+                    Y_Location += 40;
+                }
+
+                //Resize the TagList Container
+                int width = 133;
+                if (SetCardCount < 7) { width = 113; }
+                int height = 250;
+                if (SetCardCount < 7) { height = ((SetCardCount * 40) + 4); }
+                PanelTagList.Size = new Size(width, height);
             }
         }
         private void LoadPage()
@@ -403,6 +469,7 @@ namespace YGO_Card_Collector_5
         private List<PictureBox> _IconImageList = new List<PictureBox>();
         private List<PictureBox> _CardImageList = new List<PictureBox>();
         private List<PictureBox> _CardRaritiesList = new List<PictureBox>();
+        private List<Label> _TagLabelList = new List<Label>();
         #endregion
 
         void Image_click(object sender, EventArgs e)

@@ -186,9 +186,9 @@
             this.PanelTagList.AutoScroll = true;
             this.PanelTagList.BackColor = System.Drawing.Color.Black;
             this.PanelTagList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanelTagList.Location = new System.Drawing.Point(648, 26);
+            this.PanelTagList.Location = new System.Drawing.Point(641, 26);
             this.PanelTagList.Name = "PanelTagList";
-            this.PanelTagList.Size = new System.Drawing.Size(123, 248);
+            this.PanelTagList.Size = new System.Drawing.Size(131, 248);
             this.PanelTagList.TabIndex = 233;
             // 
             // PicImage
@@ -198,7 +198,7 @@
             this.PicImage.Image = ((System.Drawing.Image)(resources.GetObject("PicImage.Image")));
             this.PicImage.Location = new System.Drawing.Point(467, 26);
             this.PicImage.Name = "PicImage";
-            this.PicImage.Size = new System.Drawing.Size(176, 248);
+            this.PicImage.Size = new System.Drawing.Size(173, 248);
             this.PicImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicImage.TabIndex = 232;
             this.PicImage.TabStop = false;
