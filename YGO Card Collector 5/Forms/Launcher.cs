@@ -58,7 +58,10 @@ namespace YGO_Card_Collector_5
 
             //Open Collection tracker
             Hide();
-            Collector Co = new Collector();
+            lblLaunchAppOption.Visible = true;
+            lblSettingsOption.Visible = true;
+            lblDatabaseOption.Visible = true;
+            Collector Co = new Collector(this);
             Co.Show();
         }
         private void lblDatabaseOption_Click(object sender, EventArgs e)

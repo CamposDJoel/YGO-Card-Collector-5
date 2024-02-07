@@ -112,6 +112,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.listSetlist = new System.Windows.Forms.ListBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.lblCardInfo_Name = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.lblTCGLink = new System.Windows.Forms.Label();
             this.lblProdeckLink = new System.Windows.Forms.Label();
@@ -141,8 +143,6 @@
             this.panel24 = new System.Windows.Forms.Panel();
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel26 = new System.Windows.Forms.Panel();
-            this.lblCardInfo_Name = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.MonsterType.SuspendLayout();
@@ -1209,6 +1209,30 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Card Info:";
             // 
+            // lblCardInfo_Name
+            // 
+            this.lblCardInfo_Name.AutoSize = true;
+            this.lblCardInfo_Name.BackColor = System.Drawing.Color.Transparent;
+            this.lblCardInfo_Name.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCardInfo_Name.ForeColor = System.Drawing.Color.White;
+            this.lblCardInfo_Name.Location = new System.Drawing.Point(96, 9);
+            this.lblCardInfo_Name.Name = "lblCardInfo_Name";
+            this.lblCardInfo_Name.Size = new System.Drawing.Size(161, 16);
+            this.lblCardInfo_Name.TabIndex = 265;
+            this.lblCardInfo_Name.Text = "Super Mega Long Card Name";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label9.Location = new System.Drawing.Point(7, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(93, 16);
+            this.label9.TabIndex = 264;
+            this.label9.Text = "Card TCG Name:";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -1388,6 +1412,7 @@
             this.btnBackToMainMenu.TabIndex = 262;
             this.btnBackToMainMenu.Text = "<-- Back to Main Menu";
             this.btnBackToMainMenu.UseVisualStyleBackColor = false;
+            this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
             // 
             // btnSetPriceReport
             // 
@@ -1518,30 +1543,6 @@
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(47, 60);
             this.panel26.TabIndex = 265;
-            // 
-            // lblCardInfo_Name
-            // 
-            this.lblCardInfo_Name.AutoSize = true;
-            this.lblCardInfo_Name.BackColor = System.Drawing.Color.Transparent;
-            this.lblCardInfo_Name.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCardInfo_Name.ForeColor = System.Drawing.Color.White;
-            this.lblCardInfo_Name.Location = new System.Drawing.Point(96, 9);
-            this.lblCardInfo_Name.Name = "lblCardInfo_Name";
-            this.lblCardInfo_Name.Size = new System.Drawing.Size(161, 16);
-            this.lblCardInfo_Name.TabIndex = 265;
-            this.lblCardInfo_Name.Text = "Super Mega Long Card Name";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label9.Location = new System.Drawing.Point(7, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 16);
-            this.label9.TabIndex = 264;
-            this.label9.Text = "Card TCG Name:";
             // 
             // Collector
             // 

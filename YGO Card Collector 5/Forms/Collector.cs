@@ -1,4 +1,8 @@
-﻿using OpenQA.Selenium.DevTools.V119.Emulation;
+﻿//Joel Campos
+//2/6/2024
+//Collector Form Class
+
+using OpenQA.Selenium.DevTools.V119.Emulation;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,9 +17,10 @@ namespace YGO_Card_Collector_5
 {
     public partial class Collector : Form
     {
-        public Collector()
+        public Collector(FormLauncher mainMenuForm)
         {
             InitializeComponent();
+            _MainMenuForm = mainMenuForm;
             LoadMasterCardList(CardGroup.AllCards);
             InitializeCardViewImages();
             LoadPage();
@@ -225,6 +230,7 @@ namespace YGO_Card_Collector_5
             }
         }
 
+        private FormLauncher _MainMenuForm;
         private List<MasterCard> _CurrentMasterCardList;
         private List<SetCard> _CurrentSetCardList;
         private bool _MasterCardViewMode = true;
@@ -426,6 +432,12 @@ namespace YGO_Card_Collector_5
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnBackToMainMenu_Click(object sender, EventArgs e)
+        {
+            Dispose();
+            _MainMenuForm.Show();
         }
     }
 }
