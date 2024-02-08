@@ -2813,6 +2813,9 @@ namespace YGO_Card_Collector_5
                         {
                             unSuccesfulLines.Add(line);
                         }
+                        File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\SuccessfullLines.txt", SuccesfulLines);
+                        File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\UnSuccessfullLines.txt", unSuccesfulLines);
+                        WriteOutputFiles();
                     }
                 }
                 Driver.AddToFullLog("-----------------------------------");

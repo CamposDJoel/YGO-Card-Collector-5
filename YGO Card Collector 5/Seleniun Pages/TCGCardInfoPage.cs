@@ -70,15 +70,30 @@ namespace YGO_Card_Collector_5
         }
         public static string GetMarketPrice()
         {
-            string price = Element.GetText(Xpath_MarketPrice);
-            if (price == "-" || price == "") { price = "$0.00"; }
-            return price;
+            try
+            {
+                string price = Element.GetText(Xpath_MarketPrice);
+                if (price == "-" || price == "") { price = "$0.00"; }
+                return price;
+            }
+            catch (Exception)
+            {
+                return "$0.00";
+            }
         }
         public static string GetMediamPrice()
         {
-            string price = Element.GetText(Xpath_MediamPrice);
-            if (price == "-" || price == "") { price = "$0.00"; }
-            return price;
+            try
+            {
+                string price = Element.GetText(Xpath_MediamPrice);
+                if (price == "-" || price == "") { price = "$0.00"; }
+                return price;
+            }
+            catch (Exception)
+            {
+                return "$0.00";
+            }
+
         }
     }
 }
