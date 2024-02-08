@@ -298,6 +298,14 @@ namespace YGO_Card_Collector_5
                     tagLabel.Click += new EventHandler(SetCardLabel_clicked);
                     _TagLabelList.Add(tagLabel);
 
+                    if(!_MasterCardViewMode)
+                    {
+                        if (ActiveSetCode == _CurrentSetCardInView.Code && ActiveSetRarity == _CurrentSetCardInView.Rarity)
+                        {
+                            tagLabel.ForeColor = Color.Red;
+                        }
+                    }
+
                     ////////////////////////////////////
 
                     Label tagLabel2 = new Label();
@@ -318,7 +326,15 @@ namespace YGO_Card_Collector_5
                     tagLabel2.Tag = x;
                     tagLabel2.Click += new EventHandler(SetCardLabel_clicked);
                     _TagLabelList.Add(tagLabel2);
-                  
+
+                    if (!_MasterCardViewMode)
+                    {
+                        if (ActiveSetCode == _CurrentSetCardInView.Code && ActiveSetRarity == _CurrentSetCardInView.Rarity)
+                        {
+                            tagLabel2.ForeColor = Color.Red;
+                        }
+                    }
+
 
                     //If the code for this set has an empty code, hide it,
                     //and dont move the Y_Location so the next tag takes it location
