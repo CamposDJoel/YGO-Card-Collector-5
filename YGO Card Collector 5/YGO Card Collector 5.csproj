@@ -54,6 +54,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\CollectorBigWinMode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CollectorBigWinMode.Designer.cs">
+      <DependentUpon>CollectorBigWinMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Collector.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Collector.Designer.cs">
+      <DependentUpon>Collector.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database\Database.cs" />
     <Compile Include="Forms\DatabaseManager.cs">
       <SubType>Form</SubType>
@@ -67,6 +79,7 @@
     <Compile Include="Forms\DBUpdateHoldScren.Designer.cs">
       <DependentUpon>DBUpdateHoldScren.cs</DependentUpon>
     </Compile>
+    <Compile Include="Utilities\ImageServer.cs" />
     <Compile Include="Seleniun Tools\Driver.cs" />
     <Compile Include="Seleniun Tools\Element.cs" />
     <Compile Include="Seleniun Pages\KonamiCardInfoPage.cs" />
@@ -85,7 +98,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Database\SetPack.cs" />
     <Compile Include="Seleniun Pages\TCGCardInfoPage.cs" />
+    <Compile Include="Database\SettingsData.cs" />
+    <Compile Include="Forms\SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utilities\Tools.cs" />
+    <EmbeddedResource Include="Forms\CollectorBigWinMode.resx">
+      <DependentUpon>CollectorBigWinMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Collector.resx">
+      <DependentUpon>Collector.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DatabaseManager.resx">
       <DependentUpon>DatabaseManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +130,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Forms\SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
