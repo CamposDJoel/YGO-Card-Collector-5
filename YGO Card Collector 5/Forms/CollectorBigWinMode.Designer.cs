@@ -1,6 +1,6 @@
 ﻿namespace YGO_Card_Collector_5
 {
-    partial class Collector
+    partial class CollectorBigWinMode
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Collector));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CollectorBigWinMode));
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnSetPriceReport = new System.Windows.Forms.Button();
+            this.btnBackToMainMenu = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.GroupCardView = new System.Windows.Forms.GroupBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.lblCardInfo_Name = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lblTCGLink = new System.Windows.Forms.Label();
+            this.lblProdeckLink = new System.Windows.Forms.Label();
+            this.lblKonamiLink = new System.Windows.Forms.Label();
+            this.lblCode = new System.Windows.Forms.Label();
+            this.lblCodelabel = new System.Windows.Forms.Label();
+            this.lblMedianPrice = new System.Windows.Forms.Label();
+            this.lblMedianPricelabel = new System.Windows.Forms.Label();
+            this.lblMarketPrice = new System.Windows.Forms.Label();
+            this.lblMarketPricelabel = new System.Windows.Forms.Label();
+            this.lblRarity = new System.Windows.Forms.Label();
+            this.lblRariryLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.PanelTagList = new System.Windows.Forms.Panel();
             this.PicImage = new System.Windows.Forms.PictureBox();
-            this.chkCollected = new System.Windows.Forms.CheckBox();
             this.btnClear = new System.Windows.Forms.Button();
             this.btnNextPage = new System.Windows.Forms.Button();
             this.btnPreviousPage = new System.Windows.Forms.Button();
+            this.chkCollected = new System.Windows.Forms.CheckBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.MonsterType = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -107,43 +126,15 @@
             this.btnGemini = new System.Windows.Forms.Button();
             this.btnSpirit = new System.Windows.Forms.Button();
             this.btnFlip = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.listSetGroups = new System.Windows.Forms.ListBox();
+            this.btnFilterSet = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.listSetlist = new System.Windows.Forms.ListBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.lblCardInfo_Name = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.lblTCGLink = new System.Windows.Forms.Label();
-            this.lblProdeckLink = new System.Windows.Forms.Label();
-            this.lblKonamiLink = new System.Windows.Forms.Label();
-            this.lblCode = new System.Windows.Forms.Label();
-            this.lblCodelabel = new System.Windows.Forms.Label();
-            this.lblMedianPrice = new System.Windows.Forms.Label();
-            this.lblMedianPricelabel = new System.Windows.Forms.Label();
-            this.lblMarketPrice = new System.Windows.Forms.Label();
-            this.lblMarketPricelabel = new System.Windows.Forms.Label();
-            this.lblRarity = new System.Windows.Forms.Label();
-            this.lblRariryLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnBackToMainMenu = new System.Windows.Forms.Button();
-            this.btnSetPriceReport = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.btnFilterSet = new System.Windows.Forms.Button();
+            this.listSetGroups = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.GroupCardViewVariants = new System.Windows.Forms.GroupBox();
+            this.btnNextPageVariant = new System.Windows.Forms.Button();
+            this.btnPreviousPageVariant = new System.Windows.Forms.Button();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.MonsterType.SuspendLayout();
@@ -155,20 +146,272 @@
             this.groupBox9.SuspendLayout();
             this.groupColor.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Indigo;
+            this.button2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(416, 1);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(114, 25);
+            this.button2.TabIndex = 268;
+            this.button2.Text = "Collection Stats";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // btnSetPriceReport
+            // 
+            this.btnSetPriceReport.BackColor = System.Drawing.Color.Green;
+            this.btnSetPriceReport.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetPriceReport.ForeColor = System.Drawing.Color.White;
+            this.btnSetPriceReport.Location = new System.Drawing.Point(290, 1);
+            this.btnSetPriceReport.Name = "btnSetPriceReport";
+            this.btnSetPriceReport.Size = new System.Drawing.Size(128, 25);
+            this.btnSetPriceReport.TabIndex = 267;
+            this.btnSetPriceReport.Text = "Sets Pricing Report";
+            this.btnSetPriceReport.UseVisualStyleBackColor = false;
+            // 
+            // btnBackToMainMenu
+            // 
+            this.btnBackToMainMenu.BackColor = System.Drawing.Color.Maroon;
+            this.btnBackToMainMenu.ForeColor = System.Drawing.Color.White;
+            this.btnBackToMainMenu.Location = new System.Drawing.Point(1, 1);
+            this.btnBackToMainMenu.Name = "btnBackToMainMenu";
+            this.btnBackToMainMenu.Size = new System.Drawing.Size(125, 25);
+            this.btnBackToMainMenu.TabIndex = 266;
+            this.btnBackToMainMenu.Text = "<-- Back to Main Menu";
+            this.btnBackToMainMenu.UseVisualStyleBackColor = false;
+            this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(186, 1);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 25);
+            this.button1.TabIndex = 265;
+            this.button1.Text = "Set Search Tool";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // GroupCardView
             // 
             this.GroupCardView.BackColor = System.Drawing.Color.Black;
             this.GroupCardView.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupCardView.ForeColor = System.Drawing.Color.Lime;
-            this.GroupCardView.Location = new System.Drawing.Point(5, 17);
+            this.GroupCardView.Location = new System.Drawing.Point(2, 27);
             this.GroupCardView.Name = "GroupCardView";
-            this.GroupCardView.Size = new System.Drawing.Size(456, 320);
-            this.GroupCardView.TabIndex = 1;
+            this.GroupCardView.Size = new System.Drawing.Size(710, 322);
+            this.GroupCardView.TabIndex = 269;
             this.GroupCardView.TabStop = false;
             this.GroupCardView.Text = "Page 1";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Black;
+            this.groupBox4.Controls.Add(this.lblCardInfo_Name);
+            this.groupBox4.Controls.Add(this.label9);
+            this.groupBox4.Controls.Add(this.label7);
+            this.groupBox4.Controls.Add(this.lblTCGLink);
+            this.groupBox4.Controls.Add(this.lblProdeckLink);
+            this.groupBox4.Controls.Add(this.lblKonamiLink);
+            this.groupBox4.Controls.Add(this.lblCode);
+            this.groupBox4.Controls.Add(this.lblCodelabel);
+            this.groupBox4.Controls.Add(this.lblMedianPrice);
+            this.groupBox4.Controls.Add(this.lblMedianPricelabel);
+            this.groupBox4.Controls.Add(this.lblMarketPrice);
+            this.groupBox4.Controls.Add(this.lblMarketPricelabel);
+            this.groupBox4.Controls.Add(this.lblRarity);
+            this.groupBox4.Controls.Add(this.lblRariryLabel);
+            this.groupBox4.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.groupBox4.Location = new System.Drawing.Point(715, 334);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(303, 116);
+            this.groupBox4.TabIndex = 273;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Card Info:";
+            // 
+            // lblCardInfo_Name
+            // 
+            this.lblCardInfo_Name.AutoSize = true;
+            this.lblCardInfo_Name.BackColor = System.Drawing.Color.Transparent;
+            this.lblCardInfo_Name.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCardInfo_Name.ForeColor = System.Drawing.Color.White;
+            this.lblCardInfo_Name.Location = new System.Drawing.Point(96, 13);
+            this.lblCardInfo_Name.Name = "lblCardInfo_Name";
+            this.lblCardInfo_Name.Size = new System.Drawing.Size(161, 16);
+            this.lblCardInfo_Name.TabIndex = 265;
+            this.lblCardInfo_Name.Text = "Super Mega Long Card Name";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label9.Location = new System.Drawing.Point(7, 13);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(93, 16);
+            this.label9.TabIndex = 264;
+            this.label9.Text = "Card TCG Name:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(161, 74);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 16);
+            this.label7.TabIndex = 263;
+            this.label7.Text = "Links:";
+            // 
+            // lblTCGLink
+            // 
+            this.lblTCGLink.BackColor = System.Drawing.Color.Yellow;
+            this.lblTCGLink.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblTCGLink.ForeColor = System.Drawing.Color.Black;
+            this.lblTCGLink.Location = new System.Drawing.Point(221, 90);
+            this.lblTCGLink.Name = "lblTCGLink";
+            this.lblTCGLink.Size = new System.Drawing.Size(74, 15);
+            this.lblTCGLink.TabIndex = 262;
+            this.lblTCGLink.Text = "TCG Listing";
+            this.lblTCGLink.Visible = false;
+            this.lblTCGLink.Click += new System.EventHandler(this.lblTCGLink_Click);
+            // 
+            // lblProdeckLink
+            // 
+            this.lblProdeckLink.BackColor = System.Drawing.Color.Yellow;
+            this.lblProdeckLink.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblProdeckLink.ForeColor = System.Drawing.Color.Black;
+            this.lblProdeckLink.Location = new System.Drawing.Point(141, 92);
+            this.lblProdeckLink.Name = "lblProdeckLink";
+            this.lblProdeckLink.Size = new System.Drawing.Size(74, 15);
+            this.lblProdeckLink.TabIndex = 261;
+            this.lblProdeckLink.Text = "Prodeck\'s DB";
+            this.lblProdeckLink.Visible = false;
+            this.lblProdeckLink.Click += new System.EventHandler(this.lblProdeckLink_Click);
+            // 
+            // lblKonamiLink
+            // 
+            this.lblKonamiLink.BackColor = System.Drawing.Color.Yellow;
+            this.lblKonamiLink.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblKonamiLink.ForeColor = System.Drawing.Color.Black;
+            this.lblKonamiLink.Location = new System.Drawing.Point(221, 73);
+            this.lblKonamiLink.Name = "lblKonamiLink";
+            this.lblKonamiLink.Size = new System.Drawing.Size(74, 15);
+            this.lblKonamiLink.TabIndex = 260;
+            this.lblKonamiLink.Text = "Konami\'s DB";
+            this.lblKonamiLink.Click += new System.EventHandler(this.lblKonamiLink_Click);
+            // 
+            // lblCode
+            // 
+            this.lblCode.AutoSize = true;
+            this.lblCode.BackColor = System.Drawing.Color.Transparent;
+            this.lblCode.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCode.ForeColor = System.Drawing.Color.White;
+            this.lblCode.Location = new System.Drawing.Point(51, 34);
+            this.lblCode.Name = "lblCode";
+            this.lblCode.Size = new System.Drawing.Size(73, 16);
+            this.lblCode.TabIndex = 259;
+            this.lblCode.Text = "LOTD-EN999";
+            this.lblCode.Visible = false;
+            // 
+            // lblCodelabel
+            // 
+            this.lblCodelabel.AutoSize = true;
+            this.lblCodelabel.BackColor = System.Drawing.Color.Transparent;
+            this.lblCodelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblCodelabel.Location = new System.Drawing.Point(7, 30);
+            this.lblCodelabel.Name = "lblCodelabel";
+            this.lblCodelabel.Size = new System.Drawing.Size(39, 16);
+            this.lblCodelabel.TabIndex = 258;
+            this.lblCodelabel.Text = "Code:";
+            this.lblCodelabel.Visible = false;
+            // 
+            // lblMedianPrice
+            // 
+            this.lblMedianPrice.AutoSize = true;
+            this.lblMedianPrice.BackColor = System.Drawing.Color.Transparent;
+            this.lblMedianPrice.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMedianPrice.ForeColor = System.Drawing.Color.White;
+            this.lblMedianPrice.Location = new System.Drawing.Point(82, 90);
+            this.lblMedianPrice.Name = "lblMedianPrice";
+            this.lblMedianPrice.Size = new System.Drawing.Size(52, 16);
+            this.lblMedianPrice.TabIndex = 257;
+            this.lblMedianPrice.Text = "99999.99";
+            this.lblMedianPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblMedianPrice.Visible = false;
+            // 
+            // lblMedianPricelabel
+            // 
+            this.lblMedianPricelabel.AutoSize = true;
+            this.lblMedianPricelabel.BackColor = System.Drawing.Color.Transparent;
+            this.lblMedianPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMedianPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblMedianPricelabel.Location = new System.Drawing.Point(7, 90);
+            this.lblMedianPricelabel.Name = "lblMedianPricelabel";
+            this.lblMedianPricelabel.Size = new System.Drawing.Size(78, 16);
+            this.lblMedianPricelabel.TabIndex = 256;
+            this.lblMedianPricelabel.Text = "Median Price:";
+            this.lblMedianPricelabel.Visible = false;
+            // 
+            // lblMarketPrice
+            // 
+            this.lblMarketPrice.AutoSize = true;
+            this.lblMarketPrice.BackColor = System.Drawing.Color.Transparent;
+            this.lblMarketPrice.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarketPrice.ForeColor = System.Drawing.Color.White;
+            this.lblMarketPrice.Location = new System.Drawing.Point(82, 70);
+            this.lblMarketPrice.Name = "lblMarketPrice";
+            this.lblMarketPrice.Size = new System.Drawing.Size(52, 16);
+            this.lblMarketPrice.TabIndex = 255;
+            this.lblMarketPrice.Text = "99999.99";
+            this.lblMarketPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblMarketPrice.Visible = false;
+            // 
+            // lblMarketPricelabel
+            // 
+            this.lblMarketPricelabel.AutoSize = true;
+            this.lblMarketPricelabel.BackColor = System.Drawing.Color.Transparent;
+            this.lblMarketPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarketPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblMarketPricelabel.Location = new System.Drawing.Point(7, 70);
+            this.lblMarketPricelabel.Name = "lblMarketPricelabel";
+            this.lblMarketPricelabel.Size = new System.Drawing.Size(75, 16);
+            this.lblMarketPricelabel.TabIndex = 254;
+            this.lblMarketPricelabel.Text = "Market Price:";
+            this.lblMarketPricelabel.Visible = false;
+            // 
+            // lblRarity
+            // 
+            this.lblRarity.AutoSize = true;
+            this.lblRarity.BackColor = System.Drawing.Color.Transparent;
+            this.lblRarity.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRarity.ForeColor = System.Drawing.Color.Plum;
+            this.lblRarity.Location = new System.Drawing.Point(51, 52);
+            this.lblRarity.Name = "lblRarity";
+            this.lblRarity.Size = new System.Drawing.Size(110, 16);
+            this.lblRarity.TabIndex = 253;
+            this.lblRarity.Text = "Prismatic Gold Rare";
+            this.lblRarity.Visible = false;
+            // 
+            // lblRariryLabel
+            // 
+            this.lblRariryLabel.AutoSize = true;
+            this.lblRariryLabel.BackColor = System.Drawing.Color.Transparent;
+            this.lblRariryLabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRariryLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblRariryLabel.Location = new System.Drawing.Point(7, 48);
+            this.lblRariryLabel.Name = "lblRariryLabel";
+            this.lblRariryLabel.Size = new System.Drawing.Size(45, 16);
+            this.lblRariryLabel.TabIndex = 252;
+            this.lblRariryLabel.Text = "Rarity: ";
+            this.lblRariryLabel.Visible = false;
             // 
             // label3
             // 
@@ -176,10 +419,10 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(644, 4);
+            this.label3.Location = new System.Drawing.Point(922, 10);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 20);
-            this.label3.TabIndex = 231;
+            this.label3.TabIndex = 270;
             this.label3.Text = "Set Cards:";
             // 
             // PanelTagList
@@ -187,45 +430,32 @@
             this.PanelTagList.AutoScroll = true;
             this.PanelTagList.BackColor = System.Drawing.Color.Black;
             this.PanelTagList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanelTagList.Location = new System.Drawing.Point(641, 26);
+            this.PanelTagList.Location = new System.Drawing.Point(924, 32);
             this.PanelTagList.Name = "PanelTagList";
-            this.PanelTagList.Size = new System.Drawing.Size(131, 248);
-            this.PanelTagList.TabIndex = 233;
+            this.PanelTagList.Size = new System.Drawing.Size(131, 296);
+            this.PanelTagList.TabIndex = 272;
             // 
             // PicImage
             // 
             this.PicImage.BackColor = System.Drawing.Color.Transparent;
             this.PicImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PicImage.Image = ((System.Drawing.Image)(resources.GetObject("PicImage.Image")));
-            this.PicImage.Location = new System.Drawing.Point(467, 26);
+            this.PicImage.Location = new System.Drawing.Point(715, 32);
             this.PicImage.Name = "PicImage";
-            this.PicImage.Size = new System.Drawing.Size(173, 248);
+            this.PicImage.Size = new System.Drawing.Size(209, 296);
             this.PicImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PicImage.TabIndex = 232;
+            this.PicImage.TabIndex = 271;
             this.PicImage.TabStop = false;
-            // 
-            // chkCollected
-            // 
-            this.chkCollected.BackColor = System.Drawing.Color.Black;
-            this.chkCollected.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkCollected.ForeColor = System.Drawing.Color.White;
-            this.chkCollected.Location = new System.Drawing.Point(117, 337);
-            this.chkCollected.Name = "chkCollected";
-            this.chkCollected.Size = new System.Drawing.Size(145, 22);
-            this.chkCollected.TabIndex = 236;
-            this.chkCollected.Text = "Your Collection View";
-            this.chkCollected.UseVisualStyleBackColor = false;
-            this.chkCollected.CheckedChanged += new System.EventHandler(this.chkCollected_CheckedChanged);
             // 
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.Red;
             this.btnClear.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Black;
-            this.btnClear.Location = new System.Drawing.Point(264, 336);
+            this.btnClear.Location = new System.Drawing.Point(502, 349);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(94, 25);
-            this.btnClear.TabIndex = 239;
+            this.btnClear.TabIndex = 277;
             this.btnClear.Text = "Clear Filter";
             this.btnClear.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnClear.UseVisualStyleBackColor = false;
@@ -237,10 +467,10 @@
             this.btnNextPage.BackColor = System.Drawing.Color.Green;
             this.btnNextPage.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNextPage.ForeColor = System.Drawing.Color.White;
-            this.btnNextPage.Location = new System.Drawing.Point(359, 336);
+            this.btnNextPage.Location = new System.Drawing.Point(111, 349);
             this.btnNextPage.Name = "btnNextPage";
             this.btnNextPage.Size = new System.Drawing.Size(103, 25);
-            this.btnNextPage.TabIndex = 238;
+            this.btnNextPage.TabIndex = 276;
             this.btnNextPage.Text = " Next Page >>";
             this.btnNextPage.UseVisualStyleBackColor = false;
             this.btnNextPage.Click += new System.EventHandler(this.btnNextPage_Click);
@@ -250,23 +480,36 @@
             this.btnPreviousPage.BackColor = System.Drawing.Color.Green;
             this.btnPreviousPage.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPreviousPage.ForeColor = System.Drawing.Color.White;
-            this.btnPreviousPage.Location = new System.Drawing.Point(4, 336);
+            this.btnPreviousPage.Location = new System.Drawing.Point(1, 349);
             this.btnPreviousPage.Name = "btnPreviousPage";
             this.btnPreviousPage.Size = new System.Drawing.Size(110, 25);
-            this.btnPreviousPage.TabIndex = 237;
+            this.btnPreviousPage.TabIndex = 275;
             this.btnPreviousPage.Text = "<< Previous Page";
             this.btnPreviousPage.UseVisualStyleBackColor = false;
             this.btnPreviousPage.Click += new System.EventHandler(this.btnPreviousPage_Click);
+            // 
+            // chkCollected
+            // 
+            this.chkCollected.BackColor = System.Drawing.Color.Black;
+            this.chkCollected.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCollected.ForeColor = System.Drawing.Color.White;
+            this.chkCollected.Location = new System.Drawing.Point(355, 350);
+            this.chkCollected.Name = "chkCollected";
+            this.chkCollected.Size = new System.Drawing.Size(145, 22);
+            this.chkCollected.TabIndex = 274;
+            this.chkCollected.Text = "Your Collection View";
+            this.chkCollected.UseVisualStyleBackColor = false;
+            this.chkCollected.CheckedChanged += new System.EventHandler(this.chkCollected_CheckedChanged);
             // 
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.MonsterType);
             this.tabControl2.Controls.Add(this.tabPage2);
-            this.tabControl2.Location = new System.Drawing.Point(5, 362);
+            this.tabControl2.Location = new System.Drawing.Point(12, 496);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(374, 142);
-            this.tabControl2.TabIndex = 240;
+            this.tabControl2.Size = new System.Drawing.Size(406, 153);
+            this.tabControl2.TabIndex = 278;
             // 
             // MonsterType
             // 
@@ -278,7 +521,7 @@
             this.MonsterType.Location = new System.Drawing.Point(4, 22);
             this.MonsterType.Name = "MonsterType";
             this.MonsterType.Padding = new System.Windows.Forms.Padding(3);
-            this.MonsterType.Size = new System.Drawing.Size(366, 116);
+            this.MonsterType.Size = new System.Drawing.Size(398, 127);
             this.MonsterType.TabIndex = 0;
             this.MonsterType.Text = "Main Card Filters";
             // 
@@ -630,7 +873,7 @@
             this.groupSpell.Controls.Add(this.btnNormalSpell);
             this.groupSpell.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupSpell.ForeColor = System.Drawing.Color.Yellow;
-            this.groupSpell.Location = new System.Drawing.Point(270, -1);
+            this.groupSpell.Location = new System.Drawing.Point(292, -1);
             this.groupSpell.Name = "groupSpell";
             this.groupSpell.Size = new System.Drawing.Size(93, 77);
             this.groupSpell.TabIndex = 207;
@@ -717,7 +960,7 @@
             this.groupBox2.Controls.Add(this.btnNormalTrap);
             this.groupBox2.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.Yellow;
-            this.groupBox2.Location = new System.Drawing.Point(270, 72);
+            this.groupBox2.Location = new System.Drawing.Point(292, 72);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(93, 47);
             this.groupBox2.TabIndex = 208;
@@ -772,7 +1015,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(366, 116);
+            this.tabPage2.Size = new System.Drawing.Size(398, 127);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Other Filters";
             // 
@@ -1186,17 +1429,42 @@
             this.btnFlip.UseVisualStyleBackColor = false;
             this.btnFlip.Click += new System.EventHandler(this.btnFlip_Click);
             // 
-            // label2
+            // btnFilterSet
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(378, 362);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 20);
-            this.label2.TabIndex = 247;
-            this.label2.Text = "Select Set Group:";
+            this.btnFilterSet.BackColor = System.Drawing.Color.Purple;
+            this.btnFilterSet.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFilterSet.ForeColor = System.Drawing.Color.White;
+            this.btnFilterSet.Location = new System.Drawing.Point(908, 465);
+            this.btnFilterSet.Name = "btnFilterSet";
+            this.btnFilterSet.Size = new System.Drawing.Size(130, 25);
+            this.btnFilterSet.TabIndex = 283;
+            this.btnFilterSet.Text = "Show Selected Set";
+            this.btnFilterSet.UseVisualStyleBackColor = false;
+            this.btnFilterSet.Click += new System.EventHandler(this.btnFilterSet_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Yellow;
+            this.label4.Location = new System.Drawing.Point(627, 472);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 20);
+            this.label4.TabIndex = 282;
+            this.label4.Text = "Select Set:";
+            // 
+            // listSetlist
+            // 
+            this.listSetlist.BackColor = System.Drawing.Color.Black;
+            this.listSetlist.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listSetlist.ForeColor = System.Drawing.Color.White;
+            this.listSetlist.FormattingEnabled = true;
+            this.listSetlist.ItemHeight = 14;
+            this.listSetlist.Location = new System.Drawing.Point(630, 491);
+            this.listSetlist.Name = "listSetlist";
+            this.listSetlist.Size = new System.Drawing.Size(408, 158);
+            this.listSetlist.TabIndex = 281;
             // 
             // listSetGroups
             // 
@@ -1219,455 +1487,99 @@
             "Tournaments",
             "Promotional Cards",
             "Video Game Bundles"});
-            this.listSetGroups.Location = new System.Drawing.Point(380, 381);
+            this.listSetGroups.Location = new System.Drawing.Point(467, 491);
             this.listSetGroups.Name = "listSetGroups";
-            this.listSetGroups.Size = new System.Drawing.Size(122, 116);
-            this.listSetGroups.TabIndex = 246;
+            this.listSetGroups.Size = new System.Drawing.Size(159, 158);
+            this.listSetGroups.TabIndex = 280;
             this.listSetGroups.SelectedIndexChanged += new System.EventHandler(this.listSetGroups_SelectedIndexChanged);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Yellow;
-            this.label4.Location = new System.Drawing.Point(502, 362);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 20);
-            this.label4.TabIndex = 249;
-            this.label4.Text = "Select Set:";
-            // 
-            // listSetlist
-            // 
-            this.listSetlist.BackColor = System.Drawing.Color.Black;
-            this.listSetlist.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listSetlist.ForeColor = System.Drawing.Color.White;
-            this.listSetlist.FormattingEnabled = true;
-            this.listSetlist.ItemHeight = 14;
-            this.listSetlist.Location = new System.Drawing.Point(503, 381);
-            this.listSetlist.Name = "listSetlist";
-            this.listSetlist.Size = new System.Drawing.Size(269, 116);
-            this.listSetlist.TabIndex = 248;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.Color.Black;
-            this.groupBox4.Controls.Add(this.lblCardInfo_Name);
-            this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.lblTCGLink);
-            this.groupBox4.Controls.Add(this.lblProdeckLink);
-            this.groupBox4.Controls.Add(this.lblKonamiLink);
-            this.groupBox4.Controls.Add(this.lblCode);
-            this.groupBox4.Controls.Add(this.lblCodelabel);
-            this.groupBox4.Controls.Add(this.lblMedianPrice);
-            this.groupBox4.Controls.Add(this.lblMedianPricelabel);
-            this.groupBox4.Controls.Add(this.lblMarketPrice);
-            this.groupBox4.Controls.Add(this.lblMarketPricelabel);
-            this.groupBox4.Controls.Add(this.lblRarity);
-            this.groupBox4.Controls.Add(this.lblRariryLabel);
-            this.groupBox4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox4.Location = new System.Drawing.Point(468, 276);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(303, 85);
-            this.groupBox4.TabIndex = 250;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Card Info:";
-            // 
-            // lblCardInfo_Name
-            // 
-            this.lblCardInfo_Name.AutoSize = true;
-            this.lblCardInfo_Name.BackColor = System.Drawing.Color.Transparent;
-            this.lblCardInfo_Name.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCardInfo_Name.ForeColor = System.Drawing.Color.White;
-            this.lblCardInfo_Name.Location = new System.Drawing.Point(96, 9);
-            this.lblCardInfo_Name.Name = "lblCardInfo_Name";
-            this.lblCardInfo_Name.Size = new System.Drawing.Size(161, 16);
-            this.lblCardInfo_Name.TabIndex = 265;
-            this.lblCardInfo_Name.Text = "Super Mega Long Card Name";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label9.Location = new System.Drawing.Point(7, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(93, 16);
-            this.label9.TabIndex = 264;
-            this.label9.Text = "Card TCG Name:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(157, 48);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 16);
-            this.label7.TabIndex = 263;
-            this.label7.Text = "Links:";
-            // 
-            // lblTCGLink
-            // 
-            this.lblTCGLink.BackColor = System.Drawing.Color.Yellow;
-            this.lblTCGLink.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblTCGLink.ForeColor = System.Drawing.Color.Black;
-            this.lblTCGLink.Location = new System.Drawing.Point(217, 66);
-            this.lblTCGLink.Name = "lblTCGLink";
-            this.lblTCGLink.Size = new System.Drawing.Size(74, 15);
-            this.lblTCGLink.TabIndex = 262;
-            this.lblTCGLink.Text = "TCG Listing";
-            this.lblTCGLink.Visible = false;
-            this.lblTCGLink.Click += new System.EventHandler(this.lblTCGLink_Click);
-            // 
-            // lblProdeckLink
-            // 
-            this.lblProdeckLink.BackColor = System.Drawing.Color.Yellow;
-            this.lblProdeckLink.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblProdeckLink.ForeColor = System.Drawing.Color.Black;
-            this.lblProdeckLink.Location = new System.Drawing.Point(137, 66);
-            this.lblProdeckLink.Name = "lblProdeckLink";
-            this.lblProdeckLink.Size = new System.Drawing.Size(74, 15);
-            this.lblProdeckLink.TabIndex = 261;
-            this.lblProdeckLink.Text = "Prodeck\'s DB";
-            this.lblProdeckLink.Visible = false;
-            this.lblProdeckLink.Click += new System.EventHandler(this.lblProdeckLink_Click);
-            // 
-            // lblKonamiLink
-            // 
-            this.lblKonamiLink.BackColor = System.Drawing.Color.Yellow;
-            this.lblKonamiLink.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.lblKonamiLink.ForeColor = System.Drawing.Color.Black;
-            this.lblKonamiLink.Location = new System.Drawing.Point(217, 49);
-            this.lblKonamiLink.Name = "lblKonamiLink";
-            this.lblKonamiLink.Size = new System.Drawing.Size(74, 15);
-            this.lblKonamiLink.TabIndex = 260;
-            this.lblKonamiLink.Text = "Konami\'s DB";
-            this.lblKonamiLink.Click += new System.EventHandler(this.lblKonamiLink_Click);
-            // 
-            // lblCode
-            // 
-            this.lblCode.AutoSize = true;
-            this.lblCode.BackColor = System.Drawing.Color.Transparent;
-            this.lblCode.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCode.ForeColor = System.Drawing.Color.White;
-            this.lblCode.Location = new System.Drawing.Point(51, 22);
-            this.lblCode.Name = "lblCode";
-            this.lblCode.Size = new System.Drawing.Size(73, 16);
-            this.lblCode.TabIndex = 259;
-            this.lblCode.Text = "LOTD-EN999";
-            this.lblCode.Visible = false;
-            // 
-            // lblCodelabel
-            // 
-            this.lblCodelabel.AutoSize = true;
-            this.lblCodelabel.BackColor = System.Drawing.Color.Transparent;
-            this.lblCodelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblCodelabel.Location = new System.Drawing.Point(7, 22);
-            this.lblCodelabel.Name = "lblCodelabel";
-            this.lblCodelabel.Size = new System.Drawing.Size(39, 16);
-            this.lblCodelabel.TabIndex = 258;
-            this.lblCodelabel.Text = "Code:";
-            this.lblCodelabel.Visible = false;
-            // 
-            // lblMedianPrice
-            // 
-            this.lblMedianPrice.AutoSize = true;
-            this.lblMedianPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblMedianPrice.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMedianPrice.ForeColor = System.Drawing.Color.White;
-            this.lblMedianPrice.Location = new System.Drawing.Point(82, 67);
-            this.lblMedianPrice.Name = "lblMedianPrice";
-            this.lblMedianPrice.Size = new System.Drawing.Size(52, 16);
-            this.lblMedianPrice.TabIndex = 257;
-            this.lblMedianPrice.Text = "99999.99";
-            this.lblMedianPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblMedianPrice.Visible = false;
-            // 
-            // lblMedianPricelabel
-            // 
-            this.lblMedianPricelabel.AutoSize = true;
-            this.lblMedianPricelabel.BackColor = System.Drawing.Color.Transparent;
-            this.lblMedianPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMedianPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMedianPricelabel.Location = new System.Drawing.Point(7, 66);
-            this.lblMedianPricelabel.Name = "lblMedianPricelabel";
-            this.lblMedianPricelabel.Size = new System.Drawing.Size(78, 16);
-            this.lblMedianPricelabel.TabIndex = 256;
-            this.lblMedianPricelabel.Text = "Median Price:";
-            this.lblMedianPricelabel.Visible = false;
-            // 
-            // lblMarketPrice
-            // 
-            this.lblMarketPrice.AutoSize = true;
-            this.lblMarketPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblMarketPrice.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarketPrice.ForeColor = System.Drawing.Color.White;
-            this.lblMarketPrice.Location = new System.Drawing.Point(82, 51);
-            this.lblMarketPrice.Name = "lblMarketPrice";
-            this.lblMarketPrice.Size = new System.Drawing.Size(52, 16);
-            this.lblMarketPrice.TabIndex = 255;
-            this.lblMarketPrice.Text = "99999.99";
-            this.lblMarketPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblMarketPrice.Visible = false;
-            // 
-            // lblMarketPricelabel
-            // 
-            this.lblMarketPricelabel.AutoSize = true;
-            this.lblMarketPricelabel.BackColor = System.Drawing.Color.Transparent;
-            this.lblMarketPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarketPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMarketPricelabel.Location = new System.Drawing.Point(7, 50);
-            this.lblMarketPricelabel.Name = "lblMarketPricelabel";
-            this.lblMarketPricelabel.Size = new System.Drawing.Size(75, 16);
-            this.lblMarketPricelabel.TabIndex = 254;
-            this.lblMarketPricelabel.Text = "Market Price:";
-            this.lblMarketPricelabel.Visible = false;
-            // 
-            // lblRarity
-            // 
-            this.lblRarity.AutoSize = true;
-            this.lblRarity.BackColor = System.Drawing.Color.Transparent;
-            this.lblRarity.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRarity.ForeColor = System.Drawing.Color.Plum;
-            this.lblRarity.Location = new System.Drawing.Point(51, 36);
-            this.lblRarity.Name = "lblRarity";
-            this.lblRarity.Size = new System.Drawing.Size(110, 16);
-            this.lblRarity.TabIndex = 253;
-            this.lblRarity.Text = "Prismatic Gold Rare";
-            this.lblRarity.Visible = false;
-            // 
-            // lblRariryLabel
-            // 
-            this.lblRariryLabel.AutoSize = true;
-            this.lblRariryLabel.BackColor = System.Drawing.Color.Transparent;
-            this.lblRariryLabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRariryLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblRariryLabel.Location = new System.Drawing.Point(7, 36);
-            this.lblRariryLabel.Name = "lblRariryLabel";
-            this.lblRariryLabel.Size = new System.Drawing.Size(45, 16);
-            this.lblRariryLabel.TabIndex = 252;
-            this.lblRariryLabel.Text = "Rarity: ";
-            this.lblRariryLabel.Visible = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.Font = new System.Drawing.Font("Calibri Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(196, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 20);
-            this.button1.TabIndex = 261;
-            this.button1.Text = "Set Search Tool";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // btnBackToMainMenu
-            // 
-            this.btnBackToMainMenu.BackColor = System.Drawing.Color.Maroon;
-            this.btnBackToMainMenu.ForeColor = System.Drawing.Color.White;
-            this.btnBackToMainMenu.Location = new System.Drawing.Point(11, 0);
-            this.btnBackToMainMenu.Name = "btnBackToMainMenu";
-            this.btnBackToMainMenu.Size = new System.Drawing.Size(125, 20);
-            this.btnBackToMainMenu.TabIndex = 262;
-            this.btnBackToMainMenu.Text = "<-- Back to Main Menu";
-            this.btnBackToMainMenu.UseVisualStyleBackColor = false;
-            this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
-            // 
-            // btnSetPriceReport
-            // 
-            this.btnSetPriceReport.BackColor = System.Drawing.Color.Green;
-            this.btnSetPriceReport.Font = new System.Drawing.Font("Calibri Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetPriceReport.ForeColor = System.Drawing.Color.Black;
-            this.btnSetPriceReport.Location = new System.Drawing.Point(288, 0);
-            this.btnSetPriceReport.Name = "btnSetPriceReport";
-            this.btnSetPriceReport.Size = new System.Drawing.Size(114, 20);
-            this.btnSetPriceReport.TabIndex = 263;
-            this.btnSetPriceReport.Text = "Sets Pricing Report";
-            this.btnSetPriceReport.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSetPriceReport.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Indigo;
-            this.button2.Font = new System.Drawing.Font("Calibri Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(401, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 20);
-            this.button2.TabIndex = 264;
-            this.button2.Text = "Collection Stats";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // panel14
-            // 
-            this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel14.Location = new System.Drawing.Point(1159, 31);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(47, 60);
-            this.panel14.TabIndex = 277;
-            // 
-            // panel15
-            // 
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Location = new System.Drawing.Point(1113, 31);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(47, 60);
-            this.panel15.TabIndex = 276;
-            // 
-            // panel16
-            // 
-            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Location = new System.Drawing.Point(929, 31);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(47, 60);
-            this.panel16.TabIndex = 270;
-            // 
-            // panel17
-            // 
-            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Location = new System.Drawing.Point(1021, 31);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(47, 60);
-            this.panel17.TabIndex = 274;
-            // 
-            // panel18
-            // 
-            this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel18.Location = new System.Drawing.Point(837, 31);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(47, 60);
-            this.panel18.TabIndex = 266;
-            // 
-            // panel19
-            // 
-            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel19.Location = new System.Drawing.Point(1067, 31);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(47, 60);
-            this.panel19.TabIndex = 275;
-            // 
-            // panel20
-            // 
-            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel20.Location = new System.Drawing.Point(883, 31);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(47, 60);
-            this.panel20.TabIndex = 268;
-            // 
-            // panel21
-            // 
-            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel21.Location = new System.Drawing.Point(975, 31);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(47, 60);
-            this.panel21.TabIndex = 272;
-            // 
-            // panel22
-            // 
-            this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel22.Location = new System.Drawing.Point(791, 267);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(47, 60);
-            this.panel22.TabIndex = 273;
-            // 
-            // panel23
-            // 
-            this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel23.Location = new System.Drawing.Point(791, 208);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(47, 60);
-            this.panel23.TabIndex = 271;
-            // 
-            // panel24
-            // 
-            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel24.Location = new System.Drawing.Point(791, 90);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(47, 60);
-            this.panel24.TabIndex = 267;
-            // 
-            // panel25
-            // 
-            this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel25.Location = new System.Drawing.Point(791, 149);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(47, 60);
-            this.panel25.TabIndex = 269;
-            // 
-            // panel26
-            // 
-            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel26.Location = new System.Drawing.Point(791, 31);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(47, 60);
-            this.panel26.TabIndex = 265;
-            // 
-            // btnFilterSet
-            // 
-            this.btnFilterSet.BackColor = System.Drawing.Color.Purple;
-            this.btnFilterSet.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilterSet.ForeColor = System.Drawing.Color.White;
-            this.btnFilterSet.Location = new System.Drawing.Point(661, 361);
-            this.btnFilterSet.Name = "btnFilterSet";
-            this.btnFilterSet.Size = new System.Drawing.Size(109, 20);
-            this.btnFilterSet.TabIndex = 278;
-            this.btnFilterSet.Text = "Show Selected Set";
-            this.btnFilterSet.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnFilterSet.UseVisualStyleBackColor = false;
-            this.btnFilterSet.Click += new System.EventHandler(this.btnFilterSet_Click);
-            // 
-            // Collector
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Yellow;
+            this.label2.Location = new System.Drawing.Point(464, 471);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 20);
+            this.label2.TabIndex = 284;
+            this.label2.Text = "Select Set Group:";
+            // 
+            // GroupCardViewVariants
+            // 
+            this.GroupCardViewVariants.BackColor = System.Drawing.Color.Black;
+            this.GroupCardViewVariants.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupCardViewVariants.ForeColor = System.Drawing.Color.Lime;
+            this.GroupCardViewVariants.Location = new System.Drawing.Point(1, 384);
+            this.GroupCardViewVariants.Name = "GroupCardViewVariants";
+            this.GroupCardViewVariants.Size = new System.Drawing.Size(710, 82);
+            this.GroupCardViewVariants.TabIndex = 285;
+            this.GroupCardViewVariants.TabStop = false;
+            this.GroupCardViewVariants.Text = "Page 1";
+            // 
+            // btnNextPageVariant
+            // 
+            this.btnNextPageVariant.BackColor = System.Drawing.Color.Green;
+            this.btnNextPageVariant.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNextPageVariant.ForeColor = System.Drawing.Color.White;
+            this.btnNextPageVariant.Location = new System.Drawing.Point(111, 466);
+            this.btnNextPageVariant.Name = "btnNextPageVariant";
+            this.btnNextPageVariant.Size = new System.Drawing.Size(103, 25);
+            this.btnNextPageVariant.TabIndex = 287;
+            this.btnNextPageVariant.Text = " Next Page >>";
+            this.btnNextPageVariant.UseVisualStyleBackColor = false;
+            this.btnNextPageVariant.Click += new System.EventHandler(this.btnNextPageVariant_Click);
+            // 
+            // btnPreviousPageVariant
+            // 
+            this.btnPreviousPageVariant.BackColor = System.Drawing.Color.Green;
+            this.btnPreviousPageVariant.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreviousPageVariant.ForeColor = System.Drawing.Color.White;
+            this.btnPreviousPageVariant.Location = new System.Drawing.Point(1, 466);
+            this.btnPreviousPageVariant.Name = "btnPreviousPageVariant";
+            this.btnPreviousPageVariant.Size = new System.Drawing.Size(110, 25);
+            this.btnPreviousPageVariant.TabIndex = 286;
+            this.btnPreviousPageVariant.Text = "<< Previous Page";
+            this.btnPreviousPageVariant.UseVisualStyleBackColor = false;
+            this.btnPreviousPageVariant.Click += new System.EventHandler(this.btnPreviousPageVariant_Click);
+            // 
+            // CollectorBigWinMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(775, 508);
+            this.ClientSize = new System.Drawing.Size(1056, 650);
+            this.Controls.Add(this.btnNextPageVariant);
+            this.Controls.Add(this.btnPreviousPageVariant);
+            this.Controls.Add(this.GroupCardViewVariants);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.btnFilterSet);
-            this.Controls.Add(this.panel14);
-            this.Controls.Add(this.panel15);
-            this.Controls.Add(this.panel16);
-            this.Controls.Add(this.panel17);
-            this.Controls.Add(this.panel18);
-            this.Controls.Add(this.panel19);
-            this.Controls.Add(this.panel20);
-            this.Controls.Add(this.panel21);
-            this.Controls.Add(this.panel22);
-            this.Controls.Add(this.panel23);
-            this.Controls.Add(this.panel24);
-            this.Controls.Add(this.panel25);
-            this.Controls.Add(this.panel26);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btnSetPriceReport);
-            this.Controls.Add(this.btnBackToMainMenu);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listSetlist);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.listSetGroups);
             this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnNextPage);
             this.Controls.Add(this.btnPreviousPage);
             this.Controls.Add(this.chkCollected);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.PanelTagList);
             this.Controls.Add(this.PicImage);
             this.Controls.Add(this.GroupCardView);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnSetPriceReport);
+            this.Controls.Add(this.btnBackToMainMenu);
+            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Collector";
+            this.Name = "CollectorBigWinMode";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Collector - YGO Card Collector 5";
+            this.Text = "Collector Big Window Mode - YGO Card Collector 5";
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).EndInit();
             this.tabControl2.ResumeLayout(false);
             this.MonsterType.ResumeLayout(false);
@@ -1680,8 +1592,6 @@
             this.groupBox9.ResumeLayout(false);
             this.groupColor.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1689,17 +1599,37 @@
 
         #endregion
 
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnSetPriceReport;
+        private System.Windows.Forms.Button btnBackToMainMenu;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox GroupCardView;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label lblCardInfo_Name;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblTCGLink;
+        private System.Windows.Forms.Label lblProdeckLink;
+        private System.Windows.Forms.Label lblKonamiLink;
+        private System.Windows.Forms.Label lblCode;
+        private System.Windows.Forms.Label lblCodelabel;
+        private System.Windows.Forms.Label lblMedianPrice;
+        private System.Windows.Forms.Label lblMedianPricelabel;
+        private System.Windows.Forms.Label lblMarketPrice;
+        private System.Windows.Forms.Label lblMarketPricelabel;
+        private System.Windows.Forms.Label lblRarity;
+        private System.Windows.Forms.Label lblRariryLabel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel PanelTagList;
         private System.Windows.Forms.PictureBox PicImage;
-        private System.Windows.Forms.CheckBox chkCollected;
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnNextPage;
         private System.Windows.Forms.Button btnPreviousPage;
+        private System.Windows.Forms.CheckBox chkCollected;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage MonsterType;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btnFilterIllusion;
         private System.Windows.Forms.Button btnFilterZombie;
         private System.Windows.Forms.Button btnFilterWyrm;
         private System.Windows.Forms.Button btnFilterWingedBeast;
@@ -1766,43 +1696,13 @@
         private System.Windows.Forms.Button btnGemini;
         private System.Windows.Forms.Button btnSpirit;
         private System.Windows.Forms.Button btnFlip;
-        private System.Windows.Forms.Button btnFilterIllusion;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ListBox listSetGroups;
+        private System.Windows.Forms.Button btnFilterSet;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listSetlist;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnBackToMainMenu;
-        private System.Windows.Forms.Button btnSetPriceReport;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label lblProdeckLink;
-        private System.Windows.Forms.Label lblKonamiLink;
-        private System.Windows.Forms.Label lblCode;
-        private System.Windows.Forms.Label lblCodelabel;
-        private System.Windows.Forms.Label lblMedianPrice;
-        private System.Windows.Forms.Label lblMedianPricelabel;
-        private System.Windows.Forms.Label lblMarketPrice;
-        private System.Windows.Forms.Label lblMarketPricelabel;
-        private System.Windows.Forms.Label lblRarity;
-        private System.Windows.Forms.Label lblRariryLabel;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label lblTCGLink;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.Label lblCardInfo_Name;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnFilterSet;
+        private System.Windows.Forms.ListBox listSetGroups;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox GroupCardViewVariants;
+        private System.Windows.Forms.Button btnNextPageVariant;
+        private System.Windows.Forms.Button btnPreviousPageVariant;
     }
 }

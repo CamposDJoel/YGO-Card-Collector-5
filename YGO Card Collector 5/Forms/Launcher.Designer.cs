@@ -34,6 +34,11 @@
             this.lblDatabaseOption = new System.Windows.Forms.Label();
             this.lblSettingsOption = new System.Windows.Forms.Label();
             this.lblJsonStatus = new System.Windows.Forms.Label();
+            this.GroupWinMode = new System.Windows.Forms.GroupBox();
+            this.RadioDefaultOption = new System.Windows.Forms.RadioButton();
+            this.RadioCompactOption = new System.Windows.Forms.RadioButton();
+            this.RadioBigWinOption = new System.Windows.Forms.RadioButton();
+            this.GroupWinMode.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblCredits
@@ -53,7 +58,7 @@
             this.lblLaunchAppOption.BackColor = System.Drawing.Color.Transparent;
             this.lblLaunchAppOption.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLaunchAppOption.ForeColor = System.Drawing.Color.Yellow;
-            this.lblLaunchAppOption.Location = new System.Drawing.Point(12, 169);
+            this.lblLaunchAppOption.Location = new System.Drawing.Point(12, 111);
             this.lblLaunchAppOption.Name = "lblLaunchAppOption";
             this.lblLaunchAppOption.Size = new System.Drawing.Size(298, 35);
             this.lblLaunchAppOption.TabIndex = 5;
@@ -66,7 +71,7 @@
             this.lblDatabaseOption.BackColor = System.Drawing.Color.Transparent;
             this.lblDatabaseOption.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatabaseOption.ForeColor = System.Drawing.Color.Yellow;
-            this.lblDatabaseOption.Location = new System.Drawing.Point(12, 215);
+            this.lblDatabaseOption.Location = new System.Drawing.Point(12, 219);
             this.lblDatabaseOption.Name = "lblDatabaseOption";
             this.lblDatabaseOption.Size = new System.Drawing.Size(298, 35);
             this.lblDatabaseOption.TabIndex = 6;
@@ -79,7 +84,7 @@
             this.lblSettingsOption.BackColor = System.Drawing.Color.Transparent;
             this.lblSettingsOption.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSettingsOption.ForeColor = System.Drawing.Color.Yellow;
-            this.lblSettingsOption.Location = new System.Drawing.Point(13, 263);
+            this.lblSettingsOption.Location = new System.Drawing.Point(13, 267);
             this.lblSettingsOption.Name = "lblSettingsOption";
             this.lblSettingsOption.Size = new System.Drawing.Size(298, 35);
             this.lblSettingsOption.TabIndex = 7;
@@ -93,12 +98,58 @@
             this.lblJsonStatus.BackColor = System.Drawing.Color.Transparent;
             this.lblJsonStatus.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJsonStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblJsonStatus.Location = new System.Drawing.Point(65, 325);
+            this.lblJsonStatus.Location = new System.Drawing.Point(65, 329);
             this.lblJsonStatus.Name = "lblJsonStatus";
             this.lblJsonStatus.Size = new System.Drawing.Size(168, 38);
             this.lblJsonStatus.TabIndex = 8;
             this.lblJsonStatus.Text = "JSON Failed to load\r\nPlease review DB file.";
             this.lblJsonStatus.Visible = false;
+            // 
+            // GroupWinMode
+            // 
+            this.GroupWinMode.BackColor = System.Drawing.Color.Transparent;
+            this.GroupWinMode.Controls.Add(this.RadioBigWinOption);
+            this.GroupWinMode.Controls.Add(this.RadioCompactOption);
+            this.GroupWinMode.Controls.Add(this.RadioDefaultOption);
+            this.GroupWinMode.ForeColor = System.Drawing.Color.Yellow;
+            this.GroupWinMode.Location = new System.Drawing.Point(21, 150);
+            this.GroupWinMode.Name = "GroupWinMode";
+            this.GroupWinMode.Size = new System.Drawing.Size(240, 56);
+            this.GroupWinMode.TabIndex = 9;
+            this.GroupWinMode.TabStop = false;
+            this.GroupWinMode.Text = "Window Mode";
+            // 
+            // RadioDefaultOption
+            // 
+            this.RadioDefaultOption.AutoSize = true;
+            this.RadioDefaultOption.Checked = true;
+            this.RadioDefaultOption.Location = new System.Drawing.Point(63, 16);
+            this.RadioDefaultOption.Name = "RadioDefaultOption";
+            this.RadioDefaultOption.Size = new System.Drawing.Size(119, 16);
+            this.RadioDefaultOption.TabIndex = 0;
+            this.RadioDefaultOption.TabStop = true;
+            this.RadioDefaultOption.Text = "Mid Size (Default)";
+            this.RadioDefaultOption.UseVisualStyleBackColor = true;
+            // 
+            // RadioCompactOption
+            // 
+            this.RadioCompactOption.AutoSize = true;
+            this.RadioCompactOption.Location = new System.Drawing.Point(6, 34);
+            this.RadioCompactOption.Name = "RadioCompactOption";
+            this.RadioCompactOption.Size = new System.Drawing.Size(103, 16);
+            this.RadioCompactOption.TabIndex = 1;
+            this.RadioCompactOption.Text = "Compact View";
+            this.RadioCompactOption.UseVisualStyleBackColor = true;
+            // 
+            // RadioBigWinOption
+            // 
+            this.RadioBigWinOption.AutoSize = true;
+            this.RadioBigWinOption.Location = new System.Drawing.Point(121, 34);
+            this.RadioBigWinOption.Name = "RadioBigWinOption";
+            this.RadioBigWinOption.Size = new System.Drawing.Size(120, 16);
+            this.RadioBigWinOption.TabIndex = 2;
+            this.RadioBigWinOption.Text = "Big Window Mode";
+            this.RadioBigWinOption.UseVisualStyleBackColor = true;
             // 
             // FormLauncher
             // 
@@ -107,6 +158,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 457);
+            this.Controls.Add(this.GroupWinMode);
             this.Controls.Add(this.lblJsonStatus);
             this.Controls.Add(this.lblSettingsOption);
             this.Controls.Add(this.lblDatabaseOption);
@@ -120,6 +172,8 @@
             this.Name = "FormLauncher";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Welcome! - YGO Card Collector 5";
+            this.GroupWinMode.ResumeLayout(false);
+            this.GroupWinMode.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,6 +186,10 @@
         private System.Windows.Forms.Label lblDatabaseOption;
         private System.Windows.Forms.Label lblSettingsOption;
         private System.Windows.Forms.Label lblJsonStatus;
+        private System.Windows.Forms.GroupBox GroupWinMode;
+        private System.Windows.Forms.RadioButton RadioBigWinOption;
+        private System.Windows.Forms.RadioButton RadioCompactOption;
+        private System.Windows.Forms.RadioButton RadioDefaultOption;
     }
 }
 

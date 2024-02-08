@@ -61,8 +61,22 @@ namespace YGO_Card_Collector_5
             lblLaunchAppOption.Visible = true;
             lblSettingsOption.Visible = true;
             lblDatabaseOption.Visible = true;
-            Collector Co = new Collector(this);
-            Co.Show();
+
+            //Open the collector
+            if(RadioDefaultOption.Checked)
+            {
+                Collector Co = new Collector(this);
+                Co.Show();
+            }
+            else if(RadioBigWinOption.Checked)
+            {
+                CollectorBigWinMode Co = new CollectorBigWinMode(this);
+                Co.Show();
+            }
+            else if(RadioCompactOption.Checked)
+            {
+                //TODO
+            }
         }
         private void lblDatabaseOption_Click(object sender, EventArgs e)
         {

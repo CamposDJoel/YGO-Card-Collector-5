@@ -1,6 +1,6 @@
 ﻿//Joel Campos
-//2/6/2024
-//Collector Form Class
+//2/8/2024
+//CollectorBigWinMode
 
 using System;
 using System.Collections.Generic;
@@ -9,25 +9,26 @@ using System.Windows.Forms;
 
 namespace YGO_Card_Collector_5
 {
-    public partial class Collector : Form
+    public partial class CollectorBigWinMode : Form
     {
         #region Constructors
-        public Collector(FormLauncher mainMenuForm)
+        public CollectorBigWinMode(FormLauncher mainMenuForm)
         {
             _MainMenuForm = mainMenuForm;
-            InitializeComponent();           
+            InitializeComponent();
             InitializeCardViewImages();
+            InitializeCardViewImagesVariants();
             LoadMasterCardList(CardGroup.AllCards);
             listSetGroups.SetSelected(0, true);
 
             void InitializeCardViewImages()
             {
                 int imageID = 0;
-                int Y_Location = 18;
+                int Y_Location = 20;
                 for (int x = 0; x < 5; x++)
                 {
-                    int X_Location = 14;
-                    for (int y = 0; y < 9; y++)
+                    int X_Location = 3;
+                    for (int y = 0; y < 15; y++)
                     {
                         //Initialize the border box Image
                         Panel CardBox = new Panel();
@@ -75,8 +76,62 @@ namespace YGO_Card_Collector_5
                     }
                     Y_Location += 60;
                 }
+            }
+            void InitializeCardViewImagesVariants()
+            {
+                int imageID = 0;
+                int Y_Location = 20;
+                for (int x = 0; x < 1; x++)
+                {
+                    int X_Location = 3;
+                    for (int y = 0; y < 15; y++)
+                    {
+                        //Initialize the border box Image
+                        Panel CardBox = new Panel();
+                        GroupCardViewVariants.Controls.Add(CardBox);
+                        CardBox.Location = new Point(X_Location, Y_Location);
+                        CardBox.BorderStyle = BorderStyle.FixedSingle;
+                        CardBox.Size = new Size(47, 60);
+                        _CardPanelListV.Add(CardBox);
 
-                //LoadPage();
+                        //Initialize the Card Collection Icon
+                        PictureBox CardIcon = new PictureBox();
+                        CardBox.Controls.Add(CardIcon);
+                        CardIcon.Location = new Point(1, 1);
+                        CardIcon.BorderStyle = BorderStyle.FixedSingle;
+                        CardIcon.Size = new Size(15, 15);
+                        CardIcon.SizeMode = PictureBoxSizeMode.StretchImage;
+                        CardIcon.Tag = imageID;
+                        //CardIcon.Visible = false;
+                        _IconImageListV.Add(CardIcon);
+
+                        //Initialize the card Image
+                        PictureBox CardImage = new PictureBox();
+                        CardBox.Controls.Add(CardImage);
+                        CardImage.Location = new Point(1, 1);
+                        CardImage.BorderStyle = BorderStyle.FixedSingle;
+                        CardImage.Size = new Size(43, 56);
+                        CardImage.SizeMode = PictureBoxSizeMode.StretchImage;
+                        CardImage.Tag = imageID;
+                        CardImage.Click += new EventHandler(this.ImageVariant_click);
+                        _CardImageListV.Add(CardImage);
+
+                        //Initialize the Rarity Icon
+                        PictureBox CardRarity = new PictureBox();
+                        CardBox.Controls.Add(CardRarity);
+                        CardRarity.Location = new Point(1, 42);
+                        CardRarity.BorderStyle = BorderStyle.FixedSingle;
+                        CardRarity.Size = new Size(43, 15);
+                        CardRarity.SizeMode = PictureBoxSizeMode.StretchImage;
+                        CardRarity.Visible = true;
+                        CardRarity.BringToFront();
+                        _CardRaritiesListV.Add(CardRarity);
+
+                        X_Location += 47;
+                        imageID++;
+                    }
+                    Y_Location += 60;
+                }
             }
         }
         #endregion
@@ -87,9 +142,11 @@ namespace YGO_Card_Collector_5
             //Pull the correct MasterCard list
             _MasterCardViewMode = true;
             _CurrentMasterCardList = Database.GroupCardListByGroupName[CurrentGroup];
+            _CurrentSetCardListVariants = new List<SetCard>();
             //Reset the card page to 1 and hide the Clear Filter button if displaying all card list
             _CurrentCardPage = 1;
-            if(CurrentGroup == CardGroup.AllCards) { btnClear.Visible = false; }
+            _CurrentCardPageVariant = 1;
+            if (CurrentGroup == CardGroup.AllCards) { btnClear.Visible = false; }
             //Update the Card Viewer Card Page/Card Count header
             GroupCardView.Text = string.Format("PAGE: {0}  -  CARD GROUP: {1}  -  Total Cards: {2}", _CurrentCardPage, Database.CardGroupToString(_CurrentCardGroup), _CurrentMasterCardList.Count);
 
@@ -97,14 +154,15 @@ namespace YGO_Card_Collector_5
             LoadPage();
             //And Click on the card on the firs page
             InitializeSelectedCard(0);
-        }        
+        }
         private void InitializeSelectedCard(int PictureBoxTag)
         {
             //clear the card border of the previous card clicked
             _CardPanelList[_PreviousCardInViewIndex].BackColor = Color.Black;
+            _CardPanelListV[_PreviousVariantCardInViewIndex].BackColor = Color.Black;
 
             //Determine the index of this card in relation to the entire active list
-            int index = ((_CurrentCardPage * 45) - 45) + PictureBoxTag;
+            int index = ((_CurrentCardPage * 75) - 75) + PictureBoxTag;
 
             //Set the card in view border as green
             _CardPanelList[PictureBoxTag].BackColor = Color.Yellow;
@@ -256,118 +314,121 @@ namespace YGO_Card_Collector_5
                     lblTCGLink.Visible = true;
                 }
             }
+        }
+        private void InitializeSelectedCardVariant(int PictureBoxTag)
+        {
+            //clear the card border of the previous card clicked
+            _CardPanelList[_PreviousCardInViewIndex].BackColor = Color.Black;
+            _CardPanelListV[_PreviousVariantCardInViewIndex].BackColor = Color.Black;
 
-            void InitializeTags(MasterCard ThisMasterCard)
+            //Determine the index of this card in relation to the entire active list
+            int index = ((_CurrentCardPageVariant * 15) - 15) + PictureBoxTag;
+
+            //Set the card in view border as green
+            _CardPanelListV[PictureBoxTag].BackColor = Color.Yellow;
+
+            //Save this Picture Box tag as the "previous card" for the next click
+            _PreviousVariantCardInViewIndex = PictureBoxTag;
+
+            //Set this Card Objects reference
+            _CurrentSetCardInView = _CurrentSetCardListVariants[index];
+            string CardID = _CurrentSetCardInView.GetCardID();
+            string CardName = _CurrentSetCardInView.GetCardName();
+
+            //Clear the current Main Image and replace with this new card in view
+            ImageServer.SetImage(PicImage, ImageType.CardImage, CardID);
+
+            //Show the Name in the UI
+            lblCardInfo_Name.Text = CardName;
+
+            //Initialize this card's tags            
+            MasterCard ThisSetCardsMasterCard = Database.MasterCardByCode[_CurrentSetCardInView.Code];
+            InitializeTags(ThisSetCardsMasterCard);
+
+            //Show the rariry and prices if in set view
+            lblRariryLabel.Visible = true;
+            lblRarity.Visible = true;
+            lblRarity.Text = _CurrentSetCardInView.Rarity;
+            switch (_CurrentSetCardInView.Rarity)
             {
-                //Clear all existing tags
-                foreach(Label label in _TagLabelList) { label.Dispose(); }
-                _TagLabelList.Clear();
-                foreach (Panel panel in _TagContainerList) { panel.Dispose(); }
-                _TagContainerList.Clear();
+                case "Common": lblRarity.ForeColor = Color.White; break;
+                case "Rare": lblRarity.ForeColor = Color.PaleGreen; break;
+                case "Ultra Rare": lblRarity.ForeColor = Color.Moccasin; break;
+                case "Ultra Rare(Hobby League Version)": lblRarity.ForeColor = Color.Moccasin; break;
+                case "Ultimate Rare": lblRarity.ForeColor = Color.HotPink; break;
+                case "Gold Rare": lblRarity.ForeColor = Color.Gold; break;
+                case "Hobby": lblRarity.ForeColor = Color.MediumPurple; break;
+                case "Millennium Secret Rare": lblRarity.ForeColor = Color.Goldenrod; break;
+                case "Platinum Secret Rare": lblRarity.ForeColor = Color.LightSkyBlue; break;
+                case "Starfoil": lblRarity.ForeColor = Color.BlueViolet; break;
+                case "Shattefoil": lblRarity.ForeColor = Color.MediumTurquoise; break;
+                case "Super Rare": lblRarity.ForeColor = Color.SteelBlue; break;
+                case "Secret Rare": lblRarity.ForeColor = Color.Pink; break;
+                case "Ghost Rare": lblRarity.ForeColor = Color.PowderBlue; break;
+                case "Premium Gold Rare": lblRarity.ForeColor = Color.DarkGoldenrod; break;
+                case "Gold Secret": lblRarity.ForeColor = Color.Yellow; break;
+                case "Platinum Rare": lblRarity.ForeColor = Color.Aqua; break;
+                case "COLLECTOR'S RARE": lblRarity.ForeColor = Color.RosyBrown; break;
+                case "Mosaic Rare": lblRarity.ForeColor = Color.DarkViolet; break;
+                case "Quarter Century Secret Rare": lblRarity.ForeColor = Color.Plum; break;
+                case "Prismatic Secret Rare": lblRarity.ForeColor = Color.Plum; break;
+                case "Ultra Rare (Pharaoh's Rare)": lblRarity.ForeColor = Color.DarkRed; break;
+                default: lblRarity.ForeColor = Color.White; break;
+            }
 
-                int SetCardCount = ThisMasterCard.SetCards.Count;
+            lblMarketPricelabel.Visible = true;
+            lblMarketPrice.Visible = true;
+            lblMarketPrice.Text = _CurrentSetCardInView.MarketPrice;
+            if (_CurrentSetCardInView.GetDoubleMarketPrice() < 1)
+            {
+                lblMarketPrice.ForeColor = Color.White;
+            }
+            else if (_CurrentSetCardInView.GetDoubleMarketPrice() < 5)
+            {
+                lblMarketPrice.ForeColor = Color.LightGreen;
+            }
+            else if (_CurrentSetCardInView.GetDoubleMarketPrice() < 50)
+            {
+                lblMarketPrice.ForeColor = Color.HotPink;
+            }
+            else
+            {
+                lblMarketPrice.ForeColor = Color.Gold;
+            }
+            lblMedianPricelabel.Visible = true;
+            lblMedianPrice.Visible = true;
+            lblMedianPrice.Text = _CurrentSetCardInView.MediamPrice;
+            if (_CurrentSetCardInView.GetDoubleMedianPrice() < 1)
+            {
+                lblMedianPrice.ForeColor = Color.White;
+            }
+            else if (_CurrentSetCardInView.GetDoubleMedianPrice() < 5)
+            {
+                lblMedianPrice.ForeColor = Color.LightGreen;
+            }
+            else if (_CurrentSetCardInView.GetDoubleMedianPrice() < 50)
+            {
+                lblMedianPrice.ForeColor = Color.HotPink;
+            }
+            else
+            {
+                lblMedianPrice.ForeColor = Color.Gold;
+            }
+            lblCodelabel.Visible = true;
+            lblCode.Visible = true;
+            lblCode.Text = _CurrentSetCardInView.Code;
 
-                int Y_Location = 1;
-                for (int x = 0; x < SetCardCount; x++)
-                {
-                    string ActiveSetCode = ThisMasterCard.GetCardAtIndex(x).Code;
-                    string ActiveSetRarity = ThisMasterCard.GetCardAtIndex(x).Rarity;
-                    bool ActiveSetObtained = ThisMasterCard.GetCardAtIndex(x).Obtained;
+            //Show the PRODECK and TCG Links buttons if availablelblProdeckLink.Visible = true;
+            lblProdeckLink.Visible = false;
+            lblTCGLink.Visible = false;
+            if (_CurrentSetCardInView.MasterCardHasProdeckURL())
+            {
+                lblProdeckLink.Visible = true;
+            }
 
-                    Panel TagContainer = new Panel();
-                    PanelTagList.Controls.Add(TagContainer);
-                    TagContainer.Location = new Point(1, Y_Location);
-                    TagContainer.BorderStyle = BorderStyle.FixedSingle;
-                    TagContainer.BackColor = Color.Black;
-                    TagContainer.Size = new Size(109, 36);
-                    TagContainer.AutoSize = false;
-                    TagContainer.Tag = x;
-                    _TagContainerList.Add(TagContainer);
-
-
-                    Label tagLabel = new Label();
-                    TagContainer.Controls.Add(tagLabel);
-                    tagLabel.Location = new Point(1, 1);
-                    tagLabel.BorderStyle = BorderStyle.None;
-                    tagLabel.BackColor = Color.Transparent;
-                    tagLabel.Size = new Size(107, 17);
-                    tagLabel.AutoSize = false;
-                    tagLabel.Font = new Font("Arial", 9);
-                    tagLabel.Text = ActiveSetCode;
-                    tagLabel.TextAlign = ContentAlignment.MiddleLeft;
-                    tagLabel.ForeColor = Color.White;
-                    tagLabel.Tag = x;
-                    tagLabel.Click += new EventHandler(SetCardLabel_clicked);
-                    _TagLabelList.Add(tagLabel);
-
-                    //During the SetCard view, have this SetCard clicked on the card view highlighted in red
-                    if(!_MasterCardViewMode)
-                    {
-                        if (ActiveSetCode == _CurrentSetCardInView.Code && ActiveSetRarity == _CurrentSetCardInView.Rarity)
-                        {
-                            tagLabel.ForeColor = Color.Red;
-                        }
-                    }
-
-                    ////////////////////////////////////
-
-                    Label tagLabel2 = new Label();
-                    TagContainer.Controls.Add(tagLabel2);
-                    tagLabel2.Location = new Point(1, 18);
-                    tagLabel2.BorderStyle = BorderStyle.None;
-                    tagLabel2.BackColor = Color.Transparent;
-                    tagLabel2.Size = new Size(107, 17);
-                    tagLabel2.AutoSize = false;
-                    tagLabel2.Font = new Font("Arial", 9);
-                    if (ActiveSetRarity.Length > 13)
-                    {
-                        tagLabel2.Font = new Font("Arial", 6);
-                    }
-                    tagLabel2.Text = ActiveSetRarity;
-                    tagLabel2.TextAlign = ContentAlignment.MiddleRight;
-                    tagLabel2.ForeColor = Color.White;
-                    tagLabel2.Tag = x;
-                    tagLabel2.Click += new EventHandler(SetCardLabel_clicked);
-                    _TagLabelList.Add(tagLabel2);
-
-                    //During the SetCard view, have this SetCard clicked on the card view highlighted in red
-                    if (!_MasterCardViewMode)
-                    {
-                        if (ActiveSetCode == _CurrentSetCardInView.Code && ActiveSetRarity == _CurrentSetCardInView.Rarity)
-                        {
-                            tagLabel2.ForeColor = Color.Red;
-                        }
-                    }
-
-
-                    //If the code for this set has an empty code, hide it,
-                    //and dont move the Y_Location so the next tag takes it location
-                    if (ActiveSetCode == "")
-                    {
-                        TagContainer.Visible = false;
-                    }
-                    else
-                    {
-                        Y_Location += 36;
-                    }
-
-                    //Set Color base on if it is obtained or not
-                    if (ActiveSetObtained)
-                    {
-                        TagContainer.BackColor = Color.MidnightBlue;
-                    }
-                    else
-                    {
-                        TagContainer.BackColor = Color.Black;
-                    }                   
-                }
-
-                //Resize the TagList Container
-                int width = 133;
-                if (SetCardCount < 7) { width = 113; }
-                int height = 250;
-                if (SetCardCount < 7) { height = ((SetCardCount * 36) + 4); }
-                PanelTagList.Size = new Size(width, height);
+            if (_CurrentSetCardInView.HasTCGURL())
+            {
+                lblTCGLink.Visible = true;
             }
         }
         private void LoadPage()
@@ -375,12 +436,12 @@ namespace YGO_Card_Collector_5
             //Set the total Card Count
             int TotalCardCount = 0;
             if (_MasterCardViewMode) { TotalCardCount = _CurrentMasterCardList.Count; }
-            else { TotalCardCount = _CurrentSetCardList.Count; }           
+            else { TotalCardCount = _CurrentSetCardList.Count; }
 
             //Start the iterator
-            int PageIntialIndex = (_CurrentCardPage * 45) - 45;
+            int PageIntialIndex = (_CurrentCardPage * 75) - 75;
 
-            //Loop thru all the Card Images to initialize them
+            //Loop thru all the Card Images (in Main) to initialize them
             for (int x = 0; x < _CardImageList.Count; x++)
             {
                 //Set the card iterator index
@@ -412,7 +473,52 @@ namespace YGO_Card_Collector_5
                     LoadRarityLabel(x, ThisSetCard);
                 }
             }
-           
+
+            int PageIntialIndexV = (_CurrentCardPageVariant * 15) - 15;
+            //Lopp thr all the Card Images (in Variants) to initialize them
+            for (int x = 0; x < _CardImageListV.Count; x++)
+            {
+                if(_MasterCardViewMode)
+                {
+                    //Hide all of them
+                    _CardPanelListV[x].Visible = false; 
+                }
+                else
+                {
+                    //Variants 
+                    int TotalCardCountVariants = _CurrentSetCardListVariants.Count;
+
+                    //Show based on the Variant card list
+                    //Set the card iterator index
+                    int iterator = PageIntialIndexV + x;
+
+                    //If the Iterator passes over the Total Card Count: Hide the image for those indexes
+                    if (iterator >= TotalCardCountVariants)
+                    {
+                        _CardPanelListV[x].Visible = false;
+                    }
+                    else
+                    {
+                        //show the card
+                        _CardPanelListV[x].Visible = true;
+
+                        //Save Ref to the Master/Set Card object that will be used
+                        SetCard ThisSetCard = _CurrentSetCardListVariants[iterator];
+
+                        //Initialize the card image
+                        LoadCardImageV(x, ThisSetCard);
+
+                        //Initialize the obtained icon
+                        LoadCardObtainedIconV(x, ThisSetCard);
+
+                        //Initalize the Rarity Icon
+                        LoadRarityLabelV(x, ThisSetCard);
+                    }
+                }
+            }
+
+            UpdatePageBanners();
+
             void LoadCardImage(int x, MasterCard ThisMasterCard, SetCard ThisSetCard)
             {
                 //Initalize the Card Image
@@ -457,6 +563,27 @@ namespace YGO_Card_Collector_5
                     }
                 }
             }
+            void LoadCardImageV(int x, SetCard ThisSetCard)
+            {
+                //Initalize the Card Image
+                if (_YouCollectionViewON)
+                {
+                    //if the SetCard is/is not obtaineed
+                    if (ThisSetCard.Obtained)
+                    {
+                        ImageServer.SetImage(_CardImageListV[x], ImageType.CardImage, ThisSetCard.GetCardID());
+                    }
+                    else
+                    {
+                        ImageServer.SetImage(_CardImageListV[x], ImageType.CardBack, "NONE");
+                    }
+                }
+                else
+                {
+                    //Always show the front of the card
+                    ImageServer.SetImage(_CardImageListV[x], ImageType.CardImage, ThisSetCard.GetCardID());
+                }
+            }
             void LoadCardObtainedIcon(int x, MasterCard ThisMasterCard, SetCard ThisSetCard)
             {
                 //Start with the Icon invisible
@@ -472,12 +599,12 @@ namespace YGO_Card_Collector_5
                     }
                     else
                     {
-                        if(ThisMasterCard.HasOneCardsObtained())
+                        if (ThisMasterCard.HasOneCardsObtained())
                         {
                             ImageServer.SetImage(_IconImageList[x], ImageType.ExclamationMark, "NONE");
                             _IconImageList[x].Visible = true;
-                        }                        
-                    }                    
+                        }
+                    }
                 }
                 else
                 {
@@ -487,6 +614,18 @@ namespace YGO_Card_Collector_5
                         ImageServer.SetImage(_IconImageList[x], ImageType.CheckMark, "NONE");
                         _IconImageList[x].Visible = true;
                     }
+                }
+            }
+            void LoadCardObtainedIconV(int x, SetCard ThisSetCard)
+            {
+                //Start with the Icon invisible
+                _IconImageListV[x].Visible = false;
+
+                //Show the checkmark icon if setcard obtained
+                if (ThisSetCard.Obtained)
+                {
+                    ImageServer.SetImage(_IconImageListV[x], ImageType.CheckMark, "NONE");
+                    _IconImageListV[x].Visible = true;
                 }
             }
             void LoadRarityLabel(int x, SetCard ThisSetCard)
@@ -508,6 +647,157 @@ namespace YGO_Card_Collector_5
                     }
                 }
             }
+            void LoadRarityLabelV(int x, SetCard ThisSetCard)
+            {
+                if (ThisSetCard.Rarity == "Common")
+                {
+                    _CardRaritiesListV[x].Visible = false;
+                }
+                else
+                {
+                    ImageServer.SetImage(_CardRaritiesListV[x], ImageType.Rarity, ThisSetCard.Rarity);
+                    _CardRaritiesListV[x].Visible = true;
+                }
+            }
+            void UpdatePageBanners()
+            {
+                if (_MasterCardViewMode)
+                {
+                    GroupCardView.Text = string.Format("PAGE: {0}  -  CARD GROUP: {1}  -  Total Cards: {2}", _CurrentCardPage, Database.CardGroupToString(_CurrentCardGroup), _CurrentMasterCardList.Count);
+                    GroupCardViewVariants.Text = "PAGE: 1 - NO VARIANT CARD IS MASTER CARD LIST VIEW";
+                }
+                else
+                {
+                    int index = listSetlist.SelectedIndex;
+                    string SetName = _CurrentSetInfoListSelected[index].Name;
+                    string Code = _CurrentSetInfoListSelected[index].GetCode();
+
+                    if (Database.SetPackByName.ContainsKey(SetName))
+                    {
+                        //Update the Card Viewer Card Page/Card Count header
+                        GroupCardView.Text = string.Format("PAGE: {0}  -  CODE: {1}  - Main Cards: {2}", _CurrentCardPage, Code, _CurrentSetCardList.Count);
+                        GroupCardViewVariants.Text = string.Format("PAGE: {0}  -  CODE: {1}  - Variant Cards: {2}", _CurrentCardPageVariant, Code, _CurrentSetCardListVariants.Count);
+                    }
+                    else
+                    {
+                        //Update the Card Viewer Card Page/Card Count header
+                        GroupCardView.Text = string.Format("PAGE: {0}  -  CODE: \"{1}\"  - Main Cards: 0", _CurrentCardPage, Code);
+                        GroupCardViewVariants.Text = string.Format("PAGE: {0}  -  CODE: \"{1}\"  - Variant Cards: 0", _CurrentCardPageVariant, Code);
+                    }
+                }
+            }
+        }
+        private void InitializeTags(MasterCard ThisMasterCard)
+        {
+            //Clear all existing tags
+            foreach (Label label in _TagLabelList) { label.Dispose(); }
+            _TagLabelList.Clear();
+            foreach (Panel panel in _TagContainerList) { panel.Dispose(); }
+            _TagContainerList.Clear();
+
+            int SetCardCount = ThisMasterCard.SetCards.Count;
+
+            int Y_Location = 1;
+            for (int x = 0; x < SetCardCount; x++)
+            {
+                string ActiveSetCode = ThisMasterCard.GetCardAtIndex(x).Code;
+                string ActiveSetRarity = ThisMasterCard.GetCardAtIndex(x).Rarity;
+                bool ActiveSetObtained = ThisMasterCard.GetCardAtIndex(x).Obtained;
+
+                Panel TagContainer = new Panel();
+                PanelTagList.Controls.Add(TagContainer);
+                TagContainer.Location = new Point(1, Y_Location);
+                TagContainer.BorderStyle = BorderStyle.FixedSingle;
+                TagContainer.BackColor = Color.Black;
+                TagContainer.Size = new Size(109, 36);
+                TagContainer.AutoSize = false;
+                TagContainer.Tag = x;
+                _TagContainerList.Add(TagContainer);
+
+
+                Label tagLabel = new Label();
+                TagContainer.Controls.Add(tagLabel);
+                tagLabel.Location = new Point(1, 1);
+                tagLabel.BorderStyle = BorderStyle.None;
+                tagLabel.BackColor = Color.Transparent;
+                tagLabel.Size = new Size(107, 17);
+                tagLabel.AutoSize = false;
+                tagLabel.Font = new Font("Arial", 9);
+                tagLabel.Text = ActiveSetCode;
+                tagLabel.TextAlign = ContentAlignment.MiddleLeft;
+                tagLabel.ForeColor = Color.White;
+                tagLabel.Tag = x;
+                tagLabel.Click += new EventHandler(SetCardLabel_clicked);
+                _TagLabelList.Add(tagLabel);
+
+                //During the SetCard view, have this SetCard clicked on the card view highlighted in red
+                if (!_MasterCardViewMode)
+                {
+                    if (ActiveSetCode == _CurrentSetCardInView.Code && ActiveSetRarity == _CurrentSetCardInView.Rarity)
+                    {
+                        tagLabel.ForeColor = Color.Red;
+                    }
+                }
+
+                ////////////////////////////////////
+
+                Label tagLabel2 = new Label();
+                TagContainer.Controls.Add(tagLabel2);
+                tagLabel2.Location = new Point(1, 18);
+                tagLabel2.BorderStyle = BorderStyle.None;
+                tagLabel2.BackColor = Color.Transparent;
+                tagLabel2.Size = new Size(107, 17);
+                tagLabel2.AutoSize = false;
+                tagLabel2.Font = new Font("Arial", 9);
+                if (ActiveSetRarity.Length > 13)
+                {
+                    tagLabel2.Font = new Font("Arial", 6);
+                }
+                tagLabel2.Text = ActiveSetRarity;
+                tagLabel2.TextAlign = ContentAlignment.MiddleRight;
+                tagLabel2.ForeColor = Color.White;
+                tagLabel2.Tag = x;
+                tagLabel2.Click += new EventHandler(SetCardLabel_clicked);
+                _TagLabelList.Add(tagLabel2);
+
+                //During the SetCard view, have this SetCard clicked on the card view highlighted in red
+                if (!_MasterCardViewMode)
+                {
+                    if (ActiveSetCode == _CurrentSetCardInView.Code && ActiveSetRarity == _CurrentSetCardInView.Rarity)
+                    {
+                        tagLabel2.ForeColor = Color.Red;
+                    }
+                }
+
+
+                //If the code for this set has an empty code, hide it,
+                //and dont move the Y_Location so the next tag takes it location
+                if (ActiveSetCode == "")
+                {
+                    TagContainer.Visible = false;
+                }
+                else
+                {
+                    Y_Location += 36;
+                }
+
+                //Set Color base on if it is obtained or not
+                if (ActiveSetObtained)
+                {
+                    TagContainer.BackColor = Color.MidnightBlue;
+                }
+                else
+                {
+                    TagContainer.BackColor = Color.Black;
+                }
+            }
+
+            //Resize the TagList Container
+            int width = 133;
+            if (SetCardCount < 7) { width = 113; }
+            int height = 296;
+            if (SetCardCount < 9) { height = ((SetCardCount * 36) + 4); }
+            PanelTagList.Size = new Size(width, height);
         }
         #endregion
 
@@ -515,22 +805,33 @@ namespace YGO_Card_Collector_5
         private FormLauncher _MainMenuForm;
         private List<MasterCard> _CurrentMasterCardList;
         private List<SetCard> _CurrentSetCardList;
+        private List<SetCard> _CurrentSetCardListVariants;
+
         private CardGroup _CurrentCardGroup = CardGroup.AllCards;
         private bool _MasterCardViewMode = true;
         private int _CurrentCardPage = 1;
+        private int _CurrentCardPageVariant = 1;
         private bool _YouCollectionViewON = false;
+
         private int _PreviousCardInViewIndex = 0;
+        private int _PreviousVariantCardInViewIndex = 0;
 
         private MasterCard _CurrentMasterCardInView;
         private SetCard _CurrentSetCardInView;
         private List<SetInfo> _CurrentSetInfoListSelected;
 
+        //Main List
         private List<Panel> _CardPanelList = new List<Panel>();
         private List<PictureBox> _IconImageList = new List<PictureBox>();
         private List<PictureBox> _CardImageList = new List<PictureBox>();
         private List<PictureBox> _CardRaritiesList = new List<PictureBox>();
-
-        private List<Label> _TagLabelList = new List<Label>(); 
+        //Variant Cards
+        private List<Panel> _CardPanelListV = new List<Panel>();
+        private List<PictureBox> _IconImageListV = new List<PictureBox>();
+        private List<PictureBox> _CardImageListV = new List<PictureBox>();
+        private List<PictureBox> _CardRaritiesListV = new List<PictureBox>();
+        //Set Cards "Tags" 
+        private List<Label> _TagLabelList = new List<Label>();
         private List<Panel> _TagContainerList = new List<Panel>();
         #endregion
 
@@ -540,6 +841,12 @@ namespace YGO_Card_Collector_5
             //Initialize the Card Selected based on the TAG of the image clicked.
             PictureBox ThisPictureBox = (PictureBox)sender;
             InitializeSelectedCard((int)ThisPictureBox.Tag);
+        }
+        private void ImageVariant_click(object sender, EventArgs e)
+        {
+            //Initialize the Card Selected based on the TAG of the image clicked.
+            PictureBox ThisPictureBox = (PictureBox)sender;
+            InitializeSelectedCardVariant((int)ThisPictureBox.Tag);
         }
         private void SetCardLabel_clicked(object sender, EventArgs e)
         {
@@ -555,10 +862,10 @@ namespace YGO_Card_Collector_5
             {
                 _CurrentSetCardInView.FlipObtainedStatus();
             }
-            
+
 
             //Change the Container Label
-            if(_TagContainerList[Index].BackColor == Color.MidnightBlue)
+            if (_TagContainerList[Index].BackColor == Color.MidnightBlue)
             {
                 _TagContainerList[Index].BackColor = Color.Black;
             }
@@ -575,7 +882,7 @@ namespace YGO_Card_Collector_5
         #region Event Listeners (Links Button Labels)
         private void lblKonamiLink_Click(object sender, EventArgs e)
         {
-            if(_MasterCardViewMode)
+            if (_MasterCardViewMode)
             {
                 Tools.LaunchURLIntoBrowser(_CurrentMasterCardInView.KonamiURL);
             }
@@ -583,7 +890,7 @@ namespace YGO_Card_Collector_5
             {
                 Tools.LaunchURLIntoBrowser(_CurrentSetCardInView.GetKonamiDBURL());
             }
-            
+
         }
         private void lblProdeckLink_Click(object sender, EventArgs e)
         {
@@ -630,7 +937,7 @@ namespace YGO_Card_Collector_5
             if (_MasterCardViewMode) { CurrentCardListCount = _CurrentMasterCardList.Count; }
             else { CurrentCardListCount = _CurrentSetCardList.Count; }
 
-            int lastpage = (CurrentCardListCount / 45) + 1;
+            int lastpage = (CurrentCardListCount / 75) + 1;
 
             if (_CurrentCardPage == 1) { _CurrentCardPage = lastpage; }
             else { _CurrentCardPage--; }
@@ -644,11 +951,27 @@ namespace YGO_Card_Collector_5
             if (_MasterCardViewMode) { CurrentCardListCount = _CurrentMasterCardList.Count; }
             else { CurrentCardListCount = _CurrentSetCardList.Count; }
 
-            int lastpage = (CurrentCardListCount / 45) + 1;
+            int lastpage = (CurrentCardListCount / 75) + 1;
 
             if (_CurrentCardPage == lastpage) { _CurrentCardPage = 1; }
             else { _CurrentCardPage++; }
 
+            LoadPage();
+        }
+        private void btnPreviousPageVariant_Click(object sender, EventArgs e)
+        {
+            int CurrentCardListCount = _CurrentSetCardListVariants.Count;
+            int lastpage = (CurrentCardListCount / 15) + 1;
+            if (_CurrentCardPageVariant == 1) { _CurrentCardPageVariant = lastpage; }
+            else { _CurrentCardPageVariant--; }
+            LoadPage();
+        }
+        private void btnNextPageVariant_Click(object sender, EventArgs e)
+        {
+            int CurrentCardListCount = _CurrentSetCardListVariants.Count;
+            int lastpage = (CurrentCardListCount / 15) + 1;
+            if (_CurrentCardPageVariant == lastpage) { _CurrentCardPageVariant = 1; }
+            else { _CurrentCardPageVariant++; }
             LoadPage();
         }
         #endregion
@@ -1015,7 +1338,7 @@ namespace YGO_Card_Collector_5
             {
                 string SearchTerm = txtSearch.Text;
                 _CurrentMasterCardList = Database.GetCardListWithSearchTerm(SearchTerm);
-               
+
                 //Set Flags
                 _MasterCardViewMode = true;
                 _CurrentCardPage = 1;
@@ -1069,7 +1392,8 @@ namespace YGO_Card_Collector_5
             int index = listSetlist.SelectedIndex;
             string SetName = _CurrentSetInfoListSelected[index].Name;
             string Code = _CurrentSetInfoListSelected[index].GetCode();
-           
+
+
             _CurrentCardPage = 1;
             if (Database.SetPackByName.ContainsKey(SetName))
             {
@@ -1080,18 +1404,14 @@ namespace YGO_Card_Collector_5
 
                 ThisSetPack.SortByCode();
                 _CurrentSetCardList = ThisSetPack.MainCardList;
-                //Update the Card Viewer Card Page/Card Count header
-                GroupCardView.Text = string.Format("PAGE: {0}  -  CODE: {1}  - Main Cards: {2} - Variant Cards: {3}", _CurrentCardPage, Code, MainSetCardCount, ExtraCardCount);
-
-            }
+                _CurrentSetCardListVariants = ThisSetPack.ExtraCardList;       
+            }    
             else
             {
-                _CurrentSetCardList = new List<SetCard>();
-                GroupCardView.Text = string.Format("PAGE: {0}  -  CODE: {1}  - Main Cards: 0 - Variant Cards: 0", _CurrentCardPage, Code);
+                _CurrentSetCardList = new List<SetCard>();              
             }
-
-
-           LoadPage();
+                   
+            LoadPage();
         }
         #endregion
     }
