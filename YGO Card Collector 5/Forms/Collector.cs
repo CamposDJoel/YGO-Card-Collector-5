@@ -168,6 +168,7 @@ namespace YGO_Card_Collector_5
                     case "Common": lblRarity.ForeColor = Color.White; break;
                     case "Rare": lblRarity.ForeColor = Color.PaleGreen; break;
                     case "Ultra Rare": lblRarity.ForeColor = Color.Moccasin; break;
+                    case "Ultra Rare(Hobby League Version)": lblRarity.ForeColor = Color.Moccasin; break;
                     case "Ultimate Rare": lblRarity.ForeColor = Color.HotPink; break;
                     case "Gold Rare": lblRarity.ForeColor = Color.Gold; break;
                     case "Hobby": lblRarity.ForeColor = Color.MediumPurple; break;
@@ -183,6 +184,7 @@ namespace YGO_Card_Collector_5
                     case "Platinum Rare": lblRarity.ForeColor = Color.Aqua; break;
                     case "COLLECTOR'S RARE": lblRarity.ForeColor = Color.RosyBrown; break;
                     case "Mosaic Rare": lblRarity.ForeColor = Color.DarkViolet; break;
+                    case "Quarter Century Secret Rare": lblRarity.ForeColor = Color.Plum; break;
                     case "Prismatic Secret Rare": lblRarity.ForeColor = Color.Plum; break;
                     case "Ultra Rare (Pharaoh's Rare)": lblRarity.ForeColor = Color.DarkRed; break;
                     default: lblRarity.ForeColor = Color.White; break;
@@ -298,6 +300,7 @@ namespace YGO_Card_Collector_5
                     tagLabel.Click += new EventHandler(SetCardLabel_clicked);
                     _TagLabelList.Add(tagLabel);
 
+                    //During the SetCard view, have this SetCard clicked on the card view highlighted in red
                     if(!_MasterCardViewMode)
                     {
                         if (ActiveSetCode == _CurrentSetCardInView.Code && ActiveSetRarity == _CurrentSetCardInView.Rarity)
@@ -327,6 +330,7 @@ namespace YGO_Card_Collector_5
                     tagLabel2.Click += new EventHandler(SetCardLabel_clicked);
                     _TagLabelList.Add(tagLabel2);
 
+                    //During the SetCard view, have this SetCard clicked on the card view highlighted in red
                     if (!_MasterCardViewMode)
                     {
                         if (ActiveSetCode == _CurrentSetCardInView.Code && ActiveSetRarity == _CurrentSetCardInView.Rarity)
