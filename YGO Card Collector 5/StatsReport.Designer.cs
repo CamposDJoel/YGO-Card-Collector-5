@@ -31,12 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StatsReport));
             this.maincon = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.Group_MS_Colors = new System.Windows.Forms.GroupBox();
+            this.Group_MS_Totals = new System.Windows.Forms.GroupBox();
+            this.Group_MS_Traps = new System.Windows.Forms.GroupBox();
+            this.Group_MS_Spells = new System.Windows.Forms.GroupBox();
             this.Group_MS_Monsters = new System.Windows.Forms.GroupBox();
             this.TabBoosters = new System.Windows.Forms.TabPage();
-            this.Group_MS_Spells = new System.Windows.Forms.GroupBox();
-            this.Group_MS_Traps = new System.Windows.Forms.GroupBox();
-            this.Group_MS_Totals = new System.Windows.Forms.GroupBox();
-            this.Group_MS_Colors = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -101,7 +101,7 @@
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
-            this.btnBackToMainMenu = new System.Windows.Forms.Button();
+            this.btnBackToCollector = new System.Windows.Forms.Button();
             this.maincon.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.TabBoosters.SuspendLayout();
@@ -157,6 +157,46 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Master Collection Stats";
             // 
+            // Group_MS_Colors
+            // 
+            this.Group_MS_Colors.ForeColor = System.Drawing.Color.Gray;
+            this.Group_MS_Colors.Location = new System.Drawing.Point(400, 261);
+            this.Group_MS_Colors.Name = "Group_MS_Colors";
+            this.Group_MS_Colors.Size = new System.Drawing.Size(388, 143);
+            this.Group_MS_Colors.TabIndex = 4;
+            this.Group_MS_Colors.TabStop = false;
+            this.Group_MS_Colors.Text = "Card Colors";
+            // 
+            // Group_MS_Totals
+            // 
+            this.Group_MS_Totals.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Group_MS_Totals.Location = new System.Drawing.Point(400, 179);
+            this.Group_MS_Totals.Name = "Group_MS_Totals";
+            this.Group_MS_Totals.Size = new System.Drawing.Size(388, 83);
+            this.Group_MS_Totals.TabIndex = 3;
+            this.Group_MS_Totals.TabStop = false;
+            this.Group_MS_Totals.Text = "Totals";
+            // 
+            // Group_MS_Traps
+            // 
+            this.Group_MS_Traps.ForeColor = System.Drawing.Color.Magenta;
+            this.Group_MS_Traps.Location = new System.Drawing.Point(400, 110);
+            this.Group_MS_Traps.Name = "Group_MS_Traps";
+            this.Group_MS_Traps.Size = new System.Drawing.Size(388, 69);
+            this.Group_MS_Traps.TabIndex = 2;
+            this.Group_MS_Traps.TabStop = false;
+            this.Group_MS_Traps.Text = "Traps";
+            // 
+            // Group_MS_Spells
+            // 
+            this.Group_MS_Spells.ForeColor = System.Drawing.Color.Green;
+            this.Group_MS_Spells.Location = new System.Drawing.Point(400, 0);
+            this.Group_MS_Spells.Name = "Group_MS_Spells";
+            this.Group_MS_Spells.Size = new System.Drawing.Size(388, 110);
+            this.Group_MS_Spells.TabIndex = 1;
+            this.Group_MS_Spells.TabStop = false;
+            this.Group_MS_Spells.Text = "Spells";
+            // 
             // Group_MS_Monsters
             // 
             this.Group_MS_Monsters.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -181,46 +221,6 @@
             this.TabBoosters.Size = new System.Drawing.Size(791, 407);
             this.TabBoosters.TabIndex = 1;
             this.TabBoosters.Text = "Booster Pks";
-            // 
-            // Group_MS_Spells
-            // 
-            this.Group_MS_Spells.ForeColor = System.Drawing.Color.Green;
-            this.Group_MS_Spells.Location = new System.Drawing.Point(400, 0);
-            this.Group_MS_Spells.Name = "Group_MS_Spells";
-            this.Group_MS_Spells.Size = new System.Drawing.Size(388, 110);
-            this.Group_MS_Spells.TabIndex = 1;
-            this.Group_MS_Spells.TabStop = false;
-            this.Group_MS_Spells.Text = "Spells";
-            // 
-            // Group_MS_Traps
-            // 
-            this.Group_MS_Traps.ForeColor = System.Drawing.Color.Magenta;
-            this.Group_MS_Traps.Location = new System.Drawing.Point(400, 110);
-            this.Group_MS_Traps.Name = "Group_MS_Traps";
-            this.Group_MS_Traps.Size = new System.Drawing.Size(388, 69);
-            this.Group_MS_Traps.TabIndex = 2;
-            this.Group_MS_Traps.TabStop = false;
-            this.Group_MS_Traps.Text = "Traps";
-            // 
-            // Group_MS_Totals
-            // 
-            this.Group_MS_Totals.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Group_MS_Totals.Location = new System.Drawing.Point(400, 179);
-            this.Group_MS_Totals.Name = "Group_MS_Totals";
-            this.Group_MS_Totals.Size = new System.Drawing.Size(388, 83);
-            this.Group_MS_Totals.TabIndex = 3;
-            this.Group_MS_Totals.TabStop = false;
-            this.Group_MS_Totals.Text = "Totals";
-            // 
-            // Group_MS_Colors
-            // 
-            this.Group_MS_Colors.ForeColor = System.Drawing.Color.Gray;
-            this.Group_MS_Colors.Location = new System.Drawing.Point(400, 261);
-            this.Group_MS_Colors.Name = "Group_MS_Colors";
-            this.Group_MS_Colors.Size = new System.Drawing.Size(388, 143);
-            this.Group_MS_Colors.TabIndex = 4;
-            this.Group_MS_Colors.TabStop = false;
-            this.Group_MS_Colors.Text = "Card Colors";
             // 
             // label5
             // 
@@ -974,16 +974,17 @@
             this.label52.Text = "Year|Code";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // btnBackToMainMenu
+            // btnBackToCollector
             // 
-            this.btnBackToMainMenu.BackColor = System.Drawing.Color.Maroon;
-            this.btnBackToMainMenu.ForeColor = System.Drawing.Color.White;
-            this.btnBackToMainMenu.Location = new System.Drawing.Point(3, 3);
-            this.btnBackToMainMenu.Name = "btnBackToMainMenu";
-            this.btnBackToMainMenu.Size = new System.Drawing.Size(125, 20);
-            this.btnBackToMainMenu.TabIndex = 263;
-            this.btnBackToMainMenu.Text = "<-- Back to Collector";
-            this.btnBackToMainMenu.UseVisualStyleBackColor = false;
+            this.btnBackToCollector.BackColor = System.Drawing.Color.Maroon;
+            this.btnBackToCollector.ForeColor = System.Drawing.Color.White;
+            this.btnBackToCollector.Location = new System.Drawing.Point(3, 3);
+            this.btnBackToCollector.Name = "btnBackToCollector";
+            this.btnBackToCollector.Size = new System.Drawing.Size(125, 20);
+            this.btnBackToCollector.TabIndex = 263;
+            this.btnBackToCollector.Text = "<-- Back to Collector";
+            this.btnBackToCollector.UseVisualStyleBackColor = false;
+            this.btnBackToCollector.Click += new System.EventHandler(this.btnBackToCollector_Click);
             // 
             // StatsReport
             // 
@@ -992,7 +993,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(804, 461);
-            this.Controls.Add(this.btnBackToMainMenu);
+            this.Controls.Add(this.btnBackToCollector);
             this.Controls.Add(this.maincon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -1093,6 +1094,6 @@
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Button btnBackToMainMenu;
+        private System.Windows.Forms.Button btnBackToCollector;
     }
 }

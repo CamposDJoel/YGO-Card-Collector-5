@@ -1099,7 +1099,7 @@ namespace YGO_Card_Collector_5
         {
             Hide();
 
-            StatsReport SR = new StatsReport();
+            StatsReport SR = new StatsReport(this);
             SR.Show();
         }
     }
