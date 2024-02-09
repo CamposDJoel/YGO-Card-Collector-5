@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace YGO_Card_Collector_5
 {
@@ -190,6 +191,31 @@ namespace YGO_Card_Collector_5
 
                 return totals;
             }
+        }
+
+        public int GetMainListObtainedCount()
+        {
+            int count = 0;
+            foreach(SetCard card in _mainSetCards)
+            {
+                if(card.Obtained)
+                {
+                    count++;
+                }
+            }    
+            return count;
+        }
+        public int GetExtraListObtainedCount()
+        {
+            int count = 0;
+            foreach (SetCard card in _extraCards)
+            {
+                if (card.Obtained)
+                {
+                    count++;
+                }
+            }
+            return count;
         }
 
         public List<SetCard> MainCardList { get { return _mainSetCards; } }

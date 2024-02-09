@@ -1,4 +1,8 @@
-﻿using System;
+﻿//Joel Campos
+//2/9/2024
+//StatsReport Class
+
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +20,7 @@ namespace YGO_Card_Collector_5
         {
             InitializeComponent();
             LoadMasterStats();
+            LoadSetsStats();
         }
 
         private void LoadMasterStats()
@@ -212,6 +217,225 @@ namespace YGO_Card_Collector_5
                     PercentageLabel.ForeColor = Color.Aqua;
                 }*/
 
+            }
+        }
+        private void LoadSetsStats()
+        {
+            int Y_Axis = 19;
+            foreach(SetInfo ThisSetInfo in Database.BoosterPacks) 
+            {
+                InitalizeSetStatRow(ThisSetInfo, Y_Axis, TabBoosters);
+                Y_Axis += 16;
+            }
+
+            Y_Axis = 19;
+            foreach (SetInfo ThisSetInfo in Database.SpEditionBoxes)
+            {
+                InitalizeSetStatRow(ThisSetInfo, Y_Axis, TabSpEditionBoxes);
+                Y_Axis += 16;
+            }
+
+            Y_Axis = 19;
+            foreach (SetInfo ThisSetInfo in Database.StarterDecks)
+            {
+                InitalizeSetStatRow(ThisSetInfo, Y_Axis, TabStarterDecks);
+                Y_Axis += 16;
+            }
+
+            Y_Axis = 19;
+            foreach (SetInfo ThisSetInfo in Database.StructureDecks)
+            {
+                InitalizeSetStatRow(ThisSetInfo, Y_Axis, TabStructDecks);
+                Y_Axis += 16;
+            }
+
+            Y_Axis = 19;
+            foreach (SetInfo ThisSetInfo in Database.Tins)
+            {
+                InitalizeSetStatRow(ThisSetInfo, Y_Axis, TabTins);
+                Y_Axis += 16;
+            }
+
+            Y_Axis = 19;
+            foreach (SetInfo ThisSetInfo in Database.SpeedDuel)
+            {
+                InitalizeSetStatRow(ThisSetInfo, Y_Axis, TabSpeedDuel);
+                Y_Axis += 16;
+            }
+
+            Y_Axis = 19;
+            foreach (SetInfo ThisSetInfo in Database.DuelistPacks)
+            {
+                InitalizeSetStatRow(ThisSetInfo, Y_Axis, TabDP);
+                Y_Axis += 16;
+            }
+
+            Y_Axis = 19;
+            foreach (SetInfo ThisSetInfo in Database.DuelTerminal)
+            {
+                InitalizeSetStatRow(ThisSetInfo, Y_Axis, TabDT);
+                Y_Axis += 16;
+            }
+
+            Y_Axis = 19;
+            foreach (SetInfo ThisSetInfo in Database.Others)
+            {
+                InitalizeSetStatRow(ThisSetInfo, Y_Axis, TabOther);
+                Y_Axis += 16;
+            }
+
+            Y_Axis = 19;
+            foreach (SetInfo ThisSetInfo in Database.MBC)
+            {
+                InitalizeSetStatRow(ThisSetInfo, Y_Axis, TabMBC);
+                Y_Axis += 16;
+            }
+
+            Y_Axis = 19;
+            foreach (SetInfo ThisSetInfo in Database.Tournaments)
+            {
+                InitalizeSetStatRow(ThisSetInfo, Y_Axis, TabTournaments);
+                Y_Axis += 16;
+            }
+
+            Y_Axis = 19;
+            foreach (SetInfo ThisSetInfo in Database.Promos)
+            {
+                InitalizeSetStatRow(ThisSetInfo, Y_Axis, TabPromos);
+                Y_Axis += 16;
+            }
+
+            Y_Axis = 19;
+            foreach (SetInfo ThisSetInfo in Database.VideoGames)
+            {
+                InitalizeSetStatRow(ThisSetInfo, Y_Axis, TabVGs);
+                Y_Axis += 16;
+            }
+
+            void InitalizeSetStatRow(SetInfo ThisSetInfo, int Y_Location, TabPage ThisPage)
+            {
+                //Get all the freaking data
+                string year = ThisSetInfo.Year;
+                string name = ThisSetInfo.Name;
+                string code = ThisSetInfo.GetCode();
+                int mainListObtained = ThisSetInfo.GetMainListObtained();
+                int variantListObtained = ThisSetInfo.GetVariantListObtained();
+                int mainListCardTotal = ThisSetInfo.GetMainListCardTotal();
+                int variantListCardTotal = ThisSetInfo.GetVariantListCardTotal();
+
+                //Start displaying the row elements
+                Label yearCode = new Label();
+                ThisPage.Controls.Add(yearCode);
+                yearCode.Text = string.Format("{0} | {1}", year, code);
+                yearCode.ForeColor = Color.White;
+                yearCode.BorderStyle = BorderStyle.FixedSingle;
+                yearCode.AutoSize = false;
+                yearCode.Font = new Font("Arial Rounded", 9);
+                yearCode.ForeColor = Color.Gold;
+                yearCode.Size = new Size(89, 17);
+                yearCode.Location = new Point(6, Y_Location);
+
+                Label setname = new Label();
+                ThisPage.Controls.Add(setname);
+                setname.Text = name;
+                setname.ForeColor = Color.White;
+                setname.BorderStyle = BorderStyle.FixedSingle;
+                setname.AutoSize = false;
+                setname.Font = new Font("Arial Rounded", 9);
+                setname.ForeColor = Color.Gold;
+                setname.Size = new Size(292, 17);
+                setname.Location = new Point(94, Y_Location);
+
+                Label mainCardlist = new Label();
+                ThisPage.Controls.Add(mainCardlist);
+                mainCardlist.Text = mainListObtained.ToString();
+                mainCardlist.ForeColor = Color.White;
+                mainCardlist.BorderStyle = BorderStyle.FixedSingle;
+                mainCardlist.AutoSize = false;
+                mainCardlist.Font = new Font("Arial Rounded", 9);
+                mainCardlist.TextAlign = ContentAlignment.MiddleRight;
+                mainCardlist.ForeColor = Color.Gold;
+                mainCardlist.Size = new Size(30, 17);
+                mainCardlist.Location = new Point(385, Y_Location);
+
+                Label mainCardlist2 = new Label();
+                ThisPage.Controls.Add(mainCardlist2);
+                mainCardlist2.Text = "/";
+                mainCardlist2.ForeColor = Color.White;
+                mainCardlist2.BorderStyle = BorderStyle.FixedSingle;
+                mainCardlist2.AutoSize = false;
+                mainCardlist2.Font = new Font("Arial Rounded", 9);
+                mainCardlist2.ForeColor = Color.Gold;
+                mainCardlist2.Size = new Size(10, 17);
+                mainCardlist2.Location = new Point(414, Y_Location);
+
+                Label mainCardlist3 = new Label();
+                ThisPage.Controls.Add(mainCardlist3);
+                mainCardlist3.Text = mainListCardTotal.ToString();  
+                mainCardlist3.ForeColor = Color.White;
+                mainCardlist3.BorderStyle = BorderStyle.FixedSingle;
+                mainCardlist3.AutoSize = false;
+                mainCardlist3.Font = new Font("Arial Rounded", 9);
+                mainCardlist3.TextAlign = ContentAlignment.MiddleRight;
+                mainCardlist3.ForeColor = Color.Gold;
+                mainCardlist3.Size = new Size(30, 17);
+                mainCardlist3.Location = new Point(423, Y_Location);
+
+                double percentage1 = 0;
+                if (mainListObtained > 0) { percentage1 = (mainListObtained / mainListCardTotal) * 100; }
+
+                ProgressBar bar = new ProgressBar();
+                ThisPage.Controls.Add(bar);
+                bar.Value = (int)percentage1;
+                bar.Size = new Size(100, 17);
+                bar.Location = new Point(452, Y_Location);
+
+                if(variantListCardTotal > 0) 
+                {
+                    Label variantCardlist = new Label();
+                    ThisPage.Controls.Add(variantCardlist);
+                    variantCardlist.Text = variantListObtained.ToString();
+                    variantCardlist.ForeColor = Color.White;
+                    variantCardlist.BorderStyle = BorderStyle.FixedSingle;
+                    variantCardlist.AutoSize = false;
+                    variantCardlist.Font = new Font("Arial Rounded", 9);
+                    variantCardlist.TextAlign = ContentAlignment.MiddleRight;
+                    variantCardlist.ForeColor = Color.Gold;
+                    variantCardlist.Size = new Size(30, 17);
+                    variantCardlist.Location = new Point(551, Y_Location);
+
+                    Label variantCardlist2 = new Label();
+                    ThisPage.Controls.Add(variantCardlist2);
+                    variantCardlist2.Text = "/";
+                    variantCardlist2.ForeColor = Color.White;
+                    variantCardlist2.BorderStyle = BorderStyle.FixedSingle;
+                    variantCardlist2.AutoSize = false;
+                    variantCardlist2.Font = new Font("Arial Rounded", 9);
+                    variantCardlist2.ForeColor = Color.Gold;
+                    variantCardlist2.Size = new Size(10, 17);
+                    variantCardlist2.Location = new Point(580, Y_Location);
+
+                    Label variantCardlist3 = new Label();
+                    ThisPage.Controls.Add(variantCardlist3);
+                    variantCardlist3.Text = variantListCardTotal.ToString();
+                    variantCardlist3.ForeColor = Color.White;
+                    variantCardlist3.BorderStyle = BorderStyle.FixedSingle;
+                    variantCardlist3.AutoSize = false;
+                    variantCardlist3.Font = new Font("Arial Rounded", 9);
+                    variantCardlist3.TextAlign = ContentAlignment.MiddleRight;
+                    variantCardlist3.ForeColor = Color.Gold;
+                    variantCardlist3.Size = new Size(30, 17);
+                    variantCardlist3.Location = new Point(589, Y_Location);
+
+                    double percentage2 = 0;
+                    if (variantListObtained > 0) { percentage2 = (variantListObtained / variantListCardTotal) * 100; }
+
+                    ProgressBar bar2 = new ProgressBar();
+                    ThisPage.Controls.Add(bar2);
+                    bar2.Value = (int)percentage2;
+                    bar2.Size = new Size(100, 17);
+                    bar2.Location = new Point(618, Y_Location);
+                }
             }
         }
 

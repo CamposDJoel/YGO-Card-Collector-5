@@ -702,7 +702,7 @@ namespace YGO_Card_Collector_5
             return string.Format("{0} | {1} - {2}", _SetYear, GetCode(), _SetName);
         }
         public string Name { get { return _SetName; } }
-
+        public string Year { get { return _SetYear; } }
         public string GetCode()
         {
             if (Database.SetPackByName.ContainsKey(_SetName))
@@ -713,6 +713,54 @@ namespace YGO_Card_Collector_5
             else
             {
                 return "XXXX";
+            }
+        }
+        public int GetMainListCardTotal()
+        {
+            if (Database.SetPackByName.ContainsKey(_SetName))
+            {
+                SetPack ThisSetPack = Database.SetPackByName[_SetName];
+                return ThisSetPack.MainCardList.Count;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        public int GetMainListObtained()
+        {
+            if (Database.SetPackByName.ContainsKey(_SetName))
+            {
+                SetPack ThisSetPack = Database.SetPackByName[_SetName];
+                return ThisSetPack.GetMainListObtainedCount();
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        public int GetVariantListCardTotal()
+        {
+            if (Database.SetPackByName.ContainsKey(_SetName))
+            {
+                SetPack ThisSetPack = Database.SetPackByName[_SetName];
+                return ThisSetPack.ExtraCardList.Count;
+            }
+            else
+            {
+                return 0;
+            }
+        }
+        public int GetVariantListObtained()
+        {
+            if (Database.SetPackByName.ContainsKey(_SetName))
+            {
+                SetPack ThisSetPack = Database.SetPackByName[_SetName];
+                return ThisSetPack.GetExtraListObtainedCount();
+            }
+            else
+            {
+                return 0;
             }
         }
 
