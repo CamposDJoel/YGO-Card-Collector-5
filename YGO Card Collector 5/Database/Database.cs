@@ -472,6 +472,20 @@ namespace YGO_Card_Collector_5
                 case CardGroup.Normal_Traps: return "Normal Traps";
                 case CardGroup.Continuous_Traps: return "Continuous Traps";
                 case CardGroup.Counter_Traps: return "Counter Traps";
+
+                case CardGroup.All_Monsters: return "All Monsters";
+                case CardGroup.All_Spells: return "All Spells";
+                case CardGroup.All_Trap: return "All Traps";
+                case CardGroup.AllCards: return "All Cards";
+
+                case CardGroup.Normal_Monsters: return "Normal Monsters";
+                case CardGroup.Effect_Monsters: return "Effect Monsters";
+                case CardGroup.Fusion_Monsters: return "Fusion Monsters";
+                case CardGroup.Ritual_Monsters: return "Ritual Monsters";
+                case CardGroup.Synchro_Monsters: return "Synchro Monsters";
+                case CardGroup.Xyz_Monsters: return "Xyz Monsters";
+                case CardGroup.Pendulum_Monsters: return "Pendulum Monsters";
+                case CardGroup.Link_Monsters: return "Link Monsters";
                 default: return group.ToString();
             }
         }
@@ -489,6 +503,20 @@ namespace YGO_Card_Collector_5
                 }
             }
             return matchList;
+        }
+        public static int GetCardGroupObtainedCount(CardGroup group)
+        {
+            List<MasterCard> thisCardList = GroupCardListByGroupName[group];
+
+            int count = 0;
+            foreach(MasterCard ThisMasterCard in thisCardList) 
+            {
+                if(ThisMasterCard.Obtained)
+                {
+                    count++;
+                }
+            }
+            return count;
         }
         #endregion
 

@@ -1094,5 +1094,13 @@ namespace YGO_Card_Collector_5
            LoadPage();
         }
         #endregion
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Hide();
+
+            StatsReport SR = new StatsReport();
+            SR.Show();
+        }
     }
 }

@@ -1504,6 +1504,7 @@
             this.button2.Text = "Collection Stats";
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel14
             // 
