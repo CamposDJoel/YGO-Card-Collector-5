@@ -2690,6 +2690,27 @@ namespace YGO_Card_Collector_5
         #region Other Event Listeners
         private void btnTest_Click(object sender, EventArgs e)
         {
+            TEST_FIXTCGURLS();
+          
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            TEST_FINDBADURLS();
+        }
+        private void btnBackToMainMenu_Click(object sender, EventArgs e)
+        {
+            Dispose();
+            _MainMenuForm.Show();
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+        #endregion
+
+        private void TEST_FIXTCGURLS()
+        {
             Hide();
             DBUpdateform = new DBUpdateHoldScren(this);
             DBUpdateform.Show();
@@ -2832,15 +2853,124 @@ namespace YGO_Card_Collector_5
             Driver.CloseDriver();
             WriteOutputFiles();
         }
-        private void btnBackToMainMenu_Click(object sender, EventArgs e)
+        private void TEST_FINDBADURLS()
         {
-            Dispose();
-            _MainMenuForm.Show();
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this);
+            DBUpdateform.Show();
+
+            Driver.ClearLogs();
+            var Masterwatch = new Stopwatch();
+            Masterwatch.Start();
+            Driver.OpenBrowser();
+
+            //Determine Pack to Check
+            List<string> SetNames = new List<string>
+            {
+                "STRIKE OF NEOS",
+                "FORCE OF THE BREAKER",
+                "PREMIUM PACK",
+                "TACTICAL EVOLUTION",
+                "GLADIATOR'S ASSAULT"
+            };
+
+            List<SetCard> setCards = new List<SetCard>();
+
+            foreach (string name in SetNames)
+            {
+                SetPack packToTest = Database.SetPackByName[name];
+                List<SetCard> ThisPackFullCardList = packToTest.FullCardList;
+                foreach(SetCard card in ThisPackFullCardList)
+                {
+                    setCards.Add(card);
+                }
+            }
+
+            
+
+            List<string> Results = new List<string>();
+            List<string> SetCardsToFix = new List<string>();
+
+
+            DBUpdateform.SetTotalCardsToScan(setCards.Count);
+
+            foreach(SetCard card in setCards)
+            {
+                StringBuilder sb = new StringBuilder();
+                
+                string CardName = card.GetCardName();
+                sb.AppendLine(string.Format("Card: {0}", CardName));
+                DBUpdateform.SendCardStartSignal(CardName);
+
+                if (card.HasTCGURL())
+                {
+                    //Go to the URL
+                    Driver.GoToURL(card.TCGPlayerURL);
+                    TCGCardInfoPage.WaitUntilPageIsLoaded(true);
+
+                    //Check the Code/Rarity from the page to match the SetCard
+                    sb.Append(string.Format("CODE/Rarity In DB: [{0}|{1}] |", card.Code, card.Rarity));
+                    string CodeInPage = TCGCardInfoPage.GetCode();
+                    string RarityInPage = TCGCardInfoPage.GetRarity();
+                    if (card.Code == CodeInPage && Tools.CompareInLowerCase(card.Rarity, RarityInPage))
+                    {
+                        sb.AppendLine("MATCH!! [URL IS CORRECT]");
+                    }
+                    else
+                    {
+                        SetCardsToFix.Add(string.Format("{0}|{1}|{2}", CardName, card.Code, card.Rarity));
+                        sb.AppendLine(">>>>>>>>>>>>>>>>>>>>RARITY MISMATCH - FIX THIS SETCARD URL");
+                    }
+                }
+                else
+                {
+                    sb.AppendLine("--No TCG Avaiable to check--");
+                }
+
+                sb.AppendLine("______________________________________");
+                Results.Add(sb.ToString());               
+
+                File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\TCGCHECK_Results.txt", Results);
+                File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\TCGCHECK_FixList.txt", SetCardsToFix);
+            }
+            SetCardsToFix.Insert(0, SetCardsToFix.Count.ToString());
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\TCGCHECK_FixList.txt", SetCardsToFix);
+            DBUpdateform.SendFullCompletionSignal();
+            Masterwatch.Stop();
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
+            Driver.CloseDriver();
+            WriteOutputFiles();
         }
-        protected override void OnFormClosing(FormClosingEventArgs e)
+        private void TEST_FIXMISSIGRARITY()
         {
-            Application.Exit();
+            foreach(MasterCard ThisMasterCard in Database.MasterCards)
+            {
+                foreach(SetCard ThisSetCard in ThisMasterCard.SetCards) 
+                {
+                    if( ThisSetCard.Rarity == "?")
+                    {
+                        switch(ThisSetCard.Name) 
+                        {
+                            case "DUELIST SAGA": ThisSetCard.Rarity = "Ultra Rare (Duelist Saga Version)"; break;
+                            case "NOBLE KNIGHTS OF THE ROUND TABLE BOX SET": ThisSetCard.Rarity = "Platinum Rare"; break;
+                            case "NOBLE KNIGHTS OF THE ROUND TABLE BOX SET Power-Up Pack": ThisSetCard.Rarity = "Platinum Rare"; break;
+                            case "HOBBY LEAGUE 2": ThisSetCard.Rarity = "Ultra Rare（Hobby League Version"; break;
+                            case "HOBBY LEAGUE 3": ThisSetCard.Rarity = "Ultra Rare（Hobby League Version"; break;
+                            case "HOBBY LEAGUE 4": ThisSetCard.Rarity = "Ultra Rare（Hobby League Version"; break;
+                            case "HOBBY LEAGUE 5": ThisSetCard.Rarity = "Ultra Rare（Hobby League Version"; break;
+                            case "HOBBY LEAGUE 6": ThisSetCard.Rarity = "Ultra Rare（Hobby League Version"; break;
+                            case "HOBBY LEAGUE 7": ThisSetCard.Rarity = "Ultra Rare（Hobby League Version"; break;
+                        }
+                    }
+                }
+            }
+
+            Database.SaveDatabaseInJSON();
         }
-        #endregion
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TEST_FIXMISSIGRARITY();
+        }
     }
 }

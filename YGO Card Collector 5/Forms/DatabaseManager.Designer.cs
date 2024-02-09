@@ -273,6 +273,7 @@
             this.label69 = new System.Windows.Forms.Label();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.PanelFullTotals.SuspendLayout();
             this.TabMasterTotals.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -1323,6 +1324,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Black;
+            this.tabPage1.Controls.Add(this.button2);
             this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.btnTest);
             this.tabPage1.Controls.Add(this.label68);
@@ -1380,6 +1382,7 @@
             // 
             // label66
             // 
+            this.label66.BackColor = System.Drawing.Color.Black;
             this.label66.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label66.Location = new System.Drawing.Point(691, 54);
             this.label66.Name = "label66";
@@ -3421,6 +3424,17 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(373, 154);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(67, 38);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Test";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // DatabaseManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3721,5 +3735,6 @@
         private System.Windows.Forms.Button btnTest;
         private System.Windows.Forms.Button btnBackToMainMenu;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
