@@ -272,6 +272,7 @@
             this.label70 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.PanelFullTotals.SuspendLayout();
             this.TabMasterTotals.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -1322,6 +1323,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Black;
+            this.tabPage1.Controls.Add(this.button1);
             this.tabPage1.Controls.Add(this.btnTest);
             this.tabPage1.Controls.Add(this.label68);
             this.tabPage1.Controls.Add(this.label67);
@@ -1354,7 +1356,7 @@
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(67, 38);
             this.btnTest.TabIndex = 16;
-            this.btnTest.Text = "TEST";
+            this.btnTest.Text = "FIX";
             this.btnTest.UseVisualStyleBackColor = true;
             this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
@@ -3408,6 +3410,17 @@
             this.btnBackToMainMenu.UseVisualStyleBackColor = false;
             this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
             // 
+            // button1
+            // 
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(373, 105);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(67, 38);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "FIND";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // DatabaseManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3707,5 +3720,6 @@
         private System.Windows.Forms.Button btnUpdateSetCardListPrices;
         private System.Windows.Forms.Button btnTest;
         private System.Windows.Forms.Button btnBackToMainMenu;
+        private System.Windows.Forms.Button button1;
     }
 }
