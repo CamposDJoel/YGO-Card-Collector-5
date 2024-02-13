@@ -126,7 +126,6 @@
             this.lblMarketPricelabel = new System.Windows.Forms.Label();
             this.lblRarity = new System.Windows.Forms.Label();
             this.lblRariryLabel = new System.Windows.Forms.Label();
-            this.btnSetSearch = new System.Windows.Forms.Button();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
             this.btnSetPriceReport = new System.Windows.Forms.Button();
             this.btnStats = new System.Windows.Forms.Button();
@@ -149,6 +148,7 @@
             this.lblCodeSearch = new System.Windows.Forms.Label();
             this.txtCodeSearch = new System.Windows.Forms.TextBox();
             this.lblCodeSearchOutput = new System.Windows.Forms.Label();
+            this.btnOpenSetValue = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.MonsterType.SuspendLayout();
@@ -1461,19 +1461,6 @@
             this.lblRariryLabel.Text = "Rarity: ";
             this.lblRariryLabel.Visible = false;
             // 
-            // btnSetSearch
-            // 
-            this.btnSetSearch.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnSetSearch.Font = new System.Drawing.Font("Calibri Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnSetSearch.Location = new System.Drawing.Point(196, 0);
-            this.btnSetSearch.Name = "btnSetSearch";
-            this.btnSetSearch.Size = new System.Drawing.Size(93, 20);
-            this.btnSetSearch.TabIndex = 261;
-            this.btnSetSearch.Text = "Set Search Tool";
-            this.btnSetSearch.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnSetSearch.UseVisualStyleBackColor = false;
-            // 
             // btnBackToMainMenu
             // 
             this.btnBackToMainMenu.BackColor = System.Drawing.Color.Maroon;
@@ -1490,14 +1477,15 @@
             // 
             this.btnSetPriceReport.BackColor = System.Drawing.Color.Green;
             this.btnSetPriceReport.Font = new System.Drawing.Font("Calibri Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetPriceReport.ForeColor = System.Drawing.Color.Black;
+            this.btnSetPriceReport.ForeColor = System.Drawing.Color.White;
             this.btnSetPriceReport.Location = new System.Drawing.Point(288, 0);
             this.btnSetPriceReport.Name = "btnSetPriceReport";
             this.btnSetPriceReport.Size = new System.Drawing.Size(114, 20);
             this.btnSetPriceReport.TabIndex = 263;
-            this.btnSetPriceReport.Text = "Sets Pricing Report";
+            this.btnSetPriceReport.Text = "Full $$$ Report";
             this.btnSetPriceReport.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSetPriceReport.UseVisualStyleBackColor = false;
+            this.btnSetPriceReport.Click += new System.EventHandler(this.btnSetPriceReport_Click);
             // 
             // btnStats
             // 
@@ -1622,7 +1610,7 @@
             this.btnFilterSet.BackColor = System.Drawing.Color.Purple;
             this.btnFilterSet.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFilterSet.ForeColor = System.Drawing.Color.White;
-            this.btnFilterSet.Location = new System.Drawing.Point(661, 361);
+            this.btnFilterSet.Location = new System.Drawing.Point(603, 361);
             this.btnFilterSet.Name = "btnFilterSet";
             this.btnFilterSet.Size = new System.Drawing.Size(109, 20);
             this.btnFilterSet.TabIndex = 278;
@@ -1689,6 +1677,20 @@
             this.lblCodeSearchOutput.TabIndex = 268;
             this.lblCodeSearchOutput.Text = "Enter a Set CODE and hit search";
             // 
+            // btnOpenSetValue
+            // 
+            this.btnOpenSetValue.BackColor = System.Drawing.Color.Purple;
+            this.btnOpenSetValue.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpenSetValue.ForeColor = System.Drawing.Color.White;
+            this.btnOpenSetValue.Location = new System.Drawing.Point(711, 361);
+            this.btnOpenSetValue.Name = "btnOpenSetValue";
+            this.btnOpenSetValue.Size = new System.Drawing.Size(62, 20);
+            this.btnOpenSetValue.TabIndex = 279;
+            this.btnOpenSetValue.Text = "Set $$$";
+            this.btnOpenSetValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnOpenSetValue.UseVisualStyleBackColor = false;
+            this.btnOpenSetValue.Click += new System.EventHandler(this.btnOpenSetValue_Click);
+            // 
             // Collector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1696,6 +1698,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(775, 508);
+            this.Controls.Add(this.btnOpenSetValue);
             this.Controls.Add(this.btnFilterSet);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.panel15);
@@ -1713,7 +1716,6 @@
             this.Controls.Add(this.btnStats);
             this.Controls.Add(this.btnSetPriceReport);
             this.Controls.Add(this.btnBackToMainMenu);
-            this.Controls.Add(this.btnSetSearch);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listSetlist);
@@ -1840,7 +1842,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listSetlist;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button btnSetSearch;
         private System.Windows.Forms.Button btnBackToMainMenu;
         private System.Windows.Forms.Button btnSetPriceReport;
         private System.Windows.Forms.Button btnStats;
@@ -1877,5 +1878,6 @@
         private System.Windows.Forms.Label lblCodeSearch;
         private System.Windows.Forms.TextBox txtCodeSearch;
         private System.Windows.Forms.Label lblCodeSearchOutput;
+        private System.Windows.Forms.Button btnOpenSetValue;
     }
 }

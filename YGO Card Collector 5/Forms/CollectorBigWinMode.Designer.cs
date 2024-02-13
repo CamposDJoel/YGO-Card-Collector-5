@@ -32,7 +32,6 @@
             this.btnStats = new System.Windows.Forms.Button();
             this.btnSetPriceReport = new System.Windows.Forms.Button();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.GroupCardView = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.lblCardInfo_Name = new System.Windows.Forms.Label();
@@ -126,6 +125,11 @@
             this.btnGemini = new System.Windows.Forms.Button();
             this.btnSpirit = new System.Windows.Forms.Button();
             this.btnFlip = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lblCodeSearchOutput = new System.Windows.Forms.Label();
+            this.btnCodeSearch = new System.Windows.Forms.Button();
+            this.lblCodeSearch = new System.Windows.Forms.Label();
+            this.txtCodeSearch = new System.Windows.Forms.TextBox();
             this.btnFilterSet = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.listSetlist = new System.Windows.Forms.ListBox();
@@ -134,11 +138,7 @@
             this.GroupCardViewVariants = new System.Windows.Forms.GroupBox();
             this.btnNextPageVariant = new System.Windows.Forms.Button();
             this.btnPreviousPageVariant = new System.Windows.Forms.Button();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.lblCodeSearchOutput = new System.Windows.Forms.Label();
-            this.btnCodeSearch = new System.Windows.Forms.Button();
-            this.lblCodeSearch = new System.Windows.Forms.Label();
-            this.txtCodeSearch = new System.Windows.Forms.TextBox();
+            this.btnOpenSetValue = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
             this.tabControl2.SuspendLayout();
@@ -178,6 +178,7 @@
             this.btnSetPriceReport.TabIndex = 267;
             this.btnSetPriceReport.Text = "Sets Pricing Report";
             this.btnSetPriceReport.UseVisualStyleBackColor = false;
+            this.btnSetPriceReport.Click += new System.EventHandler(this.btnSetPriceReport_Click);
             // 
             // btnBackToMainMenu
             // 
@@ -190,18 +191,6 @@
             this.btnBackToMainMenu.Text = "<-- Back to Main Menu";
             this.btnBackToMainMenu.UseVisualStyleBackColor = false;
             this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(186, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 25);
-            this.button1.TabIndex = 265;
-            this.button1.Text = "Set Search Tool";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // GroupCardView
             // 
@@ -1437,12 +1426,70 @@
             this.btnFlip.UseVisualStyleBackColor = false;
             this.btnFlip.Click += new System.EventHandler(this.btnFlip_Click);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.SaddleBrown;
+            this.tabPage1.Controls.Add(this.lblCodeSearchOutput);
+            this.tabPage1.Controls.Add(this.btnCodeSearch);
+            this.tabPage1.Controls.Add(this.lblCodeSearch);
+            this.tabPage1.Controls.Add(this.txtCodeSearch);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(398, 127);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "Set Search By Code";
+            // 
+            // lblCodeSearchOutput
+            // 
+            this.lblCodeSearchOutput.BackColor = System.Drawing.Color.Black;
+            this.lblCodeSearchOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCodeSearchOutput.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodeSearchOutput.ForeColor = System.Drawing.Color.White;
+            this.lblCodeSearchOutput.Location = new System.Drawing.Point(21, 30);
+            this.lblCodeSearchOutput.Name = "lblCodeSearchOutput";
+            this.lblCodeSearchOutput.Size = new System.Drawing.Size(338, 93);
+            this.lblCodeSearchOutput.TabIndex = 272;
+            this.lblCodeSearchOutput.Text = "Enter a Set CODE and hit search";
+            // 
+            // btnCodeSearch
+            // 
+            this.btnCodeSearch.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnCodeSearch.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCodeSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnCodeSearch.Location = new System.Drawing.Point(225, 4);
+            this.btnCodeSearch.Name = "btnCodeSearch";
+            this.btnCodeSearch.Size = new System.Drawing.Size(79, 25);
+            this.btnCodeSearch.TabIndex = 271;
+            this.btnCodeSearch.Text = "Code Search";
+            this.btnCodeSearch.UseVisualStyleBackColor = false;
+            this.btnCodeSearch.Click += new System.EventHandler(this.btnCodeSearch_Click);
+            // 
+            // lblCodeSearch
+            // 
+            this.lblCodeSearch.AutoSize = true;
+            this.lblCodeSearch.BackColor = System.Drawing.Color.Transparent;
+            this.lblCodeSearch.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodeSearch.ForeColor = System.Drawing.Color.Yellow;
+            this.lblCodeSearch.Location = new System.Drawing.Point(74, 6);
+            this.lblCodeSearch.Name = "lblCodeSearch";
+            this.lblCodeSearch.Size = new System.Drawing.Size(39, 16);
+            this.lblCodeSearch.TabIndex = 270;
+            this.lblCodeSearch.Text = "Code:";
+            // 
+            // txtCodeSearch
+            // 
+            this.txtCodeSearch.Location = new System.Drawing.Point(118, 6);
+            this.txtCodeSearch.Name = "txtCodeSearch";
+            this.txtCodeSearch.Size = new System.Drawing.Size(101, 20);
+            this.txtCodeSearch.TabIndex = 269;
+            // 
             // btnFilterSet
             // 
             this.btnFilterSet.BackColor = System.Drawing.Color.Purple;
             this.btnFilterSet.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFilterSet.ForeColor = System.Drawing.Color.White;
-            this.btnFilterSet.Location = new System.Drawing.Point(908, 465);
+            this.btnFilterSet.Location = new System.Drawing.Point(822, 466);
             this.btnFilterSet.Name = "btnFilterSet";
             this.btnFilterSet.Size = new System.Drawing.Size(130, 25);
             this.btnFilterSet.TabIndex = 283;
@@ -1551,63 +1598,18 @@
             this.btnPreviousPageVariant.UseVisualStyleBackColor = false;
             this.btnPreviousPageVariant.Click += new System.EventHandler(this.btnPreviousPageVariant_Click);
             // 
-            // tabPage1
+            // btnOpenSetValue
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.SaddleBrown;
-            this.tabPage1.Controls.Add(this.lblCodeSearchOutput);
-            this.tabPage1.Controls.Add(this.btnCodeSearch);
-            this.tabPage1.Controls.Add(this.lblCodeSearch);
-            this.tabPage1.Controls.Add(this.txtCodeSearch);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(398, 127);
-            this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "Set Search By Code";
-            // 
-            // lblCodeSearchOutput
-            // 
-            this.lblCodeSearchOutput.BackColor = System.Drawing.Color.Black;
-            this.lblCodeSearchOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCodeSearchOutput.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodeSearchOutput.ForeColor = System.Drawing.Color.White;
-            this.lblCodeSearchOutput.Location = new System.Drawing.Point(21, 30);
-            this.lblCodeSearchOutput.Name = "lblCodeSearchOutput";
-            this.lblCodeSearchOutput.Size = new System.Drawing.Size(338, 93);
-            this.lblCodeSearchOutput.TabIndex = 272;
-            this.lblCodeSearchOutput.Text = "Enter a Set CODE and hit search";
-            // 
-            // btnCodeSearch
-            // 
-            this.btnCodeSearch.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnCodeSearch.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCodeSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnCodeSearch.Location = new System.Drawing.Point(225, 4);
-            this.btnCodeSearch.Name = "btnCodeSearch";
-            this.btnCodeSearch.Size = new System.Drawing.Size(79, 25);
-            this.btnCodeSearch.TabIndex = 271;
-            this.btnCodeSearch.Text = "Code Search";
-            this.btnCodeSearch.UseVisualStyleBackColor = false;
-            this.btnCodeSearch.Click += new System.EventHandler(this.btnCodeSearch_Click);
-            // 
-            // lblCodeSearch
-            // 
-            this.lblCodeSearch.AutoSize = true;
-            this.lblCodeSearch.BackColor = System.Drawing.Color.Transparent;
-            this.lblCodeSearch.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodeSearch.ForeColor = System.Drawing.Color.Yellow;
-            this.lblCodeSearch.Location = new System.Drawing.Point(74, 6);
-            this.lblCodeSearch.Name = "lblCodeSearch";
-            this.lblCodeSearch.Size = new System.Drawing.Size(39, 16);
-            this.lblCodeSearch.TabIndex = 270;
-            this.lblCodeSearch.Text = "Code:";
-            // 
-            // txtCodeSearch
-            // 
-            this.txtCodeSearch.Location = new System.Drawing.Point(118, 6);
-            this.txtCodeSearch.Name = "txtCodeSearch";
-            this.txtCodeSearch.Size = new System.Drawing.Size(101, 20);
-            this.txtCodeSearch.TabIndex = 269;
+            this.btnOpenSetValue.BackColor = System.Drawing.Color.Purple;
+            this.btnOpenSetValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpenSetValue.ForeColor = System.Drawing.Color.White;
+            this.btnOpenSetValue.Location = new System.Drawing.Point(952, 466);
+            this.btnOpenSetValue.Name = "btnOpenSetValue";
+            this.btnOpenSetValue.Size = new System.Drawing.Size(86, 25);
+            this.btnOpenSetValue.TabIndex = 288;
+            this.btnOpenSetValue.Text = "Set $$$";
+            this.btnOpenSetValue.UseVisualStyleBackColor = false;
+            this.btnOpenSetValue.Click += new System.EventHandler(this.btnOpenSetValue_Click);
             // 
             // CollectorBigWinMode
             // 
@@ -1616,6 +1618,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1056, 650);
+            this.Controls.Add(this.btnOpenSetValue);
             this.Controls.Add(this.btnNextPageVariant);
             this.Controls.Add(this.btnPreviousPageVariant);
             this.Controls.Add(this.GroupCardViewVariants);
@@ -1637,7 +1640,6 @@
             this.Controls.Add(this.btnStats);
             this.Controls.Add(this.btnSetPriceReport);
             this.Controls.Add(this.btnBackToMainMenu);
-            this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -1670,7 +1672,6 @@
         private System.Windows.Forms.Button btnStats;
         private System.Windows.Forms.Button btnSetPriceReport;
         private System.Windows.Forms.Button btnBackToMainMenu;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox GroupCardView;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label lblCardInfo_Name;
@@ -1777,5 +1778,6 @@
         private System.Windows.Forms.Button btnCodeSearch;
         private System.Windows.Forms.Label lblCodeSearch;
         private System.Windows.Forms.TextBox txtCodeSearch;
+        private System.Windows.Forms.Button btnOpenSetValue;
     }
 }

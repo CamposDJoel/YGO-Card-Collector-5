@@ -923,6 +923,20 @@ namespace YGO_Card_Collector_5
             StatsReport SR = new StatsReport(this);
             SR.Show();
         }
+        private void btnSetPriceReport_Click(object sender, EventArgs e)
+        {
+            Hide();
+
+            PricingReport PR = new PricingReport(this);
+            PR.Show();
+        }
+        private void btnOpenSetValue_Click(object sender, EventArgs e)
+        {
+            Hide();
+
+            PricingReport PR = new PricingReport(this, listSetGroups.SelectedIndex, listSetlist.SelectedIndex);
+            PR.Show();
+        }
         #endregion
 
         #region Event Listeners (Card Viewer Controls)
@@ -1447,6 +1461,6 @@ namespace YGO_Card_Collector_5
                    
             LoadPage();
         }
-        #endregion
+        #endregion        
     }
 }
