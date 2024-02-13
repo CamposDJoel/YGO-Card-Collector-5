@@ -2447,7 +2447,6 @@ namespace YGO_Card_Collector_5
                 _SetDetailsLabels.Add(totalsMedian2);
 
 
-
                 //Display the Extra Card List Label
                 CurrentY_Axis += 30;
                 Label ExtraCardsHeader = new Label();
@@ -2568,6 +2567,13 @@ namespace YGO_Card_Collector_5
                 packname.Text = ThisSetCard.GetCardName();
                 packname.ForeColor = Color.White;
                 packname.BorderStyle = BorderStyle.FixedSingle;
+                if(ThisSetCard.HasTCGURL())
+                {
+                    packname.Tag = ThisSetCard.TCGPlayerURL;
+                    packname.Click += new EventHandler(NameLabel_click);
+                    packname.MouseEnter += new EventHandler(OnMouseEnterLabel);
+                    packname.MouseLeave += new EventHandler(OnMouseLeaveLabel);
+                }                
                 packname.AutoSize = false;
                 packname.Size = new Size(220, Ysize);
                 packname.Location = new Point(90, CurrentY_Axis);
@@ -2617,7 +2623,7 @@ namespace YGO_Card_Collector_5
                 obtainedLabel.Location = new Point(510, CurrentY_Axis);
                 _SetDetailsLabels.Add(obtainedLabel);
             }
-        }
+        }      
         private void btnUpdateSetCardListPrices_Click(object sender, EventArgs e)
         {
             Hide();
@@ -2629,20 +2635,26 @@ namespace YGO_Card_Collector_5
             SetPack packToTest = Database.SetPackByName[SetName];
             UpdateSetPrices(packToTest.FullCardList);
         }
+        private void NameLabel_click(object sender, EventArgs e)
+        {
+            //Initialize the Card Selected based on the TAG of the image clicked.
+            Label ThisLabel = (Label)sender;
+            Tools.LaunchURLIntoBrowser(ThisLabel.Tag.ToString());
+        }
+        private void OnMouseEnterLabel(object sender, EventArgs e)
+        {
+            //SoundServer.PlaySoundEffect(SoundEffect.Hover);
+            Label thisLabel = (Label)sender;
+            thisLabel.ForeColor = Color.Yellow;
+        }
+        private void OnMouseLeaveLabel(object sender, EventArgs e)
+        {
+            Label thisLabel = (Label)sender;
+            thisLabel.ForeColor = Color.White;
+        }
         #endregion
 
-        #region Other Event Listeners
-        private void btnTest_Click(object sender, EventArgs e)
-        {
-            TEST_FIXTCGURLS();
-          
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //TEST_FINDBADURLS();
-            TEST_FINDBADURLS_Group();
-        }
+        #region Other Event Listeners     
         private void btnBackToMainMenu_Click(object sender, EventArgs e)
         {
             Dispose();
@@ -2654,6 +2666,7 @@ namespace YGO_Card_Collector_5
         }
         #endregion
 
+        #region TEST functions
         private void TEST_FIXTCGURLS()
         {
             Hide();
@@ -3171,12 +3184,23 @@ namespace YGO_Card_Collector_5
             Driver.CloseDriver();
             WriteOutputFiles();
         }
+        private void btnTest_Click(object sender, EventArgs e)
+        {
+            TEST_FIXTCGURLS();
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //TEST_FINDBADURLS();
+            TEST_FINDBADURLS_Group();
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             //TEST_FIXMISSIGRARITY();
             //TEST_GETURLS();
             TEST_UpdateFromFixedList();
         }
+        #endregion
     }
 }

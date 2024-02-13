@@ -75,8 +75,6 @@ namespace YGO_Card_Collector_5
                     }
                     Y_Location += 60;
                 }
-
-                //LoadPage();
             }
         }
         #endregion
