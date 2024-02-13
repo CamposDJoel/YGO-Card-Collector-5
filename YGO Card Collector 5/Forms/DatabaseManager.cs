@@ -2578,89 +2578,33 @@ namespace YGO_Card_Collector_5
                 PanelSetInfo.Controls.Add(rarityLabel);
                 rarityLabel.Text = ThisSetCard.Rarity;
                 rarityLabel.BorderStyle = BorderStyle.FixedSingle;
-                rarityLabel.ForeColor = Color.White;
+                rarityLabel.ForeColor = Tools.GetRarityColorForLabel(ThisSetCard.Rarity);
                 rarityLabel.AutoSize = false;
                 rarityLabel.Size = new Size(80, Ysize);
                 rarityLabel.Location = new Point(310, CurrentY_Axis);
                 _SetDetailsLabels.Add(rarityLabel);
-
-                switch (ThisSetCard.Rarity)
-                {
-                    case "Common": rarityLabel.ForeColor = Color.White; break;
-                    case "Rare": rarityLabel.ForeColor = Color.PaleGreen; break;
-                    case "Ultra Rare": rarityLabel.ForeColor = Color.Moccasin; break;
-                    case "Ultimate Rare": rarityLabel.ForeColor = Color.HotPink; break;
-                    case "Gold Rare": rarityLabel.ForeColor = Color.Gold; break;
-                    case "Hobby": rarityLabel.ForeColor = Color.MediumPurple; break;
-                    case "Millennium Secret Rare": rarityLabel.ForeColor = Color.Goldenrod; break;
-                    case "Platinum Secret Rare": rarityLabel.ForeColor = Color.LightSkyBlue; break;
-                    case "Starfoil": rarityLabel.ForeColor = Color.BlueViolet; break;
-                    case "Shattefoil": rarityLabel.ForeColor = Color.MediumTurquoise; break;
-                    case "Super Rare": rarityLabel.ForeColor = Color.SteelBlue; break;
-                    case "Secret Rare": rarityLabel.ForeColor = Color.Pink; break;
-                    case "Ghost Rare": rarityLabel.ForeColor = Color.PowderBlue; break;
-                    case "Gold Secret": rarityLabel.ForeColor = Color.Yellow; break;
-                    case "Platinum Rare": rarityLabel.ForeColor = Color.Aqua; break;
-                    case "Mosaic Rare": rarityLabel.ForeColor = Color.DarkViolet; break;
-                    case "Prismatic Secret Rare": rarityLabel.ForeColor = Color.Plum; break;
-                    default: rarityLabel.ForeColor = Color.White; break;
-                }
 
                 //market Label
                 Label marketLabel = new Label();
                 PanelSetInfo.Controls.Add(marketLabel);
                 marketLabel.Text = ThisSetCard.MarketPrice;
                 marketLabel.BorderStyle = BorderStyle.FixedSingle;
-                marketLabel.ForeColor = Color.White;
+                marketLabel.ForeColor = Tools.GetPriceColorForLabel(ThisSetCard.GetDoubleMarketPrice());
                 marketLabel.AutoSize = false;
                 marketLabel.Size = new Size(60, Ysize);
                 marketLabel.Location = new Point(390, CurrentY_Axis);
                 _SetDetailsLabels.Add(marketLabel);
-
-                if (ThisSetCard.GetDoubleMarketPrice() < 1)
-                {
-                    marketLabel.ForeColor = Color.White;
-                }
-                else if (ThisSetCard.GetDoubleMarketPrice() < 5)
-                {
-                    marketLabel.ForeColor = Color.LightGreen;
-                }
-                else if (ThisSetCard.GetDoubleMarketPrice() < 50)
-                {
-                    marketLabel.ForeColor = Color.HotPink;
-                }
-                else
-                {
-                    marketLabel.ForeColor = Color.Gold;
-                }
 
                 //median Label
                 Label medianLabel = new Label();
                 PanelSetInfo.Controls.Add(medianLabel);
                 medianLabel.Text = ThisSetCard.MediamPrice;
                 medianLabel.BorderStyle = BorderStyle.FixedSingle;
-                medianLabel.ForeColor = Color.White;
+                medianLabel.ForeColor = Tools.GetPriceColorForLabel(ThisSetCard.GetDoubleMedianPrice());
                 medianLabel.AutoSize = false;
                 medianLabel.Size = new Size(60, Ysize);
                 medianLabel.Location = new Point(450, CurrentY_Axis);
                 _SetDetailsLabels.Add(medianLabel);
-
-                if (ThisSetCard.GetDoubleMedianPrice() < 1)
-                {
-                    medianLabel.ForeColor = Color.White;
-                }
-                else if (ThisSetCard.GetDoubleMedianPrice() < 5)
-                {
-                    medianLabel.ForeColor = Color.LightGreen;
-                }
-                else if (ThisSetCard.GetDoubleMedianPrice() < 50)
-                {
-                    medianLabel.ForeColor = Color.HotPink;
-                }
-                else
-                {
-                    medianLabel.ForeColor = Color.Gold;
-                }
 
                 //obtained Label
                 Label obtainedLabel = new Label();
@@ -2696,7 +2640,8 @@ namespace YGO_Card_Collector_5
 
         private void button1_Click(object sender, EventArgs e)
         {
-            TEST_FINDBADURLS();
+            //TEST_FINDBADURLS();
+            TEST_FINDBADURLS_Group();
         }
         private void btnBackToMainMenu_Click(object sender, EventArgs e)
         {
@@ -2941,6 +2886,99 @@ namespace YGO_Card_Collector_5
             Driver.CloseDriver();
             WriteOutputFiles();
         }
+        private void TEST_FINDBADURLS_Group()
+        {
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this);
+            DBUpdateform.Show();
+
+            Driver.ClearLogs();
+            var Masterwatch = new Stopwatch();
+            Masterwatch.Start();
+            Driver.OpenBrowser();
+
+
+            List<SetCard> setCards = new List<SetCard>();
+            foreach (SetInfo thisSetInfo in Database.StructureDecks)
+            {
+                if(Database.SetPackByName.ContainsKey(thisSetInfo.Name))
+                {
+                    SetPack packToTest = Database.SetPackByName[thisSetInfo.Name];
+                    List<SetCard> ThisPackFullCardList = packToTest.FullCardList;
+                    foreach (SetCard card in ThisPackFullCardList)
+                    {
+                        setCards.Add(card);
+                    }
+                }            
+            }
+
+            /*for(int x = 100; x < Database.BoosterPacks.Count; x++)
+            {
+                string setname = Database.BoosterPacks[x].Name;
+                if (Database.SetPackByName.ContainsKey(setname))
+                {
+                    SetPack packToTest = Database.SetPackByName[setname];
+                    List<SetCard> ThisPackFullCardList = packToTest.FullCardList;
+                    foreach (SetCard card in ThisPackFullCardList)
+                    {
+                        setCards.Add(card);
+                    }
+                }
+            }*/
+
+            List<string> Results = new List<string>();
+            List<string> SetCardsToFix = new List<string>();
+
+
+            DBUpdateform.SetTotalCardsToScan(setCards.Count);
+
+            foreach (SetCard card in setCards)
+            {
+                StringBuilder sb = new StringBuilder();
+
+                string CardName = card.GetCardName();
+                sb.AppendLine(string.Format("Card: {0}", CardName));
+                DBUpdateform.SendCardStartSignal(CardName);
+
+                if (card.HasTCGURL())
+                {
+                    //Go to the URL
+                    Driver.GoToURL(card.TCGPlayerURL);
+                    TCGCardInfoPage.WaitUntilPageIsLoaded(true);
+
+                    //Check the Code/Rarity from the page to match the SetCard
+                    sb.Append(string.Format("CODE/Rarity In DB: [{0}|{1}] |", card.Code, card.Rarity));
+                    string CodeInPage = TCGCardInfoPage.GetCode();
+                    string RarityInPage = TCGCardInfoPage.GetRarity();
+                    if (card.Code == CodeInPage && Tools.CompareInLowerCase(card.Rarity, RarityInPage))
+                    {
+                        sb.AppendLine("MATCH!! [URL IS CORRECT]");
+                    }
+                    else
+                    {
+                        SetCardsToFix.Add(string.Format("{0}|{1}|{2}", CardName, card.Code, card.Rarity));
+                        sb.AppendLine(">>>>>>>>>>>>>>>>>>>>RARITY MISMATCH - FIX THIS SETCARD URL");
+                    }
+                }
+                else
+                {
+                    sb.AppendLine("--No TCG Avaiable to check--");
+                }
+
+                sb.AppendLine("______________________________________");
+                Results.Add(sb.ToString());
+
+                File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\TCGCHECK_Results.txt", Results);
+                File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\TCGCHECK_FixList.txt", SetCardsToFix);
+            }
+            SetCardsToFix.Insert(0, SetCardsToFix.Count.ToString());
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\TCGCHECK_FixList.txt", SetCardsToFix);
+            DBUpdateform.SendFullCompletionSignal();
+            Masterwatch.Stop();
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
+            Driver.CloseDriver();
+            WriteOutputFiles();
+        }
         private void TEST_FIXMISSIGRARITY()
         {
             foreach(MasterCard ThisMasterCard in Database.MasterCards)
@@ -2967,10 +3005,178 @@ namespace YGO_Card_Collector_5
 
             Database.SaveDatabaseInJSON();
         }
+        private void TEST_GETURLS()
+        {
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this);
+            DBUpdateform.Show();
+
+            Driver.ClearLogs();
+            var Masterwatch = new Stopwatch();
+            Masterwatch.Start();
+            Driver.OpenBrowser();
+
+            //Open the file
+            StreamReader SR_SaveFile = new StreamReader(
+                Directory.GetCurrentDirectory() + "\\Database\\GetURLList.txt");
+
+            //String that hold the data of one line of the txt file
+            string line = "";
+
+            line = SR_SaveFile.ReadLine();
+            int cardCount = Convert.ToInt32(line);
+
+            DBUpdateform.SetTotalCardsToScan(cardCount);
+
+            List<string> output = new List<string>();
+
+            for (int i = 0; i < cardCount; i++)
+            {
+                line = SR_SaveFile.ReadLine();
+                string[] tokens = line.Split('|');
+                string cardname = tokens[0];
+                string code = tokens[1];
+                string rarity = tokens[2];
+
+                Driver.AddToFullLog(string.Format("This Code: {0} | Rarity: {1}", code, rarity));
+
+                MasterCard ThisMasterCard = Database.MasterCardByName[cardname];
+                SetCard ThisSetCard = ThisMasterCard.GetCardWithCodeAndRarity(code, rarity);
+                output.Add(string.Format("{0}|{1}", line, ThisSetCard.TCGPlayerURL));
+                
+                Driver.AddToFullLog("-----------------------------------");
+            }
+
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\UnsucessfulList_URLS.txt", output);
+
+            DBUpdateform.SendFullCompletionSignal();
+            Masterwatch.Stop();
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
+            Driver.CloseDriver();
+            WriteOutputFiles();
+        }
+        private void TEST_UpdateFromFixedList()
+        {
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this);
+            DBUpdateform.Show();
+
+            Driver.ClearLogs();
+            var Masterwatch = new Stopwatch();
+            Masterwatch.Start();
+            Driver.OpenBrowser();
+
+            //Open the file
+            StreamReader SR_SaveFile = new StreamReader(
+                Directory.GetCurrentDirectory() + "\\Database\\Fixed_URLS.txt");
+
+            //String that hold the data of one line of the txt file
+            string line = "";
+
+            line = SR_SaveFile.ReadLine();
+            int cardCount = Convert.ToInt32(line);
+
+            DBUpdateform.SetTotalCardsToScan(cardCount);
+
+            List<string> output = new List<string>();
+            for (int i = 0; i < cardCount; i++)
+            {
+                line = SR_SaveFile.ReadLine();
+                string[] tokens = line.Split('|');
+                string cardname = tokens[0];
+                string code = tokens[1];
+                string rarity = tokens[2];
+                string URL = tokens[3];
+
+                DBUpdateform.SendCardStartSignal(cardname);
+                Driver.AddToFullLog(string.Format("This Code: {0} | Rarity: {1}", code, rarity));
+
+
+                MasterCard ThisMasterCard = Database.MasterCardByName[cardname];
+                SetCard ThisSetCard = ThisMasterCard.GetCardWithCodeAndRarity(code, rarity);
+                string OG_Market = ThisSetCard.MarketPrice;
+                string OG_Median = ThisSetCard.MediamPrice;
+                string OG_URL = ThisSetCard.TCGPlayerURL;
+
+                Driver.AddToFullLog(string.Format("OLD DATA -  Prices: [{0}|{1}] - URL:{2}", OG_Market, OG_Median, OG_URL));
+
+
+                /*
+                 if (URL == "Unavailable")
+                 {
+                     ThisSetCard.OverridePrices("$0.00", "$0.00");
+                     ThisSetCard.TCGPlayerURL = URL;                    
+                 }
+                 else
+                 {
+                     Driver.GoToURL(URL);
+                     TCGCardInfoPage.WaitUntilPageIsLoaded(false);
+
+                     //Save the URL and Update prices
+                     ThisSetCard.TCGPlayerURL = URL;
+
+                     //Update prices since we are here.
+                     string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                     string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+                     ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+
+                 }*/
+
+                ThisSetCard.TCGPlayerURL = "Missing";
+                ThisSetCard.OverridePrices("$0.00", "$0.00");
+                /*
+                ThisSetCard.TCGPlayerURL = "Missing";
+                ThisSetCard.OverridePrices("$0.00", "$0.00");
+                */
+
+
+
+                /*
+                Driver.GoToURL(URL);
+                TCGCardInfoPage.WaitUntilPageIsLoaded(true);
+                string CodeInPage = TCGCardInfoPage.GetCode();
+                string RarityInPage = TCGCardInfoPage.GetRarity();
+                if (ThisSetCard.Code == CodeInPage && RarityInPage == "Starfoil Rare")
+                {
+                    Driver.AddToFullLog("-------------------------------------------->GOOD URL FOUND");
+
+                    //Save the URL and Update prices
+                    //ThisSetCard.TCGPlayerURL = URL;
+
+                    //Update prices since we are here.
+                    //string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                   // string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+                    //ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+
+                }
+                else
+                {
+                    output.Add(line);
+                    Driver.AddToFullLog("URL To Fix");
+                }
+                */
+
+                string NEW_Market = ThisSetCard.MarketPrice;
+                string NEW_Median = ThisSetCard.MediamPrice;
+                string NEW_URL = ThisSetCard.TCGPlayerURL;
+                Driver.AddToFullLog(string.Format("NEW DATA -  Prices: [{0}|{1}] - URL:{2}", NEW_Market, NEW_Median, NEW_URL));
+                Driver.AddToFullLog("-----------------------------------");
+
+                File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\BP03TEST.txt", output);
+            }
+
+            DBUpdateform.SendFullCompletionSignal();
+            Masterwatch.Stop();
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
+            Driver.CloseDriver();
+            WriteOutputFiles();
+        }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            TEST_FIXMISSIGRARITY();
+            //TEST_FIXMISSIGRARITY();
+            //TEST_GETURLS();
+            TEST_UpdateFromFixedList();
         }
     }
 }
