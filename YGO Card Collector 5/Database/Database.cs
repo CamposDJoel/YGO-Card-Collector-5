@@ -3,11 +3,9 @@
 //Database Class
 
 using Newtonsoft.Json;
-using OpenQA.Selenium.DevTools.V119.Page;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using static YGO_Card_Collector_5.SetCard;
 
 namespace YGO_Card_Collector_5
 {
@@ -517,6 +515,104 @@ namespace YGO_Card_Collector_5
                 }
             }
             return count;
+        }
+        public static List<string> GetSetPacksWithCode(string code)
+        {
+            List<string> resuls = new List<string>();
+
+            foreach(SetInfo setInfo in BoosterPacks)
+            {
+                if(setInfo.GetCode() == code) 
+                {
+                    resuls.Add(string.Format("Booster Pack: ({0}) {1}",setInfo.Year, setInfo.Name));
+                }
+            }
+            foreach (SetInfo setInfo in SpEditionBoxes)
+            {
+                if (setInfo.GetCode() == code)
+                {
+                    resuls.Add(string.Format("Sp. Edition Box: ({0}) {1}", setInfo.Year, setInfo.Name));
+                }
+            }
+            foreach (SetInfo setInfo in StarterDecks)
+            {
+                if (setInfo.GetCode() == code)
+                {
+                    resuls.Add(string.Format("Starter Deck: ({0}) {1}", setInfo.Year, setInfo.Name));
+                }
+            }
+            foreach (SetInfo setInfo in StructureDecks)
+            {
+                if (setInfo.GetCode() == code)
+                {
+                    resuls.Add(string.Format("Structure Deck: ({0}) {1}", setInfo.Year, setInfo.Name));
+                }
+            }
+            foreach (SetInfo setInfo in Tins)
+            {
+                if (setInfo.GetCode() == code)
+                {
+                    resuls.Add(string.Format("Tin: ({0}) {1}", setInfo.Year, setInfo.Name));
+                }
+            }
+            foreach (SetInfo setInfo in SpeedDuel)
+            {
+                if (setInfo.GetCode() == code)
+                {
+                    resuls.Add(string.Format("Speed Duel: ({0}) {1}", setInfo.Year, setInfo.Name));
+                }
+            }
+            foreach (SetInfo setInfo in DuelistPacks)
+            {
+                if (setInfo.GetCode() == code)
+                {
+                    resuls.Add(string.Format("DP: ({0}) {1}", setInfo.Year, setInfo.Name));
+                }
+            }
+            foreach (SetInfo setInfo in DuelTerminal)
+            {
+                if (setInfo.GetCode() == code)
+                {
+                    resuls.Add(string.Format("DT: ({0}) {1}", setInfo.Year, setInfo.Name));
+                }
+            }
+            foreach (SetInfo setInfo in Others)
+            {
+                if (setInfo.GetCode() == code)
+                {
+                    resuls.Add(string.Format("Other: ({0}) {1}", setInfo.Year, setInfo.Name));
+                }
+            }
+            foreach (SetInfo setInfo in MBC)
+            {
+                if (setInfo.GetCode() == code)
+                {
+                    resuls.Add(string.Format("MBC: ({0}) {1}", setInfo.Year, setInfo.Name));
+                }
+            }
+            foreach (SetInfo setInfo in Tournaments)
+            {
+                if (setInfo.GetCode() == code)
+                {
+                    resuls.Add(string.Format("Tournament: ({0}) {1}", setInfo.Year, setInfo.Name));
+                }
+            }
+            foreach (SetInfo setInfo in Promos)
+            {
+                if (setInfo.GetCode() == code)
+                {
+                    resuls.Add(string.Format("Promo: ({0}) {1}", setInfo.Year, setInfo.Name));
+                }
+            }
+            foreach (SetInfo setInfo in VideoGames)
+            {
+                if (setInfo.GetCode() == code)
+                {
+                    resuls.Add(string.Format("Video Game: ({0}) {1}", setInfo.Year, setInfo.Name));
+                }
+            }
+
+            return resuls;
         }
         #endregion
 

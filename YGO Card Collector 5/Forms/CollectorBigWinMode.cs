@@ -5,6 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Text;
 using System.Windows.Forms;
 
 namespace YGO_Card_Collector_5
@@ -915,6 +916,13 @@ namespace YGO_Card_Collector_5
             Dispose();
             _MainMenuForm.Show();
         }
+        private void btnStats_Click(object sender, EventArgs e)
+        {
+            Hide();
+
+            StatsReport SR = new StatsReport(this);
+            SR.Show();
+        }
         #endregion
 
         #region Event Listeners (Card Viewer Controls)
@@ -1348,6 +1356,32 @@ namespace YGO_Card_Collector_5
                 GroupCardView.Text = string.Format("PAGE: {0}  -  SEARCH TERM: \"{1}\"  -  Total Cards: {2}", _CurrentCardPage, SearchTerm, _CurrentMasterCardList.Count);
 
                 LoadPage();
+            }
+        }
+        private void btnCodeSearch_Click(object sender, EventArgs e)
+        {
+            string searchTerm = txtCodeSearch.Text.ToString();
+            searchTerm = searchTerm.ToUpper();
+
+            //scan the data base for each set group match
+            if (searchTerm.Length >= 3)
+            {
+                List<string> results = Database.GetSetPacksWithCode(searchTerm);
+
+                //print the results
+                StringBuilder sb = new StringBuilder();
+                foreach (string line in results)
+                {
+                    sb.AppendLine(line);
+                }
+                if (results.Count == 0)
+                {
+                    lblCodeSearchOutput.Text = "No Results";
+                }
+                else
+                {
+                    lblCodeSearchOutput.Text = sb.ToString();
+                }
             }
         }
         #endregion

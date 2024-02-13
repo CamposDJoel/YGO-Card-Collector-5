@@ -126,10 +126,10 @@
             this.lblMarketPricelabel = new System.Windows.Forms.Label();
             this.lblRarity = new System.Windows.Forms.Label();
             this.lblRariryLabel = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSetSearch = new System.Windows.Forms.Button();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
             this.btnSetPriceReport = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnStats = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
@@ -144,6 +144,11 @@
             this.panel25 = new System.Windows.Forms.Panel();
             this.panel26 = new System.Windows.Forms.Panel();
             this.btnFilterSet = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnCodeSearch = new System.Windows.Forms.Button();
+            this.lblCodeSearch = new System.Windows.Forms.Label();
+            this.txtCodeSearch = new System.Windows.Forms.TextBox();
+            this.lblCodeSearchOutput = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.MonsterType.SuspendLayout();
@@ -156,6 +161,7 @@
             this.groupColor.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
             // GroupCardView
@@ -262,6 +268,7 @@
             // 
             this.tabControl2.Controls.Add(this.MonsterType);
             this.tabControl2.Controls.Add(this.tabPage2);
+            this.tabControl2.Controls.Add(this.tabPage1);
             this.tabControl2.Location = new System.Drawing.Point(5, 362);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
@@ -1454,18 +1461,18 @@
             this.lblRariryLabel.Text = "Rarity: ";
             this.lblRariryLabel.Visible = false;
             // 
-            // button1
+            // btnSetSearch
             // 
-            this.button1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.button1.Font = new System.Drawing.Font("Calibri Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(196, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 20);
-            this.button1.TabIndex = 261;
-            this.button1.Text = "Set Search Tool";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnSetSearch.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnSetSearch.Font = new System.Drawing.Font("Calibri Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnSetSearch.Location = new System.Drawing.Point(196, 0);
+            this.btnSetSearch.Name = "btnSetSearch";
+            this.btnSetSearch.Size = new System.Drawing.Size(93, 20);
+            this.btnSetSearch.TabIndex = 261;
+            this.btnSetSearch.Text = "Set Search Tool";
+            this.btnSetSearch.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSetSearch.UseVisualStyleBackColor = false;
             // 
             // btnBackToMainMenu
             // 
@@ -1492,19 +1499,19 @@
             this.btnSetPriceReport.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnSetPriceReport.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnStats
             // 
-            this.button2.BackColor = System.Drawing.Color.Indigo;
-            this.button2.Font = new System.Drawing.Font("Calibri Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(401, 0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(114, 20);
-            this.button2.TabIndex = 264;
-            this.button2.Text = "Collection Stats";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnStats.BackColor = System.Drawing.Color.Indigo;
+            this.btnStats.Font = new System.Drawing.Font("Calibri Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStats.ForeColor = System.Drawing.Color.White;
+            this.btnStats.Location = new System.Drawing.Point(401, 0);
+            this.btnStats.Name = "btnStats";
+            this.btnStats.Size = new System.Drawing.Size(114, 20);
+            this.btnStats.TabIndex = 264;
+            this.btnStats.Text = "Collection Stats";
+            this.btnStats.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnStats.UseVisualStyleBackColor = false;
+            this.btnStats.Click += new System.EventHandler(this.btnStats_Click);
             // 
             // panel14
             // 
@@ -1624,6 +1631,64 @@
             this.btnFilterSet.UseVisualStyleBackColor = false;
             this.btnFilterSet.Click += new System.EventHandler(this.btnFilterSet_Click);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.SaddleBrown;
+            this.tabPage1.Controls.Add(this.lblCodeSearchOutput);
+            this.tabPage1.Controls.Add(this.btnCodeSearch);
+            this.tabPage1.Controls.Add(this.lblCodeSearch);
+            this.tabPage1.Controls.Add(this.txtCodeSearch);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(366, 116);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "Set Search By Code";
+            // 
+            // btnCodeSearch
+            // 
+            this.btnCodeSearch.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnCodeSearch.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCodeSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnCodeSearch.Location = new System.Drawing.Point(215, 5);
+            this.btnCodeSearch.Name = "btnCodeSearch";
+            this.btnCodeSearch.Size = new System.Drawing.Size(79, 25);
+            this.btnCodeSearch.TabIndex = 267;
+            this.btnCodeSearch.Text = "Code Search";
+            this.btnCodeSearch.UseVisualStyleBackColor = false;
+            this.btnCodeSearch.Click += new System.EventHandler(this.btnCodeSearch_Click);
+            // 
+            // lblCodeSearch
+            // 
+            this.lblCodeSearch.AutoSize = true;
+            this.lblCodeSearch.BackColor = System.Drawing.Color.Transparent;
+            this.lblCodeSearch.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodeSearch.ForeColor = System.Drawing.Color.Yellow;
+            this.lblCodeSearch.Location = new System.Drawing.Point(64, 7);
+            this.lblCodeSearch.Name = "lblCodeSearch";
+            this.lblCodeSearch.Size = new System.Drawing.Size(39, 16);
+            this.lblCodeSearch.TabIndex = 266;
+            this.lblCodeSearch.Text = "Code:";
+            // 
+            // txtCodeSearch
+            // 
+            this.txtCodeSearch.Location = new System.Drawing.Point(108, 7);
+            this.txtCodeSearch.Name = "txtCodeSearch";
+            this.txtCodeSearch.Size = new System.Drawing.Size(101, 20);
+            this.txtCodeSearch.TabIndex = 265;
+            // 
+            // lblCodeSearchOutput
+            // 
+            this.lblCodeSearchOutput.BackColor = System.Drawing.Color.Black;
+            this.lblCodeSearchOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCodeSearchOutput.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodeSearchOutput.ForeColor = System.Drawing.Color.White;
+            this.lblCodeSearchOutput.Location = new System.Drawing.Point(11, 31);
+            this.lblCodeSearchOutput.Name = "lblCodeSearchOutput";
+            this.lblCodeSearchOutput.Size = new System.Drawing.Size(338, 82);
+            this.lblCodeSearchOutput.TabIndex = 268;
+            this.lblCodeSearchOutput.Text = "Enter a Set CODE and hit search";
+            // 
             // Collector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1645,10 +1710,10 @@
             this.Controls.Add(this.panel24);
             this.Controls.Add(this.panel25);
             this.Controls.Add(this.panel26);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnStats);
             this.Controls.Add(this.btnSetPriceReport);
             this.Controls.Add(this.btnBackToMainMenu);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSetSearch);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.listSetlist);
@@ -1683,6 +1748,8 @@
             this.groupBox8.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1773,10 +1840,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ListBox listSetlist;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSetSearch;
         private System.Windows.Forms.Button btnBackToMainMenu;
         private System.Windows.Forms.Button btnSetPriceReport;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnStats;
         private System.Windows.Forms.Label lblProdeckLink;
         private System.Windows.Forms.Label lblKonamiLink;
         private System.Windows.Forms.Label lblCode;
@@ -1805,5 +1872,10 @@
         private System.Windows.Forms.Label lblCardInfo_Name;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnFilterSet;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Button btnCodeSearch;
+        private System.Windows.Forms.Label lblCodeSearch;
+        private System.Windows.Forms.TextBox txtCodeSearch;
+        private System.Windows.Forms.Label lblCodeSearchOutput;
     }
 }
