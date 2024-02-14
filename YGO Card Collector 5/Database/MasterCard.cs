@@ -180,8 +180,9 @@ namespace YGO_Card_Collector_5
             _Name = name;
             _Rarity = rarity;
         }
-        #endregion       
+        #endregion
 
+        #region Public Methods
         public bool HasTCGURL()
         {
             return !TCGPlayerURLIsMissing() && !TCGPlayerURLIsUnavailable();
@@ -219,6 +220,10 @@ namespace YGO_Card_Collector_5
         {
             return Database.MasterCardByCode[_Code].HasProDeckURL();
         }
+        public double GetDoubleFloorPrice()
+        {
+            return Tools.CovertPriceToDouble(_FloorPrice);
+        }
         public double GetDoubleMarketPrice()
         {
             return Tools.CovertPriceToDouble(_MarketPrice);
@@ -245,12 +250,14 @@ namespace YGO_Card_Collector_5
                 Database.MasterCardByCode[_Code].Obtained = true;
             }
         }
+        #endregion
 
         #region Public Accessors
         public string ReleaseDate { get { return _ReleaseDate; } set { _ReleaseDate = value; } }
         public string Code { get { return _Code; } set { _Code = value; } }
         public string Name { get { return _Name; } set { _Name = value; } }
         public string Rarity { get { return _Rarity; } set { _Rarity = value; } }
+        public string FloorPrice { get { return _FloorPrice; } set { _FloorPrice = value; } }
         public string MarketPrice { get { return _MarketPrice; } set { _MarketPrice = value; } }
         public string MediamPrice { get { return _MediamPrice; } set { _MediamPrice = value; } }
         public bool Obtained { get { return _Obtained; } set { _Obtained = value; } }
@@ -262,6 +269,7 @@ namespace YGO_Card_Collector_5
         private string _Code = "XXXX-EN000";
         private string _Name = "Invalid";
         private string _Rarity = "Unknown";
+        private string _FloorPrice = "$0.00";
         private string _MarketPrice = "$0.00";
         private string _MediamPrice = "$0.00";
         private bool _Obtained = false;
