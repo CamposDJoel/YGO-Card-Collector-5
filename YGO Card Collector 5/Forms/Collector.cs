@@ -150,6 +150,8 @@ namespace YGO_Card_Collector_5
             {
                 lblRariryLabel.Visible = false;
                 lblRarity.Visible = false;
+                lblFloorPricelabel.Visible = false;
+                lblFloorPrice.Visible = false;
                 lblMarketPricelabel.Visible = false;
                 lblMarketPrice.Visible = false;
                 lblMedianPricelabel.Visible = false;
@@ -164,6 +166,11 @@ namespace YGO_Card_Collector_5
                 lblRarity.Visible = true;
                 lblRarity.Text = _CurrentSetCardInView.Rarity;
                 lblRarity.ForeColor = Tools.GetRarityColorForLabel(_CurrentSetCardInView.Rarity);
+                //Floor Price Label
+                lblFloorPricelabel.Visible = true;
+                lblFloorPrice.Visible = true;
+                lblFloorPrice.Text = _CurrentSetCardInView.FloorPrice;
+                lblFloorPrice.ForeColor = Tools.GetPriceColorForLabel(_CurrentSetCardInView.GetDoubleFloorPrice());
                 //Market Price Label
                 lblMarketPricelabel.Visible = true;
                 lblMarketPrice.Visible = true;

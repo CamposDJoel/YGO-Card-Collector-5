@@ -282,6 +282,17 @@ namespace YGO_Card_Collector_5
             SetCard otherPriceItem = obj as SetCard;
             return otherPriceItem._Code.CompareTo(_Code);
         }
+        public class SortByFloorPrice : IComparer<SetCard>
+        {
+            public int Compare(SetCard c1, SetCard c2)
+            {
+                double card1price = c1.GetDoubleFloorPrice();
+                double card2price = c2.GetDoubleFloorPrice();
+                if (card1price < card2price) { return 1; }
+                else if (card1price > card2price) { return -1; }
+                else { return 0; }
+            }
+        }
         public class SortByPrice : IComparer<SetCard>
         {
             public int Compare(SetCard c1, SetCard c2)

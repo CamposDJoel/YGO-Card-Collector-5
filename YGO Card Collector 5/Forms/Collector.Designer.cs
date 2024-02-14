@@ -107,6 +107,11 @@
             this.btnGemini = new System.Windows.Forms.Button();
             this.btnSpirit = new System.Windows.Forms.Button();
             this.btnFlip = new System.Windows.Forms.Button();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lblCodeSearchOutput = new System.Windows.Forms.Label();
+            this.btnCodeSearch = new System.Windows.Forms.Button();
+            this.lblCodeSearch = new System.Windows.Forms.Label();
+            this.txtCodeSearch = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.listSetGroups = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -130,25 +135,10 @@
             this.btnSetPriceReport = new System.Windows.Forms.Button();
             this.btnStats = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.panel23 = new System.Windows.Forms.Panel();
-            this.panel24 = new System.Windows.Forms.Panel();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.panel26 = new System.Windows.Forms.Panel();
             this.btnFilterSet = new System.Windows.Forms.Button();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnCodeSearch = new System.Windows.Forms.Button();
-            this.lblCodeSearch = new System.Windows.Forms.Label();
-            this.txtCodeSearch = new System.Windows.Forms.TextBox();
-            this.lblCodeSearchOutput = new System.Windows.Forms.Label();
             this.btnOpenSetValue = new System.Windows.Forms.Button();
+            this.lblFloorPrice = new System.Windows.Forms.Label();
+            this.lblFloorPricelabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.MonsterType.SuspendLayout();
@@ -160,8 +150,8 @@
             this.groupBox9.SuspendLayout();
             this.groupColor.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // GroupCardView
@@ -1193,6 +1183,64 @@
             this.btnFlip.UseVisualStyleBackColor = false;
             this.btnFlip.Click += new System.EventHandler(this.btnFlip_Click);
             // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.SaddleBrown;
+            this.tabPage1.Controls.Add(this.lblCodeSearchOutput);
+            this.tabPage1.Controls.Add(this.btnCodeSearch);
+            this.tabPage1.Controls.Add(this.lblCodeSearch);
+            this.tabPage1.Controls.Add(this.txtCodeSearch);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(366, 116);
+            this.tabPage1.TabIndex = 2;
+            this.tabPage1.Text = "Set Search By Code";
+            // 
+            // lblCodeSearchOutput
+            // 
+            this.lblCodeSearchOutput.BackColor = System.Drawing.Color.Black;
+            this.lblCodeSearchOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lblCodeSearchOutput.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodeSearchOutput.ForeColor = System.Drawing.Color.White;
+            this.lblCodeSearchOutput.Location = new System.Drawing.Point(11, 31);
+            this.lblCodeSearchOutput.Name = "lblCodeSearchOutput";
+            this.lblCodeSearchOutput.Size = new System.Drawing.Size(338, 82);
+            this.lblCodeSearchOutput.TabIndex = 268;
+            this.lblCodeSearchOutput.Text = "Enter a Set CODE and hit search";
+            // 
+            // btnCodeSearch
+            // 
+            this.btnCodeSearch.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnCodeSearch.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCodeSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnCodeSearch.Location = new System.Drawing.Point(215, 5);
+            this.btnCodeSearch.Name = "btnCodeSearch";
+            this.btnCodeSearch.Size = new System.Drawing.Size(79, 25);
+            this.btnCodeSearch.TabIndex = 267;
+            this.btnCodeSearch.Text = "Code Search";
+            this.btnCodeSearch.UseVisualStyleBackColor = false;
+            this.btnCodeSearch.Click += new System.EventHandler(this.btnCodeSearch_Click);
+            // 
+            // lblCodeSearch
+            // 
+            this.lblCodeSearch.AutoSize = true;
+            this.lblCodeSearch.BackColor = System.Drawing.Color.Transparent;
+            this.lblCodeSearch.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodeSearch.ForeColor = System.Drawing.Color.Yellow;
+            this.lblCodeSearch.Location = new System.Drawing.Point(64, 7);
+            this.lblCodeSearch.Name = "lblCodeSearch";
+            this.lblCodeSearch.Size = new System.Drawing.Size(39, 16);
+            this.lblCodeSearch.TabIndex = 266;
+            this.lblCodeSearch.Text = "Code:";
+            // 
+            // txtCodeSearch
+            // 
+            this.txtCodeSearch.Location = new System.Drawing.Point(108, 7);
+            this.txtCodeSearch.Name = "txtCodeSearch";
+            this.txtCodeSearch.Size = new System.Drawing.Size(101, 20);
+            this.txtCodeSearch.TabIndex = 265;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -1259,7 +1307,9 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Black;
+            this.groupBox4.Controls.Add(this.lblFloorPrice);
             this.groupBox4.Controls.Add(this.lblCardInfo_Name);
+            this.groupBox4.Controls.Add(this.lblFloorPricelabel);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.label7);
             this.groupBox4.Controls.Add(this.lblTCGLink);
@@ -1268,15 +1318,15 @@
             this.groupBox4.Controls.Add(this.lblCode);
             this.groupBox4.Controls.Add(this.lblCodelabel);
             this.groupBox4.Controls.Add(this.lblMedianPrice);
-            this.groupBox4.Controls.Add(this.lblMedianPricelabel);
-            this.groupBox4.Controls.Add(this.lblMarketPrice);
-            this.groupBox4.Controls.Add(this.lblMarketPricelabel);
             this.groupBox4.Controls.Add(this.lblRarity);
+            this.groupBox4.Controls.Add(this.lblMarketPrice);
             this.groupBox4.Controls.Add(this.lblRariryLabel);
+            this.groupBox4.Controls.Add(this.lblMedianPricelabel);
+            this.groupBox4.Controls.Add(this.lblMarketPricelabel);
             this.groupBox4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox4.Location = new System.Drawing.Point(468, 276);
+            this.groupBox4.Location = new System.Drawing.Point(468, 275);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(303, 85);
+            this.groupBox4.Size = new System.Drawing.Size(303, 87);
             this.groupBox4.TabIndex = 250;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Card Info:";
@@ -1311,7 +1361,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(157, 48);
+            this.label7.Location = new System.Drawing.Point(4, 66);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(40, 16);
             this.label7.TabIndex = 263;
@@ -1322,7 +1372,7 @@
             this.lblTCGLink.BackColor = System.Drawing.Color.Yellow;
             this.lblTCGLink.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTCGLink.ForeColor = System.Drawing.Color.Black;
-            this.lblTCGLink.Location = new System.Drawing.Point(217, 66);
+            this.lblTCGLink.Location = new System.Drawing.Point(215, 68);
             this.lblTCGLink.Name = "lblTCGLink";
             this.lblTCGLink.Size = new System.Drawing.Size(74, 15);
             this.lblTCGLink.TabIndex = 262;
@@ -1335,7 +1385,7 @@
             this.lblProdeckLink.BackColor = System.Drawing.Color.Yellow;
             this.lblProdeckLink.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblProdeckLink.ForeColor = System.Drawing.Color.Black;
-            this.lblProdeckLink.Location = new System.Drawing.Point(137, 66);
+            this.lblProdeckLink.Location = new System.Drawing.Point(132, 68);
             this.lblProdeckLink.Name = "lblProdeckLink";
             this.lblProdeckLink.Size = new System.Drawing.Size(74, 15);
             this.lblProdeckLink.TabIndex = 261;
@@ -1348,7 +1398,7 @@
             this.lblKonamiLink.BackColor = System.Drawing.Color.Yellow;
             this.lblKonamiLink.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblKonamiLink.ForeColor = System.Drawing.Color.Black;
-            this.lblKonamiLink.Location = new System.Drawing.Point(217, 49);
+            this.lblKonamiLink.Location = new System.Drawing.Point(46, 68);
             this.lblKonamiLink.Name = "lblKonamiLink";
             this.lblKonamiLink.Size = new System.Drawing.Size(74, 15);
             this.lblKonamiLink.TabIndex = 260;
@@ -1387,7 +1437,7 @@
             this.lblMedianPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblMedianPrice.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMedianPrice.ForeColor = System.Drawing.Color.White;
-            this.lblMedianPrice.Location = new System.Drawing.Point(82, 67);
+            this.lblMedianPrice.Location = new System.Drawing.Point(242, 50);
             this.lblMedianPrice.Name = "lblMedianPrice";
             this.lblMedianPrice.Size = new System.Drawing.Size(52, 16);
             this.lblMedianPrice.TabIndex = 257;
@@ -1401,11 +1451,11 @@
             this.lblMedianPricelabel.BackColor = System.Drawing.Color.Transparent;
             this.lblMedianPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMedianPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMedianPricelabel.Location = new System.Drawing.Point(7, 66);
+            this.lblMedianPricelabel.Location = new System.Drawing.Point(193, 49);
             this.lblMedianPricelabel.Name = "lblMedianPricelabel";
-            this.lblMedianPricelabel.Size = new System.Drawing.Size(78, 16);
+            this.lblMedianPricelabel.Size = new System.Drawing.Size(49, 16);
             this.lblMedianPricelabel.TabIndex = 256;
-            this.lblMedianPricelabel.Text = "Median Price:";
+            this.lblMedianPricelabel.Text = "Median:";
             this.lblMedianPricelabel.Visible = false;
             // 
             // lblMarketPrice
@@ -1414,7 +1464,7 @@
             this.lblMarketPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblMarketPrice.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarketPrice.ForeColor = System.Drawing.Color.White;
-            this.lblMarketPrice.Location = new System.Drawing.Point(82, 51);
+            this.lblMarketPrice.Location = new System.Drawing.Point(140, 50);
             this.lblMarketPrice.Name = "lblMarketPrice";
             this.lblMarketPrice.Size = new System.Drawing.Size(52, 16);
             this.lblMarketPrice.TabIndex = 255;
@@ -1428,11 +1478,11 @@
             this.lblMarketPricelabel.BackColor = System.Drawing.Color.Transparent;
             this.lblMarketPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarketPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMarketPricelabel.Location = new System.Drawing.Point(7, 50);
+            this.lblMarketPricelabel.Location = new System.Drawing.Point(99, 50);
             this.lblMarketPricelabel.Name = "lblMarketPricelabel";
-            this.lblMarketPricelabel.Size = new System.Drawing.Size(75, 16);
+            this.lblMarketPricelabel.Size = new System.Drawing.Size(46, 16);
             this.lblMarketPricelabel.TabIndex = 254;
-            this.lblMarketPricelabel.Text = "Market Price:";
+            this.lblMarketPricelabel.Text = "Market:";
             this.lblMarketPricelabel.Visible = false;
             // 
             // lblRarity
@@ -1509,102 +1559,6 @@
             this.panel14.Size = new System.Drawing.Size(47, 60);
             this.panel14.TabIndex = 277;
             // 
-            // panel15
-            // 
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Location = new System.Drawing.Point(1113, 31);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(47, 60);
-            this.panel15.TabIndex = 276;
-            // 
-            // panel16
-            // 
-            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel16.Location = new System.Drawing.Point(929, 31);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(47, 60);
-            this.panel16.TabIndex = 270;
-            // 
-            // panel17
-            // 
-            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel17.Location = new System.Drawing.Point(1021, 31);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(47, 60);
-            this.panel17.TabIndex = 274;
-            // 
-            // panel18
-            // 
-            this.panel18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel18.Location = new System.Drawing.Point(837, 31);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(47, 60);
-            this.panel18.TabIndex = 266;
-            // 
-            // panel19
-            // 
-            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel19.Location = new System.Drawing.Point(1067, 31);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(47, 60);
-            this.panel19.TabIndex = 275;
-            // 
-            // panel20
-            // 
-            this.panel20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel20.Location = new System.Drawing.Point(883, 31);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(47, 60);
-            this.panel20.TabIndex = 268;
-            // 
-            // panel21
-            // 
-            this.panel21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel21.Location = new System.Drawing.Point(975, 31);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(47, 60);
-            this.panel21.TabIndex = 272;
-            // 
-            // panel22
-            // 
-            this.panel22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel22.Location = new System.Drawing.Point(791, 267);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(47, 60);
-            this.panel22.TabIndex = 273;
-            // 
-            // panel23
-            // 
-            this.panel23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel23.Location = new System.Drawing.Point(791, 208);
-            this.panel23.Name = "panel23";
-            this.panel23.Size = new System.Drawing.Size(47, 60);
-            this.panel23.TabIndex = 271;
-            // 
-            // panel24
-            // 
-            this.panel24.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel24.Location = new System.Drawing.Point(791, 90);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(47, 60);
-            this.panel24.TabIndex = 267;
-            // 
-            // panel25
-            // 
-            this.panel25.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel25.Location = new System.Drawing.Point(791, 149);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(47, 60);
-            this.panel25.TabIndex = 269;
-            // 
-            // panel26
-            // 
-            this.panel26.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel26.Location = new System.Drawing.Point(791, 31);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(47, 60);
-            this.panel26.TabIndex = 265;
-            // 
             // btnFilterSet
             // 
             this.btnFilterSet.BackColor = System.Drawing.Color.Purple;
@@ -1618,64 +1572,6 @@
             this.btnFilterSet.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnFilterSet.UseVisualStyleBackColor = false;
             this.btnFilterSet.Click += new System.EventHandler(this.btnFilterSet_Click);
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.SaddleBrown;
-            this.tabPage1.Controls.Add(this.lblCodeSearchOutput);
-            this.tabPage1.Controls.Add(this.btnCodeSearch);
-            this.tabPage1.Controls.Add(this.lblCodeSearch);
-            this.tabPage1.Controls.Add(this.txtCodeSearch);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(366, 116);
-            this.tabPage1.TabIndex = 2;
-            this.tabPage1.Text = "Set Search By Code";
-            // 
-            // btnCodeSearch
-            // 
-            this.btnCodeSearch.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnCodeSearch.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCodeSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnCodeSearch.Location = new System.Drawing.Point(215, 5);
-            this.btnCodeSearch.Name = "btnCodeSearch";
-            this.btnCodeSearch.Size = new System.Drawing.Size(79, 25);
-            this.btnCodeSearch.TabIndex = 267;
-            this.btnCodeSearch.Text = "Code Search";
-            this.btnCodeSearch.UseVisualStyleBackColor = false;
-            this.btnCodeSearch.Click += new System.EventHandler(this.btnCodeSearch_Click);
-            // 
-            // lblCodeSearch
-            // 
-            this.lblCodeSearch.AutoSize = true;
-            this.lblCodeSearch.BackColor = System.Drawing.Color.Transparent;
-            this.lblCodeSearch.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodeSearch.ForeColor = System.Drawing.Color.Yellow;
-            this.lblCodeSearch.Location = new System.Drawing.Point(64, 7);
-            this.lblCodeSearch.Name = "lblCodeSearch";
-            this.lblCodeSearch.Size = new System.Drawing.Size(39, 16);
-            this.lblCodeSearch.TabIndex = 266;
-            this.lblCodeSearch.Text = "Code:";
-            // 
-            // txtCodeSearch
-            // 
-            this.txtCodeSearch.Location = new System.Drawing.Point(108, 7);
-            this.txtCodeSearch.Name = "txtCodeSearch";
-            this.txtCodeSearch.Size = new System.Drawing.Size(101, 20);
-            this.txtCodeSearch.TabIndex = 265;
-            // 
-            // lblCodeSearchOutput
-            // 
-            this.lblCodeSearchOutput.BackColor = System.Drawing.Color.Black;
-            this.lblCodeSearchOutput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblCodeSearchOutput.Font = new System.Drawing.Font("Corbel", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodeSearchOutput.ForeColor = System.Drawing.Color.White;
-            this.lblCodeSearchOutput.Location = new System.Drawing.Point(11, 31);
-            this.lblCodeSearchOutput.Name = "lblCodeSearchOutput";
-            this.lblCodeSearchOutput.Size = new System.Drawing.Size(338, 82);
-            this.lblCodeSearchOutput.TabIndex = 268;
-            this.lblCodeSearchOutput.Text = "Enter a Set CODE and hit search";
             // 
             // btnOpenSetValue
             // 
@@ -1691,6 +1587,33 @@
             this.btnOpenSetValue.UseVisualStyleBackColor = false;
             this.btnOpenSetValue.Click += new System.EventHandler(this.btnOpenSetValue_Click);
             // 
+            // lblFloorPrice
+            // 
+            this.lblFloorPrice.AutoSize = true;
+            this.lblFloorPrice.BackColor = System.Drawing.Color.Transparent;
+            this.lblFloorPrice.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFloorPrice.ForeColor = System.Drawing.Color.White;
+            this.lblFloorPrice.Location = new System.Drawing.Point(46, 50);
+            this.lblFloorPrice.Name = "lblFloorPrice";
+            this.lblFloorPrice.Size = new System.Drawing.Size(52, 16);
+            this.lblFloorPrice.TabIndex = 281;
+            this.lblFloorPrice.Text = "99999.99";
+            this.lblFloorPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblFloorPrice.Visible = false;
+            // 
+            // lblFloorPricelabel
+            // 
+            this.lblFloorPricelabel.AutoSize = true;
+            this.lblFloorPricelabel.BackColor = System.Drawing.Color.Transparent;
+            this.lblFloorPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFloorPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblFloorPricelabel.Location = new System.Drawing.Point(7, 50);
+            this.lblFloorPricelabel.Name = "lblFloorPricelabel";
+            this.lblFloorPricelabel.Size = new System.Drawing.Size(39, 16);
+            this.lblFloorPricelabel.TabIndex = 280;
+            this.lblFloorPricelabel.Text = "Floor:";
+            this.lblFloorPricelabel.Visible = false;
+            // 
             // Collector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1701,18 +1624,6 @@
             this.Controls.Add(this.btnOpenSetValue);
             this.Controls.Add(this.btnFilterSet);
             this.Controls.Add(this.panel14);
-            this.Controls.Add(this.panel15);
-            this.Controls.Add(this.panel16);
-            this.Controls.Add(this.panel17);
-            this.Controls.Add(this.panel18);
-            this.Controls.Add(this.panel19);
-            this.Controls.Add(this.panel20);
-            this.Controls.Add(this.panel21);
-            this.Controls.Add(this.panel22);
-            this.Controls.Add(this.panel23);
-            this.Controls.Add(this.panel24);
-            this.Controls.Add(this.panel25);
-            this.Controls.Add(this.panel26);
             this.Controls.Add(this.btnStats);
             this.Controls.Add(this.btnSetPriceReport);
             this.Controls.Add(this.btnBackToMainMenu);
@@ -1748,10 +1659,10 @@
             this.groupBox9.ResumeLayout(false);
             this.groupColor.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1858,18 +1769,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label lblTCGLink;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Panel panel23;
-        private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Label lblCardInfo_Name;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnFilterSet;
@@ -1879,5 +1778,7 @@
         private System.Windows.Forms.TextBox txtCodeSearch;
         private System.Windows.Forms.Label lblCodeSearchOutput;
         private System.Windows.Forms.Button btnOpenSetValue;
+        private System.Windows.Forms.Label lblFloorPrice;
+        private System.Windows.Forms.Label lblFloorPricelabel;
     }
 }

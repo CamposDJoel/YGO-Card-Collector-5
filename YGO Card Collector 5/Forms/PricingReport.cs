@@ -16,7 +16,7 @@ namespace YGO_Card_Collector_5
         {
             InitializeComponent();
             CollectorForm = collertorform;
-            LoadCollectionPriceReportLists();
+            LoadCOLLECTIONPriceReportLists();
             LoadDBPriceReportLists();
             LoadSetsExplorer(0);
         }
@@ -24,7 +24,7 @@ namespace YGO_Card_Collector_5
         {
             InitializeComponent();
             CollectorForm = collertorform;
-            LoadCollectionPriceReportLists();
+            LoadCOLLECTIONPriceReportLists();
             LoadDBPriceReportLists();
             LoadSetsExplorer(groupIndex);
 
@@ -40,13 +40,15 @@ namespace YGO_Card_Collector_5
         private Object CollectorForm;
         private List<SetInfo> _CurrentSetInfoListSelected;
         private List<Label> _SetDetailsLabels = new List<Label>();
+        private string _CurrentCOLLECTIONPriceGroupSelection = "FLOOR";
+        private string _CurrentDBPriceGroupSelection = "FLOOR";
         #endregion
 
         #region Private Methods
-        private void LoadCollectionPriceReportLists()
+        private void LoadCOLLECTIONPriceReportLists()
         {
+
             List<SetCard> PriceList = new List<SetCard>();
-            List<SetCard> PriceListMedian = new List<SetCard>();
             foreach (MasterCard ThisMasterCard in Database.MasterCards)
             {
                 foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
@@ -56,42 +58,50 @@ namespace YGO_Card_Collector_5
                         if(ThisSetCard.Obtained)
                         {
                             PriceList.Add(ThisSetCard);
-                            PriceListMedian.Add(ThisSetCard);
-                        }                        
+                        }                       
                     }
                 }
             }
 
-            PriceList.Sort(new SetCard.SortByPrice());
-            PriceListMedian.Sort(new SetCard.SortByMedianPrice());
+            switch (_CurrentCOLLECTIONPriceGroupSelection)
+            {
+                case "FLOOR": PriceList.Sort(new SetCard.SortByFloorPrice()); break;
+                case "MARKET": PriceList.Sort(new SetCard.SortByPrice()); break;
+                case "MEDIAN": PriceList.Sort(new SetCard.SortByMedianPrice()); break;
+            }
+
 
             //display the cards
-            ListTop1000ReportCollection.Items.Clear();
-            ListTop1000ReportMedianCollection.Items.Clear();
+            ListTop1000Report.Items.Clear();
 
-            double marketPriceTotalValue = 0;
-            double medianPriceTotalValue = 0;
+            int PriceTotalValue = 0;
+
             foreach (SetCard ThisSetCard in PriceList)
             {
                 string cardname = Database.MasterCardByCode[ThisSetCard.Code].Name;
-                ListTop1000ReportCollection.Items.Add(string.Format("[{0}] - [{1} | {2}] - {3}", ThisSetCard.MarketPrice, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
-                marketPriceTotalValue += ThisSetCard.GetDoubleMarketPrice();
-            }
-            foreach (SetCard ThisSetCard in PriceListMedian)
-            {
-                string cardname = Database.MasterCardByCode[ThisSetCard.Code].Name;
-                ListTop1000ReportMedianCollection.Items.Add(string.Format("[{0}] - [{1} | {2}] - {3}", ThisSetCard.MediamPrice, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
-                medianPriceTotalValue += ThisSetCard.GetDoubleMarketPrice();
+                string obtainedmark = "";
+                if (ThisSetCard.Obtained) { obtainedmark = "- [x] "; }
+
+                string price = "0";
+                double doublePrice = 0;
+                switch (_CurrentCOLLECTIONPriceGroupSelection)
+                {
+                    case "FLOOR": price = ThisSetCard.FloorPrice; doublePrice = ThisSetCard.GetDoubleFloorPrice(); break;
+                    case "MARKET": price = ThisSetCard.MarketPrice; doublePrice = ThisSetCard.GetDoubleMarketPrice(); break;
+                    case "MEDIAN": price = ThisSetCard.MediamPrice; doublePrice = ThisSetCard.GetDoubleMedianPrice(); break;
+                }
+
+                ListTop1000Report.Items.Add(string.Format("[{0}] {1}- [{2} | {3}] - {4}", price, obtainedmark, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
+                PriceTotalValue += (int)doublePrice;
             }
 
-            lblMarketPriceTotalValueCollection.Text = string.Format("Total Value: ${0}", marketPriceTotalValue.ToString());
-            lblMedianPriceTotalValueCollection.Text = string.Format("Total Value: ${0}", medianPriceTotalValue.ToString());
+
+            lblMarketPriceTotalValue.Text = string.Format("Total Value: ${0}", PriceTotalValue.ToString());
         }
         private void LoadDBPriceReportLists()
         {
-            //StringBuilder sb = new StringBuilder();
+
             List<SetCard> PriceList = new List<SetCard>();
-            List<SetCard> PriceListMedian = new List<SetCard>();
             foreach (MasterCard ThisMasterCard in Database.MasterCards)
             {
                 foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
@@ -99,39 +109,44 @@ namespace YGO_Card_Collector_5
                     if (ThisSetCard.Code != "")
                     {
                         PriceList.Add(ThisSetCard);
-                        PriceListMedian.Add(ThisSetCard);
                     }
                 }
             }
 
-            PriceList.Sort(new SetCard.SortByPrice());
-            PriceListMedian.Sort(new SetCard.SortByMedianPrice());
+            switch (_CurrentDBPriceGroupSelection)
+            {
+                case "FLOOR": PriceList.Sort(new SetCard.SortByFloorPrice()); break;
+                case "MARKET": PriceList.Sort(new SetCard.SortByPrice()); break;
+                case "MEDIAN": PriceList.Sort(new SetCard.SortByMedianPrice()); break;
+            }
+
 
             //display the cards
             ListTop1000ReportDB.Items.Clear();
-            ListTop1000ReportMedianDB.Items.Clear();
 
-            int marketPriceTotalValue = 0;
-            int medianPriceTotalValue = 0;
+            int PriceTotalValue = 0;
+
             foreach (SetCard ThisSetCard in PriceList)
             {
                 string cardname = Database.MasterCardByCode[ThisSetCard.Code].Name;
                 string obtainedmark = "";
                 if (ThisSetCard.Obtained) { obtainedmark = "- [x] "; }
-                ListTop1000ReportDB.Items.Add(string.Format("[{0}] {1}- [{2} | {3}] - {4}", ThisSetCard.MarketPrice, obtainedmark, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
-                marketPriceTotalValue += (int)ThisSetCard.GetDoubleMarketPrice();
-            }
-            foreach (SetCard ThisSetCard in PriceListMedian)
-            {
-                string cardname = Database.MasterCardByCode[ThisSetCard.Code].Name;
-                string obtainedmark = "";
-                if (ThisSetCard.Obtained) { obtainedmark = "- [x] "; }
-                ListTop1000ReportMedianDB.Items.Add(string.Format("[{0}] {1}- [{2} | {3}] - {4}", ThisSetCard.MediamPrice, obtainedmark, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
-                medianPriceTotalValue += (int)ThisSetCard.GetDoubleMarketPrice();
+
+                string price = "0";
+                double doublePrice = 0;
+                switch (_CurrentDBPriceGroupSelection)
+                {
+                    case "FLOOR": price = ThisSetCard.FloorPrice; doublePrice = ThisSetCard.GetDoubleFloorPrice(); break;
+                    case "MARKET": price = ThisSetCard.MarketPrice; doublePrice = ThisSetCard.GetDoubleMarketPrice(); break;
+                    case "MEDIAN": price = ThisSetCard.MediamPrice; doublePrice = ThisSetCard.GetDoubleMedianPrice(); break;
+                }
+
+                ListTop1000ReportDB.Items.Add(string.Format("[{0}] {1}- [{2} | {3}] - {4}", price, obtainedmark, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
+                PriceTotalValue += (int)doublePrice;
             }
 
-            lblMarketPriceTotalValueDB.Text = string.Format("Total Value: ${0}", marketPriceTotalValue.ToString());
-            lblMedianPriceTotalValueDb.Text = string.Format("Total Value: ${0}", medianPriceTotalValue.ToString());
+
+            lblMarketPriceTotalValueDB.Text = string.Format("Total Value: ${0}", PriceTotalValue.ToString());
         }
         private void LoadSetsExplorer(int initialindex)
         {
@@ -481,6 +496,69 @@ namespace YGO_Card_Collector_5
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+        #endregion
+
+        #region Event Listeners (Your Collection/DB Totals)
+        private void radioFloorOption_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioFloorOption.Checked)
+            {
+                GroupPriceGroup.Visible = false;
+                _CurrentCOLLECTIONPriceGroupSelection = "FLOOR";
+                LoadCOLLECTIONPriceReportLists();
+                GroupPriceGroup.Visible = true;
+            }
+        }
+        private void radioMarketOption_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioMarketOption.Checked)
+            {
+                GroupPriceGroup.Visible = false;
+                _CurrentCOLLECTIONPriceGroupSelection = "MARKET";
+                LoadCOLLECTIONPriceReportLists();
+                GroupPriceGroup.Visible = true;
+            }
+        }
+        private void radioMedianOption_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioMedianOption.Checked)
+            {
+                GroupPriceGroup.Visible = false;
+                _CurrentCOLLECTIONPriceGroupSelection = "MEDIAN";
+                LoadCOLLECTIONPriceReportLists();
+                GroupPriceGroup.Visible = true;
+            }
+        }
+        private void radioFloorOptionDB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioFloorOptionDB.Checked)
+            {
+                GroupPriceGroupDB.Visible = false;
+                _CurrentDBPriceGroupSelection = "FLOOR";
+                LoadDBPriceReportLists();
+                GroupPriceGroupDB.Visible = true;
+            }
+        }
+        private void radioMarketOptionDB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioMarketOptionDB.Checked)
+            {
+                GroupPriceGroupDB.Visible = false;
+                _CurrentDBPriceGroupSelection = "MARKET";
+                LoadDBPriceReportLists();
+                GroupPriceGroupDB.Visible = true;
+            }
+        }
+        private void radioMedianOptionDB_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioMedianOptionDB.Checked)
+            {
+                GroupPriceGroupDB.Visible = false;
+                _CurrentDBPriceGroupSelection = "MEDIAN";
+                LoadDBPriceReportLists();
+                GroupPriceGroupDB.Visible = true;
+            }
         }
         #endregion
     }

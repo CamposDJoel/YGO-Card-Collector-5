@@ -105,6 +105,8 @@
             this.lblTotalsInsect = new System.Windows.Forms.Label();
             this.TabMasterTotals = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnTest = new System.Windows.Forms.Button();
             this.label68 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
@@ -264,16 +266,14 @@
             this.ListSets = new System.Windows.Forms.ListBox();
             this.ListSetGroups = new System.Windows.Forms.ListBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.lblMedianPriceTotalValue = new System.Windows.Forms.Label();
+            this.GroupPriceGroup = new System.Windows.Forms.GroupBox();
+            this.radioMedianOption = new System.Windows.Forms.RadioButton();
+            this.radioMarketOption = new System.Windows.Forms.RadioButton();
+            this.radioFloorOption = new System.Windows.Forms.RadioButton();
             this.lblMarketPriceTotalValue = new System.Windows.Forms.Label();
-            this.ListTop1000ReportMedian = new System.Windows.Forms.ListBox();
-            this.label71 = new System.Windows.Forms.Label();
             this.ListTop1000Report = new System.Windows.Forms.ListBox();
-            this.label70 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.PanelFullTotals.SuspendLayout();
             this.TabMasterTotals.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -293,6 +293,7 @@
             this.tabPage6.SuspendLayout();
             this.PanelSetInfo.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            this.GroupPriceGroup.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTotalAqua
@@ -1350,6 +1351,28 @@
             this.tabPage1.Size = new System.Drawing.Size(788, 406);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Master Card List Totals";
+            // 
+            // button2
+            // 
+            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.Location = new System.Drawing.Point(373, 154);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(67, 38);
+            this.button2.TabIndex = 18;
+            this.button2.Text = "Test";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.ForeColor = System.Drawing.Color.Black;
+            this.button1.Location = new System.Drawing.Point(373, 105);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(67, 38);
+            this.button1.TabIndex = 17;
+            this.button1.Text = "FIND";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnTest
             // 
@@ -3315,12 +3338,9 @@
             // tabPage7
             // 
             this.tabPage7.BackColor = System.Drawing.Color.Black;
-            this.tabPage7.Controls.Add(this.lblMedianPriceTotalValue);
+            this.tabPage7.Controls.Add(this.GroupPriceGroup);
             this.tabPage7.Controls.Add(this.lblMarketPriceTotalValue);
-            this.tabPage7.Controls.Add(this.ListTop1000ReportMedian);
-            this.tabPage7.Controls.Add(this.label71);
             this.tabPage7.Controls.Add(this.ListTop1000Report);
-            this.tabPage7.Controls.Add(this.label70);
             this.tabPage7.Controls.Add(this.label69);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
@@ -3329,74 +3349,81 @@
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Prices Report";
             // 
-            // lblMedianPriceTotalValue
+            // GroupPriceGroup
             // 
-            this.lblMedianPriceTotalValue.AutoSize = true;
-            this.lblMedianPriceTotalValue.BackColor = System.Drawing.Color.Transparent;
-            this.lblMedianPriceTotalValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMedianPriceTotalValue.Location = new System.Drawing.Point(407, 368);
-            this.lblMedianPriceTotalValue.Name = "lblMedianPriceTotalValue";
-            this.lblMedianPriceTotalValue.Size = new System.Drawing.Size(130, 24);
-            this.lblMedianPriceTotalValue.TabIndex = 12;
-            this.lblMedianPriceTotalValue.Text = "Total Value:";
+            this.GroupPriceGroup.Controls.Add(this.radioMedianOption);
+            this.GroupPriceGroup.Controls.Add(this.radioMarketOption);
+            this.GroupPriceGroup.Controls.Add(this.radioFloorOption);
+            this.GroupPriceGroup.ForeColor = System.Drawing.Color.White;
+            this.GroupPriceGroup.Location = new System.Drawing.Point(254, 5);
+            this.GroupPriceGroup.Name = "GroupPriceGroup";
+            this.GroupPriceGroup.Size = new System.Drawing.Size(282, 38);
+            this.GroupPriceGroup.TabIndex = 13;
+            this.GroupPriceGroup.TabStop = false;
+            this.GroupPriceGroup.Text = "Select Price Group";
+            // 
+            // radioMedianOption
+            // 
+            this.radioMedianOption.AutoSize = true;
+            this.radioMedianOption.Location = new System.Drawing.Point(187, 15);
+            this.radioMedianOption.Name = "radioMedianOption";
+            this.radioMedianOption.Size = new System.Drawing.Size(67, 17);
+            this.radioMedianOption.TabIndex = 2;
+            this.radioMedianOption.Text = "MEDIAN";
+            this.radioMedianOption.UseVisualStyleBackColor = true;
+            this.radioMedianOption.CheckedChanged += new System.EventHandler(this.radioMedianOption_CheckedChanged);
+            // 
+            // radioMarketOption
+            // 
+            this.radioMarketOption.AutoSize = true;
+            this.radioMarketOption.Location = new System.Drawing.Point(92, 15);
+            this.radioMarketOption.Name = "radioMarketOption";
+            this.radioMarketOption.Size = new System.Drawing.Size(70, 17);
+            this.radioMarketOption.TabIndex = 1;
+            this.radioMarketOption.Text = "MARKET";
+            this.radioMarketOption.UseVisualStyleBackColor = true;
+            this.radioMarketOption.CheckedChanged += new System.EventHandler(this.radioMarketOption_CheckedChanged);
+            // 
+            // radioFloorOption
+            // 
+            this.radioFloorOption.AutoSize = true;
+            this.radioFloorOption.Checked = true;
+            this.radioFloorOption.Location = new System.Drawing.Point(7, 15);
+            this.radioFloorOption.Name = "radioFloorOption";
+            this.radioFloorOption.Size = new System.Drawing.Size(61, 17);
+            this.radioFloorOption.TabIndex = 0;
+            this.radioFloorOption.TabStop = true;
+            this.radioFloorOption.Text = "FLOOR";
+            this.radioFloorOption.UseVisualStyleBackColor = true;
+            this.radioFloorOption.CheckedChanged += new System.EventHandler(this.radioFloorOption_CheckedChanged);
             // 
             // lblMarketPriceTotalValue
             // 
             this.lblMarketPriceTotalValue.AutoSize = true;
             this.lblMarketPriceTotalValue.BackColor = System.Drawing.Color.Transparent;
             this.lblMarketPriceTotalValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarketPriceTotalValue.Location = new System.Drawing.Point(6, 368);
+            this.lblMarketPriceTotalValue.Location = new System.Drawing.Point(283, 368);
             this.lblMarketPriceTotalValue.Name = "lblMarketPriceTotalValue";
             this.lblMarketPriceTotalValue.Size = new System.Drawing.Size(130, 24);
             this.lblMarketPriceTotalValue.TabIndex = 11;
             this.lblMarketPriceTotalValue.Text = "Total Value:";
             // 
-            // ListTop1000ReportMedian
-            // 
-            this.ListTop1000ReportMedian.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ListTop1000ReportMedian.FormattingEnabled = true;
-            this.ListTop1000ReportMedian.Location = new System.Drawing.Point(411, 62);
-            this.ListTop1000ReportMedian.Name = "ListTop1000ReportMedian";
-            this.ListTop1000ReportMedian.Size = new System.Drawing.Size(355, 303);
-            this.ListTop1000ReportMedian.TabIndex = 10;
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.BackColor = System.Drawing.Color.Transparent;
-            this.label71.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.Location = new System.Drawing.Point(407, 35);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(148, 24);
-            this.label71.TabIndex = 9;
-            this.label71.Text = "Median Price:";
-            // 
             // ListTop1000Report
             // 
-            this.ListTop1000Report.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ListTop1000Report.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ListTop1000Report.ForeColor = System.Drawing.Color.White;
             this.ListTop1000Report.FormattingEnabled = true;
-            this.ListTop1000Report.Location = new System.Drawing.Point(10, 62);
+            this.ListTop1000Report.Location = new System.Drawing.Point(112, 57);
             this.ListTop1000Report.Name = "ListTop1000Report";
-            this.ListTop1000Report.Size = new System.Drawing.Size(355, 303);
+            this.ListTop1000Report.Size = new System.Drawing.Size(582, 303);
             this.ListTop1000Report.TabIndex = 8;
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.BackColor = System.Drawing.Color.Transparent;
-            this.label70.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(6, 35);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(144, 24);
-            this.label70.TabIndex = 5;
-            this.label70.Text = "Market Price:";
             // 
             // label69
             // 
             this.label69.AutoSize = true;
             this.label69.BackColor = System.Drawing.Color.Transparent;
             this.label69.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.Location = new System.Drawing.Point(6, 10);
+            this.label69.Location = new System.Drawing.Point(6, 6);
             this.label69.Name = "label69";
             this.label69.Size = new System.Drawing.Size(184, 24);
             this.label69.TabIndex = 4;
@@ -3412,28 +3439,6 @@
             this.btnBackToMainMenu.Text = "<-- Back to Main Menu";
             this.btnBackToMainMenu.UseVisualStyleBackColor = false;
             this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
-            // 
-            // button1
-            // 
-            this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(373, 105);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(67, 38);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "FIND";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(373, 154);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(67, 38);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Test";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // DatabaseManager
             // 
@@ -3484,6 +3489,8 @@
             this.PanelSetInfo.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             this.tabPage7.PerformLayout();
+            this.GroupPriceGroup.ResumeLayout(false);
+            this.GroupPriceGroup.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3713,11 +3720,7 @@
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.Label label70;
         private System.Windows.Forms.ListBox ListTop1000Report;
-        private System.Windows.Forms.ListBox ListTop1000ReportMedian;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label lblMedianPriceTotalValue;
         private System.Windows.Forms.Label lblMarketPriceTotalValue;
         private System.Windows.Forms.ListBox ListSetGroups;
         private System.Windows.Forms.ListBox ListSets;
@@ -3736,5 +3739,9 @@
         private System.Windows.Forms.Button btnBackToMainMenu;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.GroupBox GroupPriceGroup;
+        private System.Windows.Forms.RadioButton radioMarketOption;
+        private System.Windows.Forms.RadioButton radioFloorOption;
+        private System.Windows.Forms.RadioButton radioMedianOption;
     }
 }

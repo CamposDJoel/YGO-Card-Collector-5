@@ -43,6 +43,8 @@ namespace YGO_Card_Collector_5
         private List<SetInfo> _CurrentSetInfoListSelected;
         private List<Label> _SetDetailsLabels = new List<Label>();
 
+        private string _CurrentPriceGroupSelection = "FLOOR";
+
         private FormLauncher _MainMenuForm;
         #endregion
 
@@ -230,9 +232,8 @@ namespace YGO_Card_Collector_5
         }
         private void LoadPriceReportLists()
         {
-            //StringBuilder sb = new StringBuilder();
+            
             List<SetCard> PriceList = new List<SetCard>();
-            List<SetCard> PriceListMedian = new List<SetCard>();
             foreach (MasterCard ThisMasterCard in Database.MasterCards)
             {
                 foreach(SetCard ThisSetCard in ThisMasterCard.SetCards) 
@@ -240,39 +241,44 @@ namespace YGO_Card_Collector_5
                     if(ThisSetCard.Code != "")
                     {
                         PriceList.Add(ThisSetCard);
-                        PriceListMedian.Add(ThisSetCard);
                     }                  
                 }
             }
 
-            PriceList.Sort(new SetCard.SortByPrice());
-            PriceListMedian.Sort(new SetCard.SortByMedianPrice());
+            switch(_CurrentPriceGroupSelection)
+            {
+                case "FLOOR": PriceList.Sort(new SetCard.SortByFloorPrice()); break;
+                case "MARKET": PriceList.Sort(new SetCard.SortByPrice()); break;
+                case "MEDIAN": PriceList.Sort(new SetCard.SortByMedianPrice()); break;
+            }
+
 
             //display the cards
             ListTop1000Report.Items.Clear();
-            ListTop1000ReportMedian.Items.Clear();
 
-            int marketPriceTotalValue = 0;
-            int medianPriceTotalValue = 0;
+            int PriceTotalValue = 0;
+
             foreach(SetCard ThisSetCard in PriceList)
             {
                 string cardname = Database.MasterCardByCode[ThisSetCard.Code].Name;
                 string obtainedmark = "";
                 if (ThisSetCard.Obtained) { obtainedmark = "- [x] "; }
-                ListTop1000Report.Items.Add(string.Format("[{0}] {1}- [{2} | {3}] - {4}", ThisSetCard.MarketPrice, obtainedmark, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
-                marketPriceTotalValue += (int)ThisSetCard.GetDoubleMarketPrice();
-            }
-            foreach (SetCard ThisSetCard in PriceListMedian)
-            {
-                string cardname = Database.MasterCardByCode[ThisSetCard.Code].Name;
-                string obtainedmark = "";
-                if (ThisSetCard.Obtained) { obtainedmark = "- [x] "; }
-                ListTop1000ReportMedian.Items.Add(string.Format("[{0}] {1}- [{2} | {3}] - {4}", ThisSetCard.MediamPrice, obtainedmark, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
-                medianPriceTotalValue += (int)ThisSetCard.GetDoubleMarketPrice();
+
+                string price = "0";
+                double doublePrice = 0;
+                switch (_CurrentPriceGroupSelection)
+                {
+                    case "FLOOR": price = ThisSetCard.FloorPrice; doublePrice = ThisSetCard.GetDoubleFloorPrice(); break;
+                    case "MARKET": price = ThisSetCard.MarketPrice; doublePrice = ThisSetCard.GetDoubleMarketPrice(); break;
+                    case "MEDIAN": price = ThisSetCard.MediamPrice; doublePrice = ThisSetCard.GetDoubleMedianPrice(); break;
+                }
+
+                ListTop1000Report.Items.Add(string.Format("[{0}] {1}- [{2} | {3}] - {4}", price, obtainedmark, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
+                PriceTotalValue += (int)doublePrice;
             }
 
-            lblMarketPriceTotalValue.Text = string.Format("Total Value: ${0}", marketPriceTotalValue.ToString());
-            lblMedianPriceTotalValue.Text = string.Format("Total Value: ${0}", medianPriceTotalValue.ToString());
+
+            lblMarketPriceTotalValue.Text = string.Format("Total Value: ${0}", PriceTotalValue.ToString());
         }        
         #endregion
 
@@ -2929,9 +2935,9 @@ namespace YGO_Card_Collector_5
                 }            
             }*/
 
-            for(int x = 6; x < Database.DuelistPacks.Count; x++)
+            for(int x = 6; x < Database.Others.Count; x++)
             {
-                string setname = Database.DuelistPacks[x].Name;
+                string setname = Database.Others[x].Name;
                 if (Database.SetPackByName.ContainsKey(setname))
                 {
                     SetPack packToTest = Database.SetPackByName[setname];
@@ -3207,5 +3213,36 @@ namespace YGO_Card_Collector_5
             WriteOutputFiles();
         }
         #endregion
+
+        private void radioFloorOption_CheckedChanged(object sender, EventArgs e)
+        {
+            if(radioFloorOption.Checked) 
+            {
+                GroupPriceGroup.Visible = false;
+                _CurrentPriceGroupSelection = "FLOOR";
+                LoadPriceReportLists();
+                GroupPriceGroup.Visible = true;
+            }
+        }
+        private void radioMarketOption_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioMarketOption.Checked)
+            {
+                GroupPriceGroup.Visible = false;
+                _CurrentPriceGroupSelection = "MARKET";
+                LoadPriceReportLists();
+                GroupPriceGroup.Visible = true;
+            }
+        }
+        private void radioMedianOption_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioMedianOption.Checked)
+            {
+                GroupPriceGroup.Visible = false;
+                _CurrentPriceGroupSelection = "MEDIAN";
+                LoadPriceReportLists();
+                GroupPriceGroup.Visible = true;
+            }
+        }
     }
 }

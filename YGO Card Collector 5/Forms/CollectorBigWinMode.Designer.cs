@@ -139,6 +139,8 @@
             this.btnNextPageVariant = new System.Windows.Forms.Button();
             this.btnPreviousPageVariant = new System.Windows.Forms.Button();
             this.btnOpenSetValue = new System.Windows.Forms.Button();
+            this.lblFloorPrice = new System.Windows.Forms.Label();
+            this.lblFloorPricelabel = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
             this.tabControl2.SuspendLayout();
@@ -207,6 +209,8 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.Color.Black;
+            this.groupBox4.Controls.Add(this.lblFloorPrice);
+            this.groupBox4.Controls.Add(this.lblFloorPricelabel);
             this.groupBox4.Controls.Add(this.lblCardInfo_Name);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.label7);
@@ -335,7 +339,7 @@
             this.lblMedianPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblMedianPrice.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMedianPrice.ForeColor = System.Drawing.Color.White;
-            this.lblMedianPrice.Location = new System.Drawing.Point(82, 90);
+            this.lblMedianPrice.Location = new System.Drawing.Point(82, 96);
             this.lblMedianPrice.Name = "lblMedianPrice";
             this.lblMedianPrice.Size = new System.Drawing.Size(52, 16);
             this.lblMedianPrice.TabIndex = 257;
@@ -349,7 +353,7 @@
             this.lblMedianPricelabel.BackColor = System.Drawing.Color.Transparent;
             this.lblMedianPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMedianPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMedianPricelabel.Location = new System.Drawing.Point(7, 90);
+            this.lblMedianPricelabel.Location = new System.Drawing.Point(7, 96);
             this.lblMedianPricelabel.Name = "lblMedianPricelabel";
             this.lblMedianPricelabel.Size = new System.Drawing.Size(78, 16);
             this.lblMedianPricelabel.TabIndex = 256;
@@ -362,7 +366,7 @@
             this.lblMarketPrice.BackColor = System.Drawing.Color.Transparent;
             this.lblMarketPrice.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarketPrice.ForeColor = System.Drawing.Color.White;
-            this.lblMarketPrice.Location = new System.Drawing.Point(82, 70);
+            this.lblMarketPrice.Location = new System.Drawing.Point(82, 81);
             this.lblMarketPrice.Name = "lblMarketPrice";
             this.lblMarketPrice.Size = new System.Drawing.Size(52, 16);
             this.lblMarketPrice.TabIndex = 255;
@@ -376,7 +380,7 @@
             this.lblMarketPricelabel.BackColor = System.Drawing.Color.Transparent;
             this.lblMarketPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarketPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMarketPricelabel.Location = new System.Drawing.Point(7, 70);
+            this.lblMarketPricelabel.Location = new System.Drawing.Point(7, 81);
             this.lblMarketPricelabel.Name = "lblMarketPricelabel";
             this.lblMarketPricelabel.Size = new System.Drawing.Size(75, 16);
             this.lblMarketPricelabel.TabIndex = 254;
@@ -1611,6 +1615,33 @@
             this.btnOpenSetValue.UseVisualStyleBackColor = false;
             this.btnOpenSetValue.Click += new System.EventHandler(this.btnOpenSetValue_Click);
             // 
+            // lblFloorPrice
+            // 
+            this.lblFloorPrice.AutoSize = true;
+            this.lblFloorPrice.BackColor = System.Drawing.Color.Transparent;
+            this.lblFloorPrice.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFloorPrice.ForeColor = System.Drawing.Color.White;
+            this.lblFloorPrice.Location = new System.Drawing.Point(81, 67);
+            this.lblFloorPrice.Name = "lblFloorPrice";
+            this.lblFloorPrice.Size = new System.Drawing.Size(52, 16);
+            this.lblFloorPrice.TabIndex = 283;
+            this.lblFloorPrice.Text = "99999.99";
+            this.lblFloorPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblFloorPrice.Visible = false;
+            // 
+            // lblFloorPricelabel
+            // 
+            this.lblFloorPricelabel.AutoSize = true;
+            this.lblFloorPricelabel.BackColor = System.Drawing.Color.Transparent;
+            this.lblFloorPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFloorPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblFloorPricelabel.Location = new System.Drawing.Point(7, 67);
+            this.lblFloorPricelabel.Name = "lblFloorPricelabel";
+            this.lblFloorPricelabel.Size = new System.Drawing.Size(39, 16);
+            this.lblFloorPricelabel.TabIndex = 282;
+            this.lblFloorPricelabel.Text = "Floor:";
+            this.lblFloorPricelabel.Visible = false;
+            // 
             // CollectorBigWinMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1779,5 +1810,7 @@
         private System.Windows.Forms.Label lblCodeSearch;
         private System.Windows.Forms.TextBox txtCodeSearch;
         private System.Windows.Forms.Button btnOpenSetValue;
+        private System.Windows.Forms.Label lblFloorPrice;
+        private System.Windows.Forms.Label lblFloorPricelabel;
     }
 }
