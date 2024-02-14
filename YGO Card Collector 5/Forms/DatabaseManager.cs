@@ -611,11 +611,12 @@ namespace YGO_Card_Collector_5
                                                 successListTCG.Add(ThisMasterCard.Name);
                                             }
                                             //Update prices since we are here.
+                                            string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
                                             string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
                                             string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
                                             double priceInPageMarket = Tools.CovertPriceToDouble(priceInPageMarketstr);
                                             double priceInPageMedian = Tools.CovertPriceToDouble(priceInPageMedianstr);
-                                            ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                                            ThisSetCard.OverridePrices(priceInPageFloorstr, priceInPageMarketstr, priceInPageMedianstr);
                                             MathcURLFound = true;
                                         }
                                     }
@@ -706,9 +707,10 @@ namespace YGO_Card_Collector_5
                             TCGCardInfoPage.WaitUntilPageIsLoaded(false);
 
                             //Update prices since
+                            string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
                             string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
                             string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
-                            ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                            ThisSetCard.OverridePrices(priceInPageFloorstr,priceInPageMarketstr, priceInPageMedianstr);
                             sb.AppendLine("Prices Update!");
                             PriceUpdateCounter++;
                         }
@@ -738,6 +740,7 @@ namespace YGO_Card_Collector_5
             Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
             Driver.CloseDriver();
             WriteOutputFiles();
+            DBUpdateform.SendFullCompletionSignal();
             #endregion
         }
         private void UpdateSetPrices(List<SetCard> CardList)
@@ -767,9 +770,10 @@ namespace YGO_Card_Collector_5
                         TCGCardInfoPage.WaitUntilPageIsLoaded(false);
 
                         //Update prices since
+                        string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
                         string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
                         string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
-                        ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                        ThisSetCard.OverridePrices(priceInPageFloorstr, priceInPageMarketstr, priceInPageMedianstr);
                         sb.AppendLine("Prices Update!");
                         PriceUpdateCounter++;
                     }
@@ -791,7 +795,7 @@ namespace YGO_Card_Collector_5
             #endregion
 
             #region JOB #3 END
-            DBUpdateform.SendJobFinishSignal();
+            DBUpdateform.SendFullCompletionSignal();
             Driver.AddToFullLog(string.Format("SetCards with Successful Price Update: {0}", PriceUpdateCounter));
             Driver.AddToFullLog("----------------------------------");
             Masterwatch.Stop();
@@ -841,9 +845,10 @@ namespace YGO_Card_Collector_5
                             if (ThisSetCard.Code == CodeInPage && Tools.CompareInLowerCase(ThisSetCard.Rarity, RarityInPage))
                             {
                                 //Update prices since
+                                string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
                                 string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
                                 string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
-                                ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                                ThisSetCard.OverridePrices(priceInPageFloorstr,priceInPageMarketstr, priceInPageMedianstr);
                                 sb.AppendLine("Prices Update!");
                             }
                             else
@@ -1220,11 +1225,10 @@ namespace YGO_Card_Collector_5
                                                 successListTCG.Add(ThisMasterCard.Name);
                                             }
                                             //Update prices since we are here.
+                                            string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
                                             string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
                                             string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
-                                            double priceInPageMarket = Tools.CovertPriceToDouble(priceInPageMarketstr);
-                                            double priceInPageMedian = Tools.CovertPriceToDouble(priceInPageMedianstr);
-                                            ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                                            ThisSetCard.OverridePrices(priceInPageFloorstr,priceInPageMarketstr, priceInPageMedianstr);
                                             MathcURLFound = true;
                                         }
                                     }
@@ -1306,9 +1310,10 @@ namespace YGO_Card_Collector_5
                             TCGCardInfoPage.WaitUntilPageIsLoaded(false);
 
                             //Update prices since
+                            string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
                             string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
                             string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
-                            ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                            ThisSetCard.OverridePrices(priceInPageFloorstr,priceInPageMarketstr, priceInPageMedianstr);
                             sb.AppendLine("Prices Update!");
                             PriceUpdateCounter++;
                         }
@@ -1348,6 +1353,7 @@ namespace YGO_Card_Collector_5
             Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
             Driver.CloseDriver();
             WriteOutputFiles();
+            DBUpdateform.SendFullCompletionSignal();
         }
         private void WriteOutputFiles()
         {
@@ -2768,11 +2774,10 @@ namespace YGO_Card_Collector_5
                                         ThisSetCard.TCGPlayerURL = TestURL;
 
                                         //Update prices since we are here.
+                                        string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
                                         string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
                                         string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
-                                        double priceInPageMarket = Tools.CovertPriceToDouble(priceInPageMarketstr);
-                                        double priceInPageMedian = Tools.CovertPriceToDouble(priceInPageMedianstr);
-                                        ThisSetCard.OverridePrices(priceInPageMarketstr, priceInPageMedianstr);
+                                        ThisSetCard.OverridePrices(priceInPageFloorstr, priceInPageMarketstr, priceInPageMedianstr);
                                         succesfulMatch = true;
                                         Driver.AddToFullLog(string.Format("Found URL's Counter: {0}", urlcheckcounter));
                                         break;
@@ -2908,9 +2913,10 @@ namespace YGO_Card_Collector_5
             Masterwatch.Start();
             Driver.OpenBrowser();
 
-
+            
             List<SetCard> setCards = new List<SetCard>();
-            foreach (SetInfo thisSetInfo in Database.StructureDecks)
+            /*
+            foreach (SetInfo thisSetInfo in Database.DuelistPacks)
             {
                 if(Database.SetPackByName.ContainsKey(thisSetInfo.Name))
                 {
@@ -2921,11 +2927,11 @@ namespace YGO_Card_Collector_5
                         setCards.Add(card);
                     }
                 }            
-            }
+            }*/
 
-            /*for(int x = 100; x < Database.BoosterPacks.Count; x++)
+            for(int x = 6; x < Database.DuelistPacks.Count; x++)
             {
-                string setname = Database.BoosterPacks[x].Name;
+                string setname = Database.DuelistPacks[x].Name;
                 if (Database.SetPackByName.ContainsKey(setname))
                 {
                     SetPack packToTest = Database.SetPackByName[setname];
@@ -2935,7 +2941,7 @@ namespace YGO_Card_Collector_5
                         setCards.Add(card);
                     }
                 }
-            }*/
+            }
 
             List<string> Results = new List<string>();
             List<string> SetCardsToFix = new List<string>();
@@ -3134,10 +3140,10 @@ namespace YGO_Card_Collector_5
                  }*/
 
                 ThisSetCard.TCGPlayerURL = "Missing";
-                ThisSetCard.OverridePrices("$0.00", "$0.00");
+                ThisSetCard.OverridePrices("$0.00", "$0.00", "$0.00");
                 /*
                 ThisSetCard.TCGPlayerURL = "Missing";
-                ThisSetCard.OverridePrices("$0.00", "$0.00");
+                ThisSetCard.OverridePrices("$0.00", "$0.00", "$0.00");
                 */
 
 
@@ -3197,7 +3203,8 @@ namespace YGO_Card_Collector_5
         {
             //TEST_FIXMISSIGRARITY();
             //TEST_GETURLS();
-            TEST_UpdateFromFixedList();
+            //TEST_UpdateFromFixedList();
+            WriteOutputFiles();
         }
         #endregion
     }

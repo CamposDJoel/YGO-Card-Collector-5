@@ -14,6 +14,7 @@ namespace YGO_Card_Collector_5
 
         public static string Xpath_Code = "//ul[@class=\"product__item-details__attributes\"]/li[1]//span";
         public static string Xpath_Rarity = "//ul[@class=\"product__item-details__attributes\"]/li[2]//span";
+        public static string Xpath_FloorPrice = "//section[@class=\"product-details__listings-total\"]/div/section/span";
         public static string Xpath_MarketPrice = "//section[@class=\"price-points price-guide__points\"]/table/tr[2]/td[2]/span";
         public static string Xpath_MediamPrice = "//section[@class=\"price-points price-guide__points\"]/table/tr[4]/td[2]/span";
         public static string Xpath_ReadMore = "//div[@class=\"product__item-details__toggle masked\"]";
@@ -67,6 +68,19 @@ namespace YGO_Card_Collector_5
         public static string GetRarity()
         {
             return Element.GetText(Xpath_Rarity);
+        }
+        public static string GetFloorPrice()
+        {
+            try
+            {
+                string price = Element.GetText(Xpath_FloorPrice);
+                price = price.Replace("As low as ", "");             
+                return price;
+            }
+            catch (Exception)
+            {
+                return "$0.00";
+            }
         }
         public static string GetMarketPrice()
         {

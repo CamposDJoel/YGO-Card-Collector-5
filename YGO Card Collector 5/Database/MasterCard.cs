@@ -195,8 +195,9 @@ namespace YGO_Card_Collector_5
         {
             return _TCGPlayerURL == "Unavailable";
         }
-        public void OverridePrices(string market, string median)
+        public void OverridePrices(string floor, string market, string median)
         {
+            _FloorPrice = floor;
             _MarketPrice = market;
             _MediamPrice = median;
         }

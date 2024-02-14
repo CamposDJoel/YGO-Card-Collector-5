@@ -13,7 +13,7 @@ namespace YGO_Card_Collector_5
     public static  class SettingsData
     {
         private static bool _SetListSortingOldToNew = true;
-        private static bool _DBUpdateTestMode = true;
+        private static bool _DBUpdateTestMode = false;
         private static bool _AutomationHeadless = true;
         private static AppTheme _CurrentTheme = AppTheme.DarkMacigian;
 

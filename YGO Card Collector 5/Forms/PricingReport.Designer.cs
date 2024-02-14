@@ -32,6 +32,12 @@
             this.btnBackToCollector = new System.Windows.Forms.Button();
             this.TABCONTROLMASTER = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.lblMedianPriceTotalValueCollection = new System.Windows.Forms.Label();
+            this.lblMarketPriceTotalValueCollection = new System.Windows.Forms.Label();
+            this.ListTop1000ReportMedianCollection = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.ListTop1000ReportCollection = new System.Windows.Forms.ListBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.lblMedianPriceTotalValueDb = new System.Windows.Forms.Label();
             this.lblMarketPriceTotalValueDB = new System.Windows.Forms.Label();
@@ -39,12 +45,6 @@
             this.label71 = new System.Windows.Forms.Label();
             this.ListTop1000ReportDB = new System.Windows.Forms.ListBox();
             this.label70 = new System.Windows.Forms.Label();
-            this.lblMedianPriceTotalValueCollection = new System.Windows.Forms.Label();
-            this.lblMarketPriceTotalValueCollection = new System.Windows.Forms.Label();
-            this.ListTop1000ReportMedianCollection = new System.Windows.Forms.ListBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ListTop1000ReportCollection = new System.Windows.Forms.ListBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.TabSetExplorer = new System.Windows.Forms.TabPage();
             this.PanelSetInfo = new System.Windows.Forms.Panel();
             this.label80 = new System.Windows.Forms.Label();
@@ -102,6 +102,72 @@
             this.tabPage1.Size = new System.Drawing.Size(782, 396);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Your Collection Totals";
+            // 
+            // lblMedianPriceTotalValueCollection
+            // 
+            this.lblMedianPriceTotalValueCollection.AutoSize = true;
+            this.lblMedianPriceTotalValueCollection.BackColor = System.Drawing.Color.Black;
+            this.lblMedianPriceTotalValueCollection.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMedianPriceTotalValueCollection.ForeColor = System.Drawing.Color.White;
+            this.lblMedianPriceTotalValueCollection.Location = new System.Drawing.Point(412, 353);
+            this.lblMedianPriceTotalValueCollection.Name = "lblMedianPriceTotalValueCollection";
+            this.lblMedianPriceTotalValueCollection.Size = new System.Drawing.Size(130, 24);
+            this.lblMedianPriceTotalValueCollection.TabIndex = 24;
+            this.lblMedianPriceTotalValueCollection.Text = "Total Value:";
+            // 
+            // lblMarketPriceTotalValueCollection
+            // 
+            this.lblMarketPriceTotalValueCollection.AutoSize = true;
+            this.lblMarketPriceTotalValueCollection.BackColor = System.Drawing.Color.Black;
+            this.lblMarketPriceTotalValueCollection.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarketPriceTotalValueCollection.ForeColor = System.Drawing.Color.White;
+            this.lblMarketPriceTotalValueCollection.Location = new System.Drawing.Point(11, 353);
+            this.lblMarketPriceTotalValueCollection.Name = "lblMarketPriceTotalValueCollection";
+            this.lblMarketPriceTotalValueCollection.Size = new System.Drawing.Size(130, 24);
+            this.lblMarketPriceTotalValueCollection.TabIndex = 23;
+            this.lblMarketPriceTotalValueCollection.Text = "Total Value:";
+            // 
+            // ListTop1000ReportMedianCollection
+            // 
+            this.ListTop1000ReportMedianCollection.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ListTop1000ReportMedianCollection.FormattingEnabled = true;
+            this.ListTop1000ReportMedianCollection.Location = new System.Drawing.Point(416, 47);
+            this.ListTop1000ReportMedianCollection.Name = "ListTop1000ReportMedianCollection";
+            this.ListTop1000ReportMedianCollection.Size = new System.Drawing.Size(355, 303);
+            this.ListTop1000ReportMedianCollection.TabIndex = 22;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Black;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(412, 20);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(148, 24);
+            this.label3.TabIndex = 21;
+            this.label3.Text = "Median Price:";
+            // 
+            // ListTop1000ReportCollection
+            // 
+            this.ListTop1000ReportCollection.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.ListTop1000ReportCollection.FormattingEnabled = true;
+            this.ListTop1000ReportCollection.Location = new System.Drawing.Point(15, 47);
+            this.ListTop1000ReportCollection.Name = "ListTop1000ReportCollection";
+            this.ListTop1000ReportCollection.Size = new System.Drawing.Size(355, 303);
+            this.ListTop1000ReportCollection.TabIndex = 20;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Black;
+            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(11, 20);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(144, 24);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Market Price:";
             // 
             // tabPage2
             // 
@@ -184,72 +250,6 @@
             this.label70.Size = new System.Drawing.Size(144, 24);
             this.label70.TabIndex = 13;
             this.label70.Text = "Market Price:";
-            // 
-            // lblMedianPriceTotalValueCollection
-            // 
-            this.lblMedianPriceTotalValueCollection.AutoSize = true;
-            this.lblMedianPriceTotalValueCollection.BackColor = System.Drawing.Color.Black;
-            this.lblMedianPriceTotalValueCollection.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMedianPriceTotalValueCollection.ForeColor = System.Drawing.Color.White;
-            this.lblMedianPriceTotalValueCollection.Location = new System.Drawing.Point(412, 353);
-            this.lblMedianPriceTotalValueCollection.Name = "lblMedianPriceTotalValueCollection";
-            this.lblMedianPriceTotalValueCollection.Size = new System.Drawing.Size(130, 24);
-            this.lblMedianPriceTotalValueCollection.TabIndex = 24;
-            this.lblMedianPriceTotalValueCollection.Text = "Total Value:";
-            // 
-            // lblMarketPriceTotalValueCollection
-            // 
-            this.lblMarketPriceTotalValueCollection.AutoSize = true;
-            this.lblMarketPriceTotalValueCollection.BackColor = System.Drawing.Color.Black;
-            this.lblMarketPriceTotalValueCollection.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarketPriceTotalValueCollection.ForeColor = System.Drawing.Color.White;
-            this.lblMarketPriceTotalValueCollection.Location = new System.Drawing.Point(11, 353);
-            this.lblMarketPriceTotalValueCollection.Name = "lblMarketPriceTotalValueCollection";
-            this.lblMarketPriceTotalValueCollection.Size = new System.Drawing.Size(130, 24);
-            this.lblMarketPriceTotalValueCollection.TabIndex = 23;
-            this.lblMarketPriceTotalValueCollection.Text = "Total Value:";
-            // 
-            // ListTop1000ReportMedianCollection
-            // 
-            this.ListTop1000ReportMedianCollection.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ListTop1000ReportMedianCollection.FormattingEnabled = true;
-            this.ListTop1000ReportMedianCollection.Location = new System.Drawing.Point(416, 47);
-            this.ListTop1000ReportMedianCollection.Name = "ListTop1000ReportMedianCollection";
-            this.ListTop1000ReportMedianCollection.Size = new System.Drawing.Size(355, 303);
-            this.ListTop1000ReportMedianCollection.TabIndex = 22;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Black;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(412, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(148, 24);
-            this.label3.TabIndex = 21;
-            this.label3.Text = "Median Price:";
-            // 
-            // ListTop1000ReportCollection
-            // 
-            this.ListTop1000ReportCollection.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ListTop1000ReportCollection.FormattingEnabled = true;
-            this.ListTop1000ReportCollection.Location = new System.Drawing.Point(15, 47);
-            this.ListTop1000ReportCollection.Name = "ListTop1000ReportCollection";
-            this.ListTop1000ReportCollection.Size = new System.Drawing.Size(355, 303);
-            this.ListTop1000ReportCollection.TabIndex = 20;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Black;
-            this.label4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(11, 20);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(144, 24);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Market Price:";
             // 
             // TabSetExplorer
             // 
@@ -427,7 +427,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "PricingReport";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pricing Report - YGO Card Collector 5";
             this.TABCONTROLMASTER.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
