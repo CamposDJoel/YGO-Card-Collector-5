@@ -21,6 +21,9 @@ namespace YGO_Card_Collector_5
 
             lblDatabaseOption.MouseEnter += OnMouseEnterLabel;
             lblDatabaseOption.MouseLeave += OnMouseLeaveLabel;
+
+            //Load App Settings
+            SettingsData.InitializeSettings();
         }
 
         private void LoadDB()
