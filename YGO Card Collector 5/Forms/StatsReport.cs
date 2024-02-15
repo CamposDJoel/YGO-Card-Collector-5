@@ -306,11 +306,12 @@ namespace YGO_Card_Collector_5
                 int mainListCardTotal = ThisSetInfo.GetMainListCardTotal();
                 int variantListCardTotal = ThisSetInfo.GetVariantListCardTotal();
 
+                bool FullSetOwned = mainListObtained == mainListCardTotal;
+
                 //Start displaying the row elements
                 Label yearCode = new Label();
                 ThisPage.Controls.Add(yearCode);
-                yearCode.Text = string.Format("{0} | {1}", year, code);
-                yearCode.ForeColor = Color.White;
+                yearCode.Text = string.Format("{0} | {1}", year, code);              
                 yearCode.BorderStyle = BorderStyle.FixedSingle;
                 yearCode.AutoSize = false;
                 yearCode.Font = new Font("Arial Rounded MT Bold", 9);               
@@ -324,6 +325,7 @@ namespace YGO_Card_Collector_5
                 {
                     yearCode.ForeColor = Color.Yellow;
                 }
+                if (FullSetOwned) { yearCode.ForeColor = Color.Aqua; }
 
                 Label setname = new Label();
                 ThisPage.Controls.Add(setname);
@@ -342,6 +344,7 @@ namespace YGO_Card_Collector_5
                 {
                     setname.ForeColor = Color.Yellow;
                 }
+                if (FullSetOwned) { setname.ForeColor = Color.Aqua; }
 
                 Label mainCardlist = new Label();
                 ThisPage.Controls.Add(mainCardlist);
@@ -361,6 +364,7 @@ namespace YGO_Card_Collector_5
                 {
                     mainCardlist.ForeColor = Color.Yellow;
                 }
+                if (FullSetOwned) { mainCardlist.ForeColor = Color.Aqua; }
 
                 Label mainCardlist2 = new Label();
                 ThisPage.Controls.Add(mainCardlist2);
@@ -379,6 +383,7 @@ namespace YGO_Card_Collector_5
                 {
                     mainCardlist2.ForeColor = Color.Yellow;
                 }
+                if (FullSetOwned) { mainCardlist2.ForeColor = Color.Aqua; }
 
                 Label mainCardlist3 = new Label();
                 ThisPage.Controls.Add(mainCardlist3);
@@ -399,15 +404,39 @@ namespace YGO_Card_Collector_5
                 {
                     mainCardlist3.ForeColor = Color.Yellow;
                 }
+                if (FullSetOwned) { mainCardlist3.ForeColor = Color.Aqua; }
 
                 double percentage1 = 0;
                 if (mainListObtained > 0) { percentage1 = (mainListObtained / mainListCardTotal) * 100; }
+
+                Label percentagelabel = new Label();
+                ThisPage.Controls.Add(percentagelabel);
+                percentagelabel.Text = percentage1 + "%";
+                percentagelabel.ForeColor = Color.White;
+                percentagelabel.BorderStyle = BorderStyle.FixedSingle;
+                percentagelabel.AutoSize = false;
+                percentagelabel.Font = new Font("Arial Rounded MT Bold", 9);
+                percentagelabel.TextAlign = ContentAlignment.MiddleRight;
+                percentagelabel.ForeColor = Color.Gold;
+                percentagelabel.Size = new Size(40, 17);
+                percentagelabel.Location = new Point(452, Y_Location);
+                if (_SetStatRowColor)
+                {
+                    percentagelabel.ForeColor = Color.White;
+                }
+                else
+                {
+                    percentagelabel.ForeColor = Color.Yellow;
+                }
+                if (FullSetOwned) { percentagelabel.ForeColor = Color.Aqua; }
+
+
 
                 ProgressBar bar = new ProgressBar();
                 ThisPage.Controls.Add(bar);
                 bar.Value = (int)percentage1;
                 bar.Size = new Size(100, 17);
-                bar.Location = new Point(452, Y_Location);
+                bar.Location = new Point(491, Y_Location);
 
                 if(variantListCardTotal > 0) 
                 {
@@ -420,7 +449,7 @@ namespace YGO_Card_Collector_5
                     variantCardlist.Font = new Font("Arial Rounded MT Bold", 9);
                     variantCardlist.TextAlign = ContentAlignment.MiddleRight;                    
                     variantCardlist.Size = new Size(30, 17);
-                    variantCardlist.Location = new Point(551, Y_Location);
+                    variantCardlist.Location = new Point(590, Y_Location);
                     if (_SetStatRowColor)
                     {
                         variantCardlist.ForeColor = Color.White;
@@ -438,7 +467,7 @@ namespace YGO_Card_Collector_5
                     variantCardlist2.AutoSize = false;
                     variantCardlist2.Font = new Font("Arial Rounded MT Bold", 9);                    
                     variantCardlist2.Size = new Size(10, 17);
-                    variantCardlist2.Location = new Point(580, Y_Location);
+                    variantCardlist2.Location = new Point(619, Y_Location);
                     if (_SetStatRowColor)
                     {
                         variantCardlist2.ForeColor = Color.White;
@@ -457,7 +486,7 @@ namespace YGO_Card_Collector_5
                     variantCardlist3.Font = new Font("Arial Rounded MT Bold", 9);
                     variantCardlist3.TextAlign = ContentAlignment.MiddleRight;                    
                     variantCardlist3.Size = new Size(30, 17);
-                    variantCardlist3.Location = new Point(589, Y_Location);
+                    variantCardlist3.Location = new Point(628, Y_Location);
                     if (_SetStatRowColor)
                     {
                         variantCardlist3.ForeColor = Color.White;
@@ -474,7 +503,7 @@ namespace YGO_Card_Collector_5
                     ThisPage.Controls.Add(bar2);
                     bar2.Value = (int)percentage2;
                     bar2.Size = new Size(100, 17);
-                    bar2.Location = new Point(618, Y_Location);
+                    bar2.Location = new Point(657, Y_Location);
                 }
 
                 //Flip the flag
