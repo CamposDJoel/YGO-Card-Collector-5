@@ -233,6 +233,10 @@ namespace YGO_Card_Collector_5
         {
             return Tools.CovertPriceToDouble(_MediamPrice);
         }
+        public string GetKEY()
+        {
+            return string.Format("{0}|{1}|{2}", _Code, _Rarity, GetCardName());
+        }
         public void FlipObtainedStatus()
         {
             if(_Obtained) 
@@ -240,6 +244,26 @@ namespace YGO_Card_Collector_5
                 _Obtained = false;
                 //Remove the MasterCard obtained flag is no setcard are obtained anymore
                 if(Database.MasterCardByCode[_Code].HasOneCardsObtained())
+                {
+                    Database.MasterCardByCode[_Code].Obtained = false;
+                }               
+            }
+            else
+            {
+                _Obtained = true;
+                //Mark the MasterCard as obtained
+                Database.MasterCardByCode[_Code].Obtained = true;
+            }
+            //Update Save file
+            Database.UpdateSaveFile(GetKEY(), _Obtained);
+        }
+        public void FlipObtainedStatusNOUPDATE()
+        {
+            if (_Obtained)
+            {
+                _Obtained = false;
+                //Remove the MasterCard obtained flag is no setcard are obtained anymore
+                if (Database.MasterCardByCode[_Code].HasOneCardsObtained())
                 {
                     Database.MasterCardByCode[_Code].Obtained = false;
                 }

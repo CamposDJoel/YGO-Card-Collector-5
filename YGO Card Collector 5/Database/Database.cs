@@ -17,6 +17,7 @@ namespace YGO_Card_Collector_5
         public static Dictionary<string, MasterCard> MasterCardByName = new Dictionary<string, MasterCard>();
         public static Dictionary<string, MasterCard> MasterCardByCode = new Dictionary<string, MasterCard>();
         public static List<MasterCard> MasterCards = new List<MasterCard>();
+        private static List<string> SaveFileData = new List<string>();
         //Set Cards
         public static Dictionary<string, SetCard> SetCardByKey = new Dictionary<string, SetCard>();
         public static List<SetCard> SetCards = new List<SetCard>();
@@ -78,7 +79,7 @@ namespace YGO_Card_Collector_5
                         else
                         {
                             //Set a "Key" for this set card
-                            string setCardKey = thisSetCard.Code + "|" + thisSetCard.Rarity + "|" + thisSetCard.Name;
+                            string setCardKey = thisSetCard.Code + "|" + thisSetCard.Rarity + "|" + ThisMasterCard.Name;
 
                             //Konami has duplicate card sets in the DB (suckers!), to handle this, ignore any card with
                             //an already existing key in the DB
@@ -145,6 +146,9 @@ namespace YGO_Card_Collector_5
 
                 //Initialize the CardGroupList dictionary for clean code access to these lists
                 InitalizeCardGroupListsDict();
+
+                //Read the SaveFile to mark all the Obtained cards
+                LoadSaveFile();
 
                 //Flag the DB as "Initialized" so we dont reload it
                 Initialized = true;
@@ -308,6 +312,50 @@ namespace YGO_Card_Collector_5
                 GroupCardListByGroupName.Add(CardGroup.Wind_Attribute, Wind);
                 GroupCardListByGroupName.Add(CardGroup.Divine_Attribute, Divine);
             }
+            void LoadSaveFile()
+            {
+                StreamReader SR_SaveFile = new StreamReader(
+                Directory.GetCurrentDirectory() + "\\Database\\SaveFile.txt");
+
+                string line = SR_SaveFile.ReadLine();
+                SaveFileData.Add(line);
+                int cardCount = Convert.ToInt32(line);
+
+                for(int i = 0; i < cardCount; i++)
+                {
+                    line = SR_SaveFile.ReadLine();
+                    SaveFileData.Add(line);
+                    SetCard SetCardToMark = SetCardByKey[line];
+                    SetCardToMark.FlipObtainedStatusNOUPDATE();
+                }
+
+                SR_SaveFile?.Close();
+            }
+        }
+        public static void UpdateSaveFile(string cardData, bool markAsOwned)
+        {
+            if(markAsOwned)
+            {
+                SaveFileData.Add(cardData);
+                SaveFileData.RemoveAt(0);
+                SaveFileData.Insert(0, SaveFileData.Count.ToString());
+            }
+            else
+            {
+                SaveFileData.Remove(cardData);
+                SaveFileData.RemoveAt(0);
+                SaveFileData.Insert(0, SaveFileData.Count.ToString());
+            }
+
+            if (SettingsData.DBUpdateTestMode)
+            {
+                File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\TEST_SaveFile.txt", SaveFileData);
+            }
+            else
+            {
+                //Override the actual DB file
+                File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Database\\SaveFile.txt", SaveFileData);
+            }
         }
         public static void SaveDatabaseInJSON()
         {
@@ -322,23 +370,6 @@ namespace YGO_Card_Collector_5
                 //Override the actual DB file
                 File.WriteAllText(Directory.GetCurrentDirectory() + "\\Database\\CardDB.json", output);
             }
-
-            //Save the external txt file
-            List<string> obtainedcardlist = new List<string>(); 
-            foreach(MasterCard masterCard in MasterCards) 
-            {
-                foreach(SetCard setCard in masterCard.SetCards)
-                {
-                    if(setCard.Obtained)
-                    {
-                        obtainedcardlist.Add(string.Format("{0}|{1}|{2}",setCard.Code,setCard.Rarity,masterCard.Name));
-                    }
-                }
-            }
-            obtainedcardlist.Insert(0, obtainedcardlist.Count.ToString());
-            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\SaveFile.txt", obtainedcardlist);
-
-
         }
         public static bool CardExists(string cardName)
         {

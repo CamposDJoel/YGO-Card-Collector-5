@@ -68,6 +68,20 @@ namespace YGO_Card_Collector_5
                 return outputlist;
             }
         }
+        public int SetMainListFloorValue
+        {
+            get
+            {
+                int totals = 0;
+
+                foreach (SetCard card in _mainSetCards)
+                {
+                    totals = totals + (int)card.GetDoubleFloorPrice();
+                }
+
+                return totals;
+            }
+        }
         public int SetMainListMarketValue
         {
             get
@@ -96,35 +110,66 @@ namespace YGO_Card_Collector_5
                 return totals;
             }
         }
-        public int SetMainListMarketValueObtained
+        public double SetMainListFloorValueObtained
         {
             get
             {
-                int totals = 0;
+                double totals = 0;
+
+                foreach (SetCard card in _mainSetCards)
+                {
+                    if (card.Obtained)
+                    {
+                        totals = totals + card.GetDoubleFloorPrice();
+                    }
+                }
+
+                return totals;
+            }
+        }
+        public double SetMainListMarketValueObtained
+        {
+            get
+            {
+                double totals = 0;
 
                 foreach (SetCard card in _mainSetCards)
                 {
                     if(card.Obtained) 
                     {
-                        totals = totals + (int)card.GetDoubleMarketPrice();
+                        totals = totals + card.GetDoubleMarketPrice();
                     }                   
                 }
 
                 return totals;
             }
         }
-        public int SetMainListMedianValueObtained
+        public double SetMainListMedianValueObtained
         {
             get
             {
-                int totals = 0;
+                double totals = 0;
 
                 foreach (SetCard card in _mainSetCards)
                 {
                     if(card.Obtained)
                     {
-                        totals = totals + (int)card.GetDoubleMedianPrice();
+                        totals = totals + card.GetDoubleMedianPrice();
                     }                  
+                }
+
+                return totals;
+            }
+        }
+        public int SetExtraListFloorValue
+        {
+            get
+            {
+                int totals = 0;
+
+                foreach (SetCard card in _extraCards)
+                {
+                    totals = totals + (int)card.GetDoubleFloorPrice();
                 }
 
                 return totals;
@@ -158,34 +203,51 @@ namespace YGO_Card_Collector_5
                 return totals;
             }
         }
-        public int SetExtraListMarketValueObtained
+        public double SetExtraListFloorValueObtained
         {
             get
             {
-                int totals = 0;
+                double totals = 0;
 
                 foreach (SetCard card in _extraCards)
                 {
                     if (card.Obtained)
                     {
-                        totals = totals + (int)card.GetDoubleMarketPrice();
+                        totals = totals + card.GetDoubleFloorPrice();
                     }
                 }
 
                 return totals;
             }
         }
-        public int SetExtraListMedianValueObtained
+        public double SetExtraListMarketValueObtained
         {
             get
             {
-                int totals = 0;
+                double totals = 0;
 
                 foreach (SetCard card in _extraCards)
                 {
                     if (card.Obtained)
                     {
-                        totals = totals + (int)card.GetDoubleMedianPrice();
+                        totals = totals + card.GetDoubleMarketPrice();
+                    }
+                }
+
+                return totals;
+            }
+        }
+        public double SetExtraListMedianValueObtained
+        {
+            get
+            {
+                double totals = 0;
+
+                foreach (SetCard card in _extraCards)
+                {
+                    if (card.Obtained)
+                    {
+                        totals = totals + card.GetDoubleMedianPrice();
                     }
                 }
 

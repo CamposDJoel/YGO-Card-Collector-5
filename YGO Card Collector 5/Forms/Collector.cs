@@ -513,15 +513,14 @@ namespace YGO_Card_Collector_5
             //Change the Container Label
             if(_TagContainerList[Index].BackColor == Color.MidnightBlue)
             {
-                _TagContainerList[Index].BackColor = Color.Black;
+                _TagContainerList[Index].BackColor = Color.Black;              
             }
             else
             {
                 _TagContainerList[Index].BackColor = Color.MidnightBlue;
             }
 
-            //TODO: Rewrite save file
-            Database.SaveDatabaseInJSON();
+            //We are not rewriting the JSON anymore... Database.SaveDatabaseInJSON();
         }
         #endregion
 
