@@ -1,1 +1,127 @@
-0
+126
+LOB-000|Secret Rare|Tri-Horned Dragon
+LOB-001|Ultra Rare|Blue-Eyes White Dragon
+LOB-002|Common|Hitotsu-Me Giant
+LOB-003|Super Rare|Flame Swordsman
+LOB-004|Common|Skull Servant
+LOB-005|Ultra Rare|Dark Magician
+LOB-006|Ultra Rare|Gaia The Fierce Knight
+LOB-007|Super Rare|Celtic Guardian
+LOB-008|Common|Basic Insect
+LOB-009|Common|Mammoth Graveyard
+LOB-010|Common|Silver Fang
+LOB-011|Common|Dark Gray
+LOB-012|Common|Trial of Nightmare
+LOB-013|Common|Nemuriko
+LOB-014|Common|The 13th Grave
+LOB-015|Rare|Charubin the Fire Knight
+LOB-016|Common|Flame Manipulator
+LOB-017|Common|Monster Egg
+LOB-018|Common|Firegrass
+LOB-019|Rare|Darkfire Dragon
+LOB-020|Common|Dark King of the Abyss
+LOB-021|Common|Fiend Reflection #2
+LOB-022|Rare|Fusionist
+LOB-023|Common|Turtle Tiger
+LOB-024|Common|Petit Dragon
+LOB-025|Common|Petit Angel
+LOB-026|Common|Hinotama Soul
+LOB-027|Rare|Aqua Madoor
+LOB-028|Common|Kagemusha of the Blue Flame
+LOB-029|Rare|Flame Ghost
+LOB-030|Common|Two-Mouth Darkruler
+LOB-031|Common|Dissolverock
+LOB-032|Common|Root Water
+LOB-033|Common|The Furious Sea King
+LOB-034|Common|Green Phantom King
+LOB-035|Common|Ray & Temperature
+LOB-036|Common|King Fog
+LOB-037|Common|Mystical Sheep #2
+LOB-038|Common|Masaki the Legendary Swordsman
+LOB-039|Common|Kurama
+LOB-040|Common|Legendary Sword
+LOB-041|Common|Beast Fangs
+LOB-042|Common|Violet Crystal
+LOB-043|Common|Book of Secret Arts
+LOB-044|Common|Power of Kaishin
+LOB-045|Rare|Dragon Capture Jar
+LOB-046|Common|Forest
+LOB-047|Common|Wasteland
+LOB-048|Common|Mountain
+LOB-049|Common|Sogen
+LOB-050|Common|Umi
+LOB-051|Common|Yami
+LOB-052|Super Rare|Dark Hole
+LOB-053|Super Rare|Raigeki
+LOB-054|Common|Red Medicine
+LOB-055|Common|Sparks
+LOB-056|Common|Hinotama
+LOB-057|Rare|Fissure
+LOB-058|Super Rare|Trap Hole
+LOB-059|Super Rare|Polymerization
+LOB-060|Common|Remove Trap
+LOB-061|Rare|Two-Pronged Attack
+LOB-062|Super Rare|Mystical Elf
+LOB-063|Common|Tyhone
+LOB-064|Common|Beaver Warrior
+LOB-065|Rare|Gravedigger Ghoul
+LOB-066|Super Rare|Curse of Dragon
+LOB-067|Rare|Karbonala Warrior
+LOB-068|Rare|Giant Soldier of Stone
+LOB-069|Common|Uraby
+LOB-070|Ultra Rare|Red-Eyes Black Dragon
+LOB-071|Rare|Reaper of the Cards
+LOB-072|Common|Witty Phantom
+LOB-073|Common|Larvas
+LOB-074|Common|Hard Armor
+LOB-075|Common|Man Eater
+LOB-076|Common|M-Warrior #1
+LOB-077|Common|M-Warrior #2
+LOB-078|Rare|Spirit of the Harp
+LOB-079|Common|Armaill
+LOB-080|Common|Terra the Terrible
+LOB-081|Common|Frenzied Panda
+LOB-082|Common|Kumootoko
+LOB-083|Common|Meda Bat
+LOB-084|Common|Enchanting Mermaid
+LOB-085|Common|Fireyarou
+LOB-086|Rare|Dragoness the Wicked Knight
+LOB-087|Common|One-Eyed Shield Dragon
+LOB-088|Common|Dark Energy
+LOB-089|Common|Laser Cannon Armor
+LOB-090|Common|Vile Germs
+LOB-091|Common|Silver Bow and Arrow
+LOB-092|Common|Dragon Treasure
+LOB-093|Common|Electro-Whip
+LOB-094|Common|Mystical Moon
+LOB-095|Rare|Stop Defense
+LOB-096|Common|Machine Conversion Factory
+LOB-097|Common|Raise Body Heat
+LOB-098|Common|Follow Wind
+LOB-099|Rare|Goblin's Secret Remedy
+LOB-100|Rare|Final Flame
+LOB-101|Super Rare|Swords of Revealing Light
+LOB-102|Rare|Metal Dragon
+LOB-103|Common|Spike Seadra
+LOB-104|Common|Tripwire Beast
+LOB-105|Common|Skull Red Bird
+LOB-106|Rare|Armed Ninja
+LOB-107|Rare|Flower Wolf
+LOB-108|Super Rare|Man-Eater Bug
+LOB-109|Common|Sand Stone
+LOB-110|Rare|Hane-Hane
+LOB-111|Common|Misairuzame
+LOB-112|Common|Steel Ogre Grotto #1
+LOB-113|Common|Lesser Dragon
+LOB-114|Common|Darkworld Thorns
+LOB-115|Common|Drooling Lizard
+LOB-116|Common|Armored Starfish
+LOB-117|Common|Succubus Knight
+LOB-118|Ultra Rare|Monster Reborn
+LOB-119|Rare|Pot of Greed
+LOB-120|Ultra Rare|Right Leg of the Forbidden One
+LOB-121|Ultra Rare|Left Leg of the Forbidden One
+LOB-122|Ultra Rare|Right Arm of the Forbidden One
+LOB-123|Ultra Rare|Left Arm of the Forbidden One
+LOB-124|Ultra Rare|Exodia the Forbidden One
+LOB-125|Secret Rare|Gaia the Dragon Champion
