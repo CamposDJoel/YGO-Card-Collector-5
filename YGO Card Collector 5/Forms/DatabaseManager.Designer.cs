@@ -274,6 +274,7 @@
             this.ListTop1000Report = new System.Windows.Forms.ListBox();
             this.label69 = new System.Windows.Forms.Label();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
+            this.label70 = new System.Windows.Forms.Label();
             this.PanelFullTotals.SuspendLayout();
             this.TabMasterTotals.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -3187,6 +3188,7 @@
             // 
             this.PanelSetInfo.AutoScroll = true;
             this.PanelSetInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelSetInfo.Controls.Add(this.label70);
             this.PanelSetInfo.Controls.Add(this.label80);
             this.PanelSetInfo.Controls.Add(this.label79);
             this.PanelSetInfo.Controls.Add(this.label78);
@@ -3204,11 +3206,11 @@
             this.label80.AutoSize = true;
             this.label80.BackColor = System.Drawing.Color.Transparent;
             this.label80.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.Location = new System.Drawing.Point(500, 23);
+            this.label80.Location = new System.Drawing.Point(507, 23);
             this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(66, 16);
+            this.label80.Size = new System.Drawing.Size(50, 16);
             this.label80.TabIndex = 7;
-            this.label80.Text = "Obtained?:";
+            this.label80.Text = "Owned?";
             // 
             // label79
             // 
@@ -3237,7 +3239,7 @@
             this.label77.AutoSize = true;
             this.label77.BackColor = System.Drawing.Color.Transparent;
             this.label77.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label77.Location = new System.Drawing.Point(307, 23);
+            this.label77.Location = new System.Drawing.Point(247, 23);
             this.label77.Name = "label77";
             this.label77.Size = new System.Drawing.Size(42, 16);
             this.label77.TabIndex = 4;
@@ -3439,6 +3441,17 @@
             this.btnBackToMainMenu.Text = "<-- Back to Main Menu";
             this.btnBackToMainMenu.UseVisualStyleBackColor = false;
             this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.BackColor = System.Drawing.Color.Transparent;
+            this.label70.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Location = new System.Drawing.Point(331, 23);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(48, 16);
+            this.label70.TabIndex = 8;
+            this.label70.Text = "Floor $:";
             // 
             // DatabaseManager
             // 
@@ -3743,5 +3756,6 @@
         private System.Windows.Forms.RadioButton radioMarketOption;
         private System.Windows.Forms.RadioButton radioFloorOption;
         private System.Windows.Forms.RadioButton radioMedianOption;
+        private System.Windows.Forms.Label label70;
     }
 }

@@ -22,6 +22,17 @@ namespace YGO_Card_Collector_5
             InitializeComponent();
             _MainMenuForm = mainmenuform;
             ReloadStats();
+
+            /*
+            foreach(MasterCard card in Database.MasterCards)
+            {
+                card.Obtained = false;
+                foreach(SetCard setCard in card.SetCards)
+                {
+                    setCard.Obtained = false;
+                }
+            }
+            Database.SaveDatabaseInJSON();*/
         }
         #endregion
 
@@ -111,14 +122,14 @@ namespace YGO_Card_Collector_5
 
             listCardList.Items.Clear();
             List<MasterCard> currentList = Database.GroupCardListByGroupName[_CurrentSelectedCardGroup];
-            foreach(MasterCard ThisCard in currentList) 
+            foreach (MasterCard ThisCard in currentList)
             {
                 listCardList.Items.Add(ThisCard.Name);
             }
 
             //Select the first item
             listCardList.SetSelected(0, true);
-        }     
+        }
         private void LoadMissingURLsLists()
         {
             //Prodeck list
@@ -129,7 +140,7 @@ namespace YGO_Card_Collector_5
             }
             else
             {
-                foreach(string CardName in Database.CardsWithoutProdeckURL) 
+                foreach (string CardName in Database.CardsWithoutProdeckURL)
                 {
                     listProdeckMissingURLs.Items.Add(CardName);
                 }
@@ -138,7 +149,7 @@ namespace YGO_Card_Collector_5
 
             //TCG list
             listTCGMissingURLs.Items.Clear();
-            if(Database.CardsWithoutTCGURLs.Count == 0)
+            if (Database.CardsWithoutTCGURLs.Count == 0)
             {
                 listTCGMissingURLs.Items.Add("No Cards - Good Job! Database is up to date!");
                 listTCGMissingURLsSets.Visible = false;
@@ -151,18 +162,18 @@ namespace YGO_Card_Collector_5
                 listTCGMissingURLs.Size = new System.Drawing.Size(200, 228);
                 lblMissingTabArrow.Visible = true;
                 lblMissingTabNote.Visible = true;
-                foreach (string entry in Database.CardsWithoutTCGURLs) 
+                foreach (string entry in Database.CardsWithoutTCGURLs)
                 {
                     listTCGMissingURLs.Items.Add(entry);
                 }
             }
             listTCGMissingURLs.SetSelected(0, true);
-        }       
+        }
         private void LoadUnavailableURLsLists()
         {
             //Prodeck lists
             listProdeckUnavailable.Items.Clear();
-            if(Database.CardsWithUnavailableProdeckURL.Count == 0) 
+            if (Database.CardsWithUnavailableProdeckURL.Count == 0)
             {
                 listProdeckUnavailable.Items.Add("No Cards - Good Job! Database is up to date!");
             }
@@ -173,13 +184,13 @@ namespace YGO_Card_Collector_5
                     listProdeckUnavailable.Items.Add(ThisCardsName);
 
                 }
-            }           
+            }
             listProdeckUnavailable.SetSelected(0, true);
 
 
 
             listTCGUnavailableList.Items.Clear();
-            if(Database.CardsWithUnavailableTCGURLs.Count == 0) 
+            if (Database.CardsWithUnavailableTCGURLs.Count == 0)
             {
                 listTCGUnavailableList.Items.Add("No Cards - Good Job! Database is up to date!");
                 listTCGUnavailableURLsSets.Visible = false;
@@ -196,18 +207,18 @@ namespace YGO_Card_Collector_5
                 {
                     listTCGUnavailableList.Items.Add(ThisCardsName);
                 }
-            }            
+            }
             listTCGUnavailableList.SetSelected(0, true);
         }
         private void LoadMissingCardsUrlsList()
         {
             StringBuilder sb = new StringBuilder();
 
-            foreach(MasterCard ThisMasterCard in Database.MasterCards) 
+            foreach (MasterCard ThisMasterCard in Database.MasterCards)
             {
                 int passcode = ThisMasterCard.ID;
-               if(passcode != -1)
-               {
+                if (passcode != -1)
+                {
                     //Check if the file exists
                     if (!File.Exists(Directory.GetCurrentDirectory() + "\\Images\\Cards\\" + passcode + ".jpg"))
                     {
@@ -217,14 +228,14 @@ namespace YGO_Card_Collector_5
                 }
             }
 
-            if(sb.Length ==  0)
+            if (sb.Length == 0)
             {
                 txtCardImagesURLoutput.Text = "NO Card Passcodes without Card Images, check this list once new Card Passcodes (IDs) are added to the DB.";
             }
             else
             {
                 txtCardImagesURLoutput.Text = sb.ToString();
-            }          
+            }
         }
         private void LoadSetsExplorer()
         {
@@ -232,20 +243,20 @@ namespace YGO_Card_Collector_5
         }
         private void LoadPriceReportLists()
         {
-            
+
             List<SetCard> PriceList = new List<SetCard>();
             foreach (MasterCard ThisMasterCard in Database.MasterCards)
             {
-                foreach(SetCard ThisSetCard in ThisMasterCard.SetCards) 
+                foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
                 {
-                    if(ThisSetCard.Code != "")
+                    if (ThisSetCard.Code != "")
                     {
                         PriceList.Add(ThisSetCard);
-                    }                  
+                    }
                 }
             }
 
-            switch(_CurrentPriceGroupSelection)
+            switch (_CurrentPriceGroupSelection)
             {
                 case "FLOOR": PriceList.Sort(new SetCard.SortByFloorPrice()); break;
                 case "MARKET": PriceList.Sort(new SetCard.SortByPrice()); break;
@@ -258,7 +269,7 @@ namespace YGO_Card_Collector_5
 
             int PriceTotalValue = 0;
 
-            foreach(SetCard ThisSetCard in PriceList)
+            foreach (SetCard ThisSetCard in PriceList)
             {
                 string cardname = Database.MasterCardByCode[ThisSetCard.Code].Name;
                 string obtainedmark = "";
@@ -279,7 +290,7 @@ namespace YGO_Card_Collector_5
 
 
             lblMarketPriceTotalValue.Text = string.Format("Total Value: ${0}", PriceTotalValue.ToString());
-        }        
+        }
         #endregion
 
         #region Automation Scrips Methods
@@ -691,7 +702,7 @@ namespace YGO_Card_Collector_5
 
             int PriceUpdateCounter = 0;
             //Scan each set card for each master card
-            for (int i = startIndex; i < PriceUpdateTestGroup.Count; i++)
+            for (int i = 0; i < PriceUpdateTestGroup.Count; i++)
             {
                 //Set the MasterCard for quick access
                 MasterCard ThisMasterCard = PriceUpdateTestGroup[i];
@@ -700,41 +711,44 @@ namespace YGO_Card_Collector_5
                 sb.AppendLine(string.Format("Index: [{0}] | Card:{1}", i, ThisMasterCard.Name));
                 DBUpdateform.SendCardStartSignal(ThisMasterCard.Name);
 
-                foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
+                if(i >= startIndex)
                 {
-                    sb.Append(string.Format("Code:{0} Rarity: {1} | ", ThisSetCard.Code, ThisSetCard.Rarity));
-
-                    try
+                    foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
                     {
-                        if (ThisSetCard.HasTCGURL())
-                        {
-                            //Go to the test URL
-                            Driver.GoToURL(ThisSetCard.TCGPlayerURL);
-                            TCGCardInfoPage.WaitUntilPageIsLoaded(false);
+                        sb.Append(string.Format("Code:{0} Rarity: {1} | ", ThisSetCard.Code, ThisSetCard.Rarity));
 
-                            //Update prices since
-                            string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
-                            string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
-                            string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
-                            ThisSetCard.OverridePrices(priceInPageFloorstr,priceInPageMarketstr, priceInPageMedianstr);
-                            sb.AppendLine("Prices Update!");
-                            PriceUpdateCounter++;
+                        try
+                        {
+                            if (ThisSetCard.HasTCGURL())
+                            {
+                                //Go to the test URL
+                                Driver.GoToURL(ThisSetCard.TCGPlayerURL);
+                                TCGCardInfoPage.WaitUntilPageIsLoaded(false);
+
+                                //Update prices since
+                                string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
+                                string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                                string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+                                ThisSetCard.OverridePrices(priceInPageFloorstr, priceInPageMarketstr, priceInPageMedianstr);
+                                sb.AppendLine("Prices Update!");
+                                PriceUpdateCounter++;
+                            }
+                            else
+                            {
+                                if (ThisSetCard.TCGPlayerURLIsUnavailable()) { sb.AppendLine("URL Is Unavailable."); }
+                                if (ThisSetCard.TCGPlayerURLIsMissing()) { sb.AppendLine("URL is Missing."); }
+
+                            }
                         }
-                        else
+                        catch (Exception)
                         {
-                            if (ThisSetCard.TCGPlayerURLIsUnavailable()) { sb.AppendLine("URL Is Unavailable."); }
-                            if (ThisSetCard.TCGPlayerURLIsMissing()) { sb.AppendLine("URL is Missing."); }
-
+                            sb.AppendLine("Unhandled exception occurred, skipping this SetCard");
                         }
                     }
-                    catch (Exception)
-                    {
-                        sb.AppendLine("Unhandled exception occurred, skipping this SetCard");
-                    }
-                }
 
-                sb.AppendLine("---------------------------");
-                Driver.AddToFullLog(sb.ToString());
+                    sb.AppendLine("---------------------------");
+                    Driver.AddToFullLog(sb.ToString());
+                }               
             }
             #endregion
 
@@ -854,7 +868,7 @@ namespace YGO_Card_Collector_5
                                 string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
                                 string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
                                 string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
-                                ThisSetCard.OverridePrices(priceInPageFloorstr,priceInPageMarketstr, priceInPageMedianstr);
+                                ThisSetCard.OverridePrices(priceInPageFloorstr, priceInPageMarketstr, priceInPageMedianstr);
                                 sb.AppendLine("Prices Update!");
                             }
                             else
@@ -864,7 +878,7 @@ namespace YGO_Card_Collector_5
                                 sb.AppendLine("Code/Rarity didnt match, flagging the card|");
                             }
 
-                                
+
                         }
                         else
                         {
@@ -934,10 +948,10 @@ namespace YGO_Card_Collector_5
             int totalPages = KonamiCardListPage.GetPageCount();
             var CardListExtractionwatch = new Stopwatch();
             CardListExtractionwatch.Start();
-            Dictionary<string, string> CardList = new Dictionary<string, string>();            
+            Dictionary<string, string> CardList = new Dictionary<string, string>();
             for (int x = 1; x <= totalPages; x++)
             {
-                DBUpdateform.SetOutputMessage(string.Format("Extracting Card Names on Page {0}/{1}",x,totalPages));
+                DBUpdateform.SetOutputMessage(string.Format("Extracting Card Names on Page {0}/{1}", x, totalPages));
                 int cardsInPage = KonamiCardListPage.GetCardsCountInCurrentPage();
                 for (int y = 1; y <= cardsInPage; y++)
                 {
@@ -960,13 +974,13 @@ namespace YGO_Card_Collector_5
             CardListUpdatewatch.Start();
             int NewCardsCounter = 0;
             int CardsWithNewSetCardsCounter = 0;
-            for(int i = 0; i < CardList.Count; i++)
-            {               
+            for (int i = 0; i < CardList.Count; i++)
+            {
                 StringBuilder sb = new StringBuilder();
 
                 //set the card name for readibility and use
                 string CardName = CardList.ElementAt(i).Key;
-                string KomaniURL = "https://www.db.yugioh-card.com/" + CardList.ElementAt(i).Value;                            
+                string KomaniURL = "https://www.db.yugioh-card.com/" + CardList.ElementAt(i).Value;
                 sb.Append(string.Format("Index: [{0}] | Card Name: {1}|", i, CardName));
                 DBUpdateform.SendCardStartSignal(CardName);
 
@@ -1008,7 +1022,7 @@ namespace YGO_Card_Collector_5
                             //Add this set to it
                             ThisMasterCard.InsertSetCard(releaseDate, code, setName, rarity);
                             sb.Append(string.Format("Code: {0}|", code));
-                            updatesLogssb.Append(string.Format("[{0}|{1}]", code, rarity));                            
+                            updatesLogssb.Append(string.Format("[{0}|{1}]", code, rarity));
                         }
                         updatesLogssb.AppendLine("");
                         Driver.AddToUpdatesLog(updatesLogssb.ToString());
@@ -1134,9 +1148,9 @@ namespace YGO_Card_Collector_5
 
                 //Log it and send the card completion signal
                 Driver.AddToFullLog(sb.ToString());
-            }      
+            }
             //Remove the the CardsWithoutProdeckURL list any card in the Success List
-            foreach(string CardName in ProdeckUpdateSuccessList) 
+            foreach (string CardName in ProdeckUpdateSuccessList)
             {
                 Database.CardsWithoutProdeckURL.Remove(CardName);
             }
@@ -1234,7 +1248,7 @@ namespace YGO_Card_Collector_5
                                             string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
                                             string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
                                             string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
-                                            ThisSetCard.OverridePrices(priceInPageFloorstr,priceInPageMarketstr, priceInPageMedianstr);
+                                            ThisSetCard.OverridePrices(priceInPageFloorstr, priceInPageMarketstr, priceInPageMedianstr);
                                             MathcURLFound = true;
                                         }
                                     }
@@ -1319,7 +1333,7 @@ namespace YGO_Card_Collector_5
                             string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
                             string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
                             string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
-                            ThisSetCard.OverridePrices(priceInPageFloorstr,priceInPageMarketstr, priceInPageMedianstr);
+                            ThisSetCard.OverridePrices(priceInPageFloorstr, priceInPageMarketstr, priceInPageMedianstr);
                             sb.AppendLine("Prices Update!");
                             PriceUpdateCounter++;
                         }
@@ -1366,7 +1380,7 @@ namespace YGO_Card_Collector_5
             //save the log file
             File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\FullLOG.txt", Driver.GetFullLogs());
             File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\UpdateLOG.txt", Driver.GetUpdateLogs());
-          
+
             //Save the New JSON DB
             Database.SaveDatabaseInJSON();
 
@@ -1407,17 +1421,17 @@ namespace YGO_Card_Collector_5
             DBUpdateform = new DBUpdateHoldScren(this);
             DBUpdateform.Show();
 
-            try 
+            try
             {
                 UpdateEntireDatabase(CardGroup.AllCards);
             }
-            catch(Exception ex) 
+            catch (Exception ex)
             {
                 //If anything unhandle happens still write out the current data
                 Driver.AddToFullLog("An unhandle exception happened...");
-                Driver.AddToFullLog("Review exception below:");               
-                Driver.AddToFullLog("Message: "+ ex.Message);
-                Driver.AddToFullLog("Stack Trace: "+ ex.StackTrace);
+                Driver.AddToFullLog("Review exception below:");
+                Driver.AddToFullLog("Message: " + ex.Message);
+                Driver.AddToFullLog("Stack Trace: " + ex.StackTrace);
                 WriteOutputFiles();
             }
 
@@ -1674,7 +1688,7 @@ namespace YGO_Card_Collector_5
             //Get the card name from the list item selected
             _Explorer_CurrentMasterCardSelected = Database.MasterCardByName[listCardList.SelectedItem.ToString()];
 
-            foreach(SetCard ThisSetCard in _Explorer_CurrentMasterCardSelected.SetCards) 
+            foreach (SetCard ThisSetCard in _Explorer_CurrentMasterCardSelected.SetCards)
             {
                 string item = ThisSetCard.Code + "|" + ThisSetCard.Rarity;
                 listSetCards.Items.Add(item);
@@ -1700,7 +1714,7 @@ namespace YGO_Card_Collector_5
             checkTCGEnableOverride.Checked = false;
             checkPasscodeEnableOverride.Checked = false;
             //but the passcode overide should be hiden if the card has already a set Passcode
-            if(_Explorer_CurrentMasterCardSelected.ID == -1) 
+            if (_Explorer_CurrentMasterCardSelected.ID == -1)
             {
                 lblMisingPasscodeWarning.Visible = true;
                 checkPasscodeEnableOverride.Visible = true;
@@ -1761,8 +1775,8 @@ namespace YGO_Card_Collector_5
         }
         //Prodeck Override Section Elements
         private void checkProdeckEnableOverride_CheckedChanged(object sender, EventArgs e)
-        {            
-            if(checkProdeckEnableOverride.Checked)
+        {
+            if (checkProdeckEnableOverride.Checked)
             {
                 txtProdeckURL.Enabled = true;
                 btnProdeckOverride.Visible = true;
@@ -1777,7 +1791,7 @@ namespace YGO_Card_Collector_5
                 btnProdeckUnavailable.Visible = false;
                 txtProdeckURL.Enabled = false;
                 txtProdeckURL.Text = _Explorer_CurrentMasterCardSelected.ProdeckURL;
-            }           
+            }
         }
         private void btnProdeckOverride_Click(object sender, EventArgs e)
         {
@@ -1830,7 +1844,7 @@ namespace YGO_Card_Collector_5
                 txtTCGURL.Enabled = false;
                 txtTCGURL.Text = _Explorer_CurrentSetCardSelected.TCGPlayerURL;
             }
-        }        
+        }
         private void btnTCGOverride_Click(object sender, EventArgs e)
         {
             string input = txtTCGURL.Text;
@@ -1840,7 +1854,7 @@ namespace YGO_Card_Collector_5
                 _Explorer_CurrentSetCardSelected.TCGPlayerURL = input;
                 checkTCGEnableOverride.Checked = false;
                 //Remove card from the TCG missing URL list if no missing urls left from this card
-                if(_Explorer_CurrentMasterCardSelected.HasNoMissingTCGURLs())
+                if (_Explorer_CurrentMasterCardSelected.HasNoMissingTCGURLs())
                 {
                     Database.CardsWithoutTCGURLs.Remove(_Explorer_CurrentMasterCardSelected.Name);
                 }
@@ -1875,7 +1889,7 @@ namespace YGO_Card_Collector_5
         {
             string cardname = listProdeckMissingURLs.Text;
 
-            if(cardname != "No Cards - Good Job! Database is up to date!")
+            if (cardname != "No Cards - Good Job! Database is up to date!")
             {
                 _MissingURL_CurrentProdeckMasterCardSelected = Database.GetCard(cardname);
                 txtPasscode2.Text = _MissingURL_CurrentProdeckMasterCardSelected.ID.ToString();
@@ -1921,7 +1935,7 @@ namespace YGO_Card_Collector_5
                 foreach (SetCard ThisSetCard in _MissingURL_CurrentTCGMasterCardSelected.SetCards)
                 {
                     string item = ThisSetCard.Code + "|" + ThisSetCard.Rarity;
-                    if(ThisSetCard.TCGPlayerURLIsMissing())
+                    if (ThisSetCard.TCGPlayerURLIsMissing())
                     {
                         item = "[!] - " + item;
                     }
@@ -1940,7 +1954,7 @@ namespace YGO_Card_Collector_5
             int setCardIndex = listTCGMissingURLsSets.SelectedIndex;
             _MissingURL_CurrentSetCardSelected = _MissingURL_CurrentTCGMasterCardSelected.GetCardAtIndex(setCardIndex);
 
-            if(_MissingURL_CurrentSetCardSelected.TCGPlayerURLIsMissing())
+            if (_MissingURL_CurrentSetCardSelected.TCGPlayerURLIsMissing())
             {
                 //Diplay the override submenu
                 GroupMissingTCGOverride.Visible = true;
@@ -2327,7 +2341,7 @@ namespace YGO_Card_Collector_5
             int indexSelected = ListSetGroups.SelectedIndex;
 
             List<SetInfo> SetList = new List<SetInfo>();
-            switch(indexSelected) 
+            switch (indexSelected)
             {
                 case 0: SetList = Database.BoosterPacks; break;
                 case 1: SetList = Database.SpEditionBoxes; break;
@@ -2348,7 +2362,7 @@ namespace YGO_Card_Collector_5
             _CurrentSetInfoListSelected = SetList;
 
             ListSets.Items.Clear();
-            foreach(SetInfo set in SetList) 
+            foreach (SetInfo set in SetList)
             {
                 ListSets.Items.Add(set.GetInfoLine());
             }
@@ -2362,10 +2376,10 @@ namespace YGO_Card_Collector_5
 
             int CardSetIndex = ListSets.SelectedIndex;
             string SetName = _CurrentSetInfoListSelected[CardSetIndex].Name;
-            if(Database.SetPackByName.ContainsKey(SetName))
+            if (Database.SetPackByName.ContainsKey(SetName))
             {
                 //Dispose all the existing labels
-                foreach(Label label in _SetDetailsLabels)
+                foreach (Label label in _SetDetailsLabels)
                 {
                     label.Dispose();
                 }
@@ -2396,9 +2410,20 @@ namespace YGO_Card_Collector_5
                 totalsName.ForeColor = Color.White;
                 totalsName.BorderStyle = BorderStyle.FixedSingle;
                 totalsName.AutoSize = false;
-                totalsName.Size = new Size(220, Ysize);
+                totalsName.Size = new Size(160, Ysize);
                 totalsName.Location = new Point(90, CurrentY_Axis);
                 _SetDetailsLabels.Add(totalsName);
+
+                //Floor label
+                Label floorLabel = new Label();
+                PanelSetInfo.Controls.Add(floorLabel);
+                floorLabel.Text = "$" + CurrentSetPack.SetMainListFloorValue.ToString();
+                floorLabel.BorderStyle = BorderStyle.FixedSingle;
+                floorLabel.ForeColor = Color.White;
+                floorLabel.AutoSize = false;
+                floorLabel.Size = new Size(60, Ysize);
+                floorLabel.Location = new Point(330, CurrentY_Axis);
+                _SetDetailsLabels.Add(floorLabel);
 
                 //Totals Market
                 Label totalsMarket = new Label();
@@ -2430,9 +2455,20 @@ namespace YGO_Card_Collector_5
                 totalsName2.ForeColor = Color.White;
                 totalsName2.BorderStyle = BorderStyle.FixedSingle;
                 totalsName2.AutoSize = false;
-                totalsName2.Size = new Size(220, Ysize);
+                totalsName2.Size = new Size(160, Ysize);
                 totalsName2.Location = new Point(90, CurrentY_Axis);
                 _SetDetailsLabels.Add(totalsName2);
+
+                //Floor label
+                Label floorLabel2 = new Label();
+                PanelSetInfo.Controls.Add(floorLabel2);
+                floorLabel2.Text = "$" + CurrentSetPack.SetMainListFloorValueObtained.ToString();
+                floorLabel2.BorderStyle = BorderStyle.FixedSingle;
+                floorLabel2.ForeColor = Color.White;
+                floorLabel2.AutoSize = false;
+                floorLabel2.Size = new Size(60, Ysize);
+                floorLabel2.Location = new Point(330, CurrentY_Axis);
+                _SetDetailsLabels.Add(floorLabel);
 
                 //Totals Market
                 Label totalsMarket2 = new Label();
@@ -2489,9 +2525,20 @@ namespace YGO_Card_Collector_5
                 totalsName3.ForeColor = Color.White;
                 totalsName3.BorderStyle = BorderStyle.FixedSingle;
                 totalsName3.AutoSize = false;
-                totalsName3.Size = new Size(220, Ysize);
+                totalsName3.Size = new Size(160, Ysize);
                 totalsName3.Location = new Point(90, CurrentY_Axis);
                 _SetDetailsLabels.Add(totalsName3);
+
+                //Floor label
+                Label floorLabel3 = new Label();
+                PanelSetInfo.Controls.Add(floorLabel3);
+                floorLabel3.Text = "$" + CurrentSetPack.SetExtraListFloorValue.ToString();
+                floorLabel3.BorderStyle = BorderStyle.FixedSingle;
+                floorLabel3.ForeColor = Color.White;
+                floorLabel3.AutoSize = false;
+                floorLabel3.Size = new Size(60, Ysize);
+                floorLabel3.Location = new Point(330, CurrentY_Axis);
+                _SetDetailsLabels.Add(floorLabel3);
 
                 //Totals Market
                 Label totalsMarket3 = new Label();
@@ -2523,9 +2570,20 @@ namespace YGO_Card_Collector_5
                 totalsName4.ForeColor = Color.White;
                 totalsName4.BorderStyle = BorderStyle.FixedSingle;
                 totalsName4.AutoSize = false;
-                totalsName4.Size = new Size(220, Ysize);
+                totalsName4.Size = new Size(160, Ysize);
                 totalsName4.Location = new Point(90, CurrentY_Axis);
                 _SetDetailsLabels.Add(totalsName4);
+
+                //Floor label
+                Label floorLabel4 = new Label();
+                PanelSetInfo.Controls.Add(floorLabel4);
+                floorLabel4.Text = "$" + CurrentSetPack.SetExtraListFloorValueObtained.ToString();
+                floorLabel4.BorderStyle = BorderStyle.FixedSingle;
+                floorLabel4.ForeColor = Color.White;
+                floorLabel4.AutoSize = false;
+                floorLabel4.Size = new Size(60, Ysize);
+                floorLabel4.Location = new Point(330, CurrentY_Axis);
+                _SetDetailsLabels.Add(floorLabel4);
 
                 //Totals Market
                 Label totalsMarket4 = new Label();
@@ -2577,15 +2635,15 @@ namespace YGO_Card_Collector_5
                 packname.Text = ThisSetCard.GetCardName();
                 packname.ForeColor = Color.White;
                 packname.BorderStyle = BorderStyle.FixedSingle;
-                if(ThisSetCard.HasTCGURL())
+                if (ThisSetCard.HasTCGURL())
                 {
                     packname.Tag = ThisSetCard.TCGPlayerURL;
                     packname.Click += new EventHandler(NameLabel_click);
                     packname.MouseEnter += new EventHandler(OnMouseEnterLabel);
                     packname.MouseLeave += new EventHandler(OnMouseLeaveLabel);
-                }                
+                }
                 packname.AutoSize = false;
-                packname.Size = new Size(220, Ysize);
+                packname.Size = new Size(160, Ysize);
                 packname.Location = new Point(90, CurrentY_Axis);
                 _SetDetailsLabels.Add(packname);
 
@@ -2597,8 +2655,19 @@ namespace YGO_Card_Collector_5
                 rarityLabel.ForeColor = Tools.GetRarityColorForLabel(ThisSetCard.Rarity);
                 rarityLabel.AutoSize = false;
                 rarityLabel.Size = new Size(80, Ysize);
-                rarityLabel.Location = new Point(310, CurrentY_Axis);
+                rarityLabel.Location = new Point(250, CurrentY_Axis);
                 _SetDetailsLabels.Add(rarityLabel);
+
+                //Floor label
+                Label floorLabel = new Label();
+                PanelSetInfo.Controls.Add(floorLabel);
+                floorLabel.Text = ThisSetCard.FloorPrice;
+                floorLabel.BorderStyle = BorderStyle.FixedSingle;
+                floorLabel.ForeColor = Tools.GetPriceColorForLabel(ThisSetCard.GetDoubleFloorPrice());
+                floorLabel.AutoSize = false;
+                floorLabel.Size = new Size(60, Ysize);
+                floorLabel.Location = new Point(330, CurrentY_Axis);
+                _SetDetailsLabels.Add(floorLabel);
 
                 //market Label
                 Label marketLabel = new Label();
@@ -2625,15 +2694,15 @@ namespace YGO_Card_Collector_5
                 //obtained Label
                 Label obtainedLabel = new Label();
                 PanelSetInfo.Controls.Add(obtainedLabel);
-                if (ThisSetCard.Obtained) { obtainedLabel.Text = "X"; }
+                if (ThisSetCard.Obtained) { obtainedLabel.Text = "YES"; }
                 obtainedLabel.BorderStyle = BorderStyle.FixedSingle;
-                obtainedLabel.ForeColor = Color.White;
+                obtainedLabel.ForeColor = Color.Gold;
                 obtainedLabel.AutoSize = false;
                 obtainedLabel.Size = new Size(30, Ysize);
                 obtainedLabel.Location = new Point(510, CurrentY_Axis);
                 _SetDetailsLabels.Add(obtainedLabel);
             }
-        }      
+        }
         private void btnUpdateSetCardListPrices_Click(object sender, EventArgs e)
         {
             Hide();
@@ -2661,6 +2730,39 @@ namespace YGO_Card_Collector_5
         {
             Label thisLabel = (Label)sender;
             thisLabel.ForeColor = Color.White;
+        }
+        #endregion
+
+        #region Event Listeners (Price Report)
+        private void radioFloorOption_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioFloorOption.Checked)
+            {
+                GroupPriceGroup.Visible = false;
+                _CurrentPriceGroupSelection = "FLOOR";
+                LoadPriceReportLists();
+                GroupPriceGroup.Visible = true;
+            }
+        }
+        private void radioMarketOption_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioMarketOption.Checked)
+            {
+                GroupPriceGroup.Visible = false;
+                _CurrentPriceGroupSelection = "MARKET";
+                LoadPriceReportLists();
+                GroupPriceGroup.Visible = true;
+            }
+        }
+        private void radioMedianOption_CheckedChanged(object sender, EventArgs e)
+        {
+            if (radioMedianOption.Checked)
+            {
+                GroupPriceGroup.Visible = false;
+                _CurrentPriceGroupSelection = "MEDIAN";
+                LoadPriceReportLists();
+                GroupPriceGroup.Visible = true;
+            }
         }
         #endregion
 
@@ -2847,13 +2949,13 @@ namespace YGO_Card_Collector_5
             {
                 SetPack packToTest = Database.SetPackByName[name];
                 List<SetCard> ThisPackFullCardList = packToTest.FullCardList;
-                foreach(SetCard card in ThisPackFullCardList)
+                foreach (SetCard card in ThisPackFullCardList)
                 {
                     setCards.Add(card);
                 }
             }
 
-            
+
 
             List<string> Results = new List<string>();
             List<string> SetCardsToFix = new List<string>();
@@ -2861,10 +2963,10 @@ namespace YGO_Card_Collector_5
 
             DBUpdateform.SetTotalCardsToScan(setCards.Count);
 
-            foreach(SetCard card in setCards)
+            foreach (SetCard card in setCards)
             {
                 StringBuilder sb = new StringBuilder();
-                
+
                 string CardName = card.GetCardName();
                 sb.AppendLine(string.Format("Card: {0}", CardName));
                 DBUpdateform.SendCardStartSignal(CardName);
@@ -2895,7 +2997,7 @@ namespace YGO_Card_Collector_5
                 }
 
                 sb.AppendLine("______________________________________");
-                Results.Add(sb.ToString());               
+                Results.Add(sb.ToString());
 
                 File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\TCGCHECK_Results.txt", Results);
                 File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\TCGCHECK_FixList.txt", SetCardsToFix);
@@ -2919,7 +3021,7 @@ namespace YGO_Card_Collector_5
             Masterwatch.Start();
             Driver.OpenBrowser();
 
-            
+
             List<SetCard> setCards = new List<SetCard>();
             /*
             foreach (SetInfo thisSetInfo in Database.DuelistPacks)
@@ -2935,7 +3037,7 @@ namespace YGO_Card_Collector_5
                 }            
             }*/
 
-            for(int x = 6; x < Database.Others.Count; x++)
+            for (int x = 6; x < Database.Others.Count; x++)
             {
                 string setname = Database.Others[x].Name;
                 if (Database.SetPackByName.ContainsKey(setname))
@@ -3004,13 +3106,13 @@ namespace YGO_Card_Collector_5
         }
         private void TEST_FIXMISSIGRARITY()
         {
-            foreach(MasterCard ThisMasterCard in Database.MasterCards)
+            foreach (MasterCard ThisMasterCard in Database.MasterCards)
             {
-                foreach(SetCard ThisSetCard in ThisMasterCard.SetCards) 
+                foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
                 {
-                    if( ThisSetCard.Rarity == "?")
+                    if (ThisSetCard.Rarity == "?")
                     {
-                        switch(ThisSetCard.Name) 
+                        switch (ThisSetCard.Name)
                         {
                             case "DUELIST SAGA": ThisSetCard.Rarity = "Ultra Rare (Duelist Saga Version)"; break;
                             case "NOBLE KNIGHTS OF THE ROUND TABLE BOX SET": ThisSetCard.Rarity = "Platinum Rare"; break;
@@ -3066,7 +3168,7 @@ namespace YGO_Card_Collector_5
                 MasterCard ThisMasterCard = Database.MasterCardByName[cardname];
                 SetCard ThisSetCard = ThisMasterCard.GetCardWithCodeAndRarity(code, rarity);
                 output.Add(string.Format("{0}|{1}", line, ThisSetCard.TCGPlayerURL));
-                
+
                 Driver.AddToFullLog("-----------------------------------");
             }
 
@@ -3212,37 +3314,6 @@ namespace YGO_Card_Collector_5
             //TEST_UpdateFromFixedList();
             WriteOutputFiles();
         }
-        #endregion
-
-        private void radioFloorOption_CheckedChanged(object sender, EventArgs e)
-        {
-            if(radioFloorOption.Checked) 
-            {
-                GroupPriceGroup.Visible = false;
-                _CurrentPriceGroupSelection = "FLOOR";
-                LoadPriceReportLists();
-                GroupPriceGroup.Visible = true;
-            }
-        }
-        private void radioMarketOption_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioMarketOption.Checked)
-            {
-                GroupPriceGroup.Visible = false;
-                _CurrentPriceGroupSelection = "MARKET";
-                LoadPriceReportLists();
-                GroupPriceGroup.Visible = true;
-            }
-        }
-        private void radioMedianOption_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioMedianOption.Checked)
-            {
-                GroupPriceGroup.Visible = false;
-                _CurrentPriceGroupSelection = "MEDIAN";
-                LoadPriceReportLists();
-                GroupPriceGroup.Visible = true;
-            }
-        }
+        #endregion       
     }
 }

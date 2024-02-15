@@ -229,9 +229,20 @@ namespace YGO_Card_Collector_5
                 totalsName.ForeColor = Color.White;
                 totalsName.BorderStyle = BorderStyle.FixedSingle;
                 totalsName.AutoSize = false;
-                totalsName.Size = new Size(220, Ysize);
+                totalsName.Size = new Size(160, Ysize);
                 totalsName.Location = new Point(90, CurrentY_Axis);
                 _SetDetailsLabels.Add(totalsName);
+
+                //Floor label
+                Label floorLabel = new Label();
+                PanelSetInfo.Controls.Add(floorLabel);
+                floorLabel.Text = "$" + CurrentSetPack.SetMainListFloorValue.ToString();
+                floorLabel.BorderStyle = BorderStyle.FixedSingle;
+                floorLabel.ForeColor = Color.White;
+                floorLabel.AutoSize = false;
+                floorLabel.Size = new Size(60, Ysize);
+                floorLabel.Location = new Point(330, CurrentY_Axis);
+                _SetDetailsLabels.Add(floorLabel);
 
                 //Totals Market
                 Label totalsMarket = new Label();
@@ -263,9 +274,20 @@ namespace YGO_Card_Collector_5
                 totalsName2.ForeColor = Color.White;
                 totalsName2.BorderStyle = BorderStyle.FixedSingle;
                 totalsName2.AutoSize = false;
-                totalsName2.Size = new Size(220, Ysize);
+                totalsName2.Size = new Size(160, Ysize);
                 totalsName2.Location = new Point(90, CurrentY_Axis);
                 _SetDetailsLabels.Add(totalsName2);
+
+                //Floor label
+                Label floorLabel2 = new Label();
+                PanelSetInfo.Controls.Add(floorLabel2);
+                floorLabel2.Text = "$" + CurrentSetPack.SetMainListFloorValueObtained.ToString();
+                floorLabel2.BorderStyle = BorderStyle.FixedSingle;
+                floorLabel2.ForeColor = Color.White;
+                floorLabel2.AutoSize = false;
+                floorLabel2.Size = new Size(60, Ysize);
+                floorLabel2.Location = new Point(330, CurrentY_Axis);
+                _SetDetailsLabels.Add(floorLabel);
 
                 //Totals Market
                 Label totalsMarket2 = new Label();
@@ -322,9 +344,20 @@ namespace YGO_Card_Collector_5
                 totalsName3.ForeColor = Color.White;
                 totalsName3.BorderStyle = BorderStyle.FixedSingle;
                 totalsName3.AutoSize = false;
-                totalsName3.Size = new Size(220, Ysize);
+                totalsName3.Size = new Size(160, Ysize);
                 totalsName3.Location = new Point(90, CurrentY_Axis);
                 _SetDetailsLabels.Add(totalsName3);
+
+                //Floor label
+                Label floorLabel3 = new Label();
+                PanelSetInfo.Controls.Add(floorLabel3);
+                floorLabel3.Text = "$" + CurrentSetPack.SetExtraListFloorValue.ToString();
+                floorLabel3.BorderStyle = BorderStyle.FixedSingle;
+                floorLabel3.ForeColor = Color.White;
+                floorLabel3.AutoSize = false;
+                floorLabel3.Size = new Size(60, Ysize);
+                floorLabel3.Location = new Point(330, CurrentY_Axis);
+                _SetDetailsLabels.Add(floorLabel3);
 
                 //Totals Market
                 Label totalsMarket3 = new Label();
@@ -356,9 +389,20 @@ namespace YGO_Card_Collector_5
                 totalsName4.ForeColor = Color.White;
                 totalsName4.BorderStyle = BorderStyle.FixedSingle;
                 totalsName4.AutoSize = false;
-                totalsName4.Size = new Size(220, Ysize);
+                totalsName4.Size = new Size(160, Ysize);
                 totalsName4.Location = new Point(90, CurrentY_Axis);
                 _SetDetailsLabels.Add(totalsName4);
+
+                //Floor label
+                Label floorLabel4 = new Label();
+                PanelSetInfo.Controls.Add(floorLabel4);
+                floorLabel4.Text = "$" + CurrentSetPack.SetExtraListFloorValueObtained.ToString();
+                floorLabel4.BorderStyle = BorderStyle.FixedSingle;
+                floorLabel4.ForeColor = Color.White;
+                floorLabel4.AutoSize = false;
+                floorLabel4.Size = new Size(60, Ysize);
+                floorLabel4.Location = new Point(330, CurrentY_Axis);
+                _SetDetailsLabels.Add(floorLabel4);
 
                 //Totals Market
                 Label totalsMarket4 = new Label();
@@ -418,7 +462,7 @@ namespace YGO_Card_Collector_5
                     packname.MouseLeave += new EventHandler(OnMouseLeaveLabel);
                 }
                 packname.AutoSize = false;
-                packname.Size = new Size(220, Ysize);
+                packname.Size = new Size(160, Ysize);
                 packname.Location = new Point(90, CurrentY_Axis);
                 _SetDetailsLabels.Add(packname);
 
@@ -430,8 +474,19 @@ namespace YGO_Card_Collector_5
                 rarityLabel.ForeColor = Tools.GetRarityColorForLabel(ThisSetCard.Rarity);
                 rarityLabel.AutoSize = false;
                 rarityLabel.Size = new Size(80, Ysize);
-                rarityLabel.Location = new Point(310, CurrentY_Axis);
+                rarityLabel.Location = new Point(250, CurrentY_Axis);
                 _SetDetailsLabels.Add(rarityLabel);
+
+                //Floor label
+                Label floorLabel = new Label();
+                PanelSetInfo.Controls.Add(floorLabel);
+                floorLabel.Text = ThisSetCard.FloorPrice;
+                floorLabel.BorderStyle = BorderStyle.FixedSingle;
+                floorLabel.ForeColor = Tools.GetPriceColorForLabel(ThisSetCard.GetDoubleFloorPrice());
+                floorLabel.AutoSize = false;
+                floorLabel.Size = new Size(60, Ysize);
+                floorLabel.Location = new Point(330, CurrentY_Axis);
+                _SetDetailsLabels.Add(floorLabel);
 
                 //market Label
                 Label marketLabel = new Label();
@@ -458,9 +513,9 @@ namespace YGO_Card_Collector_5
                 //obtained Label
                 Label obtainedLabel = new Label();
                 PanelSetInfo.Controls.Add(obtainedLabel);
-                if (ThisSetCard.Obtained) { obtainedLabel.Text = "X"; }
+                if (ThisSetCard.Obtained) { obtainedLabel.Text = "YES"; }
                 obtainedLabel.BorderStyle = BorderStyle.FixedSingle;
-                obtainedLabel.ForeColor = Color.White;
+                obtainedLabel.ForeColor = Color.Gold;
                 obtainedLabel.AutoSize = false;
                 obtainedLabel.Size = new Size(30, Ysize);
                 obtainedLabel.Location = new Point(510, CurrentY_Axis);
