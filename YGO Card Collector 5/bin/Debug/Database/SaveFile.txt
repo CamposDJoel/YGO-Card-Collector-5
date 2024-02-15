@@ -1,4 +1,4 @@
-126
+270
 LOB-000|Secret Rare|Tri-Horned Dragon
 LOB-001|Ultra Rare|Blue-Eyes White Dragon
 LOB-002|Common|Hitotsu-Me Giant
@@ -125,3 +125,147 @@ LOB-122|Ultra Rare|Right Arm of the Forbidden One
 LOB-123|Ultra Rare|Left Arm of the Forbidden One
 LOB-124|Ultra Rare|Exodia the Forbidden One
 LOB-125|Secret Rare|Gaia the Dragon Champion
+MRD-000|Secret Rare|Gate Guardian
+MRD-001|Common|Feral Imp
+MRD-002|Common|Winged Dragon, Guardian of the Fortress #1
+MRD-003|Ultra Rare|Summoned Skull
+MRD-004|Common|Rock Ogre Grotto #1
+MRD-005|Common|Armored Lizard
+MRD-006|Common|Killer Needle
+MRD-007|Common|Larvae Moth
+MRD-008|Common|Harpie Lady
+MRD-009|Super Rare|Harpie Lady Sisters
+MRD-010|Common|Kojikocy
+MRD-011|Common|Cocoon of Evolution
+MRD-012|Common|Crawling Dragon
+MRD-013|Common|Armored Zombie
+MRD-014|Rare|Mask of Darkness
+MRD-015|Common|Doma The Angel of Silence
+MRD-016|Rare|White Magical Hat
+MRD-017|Common|Big Eye
+MRD-018|Ultra Rare|Black Skull Dragon
+MRD-019|Rare|Masked Sorcerer
+MRD-020|Common|Roaring Ocean Snake
+MRD-021|Common|Water Omotics
+MRD-022|Common|Ground Attacker Bugroth
+MRD-023|Common|Petit Moth
+MRD-024|Rare|Elegant Egotist
+MRD-025|Super Rare|Sanga of the Thunder
+MRD-026|Super Rare|Kazejin
+MRD-027|Super Rare|Suijin
+MRD-028|Common|Mystic Lamp
+MRD-029|Common|Steel Scorpion
+MRD-030|Common|Ocubeam
+MRD-031|Common|Leghul
+MRD-032|Common|Ooguchi
+MRD-033|Common|Leogun
+MRD-034|Common|Blast Juggler
+MRD-035|Common|Jinzo #7
+MRD-036|Rare|Magician of Faith
+MRD-037|Common|Ancient Elf
+MRD-038|Common|Deepsea Shark
+MRD-039|Common|Bottom Dweller
+MRD-040|Common|Destroyer Golem
+MRD-041|Common|Kaminari Attack
+MRD-042|Common|Rainbow Flower
+MRD-043|Common|Morinphen
+MRD-044|Common|Mega Thunderball
+MRD-045|Common|Tongyo
+MRD-046|Common|Empress Judge
+MRD-047|Common|Pale Beast
+MRD-048|Common|Electric Lizard
+MRD-049|Common|Hunter Spider
+MRD-050|Common|Ancient Lizard Warrior
+MRD-051|Common|Queen's Double
+MRD-052|Common|Trent
+MRD-053|Common|Disk Magician
+MRD-054|Common|Hyosube
+MRD-055|Common|Hibikime
+MRD-056|Rare|Fake Trap
+MRD-057|Super Rare|Tribute to The Doomed
+MRD-058|Common|Soul Release
+MRD-059|Common|The Cheerful Coffin
+MRD-060|Ultra Rare|Change of Heart
+MRD-061|Common|Baby Dragon
+MRD-062|Common|Blackland Fire Dragon
+MRD-063|Common|Swamp Battleguard
+MRD-064|Common|Battle Steer
+MRD-065|Ultra Rare|Time Wizard
+MRD-066|Common|Saggi the Dark Clown
+MRD-067|Common|Dragon Piper
+MRD-068|Common|Illusionist Faceless Mage
+MRD-069|Rare|Sangan
+MRD-070|Rare|Great Moth
+MRD-071|Super Rare|Kuriboh
+MRD-072|Common|Jellyfish
+MRD-073|Common|Castle of Dark Illusions
+MRD-074|Common|King of Yamimakai
+MRD-075|Super Rare|Catapult Turtle
+MRD-076|Common|Mystic Horseman
+MRD-077|Common|Rabid Horseman
+MRD-078|Common|Crass Clown
+MRD-079|Common|Pumpking the King of Ghosts
+MRD-080|Common|Dream Clown
+MRD-081|Common|Tainted Wisdom
+MRD-082|Common|Ancient Brain
+MRD-083|Common|Guardian of the Labyrinth
+MRD-084|Common|Prevent Rat
+MRD-085|Common|The Little Swordsman of Aile
+MRD-086|Rare|Princess of Tsurugi
+MRD-087|Common|Protector of the Throne
+MRD-088|Common|Tremendous Fire
+MRD-089|Common|Jirai Gumo
+MRD-090|Rare|Shadow Ghoul
+MRD-091|Common|Labyrinth Tank
+MRD-092|Common|Ryu-Kishin Powered
+MRD-093|Common|Bickuribox
+MRD-094|Common|Giltia the D. Knight
+MRD-095|Common|Launcher Spider
+MRD-096|Common|Giga-Tech Wolf
+MRD-097|Common|Thunder Dragon
+MRD-098|Common|7 Colored Fish
+MRD-099|Common|The Immortal of Thunder
+MRD-100|Common|Punished Eagle
+MRD-101|Common|Insect Soldiers of the Sky
+MRD-102|Rare|Hoshiningen
+MRD-103|Common|Musician King
+MRD-104|Common|Yado Karu
+MRD-105|Common|Cyber Saurus
+MRD-106|Rare|Cannon Soldier
+MRD-107|Rare|Muka Muka
+MRD-108|Common|The Bistro Butcher
+MRD-109|Rare|Star Boy
+MRD-110|Rare|Milus Radiant
+MRD-111|Common|Flame Cerebrus
+MRD-112|Common|Niwatori
+MRD-113|Rare|Dark Elf
+MRD-114|Common|Mushroom Man #2
+MRD-115|Common|Lava Battleguard
+MRD-116|Rare|Witch of the Black Forest
+MRD-117|Rare|Little Chimera
+MRD-118|Rare|Bladefly
+MRD-119|Common|Lady of Faith
+MRD-120|Super Rare|Twin-Headed Thunder Dragon
+MRD-121|Rare|Witch's Apprentice
+MRD-122|Common|Blue-Winged Crown
+MRD-123|Common|Skull Knight
+MRD-124|Common|Gazelle the King of Mythical Beasts
+MRD-125|Super Rare|Garnecia Elefantis
+MRD-126|Ultra Rare|Barrel Dragon
+MRD-127|Ultra Rare|Solemn Judgment
+MRD-128|Ultra Rare|Magic Jammer
+MRD-129|Ultra Rare|Seven Tools of the Bandit
+MRD-130|Ultra Rare|Horn of Heaven
+MRD-131|Rare|Shield & Sword
+MRD-132|Common|Sword of Deep-Seated
+MRD-133|Common|Block Attack
+MRD-134|Common|The Unhappy Maiden
+MRD-135|Rare|Robbin' Goblin
+MRD-136|Common|Germ Infection
+MRD-137|Common|Paralyzing Potion
+MRD-138|Ultra Rare|Mirror Force
+MRD-139|Common|Ring of Magnetism
+MRD-140|Common|Share the Pain
+MRD-141|Common|Stim-Pack
+MRD-142|Super Rare|Heavy Storm
+MRD-143|Secret Rare|Thousand Dragon
