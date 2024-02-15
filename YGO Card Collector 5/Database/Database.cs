@@ -540,7 +540,7 @@ namespace YGO_Card_Collector_5
             int count = 0;
             foreach(MasterCard ThisMasterCard in thisCardList) 
             {
-                if(ThisMasterCard.Obtained)
+                if(ThisMasterCard.IsOwned())
                 {
                     count++;
                 }

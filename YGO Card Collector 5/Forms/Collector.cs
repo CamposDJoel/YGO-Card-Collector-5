@@ -225,7 +225,7 @@ namespace YGO_Card_Collector_5
                 {
                     string ActiveSetCode = ThisMasterCard.GetCardAtIndex(x).Code;
                     string ActiveSetRarity = ThisMasterCard.GetCardAtIndex(x).Rarity;
-                    bool ActiveSetObtained = ThisMasterCard.GetCardAtIndex(x).Obtained;
+                    bool ActiveSetObtained = ThisMasterCard.GetCardAtIndex(x).IsOwned();
 
                     Panel TagContainer = new Panel();
                     PanelTagList.Controls.Add(TagContainer);
@@ -375,7 +375,7 @@ namespace YGO_Card_Collector_5
                     if (_MasterCardViewMode)
                     {
                         //If the mastercard is/is not obtained
-                        if (ThisMasterCard.Obtained)
+                        if (ThisMasterCard.IsOwned())
                         {
                             ImageServer.SetImage(_CardImageList[x], ImageType.CardImage, ThisMasterCard.ID.ToString());
                         }
@@ -387,7 +387,7 @@ namespace YGO_Card_Collector_5
                     else
                     {
                         //if the SetCard is/is not obtaineed
-                        if (ThisSetCard.Obtained)
+                        if (ThisSetCard.IsOwned())
                         {
                             ImageServer.SetImage(_CardImageList[x], ImageType.CardImage, ThisSetCard.GetCardID());
                         }
@@ -435,7 +435,7 @@ namespace YGO_Card_Collector_5
                 else
                 {
                     //Show the checkmark icon if setcard obtained
-                    if (ThisSetCard.Obtained)
+                    if (ThisSetCard.IsOwned())
                     {
                         ImageServer.SetImage(_IconImageList[x], ImageType.CheckMark, "NONE");
                         _IconImageList[x].Visible = true;
@@ -478,6 +478,9 @@ namespace YGO_Card_Collector_5
         private SetCard _CurrentSetCardInView;
         private List<SetInfo> _CurrentSetInfoListSelected;
 
+        private int _CurrentCardImageIndexSelected = 0;
+        private bool _KeyInputEnable = true;
+
         private List<Panel> _CardPanelList = new List<Panel>();
         private List<PictureBox> _IconImageList = new List<PictureBox>();
         private List<PictureBox> _CardImageList = new List<PictureBox>();
@@ -492,7 +495,8 @@ namespace YGO_Card_Collector_5
         {
             //Initialize the Card Selected based on the TAG of the image clicked.
             PictureBox ThisPictureBox = (PictureBox)sender;
-            InitializeSelectedCard((int)ThisPictureBox.Tag);
+            _CurrentCardImageIndexSelected = (int)ThisPictureBox.Tag;
+            InitializeSelectedCard(_CurrentCardImageIndexSelected);
         }
         private void SetCardLabel_clicked(object sender, EventArgs e)
         {
@@ -598,6 +602,14 @@ namespace YGO_Card_Collector_5
         }
         private void btnPreviousPage_Click(object sender, EventArgs e)
         {
+            GoPreviousPage();
+        }
+        private void btnNextPage_Click(object sender, EventArgs e)
+        {
+            GoNextPage();
+        }
+        private void GoPreviousPage()
+        {
             int CurrentCardListCount = 0;
 
             if (_MasterCardViewMode) { CurrentCardListCount = _CurrentMasterCardList.Count; }
@@ -610,7 +622,7 @@ namespace YGO_Card_Collector_5
 
             LoadPage();
         }
-        private void btnNextPage_Click(object sender, EventArgs e)
+        private void GoNextPage()
         {
             int CurrentCardListCount = 0;
 
@@ -1093,5 +1105,128 @@ namespace YGO_Card_Collector_5
            LoadPage();
         }
         #endregion       
+
+        #region Keyboard Input Control
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.W || keyData == Keys.Up)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    if (_CurrentCardImageIndexSelected < 9)
+                    {
+                        //Do nothing it is the top row
+                    }
+                    else
+                    {
+                        //check if the Up card image is visible
+                        if (_CardPanelList[_CurrentCardImageIndexSelected - 9].Visible)
+                        {
+                            //change the selection 
+                            _CurrentCardImageIndexSelected -= 9;
+                            InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                        }
+                    }
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.S || keyData == Keys.Down)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    if (_CurrentCardImageIndexSelected > 35)
+                    {
+                        //Do nothing it is the top row
+                    }
+                    else
+                    {
+                        //check if the Up card image is visible
+                        if (_CardPanelList[_CurrentCardImageIndexSelected + 9].Visible)
+                        {
+                            //change the selection 
+                            _CurrentCardImageIndexSelected += 9;
+                            InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                        }
+                    }
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.A || keyData == Keys.Left)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    if (_CurrentCardImageIndexSelected == 0)
+                    {
+                        //trigger go to previous page
+                        GoPreviousPage();
+
+                        //Find the last visible card in the page and select it
+                        for (int x = 44; x >= 0; x--)
+                        {
+                            if (_CardPanelList[x].Visible)
+                            {
+                                _CurrentCardImageIndexSelected = x;
+                                InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                                break;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        //check if the Up card image is visible
+                        if (_CardPanelList[_CurrentCardImageIndexSelected - 1].Visible)
+                        {
+                            //change the selection 
+                            _CurrentCardImageIndexSelected -= 1;
+                            InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                        }
+                    }
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.D || keyData == Keys.Right)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    if (_CurrentCardImageIndexSelected == 44)
+                    {
+                        //Go to the next page and click the first card
+                        GoNextPage();
+                        _CurrentCardImageIndexSelected = 0;
+                        InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                    }
+                    else
+                    {
+                        //check if the Up card image is visible
+                        if (_CardPanelList[_CurrentCardImageIndexSelected + 1].Visible)
+                        {
+                            //change the selection 
+                            _CurrentCardImageIndexSelected += 1;
+                            InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                        }
+                        else
+                        {
+                            //You reached the last card in the list go to next page
+                            //Go to the next page and click the first card
+                            GoNextPage();
+                            _CurrentCardImageIndexSelected = 0;
+                            InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                        }
+                    }
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else
+                return base.ProcessCmdKey(ref msg, keyData);
+        }
+        #endregion
     }
 }

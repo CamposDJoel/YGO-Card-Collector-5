@@ -55,7 +55,7 @@ namespace YGO_Card_Collector_5
                 {
                     if (ThisSetCard.Code != "")
                     {
-                        if(ThisSetCard.Obtained)
+                        if(ThisSetCard.IsOwned())
                         {
                             PriceList.Add(ThisSetCard);
                         }                       
@@ -80,7 +80,7 @@ namespace YGO_Card_Collector_5
             {
                 string cardname = Database.MasterCardByCode[ThisSetCard.Code].Name;
                 string obtainedmark = "";
-                if (ThisSetCard.Obtained) { obtainedmark = "- [x] "; }
+                if (ThisSetCard.IsOwned()) { obtainedmark = "- [x] "; }
 
                 string price = "0";
                 double doublePrice = 0;
@@ -130,7 +130,7 @@ namespace YGO_Card_Collector_5
             {
                 string cardname = Database.MasterCardByCode[ThisSetCard.Code].Name;
                 string obtainedmark = "";
-                if (ThisSetCard.Obtained) { obtainedmark = "- [x] "; }
+                if (ThisSetCard.IsOwned()) { obtainedmark = "- [x] "; }
 
                 string price = "0";
                 double doublePrice = 0;
@@ -513,7 +513,7 @@ namespace YGO_Card_Collector_5
                 //obtained Label
                 Label obtainedLabel = new Label();
                 PanelSetInfo.Controls.Add(obtainedLabel);
-                if (ThisSetCard.Obtained) { obtainedLabel.Text = "YES"; }
+                if (ThisSetCard.IsOwned()) { obtainedLabel.Text = "YES"; }
                 obtainedLabel.BorderStyle = BorderStyle.FixedSingle;
                 obtainedLabel.ForeColor = Color.Gold;
                 obtainedLabel.AutoSize = false;

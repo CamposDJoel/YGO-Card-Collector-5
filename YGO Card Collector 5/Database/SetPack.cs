@@ -118,7 +118,7 @@ namespace YGO_Card_Collector_5
 
                 foreach (SetCard card in _mainSetCards)
                 {
-                    if (card.Obtained)
+                    if (card.IsOwned())
                     {
                         totals = totals + card.GetDoubleFloorPrice();
                     }
@@ -135,7 +135,7 @@ namespace YGO_Card_Collector_5
 
                 foreach (SetCard card in _mainSetCards)
                 {
-                    if(card.Obtained) 
+                    if(card.IsOwned()) 
                     {
                         totals = totals + card.GetDoubleMarketPrice();
                     }                   
@@ -152,7 +152,7 @@ namespace YGO_Card_Collector_5
 
                 foreach (SetCard card in _mainSetCards)
                 {
-                    if(card.Obtained)
+                    if(card.IsOwned())
                     {
                         totals = totals + card.GetDoubleMedianPrice();
                     }                  
@@ -211,7 +211,7 @@ namespace YGO_Card_Collector_5
 
                 foreach (SetCard card in _extraCards)
                 {
-                    if (card.Obtained)
+                    if (card.IsOwned())
                     {
                         totals = totals + card.GetDoubleFloorPrice();
                     }
@@ -228,7 +228,7 @@ namespace YGO_Card_Collector_5
 
                 foreach (SetCard card in _extraCards)
                 {
-                    if (card.Obtained)
+                    if (card.IsOwned())
                     {
                         totals = totals + card.GetDoubleMarketPrice();
                     }
@@ -245,7 +245,7 @@ namespace YGO_Card_Collector_5
 
                 foreach (SetCard card in _extraCards)
                 {
-                    if (card.Obtained)
+                    if (card.IsOwned())
                     {
                         totals = totals + card.GetDoubleMedianPrice();
                     }
@@ -260,7 +260,7 @@ namespace YGO_Card_Collector_5
             int count = 0;
             foreach(SetCard card in _mainSetCards)
             {
-                if(card.Obtained)
+                if(card.IsOwned())
                 {
                     count++;
                 }
@@ -272,7 +272,7 @@ namespace YGO_Card_Collector_5
             int count = 0;
             foreach (SetCard card in _extraCards)
             {
-                if (card.Obtained)
+                if (card.IsOwned())
                 {
                     count++;
                 }

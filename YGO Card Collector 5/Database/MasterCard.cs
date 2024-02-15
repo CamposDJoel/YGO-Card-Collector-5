@@ -36,7 +36,6 @@ namespace YGO_Card_Collector_5
         public string Pendulum { get { return _Pendulum; } set { _Pendulum = value; } }
         public string ProdeckURL { get { return _ProdeckURL; } set { _ProdeckURL = value; } }
         public string KonamiURL { get { return _KonamiURL; } set { _KonamiURL = value; } }
-        public bool Obtained { get { return _Obtained; } set { _Obtained = value; } }
         public List<SetCard> SetCards { get { return _SetCards; } }
         #endregion
 
@@ -52,6 +51,14 @@ namespace YGO_Card_Collector_5
             _SetCards.Insert(0, new SetCard(date, code, name, rarity));
             //this SetCard wont have a TCGPlayer URL set, add it to the list of missing URLs
             Database.CardsWithoutTCGURLs.Add(_Name);
+        }
+        public bool IsOwned()
+        {
+            return _Owned;
+        }
+        public void MarkOwnedStatus(bool status)
+        {
+            _Owned = status;
         }
         public bool HasProDeckURL()
         {
@@ -109,7 +116,7 @@ namespace YGO_Card_Collector_5
             {
                 if(SetCard.Code != "")
                 {
-                    if(!SetCard.Obtained) 
+                    if(!SetCard.IsOwned()) 
                     {
                         allObtained = false; break;
                     }
@@ -124,7 +131,7 @@ namespace YGO_Card_Collector_5
             {
                 if (SetCard.Code != "")
                 {
-                    if (SetCard.Obtained)
+                    if (SetCard.IsOwned())
                     {
                         oneObtained = true; break;
                     }
@@ -145,7 +152,7 @@ namespace YGO_Card_Collector_5
         private string _Pendulum;
         private string _KonamiURL = "Missing";
         private string _ProdeckURL = "Missing";
-        private bool _Obtained = false;
+        private bool _Owned = false;
         private List<SetCard> _SetCards = new List<SetCard>();
         #endregion
 
@@ -183,6 +190,14 @@ namespace YGO_Card_Collector_5
         #endregion
 
         #region Public Methods
+        public bool IsOwned()
+        {
+            return _Owned;
+        }
+        public void MarkOwnedStatus(bool status)
+        {
+            _Owned = status;
+        }
         public bool HasTCGURL()
         {
             return !TCGPlayerURLIsMissing() && !TCGPlayerURLIsUnavailable();
@@ -239,40 +254,40 @@ namespace YGO_Card_Collector_5
         }
         public void FlipObtainedStatus()
         {
-            if(_Obtained) 
-            { 
-                _Obtained = false;
+            if(_Owned) 
+            {
+                _Owned = false;
                 //Remove the MasterCard obtained flag is no setcard are obtained anymore
                 if(Database.MasterCardByCode[_Code].HasOneCardsObtained())
                 {
-                    Database.MasterCardByCode[_Code].Obtained = false;
+                    Database.MasterCardByCode[_Code].MarkOwnedStatus(false);
                 }               
             }
             else
             {
-                _Obtained = true;
+                _Owned = true;
                 //Mark the MasterCard as obtained
-                Database.MasterCardByCode[_Code].Obtained = true;
+                Database.MasterCardByCode[_Code].MarkOwnedStatus(true);
             }
             //Update Save file
-            Database.UpdateSaveFile(GetKEY(), _Obtained);
+            Database.UpdateSaveFile(GetKEY(), _Owned);
         }
         public void FlipObtainedStatusNOUPDATE()
         {
-            if (_Obtained)
+            if (_Owned)
             {
-                _Obtained = false;
+                _Owned = false;
                 //Remove the MasterCard obtained flag is no setcard are obtained anymore
                 if (Database.MasterCardByCode[_Code].HasOneCardsObtained())
                 {
-                    Database.MasterCardByCode[_Code].Obtained = false;
+                    Database.MasterCardByCode[_Code].MarkOwnedStatus(false);
                 }
             }
             else
             {
-                _Obtained = true;
+                _Owned = true;
                 //Mark the MasterCard as obtained
-                Database.MasterCardByCode[_Code].Obtained = true;
+                Database.MasterCardByCode[_Code].MarkOwnedStatus(true);
             }
         }
         #endregion
@@ -285,7 +300,6 @@ namespace YGO_Card_Collector_5
         public string FloorPrice { get { return _FloorPrice; } set { _FloorPrice = value; } }
         public string MarketPrice { get { return _MarketPrice; } set { _MarketPrice = value; } }
         public string MediamPrice { get { return _MediamPrice; } set { _MediamPrice = value; } }
-        public bool Obtained { get { return _Obtained; } set { _Obtained = value; } }
         public string TCGPlayerURL { get { return _TCGPlayerURL; } set { _TCGPlayerURL = value; } }
         #endregion
 
@@ -297,7 +311,7 @@ namespace YGO_Card_Collector_5
         private string _FloorPrice = "$0.00";
         private string _MarketPrice = "$0.00";
         private string _MediamPrice = "$0.00";
-        private bool _Obtained = false;
+        private bool _Owned = false;
         private string _TCGPlayerURL = "Missing";
         #endregion
 
