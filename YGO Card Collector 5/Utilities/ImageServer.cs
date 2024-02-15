@@ -31,6 +31,13 @@ namespace YGO_Card_Collector_5
             }
         }
 
+        public static void SetBackgroundImage(Form thisForm)
+        {
+            thisForm.BackgroundImage.Dispose();
+            string folder = SettingsData.CurrentTheme.ToString();         
+            thisForm.BackgroundImage = Image.FromFile(Directory.GetCurrentDirectory() + "\\Themes\\" + folder + "\\Background.jpg");
+        }
+
         private static Image CardImage(string id)
         {
             if (File.Exists(Directory.GetCurrentDirectory() + "\\images\\Cards\\" + id + ".jpg"))

@@ -3,6 +3,7 @@
 //Launcher Form Class
 
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace YGO_Card_Collector_5
@@ -24,6 +25,14 @@ namespace YGO_Card_Collector_5
 
             //Load App Settings
             SettingsData.InitializeSettings();
+
+            //Load Form theme
+            Tools.InitalizeThemeOnForm(this);
+        }
+
+        public void ReloadTheme()
+        {
+            Tools.InitalizeThemeOnForm(this);
         }
 
         private void LoadDB()
@@ -48,12 +57,12 @@ namespace YGO_Card_Collector_5
         {
             //SoundServer.PlaySoundEffect(SoundEffect.Hover);
             Label thisLabel = (Label)sender;
-            thisLabel.BorderStyle = BorderStyle.FixedSingle;
+            thisLabel.BackColor = Color.Black;
         }
         private void OnMouseLeaveLabel(object sender, EventArgs e)
         {
             Label thisLabel = (Label)sender;
-            thisLabel.BorderStyle = BorderStyle.None;
+            thisLabel.BackColor = Color.Transparent;
         }
         private void lblLaunchAppOption_Click(object sender, EventArgs e)
         {
@@ -75,10 +84,6 @@ namespace YGO_Card_Collector_5
             {
                 CollectorBigWinMode Co = new CollectorBigWinMode(this);
                 Co.Show();
-            }
-            else if(RadioCompactOption.Checked)
-            {
-                //TODO
             }
         }
         private void lblDatabaseOption_Click(object sender, EventArgs e)

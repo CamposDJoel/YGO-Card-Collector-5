@@ -23,6 +23,9 @@ namespace YGO_Card_Collector_5
             _MainMenuForm = mainmenuform;
             ReloadStats();
 
+            //Load Form theme
+            Tools.InitalizeThemeOnForm(this);
+
             /*
             foreach(MasterCard card in Database.MasterCards)
             {

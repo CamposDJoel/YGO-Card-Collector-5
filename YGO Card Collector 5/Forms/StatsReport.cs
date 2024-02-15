@@ -22,6 +22,8 @@ namespace YGO_Card_Collector_5
             LoadMasterStats();
             LoadSetsStats();
             CollectorForm = collertorform;
+            //Load Form theme
+            Tools.InitalizeThemeOnForm(this);
         }
 
         private void LoadMasterStats()

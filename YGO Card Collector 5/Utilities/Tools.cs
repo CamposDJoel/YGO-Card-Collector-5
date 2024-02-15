@@ -2,7 +2,6 @@
 //1/27/2024
 //Tools Class
 
-using OpenQA.Selenium.DevTools.V119.DOM;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -86,6 +85,11 @@ namespace YGO_Card_Collector_5
                 case "Ultra Rare (Pharaoh's Rare)":      return Color.DarkRed;
                 default: return Color.Red;
             }
+        }
+        public static void InitalizeThemeOnForm(Form thisForm)
+        {
+            //Set the background
+            ImageServer.SetBackgroundImage(thisForm);
         }
     }
 }

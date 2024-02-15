@@ -21,6 +21,9 @@ namespace YGO_Card_Collector_5
             LoadMasterCardList(CardGroup.AllCards);
             listSetGroups.SetSelected(0, true);
 
+            //Load Form theme
+            Tools.InitalizeThemeOnForm(this);
+
             void InitializeCardViewImages()
             {
                 int imageID = 0;
@@ -258,7 +261,8 @@ namespace YGO_Card_Collector_5
                     {
                         if (ActiveSetCode == _CurrentSetCardInView.Code && ActiveSetRarity == _CurrentSetCardInView.Rarity)
                         {
-                            tagLabel.ForeColor = Color.Red;
+                            //tagLabel.ForeColor = Color.Red;
+                            tagLabel.ForeColor = Color.Yellow;
                         }
                     }
 
@@ -288,7 +292,8 @@ namespace YGO_Card_Collector_5
                     {
                         if (ActiveSetCode == _CurrentSetCardInView.Code && ActiveSetRarity == _CurrentSetCardInView.Rarity)
                         {
-                            tagLabel2.ForeColor = Color.Red;
+                            //tagLabel2.ForeColor = Color.Red;
+                            tagLabel2.ForeColor = Color.Yellow;
                         }
                     }
 
@@ -307,7 +312,7 @@ namespace YGO_Card_Collector_5
                     //Set Color base on if it is obtained or not
                     if (ActiveSetObtained)
                     {
-                        TagContainer.BackColor = Color.MidnightBlue;
+                        TagContainer.BackColor = Color.Maroon;
                     }
                     else
                     {
@@ -515,13 +520,13 @@ namespace YGO_Card_Collector_5
             
 
             //Change the Container Label
-            if(_TagContainerList[Index].BackColor == Color.MidnightBlue)
+            if(_TagContainerList[Index].BackColor == Color.Maroon)
             {
                 _TagContainerList[Index].BackColor = Color.Black;              
             }
             else
             {
-                _TagContainerList[Index].BackColor = Color.MidnightBlue;
+                _TagContainerList[Index].BackColor = Color.Maroon;
             }
 
             //We are not rewriting the JSON anymore... Database.SaveDatabaseInJSON();

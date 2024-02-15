@@ -22,6 +22,9 @@ namespace YGO_Card_Collector_5
             LoadMasterCardList(CardGroup.AllCards);
             listSetGroups.SetSelected(0, true);
 
+            //Load Form theme
+            Tools.InitalizeThemeOnForm(this);
+
             void InitializeCardViewImages()
             {
                 int imageID = 0;

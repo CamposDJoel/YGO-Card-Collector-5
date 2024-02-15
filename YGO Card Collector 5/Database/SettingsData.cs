@@ -13,7 +13,7 @@ namespace YGO_Card_Collector_5
         private static bool _SetListSortingOldToNew = true;
         private static bool _DBUpdateTestMode = false;
         private static bool _AutomationHeadless = true;
-        private static AppTheme _CurrentTheme = AppTheme.DarkMacigian;
+        private static AppTheme _CurrentTheme = AppTheme.DarkMagician;
 
         public static bool SetPackListSortingOLDToNEW { get { return _SetListSortingOldToNew; } }
         public static bool DBUpdateTestMode { get { return _DBUpdateTestMode; } }
@@ -33,6 +33,11 @@ namespace YGO_Card_Collector_5
         public static void SwitchHeadlessModeSetting(bool value)
         {
             _AutomationHeadless = value;
+            WriteSettingsDataFile();
+        }
+        public static void SwitchCurrentThemeSetting(int value)
+        {
+            _CurrentTheme = (AppTheme)value;
             WriteSettingsDataFile();
         }
 
@@ -106,6 +111,9 @@ namespace YGO_Card_Collector_5
 
     public enum AppTheme
     {
-        DarkMacigian = 0
+        DarkMagician = 0,
+        DarkMagicianGirl,
+        Traptrix,
+        BlueEyesUltimate
     }
 }

@@ -19,6 +19,8 @@ namespace YGO_Card_Collector_5
             LoadCOLLECTIONPriceReportLists();
             LoadDBPriceReportLists();
             LoadSetsExplorer(0);
+            //Load Form theme
+            Tools.InitalizeThemeOnForm(this);
         }
         public PricingReport(Object collertorform, int groupIndex, int setIndex)
         {
@@ -27,6 +29,9 @@ namespace YGO_Card_Collector_5
             LoadCOLLECTIONPriceReportLists();
             LoadDBPriceReportLists();
             LoadSetsExplorer(groupIndex);
+
+            //Load Form theme
+            Tools.InitalizeThemeOnForm(this);
 
             //Switch to the Set Explorer Tab Immediately
             TABCONTROLMASTER.SelectedTab = TabSetExplorer;

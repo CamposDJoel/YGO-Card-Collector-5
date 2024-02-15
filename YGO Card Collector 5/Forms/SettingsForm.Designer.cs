@@ -43,6 +43,9 @@
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.RadioThemeDM = new System.Windows.Forms.RadioButton();
+            this.RadioThemeDMG = new System.Windows.Forms.RadioButton();
+            this.RadioThemeTraptrix = new System.Windows.Forms.RadioButton();
+            this.RadioThemeBlueEyesUltimate = new System.Windows.Forms.RadioButton();
             this.GroupTestMode.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -195,12 +198,15 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.RadioThemeBlueEyesUltimate);
+            this.groupBox3.Controls.Add(this.RadioThemeTraptrix);
+            this.groupBox3.Controls.Add(this.RadioThemeDMG);
             this.groupBox3.Controls.Add(this.RadioThemeDM);
             this.groupBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.ForeColor = System.Drawing.Color.Yellow;
             this.groupBox3.Location = new System.Drawing.Point(327, 43);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(392, 262);
+            this.groupBox3.Size = new System.Drawing.Size(222, 262);
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Theme";
@@ -214,6 +220,40 @@
             this.RadioThemeDM.TabIndex = 0;
             this.RadioThemeDM.Text = "Dark Magician";
             this.RadioThemeDM.UseVisualStyleBackColor = true;
+            this.RadioThemeDM.CheckedChanged += new System.EventHandler(this.RadioThemeDM_CheckedChanged);
+            // 
+            // RadioThemeDMG
+            // 
+            this.RadioThemeDMG.AutoSize = true;
+            this.RadioThemeDMG.Location = new System.Drawing.Point(15, 49);
+            this.RadioThemeDMG.Name = "RadioThemeDMG";
+            this.RadioThemeDMG.Size = new System.Drawing.Size(145, 19);
+            this.RadioThemeDMG.TabIndex = 1;
+            this.RadioThemeDMG.Text = "Dark Magician Girl";
+            this.RadioThemeDMG.UseVisualStyleBackColor = true;
+            this.RadioThemeDMG.CheckedChanged += new System.EventHandler(this.RadioThemeDMG_CheckedChanged);
+            // 
+            // RadioThemeTraptrix
+            // 
+            this.RadioThemeTraptrix.AutoSize = true;
+            this.RadioThemeTraptrix.Location = new System.Drawing.Point(15, 74);
+            this.RadioThemeTraptrix.Name = "RadioThemeTraptrix";
+            this.RadioThemeTraptrix.Size = new System.Drawing.Size(77, 19);
+            this.RadioThemeTraptrix.TabIndex = 2;
+            this.RadioThemeTraptrix.Text = "Traptrix";
+            this.RadioThemeTraptrix.UseVisualStyleBackColor = true;
+            this.RadioThemeTraptrix.CheckedChanged += new System.EventHandler(this.RadioThemeTraptrix_CheckedChanged);
+            // 
+            // RadioThemeBlueEyesUltimate
+            // 
+            this.RadioThemeBlueEyesUltimate.AutoSize = true;
+            this.RadioThemeBlueEyesUltimate.Location = new System.Drawing.Point(15, 99);
+            this.RadioThemeBlueEyesUltimate.Name = "RadioThemeBlueEyesUltimate";
+            this.RadioThemeBlueEyesUltimate.Size = new System.Drawing.Size(199, 19);
+            this.RadioThemeBlueEyesUltimate.TabIndex = 3;
+            this.RadioThemeBlueEyesUltimate.Text = "Blue-Eyes Ultimate Dragon";
+            this.RadioThemeBlueEyesUltimate.UseVisualStyleBackColor = true;
+            this.RadioThemeBlueEyesUltimate.CheckedChanged += new System.EventHandler(this.RadioThemeBlueEyesUltimate_CheckedChanged);
             // 
             // SettingsForm
             // 
@@ -263,5 +303,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.RadioButton RadioThemeDM;
+        private System.Windows.Forms.RadioButton RadioThemeTraptrix;
+        private System.Windows.Forms.RadioButton RadioThemeDMG;
+        private System.Windows.Forms.RadioButton RadioThemeBlueEyesUltimate;
     }
 }

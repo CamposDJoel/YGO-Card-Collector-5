@@ -33,7 +33,10 @@ namespace YGO_Card_Collector_5
             AppTheme _CurrentTHeme = SettingsData.CurrentTheme;
             switch(SettingsData.CurrentTheme) 
             {
-                case AppTheme.DarkMacigian: RadioThemeDM.Checked = true; break;
+                case AppTheme.DarkMagician: RadioThemeDM.Checked = true; break;
+                case AppTheme.DarkMagicianGirl: RadioThemeDMG.Checked = true; break;
+                case AppTheme.Traptrix: RadioThemeTraptrix.Checked = true; break;
+                case AppTheme.BlueEyesUltimate: RadioThemeBlueEyesUltimate.Checked = true; break;
             }
 
             
@@ -89,6 +92,39 @@ namespace YGO_Card_Collector_5
         {
             Dispose();
             _Mainmenuform.Show();
+        }
+
+        private void RadioThemeDM_CheckedChanged(object sender, EventArgs e)
+        {
+            if(RadioThemeDM.Checked)
+            {
+                SettingsData.SwitchCurrentThemeSetting(0);
+                _Mainmenuform.ReloadTheme();
+            }
+        }
+        private void RadioThemeDMG_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RadioThemeDMG.Checked)
+            {
+                SettingsData.SwitchCurrentThemeSetting(1);
+                _Mainmenuform.ReloadTheme();
+            }
+        }
+        private void RadioThemeTraptrix_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RadioThemeTraptrix.Checked)
+            {
+                SettingsData.SwitchCurrentThemeSetting(2);
+                _Mainmenuform.ReloadTheme();
+            }
+        }
+        private void RadioThemeBlueEyesUltimate_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RadioThemeBlueEyesUltimate.Checked)
+            {
+                SettingsData.SwitchCurrentThemeSetting(3);
+                _Mainmenuform.ReloadTheme();
+            }
         }
     }
 }
