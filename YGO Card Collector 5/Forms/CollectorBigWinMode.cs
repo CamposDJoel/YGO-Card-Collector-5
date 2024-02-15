@@ -833,8 +833,7 @@ namespace YGO_Card_Collector_5
                 _TagContainerList[Index].BackColor = Color.MidnightBlue;
             }
 
-            //TODO: Rewrite save file
-            Database.SaveDatabaseInJSON();
+            //WE ARE NOT DOING THAT ANYMORE Database.SaveDatabaseInJSON();
         }
         #endregion
 

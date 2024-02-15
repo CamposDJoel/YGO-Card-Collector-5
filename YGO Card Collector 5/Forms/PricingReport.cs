@@ -79,8 +79,6 @@ namespace YGO_Card_Collector_5
             foreach (SetCard ThisSetCard in PriceList)
             {
                 string cardname = Database.MasterCardByCode[ThisSetCard.Code].Name;
-                string obtainedmark = "";
-                if (ThisSetCard.IsOwned()) { obtainedmark = "- [x] "; }
 
                 string price = "0";
                 double doublePrice = 0;
@@ -91,7 +89,7 @@ namespace YGO_Card_Collector_5
                     case "MEDIAN": price = ThisSetCard.MediamPrice; doublePrice = ThisSetCard.GetDoubleMedianPrice(); break;
                 }
 
-                ListTop1000Report.Items.Add(string.Format("[{0}] {1}- [{2} | {3}] - {4}", price, obtainedmark, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
+                ListTop1000Report.Items.Add(string.Format("[{0}] - [{2} | {3}] - {4}", price, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
                 PriceTotalValue += (int)doublePrice;
             }
 
