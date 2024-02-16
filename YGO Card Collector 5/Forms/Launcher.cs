@@ -12,6 +12,8 @@ namespace YGO_Card_Collector_5
     {
         public FormLauncher()
         {
+            SoundServer.PlayBackgroundMusic(Song.TitleScreen, true);
+
             InitializeComponent();
 
             lblLaunchAppOption.MouseEnter += OnMouseEnterLabel;
@@ -55,7 +57,7 @@ namespace YGO_Card_Collector_5
 
         private void OnMouseEnterLabel(object sender, EventArgs e)
         {
-            //SoundServer.PlaySoundEffect(SoundEffect.Hover);
+            SoundServer.PlaySoundEffect(SoundEffect.Hover);
             Label thisLabel = (Label)sender;
             thisLabel.BackColor = Color.Black;
         }
@@ -66,6 +68,7 @@ namespace YGO_Card_Collector_5
         }
         private void lblLaunchAppOption_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             LoadDB();
 
             //Open Collection tracker
@@ -88,6 +91,7 @@ namespace YGO_Card_Collector_5
         }
         private void lblDatabaseOption_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             LoadDB();
 
             //Open Database Manager
@@ -102,9 +106,18 @@ namespace YGO_Card_Collector_5
         }
         private void lblSettingsOption_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             Hide();
             SettingsForm SF = new SettingsForm(this);
             SF.Show();
+        }
+        private void RadioDefaultOption_CheckedChanged(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+        }
+        private void RadioBigWinOption_CheckedChanged(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
         }
     }
 }

@@ -14,6 +14,7 @@ namespace YGO_Card_Collector_5
     {
         public SettingsForm(FormLauncher mainmenuform)
         {
+            SoundServer.PlayBackgroundMusic(Song.MainMenu, true);
             InitializeComponent();
             _Mainmenuform = mainmenuform;
             ReloadSettings();
@@ -46,6 +47,7 @@ namespace YGO_Card_Collector_5
         {
             if(RadioPackSortingOLD.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.Click);
                 SettingsData.SwitchSetListSortingSetting(true);
             }            
         }
@@ -53,6 +55,7 @@ namespace YGO_Card_Collector_5
         {
             if (RadioPackSortingNEW.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.Click);
                 SettingsData.SwitchSetListSortingSetting(false);
             }
         }
@@ -60,6 +63,7 @@ namespace YGO_Card_Collector_5
         {
             if(RadioTestModeON.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.Click);
                 SettingsData.SwitchDBUpdateTestModeSetting(true);
             }           
         }
@@ -67,6 +71,7 @@ namespace YGO_Card_Collector_5
         {
             if (RadioTestModeOFF.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.Click);
                 SettingsData.SwitchDBUpdateTestModeSetting(false);
             }
         }
@@ -74,6 +79,7 @@ namespace YGO_Card_Collector_5
         {
             if(RadioHeadlessON.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.Click);
                 SettingsData.SwitchHeadlessModeSetting(true);
             }
         }
@@ -81,6 +87,7 @@ namespace YGO_Card_Collector_5
         {
             if (RadioHeadlessOFF.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.Click);
                 SettingsData.SwitchHeadlessModeSetting(false);
             }
         }
@@ -90,14 +97,15 @@ namespace YGO_Card_Collector_5
         }
         private void btnBackToMainMenu_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             Dispose();
             _Mainmenuform.Show();
         }
-
         private void RadioThemeDM_CheckedChanged(object sender, EventArgs e)
         {
             if(RadioThemeDM.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.Click);
                 SettingsData.SwitchCurrentThemeSetting(0);
                 _Mainmenuform.ReloadTheme();
             }
@@ -106,6 +114,7 @@ namespace YGO_Card_Collector_5
         {
             if (RadioThemeDMG.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.Click);
                 SettingsData.SwitchCurrentThemeSetting(1);
                 _Mainmenuform.ReloadTheme();
             }
@@ -114,6 +123,7 @@ namespace YGO_Card_Collector_5
         {
             if (RadioThemeTraptrix.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.Click);
                 SettingsData.SwitchCurrentThemeSetting(2);
                 _Mainmenuform.ReloadTheme();
             }
@@ -122,6 +132,7 @@ namespace YGO_Card_Collector_5
         {
             if (RadioThemeBlueEyesUltimate.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.Click);
                 SettingsData.SwitchCurrentThemeSetting(3);
                 _Mainmenuform.ReloadTheme();
             }

@@ -37,7 +37,6 @@
             this.GroupWinMode = new System.Windows.Forms.GroupBox();
             this.RadioBigWinOption = new System.Windows.Forms.RadioButton();
             this.RadioDefaultOption = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
             this.GroupWinMode.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -131,6 +130,7 @@
             this.RadioBigWinOption.TabIndex = 2;
             this.RadioBigWinOption.Text = "Big Window Mode";
             this.RadioBigWinOption.UseVisualStyleBackColor = true;
+            this.RadioBigWinOption.CheckedChanged += new System.EventHandler(this.RadioBigWinOption_CheckedChanged);
             // 
             // RadioDefaultOption
             // 
@@ -144,15 +144,7 @@
             this.RadioDefaultOption.TabStop = true;
             this.RadioDefaultOption.Text = "Compact";
             this.RadioDefaultOption.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(524, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(120, 58);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "label1";
+            this.RadioDefaultOption.CheckedChanged += new System.EventHandler(this.RadioDefaultOption_CheckedChanged);
             // 
             // FormLauncher
             // 
@@ -161,7 +153,6 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 457);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.GroupWinMode);
             this.Controls.Add(this.lblJsonStatus);
             this.Controls.Add(this.lblSettingsOption);
@@ -193,7 +184,6 @@
         private System.Windows.Forms.GroupBox GroupWinMode;
         private System.Windows.Forms.RadioButton RadioBigWinOption;
         private System.Windows.Forms.RadioButton RadioDefaultOption;
-        private System.Windows.Forms.Label label1;
     }
 }
 
