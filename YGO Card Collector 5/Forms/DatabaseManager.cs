@@ -25,17 +25,6 @@ namespace YGO_Card_Collector_5
 
             //Load Form theme
             Tools.InitalizeThemeOnForm(this);
-
-            /*
-            foreach(MasterCard card in Database.MasterCards)
-            {
-                card.Obtained = false;
-                foreach(SetCard setCard in card.SetCards)
-                {
-                    setCard.Obtained = false;
-                }
-            }*/
-            Database.SaveDatabaseInJSON();
         }
         #endregion
 
@@ -775,6 +764,37 @@ namespace YGO_Card_Collector_5
             Driver.OpenBrowser();
             #endregion
 
+            //TEST           
+            /*
+            CardList.Clear();
+            for (int x = 5; x < Database.StarterDecks.Count; x++)
+            {
+                string setname = Database.StarterDecks[x].Name;
+                if (Database.SetPackByName.ContainsKey(setname))
+                {
+                    SetPack packToTest = Database.SetPackByName[setname];
+                    List<SetCard> ThisPackFullCardList = packToTest.FullCardList;
+                    foreach (SetCard card in ThisPackFullCardList)
+                    {
+                        CardList.Add(card);
+                    }
+                }
+            }
+
+            foreach(MasterCard mastercard in Database.MasterCards)
+            {
+                foreach(SetCard setcard in mastercard.SetCards)
+                {
+                    if(setcard.HasTCGURL())
+                    {
+                        if (setcard.FloorPrice == "$0.00" || setcard.MarketPrice == "$0.00" || setcard.MediamPrice == "$0.00")
+                        {
+                            CardList.Add(setcard);
+                        }
+                    }
+                }
+            }*/
+
             #region JOB #3: Prices Update
             DBUpdateform.SetTotalCardsToScan(CardList.Count);
             DBUpdateform.SendJobStartSignal("Updating Prices for this SetPack!");
@@ -807,6 +827,7 @@ namespace YGO_Card_Collector_5
                         if (ThisSetCard.TCGPlayerURLIsMissing()) { sb.AppendLine("URL is Missing."); }
 
                     }
+                    WriteOutputFiles();
                 }
                 catch (Exception)
                 {
@@ -2472,7 +2493,7 @@ namespace YGO_Card_Collector_5
                 floorLabel2.AutoSize = false;
                 floorLabel2.Size = new Size(60, Ysize);
                 floorLabel2.Location = new Point(330, CurrentY_Axis);
-                _SetDetailsLabels.Add(floorLabel);
+                _SetDetailsLabels.Add(floorLabel2);
 
                 //Totals Market
                 Label totalsMarket2 = new Label();

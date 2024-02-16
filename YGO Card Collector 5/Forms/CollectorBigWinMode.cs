@@ -1427,6 +1427,10 @@ namespace YGO_Card_Collector_5
                 _CurrentSetCardList = new List<SetCard>();
             }
 
+            //Click on the first card
+            _CurrentCardImageIndexSelected = 0;
+            InitializeSelectedCard(_CurrentCardImageIndexSelected);
+
             LoadPage();
         }
         #endregion
@@ -1544,6 +1548,57 @@ namespace YGO_Card_Collector_5
                             _CurrentCardImageIndexSelected = 0;
                             InitializeSelectedCard(_CurrentCardImageIndexSelected);
                         }
+                    }
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.F1)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    if (_MasterCardViewMode)
+                    {
+                        SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                    }
+                    else
+                    {
+                        //Mark all the cards in the current set
+                        SoundServer.PlaySoundEffect(SoundEffect.Click2);
+                        foreach(SetCard thisCard in _CurrentSetCardList)
+                        {
+                            if(!thisCard.IsOwned())
+                            {
+                                thisCard.MarkOwnedStatus(true);
+                            }
+                        }
+                    }
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.Enter)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    if (_MasterCardViewMode)
+                    {
+                        SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                    }
+                    else
+                    {                       
+                        if(_CurrentSetCardInView.IsOwned())
+                        {
+                            SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                        }
+                        else
+                        {
+                            //Mark the CURRENT SELECTED CARD
+                            SoundServer.PlaySoundEffect(SoundEffect.Click2);
+                            _CurrentSetCardInView.MarkOwnedStatus(true);
+                        }                        
                     }
                     _KeyInputEnable = true;
                 }

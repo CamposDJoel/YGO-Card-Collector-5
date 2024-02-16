@@ -194,10 +194,6 @@ namespace YGO_Card_Collector_5
         {
             return _Owned;
         }
-        public void MarkOwnedStatus(bool status)
-        {
-            _Owned = status;
-        }
         public bool HasTCGURL()
         {
             return !TCGPlayerURLIsMissing() && !TCGPlayerURLIsUnavailable();
@@ -251,6 +247,26 @@ namespace YGO_Card_Collector_5
         public string GetKEY()
         {
             return string.Format("{0}|{1}|{2}", _Code, _Rarity, GetCardName());
+        }
+        public void MarkOwnedStatus(bool newStatus)
+        {
+            _Owned = newStatus;
+
+            if(_Owned) 
+            {
+                Database.MasterCardByCode[_Code].MarkOwnedStatus(true);
+            }
+            else
+            {
+                //Remove the MasterCard obtained flag is no setcard are obtained anymore
+                if (Database.MasterCardByCode[_Code].HasOneCardsObtained())
+                {
+                    Database.MasterCardByCode[_Code].MarkOwnedStatus(false);
+                }
+            }
+
+            //Update Save file
+            Database.UpdateSaveFile(GetKEY(), _Owned);
         }
         public void FlipObtainedStatus()
         {
