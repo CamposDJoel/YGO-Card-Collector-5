@@ -73,6 +73,7 @@ namespace YGO_Card_Collector_5
         {
             try
             {
+                Element.WaitUntilElementIsVisble(Xpath_FloorPrice);
                 string price = Element.GetText(Xpath_FloorPrice);
                 price = price.Replace("As low as ", "");             
                 return price;
@@ -86,6 +87,7 @@ namespace YGO_Card_Collector_5
         {
             try
             {
+                Element.WaitUntilElementIsVisble(Xpath_MarketPrice);
                 string price = Element.GetText(Xpath_MarketPrice);
                 if (price == "-" || price == "") { price = "$0.00"; }
                 return price;
@@ -99,6 +101,7 @@ namespace YGO_Card_Collector_5
         {
             try
             {
+                Element.WaitUntilElementIsVisble(Xpath_MediamPrice);
                 string price = Element.GetText(Xpath_MediamPrice);
                 if (price == "-" || price == "") { price = "$0.00"; }
                 return price;

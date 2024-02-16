@@ -777,6 +777,7 @@ namespace YGO_Card_Collector_5
 
             #region JOB #3: Prices Update
             DBUpdateform.SetTotalCardsToScan(CardList.Count);
+            DBUpdateform.SendJobStartSignal("Updating Prices for this SetPack!");
             int PriceUpdateCounter = 0;
             foreach (SetCard ThisSetCard in CardList)
             {
@@ -797,7 +798,7 @@ namespace YGO_Card_Collector_5
                         string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
                         string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
                         ThisSetCard.OverridePrices(priceInPageFloorstr, priceInPageMarketstr, priceInPageMedianstr);
-                        sb.AppendLine("Prices Update!");
+                        sb.AppendLine(string.Format("Prices Update! [{0}|{1}|{2}]", priceInPageFloorstr, priceInPageMarketstr, priceInPageMedianstr));
                         PriceUpdateCounter++;
                     }
                     else

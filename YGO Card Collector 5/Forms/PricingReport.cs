@@ -79,7 +79,7 @@ namespace YGO_Card_Collector_5
             //display the cards
             ListTop1000Report.Items.Clear();
 
-            int PriceTotalValue = 0;
+            double PriceTotalValue = 0;
 
             foreach (SetCard ThisSetCard in PriceList)
             {
@@ -94,8 +94,8 @@ namespace YGO_Card_Collector_5
                     case "MEDIAN": price = ThisSetCard.MediamPrice; doublePrice = ThisSetCard.GetDoubleMedianPrice(); break;
                 }
 
-                ListTop1000Report.Items.Add(string.Format("[{0}] - [{2} | {3}] - {4}", price, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
-                PriceTotalValue += (int)doublePrice;
+                ListTop1000Report.Items.Add(string.Format("[{0}] - [{1} | {2}] - {3}", price, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
+                PriceTotalValue += doublePrice;
             }
 
 

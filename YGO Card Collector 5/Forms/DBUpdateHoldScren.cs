@@ -74,6 +74,7 @@ namespace YGO_Card_Collector_5
             _cardIterator = 0;
             PanelLogs.Visible = true;
             lblResults.Visible = true;
+            _managerForm.ReloadStats();
         }
 
         private DatabaseManager _managerForm;
