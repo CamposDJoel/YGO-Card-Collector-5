@@ -18,6 +18,8 @@ namespace YGO_Card_Collector_5
         public static Dictionary<string, MasterCard> MasterCardByCode = new Dictionary<string, MasterCard>();
         public static List<MasterCard> MasterCards = new List<MasterCard>();
         private static List<string> SaveFileData = new List<string>();
+        //Sets List DB
+        private static List<string> SetsDB = new List<string>();
         //Set Cards
         public static Dictionary<string, SetCard> SetCardByKey = new Dictionary<string, SetCard>();
         public static List<SetCard> SetCards = new List<SetCard>();
@@ -161,86 +163,48 @@ namespace YGO_Card_Collector_5
 
             void LoadSetsNames()
             {
-                //Load the sets names into each group
-                List<string> fileNames = new List<string>();
-                fileNames.Add("Booster Packs.txt");
-                fileNames.Add("Duel Termina Cards.txt");
-                fileNames.Add("Duelist Packs.txt");
-                fileNames.Add("Magazines, Books, Comics.txt");
-                fileNames.Add("Others.txt");
-                fileNames.Add("Promotional Cards.txt");
-                fileNames.Add("Special Edition Boxes.txt");
-                fileNames.Add("SPEED DUEL.txt");
-                fileNames.Add("Starter Decks.txt");
-                fileNames.Add("Structure Decks.txt");
-                fileNames.Add("Tins.txt");
-                fileNames.Add("Tournaments.txt");
-                fileNames.Add("Video Game Bundles.txt");
+                string jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\SetsDB.json";
+                string rawdata = File.ReadAllText(jsonFilePath);
+                SetsDB = JsonConvert.DeserializeObject<List<string>>(rawdata);
 
-                foreach (string name in fileNames)
+                foreach(string set in SetsDB) 
                 {
-                    LoadFile(name);
-                }
+                    //extract the set data
+                    string[] tokens = set.Split('|');
+                    string group = tokens[0];
+                    string year = tokens[1];
+                    string setname = tokens[2];
 
-                void LoadFile(string fileName)
-                {
-                    //Set the list that this is going to be added to
-                    List<string> thisNameList = new List<string>();
+                    //Pick the designated set list
                     List<SetInfo> thisSetList = new List<SetInfo>();
-                    switch (fileName)
+                    switch (group)
                     {
-                        case "Booster Packs.txt": thisSetList = BoosterPacks; break;
-                        case "Duel Termina Cards.txt": thisSetList = DuelTerminal; break;
-                        case "Duelist Packs.txt": thisSetList = DuelistPacks; break;
-                        case "Magazines, Books, Comics.txt": thisSetList = MBC; break;
-                        case "Others.txt": thisSetList = Others; break;
-                        case "Promotional Cards.txt": thisSetList = Promos; break;
-                        case "Special Edition Boxes.txt": thisSetList = SpEditionBoxes; break;
-                        case "SPEED DUEL.txt": thisSetList = SpeedDuel; break;
-                        case "Starter Decks.txt": thisSetList = StarterDecks; break;
-                        case "Structure Decks.txt": thisSetList = StructureDecks; break;
-                        case "Tins.txt": thisSetList = Tins; break;
-                        case "Tournaments.txt": thisSetList = Tournaments; break;
-                        case "Video Game Bundles.txt": thisSetList = VideoGames; break;
+                        case "Booster Packs": thisSetList = BoosterPacks; break;
+                        case "Sp. Edition Boxes": thisSetList = SpEditionBoxes; break;
+                        case "Starter Decks": thisSetList = StarterDecks; break;
+                        case "Structure Decks": thisSetList = StructureDecks; break;
+                        case "Tins": thisSetList = Tins; break;
+                        case "Speed Duel": thisSetList = SpeedDuel; break;
+                        case "Duelist Packs": thisSetList = DuelistPacks; break;
+                        case "Duel Terminal": thisSetList = DuelTerminal; break;
+                        case "Others": thisSetList = Others; break;
+
+                        case "MBC": thisSetList = MBC; break;
+                        case "Tournaments": thisSetList = Tournaments; break;
+                        case "Promos": thisSetList = Promos; break;
+                        case "Video Games": thisSetList = VideoGames; break;
                     }
 
-                    //Open the file
-                    StreamReader SR_SaveFile = new StreamReader(
-                        Directory.GetCurrentDirectory() + "\\Database\\Sets\\" + fileName);
-
-                    //String that hold the data of one line of the txt file
-                    string line = "";
-
-                    //Extract the data
-                    line = SR_SaveFile.ReadLine(); //Line[0] = Group Name; dont need it
-                    line = SR_SaveFile.ReadLine(); //# of year lines count
-                    int yearCount = Convert.ToInt32(line);
-
-                    for (int x = 0; x < yearCount; x++)
+                    //Add/Insert it into the designed list
+                    if (SettingsData.SetPackListSortingOLDToNEW)
                     {
-                        string thisYearLine = SR_SaveFile.ReadLine();
-                        //Separator used by Split()
-                        string[] tokens = thisYearLine.Split('|');
-
-                        string year = tokens[0];
-                        int setCount = Convert.ToInt32(tokens[1]);
-
-                        for (int y = 0; y < setCount; y++)
-                        {
-                            string setname = tokens[y + 2];
-
-                            if (SettingsData.SetPackListSortingOLDToNEW)
-                            {
-                                thisSetList.Insert(0, new SetInfo(setname, year));
-                            }
-                            else
-                            {
-                                thisSetList.Add(new SetInfo(setname, year));
-                            }
-
-                            //thisSetList.Add(new SetInfo(setname, year));
-                            //thisSetList.Insert(0, new SetInfo(setname, year));
-                        }
+                        //thisSetList.Insert(0, new SetInfo(setname, year));
+                        thisSetList.Add(new SetInfo(setname, year));
+                    }
+                    else
+                    {
+                        //thisSetList.Add(new SetInfo(setname, year));
+                        thisSetList.Insert(0, new SetInfo(setname, year));
                     }
                 }
             }
