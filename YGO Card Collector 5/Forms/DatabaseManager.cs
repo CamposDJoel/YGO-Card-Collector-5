@@ -2,10 +2,12 @@
 //1/29/2024
 //DatabaseManager Class
 
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
+using System.Drawing.Text;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -3321,12 +3323,174 @@ namespace YGO_Card_Collector_5
             Driver.CloseDriver();
             WriteOutputFiles();
         }
+        private void TEST_UpdateSetPacks()
+        {
+            Hide();
+            DBUpdateform = new DBUpdateHoldScren(this);
+            DBUpdateform.Show();
+
+            Driver.ClearLogs();
+            var Masterwatch = new Stopwatch();
+            Masterwatch.Start();
+            Driver.OpenBrowser();
+            //////////////////////////////////
+
+            Driver.GoToKonamiSetsPage();
+            KonamiSetPacksPage.WaitUntilPageIsLoaded();
+            KonamiSetPacksPage.ClickProductsTab();
+
+            //Obtain all the recent sets from all the groups
+            List<string> boosterpacks = KonamiSetPacksPage.GetGroupSetPacks("Booster Packs");
+            List<string> spboxes = KonamiSetPacksPage.GetGroupSetPacks("Sp. Edition Boxes");
+            List<string> starterdecks = KonamiSetPacksPage.GetGroupSetPacks("Starter Decks");
+            List<string> structuredecks = KonamiSetPacksPage.GetGroupSetPacks("Structure Decks");
+            List<string> tins = KonamiSetPacksPage.GetGroupSetPacks("Tins");
+            List<string> speedduel = KonamiSetPacksPage.GetGroupSetPacks("Speed Duel");
+            List<string> duelistpacks = KonamiSetPacksPage.GetGroupSetPacks("Duelist Packs");
+            List<string> duelterminal = KonamiSetPacksPage.GetGroupSetPacks("Duel Terminal");
+            List<string> other = KonamiSetPacksPage.GetGroupSetPacks("Others");
+
+            KonamiSetPacksPage.ClickPerksTab();
+            List<string> mbc = KonamiSetPacksPage.GetGroupSetPacks("MBC");
+            List<string> tournmaments = KonamiSetPacksPage.GetGroupSetPacks("Tournaments");
+            List<string> promos = KonamiSetPacksPage.GetGroupSetPacks("Promos");
+            List<string> vgs = KonamiSetPacksPage.GetGroupSetPacks("Video Games");
+
+
+            //Check with of these sets are new and add them to the new sets list
+            List<string> newSets = new List<string>();
+            List<string> newSetsURLS = new List<string>();
+
+            LoadExtractedList(boosterpacks, Database.BoosterPacks);
+            LoadExtractedList(spboxes, Database.SpEditionBoxes);
+            LoadExtractedList(starterdecks, Database.StarterDecks);
+            LoadExtractedList(structuredecks, Database.StructureDecks);
+            LoadExtractedList(tins, Database.Tins);
+            LoadExtractedList(speedduel, Database.SpeedDuel);
+            LoadExtractedList(duelistpacks, Database.DuelistPacks);
+            LoadExtractedList(duelterminal, Database.DuelTerminal);
+            LoadExtractedList(other, Database.Others);
+            LoadExtractedList(mbc, Database.MBC);
+            LoadExtractedList(tournmaments, Database.Tournaments);
+            LoadExtractedList(promos, Database.Promos);
+            LoadExtractedList(vgs, Database.VideoGames);
+
+
+            TEST_MakeSetsJSON();
+
+            //////////////////////////////////
+            DBUpdateform.SendFullCompletionSignal();
+            Masterwatch.Stop();
+            Driver.AddToFullLog($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
+            Driver.CloseDriver();
+
+            void LoadExtractedList(List<string> extractedList, List<SetInfo> DBGorupList)
+            {
+                for (int x = extractedList.Count - 1; x >= 0; x--)
+                {
+                    string set = extractedList[x];
+                    //extract the set data
+                    string[] tokens = set.Split('|');
+                    string group = tokens[0];
+                    string year = tokens[1];
+                    string setname = tokens[2];
+                    string url = tokens[3];
+
+                    //Verify if this already exists in the SetsDB
+                    if (!Database.SetsDB.Contains(string.Format("{0}|{1}|{2}", group, year, setname)))
+                    {
+                        //add it
+                        newSets.Add(set);
+                        newSetsURLS.Add(url);
+                        if (SettingsData.SetPackListSortingOLDToNEW)
+                        {
+                            DBGorupList.Add(new SetInfo(setname, year));
+                        }
+                        else
+                        {
+                            DBGorupList.Insert(0, new SetInfo(setname, year));
+                        }
+                    }
+                }
+            }
+        }
+        private void TEST_MakeSetsJSON()
+        {
+            List<string> setsDB = new List<string>();
+            foreach(SetInfo set in Database.BoosterPacks) 
+            {
+                string data = string.Format("Booster Packs|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Database.SpEditionBoxes)
+            {
+                string data = string.Format("Sp. Edition Boxes|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Database.StarterDecks)
+            {
+                string data = string.Format("Starter Decks|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Database.StructureDecks)
+            {
+                string data = string.Format("Structure Decks|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Database.Tins)
+            {
+                string data = string.Format("Tins|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Database.SpeedDuel)
+            {
+                string data = string.Format("Speed Duel|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Database.DuelistPacks)
+            {
+                string data = string.Format("Duelist Packs|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Database.DuelTerminal)
+            {
+                string data = string.Format("Duel Terminal|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Database.Others)
+            {
+                string data = string.Format("Others|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Database.MBC)
+            {
+                string data = string.Format("MBC|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Database.Tournaments)
+            {
+                string data = string.Format("Tournaments|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Database.Promos)
+            {
+                string data = string.Format("Promos|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Database.VideoGames)
+            {
+                string data = string.Format("Video Games|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+
+            string output = JsonConvert.SerializeObject(setsDB);
+            File.WriteAllText(Directory.GetCurrentDirectory() + "\\Output Files\\SetsDB.json", output);
+        }
         private void btnTest_Click(object sender, EventArgs e)
         {
             TEST_FIXTCGURLS();
 
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             //TEST_FINDBADURLS();
@@ -3337,7 +3501,10 @@ namespace YGO_Card_Collector_5
             //TEST_FIXMISSIGRARITY();
             //TEST_GETURLS();
             //TEST_UpdateFromFixedList();
-            WriteOutputFiles();
+
+
+            TEST_UpdateSetPacks();
+            //TEST_MakeSetsJSON();
         }
         #endregion       
     }

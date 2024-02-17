@@ -19,7 +19,7 @@ namespace YGO_Card_Collector_5
         public static List<MasterCard> MasterCards = new List<MasterCard>();
         private static List<string> SaveFileData = new List<string>();
         //Sets List DB
-        private static List<string> SetsDB = new List<string>();
+        public static List<string> SetsDB = new List<string>();
         //Set Cards
         public static Dictionary<string, SetCard> SetCardByKey = new Dictionary<string, SetCard>();
         public static List<SetCard> SetCards = new List<SetCard>();

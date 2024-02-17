@@ -18,6 +18,7 @@ namespace YGO_Card_Collector_5
         #region Private Data
         private static string KonamiSearchPageURL = "https://www.db.yugioh-card.com/yugiohdb/card_search.action";
         private static string Prodeck_URL = "https://ygoprodeck.com/card-database/?&num=24&offset=0";
+        private static string KonamiSetListPageURL = "https://www.db.yugioh-card.com/yugiohdb/card_list.action?wname=CardSearch";
         private static List<string> FullLog = new List<string>();
         private static List<string> UpdatesLog = new List<string>();
         private static int GoToCounter = 0;
@@ -88,6 +89,10 @@ namespace YGO_Card_Collector_5
         public static void GoToProdeckSearchPage()
         {
             GoToURL(Prodeck_URL);
+        }
+        public static void GoToKonamiSetsPage()
+        {
+            GoToURL(KonamiSetListPageURL);
         }
         public static void CloseDriver()
         {
