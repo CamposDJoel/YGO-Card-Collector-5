@@ -81,7 +81,7 @@ namespace YGO_Card_Collector_5
                         else
                         {
                             //Set a "Key" for this set card
-                            string setCardKey = thisSetCard.Code + "|" + thisSetCard.Rarity + "|" + ThisMasterCard.Name;
+                            string setCardKey = thisSetCard.Code + "|" + thisSetCard.Rarity + "|" + ThisMasterCard.Name + "|" + thisSetCard.Name;
 
                             //Konami has duplicate card sets in the DB (suckers!), to handle this, ignore any card with
                             //an already existing key in the DB

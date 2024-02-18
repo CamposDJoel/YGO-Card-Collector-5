@@ -228,6 +228,7 @@ namespace YGO_Card_Collector_5
                 int Y_Location = 1;
                 for (int x = 0; x < SetCardCount; x++)
                 {
+                    string ActiveSetName = ThisMasterCard.GetCardAtIndex(x).Name;
                     string ActiveSetCode = ThisMasterCard.GetCardAtIndex(x).Code;
                     string ActiveSetRarity = ThisMasterCard.GetCardAtIndex(x).Rarity;
                     bool ActiveSetObtained = ThisMasterCard.GetCardAtIndex(x).IsOwned();
@@ -258,12 +259,12 @@ namespace YGO_Card_Collector_5
                     tagLabel.Click += new EventHandler(SetCardLabel_clicked);
                     _TagLabelList.Add(tagLabel);
 
-                    //During the SetCard view, have this SetCard clicked on the card view highlighted in red
+                    //During the SetCard view, have this SetCard clicked on the card view highlighted in yellow
                     if(!_MasterCardViewMode)
                     {
-                        if (ActiveSetCode == _CurrentSetCardInView.Code && ActiveSetRarity == _CurrentSetCardInView.Rarity)
+                        if (ActiveSetCode == _CurrentSetCardInView.Code && ActiveSetRarity == _CurrentSetCardInView.Rarity
+                            && ActiveSetName == _CurrentSetCardInView.Name)
                         {
-                            //tagLabel.ForeColor = Color.Red;
                             tagLabel.ForeColor = Color.Yellow;
                         }
                     }
@@ -289,12 +290,12 @@ namespace YGO_Card_Collector_5
                     tagLabel2.Click += new EventHandler(SetCardLabel_clicked);
                     _TagLabelList.Add(tagLabel2);
 
-                    //During the SetCard view, have this SetCard clicked on the card view highlighted in red
+                    //During the SetCard view, have this SetCard clicked on the card view highlighted in yellow
                     if (!_MasterCardViewMode)
                     {
-                        if (ActiveSetCode == _CurrentSetCardInView.Code && ActiveSetRarity == _CurrentSetCardInView.Rarity)
+                        if (ActiveSetCode == _CurrentSetCardInView.Code && ActiveSetRarity == _CurrentSetCardInView.Rarity
+                            && ActiveSetName == _CurrentSetCardInView.Name)
                         {
-                            //tagLabel2.ForeColor = Color.Red;
                             tagLabel2.ForeColor = Color.Yellow;
                         }
                     }
@@ -1108,8 +1109,11 @@ namespace YGO_Card_Collector_5
                 GroupCardView.Text = string.Format("PAGE: {0}  -  CODE: {1}  - Main Cards: 0 - Variant Cards: 0", _CurrentCardPage, Code);
             }
 
+            //Click on the first card
+            _CurrentCardImageIndexSelected = 0;
+            InitializeSelectedCard(_CurrentCardImageIndexSelected);
 
-           LoadPage();
+            LoadPage();
         }
         #endregion       
 

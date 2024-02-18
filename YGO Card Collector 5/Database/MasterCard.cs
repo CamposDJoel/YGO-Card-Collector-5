@@ -246,7 +246,7 @@ namespace YGO_Card_Collector_5
         }
         public string GetKEY()
         {
-            return string.Format("{0}|{1}|{2}", _Code, _Rarity, GetCardName());
+            return string.Format("{0}|{1}|{2}|{3}", _Code, _Rarity, GetCardName(), _Name);
         }
         public void MarkOwnedStatus(bool newStatus)
         {
