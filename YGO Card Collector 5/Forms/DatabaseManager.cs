@@ -7,7 +7,6 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
-using System.Drawing.Text;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -1470,171 +1469,205 @@ namespace YGO_Card_Collector_5
         #region Event Listeners (Card List Explorer Tab - Filters)
         private void btnFilterAqua_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Aqua_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterBeast_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Beast_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterBeastWarrior_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.BeastWarrior_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterCyberce_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Cyberse_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterDinosaur_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Dinosaur_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterDivine_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.DivineBeast_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterDragon_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Dragon_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterFairy_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Fairy_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterFiend_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Fiend_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterFish_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Fish_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterIllusion_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.IllusionType_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterInsect_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Insect_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterMachine_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Machine_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterPlant_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Plant_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterPsychic_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Psychic_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterPyro_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Pyro_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterReptile_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Reptile_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterRock_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Rock_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterSeaSerpent_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.SeaSerpent_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterSpellcaster_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Spellcaster_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterThunder_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Thunder_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterWarrior_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Warrior_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterWingedBeast_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.WingedBeast_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterWyrm_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Wyrm_Monsters;
             LoadGroupViewStats();
         }
         private void btnFilterZombie_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Zombie_Monsters;
             LoadGroupViewStats();
         }
         private void btnNormalSpell_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Normal_Spells;
             LoadGroupViewStats();
         }
         private void btnContinousSpell_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Continuous_Spells;
             LoadGroupViewStats();
         }
         private void btnEquipSpell_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Equip_Spells;
             LoadGroupViewStats();
         }
         private void btnFieldSpell_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Field_Spells;
             LoadGroupViewStats();
         }
         private void btnQuickPlaySpell_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.QuickPlay_Spells;
             LoadGroupViewStats();
         }
         private void btnRitualSpell_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Ritual_Spells;
             LoadGroupViewStats();
         }
         private void btnNormalTrap_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Normal_Traps;
             LoadGroupViewStats();
         }
         private void btnContinuosTrap_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Continuous_Traps;
             LoadGroupViewStats();
         }
         private void btnCounterTrap_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             _CurrentSelectedCardGroup = CardGroup.Counter_Traps;
             LoadGroupViewStats();
         }
@@ -1710,6 +1743,7 @@ namespace YGO_Card_Collector_5
         //2 Lists containers
         private void listCardList_SelectedIndexChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             listSetCards.Items.Clear();
 
             //Get the card name from the list item selected
@@ -1727,6 +1761,7 @@ namespace YGO_Card_Collector_5
         }
         private void listSetCards_SelectedIndexChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             _Explorer_CurrentSetCardSelected = _Explorer_CurrentMasterCardSelected.GetCardAtIndex(listSetCards.SelectedIndex);
             //populate the 4 text  fields
             txtKonamiURL.Text = _Explorer_CurrentMasterCardSelected.KonamiURL;
@@ -1759,6 +1794,7 @@ namespace YGO_Card_Collector_5
         //Passcode Override Section Elements
         private void checkPasscodeEnableOverride_CheckedChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             if (checkPasscodeEnableOverride.Checked)
             {
                 txtPasscode.Enabled = true;
@@ -1779,6 +1815,7 @@ namespace YGO_Card_Collector_5
             {
                 //invalid value
                 txtPasscode.Text = "Invalid ID input. Must be numeric and not -1";
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
             }
             else
             {
@@ -1793,16 +1830,19 @@ namespace YGO_Card_Collector_5
                     checkProdeckEnableOverride.Visible = true;
                     //Update DB file
                     Database.SaveDatabaseInJSON();
+                    SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
                 }
                 catch (Exception)
                 {
                     txtPasscode.Text = "Invalid ID input. Must be numeric and not -1";
+                    SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
                 }
             }
         }
         //Prodeck Override Section Elements
         private void checkProdeckEnableOverride_CheckedChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             if (checkProdeckEnableOverride.Checked)
             {
                 txtProdeckURL.Enabled = true;
@@ -1834,10 +1874,12 @@ namespace YGO_Card_Collector_5
                 LoadMissingURLsLists();
                 //Update DB file
                 Database.SaveDatabaseInJSON();
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
             }
             else
             {
                 txtProdeckURL.Text = "Not a Prodeck URL.";
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
             }
         }
         private void btnProdeckUnavailable_Click(object sender, EventArgs e)
@@ -1851,10 +1893,12 @@ namespace YGO_Card_Collector_5
             LoadGroupViewStats();
             //Update DB file
             Database.SaveDatabaseInJSON();
+            SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
         }
         //TCG Override section Elements
         private void checkTCGEnableOverride_CheckedChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             if (checkTCGEnableOverride.Checked)
             {
                 txtTCGURL.Enabled = true;
@@ -1890,10 +1934,12 @@ namespace YGO_Card_Collector_5
                 LoadMissingURLsLists();
                 //Update DB file
                 Database.SaveDatabaseInJSON();
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
             }
             else
             {
                 txtTCGURL.Text = "Not a TCG Player URL.";
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
             }
         }
         private void btnTCGUnavailable_Click(object sender, EventArgs e)
@@ -1907,6 +1953,7 @@ namespace YGO_Card_Collector_5
             LoadGroupViewStats();
             //Update DB file
             Database.SaveDatabaseInJSON();
+            SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
         }
         #endregion
 
@@ -1914,6 +1961,7 @@ namespace YGO_Card_Collector_5
         //3 List Containers
         private void listProdeckMissingURLs_SelectedIndexChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             string cardname = listProdeckMissingURLs.Text;
 
             if (cardname != "No Cards - Good Job! Database is up to date!")
@@ -1951,6 +1999,7 @@ namespace YGO_Card_Collector_5
         }
         private void listTCGMissingURLs_SelectedIndexChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             string cardname = listTCGMissingURLs.Text;
 
             if (cardname != "No Cards - Good Job! Database is up to date!")
@@ -1978,6 +2027,7 @@ namespace YGO_Card_Collector_5
         }
         private void listTCGMissingURLsSets_SelectedIndexChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             int setCardIndex = listTCGMissingURLsSets.SelectedIndex;
             _MissingURL_CurrentSetCardSelected = _MissingURL_CurrentTCGMasterCardSelected.GetCardAtIndex(setCardIndex);
 
@@ -1997,6 +2047,7 @@ namespace YGO_Card_Collector_5
         //Passcode Overide Section
         private void checkMissingPasscodeEnableOverride_CheckedChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             if (checkPasscodeEnableOverride2.Checked)
             {
                 txtPasscode2.Enabled = true;
@@ -2017,6 +2068,7 @@ namespace YGO_Card_Collector_5
             {
                 //invalid value
                 txtPasscode2.Text = "Invalid ID input. Must be numeric and not -1";
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
             }
             else
             {
@@ -2031,16 +2083,19 @@ namespace YGO_Card_Collector_5
                     checkProdeckEnableOverride2.Visible = true;
                     //Update DB file
                     Database.SaveDatabaseInJSON();
+                    SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
                 }
                 catch (Exception)
                 {
                     txtPasscode2.Text = "Invalid ID input. Must be numeric and not -1";
+                    SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
                 }
             }
         }
         //Prodeck Override Section
         private void checkMissingProdeckEnableOverride_CheckedChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             if (checkProdeckEnableOverride2.Checked)
             {
                 txtProdeckURL2.Enabled = true;
@@ -2072,10 +2127,12 @@ namespace YGO_Card_Collector_5
                 ReloadStats();
                 //Update DB file
                 Database.SaveDatabaseInJSON();
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
             }
             else
             {
                 txtProdeckURL2.Text = "Not a Prodeck URL.";
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
             }
         }
         private void btnProdeckUnavailable2_Click(object sender, EventArgs e)
@@ -2090,10 +2147,12 @@ namespace YGO_Card_Collector_5
             Database.CardsWithUnavailableProdeckURL.Remove(_MissingURL_CurrentProdeckMasterCardSelected.Name);
             //Update DB file
             Database.SaveDatabaseInJSON();
+            SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
         }
         //TCG Override Section
         private void checkTCGEnableOverride2_CheckedChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             if (checkTCGEnableOverride2.Checked)
             {
                 txtTCGURL2.Enabled = true;
@@ -2129,10 +2188,12 @@ namespace YGO_Card_Collector_5
                 ReloadStats();
                 //Update DB file
                 Database.SaveDatabaseInJSON();
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
             }
             else
             {
                 txtTCGURL2.Text = "Not a TCG Player URL.";
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
             }
         }
         private void btnTCGUnavailable2_Click(object sender, EventArgs e)
@@ -2147,6 +2208,7 @@ namespace YGO_Card_Collector_5
             Database.CardsWithUnavailableTCGURLs.Remove(_MissingURL_CurrentTCGMasterCardSelected.Name);
             //Update DB file
             Database.SaveDatabaseInJSON();
+            SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
         }
         #endregion
 
@@ -2238,6 +2300,7 @@ namespace YGO_Card_Collector_5
         //Passcode Overide Section
         private void checkPasscodeEnableOverride3_CheckedChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             if (checkPasscodeEnableOverride3.Checked)
             {
                 txtPasscode3.Enabled = true;
@@ -2258,6 +2321,7 @@ namespace YGO_Card_Collector_5
             {
                 //invalid value
                 txtPasscode3.Text = "Invalid ID input. Must be numeric and not -1";
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
             }
             else
             {
@@ -2272,16 +2336,19 @@ namespace YGO_Card_Collector_5
                     checkProdeckEnableOverride3.Visible = true;
                     //Update DB file
                     Database.SaveDatabaseInJSON();
+                    SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
                 }
                 catch (Exception)
                 {
                     txtPasscode3.Text = "Invalid ID input. Must be numeric and not -1";
+                    SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
                 }
             }
         }
         //Prodeck Override Section
         private void checkProdeckEnableOverride3_CheckedChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             if (checkProdeckEnableOverride3.Checked)
             {
                 txtProdeckURL3.Enabled = true;
@@ -2308,15 +2375,18 @@ namespace YGO_Card_Collector_5
                 ReloadStats();
                 //Update DB file
                 Database.SaveDatabaseInJSON();
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
             }
             else
             {
                 txtProdeckURL3.Text = "Not a Prodeck URL.";
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
             }
         }
         //TCG Override Section
         private void checkTCGEnableOverride3_CheckedChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             if (checkTCGEnableOverride3.Checked)
             {
                 txtTCGURL3.Enabled = true;
@@ -2347,10 +2417,12 @@ namespace YGO_Card_Collector_5
                 ReloadStats();
                 //Update DB file
                 Database.SaveDatabaseInJSON();
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
             }
             else
             {
                 txtTCGURL3.Text = "Not a TCG Player URL.";
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
             }
         }
         #endregion
@@ -2358,6 +2430,7 @@ namespace YGO_Card_Collector_5
         #region Event Listeners (URLs For Missing Card Images Tab)
         private void btnRefreshImagesURLS_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             LoadMissingCardsUrlsList();
         }
         #endregion
@@ -2366,6 +2439,7 @@ namespace YGO_Card_Collector_5
         private void ListSetGroups_SelectedIndexChanged(object sender, EventArgs e)
         {
             int indexSelected = ListSetGroups.SelectedIndex;
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
 
             List<SetInfo> SetList = new List<SetInfo>();
             switch (indexSelected)
@@ -2400,6 +2474,8 @@ namespace YGO_Card_Collector_5
             //Hide this list selector until the price panel is loaded
             ListSetGroups.Visible = false;
             ListSets.Visible = false;
+
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
 
             int CardSetIndex = ListSets.SelectedIndex;
             string SetName = _CurrentSetInfoListSelected[CardSetIndex].Name;
@@ -2749,7 +2825,7 @@ namespace YGO_Card_Collector_5
         }
         private void OnMouseEnterLabel(object sender, EventArgs e)
         {
-            //SoundServer.PlaySoundEffect(SoundEffect.Hover);
+            SoundServer.PlaySoundEffect(SoundEffect.Hover);
             Label thisLabel = (Label)sender;
             thisLabel.ForeColor = Color.Yellow;
         }
@@ -2765,6 +2841,7 @@ namespace YGO_Card_Collector_5
         {
             if (radioFloorOption.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
                 GroupPriceGroup.Visible = false;
                 _CurrentPriceGroupSelection = "FLOOR";
                 LoadPriceReportLists();
@@ -2775,6 +2852,7 @@ namespace YGO_Card_Collector_5
         {
             if (radioMarketOption.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
                 GroupPriceGroup.Visible = false;
                 _CurrentPriceGroupSelection = "MARKET";
                 LoadPriceReportLists();
@@ -2785,6 +2863,7 @@ namespace YGO_Card_Collector_5
         {
             if (radioMedianOption.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
                 GroupPriceGroup.Visible = false;
                 _CurrentPriceGroupSelection = "MEDIAN";
                 LoadPriceReportLists();
@@ -2796,6 +2875,7 @@ namespace YGO_Card_Collector_5
         #region Other Event Listeners     
         private void btnBackToMainMenu_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             Dispose();
             _MainMenuForm.Show();
         }
