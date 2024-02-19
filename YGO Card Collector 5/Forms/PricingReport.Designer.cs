@@ -49,6 +49,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.TabSetExplorer = new System.Windows.Forms.TabPage();
             this.PanelSetInfo = new System.Windows.Forms.Panel();
+            this.label70 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
@@ -59,7 +60,6 @@
             this.label72 = new System.Windows.Forms.Label();
             this.ListSets = new System.Windows.Forms.ListBox();
             this.ListSetGroups = new System.Windows.Forms.ListBox();
-            this.label70 = new System.Windows.Forms.Label();
             this.TABCONTROLMASTER.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.GroupPriceGroup.SuspendLayout();
@@ -315,6 +315,18 @@
             this.PanelSetInfo.Size = new System.Drawing.Size(592, 382);
             this.PanelSetInfo.TabIndex = 67;
             // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.BackColor = System.Drawing.Color.Transparent;
+            this.label70.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.ForeColor = System.Drawing.Color.White;
+            this.label70.Location = new System.Drawing.Point(331, 23);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(48, 16);
+            this.label70.TabIndex = 9;
+            this.label70.Text = "Floor $:";
+            // 
             // label80
             // 
             this.label80.AutoSize = true;
@@ -447,18 +459,6 @@
             this.ListSetGroups.Size = new System.Drawing.Size(174, 94);
             this.ListSetGroups.TabIndex = 64;
             this.ListSetGroups.SelectedIndexChanged += new System.EventHandler(this.ListSetGroups_SelectedIndexChanged);
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.BackColor = System.Drawing.Color.Transparent;
-            this.label70.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.ForeColor = System.Drawing.Color.White;
-            this.label70.Location = new System.Drawing.Point(331, 23);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(48, 16);
-            this.label70.TabIndex = 9;
-            this.label70.Text = "Floor $:";
             // 
             // PricingReport
             // 

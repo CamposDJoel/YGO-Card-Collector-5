@@ -877,6 +877,7 @@
             this.Controls.Add(this.btnBackToMainMenu);
             this.Controls.Add(this.TabControlMaster);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "DBUpdateTool";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
