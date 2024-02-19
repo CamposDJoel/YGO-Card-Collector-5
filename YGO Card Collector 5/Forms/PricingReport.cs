@@ -160,6 +160,7 @@ namespace YGO_Card_Collector_5
         #region Event Listeners (Set Pack Explorer Tab)
         private void ListSetGroups_SelectedIndexChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             int indexSelected = ListSetGroups.SelectedIndex;
 
             List<SetInfo> SetList = new List<SetInfo>();
@@ -192,6 +193,7 @@ namespace YGO_Card_Collector_5
         }
         private void ListSets_SelectedIndexChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             //Hide this list selector until the price panel is loaded
             ListSetGroups.Visible = false;
             ListSets.Visible = false;
@@ -533,7 +535,7 @@ namespace YGO_Card_Collector_5
         }
         private void OnMouseEnterLabel(object sender, EventArgs e)
         {
-            //SoundServer.PlaySoundEffect(SoundEffect.Hover);
+            SoundServer.PlaySoundEffect(SoundEffect.Hover);
             Label thisLabel = (Label)sender;
             thisLabel.ForeColor = Color.Yellow;
         }
@@ -547,6 +549,7 @@ namespace YGO_Card_Collector_5
         #region Other Event Listeners
         private void btnBackToCollector_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             Dispose();
             Form CollectorsForm = (Form)CollectorForm;
             CollectorsForm.Show();
@@ -562,6 +565,7 @@ namespace YGO_Card_Collector_5
         {
             if (radioFloorOption.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
                 GroupPriceGroup.Visible = false;
                 _CurrentCOLLECTIONPriceGroupSelection = "FLOOR";
                 LoadCOLLECTIONPriceReportLists();
@@ -572,6 +576,7 @@ namespace YGO_Card_Collector_5
         {
             if (radioMarketOption.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
                 GroupPriceGroup.Visible = false;
                 _CurrentCOLLECTIONPriceGroupSelection = "MARKET";
                 LoadCOLLECTIONPriceReportLists();
@@ -582,6 +587,7 @@ namespace YGO_Card_Collector_5
         {
             if (radioMedianOption.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
                 GroupPriceGroup.Visible = false;
                 _CurrentCOLLECTIONPriceGroupSelection = "MEDIAN";
                 LoadCOLLECTIONPriceReportLists();
@@ -592,6 +598,7 @@ namespace YGO_Card_Collector_5
         {
             if (radioFloorOptionDB.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
                 GroupPriceGroupDB.Visible = false;
                 _CurrentDBPriceGroupSelection = "FLOOR";
                 LoadDBPriceReportLists();
@@ -602,6 +609,7 @@ namespace YGO_Card_Collector_5
         {
             if (radioMarketOptionDB.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
                 GroupPriceGroupDB.Visible = false;
                 _CurrentDBPriceGroupSelection = "MARKET";
                 LoadDBPriceReportLists();
@@ -612,6 +620,7 @@ namespace YGO_Card_Collector_5
         {
             if (radioMedianOptionDB.Checked)
             {
+                SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
                 GroupPriceGroupDB.Visible = false;
                 _CurrentDBPriceGroupSelection = "MEDIAN";
                 LoadDBPriceReportLists();
