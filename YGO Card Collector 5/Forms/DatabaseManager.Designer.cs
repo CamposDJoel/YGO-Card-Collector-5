@@ -254,6 +254,7 @@
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.btnUpdateSetCardListPrices = new System.Windows.Forms.Button();
             this.PanelSetInfo = new System.Windows.Forms.Panel();
+            this.label70 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
@@ -274,7 +275,6 @@
             this.ListTop1000Report = new System.Windows.Forms.ListBox();
             this.label69 = new System.Windows.Forms.Label();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
-            this.label70 = new System.Windows.Forms.Label();
             this.PanelFullTotals.SuspendLayout();
             this.TabMasterTotals.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -2920,7 +2920,7 @@
             this.lblMisingPasscodeWarning3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblMisingPasscodeWarning3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMisingPasscodeWarning3.ForeColor = System.Drawing.Color.Red;
-            this.lblMisingPasscodeWarning3.Location = new System.Drawing.Point(6, 125);
+            this.lblMisingPasscodeWarning3.Location = new System.Drawing.Point(6, 110);
             this.lblMisingPasscodeWarning3.Name = "lblMisingPasscodeWarning3";
             this.lblMisingPasscodeWarning3.Size = new System.Drawing.Size(334, 12);
             this.lblMisingPasscodeWarning3.TabIndex = 49;
@@ -3201,6 +3201,17 @@
             this.PanelSetInfo.Size = new System.Drawing.Size(587, 382);
             this.PanelSetInfo.TabIndex = 63;
             // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.BackColor = System.Drawing.Color.Transparent;
+            this.label70.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Location = new System.Drawing.Point(331, 23);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(48, 16);
+            this.label70.TabIndex = 8;
+            this.label70.Text = "Floor $:";
+            // 
             // label80
             // 
             this.label80.AutoSize = true;
@@ -3441,17 +3452,6 @@
             this.btnBackToMainMenu.Text = "<-- Back to Main Menu";
             this.btnBackToMainMenu.UseVisualStyleBackColor = false;
             this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.BackColor = System.Drawing.Color.Transparent;
-            this.label70.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.Location = new System.Drawing.Point(331, 23);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(48, 16);
-            this.label70.TabIndex = 8;
-            this.label70.Text = "Floor $:";
             // 
             // DatabaseManager
             // 

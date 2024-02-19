@@ -24,6 +24,9 @@ namespace YGO_Card_Collector_5
 
             lblDatabaseOption.MouseEnter += OnMouseEnterLabel;
             lblDatabaseOption.MouseLeave += OnMouseLeaveLabel;
+            lblDatabaseUpdateOption.MouseEnter += OnMouseEnterLabel;
+            lblDatabaseUpdateOption.MouseLeave += OnMouseLeaveLabel;
+
 
             //Load App Settings
             SettingsData.InitializeSettings();
@@ -89,6 +92,22 @@ namespace YGO_Card_Collector_5
                 Co.Show();
             }
         }
+        private void lblDatabaseUpdateOption_Click(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+            LoadDB();
+
+            //Open Database Manager
+            Hide();
+            DBUpdateTool DM = new DBUpdateTool(this);
+            DM.Show();
+
+            //show the menu options
+            lblLaunchAppOption.Visible = true;
+            lblSettingsOption.Visible = true;
+            lblDatabaseUpdateOption.Visible = true;
+            lblDatabaseOption.Visible = true;
+        }
         private void lblDatabaseOption_Click(object sender, EventArgs e)
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
@@ -118,6 +137,6 @@ namespace YGO_Card_Collector_5
         private void RadioBigWinOption_CheckedChanged(object sender, EventArgs e)
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
-        }
+        }       
     }
 }

@@ -8,6 +8,7 @@ using OpenQA.Selenium.DevTools.V119.DOM;
 using OpenQA.Selenium.DevTools.V119.Storage;
 using System;
 using System.Collections.Generic;
+using System.IO;
 
 namespace YGO_Card_Collector_5
 {
@@ -102,6 +103,10 @@ namespace YGO_Card_Collector_5
         {
             FullLog.Clear();
             UpdatesLog.Clear();
+        }
+        public static void WriteLogsFile()
+        {
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\FullLOG.txt", FullLog);
         }
         #endregion
 

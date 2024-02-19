@@ -3356,11 +3356,7 @@ namespace YGO_Card_Collector_5
             List<string> promos = KonamiSetPacksPage.GetGroupSetPacks("Promos");
             List<string> vgs = KonamiSetPacksPage.GetGroupSetPacks("Video Games");
 
-
-            //Check with of these sets are new and add them to the new sets list
-            List<string> newSets = new List<string>();
-            List<string> newSetsURLS = new List<string>();
-
+            Dictionary<string, string> CardRecordsToUpdate = new Dictionary<string, string>();
             LoadExtractedList(boosterpacks, Database.BoosterPacks);
             LoadExtractedList(spboxes, Database.SpEditionBoxes);
             LoadExtractedList(starterdecks, Database.StarterDecks);
@@ -3375,6 +3371,12 @@ namespace YGO_Card_Collector_5
             LoadExtractedList(promos, Database.Promos);
             LoadExtractedList(vgs, Database.VideoGames);
 
+            
+            //Now update each card into the database
+            foreach(KeyValuePair<string, string> cardRecord in CardRecordsToUpdate)
+            {
+
+            }
 
             TEST_MakeSetsJSON();
 
@@ -3399,17 +3401,40 @@ namespace YGO_Card_Collector_5
                     //Verify if this already exists in the SetsDB
                     if (!Database.SetsDB.Contains(string.Format("{0}|{1}|{2}", group, year, setname)))
                     {
-                        //add it
-                        newSets.Add(set);
-                        newSetsURLS.Add(url);
-                        if (SettingsData.SetPackListSortingOLDToNEW)
+                        //Go into this set's ULR
+                        Driver.GoToURL(url);
+                        KonamiSetCardListPage.WaitUntilPageIsLoaded();
+                        KonamiSetCardListPage.ClickViewAsList();
+
+                        if(KonamiSetCardListPage.IsThisSetASneakPeakPreview())
                         {
-                            DBGorupList.Add(new SetInfo(setname, year));
+                            //ignore it. we are not adding sneak preak preview sets
                         }
                         else
                         {
-                            DBGorupList.Insert(0, new SetInfo(setname, year));
-                        }
+                            //Add the set to the Group List
+                            if (SettingsData.SetPackListSortingOLDToNEW)
+                            {
+                                DBGorupList.Add(new SetInfo(setname, year));
+                            }
+                            else
+                            {
+                                DBGorupList.Insert(0, new SetInfo(setname, year));
+                            }
+
+                            //Now extract the card list
+                            int cardsInPage = KonamiSetCardListPage.GetCardCount();
+                            for (int y = 1; y <= cardsInPage; y++)
+                            {
+                                string cardName = KonamiSetCardListPage.GetCardName(y);
+                                string cardURL = KonamiSetCardListPage.GetCardURL(y);
+                                //Add the Name/URL combo into the dictionary if this card's name is not in there yet
+                                if(!CardRecordsToUpdate.ContainsKey(cardName))
+                                {
+                                    CardRecordsToUpdate.Add(cardName, cardURL);
+                                }
+                            }
+                        }                       
                     }
                 }
             }

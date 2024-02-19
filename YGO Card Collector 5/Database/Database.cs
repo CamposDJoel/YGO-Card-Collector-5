@@ -335,6 +335,86 @@ namespace YGO_Card_Collector_5
                 File.WriteAllText(Directory.GetCurrentDirectory() + "\\Database\\CardDB.json", output);
             }
         }
+        public static void OverrideSetsJSON()
+        {
+            List<string> setsDB = new List<string>();
+            foreach (SetInfo set in BoosterPacks)
+            {
+                string data = string.Format("Booster Packs|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in SpEditionBoxes)
+            {
+                string data = string.Format("Sp. Edition Boxes|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in StarterDecks)
+            {
+                string data = string.Format("Starter Decks|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in StructureDecks)
+            {
+                string data = string.Format("Structure Decks|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Tins)
+            {
+                string data = string.Format("Tins|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in SpeedDuel)
+            {
+                string data = string.Format("Speed Duel|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in DuelistPacks)
+            {
+                string data = string.Format("Duelist Packs|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in DuelTerminal)
+            {
+                string data = string.Format("Duel Terminal|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Others)
+            {
+                string data = string.Format("Others|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in MBC)
+            {
+                string data = string.Format("MBC|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Tournaments)
+            {
+                string data = string.Format("Tournaments|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in Promos)
+            {
+                string data = string.Format("Promos|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+            foreach (SetInfo set in VideoGames)
+            {
+                string data = string.Format("Video Games|{0}|{1}", set.Year, set.Name);
+                setsDB.Add(data);
+            }
+
+            string output = JsonConvert.SerializeObject(setsDB);
+            if (SettingsData.DBUpdateTestMode)
+            {
+                File.WriteAllText(Directory.GetCurrentDirectory() + "\\Output Files\\SetsDB.json", output);
+            }
+            else
+            {
+                //Override the actual DB file
+                File.WriteAllText(Directory.GetCurrentDirectory() + "\\Database\\SetsDB.json", output);
+            }
+        }
         public static bool CardExists(string cardName)
         {
             return MasterCardByName.ContainsKey(cardName);
@@ -493,6 +573,33 @@ namespace YGO_Card_Collector_5
                 if (cardname.Contains(searchTerm))
                 {
                     matchList.Add(ThisMasterCard);
+                }
+            }
+            return matchList;
+        }
+        public static List<MasterCard> GetCardListWithMissingProdeckURLs()
+        {
+            List<MasterCard> matchList = new List<MasterCard>();
+            foreach (MasterCard ThisMasterCard in MasterCards)
+            {
+                if (ThisMasterCard.ProdeckURLIsMissing())
+                {
+                    matchList.Add(ThisMasterCard);
+                }
+            }
+            return matchList;
+        }
+        public static List<SetCard> GetSetCardListWithMissingTCGURLs()
+        {
+            List<SetCard> matchList = new List<SetCard>();
+            foreach (MasterCard ThisMasterCard in MasterCards)
+            {
+                foreach(SetCard thisSetCard in ThisMasterCard.SetCards) 
+                {
+                    if(thisSetCard.TCGPlayerURLIsMissing())
+                    {
+                        matchList.Add(thisSetCard);
+                    }
                 }
             }
             return matchList;

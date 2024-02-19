@@ -37,6 +37,7 @@
             this.GroupWinMode = new System.Windows.Forms.GroupBox();
             this.RadioBigWinOption = new System.Windows.Forms.RadioButton();
             this.RadioDefaultOption = new System.Windows.Forms.RadioButton();
+            this.lblDatabaseUpdateOption = new System.Windows.Forms.Label();
             this.GroupWinMode.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +61,7 @@
             this.lblLaunchAppOption.ForeColor = System.Drawing.Color.Yellow;
             this.lblLaunchAppOption.Location = new System.Drawing.Point(12, 111);
             this.lblLaunchAppOption.Name = "lblLaunchAppOption";
-            this.lblLaunchAppOption.Size = new System.Drawing.Size(298, 35);
+            this.lblLaunchAppOption.Size = new System.Drawing.Size(315, 35);
             this.lblLaunchAppOption.TabIndex = 5;
             this.lblLaunchAppOption.Text = "Collection Tracker";
             this.lblLaunchAppOption.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -72,9 +73,9 @@
             this.lblDatabaseOption.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblDatabaseOption.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatabaseOption.ForeColor = System.Drawing.Color.Yellow;
-            this.lblDatabaseOption.Location = new System.Drawing.Point(12, 236);
+            this.lblDatabaseOption.Location = new System.Drawing.Point(12, 262);
             this.lblDatabaseOption.Name = "lblDatabaseOption";
-            this.lblDatabaseOption.Size = new System.Drawing.Size(298, 35);
+            this.lblDatabaseOption.Size = new System.Drawing.Size(315, 35);
             this.lblDatabaseOption.TabIndex = 6;
             this.lblDatabaseOption.Text = "Database Manager";
             this.lblDatabaseOption.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -86,9 +87,9 @@
             this.lblSettingsOption.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblSettingsOption.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSettingsOption.ForeColor = System.Drawing.Color.Yellow;
-            this.lblSettingsOption.Location = new System.Drawing.Point(13, 284);
+            this.lblSettingsOption.Location = new System.Drawing.Point(13, 310);
             this.lblSettingsOption.Name = "lblSettingsOption";
-            this.lblSettingsOption.Size = new System.Drawing.Size(298, 35);
+            this.lblSettingsOption.Size = new System.Drawing.Size(315, 35);
             this.lblSettingsOption.TabIndex = 7;
             this.lblSettingsOption.Text = "Settings";
             this.lblSettingsOption.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -100,7 +101,7 @@
             this.lblJsonStatus.BackColor = System.Drawing.Color.Transparent;
             this.lblJsonStatus.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJsonStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblJsonStatus.Location = new System.Drawing.Point(65, 329);
+            this.lblJsonStatus.Location = new System.Drawing.Point(65, 355);
             this.lblJsonStatus.Name = "lblJsonStatus";
             this.lblJsonStatus.Size = new System.Drawing.Size(168, 38);
             this.lblJsonStatus.TabIndex = 8;
@@ -146,6 +147,20 @@
             this.RadioDefaultOption.UseVisualStyleBackColor = true;
             this.RadioDefaultOption.CheckedChanged += new System.EventHandler(this.RadioDefaultOption_CheckedChanged);
             // 
+            // lblDatabaseUpdateOption
+            // 
+            this.lblDatabaseUpdateOption.BackColor = System.Drawing.Color.Transparent;
+            this.lblDatabaseUpdateOption.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblDatabaseUpdateOption.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDatabaseUpdateOption.ForeColor = System.Drawing.Color.Yellow;
+            this.lblDatabaseUpdateOption.Location = new System.Drawing.Point(13, 215);
+            this.lblDatabaseUpdateOption.Name = "lblDatabaseUpdateOption";
+            this.lblDatabaseUpdateOption.Size = new System.Drawing.Size(315, 35);
+            this.lblDatabaseUpdateOption.TabIndex = 10;
+            this.lblDatabaseUpdateOption.Text = "Database Update Tool";
+            this.lblDatabaseUpdateOption.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDatabaseUpdateOption.Click += new System.EventHandler(this.lblDatabaseUpdateOption_Click);
+            // 
             // FormLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -153,6 +168,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 457);
+            this.Controls.Add(this.lblDatabaseUpdateOption);
             this.Controls.Add(this.GroupWinMode);
             this.Controls.Add(this.lblJsonStatus);
             this.Controls.Add(this.lblSettingsOption);
@@ -184,6 +200,7 @@
         private System.Windows.Forms.GroupBox GroupWinMode;
         private System.Windows.Forms.RadioButton RadioBigWinOption;
         private System.Windows.Forms.RadioButton RadioDefaultOption;
+        private System.Windows.Forms.Label lblDatabaseUpdateOption;
     }
 }
 
