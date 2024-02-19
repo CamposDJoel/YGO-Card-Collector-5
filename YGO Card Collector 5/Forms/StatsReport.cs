@@ -523,6 +523,7 @@ namespace YGO_Card_Collector_5
 
         private void btnBackToCollector_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             Dispose();
             Form CollectorsForm = (Form)CollectorForm;
             CollectorsForm.Show();
