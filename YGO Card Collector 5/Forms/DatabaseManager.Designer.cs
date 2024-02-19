@@ -302,11 +302,11 @@
             this.lblTotalAqua.AutoSize = true;
             this.lblTotalAqua.BackColor = System.Drawing.Color.Transparent;
             this.lblTotalAqua.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTotalAqua.Location = new System.Drawing.Point(208, 2);
+            this.lblTotalAqua.Location = new System.Drawing.Point(299, 3);
             this.lblTotalAqua.Name = "lblTotalAqua";
-            this.lblTotalAqua.Size = new System.Drawing.Size(369, 24);
+            this.lblTotalAqua.Size = new System.Drawing.Size(198, 24);
             this.lblTotalAqua.TabIndex = 0;
-            this.lblTotalAqua.Text = "Database Manager and Update Tool";
+            this.lblTotalAqua.Text = "Database Manager";
             // 
             // lblTotalsMasterlabel
             // 
@@ -1356,44 +1356,48 @@
             // button2
             // 
             this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Location = new System.Drawing.Point(373, 154);
+            this.button2.Location = new System.Drawing.Point(374, 143);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(67, 38);
             this.button2.TabIndex = 18;
             this.button2.Text = "Test";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(373, 105);
+            this.button1.Location = new System.Drawing.Point(374, 105);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(67, 38);
             this.button1.TabIndex = 17;
             this.button1.Text = "FIND";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnTest
             // 
             this.btnTest.ForeColor = System.Drawing.Color.Black;
-            this.btnTest.Location = new System.Drawing.Point(373, 51);
+            this.btnTest.Location = new System.Drawing.Point(374, 67);
             this.btnTest.Name = "btnTest";
             this.btnTest.Size = new System.Drawing.Size(67, 38);
             this.btnTest.TabIndex = 16;
             this.btnTest.Text = "FIX";
             this.btnTest.UseVisualStyleBackColor = true;
+            this.btnTest.Visible = false;
             this.btnTest.Click += new System.EventHandler(this.btnTest_Click);
             // 
             // label68
             // 
             this.label68.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label68.Location = new System.Drawing.Point(690, 259);
+            this.label68.Location = new System.Drawing.Point(690, 230);
             this.label68.Name = "label68";
             this.label68.Size = new System.Drawing.Size(91, 44);
             this.label68.TabIndex = 15;
             this.label68.Text = "Appr. Execution Time: TBD";
+            this.label68.Visible = false;
             // 
             // label67
             // 
@@ -1403,6 +1407,7 @@
             this.label67.Size = new System.Drawing.Size(91, 44);
             this.label67.TabIndex = 14;
             this.label67.Text = "Appr. Execution Time: Depends\r\n";
+            this.label67.Visible = false;
             // 
             // label66
             // 
@@ -1413,6 +1418,7 @@
             this.label66.Size = new System.Drawing.Size(91, 44);
             this.label66.TabIndex = 13;
             this.label66.Text = "Appr. Execution Time: 3hr 20mins";
+            this.label66.Visible = false;
             // 
             // label65
             // 
@@ -1423,6 +1429,7 @@
             this.label65.Size = new System.Drawing.Size(26, 14);
             this.label65.TabIndex = 12;
             this.label65.Text = "OR";
+            this.label65.Visible = false;
             // 
             // label63
             // 
@@ -1433,6 +1440,7 @@
             this.label63.Size = new System.Drawing.Size(44, 14);
             this.label63.TabIndex = 11;
             this.label63.Text = "Step 3";
+            this.label63.Visible = false;
             // 
             // label59
             // 
@@ -1443,6 +1451,7 @@
             this.label59.Size = new System.Drawing.Size(44, 14);
             this.label59.TabIndex = 10;
             this.label59.Text = "Step 2";
+            this.label59.Visible = false;
             // 
             // label43
             // 
@@ -1453,6 +1462,7 @@
             this.label43.Size = new System.Drawing.Size(44, 14);
             this.label43.TabIndex = 9;
             this.label43.Text = "Step 1";
+            this.label43.Visible = false;
             // 
             // label37
             // 
@@ -1463,6 +1473,7 @@
             this.label37.TabIndex = 8;
             this.label37.Text = "Update the ENTIRE Database. Like EVERYTHING in a single job.\r\nEsti. Execution tim" +
     "e: 12Hr.";
+            this.label37.Visible = false;
             // 
             // btnUpdateFullDB
             // 
@@ -1475,6 +1486,7 @@
             this.btnUpdateFullDB.TabIndex = 7;
             this.btnUpdateFullDB.Text = "Update Full Database";
             this.btnUpdateFullDB.UseVisualStyleBackColor = false;
+            this.btnUpdateFullDB.Visible = false;
             this.btnUpdateFullDB.Click += new System.EventHandler(this.btnUpdateFullDB_Click);
             // 
             // label36
@@ -1485,6 +1497,7 @@
             this.label36.Size = new System.Drawing.Size(239, 29);
             this.label36.TabIndex = 6;
             this.label36.Text = "Updates the prices of ALL SetCards with a TCG URL saved.";
+            this.label36.Visible = false;
             // 
             // btnUpdatePrices
             // 
@@ -1497,6 +1510,7 @@
             this.btnUpdatePrices.TabIndex = 5;
             this.btnUpdatePrices.Text = "Update TCG Player Prices";
             this.btnUpdatePrices.UseVisualStyleBackColor = false;
+            this.btnUpdatePrices.Visible = false;
             this.btnUpdatePrices.Click += new System.EventHandler(this.btnUpdatePrices_Click);
             // 
             // label34
@@ -1508,6 +1522,7 @@
             this.label34.TabIndex = 4;
             this.label34.Text = "Attempts to find all the Prodeck and TCG URLs.\r\nIt will also update the Passcodes" +
     " of new MasterCards.";
+            this.label34.Visible = false;
             // 
             // btnExtractURLs
             // 
@@ -1520,6 +1535,7 @@
             this.btnExtractURLs.TabIndex = 3;
             this.btnExtractURLs.Text = "Search Missing URLs";
             this.btnExtractURLs.UseVisualStyleBackColor = false;
+            this.btnExtractURLs.Visible = false;
             this.btnExtractURLs.Click += new System.EventHandler(this.btnExtractURLs_Click);
             // 
             // lblKonamiUpdateWarning
@@ -1531,6 +1547,7 @@
             this.lblKonamiUpdateWarning.TabIndex = 2;
             this.lblKonamiUpdateWarning.Text = "Updates the card list from Konami\'s DB.\r\nNew MasterCards/SetCards will be missing" +
     " their Prodeck and TCG URLs (and thus Prices)\r\n";
+            this.lblKonamiUpdateWarning.Visible = false;
             // 
             // btnUpdateKonamiList
             // 
@@ -1543,6 +1560,7 @@
             this.btnUpdateKonamiList.TabIndex = 1;
             this.btnUpdateKonamiList.Text = "Update Konami\'s Card List";
             this.btnUpdateKonamiList.UseVisualStyleBackColor = false;
+            this.btnUpdateKonamiList.Visible = false;
             this.btnUpdateKonamiList.Click += new System.EventHandler(this.btnUpdateKonamiList_Click);
             // 
             // tabPage2
@@ -1597,6 +1615,7 @@
             this.btnUpdateFullGroup.TabIndex = 40;
             this.btnUpdateFullGroup.Text = "Update Group\'s Full Database";
             this.btnUpdateFullGroup.UseVisualStyleBackColor = false;
+            this.btnUpdateFullGroup.Visible = false;
             this.btnUpdateFullGroup.Click += new System.EventHandler(this.btnUpdateFullGroup_Click);
             // 
             // lblMisingPasscodeWarning
@@ -1666,6 +1685,7 @@
             this.label42.Size = new System.Drawing.Size(26, 15);
             this.label42.TabIndex = 33;
             this.label42.Text = "OR";
+            this.label42.Visible = false;
             // 
             // btnTCGUnavailable
             // 
@@ -1912,6 +1932,7 @@
             this.btnGroupUpdatePrices.TabIndex = 8;
             this.btnGroupUpdatePrices.Text = "Update TCG Player Prices";
             this.btnGroupUpdatePrices.UseVisualStyleBackColor = false;
+            this.btnGroupUpdatePrices.Visible = false;
             this.btnGroupUpdatePrices.Click += new System.EventHandler(this.btnGroupUpdatePrices_Click);
             // 
             // btnGroupUpdateURLs
@@ -1925,6 +1946,7 @@
             this.btnGroupUpdateURLs.TabIndex = 7;
             this.btnGroupUpdateURLs.Text = "Search Missing URLs";
             this.btnGroupUpdateURLs.UseVisualStyleBackColor = false;
+            this.btnGroupUpdateURLs.Visible = false;
             this.btnGroupUpdateURLs.Click += new System.EventHandler(this.btnGroupUpdateURLs_Click);
             // 
             // btnGroupUpdateKonamiList
@@ -1938,6 +1960,7 @@
             this.btnGroupUpdateKonamiList.TabIndex = 6;
             this.btnGroupUpdateKonamiList.Text = "Update Konami\'s Card List";
             this.btnGroupUpdateKonamiList.UseVisualStyleBackColor = false;
+            this.btnGroupUpdateKonamiList.Visible = false;
             this.btnGroupUpdateKonamiList.Click += new System.EventHandler(this.btnGroupUpdateKonamiList_Click);
             // 
             // lblCardGroupName
@@ -3182,6 +3205,7 @@
             this.btnUpdateSetCardListPrices.TabIndex = 64;
             this.btnUpdateSetCardListPrices.Text = "Update Set Prices";
             this.btnUpdateSetCardListPrices.UseVisualStyleBackColor = false;
+            this.btnUpdateSetCardListPrices.Visible = false;
             this.btnUpdateSetCardListPrices.Click += new System.EventHandler(this.btnUpdateSetCardListPrices_Click);
             // 
             // PanelSetInfo
