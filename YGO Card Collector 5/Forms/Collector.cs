@@ -5,6 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
 
@@ -88,6 +89,7 @@ namespace YGO_Card_Collector_5
         #region Card List Update Display Methods
         private void LoadMasterCardList(CardGroup CurrentGroup)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             //Pull the correct MasterCard list
             _MasterCardViewMode = true;
             _CurrentMasterCardList = Database.GroupCardListByGroupName[CurrentGroup];
@@ -104,6 +106,7 @@ namespace YGO_Card_Collector_5
         }        
         private void InitializeSelectedCard(int PictureBoxTag)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Hover);
             //clear the card border of the previous card clicked
             _CardPanelList[_PreviousCardInViewIndex].BackColor = Color.Black;
 
@@ -266,6 +269,7 @@ namespace YGO_Card_Collector_5
                             && ActiveSetName == _CurrentSetCardInView.Name)
                         {
                             tagLabel.ForeColor = Color.Yellow;
+                            _CurrentSetCartdInViewIndex = x;
                         }
                     }
 
@@ -484,6 +488,7 @@ namespace YGO_Card_Collector_5
 
         private MasterCard _CurrentMasterCardInView;
         private SetCard _CurrentSetCardInView;
+        private int _CurrentSetCartdInViewIndex = 0;
         private List<SetInfo> _CurrentSetInfoListSelected;
 
         private int _CurrentCardImageIndexSelected = 0;
@@ -508,6 +513,7 @@ namespace YGO_Card_Collector_5
         }
         private void SetCardLabel_clicked(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.MarkCard);
             Label thisLabel = (Label)sender;
             int Index = (int)thisLabel.Tag;
 
@@ -532,13 +538,13 @@ namespace YGO_Card_Collector_5
                 _TagContainerList[Index].BackColor = Color.Maroon;
             }
 
-            //We are not rewriting the JSON anymore... Database.SaveDatabaseInJSON();
         }
         #endregion
 
         #region Event Listeners (Links Button Labels)
         private void lblKonamiLink_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             if(_MasterCardViewMode)
             {
                 Tools.LaunchURLIntoBrowser(_CurrentMasterCardInView.KonamiURL);
@@ -551,6 +557,7 @@ namespace YGO_Card_Collector_5
         }
         private void lblProdeckLink_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             if (_MasterCardViewMode)
             {
                 Tools.LaunchURLIntoBrowser(_CurrentMasterCardInView.ProdeckURL);
@@ -562,6 +569,7 @@ namespace YGO_Card_Collector_5
         }
         private void lblTCGLink_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             Tools.LaunchURLIntoBrowser(_CurrentSetCardInView.TCGPlayerURL);
         }
         #endregion
@@ -569,11 +577,13 @@ namespace YGO_Card_Collector_5
         #region Event Listeners (Top Menu Buttons)
         private void btnBackToMainMenu_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             Dispose();
             _MainMenuForm.Show();
         }
         private void btnStats_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             Hide();
 
             StatsReport SR = new StatsReport(this);
@@ -581,6 +591,7 @@ namespace YGO_Card_Collector_5
         }
         private void btnSetPriceReport_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             Hide();
 
             PricingReport PR = new PricingReport(this);
@@ -588,6 +599,7 @@ namespace YGO_Card_Collector_5
         }
         private void btnOpenSetValue_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             Hide();
 
             PricingReport PR = new PricingReport(this, listSetGroups.SelectedIndex, listSetlist.SelectedIndex);
@@ -598,12 +610,14 @@ namespace YGO_Card_Collector_5
         #region Event Listeners (Card Viewer Controls)
         private void chkCollected_CheckedChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             //Flip the Your Collection View Mode flag and reload the page.
             _YouCollectionViewON = chkCollected.Checked;
             LoadPage();
         }
         private void btnClear_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             //Reset the card list to the Master Card List (All Cards)
             _CurrentCardGroup = CardGroup.AllCards;
             LoadMasterCardList(_CurrentCardGroup);
@@ -618,6 +632,7 @@ namespace YGO_Card_Collector_5
         }
         private void GoPreviousPage()
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             int CurrentCardListCount = 0;
 
             if (_MasterCardViewMode) { CurrentCardListCount = _CurrentMasterCardList.Count; }
@@ -632,6 +647,7 @@ namespace YGO_Card_Collector_5
         }
         private void GoNextPage()
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             int CurrentCardListCount = 0;
 
             if (_MasterCardViewMode) { CurrentCardListCount = _CurrentMasterCardList.Count; }
@@ -1022,6 +1038,7 @@ namespace YGO_Card_Collector_5
         }
         private void btnCodeSearch_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             string searchTerm = txtCodeSearch.Text.ToString();
             searchTerm = searchTerm.ToUpper();
 
@@ -1051,6 +1068,7 @@ namespace YGO_Card_Collector_5
         #region Event Listeners (Set Filtering)
         private void listSetGroups_SelectedIndexChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             int indexSelected = listSetGroups.SelectedIndex;
 
             List<SetInfo> SetList = new List<SetInfo>();
@@ -1081,8 +1099,13 @@ namespace YGO_Card_Collector_5
             }
             listSetlist.SetSelected(0, true);
         }
+        private void listSetlist_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
+        }
         private void btnFilterSet_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             _MasterCardViewMode = false;
             btnClear.Visible = true;
             int index = listSetlist.SelectedIndex;
@@ -1128,6 +1151,7 @@ namespace YGO_Card_Collector_5
                     if (_CurrentCardImageIndexSelected < 9)
                     {
                         //Do nothing it is the top row
+                        SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
                     }
                     else
                     {
@@ -1151,6 +1175,7 @@ namespace YGO_Card_Collector_5
                     if (_CurrentCardImageIndexSelected > 35)
                     {
                         //Do nothing it is the top row
+                        SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
                     }
                     else
                     {
@@ -1235,9 +1260,73 @@ namespace YGO_Card_Collector_5
                 }
                 return true;
             }
+            else if (keyData == Keys.F1)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    if (_MasterCardViewMode)
+                    {
+                        SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                    }
+                    else
+                    {
+                        //Mark all the cards in the current set
+                        SoundServer.PlaySoundEffect(SoundEffect.MarkAll);
+                        foreach (SetCard thisCard in _CurrentSetCardList)
+                        {
+                            if (!thisCard.IsOwned())
+                            {
+                                thisCard.MarkOwnedStatus(true);
+                            }
+                        }
+                        LoadPage();
+                    }
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.Enter)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    if (_MasterCardViewMode)
+                    {
+                        SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                    }
+                    else
+                    {
+                        //Mark the current selected card
+                        SoundServer.PlaySoundEffect(SoundEffect.MarkCard);
+
+                        if (_CurrentSetCardInView.IsOwned())
+                        {
+                            _CurrentSetCardInView.MarkOwnedStatus(false);
+                        }
+                        else
+                        {
+                            _CurrentSetCardInView.MarkOwnedStatus(true);                            
+                        }
+
+                        //Change the Container Label
+                        int Index = _CurrentSetCartdInViewIndex;
+                        if (_TagContainerList[Index].BackColor == Color.Maroon)
+                        {
+                            _TagContainerList[Index].BackColor = Color.Black;
+                        }
+                        else
+                        {
+                            _TagContainerList[Index].BackColor = Color.Maroon;
+                        }
+                    }
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
             else
                 return base.ProcessCmdKey(ref msg, keyData);
         }
-        #endregion
+        #endregion        
     }
 }

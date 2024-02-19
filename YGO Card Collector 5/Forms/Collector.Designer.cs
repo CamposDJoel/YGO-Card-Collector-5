@@ -117,7 +117,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.listSetlist = new System.Windows.Forms.ListBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.lblFloorPrice = new System.Windows.Forms.Label();
             this.lblCardInfo_Name = new System.Windows.Forms.Label();
+            this.lblFloorPricelabel = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.lblTCGLink = new System.Windows.Forms.Label();
@@ -126,19 +128,17 @@
             this.lblCode = new System.Windows.Forms.Label();
             this.lblCodelabel = new System.Windows.Forms.Label();
             this.lblMedianPrice = new System.Windows.Forms.Label();
-            this.lblMedianPricelabel = new System.Windows.Forms.Label();
-            this.lblMarketPrice = new System.Windows.Forms.Label();
-            this.lblMarketPricelabel = new System.Windows.Forms.Label();
             this.lblRarity = new System.Windows.Forms.Label();
+            this.lblMarketPrice = new System.Windows.Forms.Label();
             this.lblRariryLabel = new System.Windows.Forms.Label();
+            this.lblMedianPricelabel = new System.Windows.Forms.Label();
+            this.lblMarketPricelabel = new System.Windows.Forms.Label();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
             this.btnSetPriceReport = new System.Windows.Forms.Button();
             this.btnStats = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
             this.btnFilterSet = new System.Windows.Forms.Button();
             this.btnOpenSetValue = new System.Windows.Forms.Button();
-            this.lblFloorPrice = new System.Windows.Forms.Label();
-            this.lblFloorPricelabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.MonsterType.SuspendLayout();
@@ -1303,6 +1303,7 @@
             this.listSetlist.Name = "listSetlist";
             this.listSetlist.Size = new System.Drawing.Size(269, 116);
             this.listSetlist.TabIndex = 248;
+            this.listSetlist.SelectedIndexChanged += new System.EventHandler(this.listSetlist_SelectedIndexChanged);
             // 
             // groupBox4
             // 
@@ -1331,6 +1332,20 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Card Info:";
             // 
+            // lblFloorPrice
+            // 
+            this.lblFloorPrice.AutoSize = true;
+            this.lblFloorPrice.BackColor = System.Drawing.Color.Transparent;
+            this.lblFloorPrice.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFloorPrice.ForeColor = System.Drawing.Color.White;
+            this.lblFloorPrice.Location = new System.Drawing.Point(46, 50);
+            this.lblFloorPrice.Name = "lblFloorPrice";
+            this.lblFloorPrice.Size = new System.Drawing.Size(52, 16);
+            this.lblFloorPrice.TabIndex = 281;
+            this.lblFloorPrice.Text = "99999.99";
+            this.lblFloorPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblFloorPrice.Visible = false;
+            // 
             // lblCardInfo_Name
             // 
             this.lblCardInfo_Name.AutoSize = true;
@@ -1342,6 +1357,19 @@
             this.lblCardInfo_Name.Size = new System.Drawing.Size(161, 16);
             this.lblCardInfo_Name.TabIndex = 265;
             this.lblCardInfo_Name.Text = "Super Mega Long Card Name";
+            // 
+            // lblFloorPricelabel
+            // 
+            this.lblFloorPricelabel.AutoSize = true;
+            this.lblFloorPricelabel.BackColor = System.Drawing.Color.Transparent;
+            this.lblFloorPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFloorPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblFloorPricelabel.Location = new System.Drawing.Point(7, 50);
+            this.lblFloorPricelabel.Name = "lblFloorPricelabel";
+            this.lblFloorPricelabel.Size = new System.Drawing.Size(39, 16);
+            this.lblFloorPricelabel.TabIndex = 280;
+            this.lblFloorPricelabel.Text = "Floor:";
+            this.lblFloorPricelabel.Visible = false;
             // 
             // label9
             // 
@@ -1445,18 +1473,18 @@
             this.lblMedianPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblMedianPrice.Visible = false;
             // 
-            // lblMedianPricelabel
+            // lblRarity
             // 
-            this.lblMedianPricelabel.AutoSize = true;
-            this.lblMedianPricelabel.BackColor = System.Drawing.Color.Transparent;
-            this.lblMedianPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMedianPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMedianPricelabel.Location = new System.Drawing.Point(193, 49);
-            this.lblMedianPricelabel.Name = "lblMedianPricelabel";
-            this.lblMedianPricelabel.Size = new System.Drawing.Size(49, 16);
-            this.lblMedianPricelabel.TabIndex = 256;
-            this.lblMedianPricelabel.Text = "Median:";
-            this.lblMedianPricelabel.Visible = false;
+            this.lblRarity.AutoSize = true;
+            this.lblRarity.BackColor = System.Drawing.Color.Transparent;
+            this.lblRarity.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRarity.ForeColor = System.Drawing.Color.Plum;
+            this.lblRarity.Location = new System.Drawing.Point(51, 36);
+            this.lblRarity.Name = "lblRarity";
+            this.lblRarity.Size = new System.Drawing.Size(110, 16);
+            this.lblRarity.TabIndex = 253;
+            this.lblRarity.Text = "Prismatic Gold Rare";
+            this.lblRarity.Visible = false;
             // 
             // lblMarketPrice
             // 
@@ -1472,32 +1500,6 @@
             this.lblMarketPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblMarketPrice.Visible = false;
             // 
-            // lblMarketPricelabel
-            // 
-            this.lblMarketPricelabel.AutoSize = true;
-            this.lblMarketPricelabel.BackColor = System.Drawing.Color.Transparent;
-            this.lblMarketPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarketPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMarketPricelabel.Location = new System.Drawing.Point(99, 50);
-            this.lblMarketPricelabel.Name = "lblMarketPricelabel";
-            this.lblMarketPricelabel.Size = new System.Drawing.Size(46, 16);
-            this.lblMarketPricelabel.TabIndex = 254;
-            this.lblMarketPricelabel.Text = "Market:";
-            this.lblMarketPricelabel.Visible = false;
-            // 
-            // lblRarity
-            // 
-            this.lblRarity.AutoSize = true;
-            this.lblRarity.BackColor = System.Drawing.Color.Transparent;
-            this.lblRarity.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRarity.ForeColor = System.Drawing.Color.Plum;
-            this.lblRarity.Location = new System.Drawing.Point(51, 36);
-            this.lblRarity.Name = "lblRarity";
-            this.lblRarity.Size = new System.Drawing.Size(110, 16);
-            this.lblRarity.TabIndex = 253;
-            this.lblRarity.Text = "Prismatic Gold Rare";
-            this.lblRarity.Visible = false;
-            // 
             // lblRariryLabel
             // 
             this.lblRariryLabel.AutoSize = true;
@@ -1510,6 +1512,32 @@
             this.lblRariryLabel.TabIndex = 252;
             this.lblRariryLabel.Text = "Rarity: ";
             this.lblRariryLabel.Visible = false;
+            // 
+            // lblMedianPricelabel
+            // 
+            this.lblMedianPricelabel.AutoSize = true;
+            this.lblMedianPricelabel.BackColor = System.Drawing.Color.Transparent;
+            this.lblMedianPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMedianPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblMedianPricelabel.Location = new System.Drawing.Point(193, 49);
+            this.lblMedianPricelabel.Name = "lblMedianPricelabel";
+            this.lblMedianPricelabel.Size = new System.Drawing.Size(49, 16);
+            this.lblMedianPricelabel.TabIndex = 256;
+            this.lblMedianPricelabel.Text = "Median:";
+            this.lblMedianPricelabel.Visible = false;
+            // 
+            // lblMarketPricelabel
+            // 
+            this.lblMarketPricelabel.AutoSize = true;
+            this.lblMarketPricelabel.BackColor = System.Drawing.Color.Transparent;
+            this.lblMarketPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarketPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblMarketPricelabel.Location = new System.Drawing.Point(99, 50);
+            this.lblMarketPricelabel.Name = "lblMarketPricelabel";
+            this.lblMarketPricelabel.Size = new System.Drawing.Size(46, 16);
+            this.lblMarketPricelabel.TabIndex = 254;
+            this.lblMarketPricelabel.Text = "Market:";
+            this.lblMarketPricelabel.Visible = false;
             // 
             // btnBackToMainMenu
             // 
@@ -1586,33 +1614,6 @@
             this.btnOpenSetValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnOpenSetValue.UseVisualStyleBackColor = false;
             this.btnOpenSetValue.Click += new System.EventHandler(this.btnOpenSetValue_Click);
-            // 
-            // lblFloorPrice
-            // 
-            this.lblFloorPrice.AutoSize = true;
-            this.lblFloorPrice.BackColor = System.Drawing.Color.Transparent;
-            this.lblFloorPrice.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFloorPrice.ForeColor = System.Drawing.Color.White;
-            this.lblFloorPrice.Location = new System.Drawing.Point(46, 50);
-            this.lblFloorPrice.Name = "lblFloorPrice";
-            this.lblFloorPrice.Size = new System.Drawing.Size(52, 16);
-            this.lblFloorPrice.TabIndex = 281;
-            this.lblFloorPrice.Text = "99999.99";
-            this.lblFloorPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lblFloorPrice.Visible = false;
-            // 
-            // lblFloorPricelabel
-            // 
-            this.lblFloorPricelabel.AutoSize = true;
-            this.lblFloorPricelabel.BackColor = System.Drawing.Color.Transparent;
-            this.lblFloorPricelabel.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFloorPricelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblFloorPricelabel.Location = new System.Drawing.Point(7, 50);
-            this.lblFloorPricelabel.Name = "lblFloorPricelabel";
-            this.lblFloorPricelabel.Size = new System.Drawing.Size(39, 16);
-            this.lblFloorPricelabel.TabIndex = 280;
-            this.lblFloorPricelabel.Text = "Floor:";
-            this.lblFloorPricelabel.Visible = false;
             // 
             // Collector
             // 

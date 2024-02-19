@@ -72,6 +72,8 @@ namespace YGO_Card_Collector_5
         MoveCard,
         InvalidClick,
         RDSelection,
-        DBLoaded
+        DBLoaded,
+        MarkCard,
+        MarkAll
     }
 }
