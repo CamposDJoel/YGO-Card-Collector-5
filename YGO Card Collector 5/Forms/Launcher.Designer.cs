@@ -38,6 +38,7 @@
             this.RadioBigWinOption = new System.Windows.Forms.RadioButton();
             this.RadioDefaultOption = new System.Windows.Forms.RadioButton();
             this.lblDatabaseUpdateOption = new System.Windows.Forms.Label();
+            this.btnLoadDB = new System.Windows.Forms.Button();
             this.GroupWinMode.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +66,7 @@
             this.lblLaunchAppOption.TabIndex = 5;
             this.lblLaunchAppOption.Text = "Collection Tracker";
             this.lblLaunchAppOption.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblLaunchAppOption.Visible = false;
             this.lblLaunchAppOption.Click += new System.EventHandler(this.lblLaunchAppOption_Click);
             // 
             // lblDatabaseOption
@@ -79,6 +81,7 @@
             this.lblDatabaseOption.TabIndex = 6;
             this.lblDatabaseOption.Text = "Database Manager";
             this.lblDatabaseOption.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDatabaseOption.Visible = false;
             this.lblDatabaseOption.Click += new System.EventHandler(this.lblDatabaseOption_Click);
             // 
             // lblSettingsOption
@@ -93,6 +96,7 @@
             this.lblSettingsOption.TabIndex = 7;
             this.lblSettingsOption.Text = "Settings";
             this.lblSettingsOption.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.lblSettingsOption.Visible = false;
             this.lblSettingsOption.Click += new System.EventHandler(this.lblSettingsOption_Click);
             // 
             // lblJsonStatus
@@ -120,6 +124,7 @@
             this.GroupWinMode.TabIndex = 9;
             this.GroupWinMode.TabStop = false;
             this.GroupWinMode.Text = "Window Mode";
+            this.GroupWinMode.Visible = false;
             // 
             // RadioBigWinOption
             // 
@@ -159,7 +164,21 @@
             this.lblDatabaseUpdateOption.TabIndex = 10;
             this.lblDatabaseUpdateOption.Text = "Database Update Tool";
             this.lblDatabaseUpdateOption.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDatabaseUpdateOption.Visible = false;
             this.lblDatabaseUpdateOption.Click += new System.EventHandler(this.lblDatabaseUpdateOption_Click);
+            // 
+            // btnLoadDB
+            // 
+            this.btnLoadDB.BackColor = System.Drawing.Color.Indigo;
+            this.btnLoadDB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoadDB.ForeColor = System.Drawing.Color.White;
+            this.btnLoadDB.Location = new System.Drawing.Point(60, 179);
+            this.btnLoadDB.Name = "btnLoadDB";
+            this.btnLoadDB.Size = new System.Drawing.Size(196, 93);
+            this.btnLoadDB.TabIndex = 11;
+            this.btnLoadDB.Text = "Load Data";
+            this.btnLoadDB.UseVisualStyleBackColor = false;
+            this.btnLoadDB.Click += new System.EventHandler(this.btnLoadDB_Click);
             // 
             // FormLauncher
             // 
@@ -168,6 +187,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 457);
+            this.Controls.Add(this.btnLoadDB);
             this.Controls.Add(this.lblDatabaseUpdateOption);
             this.Controls.Add(this.GroupWinMode);
             this.Controls.Add(this.lblJsonStatus);
@@ -201,6 +221,7 @@
         private System.Windows.Forms.RadioButton RadioBigWinOption;
         private System.Windows.Forms.RadioButton RadioDefaultOption;
         private System.Windows.Forms.Label lblDatabaseUpdateOption;
+        private System.Windows.Forms.Button btnLoadDB;
     }
 }
 

@@ -42,14 +42,22 @@
             this.RadioPackSortingOLD = new System.Windows.Forms.RadioButton();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.RadioThemeDM = new System.Windows.Forms.RadioButton();
-            this.RadioThemeDMG = new System.Windows.Forms.RadioButton();
-            this.RadioThemeTraptrix = new System.Windows.Forms.RadioButton();
             this.RadioThemeBlueEyesUltimate = new System.Windows.Forms.RadioButton();
+            this.RadioThemeTraptrix = new System.Windows.Forms.RadioButton();
+            this.RadioThemeDMG = new System.Windows.Forms.RadioButton();
+            this.RadioThemeDM = new System.Windows.Forms.RadioButton();
+            this.GroupMusic = new System.Windows.Forms.GroupBox();
+            this.RadioMusicOFF = new System.Windows.Forms.RadioButton();
+            this.RadioMusicON = new System.Windows.Forms.RadioButton();
+            this.GroupSFX = new System.Windows.Forms.GroupBox();
+            this.RadioSFXOFF = new System.Windows.Forms.RadioButton();
+            this.RadioSFXON = new System.Windows.Forms.RadioButton();
             this.GroupTestMode.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.GroupMusic.SuspendLayout();
+            this.GroupSFX.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTotalAqua
@@ -71,7 +79,7 @@
             this.GroupTestMode.Controls.Add(this.RadioTestModeON);
             this.GroupTestMode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupTestMode.ForeColor = System.Drawing.Color.Yellow;
-            this.GroupTestMode.Location = new System.Drawing.Point(32, 118);
+            this.GroupTestMode.Location = new System.Drawing.Point(32, 253);
             this.GroupTestMode.Name = "GroupTestMode";
             this.GroupTestMode.Size = new System.Drawing.Size(162, 52);
             this.GroupTestMode.TabIndex = 2;
@@ -107,7 +115,7 @@
             this.groupBox1.Controls.Add(this.RadioHeadlessON);
             this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Yellow;
-            this.groupBox1.Location = new System.Drawing.Point(32, 184);
+            this.groupBox1.Location = new System.Drawing.Point(32, 319);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(162, 52);
             this.groupBox1.TabIndex = 3;
@@ -157,9 +165,9 @@
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.label1.Location = new System.Drawing.Point(11, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(230, 15);
+            this.label1.Size = new System.Drawing.Size(154, 15);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Applies to the first DB Initialization";
+            this.label1.Text = "Relaunch App to apply.";
             // 
             // RadioPackSortingNEW
             // 
@@ -186,10 +194,11 @@
             // btnBackToMainMenu
             // 
             this.btnBackToMainMenu.BackColor = System.Drawing.Color.Maroon;
+            this.btnBackToMainMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackToMainMenu.ForeColor = System.Drawing.Color.White;
             this.btnBackToMainMenu.Location = new System.Drawing.Point(8, 6);
             this.btnBackToMainMenu.Name = "btnBackToMainMenu";
-            this.btnBackToMainMenu.Size = new System.Drawing.Size(125, 22);
+            this.btnBackToMainMenu.Size = new System.Drawing.Size(136, 22);
             this.btnBackToMainMenu.TabIndex = 4;
             this.btnBackToMainMenu.Text = "<-- Back to Main Menu";
             this.btnBackToMainMenu.UseVisualStyleBackColor = false;
@@ -211,27 +220,16 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Theme";
             // 
-            // RadioThemeDM
+            // RadioThemeBlueEyesUltimate
             // 
-            this.RadioThemeDM.AutoSize = true;
-            this.RadioThemeDM.Location = new System.Drawing.Point(15, 24);
-            this.RadioThemeDM.Name = "RadioThemeDM";
-            this.RadioThemeDM.Size = new System.Drawing.Size(118, 19);
-            this.RadioThemeDM.TabIndex = 0;
-            this.RadioThemeDM.Text = "Dark Magician";
-            this.RadioThemeDM.UseVisualStyleBackColor = true;
-            this.RadioThemeDM.CheckedChanged += new System.EventHandler(this.RadioThemeDM_CheckedChanged);
-            // 
-            // RadioThemeDMG
-            // 
-            this.RadioThemeDMG.AutoSize = true;
-            this.RadioThemeDMG.Location = new System.Drawing.Point(15, 49);
-            this.RadioThemeDMG.Name = "RadioThemeDMG";
-            this.RadioThemeDMG.Size = new System.Drawing.Size(145, 19);
-            this.RadioThemeDMG.TabIndex = 1;
-            this.RadioThemeDMG.Text = "Dark Magician Girl";
-            this.RadioThemeDMG.UseVisualStyleBackColor = true;
-            this.RadioThemeDMG.CheckedChanged += new System.EventHandler(this.RadioThemeDMG_CheckedChanged);
+            this.RadioThemeBlueEyesUltimate.AutoSize = true;
+            this.RadioThemeBlueEyesUltimate.Location = new System.Drawing.Point(15, 99);
+            this.RadioThemeBlueEyesUltimate.Name = "RadioThemeBlueEyesUltimate";
+            this.RadioThemeBlueEyesUltimate.Size = new System.Drawing.Size(199, 19);
+            this.RadioThemeBlueEyesUltimate.TabIndex = 3;
+            this.RadioThemeBlueEyesUltimate.Text = "Blue-Eyes Ultimate Dragon";
+            this.RadioThemeBlueEyesUltimate.UseVisualStyleBackColor = true;
+            this.RadioThemeBlueEyesUltimate.CheckedChanged += new System.EventHandler(this.RadioThemeBlueEyesUltimate_CheckedChanged);
             // 
             // RadioThemeTraptrix
             // 
@@ -244,16 +242,99 @@
             this.RadioThemeTraptrix.UseVisualStyleBackColor = true;
             this.RadioThemeTraptrix.CheckedChanged += new System.EventHandler(this.RadioThemeTraptrix_CheckedChanged);
             // 
-            // RadioThemeBlueEyesUltimate
+            // RadioThemeDMG
             // 
-            this.RadioThemeBlueEyesUltimate.AutoSize = true;
-            this.RadioThemeBlueEyesUltimate.Location = new System.Drawing.Point(15, 99);
-            this.RadioThemeBlueEyesUltimate.Name = "RadioThemeBlueEyesUltimate";
-            this.RadioThemeBlueEyesUltimate.Size = new System.Drawing.Size(199, 19);
-            this.RadioThemeBlueEyesUltimate.TabIndex = 3;
-            this.RadioThemeBlueEyesUltimate.Text = "Blue-Eyes Ultimate Dragon";
-            this.RadioThemeBlueEyesUltimate.UseVisualStyleBackColor = true;
-            this.RadioThemeBlueEyesUltimate.CheckedChanged += new System.EventHandler(this.RadioThemeBlueEyesUltimate_CheckedChanged);
+            this.RadioThemeDMG.AutoSize = true;
+            this.RadioThemeDMG.Location = new System.Drawing.Point(15, 49);
+            this.RadioThemeDMG.Name = "RadioThemeDMG";
+            this.RadioThemeDMG.Size = new System.Drawing.Size(145, 19);
+            this.RadioThemeDMG.TabIndex = 1;
+            this.RadioThemeDMG.Text = "Dark Magician Girl";
+            this.RadioThemeDMG.UseVisualStyleBackColor = true;
+            this.RadioThemeDMG.CheckedChanged += new System.EventHandler(this.RadioThemeDMG_CheckedChanged);
+            // 
+            // RadioThemeDM
+            // 
+            this.RadioThemeDM.AutoSize = true;
+            this.RadioThemeDM.Location = new System.Drawing.Point(15, 24);
+            this.RadioThemeDM.Name = "RadioThemeDM";
+            this.RadioThemeDM.Size = new System.Drawing.Size(118, 19);
+            this.RadioThemeDM.TabIndex = 0;
+            this.RadioThemeDM.Text = "Dark Magician";
+            this.RadioThemeDM.UseVisualStyleBackColor = true;
+            this.RadioThemeDM.CheckedChanged += new System.EventHandler(this.RadioThemeDM_CheckedChanged);
+            // 
+            // GroupMusic
+            // 
+            this.GroupMusic.BackColor = System.Drawing.Color.Transparent;
+            this.GroupMusic.Controls.Add(this.RadioMusicOFF);
+            this.GroupMusic.Controls.Add(this.RadioMusicON);
+            this.GroupMusic.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupMusic.ForeColor = System.Drawing.Color.Yellow;
+            this.GroupMusic.Location = new System.Drawing.Point(32, 126);
+            this.GroupMusic.Name = "GroupMusic";
+            this.GroupMusic.Size = new System.Drawing.Size(162, 52);
+            this.GroupMusic.TabIndex = 6;
+            this.GroupMusic.TabStop = false;
+            this.GroupMusic.Text = "Music";
+            // 
+            // RadioMusicOFF
+            // 
+            this.RadioMusicOFF.AutoSize = true;
+            this.RadioMusicOFF.Location = new System.Drawing.Point(73, 24);
+            this.RadioMusicOFF.Name = "RadioMusicOFF";
+            this.RadioMusicOFF.Size = new System.Drawing.Size(51, 19);
+            this.RadioMusicOFF.TabIndex = 1;
+            this.RadioMusicOFF.Text = "OFF";
+            this.RadioMusicOFF.UseVisualStyleBackColor = true;
+            this.RadioMusicOFF.CheckedChanged += new System.EventHandler(this.RadioMusicOFF_CheckedChanged);
+            // 
+            // RadioMusicON
+            // 
+            this.RadioMusicON.AutoSize = true;
+            this.RadioMusicON.Location = new System.Drawing.Point(15, 24);
+            this.RadioMusicON.Name = "RadioMusicON";
+            this.RadioMusicON.Size = new System.Drawing.Size(45, 19);
+            this.RadioMusicON.TabIndex = 0;
+            this.RadioMusicON.Text = "ON";
+            this.RadioMusicON.UseVisualStyleBackColor = true;
+            this.RadioMusicON.CheckedChanged += new System.EventHandler(this.RadioMusicON_CheckedChanged);
+            // 
+            // GroupSFX
+            // 
+            this.GroupSFX.BackColor = System.Drawing.Color.Transparent;
+            this.GroupSFX.Controls.Add(this.RadioSFXOFF);
+            this.GroupSFX.Controls.Add(this.RadioSFXON);
+            this.GroupSFX.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupSFX.ForeColor = System.Drawing.Color.Yellow;
+            this.GroupSFX.Location = new System.Drawing.Point(32, 190);
+            this.GroupSFX.Name = "GroupSFX";
+            this.GroupSFX.Size = new System.Drawing.Size(162, 52);
+            this.GroupSFX.TabIndex = 7;
+            this.GroupSFX.TabStop = false;
+            this.GroupSFX.Text = "SFX";
+            // 
+            // RadioSFXOFF
+            // 
+            this.RadioSFXOFF.AutoSize = true;
+            this.RadioSFXOFF.Location = new System.Drawing.Point(73, 24);
+            this.RadioSFXOFF.Name = "RadioSFXOFF";
+            this.RadioSFXOFF.Size = new System.Drawing.Size(51, 19);
+            this.RadioSFXOFF.TabIndex = 1;
+            this.RadioSFXOFF.Text = "OFF";
+            this.RadioSFXOFF.UseVisualStyleBackColor = true;
+            this.RadioSFXOFF.CheckedChanged += new System.EventHandler(this.RadioSFXOFF_CheckedChanged);
+            // 
+            // RadioSFXON
+            // 
+            this.RadioSFXON.AutoSize = true;
+            this.RadioSFXON.Location = new System.Drawing.Point(15, 24);
+            this.RadioSFXON.Name = "RadioSFXON";
+            this.RadioSFXON.Size = new System.Drawing.Size(45, 19);
+            this.RadioSFXON.TabIndex = 0;
+            this.RadioSFXON.Text = "ON";
+            this.RadioSFXON.UseVisualStyleBackColor = true;
+            this.RadioSFXON.CheckedChanged += new System.EventHandler(this.RadioSFXON_CheckedChanged);
             // 
             // SettingsForm
             // 
@@ -262,6 +343,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(804, 461);
+            this.Controls.Add(this.GroupSFX);
+            this.Controls.Add(this.GroupMusic);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnBackToMainMenu);
             this.Controls.Add(this.groupBox2);
@@ -282,6 +365,10 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.GroupMusic.ResumeLayout(false);
+            this.GroupMusic.PerformLayout();
+            this.GroupSFX.ResumeLayout(false);
+            this.GroupSFX.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -306,5 +393,11 @@
         private System.Windows.Forms.RadioButton RadioThemeTraptrix;
         private System.Windows.Forms.RadioButton RadioThemeDMG;
         private System.Windows.Forms.RadioButton RadioThemeBlueEyesUltimate;
+        private System.Windows.Forms.GroupBox GroupMusic;
+        private System.Windows.Forms.RadioButton RadioMusicOFF;
+        private System.Windows.Forms.RadioButton RadioMusicON;
+        private System.Windows.Forms.GroupBox GroupSFX;
+        private System.Windows.Forms.RadioButton RadioSFXOFF;
+        private System.Windows.Forms.RadioButton RadioSFXON;
     }
 }

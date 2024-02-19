@@ -10,6 +10,7 @@ namespace YGO_Card_Collector_5
 {
     public partial class FormLauncher : Form
     {
+        #region Constructors
         public FormLauncher()
         {
             SoundServer.PlayBackgroundMusic(Song.TitleScreen, true);
@@ -27,6 +28,9 @@ namespace YGO_Card_Collector_5
             lblDatabaseUpdateOption.MouseEnter += OnMouseEnterLabel;
             lblDatabaseUpdateOption.MouseLeave += OnMouseLeaveLabel;
 
+            RadioBigWinOption.MouseEnter += OnMouseEnterRadio;
+            RadioDefaultOption.MouseEnter += OnMouseEnterRadio;
+
 
             //Load App Settings
             SettingsData.InitializeSettings();
@@ -34,30 +38,18 @@ namespace YGO_Card_Collector_5
             //Load Form theme
             Tools.InitalizeThemeOnForm(this);
         }
+        #endregion
 
-        public void ReloadTheme()
+        #region Public Methods
+        public void ReturnToForm()
         {
             Tools.InitalizeThemeOnForm(this);
+            SoundServer.PlayBackgroundMusic(Song.TitleScreen, true);
+            Show();
         }
+        #endregion
 
-        private void LoadDB()
-        {
-            //Hide the menu options
-            lblLaunchAppOption.Visible = false;
-            lblSettingsOption.Visible = false;
-            lblDatabaseOption.Visible = false;
-            lblJsonStatus.Visible = false;
-
-            bool Success = Database.LoadDB();
-            if(!Success) 
-            {
-                lblJsonStatus.Visible = true;
-                lblLaunchAppOption.Visible = true;
-                lblSettingsOption.Visible = true;
-                lblDatabaseOption.Visible = true;
-            }
-        }
-
+        #region Event Listeners
         private void OnMouseEnterLabel(object sender, EventArgs e)
         {
             SoundServer.PlaySoundEffect(SoundEffect.Hover);
@@ -69,10 +61,13 @@ namespace YGO_Card_Collector_5
             Label thisLabel = (Label)sender;
             thisLabel.BackColor = Color.Transparent;
         }
+        private void OnMouseEnterRadio(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Hover);
+        }
         private void lblLaunchAppOption_Click(object sender, EventArgs e)
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
-            LoadDB();
 
             //Open Collection tracker
             Hide();
@@ -95,7 +90,6 @@ namespace YGO_Card_Collector_5
         private void lblDatabaseUpdateOption_Click(object sender, EventArgs e)
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
-            LoadDB();
 
             //Open Database Manager
             Hide();
@@ -111,7 +105,6 @@ namespace YGO_Card_Collector_5
         private void lblDatabaseOption_Click(object sender, EventArgs e)
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
-            LoadDB();
 
             //Open Database Manager
             Hide();
@@ -132,11 +125,33 @@ namespace YGO_Card_Collector_5
         }
         private void RadioDefaultOption_CheckedChanged(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
         }
         private void RadioBigWinOption_CheckedChanged(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
-        }       
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
+        }
+        #endregion
+
+        private void btnLoadDB_Click(object sender, EventArgs e)
+        {
+            bool Success = Database.LoadDB();
+            if (Success)
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
+                Tools.WaitNSeconds(1000);
+                btnLoadDB.Visible = false;
+                lblLaunchAppOption.Visible = true;
+                lblSettingsOption.Visible = true;
+                lblDatabaseUpdateOption.Visible = true;
+                lblDatabaseOption.Visible = true;
+                GroupWinMode.Visible = true;
+            }
+            else
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                lblJsonStatus.Visible = true;
+            }
+        }
     }
 }
