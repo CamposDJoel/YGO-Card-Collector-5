@@ -135,6 +135,7 @@ namespace YGO_Card_Collector_5
 
         private void btnLoadDB_Click(object sender, EventArgs e)
         {
+            btnLoadDB.Enabled = false;
             bool Success = Database.LoadDB();
             if (Success)
             {
@@ -149,6 +150,7 @@ namespace YGO_Card_Collector_5
             }
             else
             {
+                btnLoadDB.Enabled = true;
                 SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
                 lblJsonStatus.Visible = true;
             }
