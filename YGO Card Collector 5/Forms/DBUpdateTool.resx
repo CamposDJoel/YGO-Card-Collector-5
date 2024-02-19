@@ -117,6 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label12.Text" xml:space="preserve">
+    <value>This step will loop through all the Setcards with a TCG Player registered.
+This will update all the prices for each Setcard.
+
+WARNING: By FEB 2024 there are ~34,000 SetCards in the DB... This means that the execution time to update the prices of the entire DB takes appr. 36 Hrs.
+Only run "Update Full DB" if you can leave your PC alone for that amount of time.
+Otherwise, simply update the prices of each set individually. (Whatever Sets are relevant to you)</value>
+  </data>
   <data name="label2.Text" xml:space="preserve">
     <value>This step will check for new Sets release since the last DB update.
 If new Sets are found, all the card records from those sets are going to be update (This include brand new MasterCards and new SetCards from already existing MasterCards).
@@ -141,14 +149,6 @@ We can obtain their card image by going into this URL: [https://images.ygoprodec
 
 Copy all the auto-generated URLs below, paste them into JDownloader and drownload the images into \Images\Cards of this app. Click "Refresh File" to verify files have been picked up correctly.
 </value>
-  </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>This step will loop through all the Setcards with a TCG Player registered.
-This will update all the prices for each Setcard.
-
-WARNING: By FEB 2024 there are ~34,000 SetCards in the DB... This means that the execution time to update the prices of the entire DB takes appr. 36 Hrs.
-Only run "Update Full DB" if you can leave your PC alone for that amount of time.
-Otherwise, simply update the prices of each set individually. (Whatever Sets are relevant to you)</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Last Notes before you go.

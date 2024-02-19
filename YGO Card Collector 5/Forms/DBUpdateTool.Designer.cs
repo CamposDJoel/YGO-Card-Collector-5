@@ -41,25 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TabStep2 = new System.Windows.Forms.TabPage();
-            this.btnBackToMainMenu = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnStep2 = new System.Windows.Forms.Button();
-            this.PanelContainerStep2 = new System.Windows.Forms.Panel();
-            this.lblActiveActionStep2 = new System.Windows.Forms.Label();
-            this.lblJobStep2 = new System.Windows.Forms.Label();
-            this.PanelLogsContainerStep2 = new System.Windows.Forms.Panel();
-            this.lblLogStep2 = new System.Windows.Forms.Label();
-            this.BarProgressStep2 = new System.Windows.Forms.ProgressBar();
-            this.listMissingProdeckStep2 = new System.Windows.Forms.ListBox();
-            this.listMissingTCGStep2 = new System.Windows.Forms.ListBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.GroupUnavailableTCGOverride = new System.Windows.Forms.GroupBox();
-            this.btnTCGOverride3 = new System.Windows.Forms.Button();
-            this.checkTCGEnableOverride3 = new System.Windows.Forms.CheckBox();
-            this.txtTCGURL3 = new System.Windows.Forms.TextBox();
-            this.label53 = new System.Windows.Forms.Label();
+            this.PanelOverride = new System.Windows.Forms.Panel();
             this.GroupUnavailableProdeckOverride = new System.Windows.Forms.GroupBox();
             this.label62 = new System.Windows.Forms.Label();
             this.lblMisingPasscodeWarning3 = new System.Windows.Forms.Label();
@@ -70,12 +52,35 @@
             this.checkProdeckEnableOverride3 = new System.Windows.Forms.CheckBox();
             this.label64 = new System.Windows.Forms.Label();
             this.txtProdeckURL3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.GroupUnavailableTCGOverride = new System.Windows.Forms.GroupBox();
+            this.btnTCGOverride3 = new System.Windows.Forms.Button();
+            this.checkTCGEnableOverride3 = new System.Windows.Forms.CheckBox();
+            this.txtTCGURL3 = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.listMissingProdeckStep2 = new System.Windows.Forms.ListBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.listMissingTCGStep2 = new System.Windows.Forms.ListBox();
+            this.PanelContainerStep2 = new System.Windows.Forms.Panel();
+            this.lblActiveActionStep2 = new System.Windows.Forms.Label();
+            this.lblJobStep2 = new System.Windows.Forms.Label();
+            this.PanelLogsContainerStep2 = new System.Windows.Forms.Panel();
+            this.lblLogStep2 = new System.Windows.Forms.Label();
+            this.BarProgressStep2 = new System.Windows.Forms.ProgressBar();
+            this.btnStep2 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.button1 = new System.Windows.Forms.Button();
+            this.txtCardImagesURLoutput = new System.Windows.Forms.TextBox();
+            this.btnRefreshCardFiles = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtCardImagesURLoutput = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.PanelSetPriceContainer = new System.Windows.Forms.Panel();
+            this.btnStep4B = new System.Windows.Forms.Button();
+            this.label14 = new System.Windows.Forms.Label();
+            this.ListSetGroups = new System.Windows.Forms.ListBox();
+            this.ListSets = new System.Windows.Forms.ListBox();
             this.PanelContainerStep4 = new System.Windows.Forms.Panel();
             this.lblActiveActionStep4 = new System.Windows.Forms.Label();
             this.lblJobStep4 = new System.Windows.Forms.Label();
@@ -85,29 +90,24 @@
             this.btnStep4 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.ListSets = new System.Windows.Forms.ListBox();
-            this.ListSetGroups = new System.Windows.Forms.ListBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.PanelOverride = new System.Windows.Forms.Panel();
-            this.btnStep4B = new System.Windows.Forms.Button();
-            this.PanelSetPriceContainer = new System.Windows.Forms.Panel();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnBackToMainMenu = new System.Windows.Forms.Button();
             this.TabControlMaster.SuspendLayout();
             this.TabStep1.SuspendLayout();
             this.PanelContainerStep1.SuspendLayout();
             this.PanelLogsContainerStep1.SuspendLayout();
             this.TabStep2.SuspendLayout();
+            this.PanelOverride.SuspendLayout();
+            this.GroupUnavailableProdeckOverride.SuspendLayout();
+            this.GroupUnavailableTCGOverride.SuspendLayout();
             this.PanelContainerStep2.SuspendLayout();
             this.PanelLogsContainerStep2.SuspendLayout();
-            this.GroupUnavailableTCGOverride.SuspendLayout();
-            this.GroupUnavailableProdeckOverride.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.PanelSetPriceContainer.SuspendLayout();
             this.PanelContainerStep4.SuspendLayout();
             this.PanelLogsContainerStep4.SuspendLayout();
-            this.PanelOverride.SuspendLayout();
-            this.PanelSetPriceContainer.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -250,220 +250,19 @@
             this.TabStep2.TabIndex = 1;
             this.TabStep2.Text = "Step 2: Retry Prodeck/TCG Searches";
             // 
-            // btnBackToMainMenu
+            // PanelOverride
             // 
-            this.btnBackToMainMenu.BackColor = System.Drawing.Color.Maroon;
-            this.btnBackToMainMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBackToMainMenu.ForeColor = System.Drawing.Color.White;
-            this.btnBackToMainMenu.Location = new System.Drawing.Point(12, 8);
-            this.btnBackToMainMenu.Name = "btnBackToMainMenu";
-            this.btnBackToMainMenu.Size = new System.Drawing.Size(138, 22);
-            this.btnBackToMainMenu.TabIndex = 4;
-            this.btnBackToMainMenu.Text = "<-- Back to Main Menu";
-            this.btnBackToMainMenu.UseVisualStyleBackColor = false;
-            this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(4, 5);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(224, 17);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Retry Prodeck/TCG Searches";
-            // 
-            // label4
-            // 
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(6, 25);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(367, 113);
-            this.label4.TabIndex = 2;
-            this.label4.Text = resources.GetString("label4.Text");
-            // 
-            // btnStep2
-            // 
-            this.btnStep2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnStep2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStep2.ForeColor = System.Drawing.Color.White;
-            this.btnStep2.Location = new System.Drawing.Point(124, 150);
-            this.btnStep2.Name = "btnStep2";
-            this.btnStep2.Size = new System.Drawing.Size(116, 30);
-            this.btnStep2.TabIndex = 3;
-            this.btnStep2.Text = "Run Update";
-            this.btnStep2.UseVisualStyleBackColor = false;
-            this.btnStep2.Click += new System.EventHandler(this.btnStep2_Click);
-            // 
-            // PanelContainerStep2
-            // 
-            this.PanelContainerStep2.BackColor = System.Drawing.Color.Black;
-            this.PanelContainerStep2.Controls.Add(this.lblActiveActionStep2);
-            this.PanelContainerStep2.Controls.Add(this.lblJobStep2);
-            this.PanelContainerStep2.Controls.Add(this.PanelLogsContainerStep2);
-            this.PanelContainerStep2.Controls.Add(this.BarProgressStep2);
-            this.PanelContainerStep2.Location = new System.Drawing.Point(7, 183);
-            this.PanelContainerStep2.Name = "PanelContainerStep2";
-            this.PanelContainerStep2.Size = new System.Drawing.Size(371, 204);
-            this.PanelContainerStep2.TabIndex = 4;
-            this.PanelContainerStep2.Visible = false;
-            // 
-            // lblActiveActionStep2
-            // 
-            this.lblActiveActionStep2.AutoSize = true;
-            this.lblActiveActionStep2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblActiveActionStep2.ForeColor = System.Drawing.Color.White;
-            this.lblActiveActionStep2.Location = new System.Drawing.Point(32, 43);
-            this.lblActiveActionStep2.Name = "lblActiveActionStep2";
-            this.lblActiveActionStep2.Size = new System.Drawing.Size(54, 14);
-            this.lblActiveActionStep2.TabIndex = 7;
-            this.lblActiveActionStep2.Text = "Update:";
-            // 
-            // lblJobStep2
-            // 
-            this.lblJobStep2.AutoSize = true;
-            this.lblJobStep2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJobStep2.ForeColor = System.Drawing.Color.White;
-            this.lblJobStep2.Location = new System.Drawing.Point(32, 3);
-            this.lblJobStep2.Name = "lblJobStep2";
-            this.lblJobStep2.Size = new System.Drawing.Size(32, 14);
-            this.lblJobStep2.TabIndex = 6;
-            this.lblJobStep2.Text = "Job ";
-            // 
-            // PanelLogsContainerStep2
-            // 
-            this.PanelLogsContainerStep2.AutoScroll = true;
-            this.PanelLogsContainerStep2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanelLogsContainerStep2.Controls.Add(this.lblLogStep2);
-            this.PanelLogsContainerStep2.Location = new System.Drawing.Point(3, 60);
-            this.PanelLogsContainerStep2.Name = "PanelLogsContainerStep2";
-            this.PanelLogsContainerStep2.Size = new System.Drawing.Size(365, 138);
-            this.PanelLogsContainerStep2.TabIndex = 5;
-            // 
-            // lblLogStep2
-            // 
-            this.lblLogStep2.AutoSize = true;
-            this.lblLogStep2.ForeColor = System.Drawing.Color.Yellow;
-            this.lblLogStep2.Location = new System.Drawing.Point(6, 6);
-            this.lblLogStep2.Name = "lblLogStep2";
-            this.lblLogStep2.Size = new System.Drawing.Size(24, 13);
-            this.lblLogStep2.TabIndex = 0;
-            this.lblLogStep2.Text = "test";
-            // 
-            // BarProgressStep2
-            // 
-            this.BarProgressStep2.Location = new System.Drawing.Point(35, 20);
-            this.BarProgressStep2.Maximum = 10000;
-            this.BarProgressStep2.Name = "BarProgressStep2";
-            this.BarProgressStep2.Size = new System.Drawing.Size(277, 20);
-            this.BarProgressStep2.TabIndex = 3;
-            // 
-            // listMissingProdeckStep2
-            // 
-            this.listMissingProdeckStep2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.listMissingProdeckStep2.FormattingEnabled = true;
-            this.listMissingProdeckStep2.Items.AddRange(new object[] {
-            "No Mastercards missing Prodeck URLs"});
-            this.listMissingProdeckStep2.Location = new System.Drawing.Point(5, 18);
-            this.listMissingProdeckStep2.Name = "listMissingProdeckStep2";
-            this.listMissingProdeckStep2.Size = new System.Drawing.Size(367, 82);
-            this.listMissingProdeckStep2.TabIndex = 5;
-            this.listMissingProdeckStep2.SelectedIndexChanged += new System.EventHandler(this.listMissingProdeckStep2_SelectedIndexChanged);
-            // 
-            // listMissingTCGStep2
-            // 
-            this.listMissingTCGStep2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.listMissingTCGStep2.FormattingEnabled = true;
-            this.listMissingTCGStep2.Items.AddRange(new object[] {
-            "No Setcards missing TCG Player URLs"});
-            this.listMissingTCGStep2.Location = new System.Drawing.Point(5, 222);
-            this.listMissingTCGStep2.Name = "listMissingTCGStep2";
-            this.listMissingTCGStep2.Size = new System.Drawing.Size(367, 82);
-            this.listMissingTCGStep2.TabIndex = 6;
-            this.listMissingTCGStep2.SelectedIndexChanged += new System.EventHandler(this.listMissingTCGStep2_SelectedIndexChanged);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(3, 3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(192, 14);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Missing Prodeck URL Card List:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(3, 207);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(210, 14);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "Missing TCG Player URL Card List:";
-            // 
-            // GroupUnavailableTCGOverride
-            // 
-            this.GroupUnavailableTCGOverride.Controls.Add(this.btnTCGOverride3);
-            this.GroupUnavailableTCGOverride.Controls.Add(this.checkTCGEnableOverride3);
-            this.GroupUnavailableTCGOverride.Controls.Add(this.txtTCGURL3);
-            this.GroupUnavailableTCGOverride.Controls.Add(this.label53);
-            this.GroupUnavailableTCGOverride.ForeColor = System.Drawing.Color.Silver;
-            this.GroupUnavailableTCGOverride.Location = new System.Drawing.Point(6, 305);
-            this.GroupUnavailableTCGOverride.Name = "GroupUnavailableTCGOverride";
-            this.GroupUnavailableTCGOverride.Size = new System.Drawing.Size(366, 79);
-            this.GroupUnavailableTCGOverride.TabIndex = 62;
-            this.GroupUnavailableTCGOverride.TabStop = false;
-            this.GroupUnavailableTCGOverride.Text = "Override Options";
-            this.GroupUnavailableTCGOverride.Visible = false;
-            // 
-            // btnTCGOverride3
-            // 
-            this.btnTCGOverride3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTCGOverride3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnTCGOverride3.Location = new System.Drawing.Point(109, 52);
-            this.btnTCGOverride3.Name = "btnTCGOverride3";
-            this.btnTCGOverride3.Size = new System.Drawing.Size(69, 18);
-            this.btnTCGOverride3.TabIndex = 36;
-            this.btnTCGOverride3.Text = "Override";
-            this.btnTCGOverride3.UseVisualStyleBackColor = true;
-            this.btnTCGOverride3.Visible = false;
-            this.btnTCGOverride3.Click += new System.EventHandler(this.btnTCGOverride3_Click);
-            // 
-            // checkTCGEnableOverride3
-            // 
-            this.checkTCGEnableOverride3.AutoSize = true;
-            this.checkTCGEnableOverride3.Location = new System.Drawing.Point(8, 53);
-            this.checkTCGEnableOverride3.Name = "checkTCGEnableOverride3";
-            this.checkTCGEnableOverride3.Size = new System.Drawing.Size(102, 17);
-            this.checkTCGEnableOverride3.TabIndex = 35;
-            this.checkTCGEnableOverride3.Text = "Enable Override";
-            this.checkTCGEnableOverride3.UseVisualStyleBackColor = true;
-            this.checkTCGEnableOverride3.CheckedChanged += new System.EventHandler(this.checkTCGEnableOverride3_CheckedChanged);
-            // 
-            // txtTCGURL3
-            // 
-            this.txtTCGURL3.Enabled = false;
-            this.txtTCGURL3.Location = new System.Drawing.Point(9, 30);
-            this.txtTCGURL3.Name = "txtTCGURL3";
-            this.txtTCGURL3.Size = new System.Drawing.Size(293, 20);
-            this.txtTCGURL3.TabIndex = 34;
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.BackColor = System.Drawing.Color.Transparent;
-            this.label53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label53.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(6, 16);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(106, 14);
-            this.label53.TabIndex = 33;
-            this.label53.Text = "TCG Player URL:";
+            this.PanelOverride.BackColor = System.Drawing.Color.Black;
+            this.PanelOverride.Controls.Add(this.GroupUnavailableProdeckOverride);
+            this.PanelOverride.Controls.Add(this.label5);
+            this.PanelOverride.Controls.Add(this.GroupUnavailableTCGOverride);
+            this.PanelOverride.Controls.Add(this.listMissingProdeckStep2);
+            this.PanelOverride.Controls.Add(this.label6);
+            this.PanelOverride.Controls.Add(this.listMissingTCGStep2);
+            this.PanelOverride.Location = new System.Drawing.Point(379, 1);
+            this.PanelOverride.Name = "PanelOverride";
+            this.PanelOverride.Size = new System.Drawing.Size(387, 390);
+            this.PanelOverride.TabIndex = 5;
             // 
             // GroupUnavailableProdeckOverride
             // 
@@ -587,11 +386,213 @@
             this.txtProdeckURL3.Size = new System.Drawing.Size(181, 20);
             this.txtProdeckURL3.TabIndex = 41;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(3, 3);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(192, 14);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Missing Prodeck URL Card List:";
+            // 
+            // GroupUnavailableTCGOverride
+            // 
+            this.GroupUnavailableTCGOverride.Controls.Add(this.btnTCGOverride3);
+            this.GroupUnavailableTCGOverride.Controls.Add(this.checkTCGEnableOverride3);
+            this.GroupUnavailableTCGOverride.Controls.Add(this.txtTCGURL3);
+            this.GroupUnavailableTCGOverride.Controls.Add(this.label53);
+            this.GroupUnavailableTCGOverride.ForeColor = System.Drawing.Color.Silver;
+            this.GroupUnavailableTCGOverride.Location = new System.Drawing.Point(6, 305);
+            this.GroupUnavailableTCGOverride.Name = "GroupUnavailableTCGOverride";
+            this.GroupUnavailableTCGOverride.Size = new System.Drawing.Size(366, 79);
+            this.GroupUnavailableTCGOverride.TabIndex = 62;
+            this.GroupUnavailableTCGOverride.TabStop = false;
+            this.GroupUnavailableTCGOverride.Text = "Override Options";
+            this.GroupUnavailableTCGOverride.Visible = false;
+            // 
+            // btnTCGOverride3
+            // 
+            this.btnTCGOverride3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTCGOverride3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnTCGOverride3.Location = new System.Drawing.Point(109, 52);
+            this.btnTCGOverride3.Name = "btnTCGOverride3";
+            this.btnTCGOverride3.Size = new System.Drawing.Size(69, 18);
+            this.btnTCGOverride3.TabIndex = 36;
+            this.btnTCGOverride3.Text = "Override";
+            this.btnTCGOverride3.UseVisualStyleBackColor = true;
+            this.btnTCGOverride3.Visible = false;
+            this.btnTCGOverride3.Click += new System.EventHandler(this.btnTCGOverride3_Click);
+            // 
+            // checkTCGEnableOverride3
+            // 
+            this.checkTCGEnableOverride3.AutoSize = true;
+            this.checkTCGEnableOverride3.Location = new System.Drawing.Point(8, 53);
+            this.checkTCGEnableOverride3.Name = "checkTCGEnableOverride3";
+            this.checkTCGEnableOverride3.Size = new System.Drawing.Size(102, 17);
+            this.checkTCGEnableOverride3.TabIndex = 35;
+            this.checkTCGEnableOverride3.Text = "Enable Override";
+            this.checkTCGEnableOverride3.UseVisualStyleBackColor = true;
+            this.checkTCGEnableOverride3.CheckedChanged += new System.EventHandler(this.checkTCGEnableOverride3_CheckedChanged);
+            // 
+            // txtTCGURL3
+            // 
+            this.txtTCGURL3.Enabled = false;
+            this.txtTCGURL3.Location = new System.Drawing.Point(9, 30);
+            this.txtTCGURL3.Name = "txtTCGURL3";
+            this.txtTCGURL3.Size = new System.Drawing.Size(293, 20);
+            this.txtTCGURL3.TabIndex = 34;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.BackColor = System.Drawing.Color.Transparent;
+            this.label53.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label53.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.Location = new System.Drawing.Point(6, 16);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(106, 14);
+            this.label53.TabIndex = 33;
+            this.label53.Text = "TCG Player URL:";
+            // 
+            // listMissingProdeckStep2
+            // 
+            this.listMissingProdeckStep2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.listMissingProdeckStep2.FormattingEnabled = true;
+            this.listMissingProdeckStep2.Items.AddRange(new object[] {
+            "No Mastercards missing Prodeck URLs"});
+            this.listMissingProdeckStep2.Location = new System.Drawing.Point(5, 18);
+            this.listMissingProdeckStep2.Name = "listMissingProdeckStep2";
+            this.listMissingProdeckStep2.Size = new System.Drawing.Size(367, 82);
+            this.listMissingProdeckStep2.TabIndex = 5;
+            this.listMissingProdeckStep2.SelectedIndexChanged += new System.EventHandler(this.listMissingProdeckStep2_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(3, 207);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(210, 14);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "Missing TCG Player URL Card List:";
+            // 
+            // listMissingTCGStep2
+            // 
+            this.listMissingTCGStep2.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.listMissingTCGStep2.FormattingEnabled = true;
+            this.listMissingTCGStep2.Items.AddRange(new object[] {
+            "No Setcards missing TCG Player URLs"});
+            this.listMissingTCGStep2.Location = new System.Drawing.Point(5, 222);
+            this.listMissingTCGStep2.Name = "listMissingTCGStep2";
+            this.listMissingTCGStep2.Size = new System.Drawing.Size(367, 82);
+            this.listMissingTCGStep2.TabIndex = 6;
+            this.listMissingTCGStep2.SelectedIndexChanged += new System.EventHandler(this.listMissingTCGStep2_SelectedIndexChanged);
+            // 
+            // PanelContainerStep2
+            // 
+            this.PanelContainerStep2.BackColor = System.Drawing.Color.Black;
+            this.PanelContainerStep2.Controls.Add(this.lblActiveActionStep2);
+            this.PanelContainerStep2.Controls.Add(this.lblJobStep2);
+            this.PanelContainerStep2.Controls.Add(this.PanelLogsContainerStep2);
+            this.PanelContainerStep2.Controls.Add(this.BarProgressStep2);
+            this.PanelContainerStep2.Location = new System.Drawing.Point(7, 183);
+            this.PanelContainerStep2.Name = "PanelContainerStep2";
+            this.PanelContainerStep2.Size = new System.Drawing.Size(371, 204);
+            this.PanelContainerStep2.TabIndex = 4;
+            this.PanelContainerStep2.Visible = false;
+            // 
+            // lblActiveActionStep2
+            // 
+            this.lblActiveActionStep2.AutoSize = true;
+            this.lblActiveActionStep2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblActiveActionStep2.ForeColor = System.Drawing.Color.White;
+            this.lblActiveActionStep2.Location = new System.Drawing.Point(32, 43);
+            this.lblActiveActionStep2.Name = "lblActiveActionStep2";
+            this.lblActiveActionStep2.Size = new System.Drawing.Size(54, 14);
+            this.lblActiveActionStep2.TabIndex = 7;
+            this.lblActiveActionStep2.Text = "Update:";
+            // 
+            // lblJobStep2
+            // 
+            this.lblJobStep2.AutoSize = true;
+            this.lblJobStep2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJobStep2.ForeColor = System.Drawing.Color.White;
+            this.lblJobStep2.Location = new System.Drawing.Point(32, 3);
+            this.lblJobStep2.Name = "lblJobStep2";
+            this.lblJobStep2.Size = new System.Drawing.Size(32, 14);
+            this.lblJobStep2.TabIndex = 6;
+            this.lblJobStep2.Text = "Job ";
+            // 
+            // PanelLogsContainerStep2
+            // 
+            this.PanelLogsContainerStep2.AutoScroll = true;
+            this.PanelLogsContainerStep2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelLogsContainerStep2.Controls.Add(this.lblLogStep2);
+            this.PanelLogsContainerStep2.Location = new System.Drawing.Point(3, 60);
+            this.PanelLogsContainerStep2.Name = "PanelLogsContainerStep2";
+            this.PanelLogsContainerStep2.Size = new System.Drawing.Size(365, 138);
+            this.PanelLogsContainerStep2.TabIndex = 5;
+            // 
+            // lblLogStep2
+            // 
+            this.lblLogStep2.AutoSize = true;
+            this.lblLogStep2.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLogStep2.Location = new System.Drawing.Point(6, 6);
+            this.lblLogStep2.Name = "lblLogStep2";
+            this.lblLogStep2.Size = new System.Drawing.Size(24, 13);
+            this.lblLogStep2.TabIndex = 0;
+            this.lblLogStep2.Text = "test";
+            // 
+            // BarProgressStep2
+            // 
+            this.BarProgressStep2.Location = new System.Drawing.Point(35, 20);
+            this.BarProgressStep2.Maximum = 10000;
+            this.BarProgressStep2.Name = "BarProgressStep2";
+            this.BarProgressStep2.Size = new System.Drawing.Size(277, 20);
+            this.BarProgressStep2.TabIndex = 3;
+            // 
+            // btnStep2
+            // 
+            this.btnStep2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnStep2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStep2.ForeColor = System.Drawing.Color.White;
+            this.btnStep2.Location = new System.Drawing.Point(124, 150);
+            this.btnStep2.Name = "btnStep2";
+            this.btnStep2.Size = new System.Drawing.Size(116, 30);
+            this.btnStep2.TabIndex = 3;
+            this.btnStep2.Text = "Run Update";
+            this.btnStep2.UseVisualStyleBackColor = false;
+            this.btnStep2.Click += new System.EventHandler(this.btnStep2_Click);
+            // 
+            // label4
+            // 
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(6, 25);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(367, 113);
+            this.label4.TabIndex = 2;
+            this.label4.Text = resources.GetString("label4.Text");
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(4, 5);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(224, 17);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Retry Prodeck/TCG Searches";
+            // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Black;
             this.tabPage1.Controls.Add(this.txtCardImagesURLoutput);
-            this.tabPage1.Controls.Add(this.button1);
+            this.tabPage1.Controls.Add(this.btnRefreshCardFiles);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -601,17 +602,27 @@
             this.tabPage1.TabIndex = 2;
             this.tabPage1.Text = "Step 3: Get Card Images";
             // 
-            // button1
+            // txtCardImagesURLoutput
             // 
-            this.button1.BackColor = System.Drawing.Color.Green;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(124, 150);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 30);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Refresh Files";
-            this.button1.UseVisualStyleBackColor = false;
+            this.txtCardImagesURLoutput.Location = new System.Drawing.Point(14, 190);
+            this.txtCardImagesURLoutput.Multiline = true;
+            this.txtCardImagesURLoutput.Name = "txtCardImagesURLoutput";
+            this.txtCardImagesURLoutput.Size = new System.Drawing.Size(358, 186);
+            this.txtCardImagesURLoutput.TabIndex = 6;
+            this.txtCardImagesURLoutput.Text = "No Missing Card Images";
+            // 
+            // btnRefreshCardFiles
+            // 
+            this.btnRefreshCardFiles.BackColor = System.Drawing.Color.Green;
+            this.btnRefreshCardFiles.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefreshCardFiles.ForeColor = System.Drawing.Color.White;
+            this.btnRefreshCardFiles.Location = new System.Drawing.Point(124, 150);
+            this.btnRefreshCardFiles.Name = "btnRefreshCardFiles";
+            this.btnRefreshCardFiles.Size = new System.Drawing.Size(116, 30);
+            this.btnRefreshCardFiles.TabIndex = 5;
+            this.btnRefreshCardFiles.Text = "Refresh Files";
+            this.btnRefreshCardFiles.UseVisualStyleBackColor = false;
+            this.btnRefreshCardFiles.Click += new System.EventHandler(this.btnRefreshCardFiles_Click);
             // 
             // label7
             // 
@@ -634,15 +645,6 @@
             this.label8.TabIndex = 3;
             this.label8.Text = "Get Card Images";
             // 
-            // txtCardImagesURLoutput
-            // 
-            this.txtCardImagesURLoutput.Location = new System.Drawing.Point(14, 190);
-            this.txtCardImagesURLoutput.Multiline = true;
-            this.txtCardImagesURLoutput.Name = "txtCardImagesURLoutput";
-            this.txtCardImagesURLoutput.Size = new System.Drawing.Size(358, 186);
-            this.txtCardImagesURLoutput.TabIndex = 6;
-            this.txtCardImagesURLoutput.Text = "No Missing Card Images";
-            // 
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.Black;
@@ -657,6 +659,81 @@
             this.tabPage2.Size = new System.Drawing.Size(772, 387);
             this.tabPage2.TabIndex = 3;
             this.tabPage2.Text = "Step 4: Update Prices";
+            // 
+            // PanelSetPriceContainer
+            // 
+            this.PanelSetPriceContainer.BackColor = System.Drawing.Color.Black;
+            this.PanelSetPriceContainer.Controls.Add(this.btnStep4B);
+            this.PanelSetPriceContainer.Controls.Add(this.label14);
+            this.PanelSetPriceContainer.Controls.Add(this.ListSetGroups);
+            this.PanelSetPriceContainer.Controls.Add(this.ListSets);
+            this.PanelSetPriceContainer.Location = new System.Drawing.Point(402, 2);
+            this.PanelSetPriceContainer.Name = "PanelSetPriceContainer";
+            this.PanelSetPriceContainer.Size = new System.Drawing.Size(346, 388);
+            this.PanelSetPriceContainer.TabIndex = 5;
+            // 
+            // btnStep4B
+            // 
+            this.btnStep4B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnStep4B.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStep4B.ForeColor = System.Drawing.Color.White;
+            this.btnStep4B.Location = new System.Drawing.Point(199, 79);
+            this.btnStep4B.Name = "btnStep4B";
+            this.btnStep4B.Size = new System.Drawing.Size(134, 38);
+            this.btnStep4B.TabIndex = 10;
+            this.btnStep4B.Text = "Update Set\'s Prices";
+            this.btnStep4B.UseVisualStyleBackColor = false;
+            this.btnStep4B.Click += new System.EventHandler(this.btnStep4B_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.White;
+            this.label14.Location = new System.Drawing.Point(3, 4);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(210, 17);
+            this.label14.TabIndex = 9;
+            this.label14.Text = "Select Set to update Prices:";
+            // 
+            // ListSetGroups
+            // 
+            this.ListSetGroups.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.ListSetGroups.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListSetGroups.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.ListSetGroups.FormattingEnabled = true;
+            this.ListSetGroups.ItemHeight = 15;
+            this.ListSetGroups.Items.AddRange(new object[] {
+            "Booster Packs",
+            "Sp Edition Boxes",
+            "Starter Decks",
+            "Structure Decks",
+            "Tins",
+            "Speed Duel",
+            "Duelists Packs",
+            "Duel Terminal",
+            "Other",
+            "Magazines, Books, and Comics",
+            "Tournaments",
+            "Promos",
+            "Video Game Bundles"});
+            this.ListSetGroups.Location = new System.Drawing.Point(6, 23);
+            this.ListSetGroups.Name = "ListSetGroups";
+            this.ListSetGroups.Size = new System.Drawing.Size(174, 94);
+            this.ListSetGroups.TabIndex = 7;
+            this.ListSetGroups.SelectedIndexChanged += new System.EventHandler(this.ListSetGroups_SelectedIndexChanged);
+            // 
+            // ListSets
+            // 
+            this.ListSets.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.ListSets.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ListSets.FormattingEnabled = true;
+            this.ListSets.ItemHeight = 15;
+            this.ListSets.Location = new System.Drawing.Point(6, 132);
+            this.ListSets.Name = "ListSets";
+            this.ListSets.Size = new System.Drawing.Size(327, 229);
+            this.ListSets.TabIndex = 8;
+            this.ListSets.SelectedIndexChanged += new System.EventHandler(this.ListSets_SelectedIndexChanged);
             // 
             // PanelContainerStep4
             // 
@@ -755,94 +832,6 @@
             this.label13.TabIndex = 3;
             this.label13.Text = "Update Prices";
             // 
-            // ListSets
-            // 
-            this.ListSets.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ListSets.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ListSets.FormattingEnabled = true;
-            this.ListSets.ItemHeight = 15;
-            this.ListSets.Location = new System.Drawing.Point(6, 132);
-            this.ListSets.Name = "ListSets";
-            this.ListSets.Size = new System.Drawing.Size(327, 229);
-            this.ListSets.TabIndex = 8;
-            // 
-            // ListSetGroups
-            // 
-            this.ListSetGroups.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ListSetGroups.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ListSetGroups.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.ListSetGroups.FormattingEnabled = true;
-            this.ListSetGroups.ItemHeight = 15;
-            this.ListSetGroups.Items.AddRange(new object[] {
-            "Booster Packs",
-            "Sp Edition Boxes",
-            "Starter Decks",
-            "Structure Decks",
-            "Tins",
-            "Speed Duel",
-            "Duelists Packs",
-            "Duel Terminal",
-            "Other",
-            "Magazines, Books, and Comics",
-            "Tournaments",
-            "Promos",
-            "Video Game Bundles"});
-            this.ListSetGroups.Location = new System.Drawing.Point(6, 23);
-            this.ListSetGroups.Name = "ListSetGroups";
-            this.ListSetGroups.Size = new System.Drawing.Size(174, 94);
-            this.ListSetGroups.TabIndex = 7;
-            this.ListSetGroups.SelectedIndexChanged += new System.EventHandler(this.ListSetGroups_SelectedIndexChanged);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(3, 4);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(210, 17);
-            this.label14.TabIndex = 9;
-            this.label14.Text = "Select Set to update Prices:";
-            // 
-            // PanelOverride
-            // 
-            this.PanelOverride.BackColor = System.Drawing.Color.Black;
-            this.PanelOverride.Controls.Add(this.GroupUnavailableProdeckOverride);
-            this.PanelOverride.Controls.Add(this.label5);
-            this.PanelOverride.Controls.Add(this.GroupUnavailableTCGOverride);
-            this.PanelOverride.Controls.Add(this.listMissingProdeckStep2);
-            this.PanelOverride.Controls.Add(this.label6);
-            this.PanelOverride.Controls.Add(this.listMissingTCGStep2);
-            this.PanelOverride.Location = new System.Drawing.Point(379, 1);
-            this.PanelOverride.Name = "PanelOverride";
-            this.PanelOverride.Size = new System.Drawing.Size(387, 390);
-            this.PanelOverride.TabIndex = 5;
-            // 
-            // btnStep4B
-            // 
-            this.btnStep4B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnStep4B.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStep4B.ForeColor = System.Drawing.Color.White;
-            this.btnStep4B.Location = new System.Drawing.Point(199, 79);
-            this.btnStep4B.Name = "btnStep4B";
-            this.btnStep4B.Size = new System.Drawing.Size(134, 38);
-            this.btnStep4B.TabIndex = 10;
-            this.btnStep4B.Text = "Update Set\'s Prices";
-            this.btnStep4B.UseVisualStyleBackColor = false;
-            this.btnStep4B.Click += new System.EventHandler(this.btnStep4B_Click);
-            // 
-            // PanelSetPriceContainer
-            // 
-            this.PanelSetPriceContainer.BackColor = System.Drawing.Color.Black;
-            this.PanelSetPriceContainer.Controls.Add(this.btnStep4B);
-            this.PanelSetPriceContainer.Controls.Add(this.label14);
-            this.PanelSetPriceContainer.Controls.Add(this.ListSetGroups);
-            this.PanelSetPriceContainer.Controls.Add(this.ListSets);
-            this.PanelSetPriceContainer.Location = new System.Drawing.Point(402, 2);
-            this.PanelSetPriceContainer.Name = "PanelSetPriceContainer";
-            this.PanelSetPriceContainer.Size = new System.Drawing.Size(346, 388);
-            this.PanelSetPriceContainer.TabIndex = 5;
-            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.Black;
@@ -864,6 +853,19 @@
             this.label9.Size = new System.Drawing.Size(747, 211);
             this.label9.TabIndex = 0;
             this.label9.Text = resources.GetString("label9.Text");
+            // 
+            // btnBackToMainMenu
+            // 
+            this.btnBackToMainMenu.BackColor = System.Drawing.Color.Maroon;
+            this.btnBackToMainMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBackToMainMenu.ForeColor = System.Drawing.Color.White;
+            this.btnBackToMainMenu.Location = new System.Drawing.Point(12, 8);
+            this.btnBackToMainMenu.Name = "btnBackToMainMenu";
+            this.btnBackToMainMenu.Size = new System.Drawing.Size(138, 22);
+            this.btnBackToMainMenu.TabIndex = 4;
+            this.btnBackToMainMenu.Text = "<-- Back to Main Menu";
+            this.btnBackToMainMenu.UseVisualStyleBackColor = false;
+            this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
             // 
             // DBUpdateTool
             // 
@@ -888,26 +890,26 @@
             this.PanelLogsContainerStep1.PerformLayout();
             this.TabStep2.ResumeLayout(false);
             this.TabStep2.PerformLayout();
+            this.PanelOverride.ResumeLayout(false);
+            this.PanelOverride.PerformLayout();
+            this.GroupUnavailableProdeckOverride.ResumeLayout(false);
+            this.GroupUnavailableProdeckOverride.PerformLayout();
+            this.GroupUnavailableTCGOverride.ResumeLayout(false);
+            this.GroupUnavailableTCGOverride.PerformLayout();
             this.PanelContainerStep2.ResumeLayout(false);
             this.PanelContainerStep2.PerformLayout();
             this.PanelLogsContainerStep2.ResumeLayout(false);
             this.PanelLogsContainerStep2.PerformLayout();
-            this.GroupUnavailableTCGOverride.ResumeLayout(false);
-            this.GroupUnavailableTCGOverride.PerformLayout();
-            this.GroupUnavailableProdeckOverride.ResumeLayout(false);
-            this.GroupUnavailableProdeckOverride.PerformLayout();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.PanelSetPriceContainer.ResumeLayout(false);
+            this.PanelSetPriceContainer.PerformLayout();
             this.PanelContainerStep4.ResumeLayout(false);
             this.PanelContainerStep4.PerformLayout();
             this.PanelLogsContainerStep4.ResumeLayout(false);
             this.PanelLogsContainerStep4.PerformLayout();
-            this.PanelOverride.ResumeLayout(false);
-            this.PanelOverride.PerformLayout();
-            this.PanelSetPriceContainer.ResumeLayout(false);
-            this.PanelSetPriceContainer.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -958,7 +960,7 @@
         private System.Windows.Forms.TextBox txtProdeckURL3;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TextBox txtCardImagesURLoutput;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRefreshCardFiles;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabPage tabPage2;

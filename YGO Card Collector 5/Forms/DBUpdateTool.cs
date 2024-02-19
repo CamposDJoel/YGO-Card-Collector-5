@@ -109,6 +109,7 @@ namespace YGO_Card_Collector_5
         #region Step 1 Events/Methods
         private void btnStep1_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             btnBackToMainMenu.Visible = false;
             lblActiveActionStep1.Text = "";
             btnStep1.Visible = false;
@@ -545,6 +546,7 @@ namespace YGO_Card_Collector_5
             LogIt($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
             Driver.WriteLogsFile();
             Driver.CloseDriver();
+            SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
             #endregion
 
             void FindNewSetsFromExtractedList(List<string> extractedList, List<SetInfo> DBGorupList)
@@ -645,6 +647,7 @@ namespace YGO_Card_Collector_5
         #region Step 2 Events/Methods
         private void btnStep2_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             btnBackToMainMenu.Visible = false;
             PanelOverride.Visible = false;
             lblActiveActionStep2.Text = "";
@@ -849,6 +852,7 @@ namespace YGO_Card_Collector_5
             LogIt($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
             Driver.WriteLogsFile();
             Driver.CloseDriver();
+            SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
             #endregion
 
             void StartProdeckURLSearch(string CardName)
@@ -875,6 +879,7 @@ namespace YGO_Card_Collector_5
         #region Step 2 Override Events
         private void listMissingProdeckStep2_SelectedIndexChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             int index = listMissingProdeckStep2.SelectedIndex;
             string cardname = listMissingProdeckStep2.Text;
 
@@ -913,6 +918,7 @@ namespace YGO_Card_Collector_5
         }
         private void listMissingTCGStep2_SelectedIndexChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
             int index = listMissingTCGStep2.SelectedIndex;
             SetCard ThisSetCard = SetCardsWithMissingTCG[index];
 
@@ -932,6 +938,7 @@ namespace YGO_Card_Collector_5
         }
         private void checkPasscodeEnableOverride3_CheckedChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             if (checkPasscodeEnableOverride3.Checked)
             {
                 txtPasscode3.Enabled = true;
@@ -954,6 +961,7 @@ namespace YGO_Card_Collector_5
             {
                 //invalid value
                 txtPasscode3.Text = "Invalid ID input. Must be numeric and not -1";
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
             }
             else
             {
@@ -971,16 +979,19 @@ namespace YGO_Card_Collector_5
                     checkProdeckEnableOverride3.Visible = true;
                     //Update DB file
                     Database.SaveDatabaseInJSON();
+                    SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
                     ReloadUI();
                 }
                 catch (Exception)
                 {
                     txtPasscode3.Text = "Invalid ID input. Must be numeric and not -1";
+                    SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
                 }
             }
         }
         private void checkProdeckEnableOverride3_CheckedChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             if (checkProdeckEnableOverride3.Checked)
             {
                 txtProdeckURL3.Enabled = true;
@@ -1008,6 +1019,7 @@ namespace YGO_Card_Collector_5
                 checkProdeckEnableOverride3.Checked = false;
                 //Remove this card from the list now!!
                 Database.CardsWithUnavailableProdeckURL.Remove(ThisMasterCard.Name);
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
                 //Reload the UI
                 ReloadUI();
                 //Update DB file
@@ -1016,10 +1028,12 @@ namespace YGO_Card_Collector_5
             else
             {
                 txtProdeckURL3.Text = "Not a Prodeck URL.";
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
             }
         }
         private void checkTCGEnableOverride3_CheckedChanged(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             if (checkTCGEnableOverride3.Checked)
             {
                 txtTCGURL3.Enabled = true;
@@ -1045,7 +1059,7 @@ namespace YGO_Card_Collector_5
                 //Valid ulr, proceed
                 ThisSetCard.TCGPlayerURL = input;
                 checkTCGEnableOverride3.Checked = false;
-
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
                 //reload stats
                 ReloadUI();
                 //Update DB file
@@ -1054,13 +1068,23 @@ namespace YGO_Card_Collector_5
             else
             {
                 txtTCGURL3.Text = "Not a TCG Player URL.";
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
             }
+        }
+        #endregion
+
+        #region Step 3 Events
+        private void btnRefreshCardFiles_Click(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+            ReloadUI();
         }
         #endregion
 
         #region Step 4 Events/Methods
         private void btnStep4_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             btnBackToMainMenu.Visible = false;           
             PanelSetPriceContainer.Visible = false;
             lblActiveActionStep4.Text = "";
@@ -1156,6 +1180,7 @@ namespace YGO_Card_Collector_5
             LogIt($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
             Driver.WriteLogsFile();
             Driver.CloseDriver();
+            SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
             #endregion
 
             void StartPriceUpdate(string CardName)
@@ -1171,55 +1196,9 @@ namespace YGO_Card_Collector_5
                 lblLogStep4.Text = ">>" + LogSB.ToString();
             }
         }
-        #endregion
-
-        #region Other Events
-        private void btnBackToMainMenu_Click(object sender, EventArgs e)
-        {
-            Dispose();
-            _MainMenuForm.Show();
-        }
-        protected override void OnFormClosing(FormClosingEventArgs e)
-        {
-            Application.Exit();
-        }
-        #endregion
-
-        private void ListSetGroups_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            int indexSelected = ListSetGroups.SelectedIndex;
-
-            List<SetInfo> SetList = new List<SetInfo>();
-            switch (indexSelected)
-            {
-                case 0: SetList = Database.BoosterPacks; break;
-                case 1: SetList = Database.SpEditionBoxes; break;
-                case 2: SetList = Database.StarterDecks; break;
-                case 3: SetList = Database.StructureDecks; break;
-                case 4: SetList = Database.Tins; break;
-                case 5: SetList = Database.SpeedDuel; break;
-                case 6: SetList = Database.DuelistPacks; break;
-                case 7: SetList = Database.DuelTerminal; break;
-                case 8: SetList = Database.Others; break;
-                case 9: SetList = Database.MBC; break;
-                case 10: SetList = Database.Tournaments; break;
-                case 11: SetList = Database.Promos; break;
-                case 12: SetList = Database.VideoGames; break;
-            }
-
-            //Save a ref of this list for the SelectedIndexChanged event of the ListSets
-            CurrentSetInfoListSelected = SetList;
-
-            ListSets.Items.Clear();
-            foreach (SetInfo set in SetList)
-            {
-                ListSets.Items.Add(set.GetInfoLine());
-            }
-            ListSets.SetSelected(0, true);
-        }
-
         private void btnStep4B_Click(object sender, EventArgs e)
         {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
             btnBackToMainMenu.Visible = false;
             PanelSetPriceContainer.Visible = false;
             lblActiveActionStep4.Text = "";
@@ -1309,6 +1288,7 @@ namespace YGO_Card_Collector_5
             LogIt($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
             Driver.WriteLogsFile();
             Driver.CloseDriver();
+            SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
             #endregion
 
             void StartPriceUpdate(string CardName)
@@ -1324,5 +1304,56 @@ namespace YGO_Card_Collector_5
                 lblLogStep4.Text = ">>" + LogSB.ToString();
             }
         }
+        private void ListSetGroups_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
+            int indexSelected = ListSetGroups.SelectedIndex;
+
+            List<SetInfo> SetList = new List<SetInfo>();
+            switch (indexSelected)
+            {
+                case 0: SetList = Database.BoosterPacks; break;
+                case 1: SetList = Database.SpEditionBoxes; break;
+                case 2: SetList = Database.StarterDecks; break;
+                case 3: SetList = Database.StructureDecks; break;
+                case 4: SetList = Database.Tins; break;
+                case 5: SetList = Database.SpeedDuel; break;
+                case 6: SetList = Database.DuelistPacks; break;
+                case 7: SetList = Database.DuelTerminal; break;
+                case 8: SetList = Database.Others; break;
+                case 9: SetList = Database.MBC; break;
+                case 10: SetList = Database.Tournaments; break;
+                case 11: SetList = Database.Promos; break;
+                case 12: SetList = Database.VideoGames; break;
+            }
+
+            //Save a ref of this list for the SelectedIndexChanged event of the ListSets
+            CurrentSetInfoListSelected = SetList;
+
+            ListSets.Items.Clear();
+            foreach (SetInfo set in SetList)
+            {
+                ListSets.Items.Add(set.GetInfoLine());
+            }
+            ListSets.SetSelected(0, true);
+        }
+        private void ListSets_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
+        }
+        #endregion
+
+        #region Other Events
+        private void btnBackToMainMenu_Click(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+            Dispose();
+            _MainMenuForm.Show();
+        }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+        #endregion      
     }
 }
