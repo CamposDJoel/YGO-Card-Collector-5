@@ -1,6 +1,6 @@
 6
 SetSorting|True
-TestMode|True
+TestMode|False
 HeadlessMode|True
 Theme|3
 Music|True
