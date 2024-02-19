@@ -579,7 +579,7 @@ namespace YGO_Card_Collector_5
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
             Dispose();
-            _MainMenuForm.Show();
+            _MainMenuForm.ReturnToForm();
         }
         private void btnStats_Click(object sender, EventArgs e)
         {

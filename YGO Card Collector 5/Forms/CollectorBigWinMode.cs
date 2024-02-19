@@ -15,6 +15,8 @@ namespace YGO_Card_Collector_5
         #region Constructors
         public CollectorBigWinMode(FormLauncher mainMenuForm)
         {
+            SoundServer.PlayBackgroundMusic(Song.DeckBuildMenu, true);
+
             _MainMenuForm = mainMenuForm;
             InitializeComponent();
             InitializeCardViewImages();
@@ -884,7 +886,7 @@ namespace YGO_Card_Collector_5
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
             Dispose();
-            _MainMenuForm.Show();
+            _MainMenuForm.ReturnToForm();
         }
         private void btnStats_Click(object sender, EventArgs e)
         {

@@ -1553,6 +1553,7 @@
             this.listSetlist.Name = "listSetlist";
             this.listSetlist.Size = new System.Drawing.Size(408, 158);
             this.listSetlist.TabIndex = 281;
+            this.listSetlist.SelectedIndexChanged += new System.EventHandler(this.listSetlist_SelectedIndexChanged);
             // 
             // listSetGroups
             // 
