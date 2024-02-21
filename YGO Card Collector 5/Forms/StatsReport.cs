@@ -409,11 +409,11 @@ namespace YGO_Card_Collector_5
                 if (FullSetOwned) { mainCardlist3.ForeColor = Color.Aqua; }
 
                 double percentage1 = 0;
-                if (mainListObtained > 0) { percentage1 = (mainListObtained / mainListCardTotal) * 100; }
+                if (mainListObtained > 0) { percentage1 = ((double)mainListObtained / (double)mainListCardTotal) * 100; }
 
                 Label percentagelabel = new Label();
                 ThisPage.Controls.Add(percentagelabel);
-                percentagelabel.Text = percentage1 + "%";
+                percentagelabel.Text = (int)percentage1 + "%";
                 percentagelabel.ForeColor = Color.White;
                 percentagelabel.BorderStyle = BorderStyle.FixedSingle;
                 percentagelabel.AutoSize = false;
