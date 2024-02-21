@@ -39,6 +39,7 @@
             this.RadioDefaultOption = new System.Windows.Forms.RadioButton();
             this.lblDatabaseUpdateOption = new System.Windows.Forms.Label();
             this.btnLoadDB = new System.Windows.Forms.Button();
+            this.btnLoadDB2019 = new System.Windows.Forms.Button();
             this.GroupWinMode.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -180,6 +181,19 @@
             this.btnLoadDB.UseVisualStyleBackColor = false;
             this.btnLoadDB.Click += new System.EventHandler(this.btnLoadDB_Click);
             // 
+            // btnLoadDB2019
+            // 
+            this.btnLoadDB2019.BackColor = System.Drawing.Color.Indigo;
+            this.btnLoadDB2019.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoadDB2019.ForeColor = System.Drawing.Color.White;
+            this.btnLoadDB2019.Location = new System.Drawing.Point(410, 179);
+            this.btnLoadDB2019.Name = "btnLoadDB2019";
+            this.btnLoadDB2019.Size = new System.Drawing.Size(196, 93);
+            this.btnLoadDB2019.TabIndex = 12;
+            this.btnLoadDB2019.Text = "Load 2019 Data";
+            this.btnLoadDB2019.UseVisualStyleBackColor = false;
+            this.btnLoadDB2019.Click += new System.EventHandler(this.btnLoadDB2019_Click);
+            // 
             // FormLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -187,6 +201,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 457);
+            this.Controls.Add(this.btnLoadDB2019);
             this.Controls.Add(this.btnLoadDB);
             this.Controls.Add(this.lblDatabaseUpdateOption);
             this.Controls.Add(this.GroupWinMode);
@@ -222,6 +237,7 @@
         private System.Windows.Forms.RadioButton RadioDefaultOption;
         private System.Windows.Forms.Label lblDatabaseUpdateOption;
         private System.Windows.Forms.Button btnLoadDB;
+        private System.Windows.Forms.Button btnLoadDB2019;
     }
 }
 

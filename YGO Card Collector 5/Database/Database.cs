@@ -37,11 +37,12 @@ namespace YGO_Card_Collector_5
         #endregion
 
         #region Public Methods
-        public static bool LoadDB()
+        public static bool LoadDB(string DBType)
         {
             if(!Initialized)
             {
                 string jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\CardDB.json";
+                if (DBType == "2019") { jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\2019CardDB.json"; }
                 string rawdata = File.ReadAllText(jsonFilePath);
 
                 //Attempt to deserialize the JSON. If it fail simply show error.

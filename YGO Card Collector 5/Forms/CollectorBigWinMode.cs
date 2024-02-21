@@ -191,115 +191,125 @@ namespace YGO_Card_Collector_5
             string CardName = "NONE";
             if (_MasterCardViewMode)
             {
-                _CurrentMasterCardInView = _CurrentMasterCardList[index];
-                CardID = _CurrentMasterCardInView.ID.ToString();
-                CardName = _CurrentMasterCardInView.Name;
-            }
-            else
-            {
-                _CurrentSetCardInView = _CurrentSetCardList[index];
-                CardID = _CurrentSetCardInView.GetCardID();
-                CardName = _CurrentSetCardInView.GetCardName();
-            }
-
-            //Clear the current Main Image and replace with this new card in view
-            ImageServer.SetImage(PicImage, ImageType.CardImage, CardID);
-
-            //Show the Name in the UI
-            lblCardInfo_Name.Text = CardName;
-
-            //Initialize this card's tags            
-            if (_MasterCardViewMode)
-            {
-                InitializeTags(_CurrentMasterCardInView);
-            }
-            else
-            {
-                MasterCard ThisSetCardsMasterCard = Database.MasterCardByCode[_CurrentSetCardInView.Code];
-                InitializeTags(ThisSetCardsMasterCard);
-            }
-
-
-            //Show the rariry and prices if in set view
-            if (_MasterCardViewMode)
-            {
-                lblRariryLabel.Visible = false;
-                lblRarity.Visible = false;
-                lblFloorPricelabel.Visible = false;
-                lblFloorPrice.Visible = false;
-                lblMarketPricelabel.Visible = false;
-                lblMarketPrice.Visible = false;
-                lblMedianPricelabel.Visible = false;
-                lblMedianPrice.Visible = false;
-                lblCodelabel.Visible = false;
-                lblCode.Visible = false;
-            }
-            else
-            {
-                //Rarity Label
-                lblRariryLabel.Visible = true;
-                lblRarity.Visible = true;
-                lblRarity.Text = _CurrentSetCardInView.Rarity;
-                lblRarity.ForeColor = Tools.GetRarityColorForLabel(_CurrentSetCardInView.Rarity);
-                //Floor Price Label
-                lblFloorPricelabel.Visible = true;
-                lblFloorPrice.Visible = true;
-                lblFloorPrice.Text = _CurrentSetCardInView.FloorPrice;
-                lblFloorPrice.ForeColor = Tools.GetPriceColorForLabel(_CurrentSetCardInView.GetDoubleFloorPrice());
-                //Market Price Label
-                lblMarketPricelabel.Visible = true;
-                lblMarketPrice.Visible = true;
-                lblMarketPrice.Text = _CurrentSetCardInView.MarketPrice;
-                lblMarketPrice.ForeColor = Tools.GetPriceColorForLabel(_CurrentSetCardInView.GetDoubleMarketPrice());
-                //Median Price Label
-                lblMedianPricelabel.Visible = true;
-                lblMedianPrice.Visible = true;
-                lblMedianPrice.Text = _CurrentSetCardInView.MediamPrice;
-                lblMedianPrice.ForeColor = Tools.GetPriceColorForLabel(_CurrentSetCardInView.GetDoubleMedianPrice());
-                //Set Code Label
-                lblCodelabel.Visible = true;
-                lblCode.Visible = true;
-                lblCode.Text = _CurrentSetCardInView.Code;
-            }
-
-            //Show the PRODECK and TCG Links buttons if availablelblProdeckLink.Visible = true;
-            lblProdeckLink.Visible = false;
-            lblTCGLink.Visible = false;
-            if (_MasterCardViewMode)
-            {
-                if (_CurrentMasterCardInView.HasProDeckURL())
+                if (_CurrentMasterCardList.Count > 0)
                 {
-                    lblProdeckLink.Visible = true;
+                    _CurrentMasterCardInView = _CurrentMasterCardList[index];
+                    CardID = _CurrentMasterCardInView.ID.ToString();
+                    CardName = _CurrentMasterCardInView.Name;
                 }
-                lblTCGLink.Visible = true;
+                
             }
             else
             {
-                if (_CurrentSetCardInView.MasterCardHasProdeckURL())
+                if (_CurrentSetCardList.Count > 0)
                 {
-                    lblProdeckLink.Visible = true;
+                    _CurrentSetCardInView = _CurrentSetCardList[index];
+                    CardID = _CurrentSetCardInView.GetCardID();
+                    CardName = _CurrentSetCardInView.GetCardName();
+                }                   
+            }
+
+            if (CardName != "NONE")
+            {
+                //Clear the current Main Image and replace with this new card in view
+                ImageServer.SetImage(PicImage, ImageType.CardImage, CardID);
+
+                //Show the Name in the UI
+                lblCardInfo_Name.Text = CardName;
+
+                //Initialize this card's tags            
+                if (_MasterCardViewMode)
+                {
+                    InitializeTags(_CurrentMasterCardInView);
+                }
+                else
+                {
+                    MasterCard ThisSetCardsMasterCard = Database.MasterCardByCode[_CurrentSetCardInView.Code];
+                    InitializeTags(ThisSetCardsMasterCard);
                 }
 
-                if (_CurrentSetCardInView.HasTCGURL())
+
+                //Show the rariry and prices if in set view
+                if (_MasterCardViewMode)
                 {
+                    lblRariryLabel.Visible = false;
+                    lblRarity.Visible = false;
+                    lblFloorPricelabel.Visible = false;
+                    lblFloorPrice.Visible = false;
+                    lblMarketPricelabel.Visible = false;
+                    lblMarketPrice.Visible = false;
+                    lblMedianPricelabel.Visible = false;
+                    lblMedianPrice.Visible = false;
+                    lblCodelabel.Visible = false;
+                    lblCode.Visible = false;
+                }
+                else
+                {
+                    //Rarity Label
+                    lblRariryLabel.Visible = true;
+                    lblRarity.Visible = true;
+                    lblRarity.Text = _CurrentSetCardInView.Rarity;
+                    lblRarity.ForeColor = Tools.GetRarityColorForLabel(_CurrentSetCardInView.Rarity);
+                    //Floor Price Label
+                    lblFloorPricelabel.Visible = true;
+                    lblFloorPrice.Visible = true;
+                    lblFloorPrice.Text = _CurrentSetCardInView.FloorPrice;
+                    lblFloorPrice.ForeColor = Tools.GetPriceColorForLabel(_CurrentSetCardInView.GetDoubleFloorPrice());
+                    //Market Price Label
+                    lblMarketPricelabel.Visible = true;
+                    lblMarketPrice.Visible = true;
+                    lblMarketPrice.Text = _CurrentSetCardInView.MarketPrice;
+                    lblMarketPrice.ForeColor = Tools.GetPriceColorForLabel(_CurrentSetCardInView.GetDoubleMarketPrice());
+                    //Median Price Label
+                    lblMedianPricelabel.Visible = true;
+                    lblMedianPrice.Visible = true;
+                    lblMedianPrice.Text = _CurrentSetCardInView.MediamPrice;
+                    lblMedianPrice.ForeColor = Tools.GetPriceColorForLabel(_CurrentSetCardInView.GetDoubleMedianPrice());
+                    //Set Code Label
+                    lblCodelabel.Visible = true;
+                    lblCode.Visible = true;
+                    lblCode.Text = _CurrentSetCardInView.Code;
+                }
+
+                //Show the PRODECK and TCG Links buttons if availablelblProdeckLink.Visible = true;
+                lblProdeckLink.Visible = false;
+                lblTCGLink.Visible = false;
+                if (_MasterCardViewMode)
+                {
+                    if (_CurrentMasterCardInView.HasProDeckURL())
+                    {
+                        lblProdeckLink.Visible = true;
+                    }
                     lblTCGLink.Visible = true;
                 }
-            }
+                else
+                {
+                    if (_CurrentSetCardInView.MasterCardHasProdeckURL())
+                    {
+                        lblProdeckLink.Visible = true;
+                    }
 
-            bool[] tags;
-            //Show the tag symbols
-            if (_MasterCardViewMode)
-            {
-                tags = _CurrentMasterCardInView.GetTags();
-            }
-            else
-            {
-                tags = _CurrentSetCardInView.GetTags();
-            }
-            ImageServer.SetImage(PicTagStar, ImageType.TagIcon, TagIcon.Star.ToString() + tags[(int)TagIcon.Star]);
-            ImageServer.SetImage(PicTagSquare, ImageType.TagIcon, TagIcon.Square.ToString() + tags[(int)TagIcon.Square]);
-            ImageServer.SetImage(PicTagTriangle, ImageType.TagIcon, TagIcon.Triangle.ToString() + tags[(int)TagIcon.Triangle]);
-            ImageServer.SetImage(PicTagCircle, ImageType.TagIcon, TagIcon.Circle.ToString() + tags[(int)TagIcon.Circle]);
+                    if (_CurrentSetCardInView.HasTCGURL())
+                    {
+                        lblTCGLink.Visible = true;
+                    }
+                }
+
+                bool[] tags;
+                //Show the tag symbols
+                if (_MasterCardViewMode)
+                {
+                    tags = _CurrentMasterCardInView.GetTags();
+                }
+                else
+                {
+                    tags = _CurrentSetCardInView.GetTags();
+                }
+                ImageServer.SetImage(PicTagStar, ImageType.TagIcon, TagIcon.Star.ToString() + tags[(int)TagIcon.Star]);
+                ImageServer.SetImage(PicTagSquare, ImageType.TagIcon, TagIcon.Square.ToString() + tags[(int)TagIcon.Square]);
+                ImageServer.SetImage(PicTagTriangle, ImageType.TagIcon, TagIcon.Triangle.ToString() + tags[(int)TagIcon.Triangle]);
+                ImageServer.SetImage(PicTagCircle, ImageType.TagIcon, TagIcon.Circle.ToString() + tags[(int)TagIcon.Circle]);
+            }               
         }
         private void InitializeSelectedCardVariant(int PictureBoxTag)
         {

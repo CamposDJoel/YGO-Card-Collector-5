@@ -3,6 +3,7 @@
 //Launcher Form Class
 
 using System;
+using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -133,15 +134,18 @@ namespace YGO_Card_Collector_5
         }
         #endregion
 
-        private void btnLoadDB_Click(object sender, EventArgs e)
+        #region Load DB Event Listeners
+        private void LoadDB(string DBType)
         {
             btnLoadDB.Enabled = false;
-            bool Success = Database.LoadDB();
+            btnLoadDB2019.Enabled = false;
+            bool Success = Database.LoadDB(DBType);
             if (Success)
             {
                 SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
                 Tools.WaitNSeconds(1000);
                 btnLoadDB.Visible = false;
+                btnLoadDB2019.Visible = false;
                 lblLaunchAppOption.Visible = true;
                 lblSettingsOption.Visible = true;
                 lblDatabaseUpdateOption.Visible = true;
@@ -151,9 +155,19 @@ namespace YGO_Card_Collector_5
             else
             {
                 btnLoadDB.Enabled = true;
+                btnLoadDB2019.Enabled = true;
                 SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
                 lblJsonStatus.Visible = true;
             }
         }
+        private void btnLoadDB_Click(object sender, EventArgs e)
+        {
+            LoadDB("Master");
+        }
+        private void btnLoadDB2019_Click(object sender, EventArgs e)
+        {
+            LoadDB("2019");
+        }
+        #endregion
     }
 }
