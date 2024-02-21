@@ -340,7 +340,7 @@ namespace YGO_Card_Collector_5
 
                     //If the code for this set has an empty code, hide it,
                     //and dont move the Y_Location so the next tag takes it location
-                    if (ActiveSetCode == "")
+                    if (ActiveSetCode == "" || (ActiveSetName == "INVASION OF CHAOS" && ActiveSetCode.StartsWith("IOC-EN")))
                     {
                         TagContainer.Visible = false;
                     }

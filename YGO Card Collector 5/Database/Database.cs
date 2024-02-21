@@ -76,7 +76,7 @@ namespace YGO_Card_Collector_5
                     foreach (SetCard thisSetCard in ThisMasterCard.SetCards)
                     {
                         //if this setCard in has no CODE, dont do shit with it
-                        if (thisSetCard.Code == "")
+                        if (thisSetCard.Code == "" || (thisSetCard.Name == "INVASION OF CHAOS" && thisSetCard.Code.StartsWith("IOC-EN")))
                         {
                             //JUST IGNORE IT!
                         }
