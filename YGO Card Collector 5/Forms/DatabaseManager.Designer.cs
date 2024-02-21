@@ -3469,9 +3469,10 @@
             // btnBackToMainMenu
             // 
             this.btnBackToMainMenu.BackColor = System.Drawing.Color.Maroon;
+            this.btnBackToMainMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackToMainMenu.Location = new System.Drawing.Point(4, 3);
             this.btnBackToMainMenu.Name = "btnBackToMainMenu";
-            this.btnBackToMainMenu.Size = new System.Drawing.Size(125, 22);
+            this.btnBackToMainMenu.Size = new System.Drawing.Size(135, 22);
             this.btnBackToMainMenu.TabIndex = 3;
             this.btnBackToMainMenu.Text = "<-- Back to Main Menu";
             this.btnBackToMainMenu.UseVisualStyleBackColor = false;

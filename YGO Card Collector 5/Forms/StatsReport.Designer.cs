@@ -977,10 +977,11 @@
             // btnBackToCollector
             // 
             this.btnBackToCollector.BackColor = System.Drawing.Color.Maroon;
+            this.btnBackToCollector.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackToCollector.ForeColor = System.Drawing.Color.White;
             this.btnBackToCollector.Location = new System.Drawing.Point(3, 3);
             this.btnBackToCollector.Name = "btnBackToCollector";
-            this.btnBackToCollector.Size = new System.Drawing.Size(125, 20);
+            this.btnBackToCollector.Size = new System.Drawing.Size(136, 20);
             this.btnBackToCollector.TabIndex = 263;
             this.btnBackToCollector.Text = "<-- Back to Collector";
             this.btnBackToCollector.UseVisualStyleBackColor = false;

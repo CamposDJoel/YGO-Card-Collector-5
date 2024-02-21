@@ -21,6 +21,7 @@ namespace YGO_Card_Collector_5
             InitializeComponent();
             InitializeCardViewImages();
             InitializeCardViewImagesVariants();
+            InitializeCustomTagNames();
             LoadMasterCardList(CardGroup.AllCards);
             listSetGroups.SetSelected(0, true);
 
@@ -138,6 +139,13 @@ namespace YGO_Card_Collector_5
                     }
                     Y_Location += 60;
                 }
+            }
+            void InitializeCustomTagNames()
+            {
+                lblTagStar.Text = SettingsData.StarTagName;
+                lblTagSquare.Text = SettingsData.SquareTagName;
+                lblTagTriangle.Text = SettingsData.TriangleTagName;
+                lblTagCircle.Text = SettingsData.CircleTagName;
             }
         }
         #endregion
@@ -276,6 +284,21 @@ namespace YGO_Card_Collector_5
                     lblTCGLink.Visible = true;
                 }
             }
+
+            bool[] tags;
+            //Show the tag symbols
+            if (_MasterCardViewMode)
+            {
+                tags = _CurrentMasterCardInView.GetTags();
+            }
+            else
+            {
+                tags = _CurrentSetCardInView.GetTags();
+            }
+            ImageServer.SetImage(PicTagStar, ImageType.TagIcon, TagIcon.Star.ToString() + tags[(int)TagIcon.Star]);
+            ImageServer.SetImage(PicTagSquare, ImageType.TagIcon, TagIcon.Square.ToString() + tags[(int)TagIcon.Square]);
+            ImageServer.SetImage(PicTagTriangle, ImageType.TagIcon, TagIcon.Triangle.ToString() + tags[(int)TagIcon.Triangle]);
+            ImageServer.SetImage(PicTagCircle, ImageType.TagIcon, TagIcon.Circle.ToString() + tags[(int)TagIcon.Circle]);
         }
         private void InitializeSelectedCardVariant(int PictureBoxTag)
         {
@@ -1649,6 +1672,92 @@ namespace YGO_Card_Collector_5
             }
             else
                 return base.ProcessCmdKey(ref msg, keyData);
+        }
+        #endregion
+
+        #region Event Listeners Tag Markers
+        private void MarkTag(PictureBox Box, TagIcon thisTag)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+            //Show the tag symbols
+            if (_MasterCardViewMode)
+            {
+                bool tagON = _CurrentMasterCardInView.GetTag(thisTag);
+                if (tagON)
+                {
+                    _CurrentMasterCardInView.SetTag(thisTag, false);
+                }
+                else
+                {
+                    _CurrentMasterCardInView.SetTag(thisTag, true);
+                }
+                ImageServer.SetImage(Box, ImageType.TagIcon, thisTag.ToString() + !tagON);
+            }
+            else
+            {
+                bool tagON = _CurrentSetCardInView.GetTag(thisTag);
+                if (tagON)
+                {
+                    _CurrentSetCardInView.SetTag(thisTag, false);
+                }
+                else
+                {
+                    _CurrentSetCardInView.SetTag(thisTag, true);
+                }
+                ImageServer.SetImage(Box, ImageType.TagIcon, thisTag.ToString() + !tagON);
+            }
+        }
+        private void PicTagStar_Click(object sender, EventArgs e)
+        {
+            MarkTag(PicTagStar, TagIcon.Star);
+        }
+        private void PicTagSquare_Click(object sender, EventArgs e)
+        {
+            MarkTag(PicTagSquare, TagIcon.Square);
+        }
+        private void PicTagTriangle_Click(object sender, EventArgs e)
+        {
+            MarkTag(PicTagTriangle, TagIcon.Triangle);
+        }
+        private void PicTagCircle_Click(object sender, EventArgs e)
+        {
+            MarkTag(PicTagCircle, TagIcon.Circle);
+        }
+
+
+        #endregion
+
+        #region Event Listeners Tag Filtering
+        private void FilterByTag(TagIcon thisTag)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click2);
+            _CurrentMasterCardList = Database.GetCardListWithTag(thisTag);
+
+            //Set Flags
+            _MasterCardViewMode = true;
+            _CurrentCardPage = 1;
+            btnClear.Visible = true;
+
+            //Update the Card Viewer Card Page/Card Count header
+            GroupCardView.Text = string.Format("PAGE: {0}  -  TAG: \"{1}\"  -  Total Cards: {2}", _CurrentCardPage, thisTag.ToString(), _CurrentMasterCardList.Count);
+
+            LoadPage();
+        }
+        private void btnTagStar_Click(object sender, EventArgs e)
+        {
+            FilterByTag(TagIcon.Star);
+        }
+        private void btnTagSquare_Click(object sender, EventArgs e)
+        {
+            FilterByTag(TagIcon.Square);
+        }
+        private void btnTagTriangle_Click(object sender, EventArgs e)
+        {
+            FilterByTag(TagIcon.Triangle);
+        }
+        private void btnTagCircle_Click(object sender, EventArgs e)
+        {
+            FilterByTag(TagIcon.Circle);
         }
         #endregion
     }
