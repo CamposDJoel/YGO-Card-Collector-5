@@ -1,1 +1,928 @@
-0
+927
+LOB-000|Secret Rare|Tri-Horned Dragon|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-001|Ultra Rare|Blue-Eyes White Dragon|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-002|Common|Hitotsu-Me Giant|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-003|Super Rare|Flame Swordsman|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-004|Common|Skull Servant|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-005|Ultra Rare|Dark Magician|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-006|Ultra Rare|Gaia The Fierce Knight|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-007|Super Rare|Celtic Guardian|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-008|Common|Basic Insect|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-009|Common|Mammoth Graveyard|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-010|Common|Silver Fang|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-011|Common|Dark Gray|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-012|Common|Trial of Nightmare|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-013|Common|Nemuriko|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-014|Common|The 13th Grave|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-015|Rare|Charubin the Fire Knight|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-016|Common|Flame Manipulator|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-017|Common|Monster Egg|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-018|Common|Firegrass|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-019|Rare|Darkfire Dragon|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-020|Common|Dark King of the Abyss|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-021|Common|Fiend Reflection #2|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-022|Rare|Fusionist|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-023|Common|Turtle Tiger|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-024|Common|Petit Dragon|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-025|Common|Petit Angel|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-026|Common|Hinotama Soul|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-027|Rare|Aqua Madoor|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-028|Common|Kagemusha of the Blue Flame|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-029|Rare|Flame Ghost|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-030|Common|Two-Mouth Darkruler|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-031|Common|Dissolverock|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-032|Common|Root Water|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-033|Common|The Furious Sea King|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-034|Common|Green Phantom King|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-035|Common|Ray & Temperature|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-036|Common|King Fog|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-037|Common|Mystical Sheep #2|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-038|Common|Masaki the Legendary Swordsman|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-039|Common|Kurama|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-040|Common|Legendary Sword|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-041|Common|Beast Fangs|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-042|Common|Violet Crystal|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-043|Common|Book of Secret Arts|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-044|Common|Power of Kaishin|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-045|Rare|Dragon Capture Jar|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-046|Common|Forest|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-047|Common|Wasteland|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-048|Common|Mountain|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-049|Common|Sogen|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-050|Common|Umi|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-051|Common|Yami|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-052|Super Rare|Dark Hole|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-053|Super Rare|Raigeki|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-054|Common|Red Medicine|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-055|Common|Sparks|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-056|Common|Hinotama|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-057|Rare|Fissure|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-058|Super Rare|Trap Hole|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-059|Super Rare|Polymerization|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-060|Common|Remove Trap|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-061|Rare|Two-Pronged Attack|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-062|Super Rare|Mystical Elf|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-063|Common|Tyhone|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-064|Common|Beaver Warrior|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-065|Rare|Gravedigger Ghoul|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-066|Super Rare|Curse of Dragon|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-067|Rare|Karbonala Warrior|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-068|Rare|Giant Soldier of Stone|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-069|Common|Uraby|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-070|Ultra Rare|Red-Eyes Black Dragon|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-071|Rare|Reaper of the Cards|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-072|Common|Witty Phantom|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-073|Common|Larvas|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-074|Common|Hard Armor|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-075|Common|Man Eater|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-076|Common|M-Warrior #1|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-077|Common|M-Warrior #2|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-078|Rare|Spirit of the Harp|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-079|Common|Armaill|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-080|Common|Terra the Terrible|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-081|Common|Frenzied Panda|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-082|Common|Kumootoko|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-083|Common|Meda Bat|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-084|Common|Enchanting Mermaid|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-085|Common|Fireyarou|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-086|Rare|Dragoness the Wicked Knight|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-087|Common|One-Eyed Shield Dragon|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-088|Common|Dark Energy|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-089|Common|Laser Cannon Armor|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-090|Common|Vile Germs|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-091|Common|Silver Bow and Arrow|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-092|Common|Dragon Treasure|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-093|Common|Electro-Whip|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-094|Common|Mystical Moon|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-095|Rare|Stop Defense|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-096|Common|Machine Conversion Factory|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-097|Common|Raise Body Heat|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-098|Common|Follow Wind|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-099|Rare|Goblin's Secret Remedy|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-100|Rare|Final Flame|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-101|Super Rare|Swords of Revealing Light|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-102|Rare|Metal Dragon|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-103|Common|Spike Seadra|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-104|Common|Tripwire Beast|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-105|Common|Skull Red Bird|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-106|Rare|Armed Ninja|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-107|Rare|Flower Wolf|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-108|Super Rare|Man-Eater Bug|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-109|Common|Sand Stone|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-110|Rare|Hane-Hane|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-111|Common|Misairuzame|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-112|Common|Steel Ogre Grotto #1|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-113|Common|Lesser Dragon|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-114|Common|Darkworld Thorns|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-115|Common|Drooling Lizard|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-116|Common|Armored Starfish|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-117|Common|Succubus Knight|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-118|Ultra Rare|Monster Reborn|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-119|Rare|Pot of Greed|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-120|Ultra Rare|Right Leg of the Forbidden One|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-121|Ultra Rare|Left Leg of the Forbidden One|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-122|Ultra Rare|Right Arm of the Forbidden One|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-123|Ultra Rare|Left Arm of the Forbidden One|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-124|Ultra Rare|Exodia the Forbidden One|LEGEND OF BLUE EYES WHITE DRAGON
+LOB-125|Secret Rare|Gaia the Dragon Champion|LEGEND OF BLUE EYES WHITE DRAGON
+MRD-000|Secret Rare|Gate Guardian|METAL RAIDERS
+MRD-001|Common|Feral Imp|METAL RAIDERS
+MRD-002|Common|Winged Dragon, Guardian of the Fortress #1|METAL RAIDERS
+MRD-003|Ultra Rare|Summoned Skull|METAL RAIDERS
+MRD-004|Common|Rock Ogre Grotto #1|METAL RAIDERS
+MRD-005|Common|Armored Lizard|METAL RAIDERS
+MRD-006|Common|Killer Needle|METAL RAIDERS
+MRD-007|Common|Larvae Moth|METAL RAIDERS
+MRD-008|Common|Harpie Lady|METAL RAIDERS
+MRD-009|Super Rare|Harpie Lady Sisters|METAL RAIDERS
+MRD-010|Common|Kojikocy|METAL RAIDERS
+MRD-011|Common|Cocoon of Evolution|METAL RAIDERS
+MRD-012|Common|Crawling Dragon|METAL RAIDERS
+MRD-013|Common|Armored Zombie|METAL RAIDERS
+MRD-014|Rare|Mask of Darkness|METAL RAIDERS
+MRD-015|Common|Doma The Angel of Silence|METAL RAIDERS
+MRD-016|Rare|White Magical Hat|METAL RAIDERS
+MRD-017|Common|Big Eye|METAL RAIDERS
+MRD-018|Ultra Rare|Black Skull Dragon|METAL RAIDERS
+MRD-019|Rare|Masked Sorcerer|METAL RAIDERS
+MRD-020|Common|Roaring Ocean Snake|METAL RAIDERS
+MRD-021|Common|Water Omotics|METAL RAIDERS
+MRD-022|Common|Ground Attacker Bugroth|METAL RAIDERS
+MRD-023|Common|Petit Moth|METAL RAIDERS
+MRD-024|Rare|Elegant Egotist|METAL RAIDERS
+MRD-025|Super Rare|Sanga of the Thunder|METAL RAIDERS
+MRD-026|Super Rare|Kazejin|METAL RAIDERS
+MRD-027|Super Rare|Suijin|METAL RAIDERS
+MRD-028|Common|Mystic Lamp|METAL RAIDERS
+MRD-029|Common|Steel Scorpion|METAL RAIDERS
+MRD-030|Common|Ocubeam|METAL RAIDERS
+MRD-031|Common|Leghul|METAL RAIDERS
+MRD-032|Common|Ooguchi|METAL RAIDERS
+MRD-033|Common|Leogun|METAL RAIDERS
+MRD-034|Common|Blast Juggler|METAL RAIDERS
+MRD-035|Common|Jinzo #7|METAL RAIDERS
+MRD-036|Rare|Magician of Faith|METAL RAIDERS
+MRD-037|Common|Ancient Elf|METAL RAIDERS
+MRD-038|Common|Deepsea Shark|METAL RAIDERS
+MRD-039|Common|Bottom Dweller|METAL RAIDERS
+MRD-040|Common|Destroyer Golem|METAL RAIDERS
+MRD-041|Common|Kaminari Attack|METAL RAIDERS
+MRD-042|Common|Rainbow Flower|METAL RAIDERS
+MRD-043|Common|Morinphen|METAL RAIDERS
+MRD-044|Common|Mega Thunderball|METAL RAIDERS
+MRD-045|Common|Tongyo|METAL RAIDERS
+MRD-046|Common|Empress Judge|METAL RAIDERS
+MRD-047|Common|Pale Beast|METAL RAIDERS
+MRD-048|Common|Electric Lizard|METAL RAIDERS
+MRD-049|Common|Hunter Spider|METAL RAIDERS
+MRD-050|Common|Ancient Lizard Warrior|METAL RAIDERS
+MRD-051|Common|Queen's Double|METAL RAIDERS
+MRD-052|Common|Trent|METAL RAIDERS
+MRD-053|Common|Disk Magician|METAL RAIDERS
+MRD-054|Common|Hyosube|METAL RAIDERS
+MRD-055|Common|Hibikime|METAL RAIDERS
+MRD-056|Rare|Fake Trap|METAL RAIDERS
+MRD-057|Super Rare|Tribute to The Doomed|METAL RAIDERS
+MRD-058|Common|Soul Release|METAL RAIDERS
+MRD-059|Common|The Cheerful Coffin|METAL RAIDERS
+MRD-060|Ultra Rare|Change of Heart|METAL RAIDERS
+MRD-061|Common|Baby Dragon|METAL RAIDERS
+MRD-062|Common|Blackland Fire Dragon|METAL RAIDERS
+MRD-063|Common|Swamp Battleguard|METAL RAIDERS
+MRD-064|Common|Battle Steer|METAL RAIDERS
+MRD-065|Ultra Rare|Time Wizard|METAL RAIDERS
+MRD-066|Common|Saggi the Dark Clown|METAL RAIDERS
+MRD-067|Common|Dragon Piper|METAL RAIDERS
+MRD-068|Common|Illusionist Faceless Mage|METAL RAIDERS
+MRD-069|Rare|Sangan|METAL RAIDERS
+MRD-070|Rare|Great Moth|METAL RAIDERS
+MRD-071|Super Rare|Kuriboh|METAL RAIDERS
+MRD-072|Common|Jellyfish|METAL RAIDERS
+MRD-073|Common|Castle of Dark Illusions|METAL RAIDERS
+MRD-074|Common|King of Yamimakai|METAL RAIDERS
+MRD-075|Super Rare|Catapult Turtle|METAL RAIDERS
+MRD-076|Common|Mystic Horseman|METAL RAIDERS
+MRD-077|Common|Rabid Horseman|METAL RAIDERS
+MRD-078|Common|Crass Clown|METAL RAIDERS
+MRD-079|Common|Pumpking the King of Ghosts|METAL RAIDERS
+MRD-080|Common|Dream Clown|METAL RAIDERS
+MRD-081|Common|Tainted Wisdom|METAL RAIDERS
+MRD-082|Common|Ancient Brain|METAL RAIDERS
+MRD-083|Common|Guardian of the Labyrinth|METAL RAIDERS
+MRD-084|Common|Prevent Rat|METAL RAIDERS
+MRD-085|Common|The Little Swordsman of Aile|METAL RAIDERS
+MRD-086|Rare|Princess of Tsurugi|METAL RAIDERS
+MRD-087|Common|Protector of the Throne|METAL RAIDERS
+MRD-088|Common|Tremendous Fire|METAL RAIDERS
+MRD-089|Common|Jirai Gumo|METAL RAIDERS
+MRD-090|Rare|Shadow Ghoul|METAL RAIDERS
+MRD-091|Common|Labyrinth Tank|METAL RAIDERS
+MRD-092|Common|Ryu-Kishin Powered|METAL RAIDERS
+MRD-093|Common|Bickuribox|METAL RAIDERS
+MRD-094|Common|Giltia the D. Knight|METAL RAIDERS
+MRD-095|Common|Launcher Spider|METAL RAIDERS
+MRD-096|Common|Giga-Tech Wolf|METAL RAIDERS
+MRD-097|Common|Thunder Dragon|METAL RAIDERS
+MRD-098|Common|7 Colored Fish|METAL RAIDERS
+MRD-099|Common|The Immortal of Thunder|METAL RAIDERS
+MRD-100|Common|Punished Eagle|METAL RAIDERS
+MRD-101|Common|Insect Soldiers of the Sky|METAL RAIDERS
+MRD-102|Rare|Hoshiningen|METAL RAIDERS
+MRD-103|Common|Musician King|METAL RAIDERS
+MRD-104|Common|Yado Karu|METAL RAIDERS
+MRD-105|Common|Cyber Saurus|METAL RAIDERS
+MRD-106|Rare|Cannon Soldier|METAL RAIDERS
+MRD-107|Rare|Muka Muka|METAL RAIDERS
+MRD-108|Common|The Bistro Butcher|METAL RAIDERS
+MRD-109|Rare|Star Boy|METAL RAIDERS
+MRD-110|Rare|Milus Radiant|METAL RAIDERS
+MRD-111|Common|Flame Cerebrus|METAL RAIDERS
+MRD-112|Common|Niwatori|METAL RAIDERS
+MRD-113|Rare|Dark Elf|METAL RAIDERS
+MRD-114|Common|Mushroom Man #2|METAL RAIDERS
+MRD-115|Common|Lava Battleguard|METAL RAIDERS
+MRD-116|Rare|Witch of the Black Forest|METAL RAIDERS
+MRD-117|Rare|Little Chimera|METAL RAIDERS
+MRD-118|Rare|Bladefly|METAL RAIDERS
+MRD-119|Common|Lady of Faith|METAL RAIDERS
+MRD-120|Super Rare|Twin-Headed Thunder Dragon|METAL RAIDERS
+MRD-121|Rare|Witch's Apprentice|METAL RAIDERS
+MRD-122|Common|Blue-Winged Crown|METAL RAIDERS
+MRD-123|Common|Skull Knight|METAL RAIDERS
+MRD-124|Common|Gazelle the King of Mythical Beasts|METAL RAIDERS
+MRD-125|Super Rare|Garnecia Elefantis|METAL RAIDERS
+MRD-126|Ultra Rare|Barrel Dragon|METAL RAIDERS
+MRD-127|Ultra Rare|Solemn Judgment|METAL RAIDERS
+MRD-128|Ultra Rare|Magic Jammer|METAL RAIDERS
+MRD-129|Ultra Rare|Seven Tools of the Bandit|METAL RAIDERS
+MRD-130|Ultra Rare|Horn of Heaven|METAL RAIDERS
+MRD-131|Rare|Shield & Sword|METAL RAIDERS
+MRD-132|Common|Sword of Deep-Seated|METAL RAIDERS
+MRD-133|Common|Block Attack|METAL RAIDERS
+MRD-134|Common|The Unhappy Maiden|METAL RAIDERS
+MRD-135|Rare|Robbin' Goblin|METAL RAIDERS
+MRD-136|Common|Germ Infection|METAL RAIDERS
+MRD-137|Common|Paralyzing Potion|METAL RAIDERS
+MRD-138|Ultra Rare|Mirror Force|METAL RAIDERS
+MRD-139|Common|Ring of Magnetism|METAL RAIDERS
+MRD-140|Common|Share the Pain|METAL RAIDERS
+MRD-141|Common|Stim-Pack|METAL RAIDERS
+MRD-142|Super Rare|Heavy Storm|METAL RAIDERS
+MRD-143|Secret Rare|Thousand Dragon|METAL RAIDERS
+MRL-001|Common|Penguin Knight|SPELL RULER
+MRL-002|Ultra Rare|Axe of Despair|SPELL RULER
+MRL-003|Super Rare|Black Pendant|SPELL RULER
+MRL-004|Common|Horn of Light|SPELL RULER
+MRL-005|Common|Malevolent Nuzzler|SPELL RULER
+MRL-006|Ultra Rare|Spellbinding Circle|SPELL RULER
+MRL-007|Common|Metal Fish|SPELL RULER
+MRL-008|Common|Electric Snake|SPELL RULER
+MRL-009|Common|Queen Bird|SPELL RULER
+MRL-010|Rare|Ameba|SPELL RULER
+MRL-011|Common|Peacock|SPELL RULER
+MRL-012|Super Rare|Maha Vailo|SPELL RULER
+MRL-013|Common|Guardian of the Throne Room|SPELL RULER
+MRL-014|Common|Fire Kraken|SPELL RULER
+MRL-015|Common|Minar|SPELL RULER
+MRL-016|Common|Griggle|SPELL RULER
+MRL-017|Common|Tyhone #2|SPELL RULER
+MRL-018|Common|Ancient One of the Deep Forest|SPELL RULER
+MRL-019|Common|Dark Witch|SPELL RULER
+MRL-020|Common|Weather Report|SPELL RULER
+MRL-021|Common|Mechanical Snail|SPELL RULER
+MRL-022|Common|Giant Turtle Who Feeds on Flames|SPELL RULER
+MRL-023|Common|Liquid Beast|SPELL RULER
+MRL-024|Rare|Hiro's Shadow Scout|SPELL RULER
+MRL-025|Common|High Tide Gyojin|SPELL RULER
+MRL-028|Common|Slot Machine|SPELL RULER
+MRL-030|Common|Red Archery Girl|SPELL RULER
+MRL-031|Common|Gravekeeper's Servant|SPELL RULER
+MRL-032|Common|Curse of Fiend|SPELL RULER
+MRL-034|Common|Toll|SPELL RULER
+MRL-035|Common|Final Destiny|SPELL RULER
+MRL-036|Ultra Rare|Snatch Steal|SPELL RULER
+MRL-037|Common|Chorus of Sanctuary|SPELL RULER
+MRL-038|Super Rare|Confiscation|SPELL RULER
+MRL-040|Common|Darkness Approaches|SPELL RULER
+MRL-041|Common|Fairy's Hand Mirror|SPELL RULER
+MRL-042|Common|Tailor of the Fickle|SPELL RULER
+MRL-043|Rare|Rush Recklessly|SPELL RULER
+MRL-044|Common|The Reliable Guardian|SPELL RULER
+MRL-046|Common|Chain Energy|SPELL RULER
+MRL-047|Ultra Rare|Mystical Space Typhoon|SPELL RULER
+MRL-048|Super Rare|Giant Trunade|SPELL RULER
+MRL-049|Super Rare|Painful Choice|SPELL RULER
+MRL-050|Common|Snake Fang|SPELL RULER
+MRL-052|Common|Octoberser|SPELL RULER
+MRL-053|Common|Psychic Kappa|SPELL RULER
+MRL-054|Rare|Horn of the Unicorn|SPELL RULER
+MRL-055|Common|Labyrinth Wall|SPELL RULER
+MRL-056|Common|Wall Shadow|SPELL RULER
+MRL-057|Common|Twin Long Rods #2|SPELL RULER
+MRL-058|Common|Stone Ogre Grotto|SPELL RULER
+MRL-059|Common|Magical Labyrinth|SPELL RULER
+MRL-060|Common|Eternal Rest|SPELL RULER
+MRL-061|Ultra Rare|Megamorph|SPELL RULER
+MRL-062|Common|Commencement Dance|SPELL RULER
+MRL-063|Common|Hamburger Recipe|SPELL RULER
+MRL-064|Common|House of Adhesive Tape|SPELL RULER
+MRL-065|Common|Eatgaboon|SPELL RULER
+MRL-066|Common|Turtle Oath|SPELL RULER
+MRL-067|Common|Performance of Sword|SPELL RULER
+MRL-068|Common|Hungry Burger|SPELL RULER
+MRL-069|Common|Crab Turtle|SPELL RULER
+MRL-070|Common|Ryu-Ran|SPELL RULER
+MRL-071|Rare|Manga Ryu-Ran|SPELL RULER
+MRL-074|Common|Jigen Bakudan|SPELL RULER
+MRL-075|Rare|Hyozanryu|SPELL RULER
+MRL-076|Super Rare|Toon World|SPELL RULER
+MRL-077|Rare|Cyber Jar|SPELL RULER
+MRL-078|Super Rare|Banisher of the Light|SPELL RULER
+MRL-079|Rare|Giant Rat|SPELL RULER
+MRL-080|Rare|Senju of the Thousand Hands|SPELL RULER
+MRL-081|Rare|UFO Turtle|SPELL RULER
+MRL-082|Common|Flash Assailant|SPELL RULER
+MRL-083|Rare|Karate Man|SPELL RULER
+MRL-084|Common|Dark Zebra|SPELL RULER
+MRL-085|Rare|Giant Germ|SPELL RULER
+MRL-086|Rare|Nimble Momonga|SPELL RULER
+MRL-087|Common|Spear Cretin|SPELL RULER
+MRL-088|Rare|Shining Angel|SPELL RULER
+MRL-089|Common|Boar Soldier|SPELL RULER
+MRL-090|Rare|Mother Grizzly|SPELL RULER
+MRL-091|Rare|Flying Kamakiri #1|SPELL RULER
+MRL-092|Common|Ceremonial Bell|SPELL RULER
+MRL-093|Common|Sonic Bird|SPELL RULER
+MRL-094|Rare|Mystic Tomato|SPELL RULER
+MRL-095|Common|Kotodama|SPELL RULER
+MRL-096|Common|Gaia Power|SPELL RULER
+MRL-097|Common|Umiiruka|SPELL RULER
+MRL-098|Common|Molten Destruction|SPELL RULER
+MRL-099|Common|Rising Air Current|SPELL RULER
+MRL-100|Common|Luminous Spark|SPELL RULER
+MRL-101|Common|Mystic Plasma Zone|SPELL RULER
+MRL-103|Secret Rare|Serpent Night Dragon|SPELL RULER
+MRL-027|Common|Whiptail Crow|SPELL RULER
+PSV-000|Secret Rare|Jinzo|PHARAOH'S SERVANT
+PSV-001|Common|Steel Ogre Grotto #2|PHARAOH'S SERVANT
+PSV-002|Common|Three-Headed Geedo|PHARAOH'S SERVANT
+PSV-003|Super Rare|Parasite Paracide|PHARAOH'S SERVANT
+PSV-004|Common|7 Completed|PHARAOH'S SERVANT
+PSV-005|Rare|Lightforce Sword|PHARAOH'S SERVANT
+PSV-006|Ultra Rare|Chain Destruction|PHARAOH'S SERVANT
+PSV-007|Common|Time Seal|PHARAOH'S SERVANT
+PSV-008|Super Rare|Graverobber|PHARAOH'S SERVANT
+PSV-009|Common|Gift of The Mystical Elf|PHARAOH'S SERVANT
+PSV-010|Common|The Eye of Truth|PHARAOH'S SERVANT
+PSV-011|Super Rare|Dust Tornado|PHARAOH'S SERVANT
+PSV-013|Common|Solomon's Lawbook|PHARAOH'S SERVANT
+PSV-014|Common|Earthshaker|PHARAOH'S SERVANT
+PSV-015|Common|Enchanted Javelin|PHARAOH'S SERVANT
+PSV-016|Super Rare|Mirror Wall|PHARAOH'S SERVANT
+PSV-017|Common|Gust|PHARAOH'S SERVANT
+PSV-018|Common|Driving Snow|PHARAOH'S SERVANT
+PSV-019|Common|Armored Glass|PHARAOH'S SERVANT
+PSV-020|Common|World Suppression|PHARAOH'S SERVANT
+PSV-021|Common|Mystic Probe|PHARAOH'S SERVANT
+PSV-022|Common|Metal Detector|PHARAOH'S SERVANT
+PSV-023|Common|Numinous Healer|PHARAOH'S SERVANT
+PSV-024|Rare|Appropriate|PHARAOH'S SERVANT
+PSV-025|Rare|Forced Requisition|PHARAOH'S SERVANT
+PSV-026|Common|DNA Surgery|PHARAOH'S SERVANT
+PSV-027|Common|The Regulation of Tribe|PHARAOH'S SERVANT
+PSV-028|Super Rare|Backup Soldier|PHARAOH'S SERVANT
+PSV-029|Common|Major Riot|PHARAOH'S SERVANT
+PSV-030|Ultra Rare|Ceasefire|PHARAOH'S SERVANT
+PSV-031|Common|Light of Intervention|PHARAOH'S SERVANT
+PSV-032|Common|Respect Play|PHARAOH'S SERVANT
+PSV-033|Super Rare|Magical Hats|PHARAOH'S SERVANT
+PSV-034|Super Rare|Nobleman of Crossout|PHARAOH'S SERVANT
+PSV-035|Rare|Nobleman of Extermination|PHARAOH'S SERVANT
+PSV-036|Rare|The Shallow Grave|PHARAOH'S SERVANT
+PSV-037|Ultra Rare|Premature Burial|PHARAOH'S SERVANT
+PSV-038|Common|Inspection|PHARAOH'S SERVANT
+PSV-039|Rare|Prohibition|PHARAOH'S SERVANT
+PSV-040|Rare|Morphing Jar #2|PHARAOH'S SERVANT
+PSV-041|Common|Flame Champion|PHARAOH'S SERVANT
+PSV-042|Common|Twin-Headed Fire Dragon|PHARAOH'S SERVANT
+PSV-043|Common|Darkfire Soldier #1|PHARAOH'S SERVANT
+PSV-044|Common|Mr. Volcano|PHARAOH'S SERVANT
+PSV-045|Common|Darkfire Soldier #2|PHARAOH'S SERVANT
+PSV-046|Common|Kiseitai|PHARAOH'S SERVANT
+PSV-047|Common|Cyber Falcon|PHARAOH'S SERVANT
+PSV-048|Common|Flying Kamakiri #2|PHARAOH'S SERVANT
+PSV-049|Common|Sky Scout|PHARAOH'S SERVANT
+PSV-050|Ultra Rare|Buster Blader|PHARAOH'S SERVANT
+PSV-051|Rare|Michizure|PHARAOH'S SERVANT
+PSV-052|Common|Minor Goblin Official|PHARAOH'S SERVANT
+PSV-053|Common|Gamble|PHARAOH'S SERVANT
+PSV-054|Common|Attack and Receive|PHARAOH'S SERVANT
+PSV-055|Common|Solemn Wishes|PHARAOH'S SERVANT
+PSV-056|Rare|Skull Invitation|PHARAOH'S SERVANT
+PSV-057|Common|Bubonic Vermin|PHARAOH'S SERVANT
+PSV-058|Common|Dark Bat|PHARAOH'S SERVANT
+PSV-059|Common|Oni Tank T-34|PHARAOH'S SERVANT
+PSV-060|Common|Overdrive|PHARAOH'S SERVANT
+PSV-061|Common|Burning Land|PHARAOH'S SERVANT
+PSV-062|Common|Cold Wave|PHARAOH'S SERVANT
+PSV-063|Super Rare|Fairy Meteor Crush|PHARAOH'S SERVANT
+PSV-064|Super Rare|Limiter Removal|PHARAOH'S SERVANT
+PSV-065|Common|Rain of Mercy|PHARAOH'S SERVANT
+PSV-066|Rare|Monster Recovery|PHARAOH'S SERVANT
+PSV-067|Rare|Shift|PHARAOH'S SERVANT
+PSV-068|Common|Insect Imitation|PHARAOH'S SERVANT
+PSV-069|Rare|Dimensionhole|PHARAOH'S SERVANT
+PSV-070|Common|Ground Collapse|PHARAOH'S SERVANT
+PSV-071|Rare|Magic Drain|PHARAOH'S SERVANT
+PSV-072|Common|Infinite Dismissal|PHARAOH'S SERVANT
+PSV-073|Rare|Gravity Bind|PHARAOH'S SERVANT
+PSV-074|Common|Type Zero Magic Crusher|PHARAOH'S SERVANT
+PSV-075|Common|Shadow of Eyes|PHARAOH'S SERVANT
+PSV-076|Ultra Rare|The Legendary Fisherman|PHARAOH'S SERVANT
+PSV-077|Common|Sword Hunter|PHARAOH'S SERVANT
+PSV-078|Common|Drill Bug|PHARAOH'S SERVANT
+PSV-079|Common|Deepsea Warrior|PHARAOH'S SERVANT
+PSV-080|Common|Bite Shoes|PHARAOH'S SERVANT
+PSV-081|Common|Spikebot|PHARAOH'S SERVANT
+PSV-082|Common|Invitation to a Dark Sleep|PHARAOH'S SERVANT
+PSV-083|Common|Thousand-Eyes Idol|PHARAOH'S SERVANT
+PSV-084|Ultra Rare|Thousand-Eyes Restrict|PHARAOH'S SERVANT
+PSV-085|Common|Girochin Kuwagata|PHARAOH'S SERVANT
+PSV-086|Rare|Hayabusa Knight|PHARAOH'S SERVANT
+PSV-087|Common|Bombardment Beetle|PHARAOH'S SERVANT
+PSV-088|Common|4-Starred Ladybug of Doom|PHARAOH'S SERVANT
+PSV-089|Common|Gradius|PHARAOH'S SERVANT
+PSV-090|Rare|Vampire Baby|PHARAOH'S SERVANT
+PSV-091|Rare|Mad Sword Beast|PHARAOH'S SERVANT
+PSV-092|Common|Skull Mariner|PHARAOH'S SERVANT
+PSV-093|Common|The All-Seeing White Tiger|PHARAOH'S SERVANT
+PSV-094|Ultra Rare|Goblin Attack Force|PHARAOH'S SERVANT
+PSV-095|Common|Island Turtle|PHARAOH'S SERVANT
+PSV-096|Common|Wingweaver|PHARAOH'S SERVANT
+PSV-097|Common|Science Soldier|PHARAOH'S SERVANT
+PSV-098|Common|Souls of the Forgotten|PHARAOH'S SERVANT
+PSV-099|Common|Dokuroyaiba|PHARAOH'S SERVANT
+PSV-100|Ultra Rare|The Fiend Megacyber|PHARAOH'S SERVANT
+PSV-101|Super Rare|Gearfried the Iron Knight|PHARAOH'S SERVANT
+PSV-102|Common|Insect Barrier|PHARAOH'S SERVANT
+PSV-103|Ultra Rare|Beast of Talwar|PHARAOH'S SERVANT
+PSV-104|Secret Rare|Imperial Order|PHARAOH'S SERVANT
+LON-000|Secret Rare|Gemini Elf|LABYRINTH OF NIGHTMARE
+LON-001|Ultra Rare|The Masked Beast|LABYRINTH OF NIGHTMARE
+LON-003|Common|Humanoid Slime|LABYRINTH OF NIGHTMARE
+LON-004|Common|Worm Drake|LABYRINTH OF NIGHTMARE
+LON-005|Common|Humanoid Worm Drake|LABYRINTH OF NIGHTMARE
+LON-006|Super Rare|Revival Jam|LABYRINTH OF NIGHTMARE
+LON-007|Common|Flying Fish|LABYRINTH OF NIGHTMARE
+LON-008|Rare|Amphibian Beast|LABYRINTH OF NIGHTMARE
+LON-009|Common|Shining Abyss|LABYRINTH OF NIGHTMARE
+LON-010|Common|Gadget Soldier|LABYRINTH OF NIGHTMARE
+LON-011|Common|Grand Tiki Elder|LABYRINTH OF NIGHTMARE
+LON-012|Common|Melchid the Four-Face Beast|LABYRINTH OF NIGHTMARE
+LON-013|Rare|Nuvia the Wicked|LABYRINTH OF NIGHTMARE
+LON-014|Common|Chosen One|LABYRINTH OF NIGHTMARE
+LON-016|Common|Curse of the Masked Beast|LABYRINTH OF NIGHTMARE
+LON-017|Super Rare|Mask of Dispel|LABYRINTH OF NIGHTMARE
+LON-018|Ultra Rare|Mask of Restrict|LABYRINTH OF NIGHTMARE
+LON-019|Super Rare|Mask of the Accursed|LABYRINTH OF NIGHTMARE
+LON-020|Rare|Mask of Brutality|LABYRINTH OF NIGHTMARE
+LON-021|Rare|Return of the Doomed|LABYRINTH OF NIGHTMARE
+LON-022|Common|Lightning Blade|LABYRINTH OF NIGHTMARE
+LON-023|Common|Tornado Wall|LABYRINTH OF NIGHTMARE
+LON-024|Common|Fairy Box|LABYRINTH OF NIGHTMARE
+LON-025|Ultra Rare|Torrential Tribute|LABYRINTH OF NIGHTMARE
+LON-026|Rare|Jam Breeding Machine|LABYRINTH OF NIGHTMARE
+LON-027|Rare|Infinite Cards|LABYRINTH OF NIGHTMARE
+LON-028|Common|Jam Defender|LABYRINTH OF NIGHTMARE
+LON-029|Ultra Rare|Card of Safe Return|LABYRINTH OF NIGHTMARE
+LON-030|Common|Lady Panther|LABYRINTH OF NIGHTMARE
+LON-031|Common|The Unfriendly Amazon|LABYRINTH OF NIGHTMARE
+LON-032|Common|Amazoness Archer|LABYRINTH OF NIGHTMARE
+LON-033|Common|Crimson Sentry|LABYRINTH OF NIGHTMARE
+LON-034|Super Rare|Fire Princess|LABYRINTH OF NIGHTMARE
+LON-035|Common|Lady Assailant of Flames|LABYRINTH OF NIGHTMARE
+LON-036|Common|Fire Sorcerer|LABYRINTH OF NIGHTMARE
+LON-037|Rare|Spirit of the Breeze|LABYRINTH OF NIGHTMARE
+LON-038|Common|Dancing Fairy|LABYRINTH OF NIGHTMARE
+LON-039|Common|Fairy Guardian|LABYRINTH OF NIGHTMARE
+LON-040|Common|Empress Mantis|LABYRINTH OF NIGHTMARE
+LON-041|Common|Cure Mermaid|LABYRINTH OF NIGHTMARE
+LON-042|Common|Hysteric Fairy|LABYRINTH OF NIGHTMARE
+LON-043|Common|Bio-Mage|LABYRINTH OF NIGHTMARE
+LON-044|Common|The Forgiving Maiden|LABYRINTH OF NIGHTMARE
+LON-045|Common|St. Joan|LABYRINTH OF NIGHTMARE
+LON-046|Rare|Darklord Marie|LABYRINTH OF NIGHTMARE
+LON-047|Super Rare|Jar of Greed|LABYRINTH OF NIGHTMARE
+LON-048|Common|Scroll of Bewitchment|LABYRINTH OF NIGHTMARE
+LON-049|Ultra Rare|United We Stand|LABYRINTH OF NIGHTMARE
+LON-050|Ultra Rare|Mage Power|LABYRINTH OF NIGHTMARE
+LON-051|Common|Offerings to the Doomed|LABYRINTH OF NIGHTMARE
+LON-052|Common|The Portrait's Secret|LABYRINTH OF NIGHTMARE
+LON-053|Common|The Gross Ghost of Fled Dreams|LABYRINTH OF NIGHTMARE
+LON-054|Common|Headless Knight|LABYRINTH OF NIGHTMARE
+LON-055|Common|Earthbound Spirit|LABYRINTH OF NIGHTMARE
+LON-056|Common|The Earl of Demise|LABYRINTH OF NIGHTMARE
+LON-057|Common|Boneheimer|LABYRINTH OF NIGHTMARE
+LON-058|Common|Flame Dancer|LABYRINTH OF NIGHTMARE
+LON-059|Common|Spherous Lady|LABYRINTH OF NIGHTMARE
+LON-060|Common|Lightning Conger|LABYRINTH OF NIGHTMARE
+LON-061|Rare|Jowgen the Spiritualist|LABYRINTH OF NIGHTMARE
+LON-063|Common|Summoner of Illusions|LABYRINTH OF NIGHTMARE
+LON-065|Ultra Rare|Dark Necrofear|LABYRINTH OF NIGHTMARE
+LON-066|Common|Soul of Purity and Light|LABYRINTH OF NIGHTMARE
+LON-067|Common|Spirit of Flames|LABYRINTH OF NIGHTMARE
+LON-068|Common|Aqua Spirit|LABYRINTH OF NIGHTMARE
+LON-069|Common|The Rock Spirit|LABYRINTH OF NIGHTMARE
+LON-070|Common|Garuda the Wind Spirit|LABYRINTH OF NIGHTMARE
+LON-071|Rare|Gilasaurus|LABYRINTH OF NIGHTMARE
+LON-072|Rare|Tornado Bird|LABYRINTH OF NIGHTMARE
+LON-073|Common|Dreamsprite|LABYRINTH OF NIGHTMARE
+LON-074|Common|Zombyra the Dark|LABYRINTH OF NIGHTMARE
+LON-075|Common|Supply|LABYRINTH OF NIGHTMARE
+LON-076|Common|Maryokutai|LABYRINTH OF NIGHTMARE
+LON-078|Common|Collected Power|LABYRINTH OF NIGHTMARE
+LON-079|Super Rare|Dark Spirit of the Silent|LABYRINTH OF NIGHTMARE
+LON-080|Ultra Rare|Royal Command|LABYRINTH OF NIGHTMARE
+LON-082|Common|Skull Lair|LABYRINTH OF NIGHTMARE
+LON-083|Common|Graverobber's Retribution|LABYRINTH OF NIGHTMARE
+LON-084|Common|Deal of Phantom|LABYRINTH OF NIGHTMARE
+LON-085|Rare|Destruction Punch|LABYRINTH OF NIGHTMARE
+LON-086|Common|Blind Destruction|LABYRINTH OF NIGHTMARE
+LON-087|Common|The Emperor's Holiday|LABYRINTH OF NIGHTMARE
+LON-088|Ultra Rare|Destiny Board|LABYRINTH OF NIGHTMARE
+LON-089|Rare|Spirit Message "I"|LABYRINTH OF NIGHTMARE
+LON-090|Rare|Spirit Message "N"|LABYRINTH OF NIGHTMARE
+LON-092|Rare|Spirit Message "L"|LABYRINTH OF NIGHTMARE
+LON-093|Common|The Dark Door|LABYRINTH OF NIGHTMARE
+LON-094|Rare|Spiritualism|LABYRINTH OF NIGHTMARE
+LON-095|Common|Cyclon Laser|LABYRINTH OF NIGHTMARE
+LON-096|Common|Bait Doll|LABYRINTH OF NIGHTMARE
+LON-097|Super Rare|De-Fusion|LABYRINTH OF NIGHTMARE
+LON-098|Common|Fusion Gate|LABYRINTH OF NIGHTMARE
+LON-099|Common|Ekibyo Drakmord|LABYRINTH OF NIGHTMARE
+LON-100|Common|Miracle Dig|LABYRINTH OF NIGHTMARE
+LON-101|Common|Dragonic Attack|LABYRINTH OF NIGHTMARE
+LON-102|Common|Spirit Elimination|LABYRINTH OF NIGHTMARE
+LON-103|Common|Vengeful Bog Spirit|LABYRINTH OF NIGHTMARE
+LON-104|Secret Rare|Magic Cylinder|LABYRINTH OF NIGHTMARE
+LOD-003|Rare|Lesser Fiend|LEGACY OF DARKNESS
+LOD-004|Common|Possessed Dark Soul|LEGACY OF DARKNESS
+LOD-005|Common|Winged Minion|LEGACY OF DARKNESS
+LOD-006|Common|Skull Knight #2|LEGACY OF DARKNESS
+LOD-007|Common|Ryu-Kishin Clown|LEGACY OF DARKNESS
+LOD-008|Common|Twin-Headed Wolf|LEGACY OF DARKNESS
+LOD-010|Common|Bark of Dark Ruler|LEGACY OF DARKNESS
+LOD-011|Rare|Fatal Abacus|LEGACY OF DARKNESS
+LOD-012|Common|Life Absorbing Machine|LEGACY OF DARKNESS
+LOD-013|Common|The Puppet Magic of Dark Ruler|LEGACY OF DARKNESS
+LOD-014|Common|Soul Demolition|LEGACY OF DARKNESS
+LOD-015|Common|Double Snare|LEGACY OF DARKNESS
+LOD-017|Common|Throwstone Unit|LEGACY OF DARKNESS
+LOD-020|Common|Warrior Dai Grepher|LEGACY OF DARKNESS
+LOD-021|Common|Mysterious Guard|LEGACY OF DARKNESS
+LOD-022|Common|Frontier Wiseman|LEGACY OF DARKNESS
+LOD-024|Common|The Hunter with 7 Weapons|LEGACY OF DARKNESS
+LOD-026|Common|Dragon Manipulator|LEGACY OF DARKNESS
+LOD-029|Rare|Array of Revealing Light|LEGACY OF DARKNESS
+LOD-030|Rare|The Warrior Returning Alive|LEGACY OF DARKNESS
+LOD-031|Common|Ready for Intercepting|LEGACY OF DARKNESS
+LOD-032|Common|A Feint Plan|LEGACY OF DARKNESS
+LOD-033|Common|Emergency Provisions|LEGACY OF DARKNESS
+LOD-034|Ultra Rare|Tyrant Dragon|LEGACY OF DARKNESS
+LOD-036|Common|Spirit Ryu|LEGACY OF DARKNESS
+LOD-037|Common|The Dragon Dwelling in the Cave|LEGACY OF DARKNESS
+LOD-038|Common|Lizard Soldier|LEGACY OF DARKNESS
+LOD-040|Common|Cave Dragon|LEGACY OF DARKNESS
+LOD-041|Common|Gray Wing|LEGACY OF DARKNESS
+LOD-042|Common|Troop Dragon|LEGACY OF DARKNESS
+LOD-044|Common|A Wingbeat of Giant Dragon|LEGACY OF DARKNESS
+LOD-045|Common|Dragon's Gunfire|LEGACY OF DARKNESS
+LOD-046|Common|Stamping Destruction|LEGACY OF DARKNESS
+LOD-047|Common|Super Rejuvenation|LEGACY OF DARKNESS
+LOD-048|Common|Dragon's Rage|LEGACY OF DARKNESS
+LOD-049|Common|Burst Breath|LEGACY OF DARKNESS
+LOD-051|Common|Robotic Knight|LEGACY OF DARKNESS
+LOD-052|Common|Wolf Axwielder|LEGACY OF DARKNESS
+LOD-053|Common|The Illusory Gentleman|LEGACY OF DARKNESS
+LOD-054|Common|Robolady|LEGACY OF DARKNESS
+LOD-055|Common|Roboyarou|LEGACY OF DARKNESS
+LOD-057|Common|Serpentine Princess|LEGACY OF DARKNESS
+LOD-058|Common|Patrician of Darkness|LEGACY OF DARKNESS
+LOD-060|Common|Gradius' Option|LEGACY OF DARKNESS
+LOD-061|Common|Woodland Sprite|LEGACY OF DARKNESS
+LOD-065|Common|Inaba White Rabbit|LEGACY OF DARKNESS
+LOD-069|Common|Otohime|LEGACY OF DARKNESS
+LOD-073|Common|Super Robolady|LEGACY OF DARKNESS
+LOD-074|Common|Super Roboyarou|LEGACY OF DARKNESS
+LOD-075|Common|Fengsheng Mirror|LEGACY OF DARKNESS
+LOD-076|Common|Spring of Rebirth|LEGACY OF DARKNESS
+LOD-077|Common|Heart of Clear Water|LEGACY OF DARKNESS
+LOD-078|Common|A Legendary Ocean|LEGACY OF DARKNESS
+LOD-080|Common|Smoke Grenade of the Thief|LEGACY OF DARKNESS
+LOD-082|Common|Spiritual Energy Settle Machine|LEGACY OF DARKNESS
+LOD-083|Rare|Second Coin Toss|LEGACY OF DARKNESS
+LOD-084|Common|Convulsion of Nature|LEGACY OF DARKNESS
+LOD-085|Common|The Secret of the Bandit|LEGACY OF DARKNESS
+LOD-087|Rare|Magic Reflector|LEGACY OF DARKNESS
+LOD-088|Rare|Blast with Chain|LEGACY OF DARKNESS
+LOD-089|Common|Disappear|LEGACY OF DARKNESS
+LOD-090|Common|Bubble Crash|LEGACY OF DARKNESS
+LOD-093|Common|Bad Reaction to Simochi|LEGACY OF DARKNESS
+LOD-094|Common|Ominous Fortunetelling|LEGACY OF DARKNESS
+LOD-095|Common|Spirit's Invitation|LEGACY OF DARKNESS
+LOD-096|Common|Nutrient Z|LEGACY OF DARKNESS
+LOD-097|Super Rare|Drop Off|LEGACY OF DARKNESS
+LOD-098|Common|Fiend Comedian|LEGACY OF DARKNESS
+PGD-002|Common|Shapesnatch|PHARAONIC GUARDIAN
+PGD-003|Common|Souleater|PHARAONIC GUARDIAN
+PGD-004|Rare|King Tiger Wanghu|PHARAONIC GUARDIAN
+PGD-006|Common|Kryuel|PHARAONIC GUARDIAN
+PGD-010|Common|Timeater|PHARAONIC GUARDIAN
+PGD-011|Common|Mucus Yolk|PHARAONIC GUARDIAN
+PGD-016|Common|Poison Mummy|PHARAONIC GUARDIAN
+PGD-017|Common|Dark Dust Spirit|PHARAONIC GUARDIAN
+PGD-018|Common|Royal Keeper|PHARAONIC GUARDIAN
+PGD-021|Common|Swarm of Scarabs|PHARAONIC GUARDIAN
+PGD-023|Common|Giant Axe Mummy|PHARAONIC GUARDIAN
+PGD-024|Common|8-Claws Scorpion|PHARAONIC GUARDIAN
+PGD-027|Common|Dice Jar|PHARAONIC GUARDIAN
+PGD-028|Common|Dark Scorpion Burglars|PHARAONIC GUARDIAN
+PGD-030|Common|Des Lacooda|PHARAONIC GUARDIAN
+PGD-033|Super Rare|Book of Life|PHARAONIC GUARDIAN
+PGD-037|Common|Secret Pass to the Treasures|PHARAONIC GUARDIAN
+PGD-038|Common|Call of the Mummy|PHARAONIC GUARDIAN
+PGD-039|Common|Timidity|PHARAONIC GUARDIAN
+PGD-040|Common|Pyramid Energy|PHARAONIC GUARDIAN
+PGD-041|Common|Tutan Mask|PHARAONIC GUARDIAN
+PGD-043|Common|Bottomless Shifting Sand|PHARAONIC GUARDIAN
+PGD-045|Common|Needle Ceiling|PHARAONIC GUARDIAN
+PGD-048|Common|Needle Wall|PHARAONIC GUARDIAN
+PGD-049|Common|Trap Dustshoot|PHARAONIC GUARDIAN
+PGD-050|Common|Pyro Clock of Destiny|PHARAONIC GUARDIAN
+PGD-053|Common|Master Kyonshee|PHARAONIC GUARDIAN
+PGD-054|Common|Kabazauls|PHARAONIC GUARDIAN
+PGD-055|Common|Inpachi|PHARAONIC GUARDIAN
+PGD-057|Rare|Newdoria|PHARAONIC GUARDIAN
+PGD-060|Common|Gravekeeper's Curse|PHARAONIC GUARDIAN
+PGD-061|Common|Gravekeeper's Guard|PHARAONIC GUARDIAN
+PGD-062|Common|Gravekeeper's Spear Soldier|PHARAONIC GUARDIAN
+PGD-063|Common|Gravekeeper's Vassal|PHARAONIC GUARDIAN
+PGD-066|Common|Gravekeeper's Cannonholder|PHARAONIC GUARDIAN
+PGD-067|Common|Gravekeeper's Assailant|PHARAONIC GUARDIAN
+PGD-068|Common|A Man with Wdjat|PHARAONIC GUARDIAN
+PGD-074|Common|Charm of Shabti|PHARAONIC GUARDIAN
+PGD-076|Rare|Spirit Reaper|PHARAONIC GUARDIAN
+PGD-079|Rare|Dark Designator|PHARAONIC GUARDIAN
+PGD-080|Common|Card Shuffle|PHARAONIC GUARDIAN
+PGD-081|Common|Reasoning|PHARAONIC GUARDIAN
+PGD-083|Common|Different Dimension Capsule|PHARAONIC GUARDIAN
+PGD-085|Common|Buster Rancher|PHARAONIC GUARDIAN
+PGD-086|Common|Hieroglyph Lithograph|PHARAONIC GUARDIAN
+PGD-087|Common|Dark Snake Syndrome|PHARAONIC GUARDIAN
+PGD-089|Common|Banner of Courage|PHARAONIC GUARDIAN
+PGD-091|Common|Royal Tribute|PHARAONIC GUARDIAN
+PGD-094|Common|Curse of Aging|PHARAONIC GUARDIAN
+PGD-097|Common|Narrow Pass|PHARAONIC GUARDIAN
+PGD-098|Common|Disturbance Strategy|PHARAONIC GUARDIAN
+PGD-100|Common|Rite of Spirit|PHARAONIC GUARDIAN
+PGD-101|Common|Non Aggression Area|PHARAONIC GUARDIAN
+PGD-102|Common|D. Tribe|PHARAONIC GUARDIAN
+MFC-001|Common|People Running About|MAGICIAN'S FORCE
+MFC-002|Common|Oppressed People|MAGICIAN'S FORCE
+MFC-003|Common|United Resistance|MAGICIAN'S FORCE
+MFC-008|Common|Pitch-Dark Dragon|MAGICIAN'S FORCE
+MFC-009|Common|Kiryu|MAGICIAN'S FORCE
+MFC-010|Common|Decayed Commander|MAGICIAN'S FORCE
+MFC-011|Common|Zombie Tiger|MAGICIAN'S FORCE
+MFC-012|Common|Giant Orc|MAGICIAN'S FORCE
+MFC-013|Common|Second Goblin|MAGICIAN'S FORCE
+MFC-014|Common|Vampiric Orchis|MAGICIAN'S FORCE
+MFC-015|Common|Des Dendle|MAGICIAN'S FORCE
+MFC-016|Common|Burning Beast|MAGICIAN'S FORCE
+MFC-017|Common|Freezing Beast|MAGICIAN'S FORCE
+MFC-018|Common|Union Rider|MAGICIAN'S FORCE
+MFC-019|Rare|D.D. Crazy Beast|MAGICIAN'S FORCE
+MFC-021|Common|Neko Mane King|MAGICIAN'S FORCE
+MFC-025|Common|Roulette Barrel|MAGICIAN'S FORCE
+MFC-028|Common|Frontline Base|MAGICIAN'S FORCE
+MFC-032|Common|Autonomous Action Unit|MAGICIAN'S FORCE
+MFC-036|Common|Raregold Armor|MAGICIAN'S FORCE
+MFC-037|Common|Metalsilver Armor|MAGICIAN'S FORCE
+MFC-041|Common|Huge Revolution|MAGICIAN'S FORCE
+MFC-045|Common|Pineapple Blast|MAGICIAN'S FORCE
+MFC-046|Common|Secret Barrel|MAGICIAN'S FORCE
+MFC-048|Common|Rivalry of Warlords|MAGICIAN'S FORCE
+MFC-049|Common|Formation Union|MAGICIAN'S FORCE
+MFC-050|Common|Adhesion Trap Hole|MAGICIAN'S FORCE
+MFC-053|Super Rare|XZ-Tank Cannon|MAGICIAN'S FORCE
+MFC-055|Common|Great Angus|MAGICIAN'S FORCE
+MFC-056|Common|Aitsu|MAGICIAN'S FORCE
+MFC-057|Common|Sonic Duck|MAGICIAN'S FORCE
+MFC-062|Common|Amazoness Blowpiper|MAGICIAN'S FORCE
+MFC-066|Rare|Apprentice Magician|MAGICIAN'S FORCE
+MFC-067|Common|Old Vindictive Magician|MAGICIAN'S FORCE
+MFC-069|Common|Magical Marionette|MAGICIAN'S FORCE
+MFC-070|Common|Pixie Knight|MAGICIAN'S FORCE
+MFC-072|Common|Magical Plant Mandragola|MAGICIAN'S FORCE
+MFC-073|Common|Magical Scientist|MAGICIAN'S FORCE
+MFC-074|Common|Royal Magical Library|MAGICIAN'S FORCE
+MFC-078|Common|Dark Scorpion - Cliff the Trap Remover|MAGICIAN'S FORCE
+MFC-079|Common|Magical Merchant|MAGICIAN'S FORCE
+MFC-080|Common|Koitsu|MAGICIAN'S FORCE
+MFC-081|Rare|Cat's Ear Tribe|MAGICIAN'S FORCE
+MFC-083|Common|Dark Cat with White Tail|MAGICIAN'S FORCE
+MFC-084|Common|Amazoness Spellcaster|MAGICIAN'S FORCE
+MFC-085|Rare|Continuous Destruction Punch|MAGICIAN'S FORCE
+MFC-087|Common|Gather Your Mind|MAGICIAN'S FORCE
+MFC-088|Common|Mass Driver|MAGICIAN'S FORCE
+MFC-090|Common|Emblem of Dragon Destroyer|MAGICIAN'S FORCE
+MFC-091|Common|Jar Robber|MAGICIAN'S FORCE
+MFC-092|Common|My Body as a Shield|MAGICIAN'S FORCE
+MFC-093|Common|Spellbook Organization|MAGICIAN'S FORCE
+MFC-098|Common|Exhausting Spell|MAGICIAN'S FORCE
+MFC-099|Common|Hidden Spellbook|MAGICIAN'S FORCE
+MFC-100|Common|Miracle Restoring|MAGICIAN'S FORCE
+MFC-102|Common|Disarmament|MAGICIAN'S FORCE
+MFC-103|Common|Anti-Spell|MAGICIAN'S FORCE
+MFC-104|Common|The Spell Absorbing Life|MAGICIAN'S FORCE
+DCR-001|Common|Battle Footballer|DARK CRISIS
+DCR-003|Common|Acrobat Monkey|DARK CRISIS
+DCR-004|Common|Arsenal Summoner|DARK CRISIS
+DCR-005|Common|Guardian Elma|DARK CRISIS
+DCR-009|Common|Guardian Kay'est|DARK CRISIS
+DCR-010|Rare|Guardian Tryce|DARK CRISIS
+DCR-011|Common|Cyber Raider|DARK CRISIS
+DCR-021|Common|Gyaku-Gire Panda|DARK CRISIS
+DCR-022|Common|Blindly Loyal Goblin|DARK CRISIS
+DCR-023|Common|Despair from the Dark|DARK CRISIS
+DCR-025|Rare|Fear from the Dark|DARK CRISIS
+DCR-026|Common|Dark Scorpion - Chick the Yellow|DARK CRISIS
+DCR-028|Common|Thousand Needles|DARK CRISIS
+DCR-029|Common|Shinato's Ark|DARK CRISIS
+DCR-036|Common|Rod of Silence - Kay'est|DARK CRISIS
+DCR-038|Common|Precious Cards from Beyond|DARK CRISIS
+DCR-039|Common|Rod of the Mind's Eye|DARK CRISIS
+DCR-040|Common|Fairy of the Spring|DARK CRISIS
+DCR-041|Common|Token Thanksgiving|DARK CRISIS
+DCR-043|Common|Non-Spellcasting Area|DARK CRISIS
+DCR-045|Common|Final Attack Orders|DARK CRISIS
+DCR-046|Common|Staunch Defender|DARK CRISIS
+DCR-048|Common|Arsenal Robber|DARK CRISIS
+DCR-050|Common|Really Eternal Rest|DARK CRISIS
+DCR-054|Common|Gagagigo|DARK CRISIS
+DCR-055|Common|D.D. Trainer|DARK CRISIS
+DCR-058|Common|Pandemonium Watchbear|DARK CRISIS
+DCR-059|Common|Sasuke Samurai #2|DARK CRISIS
+DCR-060|Common|Dark Scorpion - Gorg the Strong|DARK CRISIS
+DCR-061|Common|Dark Scorpion - Meanae the Thorn|DARK CRISIS
+DCR-065|Common|Goblin of Greed|DARK CRISIS
+DCR-068|Common|Shadowknight Archfiend|DARK CRISIS
+DCR-070|Common|Desrook Archfiend|DARK CRISIS
+DCR-076|Super Rare|Mudora|DARK CRISIS
+DCR-077|Common|Keldo|DARK CRISIS
+DCR-078|Common|Kelbek|DARK CRISIS
+DCR-079|Common|Zolga|DARK CRISIS
+DCR-080|Common|Agido|DARK CRISIS
+DCR-081|Rare|Legendary Flame Lord|DARK CRISIS
+DCR-089|Common|Checkmate|DARK CRISIS
+DCR-090|Common|Cestus of Dagla|DARK CRISIS
+DCR-091|Common|Final Countdown|DARK CRISIS
+DCR-092|Common|Archfiend's Oath|DARK CRISIS
+DCR-094|Common|Pandemonium|DARK CRISIS
+DCR-095|Common|Altar for Tribute|DARK CRISIS
+DCR-096|Common|Frozen Soul|DARK CRISIS
+DCR-097|Common|Battle-Scarred|DARK CRISIS
+DCR-099|Common|Archfiend's Roar|DARK CRISIS
+DCR-100|Common|Dice Re-Roll|DARK CRISIS
+DCR-102|Common|Sakuretsu Armor|DARK CRISIS
+DCR-103|Common|Ray of Hope|DARK CRISIS
+IOC-001|Common|Ojama Yellow|INVASION OF CHAOS
+IOC-002|Common|Ojama Black|INVASION OF CHAOS
+IOC-003|Common|Soul Tiger|INVASION OF CHAOS
+IOC-004|Common|Big Koala|INVASION OF CHAOS
+IOC-005|Common|Des Kangaroo|INVASION OF CHAOS
+IOC-006|Common|Crimson Ninja|INVASION OF CHAOS
+IOC-008|Common|Gale Lizard|INVASION OF CHAOS
+IOC-010|Common|Chopman the Desperate Outlaw|INVASION OF CHAOS
+IOC-015|Common|Coach Goblin|INVASION OF CHAOS
+IOC-019|Common|Inferno|INVASION OF CHAOS
+IOC-020|Common|Fenrir|INVASION OF CHAOS
+IOC-022|Common|Silpheed|INVASION OF CHAOS
+IOC-023|Common|Chaos Sorcerer|INVASION OF CHAOS
+IOC-024|Common|Gren Maju Da Eiza|INVASION OF CHAOS
+IOC-026|Rare|Drillago|INVASION OF CHAOS
+IOC-027|Rare|Lekunga|INVASION OF CHAOS
+IOC-028|Common|Lord Poison|INVASION OF CHAOS
+IOC-030|Common|Granadora|INVASION OF CHAOS
+IOC-031|Rare|Fuhma Shuriken|INVASION OF CHAOS
+IOC-032|Common|Heart of the Underdog|INVASION OF CHAOS
+IOC-034|Common|Ojama Delta Hurricane!!|INVASION OF CHAOS
+IOC-035|Common|Stumbling|INVASION OF CHAOS
+IOC-036|Common|Chaos End|INVASION OF CHAOS
+IOC-037|Common|Yellow Luster Shield|INVASION OF CHAOS
+IOC-038|Common|Chaos Greed|INVASION OF CHAOS
+IOC-039|Super Rare|D.D. Designator|INVASION OF CHAOS
+IOC-040|Common|D.D. Borderline|INVASION OF CHAOS
+IOC-041|Common|Recycle|INVASION OF CHAOS
+IOC-042|Common|Primal Seed|INVASION OF CHAOS
+IOC-043|Common|Thunder Crash|INVASION OF CHAOS
+IOC-044|Common|Dimension Distortion|INVASION OF CHAOS
+IOC-046|Common|Soul Absorption|INVASION OF CHAOS
+IOC-047|Super Rare|Big Burn|INVASION OF CHAOS
+IOC-048|Common|Blasting the Ruins|INVASION OF CHAOS
+IOC-049|Common|Cursed Seal of the Forbidden Spell|INVASION OF CHAOS
+IOC-050|Common|Tower of Babel|INVASION OF CHAOS
+IOC-051|Common|Spatial Collapse|INVASION OF CHAOS
+IOC-052|Rare|Chain Disappearance|INVASION OF CHAOS
+IOC-053|Common|Zero Gravity|INVASION OF CHAOS
+IOC-055|Common|Energy Drain|INVASION OF CHAOS
+IOC-058|Common|Neo Bug|INVASION OF CHAOS
+IOC-059|Common|Sea Serpent Warrior of Darkness|INVASION OF CHAOS
+IOC-060|Common|Terrorking Salmon|INVASION OF CHAOS
+IOC-061|Common|Blazing Inpachi|INVASION OF CHAOS
+IOC-063|Common|The Thing in the Crater|INVASION OF CHAOS
+IOC-064|Common|Molten Zombie|INVASION OF CHAOS
+IOC-066|Common|Gora Turtle of Illusion|INVASION OF CHAOS
+IOC-069|Common|Sacred Crane|INVASION OF CHAOS
+IOC-071|Common|Don Turtle|INVASION OF CHAOS
+IOC-072|Common|Balloon Lizard|INVASION OF CHAOS
+IOC-073|Rare|Dark Driceratops|INVASION OF CHAOS
+IOC-074|Common|Hyper Hammerhead|INVASION OF CHAOS
+IOC-075|Ultra Rare|Black Tyranno|INVASION OF CHAOS
+IOC-076|Common|Anti-Aircraft Flower|INVASION OF CHAOS
+IOC-077|Common|Prickle Fairy|INVASION OF CHAOS
+IOC-078|Common|Pinch Hopper|INVASION OF CHAOS
+IOC-079|Common|Skull-Mark Ladybug|INVASION OF CHAOS
+IOC-080|Ultra Rare|Insect Princess|INVASION OF CHAOS
+IOC-081|Common|Amphibious Bugroth MK-3|INVASION OF CHAOS
+IOC-082|Common|Torpedo Fish|INVASION OF CHAOS
+IOC-089|Rare|Getsu Fuhma|INVASION OF CHAOS
+IOC-090|Common|Ryu Kokki|INVASION OF CHAOS
+IOC-091|Common|Gryphon's Feather Duster|INVASION OF CHAOS
+IOC-096|Common|Salvage|INVASION OF CHAOS
+IOC-098|Common|Multiplication of Ants|INVASION OF CHAOS
+IOC-099|Common|Earth Chant|INVASION OF CHAOS
+IOC-100|Common|Jade Insect Whistle|INVASION OF CHAOS
+IOC-101|Rare|Destruction Ring|INVASION OF CHAOS
+IOC-102|Common|Fiend's Hand Mirror|INVASION OF CHAOS
+IOC-104|Common|A Hero Emerges|INVASION OF CHAOS
+IOC-105|Common|Self-Destruct Button|INVASION OF CHAOS
+IOC-107|Common|Begone, Knave!|INVASION OF CHAOS
+IOC-108|Common|DNA Transplant|INVASION OF CHAOS
+IOC-109|Rare|Robbin' Zombie|INVASION OF CHAOS
+AST-001|Common|Gogiga Gagagigo|ANCIENT SANCTUARY
+AST-004|Common|Mystical Shine Ball|ANCIENT SANCTUARY
+AST-005|Common|Metal Armored Bug|ANCIENT SANCTUARY
+AST-012|Common|The Kick Man|ANCIENT SANCTUARY
+AST-013|Common|Vampire Lady|ANCIENT SANCTUARY
+AST-015|Common|Rocket Jumper|ANCIENT SANCTUARY
+AST-016|Rare|Avatar of The Pot|ANCIENT SANCTUARY
+AST-017|Common|Legendary Jujitsu Master|ANCIENT SANCTUARY
+AST-021|Common|Sonic Jammer|ANCIENT SANCTUARY
+AST-025|Common|Mermaid Knight|ANCIENT SANCTUARY
+AST-026|Common|Piranha Army|ANCIENT SANCTUARY
+AST-028|Common|Disc Fighter|ANCIENT SANCTUARY
+AST-029|Common|Arcane Archer of the Forest|ANCIENT SANCTUARY
+AST-031|Common|Goblin King|ANCIENT SANCTUARY
+AST-032|Common|Solar Flare Dragon|ANCIENT SANCTUARY
+AST-033|Common|White Magician Pikeru|ANCIENT SANCTUARY
+AST-039|Common|Monster Gate|ANCIENT SANCTUARY
+AST-041|Common|Weapon Change|ANCIENT SANCTUARY
+AST-045|Common|Goblin Thief|ANCIENT SANCTUARY
+AST-046|Common|Backfire|ANCIENT SANCTUARY
+AST-048|Common|Light of Judgment|ANCIENT SANCTUARY
+AST-050|Common|Wall of Revealing Light|ANCIENT SANCTUARY
+AST-051|Common|Solar Ray|ANCIENT SANCTUARY
+AST-052|Common|Ninjitsu Art of Transformation|ANCIENT SANCTUARY
+AST-055|Common|Armor Break|ANCIENT SANCTUARY
+AST-057|Common|Mokey Mokey|ANCIENT SANCTUARY
+AST-058|Common|Kozaky|ANCIENT SANCTUARY
+AST-059|Common|Fiend Scorpion|ANCIENT SANCTUARY
+AST-064|Common|Aswan Apparition|ANCIENT SANCTUARY
+AST-065|Common|Protector of the Sanctuary|ANCIENT SANCTUARY
+AST-070|Common|3-Hump Lacooda|ANCIENT SANCTUARY
+AST-072|Common|Absorbing Kid from the Sky|ANCIENT SANCTUARY
+AST-073|Common|Elephant Statue of Blessing|ANCIENT SANCTUARY
+AST-075|Common|Spirit Caller|ANCIENT SANCTUARY
+AST-078|Rare|Double Coston|ANCIENT SANCTUARY
+AST-079|Common|Regenerating Mummy|ANCIENT SANCTUARY
+AST-080|Common|Night Assailant|ANCIENT SANCTUARY
+AST-083|Common|Emissary of the Oasis|ANCIENT SANCTUARY
+AST-086|Common|Sword of the Soul-Eater|ANCIENT SANCTUARY
+AST-087|Common|Dust Barrier|ANCIENT SANCTUARY
+AST-088|Common|Soul Reversal|ANCIENT SANCTUARY
+AST-092|Common|Level Limit - Area B|ANCIENT SANCTUARY
+AST-093|Common|Enchanting Fitting Room|ANCIENT SANCTUARY
+AST-094|Common|The Law of the Normal|ANCIENT SANCTUARY
+AST-096|Common|Delta Attacker|ANCIENT SANCTUARY
+AST-099|Common|The Third Sarcophagus|ANCIENT SANCTUARY
+AST-100|Common|The Second Sarcophagus|ANCIENT SANCTUARY
+AST-103|Common|Judgment of the Desert|ANCIENT SANCTUARY
+EP1-EN001|Ultra Rare|Theinen the Great Sphinx|EXCLUSIVE PACK
+EP1-EN002|Ultra Rare|Andro Sphinx|EXCLUSIVE PACK
+EP1-EN003|Ultra Rare|Sphinx Teleia|EXCLUSIVE PACK
+EP1-EN004|Common|Rare Metal Dragon|EXCLUSIVE PACK
+EP1-EN005|Common|Peten the Dark Clown|EXCLUSIVE PACK
+EP1-EN006|Common|Familiar Knight|EXCLUSIVE PACK
+EP1-EN007|Common|Inferno Tempest|EXCLUSIVE PACK
+EP1-EN008|Common|Return from the Different Dimension|EXCLUSIVE PACK
