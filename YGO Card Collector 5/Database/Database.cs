@@ -292,8 +292,11 @@ namespace YGO_Card_Collector_5
                 {
                     line = SR_SaveFile.ReadLine();
                     SaveFileData.Add(line);
-                    SetCard SetCardToMark = SetCardByKey[line];
-                    SetCardToMark.FlipObtainedStatusNOUPDATE();
+                    if(SetCardByKey.ContainsKey(line))
+                    {
+                        SetCard SetCardToMark = SetCardByKey[line];
+                        SetCardToMark.FlipObtainedStatusNOUPDATE();
+                    }
                 }
                 SR_SaveFile?.Close();
             }
@@ -316,7 +319,10 @@ namespace YGO_Card_Collector_5
                     bool tag2 = Convert.ToBoolean(tokens[3]);
                     bool tag3 = Convert.ToBoolean(tokens[4]);
                     bool tag4 = Convert.ToBoolean(tokens[5]);
-                    MasterCardByName[cardname].OverrideTagsFromSaveFile(tag1, tag2, tag3, tag4);
+                    if(MasterCardByName.ContainsKey(cardname)) 
+                    {
+                        MasterCardByName[cardname].OverrideTagsFromSaveFile(tag1, tag2, tag3, tag4);
+                    }                   
                 }
 
                 SR_SaveFile?.Close();
