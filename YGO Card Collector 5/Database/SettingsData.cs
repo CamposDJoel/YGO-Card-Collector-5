@@ -180,6 +180,9 @@ namespace YGO_Card_Collector_5
         DarkMagician = 0,
         DarkMagicianGirl,
         Traptrix,
-        BlueEyesUltimate
+        BlueEyesUltimate,
+        BlackLusterSoldier,
+        YugiSlifer,
+        Slifer
     }
 }
