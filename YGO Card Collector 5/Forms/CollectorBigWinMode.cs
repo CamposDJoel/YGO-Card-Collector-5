@@ -371,45 +371,21 @@ namespace YGO_Card_Collector_5
                 case "Ultra Rare (Pharaoh's Rare)": lblRarity.ForeColor = Color.DarkRed; break;
                 default: lblRarity.ForeColor = Color.White; break;
             }
-
+            //Floor Price Label
+            lblFloorPricelabel.Visible = true;
+            lblFloorPrice.Visible = true;
+            lblFloorPrice.Text = _CurrentSetCardInView.FloorPrice;
+            lblFloorPrice.ForeColor = Tools.GetPriceColorForLabel(_CurrentSetCardInView.GetDoubleFloorPrice());
+            //Market Price Label
             lblMarketPricelabel.Visible = true;
             lblMarketPrice.Visible = true;
             lblMarketPrice.Text = _CurrentSetCardInView.MarketPrice;
-            if (_CurrentSetCardInView.GetDoubleMarketPrice() < 1)
-            {
-                lblMarketPrice.ForeColor = Color.White;
-            }
-            else if (_CurrentSetCardInView.GetDoubleMarketPrice() < 5)
-            {
-                lblMarketPrice.ForeColor = Color.LightGreen;
-            }
-            else if (_CurrentSetCardInView.GetDoubleMarketPrice() < 50)
-            {
-                lblMarketPrice.ForeColor = Color.HotPink;
-            }
-            else
-            {
-                lblMarketPrice.ForeColor = Color.Gold;
-            }
+            lblMarketPrice.ForeColor = Tools.GetRarityColorForLabel(_CurrentSetCardInView.Rarity);
+            //Median Price Label
             lblMedianPricelabel.Visible = true;
             lblMedianPrice.Visible = true;
             lblMedianPrice.Text = _CurrentSetCardInView.MediamPrice;
-            if (_CurrentSetCardInView.GetDoubleMedianPrice() < 1)
-            {
-                lblMedianPrice.ForeColor = Color.White;
-            }
-            else if (_CurrentSetCardInView.GetDoubleMedianPrice() < 5)
-            {
-                lblMedianPrice.ForeColor = Color.LightGreen;
-            }
-            else if (_CurrentSetCardInView.GetDoubleMedianPrice() < 50)
-            {
-                lblMedianPrice.ForeColor = Color.HotPink;
-            }
-            else
-            {
-                lblMedianPrice.ForeColor = Color.Gold;
-            }
+            lblMedianPrice.ForeColor = Tools.GetRarityColorForLabel(_CurrentSetCardInView.Rarity);
             lblCodelabel.Visible = true;
             lblCode.Visible = true;
             lblCode.Text = _CurrentSetCardInView.Code;
