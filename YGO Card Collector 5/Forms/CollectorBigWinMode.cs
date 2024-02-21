@@ -883,7 +883,7 @@ namespace YGO_Card_Collector_5
         #endregion
 
         #region Event Listeners (Links Button Labels)
-        private void lblKonamiLink_Click(object sender, EventArgs e)
+        private void LaunchKonamiURL()
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
             if (_MasterCardViewMode)
@@ -894,21 +894,23 @@ namespace YGO_Card_Collector_5
             {
                 Tools.LaunchURLIntoBrowser(_CurrentSetCardInView.GetKonamiDBURL());
             }
-
         }
-        private void lblProdeckLink_Click(object sender, EventArgs e)
+        private void LaunchProdeckURL()
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
             if (_MasterCardViewMode)
             {
-                Tools.LaunchURLIntoBrowser(_CurrentMasterCardInView.ProdeckURL);
+                if (_CurrentMasterCardInView.HasProDeckURL())
+                {
+                    Tools.LaunchURLIntoBrowser(_CurrentMasterCardInView.ProdeckURL);
+                }
             }
             else
             {
                 Tools.LaunchURLIntoBrowser(_CurrentSetCardInView.GetProdeckURL());
             }
         }
-        private void lblTCGLink_Click(object sender, EventArgs e)
+        private void LaunchTCGPlayerURL()
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
 
@@ -918,8 +920,23 @@ namespace YGO_Card_Collector_5
             }
             else
             {
-                Tools.LaunchURLIntoBrowser(_CurrentSetCardInView.TCGPlayerURL);
+                if (_CurrentSetCardInView.HasTCGURL())
+                {
+                    Tools.LaunchURLIntoBrowser(_CurrentSetCardInView.TCGPlayerURL);
+                }
             }
+        }
+        private void lblKonamiLink_Click(object sender, EventArgs e)
+        {
+            LaunchKonamiURL();
+        }
+        private void lblProdeckLink_Click(object sender, EventArgs e)
+        {
+            LaunchProdeckURL();
+        }
+        private void lblTCGLink_Click(object sender, EventArgs e)
+        {
+            LaunchTCGPlayerURL();
         }
         #endregion
 
@@ -1647,6 +1664,39 @@ namespace YGO_Card_Collector_5
                         }
                         LoadPage();
                     }
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.F5)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    //Open the Konami URL link
+                    LaunchKonamiURL();
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.F6)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    //Open prodeck URL
+                    LaunchProdeckURL();
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.F7)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    //Open TCG Player URL
+                    LaunchTCGPlayerURL();
                     _KeyInputEnable = true;
                 }
                 return true;
