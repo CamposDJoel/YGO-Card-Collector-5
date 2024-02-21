@@ -212,6 +212,7 @@ namespace YGO_Card_Collector_5
                 {
                     lblProdeckLink.Visible = true;
                 }
+                lblTCGLink.Visible = true;
             }
             else
             {
@@ -593,7 +594,15 @@ namespace YGO_Card_Collector_5
         private void lblTCGLink_Click(object sender, EventArgs e)
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
-            Tools.LaunchURLIntoBrowser(_CurrentSetCardInView.TCGPlayerURL);
+
+            if(_MasterCardViewMode)
+            {
+                Tools.LaunchURLIntoBrowser("https://www.tcgplayer.com/search/all/product?q=" + _CurrentMasterCardInView.Name + "&view=grid");
+            }
+            else
+            {
+                Tools.LaunchURLIntoBrowser(_CurrentSetCardInView.TCGPlayerURL);
+            }            
         }
         #endregion
 
