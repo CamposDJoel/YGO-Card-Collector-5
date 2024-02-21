@@ -15,7 +15,7 @@ namespace YGO_Card_Collector_5
         #region Constructors
         public Collector(FormLauncher mainMenuForm)
         {
-            SoundServer.PlayBackgroundMusic(Song.DeckBuildMenu, true);
+            SoundServer.PlayRNDBackgroundMusic();
 
             _MainMenuForm = mainMenuForm;
             InitializeComponent();           

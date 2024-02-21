@@ -13,9 +13,7 @@ namespace YGO_Card_Collector_5
     {
         #region Constructors
         public FormLauncher()
-        {
-            SoundServer.PlayBackgroundMusic(Song.TitleScreen, true);
-
+        {           
             InitializeComponent();
 
             lblLaunchAppOption.MouseEnter += OnMouseEnterLabel;
@@ -32,9 +30,14 @@ namespace YGO_Card_Collector_5
             RadioBigWinOption.MouseEnter += OnMouseEnterRadio;
             RadioDefaultOption.MouseEnter += OnMouseEnterRadio;
 
+            btnLoadDB.MouseEnter += OnMouseEnterRadio;
+            btnLoadDB2019.MouseEnter += OnMouseEnterRadio;
+
 
             //Load App Settings
             SettingsData.InitializeSettings();
+            
+            SoundServer.PlayBackgroundMusic(Song.MainMenu);
 
             //Load Form theme
             Tools.InitalizeThemeOnForm(this);
@@ -45,7 +48,7 @@ namespace YGO_Card_Collector_5
         public void ReturnToForm()
         {
             Tools.InitalizeThemeOnForm(this);
-            SoundServer.PlayBackgroundMusic(Song.TitleScreen, true);
+            SoundServer.PlayBackgroundMusic(Song.MainMenu);
             Show();
         }
         #endregion

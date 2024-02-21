@@ -12,7 +12,7 @@ namespace YGO_Card_Collector_5
         #region Constructors
         public SettingsForm(FormLauncher mainmenuform)
         {
-            SoundServer.PlayBackgroundMusic(Song.MainMenu, true);
+            SoundServer.PlayBackgroundMusic(Song.TitleScreen);
             InitializeComponent();
             _Mainmenuform = mainmenuform;
             ReloadSettings();
@@ -64,6 +64,9 @@ namespace YGO_Card_Collector_5
                 case AppTheme.DarkMagicianGirl: RadioThemeDMG.Checked = true; break;
                 case AppTheme.Traptrix: RadioThemeTraptrix.Checked = true; break;
                 case AppTheme.BlueEyesUltimate: RadioThemeBlueEyesUltimate.Checked = true; break;
+                case AppTheme.BlackLusterSoldier: RadioThemeBLS.Checked = true; break;
+                case AppTheme.YugiSlifer: RadioThemeYugiSlifer.Checked = true; break;
+                case AppTheme.Slifer: RadioThemeSlifer.Checked = true; break;
             }
 
             
@@ -161,22 +164,46 @@ namespace YGO_Card_Collector_5
                 SettingsData.SwitchCurrentThemeSetting(3);
             }
         }
+        private void RadioThemeBLS_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RadioThemeBLS.Checked)
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
+                SettingsData.SwitchCurrentThemeSetting(4);
+            }
+        }
+        private void RadioThemeYugiSlifer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RadioThemeYugiSlifer.Checked)
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
+                SettingsData.SwitchCurrentThemeSetting(5);
+            }
+        }
+        private void RadioThemeSlifer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RadioThemeSlifer.Checked)
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
+                SettingsData.SwitchCurrentThemeSetting(6);
+            }
+        }
         private void OnMouseEnterRadio(object sender, EventArgs e)
         {
             SoundServer.PlaySoundEffect(SoundEffect.Hover);
         }
         private void RadioMusicON_CheckedChanged(object sender, EventArgs e)
         {
-            if (RadioTestModeON.Checked)
+            if (RadioMusicON.Checked)
             {
                 SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
                 SettingsData.SwitchMusicSetting(true);
-                SoundServer.PlayBackgroundMusic(Song.MainMenu, true);
+                SoundServer.PlayBackgroundMusic(Song.TitleScreen);
             }
         }
         private void RadioMusicOFF_CheckedChanged(object sender, EventArgs e)
         {
-            if (RadioTestModeOFF.Checked)
+            if (RadioMusicOFF.Checked)
             {
                 SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
                 SettingsData.SwitchMusicSetting(false);
@@ -199,8 +226,6 @@ namespace YGO_Card_Collector_5
                 SettingsData.SwitchSFXSetting(false);
             }
         }
-        #endregion
-
         private void btnUpdateTags_Click(object sender, EventArgs e)
         {
             string input1 = txtTagNameStar.Text;
@@ -208,7 +233,7 @@ namespace YGO_Card_Collector_5
             string input3 = txtTagNameTriangle.Text;
             string input4 = txtTagNameCircle.Text;
 
-            if(input1.Contains("|") || input1 == "" ||
+            if (input1.Contains("|") || input1 == "" ||
                 input2.Contains("|") || input2 == "" ||
                 input3.Contains("|") || input3 == "" ||
                 input4.Contains("|") || input4 == "")
@@ -225,5 +250,6 @@ namespace YGO_Card_Collector_5
                 SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
             }
         }
+        #endregion
     }
 }

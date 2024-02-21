@@ -10,24 +10,33 @@ namespace YGO_Card_Collector_5
 {
     public static class SoundServer
     {
-        public static void PlayBackgroundMusic(Song song, bool TurnOn)
+        public static void PlayBackgroundMusic(Song song)
         {
             if(SettingsData.MusicOn)
             {
-                if (TurnOn)
-                {
-                    string filepath = "\\Music\\" + song + ".m4a";
-                    CurrentBackGroundPlay.Open(new Uri(Directory.GetCurrentDirectory() + filepath));
-                    //This event will loop the song... once the song ends it plays again
-                    CurrentBackGroundPlay.MediaEnded += new EventHandler(Media_Ended);
-                    CurrentBackGroundPlay.Play();
-                    CurrentBackGroundPlay.Volume = 0.3;
-                }
-                else
-                {
-                    CurrentBackGroundPlay.Stop();
-                }
+                string filepath = "\\Music\\" + song + ".m4a";
+                CurrentBackGroundPlay.Open(new Uri(Directory.GetCurrentDirectory() + filepath));
+                //This event will loop the song... once the song ends it plays again
+                CurrentBackGroundPlay.MediaEnded += new EventHandler(Media_Ended);
+                CurrentBackGroundPlay.Play();
+                CurrentBackGroundPlay.Volume = 0.3;
             }           
+        }
+        public static void PlayRNDBackgroundMusic()
+        {
+            if (SettingsData.MusicOn)
+            {
+                string song = "tmp";
+                Random rnd = new Random();
+                int index = rnd.Next(0, 2);
+                song = ((CollectorSong)index).ToString();
+                string filepath = "\\Music\\" + song + ".m4a";
+                CurrentBackGroundPlay.Open(new Uri(Directory.GetCurrentDirectory() + filepath));
+                //This event will loop the song... once the song ends it plays again
+                CurrentBackGroundPlay.MediaEnded += new EventHandler(Media_Ended);
+                CurrentBackGroundPlay.Play();
+                CurrentBackGroundPlay.Volume = 0.3;
+            }
         }
         public static void StopBackgroundMusic() 
         {
@@ -61,8 +70,11 @@ namespace YGO_Card_Collector_5
         FreeDuelMenu,
         DeckBuildMenu,
         FreeDuel,
-        YouWin,
-        YouLose,
+    }
+    public enum CollectorSong
+    {
+        DeckBuildMenu,
+        FreeDuel,
     }
     public enum SoundEffect
     {

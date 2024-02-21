@@ -53,17 +53,20 @@
             this.RadioSFXOFF = new System.Windows.Forms.RadioButton();
             this.RadioSFXON = new System.Windows.Forms.RadioButton();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnUpdateTags = new System.Windows.Forms.Button();
+            this.txtTagNameCircle = new System.Windows.Forms.TextBox();
+            this.txtTagNameTriangle = new System.Windows.Forms.TextBox();
+            this.txtTagNameSquare = new System.Windows.Forms.TextBox();
+            this.txtTagNameStar = new System.Windows.Forms.TextBox();
             this.btnTagCircle = new System.Windows.Forms.Button();
             this.PicTagCircle = new System.Windows.Forms.PictureBox();
             this.PicTagTriangle = new System.Windows.Forms.PictureBox();
             this.PicTagSquare = new System.Windows.Forms.PictureBox();
             this.PicTagStar = new System.Windows.Forms.PictureBox();
-            this.txtTagNameStar = new System.Windows.Forms.TextBox();
-            this.txtTagNameSquare = new System.Windows.Forms.TextBox();
-            this.txtTagNameTriangle = new System.Windows.Forms.TextBox();
-            this.txtTagNameCircle = new System.Windows.Forms.TextBox();
-            this.btnUpdateTags = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.RadioThemeBLS = new System.Windows.Forms.RadioButton();
+            this.RadioThemeYugiSlifer = new System.Windows.Forms.RadioButton();
+            this.RadioThemeSlifer = new System.Windows.Forms.RadioButton();
             this.GroupTestMode.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -224,6 +227,9 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.RadioThemeSlifer);
+            this.groupBox3.Controls.Add(this.RadioThemeYugiSlifer);
+            this.groupBox3.Controls.Add(this.RadioThemeBLS);
             this.groupBox3.Controls.Add(this.RadioThemeBlueEyesUltimate);
             this.groupBox3.Controls.Add(this.RadioThemeTraptrix);
             this.groupBox3.Controls.Add(this.RadioThemeDMG);
@@ -376,6 +382,55 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Custom Tag\'s Names";
             // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label2.Location = new System.Drawing.Point(5, 167);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(154, 26);
+            this.label2.TabIndex = 297;
+            this.label2.Text = "Custom names cannot be empty of contain \"|\"";
+            // 
+            // btnUpdateTags
+            // 
+            this.btnUpdateTags.BackColor = System.Drawing.Color.Black;
+            this.btnUpdateTags.Location = new System.Drawing.Point(46, 144);
+            this.btnUpdateTags.Name = "btnUpdateTags";
+            this.btnUpdateTags.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdateTags.TabIndex = 296;
+            this.btnUpdateTags.Text = "UPDATE";
+            this.btnUpdateTags.UseVisualStyleBackColor = false;
+            this.btnUpdateTags.Click += new System.EventHandler(this.btnUpdateTags_Click);
+            // 
+            // txtTagNameCircle
+            // 
+            this.txtTagNameCircle.Location = new System.Drawing.Point(50, 116);
+            this.txtTagNameCircle.Name = "txtTagNameCircle";
+            this.txtTagNameCircle.Size = new System.Drawing.Size(100, 23);
+            this.txtTagNameCircle.TabIndex = 295;
+            // 
+            // txtTagNameTriangle
+            // 
+            this.txtTagNameTriangle.Location = new System.Drawing.Point(50, 87);
+            this.txtTagNameTriangle.Name = "txtTagNameTriangle";
+            this.txtTagNameTriangle.Size = new System.Drawing.Size(100, 23);
+            this.txtTagNameTriangle.TabIndex = 294;
+            // 
+            // txtTagNameSquare
+            // 
+            this.txtTagNameSquare.Location = new System.Drawing.Point(50, 58);
+            this.txtTagNameSquare.Name = "txtTagNameSquare";
+            this.txtTagNameSquare.Size = new System.Drawing.Size(100, 23);
+            this.txtTagNameSquare.TabIndex = 293;
+            // 
+            // txtTagNameStar
+            // 
+            this.txtTagNameStar.Location = new System.Drawing.Point(50, 28);
+            this.txtTagNameStar.Name = "txtTagNameStar";
+            this.txtTagNameStar.Size = new System.Drawing.Size(100, 23);
+            this.txtTagNameStar.TabIndex = 292;
+            // 
             // btnTagCircle
             // 
             this.btnTagCircle.BackColor = System.Drawing.Color.Black;
@@ -431,54 +486,38 @@
             this.PicTagStar.TabIndex = 288;
             this.PicTagStar.TabStop = false;
             // 
-            // txtTagNameStar
+            // RadioThemeBLS
             // 
-            this.txtTagNameStar.Location = new System.Drawing.Point(50, 28);
-            this.txtTagNameStar.Name = "txtTagNameStar";
-            this.txtTagNameStar.Size = new System.Drawing.Size(100, 23);
-            this.txtTagNameStar.TabIndex = 292;
+            this.RadioThemeBLS.AutoSize = true;
+            this.RadioThemeBLS.Location = new System.Drawing.Point(15, 124);
+            this.RadioThemeBLS.Name = "RadioThemeBLS";
+            this.RadioThemeBLS.Size = new System.Drawing.Size(156, 19);
+            this.RadioThemeBLS.TabIndex = 4;
+            this.RadioThemeBLS.Text = "Black Luster Soldier";
+            this.RadioThemeBLS.UseVisualStyleBackColor = true;
+            this.RadioThemeBLS.CheckedChanged += new System.EventHandler(this.RadioThemeBLS_CheckedChanged);
             // 
-            // txtTagNameSquare
+            // RadioThemeYugiSlifer
             // 
-            this.txtTagNameSquare.Location = new System.Drawing.Point(50, 58);
-            this.txtTagNameSquare.Name = "txtTagNameSquare";
-            this.txtTagNameSquare.Size = new System.Drawing.Size(100, 23);
-            this.txtTagNameSquare.TabIndex = 293;
+            this.RadioThemeYugiSlifer.AutoSize = true;
+            this.RadioThemeYugiSlifer.Location = new System.Drawing.Point(15, 149);
+            this.RadioThemeYugiSlifer.Name = "RadioThemeYugiSlifer";
+            this.RadioThemeYugiSlifer.Size = new System.Drawing.Size(92, 19);
+            this.RadioThemeYugiSlifer.TabIndex = 5;
+            this.RadioThemeYugiSlifer.Text = "Yugi-Slifer";
+            this.RadioThemeYugiSlifer.UseVisualStyleBackColor = true;
+            this.RadioThemeYugiSlifer.CheckedChanged += new System.EventHandler(this.RadioThemeYugiSlifer_CheckedChanged);
             // 
-            // txtTagNameTriangle
+            // RadioThemeSlifer
             // 
-            this.txtTagNameTriangle.Location = new System.Drawing.Point(50, 87);
-            this.txtTagNameTriangle.Name = "txtTagNameTriangle";
-            this.txtTagNameTriangle.Size = new System.Drawing.Size(100, 23);
-            this.txtTagNameTriangle.TabIndex = 294;
-            // 
-            // txtTagNameCircle
-            // 
-            this.txtTagNameCircle.Location = new System.Drawing.Point(50, 116);
-            this.txtTagNameCircle.Name = "txtTagNameCircle";
-            this.txtTagNameCircle.Size = new System.Drawing.Size(100, 23);
-            this.txtTagNameCircle.TabIndex = 295;
-            // 
-            // btnUpdateTags
-            // 
-            this.btnUpdateTags.BackColor = System.Drawing.Color.Black;
-            this.btnUpdateTags.Location = new System.Drawing.Point(46, 144);
-            this.btnUpdateTags.Name = "btnUpdateTags";
-            this.btnUpdateTags.Size = new System.Drawing.Size(75, 23);
-            this.btnUpdateTags.TabIndex = 296;
-            this.btnUpdateTags.Text = "UPDATE";
-            this.btnUpdateTags.UseVisualStyleBackColor = false;
-            this.btnUpdateTags.Click += new System.EventHandler(this.btnUpdateTags_Click);
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label2.Location = new System.Drawing.Point(5, 167);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(154, 26);
-            this.label2.TabIndex = 297;
-            this.label2.Text = "Custom names cannot be empty of contain \"|\"";
+            this.RadioThemeSlifer.AutoSize = true;
+            this.RadioThemeSlifer.Location = new System.Drawing.Point(15, 174);
+            this.RadioThemeSlifer.Name = "RadioThemeSlifer";
+            this.RadioThemeSlifer.Size = new System.Drawing.Size(161, 19);
+            this.RadioThemeSlifer.TabIndex = 6;
+            this.RadioThemeSlifer.Text = "Slifer the Sky Dragon";
+            this.RadioThemeSlifer.UseVisualStyleBackColor = true;
+            this.RadioThemeSlifer.CheckedChanged += new System.EventHandler(this.RadioThemeSlifer_CheckedChanged);
             // 
             // SettingsForm
             // 
@@ -562,5 +601,8 @@
         private System.Windows.Forms.TextBox txtTagNameSquare;
         private System.Windows.Forms.TextBox txtTagNameStar;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton RadioThemeSlifer;
+        private System.Windows.Forms.RadioButton RadioThemeYugiSlifer;
+        private System.Windows.Forms.RadioButton RadioThemeBLS;
     }
 }
