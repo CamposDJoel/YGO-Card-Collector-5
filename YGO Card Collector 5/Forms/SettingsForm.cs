@@ -52,6 +52,10 @@ namespace YGO_Card_Collector_5
             RadioMusicOFF.Checked = !SettingsData.MusicOn;
             RadioSFXON.Checked = SettingsData.SFXOn;
             RadioSFXOFF.Checked = !SettingsData.SFXOn;
+            txtTagNameStar.Text = SettingsData.StarTagName;
+            txtTagNameSquare.Text = SettingsData.SquareTagName;
+            txtTagNameTriangle.Text = SettingsData.TriangleTagName;
+            txtTagNameCircle.Text = SettingsData.CircleTagName;
 
             AppTheme _CurrentTHeme = SettingsData.CurrentTheme;
             switch(SettingsData.CurrentTheme) 
@@ -196,5 +200,30 @@ namespace YGO_Card_Collector_5
             }
         }
         #endregion
+
+        private void btnUpdateTags_Click(object sender, EventArgs e)
+        {
+            string input1 = txtTagNameStar.Text;
+            string input2 = txtTagNameSquare.Text;
+            string input3 = txtTagNameTriangle.Text;
+            string input4 = txtTagNameCircle.Text;
+
+            if(input1.Contains("|") || input1 == "" ||
+                input2.Contains("|") || input2 == "" ||
+                input3.Contains("|") || input3 == "" ||
+                input4.Contains("|") || input4 == "")
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+            }
+            else
+            {
+                //override the names
+                SettingsData.ChangeTagName(TagIcon.Star, input1);
+                SettingsData.ChangeTagName(TagIcon.Square, input2);
+                SettingsData.ChangeTagName(TagIcon.Triangle, input3);
+                SettingsData.ChangeTagName(TagIcon.Circle, input4);
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
+            }
+        }
     }
 }

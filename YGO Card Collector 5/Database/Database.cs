@@ -18,6 +18,7 @@ namespace YGO_Card_Collector_5
         public static Dictionary<string, MasterCard> MasterCardByCode = new Dictionary<string, MasterCard>();
         public static List<MasterCard> MasterCards = new List<MasterCard>();
         private static List<string> SaveFileData = new List<string>();
+        private static List<string> TagsSaveFileData = new List<string>();
         //Sets List DB
         public static List<string> SetsDB = new List<string>();
         //Set Cards
@@ -149,8 +150,9 @@ namespace YGO_Card_Collector_5
                 //Initialize the CardGroupList dictionary for clean code access to these lists
                 InitalizeCardGroupListsDict();
 
-                //Read the SaveFile to mark all the Obtained cards
+                //Read the SaveFiles to mark all the Obtained cards and tag records
                 LoadSaveFile();
+                LoadTagsSaveFile();
 
                 //Flag the DB as "Initialized" so we dont reload it
                 Initialized = true;
@@ -279,7 +281,7 @@ namespace YGO_Card_Collector_5
             void LoadSaveFile()
             {
                 StreamReader SR_SaveFile = new StreamReader(
-                Directory.GetCurrentDirectory() + "\\Database\\SaveFile.txt");
+                Directory.GetCurrentDirectory() + "\\SaveFiles\\SaveFile.txt");
 
                 string line = SR_SaveFile.ReadLine();
                 SaveFileData.Add(line);
@@ -291,6 +293,29 @@ namespace YGO_Card_Collector_5
                     SaveFileData.Add(line);
                     SetCard SetCardToMark = SetCardByKey[line];
                     SetCardToMark.FlipObtainedStatusNOUPDATE();
+                }
+                SR_SaveFile?.Close();
+            }
+            void LoadTagsSaveFile()
+            {
+                StreamReader SR_SaveFile = new StreamReader(
+                Directory.GetCurrentDirectory() + "\\SaveFiles\\TagsSaveFile.txt");
+
+                string line = SR_SaveFile.ReadLine();
+                TagsSaveFileData.Add(line);
+                int cardsWithTagsCount = Convert.ToInt32(line);
+                for (int i = 0; i < cardsWithTagsCount; i++)
+                {
+                    //SAMPLE : tagRecod|cardname|False|True|False|False
+                    line = SR_SaveFile.ReadLine();
+                    TagsSaveFileData.Add(line);
+                    string[] tokens = line.Split('|');
+                    string cardname = tokens[1];
+                    bool tag1 = Convert.ToBoolean(tokens[2]);
+                    bool tag2 = Convert.ToBoolean(tokens[3]);
+                    bool tag3 = Convert.ToBoolean(tokens[4]);
+                    bool tag4 = Convert.ToBoolean(tokens[5]);
+                    MasterCardByName[cardname].OverrideTagsFromSaveFile(tag1, tag2, tag3, tag4);
                 }
 
                 SR_SaveFile?.Close();
@@ -318,7 +343,47 @@ namespace YGO_Card_Collector_5
             else
             {
                 //Override the actual DB file
-                File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Database\\SaveFile.txt", SaveFileData);
+                File.WriteAllLines(Directory.GetCurrentDirectory() + "\\SaveFiles\\SaveFile.txt", SaveFileData);
+            }
+        }
+        public static void UpdateTagsSaveFile(string cardName)
+        {
+            int index = -1;
+            for(int x = 0; x < TagsSaveFileData.Count; x++)
+            {
+                string record = TagsSaveFileData[x];
+                if (record.Contains(string.Format("|{0}|", cardName)))
+                {
+                    //save that index 
+                    index = x; break;
+                }
+            }
+
+            bool[] tags = MasterCardByName[cardName].GetTags();
+            if(index != -1)
+            {
+                //remove that record
+                TagsSaveFileData.RemoveAt(index);
+                
+            }
+
+            if (!MasterCardByName[cardName].HasNoTagMarked())
+            {
+                //then add the record if the MasterCard HAS at least 1 tag marked.
+                TagsSaveFileData.Add(string.Format("TagRecord|{0}|{1}|{2}|{3}|{4}", cardName, tags[0], tags[1], tags[2], tags[3]));               
+            }
+
+            TagsSaveFileData.RemoveAt(0);
+            TagsSaveFileData.Insert(0, TagsSaveFileData.Count.ToString());
+
+            if (SettingsData.DBUpdateTestMode)
+            {
+                File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Output Files\\TEST_TagsSaveFile.txt", TagsSaveFileData);
+            }
+            else
+            {
+                //Override the actual DB file
+                File.WriteAllLines(Directory.GetCurrentDirectory() + "\\SaveFiles\\TagsSaveFile.txt", TagsSaveFileData);
             }
         }
         public static void SaveDatabaseInJSON()
@@ -571,6 +636,19 @@ namespace YGO_Card_Collector_5
                 string cardname = ThisMasterCard.Name;
                 cardname = cardname.ToLower();
                 if (cardname.Contains(searchTerm))
+                {
+                    matchList.Add(ThisMasterCard);
+                }
+            }
+            return matchList;
+        }
+        public static List<MasterCard> GetCardListWithTag(TagIcon tag)
+        {
+            List<MasterCard> matchList = new List<MasterCard>();
+            foreach (MasterCard ThisMasterCard in MasterCards)
+            {
+                bool TagOn = ThisMasterCard.GetTag(tag);
+                if(TagOn)
                 {
                     matchList.Add(ThisMasterCard);
                 }

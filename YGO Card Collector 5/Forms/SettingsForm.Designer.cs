@@ -52,12 +52,29 @@
             this.GroupSFX = new System.Windows.Forms.GroupBox();
             this.RadioSFXOFF = new System.Windows.Forms.RadioButton();
             this.RadioSFXON = new System.Windows.Forms.RadioButton();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.btnTagCircle = new System.Windows.Forms.Button();
+            this.PicTagCircle = new System.Windows.Forms.PictureBox();
+            this.PicTagTriangle = new System.Windows.Forms.PictureBox();
+            this.PicTagSquare = new System.Windows.Forms.PictureBox();
+            this.PicTagStar = new System.Windows.Forms.PictureBox();
+            this.txtTagNameStar = new System.Windows.Forms.TextBox();
+            this.txtTagNameSquare = new System.Windows.Forms.TextBox();
+            this.txtTagNameTriangle = new System.Windows.Forms.TextBox();
+            this.txtTagNameCircle = new System.Windows.Forms.TextBox();
+            this.btnUpdateTags = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.GroupTestMode.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.GroupMusic.SuspendLayout();
             this.GroupSFX.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagCircle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagTriangle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagSquare)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagStar)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTotalAqua
@@ -79,7 +96,7 @@
             this.GroupTestMode.Controls.Add(this.RadioTestModeON);
             this.GroupTestMode.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupTestMode.ForeColor = System.Drawing.Color.Yellow;
-            this.GroupTestMode.Location = new System.Drawing.Point(32, 253);
+            this.GroupTestMode.Location = new System.Drawing.Point(585, 43);
             this.GroupTestMode.Name = "GroupTestMode";
             this.GroupTestMode.Size = new System.Drawing.Size(162, 52);
             this.GroupTestMode.TabIndex = 2;
@@ -115,7 +132,7 @@
             this.groupBox1.Controls.Add(this.RadioHeadlessON);
             this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Yellow;
-            this.groupBox1.Location = new System.Drawing.Point(32, 319);
+            this.groupBox1.Location = new System.Drawing.Point(585, 109);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(162, 52);
             this.groupBox1.TabIndex = 3;
@@ -336,6 +353,133 @@
             this.RadioSFXON.UseVisualStyleBackColor = true;
             this.RadioSFXON.CheckedChanged += new System.EventHandler(this.RadioSFXON_CheckedChanged);
             // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Controls.Add(this.btnUpdateTags);
+            this.groupBox4.Controls.Add(this.txtTagNameCircle);
+            this.groupBox4.Controls.Add(this.txtTagNameTriangle);
+            this.groupBox4.Controls.Add(this.txtTagNameSquare);
+            this.groupBox4.Controls.Add(this.txtTagNameStar);
+            this.groupBox4.Controls.Add(this.btnTagCircle);
+            this.groupBox4.Controls.Add(this.PicTagCircle);
+            this.groupBox4.Controls.Add(this.PicTagTriangle);
+            this.groupBox4.Controls.Add(this.PicTagSquare);
+            this.groupBox4.Controls.Add(this.PicTagStar);
+            this.groupBox4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.ForeColor = System.Drawing.Color.Yellow;
+            this.groupBox4.Location = new System.Drawing.Point(32, 253);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(165, 196);
+            this.groupBox4.TabIndex = 8;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Custom Tag\'s Names";
+            // 
+            // btnTagCircle
+            // 
+            this.btnTagCircle.BackColor = System.Drawing.Color.Black;
+            this.btnTagCircle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTagCircle.BackgroundImage")));
+            this.btnTagCircle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTagCircle.Location = new System.Drawing.Point(-140, 104);
+            this.btnTagCircle.Name = "btnTagCircle";
+            this.btnTagCircle.Size = new System.Drawing.Size(30, 30);
+            this.btnTagCircle.TabIndex = 287;
+            this.btnTagCircle.UseVisualStyleBackColor = false;
+            // 
+            // PicTagCircle
+            // 
+            this.PicTagCircle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicTagCircle.Image = ((System.Drawing.Image)(resources.GetObject("PicTagCircle.Image")));
+            this.PicTagCircle.Location = new System.Drawing.Point(14, 109);
+            this.PicTagCircle.Name = "PicTagCircle";
+            this.PicTagCircle.Size = new System.Drawing.Size(30, 30);
+            this.PicTagCircle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicTagCircle.TabIndex = 291;
+            this.PicTagCircle.TabStop = false;
+            // 
+            // PicTagTriangle
+            // 
+            this.PicTagTriangle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicTagTriangle.Image = ((System.Drawing.Image)(resources.GetObject("PicTagTriangle.Image")));
+            this.PicTagTriangle.Location = new System.Drawing.Point(14, 80);
+            this.PicTagTriangle.Name = "PicTagTriangle";
+            this.PicTagTriangle.Size = new System.Drawing.Size(30, 30);
+            this.PicTagTriangle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicTagTriangle.TabIndex = 290;
+            this.PicTagTriangle.TabStop = false;
+            // 
+            // PicTagSquare
+            // 
+            this.PicTagSquare.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicTagSquare.Image = ((System.Drawing.Image)(resources.GetObject("PicTagSquare.Image")));
+            this.PicTagSquare.Location = new System.Drawing.Point(14, 51);
+            this.PicTagSquare.Name = "PicTagSquare";
+            this.PicTagSquare.Size = new System.Drawing.Size(30, 30);
+            this.PicTagSquare.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicTagSquare.TabIndex = 289;
+            this.PicTagSquare.TabStop = false;
+            // 
+            // PicTagStar
+            // 
+            this.PicTagStar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PicTagStar.Image = ((System.Drawing.Image)(resources.GetObject("PicTagStar.Image")));
+            this.PicTagStar.Location = new System.Drawing.Point(14, 22);
+            this.PicTagStar.Name = "PicTagStar";
+            this.PicTagStar.Size = new System.Drawing.Size(30, 30);
+            this.PicTagStar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicTagStar.TabIndex = 288;
+            this.PicTagStar.TabStop = false;
+            // 
+            // txtTagNameStar
+            // 
+            this.txtTagNameStar.Location = new System.Drawing.Point(50, 28);
+            this.txtTagNameStar.Name = "txtTagNameStar";
+            this.txtTagNameStar.Size = new System.Drawing.Size(100, 23);
+            this.txtTagNameStar.TabIndex = 292;
+            // 
+            // txtTagNameSquare
+            // 
+            this.txtTagNameSquare.Location = new System.Drawing.Point(50, 58);
+            this.txtTagNameSquare.Name = "txtTagNameSquare";
+            this.txtTagNameSquare.Size = new System.Drawing.Size(100, 23);
+            this.txtTagNameSquare.TabIndex = 293;
+            // 
+            // txtTagNameTriangle
+            // 
+            this.txtTagNameTriangle.Location = new System.Drawing.Point(50, 87);
+            this.txtTagNameTriangle.Name = "txtTagNameTriangle";
+            this.txtTagNameTriangle.Size = new System.Drawing.Size(100, 23);
+            this.txtTagNameTriangle.TabIndex = 294;
+            // 
+            // txtTagNameCircle
+            // 
+            this.txtTagNameCircle.Location = new System.Drawing.Point(50, 116);
+            this.txtTagNameCircle.Name = "txtTagNameCircle";
+            this.txtTagNameCircle.Size = new System.Drawing.Size(100, 23);
+            this.txtTagNameCircle.TabIndex = 295;
+            // 
+            // btnUpdateTags
+            // 
+            this.btnUpdateTags.BackColor = System.Drawing.Color.Black;
+            this.btnUpdateTags.Location = new System.Drawing.Point(46, 144);
+            this.btnUpdateTags.Name = "btnUpdateTags";
+            this.btnUpdateTags.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdateTags.TabIndex = 296;
+            this.btnUpdateTags.Text = "UPDATE";
+            this.btnUpdateTags.UseVisualStyleBackColor = false;
+            this.btnUpdateTags.Click += new System.EventHandler(this.btnUpdateTags_Click);
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label2.Location = new System.Drawing.Point(5, 167);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(154, 26);
+            this.label2.TabIndex = 297;
+            this.label2.Text = "Custom names cannot be empty of contain \"|\"";
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -343,6 +487,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(804, 461);
+            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.GroupSFX);
             this.Controls.Add(this.GroupMusic);
             this.Controls.Add(this.groupBox3);
@@ -369,6 +514,12 @@
             this.GroupMusic.PerformLayout();
             this.GroupSFX.ResumeLayout(false);
             this.GroupSFX.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagCircle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagTriangle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagSquare)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagStar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -399,5 +550,17 @@
         private System.Windows.Forms.GroupBox GroupSFX;
         private System.Windows.Forms.RadioButton RadioSFXOFF;
         private System.Windows.Forms.RadioButton RadioSFXON;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button btnTagCircle;
+        private System.Windows.Forms.PictureBox PicTagCircle;
+        private System.Windows.Forms.PictureBox PicTagTriangle;
+        private System.Windows.Forms.PictureBox PicTagSquare;
+        private System.Windows.Forms.PictureBox PicTagStar;
+        private System.Windows.Forms.Button btnUpdateTags;
+        private System.Windows.Forms.TextBox txtTagNameCircle;
+        private System.Windows.Forms.TextBox txtTagNameTriangle;
+        private System.Windows.Forms.TextBox txtTagNameSquare;
+        private System.Windows.Forms.TextBox txtTagNameStar;
+        private System.Windows.Forms.Label label2;
     }
 }

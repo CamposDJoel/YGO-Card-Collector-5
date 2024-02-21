@@ -16,6 +16,10 @@ namespace YGO_Card_Collector_5
         private static bool _MusicOn = true;
         private static bool _SXFOn = true;
         private static AppTheme _CurrentTheme = AppTheme.DarkMagician;
+        private static string _TagStarName = "Star";
+        private static string _TagSquareName = "Square";
+        private static string _TagTriangleName = "Triangle";
+        private static string _TagCircleName = "Circle";
 
         public static bool SetPackListSortingOLDToNEW { get { return _SetListSortingOldToNew; } }
         public static bool DBUpdateTestMode { get { return _DBUpdateTestMode; } }
@@ -23,6 +27,10 @@ namespace YGO_Card_Collector_5
         public static bool MusicOn { get { return _MusicOn; } }
         public static bool SFXOn { get { return _SXFOn; } }
         public static AppTheme CurrentTheme { get { return _CurrentTheme; } }
+        public static string StarTagName { get { return _TagStarName; } }
+        public static string SquareTagName { get { return _TagSquareName; } }
+        public static string TriangleTagName { get { return _TagTriangleName; } }
+        public static string CircleTagName { get { return _TagCircleName; } }
 
         public static void SwitchSetListSortingSetting(bool value)
         {
@@ -54,6 +62,17 @@ namespace YGO_Card_Collector_5
             _SXFOn = value;
             WriteSettingsDataFile();
         }
+        public static void ChangeTagName(TagIcon thisTag, string newName)
+        {
+            switch(thisTag)
+            {
+                case TagIcon.Star: _TagStarName = newName; break;
+                case TagIcon.Square: _TagSquareName = newName; break;
+                case TagIcon.Triangle: _TagTriangleName = newName; break;
+                case TagIcon.Circle: _TagCircleName = newName; break;
+            }
+            WriteSettingsDataFile();
+        }
 
         public static void InitializeSettings()
         {
@@ -78,6 +97,10 @@ namespace YGO_Card_Collector_5
                     case "Theme": _CurrentTheme = (AppTheme)Convert.ToInt32(settingData[1]); break;
                     case "Music": _MusicOn = Convert.ToBoolean(settingData[1]); break;
                     case "SFX": _SXFOn = Convert.ToBoolean(settingData[1]); break;
+                    case "TagStarName": _TagStarName = settingData[1]; break;
+                    case "TagSquareName": _TagSquareName = settingData[1]; break;
+                    case "TagTriangleName": _TagTriangleName = settingData[1]; break;
+                    case "TagCircleName": _TagCircleName = settingData[1]; break;
                 }
 
             }
@@ -94,7 +117,11 @@ namespace YGO_Card_Collector_5
                 "HeadlessMode",
                 "Theme",
                 "Music",
-                "SFX"
+                "SFX",
+                "TagStarName",
+                "TagSquareName",
+                "TagTriangleName",
+                "TagCircleName"
             };
 
             outputdata.Add(settings.Count.ToString());
@@ -125,6 +152,22 @@ namespace YGO_Card_Collector_5
                     case "SFX":
                         value = _SXFOn;
                         outputdata.Add(string.Format("{0}|{1}", setting, value)); break;
+
+                    case "TagStarName":
+                        string strvalue = _TagStarName;
+                        outputdata.Add(string.Format("{0}|{1}", setting, strvalue)); break;
+
+                    case "TagSquareName":
+                        strvalue = _TagSquareName;
+                        outputdata.Add(string.Format("{0}|{1}", setting, strvalue)); break;
+
+                    case "TagTriangleName":
+                        strvalue = _TagTriangleName;
+                        outputdata.Add(string.Format("{0}|{1}", setting, strvalue)); break;
+
+                    case "TagCircleName":
+                        strvalue = _TagCircleName;
+                        outputdata.Add(string.Format("{0}|{1}", setting, strvalue)); break;
                 }                           
             }
 

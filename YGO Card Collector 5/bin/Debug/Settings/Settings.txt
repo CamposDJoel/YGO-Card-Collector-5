@@ -1,7 +1,11 @@
-6
+10
 SetSorting|True
 TestMode|False
 HeadlessMode|True
-Theme|3
-Music|True
+Theme|0
+Music|False
 SFX|True
+TagStarName|Star
+TagSquareName|Square
+TagTriangleName|Triangle
+TagCircleName|Circle

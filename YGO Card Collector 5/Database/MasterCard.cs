@@ -5,6 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Windows.Input;
 
 namespace YGO_Card_Collector_5
 {
@@ -109,6 +110,38 @@ namespace YGO_Card_Collector_5
             }
             return card;
         }
+        public bool[] GetTags() 
+        {
+            return _Tags;
+        }
+        public bool HasNoTagMarked()
+        {
+            bool nonefound = true;
+            foreach(bool tagOn in _Tags)
+            {
+                if(tagOn)
+                {
+                    nonefound = false; break;
+                }
+            }
+            return nonefound;
+        }
+        public bool GetTag(TagIcon tag)
+        {
+            return _Tags[(int)tag];
+        }
+        public void SetTag(TagIcon tag, bool value)
+        {
+            _Tags[(int)tag] = value;
+            Database.UpdateTagsSaveFile(_Name);
+        }
+        public void OverrideTagsFromSaveFile(bool a, bool b, bool c, bool d)
+        {
+            _Tags[0] = a;
+            _Tags[1] = b;
+            _Tags[2] = c;
+            _Tags[3] = d;
+        }
         public bool HasAllSetCardsObtained()
         {
             bool allObtained = true;
@@ -153,6 +186,7 @@ namespace YGO_Card_Collector_5
         private string _KonamiURL = "Missing";
         private string _ProdeckURL = "Missing";
         private bool _Owned = false;
+        private bool[] _Tags = new bool[4];
         private List<SetCard> _SetCards = new List<SetCard>();
         #endregion
 
@@ -247,6 +281,18 @@ namespace YGO_Card_Collector_5
         public string GetKEY()
         {
             return string.Format("{0}|{1}|{2}|{3}", _Code, _Rarity, GetCardName(), _Name);
+        }
+        public bool[] GetTags()
+        {
+            return Database.MasterCardByName[GetCardName()].GetTags();
+        }
+        public bool GetTag(TagIcon tag)
+        {
+            return Database.MasterCardByName[GetCardName()].GetTag(tag);
+        }
+        public void SetTag(TagIcon tag, bool value) 
+        {
+            Database.MasterCardByName[GetCardName()].SetTag(tag, value);
         }
         public void MarkOwnedStatus(bool newStatus)
         {
@@ -378,5 +424,13 @@ namespace YGO_Card_Collector_5
                 return string.Compare(card1code, card2code);
             }
         }
+    }
+
+    public enum TagIcon
+    {
+        Star = 0,
+        Square,
+        Triangle,
+        Circle
     }
 }

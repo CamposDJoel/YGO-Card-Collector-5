@@ -28,6 +28,7 @@ namespace YGO_Card_Collector_5
                 case ImageType.CheckMark: box.Image = CheckMark(); break;
                 case ImageType.StarIcon: box.Image = StarIcon(); break;
                 case ImageType.ExclamationMark: box.Image = ExclamationMark(); break;
+                case ImageType.TagIcon: box.Image = TagIcon(parameter); break;
             }
         }
 
@@ -76,6 +77,10 @@ namespace YGO_Card_Collector_5
         {
             return Image.FromFile(Directory.GetCurrentDirectory() + "\\Images\\Icons\\exlamimark.png");
         }
+        private static Image TagIcon(string icon)
+        {
+            return Image.FromFile(Directory.GetCurrentDirectory() + "\\Images\\Icons\\"+ icon  +".png");
+        }
     }
 
     public enum ImageType
@@ -85,6 +90,7 @@ namespace YGO_Card_Collector_5
         Rarity,
         CheckMark,
         StarIcon,
-        ExclamationMark
+        ExclamationMark,
+        TagIcon
     }
 }
