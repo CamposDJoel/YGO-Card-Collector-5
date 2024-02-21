@@ -1701,6 +1701,50 @@ namespace YGO_Card_Collector_5
                 }
                 return true;
             }
+            else if (keyData == Keys.F9)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    //Tag the Star Icon
+                    MarkTag(PicTagStar, TagIcon.Star);
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.F10)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    //Tag the Square Icon
+                    MarkTag(PicTagSquare, TagIcon.Square);
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.F11)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    //Tag the Triangle Icon
+                    MarkTag(PicTagTriangle, TagIcon.Triangle);
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.F12)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    //Tag the Circle Icon
+                    MarkTag(PicTagCircle, TagIcon.Circle);
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
             else if (keyData == Keys.Enter)
             {
                 if (_KeyInputEnable)
