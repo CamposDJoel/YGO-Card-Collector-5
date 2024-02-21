@@ -1377,6 +1377,16 @@ namespace YGO_Card_Collector_5
                 }
                 return true;
             }
+            else if (keyData == Keys.F8)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    LoadPage();
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
             else if (keyData == Keys.F9)
             {
                 if (_KeyInputEnable)
