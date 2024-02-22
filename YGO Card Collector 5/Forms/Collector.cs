@@ -559,10 +559,11 @@ namespace YGO_Card_Collector_5
             {
                 _CurrentSetCardInView.FlipObtainedStatus();
             }
-            
+
+            LoadPage();
 
             //Change the Container Label
-            if(_TagContainerList[Index].BackColor == Color.Maroon)
+            if (_TagContainerList[Index].BackColor == Color.Maroon)
             {
                 _TagContainerList[Index].BackColor = Color.Black;              
             }
@@ -1444,15 +1445,9 @@ namespace YGO_Card_Collector_5
                     {
                         //Mark the current selected card
                         SoundServer.PlaySoundEffect(SoundEffect.MarkCard);
+                        _CurrentSetCardInView.FlipObtainedStatus();
 
-                        if (_CurrentSetCardInView.IsOwned())
-                        {
-                            _CurrentSetCardInView.MarkOwnedStatus(false);
-                        }
-                        else
-                        {
-                            _CurrentSetCardInView.MarkOwnedStatus(true);                            
-                        }
+                        LoadPage();
 
                         //Change the Container Label
                         int Index = _CurrentSetCartdInViewIndex;
