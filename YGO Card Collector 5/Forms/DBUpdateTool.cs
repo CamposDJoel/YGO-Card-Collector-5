@@ -59,7 +59,7 @@ namespace YGO_Card_Collector_5
                 listMissingProdeckStep2.SetSelected(0, true);
 
                 listMissingTCGStep2.Items.Clear();
-                if (MasterCardsWithMissingProdeck.Count == 0)
+                if (SetCardsWithMissingTCG.Count == 0)
                 {
                     listMissingTCGStep2.Items.Add("No Setcards missing TCG Player URLs");
                 }
@@ -923,7 +923,7 @@ namespace YGO_Card_Collector_5
             SetCard ThisSetCard = SetCardsWithMissingTCG[index];
 
 
-            if (ThisSetCard.TCGPlayerURLIsUnavailable())
+            if (ThisSetCard.TCGPlayerURLIsMissing())
             {
                 //Diplay the override submenu
                 GroupUnavailableTCGOverride.Visible = true;
@@ -1019,11 +1019,11 @@ namespace YGO_Card_Collector_5
                 checkProdeckEnableOverride3.Checked = false;
                 //Remove this card from the list now!!
                 Database.CardsWithUnavailableProdeckURL.Remove(ThisMasterCard.Name);
-                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
-                //Reload the UI
-                ReloadUI();
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);               
                 //Update DB file
                 Database.SaveDatabaseInJSON();
+                //Reload the UI
+                ReloadUI();
             }
             else
             {
@@ -1059,11 +1059,11 @@ namespace YGO_Card_Collector_5
                 //Valid ulr, proceed
                 ThisSetCard.TCGPlayerURL = input;
                 checkTCGEnableOverride3.Checked = false;
-                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
-                //reload stats
-                ReloadUI();
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);               
                 //Update DB file
                 Database.SaveDatabaseInJSON();
+                //reload stats
+                ReloadUI();
             }
             else
             {
@@ -1354,6 +1354,21 @@ namespace YGO_Card_Collector_5
         {
             Application.Exit();
         }
-        #endregion      
+        #endregion
+
+        private void btnProdeckLaunch_Click(object sender, EventArgs e)
+        {
+            int index = listMissingProdeckStep2.SelectedIndex;
+            MasterCard ThisMasterCard = MasterCardsWithMissingProdeck[index];
+            string cardname = ThisMasterCard.Name;
+            Tools.LaunchURLIntoBrowser("https://ygoprodeck.com/card-database/?&name="+ cardname + "&num=24&offset=0");
+        }
+        private void btnTCGLaunch_Click(object sender, EventArgs e)
+        {
+            int index = listMissingTCGStep2.SelectedIndex;
+            SetCard ThisSetCard = SetCardsWithMissingTCG[index];
+            string cardname = ThisSetCard.GetCardName();
+            Tools.LaunchURLIntoBrowser("https://www.tcgplayer.com/search/all/product?q=" + cardname + "&view=grid");
+        }
     }
 }
