@@ -30,19 +30,25 @@ namespace YGO_Card_Collector_5
 
             void InitializeCardViewImages()
             {
+                int Picture_XSIZE = 52;
+                int Picture_YSIZE = 65;
+                int ICON_SIZE = 18;
+                int ROWS = 6;
+                int COLUMNS = 15;
+
                 int imageID = 0;
                 int Y_Location = 20;
-                for (int x = 0; x < 5; x++)
+                for (int x = 0; x < ROWS; x++)
                 {
                     int X_Location = 3;
-                    for (int y = 0; y < 15; y++)
+                    for (int y = 0; y < COLUMNS; y++)
                     {
                         //Initialize the border box Image
                         Panel CardBox = new Panel();
                         GroupCardView.Controls.Add(CardBox);
                         CardBox.Location = new Point(X_Location, Y_Location);
                         CardBox.BorderStyle = BorderStyle.FixedSingle;
-                        CardBox.Size = new Size(47, 60);
+                        CardBox.Size = new Size(Picture_XSIZE, Picture_YSIZE);
                         _CardPanelList.Add(CardBox);
 
                         //Initialize the Card Collection Icon
@@ -50,10 +56,9 @@ namespace YGO_Card_Collector_5
                         CardBox.Controls.Add(CardIcon);
                         CardIcon.Location = new Point(1, 1);
                         CardIcon.BorderStyle = BorderStyle.FixedSingle;
-                        CardIcon.Size = new Size(15, 15);
+                        CardIcon.Size = new Size(ICON_SIZE, ICON_SIZE);
                         CardIcon.SizeMode = PictureBoxSizeMode.StretchImage;
                         CardIcon.Tag = imageID;
-                        //CardIcon.Visible = false;
                         _IconImageList.Add(CardIcon);
 
                         //Initialize the card Image
@@ -61,7 +66,7 @@ namespace YGO_Card_Collector_5
                         CardBox.Controls.Add(CardImage);
                         CardImage.Location = new Point(1, 1);
                         CardImage.BorderStyle = BorderStyle.FixedSingle;
-                        CardImage.Size = new Size(43, 56);
+                        CardImage.Size = new Size(Picture_XSIZE - 4, Picture_YSIZE - 4);
                         CardImage.SizeMode = PictureBoxSizeMode.StretchImage;
                         CardImage.Tag = imageID;
                         CardImage.Click += new EventHandler(this.Image_click);
@@ -70,18 +75,18 @@ namespace YGO_Card_Collector_5
                         //Initialize the Rarity Icon
                         PictureBox CardRarity = new PictureBox();
                         CardBox.Controls.Add(CardRarity);
-                        CardRarity.Location = new Point(1, 42);
+                        CardRarity.Location = new Point(1, 47);
                         CardRarity.BorderStyle = BorderStyle.FixedSingle;
-                        CardRarity.Size = new Size(43, 15);
+                        CardRarity.Size = new Size(Picture_XSIZE - 4, 15);
                         CardRarity.SizeMode = PictureBoxSizeMode.StretchImage;
                         CardRarity.Visible = true;
                         CardRarity.BringToFront();
                         _CardRaritiesList.Add(CardRarity);
 
-                        X_Location += 47;
+                        X_Location += Picture_XSIZE;
                         imageID++;
                     }
-                    Y_Location += 60;
+                    Y_Location += Picture_YSIZE;
                 }
             }
             void InitializeCardViewImagesVariants()
@@ -178,7 +183,7 @@ namespace YGO_Card_Collector_5
             _CardPanelListV[_PreviousVariantCardInViewIndex].BackColor = Color.Black;
 
             //Determine the index of this card in relation to the entire active list
-            int index = ((_CurrentCardPage * 75) - 75) + PictureBoxTag;
+            int index = ((_CurrentCardPage * CARDS_PER_PAGE) - CARDS_PER_PAGE) + PictureBoxTag;
 
             //Set the card in view border as green
             _CardPanelList[PictureBoxTag].BackColor = Color.Yellow;
@@ -411,7 +416,7 @@ namespace YGO_Card_Collector_5
             else { TotalCardCount = _CurrentSetCardList.Count; }
 
             //Start the iterator
-            int PageIntialIndex = (_CurrentCardPage * 75) - 75;
+            int PageIntialIndex = (_CurrentCardPage * CARDS_PER_PAGE) - CARDS_PER_PAGE;
 
             //Loop thru all the Card Images (in Main) to initialize them
             for (int x = 0; x < _CardImageList.Count; x++)
@@ -800,6 +805,8 @@ namespace YGO_Card_Collector_5
         private int _CurrentCardImageIndexSelected = 0;
         private bool _KeyInputEnable = true;
 
+        private const int CARDS_PER_PAGE = 90;
+
         //Main List
         private List<Panel> _CardPanelList = new List<Panel>();
         private List<PictureBox> _IconImageList = new List<PictureBox>();
@@ -999,7 +1006,7 @@ namespace YGO_Card_Collector_5
             if (_MasterCardViewMode) { CurrentCardListCount = _CurrentMasterCardList.Count; }
             else { CurrentCardListCount = _CurrentSetCardList.Count; }
 
-            int lastpage = (CurrentCardListCount / 75) + 1;
+            int lastpage = (CurrentCardListCount / CARDS_PER_PAGE) + 1;
 
             if (_CurrentCardPage == 1) { _CurrentCardPage = lastpage; }
             else { _CurrentCardPage--; }
@@ -1014,7 +1021,7 @@ namespace YGO_Card_Collector_5
             if (_MasterCardViewMode) { CurrentCardListCount = _CurrentMasterCardList.Count; }
             else { CurrentCardListCount = _CurrentSetCardList.Count; }
 
-            int lastpage = (CurrentCardListCount / 75) + 1;
+            int lastpage = (CurrentCardListCount / CARDS_PER_PAGE) + 1;
 
             if (_CurrentCardPage == lastpage) { _CurrentCardPage = 1; }
             else { _CurrentCardPage++; }
@@ -1502,7 +1509,7 @@ namespace YGO_Card_Collector_5
         #region Keyboard Input Control
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (keyData == Keys.W || keyData == Keys.Up)
+            if (keyData == Keys.Up)
             {
                 if (_KeyInputEnable)
                 {
@@ -1526,12 +1533,12 @@ namespace YGO_Card_Collector_5
                 }
                 return true;
             }
-            else if (keyData == Keys.S || keyData == Keys.Down)
+            else if (keyData == Keys.Down)
             {
                 if (_KeyInputEnable)
                 {
                     _KeyInputEnable = false;
-                    if (_CurrentCardImageIndexSelected > 59)
+                    if (_CurrentCardImageIndexSelected > CARDS_PER_PAGE - 16)
                     {
                         //Do nothing it is the top row
                         SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
@@ -1550,7 +1557,7 @@ namespace YGO_Card_Collector_5
                 }
                 return true;
             }
-            else if (keyData == Keys.A || keyData == Keys.Left)
+            else if (keyData == Keys.Left)
             {
                 if (_KeyInputEnable)
                 {
@@ -1561,7 +1568,7 @@ namespace YGO_Card_Collector_5
                         GoPreviousPage();
 
                         //Find the last visible card in the page and select it
-                        for (int x = 74; x >= 0; x--)
+                        for (int x = CARDS_PER_PAGE - 1; x >= 0; x--)
                         {
                             if (_CardPanelList[x].Visible)
                             {
@@ -1585,12 +1592,12 @@ namespace YGO_Card_Collector_5
                 }
                 return true;
             }
-            else if (keyData == Keys.D || keyData == Keys.Right)
+            else if (keyData == Keys.Right)
             {
                 if (_KeyInputEnable)
                 {
                     _KeyInputEnable = false;
-                    if (_CurrentCardImageIndexSelected == 74)
+                    if (_CurrentCardImageIndexSelected == CARDS_PER_PAGE - 1)
                     {
                         //Go to the next page and click the first card
                         GoNextPage();

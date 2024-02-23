@@ -1202,7 +1202,7 @@ namespace YGO_Card_Collector_5
         #region Keyboard Input Control
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
-            if (keyData == Keys.W || keyData == Keys.Up)
+            if (keyData == Keys.Up)
             {
                 if (_KeyInputEnable)
                 {
@@ -1226,7 +1226,7 @@ namespace YGO_Card_Collector_5
                 }
                 return true;
             }
-            else if (keyData == Keys.S || keyData == Keys.Down)
+            else if (keyData == Keys.Down)
             {
                 if (_KeyInputEnable)
                 {
@@ -1250,7 +1250,7 @@ namespace YGO_Card_Collector_5
                 }
                 return true;
             }
-            else if (keyData == Keys.A || keyData == Keys.Left)
+            else if (keyData == Keys.Left)
             {
                 if (_KeyInputEnable)
                 {
@@ -1285,7 +1285,7 @@ namespace YGO_Card_Collector_5
                 }
                 return true;
             }
-            else if (keyData == Keys.D || keyData == Keys.Right)
+            else if (keyData == Keys.Right)
             {
                 if (_KeyInputEnable)
                 {
@@ -1432,7 +1432,7 @@ namespace YGO_Card_Collector_5
                 }
                 return true;
             }
-            else if (keyData == Keys.Enter)
+            else if (keyData == Keys.Enter || keyData == Keys.Control)
             {
                 if (_KeyInputEnable)
                 {

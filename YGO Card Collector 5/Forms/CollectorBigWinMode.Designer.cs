@@ -34,6 +34,11 @@
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
             this.GroupCardView = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.PicTagCircle = new System.Windows.Forms.PictureBox();
+            this.PicTagTriangle = new System.Windows.Forms.PictureBox();
+            this.PicTagSquare = new System.Windows.Forms.PictureBox();
+            this.PicTagStar = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblFloorPrice = new System.Windows.Forms.Label();
             this.lblFloorPricelabel = new System.Windows.Forms.Label();
             this.lblCardInfo_Name = new System.Windows.Forms.Label();
@@ -132,20 +137,6 @@
             this.btnCodeSearch = new System.Windows.Forms.Button();
             this.lblCodeSearch = new System.Windows.Forms.Label();
             this.txtCodeSearch = new System.Windows.Forms.TextBox();
-            this.btnFilterSet = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.listSetlist = new System.Windows.Forms.ListBox();
-            this.listSetGroups = new System.Windows.Forms.ListBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.GroupCardViewVariants = new System.Windows.Forms.GroupBox();
-            this.btnNextPageVariant = new System.Windows.Forms.Button();
-            this.btnPreviousPageVariant = new System.Windows.Forms.Button();
-            this.btnOpenSetValue = new System.Windows.Forms.Button();
-            this.PicTagCircle = new System.Windows.Forms.PictureBox();
-            this.PicTagTriangle = new System.Windows.Forms.PictureBox();
-            this.PicTagSquare = new System.Windows.Forms.PictureBox();
-            this.PicTagStar = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.lblTagCircle = new System.Windows.Forms.Label();
             this.btnTagCircle = new System.Windows.Forms.Button();
@@ -155,7 +146,20 @@
             this.btnTagStar = new System.Windows.Forms.Button();
             this.lblTagSquare = new System.Windows.Forms.Label();
             this.btnTagSquare = new System.Windows.Forms.Button();
+            this.btnFilterSet = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.listSetlist = new System.Windows.Forms.ListBox();
+            this.listSetGroups = new System.Windows.Forms.ListBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.GroupCardViewVariants = new System.Windows.Forms.GroupBox();
+            this.btnNextPageVariant = new System.Windows.Forms.Button();
+            this.btnPreviousPageVariant = new System.Windows.Forms.Button();
+            this.btnOpenSetValue = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagCircle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagTriangle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagSquare)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagStar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.MonsterType.SuspendLayout();
@@ -168,10 +172,6 @@
             this.groupColor.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PicTagCircle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicTagTriangle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicTagSquare)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicTagStar)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -221,7 +221,7 @@
             this.GroupCardView.ForeColor = System.Drawing.Color.Lime;
             this.GroupCardView.Location = new System.Drawing.Point(2, 27);
             this.GroupCardView.Name = "GroupCardView";
-            this.GroupCardView.Size = new System.Drawing.Size(710, 322);
+            this.GroupCardView.Size = new System.Drawing.Size(790, 412);
             this.GroupCardView.TabIndex = 269;
             this.GroupCardView.TabStop = false;
             this.GroupCardView.Text = "Page 1";
@@ -251,12 +251,68 @@
             this.groupBox4.Controls.Add(this.lblRarity);
             this.groupBox4.Controls.Add(this.lblRariryLabel);
             this.groupBox4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.groupBox4.Location = new System.Drawing.Point(715, 334);
+            this.groupBox4.Location = new System.Drawing.Point(804, 329);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(303, 134);
             this.groupBox4.TabIndex = 273;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Card Info:";
+            // 
+            // PicTagCircle
+            // 
+            this.PicTagCircle.Image = ((System.Drawing.Image)(resources.GetObject("PicTagCircle.Image")));
+            this.PicTagCircle.Location = new System.Drawing.Point(278, 82);
+            this.PicTagCircle.Name = "PicTagCircle";
+            this.PicTagCircle.Size = new System.Drawing.Size(20, 20);
+            this.PicTagCircle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicTagCircle.TabIndex = 291;
+            this.PicTagCircle.TabStop = false;
+            this.PicTagCircle.Click += new System.EventHandler(this.PicTagCircle_Click);
+            // 
+            // PicTagTriangle
+            // 
+            this.PicTagTriangle.Image = ((System.Drawing.Image)(resources.GetObject("PicTagTriangle.Image")));
+            this.PicTagTriangle.Location = new System.Drawing.Point(257, 82);
+            this.PicTagTriangle.Name = "PicTagTriangle";
+            this.PicTagTriangle.Size = new System.Drawing.Size(20, 20);
+            this.PicTagTriangle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicTagTriangle.TabIndex = 290;
+            this.PicTagTriangle.TabStop = false;
+            this.PicTagTriangle.Click += new System.EventHandler(this.PicTagTriangle_Click);
+            // 
+            // PicTagSquare
+            // 
+            this.PicTagSquare.Image = ((System.Drawing.Image)(resources.GetObject("PicTagSquare.Image")));
+            this.PicTagSquare.Location = new System.Drawing.Point(236, 82);
+            this.PicTagSquare.Name = "PicTagSquare";
+            this.PicTagSquare.Size = new System.Drawing.Size(20, 20);
+            this.PicTagSquare.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicTagSquare.TabIndex = 289;
+            this.PicTagSquare.TabStop = false;
+            this.PicTagSquare.Click += new System.EventHandler(this.PicTagSquare_Click);
+            // 
+            // PicTagStar
+            // 
+            this.PicTagStar.Image = ((System.Drawing.Image)(resources.GetObject("PicTagStar.Image")));
+            this.PicTagStar.Location = new System.Drawing.Point(215, 82);
+            this.PicTagStar.Name = "PicTagStar";
+            this.PicTagStar.Size = new System.Drawing.Size(20, 20);
+            this.PicTagStar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PicTagStar.TabIndex = 288;
+            this.PicTagStar.TabStop = false;
+            this.PicTagStar.Click += new System.EventHandler(this.PicTagStar_Click);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(213, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(36, 16);
+            this.label1.TabIndex = 287;
+            this.label1.Text = "Tags:";
             // 
             // lblFloorPrice
             // 
@@ -473,7 +529,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(922, 10);
+            this.label3.Location = new System.Drawing.Point(1011, 5);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 20);
             this.label3.TabIndex = 270;
@@ -484,7 +540,7 @@
             this.PanelTagList.AutoScroll = true;
             this.PanelTagList.BackColor = System.Drawing.Color.Black;
             this.PanelTagList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanelTagList.Location = new System.Drawing.Point(924, 32);
+            this.PanelTagList.Location = new System.Drawing.Point(1013, 27);
             this.PanelTagList.Name = "PanelTagList";
             this.PanelTagList.Size = new System.Drawing.Size(131, 296);
             this.PanelTagList.TabIndex = 272;
@@ -494,7 +550,7 @@
             this.PicImage.BackColor = System.Drawing.Color.Transparent;
             this.PicImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PicImage.Image = ((System.Drawing.Image)(resources.GetObject("PicImage.Image")));
-            this.PicImage.Location = new System.Drawing.Point(715, 32);
+            this.PicImage.Location = new System.Drawing.Point(804, 27);
             this.PicImage.Name = "PicImage";
             this.PicImage.Size = new System.Drawing.Size(209, 296);
             this.PicImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -506,7 +562,7 @@
             this.btnClear.BackColor = System.Drawing.Color.Red;
             this.btnClear.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClear.ForeColor = System.Drawing.Color.Black;
-            this.btnClear.Location = new System.Drawing.Point(502, 349);
+            this.btnClear.Location = new System.Drawing.Point(505, 439);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(94, 25);
             this.btnClear.TabIndex = 277;
@@ -521,7 +577,7 @@
             this.btnNextPage.BackColor = System.Drawing.Color.Green;
             this.btnNextPage.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNextPage.ForeColor = System.Drawing.Color.White;
-            this.btnNextPage.Location = new System.Drawing.Point(111, 349);
+            this.btnNextPage.Location = new System.Drawing.Point(114, 439);
             this.btnNextPage.Name = "btnNextPage";
             this.btnNextPage.Size = new System.Drawing.Size(103, 25);
             this.btnNextPage.TabIndex = 276;
@@ -534,7 +590,7 @@
             this.btnPreviousPage.BackColor = System.Drawing.Color.Green;
             this.btnPreviousPage.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPreviousPage.ForeColor = System.Drawing.Color.White;
-            this.btnPreviousPage.Location = new System.Drawing.Point(1, 349);
+            this.btnPreviousPage.Location = new System.Drawing.Point(4, 439);
             this.btnPreviousPage.Name = "btnPreviousPage";
             this.btnPreviousPage.Size = new System.Drawing.Size(110, 25);
             this.btnPreviousPage.TabIndex = 275;
@@ -547,7 +603,7 @@
             this.chkCollected.BackColor = System.Drawing.Color.Black;
             this.chkCollected.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkCollected.ForeColor = System.Drawing.Color.White;
-            this.chkCollected.Location = new System.Drawing.Point(355, 350);
+            this.chkCollected.Location = new System.Drawing.Point(358, 440);
             this.chkCollected.Name = "chkCollected";
             this.chkCollected.Size = new System.Drawing.Size(145, 22);
             this.chkCollected.TabIndex = 274;
@@ -561,10 +617,10 @@
             this.tabControl2.Controls.Add(this.tabPage2);
             this.tabControl2.Controls.Add(this.tabPage1);
             this.tabControl2.Controls.Add(this.tabPage3);
-            this.tabControl2.Location = new System.Drawing.Point(12, 496);
+            this.tabControl2.Location = new System.Drawing.Point(4, 572);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(406, 153);
+            this.tabControl2.Size = new System.Drawing.Size(406, 149);
             this.tabControl2.TabIndex = 278;
             // 
             // MonsterType
@@ -577,7 +633,7 @@
             this.MonsterType.Location = new System.Drawing.Point(4, 22);
             this.MonsterType.Name = "MonsterType";
             this.MonsterType.Padding = new System.Windows.Forms.Padding(3);
-            this.MonsterType.Size = new System.Drawing.Size(398, 127);
+            this.MonsterType.Size = new System.Drawing.Size(398, 123);
             this.MonsterType.TabIndex = 0;
             this.MonsterType.Text = "Main Card Filters";
             // 
@@ -1543,190 +1599,6 @@
             this.txtCodeSearch.Size = new System.Drawing.Size(101, 20);
             this.txtCodeSearch.TabIndex = 269;
             // 
-            // btnFilterSet
-            // 
-            this.btnFilterSet.BackColor = System.Drawing.Color.Purple;
-            this.btnFilterSet.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFilterSet.ForeColor = System.Drawing.Color.White;
-            this.btnFilterSet.Location = new System.Drawing.Point(822, 468);
-            this.btnFilterSet.Name = "btnFilterSet";
-            this.btnFilterSet.Size = new System.Drawing.Size(130, 23);
-            this.btnFilterSet.TabIndex = 283;
-            this.btnFilterSet.Text = "Show Selected Set";
-            this.btnFilterSet.UseVisualStyleBackColor = false;
-            this.btnFilterSet.Click += new System.EventHandler(this.btnFilterSet_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Yellow;
-            this.label4.Location = new System.Drawing.Point(627, 472);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 20);
-            this.label4.TabIndex = 282;
-            this.label4.Text = "Select Set:";
-            // 
-            // listSetlist
-            // 
-            this.listSetlist.BackColor = System.Drawing.Color.Black;
-            this.listSetlist.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listSetlist.ForeColor = System.Drawing.Color.White;
-            this.listSetlist.FormattingEnabled = true;
-            this.listSetlist.ItemHeight = 14;
-            this.listSetlist.Location = new System.Drawing.Point(630, 491);
-            this.listSetlist.Name = "listSetlist";
-            this.listSetlist.Size = new System.Drawing.Size(408, 158);
-            this.listSetlist.TabIndex = 281;
-            this.listSetlist.SelectedIndexChanged += new System.EventHandler(this.listSetlist_SelectedIndexChanged);
-            // 
-            // listSetGroups
-            // 
-            this.listSetGroups.BackColor = System.Drawing.Color.Black;
-            this.listSetGroups.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listSetGroups.ForeColor = System.Drawing.Color.White;
-            this.listSetGroups.FormattingEnabled = true;
-            this.listSetGroups.ItemHeight = 14;
-            this.listSetGroups.Items.AddRange(new object[] {
-            "Booster Packs",
-            "Special Edition Boxes",
-            "Starter Decks",
-            "Structure Decks",
-            "Tins",
-            "SPEED DUEL",
-            "Duelist Packs",
-            "Duel Terminal Cards",
-            "Others",
-            "Magazines, Books, Comics",
-            "Tournaments",
-            "Promotional Cards",
-            "Video Game Bundles"});
-            this.listSetGroups.Location = new System.Drawing.Point(467, 491);
-            this.listSetGroups.Name = "listSetGroups";
-            this.listSetGroups.Size = new System.Drawing.Size(159, 158);
-            this.listSetGroups.TabIndex = 280;
-            this.listSetGroups.SelectedIndexChanged += new System.EventHandler(this.listSetGroups_SelectedIndexChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(464, 471);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(114, 20);
-            this.label2.TabIndex = 284;
-            this.label2.Text = "Select Set Group:";
-            // 
-            // GroupCardViewVariants
-            // 
-            this.GroupCardViewVariants.BackColor = System.Drawing.Color.Black;
-            this.GroupCardViewVariants.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GroupCardViewVariants.ForeColor = System.Drawing.Color.Lime;
-            this.GroupCardViewVariants.Location = new System.Drawing.Point(1, 384);
-            this.GroupCardViewVariants.Name = "GroupCardViewVariants";
-            this.GroupCardViewVariants.Size = new System.Drawing.Size(710, 82);
-            this.GroupCardViewVariants.TabIndex = 285;
-            this.GroupCardViewVariants.TabStop = false;
-            this.GroupCardViewVariants.Text = "Page 1";
-            // 
-            // btnNextPageVariant
-            // 
-            this.btnNextPageVariant.BackColor = System.Drawing.Color.Green;
-            this.btnNextPageVariant.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNextPageVariant.ForeColor = System.Drawing.Color.White;
-            this.btnNextPageVariant.Location = new System.Drawing.Point(111, 466);
-            this.btnNextPageVariant.Name = "btnNextPageVariant";
-            this.btnNextPageVariant.Size = new System.Drawing.Size(103, 25);
-            this.btnNextPageVariant.TabIndex = 287;
-            this.btnNextPageVariant.Text = " Next Page >>";
-            this.btnNextPageVariant.UseVisualStyleBackColor = false;
-            this.btnNextPageVariant.Click += new System.EventHandler(this.btnNextPageVariant_Click);
-            // 
-            // btnPreviousPageVariant
-            // 
-            this.btnPreviousPageVariant.BackColor = System.Drawing.Color.Green;
-            this.btnPreviousPageVariant.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPreviousPageVariant.ForeColor = System.Drawing.Color.White;
-            this.btnPreviousPageVariant.Location = new System.Drawing.Point(1, 466);
-            this.btnPreviousPageVariant.Name = "btnPreviousPageVariant";
-            this.btnPreviousPageVariant.Size = new System.Drawing.Size(110, 25);
-            this.btnPreviousPageVariant.TabIndex = 286;
-            this.btnPreviousPageVariant.Text = "<< Previous Page";
-            this.btnPreviousPageVariant.UseVisualStyleBackColor = false;
-            this.btnPreviousPageVariant.Click += new System.EventHandler(this.btnPreviousPageVariant_Click);
-            // 
-            // btnOpenSetValue
-            // 
-            this.btnOpenSetValue.BackColor = System.Drawing.Color.Purple;
-            this.btnOpenSetValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenSetValue.ForeColor = System.Drawing.Color.White;
-            this.btnOpenSetValue.Location = new System.Drawing.Point(952, 468);
-            this.btnOpenSetValue.Name = "btnOpenSetValue";
-            this.btnOpenSetValue.Size = new System.Drawing.Size(86, 23);
-            this.btnOpenSetValue.TabIndex = 288;
-            this.btnOpenSetValue.Text = "Set $$$";
-            this.btnOpenSetValue.UseVisualStyleBackColor = false;
-            this.btnOpenSetValue.Click += new System.EventHandler(this.btnOpenSetValue_Click);
-            // 
-            // PicTagCircle
-            // 
-            this.PicTagCircle.Image = ((System.Drawing.Image)(resources.GetObject("PicTagCircle.Image")));
-            this.PicTagCircle.Location = new System.Drawing.Point(278, 82);
-            this.PicTagCircle.Name = "PicTagCircle";
-            this.PicTagCircle.Size = new System.Drawing.Size(20, 20);
-            this.PicTagCircle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PicTagCircle.TabIndex = 291;
-            this.PicTagCircle.TabStop = false;
-            this.PicTagCircle.Click += new System.EventHandler(this.PicTagCircle_Click);
-            // 
-            // PicTagTriangle
-            // 
-            this.PicTagTriangle.Image = ((System.Drawing.Image)(resources.GetObject("PicTagTriangle.Image")));
-            this.PicTagTriangle.Location = new System.Drawing.Point(257, 82);
-            this.PicTagTriangle.Name = "PicTagTriangle";
-            this.PicTagTriangle.Size = new System.Drawing.Size(20, 20);
-            this.PicTagTriangle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PicTagTriangle.TabIndex = 290;
-            this.PicTagTriangle.TabStop = false;
-            this.PicTagTriangle.Click += new System.EventHandler(this.PicTagTriangle_Click);
-            // 
-            // PicTagSquare
-            // 
-            this.PicTagSquare.Image = ((System.Drawing.Image)(resources.GetObject("PicTagSquare.Image")));
-            this.PicTagSquare.Location = new System.Drawing.Point(236, 82);
-            this.PicTagSquare.Name = "PicTagSquare";
-            this.PicTagSquare.Size = new System.Drawing.Size(20, 20);
-            this.PicTagSquare.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PicTagSquare.TabIndex = 289;
-            this.PicTagSquare.TabStop = false;
-            this.PicTagSquare.Click += new System.EventHandler(this.PicTagSquare_Click);
-            // 
-            // PicTagStar
-            // 
-            this.PicTagStar.Image = ((System.Drawing.Image)(resources.GetObject("PicTagStar.Image")));
-            this.PicTagStar.Location = new System.Drawing.Point(215, 82);
-            this.PicTagStar.Name = "PicTagStar";
-            this.PicTagStar.Size = new System.Drawing.Size(20, 20);
-            this.PicTagStar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PicTagStar.TabIndex = 288;
-            this.PicTagStar.TabStop = false;
-            this.PicTagStar.Click += new System.EventHandler(this.PicTagStar_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(213, 66);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 16);
-            this.label1.TabIndex = 287;
-            this.label1.Text = "Tags:";
-            // 
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.MediumPurple;
@@ -1833,13 +1705,141 @@
             this.btnTagSquare.UseVisualStyleBackColor = false;
             this.btnTagSquare.Click += new System.EventHandler(this.btnTagSquare_Click);
             // 
+            // btnFilterSet
+            // 
+            this.btnFilterSet.BackColor = System.Drawing.Color.Purple;
+            this.btnFilterSet.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFilterSet.ForeColor = System.Drawing.Color.White;
+            this.btnFilterSet.Location = new System.Drawing.Point(814, 540);
+            this.btnFilterSet.Name = "btnFilterSet";
+            this.btnFilterSet.Size = new System.Drawing.Size(130, 23);
+            this.btnFilterSet.TabIndex = 283;
+            this.btnFilterSet.Text = "Show Selected Set";
+            this.btnFilterSet.UseVisualStyleBackColor = false;
+            this.btnFilterSet.Click += new System.EventHandler(this.btnFilterSet_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Yellow;
+            this.label4.Location = new System.Drawing.Point(619, 544);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(75, 20);
+            this.label4.TabIndex = 282;
+            this.label4.Text = "Select Set:";
+            // 
+            // listSetlist
+            // 
+            this.listSetlist.BackColor = System.Drawing.Color.Black;
+            this.listSetlist.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listSetlist.ForeColor = System.Drawing.Color.White;
+            this.listSetlist.FormattingEnabled = true;
+            this.listSetlist.ItemHeight = 14;
+            this.listSetlist.Location = new System.Drawing.Point(622, 563);
+            this.listSetlist.Name = "listSetlist";
+            this.listSetlist.Size = new System.Drawing.Size(408, 158);
+            this.listSetlist.TabIndex = 281;
+            this.listSetlist.SelectedIndexChanged += new System.EventHandler(this.listSetlist_SelectedIndexChanged);
+            // 
+            // listSetGroups
+            // 
+            this.listSetGroups.BackColor = System.Drawing.Color.Black;
+            this.listSetGroups.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listSetGroups.ForeColor = System.Drawing.Color.White;
+            this.listSetGroups.FormattingEnabled = true;
+            this.listSetGroups.ItemHeight = 14;
+            this.listSetGroups.Items.AddRange(new object[] {
+            "Booster Packs",
+            "Special Edition Boxes",
+            "Starter Decks",
+            "Structure Decks",
+            "Tins",
+            "SPEED DUEL",
+            "Duelist Packs",
+            "Duel Terminal Cards",
+            "Others",
+            "Magazines, Books, Comics",
+            "Tournaments",
+            "Promotional Cards",
+            "Video Game Bundles"});
+            this.listSetGroups.Location = new System.Drawing.Point(459, 563);
+            this.listSetGroups.Name = "listSetGroups";
+            this.listSetGroups.Size = new System.Drawing.Size(159, 158);
+            this.listSetGroups.TabIndex = 280;
+            this.listSetGroups.SelectedIndexChanged += new System.EventHandler(this.listSetGroups_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Yellow;
+            this.label2.Location = new System.Drawing.Point(456, 543);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(114, 20);
+            this.label2.TabIndex = 284;
+            this.label2.Text = "Select Set Group:";
+            // 
+            // GroupCardViewVariants
+            // 
+            this.GroupCardViewVariants.BackColor = System.Drawing.Color.Black;
+            this.GroupCardViewVariants.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GroupCardViewVariants.ForeColor = System.Drawing.Color.Lime;
+            this.GroupCardViewVariants.Location = new System.Drawing.Point(4, 464);
+            this.GroupCardViewVariants.Name = "GroupCardViewVariants";
+            this.GroupCardViewVariants.Size = new System.Drawing.Size(793, 82);
+            this.GroupCardViewVariants.TabIndex = 285;
+            this.GroupCardViewVariants.TabStop = false;
+            this.GroupCardViewVariants.Text = "Page 1";
+            // 
+            // btnNextPageVariant
+            // 
+            this.btnNextPageVariant.BackColor = System.Drawing.Color.Green;
+            this.btnNextPageVariant.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNextPageVariant.ForeColor = System.Drawing.Color.White;
+            this.btnNextPageVariant.Location = new System.Drawing.Point(113, 546);
+            this.btnNextPageVariant.Name = "btnNextPageVariant";
+            this.btnNextPageVariant.Size = new System.Drawing.Size(103, 25);
+            this.btnNextPageVariant.TabIndex = 287;
+            this.btnNextPageVariant.Text = " Next Page >>";
+            this.btnNextPageVariant.UseVisualStyleBackColor = false;
+            this.btnNextPageVariant.Click += new System.EventHandler(this.btnNextPageVariant_Click);
+            // 
+            // btnPreviousPageVariant
+            // 
+            this.btnPreviousPageVariant.BackColor = System.Drawing.Color.Green;
+            this.btnPreviousPageVariant.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreviousPageVariant.ForeColor = System.Drawing.Color.White;
+            this.btnPreviousPageVariant.Location = new System.Drawing.Point(3, 546);
+            this.btnPreviousPageVariant.Name = "btnPreviousPageVariant";
+            this.btnPreviousPageVariant.Size = new System.Drawing.Size(110, 25);
+            this.btnPreviousPageVariant.TabIndex = 286;
+            this.btnPreviousPageVariant.Text = "<< Previous Page";
+            this.btnPreviousPageVariant.UseVisualStyleBackColor = false;
+            this.btnPreviousPageVariant.Click += new System.EventHandler(this.btnPreviousPageVariant_Click);
+            // 
+            // btnOpenSetValue
+            // 
+            this.btnOpenSetValue.BackColor = System.Drawing.Color.Purple;
+            this.btnOpenSetValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpenSetValue.ForeColor = System.Drawing.Color.White;
+            this.btnOpenSetValue.Location = new System.Drawing.Point(944, 540);
+            this.btnOpenSetValue.Name = "btnOpenSetValue";
+            this.btnOpenSetValue.Size = new System.Drawing.Size(86, 23);
+            this.btnOpenSetValue.TabIndex = 288;
+            this.btnOpenSetValue.Text = "Set $$$";
+            this.btnOpenSetValue.UseVisualStyleBackColor = false;
+            this.btnOpenSetValue.Click += new System.EventHandler(this.btnOpenSetValue_Click);
+            // 
             // CollectorBigWinMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1056, 650);
+            this.ClientSize = new System.Drawing.Size(1147, 723);
             this.Controls.Add(this.btnOpenSetValue);
             this.Controls.Add(this.btnNextPageVariant);
             this.Controls.Add(this.btnPreviousPageVariant);
@@ -1870,6 +1870,10 @@
             this.Text = "Collector Big Window Mode - YGO Card Collector 5";
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagCircle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagTriangle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagSquare)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PicTagStar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).EndInit();
             this.tabControl2.ResumeLayout(false);
             this.MonsterType.ResumeLayout(false);
@@ -1884,10 +1888,6 @@
             this.groupBox8.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PicTagCircle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicTagTriangle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicTagSquare)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PicTagStar)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
