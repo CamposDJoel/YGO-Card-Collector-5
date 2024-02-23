@@ -1,4 +1,4 @@
-927
+1770
 LOB-000|Secret Rare|Tri-Horned Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-001|Ultra Rare|Blue-Eyes White Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-002|Common|Hitotsu-Me Giant|LEGEND OF BLUE EYES WHITE DRAGON
@@ -926,3 +926,846 @@ EP1-EN005|Common|Peten the Dark Clown|EXCLUSIVE PACK
 EP1-EN006|Common|Familiar Knight|EXCLUSIVE PACK
 EP1-EN007|Common|Inferno Tempest|EXCLUSIVE PACK
 EP1-EN008|Common|Return from the Different Dimension|EXCLUSIVE PACK
+SOD-EN001|Rare|Charcoal Inpachi|SOUL OF THE DUELIST
+SOD-EN004|Common|Goblin Calligrapher|SOUL OF THE DUELIST
+SOD-EN009|Common|Dark Mimic LV1|SOUL OF THE DUELIST
+SOD-EN013|Common|Armed Dragon LV3|SOUL OF THE DUELIST
+SOD-EN016|Common|Horus' Servant|SOUL OF THE DUELIST
+SOD-EN017|Common|Black Dragon's Chick|SOUL OF THE DUELIST
+SOD-EN018|Common|Malice Doll of Demise|SOUL OF THE DUELIST
+SOD-EN021|Common|Ultimate Baseball Kid|SOUL OF THE DUELIST
+SOD-EN023|Common|Element Dragon|SOUL OF THE DUELIST
+SOD-EN024|Common|Element Soldier|SOUL OF THE DUELIST
+SOD-EN026|Common|Masked Dragon|SOUL OF THE DUELIST
+SOD-EN029|Common|The Trojan Horse|SOUL OF THE DUELIST
+SOD-EN031|Common|Enraged Muka Muka|SOUL OF THE DUELIST
+SOD-EN034|Rare|Ojama King|SOUL OF THE DUELIST
+SOD-EN035|Rare|Master of Oz|SOUL OF THE DUELIST
+SOD-EN036|Common|Sanwitch|SOUL OF THE DUELIST
+SOD-EN037|Common|Dark Factory of Mass Production|SOUL OF THE DUELIST
+SOD-EN040|Common|Abyssal Designator|SOUL OF THE DUELIST
+SOD-EN041|Common|Level Up!|SOUL OF THE DUELIST
+SOD-EN044|Common|The Graveyard in the Fourth Dimension|SOUL OF THE DUELIST
+SOD-EN045|Common|Two-Man Cell Battle|SOUL OF THE DUELIST
+SOD-EN046|Common|Big Wave Small Wave|SOUL OF THE DUELIST
+SOD-EN047|Common|Fusion Weapon|SOUL OF THE DUELIST
+SOD-EN048|Common|Ritual Weapon|SOUL OF THE DUELIST
+SOD-EN049|Common|Taunt|SOUL OF THE DUELIST
+SOD-EN050|Common|Absolute End|SOUL OF THE DUELIST
+SOD-EN052|Common|Ninjitsu Art of Decoy|SOUL OF THE DUELIST
+SOD-EN054|Common|Heavy Slump|SOUL OF THE DUELIST
+SOD-EN056|Common|Mind Crush|SOUL OF THE DUELIST
+SOD-EN058|Common|Gorgon's Eye|SOUL OF THE DUELIST
+DB1-EN004|Common|Horn of Light|DARK BEGINNING 1
+DB1-EN005|Common|Malevolent Nuzzler|DARK BEGINNING 1
+DB1-EN007|Common|Electric Snake|DARK BEGINNING 1
+DB1-EN008|Common|Ameba|DARK BEGINNING 1
+DB1-EN011|Common|Griggle|DARK BEGINNING 1
+DB1-EN012|Common|Hiro's Shadow Scout|DARK BEGINNING 1
+DB1-EN020|Common|Final Destiny|DARK BEGINNING 1
+DB1-EN022|Common|Chorus of Sanctuary|DARK BEGINNING 1
+DB1-EN025|Common|Fairy's Hand Mirror|DARK BEGINNING 1
+DB1-EN028|Common|The Reliable Guardian|DARK BEGINNING 1
+DB1-EN030|Common|Chain Energy|DARK BEGINNING 1
+DB1-EN034|Common|Horn of the Unicorn|DARK BEGINNING 1
+DB1-EN036|Common|Eternal Rest|DARK BEGINNING 1
+DB1-EN041|Common|Hyozanryu|DARK BEGINNING 1
+DB1-EN044|Common|Banisher of the Light|DARK BEGINNING 1
+DB1-EN046|Common|Senju of the Thousand Hands|DARK BEGINNING 1
+DB1-EN047|Common|UFO Turtle|DARK BEGINNING 1
+DB1-EN048|Common|Flash Assailant|DARK BEGINNING 1
+DB1-EN050|Common|Giant Germ|DARK BEGINNING 1
+DB1-EN054|Common|Flying Kamakiri #1|DARK BEGINNING 1
+DB1-EN055|Common|Ceremonial Bell|DARK BEGINNING 1
+DB1-EN063|Common|Luminous Spark|DARK BEGINNING 1
+DB1-EN064|Common|Mystic Plasma Zone|DARK BEGINNING 1
+DB1-EN070|Common|Chain Destruction|DARK BEGINNING 1
+DB1-EN071|Common|Time Seal|DARK BEGINNING 1
+DB1-EN072|Common|Graverobber|DARK BEGINNING 1
+DB1-EN073|Common|Gift of The Mystical Elf|DARK BEGINNING 1
+DB1-EN077|Common|Enchanted Javelin|DARK BEGINNING 1
+DB1-EN079|Common|Numinous Healer|DARK BEGINNING 1
+DB1-EN080|Common|Forced Requisition|DARK BEGINNING 1
+DB1-EN081|Common|DNA Surgery|DARK BEGINNING 1
+DB1-EN082|Common|Backup Soldier|DARK BEGINNING 1
+DB1-EN083|Super Rare|Ceasefire|DARK BEGINNING 1
+DB1-EN084|Common|Light of Intervention|DARK BEGINNING 1
+DB1-EN094|Common|Sky Scout|DARK BEGINNING 1
+DB1-EN099|Common|Hitotsu-Me Giant|DARK BEGINNING 1
+DB1-EN101|Common|Skull Servant|DARK BEGINNING 1
+DB1-EN104|Common|Celtic Guardian|DARK BEGINNING 1
+DB1-EN105|Common|Mammoth Graveyard|DARK BEGINNING 1
+DB1-EN107|Common|Flame Manipulator|DARK BEGINNING 1
+DB1-EN111|Common|Dragon Capture Jar|DARK BEGINNING 1
+DB1-EN115|Common|Red Medicine|DARK BEGINNING 1
+DB1-EN120|Common|Mystical Elf|DARK BEGINNING 1
+DB1-EN124|Common|Giant Soldier of Stone|DARK BEGINNING 1
+DB1-EN125|Common|Uraby|DARK BEGINNING 1
+DB1-EN130|Common|Armed Ninja|DARK BEGINNING 1
+DB1-EN140|Common|Feral Imp|DARK BEGINNING 1
+DB1-EN143|Common|Armored Lizard|DARK BEGINNING 1
+DB1-EN146|Common|Harpie Lady Sisters|DARK BEGINNING 1
+DB1-EN149|Common|Armored Zombie|DARK BEGINNING 1
+DB1-EN150|Common|Mask of Darkness|DARK BEGINNING 1
+DB1-EN152|Common|Big Eye|DARK BEGINNING 1
+DB1-EN159|Common|Suijin|DARK BEGINNING 1
+DB1-EN164|Common|Fake Trap|DARK BEGINNING 1
+DB1-EN167|Common|The Cheerful Coffin|DARK BEGINNING 1
+DB1-EN172|Common|Gamble|DARK BEGINNING 1
+DB1-EN173|Common|Attack and Receive|DARK BEGINNING 1
+DB1-EN176|Common|Bubonic Vermin|DARK BEGINNING 1
+DB1-EN180|Common|Rain of Mercy|DARK BEGINNING 1
+DB1-EN183|Common|Dimensionhole|DARK BEGINNING 1
+DB1-EN184|Common|Ground Collapse|DARK BEGINNING 1
+DB1-EN186|Common|Infinite Dismissal|DARK BEGINNING 1
+DB1-EN189|Common|Shadow of Eyes|DARK BEGINNING 1
+DB1-EN192|Common|Drill Bug|DARK BEGINNING 1
+DB1-EN193|Common|Deepsea Warrior|DARK BEGINNING 1
+DB1-EN194|Common|Thousand-Eyes Idol|DARK BEGINNING 1
+DB1-EN196|Rare|Hayabusa Knight|DARK BEGINNING 1
+DB1-EN197|Common|Bombardment Beetle|DARK BEGINNING 1
+DB1-EN201|Rare|Mad Sword Beast|DARK BEGINNING 1
+DB1-EN209|Common|Humanoid Worm Drake|DARK BEGINNING 1
+DB1-EN213|Common|Grand Tiki Elder|DARK BEGINNING 1
+DB1-EN217|Common|Chosen One|DARK BEGINNING 1
+DB1-EN218|Common|Mask of Weakness|DARK BEGINNING 1
+DB1-EN219|Common|Curse of the Masked Beast|DARK BEGINNING 1
+DB1-EN221|Common|Mask of Restrict|DARK BEGINNING 1
+DB1-EN225|Common|Lightning Blade|DARK BEGINNING 1
+DB1-EN227|Common|Fairy Box|DARK BEGINNING 1
+DB1-EN231|Common|Jam Defender|DARK BEGINNING 1
+DB1-EN232|Common|Card of Safe Return|DARK BEGINNING 1
+DB1-EN236|Common|Dancing Fairy|DARK BEGINNING 1
+DB1-EN237|Common|Cure Mermaid|DARK BEGINNING 1
+DB1-EN239|Common|The Forgiving Maiden|DARK BEGINNING 1
+DB1-EN240|Common|St. Joan|DARK BEGINNING 1
+DB1-EN243|Common|Scroll of Bewitchment|DARK BEGINNING 1
+DB1-EN248|Common|Headless Knight|DARK BEGINNING 1
+DB1-EN249|Common|Earthbound Spirit|DARK BEGINNING 1
+RDS-EN001|Common|Woodborg Inpachi|RISE OF DESTINY
+RDS-EN002|Common|Mighty Guard|RISE OF DESTINY
+RDS-EN003|Common|Bokoichi the Freightening Car|RISE OF DESTINY
+RDS-EN004|Common|Harpie Girl|RISE OF DESTINY
+RDS-EN006|Common|The Creator Incarnate|RISE OF DESTINY
+RDS-EN010|Common|Nightmare Penguin|RISE OF DESTINY
+RDS-EN011|Common|Heavy Mech Support Platform|RISE OF DESTINY
+RDS-EN013|Common|Element Magician|RISE OF DESTINY
+RDS-EN014|Common|Element Saurus|RISE OF DESTINY
+RDS-EN015|Common|Roc from the Valley of Haze|RISE OF DESTINY
+RDS-EN017|Common|Harpie Lady 1|RISE OF DESTINY
+RDS-EN018|Common|Harpie Lady 2|RISE OF DESTINY
+RDS-EN019|Common|Harpie Lady 3|RISE OF DESTINY
+RDS-EN020|Common|Raging Flame Sprite|RISE OF DESTINY
+RDS-EN022|Common|Eagle Eye|RISE OF DESTINY
+RDS-EN023|Common|Tactical Espionage Expert|RISE OF DESTINY
+RDS-EN024|Common|Invasion of Flames|RISE OF DESTINY
+RDS-EN025|Common|Creeping Doom Manta|RISE OF DESTINY
+RDS-EN026|Common|Pitch-Black Warwolf|RISE OF DESTINY
+RDS-EN029|Common|Fox Fire|RISE OF DESTINY
+RDS-EN034|Common|Homunculus the Alchemic Being|RISE OF DESTINY
+RDS-EN036|Common|Mokey Mokey King|RISE OF DESTINY
+RDS-EN038|Common|Harpies' Hunting Ground|RISE OF DESTINY
+RDS-EN041|Rare|Machine Duplication|RISE OF DESTINY
+RDS-EN044|Common|Back to Square One|RISE OF DESTINY
+RDS-EN046|Common|Ballista of Rampart Smashing|RISE OF DESTINY
+RDS-EN047|Common|Lighten the Load|RISE OF DESTINY
+RDS-EN048|Common|Malice Dispersion|RISE OF DESTINY
+RDS-EN051|Common|Xing Zhen Hu|RISE OF DESTINY
+RDS-EN053|Common|Fruits of Kozaky's Studies|RISE OF DESTINY
+RDS-EN054|Common|Mind Haxorz|RISE OF DESTINY
+RDS-EN055|Common|Fuh-Rin-Ka-Zan|RISE OF DESTINY
+RDS-EN058|Common|Spell Purification|RISE OF DESTINY
+RDS-EN059|Common|Astral Barrier|RISE OF DESTINY
+FET-EN001|Common|Space Mambo|FLAMING ETERNITY
+FET-EN002|Common|Divine Dragon Ragnarok|FLAMING ETERNITY
+FET-EN003|Common|Chu-Ske the Mouse Fighter|FLAMING ETERNITY
+FET-EN004|Common|Insect Knight|FLAMING ETERNITY
+FET-EN006|Common|Hand of Nephthys|FLAMING ETERNITY
+FET-EN010|Common|Element Valkyrie|FLAMING ETERNITY
+FET-EN011|Common|Element Doom|FLAMING ETERNITY
+FET-EN012|Common|Maji-Gire Panda|FLAMING ETERNITY
+FET-EN013|Common|Catnipped Kitty|FLAMING ETERNITY
+FET-EN016|Common|Kangaroo Champ|FLAMING ETERNITY
+FET-EN017|Common|Hyena|FLAMING ETERNITY
+FET-EN018|Common|Blade Rabbit|FLAMING ETERNITY
+FET-EN023|Common|Armed Samurai - Ben Kei|FLAMING ETERNITY
+FET-EN025|Common|Golem Sentry|FLAMING ETERNITY
+FET-EN027|Common|The Light - Hex-Sealed Fusion|FLAMING ETERNITY
+FET-EN028|Common|The Dark - Hex-Sealed Fusion|FLAMING ETERNITY
+FET-EN029|Common|The Earth - Hex-Sealed Fusion|FLAMING ETERNITY
+FET-EN030|Common|Whirlwind Prodigy|FLAMING ETERNITY
+FET-EN031|Common|Flame Ruler|FLAMING ETERNITY
+FET-EN032|Common|Firebird|FLAMING ETERNITY
+FET-EN033|Common|Rescue Cat|FLAMING ETERNITY
+FET-EN044|Common|Release Restraint|FLAMING ETERNITY
+FET-EN045|Common|Centrifugal Field|FLAMING ETERNITY
+FET-EN046|Common|Fulfillment of the Contract|FLAMING ETERNITY
+FET-EN050|Common|Pole Position|FLAMING ETERNITY
+FET-EN052|Common|Threatening Roar|FLAMING ETERNITY
+FET-EN055|Common|Beast Soul Swap|FLAMING ETERNITY
+FET-EN059|Common|Elemental Burst|FLAMING ETERNITY
+FET-EN060|Rare|Forced Ceasefire|FLAMING ETERNITY
+DR1-EN007|Common|Gravekeeper's Spy|DARK REVELATION Volume 1
+DR1-EN009|Common|Gravekeeper's Guard|DARK REVELATION Volume 1
+DR1-EN010|Common|Gravekeeper's Spear Soldier|DARK REVELATION Volume 1
+DR1-EN015|Common|Gravekeeper's Assailant|DARK REVELATION Volume 1
+DR1-EN028|Common|Card Shuffle|DARK REVELATION Volume 1
+DR1-EN031|Common|Different Dimension Capsule|DARK REVELATION Volume 1
+DR1-EN034|Common|Hieroglyph Lithograph|DARK REVELATION Volume 1
+DR1-EN035|Common|Dark Snake Syndrome|DARK REVELATION Volume 1
+DR1-EN036|Common|Terraforming|DARK REVELATION Volume 1
+DR1-EN039|Common|Royal Tribute|DARK REVELATION Volume 1
+DR1-EN042|Common|Curse of Aging|DARK REVELATION Volume 1
+DR1-EN067|Common|Giant Orc|DARK REVELATION Volume 1
+DR1-EN070|Common|Des Dendle|DARK REVELATION Volume 1
+DR1-EN072|Common|Freezing Beast|DARK REVELATION Volume 1
+DR1-EN079|Common|Great Phantom Thief|DARK REVELATION Volume 1
+DR1-EN080|Common|Roulette Barrel|DARK REVELATION Volume 1
+DR1-EN090|Common|Dark Core|DARK REVELATION Volume 1
+DR1-EN103|Common|Rivalry of Warlords|DARK REVELATION Volume 1
+DR1-EN104|Common|Formation Union|DARK REVELATION Volume 1
+DR1-EN111|Common|Aitsu|DARK REVELATION Volume 1
+DR1-EN115|Common|Amazoness Fighter|DARK REVELATION Volume 1
+DR1-EN138|Common|Dark Cat with White Tail|DARK REVELATION Volume 1
+DR1-EN139|Common|Amazoness Spellcaster|DARK REVELATION Volume 1
+DR1-EN143|Common|Mass Driver|DARK REVELATION Volume 1
+DR1-EN145|Common|Emblem of Dragon Destroyer|DARK REVELATION Volume 1
+DR1-EN147|Common|My Body as a Shield|DARK REVELATION Volume 1
+DR1-EN155|Common|Miracle Restoring|DARK REVELATION Volume 1
+DR1-EN167|Common|Guardian Elma|DARK REVELATION Volume 1
+DR1-EN172|Common|Guardian Tryce|DARK REVELATION Volume 1
+DR1-EN183|Common|Gyaku-Gire Panda|DARK REVELATION Volume 1
+DR1-EN185|Common|Despair from the Dark|DARK REVELATION Volume 1
+DR1-EN188|Common|Dark Scorpion - Chick the Yellow|DARK REVELATION Volume 1
+DR1-EN196|Common|Gravity Axe - Grarl|DARK REVELATION Volume 1
+DR1-EN205|Common|Non-Spellcasting Area|DARK REVELATION Volume 1
+DR1-EN207|Common|Final Attack Orders|DARK REVELATION Volume 1
+DR1-EN217|Common|D.D. Trainer|DARK REVELATION Volume 1
+DR1-EN219|Common|Archfiend Soldier|DARK REVELATION Volume 1
+DR1-EN223|Common|Dark Scorpion - Meanae the Thorn|DARK REVELATION Volume 1
+DR1-EN232|Common|Desrook Archfiend|DARK REVELATION Volume 1
+DR1-EN242|Common|Agido|DARK REVELATION Volume 1
+DR1-EN246|Common|Dragged Down into the Grave|DARK REVELATION Volume 1
+DR1-EN252|Common|Cestus of Dagla|DARK REVELATION Volume 1
+DR1-EN258|Common|Frozen Soul|DARK REVELATION Volume 1
+DR1-EN262|Common|Dice Re-Roll|DARK REVELATION Volume 1
+TLM-EN001|Common|Elemental HERO Avian|THE LOST MILLENNIUM
+TLM-EN003|Common|Elemental HERO Clayman|THE LOST MILLENNIUM
+TLM-EN008|Common|Ancient Gear Soldier|THE LOST MILLENNIUM
+TLM-EN013|Rare|Criosphinx|THE LOST MILLENNIUM
+TLM-EN014|Common|Moai Interceptor Cannons|THE LOST MILLENNIUM
+TLM-EN016|Common|Dummy Golem|THE LOST MILLENNIUM
+TLM-EN019|Common|Monk Fighter|THE LOST MILLENNIUM
+TLM-EN028|Common|Hiita the Fire Charmer|THE LOST MILLENNIUM
+TLM-EN029|Common|Wynn the Wind Charmer|THE LOST MILLENNIUM
+TLM-EN030|Common|Batteryman AA|THE LOST MILLENNIUM
+TLM-EN032|Common|King of the Skull Servants|THE LOST MILLENNIUM
+TLM-EN040|Common|Double Attack|THE LOST MILLENNIUM
+TLM-EN041|Common|Battery Charger|THE LOST MILLENNIUM
+TLM-EN042|Common|Kaminote Blow|THE LOST MILLENNIUM
+TLM-EN043|Common|Doriado's Blessing|THE LOST MILLENNIUM
+TLM-EN047|Common|Shifting Shadows|THE LOST MILLENNIUM
+TLM-EN049|Rare|Hero Signal|THE LOST MILLENNIUM
+TLM-EN050|Common|Pikeru's Second Sight|THE LOST MILLENNIUM
+TLM-EN054|Common|Level Conversion Lab|THE LOST MILLENNIUM
+TLM-EN056|Common|Grave Lure|THE LOST MILLENNIUM
+DB2-EN001|Rare|Jowgen the Spiritualist|DARK BEGINNING 2
+DB2-EN007|Common|The Rock Spirit|DARK BEGINNING 2
+DB2-EN008|Common|Gilasaurus|DARK BEGINNING 2
+DB2-EN011|Common|Maryokutai|DARK BEGINNING 2
+DB2-EN017|Common|Graverobber's Retribution|DARK BEGINNING 2
+DB2-EN019|Common|Blind Destruction|DARK BEGINNING 2
+DB2-EN020|Common|The Emperor's Holiday|DARK BEGINNING 2
+DB2-EN021|Common|Destiny Board|DARK BEGINNING 2
+DB2-EN025|Common|Spirit Message "L"|DARK BEGINNING 2
+DB2-EN031|Common|Ekibyo Drakmord|DARK BEGINNING 2
+DB2-EN032|Common|Miracle Dig|DARK BEGINNING 2
+DB2-EN035|Common|Baby Dragon|DARK BEGINNING 2
+DB2-EN040|Common|Dragon Piper|DARK BEGINNING 2
+DB2-EN042|Rare|Sangan|DARK BEGINNING 2
+DB2-EN043|Common|Great Moth|DARK BEGINNING 2
+DB2-EN053|Common|Tremendous Fire|DARK BEGINNING 2
+DB2-EN056|Common|Ryu-Kishin Powered|DARK BEGINNING 2
+DB2-EN067|Common|Little Chimera|DARK BEGINNING 2
+DB2-EN070|Common|Witch's Apprentice|DARK BEGINNING 2
+DB2-EN078|Common|Block Attack|DARK BEGINNING 2
+DB2-EN082|Rare|Ring of Magnetism|DARK BEGINNING 2
+DB2-EN091|Common|Tiger Axe|DARK BEGINNING 2
+DB2-EN094|Common|Gemini Elf|DARK BEGINNING 2
+DB2-EN097|Common|Goddess with the Third Eye|DARK BEGINNING 2
+DB2-EN107|Common|Magical Thorn|DARK BEGINNING 2
+DB2-EN119|Common|Toon Gemini Elf|DARK BEGINNING 2
+DB2-EN134|Common|The Puppet Magic of Dark Ruler|DARK BEGINNING 2
+DB2-EN136|Common|Double Snare|DARK BEGINNING 2
+DB2-EN140|Common|Warrior Dai Grepher|DARK BEGINNING 2
+DB2-EN143|Common|Exiled Force|DARK BEGINNING 2
+DB2-EN156|Common|Gray Wing|DARK BEGINNING 2
+DB2-EN158|Common|The Dragon's Bead|DARK BEGINNING 2
+DB2-EN160|Common|Dragon's Gunfire|DARK BEGINNING 2
+DB2-EN163|Common|Dragon's Rage|DARK BEGINNING 2
+DB2-EN176|Common|Inaba White Rabbit|DARK BEGINNING 2
+DB2-EN187|Common|A Legendary Ocean|DARK BEGINNING 2
+DB2-EN188|Common|Fusion Sword Murasame Blade|DARK BEGINNING 2
+DB2-EN194|Common|The Secret of the Bandit|DARK BEGINNING 2
+DB2-EN201|Common|Bottomless Trap Hole|DARK BEGINNING 2
+DB2-EN203|Common|Ominous Fortunetelling|DARK BEGINNING 2
+DB2-EN204|Common|Spirit's Invitation|DARK BEGINNING 2
+DB2-EN210|Common|Arsenal Bug|DARK BEGINNING 2
+DB2-EN218|Common|Royal Keeper|DARK BEGINNING 2
+DB2-EN221|Common|Swarm of Scarabs|DARK BEGINNING 2
+DB2-EN223|Common|Giant Axe Mummy|DARK BEGINNING 2
+DB2-EN225|Rare|Pyramid Turtle|DARK BEGINNING 2
+DB2-EN227|Common|Dark Scorpion Burglars|DARK BEGINNING 2
+DB2-EN231|Common|Book of Taiyou|DARK BEGINNING 2
+DB2-EN232|Common|Book of Moon|DARK BEGINNING 2
+DB2-EN235|Common|Call of the Mummy|DARK BEGINNING 2
+DB2-EN236|Common|Timidity|DARK BEGINNING 2
+DB2-EN237|Common|Pyramid Energy|DARK BEGINNING 2
+DB2-EN238|Common|Tutan Mask|DARK BEGINNING 2
+DB2-EN240|Common|Bottomless Shifting Sand|DARK BEGINNING 2
+DB2-EN242|Common|Needle Ceiling|DARK BEGINNING 2
+DB2-EN244|Common|Dark Coffin|DARK BEGINNING 2
+DB2-EN245|Common|Needle Wall|DARK BEGINNING 2
+CRV-EN002|Common|Soitsu|CYBERNETIC REVOLUTION
+CRV-EN003|Common|Mad Lobster|CYBERNETIC REVOLUTION
+CRV-EN004|Common|Jerry Beans Man|CYBERNETIC REVOLUTION
+CRV-EN007|Common|Gyroid|CYBERNETIC REVOLUTION
+CRV-EN010|Super Rare|UFOroid|CYBERNETIC REVOLUTION
+CRV-EN017|Common|Cybernetic Cyclopean|CYBERNETIC REVOLUTION
+CRV-EN022|Common|Giant Kozaky|CYBERNETIC REVOLUTION
+CRV-EN024|Common|Protective Soul Ailin|CYBERNETIC REVOLUTION
+CRV-EN031|Common|Ebon Magician Curran|CYBERNETIC REVOLUTION
+CRV-EN032|Rare|D.D.M. - Different Dimension Master|CYBERNETIC REVOLUTION
+CRV-EN038|Common|Fusion Recovery|CYBERNETIC REVOLUTION
+CRV-EN042|Common|Des Croaking|CYBERNETIC REVOLUTION
+CRV-EN043|Common|Pot of Generosity|CYBERNETIC REVOLUTION
+CRV-EN044|Common|Shien's Spy|CYBERNETIC REVOLUTION
+CRV-EN045|Rare|Transcendent Wings|CYBERNETIC REVOLUTION
+CRV-EN051|Common|Spiritual Water Art - Aoi|CYBERNETIC REVOLUTION
+CRV-EN053|Common|Spiritual Wind Art - Miyabi|CYBERNETIC REVOLUTION
+CRV-EN054|Common|A Rival Appears!|CYBERNETIC REVOLUTION
+CRV-EN058|Common|Conscription|CYBERNETIC REVOLUTION
+CRV-EN059|Rare|Dimension Wall|CYBERNETIC REVOLUTION
+CRV-EN060|Common|Prepare to Strike Back|CYBERNETIC REVOLUTION
+DR2-EN001|Common|Ojama Yellow|DARK REVELATION Volume 2
+DR2-EN008|Common|Gale Lizard|DARK REVELATION Volume 2
+DR2-EN009|Common|Spirit of the Pot of Greed|DARK REVELATION Volume 2
+DR2-EN010|Common|Chopman the Desperate Outlaw|DARK REVELATION Volume 2
+DR2-EN015|Common|Coach Goblin|DARK REVELATION Volume 2
+DR2-EN021|Common|Gigantes|DARK REVELATION Volume 2
+DR2-EN048|Common|Blasting the Ruins|DARK REVELATION Volume 2
+DR2-EN049|Common|Cursed Seal of the Forbidden Spell|DARK REVELATION Volume 2
+DR2-EN050|Common|Tower of Babel|DARK REVELATION Volume 2
+DR2-EN053|Common|Zero Gravity|DARK REVELATION Volume 2
+DR2-EN058|Common|Mad Dog of Darkness|DARK REVELATION Volume 2
+DR2-EN063|Common|Burning Algae|DARK REVELATION Volume 2
+DR2-EN065|Common|Molten Zombie|DARK REVELATION Volume 2
+DR2-EN071|Common|Enraged Battle Ox|DARK REVELATION Volume 2
+DR2-EN073|Common|Balloon Lizard|DARK REVELATION Volume 2
+DR2-EN086|Common|Cannonball Spear Shellfish|DARK REVELATION Volume 2
+DR2-EN105|Common|A Hero Emerges|DARK REVELATION Volume 2
+DR2-EN113|Common|Gogiga Gagagigo|DARK REVELATION Volume 2
+DR2-EN119|Common|The Agent of Wisdom - Mercury|DARK REVELATION Volume 2
+DR2-EN124|Common|The Kick Man|DARK REVELATION Volume 2
+DR2-EN125|Common|Vampire Lady|DARK REVELATION Volume 2
+DR2-EN127|Common|Rocket Jumper|DARK REVELATION Volume 2
+DR2-EN129|Common|Legendary Jujitsu Master|DARK REVELATION Volume 2
+DR2-EN143|Common|Goblin King|DARK REVELATION Volume 2
+DR2-EN145|Common|White Magician Pikeru|DARK REVELATION Volume 2
+DR2-EN154|Common|The Sanctuary in the Sky|DARK REVELATION Volume 2
+DR2-EN158|Common|Backfire|DARK REVELATION Volume 2
+DR2-EN166|Rare|Draining Shield|DARK REVELATION Volume 2
+DR2-EN167|Common|Armor Break|DARK REVELATION Volume 2
+DR2-EN177|Common|Aswan Apparition|DARK REVELATION Volume 2
+DR2-EN183|Common|3-Hump Lacooda|DARK REVELATION Volume 2
+DR2-EN192|Common|Regenerating Mummy|DARK REVELATION Volume 2
+DR2-EN201|Common|Soul Reversal|DARK REVELATION Volume 2
+DR2-EN206|Common|Enchanting Fitting Room|DARK REVELATION Volume 2
+DR2-EN215|Common|Dora of Fate|DARK REVELATION Volume 2
+EEN-EN001|Common|Zure, Knight of Dark World|ELEMENTAL ENERGY
+EEN-EN002|Common|V-Tiger Jet|ELEMENTAL ENERGY
+EEN-EN003|Common|Blade Skater|ELEMENTAL ENERGY
+EEN-EN005|Rare|Jack's Knight|ELEMENTAL ENERGY
+EEN-EN006|Rare|King's Knight|ELEMENTAL ENERGY
+EEN-EN008|Common|Elemental HERO Wildheart|ELEMENTAL ENERGY
+EEN-EN009|Common|Reborn Zombie|ELEMENTAL ENERGY
+EEN-EN012|Common|Infernal Incinerator|ELEMENTAL ENERGY
+EEN-EN013|Common|Hydrogeddon|ELEMENTAL ENERGY
+EEN-EN014|Common|Oxygeddon|ELEMENTAL ENERGY
+EEN-EN016|Common|Etoile Cyber|ELEMENTAL ENERGY
+EEN-EN020|Common|Beiige, Vanguard of Dark World|ELEMENTAL ENERGY
+EEN-EN026|Common|Familiar-Possessed - Aussa|ELEMENTAL ENERGY
+EEN-EN027|Common|Familiar-Possessed - Eria|ELEMENTAL ENERGY
+EEN-EN028|Common|Familiar-Possessed - Hiita|ELEMENTAL ENERGY
+EEN-EN029|Common|Familiar-Possessed - Wynn|ELEMENTAL ENERGY
+EEN-EN030|Common|VW-Tiger Catapult|ELEMENTAL ENERGY
+EEN-EN041|Common|Ojamuscle|ELEMENTAL ENERGY
+EEN-EN042|Rare|Feather Shot|ELEMENTAL ENERGY
+EEN-EN043|Common|Bonding - H2O|ELEMENTAL ENERGY
+EEN-EN045|Rare|Armed Changer|ELEMENTAL ENERGY
+EEN-EN046|Common|Branch!|ELEMENTAL ENERGY
+EEN-EN047|Common|Boss Rush|ELEMENTAL ENERGY
+EEN-EN048|Common|Gateway to Dark World|ELEMENTAL ENERGY
+EEN-EN051|Common|The Forces of Darkness|ELEMENTAL ENERGY
+EEN-EN053|Common|Simultaneous Loss|ELEMENTAL ENERGY
+EEN-EN055|Common|The League of Uniform Nomenclature|ELEMENTAL ENERGY
+EEN-EN056|Common|Roll Out!|ELEMENTAL ENERGY
+EEN-EN057|Common|Chthonian Polymer|ELEMENTAL ENERGY
+EEN-EN058|Common|Feather Wind|ELEMENTAL ENERGY
+SOI-EN004|Common|Elemental HERO Neo Bubbleman|SHADOW OF INFINITY
+SOI-EN005|Common|Hero Kid|SHADOW OF INFINITY
+SOI-EN009|Common|Ancient Gear Cannon|SHADOW OF INFINITY
+SOI-EN014|Common|D.D. Guide|SHADOW OF INFINITY
+SOI-EN016|Common|Disciple of the Forbidden Spell|SHADOW OF INFINITY
+SOI-EN017|Common|Tenkabito Shien|SHADOW OF INFINITY
+SOI-EN019|Common|Gokipon|SHADOW OF INFINITY
+SOI-EN022|Common|Anteatereatingant|SHADOW OF INFINITY
+SOI-EN023|Common|Saber Beetle|SHADOW OF INFINITY
+SOI-EN030|Common|Malice Ascendant|SHADOW OF INFINITY
+SOI-EN031|Common|Grass Phantom|SHADOW OF INFINITY
+SOI-EN032|Common|Sand Moth|SHADOW OF INFINITY
+SOI-EN034|Super Rare|Ruin, Queen of Oblivion|SHADOW OF INFINITY
+SOI-EN035|Super Rare|Demise, King of Armageddon|SHADOW OF INFINITY
+SOI-EN036|Common|D.3.S. Frog|SHADOW OF INFINITY
+SOI-EN037|Common|Hero Heart|SHADOW OF INFINITY
+SOI-EN043|Common|Symbol of Heritage|SHADOW OF INFINITY
+SOI-EN045|Common|Photon Generator Unit|SHADOW OF INFINITY
+SOI-EN046|Common|End of the World|SHADOW OF INFINITY
+SOI-EN051|Common|Attack Reflector Unit|SHADOW OF INFINITY
+SOI-EN055|Common|Generation Shift|SHADOW OF INFINITY
+SOI-EN056|Common|Full Salvo|SHADOW OF INFINITY
+SOI-EN057|Common|Success Probability 0%|SHADOW OF INFINITY
+EOJ-EN001|Common|Destiny HERO - Doom Lord|ENEMY OF JUSTICE
+EOJ-EN002|Common|Destiny HERO - Captain Tenacious|ENEMY OF JUSTICE
+EOJ-EN003|Rare|Destiny HERO - Diamond Dude|ENEMY OF JUSTICE
+EOJ-EN006|Common|Cyber Gymnast|ENEMY OF JUSTICE
+EOJ-EN007|Super Rare|Cyber Prima|ENEMY OF JUSTICE
+EOJ-EN008|Common|Cyber Kirin|ENEMY OF JUSTICE
+EOJ-EN018|Rare|Herald of Green Light|ENEMY OF JUSTICE
+EOJ-EN021|Common|Layard the Liberator|ENEMY OF JUSTICE
+EOJ-EN020|Common|Bountiful Artemis|ENEMY OF JUSTICE
+EOJ-EN027|Common|Raging Eria|ENEMY OF JUSTICE
+EOJ-EN028|Common|Blazing Hiita|ENEMY OF JUSTICE
+EOJ-EN030|Common|Batteryman D|ENEMY OF JUSTICE
+EOJ-EN037|Common|Misfortune|ENEMY OF JUSTICE
+EOJ-EN038|Common|H - Heated Heart|ENEMY OF JUSTICE
+EOJ-EN040|Common|R - Righteous Justice|ENEMY OF JUSTICE
+EOJ-EN041|Common|O - Oversoul|ENEMY OF JUSTICE
+EOJ-EN042|Rare|Hero Flash!!|ENEMY OF JUSTICE
+EOJ-EN044|Common|Celestial Transformation|ENEMY OF JUSTICE
+EOJ-EN046|Common|Grand Convergence|ENEMY OF JUSTICE
+EOJ-EN050|Common|Elemental Recharge|ENEMY OF JUSTICE
+EOJ-EN051|Rare|Destruction of Destiny|ENEMY OF JUSTICE
+EOJ-EN052|Common|Destiny Signal|ENEMY OF JUSTICE
+EOJ-EN054|Common|D - Shield|ENEMY OF JUSTICE
+EOJ-EN055|Common|Icarus Attack|ENEMY OF JUSTICE
+POTD-EN001|Common|Elemental HERO Neos|POWER OF THE DUELIST
+POTD-EN002|Common|Sabersaurus|POWER OF THE DUELIST
+POTD-EN010|Common|Decoyroid|POWER OF THE DUELIST
+POTD-EN012|Super Rare|Destiny HERO - Double Dude|POWER OF THE DUELIST
+POTD-EN015|Common|Destiny HERO - Blade Master|POWER OF THE DUELIST
+POTD-EN016|Common|Destiny HERO - Fear Monger|POWER OF THE DUELIST
+POTD-EN018|Common|Black Ptera|POWER OF THE DUELIST
+POTD-EN019|Common|Black Stego|POWER OF THE DUELIST
+POTD-EN022|Common|Babycerasaurus|POWER OF THE DUELIST
+POTD-EN023|Common|Bitelon|POWER OF THE DUELIST
+POTD-EN024|Common|Alien Grey|POWER OF THE DUELIST
+POTD-EN026|Common|Alien Hunter|POWER OF THE DUELIST
+POTD-EN036|Super Rare|Super Vehicroid Jumbo Drill|POWER OF THE DUELIST
+POTD-EN037|Common|Contact|POWER OF THE DUELIST
+POTD-EN041|Common|D - Spirit|POWER OF THE DUELIST
+POTD-EN045|Common|Common Soul|POWER OF THE DUELIST
+POTD-EN047|Common|Mausoleum of the Emperor|POWER OF THE DUELIST
+POTD-EN049|Common|Destiny Mirage|POWER OF THE DUELIST
+POTD-EN051|Common|Crop Circles|POWER OF THE DUELIST
+POTD-EN058|Common|Fossil Excavation|POWER OF THE DUELIST
+POTD-EN059|Common|Synthetic Seraphim|POWER OF THE DUELIST
+CDIP-EN004|Common|Cyber Ogre|CYBERDARK IMPACT
+CDIP-EN009|Common|Dark Lucius LV4|CYBERDARK IMPACT
+CDIP-EN012|Common|Stray Asmodian|CYBERDARK IMPACT
+CDIP-EN013|Common|Abaki|CYBERDARK IMPACT
+CDIP-EN015|Common|Snipe Hunter|CYBERDARK IMPACT
+CDIP-EN016|Common|Blast Asmodian|CYBERDARK IMPACT
+CDIP-EN018|Common|Barrier Statue of the Abyss|CYBERDARK IMPACT
+CDIP-EN019|Common|Barrier Statue of the Torrent|CYBERDARK IMPACT
+CDIP-EN022|Common|Barrier Statue of the Drought|CYBERDARK IMPACT
+CDIP-EN033|Common|Alien Infiltrator|CYBERDARK IMPACT
+CDIP-EN034|Common|Alien Mars|CYBERDARK IMPACT
+CDIP-EN040|Common|Instant Fusion|CYBERDARK IMPACT
+CDIP-EN042|Common|Linear Accelerator Cannon|CYBERDARK IMPACT
+CDIP-EN045|Common|Mystical Wind Typhoon|CYBERDARK IMPACT
+CDIP-EN048|Common|Senet Switch|CYBERDARK IMPACT
+CDIP-EN051|Common|Justi-Break|CYBERDARK IMPACT
+CDIP-EN055|Common|Byroad Sacrifice|CYBERDARK IMPACT
+DR3-EN024|Common|Element Soldier|DARK REVELATION Volume 3
+DR3-EN029|Common|The Trojan Horse|DARK REVELATION Volume 3
+DR3-EN047|Common|Fusion Weapon|DARK REVELATION Volume 3
+DR3-EN073|Common|Element Magician|DARK REVELATION Volume 3
+DR3-EN126|Common|Hand of Nephthys|DARK REVELATION Volume 3
+DR3-EN177|Common|D.D. Dynamite|DARK REVELATION Volume 3
+DR3-EN179|Common|Elemental Burst|DARK REVELATION Volume 3
+STON-EN006|Common|Neo-Spacian Glow Moss|STRIKE OF NEOS
+STON-EN008|Common|The Six Samurai - Kamon|STRIKE OF NEOS
+STON-EN012|Common|The Six Samurai - Irou|STRIKE OF NEOS
+STON-EN014|Common|Shien's Footsoldier|STRIKE OF NEOS
+STON-EN016|Common|Sage of Stillness|STRIKE OF NEOS
+STON-EN018|Common|Kahkki, Guerilla of Dark World|STRIKE OF NEOS
+STON-EN019|Common|Gren, Tactician of Dark World|STRIKE OF NEOS
+STON-EN021|Common|Electric Virus|STRIKE OF NEOS
+STON-EN022|Common|Puppet Plant|STRIKE OF NEOS
+STON-EN027|Common|Raging Earth|STRIKE OF NEOS
+STON-EN028|Common|Destruction Cyclone|STRIKE OF NEOS
+STON-EN029|Common|Radiant Spirit|STRIKE OF NEOS
+STON-EN031|Common|Alien Psychic|STRIKE OF NEOS
+STON-EN033|Common|Cú Chulainn the Awakened|STRIKE OF NEOS
+STON-EN039|Rare|Neos Force|STRIKE OF NEOS
+STON-EN043|Common|Synthesis Spell|STRIKE OF NEOS
+STON-EN044|Common|Emblem of the Awakening|STRIKE OF NEOS
+STON-EN047|Common|Shien's Castle of Mist|STRIKE OF NEOS
+STON-EN049|Common|Change of Hero - Reflector Ray|STRIKE OF NEOS
+STON-EN051|Common|Return of the Six Samurai|STRIKE OF NEOS
+STON-EN053|Common|Flashbang|STRIKE OF NEOS
+STON-EN056|Common|Ritual Sealing|STRIKE OF NEOS
+FOTB-EN001|Common|Crystal Beast Ruby Carbuncle|FORCE OF THE BREAKER
+FOTB-EN002|Common|Crystal Beast Amethyst Cat|FORCE OF THE BREAKER
+FOTB-EN003|Common|Crystal Beast Emerald Tortoise|FORCE OF THE BREAKER
+FOTB-EN005|Common|Crystal Beast Amber Mammoth|FORCE OF THE BREAKER
+FOTB-EN006|Common|Crystal Beast Cobalt Eagle|FORCE OF THE BREAKER
+FOTB-EN011|Common|Volcanic Blaster|FORCE OF THE BREAKER
+FOTB-EN025|Common|Mei-Kou, Master of Barriers|FORCE OF THE BREAKER
+FOTB-EN030|Common|Gravi-Crush Dragon|FORCE OF THE BREAKER
+FOTB-EN032|Common|Crystal Beacon|FORCE OF THE BREAKER
+FOTB-EN034|Common|Crystal Blessing|FORCE OF THE BREAKER
+FOTB-EN035|Common|Crystal Abundance|FORCE OF THE BREAKER
+FOTB-EN036|Common|Crystal Promise|FORCE OF THE BREAKER
+FOTB-EN037|Rare|Lucky Iron Axe|FORCE OF THE BREAKER
+FOTB-EN039|Common|Wild Fire|FORCE OF THE BREAKER
+FOTB-EN040|Common|Blaze Accelerator|FORCE OF THE BREAKER
+FOTB-EN047|Common|Last Resort|FORCE OF THE BREAKER
+FOTB-EN048|Common|Crystal Raigeki|FORCE OF THE BREAKER
+FOTB-EN051|Common|Breakthrough!|FORCE OF THE BREAKER
+FOTB-EN052|Common|Backs to the Wall|FORCE OF THE BREAKER
+FOTB-EN053|Common|Introduction to Gallantry|FORCE OF THE BREAKER
+FOTB-EN054|Common|Secrets of the Gallant|FORCE OF THE BREAKER
+FOTB-EN056|Common|Hard-sellin' Goblin|FORCE OF THE BREAKER
+FOTB-EN057|Common|Hard-sellin' Zombie|FORCE OF THE BREAKER
+FOTB-EN059|Common|Gem Flash Energy|FORCE OF THE BREAKER
+TAEV-EN008|Common|Chrysalis Chicky|TACTICAL EVOLUTION
+TAEV-EN024|Common|Dawnbreak Gardna|TACTICAL EVOLUTION
+TAEV-EN025|Super Rare|Doom Shaman|TACTICAL EVOLUTION
+TAEV-EN034|Ultra Rare|Desert Twister|TACTICAL EVOLUTION
+TAEV-EN035|Common|Ritual Raven|TACTICAL EVOLUTION
+TAEV-EN036|Common|Razor Lizard|TACTICAL EVOLUTION
+TAEV-EN046|Common|Reverse of Neos|TACTICAL EVOLUTION
+TAEV-EN061|Common|Amulet of Ambition|TACTICAL EVOLUTION
+TAEV-EN074|Common|Shield Spear|TACTICAL EVOLUTION
+GLAS-EN001|Common|Chamberlain of the Six Samurai|GLADIATOR'S ASSAULT
+GLAS-EN003|Super Rare|Evil HERO Malicious Edge|GLADIATOR'S ASSAULT
+GLAS-EN019|Rare|Gladiator Beast Murmillo|GLADIATOR'S ASSAULT
+GLAS-EN024|Common|Gladiator Beast Secutor|GLADIATOR'S ASSAULT
+GLAS-EN026|Common|Witch Doctor of Sparta|GLADIATOR'S ASSAULT
+GLAS-EN033|Common|Spirit of the Six Samurai|GLADIATOR'S ASSAULT
+GLAS-EN046|Common|Swing of Memories|GLADIATOR'S ASSAULT
+GLAS-EN049|Common|Summon Cloud|GLADIATOR'S ASSAULT
+GLAS-EN059|Common|Gladiator's Return|GLADIATOR'S ASSAULT
+GLAS-EN074|Common|Double-Edged Sword Technique|GLADIATOR'S ASSAULT
+DR04-EN011|Common|Jetroid|DARK REVELATION Volume 4
+DR04-EN013|Common|Dark Catapulter|DARK REVELATION Volume 4
+DR04-EN051|Common|Spiritual Water Art - Aoi|DARK REVELATION Volume 4
+DR04-EN063|Common|Blade Skater|DARK REVELATION Volume 4
+DR04-EN100|Rare|Ojamagic|DARK REVELATION Volume 4
+DR04-EN104|Common|Chthonian Alliance|DARK REVELATION Volume 4
+DR04-EN113|Common|Simultaneous Loss|DARK REVELATION Volume 4
+DR04-EN124|Common|Elemental HERO Neo Bubbleman|DARK REVELATION Volume 4
+DR04-EN136|Common|Disciple of the Forbidden Spell|DARK REVELATION Volume 4
+DR04-EN156|Common|D.3.S. Frog|DARK REVELATION Volume 4
+DR04-EN163|Common|Symbol of Heritage|DARK REVELATION Volume 4
+DR04-EN171|Common|Attack Reflector Unit|DARK REVELATION Volume 4
+DR04-EN175|Common|Generation Shift|DARK REVELATION Volume 4
+DR04-EN210|Common|Batteryman D|DARK REVELATION Volume 4
+DR04-EN219|Common|E - Emergency Call|DARK REVELATION Volume 4
+DR04-EN225|Rare|Guard Penalty|DARK REVELATION Volume 4
+DR04-EN231|Common|Destruction of Destiny|DARK REVELATION Volume 4
+PTDN-EN002|Common|Atlantean Pikeman|PHANTOM DARKNESS
+PTDN-EN009|Common|Armored Cybern|PHANTOM DARKNESS
+PTDN-EN011|Common|Cyber Ouroboros|PHANTOM DARKNESS
+PTDN-EN013|Common|Fire Trooper|PHANTOM DARKNESS
+PTDN-EN014|Common|Destiny HERO - Dunker|PHANTOM DARKNESS
+PTDN-EN025|Common|Gemini Lancer|PHANTOM DARKNESS
+PTDN-EN026|Rare|Gigaplant|PHANTOM DARKNESS
+PTDN-EN027|Rare|Future Samurai|PHANTOM DARKNESS
+PTDN-EN028|Common|Vengeful Shinobi|PHANTOM DARKNESS
+PTDN-EN031|Common|Gladiator Beast Darius|PHANTOM DARKNESS
+PTDN-EN035|Common|Cannon Soldier MK-2|PHANTOM DARKNESS
+PTDN-EN036|Common|The Calculator|PHANTOM DARKNESS
+PTDN-EN040|Common|Earth Effigy|PHANTOM DARKNESS
+PTDN-EN048|Common|Instant Neo Space|PHANTOM DARKNESS
+PTDN-EN061|Common|Gladiator Proving Ground|PHANTOM DARKNESS
+PTDN-EN069|Common|Cybernetic Hidden Technology|PHANTOM DARKNESS
+PTDN-EN073|Common|Gemini Trap Hole|PHANTOM DARKNESS
+PTDN-EN076|Common|Double Tag Team|PHANTOM DARKNESS
+PTDN-EN077|Rare|Offering to the Snake Deity|PHANTOM DARKNESS
+PTDN-EN079|Common|Transmigration Break|PHANTOM DARKNESS
+LODT-EN004|Common|Destiny HERO - Dread Servant|LIGHT OF DESTRUCTION
+LODT-EN011|Common|Arcana Force IV - The Emperor|LIGHT OF DESTRUCTION
+LODT-EN012|Common|Arcana Force VI - The Lovers|LIGHT OF DESTRUCTION
+LODT-EN018|Common|Jain, Lightsworn Paladin|LIGHT OF DESTRUCTION
+LODT-EN020|Common|Garoth, Lightsworn Warrior|LIGHT OF DESTRUCTION
+LODT-EN025|Common|Gragonith, Lightsworn Dragon|LIGHT OF DESTRUCTION
+LODT-EN033|Common|Goblin Recon Squad|LIGHT OF DESTRUCTION
+LODT-EN037|Super Rare|DUCKER Mobile Cannon|LIGHT OF DESTRUCTION
+LODT-EN045|Common|Hero Mask|LIGHT OF DESTRUCTION
+LODT-EN046|Common|Space Gift|LIGHT OF DESTRUCTION
+LODT-EN048|Common|D - Formation|LIGHT OF DESTRUCTION
+LODT-EN053|Common|Realm of Light|LIGHT OF DESTRUCTION
+LODT-EN061|Rare|Ribbon of Rebirth|LIGHT OF DESTRUCTION
+LODT-EN063|Common|Limit Reverse|LIGHT OF DESTRUCTION
+LODT-EN065|Common|Rainbow Gravity|LIGHT OF DESTRUCTION
+LODT-EN066|Common|D - Fortune|LIGHT OF DESTRUCTION
+LODT-EN067|Common|Reversal of Fate|LIGHT OF DESTRUCTION
+LODT-EN069|Common|Arcana Call|LIGHT OF DESTRUCTION
+LODT-EN079|Common|Summon Limit|LIGHT OF DESTRUCTION
+LODT-EN074|Common|Portable Battery Pack|LIGHT OF DESTRUCTION
+RP01-EN015|Common|Hane-Hane|RETRO PACK
+TDGS-EN001|Common|Turbo Booster|THE DUELIST GENESIS
+TDGS-EN003|Common|Quillbolt Hedgehog|THE DUELIST GENESIS
+TDGS-EN004|Common|Ghost Gardna|THE DUELIST GENESIS
+TDGS-EN007|Common|Medium Piece Golem|THE DUELIST GENESIS
+TDGS-EN008|Rare|Big Piece Golem|THE DUELIST GENESIS
+TDGS-EN011|Common|Twin-Shield Defender|THE DUELIST GENESIS
+TDGS-EN012|Common|Jutte Fighter|THE DUELIST GENESIS
+TDGS-EN018|Common|Krebons|THE DUELIST GENESIS
+TDGS-EN019|Common|Mind Protector|THE DUELIST GENESIS
+TDGS-EN025|Common|Jenis, Lightsworn Mender|THE DUELIST GENESIS
+TDGS-EN026|Common|Dharc the Dark Charmer|THE DUELIST GENESIS
+TDGS-EN027|Common|Mecha Bunny|THE DUELIST GENESIS
+TDGS-EN028|Common|Oyster Meister|THE DUELIST GENESIS
+TDGS-EN031|Common|Kunoichi|THE DUELIST GENESIS
+TDGS-EN037|Common|Noisy Gnat|THE DUELIST GENESIS
+TDGS-EN047|Common|Junk Barrage|THE DUELIST GENESIS
+TDGS-EN048|Common|Battle Tuned|THE DUELIST GENESIS
+TDGS-EN049|Rare|De-Synchro|THE DUELIST GENESIS
+TDGS-EN057|Common|Geartown|THE DUELIST GENESIS
+TDGS-EN060|Super Rare|Unstable Evolution|THE DUELIST GENESIS
+TDGS-EN061|Common|Recycling Batteries|THE DUELIST GENESIS
+TDGS-EN062|Common|Book of Eclipse|THE DUELIST GENESIS
+TDGS-EN079|Common|Needlebug Nest|THE DUELIST GENESIS
+TDGS-EN091|Common|Tricky Spell 4|THE DUELIST GENESIS
+CSOC-EN001|Common|Healing Wave Generator|CROSSROADS OF CHAOS
+CSOC-EN002|Rare|Turbo Synchron|CROSSROADS OF CHAOS
+CSOC-EN004|Common|Wall of Ivy|CROSSROADS OF CHAOS
+CSOC-EN005|Common|Copy Plant|CROSSROADS OF CHAOS
+CSOC-EN006|Common|Morphtronic Celfon|CROSSROADS OF CHAOS
+CSOC-EN008|Common|Morphtronic Datatron|CROSSROADS OF CHAOS
+CSOC-EN012|Common|Morphtronic Clocken|CROSSROADS OF CHAOS
+CSOC-EN013|Common|Gadget Hauler|CROSSROADS OF CHAOS
+CSOC-EN014|Common|Gadget Driver|CROSSROADS OF CHAOS
+CSOC-EN016|Common|Pursuit Chaser|CROSSROADS OF CHAOS
+CSOC-EN019|Common|Iron Chain Blaster|CROSSROADS OF CHAOS
+CSOC-EN023|Common|Psychic Jumper|CROSSROADS OF CHAOS
+CSOC-EN024|Common|Nettles|CROSSROADS OF CHAOS
+CSOC-EN025|Common|Gigantic Cephalotus|CROSSROADS OF CHAOS
+CSOC-EN026|Common|Horseytail|CROSSROADS OF CHAOS
+CSOC-EN027|Common|Botanical Girl|CROSSROADS OF CHAOS
+CSOC-EN028|Common|Cursed Fig|CROSSROADS OF CHAOS
+CSOC-EN030|Common|Zombie Mammoth|CROSSROADS OF CHAOS
+CSOC-EN034|Super Rare|Hanewata|CROSSROADS OF CHAOS
+CSOC-EN037|Common|Jade Knight|CROSSROADS OF CHAOS
+CSOC-EN046|Common|Seed of Deception|CROSSROADS OF CHAOS
+CSOC-EN049|Common|Factory of 100 Machines|CROSSROADS OF CHAOS
+CSOC-EN051|Common|Morphtronic Cord|CROSSROADS OF CHAOS
+CSOC-EN052|Common|Morphtronic Engine|CROSSROADS OF CHAOS
+CSOC-EN058|Common|Fragrance Storm|CROSSROADS OF CHAOS
+CSOC-EN060|Common|Everliving Underworld Cannon|CROSSROADS OF CHAOS
+CSOC-EN064|Common|Confusion Chaff|CROSSROADS OF CHAOS
+CSOC-EN066|Common|Synchro Strike|CROSSROADS OF CHAOS
+CSOC-EN068|Common|Revival Gift|CROSSROADS OF CHAOS
+CSOC-EN067|Rare|Prideful Roar|CROSSROADS OF CHAOS
+CSOC-EN069|Common|Lineage of Destruction|CROSSROADS OF CHAOS
+CSOC-EN070|Common|Doppelganger|CROSSROADS OF CHAOS
+CSOC-EN076|Common|Plant Food Chain|CROSSROADS OF CHAOS
+CSOC-EN078|Common|DNA Checkup|CROSSROADS OF CHAOS
+CSOC-EN079|Common|Gozen Match|CROSSROADS OF CHAOS
+CSOC-EN080|Common|Giant Trap Hole|CROSSROADS OF CHAOS
+CSOC-EN095|Super Rare|Goka, the Pyre of Malice|CROSSROADS OF CHAOS
+DLG1-EN003|Common|Flame Swordsman|DARK LEGENDS
+DLG1-EN005|Common|Gaia The Fierce Knight|DARK LEGENDS
+DLG1-EN011|Common|Giant Soldier of Stone|DARK LEGENDS
+DLG1-EN015|Common|Man-Eater Bug|DARK LEGENDS
+DLG1-EN023|Common|Gaia the Dragon Champion|DARK LEGENDS
+DLG1-EN027|Common|Harpie Lady Sisters|DARK LEGENDS
+DLG1-EN030|Common|Elegant Egotist|DARK LEGENDS
+DLG1-EN039|Rare|Catapult Turtle|DARK LEGENDS
+DLG1-EN042|Common|Cannon Soldier|DARK LEGENDS
+DLG1-EN044|Common|Gazelle the King of Mythical Beasts|DARK LEGENDS
+DLG1-EN040|Common|Jirai Gumo|DARK LEGENDS
+DLG1-EN053|Common|Black Pendant|DARK LEGENDS
+DLG1-EN065|Common|Toon Summoned Skull|DARK LEGENDS
+DLG1-EN067|Common|Toon World|DARK LEGENDS
+DLG1-EN073|Common|Shining Angel|DARK LEGENDS
+DLG1-EN074|Common|Mother Grizzly|DARK LEGENDS
+DLG1-EN075|Common|Flying Kamakiri #1|DARK LEGENDS
+CRMS-EN003|Rare|Hyper Synchron|CRIMSON CRISIS
+CRMS-EN006|Common|Twin-Sword Marauder|CRIMSON CRISIS
+CRMS-EN007|Common|Dark Tinker|CRIMSON CRISIS
+CRMS-EN009|Common|Blackwing - Bora the Spear|CRIMSON CRISIS
+CRMS-EN010|Common|Blackwing - Sirocco the Dawn|CRIMSON CRISIS
+CRMS-EN017|Common|Morphtronic Boarden|CRIMSON CRISIS
+CRMS-EN023|Common|Assault Mercenary|CRIMSON CRISIS
+CRMS-EN029|Common|Flip Flop Frog|CRIMSON CRISIS
+CRMS-EN035|Common|Cross-Sword Beetle|CRIMSON CRISIS
+CRMS-EN036|Common|Bee List Soldier|CRIMSON CRISIS
+CRMS-EN039|Rare|Alien Ammonite|CRIMSON CRISIS
+CRMS-EN050|Common|Morphtronic Map|CRIMSON CRISIS
+CRMS-EN051|Common|Assault Overload|CRIMSON CRISIS
+CRMS-EN052|Common|Assault Teleport|CRIMSON CRISIS
+CRMS-EN063|Common|Assault Mode Activate|CRIMSON CRISIS
+CRMS-EN069|Common|Ebon Arrow|CRIMSON CRISIS
+CRMS-EN071|Common|Fake Explosion|CRIMSON CRISIS
+RGBT-EN007|Common|Rose Tentacles|RAGING BATTLE
+RGBT-EN011|Common|Blackwing - Shura the Blue Flame|RAGING BATTLE
+RGBT-EN012|Common|Blackwing - Kalut the Moon Shadow|RAGING BATTLE
+RGBT-EN015|Common|Morphtronic Videon|RAGING BATTLE
+RGBT-EN016|Common|Morphtronic Scopen|RAGING BATTLE
+RGBT-EN017|Common|Gadget Arms|RAGING BATTLE
+RGBT-EN023|Common|Koa'ki Meiru Guardian|RAGING BATTLE
+RGBT-EN036|Common|Mermaid Archer|RAGING BATTLE
+RGBT-EN038|Common|Vanguard of the Dragon|RAGING BATTLE
+RGBT-EN056|Common|Iron Core Immediate Disposal|RAGING BATTLE
+RGBT-EN059|Common|Natural Tune|RAGING BATTLE
+RGBT-EN066|Common|Overdoom Line|RAGING BATTLE
+RGBT-EN069|Common|Level Retuner|RAGING BATTLE
+RGBT-EN075|Common|Attack of the Cornered Rat|RAGING BATTLE
+RGBT-EN096|Rare|Ojama Red|RAGING BATTLE
+RGBT-EN097|Rare|Ojama Blue|RAGING BATTLE
+RP02-EN003|Common|Lightforce Sword|RETRO PACK 2
+RP02-EN020|Common|Thousand-Eyes Idol|RETRO PACK 2
+RP02-EN043|Common|Gilasaurus|RETRO PACK 2
+RP02-EN047|Common|Spirit Message "N"|RETRO PACK 2
+ANPR-EN002|Common|Sunny Pixie|ANCIENT PROPHECY
+ANPR-EN004|Common|Blackwing - Mistral the Silver Shield|ANCIENT PROPHECY
+ANPR-EN007|Common|Morphtronic Magnen Bar|ANCIENT PROPHECY
+ANPR-EN012|Common|Infernity Beast|ANCIENT PROPHECY
+ANPR-EN016|Ultra Rare|Earthbound Immortal Cusillu|ANCIENT PROPHECY
+ANPR-EN018|Common|Koa'ki Meiru Boulder|ANCIENT PROPHECY
+ANPR-EN025|Common|Armed Sea Hunter|ANCIENT PROPHECY
+ANPR-EN026|Common|Divine Dragon Aquabizarre|ANCIENT PROPHECY
+ANPR-EN028|Common|Shark Cruiser|ANCIENT PROPHECY
+ANPR-EN046|Common|Silver Wing|ANCIENT PROPHECY
+ANPR-EN053|Common|Core Blaster|ANCIENT PROPHECY
+ANPR-EN055|Common|Hydro Pressure Cannon|ANCIENT PROPHECY
+ANPR-EN056|Common|Water Hazard|ANCIENT PROPHECY
+ANPR-EN072|Common|Battle Teleportation|ANCIENT PROPHECY
+HA01-EN003|Secret Rare|Cryomancer of the Ice Barrier|HIDDEN ARSENAL
+HA01-EN007|Super Rare|Flamvell Dragnov|HIDDEN ARSENAL
+HA01-EN024|Secret Rare|Flamvell Uruquizas|HIDDEN ARSENAL
+SOVR-EN004|Common|Quickdraw Synchron|STARDUST OVERDRIVE
+SOVR-EN005|Common|Level Eater|STARDUST OVERDRIVE
+SOVR-EN013|Common|Solitaire Magician|STARDUST OVERDRIVE
+SOVR-EN015|Common|Dark Spider|STARDUST OVERDRIVE
+SOVR-EN020|Common|Reptilianne Gorgon|STARDUST OVERDRIVE
+SOVR-EN023|Common|Reptilianne Viper|STARDUST OVERDRIVE
+SOVR-EN033|Common|Energy Bravery|STARDUST OVERDRIVE
+SOVR-EN048|Common|Attack Pheromones|STARDUST OVERDRIVE
+SOVR-EN050|Common|Reptilianne Spawn|STARDUST OVERDRIVE
+SOVR-EN052|Common|Time Passage|STARDUST OVERDRIVE
+SOVR-EN055|Common|Gemini Spark|STARDUST OVERDRIVE
+SOVR-EN056|Common|Ritual of Grace|STARDUST OVERDRIVE
+SOVR-EN059|Common|Spiritual Forest|STARDUST OVERDRIVE
+SOVR-EN064|Common|Synchro Barrier|STARDUST OVERDRIVE
+SOVR-EN065|Common|Enlightenment|STARDUST OVERDRIVE
+SOVR-EN069|Common|Wolf in Sheep's Clothing|STARDUST OVERDRIVE
+SOVR-EN070|Common|Earthbound Wave|STARDUST OVERDRIVE
+SOVR-EN076|Common|Gemini Booster|STARDUST OVERDRIVE
+SOVR-EN085|Rare|Gemini Scorpion|STARDUST OVERDRIVE
+SOVR-EN087|Rare|Earthbound Immortal Revival|STARDUST OVERDRIVE
+SOVR-EN088|Rare|Reptilianne Poison|STARDUST OVERDRIVE
+ABPF-EN009|Common|Power Invader|ABSOLUTE POWERFORCE
+ABPF-EN022|Common|Apocatequil|ABSOLUTE POWERFORCE
+ABPF-EN023|Common|Supay|ABSOLUTE POWERFORCE
+ABPF-EN024|Common|Informer Spider|ABSOLUTE POWERFORCE
+ABPF-EN029|Common|Black Potan|ABSOLUTE POWERFORCE
+ABPF-EN030|Common|Shreddder|ABSOLUTE POWERFORCE
+ABPF-EN032|Common|Codarus|ABSOLUTE POWERFORCE
+ABPF-EN046|Common|Variety Comes Out|ABSOLUTE POWERFORCE
+ABPF-EN052|Common|Break! Draw!|ABSOLUTE POWERFORCE
+ABPF-EN057|Common|Machine Assembly Line|ABSOLUTE POWERFORCE
+ABPF-EN076|Common|Forgotten Temple of the Deep|ABSOLUTE POWERFORCE
+ABPF-EN080|Common|Inverse Universe|ABSOLUTE POWERFORCE
+ABPF-EN090|Rare|Gale Dogra|ABSOLUTE POWERFORCE
+TSHD-EN001|Common|Blackwing - Ghibli the Searing Wind|THE SHINING DARKNESS
+TSHD-EN002|Rare|Blackwing - Gust the Backblast|THE SHINING DARKNESS
+TSHD-EN005|Common|Card Breaker|THE SHINING DARKNESS
+TSHD-EN006|Common|Second Booster|THE SHINING DARKNESS
+TSHD-EN010|Common|Flare Resonator|THE SHINING DARKNESS
+TSHD-EN011|Common|Synchro Magnet|THE SHINING DARKNESS
+TSHD-EN017|Common|Morphtronic Vacuumen|THE SHINING DARKNESS
+TSHD-EN021|Common|Biofalcon|THE SHINING DARKNESS
+TSHD-EN051|Rare|Pyramid of Wonders|THE SHINING DARKNESS
+TSHD-EN053|Common|Dragon Laser|THE SHINING DARKNESS
+TSHD-EN058|Common|Koa'ki Meiru Initialize!|THE SHINING DARKNESS
+TSHD-EN060|Common|Silent Graveyard|THE SHINING DARKNESS
+TSHD-EN065|Common|Blackwing - Bombardment|THE SHINING DARKNESS
+TSHD-EN074|Common|Blossom Bombardment|THE SHINING DARKNESS
+TSHD-EN090|Common|Genex Controller|THE SHINING DARKNESS
+TSHD-EN091|Common|Genex Undine|THE SHINING DARKNESS
+TSHD-EN094|Common|X-Saber Pashuul|THE SHINING DARKNESS
+HA02-EN004|Super Rare|Naturia Vein|HIDDEN ARSENAL 2
+HA02-EN009|Super Rare|Genex Doctor|HIDDEN ARSENAL 2
+HA02-EN014|Super Rare|Mist Valley Executor|HIDDEN ARSENAL 2
+HA02-EN031|Super Rare|Fabled Lurrie|HIDDEN ARSENAL 2
+HA02-EN043|Super Rare|Genex Blastfan|HIDDEN ARSENAL 2
+HA02-EN058|Secret Rare|Naturia Leodrake|HIDDEN ARSENAL 2
+DREV-EN003|Common|Dash Warrior|DUELIST REVOLUTION
+DREV-EN004|Common|Damage Eater|DUELIST REVOLUTION
+DREV-EN025|Common|Wattlemur|DUELIST REVOLUTION
+DREV-EN030|Common|Amazoness Sage|DUELIST REVOLUTION
+DREV-EN031|Common|Amazoness Trainee|DUELIST REVOLUTION
+DREV-EN045|Common|Blind Spot Strike|DUELIST REVOLUTION
+DREV-EN046|Common|Double Cyclone|DUELIST REVOLUTION
+DREV-EN049|Common|Scrap Sheen|DUELIST REVOLUTION
+DREV-EN050|Common|Wattcine|DUELIST REVOLUTION
+DREV-EN056|Common|Beast Rage|DUELIST REVOLUTION
+DREV-EN059|Common|Cursed Armaments|DUELIST REVOLUTION
+DREV-EN063|Common|Desperate Tag|DUELIST REVOLUTION
+DREV-EN068|Common|Barrier Wave|DUELIST REVOLUTION
+DREV-EN069|Common|Chain Whirlwind|DUELIST REVOLUTION
+DREV-EN074|Common|Beast Rising|DUELIST REVOLUTION
+DREV-EN078|Common|Anti-Magic Prism|DUELIST REVOLUTION
+DREV-EN094|Common|Flamvell Poun|DUELIST REVOLUTION
+DREV-EN096|Common|Flamvell Fiend|DUELIST REVOLUTION
+DREV-EN097|Common|Genex Worker|DUELIST REVOLUTION
+DREV-EN098|Common|Genex Power Planner|DUELIST REVOLUTION
+STBL-EN000|Super Rare|Archfiend Empress|STARSTRIKE BLAST
+STBL-EN001|Common|Swift Scarecrow|STARSTRIKE BLAST
+STBL-EN004|Common|Needle Soldier|STARSTRIKE BLAST
+STBL-EN006|Common|Rescue Warrior|STARSTRIKE BLAST
+STBL-EN008|Common|Vice Berserker|STARSTRIKE BLAST
+STBL-EN011|Common|Extra Veiler|STARSTRIKE BLAST
+STBL-EN014|Common|Attack Gainer|STARSTRIKE BLAST
+STBL-EN015|Common|Blackwing - Etesian of Two Swords|STARSTRIKE BLAST
+STBL-EN021|Common|Karakuri Strategist mdl 248 "Nishipachi"|STARSTRIKE BLAST
+STBL-EN025|Common|Scrap Searcher|STARSTRIKE BLAST
+STBL-EN026|Common|Wattkiwi|STARSTRIKE BLAST
+STBL-EN027|Common|Watthopper|STARSTRIKE BLAST
+STBL-EN028|Common|Wattdragonfly|STARSTRIKE BLAST
+STBL-EN031|Common|Naturia Pumpkin|STARSTRIKE BLAST
+STBL-EN032|Common|Naturia Stag Beetle|STARSTRIKE BLAST
+STBL-EN047|Common|Golden Gearbox|STARSTRIKE BLAST
+STBL-EN048|Common|Karakuri Anatomy|STARSTRIKE BLAST
+STBL-EN051|Common|Wattjustment|STARSTRIKE BLAST
+STBL-EN052|Common|Barkion's Bark|STARSTRIKE BLAST
+STBL-EN055|Common|Mirror of the Ice Barrier|STARSTRIKE BLAST
+STBL-EN057|Common|Darkworld Shackles|STARSTRIKE BLAST
+STBL-EN058|Common|Axe of Fools|STARSTRIKE BLAST
+STBL-EN062|Common|White Elephant's Gift|STARSTRIKE BLAST
+STBL-EN066|Common|Defenders Intersect|STARSTRIKE BLAST
+STBL-EN068|Common|Blackwing - Boobytrap|STARSTRIKE BLAST
+STBL-EN069|Common|Star Siphon|STARSTRIKE BLAST
+STBL-EN070|Common|Half Counter|STARSTRIKE BLAST
+STBL-EN071|Common|Karakuri Trick House|STARSTRIKE BLAST
+STBL-EN074|Common|Wattkeeper|STARSTRIKE BLAST
+STBL-EN075|Common|Exterio's Fang|STARSTRIKE BLAST
+STBL-EN094|Common|Ally of Justice Unknown Crusher|STARSTRIKE BLAST
+HA03-EN044|Super Rare|Naturia Hydrangea|HIDDEN ARSENAL 3
+HA03-EN058|Secret Rare|Fabled Ragin|HIDDEN ARSENAL 3
