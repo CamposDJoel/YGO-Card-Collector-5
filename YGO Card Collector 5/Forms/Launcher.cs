@@ -29,6 +29,7 @@ namespace YGO_Card_Collector_5
 
             RadioBigWinOption.MouseEnter += OnMouseEnterRadio;
             RadioDefaultOption.MouseEnter += OnMouseEnterRadio;
+            RadioBinderOption.MouseEnter += OnMouseEnterRadio;
 
             btnLoadDB.MouseEnter += OnMouseEnterRadio;
             btnLoadDB2019.MouseEnter += OnMouseEnterRadio;
@@ -90,6 +91,11 @@ namespace YGO_Card_Collector_5
                 CollectorBigWinMode Co = new CollectorBigWinMode(this);
                 Co.Show();
             }
+            else if (RadioBinderOption.Checked)
+            {
+                CollectorBinderMode BM = new CollectorBinderMode(this);
+                BM.Show();
+            }
         }
         private void lblDatabaseUpdateOption_Click(object sender, EventArgs e)
         {
@@ -135,6 +141,10 @@ namespace YGO_Card_Collector_5
         {
             SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
         }
+        private void RadioBinderOption_CheckedChanged(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
+        }
         #endregion
 
         #region Load DB Event Listeners
@@ -171,6 +181,6 @@ namespace YGO_Card_Collector_5
         {
             LoadDB("2019");
         }
-        #endregion
+        #endregion        
     }
 }
