@@ -32,6 +32,8 @@ namespace YGO_Card_Collector_5
             {
                 int Picture_XSIZE = 52;
                 int Picture_YSIZE = 65;
+                int CARD_XSIZE = Picture_XSIZE - 4;
+                int CARD_YSIZE = Picture_YSIZE - 4;
                 int ICON_SIZE = 18;
                 int ROWS = 6;
                 int COLUMNS = 15;
@@ -66,10 +68,10 @@ namespace YGO_Card_Collector_5
                         CardBox.Controls.Add(CardImage);
                         CardImage.Location = new Point(1, 1);
                         CardImage.BorderStyle = BorderStyle.FixedSingle;
-                        CardImage.Size = new Size(Picture_XSIZE - 4, Picture_YSIZE - 4);
+                        CardImage.Size = new Size(CARD_XSIZE, CARD_YSIZE);
                         CardImage.SizeMode = PictureBoxSizeMode.StretchImage;
                         CardImage.Tag = imageID;
-                        CardImage.Click += new EventHandler(this.Image_click);
+                        CardImage.Click += new EventHandler(Image_click);
                         _CardImageList.Add(CardImage);
 
                         //Initialize the Rarity Icon
@@ -77,7 +79,7 @@ namespace YGO_Card_Collector_5
                         CardBox.Controls.Add(CardRarity);
                         CardRarity.Location = new Point(1, 47);
                         CardRarity.BorderStyle = BorderStyle.FixedSingle;
-                        CardRarity.Size = new Size(Picture_XSIZE - 4, 15);
+                        CardRarity.Size = new Size(CARD_XSIZE, 15);
                         CardRarity.SizeMode = PictureBoxSizeMode.StretchImage;
                         CardRarity.Visible = true;
                         CardRarity.BringToFront();
@@ -1001,13 +1003,8 @@ namespace YGO_Card_Collector_5
         private void GoPreviousPage()
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
-            int CurrentCardListCount = 0;
 
-            if (_MasterCardViewMode) { CurrentCardListCount = _CurrentMasterCardList.Count; }
-            else { CurrentCardListCount = _CurrentSetCardList.Count; }
-
-            int lastpage = (CurrentCardListCount / CARDS_PER_PAGE) + 1;
-
+            int lastpage = GetLastPage();
             if (_CurrentCardPage == 1) { _CurrentCardPage = lastpage; }
             else { _CurrentCardPage--; }
 
@@ -1016,17 +1013,25 @@ namespace YGO_Card_Collector_5
         private void GoNextPage()
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
-            int CurrentCardListCount = 0;
 
-            if (_MasterCardViewMode) { CurrentCardListCount = _CurrentMasterCardList.Count; }
-            else { CurrentCardListCount = _CurrentSetCardList.Count; }
-
-            int lastpage = (CurrentCardListCount / CARDS_PER_PAGE) + 1;
-
+            int lastpage = GetLastPage();
             if (_CurrentCardPage == lastpage) { _CurrentCardPage = 1; }
             else { _CurrentCardPage++; }
 
             LoadPage();
+            _CurrentCardImageIndexSelected = 0;
+            InitializeSelectedCard(_CurrentCardImageIndexSelected);
+        }
+        private int GetLastPage()
+        {
+            int CurrentCardListCount = 0;
+            if (_MasterCardViewMode) { CurrentCardListCount = _CurrentMasterCardList.Count; }
+            else { CurrentCardListCount = _CurrentSetCardList.Count; }
+            double pages = ((double)CurrentCardListCount / (double)CARDS_PER_PAGE);
+            int lastpage = (int)pages;
+            double remaining = pages - (int)pages;
+            if (remaining > 0) { lastpage++; }
+            return lastpage;
         }
         #endregion
 

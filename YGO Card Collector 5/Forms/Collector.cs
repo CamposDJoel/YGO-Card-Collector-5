@@ -30,19 +30,27 @@ namespace YGO_Card_Collector_5
 
             void InitializeCardViewImages()
             {
+                int Picture_XSIZE = 47;
+                int Picture_YSIZE = 60;
+                int CARD_XSIZE = Picture_XSIZE - 4;
+                int CARD_YSIZE = Picture_YSIZE - 4;
+                int ICON_SIZE = 15;
+                int ROWS = 5;
+                int COLUMNS = 9;
+
                 int imageID = 0;
                 int Y_Location = 18;
-                for (int x = 0; x < 5; x++)
+                for (int x = 0; x < ROWS; x++)
                 {
                     int X_Location = 14;
-                    for (int y = 0; y < 9; y++)
+                    for (int y = 0; y < COLUMNS; y++)
                     {
                         //Initialize the border box Image
                         Panel CardBox = new Panel();
                         GroupCardView.Controls.Add(CardBox);
                         CardBox.Location = new Point(X_Location, Y_Location);
                         CardBox.BorderStyle = BorderStyle.FixedSingle;
-                        CardBox.Size = new Size(47, 60);
+                        CardBox.Size = new Size(Picture_XSIZE, Picture_YSIZE);
                         _CardPanelList.Add(CardBox);
 
                         //Initialize the Card Collection Icon
@@ -50,7 +58,7 @@ namespace YGO_Card_Collector_5
                         CardBox.Controls.Add(CardIcon);
                         CardIcon.Location = new Point(1, 1);
                         CardIcon.BorderStyle = BorderStyle.FixedSingle;
-                        CardIcon.Size = new Size(15, 15);
+                        CardIcon.Size = new Size(ICON_SIZE, ICON_SIZE);
                         CardIcon.SizeMode = PictureBoxSizeMode.StretchImage;
                         CardIcon.Tag = imageID;
                         //CardIcon.Visible = false;
@@ -61,10 +69,10 @@ namespace YGO_Card_Collector_5
                         CardBox.Controls.Add(CardImage);
                         CardImage.Location = new Point(1, 1);
                         CardImage.BorderStyle = BorderStyle.FixedSingle;
-                        CardImage.Size = new Size(43, 56);
+                        CardImage.Size = new Size(CARD_XSIZE, CARD_YSIZE);
                         CardImage.SizeMode = PictureBoxSizeMode.StretchImage;
                         CardImage.Tag = imageID;
-                        CardImage.Click += new EventHandler(this.Image_click);
+                        CardImage.Click += new EventHandler(Image_click);
                         _CardImageList.Add(CardImage);
 
                         //Initialize the Rarity Icon
@@ -72,16 +80,16 @@ namespace YGO_Card_Collector_5
                         CardBox.Controls.Add(CardRarity);
                         CardRarity.Location = new Point(1, 42);
                         CardRarity.BorderStyle = BorderStyle.FixedSingle;
-                        CardRarity.Size = new Size(43, 15);
+                        CardRarity.Size = new Size(CARD_XSIZE, 15);
                         CardRarity.SizeMode = PictureBoxSizeMode.StretchImage;
                         CardRarity.Visible = true;
                         CardRarity.BringToFront();
                         _CardRaritiesList.Add(CardRarity);
 
-                        X_Location += 47;
+                        X_Location += Picture_XSIZE;
                         imageID++;
                     }
-                    Y_Location += 60;
+                    Y_Location += Picture_YSIZE;
                 }
             }
             void InitializeCustomTagNames()
@@ -527,6 +535,8 @@ namespace YGO_Card_Collector_5
         private int _CurrentCardImageIndexSelected = 0;
         private bool _KeyInputEnable = true;
 
+        private const int CARDS_PER_PAGE = 45;
+
         private List<Panel> _CardPanelList = new List<Panel>();
         private List<PictureBox> _IconImageList = new List<PictureBox>();
         private List<PictureBox> _CardImageList = new List<PictureBox>();
@@ -571,7 +581,6 @@ namespace YGO_Card_Collector_5
             {
                 _TagContainerList[Index].BackColor = Color.Maroon;
             }
-
         }
         #endregion
 
@@ -692,13 +701,8 @@ namespace YGO_Card_Collector_5
         private void GoPreviousPage()
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
-            int CurrentCardListCount = 0;
 
-            if (_MasterCardViewMode) { CurrentCardListCount = _CurrentMasterCardList.Count; }
-            else { CurrentCardListCount = _CurrentSetCardList.Count; }
-
-            int lastpage = (CurrentCardListCount / 45) + 1;
-
+            int lastpage = GetLastPage();
             if (_CurrentCardPage == 1) { _CurrentCardPage = lastpage; }
             else { _CurrentCardPage--; }
 
@@ -707,17 +711,25 @@ namespace YGO_Card_Collector_5
         private void GoNextPage()
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
-            int CurrentCardListCount = 0;
 
-            if (_MasterCardViewMode) { CurrentCardListCount = _CurrentMasterCardList.Count; }
-            else { CurrentCardListCount = _CurrentSetCardList.Count; }
-
-            int lastpage = (CurrentCardListCount / 45) + 1;
-
+            int lastpage = GetLastPage();
             if (_CurrentCardPage == lastpage) { _CurrentCardPage = 1; }
             else { _CurrentCardPage++; }
 
             LoadPage();
+            _CurrentCardImageIndexSelected = 0;
+            InitializeSelectedCard(_CurrentCardImageIndexSelected);
+        }
+        private int GetLastPage()
+        {
+            int CurrentCardListCount = 0;
+            if (_MasterCardViewMode) { CurrentCardListCount = _CurrentMasterCardList.Count; }
+            else { CurrentCardListCount = _CurrentSetCardList.Count; }
+            double pages = ((double)CurrentCardListCount / (double)CARDS_PER_PAGE);
+            int lastpage = (int)pages;
+            double remaining = pages - (int)pages;
+            if (remaining > 0) { lastpage++; }
+            return lastpage;
         }
         #endregion
 
