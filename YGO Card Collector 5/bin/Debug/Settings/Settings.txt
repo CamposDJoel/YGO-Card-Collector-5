@@ -2,10 +2,10 @@
 SetSorting|True
 TestMode|False
 HeadlessMode|True
-Theme|0
-Music|False
+Theme|6
+Music|True
 SFX|True
-TagStarName|Star
-TagSquareName|Square
-TagTriangleName|Triangle
-TagCircleName|Circle
+TagStarName|Second Copy in Master
+TagSquareName|Only Copy in Masters
+TagTriangleName|Missing Spare
+TagCircleName|Other
