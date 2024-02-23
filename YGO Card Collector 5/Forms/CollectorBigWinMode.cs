@@ -642,7 +642,7 @@ namespace YGO_Card_Collector_5
             {
                 if (_MasterCardViewMode)
                 {
-                    GroupCardView.Text = string.Format("PAGE: {0}  -  CARD GROUP: {1}  -  Total Cards: {2}", _CurrentCardPage, Database.CardGroupToString(_CurrentCardGroup), _CurrentMasterCardList.Count);
+                    GroupCardView.Text = string.Format("PAGE: {0} | GROUP: {1} | Cards: {2}", _CurrentCardPage, Database.CardGroupToString(_CurrentCardGroup), _CurrentMasterCardList.Count);
                     GroupCardViewVariants.Text = "PAGE: 1 - NO VARIANT CARD IS MASTER CARD LIST VIEW";
                 }
                 else
@@ -654,14 +654,14 @@ namespace YGO_Card_Collector_5
                     if (Database.SetPackByName.ContainsKey(SetName))
                     {
                         //Update the Card Viewer Card Page/Card Count header
-                        GroupCardView.Text = string.Format("PAGE: {0}  -  CODE: {1}  - Main Cards: {2}", _CurrentCardPage, Code, _CurrentSetCardList.Count);
-                        GroupCardViewVariants.Text = string.Format("PAGE: {0}  -  CODE: {1}  - Variant Cards: {2}", _CurrentCardPageVariant, Code, _CurrentSetCardListVariants.Count);
+                        GroupCardView.Text = string.Format("PAGE: {0} | CODE: {1} | Main Cards: {2}", _CurrentCardPage, Code, _CurrentSetCardList.Count);
+                        GroupCardViewVariants.Text = string.Format("PAGE: {0} | CODE: {1} | Variant Cards: {2}", _CurrentCardPageVariant, Code, _CurrentSetCardListVariants.Count);
                     }
                     else
                     {
                         //Update the Card Viewer Card Page/Card Count header
-                        GroupCardView.Text = string.Format("PAGE: {0}  -  CODE: \"{1}\"  - Main Cards: 0", _CurrentCardPage, Code);
-                        GroupCardViewVariants.Text = string.Format("PAGE: {0}  -  CODE: \"{1}\"  - Variant Cards: 0", _CurrentCardPageVariant, Code);
+                        GroupCardView.Text = string.Format("PAGE: {0} | CODE: \"{1}\" | Main Cards: 0", _CurrentCardPage, Code);
+                        GroupCardViewVariants.Text = string.Format("PAGE: {0} | CODE: \"{1}\" | Variant Cards: 0", _CurrentCardPageVariant, Code);
                     }
                 }
             }

@@ -418,7 +418,10 @@ namespace YGO_Card_Collector_5
                     LoadRarityLabel(x, ThisSetCard);
                 }
             }
-           
+
+            UpdatePageBanners();
+
+
             void LoadCardImage(int x, MasterCard ThisMasterCard, SetCard ThisSetCard)
             {
                 //Initalize the Card Image
@@ -511,6 +514,30 @@ namespace YGO_Card_Collector_5
                     {
                         ImageServer.SetImage(_CardRaritiesList[x], ImageType.Rarity, ThisSetCard.Rarity);
                         _CardRaritiesList[x].Visible = true;
+                    }
+                }
+            }
+            void UpdatePageBanners()
+            {
+                if (_MasterCardViewMode)
+                {
+                    GroupCardView.Text = string.Format("PAGE: {0} | GROUP: {1} | Cards: {2}", _CurrentCardPage, Database.CardGroupToString(_CurrentCardGroup), _CurrentMasterCardList.Count);
+                }
+                else
+                {
+                    int index = listSetlist.SelectedIndex;
+                    string SetName = _CurrentSetInfoListSelected[index].Name;
+                    string Code = _CurrentSetInfoListSelected[index].GetCode();
+
+                    if (Database.SetPackByName.ContainsKey(SetName))
+                    {
+                        //Update the Card Viewer Card Page/Card Count header
+                        GroupCardView.Text = string.Format("PAGE: {0} | CODE: {1} | Cards: {2}", _CurrentCardPage, Code, _CurrentSetCardList.Count);
+                    }
+                    else
+                    {
+                        //Update the Card Viewer Card Page/Card Count header
+                        GroupCardView.Text = string.Format("PAGE: {0} | CODE: \"{1}\" | Cards: 0", _CurrentCardPage, Code);
                     }
                 }
             }
