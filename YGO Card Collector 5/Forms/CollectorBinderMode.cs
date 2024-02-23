@@ -1302,8 +1302,6 @@ namespace YGO_Card_Collector_5
                     {
                         //Go to the next page and click the first card
                         GoNextPage();
-                        _CurrentCardImageIndexSelected = 0;
-                        InitializeSelectedCard(_CurrentCardImageIndexSelected);
                     }
                     else
                     {

@@ -42,6 +42,9 @@
             this.RadioPackSortingOLD = new System.Windows.Forms.RadioButton();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.RadioThemeSlifer = new System.Windows.Forms.RadioButton();
+            this.RadioThemeYugiSlifer = new System.Windows.Forms.RadioButton();
+            this.RadioThemeBLS = new System.Windows.Forms.RadioButton();
             this.RadioThemeBlueEyesUltimate = new System.Windows.Forms.RadioButton();
             this.RadioThemeTraptrix = new System.Windows.Forms.RadioButton();
             this.RadioThemeDMG = new System.Windows.Forms.RadioButton();
@@ -64,9 +67,6 @@
             this.PicTagTriangle = new System.Windows.Forms.PictureBox();
             this.PicTagSquare = new System.Windows.Forms.PictureBox();
             this.PicTagStar = new System.Windows.Forms.PictureBox();
-            this.RadioThemeBLS = new System.Windows.Forms.RadioButton();
-            this.RadioThemeYugiSlifer = new System.Windows.Forms.RadioButton();
-            this.RadioThemeSlifer = new System.Windows.Forms.RadioButton();
             this.GroupTestMode.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -242,6 +242,39 @@
             this.groupBox3.TabIndex = 5;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Theme";
+            // 
+            // RadioThemeSlifer
+            // 
+            this.RadioThemeSlifer.AutoSize = true;
+            this.RadioThemeSlifer.Location = new System.Drawing.Point(15, 174);
+            this.RadioThemeSlifer.Name = "RadioThemeSlifer";
+            this.RadioThemeSlifer.Size = new System.Drawing.Size(161, 19);
+            this.RadioThemeSlifer.TabIndex = 6;
+            this.RadioThemeSlifer.Text = "Slifer the Sky Dragon";
+            this.RadioThemeSlifer.UseVisualStyleBackColor = true;
+            this.RadioThemeSlifer.CheckedChanged += new System.EventHandler(this.RadioThemeSlifer_CheckedChanged);
+            // 
+            // RadioThemeYugiSlifer
+            // 
+            this.RadioThemeYugiSlifer.AutoSize = true;
+            this.RadioThemeYugiSlifer.Location = new System.Drawing.Point(15, 149);
+            this.RadioThemeYugiSlifer.Name = "RadioThemeYugiSlifer";
+            this.RadioThemeYugiSlifer.Size = new System.Drawing.Size(92, 19);
+            this.RadioThemeYugiSlifer.TabIndex = 5;
+            this.RadioThemeYugiSlifer.Text = "Yugi-Slifer";
+            this.RadioThemeYugiSlifer.UseVisualStyleBackColor = true;
+            this.RadioThemeYugiSlifer.CheckedChanged += new System.EventHandler(this.RadioThemeYugiSlifer_CheckedChanged);
+            // 
+            // RadioThemeBLS
+            // 
+            this.RadioThemeBLS.AutoSize = true;
+            this.RadioThemeBLS.Location = new System.Drawing.Point(15, 124);
+            this.RadioThemeBLS.Name = "RadioThemeBLS";
+            this.RadioThemeBLS.Size = new System.Drawing.Size(156, 19);
+            this.RadioThemeBLS.TabIndex = 4;
+            this.RadioThemeBLS.Text = "Black Luster Soldier";
+            this.RadioThemeBLS.UseVisualStyleBackColor = true;
+            this.RadioThemeBLS.CheckedChanged += new System.EventHandler(this.RadioThemeBLS_CheckedChanged);
             // 
             // RadioThemeBlueEyesUltimate
             // 
@@ -485,39 +518,6 @@
             this.PicTagStar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicTagStar.TabIndex = 288;
             this.PicTagStar.TabStop = false;
-            // 
-            // RadioThemeBLS
-            // 
-            this.RadioThemeBLS.AutoSize = true;
-            this.RadioThemeBLS.Location = new System.Drawing.Point(15, 124);
-            this.RadioThemeBLS.Name = "RadioThemeBLS";
-            this.RadioThemeBLS.Size = new System.Drawing.Size(156, 19);
-            this.RadioThemeBLS.TabIndex = 4;
-            this.RadioThemeBLS.Text = "Black Luster Soldier";
-            this.RadioThemeBLS.UseVisualStyleBackColor = true;
-            this.RadioThemeBLS.CheckedChanged += new System.EventHandler(this.RadioThemeBLS_CheckedChanged);
-            // 
-            // RadioThemeYugiSlifer
-            // 
-            this.RadioThemeYugiSlifer.AutoSize = true;
-            this.RadioThemeYugiSlifer.Location = new System.Drawing.Point(15, 149);
-            this.RadioThemeYugiSlifer.Name = "RadioThemeYugiSlifer";
-            this.RadioThemeYugiSlifer.Size = new System.Drawing.Size(92, 19);
-            this.RadioThemeYugiSlifer.TabIndex = 5;
-            this.RadioThemeYugiSlifer.Text = "Yugi-Slifer";
-            this.RadioThemeYugiSlifer.UseVisualStyleBackColor = true;
-            this.RadioThemeYugiSlifer.CheckedChanged += new System.EventHandler(this.RadioThemeYugiSlifer_CheckedChanged);
-            // 
-            // RadioThemeSlifer
-            // 
-            this.RadioThemeSlifer.AutoSize = true;
-            this.RadioThemeSlifer.Location = new System.Drawing.Point(15, 174);
-            this.RadioThemeSlifer.Name = "RadioThemeSlifer";
-            this.RadioThemeSlifer.Size = new System.Drawing.Size(161, 19);
-            this.RadioThemeSlifer.TabIndex = 6;
-            this.RadioThemeSlifer.Text = "Slifer the Sky Dragon";
-            this.RadioThemeSlifer.UseVisualStyleBackColor = true;
-            this.RadioThemeSlifer.CheckedChanged += new System.EventHandler(this.RadioThemeSlifer_CheckedChanged);
             // 
             // SettingsForm
             // 

@@ -35,12 +35,12 @@
             this.lblSettingsOption = new System.Windows.Forms.Label();
             this.lblJsonStatus = new System.Windows.Forms.Label();
             this.GroupWinMode = new System.Windows.Forms.GroupBox();
+            this.RadioBinderOption = new System.Windows.Forms.RadioButton();
             this.RadioBigWinOption = new System.Windows.Forms.RadioButton();
             this.RadioDefaultOption = new System.Windows.Forms.RadioButton();
             this.lblDatabaseUpdateOption = new System.Windows.Forms.Label();
             this.btnLoadDB = new System.Windows.Forms.Button();
             this.btnLoadDB2019 = new System.Windows.Forms.Button();
-            this.RadioBinderOption = new System.Windows.Forms.RadioButton();
             this.GroupWinMode.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -129,6 +129,18 @@
             this.GroupWinMode.Text = "Window Mode";
             this.GroupWinMode.Visible = false;
             // 
+            // RadioBinderOption
+            // 
+            this.RadioBinderOption.AutoSize = true;
+            this.RadioBinderOption.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RadioBinderOption.Location = new System.Drawing.Point(10, 48);
+            this.RadioBinderOption.Name = "RadioBinderOption";
+            this.RadioBinderOption.Size = new System.Drawing.Size(118, 21);
+            this.RadioBinderOption.TabIndex = 3;
+            this.RadioBinderOption.Text = "Binder Mode";
+            this.RadioBinderOption.UseVisualStyleBackColor = true;
+            this.RadioBinderOption.CheckedChanged += new System.EventHandler(this.RadioBinderOption_CheckedChanged);
+            // 
             // RadioBigWinOption
             // 
             this.RadioBigWinOption.AutoSize = true;
@@ -195,18 +207,6 @@
             this.btnLoadDB2019.Text = "Load 2019 Data";
             this.btnLoadDB2019.UseVisualStyleBackColor = false;
             this.btnLoadDB2019.Click += new System.EventHandler(this.btnLoadDB2019_Click);
-            // 
-            // RadioBinderOption
-            // 
-            this.RadioBinderOption.AutoSize = true;
-            this.RadioBinderOption.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RadioBinderOption.Location = new System.Drawing.Point(10, 48);
-            this.RadioBinderOption.Name = "RadioBinderOption";
-            this.RadioBinderOption.Size = new System.Drawing.Size(118, 21);
-            this.RadioBinderOption.TabIndex = 3;
-            this.RadioBinderOption.Text = "Binder Mode";
-            this.RadioBinderOption.UseVisualStyleBackColor = true;
-            this.RadioBinderOption.CheckedChanged += new System.EventHandler(this.RadioBinderOption_CheckedChanged);
             // 
             // FormLauncher
             // 

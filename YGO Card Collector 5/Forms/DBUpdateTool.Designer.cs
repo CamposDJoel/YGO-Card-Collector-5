@@ -43,6 +43,7 @@
             this.TabStep2 = new System.Windows.Forms.TabPage();
             this.PanelOverride = new System.Windows.Forms.Panel();
             this.GroupUnavailableProdeckOverride = new System.Windows.Forms.GroupBox();
+            this.btnProdeckLaunch = new System.Windows.Forms.Button();
             this.label62 = new System.Windows.Forms.Label();
             this.lblMisingPasscodeWarning3 = new System.Windows.Forms.Label();
             this.txtPasscode3 = new System.Windows.Forms.TextBox();
@@ -54,6 +55,7 @@
             this.txtProdeckURL3 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.GroupUnavailableTCGOverride = new System.Windows.Forms.GroupBox();
+            this.btnTCGLaunch = new System.Windows.Forms.Button();
             this.btnTCGOverride3 = new System.Windows.Forms.Button();
             this.checkTCGEnableOverride3 = new System.Windows.Forms.CheckBox();
             this.txtTCGURL3 = new System.Windows.Forms.TextBox();
@@ -93,8 +95,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
-            this.btnProdeckLaunch = new System.Windows.Forms.Button();
-            this.btnTCGLaunch = new System.Windows.Forms.Button();
             this.TabControlMaster.SuspendLayout();
             this.TabStep1.SuspendLayout();
             this.PanelContainerStep1.SuspendLayout();
@@ -287,6 +287,18 @@
             this.GroupUnavailableProdeckOverride.Text = "Override Options";
             this.GroupUnavailableProdeckOverride.Visible = false;
             // 
+            // btnProdeckLaunch
+            // 
+            this.btnProdeckLaunch.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProdeckLaunch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnProdeckLaunch.Location = new System.Drawing.Point(253, 9);
+            this.btnProdeckLaunch.Name = "btnProdeckLaunch";
+            this.btnProdeckLaunch.Size = new System.Drawing.Size(108, 18);
+            this.btnProdeckLaunch.TabIndex = 50;
+            this.btnProdeckLaunch.Text = "Launch Prodeck Search";
+            this.btnProdeckLaunch.UseVisualStyleBackColor = true;
+            this.btnProdeckLaunch.Click += new System.EventHandler(this.btnProdeckLaunch_Click);
+            // 
             // label62
             // 
             this.label62.AutoSize = true;
@@ -415,6 +427,18 @@
             this.GroupUnavailableTCGOverride.TabStop = false;
             this.GroupUnavailableTCGOverride.Text = "Override Options";
             this.GroupUnavailableTCGOverride.Visible = false;
+            // 
+            // btnTCGLaunch
+            // 
+            this.btnTCGLaunch.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTCGLaunch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.btnTCGLaunch.Location = new System.Drawing.Point(252, 10);
+            this.btnTCGLaunch.Name = "btnTCGLaunch";
+            this.btnTCGLaunch.Size = new System.Drawing.Size(108, 18);
+            this.btnTCGLaunch.TabIndex = 51;
+            this.btnTCGLaunch.Text = "Launch TCG Search";
+            this.btnTCGLaunch.UseVisualStyleBackColor = true;
+            this.btnTCGLaunch.Click += new System.EventHandler(this.btnTCGLaunch_Click);
             // 
             // btnTCGOverride3
             // 
@@ -870,30 +894,6 @@
             this.btnBackToMainMenu.Text = "<-- Back to Main Menu";
             this.btnBackToMainMenu.UseVisualStyleBackColor = false;
             this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
-            // 
-            // btnProdeckLaunch
-            // 
-            this.btnProdeckLaunch.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnProdeckLaunch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnProdeckLaunch.Location = new System.Drawing.Point(253, 9);
-            this.btnProdeckLaunch.Name = "btnProdeckLaunch";
-            this.btnProdeckLaunch.Size = new System.Drawing.Size(108, 18);
-            this.btnProdeckLaunch.TabIndex = 50;
-            this.btnProdeckLaunch.Text = "Launch Prodeck Search";
-            this.btnProdeckLaunch.UseVisualStyleBackColor = true;
-            this.btnProdeckLaunch.Click += new System.EventHandler(this.btnProdeckLaunch_Click);
-            // 
-            // btnTCGLaunch
-            // 
-            this.btnTCGLaunch.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTCGLaunch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnTCGLaunch.Location = new System.Drawing.Point(252, 10);
-            this.btnTCGLaunch.Name = "btnTCGLaunch";
-            this.btnTCGLaunch.Size = new System.Drawing.Size(108, 18);
-            this.btnTCGLaunch.TabIndex = 51;
-            this.btnTCGLaunch.Text = "Launch TCG Search";
-            this.btnTCGLaunch.UseVisualStyleBackColor = true;
-            this.btnTCGLaunch.Click += new System.EventHandler(this.btnTCGLaunch_Click);
             // 
             // DBUpdateTool
             // 

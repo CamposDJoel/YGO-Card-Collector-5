@@ -112,6 +112,15 @@
             this.btnCodeSearch = new System.Windows.Forms.Button();
             this.lblCodeSearch = new System.Windows.Forms.Label();
             this.txtCodeSearch = new System.Windows.Forms.TextBox();
+            this.TabTags = new System.Windows.Forms.TabPage();
+            this.lblTagCircle = new System.Windows.Forms.Label();
+            this.btnTagCircle = new System.Windows.Forms.Button();
+            this.lblTagTriangle = new System.Windows.Forms.Label();
+            this.btnTagTriangle = new System.Windows.Forms.Button();
+            this.lblTagStar = new System.Windows.Forms.Label();
+            this.btnTagStar = new System.Windows.Forms.Button();
+            this.lblTagSquare = new System.Windows.Forms.Label();
+            this.btnTagSquare = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.listSetGroups = new System.Windows.Forms.ListBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -144,15 +153,6 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.btnFilterSet = new System.Windows.Forms.Button();
             this.btnOpenSetValue = new System.Windows.Forms.Button();
-            this.TabTags = new System.Windows.Forms.TabPage();
-            this.lblTagSquare = new System.Windows.Forms.Label();
-            this.btnTagSquare = new System.Windows.Forms.Button();
-            this.lblTagStar = new System.Windows.Forms.Label();
-            this.btnTagStar = new System.Windows.Forms.Button();
-            this.lblTagTriangle = new System.Windows.Forms.Label();
-            this.btnTagTriangle = new System.Windows.Forms.Button();
-            this.lblTagCircle = new System.Windows.Forms.Label();
-            this.btnTagCircle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.MonsterType.SuspendLayout();
@@ -165,12 +165,12 @@
             this.groupColor.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.TabTags.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagCircle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagTriangle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagSquare)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagStar)).BeginInit();
-            this.TabTags.SuspendLayout();
             this.SuspendLayout();
             // 
             // GroupCardView
@@ -1261,6 +1261,112 @@
             this.txtCodeSearch.Size = new System.Drawing.Size(101, 20);
             this.txtCodeSearch.TabIndex = 265;
             // 
+            // TabTags
+            // 
+            this.TabTags.BackColor = System.Drawing.Color.MediumPurple;
+            this.TabTags.Controls.Add(this.lblTagCircle);
+            this.TabTags.Controls.Add(this.btnTagCircle);
+            this.TabTags.Controls.Add(this.lblTagTriangle);
+            this.TabTags.Controls.Add(this.btnTagTriangle);
+            this.TabTags.Controls.Add(this.lblTagStar);
+            this.TabTags.Controls.Add(this.btnTagStar);
+            this.TabTags.Controls.Add(this.lblTagSquare);
+            this.TabTags.Controls.Add(this.btnTagSquare);
+            this.TabTags.Location = new System.Drawing.Point(4, 22);
+            this.TabTags.Name = "TabTags";
+            this.TabTags.Padding = new System.Windows.Forms.Padding(3);
+            this.TabTags.Size = new System.Drawing.Size(366, 116);
+            this.TabTags.TabIndex = 3;
+            this.TabTags.Text = "TAGS";
+            // 
+            // lblTagCircle
+            // 
+            this.lblTagCircle.AutoSize = true;
+            this.lblTagCircle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTagCircle.Location = new System.Drawing.Point(53, 93);
+            this.lblTagCircle.Name = "lblTagCircle";
+            this.lblTagCircle.Size = new System.Drawing.Size(55, 18);
+            this.lblTagCircle.TabIndex = 9;
+            this.lblTagCircle.Text = "Circle";
+            // 
+            // btnTagCircle
+            // 
+            this.btnTagCircle.BackColor = System.Drawing.Color.Black;
+            this.btnTagCircle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTagCircle.BackgroundImage")));
+            this.btnTagCircle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTagCircle.Location = new System.Drawing.Point(17, 87);
+            this.btnTagCircle.Name = "btnTagCircle";
+            this.btnTagCircle.Size = new System.Drawing.Size(30, 30);
+            this.btnTagCircle.TabIndex = 8;
+            this.btnTagCircle.UseVisualStyleBackColor = false;
+            this.btnTagCircle.Click += new System.EventHandler(this.btnTagCircle_Click);
+            // 
+            // lblTagTriangle
+            // 
+            this.lblTagTriangle.AutoSize = true;
+            this.lblTagTriangle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTagTriangle.Location = new System.Drawing.Point(53, 64);
+            this.lblTagTriangle.Name = "lblTagTriangle";
+            this.lblTagTriangle.Size = new System.Drawing.Size(73, 18);
+            this.lblTagTriangle.TabIndex = 7;
+            this.lblTagTriangle.Text = "Triangle";
+            // 
+            // btnTagTriangle
+            // 
+            this.btnTagTriangle.BackColor = System.Drawing.Color.Black;
+            this.btnTagTriangle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTagTriangle.BackgroundImage")));
+            this.btnTagTriangle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTagTriangle.Location = new System.Drawing.Point(17, 58);
+            this.btnTagTriangle.Name = "btnTagTriangle";
+            this.btnTagTriangle.Size = new System.Drawing.Size(30, 30);
+            this.btnTagTriangle.TabIndex = 6;
+            this.btnTagTriangle.UseVisualStyleBackColor = false;
+            this.btnTagTriangle.Click += new System.EventHandler(this.btnTagTriangle_Click);
+            // 
+            // lblTagStar
+            // 
+            this.lblTagStar.AutoSize = true;
+            this.lblTagStar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTagStar.Location = new System.Drawing.Point(53, 6);
+            this.lblTagStar.Name = "lblTagStar";
+            this.lblTagStar.Size = new System.Drawing.Size(42, 18);
+            this.lblTagStar.TabIndex = 5;
+            this.lblTagStar.Text = "Star";
+            // 
+            // btnTagStar
+            // 
+            this.btnTagStar.BackColor = System.Drawing.Color.Black;
+            this.btnTagStar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTagStar.BackgroundImage")));
+            this.btnTagStar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTagStar.Location = new System.Drawing.Point(17, 0);
+            this.btnTagStar.Name = "btnTagStar";
+            this.btnTagStar.Size = new System.Drawing.Size(30, 30);
+            this.btnTagStar.TabIndex = 4;
+            this.btnTagStar.UseVisualStyleBackColor = false;
+            this.btnTagStar.Click += new System.EventHandler(this.btnTagStar_Click);
+            // 
+            // lblTagSquare
+            // 
+            this.lblTagSquare.AutoSize = true;
+            this.lblTagSquare.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTagSquare.Location = new System.Drawing.Point(53, 35);
+            this.lblTagSquare.Name = "lblTagSquare";
+            this.lblTagSquare.Size = new System.Drawing.Size(66, 18);
+            this.lblTagSquare.TabIndex = 3;
+            this.lblTagSquare.Text = "Square";
+            // 
+            // btnTagSquare
+            // 
+            this.btnTagSquare.BackColor = System.Drawing.Color.Black;
+            this.btnTagSquare.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTagSquare.BackgroundImage")));
+            this.btnTagSquare.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnTagSquare.Location = new System.Drawing.Point(17, 29);
+            this.btnTagSquare.Name = "btnTagSquare";
+            this.btnTagSquare.Size = new System.Drawing.Size(30, 30);
+            this.btnTagSquare.TabIndex = 2;
+            this.btnTagSquare.UseVisualStyleBackColor = false;
+            this.btnTagSquare.Click += new System.EventHandler(this.btnTagSquare_Click);
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -1697,112 +1803,6 @@
             this.btnOpenSetValue.UseVisualStyleBackColor = false;
             this.btnOpenSetValue.Click += new System.EventHandler(this.btnOpenSetValue_Click);
             // 
-            // TabTags
-            // 
-            this.TabTags.BackColor = System.Drawing.Color.MediumPurple;
-            this.TabTags.Controls.Add(this.lblTagCircle);
-            this.TabTags.Controls.Add(this.btnTagCircle);
-            this.TabTags.Controls.Add(this.lblTagTriangle);
-            this.TabTags.Controls.Add(this.btnTagTriangle);
-            this.TabTags.Controls.Add(this.lblTagStar);
-            this.TabTags.Controls.Add(this.btnTagStar);
-            this.TabTags.Controls.Add(this.lblTagSquare);
-            this.TabTags.Controls.Add(this.btnTagSquare);
-            this.TabTags.Location = new System.Drawing.Point(4, 22);
-            this.TabTags.Name = "TabTags";
-            this.TabTags.Padding = new System.Windows.Forms.Padding(3);
-            this.TabTags.Size = new System.Drawing.Size(366, 116);
-            this.TabTags.TabIndex = 3;
-            this.TabTags.Text = "TAGS";
-            // 
-            // lblTagSquare
-            // 
-            this.lblTagSquare.AutoSize = true;
-            this.lblTagSquare.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTagSquare.Location = new System.Drawing.Point(53, 35);
-            this.lblTagSquare.Name = "lblTagSquare";
-            this.lblTagSquare.Size = new System.Drawing.Size(66, 18);
-            this.lblTagSquare.TabIndex = 3;
-            this.lblTagSquare.Text = "Square";
-            // 
-            // btnTagSquare
-            // 
-            this.btnTagSquare.BackColor = System.Drawing.Color.Black;
-            this.btnTagSquare.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTagSquare.BackgroundImage")));
-            this.btnTagSquare.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTagSquare.Location = new System.Drawing.Point(17, 29);
-            this.btnTagSquare.Name = "btnTagSquare";
-            this.btnTagSquare.Size = new System.Drawing.Size(30, 30);
-            this.btnTagSquare.TabIndex = 2;
-            this.btnTagSquare.UseVisualStyleBackColor = false;
-            this.btnTagSquare.Click += new System.EventHandler(this.btnTagSquare_Click);
-            // 
-            // lblTagStar
-            // 
-            this.lblTagStar.AutoSize = true;
-            this.lblTagStar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTagStar.Location = new System.Drawing.Point(53, 6);
-            this.lblTagStar.Name = "lblTagStar";
-            this.lblTagStar.Size = new System.Drawing.Size(42, 18);
-            this.lblTagStar.TabIndex = 5;
-            this.lblTagStar.Text = "Star";
-            // 
-            // btnTagStar
-            // 
-            this.btnTagStar.BackColor = System.Drawing.Color.Black;
-            this.btnTagStar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTagStar.BackgroundImage")));
-            this.btnTagStar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTagStar.Location = new System.Drawing.Point(17, 0);
-            this.btnTagStar.Name = "btnTagStar";
-            this.btnTagStar.Size = new System.Drawing.Size(30, 30);
-            this.btnTagStar.TabIndex = 4;
-            this.btnTagStar.UseVisualStyleBackColor = false;
-            this.btnTagStar.Click += new System.EventHandler(this.btnTagStar_Click);
-            // 
-            // lblTagTriangle
-            // 
-            this.lblTagTriangle.AutoSize = true;
-            this.lblTagTriangle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTagTriangle.Location = new System.Drawing.Point(53, 64);
-            this.lblTagTriangle.Name = "lblTagTriangle";
-            this.lblTagTriangle.Size = new System.Drawing.Size(73, 18);
-            this.lblTagTriangle.TabIndex = 7;
-            this.lblTagTriangle.Text = "Triangle";
-            // 
-            // btnTagTriangle
-            // 
-            this.btnTagTriangle.BackColor = System.Drawing.Color.Black;
-            this.btnTagTriangle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTagTriangle.BackgroundImage")));
-            this.btnTagTriangle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTagTriangle.Location = new System.Drawing.Point(17, 58);
-            this.btnTagTriangle.Name = "btnTagTriangle";
-            this.btnTagTriangle.Size = new System.Drawing.Size(30, 30);
-            this.btnTagTriangle.TabIndex = 6;
-            this.btnTagTriangle.UseVisualStyleBackColor = false;
-            this.btnTagTriangle.Click += new System.EventHandler(this.btnTagTriangle_Click);
-            // 
-            // lblTagCircle
-            // 
-            this.lblTagCircle.AutoSize = true;
-            this.lblTagCircle.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTagCircle.Location = new System.Drawing.Point(53, 93);
-            this.lblTagCircle.Name = "lblTagCircle";
-            this.lblTagCircle.Size = new System.Drawing.Size(55, 18);
-            this.lblTagCircle.TabIndex = 9;
-            this.lblTagCircle.Text = "Circle";
-            // 
-            // btnTagCircle
-            // 
-            this.btnTagCircle.BackColor = System.Drawing.Color.Black;
-            this.btnTagCircle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnTagCircle.BackgroundImage")));
-            this.btnTagCircle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTagCircle.Location = new System.Drawing.Point(17, 87);
-            this.btnTagCircle.Name = "btnTagCircle";
-            this.btnTagCircle.Size = new System.Drawing.Size(30, 30);
-            this.btnTagCircle.TabIndex = 8;
-            this.btnTagCircle.UseVisualStyleBackColor = false;
-            this.btnTagCircle.Click += new System.EventHandler(this.btnTagCircle_Click);
-            // 
             // Collector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1850,14 +1850,14 @@
             this.groupBox8.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.TabTags.ResumeLayout(false);
+            this.TabTags.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagCircle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagTriangle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagSquare)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagStar)).EndInit();
-            this.TabTags.ResumeLayout(false);
-            this.TabTags.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
