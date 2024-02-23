@@ -187,7 +187,7 @@
             this.btnLoadDB.BackColor = System.Drawing.Color.Indigo;
             this.btnLoadDB.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoadDB.ForeColor = System.Drawing.Color.White;
-            this.btnLoadDB.Location = new System.Drawing.Point(410, 53);
+            this.btnLoadDB.Location = new System.Drawing.Point(63, 125);
             this.btnLoadDB.Name = "btnLoadDB";
             this.btnLoadDB.Size = new System.Drawing.Size(196, 93);
             this.btnLoadDB.TabIndex = 11;
@@ -200,7 +200,7 @@
             this.btnLoadDB2019.BackColor = System.Drawing.Color.Indigo;
             this.btnLoadDB2019.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoadDB2019.ForeColor = System.Drawing.Color.White;
-            this.btnLoadDB2019.Location = new System.Drawing.Point(410, 179);
+            this.btnLoadDB2019.Location = new System.Drawing.Point(63, 251);
             this.btnLoadDB2019.Name = "btnLoadDB2019";
             this.btnLoadDB2019.Size = new System.Drawing.Size(196, 93);
             this.btnLoadDB2019.TabIndex = 12;

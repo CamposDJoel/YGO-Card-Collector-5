@@ -1469,7 +1469,7 @@ namespace YGO_Card_Collector_5
                 }
                 return true;
             }
-            else if (keyData == Keys.Enter || keyData == Keys.Control)
+            else if (keyData == Keys.Enter || keyData == Keys.Oemtilde)
             {
                 if (_KeyInputEnable)
                 {
@@ -1560,15 +1560,49 @@ namespace YGO_Card_Collector_5
         private void FilterByTag(TagIcon thisTag)
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click2);
-            _CurrentMasterCardList = Database.GetCardListWithTag(thisTag);
+
+            if (_MasterCardViewMode)
+            {
+                List<MasterCard> filteredlist = new List<MasterCard>();
+
+                foreach (MasterCard ThisMasterCard in _CurrentMasterCardList)
+                {
+                    bool TagOn = ThisMasterCard.GetTag(thisTag);
+                    if (TagOn)
+                    {
+                        filteredlist.Add(ThisMasterCard);
+                    }
+                }
+
+                _CurrentMasterCardList = filteredlist;
+
+                //Set Flags
+                _MasterCardViewMode = true;
+
+                //Update the Card Viewer Card Page/Card Count header
+                GroupCardView.Text = string.Format("PAGE: {0}  -  TAG: \"{1}\"  -  Total Cards: {2}", _CurrentCardPage, thisTag.ToString(), _CurrentMasterCardList.Count);
+            }
+            else
+            {
+                List<SetCard> filteredlist = new List<SetCard>();
+                foreach (SetCard ThisSetCard in _CurrentSetCardList)
+                {
+                    bool TagOn = ThisSetCard.GetTag(thisTag);
+                    if (TagOn)
+                    {
+                        filteredlist.Add(ThisSetCard);
+                    }
+                }
+
+                _CurrentSetCardList = filteredlist;
+
+                //Update the Card Viewer Card Page/Card Count header
+                GroupCardView.Text = string.Format("PAGE: {0}  -  TAG: \"{1}\"  -  Total Cards: {2}", _CurrentCardPage, thisTag.ToString(), _CurrentSetCardList.Count);
+            }
 
             //Set Flags
-            _MasterCardViewMode = true;
             _CurrentCardPage = 1;
             btnClear.Visible = true;
-
-            //Update the Card Viewer Card Page/Card Count header
-            GroupCardView.Text = string.Format("PAGE: {0}  -  TAG: \"{1}\"  -  Total Cards: {2}", _CurrentCardPage, thisTag.ToString(), _CurrentMasterCardList.Count);
 
             LoadPage();
         }
