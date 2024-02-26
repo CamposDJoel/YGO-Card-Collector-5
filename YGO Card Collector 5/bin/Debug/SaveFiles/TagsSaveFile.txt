@@ -1,4 +1,4 @@
-7
+13
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -6,3 +6,9 @@ TagRecord|Cross-Sword Beetle|True|False|False|False
 TagRecord|Deskbot 003|True|False|False|False
 TagRecord|Deskbot 009|True|False|False|False
 TagRecord|Dwarf Star Dragon Planeter|True|False|False|False
+TagRecord|Avida, Rebuilder of Worlds|False|False|True|False
+TagRecord|Toadally Awesome|False|False|True|False
+TagRecord|Evil Dragon Ananta|False|False|True|False
+TagRecord|Ayers Rock Sunrise|False|False|True|False
+TagRecord|Damage = Reptile|False|False|True|False
+TagRecord|Gizmek Makami, the Ferocious Fanged Fortress|False|False|True|False

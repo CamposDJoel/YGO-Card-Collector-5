@@ -1,4 +1,4 @@
-2661
+3257
 LOB-000|Secret Rare|Tri-Horned Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-001|Ultra Rare|Blue-Eyes White Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-002|Common|Hitotsu-Me Giant|LEGEND OF BLUE EYES WHITE DRAGON
@@ -2660,3 +2660,599 @@ INOV-EN094|Common|Mare Mare|INVASION: VENGEANCE
 DESO-EN002|Super Rare|Destiny HERO - Dynatag|DESTINY SOLDIERS
 DESO-EN011|Super Rare|Destiny HERO - Dogma|DESTINY SOLDIERS
 DESO-EN013|Super Rare|Destiny End Dragoon|DESTINY SOLDIERS
+RATE-EN001|Super Rare|Dragoncaller Magician|RAGING TEMPEST
+RATE-EN002|Common|Performapal Handstandaccoon|RAGING TEMPEST
+RATE-EN005|Common|Speedroid Gum Prize|RAGING TEMPEST
+RATE-EN006|Common|Speedroid Horse Stilts|RAGING TEMPEST
+RATE-EN010|Common|Cyber Tutubon|RAGING TEMPEST
+RATE-EN011|Common|Cipher Etranger|RAGING TEMPEST
+RATE-EN012|Common|Flower Cardian Cherry Blossom with Curtain|RAGING TEMPEST
+RATE-EN013|Common|Ancient Gear Hunting Hound|RAGING TEMPEST
+RATE-EN020|Common|Crystron Rion|RAGING TEMPEST
+RATE-EN022|Common|Shinobird Crow|RAGING TEMPEST
+RATE-EN023|Common|Shinobird Crane|RAGING TEMPEST
+RATE-EN024|Common|Shinobird Pigeon|RAGING TEMPEST
+RATE-EN025|Rare|Envoy of Chaos|RAGING TEMPEST
+RATE-EN029|Common|Apprentice Piper|RAGING TEMPEST
+RATE-EN030|Common|Hebo, Lord of the River|RAGING TEMPEST
+RATE-EN032|Common|Eater of Millions|RAGING TEMPEST
+RATE-EN042|Common|Ancient Gear Howitzer|RAGING TEMPEST
+RATE-EN033|Common|Wightprincess|RAGING TEMPEST
+RATE-EN035|Common|Fairy Tail - Rella|RAGING TEMPEST
+RATE-EN055|Common|Machine Angel Absolute Ritual|RAGING TEMPEST
+RATE-EN056|Common|Rank-Up-Magic Cipher Ascension|RAGING TEMPEST
+RATE-EN057|Common|Recardination|RAGING TEMPEST
+RATE-EN058|Common|Zodiac Sign|RAGING TEMPEST
+RATE-EN060|Common|Shinobird's Calling|RAGING TEMPEST
+RATE-EN061|Common|Shinobird Power Spot|RAGING TEMPEST
+RATE-EN062|Common|Super Soldier Synthesis|RAGING TEMPEST
+RATE-EN063|Common|Super Quantal Alphan Spike|RAGING TEMPEST
+RATE-EN064|Common|Ritual Beast Return|RAGING TEMPEST
+RATE-EN067|Common|Terminal World NEXT|RAGING TEMPEST
+RATE-EN069|Common|Cipher Spectrum|RAGING TEMPEST
+RATE-EN071|Common|Zoodiac Combo|RAGING TEMPEST
+RATE-EN072|Common|Shinobird Salvation|RAGING TEMPEST
+RATE-EN073|Common|Beginning of Heaven and Earth|RAGING TEMPEST
+RATE-EN074|Common|Shiranui Style Samsara|RAGING TEMPEST
+RATE-EN076|Common|Void Feast|RAGING TEMPEST
+RATE-EN077|Common|Purushaddoll Aeon|RAGING TEMPEST
+RATE-EN090|Common|Symphonic Warrior Guitaar|RAGING TEMPEST
+RATE-EN091|Common|Symphonic Warrior Synthess|RAGING TEMPEST
+RATE-EN092|Common|Symph Amplifire|RAGING TEMPEST
+RATE-EN093|Common|Rocket Hand|RAGING TEMPEST
+RATE-EN094|Common|Mekanikal Arkfiend|RAGING TEMPEST
+RATE-EN096|Common|Symphonic Warrior Miccs|RAGING TEMPEST
+FUEN-EN025|Super Rare|Frightfur Fusion|FUSION ENFORCERS
+FUEN-EN052|Super Rare|Branch!|FUSION ENFORCERS
+FUEN-EN060|Super Rare|Fusion Reserve|FUSION ENFORCERS
+SP17-EN015|Common|Edge Imp Saw|STAR PACK BATTLE ROYAL
+MACR-EN000|Rare|Pendulum Switch|MAXIMUM CRISIS
+MACR-EN003|Common|Performapal Revue Dancer|MAXIMUM CRISIS
+MACR-EN006|Common|Speedroid Skull Marbles|MAXIMUM CRISIS
+MACR-EN007|Common|Speedroid Maliciousmagnet|MAXIMUM CRISIS
+MACR-EN010|Common|Predaplant Darlingtonia Cobra|MAXIMUM CRISIS
+MACR-EN011|Common|Predaplant Cordyceps|MAXIMUM CRISIS
+MACR-EN012|Common|Lyrilusc - Cobalt Sparrow|MAXIMUM CRISIS
+MACR-EN013|Common|Lyrilusc - Sapphire Swallow|MAXIMUM CRISIS
+MACR-EN014|Common|Lyrilusc - Turquoise Warbler|MAXIMUM CRISIS
+MACR-EN015|Common|D/D Ghost|MAXIMUM CRISIS
+MACR-EN016|Common|Double Resonator|MAXIMUM CRISIS
+MACR-EN022|Ultra Rare|Dinomight Knight, the True Dracofighter|MAXIMUM CRISIS
+MACR-EN029|Common|Digital Bug LEDybug|MAXIMUM CRISIS
+MACR-EN031|Rare|Ariel, Priestess of the Nekroz|MAXIMUM CRISIS
+MACR-EN032|Rare|B.E.S. Big Core MK-3|MAXIMUM CRISIS
+MACR-EN034|Common|Baobaboon|MAXIMUM CRISIS
+MACR-EN049|Common|Magician's Right Hand|MAXIMUM CRISIS
+MACR-EN050|Common|Magician's Left Hand|MAXIMUM CRISIS
+MACR-EN051|Rare|Magician's Restage|MAXIMUM CRISIS
+MACR-EN055|Common|Disciples of the True Dracophoenix|MAXIMUM CRISIS
+MACR-EN057|Common|Phantasm Spiral Crash|MAXIMUM CRISIS
+MACR-EN058|Common|Phantasm Spiral Grip|MAXIMUM CRISIS
+MACR-EN060|Common|Bug Signal|MAXIMUM CRISIS
+MACR-EN062|Common|B.E.F. Zelos|MAXIMUM CRISIS
+MACR-EN065|Common|Break Away|MAXIMUM CRISIS
+MACR-EN066|Common|The Phantom Knights of Lost Vambrace|MAXIMUM CRISIS
+MACR-EN067|Common|The Phantom Knights of Wrong Magnetring|MAXIMUM CRISIS
+MACR-EN070|Common|True Draco Apocalypse|MAXIMUM CRISIS
+MACR-EN073|Common|Phantasm Spiral Power|MAXIMUM CRISIS
+MACR-EN075|Common|Prologue of the Destruction Swordsman|MAXIMUM CRISIS
+MACR-EN077|Common|Zefra War|MAXIMUM CRISIS
+MACR-EN090|Common|Gift Exchange|MAXIMUM CRISIS
+MACR-EN091|Common|Kaiser Sea Snake|MAXIMUM CRISIS
+MACR-EN095|Common|Mild Turkey|MAXIMUM CRISIS
+MACR-EN098|Common|Primal Cry|MAXIMUM CRISIS
+MACR-EN099|Common|Onikuji|MAXIMUM CRISIS
+PEVO-EN018|Super Rare|Dharma-Eye Magician|PENDULUM EVOLUTION
+PEVO-EN021|Super Rare|Doomstar Magician|PENDULUM EVOLUTION
+PEVO-EN024|Super Rare|Foucault's Cannon|PENDULUM EVOLUTION
+PEVO-EN027|Super Rare|Guiding Ariadne|PENDULUM EVOLUTION
+BLLR-EN059|Ultra Rare|Dragunity Knight - Gae Dearg|BATTLES OF LEGEND -LIGHT'S REVENGE-
+COTD-EN001|Super Rare|Cyberse Wizard|CODE OF THE DUELIST
+COTD-EN002|Common|Backup Secretary|CODE OF THE DUELIST
+COTD-EN004|Common|Launcher Commander|CODE OF THE DUELIST
+COTD-EN021|Ultra Rare|World Chalice Guardragon|CODE OF THE DUELIST
+COTD-EN030|Super Rare|Traptrix Mantis|CODE OF THE DUELIST
+COTD-EN036|Common|The Ascended of Thunder|CODE OF THE DUELIST
+COTD-EN066|Common|Defense Zone|CODE OF THE DUELIST
+COTD-EN075|Super Rare|Break Off Trap Hole|CODE OF THE DUELIST
+COTD-EN081|Common|Samurai Skull|CODE OF THE DUELIST
+COTD-EN094|Common|Galaxy Worm|CODE OF THE DUELIST
+COTD-EN096|Common|Destiny HERO - Dangerous|CODE OF THE DUELIST
+COTD-EN099|Common|Ancient Gear Golem - Ultimate Pound|CODE OF THE DUELIST
+LEDU-EN016|Ultra Rare|Citadel Whale|LEGENDARY DUELISTS
+LEDU-EN017|Rare|Rage of Kairyu-Shin|LEGENDARY DUELISTS
+LEDU-EN031|Rare|Megaroid City|LEGENDARY DUELISTS
+LEDU-EN036|Super Rare|Water Dragon Cluster|LEGENDARY DUELISTS
+LEDU-EN051|Common|Bonding - H2O|LEGENDARY DUELISTS
+CIBR-EN001|Common|Defect Compiler|CIRCUIT BREAK
+CIBR-EN006|Common|Gouki Headbatt|CIRCUIT BREAK
+CIBR-EN021|Common|Krawler Dendrite|CIRCUIT BREAK
+CIBR-EN031|Common|The Accumulator|CIRCUIT BREAK
+CIBR-EN034|Common|Leng Ling|CIRCUIT BREAK
+CIBR-EN049|Common|X-Krawler Neurogos|CIRCUIT BREAK
+CIBR-EN066|Common|Burning Bamboo Sword|CIRCUIT BREAK
+CIBR-EN093|Common|Amazoness Spy|CIRCUIT BREAK
+CIBR-EN095|Common|Amazoness Empress|CIRCUIT BREAK
+SPWA-EN033|Secret Rare|The Weather Painter Thunder|SPIRIT WARRIORS
+EXFO-EN002|Common|Lockout Gardna|EXTREME FORCE
+EXFO-EN005|Common|Bitrooper|EXTREME FORCE
+EXFO-EN006|Common|Linkbelt Wall Dragon|EXTREME FORCE
+EXFO-EN007|Rare|Shelrokket Dragon|EXTREME FORCE
+EXFO-EN008|Rare|Metalrokket Dragon|EXTREME FORCE
+EXFO-EN011|Common|Tindangle Hound|EXTREME FORCE
+EXFO-EN015|Common|Mekk-Knight Green Horizon|EXTREME FORCE
+EXFO-EN021|Common|World Legacy - "World Shield"|EXTREME FORCE
+EXFO-EN028|Common|Artifact Mjollnir|EXTREME FORCE
+EXFO-EN031|Common|D.D. Seeker|EXTREME FORCE
+EXFO-EN032|Rare|Ghost Bird of Bewitchment|EXTREME FORCE
+EXFO-EN042|Common|Recovery Sorcerer|EXTREME FORCE
+EXFO-EN054|Common|Nagel's Protection|EXTREME FORCE
+EXFO-EN059|Rare|Glory of the Noble Knights|EXTREME FORCE
+EXFO-EN066|Common|Parallel Port Armor|EXTREME FORCE
+EXFO-EN067|Common|Cynet Refresh|EXTREME FORCE
+EXFO-EN073|Rare|Mythical Bestiamorph|EXTREME FORCE
+EXFO-EN074|Common|Ghostrick Renovation|EXTREME FORCE
+EXFO-EN075|Common|Call of the Archfiend|EXTREME FORCE
+EXFO-EN077|Common|Dai Dance|EXTREME FORCE
+EXFO-EN079|Common|Parthian Shot|EXTREME FORCE
+EXFO-EN092|Super Rare|Gem-Knight Phantom Quartz|EXTREME FORCE
+LED2-EN012|Common|Insect Queen|LEGENDARY DUELISTS: ANCIENT MILLENNIUM
+LED2-EN013|Common|Perfectly Ultimate Great Moth|LEGENDARY DUELISTS: ANCIENT MILLENNIUM
+LED2-EN019|Common|Barrel Dragon|LEGENDARY DUELISTS: ANCIENT MILLENNIUM
+LED2-EN020|Common|Time Machine|LEGENDARY DUELISTS: ANCIENT MILLENNIUM
+LED2-EN025|Common|Armed Dragon LV3|LEGENDARY DUELISTS: ANCIENT MILLENNIUM
+LED2-EN026|Common|Armed Dragon LV5|LEGENDARY DUELISTS: ANCIENT MILLENNIUM
+LED2-EN035|Common|Ancient Gear Golem - Ultimate Pound|LEGENDARY DUELISTS: ANCIENT MILLENNIUM
+LED2-EN041|Common|Crystal Beast Ruby Carbuncle|LEGENDARY DUELISTS: ANCIENT MILLENNIUM
+LED2-EN044|Common|Crystal Release|LEGENDARY DUELISTS: ANCIENT MILLENNIUM
+LED2-EN046|Common|Vortex Trooper|LEGENDARY DUELISTS: ANCIENT MILLENNIUM
+SP18-EN001|Common|Bitron|STAR PACK: VRAINS
+SP18-EN008|Common|Defect Compiler|STAR PACK: VRAINS
+SP18-EN009|Common|Linkslayer|STAR PACK: VRAINS
+SP18-EN025|Common|Gateway Dragon|STAR PACK: VRAINS
+SP18-EN033|Common|Honeybot|STAR PACK: VRAINS
+FLOD-EN002|Common|Prompthorn|FLAMES OF DESTRUCTION
+FLOD-EN004|Common|Link Streamer|FLAMES OF DESTRUCTION
+FLOD-EN007|Common|Trickstar Mandrake|FLAMES OF DESTRUCTION
+FLOD-EN011|Common|Defrag Dragon|FLAMES OF DESTRUCTION
+FLOD-EN032|Ultra Rare|Iron Dragon Tiamaton|FLAMES OF DESTRUCTION
+FLOD-EN053|Common|Cybersal Cyclone|FLAMES OF DESTRUCTION
+FLOD-EN057|Common|World Legacy's Corruption|FLAMES OF DESTRUCTION
+FLOD-EN064|Common|Staring Contest|FLAMES OF DESTRUCTION
+FLOD-EN079|Common|Mamemaki|FLAMES OF DESTRUCTION
+FLOD-EN096|Common|Inzektor Picofalena|FLAMES OF DESTRUCTION
+DASA-EN015|Super Rare|Recon, Scout Fur Hire|DARK SAVIORS
+DASA-EN035|Super Rare|Sky Striker Mecha - Eagle Booster|DARK SAVIORS
+DASA-EN060|Super Rare|Horn of the Phantom Beast|DARK SAVIORS
+BLRR-EN068|Ultra Rare|PSY-Frame Driver|BATTLES OF LEGEND: RELENTLESS REVENGE
+CYHO-EN002|Common|Cluster Congester|CYBERNETIC HORIZON
+CYHO-EN005|Common|Gouki Ringtrainer|CYBERNETIC HORIZON
+CYHO-EN008|Common|Crusadia Leonis|CYBERNETIC HORIZON
+CYHO-EN017|Common|Dragunity Couse|CYBERNETIC HORIZON
+CYHO-EN024|Common|Cupid Volley|CYBERNETIC HORIZON
+CYHO-EN035|Rare|Cyberse Witch|CYBERNETIC HORIZON
+CYHO-EN036|Common|Link Devotee|CYBERNETIC HORIZON
+CYHO-EN040|Common|Miniborrel Dragon|CYBERNETIC HORIZON
+CYHO-EN048|Rare|Reprodocus|CYBERNETIC HORIZON
+CYHO-EN052|Common|Zero Extra Link|CYBERNETIC HORIZON
+CYHO-EN063|Common|Beast Magic Attack|CYBERNETIC HORIZON
+CYHO-EN079|Common|Universal Adapter|CYBERNETIC HORIZON
+CYHO-EN091|Common|Noble Arms - Clarent|CYBERNETIC HORIZON
+CYHO-EN092|Common|Divine Serpent Geh|CYBERNETIC HORIZON
+CYHO-EN096|Rare|White Stingray|CYBERNETIC HORIZON
+CYHO-EN097|Rare|Interrupt Resistor|CYBERNETIC HORIZON
+SHVA-EN034|Super Rare|Elemental HERO Magma Neos|SHADOWS IN VALHALLA
+SHVA-EN035|Super Rare|Elemental HERO Chaos Neos|SHADOWS IN VALHALLA
+SHVA-EN041|Super Rare|Invoked Mechaba|SHADOWS IN VALHALLA
+SHVA-EN060|Super Rare|Urgent Ritual Art|SHADOWS IN VALHALLA
+LED3-EN006|Common|Blue-Eyes White Dragon|LEGENDARY DUELISTS: WHITE DRAGON ABYSS
+LED3-EN007|Common|The White Stone of Legend|LEGENDARY DUELISTS: WHITE DRAGON ABYSS
+LED3-EN011|Common|Chaos Form|LEGENDARY DUELISTS: WHITE DRAGON ABYSS
+LED3-EN029|Common|Blackwing - Bora the Spear|LEGENDARY DUELISTS: WHITE DRAGON ABYSS
+SOFU-EN001|Rare|Clock Wyvern|SOUL FUSION
+SOFU-EN003|Common|Salamangreat Foxy|SOUL FUSION
+SOFU-EN002|Common|Salamangreat Meer|SOUL FUSION
+SOFU-EN004|Common|Salamangreat Falco|SOUL FUSION
+SOFU-EN005|Common|Salamangreat Jack Jaguar|SOUL FUSION
+SOFU-EN009|Common|Dinowrestler Pankratops|SOUL FUSION
+SOFU-EN013|Common|Gravekeeper's Spiritualist|SOUL FUSION
+SOFU-EN023|Common|Impcantation Penciplume|SOUL FUSION
+SOFU-EN047|Super Rare|Folgo, Justice Fur Hire|SOUL FUSION
+SOFU-EN066|Common|Parallel Panzer|SOUL FUSION
+SOFU-EN083|Super Rare|Danger! Dogman!|SOUL FUSION
+SOFU-EN092|Common|Patchwork Fluffal|SOUL FUSION
+HISU-EN017|Super Rare|Prank-Kids Rocket Ride|HIDDEN SUMMONERS
+HISU-EN052|Super Rare|Fulfillment of the Contract|HIDDEN SUMMONERS
+LED4-EN012|Super Rare|Cyber Angel Izana|LEGENDARY DUELISTS: SISTERS OF THE ROSE
+LED4-EN018|Common|Cyber Angel Benten|LEGENDARY DUELISTS: SISTERS OF THE ROSE
+LED4-EN024|Rare|Dark Rose Fairy|LEGENDARY DUELISTS: SISTERS OF THE ROSE
+LED4-EN028|Common|Black Rose Dragon|LEGENDARY DUELISTS: SISTERS OF THE ROSE
+SAST-EN022|Common|Prank-Kids Rocksies|SAVAGE STRIKE
+SAST-EN046|Rare|Detonate Deleter|SAVAGE STRIKE
+SAST-EN057|Rare|Fusion of Fire|SAVAGE STRIKE
+INCH-EN030|Super Rare|Basilius, Familiar of the Evil Eye|THE INFINITY CHASERS
+INCH-EN034|Secret Rare|Evil Eye Awakening|THE INFINITY CHASERS
+INCH-EN035|Super Rare|Evil Eye Confrontation|THE INFINITY CHASERS
+INCH-EN042|Super Rare|Hidden Armory|THE INFINITY CHASERS
+DANE-EN036|Ultra Rare|Firewall eXceed Dragon|DARK NEOSTORM
+DANE-EN046|Super Rare|Neo Super Quantal Mech King Blaster Magna|DARK NEOSTORM
+DANE-EN083|Ultra Rare|Danger! Excitement! Mystery!|DARK NEOSTORM
+BLHR-EN063|Ultra Rare|Destiny HERO - Dangerous|BATTLES OF LEGEND: HERO'S REVENGE
+BLHR-EN078|Ultra Rare|Artifact Scythe|BATTLES OF LEGEND: HERO'S REVENGE
+RIRA-EN001|Common|Rescue Interlacer|RISING RAMPAGE
+RIRA-EN002|Common|Cross Debug|RISING RAMPAGE
+RIRA-EN004|Common|Marincess Sea Star|RISING RAMPAGE
+RIRA-EN005|Common|DMZ Dragon|RISING RAMPAGE
+RIRA-EN006|Common|Dinowrestler Martial Ankylo|RISING RAMPAGE
+RIRA-EN007|Common|Dinowrestler Rambrachio|RISING RAMPAGE
+RIRA-EN008|Rare|Fortune Lady Past|RISING RAMPAGE
+RIRA-EN010|Common|Yosenju Izna|RISING RAMPAGE
+RIRA-EN011|Super Rare|Mayosenju Hitot|RISING RAMPAGE
+RIRA-EN014|Rare|Tenyi Spirit - Mapura|RISING RAMPAGE
+RIRA-EN015|Rare|Tenyi Spirit - Nahata|RISING RAMPAGE
+RIRA-EN016|Rare|Tenyi Spirit - Vishuda|RISING RAMPAGE
+RIRA-EN020|Common|Simorgh, Bird of Protection|RISING RAMPAGE
+RIRA-EN022|Super Rare|Simorgh of Darkness|RISING RAMPAGE
+RIRA-EN023|Super Rare|B.E.S. Blaster Cannon Core|RISING RAMPAGE
+RIRA-EN024|Rare|Vic Viper T301|RISING RAMPAGE
+RIRA-EN025|Common|Reptilianne Lamia|RISING RAMPAGE
+RIRA-EN026|Common|Ranryu|RISING RAMPAGE
+RIRA-EN030|Common|Cataclysmic Cryonic Coldo|RISING RAMPAGE
+RIRA-EN032|Rare|Tlakalel, His Malevolent Majesty|RISING RAMPAGE
+RIRA-EN033|Common|Beatraptor|RISING RAMPAGE
+RIRA-EN034|Super Rare|Spirit Sculptor|RISING RAMPAGE
+RIRA-EN035|Common|Reversible Beetle|RISING RAMPAGE
+RIRA-EN039|Ultra Rare|Borreload eXcharge Dragon|RISING RAMPAGE
+RIRA-EN043|Rare|Monk of the Tenyi|RISING RAMPAGE
+RIRA-EN045|Rare|Berserker of the Tenyi|RISING RAMPAGE
+RIRA-EN047|Super Rare|Linkmail Archfiend|RISING RAMPAGE
+RIRA-EN049|Common|Defender of the Labyrinth|RISING RAMPAGE
+RIRA-EN050|Common|Baba Barber|RISING RAMPAGE
+RIRA-EN051|Common|Link Back|RISING RAMPAGE
+RIRA-EN052|Common|Grid Rod|RISING RAMPAGE
+RIRA-EN053|Rare|Rising Fire|RISING RAMPAGE
+RIRA-EN054|Common|Fury of Fire|RISING RAMPAGE
+RIRA-EN055|Rare|Fortune Vision|RISING RAMPAGE
+RIRA-EN056|Ultra Rare|Fortune Lady Calling|RISING RAMPAGE
+RIRA-EN057|Common|Yosenju Wind Worship|RISING RAMPAGE
+RIRA-EN058|Rare|Flawless Perfection of the Tenyi|RISING RAMPAGE
+RIRA-EN060|Common|Elborz, the Sacred Lands of Simorgh|RISING RAMPAGE
+RIRA-EN061|Common|Simorgh Onslaught|RISING RAMPAGE
+RIRA-EN062|Common|Simorgh Repulsion|RISING RAMPAGE
+RIRA-EN063|Super Rare|Hypernova Burst|RISING RAMPAGE
+RIRA-EN064|Common|Psychic Fervor|RISING RAMPAGE
+RIRA-EN065|Common|Blockout Curtain|RISING RAMPAGE
+RIRA-EN066|Common|Sextet Summon|RISING RAMPAGE
+RIRA-EN067|Common|Draw Discharge|RISING RAMPAGE
+RIRA-EN069|Common|Marincess Current|RISING RAMPAGE
+RIRA-EN070|Rare|Fortune Lady Rewind|RISING RAMPAGE
+RIRA-EN071|Common|Yosenjus' Sword Sting|RISING RAMPAGE
+RIRA-EN072|Rare|Fists of the Unrivaled Tenyi|RISING RAMPAGE
+RIRA-EN073|Common|Simorgh Sky Battle|RISING RAMPAGE
+RIRA-EN074|Common|World Legacy Bestowal|RISING RAMPAGE
+RIRA-EN075|Common|The Return to the Normal|RISING RAMPAGE
+RIRA-EN078|Common|Setuppercut|RISING RAMPAGE
+RIRA-EN079|Common|Dwimmered Glimmer|RISING RAMPAGE
+RIRA-EN080|Common|Fighting Dirty|RISING RAMPAGE
+RIRA-EN081|Common|Barricadeborg Blocker|RISING RAMPAGE
+RIRA-EN082|Rare|Hraesvelgr, the Desperate Doom Eagle|RISING RAMPAGE
+RIRA-EN083|Rare|Star Power!!|RISING RAMPAGE
+RIRA-EN084|Common|Fuhma Wave|RISING RAMPAGE
+RIRA-EN085|Ultra Rare|Ikelos, the Dream Mirror Sprite|RISING RAMPAGE
+RIRA-EN086|Super Rare|Ikelos, the Dream Mirror Mara|RISING RAMPAGE
+RIRA-EN089|Super Rare|Dream Mirror of Joy|RISING RAMPAGE
+RIRA-EN090|Ultra Rare|Dream Mirror of Terror|RISING RAMPAGE
+RIRA-EN091|Common|Dream Mirror Fantasy|RISING RAMPAGE
+RIRA-EN092|Common|Yosenju Oroshi Channeling|RISING RAMPAGE
+RIRA-EN093|Common|Number 29: Mannequin Cat|RISING RAMPAGE
+RIRA-EN094|Common|Kikinagashi Fucho|RISING RAMPAGE
+RIRA-EN095|Super Rare|White Aura Monoceros|RISING RAMPAGE
+RIRA-EN096|Super Rare|White Howling|RISING RAMPAGE
+RIRA-EN097|Common|F.A. Shining Star GT|RISING RAMPAGE
+RIRA-EN098|Ultra Rare|Dragunity Knight - Romulus|RISING RAMPAGE
+RIRA-EN099|Common|Rogue of Endymion|RISING RAMPAGE
+RIRA-EN031|Common|Voltester|RISING RAMPAGE
+RIRA-EN027|Super Rare|Avida, Rebuilder of Worlds|RISING RAMPAGE
+FIGA-EN019|Secret Rare|Fire Formation - Domei|FISTS OF THE GADGETS
+FIGA-EN023|Super Rare|Brotherhood of the Fire Fist - Bear|FISTS OF THE GADGETS
+FIGA-EN035|Super Rare|Latency|FISTS OF THE GADGETS
+FIGA-EN038|Super Rare|Prohibit Snake|FISTS OF THE GADGETS
+LED5-EN000|Rare|Earthbound Immortal Ccapac Apu|LEGENDARY DUELISTS: IMMORTAL DESTINY
+LED5-EN020|Common|Evil HERO Malicious Fiend|LEGENDARY DUELISTS: IMMORTAL DESTINY
+LED5-EN027|Rare|Ultimate Earthbound Immortal|LEGENDARY DUELISTS: IMMORTAL DESTINY
+LED5-EN054|Common|Predaponics|LEGENDARY DUELISTS: IMMORTAL DESTINY
+CHIM-EN012|Rare|Gladiator Beast Attorix|CHAOS IMPACT
+CHIM-EN032|Common|Bonze Alone|CHAOS IMPACT
+CHIM-EN033|Super Rare|Gladiator Beast Domitianus|CHAOS IMPACT
+CHIM-EN041|Common|Marincess Wonder Heart|CHAOS IMPACT
+CHIM-EN042|Common|Marincess Sea Angel|CHAOS IMPACT
+CHIM-EN069|Common|Escape of the Unchained|CHAOS IMPACT
+CHIM-EN089|Common|Dream Mirror of Chaos|CHAOS IMPACT
+CHIM-EN096|Common|Bye Bye Damage|CHAOS IMPACT
+MYFI-EN002|Super Rare|Mathmech Nabla|MYSTIC FIGHTERS
+IGAS-EN095|Common|Bellcat Fighter|IGNITION ASSAULT
+TOCH-EN016|Rare|Gearbreed|TOON CHAOS
+TOCH-EN020|Super Rare|Fluffal Angel|TOON CHAOS
+TOCH-EN025|Rare|PSY-Frame Driver|TOON CHAOS
+TOCH-EN029|Rare|Black Luster Soldier - Envoy of the Beginning|TOON CHAOS
+TOCH-EN030|Rare|Chaos Emperor Dragon - Envoy of the End|TOON CHAOS
+TOCH-EN031|Rare|Lightpulsar Dragon|TOON CHAOS
+TOCH-EN034|Rare|Dwarf Star Dragon Planeter|TOON CHAOS
+TOCH-EN035|Rare|Black Luster Soldier - Sacred Soldier|TOON CHAOS
+TOCH-EN037|Rare|Curse of Dragonfire|TOON CHAOS
+TOCH-EN039|Rare|Envoy of Chaos|TOON CHAOS
+TOCH-EN041|Rare|Keeper of Dragon Magic|TOON CHAOS
+TOCH-EN048|Super Rare|Frightfur Sabre-Tooth|TOON CHAOS
+TOCH-EN050|Rare|Stardust Dragon|TOON CHAOS
+TOCH-EN053|Rare|Progleo|TOON CHAOS
+TOCH-EN058|Rare|Cynet Codec|TOON CHAOS
+TOCH-EN060|Rare|Starlight Road|TOON CHAOS
+BLAR-EN045|Ultra Rare|Appliancer Electrilyrical World|BATTLES OF LEGEND: ARMAGEDDON
+BLAR-EN054|Ultra Rare|Elemental HERO Shining Flare Wingman|BATTLES OF LEGEND: ARMAGEDDON
+BLAR-EN055|Ultra Rare|Elemental HERO Chaos Neos|BATTLES OF LEGEND: ARMAGEDDON
+BLAR-EN066|Ultra Rare|Brotherhood of the Fire Fist - Lion Emperor|BATTLES OF LEGEND: ARMAGEDDON
+BLAR-EN077|Ultra Rare|Nekroz of Gungnir|BATTLES OF LEGEND: ARMAGEDDON
+BLAR-EN091|Ultra Rare|Topologic Zeroboros|BATTLES OF LEGEND: ARMAGEDDON
+LED7-EN002|Rare|Reactor Slime|LEGENDARY DUELISTS: RAGE OF RA
+PHRA-EN000|Common|Myutant Cry|PHANTOM RAGE
+PHRA-EN004|Common|Raidraptor - Heel Eagle|PHANTOM RAGE
+PHRA-EN017|Common|Infernity Wildcat|PHANTOM RAGE
+PHRA-EN020|Common|Awakening of the Possessed - Gagigobyte|PHANTOM RAGE
+PHRA-EN021|Common|Awakening of the Possessed - Rasenryu|PHANTOM RAGE
+PHRA-EN026|Common|Magical Broker|PHANTOM RAGE
+PHRA-EN029|Common|Hinezumi Hanabi|PHANTOM RAGE
+PHRA-EN063|Common|Charge Into a Dark World|PHANTOM RAGE
+PHRA-EN071|Common|Tri-Brigade Oath|PHANTOM RAGE
+PHRA-EN073|Common|Dual Avatar Return|PHANTOM RAGE
+PHRA-EN075|Common|Infernity Suppression|PHANTOM RAGE
+PHRA-EN077|Common|Free-Range Monsters|PHANTOM RAGE
+PHRA-EN080|Common|One or Eight|PHANTOM RAGE
+GEIM-EN037|Rare|Cyberse Gadget|GENESIS IMPACT
+GEIM-EN059|Rare|Engraver of the Mark|GENESIS IMPACT
+BLVO-EN000|Secret Rare|War Rock Mountain|BLAZING VORTEX
+BLVO-EN006|Common|Springans Rockey|BLAZING VORTEX
+BLVO-EN007|Common|Springans Pedor|BLAZING VORTEX
+BLVO-EN008|Common|Springans Branga|BLAZING VORTEX
+BLVO-EN009|Common|Springans Captain Sargas|BLAZING VORTEX
+BLVO-EN012|Common|S-Force Professor DiGamma|BLAZING VORTEX
+BLVO-EN016|Common|Windwitch - Blizzard Bell|BLAZING VORTEX
+BLVO-EN017|Ultra Rare|Windwitch - Freeze Bell|BLAZING VORTEX
+BLVO-EN018|Common|Fabled Marcosia|BLAZING VORTEX
+BLVO-EN020|Common|Parametalfoes Melcaster|BLAZING VORTEX
+BLVO-EN023|Common|Digital Bug Registrider|BLAZING VORTEX
+BLVO-EN024|Super Rare|Maha Vailo, Light of the Heavens|BLAZING VORTEX
+BLVO-EN025|Super Rare|Ancient Warriors - Rebellious Lu Feng|BLAZING VORTEX
+BLVO-EN026|Common|Neiroy, the Dream Mirror Disciple|BLAZING VORTEX
+BLVO-EN027|Common|Machina Unclaspare|BLAZING VORTEX
+BLVO-EN030|Common|Fairy Archer Ingunar|BLAZING VORTEX
+BLVO-EN032|Common|Gigathunder Giclops|BLAZING VORTEX
+BLVO-EN033|Common|Amanokujaki|BLAZING VORTEX
+BLVO-EN034|Common|Guitar Gurnards Duonigis|BLAZING VORTEX
+BLVO-EN036|Common|Ojama Pink|BLAZING VORTEX
+BLVO-EN037|Common|Knight of Armor Dragon|BLAZING VORTEX
+BLVO-EN038|Common|Sprind the Irondash Dragon|BLAZING VORTEX
+BLVO-EN052|Common|Armed Dragon Blitz|BLAZING VORTEX
+BLVO-EN053|Common|Armed Dragon Lightning|BLAZING VORTEX
+BLVO-EN056|Common|Tri-Brigade Rendezvous|BLAZING VORTEX
+BLVO-EN059|Super Rare|Windwitch Chimes|BLAZING VORTEX
+BLVO-EN060|Common|Stairway to a Fabled Realm|BLAZING VORTEX
+BLVO-EN061|Common|Parametalfoes Fusion|BLAZING VORTEX
+BLVO-EN063|Common|Archfiend's Staff of Despair|BLAZING VORTEX
+BLVO-EN066|Common|Tilted Try|BLAZING VORTEX
+BLVO-EN068|Common|Springans Call!|BLAZING VORTEX
+BLVO-EN069|Common|Springans Blast!|BLAZING VORTEX
+BLVO-EN071|Common|S-Force Specimen|BLAZING VORTEX
+BLVO-EN072|Common|Icy Breeze Refrain|BLAZING VORTEX
+BLVO-EN073|Common|Fabled Treason|BLAZING VORTEX
+BLVO-EN074|Common|Ancient Warriors Saga - Chivalrous Path|BLAZING VORTEX
+BLVO-EN077|Common|Dream Mirror Recap|BLAZING VORTEX
+BLVO-EN082|Common|Raging Storm Dragon - Beaufort IX|BLAZING VORTEX
+BLVO-EN083|Ultra Rare|Coordius the Triphasic Dealmon|BLAZING VORTEX
+BLVO-EN085|Common|Steel Star Regulator|BLAZING VORTEX
+BLVO-EN086|Common|Breath of Acclamation|BLAZING VORTEX
+BLVO-EN088|Common|Reinforcement of the Army's Troops|BLAZING VORTEX
+BLVO-EN089|Super Rare|Psychic Eraser Laser|BLAZING VORTEX
+BLVO-EN090|Common|Synchro Transmission|BLAZING VORTEX
+BLVO-EN091|Common|Pendulum Encore|BLAZING VORTEX
+BLVO-EN095|Common|War Rock Orpis|BLAZING VORTEX
+BLVO-EN096|Common|War Rock Skyler|BLAZING VORTEX
+BLVO-EN098|Common|War Rock Ordeal|BLAZING VORTEX
+BLVO-EN099|Super Rare|Virtual World Oto-Hime - Toutou|BLAZING VORTEX
+GFTP-EN073|Ultra Rare|Dragunity Phalanx|GHOSTS FROM THE PAST
+GFTP-EN088|Ultra Rare|Backup Secretary|GHOSTS FROM THE PAST
+ANGU-EN043|Rare|Skull Meister|ANCIENT　GUARDIANS
+ANGU-EN046|Rare|Dinowrestler Pankratops|ANCIENT　GUARDIANS
+KICO-EN005|Super Rare|Face Card Fusion|KING'S COURT
+KICO-EN010|Super Rare|XYZ Hyper Cannon|KING'S COURT
+KICO-EN011|Rare|Golden-Eyes Idol|KING'S COURT
+KICO-EN012|Rare|Zolga the Prophet|KING'S COURT
+KICO-EN015|Super Rare|Crystal Girl|KING'S COURT
+KICO-EN019|Super Rare|White Rose Cloister|KING'S COURT
+KICO-EN022|Rare|Pendulum Transfer|KING'S COURT
+KICO-EN023|Rare|Pendulum Xyz|KING'S COURT
+KICO-EN024|Rare|Dowsing Fusion|KING'S COURT
+KICO-EN025|Rare|Eternal Bond|KING'S COURT
+KICO-EN026|Rare|Queen's Knight|KING'S COURT
+KICO-EN027|Rare|King's Knight|KING'S COURT
+KICO-EN029|Rare|Arcana Knight Joker|KING'S COURT
+KICO-EN030|Rare|Arcana Extra Joker|KING'S COURT
+KICO-EN031|Rare|Gravekeeper's Spy|KING'S COURT
+KICO-EN032|Rare|Majestic Dragon|KING'S COURT
+KICO-EN033|Rare|Stardust Xiaolong|KING'S COURT
+KICO-EN034|Rare|Rescue Rabbit|KING'S COURT
+KICO-EN036|Rare|ZW - Ultimate Shield|KING'S COURT
+KICO-EN037|Rare|ZW - Eagle Claw|KING'S COURT
+KICO-EN038|Super Rare|Scrap Twin Dragon|KING'S COURT
+KICO-EN039|Rare|Cloudcastle|KING'S COURT
+KICO-EN040|Rare|Baxia, Brightness of the Yang Zing|KING'S COURT
+KICO-EN041|Super Rare|Chaofeng, Phantom of the Yang Zing|KING'S COURT
+KICO-EN042|Rare|Number 39: Utopia|KING'S COURT
+KICO-EN043|Ultra Rare|Evolzar Dolkka|KING'S COURT
+KICO-EN044|Rare|Wind-Up Arsenal Zenmaioh|KING'S COURT
+KICO-EN045|Rare|Number C39: Utopia Ray|KING'S COURT
+KICO-EN046|Rare|Constellar Ptolemy M7|KING'S COURT
+KICO-EN048|Super Rare|Number 49: Fortune Tune|KING'S COURT
+KICO-EN049|Rare|Number F0: Utopic Future|KING'S COURT
+KICO-EN050|Rare|Infinite Cards|KING'S COURT
+KICO-EN051|Rare|Reinforcement of the Army|KING'S COURT
+KICO-EN052|Rare|The Warrior Returning Alive|KING'S COURT
+KICO-EN053|Rare|Ties of the Brethren|KING'S COURT
+KICO-EN054|Rare|Pot of Duality|KING'S COURT
+KICO-EN055|Rare|Unexpected Dai|KING'S COURT
+KICO-EN056|Super Rare|World Legacy Guardragon|KING'S COURT
+KICO-EN059|Rare|Converging Wishes|KING'S COURT
+KICO-EN060|Rare|The Wicked Dreadroot|KING'S COURT
+KICO-EN061|Rare|The Wicked Avatar|KING'S COURT
+KICO-EN062|Rare|The Wicked Eraser|KING'S COURT
+DAMA-EN003|Common|Stardust Trail|DAWN OF MAJESTY
+DAMA-EN005|Common|Despian Tragedy|DAWN OF MAJESTY
+DAMA-EN010|Common|Clavkiys, the Magikey Skyblaster|DAWN OF MAJESTY
+DAMA-EN012|Common|Gunkan Suship Ikura|DAWN OF MAJESTY
+DAMA-EN018|Super Rare|Gizmek Arakami, the Hailbringer Hog|DAWN OF MAJESTY
+DAMA-EN019|Common|Gusto Vedir|DAWN OF MAJESTY
+DAMA-EN022|Common|Carpiponica, Mystical Beast of the Forest|DAWN OF MAJESTY
+DAMA-EN023|Common|Glacier Aqua Madoor|DAWN OF MAJESTY
+DAMA-EN026|Common|Master's Diploman|DAWN OF MAJESTY
+DAMA-EN027|Common|Konohanasakuya|DAWN OF MAJESTY
+DAMA-EN028|Common|Doombearer Psychopompos|DAWN OF MAJESTY
+DAMA-EN029|Common|Slower Swallow|DAWN OF MAJESTY
+DAMA-EN031|Common|Aeropixthree|DAWN OF MAJESTY
+DAMA-EN037|Super Rare|Magikey Dragon - Andrabime|DAWN OF MAJESTY
+DAMA-EN038|Common|Allvain the Essence of Vanity|DAWN OF MAJESTY
+DAMA-EN040|Super Rare|Daigusto Laplampilica|DAWN OF MAJESTY
+DAMA-EN042|Common|Gaiarmor Dragonshell|DAWN OF MAJESTY
+DAMA-EN043|Common|Gunkan Suship Ikura-class Dreadnought|DAWN OF MAJESTY
+DAMA-EN052|Common|Majestic Absorption|DAWN OF MAJESTY
+DAMA-EN058|Common|Gunkan Sushipyard Seaside Supper Spot|DAWN OF MAJESTY
+DAMA-EN059|Common|Chronomaly Temple - Trilithon|DAWN OF MAJESTY
+DAMA-EN061|Common|Tailwind of Gusto|DAWN OF MAJESTY
+DAMA-EN062|Super Rare|Live☆Twin Sunny's Snitch|DAWN OF MAJESTY
+DAMA-EN069|Common|Margin Trading|DAWN OF MAJESTY
+DAMA-EN071|Common|Springans Interluder|DAWN OF MAJESTY
+DAMA-EN073|Common|Magikey Unlocking|DAWN OF MAJESTY
+DAMA-EN075|Common|Chronomaly Esperanza Glyph|DAWN OF MAJESTY
+DAMA-EN080|Common|Jar of Generosity|DAWN OF MAJESTY
+DAMA-EN081|Common|Baby Mudragon|DAWN OF MAJESTY
+DAMA-EN084|Common|Ra'ten, the Heavenly General|DAWN OF MAJESTY
+DAMA-EN085|Common|D.D.D. - Different Dimension Derby|DAWN OF MAJESTY
+DAMA-EN091|Common|Beetrooper Fly & Sting|DAWN OF MAJESTY
+DAMA-EN096|Common|Shinobi Insect Hagakuremino|DAWN OF MAJESTY
+DAMA-EN097|Common|Two Toads with One Sting|DAWN OF MAJESTY
+DAMA-EN099|Common|Gouki Finishing Move|DAWN OF MAJESTY
+BODE-EN000|Common|Heritage of the Light|BURST OF DESTINY
+BODE-EN002|Super Rare|Double Disruptor Dragon|BURST OF DESTINY
+BODE-EN003|Secret Rare|Swordsoul of Mo Ye|BURST OF DESTINY
+BODE-EN004|Super Rare|Swordsoul of Taia|BURST OF DESTINY
+BODE-EN008|Common|Icejade Acti|BURST OF DESTINY
+BODE-EN009|Common|Icejade Tinola|BURST OF DESTINY
+BODE-EN014|Super Rare|Floowandereeze & Eglen|BURST OF DESTINY
+BODE-EN015|Common|Floowandereeze & Stri|BURST OF DESTINY
+BODE-EN016|Common|Floowandereeze & Toccan|BURST OF DESTINY
+BODE-EN018|Super Rare|Destiny HERO - Denier|BURST OF DESTINY
+BODE-EN020|Common|Reptilianne Coatl|BURST OF DESTINY
+BODE-EN021|Common|Maginificent Magikey Mafteal|BURST OF DESTINY
+BODE-EN023|Common|Gunkan Suship Shirauo|BURST OF DESTINY
+BODE-EN024|Common|Penguin Squire|BURST OF DESTINY
+BODE-EN025|Common|Penguin Ninja|BURST OF DESTINY
+BODE-EN026|Common|Penguin Cleric|BURST OF DESTINY
+BODE-EN027|Common|Starry Knight Orbitael|BURST OF DESTINY
+BODE-EN029|Common|Mimicking Man-Eater Bug|BURST OF DESTINY
+BODE-EN031|Common|Fengli the Soldrapom|BURST OF DESTINY
+BODE-EN033|Common|Undaunted Bumpkin Beast|BURST OF DESTINY
+BODE-EN034|Super Rare|Meowseclick|BURST OF DESTINY
+BODE-EN035|Common|Outstanding Dog Mary|BURST OF DESTINY
+BODE-EN037|Common|Transonic Bird|BURST OF DESTINY
+BODE-EN040|Super Rare|Ultimate Flagship Ursatron|BURST OF DESTINY
+BODE-EN044|Super Rare|Magikey Fiend - Transfurlmine|BURST OF DESTINY
+BODE-EN046|Common|Cupid Pitch|BURST OF DESTINY
+BODE-EN047|Super Rare|Magikey Spirit - Vepartu|BURST OF DESTINY
+BODE-EN048|Super Rare|Gunkan Suship Uni-class Super-Dreadnought|BURST OF DESTINY
+BODE-EN049|Common|Gunkan Suship Shirauo-class Carrier|BURST OF DESTINY
+BODE-EN055|Super Rare|Branded in High Spirits|BURST OF DESTINY
+BODE-EN059|Super Rare|Floowandereeze and the Unexplored Winds|BURST OF DESTINY
+BODE-EN061|Common|Reptilianne Recoil|BURST OF DESTINY
+BODE-EN062|Common|Magikey Battle|BURST OF DESTINY
+BODE-EN063|Common|Royal Penguins Garden|BURST OF DESTINY
+BODE-EN064|Common|Sonic Tracker|BURST OF DESTINY
+BODE-EN066|Common|Ursarctic Drytron|BURST OF DESTINY
+BODE-EN069|Secret Rare|Small World|BURST OF DESTINY
+BODE-EN070|Common|Magical Cylinders|BURST OF DESTINY
+BODE-EN071|Common|Detonation Code|BURST OF DESTINY
+BODE-EN072|Common|Swordsoul Assessment|BURST OF DESTINY
+BODE-EN073|Common|Swordsoul Blackout|BURST OF DESTINY
+BODE-EN075|Super Rare|Floowandereeze and the Scary Sea|BURST OF DESTINY
+BODE-EN076|Common|Break the Destiny|BURST OF DESTINY
+BODE-EN077|Common|Magikey Locking|BURST OF DESTINY
+BODE-EN079|Common|Giant Starfall|BURST OF DESTINY
+BODE-EN080|Common|Laundry Trap|BURST OF DESTINY
+BODE-EN081|Common|Night Sword Serpent|BURST OF DESTINY
+BODE-EN082|Common|D.D. Assault Carrier|BURST OF DESTINY
+BODE-EN083|Common|Abyss Keeper|BURST OF DESTINY
+BODE-EN084|Common|Apex Predation|BURST OF DESTINY
+BODE-EN085|Common|Beetrooper Assault Roller|BURST OF DESTINY
+BODE-EN090|Common|Beetrooper Landing|BURST OF DESTINY
+BODE-EN091|Common|Beetrooper Squad|BURST OF DESTINY
+BODE-EN092|Common|Flip Frozen|BURST OF DESTINY
+BODE-EN093|Common|Bravedrive|BURST OF DESTINY
+BODE-EN094|Common|Rebuildeer|BURST OF DESTINY
+BODE-EN095|Common|Threshold Borg|BURST OF DESTINY
+BODE-EN096|Common|Cynet Crosswipe|BURST OF DESTINY
+BODE-EN097|Common|Danger! Disturbance! Disorder!|BURST OF DESTINY
+BODE-EN099|Common|Cynet Cascade|BURST OF DESTINY
+DAMA-EN076|Common|Amaze Attraction Viking Vortex|DAWN OF MAJESTY
+DAMA-EN078|Common|Beast King Unleashed|DAWN OF MAJESTY
+BROL-EN000|Starlight Rare|Number 17: Leviathan Dragon|BROTHERS OF LEGEND
+BROL-EN002|Ultra Rare|Kuribee|BROTHERS OF LEGEND
+BROL-EN005|Ultra Rare|Kuribabylon|BROTHERS OF LEGEND
+BROL-EN008|Ultra Rare|Penguin Sword|BROTHERS OF LEGEND
+BROL-EN009|Secret Rare|D - Force|BROTHERS OF LEGEND
+BROL-EN013|Ultra Rare|Ice Barrier|BROTHERS OF LEGEND
+BROL-EN014|Ultra Rare|Ice Knight|BROTHERS OF LEGEND
+BROL-EN015|Ultra Rare|Summon Storm|BROTHERS OF LEGEND
+BROL-EN018|Ultra Rare|Horse of the Floral Knights|BROTHERS OF LEGEND
+BROL-EN023|Secret Rare|Piri Reis Map|BROTHERS OF LEGEND
+BROL-EN025|Ultra Rare|ZW - Sylphid Wing|BROTHERS OF LEGEND
+BROL-EN026|Ultra Rare|ZS - Ouroboros Sage|BROTHERS OF LEGEND
+BROL-EN027|Secret Rare|Ultimate Leo Utopia Ray|BROTHERS OF LEGEND
+BROL-EN028|Ultra Rare|Zexal Catapult|BROTHERS OF LEGEND
+BROL-EN030|Secret Rare|Number 4: Stealth Kragen|BROTHERS OF LEGEND
+BROL-EN031|Secret Rare|Stealth Kragen Spawn|BROTHERS OF LEGEND
+BROL-EN033|Ultra Rare|Doll House|BROTHERS OF LEGEND
+BROL-EN034|Secret Rare|Starving Venemy Dragon|BROTHERS OF LEGEND
+BROL-EN035|Secret Rare|Speedroid Scratch|BROTHERS OF LEGEND
+BROL-EN040|Secret Rare|Double Exposure|BROTHERS OF LEGEND
+BROL-EN043|Ultra Rare|Appliancer Propelion|BROTHERS OF LEGEND
+BROL-EN044|Ultra Rare|Appliancer Conversion|BROTHERS OF LEGEND
+BROL-EN048|Ultra Rare|Right-Hand Shark|BROTHERS OF LEGEND
+BROL-EN049|Ultra Rare|Left-Hand Shark|BROTHERS OF LEGEND
+BROL-EN050|Ultra Rare|Hidden Fangs of Revenge|BROTHERS OF LEGEND
+BROL-EN051|Ultra Rare|White Mirror|BROTHERS OF LEGEND
+BROL-EN053|Ultra Rare|Astraltopia|BROTHERS OF LEGEND
+BROL-EN054|Ultra Rare|Zexal Field|BROTHERS OF LEGEND
+BROL-EN055|Ultra Rare|The Deal of Destiny|BROTHERS OF LEGEND
+BROL-EN056|Ultra Rare|Numbers Protection|BROTHERS OF LEGEND
+BROL-EN059|Ultra Rare|Number 39: Utopia|BROTHERS OF LEGEND
+BROL-EN065|Ultra Rare|Detonate|BROTHERS OF LEGEND
+BROL-EN066|Secret Rare|Magicians' Souls|BROTHERS OF LEGEND
+BROL-EN067|Ultra Rare|Red-Eyes Fusion|BROTHERS OF LEGEND
+BROL-EN069|Secret Rare|Evil HERO Malicious Bane|BROTHERS OF LEGEND
+BROL-EN070|Ultra Rare|Thought Ruler Archfiend|BROTHERS OF LEGEND
+BROL-EN072|Ultra Rare|Starlight Road|BROTHERS OF LEGEND
+BROL-EN074|Ultra Rare|Gadarla, the Mystery Dust Kaiju|BROTHERS OF LEGEND
+BROL-EN077|Ultra Rare|Eidos the Underworld Squire|BROTHERS OF LEGEND
+BROL-EN078|Ultra Rare|Edea the Heavenly Squire|BROTHERS OF LEGEND
+BROL-EN079|Ultra Rare|The Phantom Knights of Ragged Gloves|BROTHERS OF LEGEND
+BROL-EN080|Secret Rare|Nibiru, the Primal Being|BROTHERS OF LEGEND
+BROL-EN082|Secret Rare|Infernoid Tierra|BROTHERS OF LEGEND
+BROL-EN083|Ultra Rare|Wind-Up Arsenal Zenmaioh|BROTHERS OF LEGEND
+BROL-EN084|Ultra Rare|Inzektor Exa-Beetle|BROTHERS OF LEGEND
+BROL-EN087|Secret Rare|Relinquished Anima|BROTHERS OF LEGEND
+BROL-EN088|Ultra Rare|Allure of Darkness|BROTHERS OF LEGEND
+BROL-EN089|Ultra Rare|Fossil Dig|BROTHERS OF LEGEND
+BROL-EN091|Ultra Rare|Rank-Up-Magic Argent Chaos Force|BROTHERS OF LEGEND
+BROL-EN093|Ultra Rare|Void Feast|BROTHERS OF LEGEND
+BROL-EN071|Ultra Rare|Shooting Star Dragon|BROTHERS OF LEGEND
+ANGU-EN042|Rare|Evil Dragon Ananta|ANCIENT　GUARDIANS
+ANGU-EN054|Rare|Ayers Rock Sunrise|ANCIENT　GUARDIANS
+ANGU-EN058|Rare|Damage = Reptile|ANCIENT　GUARDIANS
+PHRA-EN022|Super Rare|Gizmek Makami, the Ferocious Fanged Fortress|PHANTOM RAGE
