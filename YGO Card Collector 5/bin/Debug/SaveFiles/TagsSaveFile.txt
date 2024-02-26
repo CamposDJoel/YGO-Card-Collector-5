@@ -1,4 +1,4 @@
-13
+15
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -12,3 +12,5 @@ TagRecord|Evil Dragon Ananta|False|False|True|False
 TagRecord|Ayers Rock Sunrise|False|False|True|False
 TagRecord|Damage = Reptile|False|False|True|False
 TagRecord|Gizmek Makami, the Ferocious Fanged Fortress|False|False|True|False
+TagRecord|The Sanctum of Parshath|False|False|True|False
+TagRecord|Vampire Domination|False|False|True|False
