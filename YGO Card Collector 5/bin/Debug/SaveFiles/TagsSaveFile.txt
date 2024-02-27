@@ -1,4 +1,4 @@
-15
+73
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -14,3 +14,61 @@ TagRecord|Damage = Reptile|False|False|True|False
 TagRecord|Gizmek Makami, the Ferocious Fanged Fortress|False|False|True|False
 TagRecord|The Sanctum of Parshath|False|False|True|False
 TagRecord|Vampire Domination|False|False|True|False
+TagRecord|Ookazi|True|False|False|False
+TagRecord|Black Pendant|True|False|False|False
+TagRecord|Gaia Power|True|False|False|False
+TagRecord|Red Medicine|True|False|False|False
+TagRecord|Monster Reincarnation|True|False|False|False
+TagRecord|Elemental HERO Avian|False|False|True|False
+TagRecord|Warrior of Zera|False|False|True|False
+TagRecord|Spirit Caller|False|False|True|False
+TagRecord|Water Spirit|False|False|True|False
+TagRecord|Frequency Magician|False|False|True|False
+TagRecord|Synchro Blast Wave|False|False|True|False
+TagRecord|Gogiga Gagagigo|False|True|False|False
+TagRecord|Cyber-Tech Alligator|False|True|False|False
+TagRecord|X-Saber Anu Piranha|False|True|False|False
+TagRecord|Goblin Attack Force|True|False|False|False
+TagRecord|Saber Beetle|False|True|False|False
+TagRecord|Unstable Evolution|False|True|False|False
+TagRecord|Giant Trunade|True|False|False|False
+TagRecord|Battle Footballer|False|True|False|False
+TagRecord|Chainsaw Insect|False|True|False|False
+TagRecord|Turret Warrior|False|True|False|False
+TagRecord|Dark Tinker|False|True|False|False
+TagRecord|Wild Tornado|False|True|False|False
+TagRecord|Rope of Life|False|True|False|False
+TagRecord|Rising Energy|False|True|False|False
+TagRecord|Junk Destroyer|False|True|False|False
+TagRecord|Spirit of the Harp|True|False|False|False
+TagRecord|Gravity Axe - Grarl|True|False|False|False
+TagRecord|Bite Bug|False|False|True|False
+TagRecord|Number 30: Acid Golem of Destruction|False|False|True|False
+TagRecord|Neo the Magic Swordsman|True|False|False|False
+TagRecord|Double or Nothing!|True|False|False|False
+TagRecord|Utopian Aura|True|False|False|False
+TagRecord|Gagaga Child|False|True|False|False
+TagRecord|Gagaga Girl|False|True|False|False
+TagRecord|Gagaga Gardna|False|True|False|False
+TagRecord|Blustering Winds|False|True|False|False
+TagRecord|The A. Forces|False|True|False|False
+TagRecord|Puzzle Reborn|False|True|False|False
+TagRecord|Gagagashield|False|True|False|False
+TagRecord|Copy Knight|False|True|False|False
+TagRecord|The Tricky|False|False|True|False
+TagRecord|Magical Dimension|False|False|True|False
+TagRecord|Battle Ox|True|False|False|False
+TagRecord|Rush Recklessly|True|False|False|False
+TagRecord|Offerings to the Doomed|True|False|False|False
+TagRecord|Sakuretsu Armor|True|False|False|False
+TagRecord|Goblin Elite Attack Force|False|False|True|False
+TagRecord|Trap Hole|True|False|False|False
+TagRecord|DUCKER Mobile Cannon|False|False|True|False
+TagRecord|Performapal King Bear|False|True|False|False
+TagRecord|Performapal Teeter Totter Hopper|False|True|False|False
+TagRecord|Timegazer Magician|False|True|False|False
+TagRecord|Dragon Dowser|False|True|False|False
+TagRecord|Performapal Dramatic Theater|False|True|False|False
+TagRecord|Draw Muscle|False|True|False|False
+TagRecord|Threatening Roar|False|True|False|False
+TagRecord|Pendulum Reborn|False|True|False|False
