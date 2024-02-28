@@ -189,11 +189,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(644, 4);
+            this.label3.Location = new System.Drawing.Point(640, 9);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 20);
+            this.label3.Size = new System.Drawing.Size(85, 17);
             this.label3.TabIndex = 231;
             this.label3.Text = "Set Cards:";
             // 
@@ -235,14 +235,13 @@
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.Red;
-            this.btnClear.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.Black;
+            this.btnClear.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Location = new System.Drawing.Point(264, 336);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(94, 25);
             this.btnClear.TabIndex = 239;
             this.btnClear.Text = "Clear Filter";
-            this.btnClear.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Visible = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -250,7 +249,7 @@
             // btnNextPage
             // 
             this.btnNextPage.BackColor = System.Drawing.Color.Green;
-            this.btnNextPage.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNextPage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNextPage.ForeColor = System.Drawing.Color.White;
             this.btnNextPage.Location = new System.Drawing.Point(359, 336);
             this.btnNextPage.Name = "btnNextPage";
@@ -263,7 +262,7 @@
             // btnPreviousPage
             // 
             this.btnPreviousPage.BackColor = System.Drawing.Color.Green;
-            this.btnPreviousPage.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreviousPage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPreviousPage.ForeColor = System.Drawing.Color.White;
             this.btnPreviousPage.Location = new System.Drawing.Point(4, 336);
             this.btnPreviousPage.Name = "btnPreviousPage";
@@ -1742,7 +1741,7 @@
             // btnSetPriceReport
             // 
             this.btnSetPriceReport.BackColor = System.Drawing.Color.Green;
-            this.btnSetPriceReport.Font = new System.Drawing.Font("Calibri Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetPriceReport.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSetPriceReport.ForeColor = System.Drawing.Color.White;
             this.btnSetPriceReport.Location = new System.Drawing.Point(288, 0);
             this.btnSetPriceReport.Name = "btnSetPriceReport";
@@ -1756,7 +1755,7 @@
             // btnStats
             // 
             this.btnStats.BackColor = System.Drawing.Color.Indigo;
-            this.btnStats.Font = new System.Drawing.Font("Calibri Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStats.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStats.ForeColor = System.Drawing.Color.White;
             this.btnStats.Location = new System.Drawing.Point(401, 0);
             this.btnStats.Name = "btnStats";
@@ -1778,11 +1777,11 @@
             // btnFilterSet
             // 
             this.btnFilterSet.BackColor = System.Drawing.Color.Purple;
-            this.btnFilterSet.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFilterSet.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFilterSet.ForeColor = System.Drawing.Color.White;
-            this.btnFilterSet.Location = new System.Drawing.Point(603, 361);
+            this.btnFilterSet.Location = new System.Drawing.Point(583, 361);
             this.btnFilterSet.Name = "btnFilterSet";
-            this.btnFilterSet.Size = new System.Drawing.Size(109, 20);
+            this.btnFilterSet.Size = new System.Drawing.Size(129, 20);
             this.btnFilterSet.TabIndex = 278;
             this.btnFilterSet.Text = "Show Selected Set";
             this.btnFilterSet.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -1792,7 +1791,7 @@
             // btnOpenSetValue
             // 
             this.btnOpenSetValue.BackColor = System.Drawing.Color.Purple;
-            this.btnOpenSetValue.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOpenSetValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpenSetValue.ForeColor = System.Drawing.Color.White;
             this.btnOpenSetValue.Location = new System.Drawing.Point(711, 361);
             this.btnOpenSetValue.Name = "btnOpenSetValue";

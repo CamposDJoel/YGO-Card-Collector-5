@@ -560,14 +560,13 @@
             // btnClear
             // 
             this.btnClear.BackColor = System.Drawing.Color.Red;
-            this.btnClear.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClear.ForeColor = System.Drawing.Color.Black;
+            this.btnClear.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.ForeColor = System.Drawing.Color.White;
             this.btnClear.Location = new System.Drawing.Point(505, 439);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(94, 25);
             this.btnClear.TabIndex = 277;
             this.btnClear.Text = "Clear Filter";
-            this.btnClear.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Visible = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
@@ -575,9 +574,9 @@
             // btnNextPage
             // 
             this.btnNextPage.BackColor = System.Drawing.Color.Green;
-            this.btnNextPage.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNextPage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNextPage.ForeColor = System.Drawing.Color.White;
-            this.btnNextPage.Location = new System.Drawing.Point(114, 439);
+            this.btnNextPage.Location = new System.Drawing.Point(130, 439);
             this.btnNextPage.Name = "btnNextPage";
             this.btnNextPage.Size = new System.Drawing.Size(103, 25);
             this.btnNextPage.TabIndex = 276;
@@ -588,11 +587,11 @@
             // btnPreviousPage
             // 
             this.btnPreviousPage.BackColor = System.Drawing.Color.Green;
-            this.btnPreviousPage.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreviousPage.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPreviousPage.ForeColor = System.Drawing.Color.White;
             this.btnPreviousPage.Location = new System.Drawing.Point(4, 439);
             this.btnPreviousPage.Name = "btnPreviousPage";
-            this.btnPreviousPage.Size = new System.Drawing.Size(110, 25);
+            this.btnPreviousPage.Size = new System.Drawing.Size(125, 25);
             this.btnPreviousPage.TabIndex = 275;
             this.btnPreviousPage.Text = "<< Previous Page";
             this.btnPreviousPage.UseVisualStyleBackColor = false;
@@ -601,7 +600,7 @@
             // chkCollected
             // 
             this.chkCollected.BackColor = System.Drawing.Color.Black;
-            this.chkCollected.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkCollected.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chkCollected.ForeColor = System.Drawing.Color.White;
             this.chkCollected.Location = new System.Drawing.Point(358, 440);
             this.chkCollected.Name = "chkCollected";
@@ -1797,9 +1796,9 @@
             // btnNextPageVariant
             // 
             this.btnNextPageVariant.BackColor = System.Drawing.Color.Green;
-            this.btnNextPageVariant.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNextPageVariant.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNextPageVariant.ForeColor = System.Drawing.Color.White;
-            this.btnNextPageVariant.Location = new System.Drawing.Point(113, 546);
+            this.btnNextPageVariant.Location = new System.Drawing.Point(129, 546);
             this.btnNextPageVariant.Name = "btnNextPageVariant";
             this.btnNextPageVariant.Size = new System.Drawing.Size(103, 25);
             this.btnNextPageVariant.TabIndex = 287;
@@ -1810,11 +1809,11 @@
             // btnPreviousPageVariant
             // 
             this.btnPreviousPageVariant.BackColor = System.Drawing.Color.Green;
-            this.btnPreviousPageVariant.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPreviousPageVariant.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPreviousPageVariant.ForeColor = System.Drawing.Color.White;
             this.btnPreviousPageVariant.Location = new System.Drawing.Point(3, 546);
             this.btnPreviousPageVariant.Name = "btnPreviousPageVariant";
-            this.btnPreviousPageVariant.Size = new System.Drawing.Size(110, 25);
+            this.btnPreviousPageVariant.Size = new System.Drawing.Size(125, 25);
             this.btnPreviousPageVariant.TabIndex = 286;
             this.btnPreviousPageVariant.Text = "<< Previous Page";
             this.btnPreviousPageVariant.UseVisualStyleBackColor = false;

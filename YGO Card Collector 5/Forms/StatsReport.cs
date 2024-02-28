@@ -499,7 +499,7 @@ namespace YGO_Card_Collector_5
                     }
 
                     double percentage2 = 0;
-                    if (variantListObtained > 0) { percentage2 = (variantListObtained / variantListCardTotal) * 100; }
+                    if (variantListObtained > 0) { percentage2 = ((double)variantListObtained / (double)variantListCardTotal) * 100; }
 
                     ProgressBar bar2 = new ProgressBar();
                     ThisPage.Controls.Add(bar2);

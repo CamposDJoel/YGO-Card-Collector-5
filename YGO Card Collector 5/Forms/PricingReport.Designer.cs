@@ -179,15 +179,14 @@
             // 
             // label69
             // 
-            this.label69.AutoSize = true;
             this.label69.BackColor = System.Drawing.Color.Transparent;
             this.label69.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label69.ForeColor = System.Drawing.Color.White;
             this.label69.Location = new System.Drawing.Point(13, 5);
             this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(184, 24);
+            this.label69.Size = new System.Drawing.Size(242, 48);
             this.label69.TabIndex = 14;
-            this.label69.Text = "DB Prices Report";
+            this.label69.Text = "Your Collection Price List (Highest > Lowest)";
             // 
             // tabPage2
             // 
@@ -275,15 +274,14 @@
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(13, 5);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 24);
+            this.label2.Size = new System.Drawing.Size(228, 48);
             this.label2.TabIndex = 18;
-            this.label2.Text = "DB Prices Report";
+            this.label2.Text = "DB Price List (Highest > Lowest)";
             // 
             // TabSetExplorer
             // 
