@@ -1,4 +1,4 @@
-275
+298
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -19,7 +19,6 @@ TagRecord|Black Pendant|True|False|False|False
 TagRecord|Gaia Power|True|False|False|False
 TagRecord|Red Medicine|True|False|False|False
 TagRecord|Monster Reincarnation|True|False|False|False
-TagRecord|Elemental HERO Avian|False|False|True|False
 TagRecord|Warrior of Zera|False|False|True|False
 TagRecord|Spirit Caller|False|False|True|False
 TagRecord|Water Spirit|False|False|True|False
@@ -274,3 +273,27 @@ TagRecord|Salamangreat Sanctuary|False|True|False|False
 TagRecord|Salamangreat Roar|False|True|False|False
 TagRecord|Salamangreat Heatleo|False|True|False|False
 TagRecord|Salamangreat Miragestallio|False|True|False|False
+TagRecord|Elemental HERO Avian|True|False|False|False
+TagRecord|Soul Rope|True|False|False|False
+TagRecord|Neo Space Connector|False|True|False|False
+TagRecord|Aloof Lupine|False|True|False|False
+TagRecord|Destiny HERO - Dominance|False|True|False|False
+TagRecord|Dinowrestler Giga Spinosavate|False|True|False|False
+TagRecord|Firewall eXceed Dragon|False|True|False|False
+TagRecord|Capshell|False|True|False|False
+TagRecord|Tenyi Spirit - Adhara|False|True|False|False
+TagRecord|Tenyi Spirit - Mapura|False|True|False|False
+TagRecord|Tenyi Spirit - Nahata|False|True|False|False
+TagRecord|Monk of the Tenyi|False|True|False|False
+TagRecord|Marincess Current|False|True|False|False
+TagRecord|Fists of the Unrivaled Tenyi|False|True|False|False
+TagRecord|Hraesvelgr, the Desperate Doom Eagle|False|True|False|False
+TagRecord|Rogue of Endymion|False|True|False|False
+TagRecord|Gladiator Beast Domitianus|False|True|False|False
+TagRecord|Firewall Dragon Darkfluid|False|True|False|False
+TagRecord|Salamangreat Pyro Phoenix|False|True|False|False
+TagRecord|Infinitrack Earth Slicer|False|True|False|False
+TagRecord|Infinitrack Fortress Megaclops|False|True|False|False
+TagRecord|Evil Eye Awakening|False|True|False|False
+TagRecord|Evil Eye Confrontation|False|True|False|False
+TagRecord|Evil Eye Defeat|False|True|False|False
