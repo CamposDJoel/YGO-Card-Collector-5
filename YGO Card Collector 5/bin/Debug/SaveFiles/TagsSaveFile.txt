@@ -1,4 +1,4 @@
-73
+275
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -51,7 +51,6 @@ TagRecord|Gagaga Child|False|True|False|False
 TagRecord|Gagaga Girl|False|True|False|False
 TagRecord|Gagaga Gardna|False|True|False|False
 TagRecord|Blustering Winds|False|True|False|False
-TagRecord|The A. Forces|False|True|False|False
 TagRecord|Puzzle Reborn|False|True|False|False
 TagRecord|Gagagashield|False|True|False|False
 TagRecord|Copy Knight|False|True|False|False
@@ -72,3 +71,206 @@ TagRecord|Performapal Dramatic Theater|False|True|False|False
 TagRecord|Draw Muscle|False|True|False|False
 TagRecord|Threatening Roar|False|True|False|False
 TagRecord|Pendulum Reborn|False|True|False|False
+TagRecord|Dimensional Alchemist|False|True|False|False
+TagRecord|Samsara Kaiser|False|True|False|False
+TagRecord|Golden Homunculus|False|True|False|False
+TagRecord|Chaosrider Gustaph|False|True|False|False
+TagRecord|D.D.M. - Different Dimension Master|False|True|False|False
+TagRecord|Dark Core|False|True|False|False
+TagRecord|Torrential Tribute|False|True|False|False
+TagRecord|Disenchanter|False|True|False|False
+TagRecord|Defender, the Magical Knight|False|True|False|False
+TagRecord|Mist Body|False|True|False|False
+TagRecord|Magical Blast|False|True|False|False
+TagRecord|Evocator Chevalier|False|True|False|False
+TagRecord|Featherizer|False|True|False|False
+TagRecord|Spell Striker|False|True|False|False
+TagRecord|Freed the Matchless General|False|True|False|False
+TagRecord|Field-Commander Rahz|False|True|False|False
+TagRecord|Dark Valkyria|False|True|False|False
+TagRecord|Supervise|False|True|False|False
+TagRecord|Gemini Trap Hole|False|True|False|False
+TagRecord|Dragunity Arma Leyvaten|False|True|False|False
+TagRecord|Dragunity Aklys|False|True|False|False
+TagRecord|Dragunity Dux|False|True|False|False
+TagRecord|Dragunity Legionnaire|False|True|False|False
+TagRecord|Dragunity Tribus|False|True|False|False
+TagRecord|Dragunity Brandistock|False|True|False|False
+TagRecord|Dragunity Javelin|False|True|False|False
+TagRecord|Hunter Owl|False|True|False|False
+TagRecord|Twin-Headed Behemoth|False|True|False|False
+TagRecord|Masked Dragon|False|True|False|False
+TagRecord|Mage Power|False|True|False|False
+TagRecord|Windstorm of Etaqua|False|True|False|False
+TagRecord|Relieve Monster|False|True|False|False
+TagRecord|Spiritual Wind Art - Miyabi|False|True|False|False
+TagRecord|Darkflare Dragon|False|True|False|False
+TagRecord|Vice Dragon|False|True|False|False
+TagRecord|Kaibaman|False|True|False|False
+TagRecord|Chaos Zone|False|True|False|False
+TagRecord|Reasoning|False|True|False|False
+TagRecord|The Six Samurai - Nisashi|False|True|False|False
+TagRecord|Great Shogun Shien|False|True|False|False
+TagRecord|Shien's Footsoldier|False|True|False|False
+TagRecord|Six Samurai United|False|True|False|False
+TagRecord|Gateway of the Six|False|True|False|False
+TagRecord|Musakani Magatama|False|True|False|False
+TagRecord|Six Strike - Thunder Blast|False|True|False|False
+TagRecord|Poseidra, the Atlantean Dragon|False|True|False|False
+TagRecord|Atlantean Marksman|False|True|False|False
+TagRecord|Atlantean Heavy Infantry|False|True|False|False
+TagRecord|Deep Sea Diva|False|True|False|False
+TagRecord|Mermaid Archer|False|True|False|False
+TagRecord|Warrior of Atlantis|False|True|False|False
+TagRecord|Deep Diver|False|True|False|False
+TagRecord|Reese the Ice Mistress|False|True|False|False
+TagRecord|Call of the Atlanteans|False|True|False|False
+TagRecord|Aqua Jet|False|True|False|False
+TagRecord|Surface|False|True|False|False
+TagRecord|Forgotten Temple of the Deep|False|True|False|False
+TagRecord|Tornado Wall|False|True|False|False
+TagRecord|Spiritual Water Art - Aoi|False|True|False|False
+TagRecord|Fire King Avatar Kirin|False|True|False|False
+TagRecord|Manticore of Darkness|False|True|False|False
+TagRecord|Goka, the Pyre of Malice|False|True|False|False
+TagRecord|Hazy Flame Hyppogrif|False|True|False|False
+TagRecord|Neo Flamvell Sabre|False|True|False|False
+TagRecord|Volcanic Rocket|False|True|False|False
+TagRecord|Volcanic Counter|False|True|False|False
+TagRecord|Wild Nature's Release|False|True|False|False
+TagRecord|Horn of the Phantom Beast|False|True|False|False
+TagRecord|Regretful Rebirth|False|True|False|False
+TagRecord|Cyber Dinosaur|False|True|False|False
+TagRecord|Satellite Cannon|False|True|False|False
+TagRecord|Falchionβ|False|True|False|False
+TagRecord|Reflect Bounder|False|True|False|False
+TagRecord|Cyber Repair Plant|False|True|False|False
+TagRecord|Power Bond|False|True|False|False
+TagRecord|Cyber Network|False|True|False|False
+TagRecord|Cybernetic Hidden Technology|False|True|False|False
+TagRecord|Geargiano Mk-III|False|True|False|False
+TagRecord|Geargiattacker|False|True|False|False
+TagRecord|Geargiarmor|False|True|False|False
+TagRecord|Minefieldriller|False|True|False|False
+TagRecord|Swift Scarecrow|False|True|False|False
+TagRecord|Oilman|False|True|False|False
+TagRecord|Geartown|False|True|False|False
+TagRecord|Limiter Removal|False|True|False|False
+TagRecord|Machine Assembly Line|False|True|False|False
+TagRecord|Geargiagear Gigant XG|False|True|False|False
+TagRecord|Gear Gigant X|False|True|False|False
+TagRecord|Jet Warrior|False|False|True|False
+TagRecord|Dragonpulse Magician|False|True|False|False
+TagRecord|Inari Fire|False|True|False|False
+TagRecord|Jigabyte|False|True|False|False
+TagRecord|Magna Drago|False|True|False|False
+TagRecord|Sky Iris|False|True|False|False
+TagRecord|Pendulum Back|False|True|False|False
+TagRecord|Powerful Rebirth|False|True|False|False
+TagRecord|Eradicator Epidemic Virus|False|True|False|False
+TagRecord|Rune-Eyes Pendulum Dragon|False|True|False|False
+TagRecord|Ehther the Heavenly Monarch|False|True|False|False
+TagRecord|Thestalos the Firestorm Monarch|False|True|False|False
+TagRecord|Lucius the Shadow Vassal|False|True|False|False
+TagRecord|Landrobe the Rock Vassal|False|True|False|False
+TagRecord|Illusory Snatcher|False|True|False|False
+TagRecord|Mathematician|False|True|False|False
+TagRecord|Battle Fader|False|True|False|False
+TagRecord|Domain of the True Monarchs|False|True|False|False
+TagRecord|March of the Monarchs|False|True|False|False
+TagRecord|The Monarchs Stormforth|False|True|False|False
+TagRecord|Dicephoon|False|True|False|False
+TagRecord|By Order of the Emperor|False|True|False|False
+TagRecord|Pinpoint Guard|False|True|False|False
+TagRecord|Divine Dragon Lord Felgrand|False|True|False|False
+TagRecord|Paladin of Felgrand|False|True|False|False
+TagRecord|White Night Dragon|False|True|False|False
+TagRecord|Kidmodo Dragon|False|True|False|False
+TagRecord|Needlebug Nest|False|True|False|False
+TagRecord|A-Assault Core|False|True|False|False
+TagRecord|C-Crush Wyvern|False|True|False|False
+TagRecord|Heavy Mech Support Armor|False|True|False|False
+TagRecord|X-Head Cannon|False|True|False|False
+TagRecord|Kaiser Glider|False|True|False|False
+TagRecord|Union Hangar|False|True|False|False
+TagRecord|Majesty with Eyes of Blue|False|True|False|False
+TagRecord|Silent Doom|False|True|False|False
+TagRecord|Union Scramble|False|True|False|False
+TagRecord|A-to-Z-Dragon Buster Cannon|False|True|False|False
+TagRecord|Skilled White Magician|False|True|False|False
+TagRecord|Dark Magic Inheritance|False|True|False|False
+TagRecord|Swords of Concealing Light|False|True|False|False
+TagRecord|Magnet Conversion|False|True|False|False
+TagRecord|Magician's Circle|False|True|False|False
+TagRecord|Imperion Magnum the Superconductive Battlebot|False|True|False|False
+TagRecord|Arcana Knight Joker|False|True|False|False
+TagRecord|Buster Blader, the Dragon Destroyer Swordsman|False|True|False|False
+TagRecord|Ancient Gear Gadjiltron Dragon|False|True|False|False
+TagRecord|Ancient Gear Engineer|False|True|False|False
+TagRecord|Geargiauger|False|True|False|False
+TagRecord|BOXer|False|True|False|False
+TagRecord|Hardened Armed Dragon|False|True|False|False
+TagRecord|Maxx "C"|False|True|False|False
+TagRecord|Pseudo Space|False|True|False|False
+TagRecord|Dotscaper|False|True|False|False
+TagRecord|Balancer Lord|False|True|False|False
+TagRecord|ROM Cloudia|False|True|False|False
+TagRecord|Boot Staggered|False|True|False|False
+TagRecord|Dual Assembwurm|False|True|False|False
+TagRecord|Cyberse Wizard|False|True|False|False
+TagRecord|Kinka-byo|False|True|False|False
+TagRecord|Recoded Alive|False|True|False|False
+TagRecord|Premature Return|False|True|False|False
+TagRecord|Swamp Mirrorer|False|True|False|False
+TagRecord|Quantum Cat|False|True|False|False
+TagRecord|Ghosts From the Past|False|True|False|False
+TagRecord|Encode Talker|False|True|False|False
+TagRecord|Tri-Gate Wizard|False|True|False|False
+TagRecord|Binary Sorceress|False|True|False|False
+TagRecord|Duke Shade, the Sinister Shadow Lord|False|True|False|False
+TagRecord|Lich Lord, King of the Underworld|False|True|False|False
+TagRecord|Archfiend Emperor, the First Lord of Horror|False|True|False|False
+TagRecord|Caius the Mega Monarch|False|True|False|False
+TagRecord|Infernal Dragon|False|True|False|False
+TagRecord|Plague Wolf|False|True|False|False
+TagRecord|Fiendish Rhino Warrior|False|True|False|False
+TagRecord|Relinkuriboh|False|True|False|False
+TagRecord|Lair of Darkness|False|True|False|False
+TagRecord|Boogie Trap|False|True|False|False
+TagRecord|Veil of Darkness|False|True|False|False
+TagRecord|Full Force Virus|False|True|False|False
+TagRecord|Darklight|False|True|False|False
+TagRecord|Trap of Darkness|False|True|False|False
+TagRecord|Curse of Darkness|False|True|False|False
+TagRecord|Sinister Yorishiro|False|True|False|False
+TagRecord|Tatsunecro|False|True|False|False
+TagRecord|Red-Eyes Zombie Dragon|False|True|False|False
+TagRecord|Malevolent Mech - Goku En|False|True|False|False
+TagRecord|Endless Decay|False|True|False|False
+TagRecord|Paladin of the Cursed Dragon|False|True|False|False
+TagRecord|Immortal Ruler|False|True|False|False
+TagRecord|Tristan, Knight of the Underworld|False|True|False|False
+TagRecord|Isolde, Belle of the Underworld|False|True|False|False
+TagRecord|Zombie Necronize|False|True|False|False
+TagRecord|Zombie Power Struggle|False|True|False|False
+TagRecord|Overpowering Eye|False|True|False|False
+TagRecord|Shared Ride|False|True|False|False
+TagRecord|Haunted Shrine|False|True|False|False
+TagRecord|Salamangreat Raccoon|False|True|False|False
+TagRecord|Salamangreat Gazelle|False|True|False|False
+TagRecord|Salamangreat Fowl|False|True|False|False
+TagRecord|Salamangreat Beat Bison|False|True|False|False
+TagRecord|Salamangreat Meer|False|True|False|False
+TagRecord|Salamangreat Foxy|False|True|False|False
+TagRecord|Salamangreat Falco|False|True|False|False
+TagRecord|Salamangreat Jack Jaguar|False|True|False|False
+TagRecord|Salamangreat Wolvie|False|True|False|False
+TagRecord|True King Agnimazud, the Vanisher|False|True|False|False
+TagRecord|Red Resonator|False|True|False|False
+TagRecord|Formud Skipper|False|True|False|False
+TagRecord|Salamangreat Circle|False|True|False|False
+TagRecord|Salamangreat Claw|False|True|False|False
+TagRecord|Salamangreat Sanctuary|False|True|False|False
+TagRecord|Salamangreat Roar|False|True|False|False
+TagRecord|Salamangreat Heatleo|False|True|False|False
+TagRecord|Salamangreat Miragestallio|False|True|False|False
