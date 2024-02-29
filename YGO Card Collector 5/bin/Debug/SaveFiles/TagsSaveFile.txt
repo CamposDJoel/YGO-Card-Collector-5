@@ -1,4 +1,4 @@
-298
+399
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -297,3 +297,104 @@ TagRecord|Infinitrack Fortress Megaclops|False|True|False|False
 TagRecord|Evil Eye Awakening|False|True|False|False
 TagRecord|Evil Eye Confrontation|False|True|False|False
 TagRecord|Evil Eye Defeat|False|True|False|False
+TagRecord|Elemental HERO Clayman|False|True|False|False
+TagRecord|Winged Kuriboh LV10|False|True|False|False
+TagRecord|Elemental HERO Rampart Blaster|False|True|False|False
+TagRecord|Bubble Shuffle|False|True|False|False
+TagRecord|Skyscraper|False|True|False|False
+TagRecord|Bubble Blaster|False|True|False|False
+TagRecord|V-Tiger Jet|False|True|False|False
+TagRecord|Infernal Incinerator|False|True|False|False
+TagRecord|Ojama King|False|True|False|False
+TagRecord|Ojamagic|False|True|False|False
+TagRecord|Ojamuscle|False|True|False|False
+TagRecord|Chthonian Blast|False|True|False|False
+TagRecord|The Grave of Enkindling|False|True|False|False
+TagRecord|Chrysalis Dolphin|False|True|False|False
+TagRecord|Elemental HERO Wild Wingman|False|True|False|False
+TagRecord|Elemental HERO Aqua Neos|False|True|False|False
+TagRecord|Cyclone Boomerang|False|True|False|False
+TagRecord|R - Righteous Justice|False|True|False|False
+TagRecord|Contact|False|True|False|False
+TagRecord|Common Soul|False|True|False|False
+TagRecord|Light Laser|False|True|False|False
+TagRecord|Edge Hammer|False|True|False|False
+TagRecord|Kid Guard|False|True|False|False
+TagRecord|Chimeratech Overdragon|False|True|False|False
+TagRecord|Overload Fusion|False|True|False|False
+TagRecord|Future Fusion|False|True|False|False
+TagRecord|Ruthless Denial|False|True|False|False
+TagRecord|Trap Jammer|False|True|False|False
+TagRecord|Return Soul|False|True|False|False
+TagRecord|Fusion Guard|False|True|False|False
+TagRecord|Misfortune|False|True|False|False
+TagRecord|Guard Penalty|False|True|False|False
+TagRecord|Cyclone Blade|False|True|False|False
+TagRecord|Dark City|False|True|False|False
+TagRecord|Destruction of Destiny|False|True|False|False
+TagRecord|Destiny Signal|False|True|False|False
+TagRecord|D - Time|False|True|False|False
+TagRecord|D - Chain|False|True|False|False
+TagRecord|Evil HERO Infernal Gainer|False|True|False|False
+TagRecord|Armor Breaker|False|True|False|False
+TagRecord|Evil HERO Wild Cyclone|False|True|False|False
+TagRecord|Reverse of Neos|False|True|False|False
+TagRecord|Convert Contact|False|True|False|False
+TagRecord|Over Limit|False|True|False|False
+TagRecord|Hero's Rule 2|False|True|False|False
+TagRecord|Magna-Slash Dragon|False|False|True|False
+TagRecord|Triggered Summon|False|False|True|False
+TagRecord|Nitro Synchron|False|True|False|False
+TagRecord|Shield Warrior|False|True|False|False
+TagRecord|Turbo Synchron|False|True|False|False
+TagRecord|Fortress Warrior|False|True|False|False
+TagRecord|Defense Draw|False|True|False|False
+TagRecord|Battle Mania|False|True|False|False
+TagRecord|Diffusion Wave-Motion|False|False|True|False
+TagRecord|Spellbinding Circle|False|False|True|False
+TagRecord|Stardust Dragon/Assault Mode|False|True|False|False
+TagRecord|Road Synchron|False|True|False|False
+TagRecord|Rockstone Warrior|False|True|False|False
+TagRecord|Max Warrior|False|True|False|False
+TagRecord|Eccentric Boy|False|True|False|False
+TagRecord|Road Warrior|False|True|False|False
+TagRecord|Release Restraint Wave|False|True|False|False
+TagRecord|Advance Draw|False|True|False|False
+TagRecord|Spirit Force|False|True|False|False
+TagRecord|Descending Lost Star|False|True|False|False
+TagRecord|Miracle Locus|False|True|False|False
+TagRecord|Judge Man|True|False|False|False
+TagRecord|Swordstalker|True|False|False|False
+TagRecord|Lord of D.|True|False|False|False
+TagRecord|Z-Metal Tank|False|False|True|False
+TagRecord|Magic Reflector|False|False|True|False
+TagRecord|A/D Changer|False|True|False|False
+TagRecord|Justice Bringer|False|True|False|False
+TagRecord|Big One Warrior|False|True|False|False
+TagRecord|Dragon Knight Draco-Equiste|False|True|False|False
+TagRecord|Majestic Star Dragon|False|True|False|False
+TagRecord|Synchro Gift|False|True|False|False
+TagRecord|Card of Sacrifice|False|True|False|False
+TagRecord|Blackwing - Ghibli the Searing Wind|False|True|False|False
+TagRecord|Blackwing - Kochi the Daybreak|False|True|False|False
+TagRecord|Blackwing Armed Wing|False|True|False|False
+TagRecord|Raptor Wing Strike|False|True|False|False
+TagRecord|Ebon Arrow|False|True|False|False
+TagRecord|Delta Crow - Anti Reverse|False|True|False|False
+TagRecord|Level Retuner|False|True|False|False
+TagRecord|Guard Mines|False|True|False|False
+TagRecord|Black Feather Beacon|False|True|False|False
+TagRecord|Black Return|False|True|False|False
+TagRecord|Black Luster Ritual|True|False|False|False
+TagRecord|Time Wizard|True|False|False|False
+TagRecord|Juragedo|False|False|True|False
+TagRecord|Embodiment of Apophis|False|False|True|False
+TagRecord|Magnet Force|False|True|False|False
+TagRecord|Blue-Eyes Shining Dragon|False|True|False|False
+TagRecord|Exchange of the Spirit|False|True|False|False
+TagRecord|Spirit Message "I"|False|True|False|False
+TagRecord|Cyber Prima|False|True|False|False
+TagRecord|Cyber Angel Vrash|False|True|False|False
+TagRecord|Cyber Angel Idaten|False|True|False|False
+TagRecord|Red Wyvern|False|True|False|False
+TagRecord|Reject Reborn|False|True|False|False
