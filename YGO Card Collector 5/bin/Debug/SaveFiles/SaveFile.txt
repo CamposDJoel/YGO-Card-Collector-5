@@ -1,4 +1,4 @@
-7415
+8338
 LOB-000|Secret Rare|Tri-Horned Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-001|Ultra Rare|Blue-Eyes White Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-002|Common|Hitotsu-Me Giant|LEGEND OF BLUE EYES WHITE DRAGON
@@ -7414,3 +7414,926 @@ MP23-EN273|Common|Breath of Resurrection|25TH ANNIVERSARY TIN: DUELING HEROES ME
 MP23-EN274|Common|Dragunity Senatus|25TH ANNIVERSARY TIN: DUELING HEROES MEGA PACK
 MP23-EN275|Common|Noble Knight Custennin|25TH ANNIVERSARY TIN: DUELING HEROES MEGA PACK
 MP23-EN280|Common|Krawler Receptor|25TH ANNIVERSARY TIN: DUELING HEROES MEGA PACK
+SS02-ENC08|Common|Birdface|SPEED DUEL STARTER DECK: DUELISTS OF TOMORROW
+SBLS-EN011|Common|Rabid Horseman|SPEED DUEL: ARENA OF LOST SOULS
+SBAD-EN005|Common|Arcane Barrier|SPEED DUEL: ATTACK FROM THE DEEP
+SBAD-EN009|Common|Axe Raider|SPEED DUEL: ATTACK FROM THE DEEP
+SBAD-EN016|Common|Robbin' Zombie|SPEED DUEL: ATTACK FROM THE DEEP
+SBAD-EN021|Common|Great White|SPEED DUEL: ATTACK FROM THE DEEP
+SBAD-EN022|Common|High Tide Gyojin|SPEED DUEL: ATTACK FROM THE DEEP
+SBAD-EN023|Common|The Legendary Fisherman|SPEED DUEL: ATTACK FROM THE DEEP
+SBAD-EN027|Common|Fishborg Planter|SPEED DUEL: ATTACK FROM THE DEEP
+SBAD-EN030|Common|Power of Kaishin|SPEED DUEL: ATTACK FROM THE DEEP
+SBAD-EN032|Common|Big Wave Small Wave|SPEED DUEL: ATTACK FROM THE DEEP
+SBAD-EN033|Common|Water Hazard|SPEED DUEL: ATTACK FROM THE DEEP
+SBAD-EN035|Common|Warrior Dai Grepher|SPEED DUEL: ATTACK FROM THE DEEP
+SBAD-EN038|Common|Theban Nightmare|SPEED DUEL: ATTACK FROM THE DEEP
+SBAD-EN044|Common|Ready for Intercepting|SPEED DUEL: ATTACK FROM THE DEEP
+SS03-ENA01|Common|Serpent Night Dragon|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA02|Common|Two-Headed King Rex|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA03|Common|Uraby|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA04|Common|Crawling Dragon #2|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA05|Common|Tomozaurus|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA06|Common|Anthrosaurus|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA07|Common|Black Tyranno|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA08|Common|Super-Ancient Dinobeast|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA09|Common|Mad Sword Beast|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA10|Common|Gilasaurus|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA11|Common|Gale Lizard|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA12|Common|Dark Driceratops|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA13|Common|Hyper Hammerhead|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA14|Common|Element Saurus|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA15|Common|Black Stego|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA16|Common|Gentlemander|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA17|Common|Raise Body Heat|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA18|Common|Ultra Evolution Pill|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA19|Common|Spacetime Transcendence|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA20|Common|Cost Down|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA21|Common|Summoner's Art|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA22|Common|White Elephant's Gift|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA23|Common|Heat Wave|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA24|Common|Card Advance|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA25|Common|Hunting Instinct|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA26|Common|Reinforcements|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA27|Common|Pharaoh's Treasure|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENA28|Common|Limit Impulse|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB01|Common|Perfectly Ultimate Great Moth|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB02|Common|Petit Moth|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB03|Common|Big Insect|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB04|Common|Basic Insect|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB05|Common|Winged Cleaver|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB06|Common|Kumootoko|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB07|Common|Alinsection|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB08|Common|Insect Queen|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB09|Common|Cocoon of Evolution|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB10|Common|Man-Eater Bug|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB11|Common|Pinch Hopper|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB12|Common|Insect Princess|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB13|Common|Gokipon|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB14|Common|Bee List Soldier|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB15|Common|Beetron|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB16|Common|Laser Cannon Armor|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB17|Common|Forest|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB18|Common|Verdant Sanctuary|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB19|Common|Insect Neglect|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB20|Common|Worm Bait|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB21|Common|Enchanting Fitting Room|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB22|Common|Dark Factory of Mass Production|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB23|Common|Amulet of Ambition|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB24|Common|White Elephant's Gift|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB25|Common|Eradicating Aerosol|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB26|Common|Spider Egg|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB27|Common|Corrosive Scales|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB28|Common|Adhesion Trap Hole|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENB29|Common|Order to Smash|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENV01|Ultra Rare|Order to Charge|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS03-ENV02|Ultra Rare|Jar of Avarice|SPEED DUEL STARTER DECKS: ULTIMATE PREDATORS
+SS04-ENA01|Common|Dark Magician|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA02|Common|Gaia The Fierce Knight|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA03|Common|Curse of Dragon|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA04|Common|Winged Dragon, Guardian of the Fortress #1|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA05|Common|Beaver Warrior|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA06|Common|Celtic Guardian|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA07|Common|Silver Fang|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA08|Common|Giant Soldier of Stone|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA09|Common|Shadow Specter|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA10|Common|Charging Gaia the Fierce Knight|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA11|Common|Senju of the Thousand Hands|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA12|Common|Old Vindictive Magician|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA13|Common|Kuriboh|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA14|Common|Magician of Faith|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA15|Common|Sphere Kuriboh|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA16|Common|Black Luster Soldier|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA17|Common|Black Luster Ritual|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA18|Common|Polymerization|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA19|Common|Soul Release|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA20|Common|Spell Shattering Arrow|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA21|Common|Spiral Spear Strike|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA22|Common|Twister|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA23|Common|Summoner's Art|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA24|Common|Fighting Spirit|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA25|Common|White Elephant's Gift|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA26|Common|Goblin Circus|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA27|Common|Backup Squad|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA28|Common|Spellbinding Circle|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA29|Common|Magic Jammer|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA30|Common|Eliminating the League|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENA31|Common|Gaia the Dragon Champion|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB01|Common|Thousand-Eyes Idol|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB02|Common|Illusionist Faceless Mage|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB03|Common|Toon Alligator|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB04|Common|Red Archery Girl|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB05|Common|Manga Ryu-Ran|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB06|Common|Toon Barrel Dragon|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB07|Common|Toon Buster Blader|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB08|Common|Toon Dark Magician|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB09|Common|Toon Summoned Skull|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB10|Common|Toon Mermaid|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB11|Common|Toon Masked Sorcerer|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB12|Common|Toon Gemini Elf|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB13|Common|Illusionist Faceless Magician|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB14|Common|Sonic Bird|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB15|Common|Djinn Prognosticator of Rituals|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB16|Common|Djinn Disserere of Rituals|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB17|Common|Relinquished|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB18|Common|Black Illusion Ritual|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB19|Common|Toon World|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB20|Common|Toon Table of Contents|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB21|Common|Toon Rollback|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB22|Common|Polymerization|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB23|Common|Fulfillment of the Contract|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB24|Common|Toon Mask|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB25|Common|Seven Tools of the Bandit|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB26|Common|Dust Tornado|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB27|Common|Shield Spear|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB28|Common|Security Orb|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB29|Common|Skill Successor|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENB30|Common|Thousand-Eyes Restrict|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENV01|Ultra Rare|Advanced Ritual Art|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS04-ENV02|Ultra Rare|D.D. Crow|SPEED DUEL STARTER DECKS: MATCH OF THE MILLENNIUM
+SS05-ENA01|Common|Dark Necrofear|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA02|Common|Neck Hunter|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA03|Common|The Earl of Demise|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA04|Common|That Which Feeds on Life|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA05|Common|Whiptail Crow|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA06|Common|The Gross Ghost of Fled Dreams|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA07|Common|Headless Knight|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA08|Common|Earthbound Spirit|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA09|Common|The Shadow Who Controls the Dark|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA10|Common|Gaap the Divine Soldier|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA11|Common|Dark Ruler Ha Des|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA12|Common|Puppet Master|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA13|Common|Lesser Fiend|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA14|Common|Twin-Headed Wolf|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA15|Common|Prometheus, King of the Shadows|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA16|Common|Lancer Archfiend|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA17|Common|Dark Mimic LV3|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA18|Common|Dark Mimic LV1|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA19|Common|Mask of Darkness|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA20|Common|Mad Reloader|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA21|Common|Sword of Dark Destruction|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA22|Common|Offerings to the Doomed|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA23|Common|Twister|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA24|Common|Dark Eruption|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA25|Common|Veil of Darkness|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA26|Common|Allure of Darkness|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA27|Common|Creeping Darkness|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA28|Common|Zoma the Spirit|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA29|Common|Common Charity|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENA30|Common|The Forceful Checkpoint|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB01|Common|Lava Golem|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB02|Common|Yaiba Robo|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB03|Common|Brave Scizzar|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB04|Common|Melchid the Four-Face Beast|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB05|Common|Gil Garth|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB06|Common|Dark Prisoner|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB07|Common|Dokuroyaiba|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB08|Common|Dark Lucius LV8|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB09|Common|Dark Lucius LV6|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB10|Common|Dark Lucius LV4|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB11|Common|Legendary Fiend|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB12|Common|Byser Shock|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB13|Common|Helpoemer|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB14|Common|Mefist the Infernal General|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB15|Common|Lady Assailant of Flames|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB16|Common|Viser Des|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB17|Common|Newdoria|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB18|Common|Dark Jeroid|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB19|Common|Drillago|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB20|Common|Bowganian|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB21|Common|Tribute to The Doomed|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB22|Common|Level Up!|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB23|Common|Creature Seizure|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB24|Common|Faustian Bargain|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB25|Common|Supply Squad|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB26|Common|Rope of Life|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB27|Common|Nightmare Wheel|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB28|Common|Coffin Seller|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB29|Common|Metal Reflect Slime|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENB30|Common|Prideful Roar|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENV01|Ultra Rare|Santa Claws|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SS05-ENV02|Ultra Rare|Magical Stone Excavation|SPEED DUEL STARTER DECKS: TWISTED NIGHTMARES
+SBCB-EN001|Common|Dark Magician|Speed Duel: Battle City Box
+SBCB-EN002|Common|Aqua Madoor|Speed Duel: Battle City Box
+SBCB-EN003|Common|Buster Blader|Speed Duel: Battle City Box
+SBCB-EN004|Common|Archfiend of Gilfer|Speed Duel: Battle City Box
+SBCB-EN005|Common|Swift Gaia the Fierce Knight|Speed Duel: Battle City Box
+SBCB-EN006|Common|Kycoo the Ghost Destroyer|Speed Duel: Battle City Box
+SBCB-EN007|Common|Skilled White Magician|Speed Duel: Battle City Box
+SBCB-EN008|Common|Breaker the Magical Warrior|Speed Duel: Battle City Box
+SBCB-EN009|Common|Skilled Red Magician|Speed Duel: Battle City Box
+SBCB-EN010|Common|Dark Magic Curtain|Speed Duel: Battle City Box
+SBCB-EN011|Common|Polymerization|Speed Duel: Battle City Box
+SBCB-EN012|Common|De-Fusion|Speed Duel: Battle City Box
+SBCB-EN013|Common|Book of Moon|Speed Duel: Battle City Box
+SBCB-EN014|Common|Emblem of Dragon Destroyer|Speed Duel: Battle City Box
+SBCB-EN015|Common|Destruction Swordsman Fusion|Speed Duel: Battle City Box
+SBCB-EN016|Common|Fusion Recycling Plant|Speed Duel: Battle City Box
+SBCB-EN017|Common|Magical Hats|Speed Duel: Battle City Box
+SBCB-EN018|Common|Fairy Wind|Speed Duel: Battle City Box
+SBCB-EN019|Common|Darklight|Speed Duel: Battle City Box
+SBCB-EN020|Common|Metaverse|Speed Duel: Battle City Box
+SBCB-EN021|Common|Dark Paladin|Speed Duel: Battle City Box
+SBCB-EN022|Common|Valkyrion the Magna Warrior|Speed Duel: Battle City Box
+SBCB-EN023|Common|Alpha The Magnet Warrior|Speed Duel: Battle City Box
+SBCB-EN024|Common|Beta The Magnet Warrior|Speed Duel: Battle City Box
+SBCB-EN025|Common|Gamma The Magnet Warrior|Speed Duel: Battle City Box
+SBCB-EN026|Common|Delta The Magnet Warrior|Speed Duel: Battle City Box
+SBCB-EN027|Common|Giant Soldier of Stone|Speed Duel: Battle City Box
+SBCB-EN028|Common|Destroyer Golem|Speed Duel: Battle City Box
+SBCB-EN029|Common|The Rock Spirit|Speed Duel: Battle City Box
+SBCB-EN030|Common|Granmarg the Rock Monarch|Speed Duel: Battle City Box
+SBCB-EN031|Common|Absorbing Jar|Speed Duel: Battle City Box
+SBCB-EN032|Common|Block Golem|Speed Duel: Battle City Box
+SBCB-EN033|Common|Attack the Moon!|Speed Duel: Battle City Box
+SBCB-EN034|Common|Magnetic Field|Speed Duel: Battle City Box
+SBCB-EN035|Common|Zero Gravity|Speed Duel: Battle City Box
+SBCB-EN036|Common|Mind Crush|Speed Duel: Battle City Box
+SBCB-EN037|Common|Rock Bombardment|Speed Duel: Battle City Box
+SBCB-EN038|Common|Sealing Ceremony of Mokuton|Speed Duel: Battle City Box
+SBCB-EN039|Common|Unbreakable Spirit|Speed Duel: Battle City Box
+SBCB-EN040|Common|Magnet Force|Speed Duel: Battle City Box
+SBCB-EN041|Common|Magnet Conversion|Speed Duel: Battle City Box
+SBCB-EN042|Common|Gazelle the King of Mythical Beasts|Speed Duel: Battle City Box
+SBCB-EN043|Common|Berfomet|Speed Duel: Battle City Box
+SBCB-EN044|Common|Phantom Beast Cross-Wing|Speed Duel: Battle City Box
+SBCB-EN045|Common|Phantom Beast Wild-Horn|Speed Duel: Battle City Box
+SBCB-EN046|Common|Phantom Beast Thunder-Pegasus|Speed Duel: Battle City Box
+SBCB-EN047|Common|Giant Rat|Speed Duel: Battle City Box
+SBCB-EN048|Common|Bazoo the Soul-Eater|Speed Duel: Battle City Box
+SBCB-EN049|Common|Manticore of Darkness|Speed Duel: Battle City Box
+SBCB-EN050|Common|Enraged Battle Ox|Speed Duel: Battle City Box
+SBCB-EN051|Common|Ghost Knight of Jackal|Speed Duel: Battle City Box
+SBCB-EN052|Common|Behemoth the King of All Animals|Speed Duel: Battle City Box
+SBCB-EN053|Common|Green Baboon, Defender of the Forest|Speed Duel: Battle City Box
+SBCB-EN054|Common|Wild Nature's Release|Speed Duel: Battle City Box
+SBCB-EN055|Common|The Big March of Animals|Speed Duel: Battle City Box
+SBCB-EN056|Common|Spiritual Forest|Speed Duel: Battle City Box
+SBCB-EN057|Common|Fire Formation - Tenki|Speed Duel: Battle City Box
+SBCB-EN058|Common|The Big Cattle Drive|Speed Duel: Battle City Box
+SBCB-EN059|Common|Riryoku Field|Speed Duel: Battle City Box
+SBCB-EN060|Common|Howl of the Wild|Speed Duel: Battle City Box
+SBCB-EN061|Common|Horn of the Phantom Beast|Speed Duel: Battle City Box
+SBCB-EN062|Common|Chimera the Flying Mythical Beast|Speed Duel: Battle City Box
+SBCB-EN063|Common|X-Head Cannon|Speed Duel: Battle City Box
+SBCB-EN064|Common|Y-Dragon Head|Speed Duel: Battle City Box
+SBCB-EN065|Common|Z-Metal Tank|Speed Duel: Battle City Box
+SBCB-EN066|Common|Heavy Mech Support Platform|Speed Duel: Battle City Box
+SBCB-EN067|Common|Victory Viper XX03|Speed Duel: Battle City Box
+SBCB-EN068|Common|DUCKER Mobile Cannon|Speed Duel: Battle City Box
+SBCB-EN069|Common|Jade Knight|Speed Duel: Battle City Box
+SBCB-EN070|Common|Falchionβ|Speed Duel: Battle City Box
+SBCB-EN071|Common|Machina Gearframe|Speed Duel: Battle City Box
+SBCB-EN072|Common|Machina Peacekeeper|Speed Duel: Battle City Box
+SBCB-EN073|Common|Delta Tri|Speed Duel: Battle City Box
+SBCB-EN074|Common|United We Stand|Speed Duel: Battle City Box
+SBCB-EN075|Common|Frontline Base|Speed Duel: Battle City Box
+SBCB-EN076|Common|Machine Assembly Line|Speed Duel: Battle City Box
+SBCB-EN077|Common|Union Hangar|Speed Duel: Battle City Box
+SBCB-EN078|Common|Solitary Sword of Poison|Speed Duel: Battle City Box
+SBCB-EN079|Common|Formation Union|Speed Duel: Battle City Box
+SBCB-EN080|Common|Rare Metalmorph|Speed Duel: Battle City Box
+SBCB-EN081|Common|Roll Out!|Speed Duel: Battle City Box
+SBCB-EN082|Common|Union Scramble|Speed Duel: Battle City Box
+SBCB-EN083|Common|XY-Dragon Cannon|Speed Duel: Battle City Box
+SBCB-EN084|Common|XYZ-Dragon Cannon|Speed Duel: Battle City Box
+SBCB-EN085|Common|XZ-Tank Cannon|Speed Duel: Battle City Box
+SBCB-EN086|Common|YZ-Tank Dragon|Speed Duel: Battle City Box
+SBCB-EN087|Common|Blue-Eyes White Dragon|Speed Duel: Battle City Box
+SBCB-EN088|Common|Saggi the Dark Clown|Speed Duel: Battle City Box
+SBCB-EN089|Common|Swordstalker|Speed Duel: Battle City Box
+SBCB-EN090|Common|La Jinn the Mystical Genie of the Lamp|Speed Duel: Battle City Box
+SBCB-EN091|Common|Vorse Raider|Speed Duel: Battle City Box
+SBCB-EN092|Common|Dark Blade|Speed Duel: Battle City Box
+SBCB-EN093|Common|Maha Vailo|Speed Duel: Battle City Box
+SBCB-EN094|Common|Zombyra the Dark|Speed Duel: Battle City Box
+SBCB-EN095|Common|Spear Dragon|Speed Duel: Battle City Box
+SBCB-EN096|Common|Kaiser Glider|Speed Duel: Battle City Box
+SBCB-EN097|Common|Fiend's Sanctuary|Speed Duel: Battle City Box
+SBCB-EN098|Common|Soul Exchange|Speed Duel: Battle City Box
+SBCB-EN099|Common|Shrink|Speed Duel: Battle City Box
+SBCB-EN100|Common|Mage Power|Speed Duel: Battle City Box
+SBCB-EN101|Common|Silent Doom|Speed Duel: Battle City Box
+SBCB-EN102|Common|Acid Trap Hole|Speed Duel: Battle City Box
+SBCB-EN103|Common|Negate Attack|Speed Duel: Battle City Box
+SBCB-EN104|Common|Magic Drain|Speed Duel: Battle City Box
+SBCB-EN105|Common|Final Attack Orders|Speed Duel: Battle City Box
+SBCB-EN106|Common|Inspiration|Speed Duel: Battle City Box
+SBCB-EN107|Common|Masked Beast Des Gardius|Speed Duel: Battle City Box
+SBCB-EN108|Common|Shining Abyss|Speed Duel: Battle City Box
+SBCB-EN109|Common|Grand Tiki Elder|Speed Duel: Battle City Box
+SBCB-EN110|Common|Melchid the Four-Face Beast|Speed Duel: Battle City Box
+SBCB-EN111|Common|Beast of Talwar|Speed Duel: Battle City Box
+SBCB-EN112|Common|Opticlops|Speed Duel: Battle City Box
+SBCB-EN113|Common|Wall of Illusion|Speed Duel: Battle City Box
+SBCB-EN114|Common|Night Assailant|Speed Duel: Battle City Box
+SBCB-EN115|Common|Ritual Raven|Speed Duel: Battle City Box
+SBCB-EN116|Common|The Masked Beast|Speed Duel: Battle City Box
+SBCB-EN117|Common|Nobleman of Extermination|Speed Duel: Battle City Box
+SBCB-EN118|Common|Mask of Brutality|Speed Duel: Battle City Box
+SBCB-EN119|Common|The Mask of Remnants|Speed Duel: Battle City Box
+SBCB-EN120|Common|Curse of the Masked Beast|Speed Duel: Battle City Box
+SBCB-EN121|Common|Pre-Preparation of Rites|Speed Duel: Battle City Box
+SBCB-EN122|Common|Widespread Ruin|Speed Duel: Battle City Box
+SBCB-EN123|Common|Mask of Weakness|Speed Duel: Battle City Box
+SBCB-EN124|Common|Bark of Dark Ruler|Speed Duel: Battle City Box
+SBCB-EN125|Common|Soul Demolition|Speed Duel: Battle City Box
+SBCB-EN126|Common|Dark Smog|Speed Duel: Battle City Box
+SBCB-EN127|Common|Keldo|Speed Duel: Battle City Box
+SBCB-EN128|Common|Mudora|Speed Duel: Battle City Box
+SBCB-EN129|Common|Zolga|Speed Duel: Battle City Box
+SBCB-EN130|Common|Kelbek|Speed Duel: Battle City Box
+SBCB-EN131|Common|Skelengel|Speed Duel: Battle City Box
+SBCB-EN132|Common|Airknight Parshath|Speed Duel: Battle City Box
+SBCB-EN133|Common|Moisture Creature|Speed Duel: Battle City Box
+SBCB-EN134|Common|Guardian Angel Joan|Speed Duel: Battle City Box
+SBCB-EN135|Common|Angel O7|Speed Duel: Battle City Box
+SBCB-EN136|Common|Dimensional Alchemist|Speed Duel: Battle City Box
+SBCB-EN137|Common|Bonze Alone|Speed Duel: Battle City Box
+SBCB-EN138|Common|Nobleman of Crossout|Speed Duel: Battle City Box
+SBCB-EN139|Common|Foolish Burial|Speed Duel: Battle City Box
+SBCB-EN140|Common|Cestus of Dagla|Speed Duel: Battle City Box
+SBCB-EN141|Common|Valhalla, Hall of the Fallen|Speed Duel: Battle City Box
+SBCB-EN142|Common|Cosmic Cyclone|Speed Duel: Battle City Box
+SBCB-EN143|Common|Waboku|Speed Duel: Battle City Box
+SBCB-EN144|Common|Rope of Life|Speed Duel: Battle City Box
+SBCB-EN145|Common|Drop Off|Speed Duel: Battle City Box
+SBCB-EN146|Common|Lost Wind|Speed Duel: Battle City Box
+SBCB-EN147|Common|Jinzo|Speed Duel: Battle City Box
+SBCB-EN148|Common|The Fiend Megacyber|Speed Duel: Battle City Box
+SBCB-EN149|Common|Freed the Matchless General|Speed Duel: Battle City Box
+SBCB-EN150|Common|Mysterious Guard|Speed Duel: Battle City Box
+SBCB-EN151|Common|Exiled Force|Speed Duel: Battle City Box
+SBCB-EN152|Common|Swarm of Scarabs|Speed Duel: Battle City Box
+SBCB-EN153|Common|Swarm of Locusts|Speed Duel: Battle City Box
+SBCB-EN154|Common|Des Lacooda|Speed Duel: Battle City Box
+SBCB-EN155|Common|Dark Scorpion - Gorg the Strong|Speed Duel: Battle City Box
+SBCB-EN156|Common|Dark Scorpion - Meanae the Thorn|Speed Duel: Battle City Box
+SBCB-EN157|Common|Amplifier|Speed Duel: Battle City Box
+SBCB-EN158|Common|Lightning Blade|Speed Duel: Battle City Box
+SBCB-EN159|Common|Creature Swap|Speed Duel: Battle City Box
+SBCB-EN160|Common|Reinforcement of the Army|Speed Duel: Battle City Box
+SBCB-EN161|Common|The Warrior Returning Alive|Speed Duel: Battle City Box
+SBCB-EN162|Common|Hammer Shot|Speed Duel: Battle City Box
+SBCB-EN163|Common|Hidden Armory|Speed Duel: Battle City Box
+SBCB-EN164|Common|Draining Shield|Speed Duel: Battle City Box
+SBCB-EN165|Common|Psychic Shockwave|Speed Duel: Battle City Box
+SBCB-EN166|Common|Battleguard Rage|Speed Duel: Battle City Box
+SBCB-EN167|Common|Red-Eyes Black Dragon|Speed Duel: Battle City Box
+SBCB-EN168|Common|Dunames Dark Witch|Speed Duel: Battle City Box
+SBCB-EN169|Common|Ally of Justice Clausolas|Speed Duel: Battle City Box
+SBCB-EN170|Common|Hannibal Necromancer|Speed Duel: Battle City Box
+SBCB-EN171|Common|Banisher of the Light|Speed Duel: Battle City Box
+SBCB-EN172|Common|Rocket Warrior|Speed Duel: Battle City Box
+SBCB-EN173|Common|Cyber Harpie Lady|Speed Duel: Battle City Box
+SBCB-EN174|Common|Spell Canceller|Speed Duel: Battle City Box
+SBCB-EN175|Common|Strike Ninja|Speed Duel: Battle City Box
+SBCB-EN176|Common|Blowback Dragon|Speed Duel: Battle City Box
+SBCB-EN177|Common|Regenerating Mummy|Speed Duel: Battle City Box
+SBCB-EN178|Common|Pitch-Black Warwolf|Speed Duel: Battle City Box
+SBCB-EN179|Common|Banisher of the Radiance|Speed Duel: Battle City Box
+SBCB-EN180|Common|Twin-Barrel Dragon|Speed Duel: Battle City Box
+SBCB-EN181|Common|Skilled Blue Magician|Speed Duel: Battle City Box
+SBCB-EN182|Common|Buster Blader, the Destruction Swordmaster|Speed Duel: Battle City Box
+SBCB-EN183|Common|Performance of Sword|Speed Duel: Battle City Box
+SBCB-EN184|Common|Dokurorider|Speed Duel: Battle City Box
+SBCB-EN185|Common|Paladin of White Dragon|Speed Duel: Battle City Box
+SBCB-EN186|Common|Commencement Dance|Speed Duel: Battle City Box
+SBCB-EN187|Common|Revival of Dokurorider|Speed Duel: Battle City Box
+SBCB-EN188|Common|Magic Formula|Speed Duel: Battle City Box
+SBCB-EN189|Common|White Dragon Ritual|Speed Duel: Battle City Box
+SBCB-EN190|Common|Archfiend's Oath|Speed Duel: Battle City Box
+SBCB-EN191|Common|Storm|Speed Duel: Battle City Box
+SBCB-EN192|Common|The Puppet Magic of Dark Ruler|Speed Duel: Battle City Box
+SBCB-EN193|Common|Mirror Wall|Speed Duel: Battle City Box
+SBCB-EN194|Common|Judgment of Anubis|Speed Duel: Battle City Box
+SBCB-EN195|Common|Embodiment of Apophis|Speed Duel: Battle City Box
+SBCB-EN196|Common|Spell Purification|Speed Duel: Battle City Box
+SBCB-EN197|Common|Machine King - 3000 B.C.|Speed Duel: Battle City Box
+SBCB-EN198|Common|Copy Knight|Speed Duel: Battle City Box
+SBCB-EN199|Common|Swamp Mirrorer|Speed Duel: Battle City Box
+SBCB-EN200|Common|Quantum Cat|Speed Duel: Battle City Box
+SBCB-EN201|Secret Rare|Slifer the Sky Dragon|Speed Duel: Battle City Box
+SBCB-EN202|Secret Rare|Obelisk the Tormentor|Speed Duel: Battle City Box
+SBCB-EN203|Secret Rare|The Winged Dragon of Ra|Speed Duel: Battle City Box
+SBCB-EN003|Secret Rare|Buster Blader|Speed Duel: Battle City Box
+SBCB-EN008|Secret Rare|Breaker the Magical Warrior|Speed Duel: Battle City Box
+SBCB-EN020|Secret Rare|Metaverse|Speed Duel: Battle City Box
+SBCB-EN057|Secret Rare|Fire Formation - Tenki|Speed Duel: Battle City Box
+SBCB-EN142|Secret Rare|Cosmic Cyclone|Speed Duel: Battle City Box
+OPTP-EN004|Super Rare|Elemental HERO Sparkman|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA01|Common|Elemental HERO Avian|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA02|Common|Elemental HERO Burstinatrix|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA03|Common|Elemental HERO Clayman|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA04|Common|Elemental HERO Sparkman|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA05|Common|Goddess with the Third Eye|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA06|Common|Winged Kuriboh|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA07|Common|Wroughtweiler|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA08|Common|Elemental HERO Bubbleman|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA09|Common|Elemental HERO Bladedge|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA10|Common|Elemental HERO Wildheart|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA11|Common|Elemental HERO Necroshade|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA12|Common|Polymerization|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA13|Common|Fusion Sage|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA14|Common|Reinforcement of the Army|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA15|Common|Skyscraper|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA16|Common|Fusion Recovery|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA17|Common|R - Righteous Justice|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA18|Common|Negate Attack|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA19|Common|A Hero Emerges|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA20|Common|Hero Signal|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA21|Common|Elemental HERO Flame Wingman|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA22|Common|Elemental HERO Thunder Giant|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA23|Common|Elemental HERO Rampart Blaster|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA24|Common|Elemental HERO Steam Healer|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA25|Common|Elemental HERO Darkbright|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA26|Common|Elemental HERO Plasma Vice|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB01|Common|Destiny HERO - Plasma|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB02|Common|Destiny HERO - Doom Lord|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB03|Common|Destiny HERO - Diamond Dude|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB04|Common|Destiny HERO - Blade Master|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB05|Common|Destiny HERO - Dasher|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB06|Common|Destiny HERO - Fear Monger|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB07|Common|Destiny HERO - Dogma|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB08|Common|Destiny HERO - Malicious|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB09|Common|Destiny HERO - Dark Angel|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB10|Common|Polymerization|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB11|Common|Reinforcement of the Army|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB12|Common|Fusion Sword Murasame Blade|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB13|Common|Dark City|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB14|Common|D - Spirit|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB15|Common|Over Destiny|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB16|Common|Night Beam|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB17|Common|Destiny Signal|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB18|Common|D - Chain|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB19|Common|D - Counter|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB20|Common|Destiny End Dragoon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB21|Common|Destiny HERO - Dangerous|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC01|Common|Ojama Yellow|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC02|Common|Ojama Green|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC03|Common|Ojama Black|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC04|Common|V-Tiger Jet|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC05|Common|Chiron the Mage|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC06|Common|Armed Dragon LV3|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC07|Common|Armed Dragon LV5|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC08|Common|Armed Dragon LV7|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC09|Common|W-Wing Catapult|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC10|Common|Ojama Red|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC11|Common|Ojama Blue|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC12|Common|Polymerization|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC13|Common|Ojama Delta Hurricane!!|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC14|Common|Ojamagic|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC15|Common|Tri-Wight|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC16|Common|Ojamatch|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC17|Common|The Grave of Enkindling|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC18|Common|Super Rush Recklessly|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC19|Common|Spikeshield with Chain|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC20|Common|Wall of Disruption|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC21|Common|Ojama King|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC22|Common|VW-Tiger Catapult|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC23|Common|Ojama Knight|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END01|Common|Ancient Gear Golem|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END02|Common|Mechanicalchaser|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END03|Common|Giant Rat|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END04|Common|The Trojan Horse|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END05|Common|Dekoichi the Battlechanted Locomotive|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END06|Common|Ancient Gear Beast|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END07|Common|Ancient Gear Soldier|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END08|Common|Ancient Gear|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END09|Common|Ancient Gear Engineer|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END10|Common|Ancient Gear Knight|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END11|Common|Ancient Gear Gadget|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END12|Common|Earthquake|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END13|Common|Ancient Gear Castle|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END14|Common|Geartown|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END15|Common|Double Cyclone|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END16|Common|Card Advance|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END17|Common|Metalmorph|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END18|Common|Statue of the Wicked|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END19|Common|Damage Condenser|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END20|Common|Miniaturize|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-END21|Common|Ultimate Ancient Gear Golem|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE01|Common|Blade Skater|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE02|Common|Senju of the Thousand Hands|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE03|Common|Sonic Bird|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE04|Common|D.D. Warrior Lady|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE05|Common|Warrior Lady of the Wasteland|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE06|Common|Etoile Cyber|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE07|Common|Cyber Tutu|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE08|Common|Cyber Gymnast|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE09|Common|Cyber Prima|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE10|Common|Cyber Angel Benten|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE11|Common|Cyber Angel Idaten|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE12|Common|Cyber Angel Izana|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE13|Common|The Warrior Returning Alive|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE14|Common|Ritual Weapon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE15|Common|Machine Angel Ritual|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE16|Common|Berserk Scales|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE17|Common|Cosmic Cyclone|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE18|Common|Hallowed Life Barrier|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE19|Common|Doble Passe|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE20|Common|Jar of Avarice|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENE21|Common|Cyber Blader|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF01|Common|Rainbow Dragon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF02|Common|Crystal Beast Amethyst Cat|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF03|Common|Crystal Beast Amber Mammoth|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF04|Common|Crystal Beast Ruby Carbuncle|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF05|Common|Crystal Beast Emerald Tortoise|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF06|Common|Crystal Beast Topaz Tiger|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF07|Common|Crystal Beast Cobalt Eagle|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF08|Common|Crystal Beast Sapphire Pegasus|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF09|Common|Crystal Seer|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF10|Common|Ancient City - Rainbow Ruins|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF11|Common|Rare Value|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF12|Common|Crystal Blessing|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF13|Common|Crystal Promise|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF14|Common|Crystal Release|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF15|Common|Crystal Tree|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF16|Common|Crystal Raigeki|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF17|Common|Rainbow Life|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF18|Common|Rainbow Gravity|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF19|Common|Gravelstorm|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF20|Common|Crystal Conclave|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF21|Common|Rainbow Overdragon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG01|Common|Cyber Dragon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG02|Common|Hunter Dragon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG03|Common|Proto-Cyber Dragon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG04|Common|Cyber Phoenix|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG05|Common|Cyberdark Horn|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG06|Common|Cyberdark Edge|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG07|Common|Cyberdark Keel|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG08|Common|Exploder Dragon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG09|Common|Cyber Valley|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG10|Common|Cyberdark Claw|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG11|Common|Polymerization|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG12|Common|Different Dimension Capsule|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG13|Common|Future Fusion|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG14|Common|Overload Fusion|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG15|Common|Cyberdark Impact!|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG16|Common|Trap Jammer|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG17|Common|Cyber Shadow Gardna|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG18|Common|Straight Flush|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG19|Common|Memory Loss|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG20|Common|Cyber Network|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG21|Common|Cyber End Dragon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG22|Common|Chimeratech Overdragon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENG23|Common|Cyberdark Dragon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH01|Common|Volcanic Doomfire|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH02|Common|Blazing Inpachi|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH03|Common|Charcoal Inpachi|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH04|Common|UFO Turtle|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH05|Common|Spirit of Flames|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH06|Common|Raging Flame Sprite|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH07|Common|Volcanic Shell|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH08|Common|Volcanic Blaster|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH09|Common|Volcanic Hammerer|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH10|Common|Volcanic Rocket|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH11|Common|Royal Firestorm Guards|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH12|Common|Salamandra|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH13|Common|Twister|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH14|Common|Blaze Accelerator|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH15|Common|Tri-Blaze Accelerator|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH16|Common|Wild Fire|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH17|Common|Michizure|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH18|Common|Covering Fire|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH19|Common|Firewall|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI01|Common|Hourglass of Life|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI02|Common|Big Koala|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI03|Common|Mokey Mokey|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI04|Common|Don Zaloog|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI05|Common|Apprentice Magician|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI06|Common|Des Kangaroo|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI07|Common|Gyroid|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI08|Common|Hydrogeddon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI09|Common|Rainbow Dark Dragon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI10|Common|Black Brachios|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI11|Common|Toon Ancient Gear Golem|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI12|Common|Sphere Kuriboh|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI13|Common|Master of Oz|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI14|Common|VWXYZ-Dragon Catapult Cannon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI15|Common|Book of Moon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI16|Common|Fusion Weapon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI17|Common|Mokey Mokey Smackdown|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI18|Common|Crystal Beacon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI19|Common|Ojama Country|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI20|Common|Advanced Dark|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI21|Common|Rising Energy|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI22|Common|Justi-Break|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI23|Common|Floodgate Trap Hole|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA06|Secret Rare|Winged Kuriboh|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENA12|Secret Rare|Polymerization|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENB01|Secret Rare|Destiny HERO - Plasma|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENC21|Secret Rare|Ojama King|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENF01|Secret Rare|Rainbow Dragon|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH01|Secret Rare|Volcanic Doomfire|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENH10|Secret Rare|Volcanic Rocket|SPEED DUEL GX: DUEL ACADEMY BOX
+SGX1-ENI23|Secret Rare|Floodgate Trap Hole|SPEED DUEL GX: DUEL ACADEMY BOX
+OPTP-EN005|Super Rare|Skyscraper 2 - Hero City|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA01|Common|Elemental HERO Avian|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA02|Common|Elemental HERO Burstinatrix|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA03|Common|Elemental HERO Clayman|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA04|Common|Elemental HERO Sparkman|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA05|Common|Goddess with the Third Eye|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA06|Common|Winged Kuriboh|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA07|Common|Dark Catapulter|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA08|Common|Elemental HERO Bubbleman|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA09|Common|Elemental HERO Bladedge|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA10|Common|Elemental HERO Wildheart|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA11|Common|Elemental HERO Blazeman|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA12|Common|Polymerization|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA13|Common|H - Heated Heart|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA14|Common|R - Righteous Justice|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA15|Common|Skyscraper 2 - Hero City|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA16|Common|A Hero Lives|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA17|Common|Sabatiel - The Philosopher's Stone|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA18|Common|Hero Signal|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA19|Common|Hero Ring|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA20|Common|Hero Counterattack|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA21|Common|Elemental HERO Tempest|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA22|Common|Elemental HERO Electrum|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA23|Common|Elemental HERO Wild Wingman|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA24|Common|Elemental HERO Mariner|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA25|Common|Elemental HERO Nova Master|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB01|Common|Cycroid|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB02|Common|Gyroid|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB03|Common|Steamroid|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB04|Common|Drillroid|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB05|Common|UFOroid|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB06|Common|Mechanical Hound|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB07|Common|Expressroid|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB08|Common|Ambulanceroid|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB09|Common|Submarineroid|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB10|Common|Stealthroid|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB11|Common|Truckroid|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB12|Common|Rescueroid|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB13|Common|Mixeroid|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB14|Common|Weapon Change|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB15|Common|Shield Crush|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB16|Common|Vehicroid Connection Zone|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB17|Common|Twister|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB18|Common|Supercharge|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB19|Common|Wonder Garage|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB20|Common|Emergeroid Call|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB21|Common|Steam Gyroid|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB22|Common|Super Vehicroid Jumbo Drill|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB23|Common|Ambulance Rescueroid|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENB24|Common|Super Vehicroid - Stealth Union|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC01|Common|Water Dragon|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC02|Common|Hyozanryu|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC03|Common|Hydrogeddon|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC04|Common|Oxygeddon|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC05|Common|Jurrac Protops|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC06|Common|Jurrac Iguanon|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC07|Common|Carboneddon|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC08|Common|Dogoran, the Mad Flame Kaiju|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC09|Common|Water Dragon Cluster|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC10|Common|Duoterion|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC11|Common|Riryoku|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC12|Common|Scroll of Bewitchment|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC13|Common|A Legendary Ocean|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC14|Common|Bonding - H2O|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC15|Common|Bonding - D2O|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC16|Common|Living Fossil|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC17|Common|Cursed Seal of the Forbidden Spell|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC18|Common|Bonding - DHO|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END01|Common|Gate Guardian|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END02|Common|Labyrinth Wall|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END03|Common|Crass Clown|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END04|Common|Dream Clown|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END05|Common|Jirai Gumo|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END06|Common|Shadow Ghoul|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END07|Common|Sanga of the Thunder|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END08|Common|Kazejin|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END09|Common|Suijin|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END10|Common|Stone Statue of the Aztecs|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END11|Common|Ryu-Kishin Clown|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END12|Common|Kaiser Sea Horse|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END13|Common|Unshaven Angler|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END14|Common|Whirlwind Prodigy|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END15|Common|Soul Exchange|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END16|Common|Fairy Meteor Crush|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END17|Common|Tribute Doll|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END18|Common|Double Summon|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END19|Common|Judgment of Anubis|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END20|Common|Labyrinth of Nightmare|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENE01|Common|Des Koala|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENE02|Common|White Magician Pikeru|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENE03|Common|Des Wombat|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENE04|Common|Frost and Flame Dragon|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENE05|Common|Sea Koala|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENE06|Common|Loud Cloud the Storm Serpent|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENE07|Common|Fifth Hope|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENE08|Common|Disposable Learner Device|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENE09|Common|Pikeru's Circle of Enchantment|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENE10|Common|UFOroid Fighter|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENE11|Common|Elemental HERO Necroid Shaman|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENA08|Secret Rare|Elemental HERO Bubbleman|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-ENC01|Secret Rare|Water Dragon|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END07|Secret Rare|Sanga of the Thunder|SPEED DUEL GX: MIDTERM PARADOX
+SGX2-END08|Secret Rare|Kazejin|SPEED DUEL GX: MIDTERM PARADOX
+SGX3-ENA01|Common|Evil HERO Malicious Edge|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA02|Common|Elemental HERO Avian|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA03|Common|Elemental HERO Burstinatrix|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA04|Common|Elemental HERO Clayman|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA05|Common|Elemental HERO Sparkman|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA06|Common|Elemental HERO Wildheart|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA07|Common|Evil HERO Infernal Gainer|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA08|Common|Evil HERO Infernal Prodigy|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA09|Common|Sand Moth|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA10|Common|Versago the Destroyer|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA11|Common|Dark Ruler Ha Des|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA12|Common|Absorbing Jar|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA13|Common|Dark Fusion|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA14|Common|Dark Calling|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA15|Common|Evil Mind|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA16|Common|Dark World Lightning|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA17|Common|Super Polymerization|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA18|Common|Hero Signal|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA19|Common|Dark Deal|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA20|Common|Windstorm of Etaqua|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA21|Common|Evil HERO Malicious Fiend|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA22|Common|Evil HERO Inferno Wing|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA23|Common|Evil HERO Wild Cyclone|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA24|Common|Evil HERO Dark Gaia|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA25|Common|Evil HERO Lightning Golem|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB01|Common|Red-Eyes Darkness Dragon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB02|Common|Red-Eyes Black Dragon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB03|Common|Luster Dragon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB04|Common|Luster Dragon #2|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB05|Common|Black Dragon's Chick|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB06|Common|Red-Eyes Wyvern|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB07|Common|Black Metal Dragon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB08|Common|Troop Dragon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB09|Common|Mirage Dragon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB10|Common|Spear Dragon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB11|Common|Vanguard of the Dragon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB12|Common|Totem Dragon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB13|Common|Stamping Destruction|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB14|Common|Dragon's Gunfire|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB15|Common|Cosmic Cyclone|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB16|Common|Swing of Memories|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB17|Common|Dragon's Rage|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB18|Common|Negate Attack|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENB19|Common|Red-Eyes Spirit|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC01|Common|Vampire Genesis|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC02|Common|Vampire Baby|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC03|Common|Vampire Familiar|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC04|Common|Vampire Lady|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC05|Common|Vampire Lord|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC06|Common|Vampire Retainer|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC07|Common|Vampire Sorcerer|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC08|Common|Vampire's Curse|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC09|Common|Zombina|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC10|Common|Goblin Zombie|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC11|Common|Plague Wolf|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC12|Common|Heavy Knight of the Flame|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC13|Common|Ryu Kokki|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC14|Common|Call of the Mummy|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC15|Common|Book of Life|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC16|Common|Foolish Burial|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC17|Common|Soul Exchange|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC18|Common|Vampire's Desire|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC19|Common|The Forceful Checkpoint|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENC20|Common|Vampire Awakening|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END01|Common|Amazoness Queen|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END02|Common|Amazoness Swords Woman|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END03|Common|Amazoness Tiger|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END04|Common|Amazoness Paladin|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END05|Common|Amazoness Chain Master|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END06|Common|Amazoness Fighter|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END07|Common|Amazoness Trainee|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END08|Common|Amazoness Sage|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END09|Common|Amazoness Scouts|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END10|Common|Battle Survivor|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END11|Common|Reinforcement of the Army|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END12|Common|Amazoness Heirloom|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END13|Common|Amazoness Village|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END14|Common|Amazoness Fighting Spirit|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END15|Common|Amazoness Spellcaster|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END16|Common|Amazoness Archers|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END17|Common|Amazoness Willpower|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END18|Common|Dramatic Rescue|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END19|Common|Queen's Pawn|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-END20|Common|Half Counter|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE01|Common|Skull Archfiend of Lightning|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE02|Common|Archfiend Soldier|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE03|Common|Terrorking Archfiend|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE04|Common|Infernalqueen Archfiend|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE05|Common|Vilepawn Archfiend|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE06|Common|Shadowknight Archfiend|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE07|Common|Darkbishop Archfiend|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE08|Common|Desrook Archfiend|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE09|Common|Giant Orc|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE10|Common|Mist Archfiend|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE11|Common|Annihilator Archfiend|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE12|Common|Archfiend General|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE13|Common|Foolish Burial|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE14|Common|Pandemonium|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE15|Common|Checkmate|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE16|Common|Axe of Despair|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE17|Common|Double Spell|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE18|Common|Archfiend's Roar|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE19|Common|Battle-Scarred|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENE20|Common|Bark of Dark Ruler|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF01|Common|Helios - The Primordial Sun|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF02|Common|Golden Homunculus|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF03|Common|Bazoo the Soul-Eater|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF04|Common|Chaosrider Gustaph|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF05|Common|Diskblade Rider|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF06|Common|D.D. Survivor|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF07|Common|D.D. Scout Plane|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF08|Common|D.D.M. - Different Dimension Master|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF09|Common|Banisher of the Radiance|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF10|Common|D.D. Crow|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF11|Common|D.D. Destroyer|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF12|Common|Gren Maju Da Eiza|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF13|Common|Tribe-Shocking Virus|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF14|Common|Soul Release|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF15|Common|Galaxy Cyclone|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF16|Common|Grand Convergence|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF17|Common|Different Dimension Gate|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF18|Common|Different Dimension Encounter|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF19|Common|Macro Cosmos|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENF20|Common|Curse of Aging|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG01|Secret Rare|Uria, Lord of Searing Flames|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG02|Secret Rare|Hamon, Lord of Striking Thunder|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG03|Secret Rare|Raviel, Lord of Phantasms|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG04|Common|Dark Summoning Beast|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG05|Common|Mad Reloader|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG06|Common|D-Boyz|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG07|Common|Gravitic Orb|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG08|Common|Goblin King|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG09|Common|Grave Protector|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG10|Common|Fallen Paradise|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG11|Common|Cerulean Skyfire|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG12|Common|Veil of Darkness|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG13|Common|Backup Squad|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG14|Common|Different Dimension Gate|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG15|Common|Awakening of the Sacred Beasts|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG16|Common|Unending Nightmare|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG17|Common|Aegis of Gaia|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG18|Common|Swamp Mirrorer|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENG19|Common|Final Attack Orders|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH01|Common|Fog King|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH02|Common|Cloudian - Eye of the Typhoon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH03|Common|Cloudian - Acid Cloud|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH04|Common|Cloudian - Altus|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH05|Common|Cloudian - Cirrostratus|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH06|Common|Cloudian - Ghost Fog|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH07|Common|Cloudian - Turbulence|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH08|Common|Cloudian - Smoke Ball|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH09|Common|Cloudian - Nimbusman|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH10|Common|Cloudian - Storm Dragon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH11|Common|Vortex Trooper|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH12|Common|Mother Grizzly|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH13|Common|Cloudian Aerosol|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH14|Common|Cloudian Squall|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH15|Common|Summon Cloud|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH16|Common|Diamond-Dust Cyclone|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH17|Common|Fog Control|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH18|Common|Raging Cloudian|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH19|Common|Rain Storm|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH20|Common|Wall of Disruption|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI01|Common|Dark Scorpion - Chick the Yellow|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI02|Common|Dark Scorpion - Cliff the Trap Remover|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI03|Common|Pharaoh's Servant|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI04|Common|Pharaonic Protector|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI05|Common|Spirit of the Pharaoh|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI06|Common|The First Sarcophagus|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI07|Common|The Second Sarcophagus|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI08|Common|The Third Sarcophagus|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI09|Common|Gagagigo|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI10|Common|Bitelon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI11|Common|Obsidian Dragon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI12|Common|Zure, Knight of Dark World|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI13|Common|Brron, Mad King of Dark World|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI14|Common|Reign-Beaux, Overlord of Dark World|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI15|Common|Legendary Jujitsu Master|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI16|Common|Imprisoned Queen Archfiend|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI17|Common|Il Blud|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI18|Common|Pitch-Black Warwolf|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI19|Common|Vampire Hunter|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI20|Common|Aqua Spirit|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI21|Common|Garuda the Wind Spirit|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI22|Common|Helios Duo Megistus|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI23|Common|Helios Trice Megistus|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI24|Common|Cloudian - Sheep Cloud|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI25|Common|Elemental HERO Shining Flare Wingman|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI26|Common|Terrorking Salmon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI27|Common|Armed Dragon LV10|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI28|Common|Cyber Dragon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI29|Common|Vampiric Koala|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI30|Common|Allure of Darkness|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI31|Common|Book of Moon|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI32|Common|Counter Cleaner|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI33|Common|Flash of the Forbidden Spell|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI34|Common|Aqua Chorus|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI35|Common|Chaos Trap Hole|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI36|Common|Human-Wave Tactics|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI37|Common|Nightmare Wheel|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI38|Common|Zoma the Spirit|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA21|Secret Rare|Evil HERO Malicious Fiend|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENH01|Secret Rare|Fog King|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI25|Secret Rare|Elemental HERO Shining Flare Wingman|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENA17|Secret Rare|Super Polymerization|SPEED DUEL GX: DUELISTS OF SHADOWS
+SGX3-ENI19|Secret Rare|Vampire Hunter|SPEED DUEL GX: DUELISTS OF SHADOWS
