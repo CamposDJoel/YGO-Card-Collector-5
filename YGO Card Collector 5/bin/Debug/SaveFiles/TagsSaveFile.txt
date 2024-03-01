@@ -1,4 +1,4 @@
-464
+651
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -119,8 +119,6 @@ TagRecord|Atlantean Marksman|False|True|False|False
 TagRecord|Atlantean Heavy Infantry|False|True|False|False
 TagRecord|Deep Sea Diva|False|True|False|False
 TagRecord|Mermaid Archer|False|True|False|False
-TagRecord|Warrior of Atlantis|False|True|False|False
-TagRecord|Deep Diver|False|True|False|False
 TagRecord|Reese the Ice Mistress|False|True|False|False
 TagRecord|Call of the Atlanteans|False|True|False|False
 TagRecord|Aqua Jet|False|True|False|False
@@ -403,7 +401,6 @@ TagRecord|Doom Dozer|False|True|False|False
 TagRecord|Pandemonium|False|True|False|False
 TagRecord|Rivalry of Warlords|False|True|False|False
 TagRecord|Zaborg the Thunder Monarch|False|True|False|False
-TagRecord|Treeborn Frog|False|True|False|False
 TagRecord|Phantom Beast Rock-Lizard|False|True|False|False
 TagRecord|Winged Rhynos|False|True|False|False
 TagRecord|The Six Samurai - Yaichi|False|True|False|False
@@ -417,7 +414,6 @@ TagRecord|Dramatic Rescue|False|True|False|False
 TagRecord|Magical Arm Shield|False|True|False|False
 TagRecord|Aegis of Gaia|False|True|False|False
 TagRecord|Robbin' Goblin|True|False|False|False
-TagRecord|Beastking of the Swamps|False|True|False|False
 TagRecord|Versago the Destroyer|False|True|False|False
 TagRecord|Radiant Jeral|False|True|False|False
 TagRecord|Prometheus, King of the Shadows|False|True|False|False
@@ -463,3 +459,194 @@ TagRecord|Transcode Talker|False|False|True|False
 TagRecord|Night Beam|False|False|True|False
 TagRecord|Stardust Chronicle Spark Dragon|False|False|True|False
 TagRecord|Il Blud|False|False|True|False
+TagRecord|Abyss Soldier|False|True|False|False
+TagRecord|Abyss Warrior|False|True|False|False
+TagRecord|Ameba|True|False|False|False
+TagRecord|Amphibious Bugroth|True|False|False|False
+TagRecord|Aqua Spirit|False|True|False|False
+TagRecord|Aquaactress Arowana|False|True|False|False
+TagRecord|Aquaactress Guppy|True|False|False|False
+TagRecord|Aquaactress Tetra|False|True|False|False
+TagRecord|Aquarian Alessa|False|True|False|False
+TagRecord|Armored Starfish|True|False|False|False
+TagRecord|Barrier Statue of the Torrent|True|False|False|False
+TagRecord|Beastking of the Swamps|False|True|False|False
+TagRecord|Beelze Frog|False|True|False|False
+TagRecord|Behegon|False|True|False|False
+TagRecord|Blizzed, Defender of the Ice Barrier|False|True|False|False
+TagRecord|Boneheimer|True|False|False|False
+TagRecord|Cannonball Spear Shellfish|True|False|False|False
+TagRecord|Catapult Turtle|True|False|False|False
+TagRecord|Centerfrog|False|True|False|False
+TagRecord|Change Slime|False|True|False|False
+TagRecord|Chemicritter Carbo Crab|False|True|False|False
+TagRecord|Cloudian - Eye of the Typhoon|False|True|False|False
+TagRecord|Cold Enchanter|False|True|False|False
+TagRecord|Crab Turtle|True|False|False|False
+TagRecord|Cryomancer of the Ice Barrier|True|False|False|False
+TagRecord|Crystal Beast Emerald Tortoise|True|False|False|False
+TagRecord|D.3.S. Frog|True|False|False|False
+TagRecord|Danger! Nessie!|True|False|False|False
+TagRecord|Deep Diver|False|True|False|False
+TagRecord|Defender of the Ice Barrier|False|True|False|False
+TagRecord|Des Frog|False|True|False|False
+TagRecord|Dewdark of the Ice Barrier|False|True|False|False
+TagRecord|Drill Barnacle|False|True|False|False
+TagRecord|Dupe Frog|False|True|False|False
+TagRecord|Escher the Frost Vassal|True|False|False|False
+TagRecord|Evigishki Gustkraken|False|True|False|False
+TagRecord|Evigishki Levianima|False|True|False|False
+TagRecord|Evigishki Merrowgeist|False|True|False|False
+TagRecord|Evigishki Mind Augus|False|True|False|False
+TagRecord|Evigishki Soul Ogre|False|True|False|False
+TagRecord|Evigishki Tetrogre|False|True|False|False
+TagRecord|Evilswarm Ketos|False|True|False|False
+TagRecord|Fire Kraken|True|False|False|False
+TagRecord|Flying Penguin|False|True|False|False
+TagRecord|Freezing Beast|True|False|False|False
+TagRecord|Gameciel, the Sea Turtle Kaiju|True|False|False|False
+TagRecord|Gem-Knight Amethyst|False|True|False|False
+TagRecord|Gem-Knight Aquamarine|False|True|False|False
+TagRecord|Gem-Knight Iolite|False|True|False|False
+TagRecord|Gem-Knight Sapphire|False|True|False|False
+TagRecord|Genex Undine|True|False|False|False
+TagRecord|Giant Red Seasnake|False|True|False|False
+TagRecord|Giant Turtle Who Feeds on Flames|True|False|False|False
+TagRecord|Gishki Marker|False|True|False|False
+TagRecord|Gishki Mollusk|False|True|False|False
+TagRecord|Gishki Reliever|False|True|False|False
+TagRecord|Gishki Vanity|False|True|False|False
+TagRecord|Gishki Zielgigas|False|True|False|False
+TagRecord|Gladiator Beast Retiari|False|True|False|False
+TagRecord|Gora Turtle|False|True|False|False
+TagRecord|Gora Turtle of Illusion|True|False|False|False
+TagRecord|Graydle Alligator|True|False|False|False
+TagRecord|Graydle Cobra|True|False|False|False
+TagRecord|Graydle Dragon|False|True|False|False
+TagRecord|Graydle Eagle|True|False|False|False
+TagRecord|Graydle Slime|False|True|False|False
+TagRecord|Graydle Slime Jr.|False|True|False|False
+TagRecord|Gruesome Goo|False|True|False|False
+TagRecord|Gunkan Suship Ikura|True|False|False|False
+TagRecord|Gunkan Suship Shari Red|True|False|False|False
+TagRecord|Gunkan Suship Shirauo|True|False|False|False
+TagRecord|Gunkan Suship Shirauo-class Carrier|True|False|False|False
+TagRecord|Gunkan Suship Uni-class Super-Dreadnought|True|False|False|False
+TagRecord|Hebo, Lord of the River|False|True|False|False
+TagRecord|Helmer, Helmsman Fur Hire|False|True|False|False
+TagRecord|High Tide Gyojin|True|False|False|False
+TagRecord|Humanoid Slime|True|False|False|False
+TagRecord|Humanoid Worm Drake|True|False|False|False
+TagRecord|Hyosube|True|False|False|False
+TagRecord|Ice Hand|True|False|False|False
+TagRecord|Icejade Creation Aegirocassis|True|False|False|False
+TagRecord|Icejade Tinola|True|False|False|False
+TagRecord|Impcantation Chalislime|False|True|False|False
+TagRecord|Island Turtle|True|False|False|False
+TagRecord|Jellyfish|True|False|False|False
+TagRecord|King of the Swamp|False|True|False|False
+TagRecord|Koa'ki Meiru Hydro Barrier|False|True|False|False
+TagRecord|Koa'ki Meiru Ice|False|True|False|False
+TagRecord|Lady of the Lake|False|True|False|False
+TagRecord|Leviair the Sea Dragon|False|True|False|False
+TagRecord|Liquid Beast|True|False|False|False
+TagRecord|Live☆Twin Ki-sikil Frost|True|False|False|False
+TagRecord|Mad Lobster|False|True|False|False
+TagRecord|Magical Reflect Slime|False|True|False|False
+TagRecord|Maiden of the Aqua|False|True|False|False
+TagRecord|Maryokutai|True|False|False|False
+TagRecord|Mermaid Knight|True|False|False|False
+TagRecord|Mermail Abyssbalaen|False|True|False|False
+TagRecord|Mermail Abyssdine|False|True|False|False
+TagRecord|Mermail Abyssgaios|False|True|False|False
+TagRecord|Mermail Abyssgunde|False|True|False|False
+TagRecord|Mermail Abysshilde|False|True|False|False
+TagRecord|Mermail Abysslinde|False|True|False|False
+TagRecord|Mermail Abyssnerei|False|True|False|False
+TagRecord|Mermail Abyssocea|False|True|False|False
+TagRecord|Mermail Abyssteus|False|True|False|False
+TagRecord|Metallizing Parasite - Lunatite|False|True|False|False
+TagRecord|Metallizing Parasite - Soltite|False|True|False|False
+TagRecord|Mistar Boy|False|True|False|False
+TagRecord|Mobius the Frost Monarch|False|True|False|False
+TagRecord|Mobius the Mega Monarch|False|True|False|False
+TagRecord|Mucus Yolk|True|False|False|False
+TagRecord|Nightmare Penguin|True|False|False|False
+TagRecord|Nopenguin|False|True|False|False
+TagRecord|Number 101: Silent Honor ARK|False|True|False|False
+TagRecord|Number 21: Frozen Lady Justice|False|True|False|False
+TagRecord|Number C101: Silent Honor DARK|True|False|False|False
+TagRecord|Numen erat Testudo|False|True|False|False
+TagRecord|Octoberser|True|False|False|False
+TagRecord|Oppressed People|False|True|False|False
+TagRecord|Paleozoic Anomalocaris|False|True|False|False
+TagRecord|Paleozoic Opabinia|False|True|False|False
+TagRecord|Penguin Cleric|True|False|False|False
+TagRecord|Penguin Knight|True|False|False|False
+TagRecord|Penguin Soldier|False|True|False|False
+TagRecord|Penguin Squire|True|False|False|False
+TagRecord|Performapal Guitartle|False|True|False|False
+TagRecord|Performapal Sellshell Crab|False|True|False|False
+TagRecord|Performapal Stamp Turtle|True|False|False|False
+TagRecord|Performapal Turn Toad|False|True|False|False
+TagRecord|Poison Draw Frog|False|True|False|False
+TagRecord|Prank-Kids Dropsies|False|True|False|False
+TagRecord|Prank-Kids Rip-Roarin-Roaster|False|True|False|False
+TagRecord|Prank-Kids Weather Washer|False|True|False|False
+TagRecord|Prior of the Ice Barrier|False|True|False|False
+TagRecord|Psychic Kappa|True|False|False|False
+TagRecord|Puny Penguin|False|True|False|False
+TagRecord|Reactor Slime|True|False|False|False
+TagRecord|Red Archery Girl|True|False|False|False
+TagRecord|Revival Jam|False|True|False|False
+TagRecord|Ritual Beast Ulti-Pettlephin|False|True|False|False
+TagRecord|Roaring Ocean Snake|True|False|False|False
+TagRecord|Ronintoadin|False|True|False|False
+TagRecord|Sea Kamen|False|True|False|False
+TagRecord|Secret Guards of the Ice Barrier|False|True|False|False
+TagRecord|Sentinel of the Seas|False|True|False|False
+TagRecord|Servant of Catabolism|False|True|False|False
+TagRecord|Skull Kraken|False|True|False|False
+TagRecord|Slime Toad|False|True|False|False
+TagRecord|Slushy|False|True|False|False
+TagRecord|Snowman Eater|False|True|False|False
+TagRecord|Spiritual Beast Pettlephin|False|True|False|False
+TagRecord|Squirt Squid|False|True|False|False
+TagRecord|Star Boy|True|False|False|False
+TagRecord|Starfish|False|True|False|False
+TagRecord|Submarine Frog|False|True|False|False
+TagRecord|Substitoad|False|True|False|False
+TagRecord|Subterror Behemoth Phospheroglacier|False|True|False|False
+TagRecord|Suijin|True|False|False|False
+TagRecord|Supreme Sea Mare|True|False|False|False
+TagRecord|Swap Frog|False|True|False|False
+TagRecord|T.A.D.P.O.L.E.|False|True|False|False
+TagRecord|Tearlaments Havnis|True|False|False|False
+TagRecord|Tearlaments Merrli|True|False|False|False
+TagRecord|Testudo erat Numen|False|True|False|False
+TagRecord|The Furious Sea King|True|False|False|False
+TagRecord|The Great Emperor Penguin|False|True|False|False
+TagRecord|Therion "Reaper" Fum|True|False|False|False
+TagRecord|Toon Mermaid|True|False|False|False
+TagRecord|Tradetoad|False|True|False|False
+TagRecord|Tribe-Infecting Virus|True|False|False|False
+TagRecord|Turtle Bird|False|True|False|False
+TagRecord|Turtle Tiger|True|False|False|False
+TagRecord|Turu-Purun|False|True|False|False
+TagRecord|Twin Long Rods #2|True|False|False|False
+TagRecord|Uminotaurus|False|True|False|False
+TagRecord|Unformed Void|False|True|False|False
+TagRecord|Unifrog|False|True|False|False
+TagRecord|Violent Rain|False|True|False|False
+TagRecord|Vortex Trooper|True|False|False|False
+TagRecord|Warrior of Atlantis|False|True|False|False
+TagRecord|Water Magician|False|True|False|False
+TagRecord|Water Omotics|True|False|False|False
+TagRecord|Weather Report|True|False|False|False
+TagRecord|Wetha|False|True|False|False
+TagRecord|Wind-Up Snail|False|True|False|False
+TagRecord|Wingtortoise|False|True|False|False
+TagRecord|Yado Karu|True|False|False|False
+TagRecord|Yomi Ship|False|True|False|False
+TagRecord|Zone Eater|False|True|False|False
+TagRecord|ZW - Ultimate Shield|True|False|False|False
