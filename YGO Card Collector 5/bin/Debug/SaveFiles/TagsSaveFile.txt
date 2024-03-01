@@ -1,4 +1,4 @@
-462
+464
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -461,3 +461,5 @@ TagRecord|Flower Cardian Pine|False|False|True|False
 TagRecord|Buster Blader, the Destruction Swordmaster|False|False|True|False
 TagRecord|Transcode Talker|False|False|True|False
 TagRecord|Night Beam|False|False|True|False
+TagRecord|Stardust Chronicle Spark Dragon|False|False|True|False
+TagRecord|Il Blud|False|False|True|False

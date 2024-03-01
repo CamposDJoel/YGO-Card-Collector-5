@@ -1,4 +1,4 @@
-9365
+9426
 LOB-000|Secret Rare|Tri-Horned Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-001|Ultra Rare|Blue-Eyes White Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-002|Common|Hitotsu-Me Giant|LEGEND OF BLUE EYES WHITE DRAGON
@@ -9364,3 +9364,64 @@ MGED-EN143|Gold Rare|Battle Shogun of the Six Samurai|MAXIMUM GOLD: EL DORADO
 MGED-EN144|Gold Rare|Salamangreat Almiraj|MAXIMUM GOLD: EL DORADO
 MGED-EN146|Gold Rare|Upstart Goblin|MAXIMUM GOLD: EL DORADO
 MGED-EN151|Gold Rare|Broken Line|MAXIMUM GOLD: EL DORADO
+JUMP-EN062|Ultra Rare|Superdreadnought Rail Cannon Gustav Max|SHONEN JUMP ALPHA membership Promotional Card - September 2012 -
+JMP-EN001|Ultra Rare|Blue-Eyes White Dragon|SHONEN JUMP Promotional Card - December 2002 -
+TP4-012|Common|Senju of the Thousand Hands|TOURNAMENT PACK 4
+TP4-019|Common|Hayabusa Knight|TOURNAMENT PACK 4
+TP5-EN011|Common|Jowgen the Spiritualist|TOURNAMENT PACK 5
+TP6-EN016|Common|Archfiend Marmot of Nefariousness|TOURNAMENT PACK 6
+TP6-EN012|Common|Emergency Provisions|TOURNAMENT PACK 6
+TP6-EN019|Common|Burglar|TOURNAMENT PACK 6
+SP1-EN004|Ultra Rare|Exchange of the Spirit|ELEMENTAL ENERGY Sneak Peek
+TU01-EN006|Rare|Crush Card Virus|TURBO PACK BOOSTER ONE
+TU01-EN014|Common|Hand Destruction|TURBO PACK BOOSTER ONE
+CP03-EN009|Rare|The Agent of Judgment - Saturn|CHAMPION PACK GAME THREE
+CP03-EN016|Common|Gravekeeper's Chief|CHAMPION PACK GAME THREE
+CP06-EN016|Common|Soul of Purity and Light|CHAMPION PACK GAME SIX
+CP07-EN013|Common|Life Absorbing Machine|CHAMPION PACK GAME SEVEN
+CP08-EN016|Common|Alien Warrior|CHAMPION PACK GAME EIGHT
+TU03-EN012|Common|Destiny HERO - Diamond Dude|TURBO PACK BOOSTER THREE
+TU08-EN020|Common|Magician's Circle|TURBO PACK BOOSTER EIGHT
+AP01-EN016|Common|Cyber Shark|ASTRAL PACK ONE
+AP01-EN024|Common|Fuh-Rin-Ka-Zan|ASTRAL PACK ONE
+AP01-EN025|Common|Astral Barrier|ASTRAL PACK ONE
+AP03-EN025|Common|Archfiend's Roar|ASTRAL PACK THREE
+AP03-EN026|Common|Heavy Slump|ASTRAL PACK THREE
+AP05-EN015|Common|Copy Plant|ASTRAL PACK FIVE
+AP05-EN021|Common|Soul Exchange|ASTRAL PACK FIVE
+AP05-EN024|Common|Spiritual Forest|ASTRAL PACK FIVE
+AP05-EN026|Common|Jurrac Impact|ASTRAL PACK FIVE
+AP06-EN017|Common|King of the Skull Servants|ASTRAL PACK SIX
+AP08-EN016|Common|Twin-Headed Behemoth|ASTRAL PACK EIGHT
+AP08-EN020|Common|Gem-Knight Obsidian|ASTRAL PACK EIGHT
+OP01-EN023|Common|Offerings to the Doomed|OTS TOURNAMENT PACK 1
+OP02-EN020|Common|Prediction Princess Coinorma|OTS TOURNAMENT PACK 2
+OP03-EN014|Common|Enchanting Mermaid|OTS TOURNAMENT PACK 3
+OP03-EN017|Common|Black Dragon's Chick|OTS TOURNAMENT PACK 3
+OP04-EN021|Common|Super Anti-Kaiju War Machine Mecha-Dogoran|OTS TOURNAMENT PACK 4
+OP05-EN022|Common|Rose Spectre of Dunn|OTS TOURNAMENT PACK 5
+OP06-EN024|Common|Enishi, Shien's Chancellor|OTS TOURNAMENT PACK 6
+OP07-EN015|Common|Insect Princess|OTS TOURNAMENT PACK 7
+OP15-EN013|Common|Gryphon Wing|OTS TOURNAMENT PACK 15
+OP16-EN015|Common|Miracle Dig|OTS TOURNAMENT PACK 16
+MDP2-EN012|Common|Amphibious Bugroth|Promotional Cards 2
+MDP2-EN017|Common|Trakodon|Promotional Cards 2
+MDP2-EN020|Common|Stone Dragon|Promotional Cards 2
+DEM1-EN003|Common|Sabersaurus|DEMO DECK
+DEM1-EN008|Common|Marauding Captain|DEMO DECK
+DEM1-EN010|Common|Des Koala|DEMO DECK
+DEM1-EN012|Common|The Calculator|DEMO DECK
+DEM1-EN013|Common|Fissure|DEMO DECK
+DEM1-EN016|Common|Mask of Weakness|DEMO DECK
+DEM2-EN014|Common|Gyroid|DEMO DECK 2015
+DEM2-EN017|Common|Blustering Winds|DEMO DECK 2015
+RIRA-ENSE1|Super Rare|Salamangreat Coyote|RISING RAMPAGE SPECIAL EDITION
+RIRA-ENSE3|Super Rare|Marincess Wonder Heart|RISING RAMPAGE SPECIAL EDITION
+RIRA-ENSE4|Super Rare|Marincess Sea Angel|RISING RAMPAGE SPECIAL EDITION
+CSOC-ENSE1|Super Rare|Harvest Angel of Wisdom|CROSSROADS OF CHAOS SPECIAL EDITION
+SOI-ENSE4|Secret Rare|Mesmeric Control|SHADOW OF INFINITY SPECIAL EDITION
+SOFU-ENSE4|Super Rare|Prank-Kids Rocksies|SOUL FUSION SPECIAL EDITION
+CIBR-ENSE3|Super Rare|Lockout Gardna|CIRCUIT BREAK SPECIAL EDITION
+SD09-ENSS1|Ultra Rare|Five-Headed Dragon|STRUCTURE DECK DINOSAUR'S RAGE SPECIAL EDITION
+CIBR-ENSE1|Super Rare|Stardust Chronicle Spark Dragon|CIRCUIT BREAK SPECIAL EDITION
+CSOC-ENSE2|Super Rare|Il Blud|CROSSROADS OF CHAOS SPECIAL EDITION
