@@ -1,4 +1,4 @@
-399
+462
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -9,7 +9,6 @@ TagRecord|Dwarf Star Dragon Planeter|True|False|False|False
 TagRecord|Avida, Rebuilder of Worlds|False|False|True|False
 TagRecord|Toadally Awesome|False|False|True|False
 TagRecord|Evil Dragon Ananta|False|False|True|False
-TagRecord|Ayers Rock Sunrise|False|False|True|False
 TagRecord|Damage = Reptile|False|False|True|False
 TagRecord|Gizmek Makami, the Ferocious Fanged Fortress|False|False|True|False
 TagRecord|The Sanctum of Parshath|False|False|True|False
@@ -398,3 +397,67 @@ TagRecord|Cyber Angel Vrash|False|True|False|False
 TagRecord|Cyber Angel Idaten|False|True|False|False
 TagRecord|Red Wyvern|False|True|False|False
 TagRecord|Reject Reborn|False|True|False|False
+TagRecord|Rare Metal Dragon|False|True|False|False
+TagRecord|Sillva, Warlord of Dark World|False|True|False|False
+TagRecord|Doom Dozer|False|True|False|False
+TagRecord|Pandemonium|False|True|False|False
+TagRecord|Rivalry of Warlords|False|True|False|False
+TagRecord|Zaborg the Thunder Monarch|False|True|False|False
+TagRecord|Treeborn Frog|False|True|False|False
+TagRecord|Phantom Beast Rock-Lizard|False|True|False|False
+TagRecord|Winged Rhynos|False|True|False|False
+TagRecord|The Six Samurai - Yaichi|False|True|False|False
+TagRecord|Amazoness Paladin|False|True|False|False
+TagRecord|Amazoness Fighter|False|True|False|False
+TagRecord|Amazoness Tiger|False|True|False|False
+TagRecord|Mist Valley Windmaster|False|True|False|False
+TagRecord|Worm Gulse|False|True|False|False
+TagRecord|Amazoness Archers|False|True|False|False
+TagRecord|Dramatic Rescue|False|True|False|False
+TagRecord|Magical Arm Shield|False|True|False|False
+TagRecord|Aegis of Gaia|False|True|False|False
+TagRecord|Robbin' Goblin|True|False|False|False
+TagRecord|Beastking of the Swamps|False|True|False|False
+TagRecord|Versago the Destroyer|False|True|False|False
+TagRecord|Radiant Jeral|False|True|False|False
+TagRecord|Prometheus, King of the Shadows|False|True|False|False
+TagRecord|Mormolith|False|True|False|False
+TagRecord|Genesis Dragon|False|True|False|False
+TagRecord|Eternal Drought|False|True|False|False
+TagRecord|Eradicating Aerosol|False|True|False|False
+TagRecord|Sword of Dark Rites|False|True|False|False
+TagRecord|Success Probability 0%|True|False|False|False
+TagRecord|Uria, Lord of Searing Flames|False|False|True|False
+TagRecord|Hamon, Lord of Striking Thunder|False|False|True|False
+TagRecord|Cyber Larva|False|False|True|False
+TagRecord|Kageningen|False|True|False|False
+TagRecord|Wolf|False|True|False|False
+TagRecord|Hero of the East|False|True|False|False
+TagRecord|Little-Winguard|False|True|False|False
+TagRecord|Phoenix Gearfried|False|True|False|False
+TagRecord|Salamandra|False|True|False|False
+TagRecord|Dangerous Machine Type-6|False|True|False|False
+TagRecord|Serpent Night Dragon|False|True|False|False
+TagRecord|Little D|False|True|False|False
+TagRecord|Megazowler|False|True|False|False
+TagRecord|Destroyersaurus|False|True|False|False
+TagRecord|Volcanic Eruption|False|True|False|False
+TagRecord|Seismic Shockwave|False|True|False|False
+TagRecord|Ancient Tool|False|True|False|False
+TagRecord|Giganto|False|True|False|False
+TagRecord|Sword Slasher|False|True|False|False
+TagRecord|Fiendish Engine Ω|False|True|False|False
+TagRecord|Vampire Baby|False|True|False|False
+TagRecord|Vampire Genesis|False|True|False|False
+TagRecord|Return Zombie|False|True|False|False
+TagRecord|Vampire's Curse|False|True|False|False
+TagRecord|Trap of the Imperial Tomb|False|True|False|False
+TagRecord|Tribute Doll|False|True|False|False
+TagRecord|Beast of Talwar|False|True|False|False
+TagRecord|Dark World Dealings|False|True|False|False
+TagRecord|Timaeus the Knight of Destiny|False|False|True|False
+TagRecord|The Tripper Mercury|False|False|True|False
+TagRecord|Flower Cardian Pine|False|False|True|False
+TagRecord|Buster Blader, the Destruction Swordmaster|False|False|True|False
+TagRecord|Transcode Talker|False|False|True|False
+TagRecord|Night Beam|False|False|True|False
