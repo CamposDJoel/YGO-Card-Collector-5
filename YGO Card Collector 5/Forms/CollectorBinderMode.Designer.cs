@@ -191,7 +191,7 @@
             this.btnStats.BackColor = System.Drawing.Color.Indigo;
             this.btnStats.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStats.ForeColor = System.Drawing.Color.White;
-            this.btnStats.Location = new System.Drawing.Point(275, 2);
+            this.btnStats.Location = new System.Drawing.Point(275, 0);
             this.btnStats.Name = "btnStats";
             this.btnStats.Size = new System.Drawing.Size(114, 25);
             this.btnStats.TabIndex = 272;
@@ -204,7 +204,7 @@
             this.btnSetPriceReport.BackColor = System.Drawing.Color.Green;
             this.btnSetPriceReport.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSetPriceReport.ForeColor = System.Drawing.Color.White;
-            this.btnSetPriceReport.Location = new System.Drawing.Point(149, 2);
+            this.btnSetPriceReport.Location = new System.Drawing.Point(149, 0);
             this.btnSetPriceReport.Name = "btnSetPriceReport";
             this.btnSetPriceReport.Size = new System.Drawing.Size(128, 25);
             this.btnSetPriceReport.TabIndex = 271;
@@ -217,7 +217,7 @@
             this.btnBackToMainMenu.BackColor = System.Drawing.Color.Maroon;
             this.btnBackToMainMenu.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBackToMainMenu.ForeColor = System.Drawing.Color.White;
-            this.btnBackToMainMenu.Location = new System.Drawing.Point(4, 2);
+            this.btnBackToMainMenu.Location = new System.Drawing.Point(4, 0);
             this.btnBackToMainMenu.Name = "btnBackToMainMenu";
             this.btnBackToMainMenu.Size = new System.Drawing.Size(139, 25);
             this.btnBackToMainMenu.TabIndex = 270;
@@ -305,17 +305,18 @@
             this.PicImage.BackColor = System.Drawing.Color.Transparent;
             this.PicImage.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PicImage.Image = ((System.Drawing.Image)(resources.GetObject("PicImage.Image")));
-            this.PicImage.Location = new System.Drawing.Point(4, 3);
+            this.PicImage.Location = new System.Drawing.Point(10, 4);
             this.PicImage.Name = "PicImage";
-            this.PicImage.Size = new System.Drawing.Size(193, 266);
+            this.PicImage.Size = new System.Drawing.Size(180, 250);
             this.PicImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicImage.TabIndex = 283;
             this.PicImage.TabStop = false;
             // 
             // PicTagCircle
             // 
+            this.PicTagCircle.BackColor = System.Drawing.Color.Black;
             this.PicTagCircle.Image = ((System.Drawing.Image)(resources.GetObject("PicTagCircle.Image")));
-            this.PicTagCircle.Location = new System.Drawing.Point(178, 221);
+            this.PicTagCircle.Location = new System.Drawing.Point(373, 313);
             this.PicTagCircle.Name = "PicTagCircle";
             this.PicTagCircle.Size = new System.Drawing.Size(20, 20);
             this.PicTagCircle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -325,8 +326,9 @@
             // 
             // PicTagTriangle
             // 
+            this.PicTagTriangle.BackColor = System.Drawing.Color.Black;
             this.PicTagTriangle.Image = ((System.Drawing.Image)(resources.GetObject("PicTagTriangle.Image")));
-            this.PicTagTriangle.Location = new System.Drawing.Point(157, 221);
+            this.PicTagTriangle.Location = new System.Drawing.Point(352, 313);
             this.PicTagTriangle.Name = "PicTagTriangle";
             this.PicTagTriangle.Size = new System.Drawing.Size(20, 20);
             this.PicTagTriangle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -336,8 +338,9 @@
             // 
             // PicTagSquare
             // 
+            this.PicTagSquare.BackColor = System.Drawing.Color.Black;
             this.PicTagSquare.Image = ((System.Drawing.Image)(resources.GetObject("PicTagSquare.Image")));
-            this.PicTagSquare.Location = new System.Drawing.Point(136, 221);
+            this.PicTagSquare.Location = new System.Drawing.Point(331, 313);
             this.PicTagSquare.Name = "PicTagSquare";
             this.PicTagSquare.Size = new System.Drawing.Size(20, 20);
             this.PicTagSquare.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -347,8 +350,9 @@
             // 
             // PicTagStar
             // 
+            this.PicTagStar.BackColor = System.Drawing.Color.Black;
             this.PicTagStar.Image = ((System.Drawing.Image)(resources.GetObject("PicTagStar.Image")));
-            this.PicTagStar.Location = new System.Drawing.Point(115, 221);
+            this.PicTagStar.Location = new System.Drawing.Point(310, 313);
             this.PicTagStar.Name = "PicTagStar";
             this.PicTagStar.Size = new System.Drawing.Size(20, 20);
             this.PicTagStar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -359,10 +363,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.Color.Black;
             this.label1.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(82, 222);
+            this.label1.Location = new System.Drawing.Point(271, 315);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(36, 16);
             this.label1.TabIndex = 287;
@@ -427,7 +431,7 @@
             this.label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label7.Font = new System.Drawing.Font("Arial Narrow", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(2, 233);
+            this.label7.Location = new System.Drawing.Point(2, 220);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(42, 18);
             this.label7.TabIndex = 263;
@@ -439,7 +443,7 @@
             this.lblTCGLink.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblTCGLink.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTCGLink.ForeColor = System.Drawing.Color.Black;
-            this.lblTCGLink.Location = new System.Drawing.Point(136, 252);
+            this.lblTCGLink.Location = new System.Drawing.Point(136, 239);
             this.lblTCGLink.Name = "lblTCGLink";
             this.lblTCGLink.Size = new System.Drawing.Size(63, 15);
             this.lblTCGLink.TabIndex = 262;
@@ -453,7 +457,7 @@
             this.lblProdeckLink.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblProdeckLink.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProdeckLink.ForeColor = System.Drawing.Color.Black;
-            this.lblProdeckLink.Location = new System.Drawing.Point(69, 252);
+            this.lblProdeckLink.Location = new System.Drawing.Point(69, 239);
             this.lblProdeckLink.Name = "lblProdeckLink";
             this.lblProdeckLink.Size = new System.Drawing.Size(63, 15);
             this.lblProdeckLink.TabIndex = 261;
@@ -467,7 +471,7 @@
             this.lblKonamiLink.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblKonamiLink.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblKonamiLink.ForeColor = System.Drawing.Color.Black;
-            this.lblKonamiLink.Location = new System.Drawing.Point(2, 252);
+            this.lblKonamiLink.Location = new System.Drawing.Point(2, 239);
             this.lblKonamiLink.Name = "lblKonamiLink";
             this.lblKonamiLink.Size = new System.Drawing.Size(63, 15);
             this.lblKonamiLink.TabIndex = 260;
@@ -1695,7 +1699,7 @@
             "Tournaments",
             "Promotional Cards",
             "Video Game Bundles"});
-            this.listSetGroups.Location = new System.Drawing.Point(253, 356);
+            this.listSetGroups.Location = new System.Drawing.Point(253, 357);
             this.listSetGroups.Name = "listSetGroups";
             this.listSetGroups.Size = new System.Drawing.Size(159, 102);
             this.listSetGroups.TabIndex = 287;
@@ -1718,10 +1722,10 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
-            this.tabControl1.Location = new System.Drawing.Point(253, 27);
+            this.tabControl1.Location = new System.Drawing.Point(253, 25);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(209, 296);
+            this.tabControl1.Size = new System.Drawing.Size(209, 285);
             this.tabControl1.TabIndex = 289;
             // 
             // tabPage4
@@ -1731,7 +1735,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(201, 270);
+            this.tabPage4.Size = new System.Drawing.Size(201, 259);
             this.tabPage4.TabIndex = 0;
             this.tabPage4.Text = "Card Image";
             // 
@@ -1739,18 +1743,13 @@
             // 
             this.tabPage5.BackColor = System.Drawing.Color.Black;
             this.tabPage5.Controls.Add(this.label7);
-            this.tabPage5.Controls.Add(this.PicTagCircle);
             this.tabPage5.Controls.Add(this.lblTCGLink);
             this.tabPage5.Controls.Add(this.label9);
             this.tabPage5.Controls.Add(this.lblProdeckLink);
-            this.tabPage5.Controls.Add(this.PicTagTriangle);
             this.tabPage5.Controls.Add(this.lblKonamiLink);
             this.tabPage5.Controls.Add(this.lblCardInfo_Name);
-            this.tabPage5.Controls.Add(this.PicTagSquare);
             this.tabPage5.Controls.Add(this.lblCodelabel);
-            this.tabPage5.Controls.Add(this.PicTagStar);
             this.tabPage5.Controls.Add(this.lblCode);
-            this.tabPage5.Controls.Add(this.label1);
             this.tabPage5.Controls.Add(this.lblRariryLabel);
             this.tabPage5.Controls.Add(this.lblFloorPrice);
             this.tabPage5.Controls.Add(this.lblRarity);
@@ -1762,7 +1761,7 @@
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(201, 270);
+            this.tabPage5.Size = new System.Drawing.Size(201, 259);
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Info";
             // 
@@ -1771,7 +1770,7 @@
             this.btnOpenSetValue.BackColor = System.Drawing.Color.Purple;
             this.btnOpenSetValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOpenSetValue.ForeColor = System.Drawing.Color.White;
-            this.btnOpenSetValue.Location = new System.Drawing.Point(342, 333);
+            this.btnOpenSetValue.Location = new System.Drawing.Point(342, 335);
             this.btnOpenSetValue.Name = "btnOpenSetValue";
             this.btnOpenSetValue.Size = new System.Drawing.Size(71, 23);
             this.btnOpenSetValue.TabIndex = 291;
@@ -1784,7 +1783,7 @@
             this.btnFilterSet.BackColor = System.Drawing.Color.Purple;
             this.btnFilterSet.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFilterSet.ForeColor = System.Drawing.Color.White;
-            this.btnFilterSet.Location = new System.Drawing.Point(252, 333);
+            this.btnFilterSet.Location = new System.Drawing.Point(252, 335);
             this.btnFilterSet.Name = "btnFilterSet";
             this.btnFilterSet.Size = new System.Drawing.Size(70, 23);
             this.btnFilterSet.TabIndex = 290;
@@ -1800,17 +1799,22 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(804, 461);
             this.Controls.Add(this.btnOpenSetValue);
+            this.Controls.Add(this.PicTagCircle);
             this.Controls.Add(this.btnFilterSet);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.listSetlist);
             this.Controls.Add(this.listSetGroups);
+            this.Controls.Add(this.PicTagTriangle);
             this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.PanelTagList);
+            this.Controls.Add(this.PicTagSquare);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnNextPage);
+            this.Controls.Add(this.PicTagStar);
             this.Controls.Add(this.btnPreviousPage);
             this.Controls.Add(this.chkCollected);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.GroupCardView);
             this.Controls.Add(this.btnStats);
             this.Controls.Add(this.btnSetPriceReport);
