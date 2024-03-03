@@ -547,9 +547,10 @@ namespace YGO_Card_Collector_5
             }
             void UpdatePageBanners()
             {
+                int lastPage = GetLastPage();
                 if (_MasterCardViewMode)
                 {
-                    GroupCardView.Text = string.Format("PAGE: {0} | {1} | Cards: {2}", _CurrentCardPage, Database.CardGroupToString(_CurrentCardGroup), _CurrentMasterCardList.Count);
+                    GroupCardView.Text = string.Format("PAGE: {0}/{1} | {2} | Cards: {2}", _CurrentCardPage, lastPage, Database.CardGroupToString(_CurrentCardGroup), _CurrentMasterCardList.Count);
                 }
                 else
                 {
@@ -560,12 +561,12 @@ namespace YGO_Card_Collector_5
                     if (Database.SetPackByName.ContainsKey(SetName))
                     {
                         //Update the Card Viewer Card Page/Card Count header
-                        GroupCardView.Text = string.Format("PAGE: {0} | CODE: {1} | Cards: {2}", _CurrentCardPage, Code, _CurrentSetCardList.Count);
+                        GroupCardView.Text = string.Format("PAGE: {0}/{1} | CODE: {2} | Cards: {2}", _CurrentCardPage, lastPage, Code, _CurrentSetCardList.Count);
                     }
                     else
                     {
                         //Update the Card Viewer Card Page/Card Count header
-                        GroupCardView.Text = string.Format("PAGE: {0} | CODE: \"{1}\" | Cards: 0", _CurrentCardPage, Code);
+                        GroupCardView.Text = string.Format("PAGE: {0}/{1} | CODE: \"{2}\" | Cards: 0", _CurrentCardPage, lastPage, Code);
                     }
                 }
             }
