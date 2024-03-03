@@ -1,4 +1,4 @@
-651
+905
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -126,7 +126,6 @@ TagRecord|Surface|False|True|False|False
 TagRecord|Forgotten Temple of the Deep|False|True|False|False
 TagRecord|Tornado Wall|False|True|False|False
 TagRecord|Spiritual Water Art - Aoi|False|True|False|False
-TagRecord|Fire King Avatar Kirin|False|True|False|False
 TagRecord|Manticore of Darkness|False|True|False|False
 TagRecord|Goka, the Pyre of Malice|False|True|False|False
 TagRecord|Hazy Flame Hyppogrif|False|True|False|False
@@ -214,7 +213,6 @@ TagRecord|ROM Cloudia|False|True|False|False
 TagRecord|Boot Staggered|False|True|False|False
 TagRecord|Dual Assembwurm|False|True|False|False
 TagRecord|Cyberse Wizard|False|True|False|False
-TagRecord|Kinka-byo|False|True|False|False
 TagRecord|Recoded Alive|False|True|False|False
 TagRecord|Premature Return|False|True|False|False
 TagRecord|Swamp Mirrorer|False|True|False|False
@@ -273,7 +271,6 @@ TagRecord|Salamangreat Miragestallio|False|True|False|False
 TagRecord|Elemental HERO Avian|True|False|False|False
 TagRecord|Soul Rope|True|False|False|False
 TagRecord|Neo Space Connector|False|True|False|False
-TagRecord|Aloof Lupine|False|True|False|False
 TagRecord|Destiny HERO - Dominance|False|True|False|False
 TagRecord|Dinowrestler Giga Spinosavate|False|True|False|False
 TagRecord|Firewall eXceed Dragon|False|True|False|False
@@ -302,7 +299,6 @@ TagRecord|Skyscraper|False|True|False|False
 TagRecord|Bubble Blaster|False|True|False|False
 TagRecord|V-Tiger Jet|False|True|False|False
 TagRecord|Infernal Incinerator|False|True|False|False
-TagRecord|Ojama King|False|True|False|False
 TagRecord|Ojamagic|False|True|False|False
 TagRecord|Ojamuscle|False|True|False|False
 TagRecord|Chthonian Blast|False|True|False|False
@@ -406,7 +402,6 @@ TagRecord|Winged Rhynos|False|True|False|False
 TagRecord|The Six Samurai - Yaichi|False|True|False|False
 TagRecord|Amazoness Paladin|False|True|False|False
 TagRecord|Amazoness Fighter|False|True|False|False
-TagRecord|Amazoness Tiger|False|True|False|False
 TagRecord|Mist Valley Windmaster|False|True|False|False
 TagRecord|Worm Gulse|False|True|False|False
 TagRecord|Amazoness Archers|False|True|False|False
@@ -427,7 +422,6 @@ TagRecord|Uria, Lord of Searing Flames|False|False|True|False
 TagRecord|Hamon, Lord of Striking Thunder|False|False|True|False
 TagRecord|Cyber Larva|False|False|True|False
 TagRecord|Kageningen|False|True|False|False
-TagRecord|Wolf|False|True|False|False
 TagRecord|Hero of the East|False|True|False|False
 TagRecord|Little-Winguard|False|True|False|False
 TagRecord|Phoenix Gearfried|False|True|False|False
@@ -650,3 +644,263 @@ TagRecord|Yado Karu|True|False|False|False
 TagRecord|Yomi Ship|False|True|False|False
 TagRecord|Zone Eater|False|True|False|False
 TagRecord|ZW - Ultimate Shield|True|False|False|False
+TagRecord|3-Hump Lacooda|True|False|False|False
+TagRecord|A Cat of Ill Omen|False|True|False|False
+TagRecord|Alligator's Sword|False|False|True|False
+TagRecord|Aloof Lupine|False|True|False|False
+TagRecord|Alpacaribou, Mystical Beast of the Forest|False|True|False|False
+TagRecord|Amazoness Baby Tiger|True|False|False|False
+TagRecord|Amazoness Pet Liger|False|True|False|False
+TagRecord|Amazoness Tiger|False|True|False|False
+TagRecord|Ancient Crimson Ape|False|True|False|False
+TagRecord|Ancient One of the Deep Forest|True|False|False|False
+TagRecord|Andro Sphinx|True|False|False|False
+TagRecord|Ape Fighter|False|True|False|False
+TagRecord|Ape Magician|False|True|False|False
+TagRecord|Archfiend Marmot of Nefariousness|False|True|False|False
+TagRecord|Assault Dog|True|False|False|False
+TagRecord|Awakening of the Possessed - Nefariouser Archfiend|True|False|False|False
+TagRecord|Baby Raccoon Ponpoko|True|False|False|False
+TagRecord|Baby Raccoon Tantan|True|False|False|False
+TagRecord|Bazoo the Soul-Eater|True|False|False|False
+TagRecord|Beast Striker|False|True|False|False
+TagRecord|Behemoth the King of All Animals|False|True|False|False
+TagRecord|Berserk Gorilla|True|False|False|False
+TagRecord|Bicorn Re'em|False|True|False|False
+TagRecord|Big Koala|True|False|False|False
+TagRecord|Big-Tusked Mammoth|False|True|False|False
+TagRecord|Black Dragon Ninja|False|False|True|False
+TagRecord|Blade Garoodia the Cubic Beast|True|False|False|False
+TagRecord|Blade Rabbit|True|False|False|False
+TagRecord|Bubonic Vermin|True|False|False|False
+TagRecord|Bujingi Boar|False|True|False|False
+TagRecord|Bujingi Centipede|True|False|False|False
+TagRecord|Bujingi Fox|False|True|False|False
+TagRecord|Bujingi Sinyou|False|True|False|False
+TagRecord|Bujingi Turtle|False|True|False|False
+TagRecord|Bujingi Warg|False|True|False|False
+TagRecord|Bujingi Wolf|False|True|False|False
+TagRecord|Bunilla|False|True|False|False
+TagRecord|Burglar|True|False|False|False
+TagRecord|Buster Gundil the Cubic Behemoth|True|False|False|False
+TagRecord|Carpiponica, Mystical Beast of the Forest|True|False|False|False
+TagRecord|Cat Shark|False|False|True|False
+TagRecord|Catnipped Kitty|True|False|False|False
+TagRecord|Chain Dog|False|True|False|False
+TagRecord|Chemicritter Oxy Ox|False|True|False|False
+TagRecord|Chimera the Flying Mythical Beast|True|False|False|False
+TagRecord|Chow Chow Chan|True|False|False|False
+TagRecord|Chrysalis Pantail|False|True|False|False
+TagRecord|Chu-Ske the Mouse Fighter|True|False|False|False
+TagRecord|Constellar Leonis|False|True|False|False
+TagRecord|Constellar Sheratan|False|True|False|False
+TagRecord|Creepy Coney|True|False|False|False
+TagRecord|Crusadia Leonis|True|False|False|False
+TagRecord|Crusadia Regulex|False|True|False|False
+TagRecord|Crystal Beast Amber Mammoth|True|False|False|False
+TagRecord|Crystal Beast Amethyst Cat|True|False|False|False
+TagRecord|Crystal Beast Sapphire Pegasus|False|True|False|False
+TagRecord|Crystal Beast Topaz Tiger|False|True|False|False
+TagRecord|D.D. Crazy Beast|False|True|False|False
+TagRecord|Danger! Bigfoot!|True|False|False|False
+TagRecord|Dark Cat with White Tail|True|False|False|False
+TagRecord|Dark Desertapir|False|True|False|False
+TagRecord|Dark Rabbit|False|True|False|False
+TagRecord|Dark Zebra|True|False|False|False
+TagRecord|Des Kangaroo|True|False|False|False
+TagRecord|Des Koala|True|False|False|False
+TagRecord|Des Wombat|False|True|False|False
+TagRecord|Desertapir|False|True|False|False
+TagRecord|Desmanian Devil|False|True|False|False
+TagRecord|Dewloren, Tiger King of the Ice Barrier|True|False|False|False
+TagRecord|Diamond Dire Wolf|False|False|True|False
+TagRecord|Dig Beak|False|True|False|False
+TagRecord|Donpa, Marksman Fur Hire|False|True|False|False
+TagRecord|Duelittle Chimera|False|True|False|False
+TagRecord|Earthbound Immortal Cusillu|True|False|False|False
+TagRecord|Egotistical Ape|False|True|False|False
+TagRecord|Elephun|False|True|False|False
+TagRecord|Explossum|True|False|False|False
+TagRecord|Fencing Fire Ferret|True|False|False|False
+TagRecord|Fenrir|True|False|False|False
+TagRecord|Fenrir the Nordic Wolf|False|True|False|False
+TagRecord|Fire King Avatar Kirin|False|True|False|False
+TagRecord|Firewing Pegasus|False|True|False|False
+TagRecord|Flame Tiger|True|False|False|False
+TagRecord|Flamvell Firedog|False|True|False|False
+TagRecord|Flower Wolf|True|False|False|False
+TagRecord|Folgo, Justice Fur Hire|True|False|False|False
+TagRecord|Frenzied Panda|True|False|False|False
+TagRecord|Fusionist|True|False|False|False
+TagRecord|Gallis the Star Beast|True|False|False|False
+TagRecord|Garmr of the Nordic Beasts|True|False|False|False
+TagRecord|Gazelle the King of Mythical Beasts|True|False|False|False
+TagRecord|Ghost Beef|False|True|False|False
+TagRecord|Giant Rat|True|False|False|False
+TagRecord|Gishki Beast|False|True|False|False
+TagRecord|Gladiator Beast Dimacari|False|True|False|False
+TagRecord|Gladiator Beast Samnite|False|True|False|False
+TagRecord|Gladiator Beast Tygerius|False|True|False|False
+TagRecord|Great Angus|True|False|False|False
+TagRecord|Green Baboon, Defender of the Forest|False|True|False|False
+TagRecord|Griffore|False|True|False|False
+TagRecord|Guard Dog|False|True|False|False
+TagRecord|Guldfaxe of the Nordic Beasts|False|True|False|False
+TagRecord|Gyaku-Gire Panda|True|False|False|False
+TagRecord|Hade-Hane|False|True|False|False
+TagRecord|Handigallop|False|True|False|False
+TagRecord|Hane-Hane|True|False|False|False
+TagRecord|Hazy Flame Cerbereus|False|True|False|False
+TagRecord|Heraldic Beast Basilisk|False|True|False|False
+TagRecord|Heraldic Beast Eale|False|True|False|False
+TagRecord|Heraldic Beast Leo|False|True|False|False
+TagRecord|Heraldic Beast Unicorn|False|True|False|False
+TagRecord|Horse of the Floral Knights|True|False|False|False
+TagRecord|Hyena|True|False|False|False
+TagRecord|Hypnocorn|False|True|False|False
+TagRecord|Inaba White Rabbit|True|False|False|False
+TagRecord|Infernity Beast|False|True|False|False
+TagRecord|Interplanetarypurplythorny Beast|True|False|False|False
+TagRecord|Invoked Caliga|False|True|False|False
+TagRecord|Kalantosa, Mystical Beast of the Forest|False|True|False|False
+TagRecord|Kangaroo Champ|True|False|False|False
+TagRecord|King Tiger Wanghu|False|True|False|False
+TagRecord|Koalo-Koala|False|True|False|False
+TagRecord|Larvas|True|False|False|False
+TagRecord|Leo, the Keeper of the Sacred Tree|False|True|False|False
+TagRecord|Leogun|True|False|False|False
+TagRecord|Lightning Tricorn|False|True|False|False
+TagRecord|Little Chimera|True|False|False|False
+TagRecord|Lock Cat|False|True|False|False
+TagRecord|Mad Dog of Darkness|True|False|False|False
+TagRecord|Madolche Chickolates|False|True|False|False
+TagRecord|Madolche Cruffssant|False|True|False|False
+TagRecord|Madolche Mewfeuille|False|True|False|False
+TagRecord|Maji-Gire Panda|True|False|False|False
+TagRecord|Master & Expert|True|False|False|False
+TagRecord|Master of Oz|True|False|False|False
+TagRecord|Mayosenju Hitot|True|False|False|False
+TagRecord|Melffy Rabby|True|False|False|False
+TagRecord|Melffy Wally|True|False|False|False
+TagRecord|Merry Melffys|True|False|False|False
+TagRecord|Milus Radiant|False|True|False|False
+TagRecord|Mine Mole|False|True|False|False
+TagRecord|Missus Radiant|False|True|False|False
+TagRecord|Mogmole|False|True|False|False
+TagRecord|Moja|False|True|False|False
+TagRecord|Monoceros|False|True|False|False
+TagRecord|Mosaic Manticore|False|True|False|False
+TagRecord|Mystic Horseman|True|False|False|False
+TagRecord|Mystical Sheep #1|False|True|False|False
+TagRecord|Mystical Sheep #2|True|False|False|False
+TagRecord|Naturia Leodrake|True|False|False|False
+TagRecord|Nefarious Archfiend Eater of Nefariousness|True|False|False|False
+TagRecord|Neko Mane King|True|False|False|False
+TagRecord|Nimble Beaver|False|True|False|False
+TagRecord|Nimble Momonga|False|True|False|False
+TagRecord|Nimble Musasabi|False|True|False|False
+TagRecord|Number 14: Greedy Sarameya|False|True|False|False
+TagRecord|Number 29: Mannequin Cat|True|False|False|False
+TagRecord|Ojama Black|True|False|False|False
+TagRecord|Ojama Blue|True|False|False|False
+TagRecord|Ojama Green|False|True|False|False
+TagRecord|Ojama King|False|True|False|False
+TagRecord|Ojama Knight|False|True|False|False
+TagRecord|Ojama Pink|True|False|False|False
+TagRecord|Ojama Red|True|False|False|False
+TagRecord|Ojama Yellow|True|False|False|False
+TagRecord|Outstanding Dog Marron|False|True|False|False
+TagRecord|Outstanding Dog Mary|True|False|False|False
+TagRecord|Pale Beast|True|False|False|False
+TagRecord|Pandemonium Watchbear|True|False|False|False
+TagRecord|Performapal Bubblebowwow|False|True|False|False
+TagRecord|Performapal Camelump|True|False|False|False
+TagRecord|Performapal Drummerilla|False|True|False|False
+TagRecord|Performapal Elephammer|False|True|False|False
+TagRecord|Performapal Fire Mufflerlion|True|False|False|False
+TagRecord|Performapal Flip Hippo|False|True|False|False
+TagRecord|Performapal Friendonkey|True|False|False|False
+TagRecord|Performapal Gongato|False|False|True|False
+TagRecord|Performapal Gumgumouton|False|True|False|False
+TagRecord|Performapal Handstandaccoon|True|False|False|False
+TagRecord|Performapal Hip Hippo|True|False|False|False
+TagRecord|Performapal Inflater Tapir|False|True|False|False
+TagRecord|Performapal Monkeyboard|False|True|False|False
+TagRecord|Performapal Rain Goat|False|True|False|False
+TagRecord|Performapal Silver Claw|False|True|False|False
+TagRecord|Performapal Splashmammoth|False|True|False|False
+TagRecord|Performapal Trampolynx|False|True|False|False
+TagRecord|Performapal Trumpanda|False|True|False|False
+TagRecord|Peropero Cerperus|True|False|False|False
+TagRecord|Photon Cerberus|False|True|False|False
+TagRecord|Photon Leo|False|True|False|False
+TagRecord|Photon Sabre Tiger|False|True|False|False
+TagRecord|Playful Possum|False|True|False|False
+TagRecord|Prevent Rat|True|False|False|False
+TagRecord|Recon, Scout Fur Hire|True|False|False|False
+TagRecord|Red Hared Hasty Horse|False|True|False|False
+TagRecord|Regulus|False|True|False|False
+TagRecord|Rescue Cat|True|False|False|False
+TagRecord|Rescue Rabbit|True|False|False|False
+TagRecord|Rodenut|False|True|False|False
+TagRecord|Ryko, Lightsworn Hunter|False|True|False|False
+TagRecord|Scareclaw Astra|True|False|False|False
+TagRecord|Scareclaw Belone|True|False|False|False
+TagRecord|Scrap Beast|False|True|False|False
+TagRecord|Scrap Kong|False|True|False|False
+TagRecord|Sea Koala|False|True|False|False
+TagRecord|Silver Fang|False|True|False|False
+TagRecord|Skull Dog Marron|False|True|False|False
+TagRecord|Sleeping Lion|False|True|False|False
+TagRecord|Soul Tiger|True|False|False|False
+TagRecord|Sphinx Teleia|True|False|False|False
+TagRecord|Spiritual Beast Rampengu|False|True|False|False
+TagRecord|Stellar Wind Wolfrayet|True|False|False|False
+TagRecord|Sunlight Unicorn|False|True|False|False
+TagRecord|Super War-Lion|False|True|False|False
+TagRecord|Super-Nimble Mega Hamster|True|False|False|False
+TagRecord|SZW - Fenrir Sword|True|False|False|False
+TagRecord|Tanngrisnir of the Nordic Beasts|False|True|False|False
+TagRecord|Test Ape|False|True|False|False
+TagRecord|Test Tiger|False|True|False|False
+TagRecord|The All-Seeing White Tiger|True|False|False|False
+TagRecord|The Fabled Abanc|True|False|False|False
+TagRecord|The Fabled Catsith|False|True|False|False
+TagRecord|The Fabled Cerburrel|True|False|False|False
+TagRecord|The Fabled Chawa|False|True|False|False
+TagRecord|The Fabled Ganashia|False|True|False|False
+TagRecord|The Fabled Kokkator|False|True|False|False
+TagRecord|The Fabled Nozoochee|True|False|False|False
+TagRecord|The Fabled Peggulsus|False|True|False|False
+TagRecord|The Fabled Unicore|True|False|False|False
+TagRecord|The Trojan Horse|True|False|False|False
+TagRecord|The Wicked Worm Beast|True|False|False|False
+TagRecord|Theinen the Great Sphinx|True|False|False|False
+TagRecord|Thousand Needles|False|True|False|False
+TagRecord|Three Thousand Needles|False|True|False|False
+TagRecord|Treasure Panda|False|True|False|False
+TagRecord|Tri-Brigade Bearbrumm the Rampant Rampager|True|False|False|False
+TagRecord|Twinheaded Beast|False|True|False|False
+TagRecord|Two Thousand Needles|False|True|False|False
+TagRecord|Undaunted Bumpkin Beast|True|False|False|False
+TagRecord|Uniflora, Mystical Beast of the Forest|False|True|False|False
+TagRecord|Uni-Horned Familiar|False|True|False|False
+TagRecord|Valerifawn, Mystical Beast of the Forest|False|True|False|False
+TagRecord|Vampiric Koala|False|True|False|False
+TagRecord|Voltic Kong|False|True|False|False
+TagRecord|Watch Cat|False|True|False|False
+TagRecord|Whirlwind Weasel|False|True|False|False
+TagRecord|Wind-Up Dog|False|True|False|False
+TagRecord|Wind-Up Kitten|False|False|True|False
+TagRecord|Wolf|False|True|False|False
+TagRecord|Wrecker Panda|True|False|False|False
+TagRecord|X-Saber Airbellum|False|True|False|False
+TagRecord|XX-Saber Garsem|False|True|False|False
+TagRecord|Yokotuner|False|True|False|False
+TagRecord|Yosenju Magat|False|True|False|False
+TagRecord|Yosenju Misak|False|True|False|False
+TagRecord|Zany Zebra|False|True|False|False
+TagRecord|ZW - Lightning Blade|False|True|False|False
+TagRecord|ZW - Sylphid Wing|True|False|False|False
+TagRecord|ZW - Unicorn Spear|False|True|False|False
+TagRecord|Melffy Mommy|False|False|True|False
