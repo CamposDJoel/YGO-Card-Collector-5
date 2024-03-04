@@ -1,4 +1,4 @@
-1271
+1672
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -1270,3 +1270,404 @@ TagRecord|Ultimate Tyranno|True|False|False|False
 TagRecord|Uraby|True|False|False|False
 TagRecord|Yellow Dragon Ninja|False|True|False|False
 TagRecord|Jurrac Protops|False|True|False|False
+TagRecord|Absorouter Dragon|True|False|False|False
+TagRecord|Aether, the Empowering Dragon|True|False|False|False
+TagRecord|Aether, the Evil Empowering Dragon|False|True|False|False
+TagRecord|Albion the Shrouded Dragon|True|False|False|False
+TagRecord|Alexandrite Dragon|True|False|False|False
+TagRecord|All-Eyes Phantom Dragon|False|True|False|False
+TagRecord|Alligator's Sword Dragon|False|False|True|False
+TagRecord|Amorphactor Pain, the Imagination Dracoverlord|False|True|False|False
+TagRecord|Amorphage Envy|False|True|False|False
+TagRecord|Amorphage Gluttony|False|True|False|False
+TagRecord|Amorphage Goliath|False|True|False|False
+TagRecord|Amorphage Greed|False|True|False|False
+TagRecord|Amorphage Lechery|False|True|False|False
+TagRecord|Amorphage Pride|True|False|False|False
+TagRecord|Amorphage Sloth|False|True|False|False
+TagRecord|Amorphage Wrath|False|True|False|False
+TagRecord|Amulet Dragon|False|True|False|False
+TagRecord|Ancient Dragon|False|True|False|False
+TagRecord|Ancient Fairy Dragon|True|False|False|False
+TagRecord|Anesthrokket Dragon|False|True|False|False
+TagRecord|Archfiend Black Skull Dragon|True|False|False|False
+TagRecord|Arkbrave Dragon|False|True|False|False
+TagRecord|Armed Dragon LV10|False|False|True|False
+TagRecord|Armed Dragon LV3|True|False|False|False
+TagRecord|Armed Dragon LV5|True|False|False|False
+TagRecord|Armed Dragon LV7|False|True|False|False
+TagRecord|Armed Dragon Thunder LV5|True|False|False|False
+TagRecord|Armed Protector Dragon|True|False|False|False
+TagRecord|Ascension Sky Dragon|False|True|False|False
+TagRecord|Assault Wyvern|True|False|False|False
+TagRecord|Atomic Scrap Dragon|False|True|False|False
+TagRecord|Attachment Cybern|True|False|False|False
+TagRecord|Autorokket Dragon|True|False|False|False
+TagRecord|Awakening of the Possessed - Rasenryu|True|False|False|False
+TagRecord|Axe Dragonute|True|False|False|False
+TagRecord|Azure-Eyes Silver Dragon|True|False|False|False
+TagRecord|Black Skull Dragon|False|True|False|False
+TagRecord|Baby Dragon|True|False|False|False
+TagRecord|Baby Tiragon|True|False|False|False
+TagRecord|Background Dragon|False|True|False|False
+TagRecord|Beast-Eyes Pendulum Dragon|False|True|False|False
+TagRecord|Beelze of the Diabolic Dragons|False|True|False|False
+TagRecord|Beelzeus of the Diabolic Dragons|True|False|False|False
+TagRecord|Black Brutdrago|False|True|False|False
+TagRecord|Black Dragon Collapserpent|True|False|False|False
+TagRecord|Black Dragon's Chick|True|False|False|False
+TagRecord|Black Metal Dragon|True|False|False|False
+TagRecord|Black Rose Dragon|True|False|False|False
+TagRecord|Black Rose Moonlight Dragon|True|False|False|False
+TagRecord|Blackland Fire Dragon|True|False|False|False
+TagRecord|Black-Winged Dragon|False|True|False|False
+TagRecord|Blaster, Dragon Ruler of Infernos|False|False|True|False
+TagRecord|Blizzard Dragon|True|False|False|False
+TagRecord|Blue Rose Dragon|False|True|False|False
+TagRecord|Blue-Eyes Alternative Ultimate Dragon|True|False|False|False
+TagRecord|Blue-Eyes Alternative White Dragon|False|False|True|False
+TagRecord|Blue-Eyes Chaos MAX Dragon|True|False|False|False
+TagRecord|Blue-Eyes Solid Dragon|True|False|False|False
+TagRecord|Blue-Eyes Toon Dragon|True|False|False|False
+TagRecord|Blue-Eyes Twin Burst Dragon|True|False|False|False
+TagRecord|Blue-Eyes Ultimate Dragon|False|True|False|False
+TagRecord|Blue-Eyes White Dragon|True|False|False|False
+TagRecord|Booster Dragon|True|False|False|False
+TagRecord|Borreload Dragon|True|False|False|False
+TagRecord|Borreload eXcharge Dragon|True|False|False|False
+TagRecord|Borreload Furious Dragon|True|False|False|False
+TagRecord|Borrelsword Dragon|True|False|False|False
+TagRecord|Bright Star Dragon|False|True|False|False
+TagRecord|Burner, Dragon Ruler of Sparks|False|True|False|False
+TagRecord|Buster Dragon|False|True|False|False
+TagRecord|Buster Whelp of the Destruction Swordsman|False|True|False|False
+TagRecord|Cave Dragon|False|True|False|False
+TagRecord|Chaos Dragon Levianeer|True|False|False|False
+TagRecord|Chaos Emperor Dragon - Envoy of the End|True|False|False|False
+TagRecord|Checksum Dragon|True|False|False|False
+TagRecord|Clear Vice Dragon|False|True|False|False
+TagRecord|Clear Wing Fast Dragon|True|False|False|False
+TagRecord|Coral Dragon|False|False|True|False
+TagRecord|Cosmic Blazar Dragon|False|True|False|False
+TagRecord|Crawling Dragon|True|False|False|False
+TagRecord|Crusadia Draco|False|True|False|False
+TagRecord|Curse of Dragon|True|False|False|False
+TagRecord|Curse of Dragon, the Cursed Dragon|True|False|False|False
+TagRecord|Curse of Dragonfire|True|False|False|False
+TagRecord|Cyberdark Cannon|True|False|False|False
+TagRecord|Cyberdark Claw|True|False|False|False
+TagRecord|Dark Armed Dragon|True|False|False|False
+TagRecord|Dark Armed, the Dragon of Annihilation|False|True|False|False
+TagRecord|Dark Horus|False|True|False|False
+TagRecord|Dark Magician the Dragon Knight|True|False|False|False
+TagRecord|Dark Rebellion Xyz Dragon|True|False|False|False
+TagRecord|Darkblaze Dragon|True|False|False|False
+TagRecord|Darkfire Dragon|True|False|False|False
+TagRecord|Darkstorm Dragon|True|False|False|False
+TagRecord|Debris Dragon|False|True|False|False
+TagRecord|Decoy Dragon|True|False|False|False
+TagRecord|Deep-Eyes White Dragon|True|False|False|False
+TagRecord|Defrag Dragon|True|False|False|False
+TagRecord|Delta Flyer|False|True|False|False
+TagRecord|Des Volstgalph|True|False|False|False
+TagRecord|Destrudo the Lost Dragon's Frisson|False|True|False|False
+TagRecord|Diabolos, King of the Abyss|True|False|False|False
+TagRecord|Different Dimension Dragon|False|True|False|False
+TagRecord|Dillingerous Dragon|False|True|False|False
+TagRecord|Dinoster Power, the Mighty Dracoslayer|False|True|False|False
+TagRecord|Divine Dragon - Excelion|False|True|False|False
+TagRecord|Divine Dragon Apocralyph|True|False|False|False
+TagRecord|Divine Dragon Ragnarok|True|False|False|False
+TagRecord|Divine Dragon Titanomakhia|True|False|False|False
+TagRecord|DMZ Dragon|True|False|False|False
+TagRecord|Dodger Dragon|False|True|False|False
+TagRecord|Doom Virus Dragon|False|True|False|False
+TagRecord|Dragocytos Corrupted Nethersoul Dragon|False|True|False|False
+TagRecord|Dragon Buster Destruction Sword|True|False|False|False
+TagRecord|Dragon Core Hexer|False|True|False|False
+TagRecord|Dragon Ice|False|True|False|False
+TagRecord|Dragon Knight of Creation|True|False|False|False
+TagRecord|Dragon Master Knight|False|True|False|False
+TagRecord|Dragon Spirit of White|True|False|False|False
+TagRecord|Dragonic Guard|False|True|False|False
+TagRecord|Dragonic Knight|False|True|False|False
+TagRecord|Dragunity Corsesca|False|True|False|False
+TagRecord|Dragunity Couse|True|False|False|False
+TagRecord|Dragunity Darkspear|False|True|False|False
+TagRecord|Dragunity Knight - Gae Bulg|True|False|False|False
+TagRecord|Dragunity Knight - Gae Dearg|True|False|False|False
+TagRecord|Dragunity Knight - Luin|False|True|False|False
+TagRecord|Dragunity Knight - Romulus|True|False|False|False
+TagRecord|Dragunity Knight - Trident|True|False|False|False
+TagRecord|Dragunity Knight - Vajrayana|False|True|False|False
+TagRecord|Dragunity Partisan|False|True|False|False
+TagRecord|Dragunity Phalanx|False|True|False|False
+TagRecord|Dragunity Pilum|False|True|False|False
+TagRecord|Dweller in the Depths|False|True|False|False
+TagRecord|Eclipse Wyvern|True|False|False|False
+TagRecord|Element Dragon|True|False|False|False
+TagRecord|Evilswarm Bahamut|False|True|False|False
+TagRecord|Evilswarm Ouroboros|False|True|False|False
+TagRecord|Evilswarm Zahak|True|False|False|False
+TagRecord|Evolzar Dolkka|True|False|False|False
+TagRecord|Evolzar Laggia|False|True|False|False
+TagRecord|Evolzar Solda|False|True|False|False
+TagRecord|Exa, Enforcer of the Nekroz|False|True|False|False
+TagRecord|Exploder Dragon|False|True|False|False
+TagRecord|Exploder Dragonwing|False|True|False|False
+TagRecord|Exploderokket Dragon|True|False|False|False
+TagRecord|Fairy Dragon|False|True|False|False
+TagRecord|Felgrand Dragon|True|False|False|False
+TagRecord|Fiend Skull Dragon|False|True|False|False
+TagRecord|First of the Dragons|True|False|False|False
+TagRecord|Five-Headed Dragon|False|True|False|False
+TagRecord|Flamvell Dragnov|True|False|False|False
+TagRecord|Flamvell Grunika|False|True|False|False
+TagRecord|Flamvell Guard|True|False|False|False
+TagRecord|Frost and Flame Dragon|True|False|False|False
+TagRecord|Gaia the Dragon Champion|True|False|False|False
+TagRecord|Galaxy Dragon|False|True|False|False
+TagRecord|Galaxy Serpent|True|False|False|False
+TagRecord|Galaxy Stealth Dragon|True|False|False|False
+TagRecord|Galaxy-Eyes Cipher Blade Dragon|False|True|False|False
+TagRecord|Galaxy-Eyes Photon Dragon|False|False|True|False
+TagRecord|Galaxy-Eyes Solflare Dragon|False|True|False|False
+TagRecord|Gandora the Dragon of Destruction|True|False|False|False
+TagRecord|Gateway Dragon|True|False|False|False
+TagRecord|Golem Dragon|False|True|False|False
+TagRecord|Gragonith, Lightsworn Dragon|True|False|False|False
+TagRecord|Grandtusk Dragon|True|False|False|False
+TagRecord|Gravi-Crush Dragon|True|False|False|False
+TagRecord|Gray Wing|True|False|False|False
+TagRecord|Guardragon Agarpain|False|True|False|False
+TagRecord|Guardragon Andrake|False|True|False|False
+TagRecord|Guardragon Garmides|False|True|False|False
+TagRecord|Guardragon Justicia|False|True|False|False
+TagRecord|Gungnir, Dragon of the Ice Barrier|True|False|False|False
+TagRecord|Handcuffs Dragon|False|True|False|False
+TagRecord|Harpie's Pet Baby Dragon|True|False|False|False
+TagRecord|Harpie's Pet Dragon|True|False|False|False
+TagRecord|Harpie's Pet Phantasmal Dragon|True|False|False|False
+TagRecord|Heliosphere Dragon|True|False|False|False
+TagRecord|Heraldic Beast Aberconway|False|True|False|False
+TagRecord|Heraldic Beast Amphisbaena|False|True|False|False
+TagRecord|Hibernation Dragon|False|True|False|False
+TagRecord|Hieratic Dragon King of Atum|False|True|False|False
+TagRecord|Hieratic Dragon of Asar|False|True|False|False
+TagRecord|Hieratic Dragon of Eset|False|True|False|False
+TagRecord|Hieratic Dragon of Nebthet|False|True|False|False
+TagRecord|Hieratic Dragon of Nuit|True|False|False|False
+TagRecord|Hieratic Dragon of Su|False|True|False|False
+TagRecord|Hieratic Dragon of Tefnuit|True|False|False|False
+TagRecord|Hieratic Seal of the Dragon King|True|False|False|False
+TagRecord|Hieratic Seal of the Sun Dragon Overlord|True|False|False|False
+TagRecord|Hieratic Sun Dragon Overlord of Heliopolis|False|True|False|False
+TagRecord|Horus the Black Flame Dragon LV4|False|True|False|False
+TagRecord|Horus the Black Flame Dragon LV6|True|False|False|False
+TagRecord|Hot Red Dragon Archfiend|True|False|False|False
+TagRecord|Hot Red Dragon Archfiend Abyss|False|False|True|False
+TagRecord|Hot Red Dragon Archfiend Bane|False|True|False|False
+TagRecord|Hot Red Dragon Archfiend King Calamity|False|True|False|False
+TagRecord|Hundred Eyes Dragon|False|True|False|False
+TagRecord|Hunter Dragon|False|True|False|False
+TagRecord|Hyozanryu|True|False|False|False
+TagRecord|Ignister Prominence, the Blasting Dracoslayer|False|True|False|False
+TagRecord|Imduk the World Chalice Dragon|False|True|False|False
+TagRecord|Influence Dragon|False|True|False|False
+TagRecord|Interplanetarypurplythorny Dragon|False|True|False|False
+TagRecord|Invoked Cocytus|False|True|False|False
+TagRecord|Iron Chain Dragon|False|True|False|False
+TagRecord|Iron Dragon Tiamaton|True|False|False|False
+TagRecord|Jormungardr the Nordic Serpent|False|True|False|False
+TagRecord|Judgment Dragon|False|True|False|False
+TagRecord|Judgment, the Dragon of Heaven|False|True|False|False
+TagRecord|Kabuki Dragon|False|True|False|False
+TagRecord|Kachi Kochi Dragon|False|True|False|False
+TagRecord|Kaiser Dragon|False|True|False|False
+TagRecord|Keeper of Dragon Magic|True|False|False|False
+TagRecord|Keeper of the Shrine|False|True|False|False
+TagRecord|King Dragun|False|True|False|False
+TagRecord|Kiryu|True|False|False|False
+TagRecord|Knight of Armor Dragon|True|False|False|False
+TagRecord|Koa'ki Meiru Drago|False|True|False|False
+TagRecord|Koa'ki Meiru Maximus|False|True|False|False
+TagRecord|Koumori Dragon|True|False|False|False
+TagRecord|Krystal Dragon|True|False|False|False
+TagRecord|Labradorite Dragon|True|False|False|False
+TagRecord|Lancer Dragonute|False|True|False|False
+TagRecord|Lancer Lindwurm|False|True|False|False
+TagRecord|Lava Dragon|False|True|False|False
+TagRecord|Lector Pendulum, the Dracoverlord|False|True|False|False
+TagRecord|Leng Ling|False|True|False|False
+TagRecord|Lesser Dragon|True|False|False|False
+TagRecord|Light and Darkness Dragon|False|True|False|False
+TagRecord|Lightning, Dragon Ruler of Drafts|False|True|False|False
+TagRecord|Lightpulsar Dragon|True|False|False|False
+TagRecord|Lightray Diabolos|False|True|False|False
+TagRecord|Linkbelt Wall Dragon|True|False|False|False
+TagRecord|Lizard Soldier|True|False|False|False
+TagRecord|Lord of the Red|True|False|False|False
+TagRecord|Luster Dragon|True|False|False|False
+TagRecord|Luster Dragon #2|False|True|False|False
+TagRecord|Magnarokket Dragon|True|False|False|False
+TagRecord|Majester Paladin, the Ascending Dracoslayer|False|True|False|False
+TagRecord|Majestic Dragon|True|False|False|False
+TagRecord|Malefic Truth Dragon|False|True|False|False
+TagRecord|Mana Dragon Zirnitron|False|True|False|False
+TagRecord|Manga Ryu-Ran|True|False|False|False
+TagRecord|Master Peace, the True Dracoslayer|False|True|False|False
+TagRecord|Master Pendulum, the Dracoslayer|False|True|False|False
+TagRecord|Metalrokket Dragon|False|True|False|False
+TagRecord|Meteor Black Dragon|False|True|False|False
+TagRecord|Meteor Dragon|False|True|False|False
+TagRecord|Meteor Dragon Red-Eyes Impact|False|True|False|False
+TagRecord|Mikazukinoyaiba|False|True|False|False
+TagRecord|Miniborrel Dragon|True|False|False|False
+TagRecord|Mirage Dragon|False|True|False|False
+TagRecord|Mirror Force Dragon|False|True|False|False
+TagRecord|Moon Dragon Quilla|False|True|False|False
+TagRecord|Muddy Mudragon|False|True|False|False
+TagRecord|Mythic Tree Dragon|True|False|False|False
+TagRecord|Mythic Water Dragon|False|True|False|False
+TagRecord|Nekroz of Catastor|False|True|False|False
+TagRecord|Neo Galaxy-Eyes Cipher Dragon|False|True|False|False
+TagRecord|Neo Kaiser Glider|True|False|False|False
+TagRecord|Number 107: Galaxy-Eyes Tachyon Dragon|True|False|False|False
+TagRecord|Number 5: Doom Chimera Dragon|False|True|False|False
+TagRecord|Number 71: Rebarian Shark|True|False|False|False
+TagRecord|Number 82: Heartlandraco|False|True|False|False
+TagRecord|Number 97: Draglubion|False|True|False|False
+TagRecord|Number C107: Neo Galaxy-Eyes Tachyon Dragon|True|False|False|False
+TagRecord|Number C5: Chaos Chimera Dragon|True|False|False|False
+TagRecord|Number C92: Heart-eartH Chaos Dragon|False|True|False|False
+TagRecord|Odd-Eyes Absolute Dragon|False|True|False|False
+TagRecord|Odd-Eyes Dragon|True|False|False|False
+TagRecord|Odd-Eyes Gravity Dragon|False|True|False|False
+TagRecord|Odd-Eyes Lancer Dragon|False|True|False|False
+TagRecord|Odd-Eyes Meteorburst Dragon|False|True|False|False
+TagRecord|Odd-Eyes Mirage Dragon|False|True|False|False
+TagRecord|Odd-Eyes Pendulum Dragon|True|False|False|False
+TagRecord|Odd-Eyes Vortex Dragon|False|True|False|False
+TagRecord|Omni Dragon Brotaur|True|False|False|False
+TagRecord|One-Eyed Shield Dragon|True|False|False|False
+TagRecord|Overflow Dragon|False|True|False|False
+TagRecord|Paladin of Dark Dragon|True|False|False|False
+TagRecord|Paladin of White Dragon|True|False|False|False
+TagRecord|Pandemic Dragon|True|False|False|False
+TagRecord|Parlor Dragonmaid|True|False|False|False
+TagRecord|Parrot Dragon|False|True|False|False
+TagRecord|Parsec, the Interstellar Dragon|False|True|False|False
+TagRecord|Performapal Coin Dragon|False|True|False|False
+TagRecord|Petit Dragon|True|False|False|False
+TagRecord|Phantom Dragon|False|True|False|False
+TagRecord|Phonon Pulse Dragon|False|True|False|False
+TagRecord|Photon Lizard|False|True|False|False
+TagRecord|Photon Wyvern|False|True|False|False
+TagRecord|Pitch-Dark Dragon|True|False|False|False
+TagRecord|Poki Draco|False|True|False|False
+TagRecord|Poly-Chemicritter Hydragon|False|True|False|False
+TagRecord|Prime Material Dragon|True|False|False|False
+TagRecord|Punishment Dragon|False|True|False|False
+TagRecord|Quadborrel Dragon|True|False|False|False
+TagRecord|Rabidragon|False|True|False|False
+TagRecord|Radiant Vouirescence|True|False|False|False
+TagRecord|Radius, the Half-Moon Dragon|False|True|False|False
+TagRecord|Rafale, Champion Fur Hire|False|True|False|False
+TagRecord|Raging Storm Dragon - Beaufort IX|True|False|False|False
+TagRecord|Rainbow Dark Dragon|False|True|False|False
+TagRecord|Rainbow Dragon|False|True|False|False
+TagRecord|Rainbow Overdragon|True|False|False|False
+TagRecord|Ranryu|True|False|False|False
+TagRecord|Reactan, Dragon Ruler of Pebbles|False|True|False|False
+TagRecord|Red Dragon Archfiend|False|False|True|False
+TagRecord|Red Dragon Archfiend/Assault Mode|False|False|True|False
+TagRecord|Red Nova Dragon|False|False|True|False
+TagRecord|Red Rising Dragon|False|True|False|False
+TagRecord|Red-Eyes Alternative Black Dragon|True|False|False|False
+TagRecord|Red-Eyes Black Dragon|True|False|False|False
+TagRecord|Red-Eyes Black Dragon Sword|True|False|False|False
+TagRecord|Red-Eyes Black Flare Dragon|True|False|False|False
+TagRecord|Red-Eyes Darkness Dragon|True|False|False|False
+TagRecord|Red-Eyes Darkness Metal Dragon|True|False|False|False
+TagRecord|Red-Eyes Flare Metal Dragon|False|True|False|False
+TagRecord|Red-Eyes Retro Dragon|True|False|False|False
+TagRecord|Red-Eyes Toon Dragon|True|False|False|False
+TagRecord|Red-Eyes Wyvern|True|False|False|False
+TagRecord|Rider of the Storm Winds|True|False|False|False
+TagRecord|Rokket Caliber|True|False|False|False
+TagRecord|Rokket Recharger|True|False|False|False
+TagRecord|Rokket Synchron|True|False|False|False
+TagRecord|Rokket Tracer|True|False|False|False
+TagRecord|Ryu-Ran|True|False|False|False
+TagRecord|Saryuja Skull Dread|True|False|False|False
+TagRecord|Scarlight Red Dragon Archfiend|True|False|False|False
+TagRecord|Schwarzschild Limit Dragon|True|False|False|False
+TagRecord|Scrap Dragon|True|False|False|False
+TagRecord|Scrap Twin Dragon|True|False|False|False
+TagRecord|Seiyaryu|False|True|False|False
+TagRecord|Shelrokket Dragon|True|False|False|False
+TagRecord|Shooting Star Dragon|True|False|False|False
+TagRecord|Silverrokket Dragon|True|False|False|False
+TagRecord|Sniffer Dragon|False|True|False|False
+TagRecord|Snow Dragon|False|True|False|False
+TagRecord|Snowdust Dragon|False|True|False|False
+TagRecord|Soldier Dragons|False|True|False|False
+TagRecord|Soul Drain Dragon|False|True|False|False
+TagRecord|Spear Dragon|True|False|False|False
+TagRecord|Speedburst Dragon|False|True|False|False
+TagRecord|Spirit Ryu|True|False|False|False
+TagRecord|Stardust Dragon|True|False|False|False
+TagRecord|Stardust Sifr Divine Dragon|False|True|False|False
+TagRecord|Stardust Spark Dragon|True|False|False|False
+TagRecord|Stardust Xiaolong|True|False|False|False
+TagRecord|Stream, Dragon Ruler of Droplets|False|True|False|False
+TagRecord|Subterror Guru|False|True|False|False
+TagRecord|Sun Dragon Inti|True|False|False|False
+TagRecord|Superalloy Beast Raptinus|False|True|False|False
+TagRecord|Supreme King Dragon Clear Wing|False|True|False|False
+TagRecord|Supreme King Dragon Dark Rebellion|False|True|False|False
+TagRecord|Supreme King Dragon Darkwurm|False|True|False|False
+TagRecord|Supreme King Dragon Odd-Eyes|False|True|False|False
+TagRecord|Supreme King Dragon Starving Venom|False|True|False|False
+TagRecord|Supreme King Z-ARC|False|True|False|False
+TagRecord|T.G. Catapult Dragon|False|True|False|False
+TagRecord|The Black Stone of Legend|True|False|False|False
+TagRecord|The Dragon Dwelling in the Cave|True|False|False|False
+TagRecord|The White Stone of Ancients|True|False|False|False
+TagRecord|The White Stone of Legend|True|False|False|False
+TagRecord|Thousand Dragon|True|False|False|False
+TagRecord|Tiger Dragon|False|True|False|False
+TagRecord|Totem Dragon|True|False|False|False
+TagRecord|Triggering Wurm|False|True|False|False
+TagRecord|Trigon|False|True|False|False
+TagRecord|Tri-Horned Dragon|False|True|False|False
+TagRecord|Triple Burst Dragon|True|False|False|False
+TagRecord|Trishula, Dragon of the Ice Barrier|True|False|False|False
+TagRecord|Trishula, Zero Dragon of the Ice Barrier|True|False|False|False
+TagRecord|Troop Dragon|True|False|False|False
+TagRecord|Twin Photon Lizard|False|True|False|False
+TagRecord|Twin Triangle Dragon|False|True|False|False
+TagRecord|Tyhone #2|True|False|False|False
+TagRecord|Tyrant Burst Dragon|False|True|False|False
+TagRecord|Tyrant Dragon|False|True|False|False
+TagRecord|Van'Dalgyon the Dark Dragon Lord|False|True|False|False
+TagRecord|Vanguard of the Dragon|False|True|False|False
+TagRecord|Vector Pendulum, the Dracoverlord|False|True|False|False
+TagRecord|Vorticular Drumgon|False|True|False|False
+TagRecord|Wattaildragon|False|True|False|False
+TagRecord|White Dragon Ninja|False|True|False|False
+TagRecord|White Dragon Wyverburster|True|False|False|False
+TagRecord|White-Horned Dragon|False|True|False|False
+TagRecord|Winged Dragon, Guardian of the Fortress #1|False|False|True|False
+TagRecord|World Chalice Guardragon|True|False|False|False
+TagRecord|World Chalice Guardragon Almarduke|False|True|False|False
+TagRecord|World Legacy Guardragon Mardark|False|True|False|False
+TagRecord|Xyz-Raypierce|False|True|False|False
+TagRecord|Yamadron|False|True|False|False
+TagRecord|Zefraxa, Flame Beast of the Nekroz|True|False|False|False
+TagRecord|ZW - Tornado Bringer|False|True|False|False
+TagRecord|Guardragon Promineses|False|True|False|False
+TagRecord|Lavalval Dragun|False|True|False|False
+TagRecord|Number 17: Leviathan Dragon|False|True|False|False
+TagRecord|Phantasmal Lord Ultimitl Bishbaalkin|False|True|False|False
+TagRecord|Trident Dragion|False|True|False|False
