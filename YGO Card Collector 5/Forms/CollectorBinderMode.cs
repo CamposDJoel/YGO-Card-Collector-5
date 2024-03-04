@@ -361,7 +361,7 @@ namespace YGO_Card_Collector_5
                     tagLabel2.TextAlign = ContentAlignment.MiddleRight;
                     tagLabel2.ForeColor = Color.White;
                     tagLabel2.Tag = x;
-                    //tagLabel2.Click += new EventHandler(SetCardLabel_clicked);
+                    tagLabel2.Click += new EventHandler(SetCardLabel_clicked);
                     _TagLabelList.Add(tagLabel2);
 
                     //During the SetCard view, have this SetCard clicked on the card view highlighted in yellow
