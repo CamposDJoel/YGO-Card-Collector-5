@@ -1,4 +1,4 @@
-1042
+1271
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -1041,3 +1041,232 @@ TagRecord|Exarion Universe|False|True|False|False
 TagRecord|Icejade Acti|True|False|False|False
 TagRecord|Ooguchi|True|False|False|False
 TagRecord|Treeborn Frog|False|True|False|False
+TagRecord|Antialian|True|False|False|False
+TagRecord|Auram the World Chalice Blademaster|False|True|False|False
+TagRecord|Backlinker|True|False|False|False
+TagRecord|Backup Operator|False|True|False|False
+TagRecord|Backup Secretary|True|False|False|False
+TagRecord|Backup Supervisor|True|False|False|False
+TagRecord|Bitron|True|False|False|False
+TagRecord|Bitrooper|True|False|False|False
+TagRecord|Bravedrive|True|False|False|False
+TagRecord|Capacitor Stalker|False|True|False|False
+TagRecord|Catche Eve L2|False|True|False|False
+TagRecord|Cliant|True|False|False|False
+TagRecord|Clock Lizard|False|True|False|False
+TagRecord|Clock Spartoi|False|True|False|False
+TagRecord|Clock Wyvern|True|False|False|False
+TagRecord|Cluster Congester|True|False|False|False
+TagRecord|Code Exporter|True|False|False|False
+TagRecord|Code Talker|False|True|False|False
+TagRecord|Cross Debug|True|False|False|False
+TagRecord|Crusadia Equimax|False|True|False|False
+TagRecord|Cyberse Clock Dragon|False|True|False|False
+TagRecord|Cyberse Converter|False|True|False|False
+TagRecord|Cyberse Enchanter|True|False|False|False
+TagRecord|Cyberse Gadget|True|False|False|False
+TagRecord|Cyberse Integrator|False|True|False|False
+TagRecord|Cyberse Magician|False|True|False|False
+TagRecord|Cyberse Quantum Dragon|False|True|False|False
+TagRecord|Cyberse Reminder|False|True|False|False
+TagRecord|Cyberse White Hat|True|False|False|False
+TagRecord|Cyberse Wicckid|False|True|False|False
+TagRecord|Cyberse Witch|True|False|False|False
+TagRecord|Danmari @Ignister|True|False|False|False
+TagRecord|Datacorn|True|False|False|False
+TagRecord|Decode Talker|True|False|False|False
+TagRecord|Decode Talker Extended|True|False|False|False
+TagRecord|Defcon Bird|False|True|False|False
+TagRecord|Defect Compiler|False|True|False|False
+TagRecord|Degrade Buster|False|True|False|False
+TagRecord|Detonate Deleter|True|False|False|False
+TagRecord|Digitron|True|False|False|False
+TagRecord|Diplexer Chimera|False|True|False|False
+TagRecord|Doublebyte Dragon|False|True|False|False
+TagRecord|Draconnet|False|True|False|False
+TagRecord|Excode Talker|True|False|False|False
+TagRecord|Firewall Dragon|True|False|False|False
+TagRecord|Firewall Guardian|False|True|False|False
+TagRecord|Flame Administrator|False|True|False|False
+TagRecord|Flame Bufferlo|True|False|False|False
+TagRecord|Flick Clown|False|True|False|False
+TagRecord|Flip Frozen|True|False|False|False
+TagRecord|Garbage Collector|True|False|False|False
+TagRecord|Grid Sweeper|False|True|False|False
+TagRecord|Honeybot|True|False|False|False
+TagRecord|Interrupt Resistor|True|False|False|False
+TagRecord|Lady Debug|True|False|False|False
+TagRecord|LANphorhynchus|True|False|False|False
+TagRecord|Latency|True|False|False|False
+TagRecord|Launcher Commander|True|False|False|False
+TagRecord|Leotron|True|False|False|False
+TagRecord|Link Bumper|False|True|False|False
+TagRecord|Link Devotee|True|False|False|False
+TagRecord|Link Disciple|False|True|False|False
+TagRecord|Link Infra-Flier|False|True|False|False
+TagRecord|Link Spider|True|False|False|False
+TagRecord|Link Streamer|True|False|False|False
+TagRecord|Linkmail Archfiend|True|False|False|False
+TagRecord|Linkslayer|True|False|False|False
+TagRecord|Linkuriboh|False|True|False|False
+TagRecord|Lockout Gardna|True|False|False|False
+TagRecord|Marincess Blue Slug|True|False|False|False
+TagRecord|Marincess Blue Tang|True|False|False|False
+TagRecord|Marincess Coral Anemone|True|False|False|False
+TagRecord|Marincess Marbled Rock|True|False|False|False
+TagRecord|Marincess Pascalus|True|False|False|False
+TagRecord|Marincess Sea Angel|True|False|False|False
+TagRecord|Marincess Sea Horse|True|False|False|False
+TagRecord|Marincess Sea Star|True|False|False|False
+TagRecord|Marincess Sleepy Maiden|True|False|False|False
+TagRecord|Marincess Springirl|True|False|False|False
+TagRecord|Marincess Wonder Heart|True|False|False|False
+TagRecord|Mathmech Nabla|True|False|False|False
+TagRecord|Mathmech Sigma|False|True|False|False
+TagRecord|Mekk-Knight Crusadia Avramax|True|False|False|False
+TagRecord|Mekk-Knight Spectrum Supreme|False|True|False|False
+TagRecord|Meowseclick|True|False|False|False
+TagRecord|Paladin of Storm Dragon|False|True|False|False
+TagRecord|Pentestag|True|False|False|False
+TagRecord|Pitknight Earlie|True|False|False|False
+TagRecord|Powercode Talker|True|False|False|False
+TagRecord|Progleo|True|False|False|False
+TagRecord|Prohibit Snake|True|False|False|False
+TagRecord|Prompthorn|True|False|False|False
+TagRecord|Protron|False|True|False|False
+TagRecord|Proxy Dragon|True|False|False|False
+TagRecord|RAM Clouder|True|False|False|False
+TagRecord|Rasterliger|False|True|False|False
+TagRecord|Rebuildeer|True|False|False|False
+TagRecord|Recovery Sorcerer|True|False|False|False
+TagRecord|Rescue Interlacer|True|False|False|False
+TagRecord|Restoration Point Guard|False|True|False|False
+TagRecord|Salamangreat Almiraj|True|False|False|False
+TagRecord|Salamangreat Coyote|True|False|False|False
+TagRecord|Salamangreat Emerald Eagle|False|True|False|False
+TagRecord|Salamangreat Fennec|False|True|False|False
+TagRecord|Salamangreat Foxer|False|True|False|False
+TagRecord|Salamangreat Mole|True|False|False|False
+TagRecord|Salamangreat Parro|False|True|False|False
+TagRecord|Salamangreat Sunlight Wolf|False|True|False|False
+TagRecord|Salamangreat Violet Chimera|False|True|False|False
+TagRecord|Salvagent Driver|False|True|False|False
+TagRecord|Sea Archiver|True|False|False|False
+TagRecord|Secure Gardna|False|True|False|False
+TagRecord|Security Dragon|False|True|False|False
+TagRecord|Segmental Dragon|True|False|False|False
+TagRecord|Shootingcode Talker|False|True|False|False
+TagRecord|SIMM Tablir|False|True|False|False
+TagRecord|Space Insulator|False|True|False|False
+TagRecord|Stack Reviver|False|True|False|False
+TagRecord|Storm Cipher|True|False|False|False
+TagRecord|Striping Partner|False|True|False|False
+TagRecord|Swap Cleric|False|True|False|False
+TagRecord|Talkback Lancer|False|True|False|False
+TagRecord|Texchanger|True|False|False|False
+TagRecord|Threshold Borg|True|False|False|False
+TagRecord|Topologic Bomber Dragon|True|False|False|False
+TagRecord|Topologic Zeroboros|True|False|False|False
+TagRecord|Traffic Ghost|True|False|False|False
+TagRecord|Underclock Taker|False|True|False|False
+TagRecord|Update Jammer|False|True|False|False
+TagRecord|Vector Scare Archfiend|False|True|False|False
+TagRecord|V-LAN Hydra|True|False|False|False
+TagRecord|Widget Kid|True|False|False|False
+TagRecord|World Gears of Theurlogical Demiurgy|False|True|False|False
+TagRecord|Elphase|False|True|False|False
+TagRecord|Obelisk the Tormentor|False|False|True|False
+TagRecord|The Winged Dragon of Ra|False|True|False|False
+TagRecord|Slifer the Sky Dragon|True|False|False|False
+TagRecord|Anthrosaurus|True|False|False|False
+TagRecord|Babycerasaurus|True|False|False|False
+TagRecord|Beatraptor|True|False|False|False
+TagRecord|Black Brachios|True|False|False|False
+TagRecord|Black Ptera|True|False|False|False
+TagRecord|Black Stego|True|False|False|False
+TagRecord|Black Tyranno|True|False|False|False
+TagRecord|Black Veloci|False|True|False|False
+TagRecord|Carboneddon|True|False|False|False
+TagRecord|Crawling Dragon #2|True|False|False|False
+TagRecord|Dark Driceratops|True|False|False|False
+TagRecord|Dinowrestler Capaptera|False|True|False|False
+TagRecord|Dinowrestler Capoeiraptor|False|True|False|False
+TagRecord|Dinowrestler Chimera T Wrextle|False|True|False|False
+TagRecord|Dinowrestler Coelasilat|False|True|False|False
+TagRecord|Dinowrestler Eskrimamenchi|False|True|False|False
+TagRecord|Dinowrestler King T Wrextle|False|True|False|False
+TagRecord|Dinowrestler Martial Anga|False|True|False|False
+TagRecord|Dinowrestler Martial Ankylo|True|False|False|False
+TagRecord|Dinowrestler Pankratops|True|False|False|False
+TagRecord|Dinowrestler Rambrachio|True|False|False|False
+TagRecord|Dinowrestler Systegosaur|False|True|False|False
+TagRecord|Dinowrestler Terra Parkourio|False|True|False|False
+TagRecord|Dogoran, the Mad Flame Kaiju|False|True|False|False
+TagRecord|Duoterion|True|False|False|False
+TagRecord|Element Saurus|True|False|False|False
+TagRecord|Evilswarm Salamandra|True|False|False|False
+TagRecord|Evolsaur Cerato|False|True|False|False
+TagRecord|Evolsaur Darwino|False|True|False|False
+TagRecord|Evolsaur Diplo|False|True|False|False
+TagRecord|Evolsaur Elias|False|True|False|False
+TagRecord|Evolsaur Pelta|False|True|False|False
+TagRecord|Evolsaur Terias|False|True|False|False
+TagRecord|Evolsaur Vulcano|False|True|False|False
+TagRecord|Frostosaurus|False|True|False|False
+TagRecord|Galaxy Tyranno|False|True|False|False
+TagRecord|Gilasaurus|True|False|False|False
+TagRecord|Gladiator Beast Gaiodiaz|False|True|False|False
+TagRecord|Grenosaurus|True|False|False|False
+TagRecord|Guardian Grarl|False|True|False|False
+TagRecord|Hazy Flame Hydra|False|True|False|False
+TagRecord|Hydrogeddon|True|False|False|False
+TagRecord|Hyper Hammerhead|True|False|False|False
+TagRecord|Jurrac Brachis|True|False|False|False
+TagRecord|Jurrac Dino|False|True|False|False
+TagRecord|Jurrac Gallim|False|True|False|False
+TagRecord|Jurrac Guaiba|False|True|False|False
+TagRecord|Jurrac Herra|False|True|False|False
+TagRecord|Jurrac Iguanon|False|True|False|False
+TagRecord|Jurrac Meteor|False|True|False|False
+TagRecord|Jurrac Monoloph|False|True|False|False
+TagRecord|Jurrac Ptera|False|True|False|False
+TagRecord|Jurrac Spinos|False|True|False|False
+TagRecord|Jurrac Stauriko|False|True|False|False
+TagRecord|Jurrac Titano|False|True|False|False
+TagRecord|Jurrac Tyrannus|False|True|False|False
+TagRecord|Jurrac Velo|False|True|False|False
+TagRecord|Kabazauls|True|False|False|False
+TagRecord|Lancephorhynchus|False|True|False|False
+TagRecord|Mad Sword Beast|True|False|False|False
+TagRecord|Magical Cavalry of Cxulub|False|True|False|False
+TagRecord|Mammoth Graveyard|True|False|False|False
+TagRecord|Megalosmasher X|True|False|False|False
+TagRecord|Miracle Jurassic Egg|False|True|False|False
+TagRecord|Miscellaneousaurus|False|True|False|False
+TagRecord|Number 61: Volcasaurus|False|True|False|False
+TagRecord|Overtex Qoatlus|False|True|False|False
+TagRecord|Oxygeddon|True|False|False|False
+TagRecord|Petiteranodon|True|False|False|False
+TagRecord|Pragtical|False|True|False|False
+TagRecord|Pyrorex the Elemental Lord|False|True|False|False
+TagRecord|Re: EX|False|True|False|False
+TagRecord|Reprodocus|True|False|False|False
+TagRecord|Sabersaurus|True|False|False|False
+TagRecord|Samurai Cavalry of Reptier|False|True|False|False
+TagRecord|Sauropod Brachion|True|False|False|False
+TagRecord|Souleating Oviraptor|True|False|False|False
+TagRecord|Steel Cavalry of Dinon|False|True|False|False
+TagRecord|Stegocyber|True|False|False|False
+TagRecord|Super Conductor Tyranno|True|False|False|False
+TagRecord|Super-Ancient Dinobeast|True|False|False|False
+TagRecord|T.G. Booster Raptor|False|True|False|False
+TagRecord|Tomozaurus|True|False|False|False
+TagRecord|Trakodon|True|False|False|False
+TagRecord|Two-Headed King Rex|False|True|False|False
+TagRecord|Two-Mouth Darkruler|True|False|False|False
+TagRecord|Tyranno Infinity|False|True|False|False
+TagRecord|Ultimate Conductor Tyranno|False|True|False|False
+TagRecord|Ultimate Tyranno|True|False|False|False
+TagRecord|Uraby|True|False|False|False
+TagRecord|Yellow Dragon Ninja|False|True|False|False
+TagRecord|Jurrac Protops|False|True|False|False
