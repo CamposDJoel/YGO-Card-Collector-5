@@ -1,4 +1,4 @@
-905
+1042
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -54,7 +54,6 @@ TagRecord|Gagagashield|False|True|False|False
 TagRecord|Copy Knight|False|True|False|False
 TagRecord|The Tricky|False|False|True|False
 TagRecord|Magical Dimension|False|False|True|False
-TagRecord|Battle Ox|True|False|False|False
 TagRecord|Rush Recklessly|True|False|False|False
 TagRecord|Offerings to the Doomed|True|False|False|False
 TagRecord|Sakuretsu Armor|True|False|False|False
@@ -783,7 +782,6 @@ TagRecord|Mayosenju Hitot|True|False|False|False
 TagRecord|Melffy Rabby|True|False|False|False
 TagRecord|Melffy Wally|True|False|False|False
 TagRecord|Merry Melffys|True|False|False|False
-TagRecord|Milus Radiant|False|True|False|False
 TagRecord|Mine Mole|False|True|False|False
 TagRecord|Missus Radiant|False|True|False|False
 TagRecord|Mogmole|False|True|False|False
@@ -849,7 +847,6 @@ TagRecord|Scareclaw Belone|True|False|False|False
 TagRecord|Scrap Beast|False|True|False|False
 TagRecord|Scrap Kong|False|True|False|False
 TagRecord|Sea Koala|False|True|False|False
-TagRecord|Silver Fang|False|True|False|False
 TagRecord|Skull Dog Marron|False|True|False|False
 TagRecord|Sleeping Lion|False|True|False|False
 TagRecord|Soul Tiger|True|False|False|False
@@ -904,3 +901,143 @@ TagRecord|ZW - Lightning Blade|False|True|False|False
 TagRecord|ZW - Sylphid Wing|True|False|False|False
 TagRecord|ZW - Unicorn Spear|False|True|False|False
 TagRecord|Melffy Mommy|False|False|True|False
+TagRecord|Milus Radiant|True|False|False|False
+TagRecord|Silver Fang|True|False|False|False
+TagRecord|Abare Ushioni|False|True|False|False
+TagRecord|Akz, the Pumer|False|True|False|False
+TagRecord|Assault Beast|False|True|False|False
+TagRecord|Assault Sentinel|False|True|False|False
+TagRecord|Aurkus, Lightsworn Druid|True|False|False|False
+TagRecord|Battle Ox|True|False|False|False
+TagRecord|Battle Steer|False|True|False|False
+TagRecord|Beast King Barbaros|True|False|False|False
+TagRecord|Beast Machine King Barbaros Ür|False|True|False|False
+TagRecord|Beast-Warrior Puma|False|True|False|False
+TagRecord|Beaver Warrior|True|False|False|False
+TagRecord|Black Ray Lancer|False|True|False|False
+TagRecord|Boar Soldier|True|False|False|False
+TagRecord|Bonfire Colossus|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Bear|True|False|False|False
+TagRecord|Brotherhood of the Fire Fist - Boar|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Buffalo|True|False|False|False
+TagRecord|Brotherhood of the Fire Fist - Cardinal|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Caribou|True|False|False|False
+TagRecord|Brotherhood of the Fire Fist - Coyote|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Dragon|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Gorilla|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Hawk|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Horse Prince|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Kirin|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Leopard|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Lion Emperor|True|False|False|False
+TagRecord|Brotherhood of the Fire Fist - Peacock|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Ram|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Raven|True|False|False|False
+TagRecord|Brotherhood of the Fire Fist - Rhino|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Rooster|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Snake|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Spirit|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Swallow|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Swan|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Tiger King|False|True|False|False
+TagRecord|Brotherhood of the Fire Fist - Wolf|False|True|False|False
+TagRecord|Bujin Hiruko|False|True|False|False
+TagRecord|Bujin Yamato|False|True|False|False
+TagRecord|Bujinki Amaterasu|False|True|False|False
+TagRecord|Bujintei Susanowo|False|True|False|False
+TagRecord|Bujintei Tsukuyomi|False|True|False|False
+TagRecord|Caninetaur|False|True|False|False
+TagRecord|Cat's Ear Tribe|False|True|False|False
+TagRecord|Celestial Wolf Lord, Blue Sirius|False|True|False|False
+TagRecord|Chiron the Mage|False|True|False|False
+TagRecord|Coach Captain Bearman|False|True|False|False
+TagRecord|Coach Soldier Wolfbark|True|False|False|False
+TagRecord|Commander Gottoms, Swordmaster|False|True|False|False
+TagRecord|Constellar Aldebaran|False|True|False|False
+TagRecord|Cybernetic Cyclopean|False|True|False|False
+TagRecord|Danger! Dogman!|True|False|False|False
+TagRecord|Dyna, Hero Fur Hire|False|True|False|False
+TagRecord|Enraged Battle Ox|True|False|False|False
+TagRecord|Felis, Lightsworn Archer|False|True|False|False
+TagRecord|Fire Fighting Daruma Doll|False|True|False|False
+TagRecord|Fire King Avatar Arvata|False|True|False|False
+TagRecord|Fire King Avatar Barong|False|False|True|False
+TagRecord|Fire King Avatar Yaksha|False|False|True|False
+TagRecord|Full Armored Black Ray Lancer|False|True|False|False
+TagRecord|Garnecia Elefantis|True|False|False|False
+TagRecord|Gene-Warped Warwolf|False|True|False|False
+TagRecord|Ghost Knight of Jackal|True|False|False|False
+TagRecord|Gladiator Beast Andabata|False|True|False|False
+TagRecord|Gladiator Beast Andal|False|True|False|False
+TagRecord|Gladiator Beast Attorix|True|False|False|False
+TagRecord|Gladiator Beast Darius|True|False|False|False
+TagRecord|Gladiator Beast Laquari|False|True|False|False
+TagRecord|Gladiator Beast Noxious|False|True|False|False
+TagRecord|Goblin Black Ops|False|True|False|False
+TagRecord|Goblin Marauding Squad|False|True|False|False
+TagRecord|Hazy Flame Sphynx|False|True|False|False
+TagRecord|Hitotsu-Me Giant|True|False|False|False
+TagRecord|Horus' Servant|True|False|False|False
+TagRecord|Hunter of Black Feathers|False|True|False|False
+TagRecord|Indomitable Fighter Lei Lei|False|True|False|False
+TagRecord|Iron Blacksmith Kotetsu|False|True|False|False
+TagRecord|Jawsman|False|True|False|False
+TagRecord|Kaiser Vorse Raider|True|False|False|False
+TagRecord|Koa'ki Meiru Crusader|False|True|False|False
+TagRecord|Lady Panther|True|False|False|False
+TagRecord|Leotaur|False|True|False|False
+TagRecord|Lunalight Cat Dancer|False|True|False|False
+TagRecord|Lunalight Crimson Fox|False|True|False|False
+TagRecord|Lunalight Emerald Bird|False|True|False|False
+TagRecord|Lunalight Leo Dancer|False|True|False|False
+TagRecord|Lunalight White Rabbit|False|True|False|False
+TagRecord|Lunalight Wolf|False|True|False|False
+TagRecord|Lycanthrope|False|True|False|False
+TagRecord|Man Beast of Ares|False|True|False|False
+TagRecord|Man-Thro' Tro'|False|True|False|False
+TagRecord|Minoan Centaur|False|True|False|False
+TagRecord|Mother Grizzly|True|False|False|False
+TagRecord|Nekogal #2|False|True|False|False
+TagRecord|Nin-Ken Dog|False|True|False|False
+TagRecord|Ogre of the Black Shadow|True|False|False|False
+TagRecord|Panther Warrior|False|False|True|False
+TagRecord|Performapal Handsamuraiger|False|True|False|False
+TagRecord|Performapal Odd-Eyes Minitaurus|False|True|False|False
+TagRecord|Performapal Salutiger|False|True|False|False
+TagRecord|Performapal Uni|False|True|False|False
+TagRecord|Phantom Beast Cross-Wing|False|True|False|False
+TagRecord|Phantom Beast Thunder-Pegasus|False|True|False|False
+TagRecord|Phantom Beast Wild-Horn|True|False|False|False
+TagRecord|Pitch-Black Warwolf|True|False|False|False
+TagRecord|Prominence, Molten Swordsman|False|True|False|False
+TagRecord|Rabid Horseman|True|False|False|False
+TagRecord|Reborn Tengu|True|False|False|False
+TagRecord|Rhinotaurus|True|False|False|False
+TagRecord|Rude Kaiser|True|False|False|False
+TagRecord|Sea Lancer|False|True|False|False
+TagRecord|Shogi Knight|False|True|False|False
+TagRecord|Shogi Lance|True|False|False|False
+TagRecord|Snowdust Giant|False|True|False|False
+TagRecord|Subterror Nemesis Defender|False|True|False|False
+TagRecord|T.G. Warwolf|False|True|False|False
+TagRecord|Thor, Lord of the Aesir|False|True|False|False
+TagRecord|Three Trolling Trolls|False|True|False|False
+TagRecord|Tiger Axe|False|False|True|False
+TagRecord|Vivid Knight|False|True|False|False
+TagRecord|Vorse Raider|True|False|False|False
+TagRecord|Wind-Up Rabbit|False|True|False|False
+TagRecord|Wolf Axwielder|True|False|False|False
+TagRecord|Woodland Archer|False|True|False|False
+TagRecord|Wulf, Lightsworn Beast|False|True|False|False
+TagRecord|X-Saber Axel|False|True|False|False
+TagRecord|XX-Saber Ragigura|False|True|False|False
+TagRecord|Yosenju Izna|True|False|False|False
+TagRecord|Yosenju Kodam|False|True|False|False
+TagRecord|Yosenju Tsujik|False|True|False|False
+TagRecord|Zoodiac Bunnyblast|False|True|False|False
+TagRecord|Zoodiac Kataroost|False|True|False|False
+TagRecord|Zoodiac Ramram|False|True|False|False
+TagRecord|Exarion Universe|False|True|False|False
+TagRecord|Icejade Acti|True|False|False|False
+TagRecord|Ooguchi|True|False|False|False
+TagRecord|Treeborn Frog|False|True|False|False

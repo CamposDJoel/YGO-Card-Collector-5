@@ -1,4 +1,4 @@
-9754
+9858
 LOB-000|Secret Rare|Tri-Horned Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-001|Ultra Rare|Blue-Eyes White Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-002|Common|Hitotsu-Me Giant|LEGEND OF BLUE EYES WHITE DRAGON
@@ -9753,3 +9753,107 @@ MP21-EN244|Ultra Rare|Reeshaddoll Wendi|2021 TIN OF ANCIENT BATTLES
 MP21-EN253|Common|Hamon, Lord of Striking Thunder|2021 TIN OF ANCIENT BATTLES
 MP21-EN253|Prismatic Secret Rare|Hamon, Lord of Striking Thunder|2021 TIN OF ANCIENT BATTLES
 MP21-EN255|Ultra Rare|True Light|2021 TIN OF ANCIENT BATTLES
+FET-EN026|Common|Abare Ushioni|FLAMING ETERNITY
+TSHD-EN085|Rare|Akz, the Pumer|THE SHINING DARKNESS
+CRMS-EN024|Rare|Assault Beast|CRIMSON CRISIS
+DANE-EN011|Common|Assault Sentinel|DARK NEOSTORM
+DB2-EN037|Common|Battle Steer|DARK BEGINNING 2
+ANPR-EN097|Super Rare|Beast Machine King Barbaros Ür|ANCIENT PROPHECY
+HA07-EN032|Super Rare|Beast-Warrior Puma|HIDDEN ARSENAL 7 KNIGHT OF STARS
+SP13-EN029|Common|Black Ray Lancer|STAR PACK 2013
+CBLZ-EN084|Secret Rare|Bonfire Colossus|COSMO BLAZER
+JOTL-EN026|Rare|Brotherhood of the Fire Fist - Boar|JUDGMENT OF THE LIGHT
+FIGA-EN026|Super Rare|Brotherhood of the Fire Fist - Cardinal|FISTS OF THE GADGETS
+MP14-EN054|Secret Rare|Brotherhood of the Fire Fist - Coyote|2014 MEGA-TINS MEGA PACK
+MYFI-EN044|Super Rare|Brotherhood of the Fire Fist - Dragon|MYSTIC FIGHTERS
+CBLZ-EN023|Rare|Brotherhood of the Fire Fist - Gorilla|COSMO BLAZER
+CBLZ-EN021|Common|Brotherhood of the Fire Fist - Hawk|COSMO BLAZER
+OP12-EN020|Common|Brotherhood of the Fire Fist - Horse Prince|OTS TOURNAMENT PACK 12
+JOTL-EN042|Rare|Brotherhood of the Fire Fist - Kirin|JUDGMENT OF THE LIGHT
+LTGY-EN027|Common|Brotherhood of the Fire Fist - Leopard|LORD OF THE TACHYON GALAXY
+FIGA-EN017|Secret Rare|Brotherhood of the Fire Fist - Peacock|FISTS OF THE GADGETS
+FIGA-EN011|Secret Rare|Brotherhood of the Fire Fist - Ram|FISTS OF THE GADGETS
+LTGY-EN028|Rare|Brotherhood of the Fire Fist - Rhino|LORD OF THE TACHYON GALAXY
+FIGA-EN025|Super Rare|Brotherhood of the Fire Fist - Rooster|FISTS OF THE GADGETS
+CBLZ-EN026|Super Rare|Brotherhood of the Fire Fist - Snake|COSMO BLAZER
+FIGA-EN024|Super Rare|Brotherhood of the Fire Fist - Spirit|FISTS OF THE GADGETS
+CBLZ-EN027|Super Rare|Brotherhood of the Fire Fist - Swallow|COSMO BLAZER
+FIGA-EN015|Secret Rare|Brotherhood of the Fire Fist - Swan|FISTS OF THE GADGETS
+FIGA-EN027|Super Rare|Brotherhood of the Fire Fist - Tiger King|FISTS OF THE GADGETS
+MP14-EN012|Common|Brotherhood of the Fire Fist - Wolf|2014 MEGA-TINS MEGA PACK
+MACR-EN092|Rare|Bujin Hiruko|MAXIMUM CRISIS
+PGL2-EN035|Gold Rare|Bujin Yamato|PREMIUM GOLD: RETURN OF THE BLING
+WIRA-EN048|Common|Bujinki Amaterasu|WING RAIDERS
+JOTL-EN057|Ultra Rare|Bujintei Susanowo|JUDGMENT OF THE LIGHT
+LVAL-EN054|Ultra Rare|Bujintei Tsukuyomi|LEGACY OF THE VALIANT
+INOV-EN092|Common|Caninetaur|INVASION: VENGEANCE
+DR1-EN136|Common|Cat's Ear Tribe|DARK REVELATION Volume 1
+SHSP-EN090|Ultra Rare|Celestial Wolf Lord, Blue Sirius|SHADOW SPECTERS
+YS12-EN013|Common|Chiron the Mage|STARTER DECK XYZ SYMPHONY
+OP04-EN019|Common|Coach Captain Bearman|OTS TOURNAMENT PACK 4
+DT01-EN022|Super Rare|Commander Gottoms, Swordmaster|DUEL TERMINAL 1
+HA07-EN006|Super Rare|Constellar Aldebaran|HIDDEN ARSENAL 7 KNIGHT OF STARS
+YSKR-EN021|Common|Cybernetic Cyclopean|STARTER DECK KAIBA RELOADED
+DASA-EN021|Secret Rare|Dyna, Hero Fur Hire|DARK SAVIORS
+BP01-EN126|Common|Exarion Universe|BATTLE PACK EPIC DAWN
+MP15-EN123|Ultra Rare|Felis, Lightsworn Archer|2015 MEGA-TINS MEGA PACK
+FLOD-EN051|Rare|Fire Fighting Daruma Doll|FLAMES OF DESTRUCTION
+CIBR-EN029|Rare|Fire King Avatar Arvata|CIRCUIT BREAK
+DUSA-EN008|Ultra Rare (Duelist Saga Version)|Full Armored Black Ray Lancer|DUELIST SAGA
+DEM1-EN004|Common|Gene-Warped Warwolf|DEMO DECK
+BLLR-EN022|Ultra Rare|Gladiator Beast Andabata|BATTLES OF LEGEND -LIGHT'S REVENGE-
+PTDN-EN001|Common|Gladiator Beast Andal|PHANTOM DARKNESS
+GLAS-EN021|Rare|Gladiator Beast Laquari|GLADIATOR'S ASSAULT
+BLLR-EN021|Secret Rare|Gladiator Beast Noxious|BATTLES OF LEGEND -LIGHT'S REVENGE-
+GLAS-EN030|Rare|Goblin Black Ops|GLADIATOR'S ASSAULT
+REDU-EN040|Common|Goblin Marauding Squad|RETURN OF THE DUELIST
+CBLZ-EN030|Common|Hazy Flame Sphynx|COSMO BLAZER
+TSHD-EN038|Common|Hunter of Black Feathers|THE SHINING DARKNESS
+DR04-EN023|Common|Indomitable Fighter Lei Lei|DARK REVELATION Volume 4
+DCR-064|Common|Iron Blacksmith Kotetsu|DARK CRISIS
+GENF-EN008|Rare|Jawsman|GENERATION FORCE
+ANPR-EN019|Super Rare|Koa'ki Meiru Crusader|ANCIENT PROPHECY
+BP03-EN102|Rare|Leotaur|BATTLE PACK 3 MONSTER LEAGUE
+SHVI-EN046|Rare|Lunalight Cat Dancer|SHINING VICTORIES
+CIBR-EN090|Common|Lunalight Crimson Fox|CIRCUIT BREAK
+LED4-EN046|Rare|Lunalight Emerald Bird|LEGENDARY DUELISTS: SISTERS OF THE ROSE
+LED4-EN054|Common|Lunalight Leo Dancer|LEGENDARY DUELISTS: SISTERS OF THE ROSE
+SHVI-EN010|Common|Lunalight White Rabbit|SHINING VICTORIES
+SHVI-EN012|Common|Lunalight Wolf|SHINING VICTORIES
+STON-EN032|Common|Lycanthrope|STRIKE OF NEOS
+CDIP-EN030|Common|Man Beast of Ares|CYBERDARK IMPACT
+DR2-EN194|Common|Man-Thro' Tro'|DARK REVELATION Volume 2
+SDOK-EN005|Common|Manticore of Darkness|ONSLAUGHT OF THE FIRE KINGS STRUCTURE DECK
+RGBT-EN028|Common|Minoan Centaur|RAGING BATTLE
+TP7-EN020|Common|Nekogal #2|TOURNAMENT PACK 7
+DCR-002|Common|Nin-Ken Dog|DARK CRISIS
+CYHO-EN093|Common|Performapal Handsamuraiger|CYBERNETIC HORIZON
+YS16-EN002|Ultra Rare|Performapal King Bear|STARTER DECK YUYA
+BLLR-EN002|Ultra Rare|Performapal Odd-Eyes Minitaurus|BATTLES OF LEGEND -LIGHT'S REVENGE-
+MP16-EN102|Common|Performapal Salutiger|2016 MEGA-TINS MEGA PACK
+DRL3-EN002|Ultra Rare|Performapal Uni|DRAGONS OF LEGEND -UNLEASHED-
+GX02-EN001|Super Rare|Phantom Beast Cross-Wing|Yu-Gi-Oh! GX TAG FORCE Bundles
+GLD2-EN014|Common|Phantom Beast Rock-Lizard|GOLD SERIES 2009
+GX02-EN003|Super Rare|Phantom Beast Thunder-Pegasus|Yu-Gi-Oh! GX TAG FORCE Bundles
+DT05-EN025|Common|Prominence, Molten Swordsman|DUEL TERMINAL 5A
+DREV-EN017|Common|Rhinotaurus|DUELIST REVOLUTION
+GENF-EN081|Rare|Sea Lancer|GENERATION FORCE
+PRIO-EN094|Common|Shogi Knight|PRIMAL ORIGIN
+ABYR-EN049|Rare|Snowdust Giant|ABYSS RISING
+RATE-EN082|Rare|Subterror Nemesis Defender|RAGING TEMPEST
+EXVC-EN020|Common|T.G. Warwolf|EXTREME VICTORY
+LEHD-ENB30|Common|Thor, Lord of the Aesir|LEGENDARY HERO DECKS
+FLOD-EN030|Common|Three Trolling Trolls|FLAMES OF DESTRUCTION
+SHSP-EN099|Rare|Vivid Knight|SHADOW SPECTERS
+CT09-EN010|Super Rare|Wind-Up Rabbit|COLLECTIBLE TIN 2012 WAVE 1
+GLD2-EN015|Common|Winged Rhynos|GOLD SERIES 2009
+SOVR-EN031|Common|Woodland Archer|STARDUST OVERDRIVE
+LODT-EN023|Super Rare|Wulf, Lightsworn Beast|LIGHT OF DESTRUCTION
+HA01-EN010|Super Rare|X-Saber Axel|HIDDEN ARSENAL
+ANPR-EN036|Common|XX-Saber Ragigura|ANCIENT PROPHECY
+SP17-EN004|Common|Yosenju Kama 1|STAR PACK BATTLE ROYAL
+CROS-EN018|Common|Yosenju Kodam|CROSSED SOULS
+SECE-EN027|Common|Yosenju Tsujik|SECRETS OF ETERNITY
+RATE-EN015|Common|Zoodiac Bunnyblast|RAGING TEMPEST
+MACR-EN027|Common|Zoodiac Kataroost|MAXIMUM CRISIS
+RATE-EN018|Common|Zoodiac Ramram|RAGING TEMPEST
