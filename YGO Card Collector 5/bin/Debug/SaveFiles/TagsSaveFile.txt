@@ -1,4 +1,4 @@
-1672
+1991
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -1671,3 +1671,322 @@ TagRecord|Lavalval Dragun|False|True|False|False
 TagRecord|Number 17: Leviathan Dragon|False|True|False|False
 TagRecord|Phantasmal Lord Ultimitl Bishbaalkin|False|True|False|False
 TagRecord|Trident Dragion|False|True|False|False
+TagRecord|Absorbing Kid from the Sky|True|False|False|False
+TagRecord|Ad Libitum of Despia|True|False|False|False
+TagRecord|Agido|True|False|False|False
+TagRecord|Airknight Parshath|True|False|False|False
+TagRecord|Aitsu|True|False|False|False
+TagRecord|Amaterasu|False|True|False|False
+TagRecord|Angel O1|True|False|False|False
+TagRecord|Angel O7|True|False|False|False
+TagRecord|Arcana Force 0 - The Fool|False|True|False|False
+TagRecord|Arcana Force EX - The Light Ruler|False|True|False|False
+TagRecord|Arcana Force I - The Magician|False|True|False|False
+TagRecord|Arcana Force III - The Empress|False|True|False|False
+TagRecord|Arcana Force IV - The Emperor|True|False|False|False
+TagRecord|Arcana Force VI - The Lovers|True|False|False|False
+TagRecord|Arcana Force VII - The Chariot|False|True|False|False
+TagRecord|Arcana Force XIV - Temperance|False|True|False|False
+TagRecord|Arcana Force XVIII - The Moon|False|True|False|False
+TagRecord|Archlord Kristya|True|False|False|False
+TagRecord|Archlord Zerato|False|True|False|False
+TagRecord|Aria the Melodious Diva|False|True|False|False
+TagRecord|Artifact Achilleshield|False|True|False|False
+TagRecord|Artifact Aegis|True|False|False|False
+TagRecord|Artifact Beagalltach|False|True|False|False
+TagRecord|Artifact Caduceus|False|True|False|False
+TagRecord|Artifact Chakram|True|False|False|False
+TagRecord|Artifact Durendal|False|True|False|False
+TagRecord|Artifact Failnaught|True|False|False|False
+TagRecord|Artifact Labrys|False|True|False|False
+TagRecord|Artifact Lancea|True|False|False|False
+TagRecord|Artifact Mjollnir|False|True|False|False
+TagRecord|Artifact Moralltach|True|False|False|False
+TagRecord|Artifact Scythe|True|False|False|False
+TagRecord|Artifact Vajra|False|True|False|False
+TagRecord|Asura Priest|False|True|False|False
+TagRecord|Athena|True|False|False|False
+TagRecord|Aurora Paragon|False|True|False|False
+TagRecord|Banisher of the Light|True|False|False|False
+TagRecord|Banisher of the Radiance|False|True|False|False
+TagRecord|Barrier Statue of the Heavens|False|True|False|False
+TagRecord|Beatrice, Lady of the Eternal|True|False|False|False
+TagRecord|Bio-Mage|True|False|False|False
+TagRecord|Bloom Diva the Melodious Choir|False|True|False|False
+TagRecord|Bloom Prima the Melodious Choir|True|False|False|False
+TagRecord|Bonze Alone|True|False|False|False
+TagRecord|Bountiful Artemis|True|False|False|False
+TagRecord|Buten|False|True|False|False
+TagRecord|Canon the Melodious Diva|True|False|False|False
+TagRecord|Cataclysmic Cryonic Coldo|True|False|False|False
+TagRecord|Cataclysmic Scorching Sunburner|False|True|False|False
+TagRecord|Celestia, Lightsworn Angel|False|True|False|False
+TagRecord|Chaos Goddess|False|True|False|False
+TagRecord|Charming Resort Staff|False|True|False|False
+TagRecord|Clear Kuriboh|True|False|False|False
+TagRecord|Cloudian - Acid Cloud|True|False|False|False
+TagRecord|Cloudian - Altus|False|True|False|False
+TagRecord|Cloudian - Cirrostratus|True|False|False|False
+TagRecord|Cloudian - Nimbusman|False|True|False|False
+TagRecord|Cloudian - Sheep Cloud|False|True|False|False
+TagRecord|Cloudian - Smoke Ball|False|True|False|False
+TagRecord|Cloudian - Storm Dragon|False|True|False|False
+TagRecord|Cloudian - Turbulence|False|True|False|False
+TagRecord|Condemned Maiden|False|True|False|False
+TagRecord|Condemned Witch|True|False|False|False
+TagRecord|Consecrated Light|True|False|False|False
+TagRecord|Constellar Siat|False|True|False|False
+TagRecord|Constellar Virgo|False|True|False|False
+TagRecord|Counselor Lily|False|True|False|False
+TagRecord|Crystal Beast Ruby Carbuncle|True|False|False|False
+TagRecord|Cupid Dunk|False|True|False|False
+TagRecord|Cupid Pitch|True|False|False|False
+TagRecord|Cupid Volley|True|False|False|False
+TagRecord|CXyz Dark Fairy Cheer Girl|False|True|False|False
+TagRecord|CXyz Mechquipped Djinn Angeneral|True|False|False|False
+TagRecord|Cyber Angel Benten|True|False|False|False
+TagRecord|Cyber Angel Dakini|False|True|False|False
+TagRecord|Cyber Angel Izana|True|False|False|False
+TagRecord|Cyber Egg Angel|False|True|False|False
+TagRecord|Cyber Petit Angel|False|True|False|False
+TagRecord|D.D. Sprite|True|False|False|False
+TagRecord|Dancing Fairy|True|False|False|False
+TagRecord|Dark Angel|False|True|False|False
+TagRecord|Dark Honest|True|False|False|False
+TagRecord|Dark Rose Fairy|True|False|False|False
+TagRecord|Dark Witch|True|False|False|False
+TagRecord|Darklord Asmodeus|False|True|False|False
+TagRecord|Darklord Desire|False|True|False|False
+TagRecord|Darklord Edeh Arae|False|True|False|False
+TagRecord|Darklord Ixchel|True|False|False|False
+TagRecord|Darklord Morningstar|True|False|False|False
+TagRecord|Darklord Nasten|False|True|False|False
+TagRecord|Darklord Superbia|False|True|False|False
+TagRecord|Darklord Zerato|False|True|False|False
+TagRecord|Darknight Parshath|False|True|False|False
+TagRecord|Despian Tragedy|True|False|False|False
+TagRecord|Doitsu|False|True|False|False
+TagRecord|Doma The Angel of Silence|True|False|False|False
+TagRecord|Dunames Dark Witch|False|True|False|False
+TagRecord|El Shaddoll Construct|True|False|False|False
+TagRecord|Elder Entity N'tss|True|False|False|False
+TagRecord|Elegy the Melodious Diva|False|True|False|False
+TagRecord|Element Valkyrie|True|False|False|False
+TagRecord|Eva|True|False|False|False
+TagRecord|Fairy Archer|False|True|False|False
+TagRecord|Fairy Cheer Girl|False|True|False|False
+TagRecord|Fairy Guardian|True|False|False|False
+TagRecord|Fluffal Angel|True|False|False|False
+TagRecord|Fluffal Bear|False|True|False|False
+TagRecord|Fluffal Cat|True|False|False|False
+TagRecord|Fluffal Leo|False|True|False|False
+TagRecord|Fluffal Mouse|False|True|False|False
+TagRecord|Fluffal Owl|False|True|False|False
+TagRecord|Fluffal Rabbit|False|True|False|False
+TagRecord|Fluffal Sheep|True|False|False|False
+TagRecord|Fluffal Wings|True|False|False|False
+TagRecord|Fortune Chariot|False|True|False|False
+TagRecord|Freya, Spirit of Victory|False|True|False|False
+TagRecord|Gabrion, the Timelord|False|True|False|False
+TagRecord|Geira Guile the Cubic King|True|False|False|False
+TagRecord|Gellenduo|True|False|False|False
+TagRecord|Gem-Knight Seraphinite|False|True|False|False
+TagRecord|Gnomaterial|True|False|False|False
+TagRecord|Goddess of Whim|False|True|False|False
+TagRecord|Goddess with the Third Eye|True|False|False|False
+TagRecord|Guardian Angel Joan|True|False|False|False
+TagRecord|Guardian Eatos|True|False|False|False
+TagRecord|Guardian Elma|True|False|False|False
+TagRecord|Guiding Ariadne|True|False|False|False
+TagRecord|Guiding Light|False|True|False|False
+TagRecord|Gullveig of the Nordic Ascendant|False|True|False|False
+TagRecord|Gyakutenno Megami|True|False|False|False
+TagRecord|Hailon, the Timelord|False|True|False|False
+TagRecord|Hanewata|True|False|False|False
+TagRecord|Harvest Angel of Wisdom|True|False|False|False
+TagRecord|Hecatrice|True|False|False|False
+TagRecord|Herald of Green Light|True|False|False|False
+TagRecord|Herald of Orange Light|False|True|False|False
+TagRecord|Herald of Purple Light|True|False|False|False
+TagRecord|Herald of the Arc Light|False|True|False|False
+TagRecord|Hip Hoshiningen|False|True|False|False
+TagRecord|Honest|True|False|False|False
+TagRecord|Hoshiningen|True|False|False|False
+TagRecord|Hourglass of Courage|True|False|False|False
+TagRecord|Hysteric Fairy|True|False|False|False
+TagRecord|Ikelos, the Dream Mirror Mara|True|False|False|False
+TagRecord|Ikelos, the Dream Mirror Sprite|True|False|False|False
+TagRecord|Indiora Doom Volt the Cubic Emperor|True|False|False|False
+TagRecord|Invoked Elysium|False|True|False|False
+TagRecord|Iris, the Earth Mother|False|True|False|False
+TagRecord|Izanami|False|True|False|False
+TagRecord|Kamion, the Timelord|False|True|False|False
+TagRecord|Kelbek|True|False|False|False
+TagRecord|Keldo|True|False|False|False
+TagRecord|Key Mace|False|True|False|False
+TagRecord|Knightmare Incarnation Idlee|True|False|False|False
+TagRecord|Koitsu|True|False|False|False
+TagRecord|Kotodama|True|False|False|False
+TagRecord|Kuribon|False|True|False|False
+TagRecord|Layard the Liberator|False|True|False|False
+TagRecord|Lazion, the Timelord|False|True|False|False
+TagRecord|Lee the World Chalice Fairy|False|True|False|False
+TagRecord|Light Effigy|False|True|False|False
+TagRecord|Little Fairy|False|True|False|False
+TagRecord|Lucky Pied Piper|False|True|False|False
+TagRecord|Ma'at|False|True|False|False
+TagRecord|Madolche Petingcessoeur|False|True|False|False
+TagRecord|Madolche Teacher Glassouffle|False|True|False|False
+TagRecord|Majestic Mech - Goryu|True|False|False|False
+TagRecord|Majestic Mech - Ohka|False|True|False|False
+TagRecord|Majestic Mech - Senku|False|True|False|False
+TagRecord|Manju of the Ten Thousand Hands|True|False|False|False
+TagRecord|Marshmacaron|True|False|False|False
+TagRecord|Marshmallon|True|False|False|False
+TagRecord|Master Hyperion|True|False|False|False
+TagRecord|Mechquipped Angineer|False|True|False|False
+TagRecord|Meltiel, Sage of the Sky|True|False|False|False
+TagRecord|Metaion, the Timelord|False|True|False|False
+TagRecord|Metrognome|False|True|False|False
+TagRecord|Mimir of the Nordic Ascendant|False|True|False|False
+TagRecord|Minerva, Scholar of the Sky|True|False|False|False
+TagRecord|Moisture Creature|False|True|False|False
+TagRecord|Mokey Mokey|True|False|False|False
+TagRecord|Mokey Mokey Adrift|True|False|False|False
+TagRecord|Mokey Mokey King|True|False|False|False
+TagRecord|Mozarta the Melodious Maestra|False|True|False|False
+TagRecord|Mudora|False|False|True|False
+TagRecord|Munin the Runick Wings|True|False|False|False
+TagRecord|Mystical Beast of Serket|True|False|False|False
+TagRecord|Mystical Shine Ball|True|False|False|False
+TagRecord|Neo-Parshath, the Sky Paladin|True|False|False|False
+TagRecord|Nikitama|False|True|False|False
+TagRecord|Nova Summoner|True|False|False|False
+TagRecord|Number 102: Star Seraph Sentry|False|True|False|False
+TagRecord|Number 63: Shamoji Soldier|False|True|False|False
+TagRecord|Number C102: Archfiend Seraph|False|True|False|False
+TagRecord|Number C103: Ragnafinity|False|True|False|False
+TagRecord|Ocubeam|True|False|False|False
+TagRecord|Odin, Father of the Aesir|False|True|False|False
+TagRecord|Oneiros, the Dream Mirror Erlking|False|True|False|False
+TagRecord|Opera the Melodious Diva|False|True|False|False
+TagRecord|Patchwork Fluffal|True|False|False|False
+TagRecord|Performapal Lebellman|False|True|False|False
+TagRecord|Petit Angel|True|False|False|False
+TagRecord|Phosphorage the Elemental Lord|False|True|False|False
+TagRecord|Power Angel Valkyria|True|False|False|False
+TagRecord|Prediction Princess Arrowsylph|True|False|False|False
+TagRecord|Prediction Princess Astromorrigan|False|True|False|False
+TagRecord|Prediction Princess Coinorma|True|False|False|False
+TagRecord|Prediction Princess Crystaldine|True|False|False|False
+TagRecord|Prediction Princess Petalelf|True|False|False|False
+TagRecord|Prediction Princess Tarotrei|False|True|False|False
+TagRecord|Princess Cologne|False|True|False|False
+TagRecord|Protective Soul Ailin|True|False|False|False
+TagRecord|Ra's Disciple|True|False|False|False
+TagRecord|Rasetsu|False|True|False|False
+TagRecord|Ray & Temperature|True|False|False|False
+TagRecord|Red Nova|True|False|False|False
+TagRecord|Royal Knight|False|True|False|False
+TagRecord|Ruin, Angel of Oblivion|False|True|False|False
+TagRecord|Ruin, Queen of Oblivion|False|True|False|False
+TagRecord|Ruin, Supreme Queen of Oblivion|False|True|False|False
+TagRecord|Sacred Arch-Airknight Parshath|True|False|False|False
+TagRecord|Sadion, the Timelord|False|True|False|False
+TagRecord|Score the Melodious Diva|True|False|False|False
+TagRecord|Senju of the Thousand Hands|False|False|True|False
+TagRecord|Sephylon, the Ultimate Timelord|False|True|False|False
+TagRecord|Serenade the Melodious Diva|False|True|False|False
+TagRecord|Shaddoll Construct|True|False|False|False
+TagRecord|Shinato, King of a Higher Plane|False|False|True|False
+TagRecord|Shining Abyss|True|False|False|False
+TagRecord|Shining Angel|True|False|False|False
+TagRecord|Shire, Lightsworn Spirit|True|False|False|False
+TagRecord|Silpheed|True|False|False|False
+TagRecord|Skelengel|True|False|False|False
+TagRecord|Sky Scourge Enrise|False|True|False|False
+TagRecord|Sky Scourge Invicil|False|True|False|False
+TagRecord|Soitsu|True|False|False|False
+TagRecord|Solo the Melodious Songstress|False|True|False|False
+TagRecord|Sonata the Melodious Diva|True|False|False|False
+TagRecord|Sophia, Goddess of Rebirth|False|True|False|False
+TagRecord|Soprano the Melodious Songstress|True|False|False|False
+TagRecord|Soul of Purity and Light|True|False|False|False
+TagRecord|Spirit of the Breeze|True|False|False|False
+TagRecord|Spirit of the Fall Wind|False|True|False|False
+TagRecord|Spirit of the Pot of Greed|True|False|False|False
+TagRecord|Spirit Sculptor|True|False|False|False
+TagRecord|Splendid Venus|True|False|False|False
+TagRecord|St. Joan|True|False|False|False
+TagRecord|Star Seraph Sage|False|True|False|False
+TagRecord|Star Seraph Scale|False|True|False|False
+TagRecord|Star Seraph Scepter|False|True|False|False
+TagRecord|Star Seraph Scout|False|True|False|False
+TagRecord|Star Seraph Sovereignty|False|True|False|False
+TagRecord|Star Seraph Sword|False|True|False|False
+TagRecord|Starry Knight Orbitael|True|False|False|False
+TagRecord|Super Quantal Fairy Alphan|False|True|False|False
+TagRecord|Super Quantum White Layer|False|True|False|False
+TagRecord|Tamtam the Melodious Diva|False|True|False|False
+TagRecord|Tellus the Little Angel|True|False|False|False
+TagRecord|Tenshin|True|False|False|False
+TagRecord|Tethys, Goddess of Light|True|False|False|False
+TagRecord|The Agent of Creation - Venus|False|True|False|False
+TagRecord|The Agent of Entropy - Uranus|True|False|False|False
+TagRecord|The Agent of Force - Mars|True|False|False|False
+TagRecord|The Agent of Judgment - Saturn|True|False|False|False
+TagRecord|The Agent of Miracles - Jupiter|True|False|False|False
+TagRecord|The Agent of Mystery - Earth|True|False|False|False
+TagRecord|The Agent of Wisdom - Mercury|True|False|False|False
+TagRecord|The Forgiving Maiden|True|False|False|False
+TagRecord|The Weather Painter Rain|False|True|False|False
+TagRecord|The Weather Painter Thunder|True|False|False|False
+TagRecord|Trickstar Band Sweet Guitar|False|True|False|False
+TagRecord|Trickstar Bella Madonna|False|True|False|False
+TagRecord|Trickstar Black Catbat|False|True|False|False
+TagRecord|Trickstar Bloom|False|True|False|False
+TagRecord|Trickstar Crimson Heart|False|True|False|False
+TagRecord|Trickstar Delfiendium|False|True|False|False
+TagRecord|Trickstar Holly Angel|False|True|False|False
+TagRecord|Trickstar Lilybell|False|True|False|False
+TagRecord|Trickstar Lycoris|False|True|False|False
+TagRecord|Trickstar Mandrake|True|False|False|False
+TagRecord|Trickstar Narkissus|False|True|False|False
+TagRecord|Trickstar Nightshade|False|True|False|False
+TagRecord|Tualatin|False|True|False|False
+TagRecord|Valkyrie Chariot|False|True|False|False
+TagRecord|Valkyrie Dritte|False|True|False|False
+TagRecord|Valkyrie Erste|False|True|False|False
+TagRecord|Valkyrie Funfte|False|True|False|False
+TagRecord|Valkyrie of the Nordic Ascendant|False|True|False|False
+TagRecord|Valkyrie Vierte|False|True|False|False
+TagRecord|Valkyrie Zweite|False|True|False|False
+TagRecord|Vanadis of the Nordic Ascendant|False|True|False|False
+TagRecord|Vanity's Ruler|False|True|False|False
+TagRecord|Vennu, Bright Bird of Divinity|False|True|False|False
+TagRecord|Vernusylph of the Thawing Mountains|True|False|False|False
+TagRecord|Victoria|True|False|False|False
+TagRecord|Vulcan Dragni the Cubic King|True|False|False|False
+TagRecord|Vylon Charger|False|True|False|False
+TagRecord|Vylon Hept|False|True|False|False
+TagRecord|Vylon Ohm|False|True|False|False
+TagRecord|Vylon Omega|False|True|False|False
+TagRecord|Vylon Sigma|False|True|False|False
+TagRecord|Vylon Soldier|False|True|False|False
+TagRecord|Vylon Stella|False|True|False|False
+TagRecord|Vylon Stigma|False|True|False|False
+TagRecord|Vylon Vanguard|False|True|False|False
+TagRecord|Watapon|False|True|False|False
+TagRecord|Whirlwind Prodigy|True|False|False|False
+TagRecord|White Night Queen|False|True|False|False
+TagRecord|White Potan|False|True|False|False
+TagRecord|Winged Kuriboh|True|False|False|False
+TagRecord|Winged Kuriboh LV9|False|True|False|False
+TagRecord|Wingweaver|True|False|False|False
+TagRecord|Yaksha|False|True|False|False
+TagRecord|Zaphion, the Timelord|False|True|False|False
+TagRecord|Zeradias, Herald of Heaven|False|True|False|False
+TagRecord|Zolga|False|True|False|False
+TagRecord|Zolga the Prophet|True|False|False|False
+TagRecord|ZW - Asura Strike|False|True|False|False
+TagRecord|Trickstar Rhodode|False|True|False|False
