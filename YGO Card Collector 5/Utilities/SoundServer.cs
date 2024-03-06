@@ -57,6 +57,17 @@ namespace YGO_Card_Collector_5
                 CurrentBackGroundPlay.Volume = 0.3;
             }
         }
+        public static void MuteBackgroundMusic(bool ON)
+        {
+            if(ON)
+            {
+                CurrentBackGroundPlay.Volume = 0.3;
+            }
+            else
+            {
+                CurrentBackGroundPlay.Volume = 0.0;
+            }
+        }
         public static void StopBackgroundMusic() 
         {
             CurrentBackGroundPlay.Stop();

@@ -28,6 +28,11 @@ namespace YGO_Card_Collector_5
 
             //Load Form theme
             Tools.InitalizeThemeOnForm(this);
+            //Hide the Music ON/OFF button if the Background Music Setting is OFF
+            if(!SettingsData.MusicOn)
+            {
+                picMuteButton.Visible = false;
+            }
 
             void InitializeCardViewImages()
             {
@@ -573,6 +578,8 @@ namespace YGO_Card_Collector_5
 
         private List<Label> _TagLabelList = new List<Label>(); 
         private List<Panel> _TagContainerList = new List<Panel>();
+
+        private bool _LocalMusicON = true;
         #endregion
 
         #region Event Listeners (Card/Set Clicking Events)
@@ -701,6 +708,23 @@ namespace YGO_Card_Collector_5
 
             PricingReport PR = new PricingReport(this, listSetGroups.SelectedIndex, listSetlist.SelectedIndex);
             PR.Show();
+        }
+        private void picMuteButton_Click(object sender, EventArgs e)
+        {
+            if (_LocalMusicON)
+            {
+                //shut it off
+                _LocalMusicON = false;
+            }
+            else
+            {
+                //restore
+                _LocalMusicON = true;
+            }
+
+            //Mute/UnMute music and change the button icon
+            SoundServer.MuteBackgroundMusic(_LocalMusicON);
+            ImageServer.SetImage(picMuteButton, ImageType.MuteButtonIcon, _LocalMusicON.ToString());
         }
         #endregion
 

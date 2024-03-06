@@ -29,6 +29,7 @@ namespace YGO_Card_Collector_5
                 case ImageType.StarIcon: box.Image = StarIcon(); break;
                 case ImageType.ExclamationMark: box.Image = ExclamationMark(); break;
                 case ImageType.TagIcon: box.Image = TagIcon(parameter); break;
+                case ImageType.MuteButtonIcon: box.Image = MuteButttonIcon(parameter); break;
             }
         }
 
@@ -81,6 +82,10 @@ namespace YGO_Card_Collector_5
         {
             return Image.FromFile(Directory.GetCurrentDirectory() + "\\Images\\Icons\\"+ icon  +".png");
         }
+        private static Image MuteButttonIcon(string ONOFF)
+        {
+            return Image.FromFile(Directory.GetCurrentDirectory() + "\\Images\\Icons\\Music" + ONOFF + ".png");
+        }
     }
 
     public enum ImageType
@@ -91,6 +96,7 @@ namespace YGO_Card_Collector_5
         CheckMark,
         StarIcon,
         ExclamationMark,
-        TagIcon
+        TagIcon,
+        MuteButtonIcon,
     }
 }

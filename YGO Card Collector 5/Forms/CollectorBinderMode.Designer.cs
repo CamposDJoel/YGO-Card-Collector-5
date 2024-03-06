@@ -152,6 +152,7 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.btnOpenSetValue = new System.Windows.Forms.Button();
             this.btnFilterSet = new System.Windows.Forms.Button();
+            this.picMuteButton = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagCircle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagTriangle)).BeginInit();
@@ -172,6 +173,7 @@
             this.tabControl1.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMuteButton)).BeginInit();
             this.SuspendLayout();
             // 
             // GroupCardView
@@ -1791,6 +1793,18 @@
             this.btnFilterSet.UseVisualStyleBackColor = false;
             this.btnFilterSet.Click += new System.EventHandler(this.btnFilterSet_Click);
             // 
+            // picMuteButton
+            // 
+            this.picMuteButton.BackColor = System.Drawing.Color.White;
+            this.picMuteButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picMuteButton.Image = ((System.Drawing.Image)(resources.GetObject("picMuteButton.Image")));
+            this.picMuteButton.Location = new System.Drawing.Point(780, 2);
+            this.picMuteButton.Name = "picMuteButton";
+            this.picMuteButton.Size = new System.Drawing.Size(22, 22);
+            this.picMuteButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picMuteButton.TabIndex = 292;
+            this.picMuteButton.TabStop = false;
+            // 
             // CollectorBinderMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1798,6 +1812,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(804, 461);
+            this.Controls.Add(this.picMuteButton);
             this.Controls.Add(this.btnOpenSetValue);
             this.Controls.Add(this.PicTagCircle);
             this.Controls.Add(this.btnFilterSet);
@@ -1849,6 +1864,7 @@
             this.tabPage4.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picMuteButton)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1979,5 +1995,6 @@
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button btnOpenSetValue;
         private System.Windows.Forms.Button btnFilterSet;
+        private System.Windows.Forms.PictureBox picMuteButton;
     }
 }
