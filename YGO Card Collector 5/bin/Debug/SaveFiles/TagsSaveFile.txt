@@ -1,4 +1,4 @@
-2597
+2648
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -818,7 +818,6 @@ TagRecord|Performapal Elephammer|False|True|False|False
 TagRecord|Performapal Fire Mufflerlion|True|False|False|False
 TagRecord|Performapal Flip Hippo|False|True|False|False
 TagRecord|Performapal Friendonkey|True|False|False|False
-TagRecord|Performapal Gongato|False|False|True|False
 TagRecord|Performapal Gumgumouton|False|True|False|False
 TagRecord|Performapal Handstandaccoon|True|False|False|False
 TagRecord|Performapal Hip Hippo|True|False|False|False
@@ -2596,3 +2595,55 @@ TagRecord|Ushi Oni|False|False|False|True
 TagRecord|Wretched Ghost of the Attic|False|False|False|True
 TagRecord|Yubel|False|False|False|True
 TagRecord|Zoa|False|False|False|True
+TagRecord|Bujingi Hare|False|False|False|True
+TagRecord|Bujingi Quilin|False|False|False|True
+TagRecord|Danger!? Jackalope?|False|False|False|True
+TagRecord|Dynatherium|False|False|False|True
+TagRecord|Flying Elephant|False|False|False|True
+TagRecord|Gladiator Beast Alexander|False|False|False|True
+TagRecord|Gladiator Beast Essedarii|False|False|False|True
+TagRecord|Gravity Behemoth|False|False|False|True
+TagRecord|Great Bill|False|False|False|True
+TagRecord|Key Mouse|False|False|False|True
+TagRecord|King of the Beasts|False|False|False|True
+TagRecord|Madolche Hootcake|False|False|False|True
+TagRecord|Mayosenju Daibak|False|False|False|True
+TagRecord|Meotoko|False|False|False|True
+TagRecord|Naturia Beast|False|False|False|True
+TagRecord|Naturia Exterio|False|False|False|True
+TagRecord|Nekogal #1|False|False|False|True
+TagRecord|Neo-Spacian Dark Panther|False|False|False|True
+TagRecord|Number 44: Sky Pegasus|False|False|False|True
+TagRecord|Number 56: Gold Rat|False|False|False|True
+TagRecord|Number 64: Ronin Raccoon Sandayu|False|False|False|True
+TagRecord|Obese Marmot of Nefariousness|False|False|False|True
+TagRecord|Performapal Changeraffe|False|False|False|True
+TagRecord|Performapal Cheermole|False|False|False|True
+TagRecord|Performapal Gold Fang|False|False|False|True
+TagRecord|Performapal Longphone Bull|False|False|False|True
+TagRecord|Performapal Momoncarpet|False|False|False|True
+TagRecord|Performapal Odd-Eyes Unicorn|False|False|False|True
+TagRecord|Performapal Secondonkey|False|False|False|True
+TagRecord|Rescue Ferret|False|False|False|True
+TagRecord|Rescue Hamster|False|False|False|True
+TagRecord|Rinyan, Lightsworn Rogue|False|False|False|True
+TagRecord|Ryko, Twilightsworn Fighter|False|False|False|True
+TagRecord|Scrap Chimera|False|False|False|True
+TagRecord|Scrap Orthros|False|False|False|True
+TagRecord|Snyffus|False|False|False|True
+TagRecord|Tanngnjostr of the Nordic Beasts|False|False|False|True
+TagRecord|Test Panther|False|False|False|True
+TagRecord|The Fabled Kudabbi|False|False|False|True
+TagRecord|The Fabled Rubyruda|False|False|False|True
+TagRecord|Thunder Unicorn|False|False|False|True
+TagRecord|Tree Otter|False|False|False|True
+TagRecord|Voltic Bicorn|False|False|False|True
+TagRecord|Wilmee|False|False|False|True
+TagRecord|Wind-Up Rat|False|False|False|True
+TagRecord|XX-Saber Darksoul|False|False|False|True
+TagRecord|Yellow Baboon, Archer of the Forest|False|False|False|True
+TagRecord|Yosenju Oyam|False|False|False|True
+TagRecord|Zeman the Ape King|False|False|False|True
+TagRecord|ZW - Leo Arms|False|False|False|True
+TagRecord|ZW - Sleipnir Mail|False|False|False|True
+TagRecord|Performapal Gongato|False|False|False|True
