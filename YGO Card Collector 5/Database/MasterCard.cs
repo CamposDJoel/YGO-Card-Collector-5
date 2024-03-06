@@ -128,7 +128,14 @@ namespace YGO_Card_Collector_5
         }
         public bool GetTag(TagIcon tag)
         {
-            return _Tags[(int)tag];
+            if(tag == TagIcon.NONE)
+            {
+                return _Tags[0] == false && _Tags[1] == false && _Tags[2] == false && _Tags[3] == false;
+            }
+            else
+            {
+                return _Tags[(int)tag];
+            }         
         }
         public void SetTag(TagIcon tag, bool value)
         {
@@ -431,6 +438,7 @@ namespace YGO_Card_Collector_5
         Star = 0,
         Square,
         Triangle,
-        Circle
+        Circle,
+        NONE
     }
 }

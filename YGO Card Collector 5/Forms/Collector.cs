@@ -1648,6 +1648,10 @@ namespace YGO_Card_Collector_5
         {
             FilterByTag(TagIcon.Circle);
         }
+        private void btnNoTags_Click(object sender, EventArgs e)
+        {
+            FilterByTag(TagIcon.NONE);
+        }
         #endregion
     }
 }

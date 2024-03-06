@@ -112,7 +112,8 @@
             this.btnCodeSearch = new System.Windows.Forms.Button();
             this.lblCodeSearch = new System.Windows.Forms.Label();
             this.txtCodeSearch = new System.Windows.Forms.TextBox();
-            this.TabTags = new System.Windows.Forms.TabPage();
+            this.btnFilterNoTags = new System.Windows.Forms.TabPage();
+            this.btnNoTags = new System.Windows.Forms.Button();
             this.lblTagCircle = new System.Windows.Forms.Label();
             this.btnTagCircle = new System.Windows.Forms.Button();
             this.lblTagTriangle = new System.Windows.Forms.Label();
@@ -166,7 +167,7 @@
             this.groupColor.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.TabTags.SuspendLayout();
+            this.btnFilterNoTags.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagCircle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagTriangle)).BeginInit();
@@ -279,7 +280,7 @@
             this.tabControl2.Controls.Add(this.MonsterType);
             this.tabControl2.Controls.Add(this.tabPage2);
             this.tabControl2.Controls.Add(this.tabPage1);
-            this.tabControl2.Controls.Add(this.TabTags);
+            this.tabControl2.Controls.Add(this.btnFilterNoTags);
             this.tabControl2.Location = new System.Drawing.Point(5, 362);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
@@ -1262,23 +1263,37 @@
             this.txtCodeSearch.Size = new System.Drawing.Size(101, 20);
             this.txtCodeSearch.TabIndex = 265;
             // 
-            // TabTags
+            // btnFilterNoTags
             // 
-            this.TabTags.BackColor = System.Drawing.Color.MediumPurple;
-            this.TabTags.Controls.Add(this.lblTagCircle);
-            this.TabTags.Controls.Add(this.btnTagCircle);
-            this.TabTags.Controls.Add(this.lblTagTriangle);
-            this.TabTags.Controls.Add(this.btnTagTriangle);
-            this.TabTags.Controls.Add(this.lblTagStar);
-            this.TabTags.Controls.Add(this.btnTagStar);
-            this.TabTags.Controls.Add(this.lblTagSquare);
-            this.TabTags.Controls.Add(this.btnTagSquare);
-            this.TabTags.Location = new System.Drawing.Point(4, 22);
-            this.TabTags.Name = "TabTags";
-            this.TabTags.Padding = new System.Windows.Forms.Padding(3);
-            this.TabTags.Size = new System.Drawing.Size(366, 116);
-            this.TabTags.TabIndex = 3;
-            this.TabTags.Text = "TAGS";
+            this.btnFilterNoTags.BackColor = System.Drawing.Color.MediumPurple;
+            this.btnFilterNoTags.Controls.Add(this.btnNoTags);
+            this.btnFilterNoTags.Controls.Add(this.lblTagCircle);
+            this.btnFilterNoTags.Controls.Add(this.btnTagCircle);
+            this.btnFilterNoTags.Controls.Add(this.lblTagTriangle);
+            this.btnFilterNoTags.Controls.Add(this.btnTagTriangle);
+            this.btnFilterNoTags.Controls.Add(this.lblTagStar);
+            this.btnFilterNoTags.Controls.Add(this.btnTagStar);
+            this.btnFilterNoTags.Controls.Add(this.lblTagSquare);
+            this.btnFilterNoTags.Controls.Add(this.btnTagSquare);
+            this.btnFilterNoTags.Location = new System.Drawing.Point(4, 22);
+            this.btnFilterNoTags.Name = "btnFilterNoTags";
+            this.btnFilterNoTags.Padding = new System.Windows.Forms.Padding(3);
+            this.btnFilterNoTags.Size = new System.Drawing.Size(366, 116);
+            this.btnFilterNoTags.TabIndex = 3;
+            this.btnFilterNoTags.Text = "TAGS";
+            // 
+            // btnNoTags
+            // 
+            this.btnNoTags.BackColor = System.Drawing.Color.Maroon;
+            this.btnNoTags.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNoTags.ForeColor = System.Drawing.Color.White;
+            this.btnNoTags.Location = new System.Drawing.Point(273, 41);
+            this.btnNoTags.Name = "btnNoTags";
+            this.btnNoTags.Size = new System.Drawing.Size(83, 30);
+            this.btnNoTags.TabIndex = 10;
+            this.btnNoTags.Text = "No Tags";
+            this.btnNoTags.UseVisualStyleBackColor = false;
+            this.btnNoTags.Click += new System.EventHandler(this.btnNoTags_Click);
             // 
             // lblTagCircle
             // 
@@ -1865,8 +1880,8 @@
             this.groupBox8.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.TabTags.ResumeLayout(false);
-            this.TabTags.PerformLayout();
+            this.btnFilterNoTags.ResumeLayout(false);
+            this.btnFilterNoTags.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagCircle)).EndInit();
@@ -1996,7 +2011,7 @@
         private System.Windows.Forms.PictureBox PicTagSquare;
         private System.Windows.Forms.PictureBox PicTagCircle;
         private System.Windows.Forms.PictureBox PicTagTriangle;
-        private System.Windows.Forms.TabPage TabTags;
+        private System.Windows.Forms.TabPage btnFilterNoTags;
         private System.Windows.Forms.Label lblTagCircle;
         private System.Windows.Forms.Button btnTagCircle;
         private System.Windows.Forms.Label lblTagTriangle;
@@ -2006,5 +2021,6 @@
         private System.Windows.Forms.Label lblTagSquare;
         private System.Windows.Forms.Button btnTagSquare;
         private System.Windows.Forms.PictureBox picMuteButton;
+        private System.Windows.Forms.Button btnNoTags;
     }
 }

@@ -156,6 +156,7 @@
             this.btnPreviousPageVariant = new System.Windows.Forms.Button();
             this.btnOpenSetValue = new System.Windows.Forms.Button();
             this.picMuteButton = new System.Windows.Forms.PictureBox();
+            this.btnNoTags = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagCircle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagTriangle)).BeginInit();
@@ -1603,6 +1604,7 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.MediumPurple;
+            this.tabPage3.Controls.Add(this.btnNoTags);
             this.tabPage3.Controls.Add(this.lblTagCircle);
             this.tabPage3.Controls.Add(this.btnTagCircle);
             this.tabPage3.Controls.Add(this.lblTagTriangle);
@@ -1847,6 +1849,19 @@
             this.picMuteButton.TabStop = false;
             this.picMuteButton.Click += new System.EventHandler(this.picMuteButton_Click);
             // 
+            // btnNoTags
+            // 
+            this.btnNoTags.BackColor = System.Drawing.Color.Maroon;
+            this.btnNoTags.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNoTags.ForeColor = System.Drawing.Color.White;
+            this.btnNoTags.Location = new System.Drawing.Point(309, 49);
+            this.btnNoTags.Name = "btnNoTags";
+            this.btnNoTags.Size = new System.Drawing.Size(83, 30);
+            this.btnNoTags.TabIndex = 18;
+            this.btnNoTags.Text = "No Tags";
+            this.btnNoTags.UseVisualStyleBackColor = false;
+            this.btnNoTags.Click += new System.EventHandler(this.btnNoTags_Click);
+            // 
             // CollectorBigWinMode
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2040,5 +2055,6 @@
         private System.Windows.Forms.Label lblTagSquare;
         private System.Windows.Forms.Button btnTagSquare;
         private System.Windows.Forms.PictureBox picMuteButton;
+        private System.Windows.Forms.Button btnNoTags;
     }
 }
