@@ -1,4 +1,4 @@
-2714
+2722
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -2713,3 +2713,11 @@ TagRecord|Salamangreat Balelynx|False|False|False|True
 TagRecord|Salamangreat Spinny|False|False|False|True
 TagRecord|Topologic Gumblar Dragon|False|False|False|True
 TagRecord|Topologic Trisbaena|False|False|False|True
+TagRecord|Bracchio-raidus|False|False|False|True
+TagRecord|Giant Rex|False|False|False|True
+TagRecord|Gladiator Beast Spartacus|False|False|False|True
+TagRecord|Jurrac Aeolo|False|False|False|True
+TagRecord|Jurrac Giganoto|False|False|False|True
+TagRecord|Jurrac Velphito|False|False|False|True
+TagRecord|Number 19: Freezadon|False|False|False|True
+TagRecord|Sword Arm of Dragon|False|False|False|True
