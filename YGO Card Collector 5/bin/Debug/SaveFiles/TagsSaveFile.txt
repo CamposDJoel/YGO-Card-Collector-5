@@ -1,4 +1,4 @@
-2722
+2724
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -2721,3 +2721,5 @@ TagRecord|Jurrac Giganoto|False|False|False|True
 TagRecord|Jurrac Velphito|False|False|False|True
 TagRecord|Number 19: Freezadon|False|False|False|True
 TagRecord|Sword Arm of Dragon|False|False|False|True
+TagRecord|The Winged Dragon of Ra - Immortal Phoenix|False|False|False|True
+TagRecord|The Winged Dragon of Ra - Sphere Mode|False|False|False|True
