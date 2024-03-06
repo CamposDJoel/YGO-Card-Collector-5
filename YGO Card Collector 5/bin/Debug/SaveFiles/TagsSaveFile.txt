@@ -1,4 +1,4 @@
-2648
+2706
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -999,7 +999,6 @@ TagRecord|Mother Grizzly|True|False|False|False
 TagRecord|Nekogal #2|False|True|False|False
 TagRecord|Nin-Ken Dog|False|True|False|False
 TagRecord|Ogre of the Black Shadow|True|False|False|False
-TagRecord|Panther Warrior|False|False|True|False
 TagRecord|Performapal Handsamuraiger|False|True|False|False
 TagRecord|Performapal Odd-Eyes Minitaurus|False|True|False|False
 TagRecord|Performapal Salutiger|False|True|False|False
@@ -2647,3 +2646,62 @@ TagRecord|Zeman the Ape King|False|False|False|True
 TagRecord|ZW - Leo Arms|False|False|False|True
 TagRecord|ZW - Sleipnir Mail|False|False|False|True
 TagRecord|Performapal Gongato|False|False|False|True
+TagRecord|Brotherhood of the Fire Fist - Eagle|False|False|False|True
+TagRecord|Brotherhood of the Fire Fist - Eland|False|False|False|True
+TagRecord|Brotherhood of the Fire Fist - Elephant|False|False|False|True
+TagRecord|Brotherhood of the Fire Fist - Panda|False|False|False|True
+TagRecord|Bujin Arasuda|False|False|False|True
+TagRecord|Bujin Hirume|False|False|False|True
+TagRecord|Bujin Mikazuchi|False|False|False|True
+TagRecord|Bujintei Kagutsuchi|False|False|False|True
+TagRecord|Constellar Hyades|False|False|False|True
+TagRecord|Constellar Kaus|False|False|False|True
+TagRecord|Constellar Omega|False|False|False|True
+TagRecord|Dragoons of Draconia|False|False|False|True
+TagRecord|Gaia Drake, the Universal Force|False|False|False|True
+TagRecord|Garoozis|False|False|False|True
+TagRecord|Gladiator Beast Heraklinos|False|False|False|True
+TagRecord|Gladiator Beast Tamer Editor|False|False|False|True
+TagRecord|Grandsoil the Elemental Lord|False|False|False|True
+TagRecord|Great Long Nose|False|False|False|True
+TagRecord|Koa'ki Meiru Urnight|False|False|False|True
+TagRecord|Lunalight Black Sheep|False|False|False|True
+TagRecord|Lunalight Blue Cat|False|False|False|True
+TagRecord|Lunalight Kaleido Chick|False|False|False|True
+TagRecord|Lunalight Panther Dancer|False|False|False|True
+TagRecord|Lunalight Purple Butterfly|False|False|False|True
+TagRecord|Lunalight Sabre Dancer|False|False|False|True
+TagRecord|Lunalight Tiger|False|False|False|True
+TagRecord|Lunalight Yellow Marten|False|False|False|True
+TagRecord|Meteo the Matchless|False|False|False|True
+TagRecord|Mystical Knight of Jackal|False|False|False|True
+TagRecord|Number 72: Shogi Rook|False|False|False|True
+TagRecord|Panther Warrior|False|False|False|True
+TagRecord|Performapal Corn|False|False|False|True
+TagRecord|Phantasos, the Dream Mirror Foe|False|False|False|True
+TagRecord|Phantasos, the Dream Mirror Friend|False|False|False|True
+TagRecord|Rampaging Rhynos|False|False|False|True
+TagRecord|Scrap Goblin|False|False|False|True
+TagRecord|Seal, Strategist Fur Hire|False|False|False|True
+TagRecord|Sengenjin|False|False|False|True
+TagRecord|Shiba-Warrior Taro|False|False|False|True
+TagRecord|Sky Cavalry Centaurea|False|False|False|True
+TagRecord|Vola-Chemicritter Methydraco|False|False|False|True
+TagRecord|Vulcan the Divine|False|False|False|True
+TagRecord|Wind-Up Hunter|False|False|False|True
+TagRecord|X-Saber Uruz|False|False|False|True
+TagRecord|XX-Saber Boggart Knight|False|False|False|True
+TagRecord|XX-Saber Gardestrike|False|False|False|True
+TagRecord|XX-Saber Gottoms|False|False|False|True
+TagRecord|Yosenju Kama 2|False|False|False|True
+TagRecord|Yosenju Kama 3|False|False|False|True
+TagRecord|Yosenju Sabu|False|False|False|True
+TagRecord|Zoodiac Boarbow|False|False|False|True
+TagRecord|Zoodiac Broadbull|False|False|False|True
+TagRecord|Zoodiac Chakanine|False|False|False|True
+TagRecord|Zoodiac Drident|False|False|False|True
+TagRecord|Zoodiac Hammerkong|False|False|False|True
+TagRecord|Zoodiac Ratpier|False|False|False|True
+TagRecord|Zoodiac Thoroughblade|False|False|False|True
+TagRecord|Zoodiac Tigermortar|False|False|False|True
+TagRecord|Zoodiac Whiptail|False|False|False|True
