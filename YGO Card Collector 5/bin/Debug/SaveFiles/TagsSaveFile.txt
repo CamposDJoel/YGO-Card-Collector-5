@@ -1,4 +1,4 @@
-2901
+3004
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -2900,3 +2900,106 @@ TagRecord|Vylon Epsilon|False|False|False|True
 TagRecord|Zeta Reticulant|False|False|False|True
 TagRecord|Keldo the Sacred Protector|True|False|False|False
 TagRecord|Shinato, King of a Higher Plane|False|False|False|True
+TagRecord|7 Colored Fish|True|False|False|False
+TagRecord|Abyss Keeper|True|False|False|False
+TagRecord|Abyssal Kingshark|False|True|False|False
+TagRecord|Amphibian Beast|False|False|True|False
+TagRecord|Amazon of the Seas|False|False|False|True
+TagRecord|Askaan, the Bicorned Ghoti|True|False|False|False
+TagRecord|Beautunaful Princess|False|False|False|True
+TagRecord|Big Jaws|False|True|False|False
+TagRecord|Big Whale|False|True|False|False
+TagRecord|Bottom Dweller|True|False|False|False
+TagRecord|Buzzsaw Shark|True|False|False|False
+TagRecord|Citadel Whale|True|False|False|False
+TagRecord|Cranium Fish|False|False|False|True
+TagRecord|Crazy Fish|False|True|False|False
+TagRecord|Creeping Doom Manta|True|False|False|False
+TagRecord|Cure Mermaid|True|False|False|False
+TagRecord|Cyber Shark|True|False|False|False
+TagRecord|Deep Sweeper|True|False|False|False
+TagRecord|Deepsea Macrotrema|False|True|False|False
+TagRecord|Deepsea Shark|True|False|False|False
+TagRecord|Depth Shark|False|True|False|False
+TagRecord|Double Fin Shark|True|False|False|False
+TagRecord|Double Shark|True|False|False|False
+TagRecord|Eagle Shark|False|True|False|False
+TagRecord|Eanoc, Sentry of the Ghoti|True|False|False|False
+TagRecord|Earthbound Immortal Chacu Challhua|True|False|False|False
+TagRecord|Enchanting Mermaid|True|False|False|False
+TagRecord|Fishborg Archer|True|False|False|False
+TagRecord|Fishborg Blaster|False|True|False|False
+TagRecord|Fishborg Doctor|True|False|False|False
+TagRecord|Fishborg Launcher|True|False|False|False
+TagRecord|Fishborg Planter|True|False|False|False
+TagRecord|Flyfang|True|False|False|False
+TagRecord|Flying Fish|True|False|False|False
+TagRecord|Flying Red Carp|True|False|False|False
+TagRecord|Fortress Whale|False|True|False|False
+TagRecord|Friller Rabca|True|False|False|False
+TagRecord|Gazer Shark|False|True|False|False
+TagRecord|Gladiator Beast Murmillo|False|True|False|False
+TagRecord|Gladiator Beast Torax|False|True|False|False
+TagRecord|Golden Flying Fish|False|True|False|False
+TagRecord|Great White|True|False|False|False
+TagRecord|Hammer Shark|False|False|False|True
+TagRecord|Hyper-Ancient Shark Megalodon|False|True|False|False
+TagRecord|Man-eating Black Shark|False|False|False|True
+TagRecord|Marine Beast|False|False|False|True
+TagRecord|Mermaid Shark|False|True|False|False
+TagRecord|Mermail Abysslung|True|False|False|False
+TagRecord|Mermail Abyssmander|False|False|False|True
+TagRecord|Mermail Abyssnose|False|True|False|False
+TagRecord|Mermail Abysspike|False|True|False|False
+TagRecord|Mermail Abyssturge|False|True|False|False
+TagRecord|Metabo-Shark|False|True|False|False
+TagRecord|Misairuzame|True|False|False|False
+TagRecord|Needle Sunfish|True|False|False|False
+TagRecord|Nimble Angler|True|False|False|False
+TagRecord|Nimble Manta|True|False|False|False
+TagRecord|Nimble Sunfish|False|False|False|True
+TagRecord|Ocean's Keeper|False|True|False|False
+TagRecord|Oyster Meister|True|False|False|False
+TagRecord|Panther Shark|False|True|False|False
+TagRecord|Performapal Seal Eel|True|False|False|False
+TagRecord|Performapal Sword Fish|True|False|False|False
+TagRecord|Phantom Dragonray Bronto|False|True|False|False
+TagRecord|Piercing Moray|False|True|False|False
+TagRecord|Piranha Army|True|False|False|False
+TagRecord|Rage of the Deep Sea|True|False|False|False
+TagRecord|Rare Fish|False|False|False|True
+TagRecord|Right-Hand Shark|True|False|False|False
+TagRecord|Root Water|True|False|False|False
+TagRecord|Royal Swamp Eel|False|False|False|True
+TagRecord|Saber Shark|False|True|False|False
+TagRecord|Scrap Shark|False|True|False|False
+TagRecord|Shark Caesar|True|False|False|False
+TagRecord|Shark Cruiser|True|False|False|False
+TagRecord|Shark Fortress|False|True|False|False
+TagRecord|Shark Stickers|False|True|False|False
+TagRecord|Sharkraken|False|True|False|False
+TagRecord|Shocktopus|True|False|False|False
+TagRecord|Silent Angler|True|False|False|False
+TagRecord|Silent Wobby|False|False|False|True
+TagRecord|Souleater|True|False|False|False
+TagRecord|Space Mambo|True|False|False|False
+TagRecord|Spear Shark|False|True|False|False
+TagRecord|Submersible Carrier Aero Shark|False|True|False|False
+TagRecord|Superancient Deepsea King Coelacanth|False|False|True|False
+TagRecord|T.G. Drill Fish|False|True|False|False
+TagRecord|Terrorking Salmon|True|False|False|False
+TagRecord|Thousand-Eyes Jellyfish|False|True|False|False
+TagRecord|Tongyo|True|False|False|False
+TagRecord|Torpedo Fish|True|False|False|False
+TagRecord|Tripod Fish|True|False|False|False
+TagRecord|White Aura Bihamut|False|True|False|False
+TagRecord|Unshaven Angler|True|False|False|False
+TagRecord|White Aura Dolphin|False|True|False|False
+TagRecord|White Aura Monoceros|True|False|False|False
+TagRecord|White Aura Whale|False|False|False|True
+TagRecord|White Moray|False|True|False|False
+TagRecord|White Stingray|True|False|False|False
+TagRecord|Wind-Up Shark|False|True|False|False
+TagRecord|Wow Warrior|False|False|False|True
+TagRecord|Xyz Remora|True|False|False|False
+TagRecord|Gishki Abyss|False|True|False|False
