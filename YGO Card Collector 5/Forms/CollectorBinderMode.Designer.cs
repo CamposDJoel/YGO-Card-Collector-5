@@ -1804,6 +1804,7 @@
             this.picMuteButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picMuteButton.TabIndex = 292;
             this.picMuteButton.TabStop = false;
+            this.picMuteButton.Click += new System.EventHandler(this.picMuteButton_Click);
             // 
             // CollectorBinderMode
             // 
