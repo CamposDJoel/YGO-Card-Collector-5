@@ -25,3 +25,5 @@ D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.csproj.CopyComplete
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.exe
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.pdb
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\MedallionRandom.dll
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\MedallionRandom.xml
