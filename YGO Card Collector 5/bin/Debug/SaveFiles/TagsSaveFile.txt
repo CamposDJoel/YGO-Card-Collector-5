@@ -1,4 +1,4 @@
-2706
+2714
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -2705,3 +2705,11 @@ TagRecord|Zoodiac Ratpier|False|False|False|True
 TagRecord|Zoodiac Thoroughblade|False|False|False|True
 TagRecord|Zoodiac Tigermortar|False|False|False|True
 TagRecord|Zoodiac Whiptail|False|False|False|True
+TagRecord|Code Radiator|False|False|False|True
+TagRecord|Cyberse Synchron|False|False|False|True
+TagRecord|Knightmare Corruptor Iblee|False|False|False|True
+TagRecord|Micro Coder|False|False|False|True
+TagRecord|Salamangreat Balelynx|False|False|False|True
+TagRecord|Salamangreat Spinny|False|False|False|True
+TagRecord|Topologic Gumblar Dragon|False|False|False|True
+TagRecord|Topologic Trisbaena|False|False|False|True
