@@ -1,4 +1,4 @@
-2830
+2901
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -1778,7 +1778,6 @@ TagRecord|Fluffal Angel|True|False|False|False
 TagRecord|Fluffal Bear|False|True|False|False
 TagRecord|Fluffal Cat|True|False|False|False
 TagRecord|Fluffal Leo|False|True|False|False
-TagRecord|Fluffal Mouse|False|True|False|False
 TagRecord|Fluffal Owl|False|True|False|False
 TagRecord|Fluffal Rabbit|False|True|False|False
 TagRecord|Fluffal Sheep|True|False|False|False
@@ -1896,7 +1895,6 @@ TagRecord|Senju of the Thousand Hands|False|False|True|False
 TagRecord|Sephylon, the Ultimate Timelord|False|True|False|False
 TagRecord|Serenade the Melodious Diva|False|True|False|False
 TagRecord|Shaddoll Construct|True|False|False|False
-TagRecord|Shinato, King of a Higher Plane|False|False|True|False
 TagRecord|Shining Abyss|True|False|False|False
 TagRecord|Shining Angel|True|False|False|False
 TagRecord|Shire, Lightsworn Spirit|True|False|False|False
@@ -2829,3 +2827,76 @@ TagRecord|Void Ogre Dragon|False|False|False|True
 TagRecord|White Rose Dragon|False|False|False|True
 TagRecord|Yamata Dragon|False|False|False|True
 TagRecord|Luster Pendulum, the Dracoslayer|False|False|False|True
+TagRecord|Ancient Sacred Wyvern|False|False|False|True
+TagRecord|Angel of Zera|False|False|False|True
+TagRecord|Apollousa, Bow of the Goddess|False|False|False|True
+TagRecord|Arcana Force EX - The Dark Ruler|False|False|False|True
+TagRecord|Arcana Force XXI - The World|False|False|False|True
+TagRecord|Avenging Knight Parshath|False|False|False|True
+TagRecord|Celestial Double Star Shaman|False|False|False|True
+TagRecord|Cherubini, Ebon Angel of the Burning Abyss|False|False|False|True
+TagRecord|Constellar Sombre|False|False|False|True
+TagRecord|Cyber Angel Natasha|False|False|False|True
+TagRecord|Dancing Elf|False|False|False|True
+TagRecord|Dante, Pilgrim of the Burning Abyss|False|False|False|True
+TagRecord|Dark Voltanis|False|False|False|True
+TagRecord|Darklord Amdusc|False|False|False|True
+TagRecord|Darklord Nurse Reficule|False|False|False|True
+TagRecord|Darklord Tezcatlipoca|False|False|False|True
+TagRecord|Darklord Ukoback|False|False|False|True
+TagRecord|Elder Entity Norden|False|False|False|True
+TagRecord|Fluffal Dog|False|False|False|True
+TagRecord|Fluffal Mouse|False|True|False|False
+TagRecord|Fluffal Octopus|False|False|False|True
+TagRecord|Fluffal Penguin|False|False|False|True
+TagRecord|Ghostrick Angel of Mischief|False|False|False|True
+TagRecord|Goddess of Sweet Revenge|False|False|False|True
+TagRecord|Happy Lover|False|False|False|True
+TagRecord|Herald of Perfection|False|False|False|True
+TagRecord|Herald of Pure Light|False|False|False|True
+TagRecord|Herald of Ultimateness|False|False|False|True
+TagRecord|Izanagi|False|False|False|True
+TagRecord|Madolche Anjelly|False|False|False|True
+TagRecord|Madolche Fresh Sistart|False|False|False|True
+TagRecord|Madolche Puddingcess|False|False|False|True
+TagRecord|Madolche Puddingcess Chocolat-a-la-Mode|False|False|False|True
+TagRecord|Madolche Queen Tiaramisu|False|False|False|True
+TagRecord|Michion, the Timelord|False|False|False|True
+TagRecord|Minerva, the Exalted Lightsworn|False|False|False|True
+TagRecord|Number 103: Ragnazero|False|False|False|True
+TagRecord|Number 16: Shock Master|False|False|False|True
+TagRecord|Number 67: Pair-a-Dice Smasher|False|False|False|True
+TagRecord|Number 7: Lucky Straight|False|False|False|True
+TagRecord|Number 76: Harmonizer Gradielle|False|False|False|True
+TagRecord|Prinzessin|False|False|False|True
+TagRecord|Queen of Fate - Eternia|False|False|False|True
+TagRecord|Raphion, the Timelord|False|False|False|True
+TagRecord|Sandaion, the Timelord|False|False|False|True
+TagRecord|Schuberta the Melodious Maestra|False|False|False|True
+TagRecord|Shining Friendship|False|False|False|True
+TagRecord|Shopina the Melodious Maestra|False|False|False|True
+TagRecord|Silent Paladin|False|False|False|True
+TagRecord|Subterror Nemesis Archer|False|False|False|True
+TagRecord|The Weather Painter Aurora|False|False|False|True
+TagRecord|The Weather Painter Cloud|False|False|False|True
+TagRecord|The Weather Painter Rainbow|False|False|False|True
+TagRecord|The Weather Painter Snow|False|False|False|True
+TagRecord|The Weather Painter Sun|False|False|False|True
+TagRecord|Time Maiden|False|False|False|True
+TagRecord|Timelord Progenitor Vorpgate|False|False|False|True
+TagRecord|Tiras, Keeper of Genesis|False|False|False|True
+TagRecord|Trickstar Candina|False|False|False|True
+TagRecord|Trickstar Corobane|False|False|False|True
+TagRecord|Trickstar Divaridis|False|False|False|True
+TagRecord|Trickstar Foxglove Witch|False|False|False|True
+TagRecord|Trust Guardian|False|False|False|True
+TagRecord|Valkyrie Brunhilde|False|False|False|True
+TagRecord|Valkyrie Erda|False|False|False|True
+TagRecord|Valkyrie Sechste|False|False|False|True
+TagRecord|Voltanis the Adjudicator|False|False|False|True
+TagRecord|Vylon Delta|False|False|False|True
+TagRecord|Vylon Disigma|False|False|False|True
+TagRecord|Vylon Epsilon|False|False|False|True
+TagRecord|Zeta Reticulant|False|False|False|True
+TagRecord|Keldo the Sacred Protector|True|False|False|False
+TagRecord|Shinato, King of a Higher Plane|False|False|False|True
