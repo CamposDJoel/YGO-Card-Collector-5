@@ -1,4 +1,4 @@
-3004
+3209
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -40,7 +40,6 @@ TagRecord|Rising Energy|False|True|False|False
 TagRecord|Junk Destroyer|False|True|False|False
 TagRecord|Spirit of the Harp|True|False|False|False
 TagRecord|Gravity Axe - Grarl|True|False|False|False
-TagRecord|Bite Bug|False|False|True|False
 TagRecord|Number 30: Acid Golem of Destruction|False|False|True|False
 TagRecord|Neo the Magic Swordsman|True|False|False|False
 TagRecord|Double or Nothing!|True|False|False|False
@@ -3003,3 +3002,209 @@ TagRecord|Wind-Up Shark|False|True|False|False
 TagRecord|Wow Warrior|False|False|False|True
 TagRecord|Xyz Remora|True|False|False|False
 TagRecord|Gishki Abyss|False|True|False|False
+TagRecord|4-Starred Ladybug of Doom|False|True|False|False
+TagRecord|8-Claws Scorpion|True|False|False|False
+TagRecord|Alinsection|True|False|False|False
+TagRecord|Anteatereatingant|True|False|False|False
+TagRecord|Armored Bee|False|True|False|False
+TagRecord|Arsenal Bug|True|False|False|False
+TagRecord|Atomic Firefly|False|True|False|False
+TagRecord|Aztekipede, the Worm Warrior|False|True|False|False
+TagRecord|Bachibachibachi|False|True|False|False
+TagRecord|Basic Insect|True|False|False|False
+TagRecord|Battlewasp - Arbalest the Rapidfire|False|True|False|False
+TagRecord|Battlewasp - Azusa the Ghost Bow|False|True|False|False
+TagRecord|Battlewasp - Ballista the Armageddon|False|True|False|False
+TagRecord|Battlewasp - Dart the Hunter|False|True|False|False
+TagRecord|Battlewasp - Halberd the Charge|False|True|False|False
+TagRecord|Battlewasp - Hama the Conquering Bow|False|True|False|False
+TagRecord|Battlewasp - Pin the Bullseye|False|True|False|False
+TagRecord|Battlewasp - Sting the Poison|False|True|False|False
+TagRecord|Battlewasp - Twinbow the Attacker|False|True|False|False
+TagRecord|Bee List Soldier|True|False|False|False
+TagRecord|Beetron|True|False|False|False
+TagRecord|Beetrooper Assault Roller|True|False|False|False
+TagRecord|Beetrooper Light Flapper|True|False|False|False
+TagRecord|Beetrooper Scale Bomber|True|False|False|False
+TagRecord|Beetrooper Sting Lancer|True|False|False|False
+TagRecord|Big Insect|True|False|False|False
+TagRecord|Bite Bug|False|False|True|False
+TagRecord|Bladefly|False|True|False|False
+TagRecord|Blazewing Butterfly|True|False|False|False
+TagRecord|Block Spider|True|False|False|False
+TagRecord|Bombardment Beetle|True|False|False|False
+TagRecord|Brain Crusher|False|True|False|False
+TagRecord|Chrysalis Larva|False|True|False|False
+TagRecord|Cockroach Knight|False|False|False|True
+TagRecord|Cocoon of Evolution|False|True|False|False
+TagRecord|Confronting the "C"|False|True|False|False
+TagRecord|Contact "C"|False|True|False|False
+TagRecord|Danipon|False|True|False|False
+TagRecord|Dark Bug|False|True|False|False
+TagRecord|Dark Spider|True|False|False|False
+TagRecord|Des Mosquito|False|True|False|False
+TagRecord|Desert Locusts|False|True|False|False
+TagRecord|Desert Protector|False|True|False|False
+TagRecord|Deus X-Krawler|False|True|False|False
+TagRecord|Digital Bug Centibit|True|False|False|False
+TagRecord|Digital Bug Cocoondenser|True|False|False|False
+TagRecord|Digital Bug Corebage|False|True|False|False
+TagRecord|Digital Bug LEDybug|True|False|False|False
+TagRecord|Digital Bug Rhinosebus|False|True|False|False
+TagRecord|Digital Bug Scaradiator|True|False|False|False
+TagRecord|Digital Bug Websolder|True|False|False|False
+TagRecord|Dreadscythe Harvester|False|True|False|False
+TagRecord|Drill Bug|True|False|False|False
+TagRecord|Dungeon Worm|False|True|False|False
+TagRecord|Earthbound Immortal Uru|False|False|False|True
+TagRecord|Electromagnetic Bagworm|False|True|False|False
+TagRecord|Empress Mantis|False|True|False|False
+TagRecord|Fiend Scorpion|False|True|False|False
+TagRecord|Fire Ant Ascator|False|True|False|False
+TagRecord|Flying "C"|True|False|False|False
+TagRecord|Flying Kamakiri #1|True|False|False|False
+TagRecord|Flying Kamakiri #2|True|False|False|False
+TagRecord|Fusion Parasite|False|True|False|False
+TagRecord|Gadarla, the Mystery Dust Kaiju|True|False|False|False
+TagRecord|Galaxy Worm|False|True|False|False
+TagRecord|Gale Dogra|True|False|False|False
+TagRecord|Giant Flea|False|False|False|True
+TagRecord|Girochin Kuwagata|True|False|False|False
+TagRecord|Gokibore|False|False|False|True
+TagRecord|Gokipole|True|False|False|False
+TagRecord|Gokipon|True|False|False|False
+TagRecord|Golden Ladybug|False|False|False|True
+TagRecord|Grasschopper|False|False|False|True
+TagRecord|Great Moth|True|False|False|False
+TagRecord|Great Poseidon Beetle|False|True|False|False
+TagRecord|Greatfly|False|True|False|False
+TagRecord|Ground Spider|False|True|False|False
+TagRecord|Hercules Beetle|False|False|False|True
+TagRecord|Howling Insect|False|True|False|False
+TagRecord|Hundred-Footed Horror|False|True|False|False
+TagRecord|Hunter Spider|True|False|False|False
+TagRecord|Infernity Beetle|False|True|False|False
+TagRecord|Informer Spider|True|False|False|False
+TagRecord|Insect Knight|True|False|False|False
+TagRecord|Insect Princess|True|False|False|False
+TagRecord|Insect Queen|True|False|False|False
+TagRecord|Insect Soldiers of the Sky|True|False|False|False
+TagRecord|Inzektor Ant|False|True|False|False
+TagRecord|Inzektor Centipede|True|False|False|False
+TagRecord|Inzektor Dragonfly|True|False|False|False
+TagRecord|Inzektor Earwig|True|False|False|False
+TagRecord|Inzektor Exa-Beetle|True|False|False|False
+TagRecord|Inzektor Exa-Stag|True|False|False|False
+TagRecord|Inzektor Firefly|True|False|False|False
+TagRecord|Inzektor Giga-Cricket|False|True|False|False
+TagRecord|Inzektor Giga-Mantis|False|False|False|True
+TagRecord|Inzektor Giga-Weevil|True|False|False|False
+TagRecord|Inzektor Hopper|False|True|False|False
+TagRecord|Inzektor Hornet|True|False|False|False
+TagRecord|Inzektor Ladybug|True|False|False|False
+TagRecord|Inzektor Picofalena|True|False|False|False
+TagRecord|Javelin Beetle|False|True|False|False
+TagRecord|Jirai Gumo|True|False|False|False
+TagRecord|Killer Needle|True|False|False|False
+TagRecord|Koa'ki Meiru Beetle|False|True|False|False
+TagRecord|Krawler Axon|False|True|False|False
+TagRecord|Krawler Dendrite|True|False|False|False
+TagRecord|Krawler Glial|False|True|False|False
+TagRecord|Krawler Ranvier|False|True|False|False
+TagRecord|Krawler Receptor|False|True|False|False
+TagRecord|Krawler Soma|True|False|False|False
+TagRecord|Krawler Spine|False|True|False|False
+TagRecord|Kumongous, the Sticky String Kaiju|True|False|False|False
+TagRecord|Kumootoko|True|False|False|False
+TagRecord|Kuwagata α|False|False|False|True
+TagRecord|Kwagar Hercules|False|False|False|True
+TagRecord|Larvae Moth|True|False|False|False
+TagRecord|Leghul|True|False|False|False
+TagRecord|Level Eater|True|False|False|False
+TagRecord|Magical Merchant|True|False|False|False
+TagRecord|Magnetic Mosquito|False|True|False|False
+TagRecord|Man-Eater Bug|False|True|False|False
+TagRecord|Marionette Mite|False|True|False|False
+TagRecord|Metal Armored Bug|True|False|False|False
+TagRecord|Metamorphosed Insect Queen|True|False|False|False
+TagRecord|Millennium Scorpion|False|False|False|True
+TagRecord|Mimicking Man-Eater Bug|True|False|False|False
+TagRecord|Minar|True|False|False|False
+TagRecord|Mirror Ladybug|False|True|False|False
+TagRecord|Moonlit Papillon|False|True|False|False
+TagRecord|Mother Spider|False|True|False|False
+TagRecord|Naturia Antjaw|False|True|False|False
+TagRecord|Naturia Beetle|False|True|False|False
+TagRecord|Naturia Butterfly|False|True|False|False
+TagRecord|Naturia Dragonfly|False|True|False|False
+TagRecord|Naturia Fruitfly|False|True|False|False
+TagRecord|Naturia Horneedle|False|True|False|False
+TagRecord|Naturia Ladybug|False|True|False|False
+TagRecord|Naturia Mantis|False|True|False|False
+TagRecord|Naturia Mosquito|False|True|False|False
+TagRecord|Naturia Spiderfang|False|True|False|False
+TagRecord|Naturia Stag Beetle|True|False|False|False
+TagRecord|Naturia Stinkbug|False|True|False|False
+TagRecord|Needle Worm|False|False|False|True
+TagRecord|Neo Bug|True|False|False|False
+TagRecord|Neo-Spacian Flare Scarab|False|True|False|False
+TagRecord|Nobleman-Eater Bug|False|True|False|False
+TagRecord|Noisy Gnat|True|False|False|False
+TagRecord|Number 20: Giga-Brilliant|False|False|True|False
+TagRecord|Number 28: Titanic Moth|False|False|False|True
+TagRecord|Number 35: Ravenous Tarantula|False|False|False|True
+TagRecord|Number 66: Master Key Beetle|False|True|False|False
+TagRecord|Number 70: Malevolent Sin|False|False|False|True
+TagRecord|Number 84: Pain Gainer|False|False|False|True
+TagRecord|Numbing Grub in the Ice Barrier|False|True|False|False
+TagRecord|Parasite Paracide|False|True|False|False
+TagRecord|Parasite Paranoid|True|False|False|False
+TagRecord|Parasitic Ticky|False|True|False|False
+TagRecord|Perfectly Ultimate Great Moth|True|False|False|False
+TagRecord|Performapal Bowhopper|True|False|False|False
+TagRecord|Performapal Fireflux|True|False|False|False
+TagRecord|Performapal Kaleidoscorp|False|True|False|False
+TagRecord|Performapal Skeeter Skimmer|False|True|False|False
+TagRecord|Petit Moth|True|False|False|False
+TagRecord|Phantom Cricket|False|True|False|False
+TagRecord|Pinch Hopper|True|False|False|False
+TagRecord|Primitive Butterfly|False|True|False|False
+TagRecord|Reed Butterfly|False|True|False|False
+TagRecord|Relinquished Spider|False|True|False|False
+TagRecord|Resonance Insect|True|False|False|False
+TagRecord|Retaliating "C"|True|False|False|False
+TagRecord|Reversible Beetle|True|False|False|False
+TagRecord|Scary Moth|False|True|False|False
+TagRecord|Scrap Worm|False|True|False|False
+TagRecord|Self-Destruct Ant|False|True|False|False
+TagRecord|Shield Worm|False|False|False|True
+TagRecord|Shinobi Insect Hagakuremino|True|False|False|False
+TagRecord|Shiny Black "C"|False|True|False|False
+TagRecord|Silent Insect|False|True|False|False
+TagRecord|Silent Strider|False|True|False|False
+TagRecord|Skull-Mark Ladybug|True|False|False|False
+TagRecord|Spyder Spider|False|True|False|False
+TagRecord|Super Armored Robot Armed Black Iron "C"|False|True|False|False
+TagRecord|Swarm of Locusts|False|True|False|False
+TagRecord|Swarm of Scarabs|True|False|False|False
+TagRecord|T.G. Recipro Dragonfly|False|True|False|False
+TagRecord|T.G. Tank Grub|False|True|False|False
+TagRecord|Traptrix Allomerus|True|False|False|False
+TagRecord|Traptrix Arachnocampa|True|False|False|False
+TagRecord|Traptrix Atrax|True|False|False|False
+TagRecord|Traptrix Atypus|True|False|False|False
+TagRecord|Traptrix Mantis|True|False|False|False
+TagRecord|Traptrix Myrmeleo|True|False|False|False
+TagRecord|Ultimate Insect LV1|False|True|False|False
+TagRecord|Ultimate Insect LV3|False|True|False|False
+TagRecord|Ultimate Insect LV5|False|True|False|False
+TagRecord|Ultimate Insect LV7|False|True|False|False
+TagRecord|Underground Arachnid|False|True|False|False
+TagRecord|Warm Worm|False|False|False|True
+TagRecord|Wind-Up Honeybee|True|False|False|False
+TagRecord|Winged Cleaver|True|False|False|False
+TagRecord|X-Krawler Neurogos|True|False|False|False
+TagRecord|X-Krawler Qualiark|False|True|False|False
+TagRecord|X-Krawler Synaphysis|False|True|False|False
+TagRecord|XX-Saber Emmersblade|False|True|False|False
+TagRecord|Danger! Mothman!|False|False|True|False
