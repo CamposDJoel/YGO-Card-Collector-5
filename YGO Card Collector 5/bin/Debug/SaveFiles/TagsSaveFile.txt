@@ -1,4 +1,4 @@
-1991
+2597
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -1990,3 +1990,609 @@ TagRecord|Zolga|False|True|False|False
 TagRecord|Zolga the Prophet|True|False|False|False
 TagRecord|ZW - Asura Strike|False|True|False|False
 TagRecord|Trickstar Rhodode|False|True|False|False
+TagRecord|Abaki|True|False|False|False
+TagRecord|Absolute King Back Jack|True|False|False|False
+TagRecord|Abyss Actor - Comic Relief|False|True|False|False
+TagRecord|Abyss Actor - Evil Heel|False|True|False|False
+TagRecord|Abyss Actor - Extras|False|True|False|False
+TagRecord|Abyss Actor - Funky Comedian|False|True|False|False
+TagRecord|Abyss Actor - Leading Lady|False|True|False|False
+TagRecord|Abyss Actor - Mellow Madonna|True|False|False|False
+TagRecord|Abyss Actor - Superstar|False|True|False|False
+TagRecord|Abyss Actor - Trendy Understudy|False|True|False|False
+TagRecord|Abyss Actor - Wild Hope|True|False|False|False
+TagRecord|Adreus, Keeper of Armageddon|False|True|False|False
+TagRecord|Ahrima, the Wicked Warden|True|False|False|False
+TagRecord|Alich, Malebranche of the Burning Abyss|False|True|False|False
+TagRecord|Amanokujaki|True|False|False|False
+TagRecord|Ambitious Gofer|False|True|False|False
+TagRecord|Ancient Brain|True|False|False|False
+TagRecord|Angmarl the Fiendish Monarch|False|True|False|False
+TagRecord|Aratama|False|True|False|False
+TagRecord|Archfiend Cavalry|False|True|False|False
+TagRecord|Archfiend Commander|False|True|False|False
+TagRecord|Archfiend Eccentrick|False|True|False|False
+TagRecord|Archfiend Empress|True|False|False|False
+TagRecord|Archfiend General|False|True|False|False
+TagRecord|Archfiend Giant|False|True|False|False
+TagRecord|Archfiend Heiress|False|True|False|False
+TagRecord|Archfiend Interceptor|False|True|False|False
+TagRecord|Archfiend of Gilfer|True|False|False|False
+TagRecord|Archfiend Soldier|False|True|False|False
+TagRecord|Archfiend's Ascent|False|True|False|False
+TagRecord|Archfiend's Awakening|False|True|False|False
+TagRecord|Archfiend's Call|False|True|False|False
+TagRecord|Archfiend's Manifestation|False|True|False|False
+TagRecord|Armades, Keeper of Boundaries|False|True|False|False
+TagRecord|Armityle the Chaos Phantasm|True|False|False|False
+TagRecord|Aswan Apparition|True|False|False|False
+TagRecord|Baba Barber|True|False|False|False
+TagRecord|Barbar, Malebranche of the Burning Abyss|False|True|False|False
+TagRecord|Baron of the Fiend Sword|True|False|False|False
+TagRecord|Barrier Resonator|True|False|False|False
+TagRecord|Barrier Statue of the Abyss|True|False|False|False
+TagRecord|Basilius, Familiar of the Evil Eye|True|False|False|False
+TagRecord|Bearblocker|True|False|False|False
+TagRecord|Beat Cop from the Underworld|False|True|False|False
+TagRecord|Beiige, Vanguard of Dark World|True|False|False|False
+TagRecord|Belial - Marquis of Darkness|True|False|False|False
+TagRecord|Berfomet|False|False|True|False
+TagRecord|Bickuribox|True|False|False|False
+TagRecord|Big Eye|True|False|False|False
+TagRecord|Bite Shoes|True|False|False|False
+TagRecord|Black Potan|True|False|False|False
+TagRecord|Blackeyes, the Plunder Patroll Seaguide|True|False|False|False
+TagRecord|Blast Asmodian|True|False|False|False
+TagRecord|Blue Duston|True|False|False|False
+TagRecord|Brain Golem|False|True|False|False
+TagRecord|Brain Jacker|False|True|False|False
+TagRecord|Broww, Huntsman of Dark World|False|True|False|False
+TagRecord|Brron, Mad King of Dark World|True|False|False|False
+TagRecord|Byser Shock|True|False|False|False
+TagRecord|Cagna, Malebranche of the Burning Abyss|False|True|False|False
+TagRecord|Caius the Shadow Monarch|False|True|False|False
+TagRecord|Calcab, Malebranche of the Burning Abyss|False|True|False|False
+TagRecord|Card Guard|True|False|False|False
+TagRecord|Castle of Dark Illusions|True|False|False|False
+TagRecord|Catoblepas, Familiar of the Evil Eye|False|True|False|False
+TagRecord|Ceruli, Guru of Dark World|True|False|False|False
+TagRecord|Chain Resonator|True|False|False|False
+TagRecord|Chakra|False|True|False|False
+TagRecord|Chaos Betrayer|False|True|False|False
+TagRecord|Chaos Core|True|False|False|False
+TagRecord|Chaos Hunter|True|False|False|False
+TagRecord|Chaos Necromancer|True|False|False|False
+TagRecord|Chaos Summoning Beast|True|False|False|False
+TagRecord|Claw Reacher|True|False|False|False
+TagRecord|Clock Resonator|False|True|False|False
+TagRecord|Cloudian - Ghost Fog|False|True|False|False
+TagRecord|Cloudian - Poison Cloud|False|True|False|False
+TagRecord|Coach Goblin|True|False|False|False
+TagRecord|Crashbug X|True|False|False|False
+TagRecord|Crashbug Y|True|False|False|False
+TagRecord|Crashbug Z|False|True|False|False
+TagRecord|Crass Clown|True|False|False|False
+TagRecord|Crealtar, the Impcantation Originator|False|True|False|False
+TagRecord|Creation Resonator|False|False|True|False
+TagRecord|Crimson Nova the Dark Cubic Lord|False|False|True|False
+TagRecord|Crimson Nova Trinity the Dark Cubic Lord|True|False|False|False
+TagRecord|Cyber Archfiend|False|True|False|False
+TagRecord|D.D. Trainer|True|False|False|False
+TagRecord|D/D Cerberus|True|False|False|False
+TagRecord|D/D Ghost|True|False|False|False
+TagRecord|D/D Lamia|True|False|False|False
+TagRecord|D/D Lilith|True|False|False|False
+TagRecord|D/D Necro Slime|True|False|False|False
+TagRecord|D/D Nighthowl|True|False|False|False
+TagRecord|D/D Orthros|True|False|False|False
+TagRecord|D/D Pandora|False|True|False|False
+TagRecord|D/D Proud Chevalier|True|False|False|False
+TagRecord|D/D Proud Ogre|True|False|False|False
+TagRecord|D/D Savant Galilei|True|False|False|False
+TagRecord|D/D Savant Kepler|True|False|False|False
+TagRecord|D/D Savant Newton|True|False|False|False
+TagRecord|D/D Savant Nikola|True|False|False|False
+TagRecord|D/D Swirl Slime|True|False|False|False
+TagRecord|D/D Vice Typhon|False|True|False|False
+TagRecord|D/D/D Chaos King Apocalypse|True|False|False|False
+TagRecord|D/D/D Cursed King Siegfried|True|False|False|False
+TagRecord|D/D/D Doom King Armageddon|True|False|False|False
+TagRecord|D/D/D Dragonbane King Beowulf|True|False|False|False
+TagRecord|D/D/D Duo-Dawn King Kali Yuga|True|False|False|False
+TagRecord|D/D/D Flame High King Genghis|False|True|False|False
+TagRecord|D/D/D Flame King Genghis|False|True|False|False
+TagRecord|D/D/D Gust King Alexander|False|True|False|False
+TagRecord|D/D/D Marksman King Tell|False|True|False|False
+TagRecord|D/D/D Oblivion King Abyss Ragnarok|False|True|False|False
+TagRecord|D/D/D Rebel King Leonidas|False|True|False|False
+TagRecord|D/D/D Stone King Darius|False|True|False|False
+TagRecord|D/D/D Super Doom King Bright Armageddon|False|True|False|False
+TagRecord|D/D/D Super Doom King Dark Armageddon|False|True|False|False
+TagRecord|D/D/D Super Doom King Purple Armageddon|False|True|False|False
+TagRecord|D/D/D Supreme King Kaiser|True|False|False|False
+TagRecord|D/D/D Wave High King Caesar|False|True|False|False
+TagRecord|D/D/D Wave King Caesar|True|False|False|False
+TagRecord|D/D/D Wave Oblivion King Caesar Ragnarok|False|True|False|False
+TagRecord|Damage Eater|True|False|False|False
+TagRecord|Danger! Chupacabra!|True|False|False|False
+TagRecord|Dark Artist|False|True|False|False
+TagRecord|Dark Balter the Terrible|False|True|False|False
+TagRecord|Dark Beckoning Beast|True|False|False|False
+TagRecord|Dark Effigy|False|True|False|False
+TagRecord|Dark Highlander|False|True|False|False
+TagRecord|Dark Hunter|False|True|False|False
+TagRecord|Dark Jeroid|True|False|False|False
+TagRecord|Dark King of the Abyss|True|False|False|False
+TagRecord|Dark Lucius LV4|True|False|False|False
+TagRecord|Dark Lucius LV6|True|False|False|False
+TagRecord|Dark Lucius LV8|True|False|False|False
+TagRecord|Dark Master - Zorc|True|False|False|False
+TagRecord|Dark Mimic LV1|True|False|False|False
+TagRecord|Dark Mimic LV3|False|True|False|False
+TagRecord|Dark Necrofear|False|True|False|False
+TagRecord|Dark Prisoner|True|False|False|False
+TagRecord|Dark Resonator|True|False|False|False
+TagRecord|Dark Ruler Ha Des|False|True|False|False
+TagRecord|Dark Summoning Beast|True|False|False|False
+TagRecord|Dark Titan of Terror|True|False|False|False
+TagRecord|Darkbishop Archfiend|False|True|False|False
+TagRecord|Darklon|True|False|False|False
+TagRecord|Darklord Marie|True|False|False|False
+TagRecord|Darkness Destroyer|False|True|False|False
+TagRecord|Darkness Neosphere|False|True|False|False
+TagRecord|D-Boyz|True|False|False|False
+TagRecord|Demise, Agent of Armageddon|False|True|False|False
+TagRecord|Demise, King of Armageddon|False|True|False|False
+TagRecord|Demise, Supreme King of Armageddon|False|True|False|False
+TagRecord|Desert Twister|False|True|False|False
+TagRecord|Despian Proskenion|True|False|False|False
+TagRecord|Desrook Archfiend|True|False|False|False
+TagRecord|Diabound Kernel|False|True|False|False
+TagRecord|Dino-Sewing|False|True|False|False
+TagRecord|Diskblade Rider|False|True|False|False
+TagRecord|Djinn Cursenchanter of Rituals|False|True|False|False
+TagRecord|Djinn Demolisher of Rituals|True|False|False|False
+TagRecord|Djinn Disserere of Rituals|False|True|False|False
+TagRecord|Djinn Presider of Rituals|False|True|False|False
+TagRecord|Djinn Prognosticator of Rituals|True|False|False|False
+TagRecord|Djinn Releaser of Rituals|False|True|False|False
+TagRecord|Dokuroyaiba|True|False|False|False
+TagRecord|Doom Donuts|True|False|False|False
+TagRecord|Doomdog Octhros|True|False|False|False
+TagRecord|Doomsday Horror|False|True|False|False
+TagRecord|Dotedotengu|False|True|False|False
+TagRecord|Double Resonator|True|False|False|False
+TagRecord|Draghig, Malebranche of the Burning Abyss|False|True|False|False
+TagRecord|Dragon Seeker|False|True|False|False
+TagRecord|Dystopia the Despondent|False|True|False|False
+TagRecord|DZW - Chimera Clad|False|True|False|False
+TagRecord|Earthbound Immortal Ccapac Apu|True|False|False|False
+TagRecord|Earthbound Linewalker|True|False|False|False
+TagRecord|Earthbound Spirit|True|False|False|False
+TagRecord|Eater of Millions|True|False|False|False
+TagRecord|Edge Imp Chain|True|False|False|False
+TagRecord|Edge Imp Cotton Eater|False|True|False|False
+TagRecord|Edge Imp Frightfuloid|False|True|False|False
+TagRecord|Edge Imp Sabres|False|True|False|False
+TagRecord|Edge Imp Saw|False|True|False|False
+TagRecord|El Shaddoll Anoyatyllis|True|False|False|False
+TagRecord|Element Doom|True|False|False|False
+TagRecord|Element Soldier|True|False|False|False
+TagRecord|Emissary from Pandemonium|False|True|False|False
+TagRecord|Emissary of the Afterlife|False|True|False|False
+TagRecord|Emperor Maju Garzett|False|True|False|False
+TagRecord|Emperor Sem|False|True|False|False
+TagRecord|Evil HERO Dark Gaia|True|False|False|False
+TagRecord|Evil HERO Infernal Prodigy|False|True|False|False
+TagRecord|Evil HERO Infernal Sniper|False|True|False|False
+TagRecord|Evil HERO Inferno Wing|True|False|False|False
+TagRecord|Evil HERO Lightning Golem|True|False|False|False
+TagRecord|Evil HERO Malicious Bane|False|False|True|False
+TagRecord|Evil HERO Malicious Edge|False|True|False|False
+TagRecord|Evil HERO Malicious Fiend|True|False|False|False
+TagRecord|Evilswarm Nightmare|False|True|False|False
+TagRecord|Evilswarm Thanatos|False|True|False|False
+TagRecord|Fabled Andwraith|True|False|False|False
+TagRecord|Fabled Ashenveil|False|True|False|False
+TagRecord|Fabled Dianaira|False|True|False|False
+TagRecord|Fabled Dyf|False|True|False|False
+TagRecord|Fabled Gallabas|False|True|False|False
+TagRecord|Fabled Grimro|True|False|False|False
+TagRecord|Fabled Kushano|False|True|False|False
+TagRecord|Fabled Leviathan|False|True|False|False
+TagRecord|Fabled Lurrie|True|False|False|False
+TagRecord|Fabled Marcosia|True|False|False|False
+TagRecord|Fabled Miztoji|False|True|False|False
+TagRecord|Fabled Oltro|False|True|False|False
+TagRecord|Fabled Ragin|True|False|False|False
+TagRecord|Fabled Raven|True|False|False|False
+TagRecord|Fabled Soulkius|False|True|False|False
+TagRecord|Fabled Topi|False|True|False|False
+TagRecord|Fabled Urustos|False|True|False|False
+TagRecord|Farfa, Malebranche of the Burning Abyss|True|False|False|False
+TagRecord|Feral Imp|True|False|False|False
+TagRecord|Fiend's Mirror|False|True|False|False
+TagRecord|Fire Cracker|False|True|False|False
+TagRecord|Flame Ogre|False|True|False|False
+TagRecord|Flamvell Fiend|True|False|False|False
+TagRecord|Flare Resonator|True|False|False|False
+TagRecord|Flash Assailant|True|False|False|False
+TagRecord|Force Resonator|True|False|False|False
+TagRecord|Frightfur Bear|False|True|False|False
+TagRecord|Frightfur Chimera|False|True|False|False
+TagRecord|Frightfur Sabre-Tooth|True|False|False|False
+TagRecord|Frightfur Sheep|False|True|False|False
+TagRecord|Frightfur Tiger|False|True|False|False
+TagRecord|Frightfur Wolf|False|True|False|False
+TagRecord|Frozen Fitzgerald|False|True|False|False
+TagRecord|Fusion Devourer|False|True|False|False
+TagRecord|Gaap the Divine Soldier|True|False|False|False
+TagRecord|Garbage Lord|False|True|False|False
+TagRecord|Garbage Ogre|False|True|False|False
+TagRecord|Garlandolf, King of Destruction|False|True|False|False
+TagRecord|Gash the Dust Lord|False|True|False|False
+TagRecord|Gemini Imps|False|True|False|False
+TagRecord|Ghost Ship|False|True|False|False
+TagRecord|Ghostrick Dullahan|True|False|False|False
+TagRecord|Ghostrick Jackfrost|False|True|False|False
+TagRecord|Ghostrick Mary|True|False|False|False
+TagRecord|Ghostrick Specter|True|False|False|False
+TagRecord|Giant Germ|True|False|False|False
+TagRecord|Giant Kozaky|True|False|False|False
+TagRecord|Giant Orc|True|False|False|False
+TagRecord|Gil Garth|True|False|False|False
+TagRecord|Gishki Psychelone|False|True|False|False
+TagRecord|Go! - D/D/D Divine Zero King Rage|True|False|False|False
+TagRecord|Goblin Calligrapher|True|False|False|False
+TagRecord|Goblin King|True|False|False|False
+TagRecord|Goblin of Greed|True|False|False|False
+TagRecord|Goldd, Wu-Lord of Dark World|True|False|False|False
+TagRecord|Gorz the Emissary of Darkness|True|False|False|False
+TagRecord|Grand Tiki Elder|True|False|False|False
+TagRecord|Grapha, Dragon Lord of Dark World|True|False|False|False
+TagRecord|Grave Protector|False|True|False|False
+TagRecord|Grave Squirmer|True|False|False|False
+TagRecord|Gravitic Orb|False|True|False|False
+TagRecord|Green Duston|True|False|False|False
+TagRecord|Gren Maju Da Eiza|True|False|False|False
+TagRecord|Great Maju Garzett|False|True|False|False
+TagRecord|Gren, Tactician of Dark World|True|False|False|False
+TagRecord|Grinder Golem|False|True|False|False
+TagRecord|Guardian Baou|False|True|False|False
+TagRecord|Guardian Dreadscythe|True|False|False|False
+TagRecord|Guerilla Kite|False|True|False|False
+TagRecord|Hallohallo|False|True|False|False
+TagRecord|Hand-Holding Genie|False|True|False|False
+TagRecord|Headless Knight|True|False|False|False
+TagRecord|Helpoemer|True|False|False|False
+TagRecord|Hiro's Shadow Scout|True|False|False|False
+TagRecord|Holding Arms|False|True|False|False
+TagRecord|Holding Legs|False|True|False|False
+TagRecord|House Duston|True|False|False|False
+TagRecord|Humhumming the Key Djinn|False|True|False|False
+TagRecord|Imprisoned Queen Archfiend|False|True|False|False
+TagRecord|Infernalqueen Archfiend|False|True|False|False
+TagRecord|Infernity Archer|False|True|False|False
+TagRecord|Infernity Archfiend|False|True|False|False
+TagRecord|Infernity Avenger|False|True|False|False
+TagRecord|Infernity Guardian|False|True|False|False
+TagRecord|Infernity Knight|False|True|False|False
+TagRecord|Infernity Mirage|True|False|False|False
+TagRecord|Infernity Necromancer|False|True|False|False
+TagRecord|Infernity Patriarch|False|True|False|False
+TagRecord|Inferno Hammer|False|True|False|False
+TagRecord|Infernoid Antra|False|True|False|False
+TagRecord|Infernoid Attondel|False|True|False|False
+TagRecord|Infernoid Devyaty|False|True|False|False
+TagRecord|Infernoid Harmadik|False|True|False|False
+TagRecord|Infernoid Onuncu|False|True|False|False
+TagRecord|Infernoid Patrulea|False|True|False|False
+TagRecord|Infernoid Piaty|True|False|False|False
+TagRecord|Infernoid Seitsemas|False|True|False|False
+TagRecord|Infernoid Sjette|True|False|False|False
+TagRecord|Infernoid Tierra|False|False|True|False
+TagRecord|Infinity Dark|False|True|False|False
+TagRecord|Invader of Darkness|False|True|False|False
+TagRecord|Invoked Purgatrio|False|True|False|False
+TagRecord|Jowls of Dark Demise|False|True|False|False
+TagRecord|Kahkki, Guerilla of Dark World|True|False|False|False
+TagRecord|King Fog|True|False|False|False
+TagRecord|King of Yamimakai|True|False|False|False
+TagRecord|Kiseitai|False|True|False|False
+TagRecord|Knightmare Goblin|False|True|False|False
+TagRecord|Knightmare Gryphon|False|True|False|False
+TagRecord|Knightmare Mermaid|False|True|False|False
+TagRecord|Knightmare Phoenix|False|True|False|False
+TagRecord|Knightmare Unicorn|False|True|False|False
+TagRecord|Koa'ki Meiru Doom|False|True|False|False
+TagRecord|Koa'ki Meiru Valafar|False|True|False|False
+TagRecord|Kozaky|True|False|False|False
+TagRecord|Kryuel|True|False|False|False
+TagRecord|Kuribandit|False|True|False|False
+TagRecord|Kuribee|True|False|False|False
+TagRecord|Kuriboh|True|False|False|False
+TagRecord|Kuriphoton|False|True|False|False
+TagRecord|La Jinn the Mystical Genie of the Lamp|True|False|False|False
+TagRecord|Labrynth Archfiend|True|False|False|False
+TagRecord|Labrynth Chandraglier|True|False|False|False
+TagRecord|Labrynth Cooclock|True|False|False|False
+TagRecord|Labrynth Stovie Torbie|True|False|False|False
+TagRecord|Lancer Archfiend|True|False|False|False
+TagRecord|Latinum, Exarch of Dark World|False|True|False|False
+TagRecord|Lava Golem|True|False|False|False
+TagRecord|Legendary Fiend|True|False|False|False
+TagRecord|Legendary Maju Garzett|True|False|False|False
+TagRecord|Lesser Fiend|True|False|False|False
+TagRecord|Lilith, Lady of Lament|True|False|False|False
+TagRecord|Lord of the Lamp|False|True|False|False
+TagRecord|Lucent, Netherlord of Dark World|False|False|True|False
+TagRecord|Mad Archfiend|False|True|False|False
+TagRecord|Mad Reloader|False|True|False|False
+TagRecord|Maestroke the Symphony Djinn|False|True|False|False
+TagRecord|Magical King Moonstar|False|True|False|False
+TagRecord|Magical Musketeer Calamity|False|True|False|False
+TagRecord|Magical Musketeer Caspar|False|True|False|False
+TagRecord|Magical Musketeer Starfire|False|True|False|False
+TagRecord|Majesty's Fiend|True|False|False|False
+TagRecord|Maju Garzett|False|True|False|False
+TagRecord|Malice Doll of Demise|True|False|False|False
+TagRecord|Malicevorous Fork|True|False|False|False
+TagRecord|Malicevorous Knife|False|True|False|False
+TagRecord|Malicevorous Spoon|True|False|False|False
+TagRecord|Man-Eating Treasure Chest|True|False|False|False
+TagRecord|Mask of Darkness|False|True|False|False
+TagRecord|Masked Beast Des Gardius|True|False|False|False
+TagRecord|Masterking Archfiend|False|True|False|False
+TagRecord|Mazera DeVille|False|True|False|False
+TagRecord|Meda Bat|True|False|False|False
+TagRecord|Mefist the Infernal General|False|False|True|False
+TagRecord|Mekanikal Arkfiend|True|False|False|False
+TagRecord|Melchid the Four-Face Beast|False|True|False|False
+TagRecord|Melomelody the Brass Djinn|False|True|False|False
+TagRecord|Memory Crush King|False|True|False|False
+TagRecord|Metabo Globster|False|True|False|False
+TagRecord|Metal Guardian|False|True|False|False
+TagRecord|Mirror Resonator|True|False|False|False
+TagRecord|Mist Archfiend|False|True|False|False
+TagRecord|Morinphen|True|False|False|False
+TagRecord|Ms. Judge|True|False|False|False
+TagRecord|Muzurhythm the String Djinn|False|True|False|False
+TagRecord|Mystic Clown|True|False|False|False
+TagRecord|Neck Hunter|True|False|False|False
+TagRecord|Necro Defender|False|True|False|False
+TagRecord|Necro Linker|False|True|False|False
+TagRecord|Needle Ball|False|True|False|False
+TagRecord|Newdoria|True|False|False|False
+TagRecord|Night Assailant|True|False|False|False
+TagRecord|Number 43: Manipulator of Souls|False|True|False|False
+TagRecord|Number 65: Djinn Buster|False|True|False|False
+TagRecord|Number C43: High Manipulator of Chaos|False|True|False|False
+TagRecord|Number C65: King Overfiend|False|True|False|False
+TagRecord|Number C80: Requiem in Berserk|False|True|False|False
+TagRecord|Nuvia the Wicked|False|True|False|False
+TagRecord|Ogre of the Scarlet Sorrow|False|True|False|False
+TagRecord|Onibimaru Soul Sweeper|True|False|False|False
+TagRecord|Opticlops|True|False|False|False
+TagRecord|Outer Entity Azathot|False|True|False|False
+TagRecord|Outer Entity Nyarla|False|True|False|False
+TagRecord|Pazuzule|True|False|False|False
+TagRecord|Perditious Puppeteer|True|False|False|False
+TagRecord|Performapal Gatlinghoul|False|True|False|False
+TagRecord|Performapal U Go Golem|False|True|False|False
+TagRecord|Phantasm Emperor Trilojig|True|False|False|False
+TagRecord|Phantom King Hydride|True|False|False|False
+TagRecord|Phantom of Chaos|True|False|False|False
+TagRecord|Phantom Skyblaster|False|True|False|False
+TagRecord|Plunder Patrollship Brann|True|False|False|False
+TagRecord|Poly-Chemicritter Dioxogre|False|True|False|False
+TagRecord|Possessed Dark Soul|True|False|False|False
+TagRecord|Power Invader|True|False|False|False
+TagRecord|Protector of the Sanctuary|True|False|False|False
+TagRecord|Puppet Master|True|False|False|False
+TagRecord|Putrid Pudding Body Buddies|False|True|False|False
+TagRecord|Radian, the Multidimensional Kaiju|True|False|False|False
+TagRecord|Raviel, Lord of Phantasms|True|False|False|False
+TagRecord|Raviel, Lord of Phantasms - Shimmering Scraper|True|False|False|False
+TagRecord|Reaper of the Cards|False|True|False|False
+TagRecord|Red Blossoms from Underroot|True|False|False|False
+TagRecord|Red Duston|False|True|False|False
+TagRecord|Red Gardna|True|False|False|False
+TagRecord|Red Mirror|True|False|False|False
+TagRecord|Red Sprinter|True|False|False|False
+TagRecord|Red Warg|True|False|False|False
+TagRecord|Red-Eyes Archfiend of Lightning|True|False|False|False
+TagRecord|Reign-Beaux, Overlord of Dark World|True|False|False|False
+TagRecord|Renge, Gatekeeper of Dark World|False|True|False|False
+TagRecord|Reverse Buster|False|True|False|False
+TagRecord|Ritual Raven|True|False|False|False
+TagRecord|Ryu-Kishin|True|False|False|False
+TagRecord|Ryu-Kishin Clown|True|False|False|False
+TagRecord|Sangan|True|False|False|False
+TagRecord|Santa Claws|True|False|False|False
+TagRecord|Scarr, Scout of Dark World|False|True|False|False
+TagRecord|Scrounging Goblin|True|False|False|False
+TagRecord|Second Goblin|True|False|False|False
+TagRecord|Shadow Delver|False|True|False|False
+TagRecord|Shadowknight Archfiend|True|False|False|False
+TagRecord|Shadowslayer|False|True|False|False
+TagRecord|Sinister Sprocket|False|True|False|False
+TagRecord|Skull Archfiend of Lightning|False|True|False|False
+TagRecord|Skull Knight #2|True|False|False|False
+TagRecord|Skull Meister|True|False|False|False
+TagRecord|Slate Warrior|False|True|False|False
+TagRecord|Snipe Hunter|True|False|False|False
+TagRecord|Snoww, Unlight of Dark World|True|False|False|False
+TagRecord|Souls of the Forgotten|True|False|False|False
+TagRecord|Spear Cretin|True|False|False|False
+TagRecord|Sphere Kuriboh|False|True|False|False
+TagRecord|SPYRAL Sleeper|False|True|False|False
+TagRecord|Starduston|False|True|False|False
+TagRecord|Steelswarm Caller|False|True|False|False
+TagRecord|Steelswarm Caucastag|False|True|False|False
+TagRecord|Steelswarm Cell|False|True|False|False
+TagRecord|Steelswarm Gatekeeper|False|True|False|False
+TagRecord|Steelswarm Genome|False|True|False|False
+TagRecord|Steelswarm Girastag|False|True|False|False
+TagRecord|Steelswarm Hercules|False|True|False|False
+TagRecord|Steelswarm Longhorn|False|True|False|False
+TagRecord|Steelswarm Mantis|False|True|False|False
+TagRecord|Steelswarm Moth|False|True|False|False
+TagRecord|Steelswarm Origin|False|True|False|False
+TagRecord|Steelswarm Scout|False|True|False|False
+TagRecord|Steelswarm Sentinel|False|True|False|False
+TagRecord|Steelswarm Sting|False|True|False|False
+TagRecord|Stellarknight Zefraxciton|False|True|False|False
+TagRecord|Stray Asmodian|True|False|False|False
+TagRecord|Stygian Security|True|False|False|False
+TagRecord|Stygian Sergeants|False|True|False|False
+TagRecord|Stygian Street Patrol|False|True|False|False
+TagRecord|Subterror Behemoth Speleogeist|False|True|False|False
+TagRecord|Summoned Skull|True|False|False|False
+TagRecord|Supay|True|False|False|False
+TagRecord|Super Crashbug|False|True|False|False
+TagRecord|Synkron Resonator|False|True|False|False
+TagRecord|Supreme King Gate Zero|False|False|True|False
+TagRecord|Tainted Wisdom|True|False|False|False
+TagRecord|Tardy Orc|False|True|False|False
+TagRecord|Temtempo the Percussion Djinn|False|True|False|False
+TagRecord|Terra the Terrible|True|False|False|False
+TagRecord|Terrifying Toddler of Torment|False|True|False|False
+TagRecord|Terrorking Archfiend|True|False|False|False
+TagRecord|That Which Feeds on Life|True|False|False|False
+TagRecord|The Bistro Butcher|True|False|False|False
+TagRecord|The Earl of Demise|False|True|False|False
+TagRecord|The End of Anubis|False|True|False|False
+TagRecord|The Gross Ghost of Fled Dreams|True|False|False|False
+TagRecord|The Masked Beast|False|True|False|False
+TagRecord|The Portrait's Secret|True|False|False|False
+TagRecord|The Shadow Who Controls the Dark|True|False|False|False
+TagRecord|The Suppression Pluto|True|False|False|False
+TagRecord|The Wicked Avatar|True|False|False|False
+TagRecord|The Wicked Dreadroot|True|False|False|False
+TagRecord|The Wicked Eraser|True|False|False|False
+TagRecord|Theban Nightmare|True|False|False|False
+TagRecord|Three-Headed Geedo|True|False|False|False
+TagRecord|Tierra, Source of Destruction|False|True|False|False
+TagRecord|Tindangle Acute Cerberus|False|True|False|False
+TagRecord|Tindangle Angel|False|True|False|False
+TagRecord|Tindangle Base Gardna|False|True|False|False
+TagRecord|Tindangle Hound|True|False|False|False
+TagRecord|Tindangle Intruder|False|True|False|False
+TagRecord|Tindangle Protector|False|True|False|False
+TagRecord|Tindangle Trinity|False|True|False|False
+TagRecord|Tlakalel, His Malevolent Majesty|True|False|False|False
+TagRecord|Token Collector|False|True|False|False
+TagRecord|Toon Summoned Skull|False|True|False|False
+TagRecord|Tour Bus To Forbidden Realms|False|True|False|False
+TagRecord|Tour Guide From the Underworld|False|True|False|False
+TagRecord|Tragoedia|False|True|False|False
+TagRecord|Trance Archfiend|True|False|False|False
+TagRecord|Trap Eater|False|True|False|False
+TagRecord|Trial of Nightmare|True|False|False|False
+TagRecord|Tuning Gum|False|True|False|False
+TagRecord|Twin-Headed Wolf|True|False|False|False
+TagRecord|Umbral Horror Ghost|False|True|False|False
+TagRecord|Umbral Horror Ghoul|False|True|False|False
+TagRecord|Umbral Horror Unform|True|False|False|False
+TagRecord|Umbral Horror Will o' the Wisp|True|False|False|False
+TagRecord|Umbramirage the Elemental Lord|False|True|False|False
+TagRecord|Vanity's Fiend|True|False|False|False
+TagRecord|Vice Berserker|True|False|False|False
+TagRecord|Vijam the Cubic Seed|False|True|False|False
+TagRecord|Vilepawn Archfiend|False|True|False|False
+TagRecord|Viser Des|True|False|False|False
+TagRecord|Wall of Illusion|True|False|False|False
+TagRecord|Whiptail Crow|True|False|False|False
+TagRecord|White Duston|False|True|False|False
+TagRecord|Winged Minion|True|False|False|False
+TagRecord|Witty Phantom|True|False|False|False
+TagRecord|Xyz Avenger|True|False|False|False
+TagRecord|Yata-Garasu|False|False|True|False
+TagRecord|Yellow Duston|False|True|False|False
+TagRecord|Yubel - Terror Incarnate|False|True|False|False
+TagRecord|Yubel - The Ultimate Nightmare|False|True|False|False
+TagRecord|Zera the Mant|False|True|False|False
+TagRecord|Zerrziel, Ruler of the Evil Eyed|False|True|False|False
+TagRecord|Zure, Knight of Dark World|True|False|False|False
+TagRecord|Abyss Actor - Curtain Raiser|False|True|False|False
+TagRecord|Doomcaliber Knight|False|True|False|False
+TagRecord|Knightmare Cerberus|False|False|True|False
+TagRecord|Memory Crusher|False|True|False|False
+TagRecord|Number 80: Rhapsody in Berserk|False|True|False|False
+TagRecord|Ryu-Kishin Powered|True|False|False|False
+TagRecord|D/D/D Destiny King Zero Laplace|False|False|True|False
+TagRecord|Wandering King Wildwind|False|False|True|False
+TagRecord|Abyss Actor - Sassy Rookie|False|False|False|True
+TagRecord|Barox|False|False|False|True
+TagRecord|Blood Mefist|False|False|False|True
+TagRecord|Chaos King Archfiend|False|False|False|True
+TagRecord|Cir, Malebranche of the Burning Abyss|False|False|False|True
+TagRecord|Curse Necrofear|False|False|False|True
+TagRecord|D/D Berfomet|False|False|False|True
+TagRecord|D/D Savant Copernicus|False|False|False|True
+TagRecord|D/D Savant Thomas|False|False|False|True
+TagRecord|D/D/D Dragon King Pendragon|False|False|False|True
+TagRecord|D/D/D Gust High King Alexander|False|False|False|True
+TagRecord|D/D/D Oracle King d'Arc|False|False|False|True
+TagRecord|Dark Diviner|False|False|False|True
+TagRecord|Dark Spirit of Banishment|False|False|False|True
+TagRecord|Dark Spirit of Malice|False|False|False|True
+TagRecord|Earthbound Greater Linewalker|False|False|False|True
+TagRecord|Edge Imp Tomahawk|False|False|False|True
+TagRecord|Evil HERO Adusted Gold|False|False|False|True
+TagRecord|Evil HERO Sinister Necrom|False|False|False|True
+TagRecord|Evilswarm Exciton Knight|False|False|False|True
+TagRecord|Fabled Krus|False|False|False|True
+TagRecord|Fabled Valkyrus|False|False|False|True
+TagRecord|Frightfur Daredevil|False|False|False|True
+TagRecord|Frightfur Kraken|False|False|False|True
+TagRecord|Frightfur Leo|False|False|False|True
+TagRecord|Ghostrick Lantern|False|False|False|True
+TagRecord|Graff, Malebranche of the Burning Abyss|False|False|False|True
+TagRecord|Greed Quasar|False|False|False|True
+TagRecord|Ido the Supreme Magical Force|False|False|False|True
+TagRecord|Infernity Destroyer|False|False|False|True
+TagRecord|Infernity General|False|False|False|True
+TagRecord|Infernoid Decatron|False|False|False|True
+TagRecord|Infernoid Pirmais|False|False|False|True
+TagRecord|Invader from Another Dimension|False|False|False|True
+TagRecord|Key Mace #2|False|False|False|True
+TagRecord|King of Destruction - Xexex|False|False|False|True
+TagRecord|Kuribohrn|False|False|False|True
+TagRecord|Libic, Malebranche of the Burning Abyss|False|False|False|True
+TagRecord|Magical Musket Mastermind Zakiel|False|False|False|True
+TagRecord|Magical Musketeer Doc|False|False|False|True
+TagRecord|Magical Musketeer Kidbrave|False|False|False|True
+TagRecord|Magical Musketeer Max|False|False|False|True
+TagRecord|Magical Musketeer Wild|False|False|False|True
+TagRecord|Malacoda, Netherlord of the Burning Abyss|False|False|False|True
+TagRecord|Masked Chopper|False|False|False|True
+TagRecord|Medusa, Watcher of the Evil Eye|False|False|False|True
+TagRecord|Monster Eye|False|False|False|True
+TagRecord|Number 13: Embodiment of Crime|False|False|False|True
+TagRecord|Number 31: Embodiment of Punishment|False|False|False|True
+TagRecord|Number 41: Bagooska the Terribly Tired Tapir|False|False|False|True
+TagRecord|Number 53: Heart-eartH|False|False|False|True
+TagRecord|Number 60: Dugares the Timeless|False|False|False|True
+TagRecord|Number 77: The Seven Sins|False|False|False|True
+TagRecord|Number 85: Crazy Box|False|False|False|True
+TagRecord|Number 96: Dark Mist|False|False|False|True
+TagRecord|Number C96: Dark Storm|False|False|False|True
+TagRecord|Rainbow Kuriboh|False|False|False|True
+TagRecord|Reshef the Dark Being|False|False|False|True
+TagRecord|Rubic, Malebranche of the Burning Abyss|False|False|False|True
+TagRecord|Scarm, Malebranche of the Burning Abyss|False|False|False|True
+TagRecord|Scrap Archfiend|False|False|False|True
+TagRecord|Serziel, Watcher of the Evil Eye|False|False|False|True
+TagRecord|Sky Scourge Norleras|False|False|False|True
+TagRecord|Soul Hunter|False|False|False|True
+TagRecord|Steelswarm Roach|False|False|False|True
+TagRecord|Supreme King Gate Infinity|False|False|False|True
+TagRecord|The Supremacy Sun|False|False|False|True
+TagRecord|Tongue Twister|False|False|False|True
+TagRecord|Tour Bus From the Underworld|False|False|False|True
+TagRecord|Ultimate Obedient Fiend|False|False|False|True
+TagRecord|Ushi Oni|False|False|False|True
+TagRecord|Wretched Ghost of the Attic|False|False|False|True
+TagRecord|Yubel|False|False|False|True
+TagRecord|Zoa|False|False|False|True
