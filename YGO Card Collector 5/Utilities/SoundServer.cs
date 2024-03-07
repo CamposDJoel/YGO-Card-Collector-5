@@ -54,19 +54,21 @@ namespace YGO_Card_Collector_5
                 //This event will loop the song... once the song ends it plays again
                 CurrentBackGroundPlay.MediaEnded += new EventHandler(CollectorMedia_Ended);
                 CurrentBackGroundPlay.Play();
-                CurrentBackGroundPlay.Volume = 0.3;
+                CurrentBackGroundPlay.Volume = CurrentVolumeLevel;
             }
         }
         public static void MuteBackgroundMusic(bool ON)
         {
             if(ON)
             {
-                CurrentBackGroundPlay.Volume = 0.3;
+                CurrentVolumeLevel = 0.3;
             }
             else
             {
-                CurrentBackGroundPlay.Volume = 0.0;
+                CurrentVolumeLevel = 0.0;
             }
+
+            CurrentBackGroundPlay.Volume = CurrentVolumeLevel;
         }
         public static void StopBackgroundMusic() 
         {
@@ -103,6 +105,7 @@ namespace YGO_Card_Collector_5
             CollectorSong.FreeDuelMenu,
             CollectorSong.LibraryMenu
         };
+        private static double CurrentVolumeLevel = 0.3;
     }
 
     public enum Song
