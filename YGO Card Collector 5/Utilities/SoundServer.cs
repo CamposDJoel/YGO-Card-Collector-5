@@ -115,6 +115,7 @@ namespace YGO_Card_Collector_5
         FreeDuelMenu,
         DeckBuildMenu,
         FreeDuel,
+        LibraryMenu
     }
     public enum CollectorSong
     {

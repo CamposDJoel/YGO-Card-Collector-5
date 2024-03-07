@@ -140,6 +140,7 @@
             this.maincon.SelectedIndex = 0;
             this.maincon.Size = new System.Drawing.Size(799, 433);
             this.maincon.TabIndex = 0;
+            this.maincon.Visible = false;
             // 
             // tabPage1
             // 
@@ -985,6 +986,7 @@
             this.btnBackToCollector.TabIndex = 263;
             this.btnBackToCollector.Text = "<-- Back to Collector";
             this.btnBackToCollector.UseVisualStyleBackColor = false;
+            this.btnBackToCollector.Visible = false;
             this.btnBackToCollector.Click += new System.EventHandler(this.btnBackToCollector_Click);
             // 
             // StatsReport
@@ -1001,7 +1003,7 @@
             this.MaximizeBox = false;
             this.Name = "StatsReport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Collection Stats - YGO Card Collector 5";
+            this.Text = "Loading... - YGO Card Collector 5";
             this.maincon.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.TabBoosters.ResumeLayout(false);

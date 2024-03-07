@@ -12,7 +12,7 @@ namespace YGO_Card_Collector_5
         #region Constructors
         public SettingsForm(FormLauncher mainmenuform)
         {
-            SoundServer.PlayBackgroundMusic(Song.TitleScreen);
+            SoundServer.PlayBackgroundMusic(Song.LibraryMenu);
             InitializeComponent();
             _Mainmenuform = mainmenuform;
             ReloadSettings();
@@ -28,6 +28,9 @@ namespace YGO_Card_Collector_5
             RadioThemeDMG.MouseEnter += OnMouseEnterRadio;
             RadioThemeTraptrix.MouseEnter += OnMouseEnterRadio;
             RadioThemeBlueEyesUltimate.MouseEnter += OnMouseEnterRadio;
+            RadioThemeBLS.MouseEnter += OnMouseEnterRadio;
+            RadioThemeSlifer.MouseEnter += OnMouseEnterRadio;
+            RadioThemeYugiSlifer.MouseEnter += OnMouseEnterRadio;
             RadioMusicON.MouseEnter += OnMouseEnterRadio;
             RadioMusicOFF.MouseEnter += OnMouseEnterRadio;
             RadioSFXON.MouseEnter += OnMouseEnterRadio;
@@ -198,7 +201,7 @@ namespace YGO_Card_Collector_5
             {
                 SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
                 SettingsData.SwitchMusicSetting(true);
-                SoundServer.PlayBackgroundMusic(Song.TitleScreen);
+                SoundServer.PlayBackgroundMusic(Song.LibraryMenu);
             }
         }
         private void RadioMusicOFF_CheckedChanged(object sender, EventArgs e)

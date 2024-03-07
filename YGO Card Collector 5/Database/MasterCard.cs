@@ -5,6 +5,7 @@
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Windows.Forms.VisualStyles;
 using System.Windows.Input;
 
 namespace YGO_Card_Collector_5
@@ -23,6 +24,20 @@ namespace YGO_Card_Collector_5
             _Defense = def;
             _Pendulum = pen;
             _KonamiURL = url;
+        }
+        public MasterCard(int id, string name, string attribute, string species, string levelranklink, string ata, string def, string pen, string url, string prodeckurl, bool[] tags)
+        {
+            _ID = id;
+            _Name = name;
+            _Attribute = attribute;
+            _Type = species;
+            _LevelRankLink = levelranklink;
+            _Attack = ata;
+            _Defense = def;
+            _Pendulum = pen;
+            _KonamiURL = url;
+            _ProdeckURL = prodeckurl;
+            _Tags = tags;
         }
         #endregion
 
@@ -178,6 +193,15 @@ namespace YGO_Card_Collector_5
                 }
             }
             return oneObtained;
+        }
+        public MasterCard GetCopyWithoutSets()
+        {
+            return new MasterCard(_ID, _Name, _Attribute, _Type, _LevelRankLink, _Attack, _Defense, _Pendulum, _KonamiURL, _ProdeckURL, _Tags);
+
+        }
+        public void OverrideSetCards(List<SetCard> NewSets)
+        {
+            _SetCards = NewSets;
         }
         #endregion
 
@@ -358,6 +382,21 @@ namespace YGO_Card_Collector_5
                 //Mark the MasterCard as obtained
                 Database.MasterCardByCode[_Code].MarkOwnedStatus(true);
             }
+        }
+        public bool WasReleasedBy(string year)
+        {
+            if(_ReleaseDate == "")
+            {
+                return false;
+            }
+            else
+            {
+                string releaseYear = _ReleaseDate.Split('-')[0];
+                int releaseYearInInt = Convert.ToInt32(releaseYear);
+                int targetYearInInt = Convert.ToInt32(year);
+
+                return releaseYearInInt <= targetYearInInt;
+            }          
         }
         #endregion
 

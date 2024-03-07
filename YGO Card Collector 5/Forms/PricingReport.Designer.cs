@@ -80,6 +80,7 @@
             this.btnBackToCollector.TabIndex = 264;
             this.btnBackToCollector.Text = "<-- Back to Collector";
             this.btnBackToCollector.UseVisualStyleBackColor = false;
+            this.btnBackToCollector.Visible = false;
             this.btnBackToCollector.Click += new System.EventHandler(this.btnBackToCollector_Click);
             // 
             // TABCONTROLMASTER
@@ -92,6 +93,7 @@
             this.TABCONTROLMASTER.SelectedIndex = 0;
             this.TABCONTROLMASTER.Size = new System.Drawing.Size(790, 422);
             this.TABCONTROLMASTER.TabIndex = 265;
+            this.TABCONTROLMASTER.Visible = false;
             // 
             // tabPage1
             // 
@@ -473,7 +475,7 @@
             this.MaximizeBox = false;
             this.Name = "PricingReport";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Pricing Report - YGO Card Collector 5";
+            this.Text = "Loading... - YGO Card Collector 5";
             this.TABCONTROLMASTER.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

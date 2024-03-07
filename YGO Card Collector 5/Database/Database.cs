@@ -41,14 +41,23 @@ namespace YGO_Card_Collector_5
         {
             if(!Initialized)
             {
+                bool FullDBMode = (DBType == "FULL") || (DBType == "2019Custom");
                 string jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\CardDB.json";
-                if (DBType == "2019") { jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\2019CardDB.json"; }
+                if (DBType == "2019Custom") { jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\2019CardDB.json"; }
                 string rawdata = File.ReadAllText(jsonFilePath);
 
                 //Attempt to deserialize the JSON. If it fail simply show error.
                 try
                 {
-                    MasterCards = JsonConvert.DeserializeObject<List<MasterCard>>(rawdata);
+                    if(FullDBMode)
+                    {
+                        MasterCards = JsonConvert.DeserializeObject<List<MasterCard>>(rawdata);
+                    }
+                    else
+                    {
+                        LoadYearDB(rawdata, DBType);
+                    }
+                    
                 }
                 catch (Exception)
                 {
@@ -326,6 +335,34 @@ namespace YGO_Card_Collector_5
                 }
 
                 SR_SaveFile?.Close();
+            }
+            void LoadYearDB(string rawdata, string year)
+            {
+                //Step 1: Deserialize the FULL database into a tmp MasterCard List
+                List<MasterCard> TMPDB = JsonConvert.DeserializeObject<List<MasterCard>>(rawdata);
+
+                //Step 2: Check all the mastercards and catch which Mastercards have Setcards release <= to the target year
+                foreach (MasterCard ThisMasterCard in TMPDB) 
+                {
+                    List<SetCard> CardsToAdd = new List<SetCard>();  
+                    foreach (SetCard ThisSetCard in ThisMasterCard.SetCards) 
+                    {
+                        if(ThisSetCard.WasReleasedBy(year)) 
+                        {
+                            CardsToAdd.Add(ThisSetCard);
+                        }
+                    }
+
+                    //Step 3: If any SetCard was added to the list, create a copy of the MasterCard Object
+                    //Add only the extracted sets to it and add it to the MasterCardList
+                    if(CardsToAdd.Count > 0) 
+                    {
+                        //Add this card to the new DB
+                        MasterCard ThisCopyMasterCard = ThisMasterCard.GetCopyWithoutSets();
+                        ThisCopyMasterCard.OverrideSetCards(CardsToAdd);
+                        MasterCards.Add(ThisCopyMasterCard);
+                    }
+                }
             }
         }
         public static void UpdateSaveFile(string cardData, bool markAsOwned)

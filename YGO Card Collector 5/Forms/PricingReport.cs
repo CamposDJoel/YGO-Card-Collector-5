@@ -16,11 +16,9 @@ namespace YGO_Card_Collector_5
         {
             InitializeComponent();
             CollectorForm = collertorform;
-            LoadCOLLECTIONPriceReportLists();
-            LoadDBPriceReportLists();
-            LoadSetsExplorer(0);
             //Load Form theme
             Tools.InitalizeThemeOnForm(this);
+            Shown += new EventHandler(f1_Shown);
         }
         public PricingReport(Object collertorform, int groupIndex, int setIndex)
         {
@@ -60,10 +58,10 @@ namespace YGO_Card_Collector_5
                 {
                     if (ThisSetCard.Code != "")
                     {
-                        if(ThisSetCard.IsOwned())
+                        if (ThisSetCard.IsOwned())
                         {
                             PriceList.Add(ThisSetCard);
-                        }                       
+                        }
                     }
                 }
             }
@@ -553,6 +551,15 @@ namespace YGO_Card_Collector_5
             Dispose();
             Form CollectorsForm = (Form)CollectorForm;
             CollectorsForm.Show();
+        }
+        public void f1_Shown(object sender, EventArgs e)
+        {
+            LoadCOLLECTIONPriceReportLists();
+            LoadDBPriceReportLists();
+            LoadSetsExplorer(0);
+            Text = "Pricing Report - YGO Card Collector 5";
+            btnBackToCollector.Visible = true;
+            TABCONTROLMASTER.Visible = true;
         }
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
