@@ -138,6 +138,7 @@
             this.lblCodeSearch = new System.Windows.Forms.Label();
             this.txtCodeSearch = new System.Windows.Forms.TextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnNoTags = new System.Windows.Forms.Button();
             this.lblTagCircle = new System.Windows.Forms.Label();
             this.btnTagCircle = new System.Windows.Forms.Button();
             this.lblTagTriangle = new System.Windows.Forms.Label();
@@ -156,7 +157,6 @@
             this.btnPreviousPageVariant = new System.Windows.Forms.Button();
             this.btnOpenSetValue = new System.Windows.Forms.Button();
             this.picMuteButton = new System.Windows.Forms.PictureBox();
-            this.btnNoTags = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagCircle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagTriangle)).BeginInit();
@@ -1620,6 +1620,19 @@
             this.tabPage3.TabIndex = 3;
             this.tabPage3.Text = "TAGS";
             // 
+            // btnNoTags
+            // 
+            this.btnNoTags.BackColor = System.Drawing.Color.Maroon;
+            this.btnNoTags.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNoTags.ForeColor = System.Drawing.Color.White;
+            this.btnNoTags.Location = new System.Drawing.Point(309, 49);
+            this.btnNoTags.Name = "btnNoTags";
+            this.btnNoTags.Size = new System.Drawing.Size(83, 30);
+            this.btnNoTags.TabIndex = 18;
+            this.btnNoTags.Text = "No Tags";
+            this.btnNoTags.UseVisualStyleBackColor = false;
+            this.btnNoTags.Click += new System.EventHandler(this.btnNoTags_Click);
+            // 
             // lblTagCircle
             // 
             this.lblTagCircle.AutoSize = true;
@@ -1792,7 +1805,7 @@
             this.GroupCardViewVariants.ForeColor = System.Drawing.Color.Lime;
             this.GroupCardViewVariants.Location = new System.Drawing.Point(4, 464);
             this.GroupCardViewVariants.Name = "GroupCardViewVariants";
-            this.GroupCardViewVariants.Size = new System.Drawing.Size(793, 82);
+            this.GroupCardViewVariants.Size = new System.Drawing.Size(713, 82);
             this.GroupCardViewVariants.TabIndex = 285;
             this.GroupCardViewVariants.TabStop = false;
             this.GroupCardViewVariants.Text = "Page 1";
@@ -1848,19 +1861,6 @@
             this.picMuteButton.TabIndex = 289;
             this.picMuteButton.TabStop = false;
             this.picMuteButton.Click += new System.EventHandler(this.picMuteButton_Click);
-            // 
-            // btnNoTags
-            // 
-            this.btnNoTags.BackColor = System.Drawing.Color.Maroon;
-            this.btnNoTags.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNoTags.ForeColor = System.Drawing.Color.White;
-            this.btnNoTags.Location = new System.Drawing.Point(309, 49);
-            this.btnNoTags.Name = "btnNoTags";
-            this.btnNoTags.Size = new System.Drawing.Size(83, 30);
-            this.btnNoTags.TabIndex = 18;
-            this.btnNoTags.Text = "No Tags";
-            this.btnNoTags.UseVisualStyleBackColor = false;
-            this.btnNoTags.Click += new System.EventHandler(this.btnNoTags_Click);
             // 
             // CollectorBigWinMode
             // 

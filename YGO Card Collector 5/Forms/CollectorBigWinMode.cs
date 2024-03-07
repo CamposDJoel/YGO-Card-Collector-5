@@ -184,6 +184,8 @@ namespace YGO_Card_Collector_5
         }
         private void InitializeSelectedCard(int PictureBoxTag)
         {
+            _CursorInMainCardViewer = true;
+
             SoundServer.PlaySoundEffect(SoundEffect.Hover);
             //clear the card border of the previous card clicked
             _CardPanelList[_PreviousCardInViewIndex].BackColor = Color.Black;
@@ -325,12 +327,14 @@ namespace YGO_Card_Collector_5
         }
         private void InitializeSelectedCardVariant(int PictureBoxTag)
         {
+            _CursorInMainCardViewer = false;
+            SoundServer.PlaySoundEffect(SoundEffect.Hover);
             //clear the card border of the previous card clicked
             _CardPanelList[_PreviousCardInViewIndex].BackColor = Color.Black;
             _CardPanelListV[_PreviousVariantCardInViewIndex].BackColor = Color.Black;
 
             //Determine the index of this card in relation to the entire active list
-            int index = ((_CurrentCardPageVariant * 15) - 15) + PictureBoxTag;
+            int index = ((_CurrentCardPageVariant * CARDS_PER_PAGE_VARIANT) - CARDS_PER_PAGE_VARIANT) + PictureBoxTag;
 
             //Set the card in view border as green
             _CardPanelListV[PictureBoxTag].BackColor = Color.Yellow;
@@ -392,12 +396,12 @@ namespace YGO_Card_Collector_5
             lblMarketPricelabel.Visible = true;
             lblMarketPrice.Visible = true;
             lblMarketPrice.Text = _CurrentSetCardInView.MarketPrice;
-            lblMarketPrice.ForeColor = Tools.GetRarityColorForLabel(_CurrentSetCardInView.Rarity);
+            lblMarketPrice.ForeColor = Tools.GetPriceColorForLabel(_CurrentSetCardInView.GetDoubleMarketPrice());
             //Median Price Label
             lblMedianPricelabel.Visible = true;
             lblMedianPrice.Visible = true;
             lblMedianPrice.Text = _CurrentSetCardInView.MediamPrice;
-            lblMedianPrice.ForeColor = Tools.GetRarityColorForLabel(_CurrentSetCardInView.Rarity);
+            lblMedianPrice.ForeColor = Tools.GetPriceColorForLabel(_CurrentSetCardInView.GetDoubleMedianPrice());
             lblCodelabel.Visible = true;
             lblCode.Visible = true;
             lblCode.Text = _CurrentSetCardInView.Code;
@@ -458,7 +462,7 @@ namespace YGO_Card_Collector_5
                 }
             }
 
-            int PageIntialIndexV = (_CurrentCardPageVariant * 15) - 15;
+            int PageIntialIndexV = (_CurrentCardPageVariant * CARDS_PER_PAGE_VARIANT) - CARDS_PER_PAGE_VARIANT;
             //Lopp thr all the Card Images (in Variants) to initialize them
             for (int x = 0; x < _CardImageListV.Count; x++)
             {
@@ -656,18 +660,19 @@ namespace YGO_Card_Collector_5
                     int index = listSetlist.SelectedIndex;
                     string SetName = _CurrentSetInfoListSelected[index].Name;
                     string Code = _CurrentSetInfoListSelected[index].GetCode();
+                    int lastPageVariant = GetVariantLastPage();
 
                     if (Database.SetPackByName.ContainsKey(SetName))
                     {
                         //Update the Card Viewer Card Page/Card Count header
                         GroupCardView.Text = string.Format("PAGE: {0}/{1} | CODE: {2} | Main Cards: {3}", _CurrentCardPage, lastPage, Code, _CurrentSetCardList.Count);
-                        GroupCardViewVariants.Text = string.Format("PAGE: {0}/{1} | CODE: {2} | Variant Cards: {3}", _CurrentCardPageVariant, lastPage, Code, _CurrentSetCardListVariants.Count);
+                        GroupCardViewVariants.Text = string.Format("PAGE: {0}/{1} | CODE: {2} | Variant Cards: {3}", _CurrentCardPageVariant, lastPageVariant, Code, _CurrentSetCardListVariants.Count);
                     }
                     else
                     {
                         //Update the Card Viewer Card Page/Card Count header
                         GroupCardView.Text = string.Format("PAGE: {0}/{1} | CODE: \"{2}\" | Main Cards: 0", _CurrentCardPage, lastPage, Code);
-                        GroupCardViewVariants.Text = string.Format("PAGE: {0}/{1} | CODE: \"{2}\" | Variant Cards: 0", _CurrentCardPageVariant, lastPage, Code);
+                        GroupCardViewVariants.Text = string.Format("PAGE: {0}/{1} | CODE: \"{2}\" | Variant Cards: 0", _CurrentCardPageVariant, lastPageVariant, Code);
                     }
                 }
             }
@@ -811,9 +816,12 @@ namespace YGO_Card_Collector_5
         private List<SetInfo> _CurrentSetInfoListSelected;
 
         private int _CurrentCardImageIndexSelected = 0;
+        private int _CurrentVariantCardImageIndexSelected = 0;
         private bool _KeyInputEnable = true;
+        private bool _CursorInMainCardViewer = true;
 
         private const int CARDS_PER_PAGE = 90;
+        private const int CARDS_PER_PAGE_VARIANT = 15;
 
         //Main List
         private List<Panel> _CardPanelList = new List<Panel>();
@@ -844,7 +852,8 @@ namespace YGO_Card_Collector_5
         {
             //Initialize the Card Selected based on the TAG of the image clicked.
             PictureBox ThisPictureBox = (PictureBox)sender;
-            InitializeSelectedCardVariant((int)ThisPictureBox.Tag);
+            _CurrentVariantCardImageIndexSelected = (int)ThisPictureBox.Tag;
+            InitializeSelectedCardVariant(_CurrentVariantCardImageIndexSelected);
         }
         private void SetCardLabel_clicked(object sender, EventArgs e)
         {
@@ -1009,21 +1018,11 @@ namespace YGO_Card_Collector_5
         }
         private void btnPreviousPageVariant_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
-            int CurrentCardListCount = _CurrentSetCardListVariants.Count;
-            int lastpage = (CurrentCardListCount / 15) + 1;
-            if (_CurrentCardPageVariant == 1) { _CurrentCardPageVariant = lastpage; }
-            else { _CurrentCardPageVariant--; }
-            LoadPage();
+            GoPreviousPageVariant();
         }
         private void btnNextPageVariant_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
-            int CurrentCardListCount = _CurrentSetCardListVariants.Count;
-            int lastpage = (CurrentCardListCount / 15) + 1;
-            if (_CurrentCardPageVariant == lastpage) { _CurrentCardPageVariant = 1; }
-            else { _CurrentCardPageVariant++; }
-            LoadPage();
+            GoNextPageVariant();
         }
         private void GoPreviousPage()
         {
@@ -1056,12 +1055,49 @@ namespace YGO_Card_Collector_5
                 InitializeSelectedCard(_CurrentCardImageIndexSelected);
             }          
         }
+        private void GoPreviousPageVariant()
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+            int CurrentCardListCount = _CurrentSetCardListVariants.Count;
+            int lastpage = GetVariantLastPage();
+            if(lastpage != 0)
+            {
+                if (_CurrentCardPageVariant == 1) { _CurrentCardPageVariant = lastpage; }
+                else { _CurrentCardPageVariant--; }
+                LoadPage();
+                _CurrentVariantCardImageIndexSelected = 0;
+                InitializeSelectedCardVariant(_CurrentVariantCardImageIndexSelected);
+            }           
+        }
+        private void GoNextPageVariant()
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+            int CurrentCardListCount = _CurrentSetCardListVariants.Count;
+            int lastpage = GetVariantLastPage();
+            if(lastpage != 0)
+            {
+                if (_CurrentCardPageVariant == lastpage) { _CurrentCardPageVariant = 1; }
+                else { _CurrentCardPageVariant++; }
+                LoadPage();
+                _CurrentVariantCardImageIndexSelected = 0;
+                InitializeSelectedCardVariant(_CurrentVariantCardImageIndexSelected);
+            }           
+        }
         private int GetLastPage()
         {
             int CurrentCardListCount = 0;
             if (_MasterCardViewMode) { CurrentCardListCount = _CurrentMasterCardList.Count; }
             else { CurrentCardListCount = _CurrentSetCardList.Count; }
             double pages = ((double)CurrentCardListCount / (double)CARDS_PER_PAGE);
+            int lastpage = (int)pages;
+            double remaining = pages - (int)pages;
+            if (remaining > 0) { lastpage++; }
+            return lastpage;
+        }
+        private int GetVariantLastPage()
+        {                   
+            int CurrentCardListCount = _CurrentSetCardListVariants.Count;
+            double pages = ((double)CurrentCardListCount / (double)CARDS_PER_PAGE_VARIANT);
             int lastpage = (int)pages;
             double remaining = pages - (int)pages;
             if (remaining > 0) { lastpage++; }
@@ -1521,6 +1557,7 @@ namespace YGO_Card_Collector_5
 
 
             _CurrentCardPage = 1;
+            _CurrentCardPageVariant = 1;
             if (Database.SetPackByName.ContainsKey(SetName))
             {
                 SetPack ThisSetPack = Database.SetPackByName[SetName];
@@ -1553,21 +1590,30 @@ namespace YGO_Card_Collector_5
                 if (_KeyInputEnable)
                 {
                     _KeyInputEnable = false;
-                    if (_CurrentCardImageIndexSelected < 15)
+                    if(_CursorInMainCardViewer)
                     {
-                        //Do nothing it is the top row
-                        SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                        //Move the cursor on the main card viewer as normal
+                        if (_CurrentCardImageIndexSelected < 15)
+                        {
+                            //Do nothing it is the top row
+                            SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                        }
+                        else
+                        {
+                            //check if the Up card image is visible
+                            if (_CardPanelList[_CurrentCardImageIndexSelected - 15].Visible)
+                            {
+                                //change the selection 
+                                _CurrentCardImageIndexSelected -= 15;
+                                InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                            }
+                        }
                     }
                     else
                     {
-                        //check if the Up card image is visible
-                        if (_CardPanelList[_CurrentCardImageIndexSelected - 15].Visible)
-                        {
-                            //change the selection 
-                            _CurrentCardImageIndexSelected -= 15;
-                            InitializeSelectedCard(_CurrentCardImageIndexSelected);
-                        }
-                    }
+                        //There is no Up/Down movement on the Variant Card Viewer
+                        SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                    }                  
                     _KeyInputEnable = true;
                 }
                 return true;
@@ -1577,21 +1623,30 @@ namespace YGO_Card_Collector_5
                 if (_KeyInputEnable)
                 {
                     _KeyInputEnable = false;
-                    if (_CurrentCardImageIndexSelected > CARDS_PER_PAGE - 16)
+                    if (_CursorInMainCardViewer)
                     {
-                        //Do nothing it is the top row
-                        SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                        //Move the cursor on the main card viewer as normal
+                        if (_CurrentCardImageIndexSelected > CARDS_PER_PAGE - 16)
+                        {
+                            //Do nothing it is the top row
+                            SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                        }
+                        else
+                        {
+                            //check if the Up card image is visible
+                            if (_CardPanelList[_CurrentCardImageIndexSelected + 15].Visible)
+                            {
+                                //change the selection 
+                                _CurrentCardImageIndexSelected += 15;
+                                InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                            }
+                        }
                     }
                     else
                     {
-                        //check if the Up card image is visible
-                        if (_CardPanelList[_CurrentCardImageIndexSelected + 15].Visible)
-                        {
-                            //change the selection 
-                            _CurrentCardImageIndexSelected += 15;
-                            InitializeSelectedCard(_CurrentCardImageIndexSelected);
-                        }
-                    }
+                        //There is no Up/Down movement on the Variant Card Viewer
+                        SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                    }                  
                     _KeyInputEnable = true;
                 }
                 return true;
@@ -1601,32 +1656,65 @@ namespace YGO_Card_Collector_5
                 if (_KeyInputEnable)
                 {
                     _KeyInputEnable = false;
-                    if (_CurrentCardImageIndexSelected == 0)
+                    if (_CursorInMainCardViewer)
                     {
-                        //trigger go to previous page
-                        GoPreviousPage();
-
-                        //Find the last visible card in the page and select it
-                        for (int x = CARDS_PER_PAGE - 1; x >= 0; x--)
+                        //Move the cursor on the main card viewer as normal
+                        if (_CurrentCardImageIndexSelected == 0)
                         {
-                            if (_CardPanelList[x].Visible)
+                            //trigger go to previous page
+                            GoPreviousPage();
+
+                            //Find the last visible card in the page and select it
+                            for (int x = CARDS_PER_PAGE - 1; x >= 0; x--)
                             {
-                                _CurrentCardImageIndexSelected = x;
+                                if (_CardPanelList[x].Visible)
+                                {
+                                    _CurrentCardImageIndexSelected = x;
+                                    InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                                    break;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            //check if the Left card image is visible
+                            if (_CardPanelList[_CurrentCardImageIndexSelected - 1].Visible)
+                            {
+                                //change the selection 
+                                _CurrentCardImageIndexSelected -= 1;
                                 InitializeSelectedCard(_CurrentCardImageIndexSelected);
-                                break;
                             }
                         }
                     }
                     else
                     {
-                        //check if the Up card image is visible
-                        if (_CardPanelList[_CurrentCardImageIndexSelected - 1].Visible)
+                        //Move it in the variant card viewer
+                        if(_CurrentVariantCardImageIndexSelected == 0)
                         {
-                            //change the selection 
-                            _CurrentCardImageIndexSelected -= 1;
-                            InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                            //trigger go to previous page
+                            GoPreviousPageVariant();
+
+                            //Find the last visible card in the page and select it
+                            for (int x = CARDS_PER_PAGE_VARIANT - 1; x >= 0; x--)
+                            {
+                                if (_CardPanelListV[x].Visible)
+                                {
+                                    _CurrentVariantCardImageIndexSelected = x;
+                                    InitializeSelectedCardVariant(_CurrentVariantCardImageIndexSelected);
+                                    break;
+                                }
+                            }
                         }
-                    }
+                        else
+                        {
+                            if (_CardPanelListV[_CurrentVariantCardImageIndexSelected - 1].Visible)
+                            {
+                                //change the selection 
+                                _CurrentVariantCardImageIndexSelected -= 1;
+                                InitializeSelectedCardVariant(_CurrentVariantCardImageIndexSelected);
+                            }
+                        }
+                    }                   
                     _KeyInputEnable = true;
                 }
                 return true;
@@ -1636,29 +1724,58 @@ namespace YGO_Card_Collector_5
                 if (_KeyInputEnable)
                 {
                     _KeyInputEnable = false;
-                    if (_CurrentCardImageIndexSelected == CARDS_PER_PAGE - 1)
+                    if (_CursorInMainCardViewer)
                     {
-                        //Go to the next page and click the first card
-                        GoNextPage();
-                    }
-                    else
-                    {
-                        //check if the Up card image is visible
-                        if (_CardPanelList[_CurrentCardImageIndexSelected + 1].Visible)
+                        if (_CurrentCardImageIndexSelected == CARDS_PER_PAGE - 1)
                         {
-                            //change the selection 
-                            _CurrentCardImageIndexSelected += 1;
-                            InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                            //Go to the next page and click the first card
+                            GoNextPage();
                         }
                         else
                         {
-                            //You reached the last card in the list go to next page
-                            //Go to the next page and click the first card
-                            GoNextPage();
-                            _CurrentCardImageIndexSelected = 0;
-                            InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                            //check if the Up card image is visible
+                            if (_CardPanelList[_CurrentCardImageIndexSelected + 1].Visible)
+                            {
+                                //change the selection 
+                                _CurrentCardImageIndexSelected += 1;
+                                InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                            }
+                            else
+                            {
+                                //You reached the last card in the list go to next page
+                                //Go to the next page and click the first card
+                                GoNextPage();
+                                _CurrentCardImageIndexSelected = 0;
+                                InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                            }
                         }
                     }
+                    else
+                    {
+                        if (_CurrentVariantCardImageIndexSelected == CARDS_PER_PAGE_VARIANT - 1)
+                        {
+                            //Go to the next page and click the first card
+                            GoNextPageVariant();
+                        }
+                        else
+                        {
+                            //check if the Up card image is visible
+                            if (_CardPanelListV[_CurrentVariantCardImageIndexSelected + 1].Visible)
+                            {
+                                //change the selection 
+                                _CurrentVariantCardImageIndexSelected += 1;
+                                InitializeSelectedCardVariant(_CurrentVariantCardImageIndexSelected);
+                            }
+                            else
+                            {
+                                //You reached the last card in the list go to next page
+                                //Go to the next page and click the first card
+                                GoNextPageVariant();
+                                _CurrentVariantCardImageIndexSelected = 0;
+                                InitializeSelectedCardVariant(_CurrentVariantCardImageIndexSelected);
+                            }
+                        }
+                    }                       
                     _KeyInputEnable = true;
                 }
                 return true;
