@@ -8,4 +8,4 @@ SFX|True
 TagStarName|Second Copy in Master
 TagSquareName|Only Copy in Masters
 TagTriangleName|Missing Spare
-TagCircleName|Other
+TagCircleName|Not Owned
