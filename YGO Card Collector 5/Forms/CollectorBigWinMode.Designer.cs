@@ -200,7 +200,7 @@
             this.btnSetPriceReport.Name = "btnSetPriceReport";
             this.btnSetPriceReport.Size = new System.Drawing.Size(128, 25);
             this.btnSetPriceReport.TabIndex = 267;
-            this.btnSetPriceReport.Text = "Sets Pricing Report";
+            this.btnSetPriceReport.Text = "Full $$$ Report";
             this.btnSetPriceReport.UseVisualStyleBackColor = false;
             this.btnSetPriceReport.Click += new System.EventHandler(this.btnSetPriceReport_Click);
             // 
