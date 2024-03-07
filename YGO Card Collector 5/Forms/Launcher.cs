@@ -74,5 +74,9 @@ namespace YGO_Card_Collector_5
             SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             listYearSelection.SetSelected(0, true);
         }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

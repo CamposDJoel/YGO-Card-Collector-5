@@ -149,6 +149,10 @@ namespace YGO_Card_Collector_5
         {
             SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
         }
+        protected override void OnFormClosing(FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
         #endregion    
     }
 }
