@@ -703,11 +703,20 @@ namespace YGO_Card_Collector_5
         }
         private void btnOpenSetValue_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
-            Hide();
+            string listSelection = listSetlist.Text;
 
-            PricingReport PR = new PricingReport(this, listSetGroups.SelectedIndex, listSetlist.SelectedIndex);
-            PR.Show();
+            if (listSelection == "NO Sets in this group.")
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+            }
+            else
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.Click);
+                Hide();
+
+                PricingReport PR = new PricingReport(this, listSetGroups.SelectedIndex, listSetlist.SelectedIndex);
+                PR.Show();
+            }            
         }
         private void picMuteButton_Click(object sender, EventArgs e)
         {
@@ -1225,7 +1234,15 @@ namespace YGO_Card_Collector_5
             listSetlist.Items.Clear();
             foreach (SetInfo set in SetList)
             {
-                listSetlist.Items.Add(set.GetInfoLine());
+                string infoLine = set.GetInfoLine();
+                if(!infoLine.Contains("XXXX"))
+                {
+                    listSetlist.Items.Add(infoLine);
+                }            
+            }
+            if(listSetlist.Items.Count == 0)
+            {
+                listSetlist.Items.Add("NO Sets in this group.");
             }
             listSetlist.SetSelected(0, true);
         }
@@ -1235,38 +1252,47 @@ namespace YGO_Card_Collector_5
         }
         private void btnFilterSet_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click2);
-            _MasterCardViewMode = false;
-            btnClear.Visible = true;
-            int index = listSetlist.SelectedIndex;
-            string SetName = _CurrentSetInfoListSelected[index].Name;
-            string Code = _CurrentSetInfoListSelected[index].GetCode();
-           
-            _CurrentCardPage = 1;
-            if (Database.SetPackByName.ContainsKey(SetName))
+            string listSelection = listSetlist.Text;
+
+            if(listSelection == "NO Sets in this group.")
             {
-                SetPack ThisSetPack = Database.SetPackByName[SetName];
-
-                int MainSetCardCount = ThisSetPack.MainCardList.Count;
-                int ExtraCardCount = ThisSetPack.ExtraCardList.Count;
-
-                ThisSetPack.SortByCode();
-                _CurrentSetCardList = ThisSetPack.MainCardList;
-                //Update the Card Viewer Card Page/Card Count header
-                GroupCardView.Text = string.Format("PAGE: {0}  -  CODE: {1}  - Main Cards: {2} - Variant Cards: {3}", _CurrentCardPage, Code, MainSetCardCount, ExtraCardCount);
-
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
             }
             else
             {
-                _CurrentSetCardList = new List<SetCard>();
-                GroupCardView.Text = string.Format("PAGE: {0}  -  CODE: {1}  - Main Cards: 0 - Variant Cards: 0", _CurrentCardPage, Code);
-            }
+                SoundServer.PlaySoundEffect(SoundEffect.Click2);
+                _MasterCardViewMode = false;
+                btnClear.Visible = true;
+                int index = listSetlist.SelectedIndex;
+                string SetName = _CurrentSetInfoListSelected[index].Name;
+                string Code = _CurrentSetInfoListSelected[index].GetCode();
 
-            //Click on the first card
-            _CurrentCardImageIndexSelected = 0;
-            InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                _CurrentCardPage = 1;
+                if (Database.SetPackByName.ContainsKey(SetName))
+                {
+                    SetPack ThisSetPack = Database.SetPackByName[SetName];
 
-            LoadPage();
+                    int MainSetCardCount = ThisSetPack.MainCardList.Count;
+                    int ExtraCardCount = ThisSetPack.ExtraCardList.Count;
+
+                    ThisSetPack.SortByCode();
+                    _CurrentSetCardList = ThisSetPack.MainCardList;
+                    //Update the Card Viewer Card Page/Card Count header
+                    GroupCardView.Text = string.Format("PAGE: {0}  -  CODE: {1}  - Main Cards: {2} - Variant Cards: {3}", _CurrentCardPage, Code, MainSetCardCount, ExtraCardCount);
+
+                }
+                else
+                {
+                    _CurrentSetCardList = new List<SetCard>();
+                    GroupCardView.Text = string.Format("PAGE: {0}  -  CODE: {1}  - Main Cards: 0 - Variant Cards: 0", _CurrentCardPage, Code);
+                }
+
+                //Click on the first card
+                _CurrentCardImageIndexSelected = 0;
+                InitializeSelectedCard(_CurrentCardImageIndexSelected);
+
+                LoadPage();
+            }           
         }
         #endregion       
 
