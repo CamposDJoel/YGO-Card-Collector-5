@@ -50,16 +50,19 @@ namespace YGO_Card_Collector_5
         {           
             if(radioFULL.Checked)
             {
+                SettingsData.FULLDBMode = true;
                 LoadDB("FULL");
             }
             else
             {
+                SettingsData.FULLDBMode = false;
                 string year = listYearSelection.Text;
                 LoadDB(year);
             }
         }
         private void btnLoadDB2019_Click(object sender, EventArgs e)
         {
+            SettingsData.FULLDBMode = false;
             LoadDB("2019Custom");
         }
         private void radioFULL_CheckedChanged(object sender, EventArgs e)

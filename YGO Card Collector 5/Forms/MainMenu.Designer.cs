@@ -38,6 +38,7 @@
             this.RadioBigWinOption = new System.Windows.Forms.RadioButton();
             this.RadioDefaultOption = new System.Windows.Forms.RadioButton();
             this.lblDatabaseUpdateOption = new System.Windows.Forms.Label();
+            this.lblDBRestrict = new System.Windows.Forms.Label();
             this.GroupWinMode.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -161,6 +162,19 @@
             this.lblDatabaseUpdateOption.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblDatabaseUpdateOption.Click += new System.EventHandler(this.lblDatabaseUpdateOption_Click);
             // 
+            // lblDBRestrict
+            // 
+            this.lblDBRestrict.AutoSize = true;
+            this.lblDBRestrict.BackColor = System.Drawing.Color.Black;
+            this.lblDBRestrict.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDBRestrict.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblDBRestrict.Location = new System.Drawing.Point(21, 387);
+            this.lblDBRestrict.Name = "lblDBRestrict";
+            this.lblDBRestrict.Size = new System.Drawing.Size(445, 22);
+            this.lblDBRestrict.TabIndex = 11;
+            this.lblDBRestrict.Text = "DB Tools ONLY available during FULL DB Mode.";
+            this.lblDBRestrict.Visible = false;
+            // 
             // FormLauncher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -168,6 +182,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 457);
+            this.Controls.Add(this.lblDBRestrict);
             this.Controls.Add(this.lblDatabaseUpdateOption);
             this.Controls.Add(this.GroupWinMode);
             this.Controls.Add(this.lblSettingsOption);
@@ -200,6 +215,7 @@
         private System.Windows.Forms.RadioButton RadioDefaultOption;
         private System.Windows.Forms.Label lblDatabaseUpdateOption;
         private System.Windows.Forms.RadioButton RadioBinderOption;
+        private System.Windows.Forms.Label lblDBRestrict;
     }
 }
 

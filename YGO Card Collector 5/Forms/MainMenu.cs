@@ -34,7 +34,7 @@ namespace YGO_Card_Collector_5
             SoundServer.PlayBackgroundMusic(Song.MainMenu);
 
             //Load Form theme
-            Tools.InitalizeThemeOnForm(this);
+            Tools.InitalizeThemeOnForm(this);           
         }
         #endregion
 
@@ -92,32 +92,43 @@ namespace YGO_Card_Collector_5
         }
         private void lblDatabaseUpdateOption_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
+            //if the APP is NOT Running on the Full DB Mode, disable the DB Submenus
+            if (SettingsData.FULLDBMode)
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.Click);
 
-            //Open Database Manager
-            Hide();
-            DBUpdateTool DM = new DBUpdateTool(this);
-            DM.Show();
-
-            //show the menu options
-            lblLaunchAppOption.Visible = true;
-            lblSettingsOption.Visible = true;
-            lblDatabaseUpdateOption.Visible = true;
-            lblDatabaseOption.Visible = true;
+                //Open Database Manager
+                Hide();
+                DBUpdateTool DM = new DBUpdateTool(this);
+                DM.Show();
+            }
+            else
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                lblDBRestrict.Visible = true;
+                Tools.WaitNSeconds(2000);
+                lblDBRestrict.Visible = false;
+            }
+            
         }
         private void lblDatabaseOption_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
+            if (SettingsData.FULLDBMode)
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.Click);
 
-            //Open Database Manager
-            Hide();
-            DatabaseManager DM = new DatabaseManager(this);
-            DM.Show();
-
-            //Hide the menu options
-            lblLaunchAppOption.Visible = true;
-            lblSettingsOption.Visible = true;
-            lblDatabaseOption.Visible = true;
+                //Open Database Manager
+                Hide();
+                DatabaseManager DM = new DatabaseManager(this);
+                DM.Show();
+            }
+            else
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                lblDBRestrict.Visible = true;
+                Tools.WaitNSeconds(2000);
+                lblDBRestrict.Visible = false;
+            }
         }
         private void lblSettingsOption_Click(object sender, EventArgs e)
         {

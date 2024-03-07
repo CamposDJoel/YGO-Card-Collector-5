@@ -20,6 +20,7 @@ namespace YGO_Card_Collector_5
         private static string _TagSquareName = "Square";
         private static string _TagTriangleName = "Triangle";
         private static string _TagCircleName = "Circle";
+        private static bool _FullDBMode = false;
 
         public static bool SetPackListSortingOLDToNEW { get { return _SetListSortingOldToNew; } }
         public static bool DBUpdateTestMode { get { return _DBUpdateTestMode; } }
@@ -31,6 +32,7 @@ namespace YGO_Card_Collector_5
         public static string SquareTagName { get { return _TagSquareName; } }
         public static string TriangleTagName { get { return _TagTriangleName; } }
         public static string CircleTagName { get { return _TagCircleName; } }
+        public static bool FULLDBMode { get { return _FullDBMode; } set { _FullDBMode = value; } }
 
         public static void SwitchSetListSortingSetting(bool value)
         {
