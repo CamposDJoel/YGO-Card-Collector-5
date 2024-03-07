@@ -1030,22 +1030,31 @@ namespace YGO_Card_Collector_5
             SoundServer.PlaySoundEffect(SoundEffect.Click);
 
             int lastpage = GetLastPage();
-            if (_CurrentCardPage == 1) { _CurrentCardPage = lastpage; }
-            else { _CurrentCardPage--; }
+            if(lastpage != 0)
+            {
+                if (_CurrentCardPage == 1) { _CurrentCardPage = lastpage; }
+                else { _CurrentCardPage--; }
 
-            LoadPage();
+                LoadPage();
+                _CurrentCardImageIndexSelected = 0;
+                InitializeSelectedCard(_CurrentCardImageIndexSelected);
+            }          
         }
         private void GoNextPage()
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
 
             int lastpage = GetLastPage();
-            if (_CurrentCardPage == lastpage) { _CurrentCardPage = 1; }
-            else { _CurrentCardPage++; }
 
-            LoadPage();
-            _CurrentCardImageIndexSelected = 0;
-            InitializeSelectedCard(_CurrentCardImageIndexSelected);
+            if (lastpage != 0)
+            {
+                if (_CurrentCardPage == lastpage) { _CurrentCardPage = 1; }
+                else { _CurrentCardPage++; }
+
+                LoadPage();
+                _CurrentCardImageIndexSelected = 0;
+                InitializeSelectedCard(_CurrentCardImageIndexSelected);
+            }          
         }
         private int GetLastPage()
         {
