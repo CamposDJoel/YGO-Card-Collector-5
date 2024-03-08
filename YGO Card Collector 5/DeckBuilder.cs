@@ -139,7 +139,7 @@ namespace YGO_Card_Collector_5
                         CardImage.Size = new Size(CARD_XSIZE, CARD_YSIZE);
                         CardImage.SizeMode = PictureBoxSizeMode.StretchImage;
                         CardImage.Tag = imageID;
-                        //TODO: CardImage.Click += new EventHandler(Image_click);
+                        CardImage.Click += new EventHandler(ImageDECK_click);
                         _CardImageListDECK.Add(CardImage);
 
                         X_Location += Picture_XSIZE;
@@ -193,7 +193,7 @@ namespace YGO_Card_Collector_5
                         CardImage.Size = new Size(CARD_XSIZE, CARD_YSIZE);
                         CardImage.SizeMode = PictureBoxSizeMode.StretchImage;
                         CardImage.Tag = imageID;
-                        //TODO: CardImage.Click += new EventHandler(Image_click);
+                        CardImage.Click += new EventHandler(ImageEXTRA_click);
                         _CardImageListEXTRA.Add(CardImage);
 
                         X_Location += Picture_XSIZE;
@@ -247,7 +247,7 @@ namespace YGO_Card_Collector_5
                         CardImage.Size = new Size(CARD_XSIZE, CARD_YSIZE);
                         CardImage.SizeMode = PictureBoxSizeMode.StretchImage;
                         CardImage.Tag = imageID;
-                        //TODO: CardImage.Click += new EventHandler(Image_click);
+                        CardImage.Click += new EventHandler(ImageSIDE_click);
                         _CardImageListSIDE.Add(CardImage);
 
                         X_Location += Picture_XSIZE;
@@ -460,6 +460,122 @@ namespace YGO_Card_Collector_5
                 }
             }
         }
+        private void GoPreviousPage_BOX()
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+
+            int lastpage = GetLastPage(_CurrentBoxCardList, CARDS_PER_PAGE_BOX);
+            if (lastpage != 0)
+            {
+                if (_CurrentPageBOX == 1) { _CurrentPageBOX = lastpage; }
+                else { _CurrentPageBOX--; }
+
+                LoadPage_BOX();
+                _CurrentCardSelectedIndex = 0;
+                InitializeSelectedCardInfo(0, CursorLocation.Box);
+            }
+        }
+        private void GoNextPage_BOX() 
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+
+            int lastpage = GetLastPage(_CurrentBoxCardList, CARDS_PER_PAGE_BOX);
+            if (lastpage != 0)
+            {
+                if (_CurrentPageBOX == lastpage) { _CurrentPageBOX = 1; }
+                else { _CurrentPageBOX++; }
+
+                LoadPage_BOX();
+                InitializeSelectedCardInfo(0, CursorLocation.Box);
+            }
+        }
+        private void GoPreviousPage_DECK()
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+
+            int lastpage = GetLastPage(_CurrentDeckCardList, CARDS_PER_PAGE_DECK);
+            if (lastpage != 0)
+            {
+                if (_CurrentPageDECK == 1) { _CurrentPageDECK = lastpage; }
+                else { _CurrentPageDECK--; }
+
+                LoadPage_DECK();
+                _CurrentCardSelectedIndex = 0;
+                InitializeSelectedCardInfo(0, CursorLocation.MainDeck);
+            }
+        }
+        private void GoNextPage_DECK() 
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+
+            int lastpage = GetLastPage(_CurrentDeckCardList, CARDS_PER_PAGE_DECK);
+            if (lastpage != 0)
+            {
+                if (_CurrentPageDECK == lastpage) { _CurrentPageDECK = 1; }
+                else { _CurrentPageDECK++; }
+
+                LoadPage_DECK();
+                InitializeSelectedCardInfo(0, CursorLocation.MainDeck);
+            }
+        }
+        private void GoNextPage_EXTRA()
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+
+            int lastpage = GetLastPage(_CurrentExtraCardList, CARDS_PER_PAGE_EXTRA);
+            if (lastpage != 0)
+            {
+                if (_CurrentPageEXTRA == lastpage) { _CurrentPageEXTRA = 1; }
+                else { _CurrentPageEXTRA++; }
+
+                LoadPage_EXTRA();
+                InitializeSelectedCardInfo(0, CursorLocation.ExtraDeck);
+            }
+        }
+        private void GoPreviousPage_EXTRA() 
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+
+            int lastpage = GetLastPage(_CurrentExtraCardList, CARDS_PER_PAGE_EXTRA);
+            if (lastpage != 0)
+            {
+                if (_CurrentPageEXTRA == 1) { _CurrentPageEXTRA = lastpage; }
+                else { _CurrentPageEXTRA--; }
+
+                LoadPage_EXTRA();
+                _CurrentCardSelectedIndex = 0;
+                InitializeSelectedCardInfo(0, CursorLocation.ExtraDeck);
+            }
+        }
+        private void GoNextPage_SIDE()
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+
+            int lastpage = GetLastPage(_CurrentSideCardList, CARDS_PER_PAGE_SIDE);
+            if (lastpage != 0)
+            {
+                if (_CurrentPageSIDE == lastpage) { _CurrentPageSIDE = 1; }
+                else { _CurrentPageSIDE++; }
+
+                LoadPage_SIDE();
+                InitializeSelectedCardInfo(0, CursorLocation.SideDeck);
+            }
+        }
+        private void GoPreviousPage_SIDE()
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+
+            int lastpage = GetLastPage(_CurrentSideCardList, CARDS_PER_PAGE_SIDE);
+            if (lastpage != 0)
+            {
+                if (_CurrentPageSIDE == 1) { _CurrentPageSIDE = lastpage; }
+                else { _CurrentPageSIDE--; }
+
+                LoadPage_SIDE();
+                _CurrentCardSelectedIndex = 0;
+                InitializeSelectedCardInfo(0, CursorLocation.SideDeck);
+            }
+        }
         private int GetLastPage(List<MasterCard> cardlist, int cardsperpage)
         {
             int CurrentCardListCount = cardlist.Count;
@@ -517,6 +633,7 @@ namespace YGO_Card_Collector_5
                 }
             }
 
+            btnMoveActionSide.Visible = true;
             if (_CurrentSideCardList.Count == 15)
             {
                 btnMoveActionSide.Text = "SIDE DECK FULL";
@@ -535,6 +652,33 @@ namespace YGO_Card_Collector_5
                     btnMoveActionSide.Enabled = true;
                 }
             }
+        }
+        private void ClickCardFromDeck(int index)
+        {
+            InitializeSelectedCardInfo(index, CursorLocation.MainDeck);
+
+            btnMoveAction.Text = "Remove from Main Deck";
+            btnMoveAction.Enabled = true;
+
+            btnMoveActionSide.Visible = false;
+        }
+        private void ClickCardFromExtra(int index)
+        {
+            InitializeSelectedCardInfo(index, CursorLocation.ExtraDeck);
+
+            btnMoveAction.Text = "Remove from Extra Deck";
+            btnMoveAction.Enabled = true;
+
+            btnMoveActionSide.Visible = false;
+        }
+        private void ClickCardFromSide(int index)
+        {
+            InitializeSelectedCardInfo(index, CursorLocation.SideDeck);
+
+            btnMoveAction.Text = "Remove from Extra Deck";
+            btnMoveAction.Enabled = true;
+
+            btnMoveActionSide.Visible = false;
         }
         private void InitializeSelectedCardInfo(int newIndex, CursorLocation newLocation)
         {
@@ -685,132 +829,74 @@ namespace YGO_Card_Collector_5
         private int _CurrentCardSelectedIndex = 0;
         private CursorLocation _CurrentCursoLocation = CursorLocation.Box;
         private MasterCard _CurrentCardInView;
+
+        private bool _KeyInputEnable = true;
         #endregion
 
         #region Event Listeners
         private void ImageBOX_click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
+            SoundServer.PlaySoundEffect(SoundEffect.Hover);
             //Initialize the Card Selected based on the TAG of the image clicked.
             PictureBox ThisPictureBox = (PictureBox)sender;
             int index = (int)ThisPictureBox.Tag;
             ClickCardFromBox(index);
         }
+        private void ImageDECK_click(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Hover);
+            //Initialize the Card Selected based on the TAG of the image clicked.
+            PictureBox ThisPictureBox = (PictureBox)sender;
+            int index = (int)ThisPictureBox.Tag;
+            ClickCardFromDeck(index);
+        }
+        private void ImageEXTRA_click(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Hover);
+            //Initialize the Card Selected based on the TAG of the image clicked.
+            PictureBox ThisPictureBox = (PictureBox)sender;
+            int index = (int)ThisPictureBox.Tag;
+            ClickCardFromExtra(index);
+        }
+        private void ImageSIDE_click(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Hover);
+            //Initialize the Card Selected based on the TAG of the image clicked.
+            PictureBox ThisPictureBox = (PictureBox)sender;
+            int index = (int)ThisPictureBox.Tag;
+            ClickCardFromSide(index);
+        }
         private void btnBoxPreviousPage_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
-
-            int lastpage = GetLastPage(_CurrentBoxCardList, CARDS_PER_PAGE_BOX);
-            if (lastpage != 0)
-            {
-                if (_CurrentPageBOX == 1) { _CurrentPageBOX = lastpage; }
-                else { _CurrentPageBOX--; }
-
-                LoadPage_BOX();
-                _CurrentCardSelectedIndex = 0;
-                InitializeSelectedCardInfo(0, CursorLocation.Box);
-            }
+            GoPreviousPage_BOX();
         }
         private void btnBoxNextPage_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
-
-            int lastpage = GetLastPage(_CurrentBoxCardList, CARDS_PER_PAGE_BOX);
-            if (lastpage != 0)
-            {
-                if (_CurrentPageBOX == lastpage) { _CurrentPageBOX = 1; }
-                else { _CurrentPageBOX++; }
-
-                LoadPage_BOX();
-                InitializeSelectedCardInfo(0, CursorLocation.Box);
-            }
+            GoNextPage_BOX();
         }
         private void btnNextPageDeck_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
-
-            int lastpage = GetLastPage(_CurrentDeckCardList, CARDS_PER_PAGE_DECK);
-            if (lastpage != 0)
-            {
-                if (_CurrentPageDECK == lastpage) { _CurrentPageDECK = 1; }
-                else { _CurrentPageDECK++; }
-
-                LoadPage_DECK();
-                InitializeSelectedCardInfo(0, CursorLocation.MainDeck);
-            }
+            GoNextPage_DECK();
         }
         private void btnPreviousPageDeck_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
-
-            int lastpage = GetLastPage(_CurrentDeckCardList, CARDS_PER_PAGE_DECK);
-            if (lastpage != 0)
-            {
-                if (_CurrentPageDECK == 1) { _CurrentPageDECK = lastpage; }
-                else { _CurrentPageDECK--; }
-
-                LoadPage_DECK();
-                _CurrentCardSelectedIndex = 0;
-                InitializeSelectedCardInfo(0, CursorLocation.MainDeck);
-            }
+            GoPreviousPage_DECK();
         }
         private void btnNextPageExtra_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
-
-            int lastpage = GetLastPage(_CurrentExtraCardList, CARDS_PER_PAGE_EXTRA);
-            if (lastpage != 0)
-            {
-                if (_CurrentPageEXTRA == lastpage) { _CurrentPageEXTRA = 1; }
-                else { _CurrentPageEXTRA++; }
-
-                LoadPage_EXTRA();
-                InitializeSelectedCardInfo(0, CursorLocation.ExtraDeck);
-            }
+            GoNextPage_EXTRA();
         }
         private void btnPreviousPageExtra_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
-
-            int lastpage = GetLastPage(_CurrentExtraCardList, CARDS_PER_PAGE_EXTRA);
-            if (lastpage != 0)
-            {
-                if (_CurrentPageEXTRA == 1) { _CurrentPageEXTRA = lastpage; }
-                else { _CurrentPageEXTRA--; }
-
-                LoadPage_EXTRA();
-                _CurrentCardSelectedIndex = 0;
-                InitializeSelectedCardInfo(0, CursorLocation.ExtraDeck);
-            }
+            GoPreviousPage_EXTRA();
         }
         private void btnNextPageSide_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
-
-            int lastpage = GetLastPage(_CurrentSideCardList, CARDS_PER_PAGE_SIDE);
-            if (lastpage != 0)
-            {
-                if (_CurrentPageSIDE == lastpage) { _CurrentPageSIDE = 1; }
-                else { _CurrentPageSIDE++; }
-
-                LoadPage_SIDE();
-                InitializeSelectedCardInfo(0, CursorLocation.SideDeck);
-            }
+            GoNextPage_SIDE();
         }
         private void btnPreviousPageSide_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
-
-            int lastpage = GetLastPage(_CurrentSideCardList, CARDS_PER_PAGE_SIDE);
-            if (lastpage != 0)
-            {
-                if (_CurrentPageSIDE == 1) { _CurrentPageSIDE = lastpage; }
-                else { _CurrentPageSIDE--; }
-
-                LoadPage_SIDE();
-                _CurrentCardSelectedIndex = 0;
-                InitializeSelectedCardInfo(0, CursorLocation.SideDeck);
-            }
+            GoPreviousPage_SIDE();
         }
         #endregion
 
@@ -1105,6 +1191,56 @@ namespace YGO_Card_Collector_5
                     if (btnMoveAction.Text == "Send to Extra Deck >>") { _CurrentExtraCardList.Add(_CurrentCardInView); LoadPage_EXTRA(); }
                     ClickCardFromBox(_CurrentCardSelectedIndex);
                     break;
+                case CursorLocation.MainDeck:
+                    //Remove the card from main deck
+                    int index = (_CurrentPageDECK * CARDS_PER_PAGE_DECK) - CARDS_PER_PAGE_DECK;
+                    index += _CurrentCardSelectedIndex;
+                    _CurrentDeckCardList.RemoveAt(index);
+                    //Reselect a card from deck OR if deck is now empty chande the cursor to box
+                    if(_CurrentDeckCardList.Count == 0)
+                    {
+                        ClickCardFromBox(0);
+                    }
+                    else
+                    {
+                        ClickCardFromDeck(0);
+                    }
+                    LoadPage_DECK();
+                    break;
+
+                case CursorLocation.ExtraDeck:
+                    //Remove the card from main deck
+                    index = (_CurrentPageEXTRA * CARDS_PER_PAGE_EXTRA) - CARDS_PER_PAGE_EXTRA;
+                    index += _CurrentCardSelectedIndex;
+                    _CurrentExtraCardList.RemoveAt(index);
+                    //Reselect a card from deck OR if deck is now empty chande the cursor to box
+                    if (_CurrentExtraCardList.Count == 0)
+                    {
+                        ClickCardFromBox(0);
+                    }
+                    else
+                    {
+                        ClickCardFromExtra(0);
+                    }
+                    LoadPage_EXTRA();
+                    break;
+
+                case CursorLocation.SideDeck:
+                    //Remove the card from main deck
+                    index = (_CurrentPageSIDE * CARDS_PER_PAGE_SIDE) - CARDS_PER_PAGE_SIDE;
+                    index += _CurrentCardSelectedIndex;
+                    _CurrentSideCardList.RemoveAt(index);
+                    //Reselect a card from deck OR if deck is now empty chande the cursor to box
+                    if (_CurrentSideCardList.Count == 0)
+                    {
+                        ClickCardFromBox(0);
+                    }
+                    else
+                    {
+                        ClickCardFromSide(0);
+                    }
+                    LoadPage_SIDE();
+                    break;
             }
         }
         private void btnMoveActionSide_Click(object sender, EventArgs e)
@@ -1126,5 +1262,311 @@ namespace YGO_Card_Collector_5
             Tools.LaunchURLIntoBrowser("https://www.tcgplayer.com/search/all/product?q=" + _CurrentCardInView.Name + "&view=grid");
         }
         #endregion    
+
+        #region Keyboard Input Control
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == Keys.Up)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;                  
+                    switch(_CurrentCursoLocation)
+                    {
+                        case CursorLocation.Box:
+                            if (_CurrentCardSelectedIndex < 7)
+                            {
+                                //Do nothing it is the top row
+                                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                            }
+                            else
+                            {
+                                SoundServer.PlaySoundEffect(SoundEffect.Hover);
+                                //check if the Up card image is visible
+                                if (_CardPanelListBOX[_CurrentCardSelectedIndex - 7].Visible)
+                                {
+                                    //change the selection 
+                                    InitializeSelectedCardInfo(_CurrentCardSelectedIndex - 7, CursorLocation.Box);
+                                }
+                            }
+                            break;
+                        case CursorLocation.MainDeck:
+                            if (_CurrentCardSelectedIndex < 7)
+                            {
+                                //Do nothing it is the top row
+                                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                            }
+                            else
+                            {
+                                SoundServer.PlaySoundEffect(SoundEffect.Hover);
+                                //check if the Up card image is visible
+                                if (_CardPanelListDECK[_CurrentCardSelectedIndex - 7].Visible)
+                                {
+                                    //change the selection 
+                                    InitializeSelectedCardInfo(_CurrentCardSelectedIndex - 7, CursorLocation.MainDeck);
+                                }
+                            }
+                            break;
+                        case CursorLocation.ExtraDeck:
+                            SoundServer.PlaySoundEffect(SoundEffect.InvalidClick); break;
+                        case CursorLocation.SideDeck:
+                            SoundServer.PlaySoundEffect(SoundEffect.InvalidClick); break;
+                    }
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.Down)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    switch (_CurrentCursoLocation)
+                    {
+                        case CursorLocation.Box:
+                            if (_CurrentCardSelectedIndex > 27)
+                            {
+                                //Do nothing it is the top row
+                                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                            }
+                            else
+                            {
+                                SoundServer.PlaySoundEffect(SoundEffect.Hover);
+                                //check if the Up card image is visible
+                                if (_CardPanelListBOX[_CurrentCardSelectedIndex + 7].Visible)
+                                {
+                                    //change the selection 
+                                    InitializeSelectedCardInfo(_CurrentCardSelectedIndex + 7, CursorLocation.Box);
+                                }
+                            }
+                            break;
+                        case CursorLocation.MainDeck:
+                            if (_CurrentCardSelectedIndex > 27)
+                            {
+                                //Do nothing it is the top row
+                                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                            }
+                            else
+                            {
+                                SoundServer.PlaySoundEffect(SoundEffect.Hover);
+                                //check if the Up card image is visible
+                                if (_CardPanelListDECK[_CurrentCardSelectedIndex + 7].Visible)
+                                {
+                                    //change the selection 
+                                    InitializeSelectedCardInfo(_CurrentCardSelectedIndex + 7, CursorLocation.MainDeck);
+                                }
+                            }
+                            break;
+                        case CursorLocation.ExtraDeck:
+                            SoundServer.PlaySoundEffect(SoundEffect.InvalidClick); break;
+                        case CursorLocation.SideDeck:
+                            SoundServer.PlaySoundEffect(SoundEffect.InvalidClick); break;
+                    }
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.Left)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    SoundServer.PlaySoundEffect(SoundEffect.Hover);
+                    switch(_CurrentCursoLocation)
+                    {
+                        case CursorLocation.Box:
+                            if (_CurrentCardSelectedIndex == 0)
+                            {
+                                GoPreviousPage_BOX();
+                                //Find the last visible card in the page and select it
+                                for (int x = 34; x >= 0; x--)
+                                {
+                                    if (_CardPanelListBOX[x].Visible)
+                                    {
+                                        InitializeSelectedCardInfo(x, CursorLocation.Box);
+                                        break;
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                //check if the left card image is visible
+                                if (_CardPanelListBOX[_CurrentCardSelectedIndex - 1].Visible)
+                                {
+                                    //change the selection 
+                                    InitializeSelectedCardInfo(_CurrentCardSelectedIndex - 1, CursorLocation.Box);
+                                }
+                            }
+                            break;
+                        case CursorLocation.MainDeck:
+                            if (_CurrentCardSelectedIndex == 0)
+                            {
+                                GoPreviousPage_DECK();
+                                //Find the last visible card in the page and select it
+                                for (int x = 34; x >= 0; x--)
+                                {
+                                    if (_CardPanelListDECK[x].Visible)
+                                    {
+                                        InitializeSelectedCardInfo(x, CursorLocation.MainDeck);
+                                        break;
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                //check if the left card image is visible
+                                if (_CardPanelListDECK[_CurrentCardSelectedIndex - 1].Visible)
+                                {
+                                    //change the selection 
+                                    InitializeSelectedCardInfo(_CurrentCardSelectedIndex - 1, CursorLocation.MainDeck);
+                                }
+                            }
+                            break;
+                        case CursorLocation.ExtraDeck:
+                            if (_CurrentCardSelectedIndex == 0)
+                            {
+                                GoPreviousPage_EXTRA();
+                                //Find the last visible card in the page and select it
+                                for (int x = 6; x >= 0; x--)
+                                {
+                                    if (_CardPanelListEXTRA[x].Visible)
+                                    {
+                                        InitializeSelectedCardInfo(x, CursorLocation.ExtraDeck);
+                                        break;
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                //check if the left card image is visible
+                                if (_CardPanelListEXTRA[_CurrentCardSelectedIndex - 1].Visible)
+                                {
+                                    //change the selection 
+                                    InitializeSelectedCardInfo(_CurrentCardSelectedIndex - 1, CursorLocation.ExtraDeck);
+                                }
+                            }
+                            break;
+                        case CursorLocation.SideDeck:
+                            if (_CurrentCardSelectedIndex == 0)
+                            {
+                                GoPreviousPage_SIDE();
+                                //Find the last visible card in the page and select it
+                                for (int x = 6; x >= 0; x--)
+                                {
+                                    if (_CardPanelListSIDE[x].Visible)
+                                    {
+                                        InitializeSelectedCardInfo(x, CursorLocation.SideDeck);
+                                        break;
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                //check if the left card image is visible
+                                if (_CardPanelListSIDE[_CurrentCardSelectedIndex - 1].Visible)
+                                {
+                                    //change the selection 
+                                    InitializeSelectedCardInfo(_CurrentCardSelectedIndex - 1, CursorLocation.SideDeck);
+                                }
+                            }
+                            break;
+                    }               
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else if (keyData == Keys.Right)
+            {
+                if (_KeyInputEnable)
+                {
+                    _KeyInputEnable = false;
+                    SoundServer.PlaySoundEffect(SoundEffect.Hover);
+                    switch (_CurrentCursoLocation)
+                    {
+                        case CursorLocation.Box:
+                            if (_CurrentCardSelectedIndex == 34)
+                            {
+                                GoNextPage_BOX();
+                            }
+                            else
+                            {
+                                //check if the right card image is visible
+                                if (_CardPanelListBOX[_CurrentCardSelectedIndex + 1].Visible)
+                                {
+                                    //change the selection 
+                                    InitializeSelectedCardInfo(_CurrentCardSelectedIndex + 1, CursorLocation.Box);
+                                }
+                                else
+                                {
+                                    GoNextPage_BOX();
+                                }
+                            }
+                            break;
+                        case CursorLocation.MainDeck:
+                            if (_CurrentCardSelectedIndex == 34)
+                            {
+                                GoNextPage_DECK();
+                            }
+                            else
+                            {
+                                //check if the right card image is visible
+                                if (_CardPanelListDECK[_CurrentCardSelectedIndex + 1].Visible)
+                                {
+                                    //change the selection 
+                                    InitializeSelectedCardInfo(_CurrentCardSelectedIndex + 1, CursorLocation.MainDeck);
+                                }
+                                else
+                                {
+                                    GoNextPage_DECK();
+                                }
+                            }
+                            break;
+                        case CursorLocation.ExtraDeck:
+                            if (_CurrentCardSelectedIndex == 6)
+                            {
+                                GoNextPage_EXTRA();
+                            }
+                            else
+                            {
+                                //check if the right card image is visible
+                                if (_CardPanelListEXTRA[_CurrentCardSelectedIndex + 1].Visible)
+                                {
+                                    //change the selection 
+                                    InitializeSelectedCardInfo(_CurrentCardSelectedIndex + 1, CursorLocation.ExtraDeck);
+                                }
+                                else
+                                {
+                                    GoNextPage_EXTRA();
+                                }
+                            }
+                            break;
+                        case CursorLocation.SideDeck:
+                            if (_CurrentCardSelectedIndex == 6)
+                            {
+                                GoNextPage_SIDE();
+                            }
+                            else
+                            {
+                                //check if the right card image is visible
+                                if (_CardPanelListSIDE[_CurrentCardSelectedIndex + 1].Visible)
+                                {
+                                    //change the selection 
+                                    InitializeSelectedCardInfo(_CurrentCardSelectedIndex + 1, CursorLocation.SideDeck);
+                                }
+                                else
+                                {
+                                    GoNextPage_SIDE();
+                                }
+                            }
+                            break;
+                    }
+                    _KeyInputEnable = true;
+                }
+                return true;
+            }
+            else
+                return base.ProcessCmdKey(ref msg, keyData);
+        }
+        #endregion
     }
 }

@@ -29,3 +29,35 @@ D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.exe
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.pdb
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.DeckBuilder.resources
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\selenium-manager\linux\selenium-manager
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\selenium-manager\macos\selenium-manager
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\selenium-manager\windows\selenium-manager.exe
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\YGO Card Collector 5.exe.config
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\YGO Card Collector 5.exe
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\YGO Card Collector 5.pdb
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\MedallionRandom.dll
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\Newtonsoft.Json.dll
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\WebDriver.dll
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\MedallionRandom.xml
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\Newtonsoft.Json.xml
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\bin\Debug\WebDriver.xml
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.csproj.AssemblyReference.cache
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.csproj.SuggestedBindingRedirects.cache
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.DeckBuilder.resources
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.CollectorBinderMode.resources
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.DBUpdateTool.resources
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.CollectorBigWinMode.resources
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.Collector.resources
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.DatabaseManager.resources
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.DBUpdateHoldScren.resources
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.FormLauncher.resources
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.PricingReport.resources
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.Launcher.resources
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.Properties.Resources.resources
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.SettingsForm.resources
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.StatsReport.resources
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.csproj.GenerateResource.cache
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.csproj.CoreCompileInputs.cache
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.csproj.CopyComplete
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.exe
+D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.pdb

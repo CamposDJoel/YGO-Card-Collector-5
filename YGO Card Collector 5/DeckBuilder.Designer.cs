@@ -1423,7 +1423,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DeckBuilder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "1";
+            this.Text = "Deck Builder";
             ((System.ComponentModel.ISupportInitialize)(this.picCardImage)).EndInit();
             this.btnFilterNoTags.ResumeLayout(false);
             this.btnFilterNoTags.PerformLayout();
