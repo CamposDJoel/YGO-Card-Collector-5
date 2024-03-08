@@ -62,6 +62,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeckBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeckBuilder.Designer.cs">
+      <DependentUpon>DeckBuilder.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CollectorBinderMode.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +153,9 @@
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Utilities\Tools.cs" />
+    <EmbeddedResource Include="DeckBuilder.resx">
+      <DependentUpon>DeckBuilder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CollectorBinderMode.resx">
       <DependentUpon>CollectorBinderMode.cs</DependentUpon>
     </EmbeddedResource>
