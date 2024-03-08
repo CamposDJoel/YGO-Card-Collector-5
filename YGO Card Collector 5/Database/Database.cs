@@ -32,6 +32,8 @@ namespace YGO_Card_Collector_5
         public static List<string> CardsWithoutTCGURLs = new List<string>();
         public static List<string> CardsWithUnavailableProdeckURL = new List<string>();
         public static List<string> CardsWithUnavailableTCGURLs = new List<string>();
+        //DECKS data
+        public static List<Deck> Decks = new List<Deck>();
         //test data
         public static List<string> TCGPagesThatDidntMatchRarity = new List<string>();
         #endregion
@@ -163,6 +165,7 @@ namespace YGO_Card_Collector_5
                 //Read the SaveFiles to mark all the Obtained cards and tag records
                 LoadSaveFile();
                 LoadTagsSaveFile();
+                LoadDecksData();
 
                 //Flag the DB as "Initialized" so we dont reload it
                 Initialized = true;
@@ -364,6 +367,12 @@ namespace YGO_Card_Collector_5
                     }
                 }
             }
+            void LoadDecksData()
+            {
+                string jsonFilePath = Directory.GetCurrentDirectory() + "\\SaveFiles\\DecksSaveFile.json";
+                string rawdata = File.ReadAllText(jsonFilePath);
+                Decks = JsonConvert.DeserializeObject<List<Deck>>(rawdata);
+            }
         }
         public static void UpdateSaveFile(string cardData, bool markAsOwned)
         {
@@ -522,6 +531,19 @@ namespace YGO_Card_Collector_5
             {
                 //Override the actual DB file
                 File.WriteAllText(Directory.GetCurrentDirectory() + "\\Database\\SetsDB.json", output);
+            }
+        }
+        public static void UpdateDeckSaveFile()
+        {
+            string output = JsonConvert.SerializeObject(Decks);
+            if (SettingsData.DBUpdateTestMode)
+            {
+                File.WriteAllText(Directory.GetCurrentDirectory() + "\\Output Files\\DecksSaveFile.json", output);
+            }
+            else
+            {
+                //Override the actual DB file
+                File.WriteAllText(Directory.GetCurrentDirectory() + "\\SaveFiles\\DecksSaveFile.json", output);
             }
         }
         public static bool CardExists(string cardName)

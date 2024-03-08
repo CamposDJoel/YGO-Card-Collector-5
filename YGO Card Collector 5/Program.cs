@@ -16,8 +16,7 @@ namespace YGO_Card_Collector_5
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new Launcher());
-            Application.Run(new DeckBuilder());
+            Application.Run(new Launcher());
         }
     }
 }

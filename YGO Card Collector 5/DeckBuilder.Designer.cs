@@ -1420,10 +1420,12 @@
             this.Controls.Add(this.picCardImage);
             this.Controls.Add(this.GroupDeck);
             this.Controls.Add(this.GroupBoxViewer);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "DeckBuilder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Deck Builder";
+            this.Text = "Deck Builder - YGO Card Collector 5";
             ((System.ComponentModel.ISupportInitialize)(this.picCardImage)).EndInit();
             this.btnFilterNoTags.ResumeLayout(false);
             this.btnFilterNoTags.PerformLayout();

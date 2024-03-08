@@ -1,12 +1,11 @@
-﻿using System;
+﻿//Joel Campos
+//3/7/2024
+//Deck Builder Class
+
+
+using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace YGO_Card_Collector_5
@@ -14,22 +13,24 @@ namespace YGO_Card_Collector_5
     public partial class DeckBuilder : Form
     {
         #region Constructors
-        public DeckBuilder()
-        {
+        public DeckBuilder(int deckId)
+        {           
             InitializeComponent();
             InitializeCardImages_BOX();
             InitializeCardImages_DECK();
             InitializeCardImages_EXTRA();
             InitializeCardImages_SIDE();
 
-            Database.LoadDB("FULL");
+            //Database.LoadDB("FULL");
 
             //Initialize the Box Card List from the MasterCard List
             _CurrentBoxCardList = Database.MasterCards;
-            //Initialize the deck contents
-            _CurrentDeckCardList = new List<MasterCard>();
-            _CurrentExtraCardList = new List<MasterCard>();
-            _CurrentSideCardList = new List<MasterCard>();
+
+            //Initialize Deck Data
+            ActiveDeck = Database.Decks[deckId];
+            _CurrentDeckCardList = ActiveDeck.GetMainDeckMasterCardList();
+            _CurrentExtraCardList = ActiveDeck.GetExtraDeckMasterCardList();
+            _CurrentSideCardList = ActiveDeck.GetSideDeckMasterCardList();
 
             //Load the Pages of all Groups
             LoadPage_BOX();
@@ -576,10 +577,9 @@ namespace YGO_Card_Collector_5
                 InitializeSelectedCardInfo(0, CursorLocation.SideDeck);
             }
         }
-        private int GetLastPage(List<MasterCard> cardlist, int cardsperpage)
+        private int GetLastPage(List<MasterCard> currentCardlist, int cardsperpage)
         {
-            int CurrentCardListCount = cardlist.Count;
-            double pages = ((double)CurrentCardListCount / (double)cardsperpage);
+            double pages = ((double)currentCardlist.Count / (double)cardsperpage);
             int lastpage = (int)pages;
             double remaining = pages - (int)pages;
             if (remaining > 0) { lastpage++; }
@@ -792,9 +792,15 @@ namespace YGO_Card_Collector_5
             }
             return count == 3;
         }
+        private void SaveData()
+        {
+            Database.UpdateDeckSaveFile();
+        }
         #endregion
 
         #region Private Data
+
+        private Deck ActiveDeck;
         private List<MasterCard> _CurrentBoxCardList;
         private List<MasterCard> _CurrentDeckCardList;
         private List<MasterCard> _CurrentExtraCardList;
@@ -1187,8 +1193,18 @@ namespace YGO_Card_Collector_5
             {
                 case CursorLocation.Box:
                     //Send the card to the Main/Extra deck
-                    if (btnMoveAction.Text == "Send to Main Deck >>") { _CurrentDeckCardList.Add(_CurrentCardInView); LoadPage_DECK(); }
-                    if (btnMoveAction.Text == "Send to Extra Deck >>") { _CurrentExtraCardList.Add(_CurrentCardInView); LoadPage_EXTRA(); }
+                    if (btnMoveAction.Text == "Send to Main Deck >>") 
+                    { 
+                        _CurrentDeckCardList.Add(_CurrentCardInView);
+                        ActiveDeck.AddMainDeckCard(_CurrentCardInView.Name);
+                        LoadPage_DECK(); 
+                    }
+                    if (btnMoveAction.Text == "Send to Extra Deck >>") 
+                    { 
+                        _CurrentExtraCardList.Add(_CurrentCardInView);
+                        ActiveDeck.AddExtraDeckCard(_CurrentCardInView.Name);
+                        LoadPage_EXTRA(); 
+                    }
                     ClickCardFromBox(_CurrentCardSelectedIndex);
                     break;
                 case CursorLocation.MainDeck:
@@ -1196,6 +1212,7 @@ namespace YGO_Card_Collector_5
                     int index = (_CurrentPageDECK * CARDS_PER_PAGE_DECK) - CARDS_PER_PAGE_DECK;
                     index += _CurrentCardSelectedIndex;
                     _CurrentDeckCardList.RemoveAt(index);
+                    ActiveDeck.RemoveFromMainDeck(index);
                     //Reselect a card from deck OR if deck is now empty chande the cursor to box
                     if(_CurrentDeckCardList.Count == 0)
                     {
@@ -1207,12 +1224,12 @@ namespace YGO_Card_Collector_5
                     }
                     LoadPage_DECK();
                     break;
-
                 case CursorLocation.ExtraDeck:
                     //Remove the card from main deck
                     index = (_CurrentPageEXTRA * CARDS_PER_PAGE_EXTRA) - CARDS_PER_PAGE_EXTRA;
                     index += _CurrentCardSelectedIndex;
                     _CurrentExtraCardList.RemoveAt(index);
+                    ActiveDeck.RemoveFromExtraDeck(index);
                     //Reselect a card from deck OR if deck is now empty chande the cursor to box
                     if (_CurrentExtraCardList.Count == 0)
                     {
@@ -1224,12 +1241,12 @@ namespace YGO_Card_Collector_5
                     }
                     LoadPage_EXTRA();
                     break;
-
                 case CursorLocation.SideDeck:
                     //Remove the card from main deck
                     index = (_CurrentPageSIDE * CARDS_PER_PAGE_SIDE) - CARDS_PER_PAGE_SIDE;
                     index += _CurrentCardSelectedIndex;
                     _CurrentSideCardList.RemoveAt(index);
+                    ActiveDeck.RemoveFromSideDeck(index);
                     //Reselect a card from deck OR if deck is now empty chande the cursor to box
                     if (_CurrentSideCardList.Count == 0)
                     {
@@ -1242,6 +1259,8 @@ namespace YGO_Card_Collector_5
                     LoadPage_SIDE();
                     break;
             }
+
+            SaveData();
         }
         private void btnMoveActionSide_Click(object sender, EventArgs e)
         {
@@ -1252,9 +1271,12 @@ namespace YGO_Card_Collector_5
                 case CursorLocation.Box:
                     //Send the card to the Main/Extra deck
                     _CurrentSideCardList.Add(_CurrentCardInView); LoadPage_SIDE();
+                    ActiveDeck.AddSideDeckCard(_CurrentCardInView.Name);
                     ClickCardFromBox(_CurrentCardSelectedIndex);
                     break;
             }
+
+            SaveData();
         }
         private void btnTCGPLayer_Click(object sender, EventArgs e)
         {
