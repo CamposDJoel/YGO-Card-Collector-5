@@ -63,11 +63,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Deck.cs" />
-    <Compile Include="DeckBuilder.cs">
+    <Compile Include="Forms\DeckBuilder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeckBuilder.Designer.cs">
+    <Compile Include="Forms\DeckBuilder.Designer.cs">
       <DependentUpon>DeckBuilder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DeckSelectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeckSelectorForm.Designer.cs">
+      <DependentUpon>DeckSelectorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\CollectorBinderMode.cs">
       <SubType>Form</SubType>
@@ -154,8 +160,11 @@
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Utilities\Tools.cs" />
-    <EmbeddedResource Include="DeckBuilder.resx">
+    <EmbeddedResource Include="Forms\DeckBuilder.resx">
       <DependentUpon>DeckBuilder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeckSelectorForm.resx">
+      <DependentUpon>DeckSelectorForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\CollectorBinderMode.resx">
       <DependentUpon>CollectorBinderMode.cs</DependentUpon>

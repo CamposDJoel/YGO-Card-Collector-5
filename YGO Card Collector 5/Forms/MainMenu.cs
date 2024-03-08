@@ -21,11 +21,15 @@ namespace YGO_Card_Collector_5
 
             lblSettingsOption.MouseEnter += OnMouseEnterLabel;
             lblSettingsOption.MouseLeave += OnMouseLeaveLabel;
-
+           
             lblDatabaseOption.MouseEnter += OnMouseEnterLabel;
             lblDatabaseOption.MouseLeave += OnMouseLeaveLabel;
+
             lblDatabaseUpdateOption.MouseEnter += OnMouseEnterLabel;
             lblDatabaseUpdateOption.MouseLeave += OnMouseLeaveLabel;
+
+            lblDeckBuilderOption.MouseEnter += OnMouseEnterLabel;
+            lblDeckBuilderOption.MouseLeave += OnMouseLeaveLabel;
 
             RadioBigWinOption.MouseEnter += OnMouseEnterRadio;
             RadioDefaultOption.MouseEnter += OnMouseEnterRadio;
@@ -137,6 +141,13 @@ namespace YGO_Card_Collector_5
             SettingsForm SF = new SettingsForm(this);
             SF.Show();
         }
+        private void lblDeckBuilderOption_Click(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+            Hide();
+            DeckSelectorForm DS = new DeckSelectorForm(this);
+            DS.Show();
+        }
         private void RadioDefaultOption_CheckedChanged(object sender, EventArgs e)
         {
             SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
@@ -153,6 +164,6 @@ namespace YGO_Card_Collector_5
         {
             Application.Exit();
         }
-        #endregion    
+        #endregion       
     }
 }

@@ -39,6 +39,7 @@
             this.RadioDefaultOption = new System.Windows.Forms.RadioButton();
             this.lblDatabaseUpdateOption = new System.Windows.Forms.Label();
             this.lblDBRestrict = new System.Windows.Forms.Label();
+            this.lblDeckBuilderOption = new System.Windows.Forms.Label();
             this.GroupWinMode.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,7 +75,7 @@
             this.lblDatabaseOption.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblDatabaseOption.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatabaseOption.ForeColor = System.Drawing.Color.Yellow;
-            this.lblDatabaseOption.Location = new System.Drawing.Point(12, 271);
+            this.lblDatabaseOption.Location = new System.Drawing.Point(12, 322);
             this.lblDatabaseOption.Name = "lblDatabaseOption";
             this.lblDatabaseOption.Size = new System.Drawing.Size(315, 35);
             this.lblDatabaseOption.TabIndex = 6;
@@ -88,7 +89,7 @@
             this.lblSettingsOption.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblSettingsOption.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSettingsOption.ForeColor = System.Drawing.Color.Yellow;
-            this.lblSettingsOption.Location = new System.Drawing.Point(13, 319);
+            this.lblSettingsOption.Location = new System.Drawing.Point(13, 368);
             this.lblSettingsOption.Name = "lblSettingsOption";
             this.lblSettingsOption.Size = new System.Drawing.Size(315, 35);
             this.lblSettingsOption.TabIndex = 7;
@@ -154,7 +155,7 @@
             this.lblDatabaseUpdateOption.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblDatabaseUpdateOption.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDatabaseUpdateOption.ForeColor = System.Drawing.Color.Yellow;
-            this.lblDatabaseUpdateOption.Location = new System.Drawing.Point(13, 224);
+            this.lblDatabaseUpdateOption.Location = new System.Drawing.Point(13, 275);
             this.lblDatabaseUpdateOption.Name = "lblDatabaseUpdateOption";
             this.lblDatabaseUpdateOption.Size = new System.Drawing.Size(315, 35);
             this.lblDatabaseUpdateOption.TabIndex = 10;
@@ -168,12 +169,26 @@
             this.lblDBRestrict.BackColor = System.Drawing.Color.Black;
             this.lblDBRestrict.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDBRestrict.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblDBRestrict.Location = new System.Drawing.Point(21, 387);
+            this.lblDBRestrict.Location = new System.Drawing.Point(21, 413);
             this.lblDBRestrict.Name = "lblDBRestrict";
             this.lblDBRestrict.Size = new System.Drawing.Size(445, 22);
             this.lblDBRestrict.TabIndex = 11;
             this.lblDBRestrict.Text = "DB Tools ONLY available during FULL DB Mode.";
             this.lblDBRestrict.Visible = false;
+            // 
+            // lblDeckBuilderOption
+            // 
+            this.lblDeckBuilderOption.BackColor = System.Drawing.Color.Transparent;
+            this.lblDeckBuilderOption.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblDeckBuilderOption.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeckBuilderOption.ForeColor = System.Drawing.Color.Yellow;
+            this.lblDeckBuilderOption.Location = new System.Drawing.Point(13, 227);
+            this.lblDeckBuilderOption.Name = "lblDeckBuilderOption";
+            this.lblDeckBuilderOption.Size = new System.Drawing.Size(315, 35);
+            this.lblDeckBuilderOption.TabIndex = 12;
+            this.lblDeckBuilderOption.Text = "Deck Builder";
+            this.lblDeckBuilderOption.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDeckBuilderOption.Click += new System.EventHandler(this.lblDeckBuilderOption_Click);
             // 
             // FormLauncher
             // 
@@ -182,6 +197,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 457);
+            this.Controls.Add(this.lblDeckBuilderOption);
             this.Controls.Add(this.lblDBRestrict);
             this.Controls.Add(this.lblDatabaseUpdateOption);
             this.Controls.Add(this.GroupWinMode);
@@ -216,6 +232,7 @@
         private System.Windows.Forms.Label lblDatabaseUpdateOption;
         private System.Windows.Forms.RadioButton RadioBinderOption;
         private System.Windows.Forms.Label lblDBRestrict;
+        private System.Windows.Forms.Label lblDeckBuilderOption;
     }
 }
 
