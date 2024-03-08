@@ -203,6 +203,10 @@ namespace YGO_Card_Collector_5
         {
             _SetCards = NewSets;
         }
+        public bool IsAExtraDeckMonster()
+        {
+            return _Type.Contains("Fusion") || _Type.Contains("Synchro") || _Type.Contains("Xyz") || _Type.Contains("Link");
+        }
         #endregion
 
         #region Internal Data
