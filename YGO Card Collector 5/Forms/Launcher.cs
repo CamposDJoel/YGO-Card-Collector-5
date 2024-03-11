@@ -28,10 +28,7 @@ namespace YGO_Card_Collector_5
             if (Success)
             {
                 SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
-                Tools.WaitNSeconds(1000);
-                btnLoadDB.Visible = false;
-                btnLoadDB2019.Visible = false;
-                GroupDBSelection.Visible = false;
+                Tools.WaitNSeconds(1000);               
                 //Open the main menu form
                 Hide();
                 FormLauncher MM = new FormLauncher();
@@ -47,8 +44,13 @@ namespace YGO_Card_Collector_5
             }
         }
         private void btnLoadDB_Click(object sender, EventArgs e)
-        {           
-            if(radioFULL.Checked)
+        {
+            //Hide the buttons
+            btnLoadDB.Visible = false;
+            btnLoadDB2019.Visible = false;
+            GroupDBSelection.Visible = false;
+
+            if (radioFULL.Checked)
             {
                 SettingsData.FULLDBMode = true;
                 LoadDB("FULL");

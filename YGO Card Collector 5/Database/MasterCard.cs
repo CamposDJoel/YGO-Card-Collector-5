@@ -207,6 +207,27 @@ namespace YGO_Card_Collector_5
         {
             return _Type.Contains("Fusion") || _Type.Contains("Synchro") || _Type.Contains("Xyz") || _Type.Contains("Link");
         }
+        public int GetIndexOfCheapestSetCard()
+        {
+            int index = -1;
+            double cheapestPrice = 999999.99;
+
+            for(int x = 0; x < SetCards.Count; x++)
+            {
+                SetCard thisSetCard = SetCards[x];
+                double thisPrice = thisSetCard.GetDoubleFloorPrice();
+                if(thisPrice != 0)
+                {
+                    if (thisPrice < cheapestPrice)
+                    {
+                        index = x;
+                        cheapestPrice = thisPrice;
+                    }
+                }                
+            }
+
+            return index;
+        }
         #endregion
 
         #region Internal Data

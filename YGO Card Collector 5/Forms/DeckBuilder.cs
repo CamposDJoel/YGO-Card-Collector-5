@@ -19,14 +19,12 @@ namespace YGO_Card_Collector_5
 
             //Load Form theme and music
             Tools.InitalizeThemeOnForm(this);
-
+          
             //Initialize Card Images
             InitializeCardImages_BOX();
             InitializeCardImages_DECK();
             InitializeCardImages_EXTRA();
             InitializeCardImages_SIDE();
-
-            //Database.LoadDB("FULL");
 
             //Initialize the Box Card List from the MasterCard List
             _CurrentBoxCardList = Database.MasterCards;
@@ -36,6 +34,9 @@ namespace YGO_Card_Collector_5
             _CurrentDeckCardList = ActiveDeck.GetMainDeckMasterCardList();
             _CurrentExtraCardList = ActiveDeck.GetExtraDeckMasterCardList();
             _CurrentSideCardList = ActiveDeck.GetSideDeckMasterCardList();
+
+            //Initailize Deck name
+            lblDeckName.Text = string.Format("Deck: [{0}]", ActiveDeck.Name);
 
             //Load the Pages of all Groups
             LoadPage_BOX();
@@ -294,7 +295,23 @@ namespace YGO_Card_Collector_5
                     MasterCard ThisMasterCard = _CurrentBoxCardList[iterator];
 
                     //Initialize the card image
-                    ImageServer.SetImage(_CardImageListBOX[x], ImageType.CardImage, ThisMasterCard.ID.ToString());
+                    if(_HideMode)
+                    {
+                        //Show the front of the card if owner, otherwise show the back
+                        if(ThisMasterCard.IsOwned())
+                        {
+                            ImageServer.SetImage(_CardImageListBOX[x], ImageType.CardImage, ThisMasterCard.ID.ToString());
+                        }
+                        else
+                        {
+                            ImageServer.SetImage(_CardImageListBOX[x], ImageType.CardBack, "");
+                        }
+                    }
+                    else
+                    {
+                        //always show the front of the card
+                        ImageServer.SetImage(_CardImageListBOX[x], ImageType.CardImage, ThisMasterCard.ID.ToString());
+                    }                
 
                     //Initialize the obtained icon
                     LoadCardObtainedIcon(x, ThisMasterCard);
@@ -344,7 +361,23 @@ namespace YGO_Card_Collector_5
                     MasterCard ThisMasterCard = _CurrentDeckCardList[iterator];
 
                     //Initialize the card image
-                    ImageServer.SetImage(_CardImageListDECK[x], ImageType.CardImage, ThisMasterCard.ID.ToString());
+                    if (_HideMode)
+                    {
+                        //Show the front of the card if owner, otherwise show the back
+                        if (ThisMasterCard.IsOwned())
+                        {
+                            ImageServer.SetImage(_CardImageListDECK[x], ImageType.CardImage, ThisMasterCard.ID.ToString());
+                        }
+                        else
+                        {
+                            ImageServer.SetImage(_CardImageListDECK[x], ImageType.CardBack, "");
+                        }
+                    }
+                    else
+                    {
+                        //always show the front of the card
+                        ImageServer.SetImage(_CardImageListDECK[x], ImageType.CardImage, ThisMasterCard.ID.ToString());
+                    }
 
                     //Initialize the obtained icon
                     LoadCardObtainedIcon(x, ThisMasterCard);
@@ -394,7 +427,23 @@ namespace YGO_Card_Collector_5
                     MasterCard ThisMasterCard = _CurrentExtraCardList[iterator];
 
                     //Initialize the card image
-                    ImageServer.SetImage(_CardImageListEXTRA[x], ImageType.CardImage, ThisMasterCard.ID.ToString());
+                    if (_HideMode)
+                    {
+                        //Show the front of the card if owner, otherwise show the back
+                        if (ThisMasterCard.IsOwned())
+                        {
+                            ImageServer.SetImage(_CardImageListEXTRA[x], ImageType.CardImage, ThisMasterCard.ID.ToString());
+                        }
+                        else
+                        {
+                            ImageServer.SetImage(_CardImageListEXTRA[x], ImageType.CardBack, "");
+                        }
+                    }
+                    else
+                    {
+                        //always show the front of the card
+                        ImageServer.SetImage(_CardImageListEXTRA[x], ImageType.CardImage, ThisMasterCard.ID.ToString());
+                    }
 
                     //Initialize the obtained icon
                     LoadCardObtainedIcon(x, ThisMasterCard);
@@ -444,7 +493,23 @@ namespace YGO_Card_Collector_5
                     MasterCard ThisMasterCard = _CurrentSideCardList[iterator];
 
                     //Initialize the card image
-                    ImageServer.SetImage(_CardImageListSIDE[x], ImageType.CardImage, ThisMasterCard.ID.ToString());
+                    if (_HideMode)
+                    {
+                        //Show the front of the card if owner, otherwise show the back
+                        if (ThisMasterCard.IsOwned())
+                        {
+                            ImageServer.SetImage(_CardImageListSIDE[x], ImageType.CardImage, ThisMasterCard.ID.ToString());
+                        }
+                        else
+                        {
+                            ImageServer.SetImage(_CardImageListSIDE[x], ImageType.CardBack, "");
+                        }
+                    }
+                    else
+                    {
+                        //always show the front of the card
+                        ImageServer.SetImage(_CardImageListSIDE[x], ImageType.CardImage, ThisMasterCard.ID.ToString());
+                    }
 
                     //Initialize the obtained icon
                     LoadCardObtainedIcon(x, ThisMasterCard);
@@ -592,98 +657,19 @@ namespace YGO_Card_Collector_5
         }
         private void ClickCardFromBox(int index)
         {
-            InitializeSelectedCardInfo(index, CursorLocation.Box);
-
-            //Update the action button to determine the move action
-            if (_CurrentCardInView.IsAExtraDeckMonster())
-            {
-                if (_CurrentExtraCardList.Count == 15)
-                {
-                    btnMoveAction.Text = "EXTRA DECK FULL";
-                    btnMoveAction.Enabled = false;
-                }
-                else
-                {
-                    if (ListContains3CopiesOf(_CurrentExtraCardList, _CurrentCardInView.Name))
-                    {
-                        btnMoveAction.Text = "MAX COPIES";
-                        btnMoveAction.Enabled = false;
-                    }
-                    else
-                    {
-                        btnMoveAction.Text = "Send to Extra Deck >>";
-                        btnMoveAction.Enabled = true;
-                    }
-                }
-            }
-            else
-            {
-                if (_CurrentDeckCardList.Count == 60)
-                {
-                    btnMoveAction.Text = "MAIN DECK FULL";
-                    btnMoveAction.Enabled = false;
-                }
-                else
-                {
-                    if (ListContains3CopiesOf(_CurrentDeckCardList, _CurrentCardInView.Name))
-                    {
-                        btnMoveAction.Text = "MAX COPIES";
-                        btnMoveAction.Enabled = false;
-                    }
-                    else
-                    {
-                        btnMoveAction.Text = "Send to Main Deck >>";
-                        btnMoveAction.Enabled = true;
-                    }
-                }
-            }
-
-            btnMoveActionSide.Visible = true;
-            if (_CurrentSideCardList.Count == 15)
-            {
-                btnMoveActionSide.Text = "SIDE DECK FULL";
-                btnMoveActionSide.Enabled = false;
-            }
-            else
-            {
-                if (ListContains3CopiesOf(_CurrentSideCardList, _CurrentCardInView.Name))
-                {
-                    btnMoveActionSide.Text = "MAX COPIES";
-                    btnMoveActionSide.Enabled = false;
-                }
-                else
-                {
-                    btnMoveActionSide.Text = "Send to Side Deck >>";
-                    btnMoveActionSide.Enabled = true;
-                }
-            }
+            InitializeSelectedCardInfo(index, CursorLocation.Box);           
         }
         private void ClickCardFromDeck(int index)
         {
-            InitializeSelectedCardInfo(index, CursorLocation.MainDeck);
-
-            btnMoveAction.Text = "Remove from Main Deck";
-            btnMoveAction.Enabled = true;
-
-            btnMoveActionSide.Visible = false;
+            InitializeSelectedCardInfo(index, CursorLocation.MainDeck);           
         }
         private void ClickCardFromExtra(int index)
         {
-            InitializeSelectedCardInfo(index, CursorLocation.ExtraDeck);
-
-            btnMoveAction.Text = "Remove from Extra Deck";
-            btnMoveAction.Enabled = true;
-
-            btnMoveActionSide.Visible = false;
+            InitializeSelectedCardInfo(index, CursorLocation.ExtraDeck);           
         }
         private void ClickCardFromSide(int index)
         {
-            InitializeSelectedCardInfo(index, CursorLocation.SideDeck);
-
-            btnMoveAction.Text = "Remove from Extra Deck";
-            btnMoveAction.Enabled = true;
-
-            btnMoveActionSide.Visible = false;
+            InitializeSelectedCardInfo(index, CursorLocation.SideDeck);           
         }
         private void InitializeSelectedCardInfo(int newIndex, CursorLocation newLocation)
         {
@@ -743,6 +729,102 @@ namespace YGO_Card_Collector_5
 
             //Set the card image
             ImageServer.SetImage(picCardImage, ImageType.CardImage, _CurrentCardInView.ID.ToString());
+
+            //Update the action buttons based on which card is selected
+            UpdateActionButton();
+
+            void UpdateActionButton()
+            {
+                switch(_CurrentCursoLocation) 
+                {
+                    case CursorLocation.Box:
+                        //Update the action button to determine the move action
+                        if (_CurrentCardInView.IsAExtraDeckMonster())
+                        {
+                            if (_CurrentExtraCardList.Count == 15)
+                            {
+                                btnMoveAction.Text = "EXTRA DECK FULL";
+                                btnMoveAction.Enabled = false;
+                            }
+                            else
+                            {
+                                if (ListContains3CopiesOf(_CurrentExtraCardList, _CurrentCardInView.Name))
+                                {
+                                    btnMoveAction.Text = "MAX COPIES";
+                                    btnMoveAction.Enabled = false;
+                                }
+                                else
+                                {
+                                    btnMoveAction.Text = "Send to Extra Deck >>";
+                                    btnMoveAction.Enabled = true;
+                                }
+                            }
+                        }
+                        else
+                        {
+                            if (_CurrentDeckCardList.Count == 60)
+                            {
+                                btnMoveAction.Text = "MAIN DECK FULL";
+                                btnMoveAction.Enabled = false;
+                            }
+                            else
+                            {
+                                if (ListContains3CopiesOf(_CurrentDeckCardList, _CurrentCardInView.Name))
+                                {
+                                    btnMoveAction.Text = "MAX COPIES";
+                                    btnMoveAction.Enabled = false;
+                                }
+                                else
+                                {
+                                    btnMoveAction.Text = "Send to Main Deck >>";
+                                    btnMoveAction.Enabled = true;
+                                }
+                            }
+                        }
+
+                        btnMoveActionSide.Visible = true;
+                        if (_CurrentSideCardList.Count == 15)
+                        {
+                            btnMoveActionSide.Text = "SIDE DECK FULL";
+                            btnMoveActionSide.Enabled = false;
+                        }
+                        else
+                        {
+                            if (ListContains3CopiesOf(_CurrentSideCardList, _CurrentCardInView.Name))
+                            {
+                                btnMoveActionSide.Text = "MAX COPIES";
+                                btnMoveActionSide.Enabled = false;
+                            }
+                            else
+                            {
+                                btnMoveActionSide.Text = "Send to Side Deck >>";
+                                btnMoveActionSide.Enabled = true;
+                            }
+                        }
+                        break;
+
+                    case CursorLocation.MainDeck:
+                        btnMoveAction.Text = "Remove from Main Deck";
+                        btnMoveAction.Enabled = true;
+
+                        btnMoveActionSide.Visible = false;
+                        break;
+
+                    case CursorLocation.ExtraDeck:
+                        btnMoveAction.Text = "Remove from Extra Deck";
+                        btnMoveAction.Enabled = true;
+
+                        btnMoveActionSide.Visible = false;
+                        break;
+
+                    case CursorLocation.SideDeck:
+                        btnMoveAction.Text = "Remove from Side Deck";
+                        btnMoveAction.Enabled = true;
+
+                        btnMoveActionSide.Visible = false;
+                        break;
+                }
+            }
         }
         private void FilterByMasterGroup(CardGroup group)
         {
@@ -841,6 +923,7 @@ namespace YGO_Card_Collector_5
         private int _CurrentCardSelectedIndex = 0;
         private CursorLocation _CurrentCursoLocation = CursorLocation.Box;
         private MasterCard _CurrentCardInView;
+        private bool _HideMode = false;
 
         private bool _KeyInputEnable = true;
         #endregion
@@ -1601,12 +1684,28 @@ namespace YGO_Card_Collector_5
         private void btnBackToDeckSelector_Click(object sender, EventArgs e)
         {
             Dispose();
+            _deckSelectorFormRef.LoadDeckList();
             _deckSelectorFormRef.Show();
+        }
+        private void checkHide_CheckedChanged(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
+            _HideMode = checkHide.Checked;
+            LoadPage_BOX();
+            LoadPage_DECK();
+            LoadPage_EXTRA();
+            LoadPage_SIDE();
+        }
+        private void btnDeckPricing_Click(object sender, EventArgs e)
+        {
+            Hide();
+            DeckPricingReport DP = new DeckPricingReport(ActiveDeck, this);
+            DP.Show();
         }
         protected override void OnFormClosing(FormClosingEventArgs e)
         {
             Application.Exit();
         }
-        #endregion        
+        #endregion      
     }
 }

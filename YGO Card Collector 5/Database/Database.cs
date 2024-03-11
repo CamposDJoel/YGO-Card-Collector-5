@@ -860,6 +860,15 @@ namespace YGO_Card_Collector_5
 
             return resuls;
         }
+        public static bool DeckWithNameExists(string name)
+        {
+            bool matchfound = false;
+            foreach(Deck thisDeck in Decks)
+            {
+                if (thisDeck.Name == name) {  matchfound = true; break; } 
+            }
+            return matchfound;
+        }
         #endregion
 
         #region Private Methods

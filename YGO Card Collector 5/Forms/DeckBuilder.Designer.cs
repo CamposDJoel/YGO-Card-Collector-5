@@ -126,6 +126,9 @@
             this.btnPreviousPageDeck = new System.Windows.Forms.Button();
             this.btnClearFilter = new System.Windows.Forms.Button();
             this.btnMoveActionSide = new System.Windows.Forms.Button();
+            this.lblDeckName = new System.Windows.Forms.Label();
+            this.checkHide = new System.Windows.Forms.CheckBox();
+            this.btnDeckPricing = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.picCardImage)).BeginInit();
             this.btnFilterNoTags.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -218,7 +221,7 @@
             this.btnTCGPLayer.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTCGPLayer.Location = new System.Drawing.Point(306, 290);
             this.btnTCGPLayer.Name = "btnTCGPLayer";
-            this.btnTCGPLayer.Size = new System.Drawing.Size(156, 29);
+            this.btnTCGPLayer.Size = new System.Drawing.Size(156, 23);
             this.btnTCGPLayer.TabIndex = 11;
             this.btnTCGPLayer.Text = "Search in TCG Player";
             this.btnTCGPLayer.UseVisualStyleBackColor = false;
@@ -1395,6 +1398,44 @@
             this.btnMoveActionSide.UseVisualStyleBackColor = false;
             this.btnMoveActionSide.Click += new System.EventHandler(this.btnMoveActionSide_Click);
             // 
+            // lblDeckName
+            // 
+            this.lblDeckName.AutoSize = true;
+            this.lblDeckName.BackColor = System.Drawing.Color.Black;
+            this.lblDeckName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeckName.ForeColor = System.Drawing.Color.Yellow;
+            this.lblDeckName.Location = new System.Drawing.Point(489, 3);
+            this.lblDeckName.Name = "lblDeckName";
+            this.lblDeckName.Size = new System.Drawing.Size(181, 24);
+            this.lblDeckName.TabIndex = 253;
+            this.lblDeckName.Text = "Deck: [testname]";
+            // 
+            // checkHide
+            // 
+            this.checkHide.AutoSize = true;
+            this.checkHide.BackColor = System.Drawing.Color.Black;
+            this.checkHide.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkHide.ForeColor = System.Drawing.Color.Yellow;
+            this.checkHide.Location = new System.Drawing.Point(9, 300);
+            this.checkHide.Name = "checkHide";
+            this.checkHide.Size = new System.Drawing.Size(113, 16);
+            this.checkHide.TabIndex = 254;
+            this.checkHide.Text = "Hide Not Owned";
+            this.checkHide.UseVisualStyleBackColor = false;
+            this.checkHide.CheckedChanged += new System.EventHandler(this.checkHide_CheckedChanged);
+            // 
+            // btnDeckPricing
+            // 
+            this.btnDeckPricing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnDeckPricing.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeckPricing.Location = new System.Drawing.Point(306, 313);
+            this.btnDeckPricing.Name = "btnDeckPricing";
+            this.btnDeckPricing.Size = new System.Drawing.Size(156, 23);
+            this.btnDeckPricing.TabIndex = 255;
+            this.btnDeckPricing.Text = "Open Deck Pricing";
+            this.btnDeckPricing.UseVisualStyleBackColor = false;
+            this.btnDeckPricing.Click += new System.EventHandler(this.btnDeckPricing_Click);
+            // 
             // DeckBuilder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1402,6 +1443,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(804, 461);
+            this.Controls.Add(this.btnDeckPricing);
+            this.Controls.Add(this.checkHide);
+            this.Controls.Add(this.lblDeckName);
             this.Controls.Add(this.btnMoveActionSide);
             this.Controls.Add(this.btnClearFilter);
             this.Controls.Add(this.btnPreviousPageSide);
@@ -1426,7 +1470,7 @@
             this.MaximizeBox = false;
             this.Name = "DeckBuilder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Deck Selector - YGO Card Collector 5";
+            this.Text = "Deck Builder - YGO Card Collector 5";
             ((System.ComponentModel.ISupportInitialize)(this.picCardImage)).EndInit();
             this.btnFilterNoTags.ResumeLayout(false);
             this.btnFilterNoTags.PerformLayout();
@@ -1442,6 +1486,7 @@
             this.groupBox2.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1544,5 +1589,8 @@
         private System.Windows.Forms.Button btnPreviousPageDeck;
         private System.Windows.Forms.Button btnClearFilter;
         private System.Windows.Forms.Button btnMoveActionSide;
+        private System.Windows.Forms.Label lblDeckName;
+        private System.Windows.Forms.CheckBox checkHide;
+        private System.Windows.Forms.Button btnDeckPricing;
     }
 }

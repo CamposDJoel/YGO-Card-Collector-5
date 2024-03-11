@@ -62,7 +62,13 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Deck.cs" />
+    <Compile Include="Database\Deck.cs" />
+    <Compile Include="Forms\DeckPricingReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeckPricingReport.Designer.cs">
+      <DependentUpon>DeckPricingReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\DeckBuilder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +166,9 @@
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Utilities\Tools.cs" />
+    <EmbeddedResource Include="Forms\DeckPricingReport.resx">
+      <DependentUpon>DeckPricingReport.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\DeckBuilder.resx">
       <DependentUpon>DeckBuilder.cs</DependentUpon>
     </EmbeddedResource>

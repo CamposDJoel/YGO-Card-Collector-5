@@ -62,3 +62,4 @@ D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO
 D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.exe
 D:\Documents\GitHubRepos\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.pdb
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.DeckSelectorForm.resources
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.DeckPricingReport.resources
