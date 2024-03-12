@@ -121,7 +121,6 @@ namespace YGO_Card_Collector_5
                 case "MEDIAN": PriceList.Sort(new SetCard.SortByMedianPrice()); break;
             }
 
-
             //display the cards
             ListTop1000ReportDB.Items.Clear();
 
@@ -129,21 +128,24 @@ namespace YGO_Card_Collector_5
 
             foreach (SetCard ThisSetCard in PriceList)
             {
-                string cardname = Database.MasterCardByCode[ThisSetCard.Code].Name;
-                string obtainedmark = "";
-                if (ThisSetCard.IsOwned()) { obtainedmark = "- [x] "; }
-
-                string price = "0";
-                double doublePrice = 0;
-                switch (_CurrentDBPriceGroupSelection)
+                if (Database.MasterCardByCode.ContainsKey(ThisSetCard.Code))
                 {
-                    case "FLOOR": price = ThisSetCard.FloorPrice; doublePrice = ThisSetCard.GetDoubleFloorPrice(); break;
-                    case "MARKET": price = ThisSetCard.MarketPrice; doublePrice = ThisSetCard.GetDoubleMarketPrice(); break;
-                    case "MEDIAN": price = ThisSetCard.MediamPrice; doublePrice = ThisSetCard.GetDoubleMedianPrice(); break;
-                }
+                    string cardname = Database.MasterCardByCode[ThisSetCard.Code].Name;
+                    string obtainedmark = "";
+                    if (ThisSetCard.IsOwned()) { obtainedmark = "- [x] "; }
 
-                ListTop1000ReportDB.Items.Add(string.Format("[{0}] {1}- [{2} | {3}] - {4}", price, obtainedmark, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
-                PriceTotalValue += (int)doublePrice;
+                    string price = "0";
+                    double doublePrice = 0;
+                    switch (_CurrentDBPriceGroupSelection)
+                    {
+                        case "FLOOR": price = ThisSetCard.FloorPrice; doublePrice = ThisSetCard.GetDoubleFloorPrice(); break;
+                        case "MARKET": price = ThisSetCard.MarketPrice; doublePrice = ThisSetCard.GetDoubleMarketPrice(); break;
+                        case "MEDIAN": price = ThisSetCard.MediamPrice; doublePrice = ThisSetCard.GetDoubleMedianPrice(); break;
+                    }
+
+                    ListTop1000ReportDB.Items.Add(string.Format("[{0}] {1}- [{2} | {3}] - {4}", price, obtainedmark, ThisSetCard.Code, ThisSetCard.Rarity, cardname));
+                    PriceTotalValue += (int)doublePrice;
+                }
             }
 
 
