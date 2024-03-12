@@ -35,7 +35,6 @@
             this.btnBackToDeckSelector = new System.Windows.Forms.Button();
             this.GroupExtra = new System.Windows.Forms.GroupBox();
             this.GroupSide = new System.Windows.Forms.GroupBox();
-            this.btnTCGPLayer = new System.Windows.Forms.Button();
             this.btnFilterNoTags = new System.Windows.Forms.TabPage();
             this.lblTagCircle = new System.Windows.Forms.Label();
             this.btnTagCircle = new System.Windows.Forms.Button();
@@ -214,18 +213,6 @@
             this.GroupSide.TabIndex = 7;
             this.GroupSide.TabStop = false;
             this.GroupSide.Text = "SIDE DECK";
-            // 
-            // btnTCGPLayer
-            // 
-            this.btnTCGPLayer.BackColor = System.Drawing.Color.Yellow;
-            this.btnTCGPLayer.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTCGPLayer.Location = new System.Drawing.Point(306, 290);
-            this.btnTCGPLayer.Name = "btnTCGPLayer";
-            this.btnTCGPLayer.Size = new System.Drawing.Size(156, 23);
-            this.btnTCGPLayer.TabIndex = 11;
-            this.btnTCGPLayer.Text = "Search in TCG Player";
-            this.btnTCGPLayer.UseVisualStyleBackColor = false;
-            this.btnTCGPLayer.Click += new System.EventHandler(this.btnTCGPLayer_Click);
             // 
             // btnFilterNoTags
             // 
@@ -1428,12 +1415,13 @@
             // 
             this.btnDeckPricing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btnDeckPricing.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeckPricing.Location = new System.Drawing.Point(306, 313);
+            this.btnDeckPricing.Location = new System.Drawing.Point(306, 289);
             this.btnDeckPricing.Name = "btnDeckPricing";
-            this.btnDeckPricing.Size = new System.Drawing.Size(156, 23);
+            this.btnDeckPricing.Size = new System.Drawing.Size(156, 48);
             this.btnDeckPricing.TabIndex = 255;
-            this.btnDeckPricing.Text = "Open Deck Pricing";
+            this.btnDeckPricing.Text = "Open Deck Pricing Report";
             this.btnDeckPricing.UseVisualStyleBackColor = false;
+            this.btnDeckPricing.Visible = false;
             this.btnDeckPricing.Click += new System.EventHandler(this.btnDeckPricing_Click);
             // 
             // DeckBuilder
@@ -1458,7 +1446,6 @@
             this.Controls.Add(this.btnNextPageExtra);
             this.Controls.Add(this.btnNextPageDeck);
             this.Controls.Add(this.tabControl2);
-            this.Controls.Add(this.btnTCGPLayer);
             this.Controls.Add(this.GroupSide);
             this.Controls.Add(this.GroupExtra);
             this.Controls.Add(this.btnBackToDeckSelector);
@@ -1498,7 +1485,6 @@
         private System.Windows.Forms.Button btnBackToDeckSelector;
         private System.Windows.Forms.GroupBox GroupExtra;
         private System.Windows.Forms.GroupBox GroupSide;
-        private System.Windows.Forms.Button btnTCGPLayer;
         private System.Windows.Forms.TabPage btnFilterNoTags;
         private System.Windows.Forms.Label lblTagCircle;
         private System.Windows.Forms.Button btnTagCircle;

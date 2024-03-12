@@ -338,6 +338,16 @@ namespace YGO_Card_Collector_5
             //Set the total Card Count
             int TotalCardCount = _CurrentDeckCardList.Count;
 
+            //Hide the Pricing Report button if the Main Deck is empty
+            if (TotalCardCount == 0)
+            {
+                btnDeckPricing.Visible = false;
+            }
+            else
+            {
+                btnDeckPricing.Visible = true;
+            }
+
             //Start the iterator
             int PageIntialIndex = (_CurrentPageDECK * CARDS_PER_PAGE_DECK) - CARDS_PER_PAGE_DECK;
 
@@ -1367,11 +1377,6 @@ namespace YGO_Card_Collector_5
 
             SaveData();
         }
-        private void btnTCGPLayer_Click(object sender, EventArgs e)
-        {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
-            Tools.LaunchURLIntoBrowser("https://www.tcgplayer.com/search/all/product?q=" + _CurrentCardInView.Name + "&view=grid");
-        }
         #endregion    
 
         #region Keyboard Input Control
@@ -1706,6 +1711,6 @@ namespace YGO_Card_Collector_5
         {
             Application.Exit();
         }
-        #endregion      
+        #endregion
     }
 }
