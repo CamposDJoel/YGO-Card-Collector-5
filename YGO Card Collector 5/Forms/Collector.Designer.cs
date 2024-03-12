@@ -153,7 +153,6 @@
             this.btnStats = new System.Windows.Forms.Button();
             this.panel14 = new System.Windows.Forms.Panel();
             this.btnFilterSet = new System.Windows.Forms.Button();
-            this.btnOpenSetValue = new System.Windows.Forms.Button();
             this.picMuteButton = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
             this.tabControl2.SuspendLayout();
@@ -1796,7 +1795,7 @@
             this.btnFilterSet.BackColor = System.Drawing.Color.Purple;
             this.btnFilterSet.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFilterSet.ForeColor = System.Drawing.Color.White;
-            this.btnFilterSet.Location = new System.Drawing.Point(583, 361);
+            this.btnFilterSet.Location = new System.Drawing.Point(643, 361);
             this.btnFilterSet.Name = "btnFilterSet";
             this.btnFilterSet.Size = new System.Drawing.Size(129, 20);
             this.btnFilterSet.TabIndex = 278;
@@ -1804,20 +1803,6 @@
             this.btnFilterSet.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnFilterSet.UseVisualStyleBackColor = false;
             this.btnFilterSet.Click += new System.EventHandler(this.btnFilterSet_Click);
-            // 
-            // btnOpenSetValue
-            // 
-            this.btnOpenSetValue.BackColor = System.Drawing.Color.Purple;
-            this.btnOpenSetValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenSetValue.ForeColor = System.Drawing.Color.White;
-            this.btnOpenSetValue.Location = new System.Drawing.Point(711, 361);
-            this.btnOpenSetValue.Name = "btnOpenSetValue";
-            this.btnOpenSetValue.Size = new System.Drawing.Size(62, 20);
-            this.btnOpenSetValue.TabIndex = 279;
-            this.btnOpenSetValue.Text = "Set $$$";
-            this.btnOpenSetValue.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnOpenSetValue.UseVisualStyleBackColor = false;
-            this.btnOpenSetValue.Click += new System.EventHandler(this.btnOpenSetValue_Click);
             // 
             // picMuteButton
             // 
@@ -1840,7 +1825,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(775, 508);
             this.Controls.Add(this.picMuteButton);
-            this.Controls.Add(this.btnOpenSetValue);
             this.Controls.Add(this.btnFilterSet);
             this.Controls.Add(this.panel14);
             this.Controls.Add(this.btnStats);
@@ -2003,7 +1987,6 @@
         private System.Windows.Forms.Label lblCodeSearch;
         private System.Windows.Forms.TextBox txtCodeSearch;
         private System.Windows.Forms.Label lblCodeSearchOutput;
-        private System.Windows.Forms.Button btnOpenSetValue;
         private System.Windows.Forms.Label lblFloorPrice;
         private System.Windows.Forms.Label lblFloorPricelabel;
         private System.Windows.Forms.PictureBox PicTagStar;

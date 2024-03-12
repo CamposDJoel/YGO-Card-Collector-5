@@ -151,7 +151,6 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.btnOpenSetValue = new System.Windows.Forms.Button();
             this.btnFilterSet = new System.Windows.Forms.Button();
             this.picMuteButton = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
@@ -1782,19 +1781,6 @@
             this.tabPage5.TabIndex = 1;
             this.tabPage5.Text = "Info";
             // 
-            // btnOpenSetValue
-            // 
-            this.btnOpenSetValue.BackColor = System.Drawing.Color.Purple;
-            this.btnOpenSetValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenSetValue.ForeColor = System.Drawing.Color.White;
-            this.btnOpenSetValue.Location = new System.Drawing.Point(342, 335);
-            this.btnOpenSetValue.Name = "btnOpenSetValue";
-            this.btnOpenSetValue.Size = new System.Drawing.Size(71, 23);
-            this.btnOpenSetValue.TabIndex = 291;
-            this.btnOpenSetValue.Text = "Set $$$";
-            this.btnOpenSetValue.UseVisualStyleBackColor = false;
-            this.btnOpenSetValue.Click += new System.EventHandler(this.btnOpenSetValue_Click);
-            // 
             // btnFilterSet
             // 
             this.btnFilterSet.BackColor = System.Drawing.Color.Purple;
@@ -1802,9 +1788,9 @@
             this.btnFilterSet.ForeColor = System.Drawing.Color.White;
             this.btnFilterSet.Location = new System.Drawing.Point(252, 335);
             this.btnFilterSet.Name = "btnFilterSet";
-            this.btnFilterSet.Size = new System.Drawing.Size(70, 23);
+            this.btnFilterSet.Size = new System.Drawing.Size(160, 23);
             this.btnFilterSet.TabIndex = 290;
-            this.btnFilterSet.Text = "Show Set";
+            this.btnFilterSet.Text = "Show Selected Set";
             this.btnFilterSet.UseVisualStyleBackColor = false;
             this.btnFilterSet.Click += new System.EventHandler(this.btnFilterSet_Click);
             // 
@@ -1829,7 +1815,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(804, 461);
             this.Controls.Add(this.picMuteButton);
-            this.Controls.Add(this.btnOpenSetValue);
             this.Controls.Add(this.PicTagCircle);
             this.Controls.Add(this.btnFilterSet);
             this.Controls.Add(this.tabControl1);
@@ -2009,7 +1994,6 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.Button btnOpenSetValue;
         private System.Windows.Forms.Button btnFilterSet;
         private System.Windows.Forms.PictureBox picMuteButton;
         private System.Windows.Forms.Button btnNoTags;

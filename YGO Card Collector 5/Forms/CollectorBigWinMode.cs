@@ -966,23 +966,6 @@ namespace YGO_Card_Collector_5
             PricingReport PR = new PricingReport(this);
             PR.Show();
         }
-        private void btnOpenSetValue_Click(object sender, EventArgs e)
-        {
-            string listSelection = listSetlist.Text;
-
-            if (listSelection == "NO Sets in this group.")
-            {
-                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
-            }
-            else
-            {
-                SoundServer.PlaySoundEffect(SoundEffect.Click);
-                Hide();
-
-                PricingReport PR = new PricingReport(this, listSetGroups.SelectedIndex, listSetlist.SelectedIndex);
-                PR.Show();
-            }         
-        }
         private void picMuteButton_Click(object sender, EventArgs e)
         {
             if (_LocalMusicON)

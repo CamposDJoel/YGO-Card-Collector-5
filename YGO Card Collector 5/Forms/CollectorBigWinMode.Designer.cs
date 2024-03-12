@@ -155,7 +155,6 @@
             this.GroupCardViewVariants = new System.Windows.Forms.GroupBox();
             this.btnNextPageVariant = new System.Windows.Forms.Button();
             this.btnPreviousPageVariant = new System.Windows.Forms.Button();
-            this.btnOpenSetValue = new System.Windows.Forms.Button();
             this.picMuteButton = new System.Windows.Forms.PictureBox();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicTagCircle)).BeginInit();
@@ -1726,7 +1725,7 @@
             this.btnFilterSet.BackColor = System.Drawing.Color.Purple;
             this.btnFilterSet.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFilterSet.ForeColor = System.Drawing.Color.White;
-            this.btnFilterSet.Location = new System.Drawing.Point(814, 540);
+            this.btnFilterSet.Location = new System.Drawing.Point(900, 541);
             this.btnFilterSet.Name = "btnFilterSet";
             this.btnFilterSet.Size = new System.Drawing.Size(130, 23);
             this.btnFilterSet.TabIndex = 283;
@@ -1836,19 +1835,6 @@
             this.btnPreviousPageVariant.UseVisualStyleBackColor = false;
             this.btnPreviousPageVariant.Click += new System.EventHandler(this.btnPreviousPageVariant_Click);
             // 
-            // btnOpenSetValue
-            // 
-            this.btnOpenSetValue.BackColor = System.Drawing.Color.Purple;
-            this.btnOpenSetValue.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOpenSetValue.ForeColor = System.Drawing.Color.White;
-            this.btnOpenSetValue.Location = new System.Drawing.Point(944, 540);
-            this.btnOpenSetValue.Name = "btnOpenSetValue";
-            this.btnOpenSetValue.Size = new System.Drawing.Size(86, 23);
-            this.btnOpenSetValue.TabIndex = 288;
-            this.btnOpenSetValue.Text = "Set $$$";
-            this.btnOpenSetValue.UseVisualStyleBackColor = false;
-            this.btnOpenSetValue.Click += new System.EventHandler(this.btnOpenSetValue_Click);
-            // 
             // picMuteButton
             // 
             this.picMuteButton.BackColor = System.Drawing.Color.White;
@@ -1870,7 +1856,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1147, 723);
             this.Controls.Add(this.picMuteButton);
-            this.Controls.Add(this.btnOpenSetValue);
             this.Controls.Add(this.btnNextPageVariant);
             this.Controls.Add(this.btnPreviousPageVariant);
             this.Controls.Add(this.GroupCardViewVariants);
@@ -2037,7 +2022,6 @@
         private System.Windows.Forms.Button btnCodeSearch;
         private System.Windows.Forms.Label lblCodeSearch;
         private System.Windows.Forms.TextBox txtCodeSearch;
-        private System.Windows.Forms.Button btnOpenSetValue;
         private System.Windows.Forms.Label lblFloorPrice;
         private System.Windows.Forms.Label lblFloorPricelabel;
         private System.Windows.Forms.PictureBox PicTagCircle;

@@ -20,23 +20,6 @@ namespace YGO_Card_Collector_5
             Tools.InitalizeThemeOnForm(this);
             Shown += new EventHandler(f1_Shown);
         }
-        public PricingReport(Object collertorform, int groupIndex, int setIndex)
-        {
-            InitializeComponent();
-            CollectorForm = collertorform;
-            LoadCOLLECTIONPriceReportLists();
-            LoadDBPriceReportLists();
-            LoadSetsExplorer(groupIndex);
-
-            //Load Form theme
-            Tools.InitalizeThemeOnForm(this);
-
-            //Switch to the Set Explorer Tab Immediately
-            TABCONTROLMASTER.SelectedTab = TabSetExplorer;
-
-            //Then the actual set.
-            ListSets.SetSelected(setIndex, true);
-        }
         #endregion
 
         #region Internal Data
