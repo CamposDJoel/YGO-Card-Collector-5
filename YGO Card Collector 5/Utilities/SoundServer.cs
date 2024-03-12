@@ -100,7 +100,6 @@ namespace YGO_Card_Collector_5
         private static int CollectorPaylistIndex = -1;
         private static CollectorSong[] SongsPlaylist = new CollectorSong[]
         {
-            CollectorSong.DeckBuildMenu,
             CollectorSong.FreeDuel,
             CollectorSong.FreeDuelMenu,
             CollectorSong.LibraryMenu
@@ -119,7 +118,6 @@ namespace YGO_Card_Collector_5
     }
     public enum CollectorSong
     {
-        DeckBuildMenu,
         FreeDuel,
         FreeDuelMenu,
         LibraryMenu
