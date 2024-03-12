@@ -28,6 +28,7 @@ namespace YGO_Card_Collector_5
         }
         #endregion
 
+        #region Public Methods
         public List<MasterCard> GetMainDeckMasterCardList()
         {
             List<MasterCard> output = new List<MasterCard> ();
@@ -79,6 +80,7 @@ namespace YGO_Card_Collector_5
         {
             _SideDeckCardList.RemoveAt(index);
         }
+        #endregion
 
         #region Public Accessors
         public string Name { get { return _Name; } set { _Name = value; } }

@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿//Joel Campos
+//3/12/2024
+//ImageServer Class
+
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace YGO_Card_Collector_5
@@ -39,7 +38,6 @@ namespace YGO_Card_Collector_5
             string folder = SettingsData.CurrentTheme.ToString();         
             thisForm.BackgroundImage = Image.FromFile(Directory.GetCurrentDirectory() + "\\Themes\\" + folder + "\\Background.jpg");
         }
-
         private static Image CardImage(string id)
         {
             if (File.Exists(Directory.GetCurrentDirectory() + "\\images\\Cards\\" + id + ".jpg"))

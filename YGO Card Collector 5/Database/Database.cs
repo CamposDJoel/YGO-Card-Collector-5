@@ -708,19 +708,6 @@ namespace YGO_Card_Collector_5
             }
             return matchList;
         }
-        public static List<MasterCard> GetCardListWithTag(TagIcon tag)
-        {
-            List<MasterCard> matchList = new List<MasterCard>();
-            foreach (MasterCard ThisMasterCard in MasterCards)
-            {
-                bool TagOn = ThisMasterCard.GetTag(tag);
-                if(TagOn)
-                {
-                    matchList.Add(ThisMasterCard);
-                }
-            }
-            return matchList;
-        }
         public static List<MasterCard> GetCardListWithMissingProdeckURLs()
         {
             List<MasterCard> matchList = new List<MasterCard>();

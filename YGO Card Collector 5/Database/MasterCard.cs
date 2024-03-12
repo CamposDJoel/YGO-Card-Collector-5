@@ -4,9 +4,6 @@
 
 using System;
 using System.Collections.Generic;
-using System.Windows.Forms;
-using System.Windows.Forms.VisualStyles;
-using System.Windows.Input;
 
 namespace YGO_Card_Collector_5
 {

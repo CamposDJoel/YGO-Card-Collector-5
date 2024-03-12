@@ -1,14 +1,14 @@
-﻿using System;
+﻿//Joel Campows
+//3/12/2024 
+//SetPack Class
+
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 
 namespace YGO_Card_Collector_5
 {
     public class SetPack
     {
+        #region Constructors
         public SetPack(string name, string sampleCode, string sampleYear)
         {
             _name = name;
@@ -25,7 +25,9 @@ namespace YGO_Card_Collector_5
                 _releaseYear = sampleYear.Substring(4);
             }
         }
+        #endregion
 
+        #region Public Methods
         public void AddCard(SetCard newCard)
         {
             if(_mainSetByCode.ContainsKey(newCard.Code)) 
@@ -50,6 +52,33 @@ namespace YGO_Card_Collector_5
                 _sorted = true;
             }
         }
+        public int GetMainListObtainedCount()
+        {
+            int count = 0;
+            foreach (SetCard card in _mainSetCards)
+            {
+                if (card.IsOwned())
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+        public int GetExtraListObtainedCount()
+        {
+            int count = 0;
+            foreach (SetCard card in _extraCards)
+            {
+                if (card.IsOwned())
+                {
+                    count++;
+                }
+            }
+            return count;
+        }
+        #endregion
+
+        #region Public Accessors
         public string Code { get { return _prefixCode; } }
         public List<SetCard> FullCardList
         {
@@ -253,38 +282,12 @@ namespace YGO_Card_Collector_5
 
                 return totals;
             }
-        }
-
-        public int GetMainListObtainedCount()
-        {
-            int count = 0;
-            foreach(SetCard card in _mainSetCards)
-            {
-                if(card.IsOwned())
-                {
-                    count++;
-                }
-            }    
-            return count;
-        }
-        public int GetExtraListObtainedCount()
-        {
-            int count = 0;
-            foreach (SetCard card in _extraCards)
-            {
-                if (card.IsOwned())
-                {
-                    count++;
-                }
-            }
-            return count;
-        }
-
+        }      
         public List<SetCard> MainCardList { get { return _mainSetCards; } }
         public List<SetCard> ExtraCardList { get { return _extraCards; } }
+        #endregion
 
-        
-
+        #region Private Data
         private string _name;
         private string _releaseYear;
         private string _prefixCode;
@@ -292,5 +295,6 @@ namespace YGO_Card_Collector_5
         private Dictionary<string, SetCard> _mainSetByCode = new Dictionary<string, SetCard>();
         private List<SetCard> _mainSetCards = new List<SetCard>();
         private List<SetCard> _extraCards = new List<SetCard> ();
+        #endregion
     }
 }
