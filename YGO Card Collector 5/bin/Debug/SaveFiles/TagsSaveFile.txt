@@ -1,4 +1,4 @@
-3209
+3210
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -3208,3 +3208,4 @@ TagRecord|X-Krawler Qualiark|False|True|False|False
 TagRecord|X-Krawler Synaphysis|False|True|False|False
 TagRecord|XX-Saber Emmersblade|False|True|False|False
 TagRecord|Danger! Mothman!|False|False|True|False
+TagRecord|Agnimal Candle|True|False|False|True

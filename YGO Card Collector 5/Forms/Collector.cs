@@ -7,7 +7,6 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace YGO_Card_Collector_5
 {
@@ -717,6 +716,12 @@ namespace YGO_Card_Collector_5
             //Mute/UnMute music and change the button icon
             SoundServer.MuteBackgroundMusic(_LocalMusicON);
             ImageServer.SetImage(picMuteButton, ImageType.MuteButtonIcon, _LocalMusicON.ToString());
+        }
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Hide();
+            CollectorsHelp CH = new CollectorsHelp(this);
+            CH.Show();
         }
         #endregion
 
@@ -1667,6 +1672,6 @@ namespace YGO_Card_Collector_5
         {
             FilterByTag(TagIcon.NONE);
         }
-        #endregion
+        #endregion        
     }
 }

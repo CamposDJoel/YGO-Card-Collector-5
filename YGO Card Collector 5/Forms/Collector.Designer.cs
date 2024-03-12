@@ -154,6 +154,7 @@
             this.panel14 = new System.Windows.Forms.Panel();
             this.btnFilterSet = new System.Windows.Forms.Button();
             this.picMuteButton = new System.Windows.Forms.PictureBox();
+            this.btnHelp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.PicImage)).BeginInit();
             this.tabControl2.SuspendLayout();
             this.MonsterType.SuspendLayout();
@@ -1817,6 +1818,19 @@
             this.picMuteButton.TabStop = false;
             this.picMuteButton.Click += new System.EventHandler(this.picMuteButton_Click);
             // 
+            // btnHelp
+            // 
+            this.btnHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnHelp.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHelp.ForeColor = System.Drawing.Color.White;
+            this.btnHelp.Location = new System.Drawing.Point(514, 0);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(39, 20);
+            this.btnHelp.TabIndex = 282;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.UseVisualStyleBackColor = false;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
+            // 
             // Collector
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1824,6 +1838,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(775, 508);
+            this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.picMuteButton);
             this.Controls.Add(this.btnFilterSet);
             this.Controls.Add(this.panel14);
@@ -2005,5 +2020,6 @@
         private System.Windows.Forms.Button btnTagSquare;
         private System.Windows.Forms.PictureBox picMuteButton;
         private System.Windows.Forms.Button btnNoTags;
+        private System.Windows.Forms.Button btnHelp;
     }
 }

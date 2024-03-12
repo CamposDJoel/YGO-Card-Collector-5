@@ -717,6 +717,12 @@ namespace YGO_Card_Collector_5
             SoundServer.MuteBackgroundMusic(_LocalMusicON);
             ImageServer.SetImage(picMuteButton, ImageType.MuteButtonIcon, _LocalMusicON.ToString());
         }
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            Hide();
+            CollectorsHelp CH = new CollectorsHelp(this);
+            CH.Show();
+        }
         #endregion
 
         #region Event Listeners (Card Viewer Controls)
@@ -1666,6 +1672,6 @@ namespace YGO_Card_Collector_5
         {
             FilterByTag(TagIcon.NONE);
         }
-        #endregion        
+        #endregion       
     }
 }

@@ -126,11 +126,13 @@
             // RadioBigWinOption
             // 
             this.RadioBigWinOption.AutoSize = true;
+            this.RadioBigWinOption.Checked = true;
             this.RadioBigWinOption.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RadioBigWinOption.Location = new System.Drawing.Point(10, 29);
+            this.RadioBigWinOption.Location = new System.Drawing.Point(10, 13);
             this.RadioBigWinOption.Name = "RadioBigWinOption";
             this.RadioBigWinOption.Size = new System.Drawing.Size(154, 21);
             this.RadioBigWinOption.TabIndex = 2;
+            this.RadioBigWinOption.TabStop = true;
             this.RadioBigWinOption.Text = "Big Window Mode";
             this.RadioBigWinOption.UseVisualStyleBackColor = true;
             this.RadioBigWinOption.CheckedChanged += new System.EventHandler(this.RadioBigWinOption_CheckedChanged);
@@ -138,13 +140,11 @@
             // RadioDefaultOption
             // 
             this.RadioDefaultOption.AutoSize = true;
-            this.RadioDefaultOption.Checked = true;
             this.RadioDefaultOption.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RadioDefaultOption.Location = new System.Drawing.Point(11, 11);
+            this.RadioDefaultOption.Location = new System.Drawing.Point(10, 30);
             this.RadioDefaultOption.Name = "RadioDefaultOption";
             this.RadioDefaultOption.Size = new System.Drawing.Size(91, 21);
             this.RadioDefaultOption.TabIndex = 0;
-            this.RadioDefaultOption.TabStop = true;
             this.RadioDefaultOption.Text = "Compact";
             this.RadioDefaultOption.UseVisualStyleBackColor = true;
             this.RadioDefaultOption.CheckedChanged += new System.EventHandler(this.RadioDefaultOption_CheckedChanged);
