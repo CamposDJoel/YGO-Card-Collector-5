@@ -70,11 +70,15 @@ namespace YGO_Card_Collector_5
         private void radioFULL_CheckedChanged(object sender, EventArgs e)
         {
             SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
+            listYearSelection.Visible = false;
+            lblYearWarning.Visible = false;
         }
         private void radioYear_CheckedChanged(object sender, EventArgs e)
         {
             SoundServer.PlaySoundEffect(SoundEffect.RDSelection);
             listYearSelection.SetSelected(0, true);
+            listYearSelection.Visible = true;
+            lblYearWarning.Visible = true;
         }
         protected override void OnFormClosing(FormClosingEventArgs e)
         {

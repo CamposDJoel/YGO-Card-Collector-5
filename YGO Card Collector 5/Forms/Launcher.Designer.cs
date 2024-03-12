@@ -32,11 +32,12 @@
             this.btnLoadDB2019 = new System.Windows.Forms.Button();
             this.btnLoadDB = new System.Windows.Forms.Button();
             this.GroupDBSelection = new System.Windows.Forms.GroupBox();
-            this.radioFULL = new System.Windows.Forms.RadioButton();
-            this.radioYear = new System.Windows.Forms.RadioButton();
             this.listYearSelection = new System.Windows.Forms.ListBox();
+            this.radioYear = new System.Windows.Forms.RadioButton();
+            this.radioFULL = new System.Windows.Forms.RadioButton();
             this.lblJsonStatus = new System.Windows.Forms.Label();
             this.picTittleBanner = new System.Windows.Forms.PictureBox();
+            this.lblYearWarning = new System.Windows.Forms.Label();
             this.GroupDBSelection.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picTittleBanner)).BeginInit();
             this.SuspendLayout();
@@ -70,41 +71,18 @@
             // GroupDBSelection
             // 
             this.GroupDBSelection.BackColor = System.Drawing.Color.Transparent;
+            this.GroupDBSelection.Controls.Add(this.lblYearWarning);
             this.GroupDBSelection.Controls.Add(this.listYearSelection);
             this.GroupDBSelection.Controls.Add(this.radioYear);
             this.GroupDBSelection.Controls.Add(this.radioFULL);
             this.GroupDBSelection.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupDBSelection.ForeColor = System.Drawing.Color.Yellow;
-            this.GroupDBSelection.Location = new System.Drawing.Point(36, 232);
+            this.GroupDBSelection.Location = new System.Drawing.Point(36, 227);
             this.GroupDBSelection.Name = "GroupDBSelection";
-            this.GroupDBSelection.Size = new System.Drawing.Size(200, 173);
+            this.GroupDBSelection.Size = new System.Drawing.Size(200, 188);
             this.GroupDBSelection.TabIndex = 15;
             this.GroupDBSelection.TabStop = false;
-            this.GroupDBSelection.Text = "Select DB";
-            // 
-            // radioFULL
-            // 
-            this.radioFULL.AutoSize = true;
-            this.radioFULL.Checked = true;
-            this.radioFULL.Location = new System.Drawing.Point(35, 22);
-            this.radioFULL.Name = "radioFULL";
-            this.radioFULL.Size = new System.Drawing.Size(71, 19);
-            this.radioFULL.TabIndex = 0;
-            this.radioFULL.TabStop = true;
-            this.radioFULL.Text = "Full DB";
-            this.radioFULL.UseVisualStyleBackColor = true;
-            this.radioFULL.CheckedChanged += new System.EventHandler(this.radioFULL_CheckedChanged);
-            // 
-            // radioYear
-            // 
-            this.radioYear.AutoSize = true;
-            this.radioYear.Location = new System.Drawing.Point(35, 47);
-            this.radioYear.Name = "radioYear";
-            this.radioYear.Size = new System.Drawing.Size(59, 19);
-            this.radioYear.TabIndex = 1;
-            this.radioYear.Text = "Year:";
-            this.radioYear.UseVisualStyleBackColor = true;
-            this.radioYear.CheckedChanged += new System.EventHandler(this.radioYear_CheckedChanged);
+            this.GroupDBSelection.Text = "Select DB Mode";
             // 
             // listYearSelection
             // 
@@ -133,10 +111,37 @@
             "2004",
             "2003",
             "2002"});
-            this.listYearSelection.Location = new System.Drawing.Point(100, 47);
+            this.listYearSelection.Location = new System.Drawing.Point(109, 46);
             this.listYearSelection.Name = "listYearSelection";
-            this.listYearSelection.Size = new System.Drawing.Size(77, 109);
+            this.listYearSelection.Size = new System.Drawing.Size(77, 94);
             this.listYearSelection.TabIndex = 2;
+            this.listYearSelection.Visible = false;
+            // 
+            // radioYear
+            // 
+            this.radioYear.AutoSize = true;
+            this.radioYear.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioYear.Location = new System.Drawing.Point(33, 43);
+            this.radioYear.Name = "radioYear";
+            this.radioYear.Size = new System.Drawing.Size(76, 26);
+            this.radioYear.TabIndex = 1;
+            this.radioYear.Text = "Year:";
+            this.radioYear.UseVisualStyleBackColor = true;
+            this.radioYear.CheckedChanged += new System.EventHandler(this.radioYear_CheckedChanged);
+            // 
+            // radioFULL
+            // 
+            this.radioFULL.AutoSize = true;
+            this.radioFULL.Checked = true;
+            this.radioFULL.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioFULL.Location = new System.Drawing.Point(33, 18);
+            this.radioFULL.Name = "radioFULL";
+            this.radioFULL.Size = new System.Drawing.Size(93, 26);
+            this.radioFULL.TabIndex = 0;
+            this.radioFULL.TabStop = true;
+            this.radioFULL.Text = "Full DB";
+            this.radioFULL.UseVisualStyleBackColor = true;
+            this.radioFULL.CheckedChanged += new System.EventHandler(this.radioFULL_CheckedChanged);
             // 
             // lblJsonStatus
             // 
@@ -160,6 +165,18 @@
             this.picTittleBanner.Size = new System.Drawing.Size(406, 124);
             this.picTittleBanner.TabIndex = 17;
             this.picTittleBanner.TabStop = false;
+            // 
+            // lblYearWarning
+            // 
+            this.lblYearWarning.BackColor = System.Drawing.Color.Black;
+            this.lblYearWarning.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYearWarning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblYearWarning.Location = new System.Drawing.Point(9, 143);
+            this.lblYearWarning.Name = "lblYearWarning";
+            this.lblYearWarning.Size = new System.Drawing.Size(177, 40);
+            this.lblYearWarning.TabIndex = 18;
+            this.lblYearWarning.Text = "Deck Builder and DB Updater/Manager unavailable while in Year DB Mode.";
+            this.lblYearWarning.Visible = false;
             // 
             // Launcher
             // 
@@ -196,5 +213,6 @@
         private System.Windows.Forms.ListBox listYearSelection;
         private System.Windows.Forms.Label lblJsonStatus;
         private System.Windows.Forms.PictureBox picTittleBanner;
+        private System.Windows.Forms.Label lblYearWarning;
     }
 }

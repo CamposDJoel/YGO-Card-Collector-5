@@ -143,10 +143,20 @@ namespace YGO_Card_Collector_5
         }
         private void lblDeckBuilderOption_Click(object sender, EventArgs e)
         {
-            SoundServer.PlaySoundEffect(SoundEffect.Click);
-            Hide();
-            DeckSelectorForm DS = new DeckSelectorForm(this);
-            DS.Show();
+            if (SettingsData.FULLDBMode)
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.Click);
+                Hide();
+                DeckSelectorForm DS = new DeckSelectorForm(this);
+                DS.Show();
+            }
+            else
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                lblDBRestrict.Visible = true;
+                Tools.WaitNSeconds(2000);
+                lblDBRestrict.Visible = false;
+            }
         }
         private void RadioDefaultOption_CheckedChanged(object sender, EventArgs e)
         {

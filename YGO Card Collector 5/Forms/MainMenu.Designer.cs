@@ -171,9 +171,9 @@
             this.lblDBRestrict.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblDBRestrict.Location = new System.Drawing.Point(21, 413);
             this.lblDBRestrict.Name = "lblDBRestrict";
-            this.lblDBRestrict.Size = new System.Drawing.Size(445, 22);
+            this.lblDBRestrict.Size = new System.Drawing.Size(607, 22);
             this.lblDBRestrict.TabIndex = 11;
-            this.lblDBRestrict.Text = "DB Tools ONLY available during FULL DB Mode.";
+            this.lblDBRestrict.Text = "Deck Builder and DB Tools ONLY available during FULL DB Mode.";
             this.lblDBRestrict.Visible = false;
             // 
             // lblDeckBuilderOption
