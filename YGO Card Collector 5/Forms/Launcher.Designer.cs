@@ -32,12 +32,12 @@
             this.btnLoadDB2019 = new System.Windows.Forms.Button();
             this.btnLoadDB = new System.Windows.Forms.Button();
             this.GroupDBSelection = new System.Windows.Forms.GroupBox();
+            this.lblYearWarning = new System.Windows.Forms.Label();
             this.listYearSelection = new System.Windows.Forms.ListBox();
             this.radioYear = new System.Windows.Forms.RadioButton();
             this.radioFULL = new System.Windows.Forms.RadioButton();
             this.lblJsonStatus = new System.Windows.Forms.Label();
             this.picTittleBanner = new System.Windows.Forms.PictureBox();
-            this.lblYearWarning = new System.Windows.Forms.Label();
             this.GroupDBSelection.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picTittleBanner)).BeginInit();
             this.SuspendLayout();
@@ -83,6 +83,18 @@
             this.GroupDBSelection.TabIndex = 15;
             this.GroupDBSelection.TabStop = false;
             this.GroupDBSelection.Text = "Select DB Mode";
+            // 
+            // lblYearWarning
+            // 
+            this.lblYearWarning.BackColor = System.Drawing.Color.Black;
+            this.lblYearWarning.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblYearWarning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblYearWarning.Location = new System.Drawing.Point(9, 143);
+            this.lblYearWarning.Name = "lblYearWarning";
+            this.lblYearWarning.Size = new System.Drawing.Size(177, 40);
+            this.lblYearWarning.TabIndex = 18;
+            this.lblYearWarning.Text = "Deck Builder and DB Updater/Manager unavailable while in Year DB Mode.";
+            this.lblYearWarning.Visible = false;
             // 
             // listYearSelection
             // 
@@ -166,18 +178,6 @@
             this.picTittleBanner.TabIndex = 17;
             this.picTittleBanner.TabStop = false;
             // 
-            // lblYearWarning
-            // 
-            this.lblYearWarning.BackColor = System.Drawing.Color.Black;
-            this.lblYearWarning.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblYearWarning.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblYearWarning.Location = new System.Drawing.Point(9, 143);
-            this.lblYearWarning.Name = "lblYearWarning";
-            this.lblYearWarning.Size = new System.Drawing.Size(177, 40);
-            this.lblYearWarning.TabIndex = 18;
-            this.lblYearWarning.Text = "Deck Builder and DB Updater/Manager unavailable while in Year DB Mode.";
-            this.lblYearWarning.Visible = false;
-            // 
             // Launcher
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -192,6 +192,7 @@
             this.Controls.Add(this.btnLoadDB);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Launcher";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Launcher - YGO Card Collector 5";
