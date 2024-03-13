@@ -1,4 +1,4 @@
-3946
+4127
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -3945,3 +3945,184 @@ TagRecord|B.E.S. Big Core|False|True|False|False
 TagRecord|Gyroid|False|True|False|False
 TagRecord|Shreddder|False|True|False|False
 TagRecord|UFOroid Fighter|False|True|False|False
+TagRecord|Acorno|True|False|False|False
+TagRecord|Alsei, the Sylvan High Protector|False|False|False|True
+TagRecord|Amarylease|False|True|False|False
+TagRecord|Angel Trumpeter|True|False|False|False
+TagRecord|Anti-Aircraft Flower|True|False|False|False
+TagRecord|Aromage Bergamot|False|False|False|True
+TagRecord|Aromage Cananga|True|False|False|False
+TagRecord|Aromage Jasmine|False|True|False|False
+TagRecord|Aromage Rosemary|False|True|False|False
+TagRecord|Aromaseraphy Angelica|False|True|False|False
+TagRecord|Aromaseraphy Jasmine|False|False|False|True
+TagRecord|Aromaseraphy Rosemary|False|False|False|True
+TagRecord|Aromaseraphy Sweet Marjoram|False|True|False|False
+TagRecord|Baobaboon|True|False|False|False
+TagRecord|Battlecruiser Dianthus|False|True|False|False
+TagRecord|Bean Soldier|False|False|False|True
+TagRecord|Bird of Roses|True|False|False|False
+TagRecord|Botanical Girl|True|False|False|False
+TagRecord|Botanical Lion|False|True|False|False
+TagRecord|Boycotton|False|True|False|False
+TagRecord|Cactus Bouncer|False|True|False|False
+TagRecord|Cactus Fighter|False|True|False|False
+TagRecord|Cherry Inmato|False|True|False|False
+TagRecord|Chirubimé, Princess of Autumn Leaves|False|True|False|False
+TagRecord|Chrysalis Pinny|False|False|False|True
+TagRecord|Copy Plant|True|False|False|False
+TagRecord|Cursed Fig|True|False|False|False
+TagRecord|CXyz Battleship Cherry Blossom|False|True|False|False
+TagRecord|Dandylion|True|False|False|False
+TagRecord|Dark Verger|False|False|False|True
+TagRecord|Darkworld Thorns|True|False|False|False
+TagRecord|Des Dendle|True|False|False|False
+TagRecord|Dreamsprite|True|False|False|False
+TagRecord|Eco, Mystical Spirit of the Forest|False|True|False|False
+TagRecord|Elemental HERO Knospe|False|False|False|True
+TagRecord|Elemental HERO Poison Rose|False|True|False|False
+TagRecord|Evil Thorn|False|True|False|False
+TagRecord|Evilswarm Mandragora|True|False|False|False
+TagRecord|Fairy Archer Ingunar|True|False|False|False
+TagRecord|Fairy King Albverdich|False|True|False|False
+TagRecord|Fairy King Truesdale|False|False|False|True
+TagRecord|Fairy Knight Ingunar|False|False|False|True
+TagRecord|Fallen Angel of Roses|False|True|False|False
+TagRecord|Fengli the Soldrapom|True|False|False|False
+TagRecord|Fiber Jar|False|False|False|True
+TagRecord|Firegrass|True|False|False|False
+TagRecord|Flowerbot|False|True|False|False
+TagRecord|Garden Rose Maiden|False|False|False|True
+TagRecord|Gigantic Cephalotus|True|False|False|False
+TagRecord|Gigaplant|True|False|False|False
+TagRecord|Glow-Up Bulb|True|False|False|False
+TagRecord|Grass Phantom|True|False|False|False
+TagRecord|Green Phantom King|True|False|False|False
+TagRecord|Griggle|True|False|False|False
+TagRecord|Hedge Guard|True|False|False|False
+TagRecord|Homunculus the Alchemic Being|True|False|False|False
+TagRecord|Horseytail|True|False|False|False
+TagRecord|Impcantation Talismandra|False|False|False|True
+TagRecord|Inmato|False|True|False|False
+TagRecord|Interceptomato|False|True|False|False
+TagRecord|Jerry Beans Man|False|True|False|False
+TagRecord|Koa'ki Meiru Gravirose|False|True|False|False
+TagRecord|Lekunga|True|False|False|False
+TagRecord|Lonefire Blossom|True|False|False|False
+TagRecord|Lord Poison|True|False|False|False
+TagRecord|Man Eater|True|False|False|False
+TagRecord|Mandragon|False|False|False|True
+TagRecord|Mariña, Princess of Sunflowers|False|False|False|True
+TagRecord|Meliae of the Trees|False|False|False|True
+TagRecord|Mushroom Man|False|False|False|True
+TagRecord|Mystic Macrocarpa Seed|False|False|False|True
+TagRecord|Mystic Tomato|True|False|False|False
+TagRecord|Naturia Bamboo Shoot|False|False|False|True
+TagRecord|Naturia Beans|False|True|False|False
+TagRecord|Naturia Cherries|True|False|False|False
+TagRecord|Naturia Cosmobeet|False|False|False|True
+TagRecord|Naturia Eggplant|False|False|False|True
+TagRecord|Naturia Guardian|False|False|False|True
+TagRecord|Naturia Hydrangea|True|False|False|False
+TagRecord|Naturia Marron|True|False|False|False
+TagRecord|Naturia Pineapple|False|True|False|False
+TagRecord|Naturia Pumpkin|True|False|False|False
+TagRecord|Naturia Ragweed|False|False|False|True
+TagRecord|Naturia Rosewhip|True|False|False|False
+TagRecord|Naturia Strawberry|False|True|False|False
+TagRecord|Naturia Sunflower|True|False|False|False
+TagRecord|Naturia Tulip|False|False|False|True
+TagRecord|Naturia Vein|True|False|False|False
+TagRecord|Naturia White Oak|False|False|False|True
+TagRecord|Necro Fleur|False|False|False|True
+TagRecord|Neo-Spacian Glow Moss|False|True|False|False
+TagRecord|Neo-Spacian Twinkle Moss|False|False|False|True
+TagRecord|Nettles|True|False|False|False
+TagRecord|Number 50: Blackship of Corn|False|False|False|True
+TagRecord|Number 87: Queen of the Night|True|False|False|False
+TagRecord|Orea, the Sylvan High Arbiter|False|False|False|True
+TagRecord|Papa-Corn|False|False|False|True
+TagRecord|Performapal Ballad|False|False|False|True
+TagRecord|Performapal Barracuda|False|False|False|True
+TagRecord|Performapal Radish Horse|True|False|False|False
+TagRecord|Phoenixian Cluster Amaryllis|False|False|False|True
+TagRecord|Phoenixian Seed|False|False|False|True
+TagRecord|Pinecono|False|False|False|True
+TagRecord|Predaplant Banksiogre|False|True|False|False
+TagRecord|Predaplant Bufolicula|True|False|False|False
+TagRecord|Predaplant Byblisp|True|False|False|False
+TagRecord|Predaplant Chimerafflesia|False|False|False|True
+TagRecord|Predaplant Chlamydosundew|False|False|False|True
+TagRecord|Predaplant Cordyceps|True|False|False|False
+TagRecord|Predaplant Darlingtonia Cobra|True|False|False|False
+TagRecord|Predaplant Dragostapelia|False|True|False|False
+TagRecord|Predaplant Drosophyllum Hydra|True|False|False|False
+TagRecord|Predaplant Flytrap|False|True|False|False
+TagRecord|Predaplant Heliamphorhynchus|False|False|False|True
+TagRecord|Predaplant Moray Nepenthes|True|False|False|False
+TagRecord|Predaplant Ophrys Scorpio|False|False|False|True
+TagRecord|Predaplant Pterapenthes|False|False|False|True
+TagRecord|Predaplant Sarraceniant|False|False|False|True
+TagRecord|Predaplant Spider Orchid|False|False|False|True
+TagRecord|Predaplant Spinodionaea|False|False|False|True
+TagRecord|Predaplant Squid Drosera|True|False|False|False
+TagRecord|Predaplant Triantis|True|False|False|False
+TagRecord|Predaplant Triphyoverutum|False|False|False|True
+TagRecord|Prickle Fairy|True|False|False|False
+TagRecord|Pumpkin Carriage|False|False|False|True
+TagRecord|Puppet Plant|True|False|False|False
+TagRecord|Queen Angel of Roses|False|False|False|True
+TagRecord|Queen of Autumn Leaves|False|False|False|True
+TagRecord|Queen of Thorns|False|True|False|False
+TagRecord|Rafflesia Seduction|False|False|False|True
+TagRecord|Rainbow Flower|True|False|False|False
+TagRecord|Regenerating Rose|False|False|False|True
+TagRecord|Revival Rose|False|False|False|True
+TagRecord|Rigorous Reaver|True|False|False|False
+TagRecord|Rikka Petal|True|False|False|False
+TagRecord|Rikka Princess|True|False|False|False
+TagRecord|Rosaria, the Stately Fallen Angel|False|False|False|True
+TagRecord|Rose Fairy|False|True|False|False
+TagRecord|Rose Lover|True|False|False|False
+TagRecord|Rose Spectre of Dunn|True|False|False|False
+TagRecord|Rose Tentacles|True|False|False|False
+TagRecord|Rose Witch|False|True|False|False
+TagRecord|Sacred Tree Beast, Hyperyton|True|False|False|False
+TagRecord|Samsara Lotus|False|True|False|False
+TagRecord|Seed of Flame|False|True|False|False
+TagRecord|Snakeyashi|False|False|False|True
+TagRecord|Snapdragon|False|False|False|True
+TagRecord|Splendid Rose|False|False|False|True
+TagRecord|Spore|False|True|False|False
+TagRecord|Staysailor Romarin|True|False|False|False
+TagRecord|Sweet Corn|True|False|False|False
+TagRecord|Sylvan Bladefender|False|False|False|True
+TagRecord|Sylvan Cherubsprout|False|True|False|False
+TagRecord|Sylvan Flowerknight|False|False|False|True
+TagRecord|Sylvan Guardioak|True|False|False|False
+TagRecord|Sylvan Hermitree|False|False|False|True
+TagRecord|Sylvan Komushroomo|False|False|False|True
+TagRecord|Sylvan Lotuswain|True|False|False|False
+TagRecord|Sylvan Marshalleaf|False|False|False|True
+TagRecord|Sylvan Mikorange|False|False|False|True
+TagRecord|Sylvan Peaskeeper|False|False|False|True
+TagRecord|Sylvan Princessprite|False|False|False|True
+TagRecord|Sylvan Princessprout|False|False|False|True
+TagRecord|Sylvan Sagequoia|False|False|False|True
+TagRecord|Sylvan Snapdrassinagon|False|False|False|True
+TagRecord|Talaya, Princess of Cherry Blossoms|False|False|False|True
+TagRecord|Traptrix Cularia|True|False|False|False
+TagRecord|Traptrix Dionaea|True|False|False|False
+TagRecord|Traptrix Genlisea|True|False|False|False
+TagRecord|Traptrix Nepenthes|True|False|False|False
+TagRecord|Traptrix Pinguicula|True|False|False|False
+TagRecord|Traptrix Pudica|True|False|False|False
+TagRecord|Traptrix Rafflesia|True|False|False|False
+TagRecord|Traptrix Sera|True|False|False|False
+TagRecord|Traptrix Vesiculo|True|False|False|False
+TagRecord|Trent|True|False|False|False
+TagRecord|Tytannial, Princess of Camellias|False|True|False|False
+TagRecord|Vampiric Orchis|True|False|False|False
+TagRecord|Wall of Ivy|True|False|False|False
+TagRecord|Woodland Sprite|True|False|False|False
+TagRecord|World Carrotweight Champion|True|False|False|False
