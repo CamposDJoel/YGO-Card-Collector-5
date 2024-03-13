@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -223,6 +224,148 @@ namespace YGO_Card_Collector_5
                         Database.UpdateDeckSaveFile();
                     }                 
                 }
+            }
+        }
+        private void btnImport_Click(object sender, EventArgs e)
+        {
+            StringBuilder LogSB;
+            lblLogImport.Text = string.Empty;
+            string input = txtInputKonamiURL.Text;
+            if (input.StartsWith("http://www.db.yugioh-card.com/yugiohdb/member_deck.action?cgid="))
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
+
+                #region Step A: Start the Driver
+                btnBackToMainMenu.Visible = false;
+                panelNewDeck.Visible = false;
+                PanelDeckList.Visible = false;
+                btnImport.Visible = false;
+                lblImportOutputlabel.Visible = true;
+                PanelLogsImport.Visible = true;
+                LogSB = new StringBuilder();
+                LogIt("Opening URL and Verifying that is valid...");
+                Driver.ClearLogs();
+                var Masterwatch = new Stopwatch();
+                Masterwatch.Start();
+                Driver.OpenBrowser();
+                #endregion
+
+                #region Step B: Validate URL routes to a deck Page
+                Driver.GoToURL(input);
+
+                try
+                {
+                    KonamiDeckPage.WaitUntilPageIsLoaded();
+                }
+                catch(Exception)
+                {
+                    LogIt("Page from URL failed to load - Check if this is a valid DECK URL.");
+                    Masterwatch.Stop();
+                    Driver.WriteLogsFile();
+                    Driver.CloseDriver();
+                    SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+
+                    btnBackToMainMenu.Visible = true;
+                    panelNewDeck.Visible = true;
+                    PanelDeckList.Visible = true;
+                    btnImport.Visible = true;
+                    return;
+                }
+                #endregion
+
+                #region Step C: Extra Deck Data
+                string deckName = KonamiDeckPage.GetDeckName();
+                string deckDescription = KonamiDeckPage.GetDeckDescription();
+                List<string> mainDeckCardList = KonamiDeckPage.GetMainDeckCardList();
+                List<string> extraDeckCardList = KonamiDeckPage.GetExtraDeckCardList();
+                List<string> sideDeckCardList = KonamiDeckPage.GetSideDeckCardList();
+                LogIt(string.Format("Deck Name: {0}", deckName));
+                LogIt(string.Format("Description: {0}", deckDescription));
+                LogIt(string.Format("Main Deck Cards: {0}", mainDeckCardList.Count));
+                LogIt(string.Format("Extra Deck Cards: {0}", extraDeckCardList.Count));
+                LogIt(string.Format("Side Deck Cards: {0}", sideDeckCardList.Count));
+                #endregion
+
+                #region Step D: Build Deck
+                Deck newDeck = new Deck(deckName, deckDescription);
+
+                foreach (string card in mainDeckCardList)
+                {
+                    if(Database.MasterCardByName.ContainsKey(card))
+                    {
+                        //add it
+                        newDeck.AddMainDeckCard(card);
+                    }
+                    else
+                    {
+                        LogIt(string.Format("Card: {0} does not exists in the current DB.", card));
+                    }
+                }
+
+                foreach (string card in extraDeckCardList)
+                {
+                    if (Database.MasterCardByName.ContainsKey(card))
+                    {
+                        //add it
+                        newDeck.AddExtraDeckCard(card);
+                    }
+                    else
+                    {
+                        LogIt(string.Format("Card: {0} does not exists in the current DB.", card));
+                    }
+                }
+
+                foreach (string card in sideDeckCardList)
+                {
+                    if (Database.MasterCardByName.ContainsKey(card))
+                    {
+                        //add it
+                        newDeck.AddSideDeckCard(card);
+                    }
+                    else
+                    {
+                        LogIt(string.Format("Card: {0} does not exists in the current DB.", card));
+                    }
+                }
+
+                Database.Decks.Add(newDeck);
+                Database.UpdateDeckSaveFile();
+                #endregion
+
+                #region Step E: Finalinze Logs and Close the Driver
+                LogIt("Deck Imported Succesfully!");
+                LogIt("----------------------------------");
+                Masterwatch.Stop();
+                LogIt($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
+                Driver.WriteLogsFile();
+                Driver.CloseDriver();
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
+
+                btnBackToMainMenu.Visible = true;
+                panelNewDeck.Visible = true;
+                PanelDeckList.Visible = true;
+                btnImport.Visible = true;
+                #endregion
+
+                //Step F: Open the Deck Edit form
+                _CurrentDeckIndexSelected = Database.Decks.Count - 1;
+                Hide();
+                DeckBuilder DB = new DeckBuilder(_CurrentDeckIndexSelected, this);
+                DB.Show();
+            }
+            else
+            {
+                SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+                lblImporttxteror.Visible = true;
+                Tools.WaitNSeconds(2000);
+                lblImporttxteror.Visible = false;
+            }
+
+            void LogIt(string message)
+            {
+                LogSB.Insert(0, message + "\n");
+                Driver.AddToFullLog(message);
+                lblLogImport.Text = ">>" + LogSB.ToString();
             }
         }
     }

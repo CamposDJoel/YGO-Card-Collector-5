@@ -142,6 +142,7 @@
     <Compile Include="Forms\Launcher.Designer.cs">
       <DependentUpon>Launcher.cs</DependentUpon>
     </Compile>
+    <Compile Include="Seleniun Pages\KonamiDeckPage.cs" />
     <Compile Include="Seleniun Pages\KonamiSetCardListPage.cs" />
     <Compile Include="Seleniun Pages\KonamiSetPacksPage.cs" />
     <Compile Include="Utilities\SoundServer.cs" />

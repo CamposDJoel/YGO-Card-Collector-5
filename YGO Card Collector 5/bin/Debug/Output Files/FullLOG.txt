@@ -1,0 +1,8 @@
+Deck Name: GENF DivaHeroes
+Description: For Sep 2011 retro play
+Main Deck Cards: 40
+Extra Deck Cards: 15
+Side Deck Cards: 15
+Deck Imported Succesfully!
+----------------------------------
+Execution Time for the WHOLE script was: 00:00:20.8202746

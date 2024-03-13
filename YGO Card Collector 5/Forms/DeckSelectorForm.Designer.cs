@@ -33,6 +33,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEditDeck = new System.Windows.Forms.Button();
             this.GroupDeckInfo = new System.Windows.Forms.GroupBox();
+            this.lblError2 = new System.Windows.Forms.Label();
             this.btnSelectedUpdate = new System.Windows.Forms.Button();
             this.checkEnableEdit = new System.Windows.Forms.CheckBox();
             this.lblSelectedSideDeckCount = new System.Windows.Forms.Label();
@@ -48,7 +49,7 @@
             this.listDeckList = new System.Windows.Forms.ListBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelNewDeck = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
             this.txtNewDeckDescription = new System.Windows.Forms.TextBox();
@@ -56,10 +57,20 @@
             this.txtNewDeckName = new System.Windows.Forms.TextBox();
             this.btnCreate = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblError2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblImportOutputlabel = new System.Windows.Forms.Label();
+            this.PanelLogsImport = new System.Windows.Forms.Panel();
+            this.lblLogImport = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblImporttxteror = new System.Windows.Forms.Label();
+            this.txtInputKonamiURL = new System.Windows.Forms.TextBox();
+            this.btnImport = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.PanelDeckList.SuspendLayout();
             this.GroupDeckInfo.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panelNewDeck.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.PanelLogsImport.SuspendLayout();
             this.SuspendLayout();
             // 
             // PanelDeckList
@@ -71,7 +82,7 @@
             this.PanelDeckList.Controls.Add(this.GroupDeckInfo);
             this.PanelDeckList.Controls.Add(this.listDeckList);
             this.PanelDeckList.Controls.Add(this.label1);
-            this.PanelDeckList.Location = new System.Drawing.Point(318, 44);
+            this.PanelDeckList.Location = new System.Drawing.Point(290, 44);
             this.PanelDeckList.Name = "PanelDeckList";
             this.PanelDeckList.Size = new System.Drawing.Size(282, 411);
             this.PanelDeckList.TabIndex = 0;
@@ -126,6 +137,17 @@
             this.GroupDeckInfo.TabIndex = 2;
             this.GroupDeckInfo.TabStop = false;
             this.GroupDeckInfo.Text = "Deck Info";
+            // 
+            // lblError2
+            // 
+            this.lblError2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblError2.Location = new System.Drawing.Point(6, 102);
+            this.lblError2.Name = "lblError2";
+            this.lblError2.Size = new System.Drawing.Size(243, 23);
+            this.lblError2.TabIndex = 17;
+            this.lblError2.Text = "Name must contain ONLY Letters/Numbers";
+            this.lblError2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblError2.Visible = false;
             // 
             // btnSelectedUpdate
             // 
@@ -290,21 +312,21 @@
             this.btnBackToMainMenu.UseVisualStyleBackColor = false;
             this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
             // 
-            // panel1
+            // panelNewDeck
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.lblError);
-            this.panel1.Controls.Add(this.txtNewDeckDescription);
-            this.panel1.Controls.Add(this.lblNewDeckDescription);
-            this.panel1.Controls.Add(this.txtNewDeckName);
-            this.panel1.Controls.Add(this.btnCreate);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(12, 44);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(282, 300);
-            this.panel1.TabIndex = 264;
+            this.panelNewDeck.BackColor = System.Drawing.Color.Black;
+            this.panelNewDeck.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelNewDeck.Controls.Add(this.label3);
+            this.panelNewDeck.Controls.Add(this.lblError);
+            this.panelNewDeck.Controls.Add(this.txtNewDeckDescription);
+            this.panelNewDeck.Controls.Add(this.lblNewDeckDescription);
+            this.panelNewDeck.Controls.Add(this.txtNewDeckName);
+            this.panelNewDeck.Controls.Add(this.btnCreate);
+            this.panelNewDeck.Controls.Add(this.label2);
+            this.panelNewDeck.Location = new System.Drawing.Point(5, 44);
+            this.panelNewDeck.Name = "panelNewDeck";
+            this.panelNewDeck.Size = new System.Drawing.Size(282, 300);
+            this.panelNewDeck.TabIndex = 264;
             // 
             // label3
             // 
@@ -378,16 +400,106 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Create New Deck:";
             // 
-            // lblError2
+            // panel2
             // 
-            this.lblError2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblError2.Location = new System.Drawing.Point(6, 102);
-            this.lblError2.Name = "lblError2";
-            this.lblError2.Size = new System.Drawing.Size(243, 23);
-            this.lblError2.TabIndex = 17;
-            this.lblError2.Text = "Name must contain ONLY Letters/Numbers";
-            this.lblError2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblError2.Visible = false;
+            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.lblImportOutputlabel);
+            this.panel2.Controls.Add(this.PanelLogsImport);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.lblImporttxteror);
+            this.panel2.Controls.Add(this.txtInputKonamiURL);
+            this.panel2.Controls.Add(this.btnImport);
+            this.panel2.Controls.Add(this.label11);
+            this.panel2.Location = new System.Drawing.Point(575, 44);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(227, 411);
+            this.panel2.TabIndex = 265;
+            // 
+            // lblImportOutputlabel
+            // 
+            this.lblImportOutputlabel.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImportOutputlabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblImportOutputlabel.Location = new System.Drawing.Point(1, 178);
+            this.lblImportOutputlabel.Name = "lblImportOutputlabel";
+            this.lblImportOutputlabel.Size = new System.Drawing.Size(76, 17);
+            this.lblImportOutputlabel.TabIndex = 11;
+            this.lblImportOutputlabel.Text = "Output:";
+            this.lblImportOutputlabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblImportOutputlabel.Visible = false;
+            // 
+            // PanelLogsImport
+            // 
+            this.PanelLogsImport.AutoScroll = true;
+            this.PanelLogsImport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelLogsImport.Controls.Add(this.lblLogImport);
+            this.PanelLogsImport.Location = new System.Drawing.Point(3, 196);
+            this.PanelLogsImport.Name = "PanelLogsImport";
+            this.PanelLogsImport.Size = new System.Drawing.Size(219, 208);
+            this.PanelLogsImport.TabIndex = 10;
+            this.PanelLogsImport.Visible = false;
+            // 
+            // lblLogImport
+            // 
+            this.lblLogImport.AutoSize = true;
+            this.lblLogImport.ForeColor = System.Drawing.Color.Yellow;
+            this.lblLogImport.Location = new System.Drawing.Point(6, 6);
+            this.lblLogImport.Name = "lblLogImport";
+            this.lblLogImport.Size = new System.Drawing.Size(24, 13);
+            this.lblLogImport.TabIndex = 0;
+            this.lblLogImport.Text = "test";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Yellow;
+            this.label8.Location = new System.Drawing.Point(9, 61);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(61, 24);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "URL:";
+            // 
+            // lblImporttxteror
+            // 
+            this.lblImporttxteror.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImporttxteror.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblImporttxteror.Location = new System.Drawing.Point(17, 110);
+            this.lblImporttxteror.Name = "lblImporttxteror";
+            this.lblImporttxteror.Size = new System.Drawing.Size(191, 20);
+            this.lblImporttxteror.TabIndex = 8;
+            this.lblImporttxteror.Text = "Not a Konami Deck URL";
+            this.lblImporttxteror.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblImporttxteror.Visible = false;
+            // 
+            // txtInputKonamiURL
+            // 
+            this.txtInputKonamiURL.Location = new System.Drawing.Point(13, 88);
+            this.txtInputKonamiURL.Name = "txtInputKonamiURL";
+            this.txtInputKonamiURL.Size = new System.Drawing.Size(203, 20);
+            this.txtInputKonamiURL.TabIndex = 5;
+            // 
+            // btnImport
+            // 
+            this.btnImport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.btnImport.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImport.Location = new System.Drawing.Point(32, 133);
+            this.btnImport.Name = "btnImport";
+            this.btnImport.Size = new System.Drawing.Size(169, 42);
+            this.btnImport.TabIndex = 3;
+            this.btnImport.Text = "Import";
+            this.btnImport.UseVisualStyleBackColor = false;
+            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Yellow;
+            this.label11.Location = new System.Drawing.Point(9, 4);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(192, 51);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Import from Konami DB";
             // 
             // DeckSelectorForm
             // 
@@ -396,7 +508,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(804, 461);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panelNewDeck);
             this.Controls.Add(this.btnBackToMainMenu);
             this.Controls.Add(this.PanelDeckList);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -409,8 +522,12 @@
             this.PanelDeckList.PerformLayout();
             this.GroupDeckInfo.ResumeLayout(false);
             this.GroupDeckInfo.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.panelNewDeck.ResumeLayout(false);
+            this.panelNewDeck.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.PanelLogsImport.ResumeLayout(false);
+            this.PanelLogsImport.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -423,7 +540,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBackToMainMenu;
         private System.Windows.Forms.Button btnEditDeck;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelNewDeck;
         private System.Windows.Forms.TextBox txtNewDeckDescription;
         private System.Windows.Forms.Label lblNewDeckDescription;
         private System.Windows.Forms.TextBox txtNewDeckName;
@@ -445,5 +562,14 @@
         private System.Windows.Forms.CheckBox checkEnableEdit;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Label lblError2;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblImporttxteror;
+        private System.Windows.Forms.TextBox txtInputKonamiURL;
+        private System.Windows.Forms.Button btnImport;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label lblImportOutputlabel;
+        private System.Windows.Forms.Panel PanelLogsImport;
+        private System.Windows.Forms.Label lblLogImport;
     }
 }
