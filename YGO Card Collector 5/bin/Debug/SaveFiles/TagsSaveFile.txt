@@ -1,4 +1,4 @@
-4692
+4753
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -4691,3 +4691,64 @@ TagRecord|Yosenju Shinchu R|False|False|False|True
 TagRecord|Zefraath|False|True|False|False
 TagRecord|Muka Muka|True|False|False|False
 TagRecord|Power Giant|False|True|False|False
+TagRecord|Abyss Dweller|True|False|False|False
+TagRecord|Airorca|True|False|False|False
+TagRecord|Aqua Dragon|False|True|False|False
+TagRecord|Armed Sea Hunter|True|False|False|False
+TagRecord|Atlantean Attack Squad|True|False|False|False
+TagRecord|Atlantean Dragoons|False|True|False|False
+TagRecord|Atlantean Pikeman|True|False|False|False
+TagRecord|Bahamut Shark|True|False|False|False
+TagRecord|Blue Dragon Ninja|False|True|False|False
+TagRecord|Brionac, Dragon of the Ice Barrier|True|False|False|False
+TagRecord|Caravan of the Ice Barrier|False|True|False|False
+TagRecord|Codarus|True|False|False|False
+TagRecord|Danger! Ogopogo!|False|True|False|False
+TagRecord|Divine Dragon Aquabizarre|True|False|False|False
+TagRecord|Gemini Lancer|True|False|False|False
+TagRecord|Gishki Chain|False|True|False|False
+TagRecord|Gishki Diviner|False|True|False|False
+TagRecord|Gishki Shadow|False|True|False|False
+TagRecord|Gishki Vision|False|True|False|False
+TagRecord|Guardian Kay'est|True|False|False|False
+TagRecord|Guitar Gurnards Duonigis|True|False|False|False
+TagRecord|Hexa Spirit of the Ice Barrier|True|False|False|False
+TagRecord|Imairuka|False|True|False|False
+TagRecord|Kairyu-Shin|False|False|False|True
+TagRecord|Kaiser Sea Horse|True|False|False|False
+TagRecord|Kaiser Sea Snake|True|False|False|False
+TagRecord|Koa'ki Meiru Sea Panther|False|True|False|False
+TagRecord|Lappis Dragon|False|True|False|False
+TagRecord|Lavalval Chain|False|False|False|True
+TagRecord|Legendary Atlantean Tridon|False|True|False|False
+TagRecord|Levia-Dragon - Daedalus|True|False|False|False
+TagRecord|Lightray Daedalus|True|False|False|False
+TagRecord|Lost Blue Breaker|True|False|False|False
+TagRecord|Mermail Abyssalacia|False|False|False|True
+TagRecord|Mermail Abyssleed|False|True|False|False
+TagRecord|Mermail Abyssmegalo|False|False|False|True
+TagRecord|Mermail Abysstrite|False|False|False|True
+TagRecord|Moulinglacia the Elemental Lord|True|False|False|False
+TagRecord|Neptabyss, the Atlantean Prince|False|False|False|True
+TagRecord|Number 32: Shark Drake|False|False|False|True
+TagRecord|Number 37: Hope Woven Dragon Spider Shark|False|False|False|True
+TagRecord|Number 47: Nightmare Shark|False|False|False|True
+TagRecord|Number C32: Shark Drake Veiss|False|False|False|True
+TagRecord|Ocean Dragon Lord - Neo-Daedalus|True|False|False|False
+TagRecord|Orca Mega-Fortress of Darkness|False|False|True|False
+TagRecord|Sea Dragon Lord Gishilnodon|False|False|False|True
+TagRecord|Sea Dragoons of Draconia|False|True|False|False
+TagRecord|Sea Serpent Warrior of Darkness|True|False|False|False
+TagRecord|Skystarray|False|True|False|False
+TagRecord|Spearfish Soldier|False|True|False|False
+TagRecord|Spike Seadra|True|False|False|False
+TagRecord|Spined Gillman|False|True|False|False
+TagRecord|Spiral Serpent|True|False|False|False
+TagRecord|Subterror Behemoth Stygokraken|False|False|False|True
+TagRecord|T.G. Screw Serpent|False|True|False|False
+TagRecord|Takriminos|False|False|False|True
+TagRecord|The Dragon Dwelling in the Deep|False|True|False|False
+TagRecord|Tri-Edge Levia|False|False|False|True
+TagRecord|Water Dragon|False|True|False|False
+TagRecord|Water Dragon Cluster|True|False|False|False
+TagRecord|Xyz Slidolphin|False|True|False|False
