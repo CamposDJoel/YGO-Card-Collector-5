@@ -1,4 +1,4 @@
-4374
+4506
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -4373,3 +4373,135 @@ TagRecord|Volcanic Shell|False|True|False|False
 TagRecord|Volcanic Slicer|False|False|False|True
 TagRecord|Watch Dog|True|False|False|False
 TagRecord|Wings of Wicked Flame|False|False|False|True
+TagRecord|Alien Ammonite|True|False|False|False
+TagRecord|Alien Dog|False|True|False|False
+TagRecord|Alien Hunter|True|False|False|False
+TagRecord|Alien Hypno|False|True|False|False
+TagRecord|Alien Infiltrator|True|False|False|False
+TagRecord|Alien Kid|False|False|False|True
+TagRecord|Alien Mars|True|False|False|False
+TagRecord|Alien Mother|False|True|False|False
+TagRecord|Alien Overlord|False|True|False|False
+TagRecord|Alien Psychic|True|False|False|False
+TagRecord|Alien Shocktrooper|False|False|False|True
+TagRecord|Alien Skull|False|True|False|False
+TagRecord|Alien Telepath|False|False|False|True
+TagRecord|Alien Warrior|True|False|False|False
+TagRecord|Ancient Lizard Warrior|True|False|False|False
+TagRecord|Armored Lizard|True|False|False|False
+TagRecord|Balloon Lizard|True|False|False|False
+TagRecord|Bitelon|True|False|False|False
+TagRecord|Bravo, Fighter Fur Hire|False|True|False|False
+TagRecord|Cobra Jar|False|True|False|False
+TagRecord|Cobraman Sakuzy|False|True|False|False
+TagRecord|Cosmic Fortress Gol'gar|False|False|False|True
+TagRecord|Cosmic Horror Gangi'el|False|True|False|False
+TagRecord|Danger!? Tsuchinoko?|False|False|True|False
+TagRecord|Des Feral Imp|True|False|False|False
+TagRecord|Destruction Cyclone|True|False|False|False
+TagRecord|Divine Serpent Geh|False|True|False|False
+TagRecord|Don Turtle|True|False|False|False
+TagRecord|Drooling Lizard|True|False|False|False
+TagRecord|Earthbound Immortal Ccarayhua|False|False|False|True
+TagRecord|Evilswarm Azzathoth|False|True|False|False
+TagRecord|Evoltile Casinerio|False|True|False|False
+TagRecord|Evoltile Elginero|False|True|False|False
+TagRecord|Evoltile Gephyro|False|True|False|False
+TagRecord|Evoltile Lagosucho|False|True|False|False
+TagRecord|Evoltile Najasho|False|True|False|False
+TagRecord|Evoltile Odonto|True|False|False|False
+TagRecord|Evoltile Pleuro|True|False|False|False
+TagRecord|Evoltile Westlo|False|True|False|False
+TagRecord|Firestorm Prominence|False|True|False|False
+TagRecord|Gagagigo|True|False|False|False
+TagRecord|Gagagigo the Risen|False|True|False|False
+TagRecord|Gale Lizard|True|False|False|False
+TagRecord|Gentlemander|False|True|False|False
+TagRecord|Giga Gagagigo|True|False|False|False
+TagRecord|Gigobyte|False|False|False|True
+TagRecord|Gladiator Beast Secutor|True|False|False|False
+TagRecord|Granadora|True|False|False|False
+TagRecord|Hydra Viper|False|True|False|False
+TagRecord|Interplanetary Invader "A"|False|True|False|False
+TagRecord|Ipiria|False|True|False|False
+TagRecord|Iron Chain Snake|False|True|False|False
+TagRecord|Jar Turtle|False|True|False|False
+TagRecord|Kagetokage|False|True|False|False
+TagRecord|King of the Feral Imps|True|False|False|False
+TagRecord|Lightserpent|False|False|False|True
+TagRecord|Lion Alligator|False|True|False|False
+TagRecord|Loud Cloud the Storm Serpent|False|True|False|False
+TagRecord|Majioshaleon|False|False|False|True
+TagRecord|Masked Chameleon|False|False|False|True
+TagRecord|Night Sword Serpent|True|False|False|False
+TagRecord|Old Entity Hastorr|False|False|False|True
+TagRecord|Oshaleon|False|True|False|False
+TagRecord|Overlay Eater|True|False|False|False
+TagRecord|Performapal Bit Bite Turtle|True|False|False|False
+TagRecord|Performapal Bot-Eyes Lizard|True|False|False|False
+TagRecord|Performapal Lizardraw|False|False|False|True
+TagRecord|Performapal Partnaga|False|True|False|False
+TagRecord|Performapal Swincobra|False|False|False|True
+TagRecord|Performapal Whip Snake|False|True|False|False
+TagRecord|Puralis, the Purple Pyrotile|False|False|False|True
+TagRecord|Radiant Spirit|True|False|False|False
+TagRecord|Raging Earth|True|False|False|False
+TagRecord|Razor Lizard|True|False|False|False
+TagRecord|Reptilianne Coatl|True|False|False|False
+TagRecord|Reptilianne Gardna|False|False|False|True
+TagRecord|Reptilianne Gorgon|True|False|False|False
+TagRecord|Reptilianne Hydra|False|False|False|True
+TagRecord|Reptilianne Lamia|True|False|False|False
+TagRecord|Reptilianne Medusa|False|True|False|False
+TagRecord|Reptilianne Naga|False|True|False|False
+TagRecord|Reptilianne Scylla|False|True|False|False
+TagRecord|Reptilianne Servant|False|False|False|True
+TagRecord|Reptilianne Vaskii|False|False|False|True
+TagRecord|Reptilianne Viper|True|False|False|False
+TagRecord|Serpentine Princess|True|False|False|False
+TagRecord|Silent Abyss|False|True|False|False
+TagRecord|Sinister Serpent|False|False|False|True
+TagRecord|Skreech|False|False|False|True
+TagRecord|Spawn Alligator|False|False|False|True
+TagRecord|Subterror Behemoth Umastryx|False|False|False|True
+TagRecord|Terrene Toothed Tsuchinoko|False|True|False|False
+TagRecord|The Tyrant Neptune|False|False|False|True
+TagRecord|Toon Alligator|True|False|False|False
+TagRecord|Umbral Soul|False|True|False|False
+TagRecord|Vanguard of the Underground Emperor|True|False|False|False
+TagRecord|Vennominaga the Deity of Poisonous Snakes|False|False|False|True
+TagRecord|Vennominon the King of Poisonous Snakes|True|False|False|False
+TagRecord|Venom Boa|False|True|False|False
+TagRecord|Venom Cobra|False|False|False|True
+TagRecord|Venom Serpent|False|True|False|False
+TagRecord|Venom Snake|False|True|False|False
+TagRecord|Wicked Acolyte Chilam Sabak|False|True|False|False
+TagRecord|Worm Apocalypse|False|True|False|False
+TagRecord|Worm Barses|False|True|False|False
+TagRecord|Worm Cartaros|False|False|False|True
+TagRecord|Worm Dimikles|False|True|False|False
+TagRecord|Worm Drake|True|False|False|False
+TagRecord|Worm Erokin|False|False|False|True
+TagRecord|Worm Falco|False|False|False|True
+TagRecord|Worm Hope|False|False|False|True
+TagRecord|Worm Illidan|True|False|False|False
+TagRecord|Worm Jetelikpse|True|False|False|False
+TagRecord|Worm King|False|False|False|True
+TagRecord|Worm Linx|False|False|False|True
+TagRecord|Worm Millidith|False|False|False|True
+TagRecord|Worm Noble|False|False|False|True
+TagRecord|Worm Opera|False|False|False|True
+TagRecord|Worm Prince|False|False|False|True
+TagRecord|Worm Queen|False|False|False|True
+TagRecord|Worm Rakuyeh|False|False|False|True
+TagRecord|Worm Solid|False|False|False|True
+TagRecord|Worm Tentacles|False|False|False|True
+TagRecord|Worm Ugly|False|False|False|True
+TagRecord|Worm Victory|False|False|False|True
+TagRecord|Worm Warlord|False|False|False|True
+TagRecord|Worm Xex|False|False|False|True
+TagRecord|Worm Yagan|False|False|False|True
+TagRecord|Worm Zero|False|False|False|True
+TagRecord|X-Saber Palomuro|False|True|False|False
+TagRecord|Yajiro Invader|False|False|False|True
+TagRecord|Yamorimori|True|False|False|False
