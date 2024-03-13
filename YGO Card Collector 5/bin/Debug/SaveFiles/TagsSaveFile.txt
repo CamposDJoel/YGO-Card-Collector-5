@@ -1,4 +1,4 @@
-4506
+4692
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -4505,3 +4505,189 @@ TagRecord|Worm Zero|False|False|False|True
 TagRecord|X-Saber Palomuro|False|True|False|False
 TagRecord|Yajiro Invader|False|False|False|True
 TagRecord|Yamorimori|True|False|False|False
+TagRecord|Absorbing Jar|True|False|False|False
+TagRecord|Alpha The Electromagnet Warrior|False|False|False|True
+TagRecord|Alpha The Magnet Warrior|True|False|False|False
+TagRecord|Amano-Iwato|False|True|False|False
+TagRecord|Armor Exe|False|True|False|False
+TagRecord|Aroma Jar|True|False|False|False
+TagRecord|Avatar of The Pot|False|True|False|False
+TagRecord|Barrier Statue of the Drought|True|False|False|False
+TagRecord|Berserkion the Electromagna Warrior|False|False|False|True
+TagRecord|Beta The Electromagnet Warrior|False|False|False|True
+TagRecord|Beta The Magnet Warrior|False|True|False|False
+TagRecord|Big Piece Golem|True|False|False|False
+TagRecord|Block Dragon|False|True|False|False
+TagRecord|Block Golem|True|False|False|False
+TagRecord|Blockman|True|False|False|False
+TagRecord|Brilliant Rose|True|False|False|False
+TagRecord|Cairngorgon, Antiluminescent Knight|False|True|False|False
+TagRecord|Cartorhyn the Hidden Gem of the Seafront|True|False|False|False
+TagRecord|Castle Gate|False|True|False|False
+TagRecord|Charm of Shabti|True|False|False|False
+TagRecord|Chronomaly Aztec Mask Golem|False|True|False|False
+TagRecord|Chronomaly Cabrera Trebuchet|False|True|False|False
+TagRecord|Chronomaly Colossal Head|False|True|False|False
+TagRecord|Chronomaly Crystal Bones|False|True|False|False
+TagRecord|Chronomaly Crystal Skull|False|False|False|True
+TagRecord|Chronomaly Gordian Knot|False|True|False|False
+TagRecord|Chronomaly Moai|True|False|False|False
+TagRecord|Chronomaly Moai Carrier|False|True|False|False
+TagRecord|Chronomaly Mud Golem|False|True|False|False
+TagRecord|Chronomaly Sol Monolith|False|True|False|False
+TagRecord|Chronomaly Tula Guardian|False|True|False|False
+TagRecord|Chronomaly Winged Sphinx|False|True|False|False
+TagRecord|Chrysalis Mole|False|True|False|False
+TagRecord|Criosphinx|True|False|False|False
+TagRecord|Crystal Rose|False|False|False|True
+TagRecord|Cyber Jar|False|False|True|False
+TagRecord|Daigusto Emeral|False|True|False|False
+TagRecord|Delta The Magnet Warrior|False|True|False|False
+TagRecord|Destroyer Golem|True|False|False|False
+TagRecord|Dice Jar|True|False|False|False
+TagRecord|Dissolverock|True|False|False|False
+TagRecord|Dogu|False|True|False|False
+TagRecord|Doki Doki|True|False|False|False
+TagRecord|Dummy Golem|True|False|False|False
+TagRecord|Earth Effigy|True|False|False|False
+TagRecord|Earthquake Giant|False|True|False|False
+TagRecord|El Shaddoll Grysta|False|True|False|False
+TagRecord|Elephant Statue of Blessing|True|False|False|False
+TagRecord|Elephant Statue of Disaster|False|True|False|False
+TagRecord|Enraged Muka Muka|True|False|False|False
+TagRecord|Evilswarm Golem|False|True|False|False
+TagRecord|Evilswarm Heliotrope|True|False|False|False
+TagRecord|Exxod, Master of The Guard|True|False|False|False
+TagRecord|Fossil Dyna Pachycephalo|True|False|False|False
+TagRecord|Fossil Tusker|False|True|False|False
+TagRecord|Gachi Gachi Gantetsu|True|False|False|False
+TagRecord|Gaia Plate the Earth Giant|False|False|False|True
+TagRecord|Gamma The Electromagnet Warrior|False|False|False|True
+TagRecord|Gamma The Magnet Warrior|True|False|False|False
+TagRecord|Gate Blocker|True|False|False|False
+TagRecord|Gem-Armadillo|False|True|False|False
+TagRecord|Gem-Elephant|True|False|False|False
+TagRecord|Gem-Knight Alexandrite|False|False|False|True
+TagRecord|Gem-Knight Crystal|True|False|False|False
+TagRecord|Gem-Knight Emerald|False|True|False|False
+TagRecord|Gem-Knight Lady Brilliant Diamond|False|False|False|True
+TagRecord|Gem-Knight Lady Lapis Lazuli|False|False|False|True
+TagRecord|Gem-Knight Lapis|True|False|False|False
+TagRecord|Gem-Knight Lazuli|False|False|False|True
+TagRecord|Gem-Knight Master Diamond|False|False|False|True
+TagRecord|Gem-Knight Obsidian|True|False|False|False
+TagRecord|Gem-Knight Pearl|True|False|False|False
+TagRecord|Gem-Knight Phantom Quartz|True|False|False|False
+TagRecord|Gem-Knight Zirconia|False|True|False|False
+TagRecord|Gem-Turtle|True|False|False|False
+TagRecord|Genex Gaia|False|True|False|False
+TagRecord|Giant Soldier of Steel|False|False|False|True
+TagRecord|Giant Soldier of Stone|True|False|False|False
+TagRecord|Gigantes|True|False|False|False
+TagRecord|Giganticastle|False|True|False|False
+TagRecord|Gigastone Omega|False|True|False|False
+TagRecord|Gladiator Beast Hoplomus|False|True|False|False
+TagRecord|Goggle Golem|False|True|False|False
+TagRecord|Gogogo Aristera & Dexia|False|True|False|False
+TagRecord|Gogogo Giant|False|True|False|False
+TagRecord|Gogogo Gigas|False|True|False|False
+TagRecord|Gogogo Golem|True|False|False|False
+TagRecord|Gogogo Golem - Golden Form|True|False|False|False
+TagRecord|Gogogo Goram|False|True|False|False
+TagRecord|Golem Sentry|True|False|False|False
+TagRecord|Gonogo|False|True|False|False
+TagRecord|Gorgonic Cerberus|True|False|False|False
+TagRecord|Gorgonic Gargoyle|True|False|False|False
+TagRecord|Gorgonic Ghoul|False|True|False|False
+TagRecord|Gorgonic Golem|True|False|False|False
+TagRecord|Gorgonic Guardian|False|True|False|False
+TagRecord|Grandram|True|False|False|False
+TagRecord|Granmarg the Mega Monarch|False|False|False|True
+TagRecord|Granmarg the Rock Monarch|True|False|False|False
+TagRecord|Grave Ohja|False|True|False|False
+TagRecord|Great Spirit|True|False|False|False
+TagRecord|Guardian Sphinx|True|False|False|False
+TagRecord|Guardian Statue|True|False|False|False
+TagRecord|Haniwa|False|True|False|False
+TagRecord|Hieracosphinx|True|False|False|False
+TagRecord|Invoked Magellanica|False|True|False|False
+TagRecord|Ironhammer the Giant|False|True|False|False
+TagRecord|Kayenn, the Master Magma Blacksmith|False|True|False|False
+TagRecord|Koa'ki Meiru Boulder|True|False|False|False
+TagRecord|Koa'ki Meiru Guardian|True|False|False|False
+TagRecord|Koa'ki Meiru Overload|False|True|False|False
+TagRecord|Koa'ki Meiru Prototype|False|True|False|False
+TagRecord|Koa'ki Meiru Sandman|False|True|False|False
+TagRecord|Koa'ki Meiru Wall|False|True|False|False
+TagRecord|Labyrinth Wall|True|False|False|False
+TagRecord|Legendary Jujitsu Master|True|False|False|False
+TagRecord|Lost Guardian|False|True|False|False
+TagRecord|Magic Hole Golem|False|True|False|False
+TagRecord|Maharaghi|True|False|False|False
+TagRecord|Master Monk|False|True|False|False
+TagRecord|Medium Piece Golem|True|False|False|False
+TagRecord|Medusa Worm|False|True|False|False
+TagRecord|Megarock Dragon|True|False|False|False
+TagRecord|Millennium Golem|False|True|False|False
+TagRecord|Mine Golem|False|True|False|False
+TagRecord|Moai Interceptor Cannons|True|False|False|False
+TagRecord|Monk Fighter|True|False|False|False
+TagRecord|Morphing Jar|False|True|False|False
+TagRecord|Morphing Jar #2|False|True|False|False
+TagRecord|Multiple Piece Golem|False|False|False|True
+TagRecord|Mystical Sand|True|False|False|False
+TagRecord|Naturia Cliff|False|False|False|True
+TagRecord|Naturia Gaiastrio|False|True|False|False
+TagRecord|Naturia Landoise|True|False|False|False
+TagRecord|Naturia Rock|False|True|False|False
+TagRecord|Neo-Spacian Grand Mole|True|False|False|False
+TagRecord|Nibiru, the Primal Being|False|True|False|False
+TagRecord|Number 106: Giant Hand|True|False|False|False
+TagRecord|Number 51: Finisher the Strong Arm|False|False|False|True
+TagRecord|Number 52: Diamond Crab King|False|False|False|True
+TagRecord|Number 55: Gogogo Goliath|False|False|False|True
+TagRecord|Number 68: Sanaphond the Sky Prison|False|False|False|True
+TagRecord|Number C106: Giant Red Hand|False|True|False|False
+TagRecord|Obsidian Dragon|False|True|False|False
+TagRecord|Performapal Thunderhino|True|False|False|False
+TagRecord|Pot of The Forbidden|False|False|False|True
+TagRecord|Prank-Kids Rocksies|True|False|False|False
+TagRecord|Primineral Mandstrong|False|True|False|False
+TagRecord|Prisman|False|False|False|True
+TagRecord|Reverse Jar|True|False|False|False
+TagRecord|Revival Golem|False|True|False|False
+TagRecord|Rock Ogre Grotto #1|True|False|False|False
+TagRecord|Rocket Jumper|True|False|False|False
+TagRecord|Sand Moth|True|False|False|False
+TagRecord|Sand Stone|True|False|False|False
+TagRecord|Scrap Golem|False|False|False|True
+TagRecord|Seismic Crasher|False|True|False|False
+TagRecord|Sentry Soldier of Stone|True|False|False|False
+TagRecord|Shaddoll Zefracore|False|True|False|False
+TagRecord|Small Piece Golem|False|True|False|False
+TagRecord|Soul of Silvermountain|False|False|False|True
+TagRecord|Spherous Lady|True|False|False|False
+TagRecord|Stone Armadiller|False|False|False|True
+TagRecord|Stone Dragon|True|False|False|False
+TagRecord|Stone Ogre Grotto|True|False|False|False
+TagRecord|Stone Statue of the Aztecs|True|False|False|False
+TagRecord|Subterror Behemoth Stalagmo|False|False|False|True
+TagRecord|Tackle Crusader|True|False|False|False
+TagRecord|The Dark - Hex-Sealed Fusion|True|False|False|False
+TagRecord|The Despair Uranus|True|False|False|False
+TagRecord|The Earth - Hex-Sealed Fusion|True|False|False|False
+TagRecord|The Light - Hex-Sealed Fusion|True|False|False|False
+TagRecord|The Rock Spirit|True|False|False|False
+TagRecord|The Statue of Easter Island|False|True|False|False
+TagRecord|Totem Five|True|False|False|False
+TagRecord|Triamid Dancer|True|False|False|False
+TagRecord|Triamid Hunter|False|False|False|True
+TagRecord|Triamid Master|False|True|False|False
+TagRecord|Triamid Sphinx|False|False|False|True
+TagRecord|Valkyrion the Magna Warrior|False|True|False|False
+TagRecord|Weeping Idol|False|True|False|False
+TagRecord|Yosenju Shinchu L|False|False|False|True
+TagRecord|Yosenju Shinchu R|False|False|False|True
+TagRecord|Zefraath|False|True|False|False
+TagRecord|Muka Muka|True|False|False|False
+TagRecord|Power Giant|False|True|False|False
