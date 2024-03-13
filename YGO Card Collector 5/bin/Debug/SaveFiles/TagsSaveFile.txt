@@ -1,4 +1,4 @@
-4127
+4265
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -4126,3 +4126,141 @@ TagRecord|Vampiric Orchis|True|False|False|False
 TagRecord|Wall of Ivy|True|False|False|False
 TagRecord|Woodland Sprite|True|False|False|False
 TagRecord|World Carrotweight Champion|True|False|False|False
+TagRecord|Ariel, Priestess of the Nekroz|True|False|False|False
+TagRecord|Armored Axon Kicker|False|True|False|False
+TagRecord|Armored Kappa|False|True|False|False
+TagRecord|Caam, Serenity of Gusto|False|False|False|True
+TagRecord|Chosen by the World Chalice|False|True|False|False
+TagRecord|Chronomaly Crystal Chrononaut|False|False|False|True
+TagRecord|Crusadia Maximus|False|True|False|False
+TagRecord|D.D. Seeker|True|False|False|False
+TagRecord|D.D. Telepon|False|True|False|False
+TagRecord|Daigusto Eguls|False|False|False|True
+TagRecord|Daigusto Falcos|False|True|False|False
+TagRecord|Daigusto Gulldos|False|False|False|True
+TagRecord|Daigusto Laplampilica|True|False|False|False
+TagRecord|Daigusto Sphreez|False|False|False|True
+TagRecord|Destructotron|False|True|False|False
+TagRecord|Doctor Cranium|False|True|False|False
+TagRecord|Dr. Frankenderp|True|False|False|False
+TagRecord|El Shaddoll Wendigo|False|True|False|False
+TagRecord|Esper Girl|False|True|False|False
+TagRecord|Final Psychic Ogre|False|True|False|False
+TagRecord|Fullmetalfoes Alkahest|False|True|False|False
+TagRecord|Genetic Woman|False|False|False|True
+TagRecord|Genomix Fighter|True|False|False|False
+TagRecord|Ghost Fairy Elfobia|False|False|False|True
+TagRecord|Ghost Ogre & Snow Rabbit|True|False|False|False
+TagRecord|Grapple Blocker|False|True|False|False
+TagRecord|Heavymetalfoes Electrumite|False|False|False|True
+TagRecord|HTS Psyhemuth|False|True|False|False
+TagRecord|Hushed Psychic Cleric|False|True|False|False
+TagRecord|Hyper Psychic Blaster|False|True|False|False
+TagRecord|Hyper Psychic Blaster/Assault Mode|False|False|False|True
+TagRecord|Hyper Psychic Riser|False|True|False|False
+TagRecord|Hypnosister|False|False|False|True
+TagRecord|Impcantation Penciplume|True|False|False|False
+TagRecord|Kamui, Hope of Gusto|False|True|False|False
+TagRecord|Kozmo Farmgirl|False|False|False|True
+TagRecord|Kozmo Goodwitch|False|True|False|False
+TagRecord|Kozmo Scaredy Lion|False|False|True|False
+TagRecord|Kozmo Soartroopers|False|True|False|False
+TagRecord|Kozmo Strawman|False|False|False|True
+TagRecord|Kozmo Tincan|False|True|False|False
+TagRecord|Kozmoll Dark Lady|False|True|False|False
+TagRecord|Kozmoll Wickedwitch|False|True|False|False
+TagRecord|Krebons|True|False|False|False
+TagRecord|Lifeforce Harmonizer|False|False|False|True
+TagRecord|Magical Android|False|False|False|True
+TagRecord|Master Gig|False|False|False|True
+TagRecord|Mekk-Knight Avram|False|True|False|False
+TagRecord|Mekk-Knight Blue Sky|True|False|False|False
+TagRecord|Mekk-Knight Green Horizon|True|False|False|False
+TagRecord|Mekk-Knight Indigo Eclipse|False|False|False|True
+TagRecord|Mekk-Knight Orange Sunset|False|False|False|True
+TagRecord|Mekk-Knight Purple Nightfall|True|False|False|False
+TagRecord|Mekk-Knight Red Moon|True|False|False|False
+TagRecord|Mekk-Knight Yellow Star|True|False|False|False
+TagRecord|Mental Seeker|False|False|False|True
+TagRecord|Metalfoes Adamante|False|True|False|False
+TagRecord|Metalfoes Crimsonite|False|True|False|False
+TagRecord|Metalfoes Goldriver|False|True|False|False
+TagRecord|Metalfoes Mithrilium|False|False|False|True
+TagRecord|Metalfoes Orichalc|False|True|False|False
+TagRecord|Metalfoes Silverd|False|False|False|True
+TagRecord|Metalfoes Steelen|False|False|False|True
+TagRecord|Metalfoes Volflame|False|True|False|False
+TagRecord|Mind Master|False|False|False|True
+TagRecord|Mind Protector|True|False|False|False
+TagRecord|Musto, Oracle of Gusto|False|False|False|True
+TagRecord|Naelshaddoll Ariel|True|False|False|False
+TagRecord|Number 18: Heraldry Patriarch|False|False|False|True
+TagRecord|Number 26: Spaceway Octobypass|False|False|False|True
+TagRecord|Number 69: Heraldry Crest|False|False|False|True
+TagRecord|Number 74: Master of Blades|True|False|False|False
+TagRecord|Number 8: Heraldic King Genom-Heritage|False|False|False|True
+TagRecord|Number 89: Diablosis the Mind Hacker|False|False|False|True
+TagRecord|Number C69: Heraldry Crest of Horror|False|False|False|True
+TagRecord|Overdrive Teleporter|False|False|False|True
+TagRecord|Overmind Archfiend|False|False|False|True
+TagRecord|Pandaborg|False|False|False|True
+TagRecord|Parametalfoes Melcaster|True|False|False|False
+TagRecord|Pilica, Descendant of Gusto|False|False|False|True
+TagRecord|Power Injector|False|True|False|False
+TagRecord|Propa Gandake|True|False|False|False
+TagRecord|Psi-Beast|False|False|True|False
+TagRecord|Psi-Blocker|False|False|False|True
+TagRecord|Psi-Reflector|False|False|True|False
+TagRecord|Psychic Ace|False|True|False|False
+TagRecord|Psychic Commander|False|False|False|True
+TagRecord|Psychic Emperor|False|False|False|True
+TagRecord|Psychic Jumper|True|False|False|False
+TagRecord|Psychic Lifetrancer|False|False|False|True
+TagRecord|Psychic Nightmare|False|False|False|True
+TagRecord|Psychic Snail|False|False|False|True
+TagRecord|Psychic Tracker|False|False|True|False
+TagRecord|Psychic Wheeleder|False|False|False|True
+TagRecord|PSY-Frame Driver|True|False|False|False
+TagRecord|PSY-Frame Multi-Threader|True|False|False|False
+TagRecord|PSY-Framegear Alpha|False|False|False|True
+TagRecord|PSY-Framegear Beta|False|False|False|True
+TagRecord|PSY-Framegear Delta|False|False|False|True
+TagRecord|PSY-Framegear Epsilon|False|True|False|False
+TagRecord|PSY-Framegear Gamma|False|False|False|True
+TagRecord|PSY-Framelord Lambda|False|False|False|True
+TagRecord|PSY-Framelord Omega|False|True|False|False
+TagRecord|PSY-Framelord Zeta|False|False|False|True
+TagRecord|Raremetalfoes Bismugear|True|False|False|False
+TagRecord|Re-Cover|True|False|False|False
+TagRecord|Reeshaddoll Wendi|True|False|False|False
+TagRecord|Reeze, Whirlwind of Gusto|False|False|False|True
+TagRecord|Reinforced Human Psychic Borg|False|False|False|True
+TagRecord|Risebell the Star Adjuster|False|False|True|False
+TagRecord|Risebell the Star Psycher|True|False|False|False
+TagRecord|Risebell the Summoner|False|True|False|False
+TagRecord|Ritual Beast Tamer Elder|False|False|False|True
+TagRecord|Ritual Beast Tamer Lara|False|False|False|True
+TagRecord|Ritual Beast Tamer Wen|False|False|False|True
+TagRecord|Ritual Beast Tamer Zeframpilica|True|False|False|False
+TagRecord|Ritual Beast Tamer Zefrawendi|False|False|False|True
+TagRecord|Ritual Beast Ulti-Gaiapelio|False|False|False|True
+TagRecord|Ritual Beast Ulti-Kimunfalcos|False|False|False|True
+TagRecord|Serene Psychic Witch|False|False|False|True
+TagRecord|S-Force Professor DiGamma|True|False|False|False
+TagRecord|Silent Psychic Wizard|False|True|False|False
+TagRecord|Space-Time Police|False|False|False|True
+TagRecord|Spiritual Beast Tamer Winda|False|True|False|False
+TagRecord|Storm Caller|False|False|False|True
+TagRecord|Super Quantum Blue Layer|False|False|False|True
+TagRecord|Telekinetic Shocker|False|True|False|False
+TagRecord|Thought Ruler Archfiend|True|False|False|False
+TagRecord|Time Thief Redoer|False|False|False|True
+TagRecord|Time Thief Winder|False|False|False|True
+TagRecord|Trancefamiliar|False|True|False|False
+TagRecord|Ultimate Axon Kicker|False|False|False|True
+TagRecord|Wattkinetic Puppeteer|False|False|False|True
+TagRecord|Wattsychic Fighter|False|False|False|True
+TagRecord|Winda, Priestess of Gusto|False|False|False|True
+TagRecord|Windaar, Sage of Gusto|False|False|False|True
+TagRecord|Wind-Up Juggler|False|False|False|True
+TagRecord|Time Escaper|False|True|False|False
