@@ -9175,23 +9175,23 @@ DLCS-EN144|Secret Rare|Awakening of the Possessed - Rasenryu|DRAGONS OF LEGEND: 
 DLCS-EN148|Secret Rare|Cyber Slash Harpie Lady|DRAGONS OF LEGEND: THE COMPLETE SERIES
 DLCS-EN149|Secret Rare|Jinzo - Layered|DRAGONS OF LEGEND: THE COMPLETE SERIES
 MAGO-EN100|Gold Rare|Buster Blader, the Destruction Swordmaster|Gold Series: Maximum Gold
-MAGO-EN004|Ultra Rare (Pharaoh's Rare)|Elemental HERO Stratos|Gold Series: Maximum Gold
-MAGO-EN005|Ultra Rare (Pharaoh's Rare)|Infernity Mirage|Gold Series: Maximum Gold
-MAGO-EN007|Ultra Rare (Pharaoh's Rare)|Tour Guide From the Underworld|Gold Series: Maximum Gold
-MAGO-EN009|Ultra Rare (Pharaoh's Rare)|Ghost Ogre & Snow Rabbit|Gold Series: Maximum Gold
-MAGO-EN013|Ultra Rare (Pharaoh's Rare)|Ghost Sister & Spooky Dogwood|Gold Series: Maximum Gold
-MAGO-EN014|Ultra Rare (Pharaoh's Rare)|Kozmo Dark Destroyer|Gold Series: Maximum Gold
-MAGO-EN023|Ultra Rare (Pharaoh's Rare)|Parlor Dragonmaid|Gold Series: Maximum Gold
-MAGO-EN028|Ultra Rare (Pharaoh's Rare)|Herald of the Arc Light|Gold Series: Maximum Gold
-MAGO-EN030|Ultra Rare (Pharaoh's Rare)|Martial Metal Marcher|Gold Series: Maximum Gold
-MAGO-EN031|Ultra Rare (Pharaoh's Rare)|Constellar Pleiades|Gold Series: Maximum Gold
-MAGO-EN032|Ultra Rare (Pharaoh's Rare)|Dark Rebellion Xyz Dragon|Gold Series: Maximum Gold
-MAGO-EN034|Ultra Rare (Pharaoh's Rare)|Number S39: Utopia the Lightning|Gold Series: Maximum Gold
-MAGO-EN035|Ultra Rare (Pharaoh's Rare)|Beatrice, Lady of the Eternal|Gold Series: Maximum Gold
-MAGO-EN040|Ultra Rare (Pharaoh's Rare)|The Phantom Knights of Rusty Bardiche|Gold Series: Maximum Gold
-MAGO-EN042|Ultra Rare (Pharaoh's Rare)|Harpie's Feather Duster|Gold Series: Maximum Gold
-MAGO-EN043|Ultra Rare (Pharaoh's Rare)|Anti-Magic Arrows|Gold Series: Maximum Gold
-MAGO-EN051|Ultra Rare (Pharaoh's Rare)|Solemn Judgment|Gold Series: Maximum Gold
+MAGO-EN004|Premium Gold Rare|Elemental HERO Stratos|Gold Series: Maximum Gold
+MAGO-EN005|Premium Gold Rare|Infernity Mirage|Gold Series: Maximum Gold
+MAGO-EN007|Premium Gold Rare|Tour Guide From the Underworld|Gold Series: Maximum Gold
+MAGO-EN009|Premium Gold Rare|Ghost Ogre & Snow Rabbit|Gold Series: Maximum Gold
+MAGO-EN013|Premium Gold Rare|Ghost Sister & Spooky Dogwood|Gold Series: Maximum Gold
+MAGO-EN014|Premium Gold Rare|Kozmo Dark Destroyer|Gold Series: Maximum Gold
+MAGO-EN023|Premium Gold Rare|Parlor Dragonmaid|Gold Series: Maximum Gold
+MAGO-EN028|Premium Gold Rare|Herald of the Arc Light|Gold Series: Maximum Gold
+MAGO-EN030|Premium Gold Rare|Martial Metal Marcher|Gold Series: Maximum Gold
+MAGO-EN031|Premium Gold Rare|Constellar Pleiades|Gold Series: Maximum Gold
+MAGO-EN032|Premium Gold Rare|Dark Rebellion Xyz Dragon|Gold Series: Maximum Gold
+MAGO-EN034|Premium Gold Rare|Number S39: Utopia the Lightning|Gold Series: Maximum Gold
+MAGO-EN035|Premium Gold Rare|Beatrice, Lady of the Eternal|Gold Series: Maximum Gold
+MAGO-EN040|Premium Gold Rare|The Phantom Knights of Rusty Bardiche|Gold Series: Maximum Gold
+MAGO-EN042|Premium Gold Rare|Harpie's Feather Duster|Gold Series: Maximum Gold
+MAGO-EN043|Premium Gold Rare|Anti-Magic Arrows|Gold Series: Maximum Gold
+MAGO-EN051|Premium Gold Rare|Solemn Judgment|Gold Series: Maximum Gold
 MAGO-EN053|Gold Rare|Foolish Burial|Gold Series: Maximum Gold
 MAGO-EN056|Gold Rare|Number 15: Gimmick Puppet Giant Grinder|Gold Series: Maximum Gold
 MAGO-EN058|Gold Rare|Number 74: Master of Blades|Gold Series: Maximum Gold
@@ -9287,27 +9287,27 @@ LDS2-EN123|Common|Number 81: Superdreadnought Rail Cannon Super Dora|LEGENDARY D
 LDS2-EN126|Common|Barrage Blast|LEGENDARY DUELISTS: SEASON 2
 LDS2-EN131|Common|Lunalight Serenade Dance|LEGENDARY DUELISTS: SEASON 2
 LED8-EN032|Rare|Chevalier de Fleur|LEGENDARY DUELISTS: SYNCHRO STORM
-MGED-EN004|Ultra Rare (Pharaoh's Rare)|Elemental HERO Neos|MAXIMUM GOLD: EL DORADO
-MGED-EN006|Ultra Rare (Pharaoh's Rare)|Rescue Cat|MAXIMUM GOLD: EL DORADO
-MGED-EN008|Ultra Rare (Pharaoh's Rare)|Fossil Dyna Pachycephalo|MAXIMUM GOLD: EL DORADO
-MGED-EN013|Ultra Rare (Pharaoh's Rare)|Familiar-Possessed - Lyna|MAXIMUM GOLD: EL DORADO
-MGED-EN017|Ultra Rare (Pharaoh's Rare)|Sky Striker Ace - Raye|MAXIMUM GOLD: EL DORADO
-MGED-EN018|Ultra Rare (Pharaoh's Rare)|Danger! Bigfoot!|MAXIMUM GOLD: EL DORADO
-MGED-EN019|Ultra Rare (Pharaoh's Rare)|Danger! Nessie!|MAXIMUM GOLD: EL DORADO
-MGED-EN020|Ultra Rare (Pharaoh's Rare)|Rokket Tracer|MAXIMUM GOLD: EL DORADO
-MGED-EN021|Ultra Rare (Pharaoh's Rare)|Sky Striker Ace - Roze|MAXIMUM GOLD: EL DORADO
-MGED-EN023|Ultra Rare (Pharaoh's Rare)|Ghost Mourner & Moonlit Chill|MAXIMUM GOLD: EL DORADO
-MGED-EN025|Ultra Rare (Pharaoh's Rare)|Invoked Mechaba|MAXIMUM GOLD: EL DORADO
-MGED-EN028|Ultra Rare (Pharaoh's Rare)|Evolzar Laggia|MAXIMUM GOLD: EL DORADO
-MGED-EN029|Ultra Rare (Pharaoh's Rare)|Evolzar Dolkka|MAXIMUM GOLD: EL DORADO
-MGED-EN031|Ultra Rare (Pharaoh's Rare)|Number C1000: Numerounius|MAXIMUM GOLD: EL DORADO
+MGED-EN004|Premium Gold Rare|Elemental HERO Neos|MAXIMUM GOLD: EL DORADO
+MGED-EN006|Premium Gold Rare|Rescue Cat|MAXIMUM GOLD: EL DORADO
+MGED-EN008|Premium Gold Rare|Fossil Dyna Pachycephalo|MAXIMUM GOLD: EL DORADO
+MGED-EN013|Premium Gold Rare|Familiar-Possessed - Lyna|MAXIMUM GOLD: EL DORADO
+MGED-EN017|Premium Gold Rare|Sky Striker Ace - Raye|MAXIMUM GOLD: EL DORADO
+MGED-EN018|Premium Gold Rare|Danger! Bigfoot!|MAXIMUM GOLD: EL DORADO
+MGED-EN019|Premium Gold Rare|Danger! Nessie!|MAXIMUM GOLD: EL DORADO
+MGED-EN020|Premium Gold Rare|Rokket Tracer|MAXIMUM GOLD: EL DORADO
+MGED-EN021|Premium Gold Rare|Sky Striker Ace - Roze|MAXIMUM GOLD: EL DORADO
+MGED-EN023|Premium Gold Rare|Ghost Mourner & Moonlit Chill|MAXIMUM GOLD: EL DORADO
+MGED-EN025|Premium Gold Rare|Invoked Mechaba|MAXIMUM GOLD: EL DORADO
+MGED-EN028|Premium Gold Rare|Evolzar Laggia|MAXIMUM GOLD: EL DORADO
+MGED-EN029|Premium Gold Rare|Evolzar Dolkka|MAXIMUM GOLD: EL DORADO
+MGED-EN031|Premium Gold Rare|Number C1000: Numerounius|MAXIMUM GOLD: EL DORADO
 MGED-EN037|Premium Gold Rare|Accesscode Talker|MAXIMUM GOLD: EL DORADO
-MGED-EN042|Ultra Rare (Pharaoh's Rare)|Fire Formation - Tenki|MAXIMUM GOLD: EL DORADO
-MGED-EN048|Ultra Rare (Pharaoh's Rare)|Cursed Eldland|MAXIMUM GOLD: EL DORADO
-MGED-EN049|Ultra Rare (Pharaoh's Rare)|Eldlixir of Black Awakening|MAXIMUM GOLD: EL DORADO
-MGED-EN050|Ultra Rare (Pharaoh's Rare)|Numeron Chaos Ritual|MAXIMUM GOLD: EL DORADO
-MGED-EN053|Ultra Rare (Pharaoh's Rare)|Starlight Road|MAXIMUM GOLD: EL DORADO
-MGED-EN054|Ultra Rare (Pharaoh's Rare)|Conquistador of the Golden Land|MAXIMUM GOLD: EL DORADO
+MGED-EN042|Premium Gold Rare|Fire Formation - Tenki|MAXIMUM GOLD: EL DORADO
+MGED-EN048|Premium Gold Rare|Cursed Eldland|MAXIMUM GOLD: EL DORADO
+MGED-EN049|Premium Gold Rare|Eldlixir of Black Awakening|MAXIMUM GOLD: EL DORADO
+MGED-EN050|Premium Gold Rare|Numeron Chaos Ritual|MAXIMUM GOLD: EL DORADO
+MGED-EN053|Premium Gold Rare|Starlight Road|MAXIMUM GOLD: EL DORADO
+MGED-EN054|Premium Gold Rare|Conquistador of the Golden Land|MAXIMUM GOLD: EL DORADO
 MGED-EN057|Gold Rare|Fossil Dig|MAXIMUM GOLD: EL DORADO
 MGED-EN060|Gold Rare|Scrap Dragon|MAXIMUM GOLD: EL DORADO
 MGED-EN061|Gold Rare|Scrap Wyvern|MAXIMUM GOLD: EL DORADO
