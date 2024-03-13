@@ -1,4 +1,4 @@
-4265
+4374
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -4264,3 +4264,112 @@ TagRecord|Winda, Priestess of Gusto|False|False|False|True
 TagRecord|Windaar, Sage of Gusto|False|False|False|True
 TagRecord|Wind-Up Juggler|False|False|False|True
 TagRecord|Time Escaper|False|True|False|False
+TagRecord|Ancient Flamvell Deity|False|True|False|False
+TagRecord|Awakening of the Possessed - Greater Inari Fire|True|False|False|False
+TagRecord|Barrier Statue of the Inferno|False|True|False|False
+TagRecord|Berlineth the Firestorm Vassal|True|False|False|False
+TagRecord|Blaze Fenix, the Burning Bombardment Bird|False|True|False|False
+TagRecord|Blazing Inpachi|True|False|False|False
+TagRecord|Burning Algae|True|False|False|False
+TagRecord|Burning Beast|True|False|False|False
+TagRecord|Charcoal Inpachi|True|False|False|False
+TagRecord|Charubin the Fire Knight|True|False|False|False
+TagRecord|Daigusto Phoenix|False|False|False|True
+TagRecord|Darkfire Soldier #1|True|False|False|False
+TagRecord|Darkfire Soldier #2|True|False|False|False
+TagRecord|Dragon Piper|True|False|False|False
+TagRecord|Elemental HERO Heat|True|False|False|False
+TagRecord|Elemental HERO Inferno|False|True|False|False
+TagRecord|Elemental HERO Lady Heat|True|False|False|False
+TagRecord|Evilswarm Obliviwisp|False|True|False|False
+TagRecord|Evilswarm O'lantern|False|True|False|False
+TagRecord|Fire Hand|True|False|False|False
+TagRecord|Fire Princess|False|True|False|False
+TagRecord|Fireyarou|True|False|False|False
+TagRecord|Flame Cerebrus|True|False|False|False
+TagRecord|Flame Champion|True|False|False|False
+TagRecord|Flame Dancer|True|False|False|False
+TagRecord|Flame Ruler|True|False|False|False
+TagRecord|Flame Spirit Ignis|False|True|False|False
+TagRecord|Flame Viper|False|True|False|False
+TagRecord|Flamvell Archer|False|True|False|False
+TagRecord|Flamvell Baby|False|True|False|False
+TagRecord|Flamvell Commando|False|True|False|False
+TagRecord|Flamvell Poun|True|False|False|False
+TagRecord|Flamvell Uruquizas|True|False|False|False
+TagRecord|Fox Fire|True|False|False|False
+TagRecord|Gaia Soul the Combustible Collective|True|False|False|False
+TagRecord|Gem-Knight Citrine|False|True|False|False
+TagRecord|Gem-Knight Garnet|True|False|False|False
+TagRecord|Gem-Knight Ruby|True|False|False|False
+TagRecord|Gem-Knight Sardonyx|False|True|False|False
+TagRecord|Genex Furnace|False|True|False|False
+TagRecord|Guardian Ceal|False|False|False|True
+TagRecord|Gundari|False|True|False|False
+TagRecord|Hazy Flame Basiltrice|False|True|False|False
+TagRecord|Hazy Flame Peryton|False|True|False|False
+TagRecord|Helios - The Primordial Sun|True|False|False|False
+TagRecord|Helios Duo Megistus|False|True|False|False
+TagRecord|Helios Trice Megistus|True|False|False|False
+TagRecord|Hino-Kagu-Tsuchi|False|True|False|False
+TagRecord|Hinotama Soul|True|False|False|False
+TagRecord|Impcantation Candoll|False|False|False|True
+TagRecord|Infernal Flame Emperor|True|False|False|False
+TagRecord|Infernal Flame Vixen|False|True|False|False
+TagRecord|Inferno|True|False|False|False
+TagRecord|Invasion of Flames|True|False|False|False
+TagRecord|Jigen Bakudan|True|False|False|False
+TagRecord|King Pyron|False|True|False|False
+TagRecord|Lady Assailant of Flames|True|False|False|False
+TagRecord|Laval Burner|False|True|False|False
+TagRecord|Laval Coatl|False|True|False|False
+TagRecord|Laval Forest Sprite|False|True|False|False
+TagRecord|Laval Lakeside Lady|False|False|False|True
+TagRecord|Laval Magma Cannoneer|False|True|False|False
+TagRecord|Laval Miller|False|True|False|False
+TagRecord|Laval Phlogis|False|True|False|False
+TagRecord|Laval Stennon|False|False|False|True
+TagRecord|Laval Volcano Handmaiden|False|False|False|True
+TagRecord|Master Craftsman Gamil|False|True|False|False
+TagRecord|Molten Behemoth|False|True|False|False
+TagRecord|Molten Zombie|True|False|False|False
+TagRecord|Morphtronic Datatron|True|False|False|False
+TagRecord|Mr. Volcano|True|False|False|False
+TagRecord|Neo Flamvell Garuda|True|False|False|False
+TagRecord|Neo Flamvell Hedgehog|False|True|False|False
+TagRecord|Neo Flamvell Lady|False|True|False|False
+TagRecord|Neo Flamvell Origin|False|True|False|False
+TagRecord|Neo Flamvell Shaman|False|True|False|False
+TagRecord|Number 58: Burner Visor|False|True|False|False
+TagRecord|Old Entity Cthugua|False|True|False|False
+TagRecord|People Running About|True|False|False|False
+TagRecord|Prank-Kids Bow-Wow-Bark|True|False|False|False
+TagRecord|Prank-Kids Lampsies|False|False|False|True
+TagRecord|Prank-Kids Rocket Ride|True|False|False|False
+TagRecord|Prominence Hand|True|False|False|False
+TagRecord|Pyrotech Mech - Shiryu|False|True|False|False
+TagRecord|Raging Flame Sprite|True|False|False|False
+TagRecord|R-Genex Magma|False|False|False|True
+TagRecord|Ritual Beast Ulti-Apelio|False|False|False|True
+TagRecord|Royal Firestorm Guards|True|False|False|False
+TagRecord|Solar Flare Dragon|True|False|False|False
+TagRecord|Spirit of Flames|True|False|False|False
+TagRecord|Spiritual Beast Apelio|False|False|False|True
+TagRecord|Star Mine|True|False|False|False
+TagRecord|Subterror Behemoth Ultramafus|False|False|False|True
+TagRecord|Tenkabito Shien|True|False|False|False
+TagRecord|The Blazing Mars|True|False|False|False
+TagRecord|The Thing in the Crater|True|False|False|False
+TagRecord|Thestalos the Mega Monarch|False|False|False|True
+TagRecord|Twin-Headed Fire Dragon|True|False|False|False
+TagRecord|Vermillion Sparrow|False|False|False|True
+TagRecord|Volcanic Blaster|True|False|False|False
+TagRecord|Volcanic Doomfire|True|False|False|False
+TagRecord|Volcanic Hammerer|False|True|False|False
+TagRecord|Volcanic Queen|False|True|False|False
+TagRecord|Volcanic Rat|False|True|False|False
+TagRecord|Volcanic Scattershot|False|True|False|False
+TagRecord|Volcanic Shell|False|True|False|False
+TagRecord|Volcanic Slicer|False|False|False|True
+TagRecord|Watch Dog|True|False|False|False
+TagRecord|Wings of Wicked Flame|False|False|False|True
