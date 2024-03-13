@@ -1,4 +1,4 @@
-3210
+3946
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -3209,3 +3209,739 @@ TagRecord|X-Krawler Synaphysis|False|True|False|False
 TagRecord|XX-Saber Emmersblade|False|True|False|False
 TagRecord|Danger! Mothman!|False|False|True|False
 TagRecord|Agnimal Candle|True|False|False|True
+TagRecord|ABC-Dragon Buster|False|True|False|False
+TagRecord|Accel Synchron|False|True|False|False
+TagRecord|Acrobat Monkey|True|False|False|False
+TagRecord|Adhesive Explosive|False|True|False|False
+TagRecord|Aegaion the Sea Castrum|True|False|False|False
+TagRecord|Ally Mind|False|True|False|False
+TagRecord|Ally of Justice Catastor|False|True|False|False
+TagRecord|Ally of Justice Clausolas|False|True|False|False
+TagRecord|Ally of Justice Core Destroyer|False|True|False|False
+TagRecord|Ally of Justice Cosmic Gateway|False|True|False|False
+TagRecord|Ally of Justice Cycle Reader|False|True|False|False
+TagRecord|Ally of Justice Cyclone Creator|False|True|False|False
+TagRecord|Ally of Justice Decisive Armor|True|False|False|False
+TagRecord|Ally of Justice Enemy Catcher|False|True|False|False
+TagRecord|Ally of Justice Field Marshal|False|True|False|False
+TagRecord|Ally of Justice Garadholg|False|True|False|False
+TagRecord|Ally of Justice Light Gazer|False|True|False|False
+TagRecord|Ally of Justice Nullfier|False|True|False|False
+TagRecord|Ally of Justice Omni-Weapon|False|True|False|False
+TagRecord|Ally of Justice Quarantine|False|True|False|False
+TagRecord|Ally of Justice Reverse Break|False|True|False|False
+TagRecord|Ally of Justice Rudra|False|True|False|False
+TagRecord|Ally of Justice Searcher|False|True|False|False
+TagRecord|Ally of Justice Thousand Arms|False|True|False|False
+TagRecord|Ally of Justice Thunder Armor|False|True|False|False
+TagRecord|Ally of Justice Unknown Crusher|True|False|False|False
+TagRecord|Ally of Justice Unlimiter|False|True|False|False
+TagRecord|Ally Salvo|False|True|False|False
+TagRecord|Ambulance Rescueroid|False|True|False|False
+TagRecord|Ambulanceroid|False|True|False|False
+TagRecord|Amphibious Bugroth MK-11|True|False|False|False
+TagRecord|Amphibious Bugroth MK-3|True|False|False|False
+TagRecord|Amphibious Swarmship Amblowhale|False|True|False|False
+TagRecord|Ancient Gear|True|False|False|False
+TagRecord|Ancient Gear Beast|False|True|False|False
+TagRecord|Ancient Gear Box|False|True|False|False
+TagRecord|Ancient Gear Cannon|True|False|False|False
+TagRecord|Ancient Gear Frame|True|False|False|False
+TagRecord|Ancient Gear Gadget|True|False|False|False
+TagRecord|Ancient Gear Gadjiltron Chimera|True|False|False|False
+TagRecord|Ancient Gear Golem|False|True|False|False
+TagRecord|Ancient Gear Golem - Ultimate Pound|True|False|False|False
+TagRecord|Ancient Gear Howitzer|True|False|False|False
+TagRecord|Ancient Gear Hunting Hound|False|True|False|False
+TagRecord|Ancient Gear Hydra|True|False|False|False
+TagRecord|Ancient Gear Knight|False|True|False|False
+TagRecord|Ancient Gear Megaton Golem|False|False|True|False
+TagRecord|Ancient Gear Reactor Dragon|True|False|False|False
+TagRecord|Ancient Gear Soldier|True|False|False|False
+TagRecord|Ancient Gear Wyvern|True|False|False|False
+TagRecord|Apoqliphort Skybase|False|True|False|False
+TagRecord|Apoqliphort Towers|False|True|False|False
+TagRecord|Armored Cybern|True|False|False|False
+TagRecord|Armoroid|True|False|False|False
+TagRecord|Armory Arm|True|False|False|False
+TagRecord|A-Team: Trap Disposal Unit|False|True|False|False
+TagRecord|Aye-Iron|False|True|False|False
+TagRecord|B.E.S. Big Core MK-2|False|True|False|False
+TagRecord|B.E.S. Big Core MK-3|True|False|False|False
+TagRecord|B.E.S. Blaster Cannon Core|True|False|False|False
+TagRecord|B.E.S. Covered Core|False|True|False|False
+TagRecord|B.E.S. Crystal Core|False|True|False|False
+TagRecord|B.E.S. Tetran|False|True|False|False
+TagRecord|Barbaroid, the Ultimate Battle Machine|False|True|False|False
+TagRecord|Barrel Dragon|True|False|False|False
+TagRecord|Barricadeborg Blocker|True|False|False|False
+TagRecord|B-Buster Drake|True|False|False|False
+TagRecord|Bicular|False|True|False|False
+TagRecord|Biofalcon|True|False|False|False
+TagRecord|Black Salvo|False|True|False|False
+TagRecord|Blast Juggler|False|True|False|False
+TagRecord|Blast Sphere|False|True|False|False
+TagRecord|Blocker|False|True|False|False
+TagRecord|Blowback Dragon|True|False|False|False
+TagRecord|Blue Thunder T-45|False|True|False|False
+TagRecord|BM-4 Blast Spider|False|True|False|False
+TagRecord|Bokoichi the Freightening Car|True|False|False|False
+TagRecord|Boot-Up Admiral - Destroyer Dynamo|False|True|False|False
+TagRecord|Boot-Up Corporal - Command Dynamo|False|True|False|False
+TagRecord|Boot-Up Soldier - Dread Dynamo|True|False|False|False
+TagRecord|Bowganian|True|False|False|False
+TagRecord|Box of Friends|False|True|False|False
+TagRecord|Brave Scizzar|True|False|False|False
+TagRecord|Bri Synchron|False|True|False|False
+TagRecord|Buster Blaster|False|True|False|False
+TagRecord|Cannon Soldier|True|False|False|False
+TagRecord|Cannon Soldier MK-2|True|False|False|False
+TagRecord|Card Trooper|True|False|False|False
+TagRecord|Cardcar D|True|False|False|False
+TagRecord|Carrierroid|False|True|False|False
+TagRecord|Changer Synchron|False|True|False|False
+TagRecord|Chimeratech Rampage Dragon|False|True|False|False
+TagRecord|Chronomaly Golden Jet|True|False|False|False
+TagRecord|Chronomaly Mayan Machine|True|False|False|False
+TagRecord|Cipher Soldier|False|True|False|False
+TagRecord|Cipher Twin Raptor|True|False|False|False
+TagRecord|Cipher Wing|True|False|False|False
+TagRecord|Cloudcastle|True|False|False|False
+TagRecord|Commander Covington|True|False|False|False
+TagRecord|Constellar Acubens|False|True|False|False
+TagRecord|Constellar Antares|False|True|False|False
+TagRecord|Constellar Praesepe|False|True|False|False
+TagRecord|Constellar Ptolemy M7|True|False|False|False
+TagRecord|Constellar Zubeneschamali|False|True|False|False
+TagRecord|Construction Train Signal Red|False|True|False|False
+TagRecord|Cosmic Compass|True|False|False|False
+TagRecord|Cracking Dragon|False|True|False|False
+TagRecord|Crystron Ametrix|False|True|False|False
+TagRecord|Crystron Prasiortle|False|True|False|False
+TagRecord|Crystron Quan|False|True|False|False
+TagRecord|Crystron Rion|False|True|False|False
+TagRecord|Crystron Smiger|False|True|False|False
+TagRecord|Crystron Sulfefnir|False|True|False|False
+TagRecord|Crystron Thystvern|True|False|False|False
+TagRecord|CXyz Skypalace Babylon|False|True|False|False
+TagRecord|Cyber Dragon|True|False|False|False
+TagRecord|Cyber Dragon Core|False|True|False|False
+TagRecord|Cyber Dragon Drei|False|True|False|False
+TagRecord|Cyber Dragon Herz|True|False|False|False
+TagRecord|Cyber Dragon Nachster|True|False|False|False
+TagRecord|Cyber Dragon Infinity|False|False|False|True
+TagRecord|Cyber Dragon Nova|False|False|False|True
+TagRecord|Cyber Dragon Sieger|True|False|False|False
+TagRecord|Cyber Barrier Dragon|False|False|False|True
+TagRecord|Crystron Rosenix|True|False|False|True
+TagRecord|Crystron Quariongandrax|False|False|False|True
+TagRecord|Crystron Quandax|False|False|False|True
+TagRecord|Crystron Citree|False|False|False|True
+TagRecord|Crystron Phoenix|False|False|False|True
+TagRecord|Chronomaly Nebra Disk|False|False|False|True
+TagRecord|Chimeratech Megafleet Dragon|False|False|False|True
+TagRecord|Chimeratech Fortress Dragon|False|False|False|True
+TagRecord|Chaos Ancient Gear Giant|False|False|False|True
+TagRecord|Armed Dragon Catapult Cannon|False|False|False|True
+TagRecord|Cyber Dragon Vier|False|True|False|False
+TagRecord|Cyber Dragon Zwei|True|False|False|False
+TagRecord|Cyber Eltanin|False|True|False|False
+TagRecord|Cyber End Dragon|False|True|False|False
+TagRecord|Cyber Esper|False|True|False|False
+TagRecord|Cyber Eternity Dragon|False|False|False|True
+TagRecord|Cyber Falcon|True|False|False|False
+TagRecord|Cyber Kirin|False|True|False|False
+TagRecord|Cyber Laser Dragon|False|False|False|True
+TagRecord|Cyber Ogre|True|False|False|False
+TagRecord|Cyber Ogre 2|False|False|False|True
+TagRecord|Cyber Ouroboros|True|False|False|False
+TagRecord|Cyber Pharos|False|True|False|False
+TagRecord|Cyber Phoenix|True|False|False|False
+TagRecord|Cyber Raider|True|False|False|False
+TagRecord|Cyber Saurus|True|False|False|False
+TagRecord|Cyber Soldier of Darkworld|False|False|False|True
+TagRecord|Cyber Twin Dragon|False|True|False|False
+TagRecord|Cyber Valley|False|True|False|False
+TagRecord|Cyberdark Chimera|True|False|False|False
+TagRecord|Cyberdark Dragon|True|False|False|False
+TagRecord|Cyberdark Edge|True|False|False|False
+TagRecord|Cyberdark End Dragon|False|False|True|False
+TagRecord|Cyberdark Horn|True|False|False|False
+TagRecord|Cyberdark Keel|False|True|False|False
+TagRecord|Cyberdarkness Dragon|True|False|False|False
+TagRecord|Cyber-Stein|False|False|False|True
+TagRecord|Cycroid|True|False|False|False
+TagRecord|D Cubed|False|True|False|False
+TagRecord|D.D. Assault Carrier|True|False|False|False
+TagRecord|D.D. Jet Iron|False|True|False|False
+TagRecord|D.D. Scout Plane|True|False|False|False
+TagRecord|Dark Catapulter|True|False|False|False
+TagRecord|Dark Flattop|False|True|False|False
+TagRecord|Dark Strike Fighter|False|True|False|False
+TagRecord|Darksea Float|False|True|False|False
+TagRecord|Darksea Rescue|False|True|False|False
+TagRecord|Decoyroid|True|False|False|False
+TagRecord|Deep-Space Cruiser IX|False|True|False|False
+TagRecord|Dekoichi the Battlechanted Locomotive|False|True|False|False
+TagRecord|Delta Tri|False|True|False|False
+TagRecord|Deskbot 001|True|False|False|False
+TagRecord|Deskbot 002|True|False|False|False
+TagRecord|Deskbot 004|True|False|False|False
+TagRecord|Deskbot 005|False|True|False|False
+TagRecord|Deskbot 006|True|False|False|False
+TagRecord|Deskbot 007|False|True|False|False
+TagRecord|Deskbot 008|False|True|False|False
+TagRecord|Deskbot Jet|False|True|False|False
+TagRecord|Desperado Barrel Dragon|True|False|False|False
+TagRecord|Dharma Cannon|False|False|False|True
+TagRecord|Dicelops|True|False|False|False
+TagRecord|Digvorzhak, King of Heavy Industry|False|True|False|False
+TagRecord|Dimension Fortress Weapon|False|True|False|False
+TagRecord|Dimension Jar|False|True|False|False
+TagRecord|Dingirsu, the Orcust of the Evening Star|False|False|False|True
+TagRecord|Dinomist Ankylos|True|False|False|False
+TagRecord|Dinomist Brachion|False|True|False|False
+TagRecord|Dinomist Ceratops|True|False|False|False
+TagRecord|Dinomist Plesios|False|True|False|False
+TagRecord|Dinomist Pteran|False|True|False|False
+TagRecord|Dinomist Rex|False|True|False|False
+TagRecord|Dinomist Spinos|False|True|False|False
+TagRecord|Dinomist Stegosaur|False|True|False|False
+TagRecord|Disk Magician|True|False|False|False
+TagRecord|Dododo Bot|False|True|False|False
+TagRecord|Double Headed Anger Knuckle|False|True|False|False
+TagRecord|Dragong|False|True|False|False
+TagRecord|Drill Synchron|True|False|False|False
+TagRecord|Drillago|True|False|False|False
+TagRecord|Drillroid|False|True|False|False
+TagRecord|Duck Fighter|False|True|False|False
+TagRecord|Duza the Meteor Cubic Vessel|True|False|False|False
+TagRecord|El Shaddoll Shekhinaga|True|False|False|False
+TagRecord|Electromagnetic Turtle|True|False|False|False
+TagRecord|Emes the Infinity|False|True|False|False
+TagRecord|Evilswarm Coppelia|False|True|False|False
+TagRecord|Express Train Trolley Olley|True|False|False|False
+TagRecord|Expressroid|True|False|False|False
+TagRecord|F.A. Auto Navigator|False|True|False|False
+TagRecord|F.A. Dark Dragster|False|True|False|False
+TagRecord|F.A. Dawn Dragster|False|True|False|False
+TagRecord|F.A. Hang On Mach|False|True|False|False
+TagRecord|F.A. Motorhome Transport|False|True|False|False
+TagRecord|F.A. Shining Star GT|True|False|False|False
+TagRecord|F.A. Sonic Meister|False|True|False|False
+TagRecord|F.A. Turbo Charger|False|True|False|False
+TagRecord|F.A. Whip Crosser|False|True|False|False
+TagRecord|Fantastic Striborg|False|True|False|False
+TagRecord|Fleur Synchron|True|False|False|False
+TagRecord|Flint Lock|False|True|False|False
+TagRecord|Flying Fortress SKY FIRE|False|True|False|False
+TagRecord|Flying Pegasus Railroad Stampede|True|False|False|False
+TagRecord|Flying Saucer Muusik'i|False|True|False|False
+TagRecord|Formula Synchron|False|True|False|False
+TagRecord|Frontline Observer|False|True|False|False
+TagRecord|Fusilier Dragon, the Dual-Mode Beast|False|True|False|False
+TagRecord|Gadget Arms|True|False|False|False
+TagRecord|Gadget Driver|True|False|False|False
+TagRecord|Gadget Gamer|True|False|False|False
+TagRecord|Gadget Hauler|True|False|False|False
+TagRecord|Gadget Soldier|True|False|False|False
+TagRecord|Gaia Saber, the Lightning Shadow|True|False|False|False
+TagRecord|Galatea, the Orcust Automaton|False|True|False|False
+TagRecord|Galaxy Soldier|False|False|False|True
+TagRecord|Gatekeeper|False|True|False|False
+TagRecord|Gatling Dragon|False|False|False|True
+TagRecord|Gear Golem the Moving Fortress|True|False|False|False
+TagRecord|Geargiaccelerator|True|False|False|False
+TagRecord|Geargianchor|True|False|False|False
+TagRecord|Geargiano|True|False|False|False
+TagRecord|Geargiano Mk-II|True|False|False|False
+TagRecord|Geargiarsenal|True|False|False|False
+TagRecord|Gearspring Spirit|False|False|False|True
+TagRecord|Genex Ally Axel|False|False|False|True
+TagRecord|Genex Ally Bellflame|False|True|False|False
+TagRecord|Genex Ally Birdman|True|False|False|False
+TagRecord|Genex Ally Changer|False|True|False|False
+TagRecord|Genex Ally Chemistrer|False|True|False|False
+TagRecord|Genex Ally Crusher|False|True|False|False
+TagRecord|Genex Ally Duradark|False|False|False|True
+TagRecord|Genex Ally Powercell|False|True|False|False
+TagRecord|Genex Ally Reliever|False|True|False|False
+TagRecord|Genex Ally Remote|False|True|False|False
+TagRecord|Genex Ally Solid|False|True|False|False
+TagRecord|Genex Ally Triarm|False|True|False|False
+TagRecord|Genex Ally Triforce|False|True|False|False
+TagRecord|Genex Ally Volcannon|False|True|False|False
+TagRecord|Genex Army|False|True|False|False
+TagRecord|Genex Controller|True|False|False|False
+TagRecord|Genex Neutron|True|False|False|False
+TagRecord|Genex Recycled|False|True|False|False
+TagRecord|Genex Searcher|False|True|False|False
+TagRecord|Genex Solar|False|True|False|False
+TagRecord|Genex Spare|False|True|False|False
+TagRecord|Genex Turbine|False|True|False|False
+TagRecord|Genex Worker|True|False|False|False
+TagRecord|Geo Genex|False|True|False|False
+TagRecord|Giant Mech-Soldier|False|True|False|False
+TagRecord|Giga-Tech Wolf|True|False|False|False
+TagRecord|Gimmick Puppet Bisque Doll|False|False|False|True
+TagRecord|Gimmick Puppet Chimera Doll|False|True|False|False
+TagRecord|Gimmick Puppet Des Troy|True|False|False|False
+TagRecord|Gimmick Puppet Dreary Doll|False|True|False|False
+TagRecord|Gimmick Puppet Egg Head|False|True|False|False
+TagRecord|Gimmick Puppet Gear Changer|True|False|False|False
+TagRecord|Gimmick Puppet Gigantes Doll|False|True|False|False
+TagRecord|Gimmick Puppet Humpty Dumpty|False|True|False|False
+TagRecord|Gimmick Puppet Magnet Doll|False|True|False|False
+TagRecord|Gimmick Puppet Nightmare|True|False|False|False
+TagRecord|Gimmick Puppet Scissor Arms|True|False|False|False
+TagRecord|Gimmick Puppet Shadow Feeler|False|True|False|False
+TagRecord|Gimmick Puppet Terror Baby|False|True|False|False
+TagRecord|Gimmick Puppet Twilight Joker|False|True|False|False
+TagRecord|Gizmek Inaba, the Hopping Hare of Hakuto|True|False|False|False
+TagRecord|Gizmek Orochi, the Serpentron Sky Slasher|True|False|False|False
+TagRecord|Gizmek Taniguku, the Immobile Intellect|True|False|False|False
+TagRecord|Gizmek Uka, the Festive Fox of Fecundity|True|False|False|False
+TagRecord|Gold Gadget|False|True|False|False
+TagRecord|Googly-Eyes Drum Dragon|True|False|False|False
+TagRecord|Gradius|True|False|False|False
+TagRecord|Gradius' Option|True|False|False|False
+TagRecord|Green Gadget|True|False|False|False
+TagRecord|Ground Attacker Bugroth|False|False|True|False
+TagRecord|Guardian of the Throne Room|True|False|False|False
+TagRecord|Hack Worm|False|True|False|False
+TagRecord|Healing Wave Generator|True|False|False|False
+TagRecord|Heavy Armored Train Ironwolf|False|True|False|False
+TagRecord|Heavy Freight Train Derricrane|True|False|False|False
+TagRecord|Heavy Mech Support Platform|True|False|False|False
+TagRecord|Helping Robo for Combat|False|True|False|False
+TagRecord|Hi-Speedroid Chanbara|False|True|False|False
+TagRecord|Hi-Speedroid Hagoita|False|True|False|False
+TagRecord|Hi-Speedroid Kendama|False|True|False|False
+TagRecord|Hi-Speedroid Kitedrake|False|True|False|False
+TagRecord|Hi-Speedroid Puzzle|False|True|False|False
+TagRecord|Hi-Speedroid Rubber Band Shooter|False|True|False|False
+TagRecord|Hydralander Orbit|True|False|False|False
+TagRecord|Hydro Genex|False|True|False|False
+TagRecord|Hyper Synchron|True|False|False|False
+TagRecord|Ignition Beast Volcannon|False|True|False|False
+TagRecord|Infinitrack Anchor Drill|False|False|False|True
+TagRecord|Infinitrack Crab Crane|False|True|False|False
+TagRecord|Infinitrack Drag Shovel|False|True|False|False
+TagRecord|Infinitrack Goliath|False|True|False|False
+TagRecord|Infinitrack Harvester|False|False|False|True
+TagRecord|Infinitrack Mountain Smasher|False|True|False|False
+TagRecord|Infinitrack River Stormer|False|True|False|False
+TagRecord|Infinitrack Trencher|False|True|False|False
+TagRecord|Infinitrack Tunneller|False|True|False|False
+TagRecord|Inpachi|False|True|False|False
+TagRecord|Inspector Boarder|True|False|False|False
+TagRecord|Invoked Mechaba|True|False|False|False
+TagRecord|Iron Chain Coil|False|True|False|False
+TagRecord|Iron Knight of Revolution|False|False|False|True
+TagRecord|Jack Wyvern|False|True|False|False
+TagRecord|Jade Knight|True|False|False|False
+TagRecord|Jet Synchron|False|True|False|False
+TagRecord|Jetroid|False|True|False|False
+TagRecord|Jinzo|True|False|False|False
+TagRecord|Jinzo - Jector|False|True|False|False
+TagRecord|Jinzo - Layered|False|False|True|False
+TagRecord|Jinzo - Lord|False|True|False|False
+TagRecord|Jinzo - Returner|False|True|False|False
+TagRecord|Jinzo #7|True|False|False|False
+TagRecord|Jizukiru, the Star Destroying Kaiju|True|False|False|False
+TagRecord|Jumbo Drill|False|True|False|False
+TagRecord|Junk Giant|False|True|False|False
+TagRecord|Junkuriboh|False|True|False|False
+TagRecord|KA-2 Des Scissors|False|True|False|False
+TagRecord|Karakuri Barrel mdl 96 "Shinkuro"|False|True|False|False
+TagRecord|Karakuri Bushi mdl 6318 "Muzanichiha"|False|True|False|False
+TagRecord|Karakuri Komachi mdl 224 "Ninishi"|True|False|False|False
+TagRecord|Karakuri Merchant mdl 177 "Inashichi"|False|False|False|True
+TagRecord|Karakuri Muso mdl 818 "Haipa"|False|True|False|False
+TagRecord|Karakuri Ninja mdl 339 "Sazank"|False|True|False|False
+TagRecord|Karakuri Ninja mdl 7749 "Nanashick"|False|True|False|False
+TagRecord|Karakuri Ninja mdl 919 "Kuick"|True|False|False|False
+TagRecord|Karakuri Shogun mdl 00 "Burei"|False|True|False|False
+TagRecord|Karakuri Soldier mdl 236 "Nisamu"|False|True|False|False
+TagRecord|Karakuri Spider|False|True|False|False
+TagRecord|Karakuri Steel Shogun mdl 00X "Bureido"|False|False|False|True
+TagRecord|Karakuri Strategist mdl 248 "Nishipachi"|True|False|False|False
+TagRecord|Karakuri Watchdog mdl 313 "Saizan"|True|False|False|False
+TagRecord|Koa'ki Meiru Powerhand|False|True|False|False
+TagRecord|Koa'ki Meiru Speeder|False|True|False|False
+TagRecord|Kozmo Dark Destroyer|True|False|False|False
+TagRecord|Kozmo Dark Eclipser|False|False|False|True
+TagRecord|Kozmo Dark Planet|False|False|False|True
+TagRecord|Kozmo Delta Shuttle|True|False|False|False
+TagRecord|Kozmo DOG Fighter|False|True|False|False
+TagRecord|Kozmo Forerunner|False|True|False|False
+TagRecord|Kozmo Landwalker|False|True|False|False
+TagRecord|Kozmo Sliprider|False|True|False|False
+TagRecord|Labyrinth Heavy Tank|True|False|False|False
+TagRecord|Labyrinth Tank|True|False|False|False
+TagRecord|Launcher Spider|True|False|False|False
+TagRecord|Lefty Driver|True|False|False|False
+TagRecord|Lillybot|False|True|False|False
+TagRecord|Lionhearted Locomotive|False|True|False|False
+TagRecord|Locomotion R-Genex|False|True|False|False
+TagRecord|Longirsu, the Orcust Orchestrator|False|False|False|True
+TagRecord|Lord British Space Fighter|False|True|False|False
+TagRecord|Machina Air Raider|True|False|False|False
+TagRecord|Machina Cannon|True|False|False|False
+TagRecord|Machina Citadel|True|False|False|False
+TagRecord|Machina Defender|True|False|False|False
+TagRecord|Machina Force|True|False|False|False
+TagRecord|Machina Fortress|False|True|False|False
+TagRecord|Machina Gearframe|True|False|False|False
+TagRecord|Machina Irradiator|True|False|False|False
+TagRecord|Machina Megaform|True|False|False|False
+TagRecord|Machina Peacekeeper|True|False|False|False
+TagRecord|Machina Possesstorage|True|False|False|False
+TagRecord|Machina Sniper|True|False|False|False
+TagRecord|Machina Soldier|True|False|False|False
+TagRecord|Machina Unclaspare|True|False|False|False
+TagRecord|Machine King|False|True|False|False
+TagRecord|Machine King Prototype|False|True|False|False
+TagRecord|Machine Lord Ür|False|True|False|False
+TagRecord|Magikey Mechmortar - Garesglasser|True|False|False|False
+TagRecord|Malefic Cyber End Dragon|True|False|False|False
+TagRecord|Malefic Parallel Gear|False|False|False|True
+TagRecord|Martial Metal Marcher|True|False|False|False
+TagRecord|Master's Diploman|True|False|False|False
+TagRecord|Mecha Bunny|True|False|False|False
+TagRecord|Mecha Phantom Beast Aerosguin|False|True|False|False
+TagRecord|Mecha Phantom Beast Blackfalcon|False|True|False|False
+TagRecord|Mecha Phantom Beast Blue Impala|True|False|False|False
+TagRecord|Mecha Phantom Beast Coltwing|False|True|False|False
+TagRecord|Mecha Phantom Beast Concoruda|False|True|False|False
+TagRecord|Mecha Phantom Beast Dracossack|True|False|False|False
+TagRecord|Mecha Phantom Beast Hamstrat|False|True|False|False
+TagRecord|Mecha Phantom Beast Harrliard|False|True|False|False
+TagRecord|Mecha Phantom Beast Jaculuslan|True|False|False|False
+TagRecord|Mecha Phantom Beast Kalgriffin|False|True|False|False
+TagRecord|Mecha Phantom Beast Megaraptor|False|True|False|False
+TagRecord|Mecha Phantom Beast O-Lion|False|True|False|False
+TagRecord|Mecha Phantom Beast Raiten|False|True|False|False
+TagRecord|Mecha Phantom Beast Sabre Hawk|False|True|False|False
+TagRecord|Mecha Phantom Beast Stealthray|False|True|False|False
+TagRecord|Mecha Phantom Beast Tetherwolf|False|True|False|False
+TagRecord|Mecha Phantom Beast Turtletracer|False|True|False|False
+TagRecord|Mecha Phantom Beast Warbluran|False|True|False|False
+TagRecord|Mecha Sea Dragon Plesion|True|False|False|False
+TagRecord|Mecha-Dog Marron|False|True|False|False
+TagRecord|Mechanical Hound|False|True|False|False
+TagRecord|Mechanical Snail|True|False|False|False
+TagRecord|Mechanicalchaser|True|False|False|False
+TagRecord|Megasonic Eye|False|True|False|False
+TagRecord|Mekk-Knight of the Morning Star|True|False|False|False
+TagRecord|Meklord Army of Granel|False|True|False|False
+TagRecord|Meklord Army of Skiel|True|False|False|False
+TagRecord|Meklord Army of Wisel|False|True|False|False
+TagRecord|Meklord Astro Dragon Asterisk|False|True|False|False
+TagRecord|Meklord Astro Mekanikle|False|True|False|False
+TagRecord|Meklord Emperor Granel|False|True|False|False
+TagRecord|Meklord Emperor Skiel|False|True|False|False
+TagRecord|Meklord Emperor Wisel|False|True|False|False
+TagRecord|Metal Dragon|True|False|False|False
+TagRecord|Metal Fish|True|False|False|False
+TagRecord|Metal Shooter|False|True|False|False
+TagRecord|Metalzoa|False|False|False|True
+TagRecord|Mighty Guard|True|False|False|False
+TagRecord|Mimimic|True|False|False|False
+TagRecord|Mixeroid|False|True|False|False
+TagRecord|Mono Synchron|False|True|False|False
+TagRecord|Monster Express|False|True|False|False
+TagRecord|Morphtronic Boarden|True|False|False|False
+TagRecord|Morphtronic Boomboxen|False|True|False|False
+TagRecord|Morphtronic Cameran|False|True|False|False
+TagRecord|Morphtronic Celfon|True|False|False|False
+TagRecord|Morphtronic Clocken|True|False|False|False
+TagRecord|Morphtronic Earfon|True|False|False|False
+TagRecord|Morphtronic Lantron|True|False|False|False
+TagRecord|Morphtronic Remoten|False|False|False|True
+TagRecord|Morphtronic Scopen|True|False|False|False
+TagRecord|Morphtronic Slingen|False|True|False|False
+TagRecord|Morphtronic Smartfon|True|False|False|False
+TagRecord|Morphtronic Staplen|False|True|False|False
+TagRecord|Morphtronic Vacuumen|True|False|False|False
+TagRecord|Morphtronic Videon|True|False|False|False
+TagRecord|Musical Sumo Dice Games|True|False|False|False
+TagRecord|Nanobreaker|False|True|False|False
+TagRecord|Needle Burrower|False|True|False|False
+TagRecord|Needle Soldier|True|False|False|False
+TagRecord|Neo Super Quantal Mech King Blaster Magna|True|False|False|False
+TagRecord|Night Express Knight|True|False|False|False
+TagRecord|Number 15: Gimmick Puppet Giant Grinder|True|False|False|False
+TagRecord|Number 25: Force Focus|False|False|False|True
+TagRecord|Number 27: Dreadnought Dreadnoid|False|True|False|False
+TagRecord|Number 33: Chronomaly Machu Mech|False|False|False|True
+TagRecord|Number 34: Terror-Byte|False|True|False|False
+TagRecord|Number 36: Chronomaly Chateau Huyuk|False|True|False|False
+TagRecord|Number 40: Gimmick Puppet of Strings|False|True|False|False
+TagRecord|Number 42: Galaxy Tomahawk|False|True|False|False
+TagRecord|Number 6: Chronomaly Atlandis|False|False|False|True
+TagRecord|Number 81: Superdreadnought Rail Cannon Super Dora|True|False|False|False
+TagRecord|Number 88: Gimmick Puppet of Leo|False|True|False|False
+TagRecord|Number 9: Dyson Sphere|True|False|False|False
+TagRecord|Number C15: Gimmick Puppet Giant Hunter|False|False|False|True
+TagRecord|Number C40: Gimmick Puppet of Dark Strings|True|False|False|False
+TagRecord|Number C6: Chronomaly Chaos Atlandis|False|False|False|True
+TagRecord|Number C88: Gimmick Puppet Disaster Leo|False|False|False|True
+TagRecord|Number C9: Chaos Dyson Sphere|False|False|False|True
+TagRecord|Oni Tank T-34|True|False|False|False
+TagRecord|Orbital 7|False|True|False|False
+TagRecord|Orbital Hydralander|False|True|False|False
+TagRecord|Orcust Brass Bombard|False|True|False|False
+TagRecord|Orcust Cymbal Skeleton|False|True|False|False
+TagRecord|Orcust Harp Horror|False|True|False|False
+TagRecord|Orcust Knightmare|False|True|False|False
+TagRecord|Orcustrion|False|True|False|False
+TagRecord|Orichalcos Shunoros|True|False|False|False
+TagRecord|Overdrive|True|False|False|False
+TagRecord|Pair Cycroid|False|True|False|False
+TagRecord|Panzer Dragon|False|True|False|False
+TagRecord|Patroid|False|True|False|False
+TagRecord|Patrol Robo|False|False|False|True
+TagRecord|Pendulum Machine|True|False|False|False
+TagRecord|Perfect Machine King|False|False|False|True
+TagRecord|Phantom Fortress Enterblathnir|False|True|False|False
+TagRecord|Photon Orbital|True|False|False|False
+TagRecord|Photon Pirate|False|True|False|False
+TagRecord|Photon Satellite|False|True|False|False
+TagRecord|Planet Pathfinder|True|False|False|False
+TagRecord|Platinum Gadget|False|False|False|True
+TagRecord|Power Tool Dragon|False|True|False|False
+TagRecord|Power Tool Mecha Dragon|False|False|False|True
+TagRecord|Powered Inzektron|False|True|False|False
+TagRecord|Proto-Cyber Dragon|True|False|False|False
+TagRecord|Pursuit Chaser|True|False|False|False
+TagRecord|Qliphort Carrier|False|False|False|True
+TagRecord|Qliphort Cephalopod|False|True|False|False
+TagRecord|Qliphort Disk|False|False|False|True
+TagRecord|Qliphort Genius|False|True|False|False
+TagRecord|Qliphort Helix|False|False|False|True
+TagRecord|Qliphort Monolith|False|True|False|False
+TagRecord|Qliphort Scout|False|True|False|False
+TagRecord|Qliphort Shell|False|True|False|False
+TagRecord|Qliphort Stealth|False|False|False|True
+TagRecord|Quickdraw Synchron|True|False|False|False
+TagRecord|Quick-Span Knight|False|True|False|False
+TagRecord|Quillbolt Hedgehog|True|False|False|False
+TagRecord|Red Gadget|True|False|False|False
+TagRecord|Red-Eyes Black Metal Dragon|False|True|False|False
+TagRecord|Rescueroid|False|True|False|False
+TagRecord|R-Genex Accelerator|False|True|False|False
+TagRecord|R-Genex Crusher|False|True|False|False
+TagRecord|R-Genex Turbo|False|True|False|False
+TagRecord|R-Genex Ultimum|False|True|False|False
+TagRecord|Righty Driver|True|False|False|False
+TagRecord|Robolady|True|False|False|False
+TagRecord|Robot Buster Destruction Sword|True|False|False|False
+TagRecord|Robotic Knight|True|False|False|False
+TagRecord|Roboyarou|True|False|False|False
+TagRecord|Rocket Arrow Express|False|True|False|False
+TagRecord|Roulette Barrel|True|False|False|False
+TagRecord|Ruffian Railcar|True|False|False|False
+TagRecord|Samurai Destroyer|False|True|False|False
+TagRecord|Scanner|False|False|False|True
+TagRecord|Scrap Breaker|False|False|False|True
+TagRecord|Scrap Hunter|False|False|False|True
+TagRecord|Scrap Mind Reader|False|False|False|True
+TagRecord|Scrap Recycler|True|False|False|False
+TagRecord|Searchlightman|False|True|False|False
+TagRecord|Second Booster|True|False|False|False
+TagRecord|Sergeant Electro|False|False|False|True
+TagRecord|Shapesnatch|True|False|False|False
+TagRecord|Shovel Crusher|False|True|False|False
+TagRecord|Silver Gadget|False|True|False|False
+TagRecord|Sky Striker Ace - Hayate|False|False|True|False
+TagRecord|Sky Striker Ace - Kagari|False|False|True|False
+TagRecord|Sky Striker Ace - Kaina|False|False|False|True
+TagRecord|Sky Striker Ace - Shizuku|False|True|False|False
+TagRecord|Skypalace Gangaridai|False|False|False|True
+TagRecord|Slot Machine|True|False|False|False
+TagRecord|Snow Plow Hustle Rustle|True|False|False|False
+TagRecord|Snowman Creator|True|False|False|False
+TagRecord|Solar Wind Jammer|True|False|False|False
+TagRecord|Sonic Jammer|True|False|False|False
+TagRecord|Speedroid Den-Den Daiko Duke|False|False|False|True
+TagRecord|Speedroid Dominobutterfly|False|False|False|True
+TagRecord|Speedroid Double Yoyo|False|False|False|True
+TagRecord|Speedroid Gum Prize|True|False|False|False
+TagRecord|Speedroid Horse Stilts|False|True|False|False
+TagRecord|Speedroid Maliciousmagnet|True|False|False|False
+TagRecord|Speedroid Menko|False|True|False|False
+TagRecord|Speedroid Ohajikid|False|False|False|True
+TagRecord|Speedroid Pachingo-Kart|False|False|False|True
+TagRecord|Speedroid Passinglider|False|False|False|True
+TagRecord|Speedroid Razorang|False|False|False|True
+TagRecord|Speedroid Red-Eyed Dice|False|False|False|True
+TagRecord|Speedroid Rubberband Plane|False|False|False|True
+TagRecord|Speedroid Skull Marbles|True|False|False|False
+TagRecord|Speedroid Taketomborg|False|False|False|True
+TagRecord|Speedroid Terrortop|False|False|False|True
+TagRecord|Speedroid Tri-Eyed Dice|False|False|False|True
+TagRecord|Spell Canceller|True|False|False|False
+TagRecord|Spell Reactor ・RE|False|True|False|False
+TagRecord|Sphere of Chaos|False|False|False|True
+TagRecord|Spikebot|True|False|False|False
+TagRecord|Sprind the Irondash Dragon|True|False|False|False
+TagRecord|Springans Branga|True|False|False|False
+TagRecord|Springans Rockey|True|False|False|False
+TagRecord|SPYRAL GEAR - Drone|False|False|False|True
+TagRecord|SPYRAL GEAR - Last Resort|False|False|False|True
+TagRecord|SPYRAL Quik-Fix|False|False|False|True
+TagRecord|Starship Spy Plane|True|False|False|False
+TagRecord|Stealthroid|True|False|False|False
+TagRecord|Steam Gyroid|False|True|False|False
+TagRecord|Steam Synchron|False|True|False|False
+TagRecord|Steamroid|False|True|False|False
+TagRecord|Steel Ogre Grotto #1|True|False|False|False
+TagRecord|Steel Ogre Grotto #2|True|False|False|False
+TagRecord|Steel Scorpion|True|False|False|False
+TagRecord|Steel Star Regulator|True|False|False|False
+TagRecord|Submarineroid|True|False|False|False
+TagRecord|Summon Reactor ・SK|False|False|False|True
+TagRecord|Super Anti-Kaiju War Machine Mecha-Dogoran|True|False|False|False
+TagRecord|Super Anti-Kaiju War Machine Mecha-Thunder-King|False|False|False|True
+TagRecord|Super Defense Robot Elephan|False|True|False|False
+TagRecord|Super Defense Robot Lio|False|True|False|False
+TagRecord|Super Defense Robot Monki|False|True|False|False
+TagRecord|Super Express Bullet Train|True|False|False|False
+TagRecord|Super Quantal Mech Beast Aeroboros|False|True|False|False
+TagRecord|Super Quantal Mech Beast Grampulse|False|False|False|True
+TagRecord|Super Quantal Mech Beast Lusterrex|False|True|False|False
+TagRecord|Super Quantal Mech Beast Magnaliger|False|False|False|True
+TagRecord|Super Quantal Mech King Great Magnus|False|True|False|False
+TagRecord|Super Robolady|True|False|False|False
+TagRecord|Super Roboyarou|True|False|False|False
+TagRecord|Super Vehicroid - Mobile Base|True|False|False|False
+TagRecord|Super Vehicroid - Stealth Union|False|True|False|False
+TagRecord|Super Vehicroid Jumbo Drill|True|False|False|False
+TagRecord|Superdimensional Robot Galaxy Destroyer|True|False|False|False
+TagRecord|Superdreadnought Rail Cannon Gustav Max|False|True|False|False
+TagRecord|Superdreadnought Rail Cannon Juggernaut Liebe|True|False|False|False
+TagRecord|Superheavy Samurai Battleball|False|False|False|True
+TagRecord|Superheavy Samurai Beast Kyubi|False|True|False|False
+TagRecord|Superheavy Samurai Big Benkei|False|True|False|False
+TagRecord|Superheavy Samurai Big Waraji|False|True|False|False
+TagRecord|Superheavy Samurai Blowtorch|False|True|False|False
+TagRecord|Superheavy Samurai Blue Brawler|True|False|False|False
+TagRecord|Superheavy Samurai Drum|False|True|False|False
+TagRecord|Superheavy Samurai Fist|False|True|False|False
+TagRecord|Superheavy Samurai Flutist|False|False|False|True
+TagRecord|Superheavy Samurai General Coral|False|False|False|True
+TagRecord|Superheavy Samurai General Jade|False|True|False|False
+TagRecord|Superheavy Samurai Gigagloves|False|True|False|False
+TagRecord|Superheavy Samurai Helper|False|True|False|False
+TagRecord|Superheavy Samurai Kabuto|True|False|False|False
+TagRecord|Superheavy Samurai Magnet|True|False|False|False
+TagRecord|Superheavy Samurai Ninja Sarutobi|False|True|False|False
+TagRecord|Superheavy Samurai Ogre Shutendoji|False|True|False|False
+TagRecord|Superheavy Samurai Prepped Defense|True|False|False|False
+TagRecord|Superheavy Samurai Scales|False|False|False|True
+TagRecord|Superheavy Samurai Soulbang Cannon|True|False|False|False
+TagRecord|Superheavy Samurai Soulbeads|False|True|False|False
+TagRecord|Superheavy Samurai Soulbreaker Armor|True|False|False|False
+TagRecord|Superheavy Samurai Soulbuster Gauntlet|False|True|False|False
+TagRecord|Superheavy Samurai Soulclaw|True|False|False|False
+TagRecord|Superheavy Samurai Soulfire Suit|True|False|False|False
+TagRecord|Superheavy Samurai Soulhorns|False|True|False|False
+TagRecord|Superheavy Samurai Soulpeacemaker|False|True|False|False
+TagRecord|Superheavy Samurai Soulpiercer|False|True|False|False
+TagRecord|Superheavy Samurai Soulshield Wall|True|False|False|False
+TagRecord|Superheavy Samurai Stealth Ninja|False|True|False|False
+TagRecord|Superheavy Samurai Steam Train King|False|True|False|False
+TagRecord|Superheavy Samurai Swordsman|True|False|False|False
+TagRecord|Superheavy Samurai Thief|False|True|False|False
+TagRecord|Superheavy Samurai Transporter|False|True|False|False
+TagRecord|Superheavy Samurai Trumpeter|False|False|False|True
+TagRecord|Superheavy Samurai Warlord Susanowo|False|False|False|True
+TagRecord|Symphonic Warrior Basses|False|True|False|False
+TagRecord|Symphonic Warrior DJJ|True|False|False|False
+TagRecord|Symphonic Warrior Drumss|False|True|False|False
+TagRecord|Symphonic Warrior Guitaar|True|False|False|False
+TagRecord|Symphonic Warrior Guitariss|True|False|False|False
+TagRecord|Symphonic Warrior Miccs|False|True|False|False
+TagRecord|Symphonic Warrior Piaano|False|True|False|False
+TagRecord|Symphonic Warrior Rockks|True|False|False|False
+TagRecord|Symphonic Warrior Synthess|False|True|False|False
+TagRecord|Synchro Magnet|True|False|False|False
+TagRecord|Synchro Soldier|False|True|False|False
+TagRecord|Synchron Carrier|True|False|False|False
+TagRecord|Synchron Explorer|True|False|False|False
+TagRecord|T.G. Blade Blaster|False|False|False|True
+TagRecord|T.G. Halberd Cannon|False|False|False|True
+TagRecord|T.G. Halberd Cannon/Assault Mode|False|True|False|False
+TagRecord|T.G. Trident Launcher|False|False|False|True
+TagRecord|The Big Saturn|True|False|False|False
+TagRecord|Thermal Genex|False|False|False|True
+TagRecord|Time Thief Bezel Ship|False|True|False|False
+TagRecord|Time Thief Regulator|False|True|False|False
+TagRecord|Timeater|True|False|False|False
+TagRecord|Tin Archduke|False|True|False|False
+TagRecord|Tin Goldfish|False|False|False|True
+TagRecord|Toon Ancient Gear Golem|True|False|False|False
+TagRecord|Toon Barrel Dragon|True|False|False|False
+TagRecord|Toon Cannon Soldier|True|False|False|False
+TagRecord|Toon Cyber Dragon|True|False|False|False
+TagRecord|Top Runner|False|True|False|False
+TagRecord|Torque Tune Gear|False|True|False|False
+TagRecord|Toy Knight|True|False|False|False
+TagRecord|Trap Reactor ・Y FI|False|True|False|False
+TagRecord|Tricular|False|True|False|False
+TagRecord|Trifortressops|False|True|False|False
+TagRecord|Truckroid|False|True|False|False
+TagRecord|Tuningware|True|False|False|False
+TagRecord|Turbo Booster|True|False|False|False
+TagRecord|Turbo Cannon|False|True|False|False
+TagRecord|Turbo Rocket|False|True|False|False
+TagRecord|Twin-Barrel Dragon|False|True|False|False
+TagRecord|UFO Turtle|True|False|False|False
+TagRecord|UFOroid|True|False|False|False
+TagRecord|Ultimate Ancient Gear Golem|False|True|False|False
+TagRecord|Unicycular|False|True|False|False
+TagRecord|Union Rider|True|False|False|False
+TagRecord|Unknown Synchron|True|False|False|False
+TagRecord|Vaylantz Mad Marquess|True|False|False|False
+TagRecord|Vaylantz Voltage Viscount|True|False|False|False
+TagRecord|Vermillion Dragon Mech|True|False|False|False
+TagRecord|Vic Viper T301|True|False|False|False
+TagRecord|Victory Viper XX03|False|True|False|False
+TagRecord|Vindikite R-Genex|False|True|False|False
+TagRecord|VW-Tiger Catapult|True|False|False|False
+TagRecord|VWXYZ-Dragon Catapult Cannon|False|True|False|False
+TagRecord|Vylon Alpha|False|True|False|False
+TagRecord|Vylon Cube|False|True|False|False
+TagRecord|Vylon Pentachloro|False|True|False|False
+TagRecord|Vylon Sphere|False|True|False|False
+TagRecord|Vylon Tesseract|False|True|False|False
+TagRecord|Vylon Tetra|False|True|False|False
+TagRecord|Windmill Genex|False|True|False|False
+TagRecord|Wind-Up Arsenal Zenmaioh|True|False|False|False
+TagRecord|Wind-Up Bat|False|True|False|False
+TagRecord|Wind-Up Carrier Zenmaity|False|False|False|True
+TagRecord|Wind-Up Zenmaines|True|False|False|False
+TagRecord|Wind-Up Zenmaintenance|False|False|False|True
+TagRecord|Wind-Up Zenmaister|False|True|False|False
+TagRecord|Woodborg Inpachi|True|False|False|False
+TagRecord|World Legacy - "World Ark"|False|True|False|False
+TagRecord|World Legacy - "World Armor"|False|False|False|True
+TagRecord|World Legacy - "World Chalice"|False|True|False|False
+TagRecord|World Legacy - "World Crown"|False|True|False|False
+TagRecord|World Legacy - "World Lance"|False|True|False|False
+TagRecord|World Legacy - "World Shield"|True|False|False|False
+TagRecord|World Legacy - "World Wand"|False|True|False|False
+TagRecord|Wroughtweiler|False|True|False|False
+TagRecord|W-Wing Catapult|False|True|False|False
+TagRecord|XY-Dragon Cannon|False|False|True|False
+TagRecord|XYZ-Dragon Cannon|False|True|False|False
+TagRecord|XZ-Tank Cannon|True|False|False|False
+TagRecord|Yaiba Robo|True|False|False|False
+TagRecord|Y-Dragon Head|True|False|False|False
+TagRecord|Yellow Gadget|True|False|False|False
+TagRecord|YZ-Tank Dragon|False|False|True|False
+TagRecord|B.E.S. Big Core|False|True|False|False
+TagRecord|Gyroid|False|True|False|False
+TagRecord|Shreddder|False|True|False|False
+TagRecord|UFOroid Fighter|False|True|False|False
