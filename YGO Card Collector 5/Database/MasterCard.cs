@@ -373,7 +373,7 @@ namespace YGO_Card_Collector_5
             {
                 _Owned = false;
                 //Remove the MasterCard obtained flag is no setcard are obtained anymore
-                if(Database.MasterCardByCode[_Code].HasOneCardsObtained())
+                if(!Database.MasterCardByCode[_Code].HasOneCardsObtained())
                 {
                     Database.MasterCardByCode[_Code].MarkOwnedStatus(false);
                 }               
