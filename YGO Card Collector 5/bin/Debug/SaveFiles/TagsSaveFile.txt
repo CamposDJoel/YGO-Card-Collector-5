@@ -1,4 +1,4 @@
-4753
+5288
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -4752,3 +4752,538 @@ TagRecord|Tri-Edge Levia|False|False|False|True
 TagRecord|Water Dragon|False|True|False|False
 TagRecord|Water Dragon Cluster|True|False|False|False
 TagRecord|Xyz Slidolphin|False|True|False|False
+TagRecord|A Man with Wdjat|True|False|False|False
+TagRecord|Acrobatic Magician|False|True|False|False
+TagRecord|Akashic Magician|False|True|False|False
+TagRecord|Alchemic Magician|False|False|False|True
+TagRecord|Alchemist of Black Spells|False|False|False|True
+TagRecord|Aleister the Invoker|False|True|False|False
+TagRecord|Aleister the Invoker of Madness|False|True|False|False
+TagRecord|Allure Queen LV3|False|True|False|False
+TagRecord|Allure Queen LV5|False|True|False|False
+TagRecord|Allure Queen LV7|False|True|False|False
+TagRecord|Altergeist Dragvirion|False|True|False|False
+TagRecord|Altergeist Fifinellag|False|True|False|False
+TagRecord|Altergeist Hexstia|False|True|False|False
+TagRecord|Altergeist Kidolga|False|True|False|False
+TagRecord|Altergeist Kunquery|False|True|False|False
+TagRecord|Altergeist Marionetter|False|False|False|True
+TagRecord|Altergeist Meluseek|False|True|False|False
+TagRecord|Altergeist Multifaker|False|True|False|False
+TagRecord|Altergeist Pixiel|False|True|False|False
+TagRecord|Altergeist Primebanshee|False|True|False|False
+TagRecord|Altergeist Silquitous|False|True|False|False
+TagRecord|Alviss of the Nordic Alfar|False|True|False|False
+TagRecord|Amores of Prophecy|True|False|False|False
+TagRecord|Anarchist Monk Ranshin|False|True|False|False
+TagRecord|Ancient Elf|True|False|False|False
+TagRecord|Ancient Lamp|True|False|False|False
+TagRecord|Apple Magician Girl|False|False|True|False
+TagRecord|Apprentice Illusion Magician|False|False|False|True
+TagRecord|Apprentice Magician|True|False|False|False
+TagRecord|Apprentice Piper|True|False|False|False
+TagRecord|Aqua Madoor|True|False|False|False
+TagRecord|Arcane Apprentice|False|True|False|False
+TagRecord|Arcanite Magician|False|True|False|False
+TagRecord|Arcanite Magician/Assault Mode|False|False|False|True
+TagRecord|Arsenal Summoner|True|False|False|False
+TagRecord|Ascator, Dawnwalker|False|False|True|False
+TagRecord|Astrograph Sorcerer|False|True|False|False
+TagRecord|Aussa the Earth Charmer|True|False|False|False
+TagRecord|Avalanching Aussa|False|True|False|False
+TagRecord|Berry Magician Girl|False|False|True|False
+TagRecord|Black Fang Magician|False|True|False|False
+TagRecord|Blast Magician|True|False|False|False
+TagRecord|Blazing Hiita|True|False|False|False
+TagRecord|Blizzard Princess|False|True|False|False
+TagRecord|Blue Dragon Summoner|False|False|True|False
+TagRecord|Breaker the Dark Magical Warrior|True|False|False|False
+TagRecord|Breaker the Magical Warrior|True|False|False|False
+TagRecord|Card Ejector|False|True|False|False
+TagRecord|Catoblepas and the Witch of Fate|False|True|False|False
+TagRecord|Ceremonial Bell|True|False|False|False
+TagRecord|Chaos Command Magician|True|False|False|False
+TagRecord|Chaos Sorcerer|True|False|False|False
+TagRecord|Charioteer of Prophecy|True|False|False|False
+TagRecord|Chocolate Magician Girl|False|False|False|True
+TagRecord|Chow Len the Prophet|True|False|False|False
+TagRecord|Chronicler of Nephthys|False|True|False|False
+TagRecord|Chronograph Sorcerer|False|True|False|False
+TagRecord|Cipher Etranger|True|False|False|False
+TagRecord|Clara & Rushka, the Ventriloduo|False|False|False|True
+TagRecord|Clear Effector|False|True|False|False
+TagRecord|Constellar Algiedi|False|True|False|False
+TagRecord|Constellar Rasalhague|False|True|False|False
+TagRecord|Copycat|False|True|False|False
+TagRecord|Cosmo Brain|False|True|False|False
+TagRecord|Cosmo Queen|False|False|False|True
+TagRecord|Crowley, the First Propheseer|False|False|False|True
+TagRecord|Crowned by the World Chalice|False|True|False|False
+TagRecord|Crusader of Endymion|True|False|False|False
+TagRecord|Crusadia Magius|False|True|False|False
+TagRecord|Crusadia Reclusia|False|True|False|False
+TagRecord|Crystal Girl|True|False|False|False
+TagRecord|Crystal Master|False|True|False|False
+TagRecord|Crystal Seer|True|False|False|False
+TagRecord|Curtain of the Dark Ones|False|False|False|True
+TagRecord|CXyz Simon the Great Moral Leader|False|True|False|False
+TagRecord|Cybernetic Magician|False|True|False|False
+TagRecord|Cyborg Doctor|False|True|False|False
+TagRecord|Dai-sojo of the Ice Barrier|True|False|False|False
+TagRecord|Damage Mage|True|False|False|False
+TagRecord|Dance Princess of the Ice Barrier|True|False|False|False
+TagRecord|Dance Princess of the Nekroz|False|True|False|False
+TagRecord|Dark Cavalry|False|False|False|True
+TagRecord|Dark Doriado|True|False|False|False
+TagRecord|Dark Elf|True|False|False|False
+TagRecord|Dark Eradicator Warlock|False|True|False|False
+TagRecord|Dark Magician|True|False|False|False
+TagRecord|Dark Magician Girl|True|False|False|False
+TagRecord|Dark Magician of Chaos|False|True|False|False
+TagRecord|Dark Paladin|True|False|False|False
+TagRecord|Dark Red Enchanter|False|False|False|True
+TagRecord|Dark Sage|False|False|False|True
+TagRecord|Dark-Eyes Illusionist|False|True|False|False
+TagRecord|Day-Breaker the Shining Magical Warrior|True|False|False|False
+TagRecord|Defender of Nephthys|False|True|False|False
+TagRecord|Delg the Dark Monarch|False|False|False|True
+TagRecord|Devotee of Nephthys|False|True|False|False
+TagRecord|Dharc the Dark Charmer|True|False|False|False
+TagRecord|Dharma-Eye Magician|True|False|False|False
+TagRecord|Dimension Shifter|True|False|False|False
+TagRecord|Dimension Wanderer|False|True|False|False
+TagRecord|Disciple of Nephthys|False|True|False|False
+TagRecord|Divine Grace - Northwemko|False|False|False|True
+TagRecord|Doom Shaman|False|True|False|False
+TagRecord|Doomstar Magician|False|True|False|False
+TagRecord|Double Iris Magician|False|True|False|False
+TagRecord|Downerd Magician|False|False|False|True
+TagRecord|Dragoncaller Magician|True|False|False|False
+TagRecord|Dragonpit Magician|False|False|False|True
+TagRecord|Droll & Lock Bird|False|False|True|False
+TagRecord|Ebon High Magician|False|True|False|False
+TagRecord|Ebon Illusion Magician|False|False|False|True
+TagRecord|Ebon Magician Curran|True|False|False|False
+TagRecord|Effect Veiler|True|False|False|False
+TagRecord|Eidos the Underworld Squire|False|False|True|False
+TagRecord|El Shaddoll Apkallone|True|False|False|False
+TagRecord|El Shaddoll Winda|True|False|False|False
+TagRecord|Element Magician|True|False|False|False
+TagRecord|Elemental Grace Doriado|False|False|False|True
+TagRecord|Elemental Mistress Doriado|False|True|False|False
+TagRecord|Emissary of the Oasis|True|False|False|False
+TagRecord|Emperor of Prophecy|False|True|False|False
+TagRecord|Empress of Prophecy|False|True|False|False
+TagRecord|Endymion, the Master Magician|True|False|False|False
+TagRecord|Endymion, the Mighty Master of Magic|False|False|True|False
+TagRecord|Engraver of the Mark|True|False|False|False
+TagRecord|Enlightenment Paladin|False|True|False|False
+TagRecord|Eria the Water Charmer|False|True|False|False
+TagRecord|Evilswarm Kerykeion|False|True|False|False
+TagRecord|Exodia Necross|True|False|False|False
+TagRecord|Exodia the Forbidden One|False|False|True|False
+TagRecord|Exodia, the Legendary Defender|True|False|False|False
+TagRecord|Exodius the Ultimate Forbidden Lord|False|True|False|False
+TagRecord|Exosister Irene|True|False|False|False
+TagRecord|Explosive Magician|False|True|False|False
+TagRecord|Extra Veiler|True|False|False|False
+TagRecord|Fairy Tail - Luna|True|False|False|False
+TagRecord|Fairy Tail - Rella|True|False|False|False
+TagRecord|Fairy Tail - Sleeper|False|True|False|False
+TagRecord|Fairy Tail - Snow|False|True|False|False
+TagRecord|Fairy's Gift|False|True|False|False
+TagRecord|Familiar-Possessed - Aussa|True|False|False|False
+TagRecord|Familiar-Possessed - Dharc|False|True|False|False
+TagRecord|Familiar-Possessed - Eria|True|False|False|False
+TagRecord|Familiar-Possessed - Hiita|True|False|False|False
+TagRecord|Familiar-Possessed - Lyna|True|False|False|False
+TagRecord|Familiar-Possessed - Wynn|True|False|False|False
+TagRecord|Fire Sorcerer|True|False|False|False
+TagRecord|Flame Manipulator|True|False|False|False
+TagRecord|Flamvell Magician|False|True|False|False
+TagRecord|Fog King|True|False|False|False
+TagRecord|Fool of Prophecy|False|False|False|True
+TagRecord|Fortune Fairy Ann|False|True|False|False
+TagRecord|Fortune Fairy Chee|False|True|False|False
+TagRecord|Fortune Fairy En|False|True|False|False
+TagRecord|Fortune Fairy Hikari|False|True|False|False
+TagRecord|Fortune Fairy Hu|False|True|False|False
+TagRecord|Fortune Fairy Swee|False|True|False|False
+TagRecord|Fortune Lady Dark|False|False|False|True
+TagRecord|Fortune Lady Earth|False|False|False|True
+TagRecord|Fortune Lady Every|False|False|False|True
+TagRecord|Fortune Lady Fire|False|True|False|False
+TagRecord|Fortune Lady Light|False|True|False|False
+TagRecord|Fortune Lady Past|True|False|False|False
+TagRecord|Fortune Lady Water|False|True|False|False
+TagRecord|Fortune Lady Wind|False|False|False|True
+TagRecord|Foucault's Cannon|False|True|False|False
+TagRecord|Frontier Wiseman|True|False|False|False
+TagRecord|Gagaga Head|False|False|False|True
+TagRecord|Gagaga Magician|True|False|False|False
+TagRecord|Gagaga Mancer|False|True|False|False
+TagRecord|Gagaga Sister|False|False|False|True
+TagRecord|Galaxy Cleric|False|True|False|False
+TagRecord|Galaxy Mirror Sage|False|True|False|False
+TagRecord|Galaxy Wizard|False|False|True|False
+TagRecord|Gambler of Legend|False|True|False|False
+TagRecord|Gemini Elf|True|False|False|False
+TagRecord|Gemini Summoner|True|False|False|False
+TagRecord|Gem-Merchant|True|False|False|False
+TagRecord|Gendo the Ascetic Monk|True|False|False|False
+TagRecord|Genex Blastfan|True|False|False|False
+TagRecord|Genex Doctor|True|False|False|False
+TagRecord|Genex Power Planner|True|False|False|False
+TagRecord|Geomancer of the Ice Barrier|False|False|False|True
+TagRecord|Ghostrick Doll|True|False|False|False
+TagRecord|Ghostrick Nekomusume|True|False|False|False
+TagRecord|Ghostrick Socuteboss|True|False|False|False
+TagRecord|Ghostrick Witch|True|False|False|False
+TagRecord|Ghostrick Yuki-onna|True|False|False|False
+TagRecord|Gishki Ariel|True|False|False|False
+TagRecord|Gishki Avance|True|False|False|False
+TagRecord|Gishki Emilia|False|False|False|True
+TagRecord|Gishki Natalia|True|False|False|False
+TagRecord|Gishki Noellia|True|False|False|False
+TagRecord|Golden Dragon Summoner|True|False|False|False
+TagRecord|Golden-Eyes Idol|True|False|False|False
+TagRecord|Gravekeeper's Ambusher|True|False|False|False
+TagRecord|Gravekeeper's Assailant|True|False|False|False
+TagRecord|Gravekeeper's Cannonholder|True|False|False|False
+TagRecord|Gravekeeper's Chief|True|False|False|False
+TagRecord|Gravekeeper's Commandant|False|False|True|False
+TagRecord|Gravekeeper's Curse|True|False|False|False
+TagRecord|Gravekeeper's Descendant|True|False|False|False
+TagRecord|Gravekeeper's Guard|True|False|False|False
+TagRecord|Gravekeeper's Headman|True|False|False|False
+TagRecord|Gravekeeper's Heretic|False|False|False|True
+TagRecord|Gravekeeper's Nobleman|False|False|False|True
+TagRecord|Gravekeeper's Oracle|False|False|False|True
+TagRecord|Gravekeeper's Priestess|False|False|False|True
+TagRecord|Gravekeeper's Recruiter|False|False|False|True
+TagRecord|Gravekeeper's Shaman|False|False|False|True
+TagRecord|Gravekeeper's Spear Soldier|True|False|False|False
+TagRecord|Gravekeeper's Spiritualist|True|False|False|False
+TagRecord|Gravekeeper's Spy|True|False|False|False
+TagRecord|Gravekeeper's Supernaturalist|False|False|True|False
+TagRecord|Gravekeeper's Vassal|True|False|False|False
+TagRecord|Gravekeeper's Visionary|True|False|False|False
+TagRecord|Gravekeeper's Watcher|False|True|False|False
+TagRecord|Great Dezard|False|False|False|True
+TagRecord|Great Phantom Thief|False|True|False|False
+TagRecord|Great Sorcerer of the Nekroz|False|False|False|True
+TagRecord|Green Turtle Summoner|True|False|False|False
+TagRecord|Gwenhwyfar, Queen of Noble Arms|False|False|False|True
+TagRecord|Hand of Nephthys|True|False|False|False
+TagRecord|Hannibal Necromancer|True|False|False|False
+TagRecord|Harmonizing Magician|False|True|False|False
+TagRecord|Herald of Creation|True|False|False|False
+TagRecord|Hermit of Prophecy|True|False|False|False
+TagRecord|Hexe Trude|False|False|False|True
+TagRecord|Hierophant of Prophecy|False|False|False|True
+TagRecord|High Priestess of Prophecy|False|True|False|False
+TagRecord|Hiita the Fire Charmer|True|False|False|False
+TagRecord|Hiita the Fire Charmer, Ablaze|True|False|False|False
+TagRecord|Ib the World Chalice Justiciar|False|True|False|False
+TagRecord|Ib the World Chalice Priestess|False|True|False|False
+TagRecord|Ice Master|False|True|False|False
+TagRecord|Ice Queen|False|True|False|False
+TagRecord|Illusionist Faceless Mage|True|False|False|False
+TagRecord|Illusionist Faceless Magician|True|False|False|False
+TagRecord|Impcantation Bookstone|False|True|False|False
+TagRecord|Invitation to a Dark Sleep|True|False|False|False
+TagRecord|Jenis, Lightsworn Mender|True|False|False|False
+TagRecord|Jester Confit|False|False|False|True
+TagRecord|Jester Lord|False|True|False|False
+TagRecord|Jowgen the Spiritualist|True|False|False|False
+TagRecord|Justice of Prophecy|False|True|False|False
+TagRecord|Kamionwizard|False|False|False|True
+TagRecord|Kazejin|True|False|False|False
+TagRecord|Kycoo the Ghost Destroyer|False|True|False|False
+TagRecord|Lady of D.|False|True|False|False
+TagRecord|Lady of Faith|True|False|False|False
+TagRecord|Left Leg of the Forbidden One|False|True|False|False
+TagRecord|Legendary Flame Lord|False|False|True|False
+TagRecord|Legion the Fiend Jester|False|False|False|True
+TagRecord|Lightray Madoor|True|False|False|False
+TagRecord|Lightray Sorcerer|False|False|False|True
+TagRecord|Ljosalf of the Nordic Alfar|True|False|False|False
+TagRecord|Loki, Lord of the Aesir|False|False|False|True
+TagRecord|Lumina, Lightsworn Summoner|True|False|False|False
+TagRecord|Lumina, Twilightsworn Shaman|False|False|False|True
+TagRecord|Lyla, Lightsworn Sorceress|True|False|False|False
+TagRecord|Lyla, Twilightsworn Enchantress|False|False|False|True
+TagRecord|Lyna the Light Charmer|False|False|False|True
+TagRecord|Madolche Butlerusk|True|False|False|False
+TagRecord|Madolche Magileine|False|False|False|True
+TagRecord|Madolche Marmalmaide|True|False|False|False
+TagRecord|Magic Hand|False|True|False|False
+TagRecord|Magical Abductor|True|False|False|False
+TagRecord|Magical Exemplar|False|True|False|False
+TagRecord|Magical Marionette|True|False|False|False
+TagRecord|Magical Plant Mandragola|True|False|False|False
+TagRecord|Magical Scientist|True|False|False|False
+TagRecord|Magical Something|False|True|False|False
+TagRecord|Magical Undertaker|False|True|False|False
+TagRecord|Magicalibra|False|False|False|True
+TagRecord|Magicat|False|False|False|True
+TagRecord|Magician of Black Chaos|False|True|False|False
+TagRecord|Magician of Black Chaos MAX|True|False|False|False
+TagRecord|Magician of Chaos|False|True|False|False
+TagRecord|Magician of Dark Illusion|False|False|True|False
+TagRecord|Magician of Faith|True|False|False|False
+TagRecord|Magician's Robe|True|False|False|False
+TagRecord|Magician's Rod|False|True|False|False
+TagRecord|Magician's Valkyria|False|True|False|False
+TagRecord|Magidog|False|False|False|True
+TagRecord|Magister of Endymion|True|False|False|False
+TagRecord|Maha Vailo|True|False|False|False
+TagRecord|Maha Vailo, Light of the Heavens|True|False|False|False
+TagRecord|Maiden of Macabre|False|True|False|False
+TagRecord|Maiden of the Moonlight|False|True|False|False
+TagRecord|Maiden with Eyes of Blue|True|False|False|False
+TagRecord|Majespecter Cat - Nekomata|False|False|False|True
+TagRecord|Majespecter Crow - Yata|False|True|False|False
+TagRecord|Majespecter Fox - Kyubi|False|True|False|False
+TagRecord|Majespecter Raccoon - Bunbuku|False|False|False|True
+TagRecord|Majespecter Toad - Ogama|False|True|False|False
+TagRecord|Majespecter Unicorn - Kirin|False|False|False|True
+TagRecord|Maniacal Servant|False|True|False|False
+TagRecord|Mara of the Nordic Alfar|False|False|False|True
+TagRecord|Masked Sorcerer|False|True|False|False
+TagRecord|Master with Eyes of Blue|True|False|False|False
+TagRecord|Matriarch of Nephthys|False|False|False|True
+TagRecord|Medium of the Ice Barrier|True|False|False|False
+TagRecord|Megistric Maginician|False|False|False|True
+TagRecord|Mei-Kou, Master of Barriers|True|False|False|False
+TagRecord|Merlin|False|False|False|True
+TagRecord|Milla the Temporal Magician|False|True|False|False
+TagRecord|Millennium Seeker|True|False|False|False
+TagRecord|Millennium-Eyes Illusionist|False|False|False|True
+TagRecord|Millennium-Eyes Restrict|True|False|False|False
+TagRecord|Mind on Air|False|True|False|False
+TagRecord|Minerva, Lightsworn Maiden|False|False|False|True
+TagRecord|Miracle Flipper|False|True|False|False
+TagRecord|Mist Valley Watcher|False|False|False|True
+TagRecord|Morgan, the Enchantress of Avalon|False|False|False|True
+TagRecord|Musician King|True|False|False|False
+TagRecord|Mutant Mindmaster|False|False|False|True
+TagRecord|Mysterious Guard|True|False|False|False
+TagRecord|Mystic Lamp|False|True|False|False
+TagRecord|Mystic Piper|False|False|False|True
+TagRecord|Mystical Elf|True|False|False|False
+TagRecord|Mystical Fairy Elfuria|False|False|False|True
+TagRecord|Mystrick Hulder|False|False|False|True
+TagRecord|Mythical Beast Bashilisk|False|False|False|True
+TagRecord|Mythical Beast Cerberus|True|False|False|False
+TagRecord|Mythical Beast Garuda|False|False|False|True
+TagRecord|Mythical Beast Jackal|False|False|False|True
+TagRecord|Mythical Beast Jackal King|False|False|False|True
+TagRecord|Mythical Beast Master Cerberus|False|False|False|True
+TagRecord|Mythical Beast Medusa|True|False|False|False
+TagRecord|Necrolancer the Time-lord|False|False|False|True
+TagRecord|Nekroz of Gungnir|True|False|False|False
+TagRecord|Nekroz of Sophia|False|False|False|True
+TagRecord|Nekroz of Unicore|False|False|False|True
+TagRecord|Nekroz of Valkyrus|False|False|False|True
+TagRecord|Nemuriko|True|False|False|False
+TagRecord|Neo Aqua Madoor|False|False|False|True
+TagRecord|Neos Wiseman|False|False|False|True
+TagRecord|Night Wing Sorceress|False|True|False|False
+TagRecord|Night's End Sorcerer|False|False|False|True
+TagRecord|Nirvana High Paladin|False|False|False|True
+TagRecord|Nobledragon Magician|False|False|False|True
+TagRecord|Norito the Moral Leader|False|False|False|True
+TagRecord|Noritoshi in Darkest Rainment|False|False|False|True
+TagRecord|Number 104: Masquerade|False|False|False|True
+TagRecord|Number 11: Big Eye|False|False|False|True
+TagRecord|Number 75: Bamboozling Gossip Shadow|False|False|False|True
+TagRecord|Number 78: Number Archive|False|False|False|True
+TagRecord|Number 83: Galaxy Queen|False|False|False|True
+TagRecord|Number C104: Umbral Horror Masquerade|False|False|False|True
+TagRecord|Oafdragon Magician|False|False|False|True
+TagRecord|Old Vindictive Magician|True|False|False|False
+TagRecord|Oracle of the Sun|False|False|False|True
+TagRecord|Otohime|False|True|False|False
+TagRecord|Palladium Oracle Mahad|False|False|False|True
+TagRecord|Palladium Oracle Mana|False|False|False|True
+TagRecord|Performage Damage Juggler|False|True|False|False
+TagRecord|Performage Flame Eater|False|False|False|True
+TagRecord|Performage Hat Tricker|False|False|False|True
+TagRecord|Performage Mirror Conductor|False|False|False|True
+TagRecord|Performage Plushfire|False|False|False|True
+TagRecord|Performage Stilts Launcher|True|False|False|False
+TagRecord|Performage Trapeze Magician|False|False|False|True
+TagRecord|Performage Trick Clown|True|False|False|False
+TagRecord|Performapal Extra Slinger|True|False|False|False
+TagRecord|Performapal Five-Rainbow Magician|False|False|False|True
+TagRecord|Performapal Laugh Maker|False|False|False|True
+TagRecord|Performapal Odd-Eyes Dissolver|False|False|False|True
+TagRecord|Performapal Odd-Eyes Synchron|False|False|False|True
+TagRecord|Performapal Pendulum Sorcerer|False|False|False|True
+TagRecord|Performapal Revue Dancer|True|False|False|False
+TagRecord|Performapal Skullcrobat Joker|False|True|False|False
+TagRecord|Performapal Sky Magician|False|False|False|True
+TagRecord|Performapal Sky Pupil|False|False|False|True
+TagRecord|Performapal Sleight Hand Magician|False|False|False|True
+TagRecord|Performapal Smile Sorcerer|False|False|False|True
+TagRecord|Performapal Trump Girl|True|False|False|False
+TagRecord|Performapal Trump Witch|True|False|False|False
+TagRecord|Performapal Whim Witch|False|True|False|False
+TagRecord|Peten the Dark Clown|True|False|False|False
+TagRecord|Phantom Magician|False|False|False|True
+TagRecord|Photon Circle|True|False|False|False
+TagRecord|Pixie Knight|True|False|False|False
+TagRecord|Power Supplier|False|False|False|True
+TagRecord|Priestess with Eyes of Blue|False|True|False|False
+TagRecord|Princess Curran|False|False|False|True
+TagRecord|Princess Pikeru|False|False|False|True
+TagRecord|Prophecy Destroyer|False|False|False|True
+TagRecord|Protector with Eyes of Blue|False|True|False|False
+TagRecord|Purple Poison Magician|False|False|False|True
+TagRecord|Puzzlomino, the Drop-n-Deleter|False|False|False|True
+TagRecord|Qadshaddoll Keios|False|True|False|False
+TagRecord|Quintet Magician|False|False|False|True
+TagRecord|Raging Eria|True|False|False|False
+TagRecord|Rapid-Fire Magician|True|False|False|False
+TagRecord|Reaper of Prophecy|False|False|False|True
+TagRecord|Red Sparrow Summoner|True|False|False|False
+TagRecord|Reflection of Endymion|True|False|False|False
+TagRecord|Relinquished|True|False|False|False
+TagRecord|Revealer of the Ice Barrier|True|False|False|False
+TagRecord|R-Genex Oracle|False|False|False|True
+TagRecord|R-Genex Overseer|False|False|False|True
+TagRecord|Right Arm of the Forbidden One|False|True|False|False
+TagRecord|Right Leg of the Forbidden One|False|True|False|False
+TagRecord|Rogue Doll|True|False|False|False
+TagRecord|Royal Magical Library|True|False|False|False
+TagRecord|Saambell the Summoner|True|False|False|False
+TagRecord|Sage of Silence|False|False|False|True
+TagRecord|Sage of Stillness|True|False|False|False
+TagRecord|Sage with Eyes of Blue|False|False|False|True
+TagRecord|Saggi the Dark Clown|True|False|False|False
+TagRecord|Saion the Vaylantz Archer|True|False|False|False
+TagRecord|Sand Gambler|False|True|False|False
+TagRecord|Sanwitch|False|False|True|False
+TagRecord|Sauge de Fleur|True|False|False|False
+TagRecord|Sealmaster Meisei|False|False|False|True
+TagRecord|Secret Sect Druid Dru|False|True|False|False
+TagRecord|Secret Sect Druid Wid|False|True|False|False
+TagRecord|Sectarian of Secrets|False|False|False|True
+TagRecord|Servant of Endymion|True|False|False|False
+TagRecord|Shaddoll Beast|False|True|False|False
+TagRecord|Shaddoll Dragon|True|False|False|False
+TagRecord|Shaddoll Falco|False|True|False|False
+TagRecord|Shaddoll Hedgehog|True|False|False|False
+TagRecord|Shaddoll Hound|True|False|False|False
+TagRecord|Shaddoll Squamata|True|False|False|False
+TagRecord|Shaddoll Zefranaga|False|True|False|False
+TagRecord|Shadowpriestess of Ohm|False|False|False|True
+TagRecord|Shining Elf|False|False|False|True
+TagRecord|Shock Troops of the Ice Barrier|True|False|False|False
+TagRecord|Silent Magician|False|False|False|True
+TagRecord|Silent Magician LV4|False|True|False|False
+TagRecord|Silent Magician LV8|True|False|False|False
+TagRecord|Skilled Blue Magician|True|False|False|False
+TagRecord|Skilled Dark Magician|True|False|False|False
+TagRecord|Skilled Red Magician|False|True|False|False
+TagRecord|Skull Knight|True|False|False|False
+TagRecord|Slacker Magician|False|False|False|True
+TagRecord|Solitaire Magician|False|True|False|False
+TagRecord|Sorcerer of Dark Magic|False|True|False|False
+TagRecord|Sorcerer of the Doomed|True|False|False|False
+TagRecord|Sorciere de Fleur|False|False|False|True
+TagRecord|Speaker for the Ice Barriers|True|False|False|False
+TagRecord|Spell Recycler|False|False|False|True
+TagRecord|Spellbook Magician of Prophecy|False|False|True|False
+TagRecord|Spellbreaker of the Ice Barrier|True|False|False|False
+TagRecord|Spellstone Sorcerer Karood|False|False|False|True
+TagRecord|SPYGAL Misty|False|False|False|True
+TagRecord|SPYRAL Master Plan|False|False|False|True
+TagRecord|Star Drawing|False|True|False|False
+TagRecord|Stardust Phantom|False|True|False|False
+TagRecord|Stargazer Magician|True|False|False|False
+TagRecord|Stoic of Prophecy|True|False|False|False
+TagRecord|Storming Wynn|False|False|False|True
+TagRecord|Strategist of the Ice Barrier|True|False|False|False
+TagRecord|Strength of Prophecy|False|True|False|False
+TagRecord|Subterror Fiendess|False|False|False|True
+TagRecord|Summon Sorceress|False|False|False|True
+TagRecord|Summoner Monk|False|True|False|False
+TagRecord|Summoner of Illusions|False|True|False|False
+TagRecord|Sunny Pixie|True|False|False|False
+TagRecord|Supay, Duskwalker|False|False|True|False
+TagRecord|Super Quantum Green Layer|False|True|False|False
+TagRecord|Supreme Arcanite Magician|False|False|False|True
+TagRecord|Svartalf of the Nordic Alfar|False|True|False|False
+TagRecord|Synchro Fusionist|False|False|False|True
+TagRecord|T.G. Cyber Magician|False|False|False|True
+TagRecord|T.G. Hyper Librarian|False|True|False|False
+TagRecord|T.G. Wonder Magician|False|False|False|True
+TagRecord|Temperance of Prophecy|False|False|False|True
+TagRecord|Tempest Magician|False|False|False|True
+TagRecord|The Dark Magicians|True|False|False|False
+TagRecord|The Illusory Gentleman|True|False|False|False
+TagRecord|The King of D.|False|False|False|True
+TagRecord|The Legendary Exodia Incarnate|True|False|False|False
+TagRecord|The Stern Mystic|True|False|False|False
+TagRecord|The Unhappy Girl|False|False|False|True
+TagRecord|The Unhappy Maiden|True|False|False|False
+TagRecord|Thousand-Eyes Idol|True|False|False|False
+TagRecord|Thousand-Eyes Restrict|False|True|False|False
+TagRecord|Time Magic Hammer|False|True|False|False
+TagRecord|Timebreaker Magician|False|False|False|True
+TagRecord|Timestar Magician|False|False|False|True
+TagRecord|Toon Dark Magician|False|False|True|False
+TagRecord|Toon Dark Magician Girl|True|False|False|False
+TagRecord|Toon Gemini Elf|True|False|False|False
+TagRecord|Toon Masked Sorcerer|True|False|False|False
+TagRecord|Toy Magician|False|False|False|True
+TagRecord|Trance the Magic Swordsman|True|False|False|False
+TagRecord|Tsukuyomi|False|False|False|True
+TagRecord|Tuned Magician|False|False|False|True
+TagRecord|Tuning Magician|False|False|False|True
+TagRecord|V Salamander|False|False|False|True
+TagRecord|Violet Witch|False|False|False|True
+TagRecord|Virgil, Rock Star of the Burning Abyss|False|False|False|True
+TagRecord|Warlock of the Ice Barrier|False|True|False|False
+TagRecord|Wee Witch's Apprentice|True|False|False|False
+TagRecord|Wheel of Prophecy|False|False|False|True
+TagRecord|White Magical Hat|True|False|False|False
+TagRecord|White Magician Pikeru|True|False|False|False
+TagRecord|White Tiger Summoner|True|False|False|False
+TagRecord|White Wing Magician|False|False|False|True
+TagRecord|Wind-Up Magician|False|False|False|True
+TagRecord|Windwitch - Crystal Bell|False|True|False|False
+TagRecord|Windwitch - Freeze Bell|True|False|False|False
+TagRecord|Windwitch - Glass Bell|False|False|False|True
+TagRecord|Windwitch - Ice Bell|False|False|False|True
+TagRecord|Windwitch - Snow Bell|False|True|False|False
+TagRecord|Windwitch - Winter Bell|False|False|False|True
+TagRecord|Wisdom-Eye Magician|False|False|False|True
+TagRecord|Witch Doctor of Chaos|True|False|False|False
+TagRecord|Witch Doctor of Sparta|True|False|False|False
+TagRecord|Witch of the Black Forest|True|False|False|False
+TagRecord|Witch of the Black Rose|False|False|False|True
+TagRecord|Witchcrafter Edel|False|False|False|True
+TagRecord|Witchcrafter Golem Aruru|True|False|False|False
+TagRecord|Witchcrafter Haine|False|False|False|True
+TagRecord|Witchcrafter Madame Verre|False|False|False|True
+TagRecord|Witchcrafter Pittore|False|False|False|True
+TagRecord|Witchcrafter Potterie|False|False|False|True
+TagRecord|Witchcrafter Schmietta|False|False|False|True
+TagRecord|Witch's Apprentice|True|False|False|False
+TagRecord|Wiz, Sage Fur Hire|False|False|False|True
+TagRecord|Wizard Buster Destruction Sword|True|False|False|False
+TagRecord|World of Prophecy|False|False|False|True
+TagRecord|Wynn the Wind Charmer|True|False|False|False
+TagRecord|Wynn the Wind Charmer, Verdant|True|False|False|False
+TagRecord|Xiangke Magician|False|False|False|True
+TagRecord|Xiangsheng Magician|False|False|False|True
+TagRecord|Xyz Agent|True|False|False|False
+TagRecord|Zefrasaber, Swordmaster of the Nekroz|True|False|False|False
+TagRecord|Injection Fairy Lily|False|True|False|False
+TagRecord|Left Arm of the Forbidden One|False|True|False|False
+TagRecord|Kiwi Magician Girl|False|False|True|False
+TagRecord|Lemon Magician Girl|False|False|True|False
+TagRecord|Flelf|True|False|False|False
