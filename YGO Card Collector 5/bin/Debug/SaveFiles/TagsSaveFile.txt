@@ -1,4 +1,4 @@
-5288
+5397
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -5287,3 +5287,112 @@ TagRecord|Left Arm of the Forbidden One|False|True|False|False
 TagRecord|Kiwi Magician Girl|False|False|True|False
 TagRecord|Lemon Magician Girl|False|False|True|False
 TagRecord|Flelf|True|False|False|False
+TagRecord|Apocatequil|True|False|False|False
+TagRecord|Batteryman 9-Volt|True|False|False|False
+TagRecord|Batteryman AA|False|True|False|False
+TagRecord|Batteryman AAA|False|True|False|False
+TagRecord|Batteryman C|False|True|False|False
+TagRecord|Batteryman Charger|False|True|False|False
+TagRecord|Batteryman D|True|False|False|False
+TagRecord|Batteryman Fuel Cell|False|True|False|False
+TagRecord|Batteryman Industrial Strength|False|True|False|False
+TagRecord|Batteryman Micro-Cell|False|True|False|False
+TagRecord|Batteryman Solar|False|True|False|False
+TagRecord|Bolt Penguin|True|False|False|False
+TagRecord|Brohunder|False|True|False|False
+TagRecord|Cuben|False|True|False|False
+TagRecord|Denko Sekka|True|False|False|False
+TagRecord|Diana the Light Spirit|False|True|False|False
+TagRecord|Electric Lizard|True|False|False|False
+TagRecord|Electric Snake|True|False|False|False
+TagRecord|Electric Virus|True|False|False|False
+TagRecord|Elemental HERO Voltic|True|False|False|False
+TagRecord|Evilswarm Thunderbird|False|True|False|False
+TagRecord|Gem-Knight Amber|True|False|False|False
+TagRecord|Gem-Knight Prismaura|True|False|False|False
+TagRecord|Gem-Knight Topaz|True|False|False|False
+TagRecord|Gem-Knight Tourmaline|True|False|False|False
+TagRecord|Guardian Tryce|True|False|False|False
+TagRecord|Gusto Squirro|False|True|False|False
+TagRecord|Gusto Thunbolt|False|True|False|False
+TagRecord|Kaminari Attack|True|False|False|False
+TagRecord|Kurivolt|False|True|False|False
+TagRecord|Lightning Chidori|False|False|False|True
+TagRecord|Lightning Conger|True|False|False|False
+TagRecord|Lightning Punisher|False|True|False|False
+TagRecord|Lightning Rod Lord|False|True|False|False
+TagRecord|Mahunder|False|False|False|True
+TagRecord|Mega Thunderball|True|False|False|False
+TagRecord|Mist Valley Executor|True|False|False|False
+TagRecord|Mist Valley Thunder Lord|False|False|False|True
+TagRecord|Mist Valley Thunderbird|False|False|False|True
+TagRecord|Mist Wurm|False|False|False|True
+TagRecord|Mithra the Thunder Vassal|False|False|False|True
+TagRecord|Morphtronic Magnen|False|True|False|False
+TagRecord|Morphtronic Magnen Bar|True|False|False|False
+TagRecord|Morphtronic Radion|False|False|False|True
+TagRecord|Pahunder|False|True|False|False
+TagRecord|Plasma Ball|True|False|False|False
+TagRecord|Prank-Kids Battle Butler|True|False|False|False
+TagRecord|Prank-Kids Dodo-Doodle-Doo|True|False|False|False
+TagRecord|Prank-Kids Fansies|False|False|False|True
+TagRecord|Rai Rider|False|True|False|False
+TagRecord|Rai-Jin|False|True|False|False
+TagRecord|Rai-Mei|False|False|False|True
+TagRecord|Ritual Beast Ulti-Cannahawk|False|False|False|True
+TagRecord|Sanga of the Thunder|True|False|False|False
+TagRecord|Sishunder|False|True|False|False
+TagRecord|Some Summer Summoner|False|False|False|True
+TagRecord|Spiritual Beast Cannahawk|False|False|False|True
+TagRecord|Spright Red|True|False|False|False
+TagRecord|Subterror Behemoth Voltelluric|False|False|False|True
+TagRecord|Super-Electromagnetic Voltech Dragon|False|True|False|False
+TagRecord|Susa Soldier|False|False|False|True
+TagRecord|The Accumulator|False|True|False|False
+TagRecord|The Ascended of Thunder|False|True|False|False
+TagRecord|The Calculator|True|False|False|False
+TagRecord|The Calibrator|True|False|False|False
+TagRecord|The Creator|False|True|False|False
+TagRecord|The Dark Creator|True|False|False|False
+TagRecord|The Immortal of Thunder|True|False|False|False
+TagRecord|Thunder Dragon|True|False|False|False
+TagRecord|Thunder Dragon Colossus|False|False|False|True
+TagRecord|Thunder Dragon Thunderstormech|False|False|False|True
+TagRecord|Thunder Dragon Titan|True|False|False|False
+TagRecord|Thunder Dragondark|True|False|False|False
+TagRecord|Thunder Dragonduo|False|False|False|True
+TagRecord|Thunder Dragonhawk|False|False|False|True
+TagRecord|Thunder Dragonmatrix|False|True|False|False
+TagRecord|Thunder Dragonroar|False|False|False|True
+TagRecord|Thunder Hand|True|False|False|False
+TagRecord|Thunder Kid|False|False|False|True
+TagRecord|Thunder King Rai-Oh|False|True|False|False
+TagRecord|Thunder King, the Lightningstrike Kaiju|True|False|False|False
+TagRecord|Thunder Nyan Nyan|False|True|False|False
+TagRecord|Thunder Sea Horse|False|False|False|True
+TagRecord|Thunderclap Monk|False|True|False|False
+TagRecord|Thunderclap Skywolf|False|False|False|True
+TagRecord|Tribe-Shocking Virus|False|True|False|False
+TagRecord|Tripwire Beast|True|False|False|False
+TagRecord|Twin-Headed Thunder Dragon|False|False|True|False
+TagRecord|United Resistance|True|False|False|False
+TagRecord|Voltester|True|False|False|False
+TagRecord|Wattberyx|False|True|False|False
+TagRecord|Wattbetta|False|True|False|False
+TagRecord|Wattchimera|False|False|False|True
+TagRecord|Wattcobra|False|True|False|False
+TagRecord|Wattdragonfly|True|False|False|False
+TagRecord|Wattfox|False|True|False|False
+TagRecord|Wattgiraffe|False|False|False|True
+TagRecord|Watthopper|True|False|False|False
+TagRecord|Watthydra|False|False|False|True
+TagRecord|Wattkid|False|True|False|False
+TagRecord|Wattkiwi|True|False|False|False
+TagRecord|Wattlemur|True|False|False|False
+TagRecord|Wattmole|True|False|False|False
+TagRecord|Wattpheasant|False|True|False|False
+TagRecord|Wattsquirrel|False|True|False|False
+TagRecord|Wattwoodpecker|False|True|False|False
+TagRecord|Zaborg the Mega Monarch|False|False|False|True
+TagRecord|Zap Mustung|False|True|False|False
+TagRecord|Vylon Prism|False|True|False|False
