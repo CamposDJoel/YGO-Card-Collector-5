@@ -3591,6 +3591,32 @@ namespace YGO_Card_Collector_5
             string output = JsonConvert.SerializeObject(setsDB);
             File.WriteAllText(Directory.GetCurrentDirectory() + "\\Output Files\\SetsDB.json", output);
         }
+        private void TEST_FindDuplicatelinesInsavefile()
+        {
+            StreamReader SR_SaveFile = new StreamReader(
+                Directory.GetCurrentDirectory() + "\\SaveFiles\\SaveFile.txt");
+
+            //String that hold the data of one line of the txt file
+            string line = "";
+
+            line = SR_SaveFile.ReadLine();
+            int cardCount = Convert.ToInt32(line);
+
+
+            List<string> lines = new List<string>();
+            for (int i = 0; i < cardCount; i++)
+            {
+                line = SR_SaveFile.ReadLine();
+                if(lines.Contains(line))
+                {
+                    throw new Exception(string.Format("duplicate found: [{0}]", line));
+                }
+                else
+                {
+                    lines.Add(line);
+                }
+            }
+        }
         private void btnTest_Click(object sender, EventArgs e)
         {
             TEST_FIXTCGURLS();
@@ -3607,8 +3633,8 @@ namespace YGO_Card_Collector_5
             //TEST_GETURLS();
             //TEST_UpdateFromFixedList();
 
-
-            TEST_UpdateSetPacks();
+            TEST_FindDuplicatelinesInsavefile();
+            //TEST_UpdateSetPacks();
             //TEST_MakeSetsJSON();
         }
         #endregion       
