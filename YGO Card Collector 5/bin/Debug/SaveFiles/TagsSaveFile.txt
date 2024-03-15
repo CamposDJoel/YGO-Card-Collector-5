@@ -1,4 +1,4 @@
-6221
+6483
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -6220,3 +6220,265 @@ TagRecord|Noble Knight Brothers|False|False|False|True
 TagRecord|Edea the Heavenly Squire|False|False|True|False
 TagRecord|Knight of the Red Lotus|False|False|False|True
 TagRecord|Koa'ki Meiru Rooklord|False|True|False|False
+TagRecord|Alector, Sovereign of Birds|True|False|False|False
+TagRecord|An Owl of Luck|False|True|False|False
+TagRecord|Assault Blackwing - Chidori the Rain Sprinkling|True|False|False|False
+TagRecord|Assault Blackwing - Kunai the Drizzle|False|False|False|True
+TagRecord|Assault Blackwing - Onimaru the Divine Thunder|False|False|False|True
+TagRecord|Assault Blackwing - Raikiri the Rain Shower|False|False|False|True
+TagRecord|Assault Blackwing - Sayo the Rain Hider|False|True|False|False
+TagRecord|Assault Blackwing - Sohaya the Rain Storm|True|False|False|False
+TagRecord|Aurora Wing|False|True|False|False
+TagRecord|Barrier Statue of the Stormwinds|False|True|False|False
+TagRecord|Battlestorm|False|True|False|False
+TagRecord|Birdface|False|True|False|False
+TagRecord|Blackwing - Abrolhos the Megaquake|False|True|False|False
+TagRecord|Blackwing - Aurora the Northern Lights|False|True|False|False
+TagRecord|Blackwing - Auster the South Wind|True|False|False|False
+TagRecord|Blackwing - Blizzard the Far North|True|False|False|False
+TagRecord|Blackwing - Bora the Spear|True|False|False|False
+TagRecord|Blackwing - Boreas the Sharp|False|True|False|False
+TagRecord|Blackwing - Breeze the Zephyr|False|False|False|True
+TagRecord|Blackwing - Brisote the Tailwind|True|False|False|False
+TagRecord|Blackwing - Calima the Haze|True|False|False|False
+TagRecord|Blackwing - Damascus the Polar Night|False|True|False|False
+TagRecord|Blackwing - Decay the Ill Wind|True|False|False|False
+TagRecord|Blackwing - Elphin the Raven|True|False|False|False
+TagRecord|Blackwing - Etesian of Two Swords|True|False|False|False
+TagRecord|Blackwing - Fane the Steel Chain|False|True|False|False
+TagRecord|Blackwing - Gale the Whirlwind|False|True|False|False
+TagRecord|Blackwing - Gladius the Midnight Sun|False|True|False|False
+TagRecord|Blackwing - Gofu the Vague Shadow|False|True|False|False
+TagRecord|Blackwing - Gram the Shining Star|False|False|False|True
+TagRecord|Blackwing - Gust the Backblast|True|False|False|False
+TagRecord|Blackwing - Harmattan the Dust|True|False|False|False
+TagRecord|Blackwing - Hillen the Tengu-wind|False|True|False|False
+TagRecord|Blackwing - Hurricane the Tornado|False|True|False|False
+TagRecord|Blackwing - Jetstream the Blue Sky|False|False|False|True
+TagRecord|Blackwing - Jin the Rain Shadow|False|True|False|False
+TagRecord|Blackwing - Kalut the Moon Shadow|True|False|False|False
+TagRecord|Blackwing - Kogarashi the Wanderer|False|True|False|False
+TagRecord|Blackwing - Kris the Crack of Dawn|False|True|False|False
+TagRecord|Blackwing - Mistral the Silver Shield|True|False|False|False
+TagRecord|Blackwing - Nothung the Starlight|True|False|False|False
+TagRecord|Blackwing - Oroshi the Squall|False|True|False|False
+TagRecord|Blackwing - Pinaki the Waxing Moon|False|True|False|False
+TagRecord|Blackwing - Shura the Blue Flame|True|False|False|False
+TagRecord|Blackwing - Silverwind the Ascendant|False|True|False|False
+TagRecord|Blackwing - Simoon the Poison Wind|True|False|False|False
+TagRecord|Blackwing - Sirocco the Dawn|True|False|False|False
+TagRecord|Blackwing - Steam the Cloak|False|True|False|False
+TagRecord|Blackwing - Tornado the Reverse Wind|True|False|False|False
+TagRecord|Blackwing - Vayu the Emblem of Honor|False|False|False|True
+TagRecord|Blackwing - Zephyros the Elite|True|False|False|False
+TagRecord|Blackwing Armor Master|False|False|False|True
+TagRecord|Blackwing Full Armor Master|False|False|False|True
+TagRecord|Blizzard Falcon|False|True|False|False
+TagRecord|Blizzard Thunderbird|True|False|False|False
+TagRecord|Blue-Winged Crown|True|False|False|False
+TagRecord|Bujingi Crane|False|True|False|False
+TagRecord|Bujingi Crow|False|True|False|False
+TagRecord|Bujingi Ibis|False|True|False|False
+TagRecord|Bujingi Ophidian|False|True|False|False
+TagRecord|Bujingi Pavo|False|True|False|False
+TagRecord|Bujingi Peacock|False|True|False|False
+TagRecord|Bujingi Raven|False|True|False|False
+TagRecord|Bujingi Swallow|False|True|False|False
+TagRecord|Caligo Claw Crow|True|False|False|False
+TagRecord|Castel, the Skyblaster Musketeer|False|True|False|False
+TagRecord|Cerulean Sacred Phoenix of Nephthys|False|True|False|False
+TagRecord|Cheepcheepcheep|True|False|False|False
+TagRecord|Chemicritter Hydron Hawk|False|True|False|False
+TagRecord|Chrysalis Chicky|True|False|False|False
+TagRecord|Cockadoodledoo|False|True|False|False
+TagRecord|Crane Crane|True|False|False|False
+TagRecord|Crimson Sunbird|True|False|False|False
+TagRecord|Crystal Beast Cobalt Eagle|True|False|False|False
+TagRecord|Cyber Harpie Lady|True|False|False|False
+TagRecord|Cyber Slash Harpie Lady|False|False|True|False
+TagRecord|D.D. Crow|False|True|False|False
+TagRecord|Danger! Thunderbird!|False|True|False|False
+TagRecord|Dark Bat|True|False|False|False
+TagRecord|Dark Nephthys|False|True|False|False
+TagRecord|Dark Simorgh|False|False|False|True
+TagRecord|Dragunity Angusticlavii|False|True|False|False
+TagRecord|Dragunity Militum|True|False|False|False
+TagRecord|Dragunity Primus Pilus|True|False|False|False
+TagRecord|Dragunity Senatus|True|False|False|False
+TagRecord|Droll Bird|False|False|False|True
+TagRecord|Duck Dummy|False|True|False|False
+TagRecord|Eagle Eye|True|False|False|False
+TagRecord|Earthbound Immortal Aslla piscu|False|False|False|True
+TagRecord|Earthbound Immortal Wiraqocha Rasca|False|True|False|False
+TagRecord|Evilswarm Hraesvelg|False|True|False|False
+TagRecord|Faith Bird|False|True|False|False
+TagRecord|Fenghuang|False|True|False|False
+TagRecord|Fiend Reflection #2|True|False|False|False
+TagRecord|Filo, Messenger Fur Hire|False|True|False|False
+TagRecord|Fire King Avatar Garunix|True|False|False|False
+TagRecord|Fire King High Avatar Garunix|False|False|True|False
+TagRecord|Firebird|True|False|False|False
+TagRecord|Floowandereeze & Eglen|True|False|False|False
+TagRecord|Floowandereeze & Stri|True|False|False|False
+TagRecord|Floowandereeze & Toccan|True|False|False|False
+TagRecord|Fushi No Tori|False|True|False|False
+TagRecord|Garuda the Wind Spirit|True|False|False|False
+TagRecord|Garum the Storm Vassal|True|False|False|False
+TagRecord|Ghost Bird of Bewitchment|True|False|False|False
+TagRecord|Gladiator Beast Augustus|False|False|False|True
+TagRecord|Gladiator Beast Bestiari|False|True|False|False
+TagRecord|Gladiator Beast Dragases|False|True|False|False
+TagRecord|Gladiator Beast Equeste|False|True|False|False
+TagRecord|Gladiator Beast Gyzarus|False|False|False|True
+TagRecord|Gladiator Beast Lanista|True|False|False|False
+TagRecord|Gladiator Beast Nerokius|False|False|False|True
+TagRecord|Gladiator Beast Octavius|False|True|False|False
+TagRecord|Glife the Phantom Bird|False|False|False|True
+TagRecord|Guard Penguin|False|False|False|True
+TagRecord|Gusto Codor|True|False|False|False
+TagRecord|Gusto Egul|False|False|False|True
+TagRecord|Gusto Falco|False|False|False|True
+TagRecord|Gusto Griffin|False|False|False|True
+TagRecord|Gusto Gulldo|False|False|False|True
+TagRecord|Harpie Channeler|True|False|False|False
+TagRecord|Harpie Dancer|True|False|False|False
+TagRecord|Harpie Girl|True|False|False|False
+TagRecord|Harpie Harpist|True|False|False|False
+TagRecord|Harpie Lady|False|True|False|False
+TagRecord|Harpie Lady 1|True|False|False|False
+TagRecord|Harpie Lady 2|False|True|False|False
+TagRecord|Harpie Lady 3|True|False|False|False
+TagRecord|Harpie Lady Sisters|True|False|False|False
+TagRecord|Harpie Oracle|True|False|False|False
+TagRecord|Harpie Perfumer|False|False|False|True
+TagRecord|Harpie Queen|True|False|False|False
+TagRecord|Hazy Flame Griffin|False|True|False|False
+TagRecord|Hazy Flame Mantikor|False|True|False|False
+TagRecord|Heraldic Beast Berners Falcon|True|False|False|False
+TagRecord|Heraldic Beast Twin-Headed Eagle|False|True|False|False
+TagRecord|Ice Beast Zerofyne|False|False|False|True
+TagRecord|Ice Princess Zereort|False|True|False|False
+TagRecord|Kikinagashi Fucho|True|False|False|False
+TagRecord|Koa'ki Meiru Tornado|False|True|False|False
+TagRecord|Kujakujaku|True|False|False|False
+TagRecord|Kurama|True|False|False|False
+TagRecord|Lyrilusc - Assembled Nightingale|False|True|False|False
+TagRecord|Lyrilusc - Cobalt Sparrow|True|False|False|False
+TagRecord|Lyrilusc - Independent Nightingale|False|False|False|True
+TagRecord|Lyrilusc - Recital Starling|False|False|False|True
+TagRecord|Lyrilusc - Sapphire Swallow|True|False|False|False
+TagRecord|Lyrilusc - Turquoise Warbler|True|False|False|False
+TagRecord|Mahjong Munia Maidens|False|True|False|False
+TagRecord|Mavelus|False|False|False|True
+TagRecord|Mild Turkey|True|False|False|False
+TagRecord|Mist Bird Clausolas|False|False|False|True
+TagRecord|Mist Condor|False|False|False|True
+TagRecord|Mist Valley Apex Avian|False|False|False|True
+TagRecord|Mist Valley Baby Roc|False|False|True|False
+TagRecord|Mist Valley Falcon|False|True|False|False
+TagRecord|Mist Valley Shaman|True|False|False|False
+TagRecord|Mist Valley Soldier|True|False|False|False
+TagRecord|Neo-Spacian Air Hummingbird|True|False|False|False
+TagRecord|Nephthys, the Sacred Flame|False|False|False|True
+TagRecord|Nephthys, the Sacred Preserver|False|False|False|True
+TagRecord|Niwatori|True|False|False|False
+TagRecord|Number 49: Fortune Tune|True|False|False|False
+TagRecord|Overlay Owl|True|False|False|False
+TagRecord|Peacock|True|False|False|False
+TagRecord|Pendulumucho|False|False|False|True
+TagRecord|Performapal Odd-Eyes Light Phoenix|False|False|False|True
+TagRecord|Performapal Parrotrio|False|False|False|True
+TagRecord|Performapal Spikeagle|True|False|False|False
+TagRecord|Performapal Springoose|False|True|False|False
+TagRecord|Phantom Gryphon|False|True|False|False
+TagRecord|Phoenix Beast Gairuda|False|True|False|False
+TagRecord|Prime Material Falcon|False|False|False|True
+TagRecord|Punished Eagle|True|False|False|False
+TagRecord|Queen Bird|True|False|False|False
+TagRecord|Raidraptor - Avenge Vulture|False|False|False|True
+TagRecord|Raidraptor - Blade Burner Falcon|True|False|False|False
+TagRecord|Raidraptor - Blaze Falcon|False|False|False|True
+TagRecord|Raidraptor - Booster Strix|False|False|False|True
+TagRecord|Raidraptor - Fiend Eagle|False|False|False|True
+TagRecord|Raidraptor - Final Fortress Falcon|False|False|False|True
+TagRecord|Raidraptor - Force Strix|False|False|False|True
+TagRecord|Raidraptor - Fuzzy Lanius|True|False|False|False
+TagRecord|Raidraptor - Heel Eagle|True|False|False|False
+TagRecord|Raidraptor - Last Strix|False|True|False|False
+TagRecord|Raidraptor - Mimicry Lanius|False|True|False|False
+TagRecord|Raidraptor - Napalm Dragonius|True|False|False|False
+TagRecord|Raidraptor - Necro Vulture|False|False|False|True
+TagRecord|Raidraptor - Pain Lanius|False|True|False|False
+TagRecord|Raidraptor - Revolution Falcon|False|False|False|True
+TagRecord|Raidraptor - Rise Falcon|True|False|False|False
+TagRecord|Raidraptor - Rudder Strix|False|False|False|True
+TagRecord|Raidraptor - Satellite Cannon Falcon|False|False|False|True
+TagRecord|Raidraptor - Sharp Lanius|False|True|False|False
+TagRecord|Raidraptor - Singing Lanius|False|False|False|True
+TagRecord|Raidraptor - Skull Eagle|False|False|False|True
+TagRecord|Raidraptor - Stranger Falcon|False|True|False|False
+TagRecord|Raidraptor - Tribute Lanius|False|False|False|True
+TagRecord|Raidraptor - Ultimate Falcon|True|False|False|False
+TagRecord|Raidraptor - Vanishing Lanius|False|True|False|False
+TagRecord|Raidraptor - Wild Vulture|True|False|False|False
+TagRecord|Raiza the Mega Monarch|False|False|False|True
+TagRecord|Raiza the Storm Monarch|True|False|False|False
+TagRecord|Rallis the Star Bird|False|False|False|True
+TagRecord|Red Dragon Ninja|False|True|False|False
+TagRecord|Roc from the Valley of Haze|True|False|False|False
+TagRecord|Sacred Crane|True|False|False|False
+TagRecord|Sacred Phoenix of Nephthys|False|False|True|False
+TagRecord|Sagitta, Maverick Fur Hire|False|False|False|True
+TagRecord|Scrap Searcher|True|False|False|False
+TagRecord|Shield Wing|True|False|False|False
+TagRecord|Shinobaron Peacock|False|True|False|False
+TagRecord|Shinobaroness Peacock|False|True|False|False
+TagRecord|Shinobird Crane|True|False|False|False
+TagRecord|Shinobird Crow|True|False|False|False
+TagRecord|Shinobird Pigeon|True|False|False|False
+TagRecord|Simorgh of Darkness|True|False|False|False
+TagRecord|Simorgh, Bird of Ancestry|False|False|False|True
+TagRecord|Simorgh, Bird of Beginning|False|False|False|True
+TagRecord|Simorgh, Bird of Bringing|False|False|False|True
+TagRecord|Simorgh, Bird of Calamity|False|False|False|True
+TagRecord|Simorgh, Bird of Divinity|False|False|False|True
+TagRecord|Simorgh, Bird of Protection|True|False|False|False
+TagRecord|Simorgh, Lord of the Storm|False|False|False|True
+TagRecord|Sirenorca|False|True|False|False
+TagRecord|Skull Red Bird|True|False|False|False
+TagRecord|Skullbird|False|False|False|True
+TagRecord|Sky Dragoons of Draconia|False|False|False|True
+TagRecord|Sky Scout|True|False|False|False
+TagRecord|Slower Swallow|True|False|False|False
+TagRecord|Soaring Eagle Above the Searing Land|False|False|False|True
+TagRecord|Sonic Bird|True|False|False|False
+TagRecord|Sonic Chick|True|False|False|False
+TagRecord|Sonic Duck|True|False|False|False
+TagRecord|Sonic Shooter|False|True|False|False
+TagRecord|Speed Bird|True|False|False|False
+TagRecord|Spirit of the Books|False|False|False|True
+TagRecord|Spiritual Whisper|False|False|False|True
+TagRecord|Star Staring Starling|False|False|False|True
+TagRecord|Stealth Bird|True|False|False|False
+TagRecord|Storm Shooter|False|False|False|True
+TagRecord|Swarm of Crows|False|False|False|True
+TagRecord|Swift Birdman Joe|False|True|False|False
+TagRecord|T.G. Jet Falcon|True|False|False|False
+TagRecord|Takuhee|False|False|False|True
+TagRecord|The Atmosphere|False|True|False|False
+TagRecord|Tornado Bird|False|True|False|False
+TagRecord|Totem Bird|False|False|False|True
+TagRecord|Transforming Sphere|False|False|False|True
+TagRecord|Transonic Bird|True|False|False|False
+TagRecord|Troposphere|False|False|False|True
+TagRecord|Tyhone|True|False|False|False
+TagRecord|Ulevo|False|False|False|True
+TagRecord|Unibird|False|False|False|True
+TagRecord|Vortex the Whirlwind|False|True|False|False
+TagRecord|Wind Effigy|False|True|False|False
+TagRecord|Windrose the Elemental Lord|False|False|False|True
+TagRecord|Winged Dragon, Guardian of the Fortress #2|False|False|False|True
+TagRecord|Winged Sage Falcos|False|True|False|False
+TagRecord|ZW - Eagle Claw|True|False|False|False
+TagRecord|ZW - Phoenix Bow|False|False|False|True
+TagRecord|Harpie Conductor|False|False|True|False
