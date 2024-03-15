@@ -1,4 +1,4 @@
-12074
+12097
 LOB-000|Secret Rare|Tri-Horned Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-001|Ultra Rare|Blue-Eyes White Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-002|Common|Hitotsu-Me Giant|LEGEND OF BLUE EYES WHITE DRAGON
@@ -12073,3 +12073,26 @@ DB2-EN009|Common|Tornado Bird|DARK BEGINNING 2
 STOR-ENSP1|Ultra Rare|Vortex the Whirlwind|STORM OF RAGNAROK Sneak Peek
 PTDN-EN041|Common|Wind Effigy|PHANTOM DARKNESS
 PGD-072|Rare|Winged Sage Falcos|PHARAONIC GUARDIAN
+SOFU-EN048|Common|Agave Dragon|SOUL FUSION
+DUEA-EN029|Super Rare|Bi'an, Earth of the Yang Zing|DUELIST ALLIANCE
+MP15-EN085|Super Rare|Bixi, Water of the Yang Zing|2015 MEGA-TINS MEGA PACK
+FIGA-EN054|Super Rare|Dinomight Knight, the True Dracofighter|FISTS OF THE GADGETS
+YS16-EN019|Common|Dragon Dowser|STARTER DECK YUYA
+DOCS-EN037|Rare|Giant Pairfish|DIMENSION OF CHAOS
+FIGA-EN053|Secret Rare|Ignis Heat, the True Dracowarrior|FISTS OF THE GADGETS
+CROS-EN034|Common|Magma Dragon|CROSSED SOULS
+CYHO-EN018|Common|Metaphys Decoy Dragon|CYBERNETIC HORIZON
+CIBR-EN027|Super Rare|Metaphys Executor|CIRCUIT BREAK
+MP20-EN121|Common|Monk of the Tenyi|2020 TIN OF LOST MEMORIES
+MACR-EN028|Rare|Phantasm Spiral Dragon|MAXIMUM CRISIS
+DUEA-EN031|Super Rare|Pulao, Wind of the Yang Zing|DUELIST ALLIANCE
+SHVI-EN037|Common|Ryu Okami|SHINING VICTORIES
+NECH-EN031|Super Rare|Taotie, Shadow of the Yang Zing|THE NEW CHALLENGERS
+HISU-EN050|Super Rare|Tatsunoko|HIDDEN SUMMONERS
+MP20-EN106|Common|Tenyi Spirit - Adhara|2020 TIN OF LOST MEMORIES
+MP20-EN108|Common|Tenyi Spirit - Mapura|2020 TIN OF LOST MEMORIES
+MP20-EN109|Common|Tenyi Spirit - Nahata|2020 TIN OF LOST MEMORIES
+RIRA-EN013|Rare|Tenyi Spirit - Shthana|RISING RAMPAGE
+LED8-EN055|Common|Tornado Dragon|LEGENDARY DUELISTS: SYNCHRO STORM
+SDSB-EN014|Common|True King Agnimazud, the Vanisher|STRUCTURE DECK: SOULBURNER
+NECH-EN035|Rare|Unmasked Dragon|THE NEW CHALLENGERS

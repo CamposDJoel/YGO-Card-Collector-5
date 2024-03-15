@@ -1,4 +1,4 @@
-6483
+6540
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -276,7 +276,6 @@ TagRecord|Capshell|False|True|False|False
 TagRecord|Tenyi Spirit - Adhara|False|True|False|False
 TagRecord|Tenyi Spirit - Mapura|False|True|False|False
 TagRecord|Tenyi Spirit - Nahata|False|True|False|False
-TagRecord|Monk of the Tenyi|False|True|False|False
 TagRecord|Marincess Current|False|True|False|False
 TagRecord|Fists of the Unrivaled Tenyi|False|True|False|False
 TagRecord|Hraesvelgr, the Desperate Doom Eagle|False|True|False|False
@@ -6482,3 +6481,61 @@ TagRecord|Winged Sage Falcos|False|True|False|False
 TagRecord|ZW - Eagle Claw|True|False|False|False
 TagRecord|ZW - Phoenix Bow|False|False|False|True
 TagRecord|Harpie Conductor|False|False|True|False
+TagRecord|Agave Dragon|False|True|False|False
+TagRecord|Al-Lumi'raj|True|False|False|False
+TagRecord|Baxia, Brightness of the Yang Zing|True|False|False|False
+TagRecord|Berserker of the Tenyi|True|False|False|False
+TagRecord|Bi'an, Earth of the Yang Zing|False|True|False|False
+TagRecord|Bird of Paradise Lost|True|False|False|False
+TagRecord|Bixi, Water of the Yang Zing|False|True|False|False
+TagRecord|Chaofeng, Phantom of the Yang Zing|True|False|False|False
+TagRecord|Chiwen, Light of the Yang Zing|False|False|False|True
+TagRecord|Denglong, First of the Yang Zing|False|False|False|True
+TagRecord|Dinomight Knight, the True Dracofighter|False|True|False|False
+TagRecord|Dreiath III, the True Dracocavalry General|False|False|False|True
+TagRecord|Giant Pairfish|False|True|False|False
+TagRecord|Ignis Heat, the True Dracowarrior|False|True|False|False
+TagRecord|Jiaotu, Darkness of the Yang Zing|False|False|False|True
+TagRecord|Lindbloom|True|False|False|False
+TagRecord|Magma Dragon|False|True|False|False
+TagRecord|Mare Mare|True|False|False|False
+TagRecord|Master Peace, the True Dracoslaying King|False|False|False|True
+TagRecord|Metaltron XII, the True Dracombatant|False|False|False|True
+TagRecord|Metaphys Armed Dragon|True|False|False|False
+TagRecord|Metaphys Daedalus|False|False|False|True
+TagRecord|Metaphys Horus|True|False|False|False
+TagRecord|Metaphys Nephthys|False|False|False|True
+TagRecord|Metaphys Ragnarok|False|False|False|True
+TagRecord|Majesty Maiden, the True Dracocaster|False|False|False|True
+TagRecord|Mariamne, the True Dracophoenix|False|False|False|True
+TagRecord|Metaphys Decoy Dragon|False|True|False|False
+TagRecord|Metaphys Executor|False|True|False|False
+TagRecord|Metaphys Tyrant Dragon|False|False|False|True
+TagRecord|Monk of the Tenyi|False|True|False|False
+TagRecord|Mystery Shell Dragon|True|False|False|False
+TagRecord|Number 24: Dragulas the Vampiric Dragon|True|False|False|False
+TagRecord|Night Dragolich|False|False|False|True
+TagRecord|Pandora's Jewelry Box|True|False|False|False
+TagRecord|Phantasm Spiral Dragon|False|True|False|False
+TagRecord|Pulao, Wind of the Yang Zing|False|True|False|False
+TagRecord|Ryu Okami|False|True|False|False
+TagRecord|Shaman of the Tenyi|False|False|False|True
+TagRecord|Stellarknight Constellar Diamond|False|False|False|True
+TagRecord|Suanni, Fire of the Yang Zing|False|False|False|True
+TagRecord|Subterror Behemoth Fiendess|False|False|False|True
+TagRecord|Swordsoul of Taia|True|False|False|False
+TagRecord|Taotie, Shadow of the Yang Zing|False|True|False|False
+TagRecord|Tatsunoko|False|True|False|False
+TagRecord|Tenyi Spirit - Shthana|False|True|False|False
+TagRecord|Tenyi Spirit - Vishuda|True|False|False|False
+TagRecord|Tornado Dragon|False|True|False|False
+TagRecord|True King Bahrastos, the Fathomer|False|False|False|True
+TagRecord|True King Lithosagym, the Disaster|False|False|False|True
+TagRecord|True King of All Calamities|False|False|False|True
+TagRecord|Unmasked Dragon|False|True|False|False
+TagRecord|Virtual World Oto-Hime - Toutou|True|False|False|False
+TagRecord|Yazi, Evil of the Yang Zing|True|False|False|False
+TagRecord|Zefra Metaltron|False|False|False|True
+TagRecord|Zefraniu, Secret of the Yang Zing|False|False|False|True
+TagRecord|Zefraxi, Treasure of the Yang Zing|False|False|False|True
+TagRecord|Mudragon of the Swamp|False|False|False|True
