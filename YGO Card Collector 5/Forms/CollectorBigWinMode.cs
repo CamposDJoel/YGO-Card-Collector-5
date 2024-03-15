@@ -2020,6 +2020,13 @@ namespace YGO_Card_Collector_5
                 //Set Flags
                 _MasterCardViewMode = true;
 
+                if (_CurrentMasterCardList.Count > 0)
+                {
+                    //Click on the first card
+                    _CurrentCardImageIndexSelected = 0;
+                    InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                }
+
                 //Update the Card Viewer Card Page/Card Count header
                 GroupCardView.Text = string.Format("PAGE: {0}  -  TAG: \"{1}\"  -  Total Cards: {2}", _CurrentCardPage, thisTag.ToString(), _CurrentMasterCardList.Count);
             }
@@ -2047,6 +2054,13 @@ namespace YGO_Card_Collector_5
                     }
                 }
                 _CurrentSetCardListVariants = filteredlistVariants;
+
+                if (_CurrentSetCardList.Count > 0)
+                {
+                    //Click on the first card
+                    _CurrentCardImageIndexSelected = 0;
+                    InitializeSelectedCard(_CurrentCardImageIndexSelected);
+                }
 
 
                 //Update the Card Viewer Card Page/Card Count header
