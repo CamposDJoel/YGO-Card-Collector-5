@@ -1,4 +1,4 @@
-6540
+6730
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -6539,3 +6539,193 @@ TagRecord|Zefra Metaltron|False|False|False|True
 TagRecord|Zefraniu, Secret of the Yang Zing|False|False|False|True
 TagRecord|Zefraxi, Treasure of the Yang Zing|False|False|False|True
 TagRecord|Mudragon of the Swamp|False|False|False|True
+TagRecord|Alghoul Mazera|True|False|False|False
+TagRecord|Archfiend Zombie-Skull|False|True|False|False
+TagRecord|Armored Zombie|True|False|False|False
+TagRecord|Ash Blossom & Joyous Spring|True|False|False|False
+TagRecord|Astra Ghouls|False|True|False|False
+TagRecord|Avendread Savior|False|False|False|True
+TagRecord|Bacon Saver|True|False|False|False
+TagRecord|Beast of the Pharaoh|False|True|False|False
+TagRecord|Berserk Dragon|False|True|False|False
+TagRecord|Blood Sucker|True|False|False|False
+TagRecord|Blue-Blooded Oni|False|True|False|False
+TagRecord|Blue-Eyed Silver Zombie|False|True|False|False
+TagRecord|Bone Crusher|False|True|False|False
+TagRecord|Burning Skull Head|False|False|False|True
+TagRecord|Chewbone|True|False|False|False
+TagRecord|Chopman the Desperate Outlaw|True|False|False|False
+TagRecord|Clown Zombie|False|True|False|False
+TagRecord|Corroding Shark|False|False|False|True
+TagRecord|Crimson Knight Vampire Bram|False|True|False|False
+TagRecord|Crow Tengu|True|False|False|False
+TagRecord|Dakki, the Graceful Mayakashi|False|False|True|False
+TagRecord|Dark Assailant|True|False|False|False
+TagRecord|Dark Dust Spirit|True|False|False|False
+TagRecord|Decayed Commander|True|False|False|False
+TagRecord|Des Lacooda|True|False|False|False
+TagRecord|Despair from the Dark|True|False|False|False
+TagRecord|Devouring Sarcoughagus|True|False|False|False
+TagRecord|Dhampir Vampire Sheridan|True|False|False|False
+TagRecord|Dokurorider|True|False|False|False
+TagRecord|Doomkaiser Dragon|False|False|False|True
+TagRecord|Doomkaiser Dragon/Assault Mode|False|False|False|True
+TagRecord|Doomking Balerdroch|False|False|True|False
+TagRecord|Double Coston|False|True|False|False
+TagRecord|Dragon Zombie|False|True|False|False
+TagRecord|Eldlich the Golden Lord|False|True|False|False
+TagRecord|Fear from the Dark|False|True|False|False
+TagRecord|Erebus the Underworld Monarch|False|False|False|True
+TagRecord|Fire Reaper|False|True|False|False
+TagRecord|Flame Ghost|True|False|False|False
+TagRecord|Fushioh Richie|False|False|False|True
+TagRecord|Gashadokuro, the Skeletal Mayakashi|False|True|False|False
+TagRecord|Gernia|True|False|False|False
+TagRecord|Ghost Belle & Haunted Mansion|True|False|False|False
+TagRecord|Ghost Charon, the Underworld Boatman|False|True|False|False
+TagRecord|Ghost Mourner & Moonlit Chill|True|False|False|False
+TagRecord|Ghost Reaper & Winter Cherries|True|False|False|False
+TagRecord|Ghost Sister & Spooky Dogwood|True|False|False|False
+TagRecord|Ghostrick Alucard|False|False|False|True
+TagRecord|Ghostrick Ghoul|False|True|False|False
+TagRecord|Ghostrick Jiangshi|True|False|False|False
+TagRecord|Ghostrick Mummy|True|False|False|False
+TagRecord|Ghostrick Skeleton|True|False|False|False
+TagRecord|Ghostrick Stein|True|False|False|False
+TagRecord|Ghostrick Warwolf|True|False|False|False
+TagRecord|Ghostrick Yeti|True|False|False|False
+TagRecord|Giant Axe Mummy|True|False|False|False
+TagRecord|Glow-Up Bloom|False|False|False|True
+TagRecord|Goblin Zombie|False|True|False|False
+TagRecord|Gogogo Ghost|False|True|False|False
+TagRecord|Gozuki|False|True|False|False
+TagRecord|Great Mammoth of Goldfine|False|True|False|False
+TagRecord|Hajun, the Winged Mayakashi|True|False|False|False
+TagRecord|Heavy Knight of the Flame|False|True|False|False
+TagRecord|Humpty Grumpty|False|True|False|False
+TagRecord|Kasha|True|False|False|False
+TagRecord|King of the Skull Servants|True|False|False|False
+TagRecord|Koa'ki Meiru Ghoulungulate|False|True|False|False
+TagRecord|Magical Ghost|True|False|False|False
+TagRecord|Malice Ascendant|True|False|False|False
+TagRecord|Master Kyonshee|True|False|False|False
+TagRecord|Mezuki|True|False|False|False
+TagRecord|Necroface|True|False|False|False
+TagRecord|Necroworld Banshee|False|False|False|True
+TagRecord|Nightmare Horse|False|False|False|True
+TagRecord|Nine-Tailed Fox|False|True|False|False
+TagRecord|Number 22: Zombiestein|False|False|False|True
+TagRecord|Number 23: Lancelot, Dark Knight of the Underworld|False|False|False|True
+TagRecord|Number 45: Crumble Logos the Prophet of Demolition|False|False|False|True
+TagRecord|Number 48: Shadow Lich|False|True|False|False
+TagRecord|Oboro-Guruma, the Wheeled Mayakashi|False|False|False|True
+TagRecord|P.M. Captor|False|True|False|False
+TagRecord|Pain Painter|False|False|False|True
+TagRecord|Patrician of Darkness|True|False|False|False
+TagRecord|Pharaoh's Servant|False|True|False|False
+TagRecord|Pharaonic Protector|False|False|True|False
+TagRecord|Pilgrim Reaper|True|False|False|False
+TagRecord|Plaguespreader Zombie|True|False|False|False
+TagRecord|Poison Mummy|True|False|False|False
+TagRecord|Pumpking the King of Ghosts|True|False|False|False
+TagRecord|Pumprincess the Princess of Ghosts|True|False|False|False
+TagRecord|Pyramid Turtle|True|False|False|False
+TagRecord|Reaper on the Nightmare|False|False|False|True
+TagRecord|Reborn Zombie|False|True|False|False
+TagRecord|Red Ogre|False|True|False|False
+TagRecord|Red-Eyes Zombie Dragon Lord|True|False|False|False
+TagRecord|Red-Eyes Zombie Necro Dragon|False|False|False|True
+TagRecord|Red-Headed Oni|True|False|False|False
+TagRecord|Regenerating Mummy|True|False|False|False
+TagRecord|Revendread Executor|False|True|False|False
+TagRecord|Revendread Slayer|False|False|False|True
+TagRecord|Revived King Ha Des|False|False|False|True
+TagRecord|Royal Keeper|True|False|False|False
+TagRecord|Ryu Kokki|True|False|False|False
+TagRecord|Sacred Spirit of the Ice Barrier|False|True|False|False
+TagRecord|Samurai Skull|False|True|False|False
+TagRecord|Scapeghost|True|False|False|False
+TagRecord|Scar of the Vendread|True|False|False|False
+TagRecord|Sea Monster of Theseus|False|False|False|True
+TagRecord|Shadow Ghoul|True|False|False|False
+TagRecord|Shadow Ghoul of the Labyrinth|True|False|False|False
+TagRecord|Shadow Specter|True|False|False|False
+TagRecord|Shadow Vampire|False|False|False|True
+TagRecord|Shafu, the Wheeled Mayakashi|False|True|False|False
+TagRecord|Shinobi Necro|False|True|False|False
+TagRecord|Shiranui Samurai|True|False|False|False
+TagRecord|Shiranui Samuraisaga|False|True|False|False
+TagRecord|Shiranui Shogunsaga|False|False|False|True
+TagRecord|Shiranui Skillsaga Supremacy|False|False|False|True
+TagRecord|Shiranui Smith|True|False|False|False
+TagRecord|Shiranui Solitaire|False|False|False|True
+TagRecord|Shiranui Spectralsword|False|True|False|False
+TagRecord|Shiranui Spectralsword Shade|False|True|False|False
+TagRecord|Shiranui Spiritmaster|False|True|False|False
+TagRecord|Shiranui Squire|False|True|False|False
+TagRecord|Shiranui Squiresaga|False|True|False|False
+TagRecord|Shiranui Sunsaga|False|False|False|True
+TagRecord|Shiranui Swordmaster|False|True|False|False
+TagRecord|Shiranui Swordsaga|False|True|False|False
+TagRecord|Shutendoji|True|False|False|False
+TagRecord|Skelesaurus|False|True|False|False
+TagRecord|Skelgon|False|False|False|True
+TagRecord|Skull Conductor|False|True|False|False
+TagRecord|Skull Flame|False|False|False|True
+TagRecord|Skull Servant|True|False|False|False
+TagRecord|Soul-Absorbing Bone Tower|False|True|False|False
+TagRecord|Spirit of the Pharaoh|False|False|True|False
+TagRecord|Spirit Reaper|True|False|False|False
+TagRecord|Subterror Behemoth Dragossuary|False|True|False|False
+TagRecord|Supersonic Skull Flame|False|False|False|True
+TagRecord|T.G. Gear Zombie|False|True|False|False
+TagRecord|T.G. Metal Skeleton|False|True|False|False
+TagRecord|Temple of Skulls|False|True|False|False
+TagRecord|Tengu, the Winged Mayakashi|False|False|False|True
+TagRecord|The 13th Grave|True|False|False|False
+TagRecord|The Kick Man|True|False|False|False
+TagRecord|The Lady in Wight|False|True|False|False
+TagRecord|The Snake Hair|False|True|False|False
+TagRecord|Three-Legged Zombies|False|False|False|True
+TagRecord|Tsuchigumo, the Poisonous Mayakashi|False|False|False|True
+TagRecord|Tsukahagi, the Poisonous Mayakashi|False|True|False|False
+TagRecord|Uni-Zombie|False|True|False|False
+TagRecord|Vampire Dragon|False|True|False|False
+TagRecord|Vampire Duke|False|False|False|True
+TagRecord|Vampire Familiar|False|False|True|False
+TagRecord|Vampire Fraulein|False|False|True|False
+TagRecord|Vampire Grace|True|False|False|False
+TagRecord|Vampire Grimson|False|True|False|False
+TagRecord|Vampire Lady|True|False|False|False
+TagRecord|Vampire Lord|True|False|False|False
+TagRecord|Vampire Red Baron|False|True|False|False
+TagRecord|Vampire Retainer|False|False|True|False
+TagRecord|Vampire Scarlet Scourge|True|False|False|False
+TagRecord|Vampire Sorcerer|False|False|True|False
+TagRecord|Vampire Sucker|True|False|False|False
+TagRecord|Vampire Vamp|False|False|False|True
+TagRecord|Vendread Anima|False|True|False|False
+TagRecord|Vendread Battlelord|False|False|False|True
+TagRecord|Vendread Chimera|False|False|False|True
+TagRecord|Vendread Core|False|False|False|True
+TagRecord|Vendread Houndhorde|False|False|False|True
+TagRecord|Vendread Revenants|False|True|False|False
+TagRecord|Vendread Striges|False|True|False|False
+TagRecord|Wandering Mummy|False|True|False|False
+TagRecord|Wightmare|False|False|False|True
+TagRecord|Wightprince|False|True|False|False
+TagRecord|Wightprincess|True|False|False|False
+TagRecord|Yaranzo|False|False|False|True
+TagRecord|Yasha, the Skeletal Mayakashi|False|True|False|False
+TagRecord|Yellow-Bellied Oni|False|True|False|False
+TagRecord|Yoko, the Graceful Mayakashi|False|False|False|True
+TagRecord|Yuki-Musume, the Ice Mayakashi|False|True|False|False
+TagRecord|Yuki-Onna, the Ice Mayakashi|False|False|False|True
+TagRecord|Yuki-Onna, the Icicle Mayakashi|True|False|False|False
+TagRecord|Zombie Mammoth|True|False|False|False
+TagRecord|Zombie Master|True|False|False|False
+TagRecord|Zombie Tiger|True|False|False|False
+TagRecord|Zombie Warrior|False|False|False|True
+TagRecord|Zombina|True|False|False|False
+TagRecord|Zombino|False|True|False|False
+TagRecord|Zombowwow|False|True|False|False
