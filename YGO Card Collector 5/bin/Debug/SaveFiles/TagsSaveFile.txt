@@ -1,4 +1,4 @@
-5397
+6221
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -355,7 +355,6 @@ TagRecord|Spirit Force|False|True|False|False
 TagRecord|Descending Lost Star|False|True|False|False
 TagRecord|Miracle Locus|False|True|False|False
 TagRecord|Judge Man|True|False|False|False
-TagRecord|Swordstalker|True|False|False|False
 TagRecord|Lord of D.|True|False|False|False
 TagRecord|Z-Metal Tank|False|False|True|False
 TagRecord|Magic Reflector|False|False|True|False
@@ -3123,7 +3122,6 @@ TagRecord|Leghul|True|False|False|False
 TagRecord|Level Eater|True|False|False|False
 TagRecord|Magical Merchant|True|False|False|False
 TagRecord|Magnetic Mosquito|False|True|False|False
-TagRecord|Man-Eater Bug|False|True|False|False
 TagRecord|Marionette Mite|False|True|False|False
 TagRecord|Metal Armored Bug|True|False|False|False
 TagRecord|Metamorphosed Insect Queen|True|False|False|False
@@ -5396,3 +5394,829 @@ TagRecord|Wattwoodpecker|False|True|False|False
 TagRecord|Zaborg the Mega Monarch|False|False|False|True
 TagRecord|Zap Mustung|False|True|False|False
 TagRecord|Vylon Prism|False|True|False|False
+TagRecord|Absolute Crusader|True|False|False|False
+TagRecord|Achacha Archer|True|False|False|False
+TagRecord|Achacha Chanbara|True|False|False|False
+TagRecord|Air Armor Ninja|True|False|False|False
+TagRecord|Altitude Knight|False|True|False|False
+TagRecord|Amazoness Archer|True|False|False|False
+TagRecord|Amazoness Blowpiper|True|False|False|False
+TagRecord|Amazoness Chain Master|True|False|False|False
+TagRecord|Amazoness Empress|True|False|False|False
+TagRecord|Amazoness Princess|True|False|False|False
+TagRecord|Amazoness Queen|False|True|False|False
+TagRecord|Amazoness Sage|True|False|False|False
+TagRecord|Amazoness Scouts|False|True|False|False
+TagRecord|Amazoness Spy|True|False|False|False
+TagRecord|Amazoness Swords Woman|True|False|False|False
+TagRecord|Amazoness Trainee|True|False|False|False
+TagRecord|Ansatsu|True|False|False|False
+TagRecord|Aqua Armor Ninja|True|False|False|False
+TagRecord|Arcana Extra Joker|True|False|False|False
+TagRecord|Arcane Archer of the Forest|False|True|False|False
+TagRecord|Arisen Gaia the Fierce Knight|False|True|False|False
+TagRecord|Armageddon Knight|False|True|False|False
+TagRecord|Armaill|True|False|False|False
+TagRecord|Armed Ninja|True|False|False|False
+TagRecord|Armed Samurai - Ben Kei|True|False|False|False
+TagRecord|Arnis, the Empowered Warrior|True|False|False|False
+TagRecord|Artorigus, King of the Noble Knights|False|True|False|False
+TagRecord|Assault Mercenary|True|False|False|False
+TagRecord|Attack Gainer|True|False|False|False
+TagRecord|Axe Raider|True|False|False|False
+TagRecord|Backup Warrior|False|True|False|False
+TagRecord|Battle Warrior|False|True|False|False
+TagRecord|Battleguard Cadet|True|False|False|False
+TagRecord|Battleguard King|True|False|False|False
+TagRecord|Battlin' Boxer Big Bandage|True|False|False|False
+TagRecord|Battlin' Boxer Cheat Commissioner|False|True|False|False
+TagRecord|Battlin' Boxer Counterpunch|False|True|False|False
+TagRecord|Battlin' Boxer Glassjaw|False|True|False|False
+TagRecord|Battlin' Boxer Headgeared|True|False|False|False
+TagRecord|Battlin' Boxer Lead Yoke|False|True|False|False
+TagRecord|Battlin' Boxer Rabbit Puncher|True|False|False|False
+TagRecord|Battlin' Boxer Rib Gardna|True|False|False|False
+TagRecord|Battlin' Boxer Shadow|False|True|False|False
+TagRecord|Battlin' Boxer Sparrer|False|True|False|False
+TagRecord|Battlin' Boxer Switchitter|False|True|False|False
+TagRecord|Battlin' Boxer Veil|True|False|False|False
+TagRecord|Beat, Bladesman Fur Hire|False|False|True|False
+TagRecord|Beautiful Headhuntress|False|False|False|True
+TagRecord|Beckoned by the World Chalice|False|True|False|False
+TagRecord|Beginning Knight|False|False|False|True
+TagRecord|Big Belly Knight|False|True|False|False
+TagRecord|Big Shield Gardna|False|True|False|False
+TagRecord|Black Luster Soldier|False|True|False|False
+TagRecord|Black Luster Soldier - Envoy of the Beginning|False|False|True|False
+TagRecord|Black Luster Soldier - Envoy of the Evening Twilight|False|True|False|False
+TagRecord|Black Luster Soldier - Sacred Soldier|True|False|False|False
+TagRecord|Black Luster Soldier - Soldier of Chaos|False|False|True|False
+TagRecord|Black Luster Soldier - Super Soldier|False|False|False|True
+TagRecord|Blackwing Tamer - Obsidian Hawk Joe|True|False|False|False
+TagRecord|Blade Armor Ninja|False|True|False|False
+TagRecord|Blade Bounzer|True|False|False|False
+TagRecord|Blade Knight|True|False|False|False
+TagRecord|Blade Skater|True|False|False|False
+TagRecord|Blindly Loyal Goblin|False|True|False|False
+TagRecord|Blizzard Warrior|False|True|False|False
+TagRecord|Blue Flame Swordsman|True|False|False|False
+TagRecord|Blue Mountain Butterspy|False|True|False|False
+TagRecord|Boost Warrior|False|True|False|False
+TagRecord|Brushfire Knight|False|True|False|False
+TagRecord|Bull Blader|True|False|False|False
+TagRecord|Buster Blader|True|False|False|False
+TagRecord|Cameraclops|True|False|False|False
+TagRecord|Card Blocker|False|True|False|False
+TagRecord|Card Breaker|True|False|False|False
+TagRecord|Celtic Guard of Noble Arms|True|False|False|False
+TagRecord|Celtic Guardian|True|False|False|False
+TagRecord|Chachaka Archer|False|True|False|False
+TagRecord|Chain Thrasher|False|True|False|False
+TagRecord|Chamberlain of the Six Samurai|True|False|False|False
+TagRecord|Chaos-End Master|False|False|False|True
+TagRecord|Charging Gaia the Fierce Knight|False|True|False|False
+TagRecord|Chevalier de Fleur|True|False|False|False
+TagRecord|Chthonian Soldier|False|True|False|False
+TagRecord|Cipher Mirror Knight|True|False|False|False
+TagRecord|Coach King Giantrainer|False|True|False|False
+TagRecord|Colonel on C-String|True|False|False|False
+TagRecord|Colossal Fighter|True|False|False|False
+TagRecord|Colossal Fighter/Assault Mode|False|False|False|True
+TagRecord|Combo Fighter|False|True|False|False
+TagRecord|Combo Master|False|True|False|False
+TagRecord|Comics Hero King Arthur|False|False|False|True
+TagRecord|Command Knight|True|False|False|False
+TagRecord|Comrade Swordsman of Landstar|False|True|False|False
+TagRecord|Constellar Alrescha|False|True|False|False
+TagRecord|Constellar Pleiades|True|False|False|False
+TagRecord|Constellar Pollux|False|True|False|False
+TagRecord|Contrast HERO Chaos|True|False|False|False
+TagRecord|Crimson Blader|False|False|False|True
+TagRecord|Crimson Ninja|True|False|False|False
+TagRecord|Crimson Sentry|True|False|False|False
+TagRecord|Cross Keeper|True|False|False|False
+TagRecord|Cross Porter|False|True|False|False
+TagRecord|Crusadia Arboria|False|True|False|False
+TagRecord|Crusadia Spatha|False|True|False|False
+TagRecord|Crystal Keeper|False|True|False|False
+TagRecord|Cú Chulainn the Awakened|True|False|False|False
+TagRecord|Curious, the Lightsworn Dominion|False|True|False|False
+TagRecord|CXyz Barian Hope|False|True|False|False
+TagRecord|CXyz Coach Lord Ultimatrainer|False|True|False|False
+TagRecord|CXyz Comics Hero Legend Arthur|False|True|False|False
+TagRecord|Cyber Blader|False|True|False|False
+TagRecord|Cyber Gymnast|True|False|False|False
+TagRecord|Cyber Tutu|False|True|False|False
+TagRecord|Cyber Tutubon|True|False|False|False
+TagRecord|D. Human|True|False|False|False
+TagRecord|D.D. Assailant|True|False|False|False
+TagRecord|D.D. Destroyer|False|True|False|False
+TagRecord|D.D. Esper Star Sparrow|False|True|False|False
+TagRecord|D.D. Guide|True|False|False|False
+TagRecord|D.D. Survivor|True|False|False|False
+TagRecord|D.D. Unicorn Knight|False|True|False|False
+TagRecord|D.D. Warrior|True|False|False|False
+TagRecord|D.D. Warrior Lady|True|False|False|False
+TagRecord|Dante, Traveler of the Burning Abyss|False|False|False|True
+TagRecord|Dark Blade|True|False|False|False
+TagRecord|Dark Blade the Captain of the Evil World|False|True|False|False
+TagRecord|Dark Blade the Dragon Knight|False|True|False|False
+TagRecord|Dark Crusader|False|True|False|False
+TagRecord|Dark Flare Knight|False|False|False|True
+TagRecord|Dark General Freed|False|True|False|False
+TagRecord|Dark Grepher|False|True|False|False
+TagRecord|Dark Magician Knight|False|False|False|True
+TagRecord|Dark Scorpion - Chick the Yellow|True|False|False|False
+TagRecord|Dark Scorpion - Cliff the Trap Remover|False|True|False|False
+TagRecord|Dark Scorpion - Gorg the Strong|True|False|False|False
+TagRecord|Dark Scorpion - Meanae the Thorn|True|False|False|False
+TagRecord|Dark Scorpion Burglars|True|False|False|False
+TagRecord|Darktellarknight Batlamyus|False|False|False|True
+TagRecord|Dash Warrior|True|False|False|False
+TagRecord|Dawn Knight|False|True|False|False
+TagRecord|Dawnbreak Gardna|True|False|False|False
+TagRecord|Daybreaker|False|True|False|False
+TagRecord|Deepsea Warrior|True|False|False|False
+TagRecord|Defender of the Labyrinth|True|False|False|False
+TagRecord|Destiny End Dragoon|False|True|False|False
+TagRecord|Destiny HERO - Blade Master|True|False|False|False
+TagRecord|Destiny HERO - Captain Tenacious|True|False|False|False
+TagRecord|Destiny HERO - Celestial|False|True|False|False
+TagRecord|Destiny HERO - Dangerous|False|True|False|False
+TagRecord|Destiny HERO - Dark Angel|False|True|False|False
+TagRecord|Destiny HERO - Dasher|True|False|False|False
+TagRecord|Destiny HERO - Decider|False|True|False|False
+TagRecord|Destiny HERO - Defender|False|True|False|False
+TagRecord|Destiny HERO - Departed|False|True|False|False
+TagRecord|Destiny HERO - Diamond Dude|True|False|False|False
+TagRecord|Destiny HERO - Disk Commander|False|True|False|False
+TagRecord|Destiny HERO - Dogma|False|True|False|False
+TagRecord|Destiny HERO - Doom Lord|True|False|False|False
+TagRecord|Destiny HERO - Double Dude|False|True|False|False
+TagRecord|Destiny HERO - Drawhand|False|False|False|True
+TagRecord|Destiny HERO - Dread Servant|True|False|False|False
+TagRecord|Destiny HERO - Dreadmaster|False|True|False|False
+TagRecord|Destiny HERO - Dreamer|False|True|False|False
+TagRecord|Destiny HERO - Drilldark|False|True|False|False
+TagRecord|Destiny HERO - Dunker|True|False|False|False
+TagRecord|Destiny HERO - Dusktopia|False|True|False|False
+TagRecord|Destiny HERO - Dynatag|False|True|False|False
+TagRecord|Destiny HERO - Dystopia|False|True|False|False
+TagRecord|Destiny HERO - Fear Monger|True|False|False|False
+TagRecord|Destiny HERO - Malicious|False|True|False|False
+TagRecord|Destiny HERO - Plasma|True|False|False|False
+TagRecord|Disc Fighter|True|False|False|False
+TagRecord|Disciple of the Forbidden Spell|True|False|False|False
+TagRecord|Divine Dragon Knight Felgrand|False|False|False|True
+TagRecord|Divine Knight Ishzark|False|False|False|True
+TagRecord|Dododo Buster|False|True|False|False
+TagRecord|Dododo Driver|False|True|False|False
+TagRecord|Dododo Swordsman|True|False|False|False
+TagRecord|Dododo Warrior|False|True|False|False
+TagRecord|Dododo Witch|True|False|False|False
+TagRecord|Doggy Diver|False|True|False|False
+TagRecord|Don Zaloog|True|False|False|False
+TagRecord|Doppelwarrior|True|False|False|False
+TagRecord|Dragodies, the Empowered Warrior|True|False|False|False
+TagRecord|Dragon Horn Hunter|False|False|False|True
+TagRecord|Dragon Manipulator|True|False|False|False
+TagRecord|Dragoness the Wicked Knight|False|False|True|False
+TagRecord|Dragonox, the Empowered Warrior|False|True|False|False
+TagRecord|Dream Clown|True|False|False|False
+TagRecord|Drill Warrior|False|True|False|False
+TagRecord|Driven Daredevil|False|False|False|True
+TagRecord|Dust Knight|False|True|False|False
+TagRecord|Dverg of the Nordic Alfar|False|False|False|True
+TagRecord|Earth Armor Ninja|True|False|False|False
+TagRecord|Ehren, Lightsworn Monk|True|False|False|False
+TagRecord|Eka the Flame Buddy|True|False|False|False
+TagRecord|Elder of the Six Samurai|False|True|False|False
+TagRecord|Elemental HERO Absolute Zero|False|False|False|True
+TagRecord|Elemental HERO Air Neos|False|False|False|True
+TagRecord|Elemental HERO Bladedge|True|False|False|False
+TagRecord|Elemental HERO Blazeman|True|False|False|False
+TagRecord|Elemental HERO Brave Neos|False|False|False|True
+TagRecord|Elemental HERO Bubbleman|True|False|False|False
+TagRecord|Elemental HERO Burstinatrix|True|False|False|False
+TagRecord|Elemental HERO Captain Gold|False|False|False|True
+TagRecord|Elemental HERO Chaos Neos|True|False|False|False
+TagRecord|Elemental HERO Core|False|True|False|False
+TagRecord|Elemental HERO Cosmo Neos|False|False|False|True
+TagRecord|Elemental HERO Dark Neos|False|False|False|True
+TagRecord|Elemental HERO Darkbright|True|False|False|False
+TagRecord|Elemental HERO Divine Neos|False|True|False|False
+TagRecord|Elemental HERO Electrum|False|True|False|False
+TagRecord|Elemental HERO Escuridao|False|False|False|True
+TagRecord|Elemental HERO Flame Wingman|False|False|True|False
+TagRecord|Elemental HERO Flare Neos|True|False|False|False
+TagRecord|Elemental HERO Flash|True|False|False|False
+TagRecord|Elemental HERO Gaia|False|False|False|True
+TagRecord|Elemental HERO Glow Neos|False|False|False|True
+TagRecord|Elemental HERO Grand Neos|False|False|False|True
+TagRecord|Elemental HERO Grandmerge|False|False|False|True
+TagRecord|Elemental HERO Great Tornado|True|False|False|False
+TagRecord|Elemental HERO Honest Neos|False|False|False|True
+TagRecord|Elemental HERO Ice Edge|False|False|False|True
+TagRecord|Elemental HERO Magma Neos|False|True|False|False
+TagRecord|Elemental HERO Marine Neos|False|True|False|False
+TagRecord|Elemental HERO Mariner|False|True|False|False
+TagRecord|Elemental HERO Mudballman|False|True|False|False
+TagRecord|Elemental HERO Nebula Neos|False|True|False|False
+TagRecord|Elemental HERO Necroid Shaman|False|True|False|False
+TagRecord|Elemental HERO Necroshade|False|True|False|False
+TagRecord|Elemental HERO Neo Bubbleman|True|False|False|False
+TagRecord|Elemental HERO Neos|True|False|False|False
+TagRecord|Elemental HERO Neos Alius|True|False|False|False
+TagRecord|Elemental HERO Neos Knight|False|False|False|True
+TagRecord|Elemental HERO Nova Master|True|False|False|False
+TagRecord|Elemental HERO Ocean|True|False|False|False
+TagRecord|Elemental HERO Phoenix Enforcer|False|False|False|True
+TagRecord|Elemental HERO Plasma Vice|False|False|True|False
+TagRecord|Elemental HERO Prisma|False|False|False|True
+TagRecord|Elemental HERO Shadow Mist|False|False|True|False
+TagRecord|Elemental HERO Shining Flare Wingman|False|True|False|False
+TagRecord|Elemental HERO Shining Phoenix Enforcer|False|False|False|True
+TagRecord|Elemental HERO Solid Soldier|False|False|False|True
+TagRecord|Elemental HERO Sparkman|True|False|False|False
+TagRecord|Elemental HERO Steam Healer|False|True|False|False
+TagRecord|Elemental HERO Storm Neos|False|False|False|True
+TagRecord|Elemental HERO Stratos|False|True|False|False
+TagRecord|Elemental HERO Tempest|True|False|False|False
+TagRecord|Elemental HERO Terra Firma|False|False|False|True
+TagRecord|Elemental HERO The Shining|False|False|False|True
+TagRecord|Elemental HERO Thunder Giant|True|False|False|False
+TagRecord|Elemental HERO Wildedge|False|False|False|True
+TagRecord|Elemental HERO Wildheart|True|False|False|False
+TagRecord|Elemental HERO Woodsman|True|False|False|False
+TagRecord|Elementsaber Aina|False|True|False|False
+TagRecord|Elementsaber Lapauila|False|True|False|False
+TagRecord|Elementsaber Lapauila Mana|False|True|False|False
+TagRecord|Elementsaber Makani|False|True|False|False
+TagRecord|Elementsaber Malo|False|True|False|False
+TagRecord|Elementsaber Molehu|False|True|False|False
+TagRecord|Elementsaber Nalu|False|True|False|False
+TagRecord|Empress Judge|True|False|False|False
+TagRecord|Energy Bravery|True|False|False|False
+TagRecord|Enishi, Shien's Chancellor|True|False|False|False
+TagRecord|Envoy of Chaos|True|False|False|False
+TagRecord|Etoile Cyber|True|False|False|False
+TagRecord|Evening Twilight Knight|False|False|False|True
+TagRecord|Evilswarm Castor|False|False|False|True
+TagRecord|Exiled Force|True|False|False|False
+TagRecord|Exosister Kaspitell|True|False|False|False
+TagRecord|Extraceratops|False|True|False|False
+TagRecord|Familiar Knight|True|False|False|False
+TagRecord|Feedback Warrior|True|False|False|False
+TagRecord|Fire Trooper|True|False|False|False
+TagRecord|Flame Armor Ninja|True|False|False|False
+TagRecord|Flame Swordsman|True|False|False|False
+TagRecord|Flash Knight|False|True|False|False
+TagRecord|Flower Cardian Boardefly|False|False|False|True
+TagRecord|Flower Cardian Cherry Blossom with Curtain|True|False|False|False
+TagRecord|Flower Cardian Clover with Boar|True|False|False|False
+TagRecord|Flower Cardian Lightflare|False|False|False|True
+TagRecord|Flower Cardian Lightshower|False|True|False|False
+TagRecord|Flower Cardian Maple with Deer|True|False|False|False
+TagRecord|Flower Cardian Moonflowerviewing|False|True|False|False
+TagRecord|Flower Cardian Paulownia|False|True|False|False
+TagRecord|Flower Cardian Paulownia with Phoenix|True|False|False|False
+TagRecord|Flower Cardian Peony with Butterfly|False|False|False|True
+TagRecord|Flower Cardian Pine with Crane|True|False|False|False
+TagRecord|Flower Cardian Willow|True|False|False|False
+TagRecord|Flower Cardian Willow with Calligrapher|False|True|False|False
+TagRecord|Flower Cardian Zebra Grass|True|False|False|False
+TagRecord|Flower Cardian Zebra Grass with Moon|False|True|False|False
+TagRecord|Freed the Brave Wanderer|False|True|False|False
+TagRecord|Full Armored Crystalzero Lancer|False|True|False|False
+TagRecord|Future Samurai|True|False|False|False
+TagRecord|G.B. Hunter|False|True|False|False
+TagRecord|Gagaga Caesar|False|True|False|False
+TagRecord|Gagaga Clerk|False|False|False|True
+TagRecord|Gagaga Cowboy|False|True|False|False
+TagRecord|Gagaga Samurai|False|True|False|False
+TagRecord|Gaia Knight, the Force of Earth|True|False|False|False
+TagRecord|Gaia The Fierce Knight|True|False|False|False
+TagRecord|Gaia, the Mid-Knight Sun|True|False|False|False
+TagRecord|Gaia, the Polar Knight|True|False|False|False
+TagRecord|Galaxy Brave|False|True|False|False
+TagRecord|Galaxy Knight|False|False|True|False
+TagRecord|Ganbara Knight|False|True|False|False
+TagRecord|Ganbara Lancer|True|False|False|False
+TagRecord|Garma Sword|False|False|False|True
+TagRecord|Garoth, Lightsworn Warrior|True|False|False|False
+TagRecord|Gate Guardian|False|False|True|False
+TagRecord|Gauntlet Launcher|False|True|False|False
+TagRecord|Gauntlet Warrior|True|False|False|False
+TagRecord|Gearfried the Iron Knight|True|False|False|False
+TagRecord|Gearfried the Red-Eyes Iron Knight|False|False|False|True
+TagRecord|Gearfried the Swordmaster|True|False|False|False
+TagRecord|Gemini Scorpion|True|False|False|False
+TagRecord|Gemini Soldier|True|False|False|False
+TagRecord|General Gantala of the Ice Barrier|True|False|False|False
+TagRecord|General Grunard of the Ice Barrier|True|False|False|False
+TagRecord|General Raiho of the Ice Barrier|True|False|False|False
+TagRecord|General Wayne of the Ice Barrier|True|False|False|False
+TagRecord|Getsu Fuhma|True|False|False|False
+TagRecord|Ghost Gardna|True|False|False|False
+TagRecord|Gilford the Legend|True|False|False|False
+TagRecord|Gillagillancer|True|False|False|False
+TagRecord|Giltia the D. Knight|True|False|False|False
+TagRecord|Goblin Decoy Squad|False|True|False|False
+TagRecord|Goblin Pothole Squad|True|False|False|False
+TagRecord|Goblin Recon Squad|True|False|False|False
+TagRecord|Goblindbergh|True|False|False|False
+TagRecord|Goddess Bow|False|True|False|False
+TagRecord|Goe Goe the Gallant Ninja|False|False|False|True
+TagRecord|Gouki Bearhug|False|True|False|False
+TagRecord|Gouki Headbatt|True|False|False|False
+TagRecord|Gouki Heel Ogre|False|False|False|True
+TagRecord|Gouki Jet Ogre|False|False|False|True
+TagRecord|Gouki Moonsault|False|True|False|False
+TagRecord|Gouki Octostretch|False|True|False|False
+TagRecord|Gouki Ringtrainer|True|False|False|False
+TagRecord|Gouki Riscorpio|False|False|False|True
+TagRecord|Gouki Suprex|False|False|False|True
+TagRecord|Gouki Tagpartner|False|True|False|False
+TagRecord|Gouki The Blade Ogre|False|True|False|False
+TagRecord|Gouki The Giant Ogre|False|False|False|True
+TagRecord|Gouki The Great Ogre|False|False|False|True
+TagRecord|Gouki The Master Ogre|False|False|False|True
+TagRecord|Gouki The Solid Ogre|False|False|False|True
+TagRecord|Gouki Thunder Ogre|False|False|False|True
+TagRecord|Gouki Twistcobra|False|False|False|True
+TagRecord|Goyo Chaser|False|False|False|True
+TagRecord|Goyo Defender|False|False|False|True
+TagRecord|Goyo Emperor|False|False|False|True
+TagRecord|Goyo Guardian|False|False|True|False
+TagRecord|Goyo King|False|True|False|False
+TagRecord|Goyo Predator|False|False|False|True
+TagRecord|Grandmaster of the Six Samurai|True|False|False|False
+TagRecord|Grappler Angler|False|False|False|True
+TagRecord|Gravity Warrior|False|False|False|True
+TagRecord|Greenkappa|False|True|False|False
+TagRecord|Guardian of Felgrand|True|False|False|False
+TagRecord|Guardian of Order|False|False|False|True
+TagRecord|Guardian of the Labyrinth|True|False|False|False
+TagRecord|Hammer Bounzer|False|True|False|False
+TagRecord|Hand of the Six Samurai|False|True|False|False
+TagRecord|Hard Armor|True|False|False|False
+TagRecord|Hayabusa Knight|True|False|False|False
+TagRecord|Man-Eater Bug|True|False|False|False
+TagRecord|Gilford the Lightning|False|True|False|False
+TagRecord|Hayate the Earth Star|False|True|False|False
+TagRecord|Hero Kid|True|False|False|False
+TagRecord|Heroic Challenger - Ambush Soldier|False|False|False|True
+TagRecord|Heroic Challenger - Assault Halberd|False|True|False|False
+TagRecord|Heroic Challenger - Clasp Sword|False|True|False|False
+TagRecord|Heroic Challenger - Double Lance|False|True|False|False
+TagRecord|Heroic Challenger - Extra Sword|False|True|False|False
+TagRecord|Heroic Challenger - Knuckle Sword|True|False|False|False
+TagRecord|Heroic Challenger - Morning Star|True|False|False|False
+TagRecord|Heroic Challenger - Night Watchman|True|False|False|False
+TagRecord|Heroic Challenger - Spartan|True|False|False|False
+TagRecord|Heroic Challenger - Swordshield|False|True|False|False
+TagRecord|Heroic Challenger - Thousand Blades|False|True|False|False
+TagRecord|Heroic Challenger - War Hammer|False|True|False|False
+TagRecord|Heroic Champion - Excalibur|False|False|False|True
+TagRecord|Heroic Champion - Gandiva|False|True|False|False
+TagRecord|Heroic Champion - Jarngreipr|True|False|False|False
+TagRecord|Heroic Champion - Kusanagi|False|False|False|True
+TagRecord|Hibikime|True|False|False|False
+TagRecord|Hungry Burger|True|False|False|False
+TagRecord|Hydrotortoise, the Empowered Warrior|True|False|False|False
+TagRecord|Idaten the Conqueror Star|False|False|False|True
+TagRecord|Igknight Cavalier|False|True|False|False
+TagRecord|Igknight Champion|False|False|False|True
+TagRecord|Igknight Crusader|False|True|False|False
+TagRecord|Igknight Gallant|False|True|False|False
+TagRecord|Igknight Lancer|False|True|False|False
+TagRecord|Igknight Margrave|False|True|False|False
+TagRecord|Igknight Paladin|True|False|False|False
+TagRecord|Igknight Squire|False|True|False|False
+TagRecord|Igknight Templar|False|True|False|False
+TagRecord|Igknight Veteran|True|False|False|False
+TagRecord|Ignoble Knight of Black Laundsallyn|False|True|False|False
+TagRecord|Ignoble Knight of High Laundsallyn|False|True|False|False
+TagRecord|Infernity Dwarf|False|True|False|False
+TagRecord|Infernity Randomizer|False|True|False|False
+TagRecord|Invader of the Throne|False|True|False|False
+TagRecord|Invoked Raidjin|False|True|False|False
+TagRecord|Iron Chain Blaster|True|False|False|False
+TagRecord|Iron Chain Repairman|False|True|False|False
+TagRecord|Iron Hans|False|True|False|False
+TagRecord|Iron Knight|False|True|False|False
+TagRecord|Isolde, Two Tales of the Noble Knights|False|False|False|True
+TagRecord|Jack's Knight|True|False|False|False
+TagRecord|Jain, Lightsworn Paladin|True|False|False|False
+TagRecord|Jain, Twilightsworn General|False|True|False|False
+TagRecord|Junk Anchor|False|True|False|False
+TagRecord|Junk Archer|False|False|False|True
+TagRecord|Junk Berserker|False|False|False|True
+TagRecord|Junk Blader|False|True|False|False
+TagRecord|Junk Breaker|False|True|False|False
+TagRecord|Junk Changer|False|True|False|False
+TagRecord|Junk Collector|False|True|False|False
+TagRecord|Junk Connector|False|True|False|False
+TagRecord|Junk Defender|False|True|False|False
+TagRecord|Junk Forward|False|False|False|True
+TagRecord|Junk Gardna|False|True|False|False
+TagRecord|Junk Servant|False|False|False|True
+TagRecord|Junk Speeder|False|True|False|False
+TagRecord|Junk Synchron|True|False|False|False
+TagRecord|Junk Warrior|True|False|False|False
+TagRecord|Jutte Fighter|True|False|False|False
+TagRecord|Kagemucha Knight|False|False|True|False
+TagRecord|Kagemusha of the Blue Flame|True|False|False|False
+TagRecord|Kagemusha of the Six Samurai|False|True|False|False
+TagRecord|Kai-Den Kendo Spirit|False|True|False|False
+TagRecord|Kaiki the Unity Star|False|True|False|False
+TagRecord|Kanan the Swordmistress|False|True|False|False
+TagRecord|Karate Man|True|False|False|False
+TagRecord|Karbonala Warrior|True|False|False|False
+TagRecord|Key Man the Key Warrior|True|False|False|False
+TagRecord|King's Knight|True|False|False|False
+TagRecord|Knight Day Grepher|False|True|False|False
+TagRecord|Koa'ki Meiru Bergzak|False|False|False|True
+TagRecord|Koa'ki Meiru War Arms|False|True|False|False
+TagRecord|Kojikocy|True|False|False|False
+TagRecord|Kunoichi|True|False|False|False
+TagRecord|Kuraz the Light Monarch|True|False|False|False
+TagRecord|Kuro-Obi Karate Spirit|False|True|False|False
+TagRecord|Lady Ninja Yae|False|True|False|False
+TagRecord|Lava Battleguard|True|False|False|False
+TagRecord|Laval Blaster|False|True|False|False
+TagRecord|Laval Cannon|False|True|False|False
+TagRecord|Laval Dual Slasher|True|False|False|False
+TagRecord|Laval Judgment Lord|False|False|False|True
+TagRecord|Laval Lancelord|True|False|False|False
+TagRecord|Laval the Greater|False|False|False|True
+TagRecord|Laval Warrior|False|False|False|True
+TagRecord|Lavalval Ignis|False|False|False|True
+TagRecord|Legacy Hunter|False|False|False|True
+TagRecord|Legendary Knight Critias|True|False|False|False
+TagRecord|Legendary Knight Hermos|False|True|False|False
+TagRecord|Legendary Knight Timaeus|False|True|False|False
+TagRecord|Legendary Secret of the Six Samurai|False|False|False|True
+TagRecord|Legendary Six Samurai - Enishi|False|False|False|True
+TagRecord|Legendary Six Samurai - Kageki|False|False|False|True
+TagRecord|Legendary Six Samurai - Kizan|False|False|False|True
+TagRecord|Legendary Six Samurai - Mizuho|True|False|False|False
+TagRecord|Legendary Six Samurai - Shi En|False|False|False|True
+TagRecord|Legendary Six Samurai - Shinai|True|False|False|False
+TagRecord|Level Warrior|True|False|False|False
+TagRecord|Lightning Warrior|False|False|False|True
+TagRecord|Lightray Gearfried|False|False|False|True
+TagRecord|Lightray Grepher|False|False|False|True
+TagRecord|Litmus Doom Swordsman|False|True|False|False
+TagRecord|Little Trooper|False|True|False|False
+TagRecord|Lord Gaia the Fierce Knight|False|False|False|True
+TagRecord|Luminous Soldier|False|False|False|True
+TagRecord|Madolche Chouxvalier|False|False|False|True
+TagRecord|Madolche Messengelato|False|False|False|True
+TagRecord|Majiosheldon|False|True|False|False
+TagRecord|Makyura the Destructor|False|True|False|False
+TagRecord|Marauding Captain|True|False|False|False
+TagRecord|Marmiting Captain|True|False|False|False
+TagRecord|Masaki the Legendary Swordsman|True|False|False|False
+TagRecord|Masked HERO Acid|False|False|False|True
+TagRecord|Masked HERO Anki|False|False|False|True
+TagRecord|Masked HERO Blast|False|False|False|True
+TagRecord|Masked HERO Dark Law|False|True|False|False
+TagRecord|Masked HERO Dian|False|False|False|True
+TagRecord|Masked HERO Divine Wind|True|False|False|False
+TagRecord|Masked HERO Goka|False|False|False|True
+TagRecord|Masked HERO Koga|False|True|False|False
+TagRecord|Masked HERO Vapor|False|True|False|False
+TagRecord|Masked Ninja Ebisu|True|False|False|False
+TagRecord|Master of the Flaming Dragonswords|False|True|False|False
+TagRecord|Mataza the Zapper|True|False|False|False
+TagRecord|Maximum Six|False|False|False|True
+TagRecord|Mid Shield Gardna|False|False|False|True
+TagRecord|Mighty Warrior|False|False|False|True
+TagRecord|Millennium Shield|True|False|False|False
+TagRecord|Mira the Star-Bearer|True|False|False|False
+TagRecord|Mirage Knight|False|False|False|True
+TagRecord|Missing Force|False|True|False|False
+TagRecord|Monster Egg|True|False|False|False
+TagRecord|Monster Tamer|False|False|False|True
+TagRecord|Moon Envoy|False|True|False|False
+TagRecord|Morpheus, the Dream Mirror Black Knight|False|False|False|True
+TagRecord|Morpheus, the Dream Mirror White Knight|False|False|False|True
+TagRecord|Morpho Butterspy|True|False|False|False
+TagRecord|Motivating Captain|False|False|False|True
+TagRecord|Muscle Medic|False|False|False|True
+TagRecord|Mushroom Man #2|True|False|False|False
+TagRecord|M-Warrior #1|True|False|False|False
+TagRecord|M-Warrior #2|True|False|False|False
+TagRecord|M-X-Saber Invoker|False|False|False|True
+TagRecord|Mysterious Puppeteer|True|False|False|False
+TagRecord|Mystic Swordsman LV2|False|True|False|False
+TagRecord|Mystic Swordsman LV4|False|True|False|False
+TagRecord|Mystic Swordsman LV6|False|False|False|True
+TagRecord|Necro Gardna|False|False|False|True
+TagRecord|Nekroz of Brionac|False|False|False|True
+TagRecord|Nekroz of Clausolas|False|False|False|True
+TagRecord|Nekroz of Trishula|False|False|False|True
+TagRecord|Neo Space Pathfinder|False|False|False|True
+TagRecord|Neo-Spacian Aqua Dolphin|False|True|False|False
+TagRecord|Neo-Spacian Marine Dolphin|False|True|False|False
+TagRecord|Night Papilloperative|False|False|False|True
+TagRecord|Ningirsu the World Chalice Warrior|False|False|False|True
+TagRecord|Ninja Grandmaster Sasuke|False|False|True|False
+TagRecord|Noble Knight Custennin|False|False|True|False
+TagRecord|Noble Knight Drystan|True|False|False|False
+TagRecord|Noble Knight Eachtar|False|False|False|True
+TagRecord|Noble Knight Gawayn|False|False|False|True
+TagRecord|Noble Knight Gwalchavad|False|False|False|True
+TagRecord|Noble Knight Iyvanne|False|False|False|True
+TagRecord|Noble Knight Joan|False|False|False|True
+TagRecord|Noble Knight Medraut|False|False|False|True
+TagRecord|Noble Knight Pellinore|False|False|False|True
+TagRecord|Noble Knight Peredur|False|False|False|True
+TagRecord|Nomadic Force|False|False|False|True
+TagRecord|Nubian Guard|False|False|False|True
+TagRecord|Number 10: Illumiknight|False|False|False|True
+TagRecord|Number 105: Battlin' Boxer Star Cestus|False|False|False|True
+TagRecord|Number 12: Crimson Shadow Armor Ninja|False|False|False|True
+TagRecord|Number 39: Utopia|True|False|False|False
+TagRecord|Number 39: Utopia Beyond|False|False|False|True
+TagRecord|Number 39: Utopia Double|False|False|False|True
+TagRecord|Number 39: Utopia Roots|False|False|False|True
+TagRecord|Number 54: Lion Heart|False|False|False|True
+TagRecord|Number 59: Crooked Cook|True|False|False|False
+TagRecord|Number 73: Abyss Splash|False|True|False|False
+TagRecord|Number 79: Battlin' Boxer Nova Kaiser|False|False|False|True
+TagRecord|Number 86: Heroic Champion - Rhongomyniad|False|False|False|True
+TagRecord|Number 90: Galaxy-Eyes Photon Lord|False|False|False|True
+TagRecord|Number 93: Utopia Kaiser|True|False|False|False
+TagRecord|Number 94: Crystalzero|False|False|False|True
+TagRecord|Number 98: Antitopian|True|False|False|False
+TagRecord|Number C105: Battlin' Boxer Comet Cestus|False|False|False|True
+TagRecord|Number C39: Utopia Ray|True|False|False|False
+TagRecord|Number C39: Utopia Ray V|False|False|False|True
+TagRecord|Number C39: Utopia Ray Victory|False|False|False|True
+TagRecord|Number C73: Abyss Supra Splash|False|False|False|True
+TagRecord|Number F0: Utopic Future|True|False|False|False
+TagRecord|Number S0: Utopic ZEXAL|False|False|False|True
+TagRecord|Number S39: Utopia Prime|False|False|False|True
+TagRecord|Number S39: Utopia the Lightning|False|False|False|True
+TagRecord|Number XX: Utopic Dark Infinity|False|False|False|True
+TagRecord|Numeral Hunter|False|False|False|True
+TagRecord|Obnoxious Celtic Guard|False|True|False|False
+TagRecord|One-Eyed Skill Gainer|False|False|False|True
+TagRecord|Orgoth the Relentless|False|False|False|True
+TagRecord|Oscillo Hero|False|False|False|True
+TagRecord|Overlay Booster|False|False|False|True
+TagRecord|Overlay Sentinel|False|False|False|True
+TagRecord|Paladin of Photon Dragon|True|False|False|False
+TagRecord|Parry Knights|False|False|False|True
+TagRecord|Penumbral Soldier Lady|False|False|False|True
+TagRecord|Performance of Sword|True|False|False|False
+TagRecord|Performapal Clay Breaker|False|False|False|True
+TagRecord|Performapal Dag Daggerman|False|False|False|True
+TagRecord|Performapal Helpprincess|False|True|False|False
+TagRecord|Performapal Life Swordsman|True|False|False|False
+TagRecord|Phantom Bounzer|True|False|False|False
+TagRecord|Photon Advancer|False|False|False|True
+TagRecord|Photon Alexandra Queen|False|False|False|True
+TagRecord|Photon Caesar|True|False|False|False
+TagRecord|Photon Chargeman|True|False|False|False
+TagRecord|Photon Crusher|True|False|False|False
+TagRecord|Photon Papilloperative|False|False|False|True
+TagRecord|Photon Slasher|False|False|False|True
+TagRecord|Photon Strike Bounzer|False|False|False|True
+TagRecord|Photon Thrasher|False|True|False|False
+TagRecord|Photon Vanisher|False|False|False|True
+TagRecord|Pilgrim of the Ice Barrier|False|False|False|True
+TagRecord|Power Breaker|False|False|False|True
+TagRecord|Princess of Tsurugi|True|False|False|False
+TagRecord|Protector of the Throne|True|False|False|False
+TagRecord|Puppet King|False|False|False|True
+TagRecord|Queen's Bodyguard|False|True|False|False
+TagRecord|Queen's Double|True|False|False|False
+TagRecord|Queen's Knight|True|False|False|False
+TagRecord|Raiden, Hand of the Lightsworn|True|False|False|False
+TagRecord|Rainbow Neos|False|False|True|False
+TagRecord|Rapid Warrior|False|False|False|True
+TagRecord|Rescue Warrior|True|False|False|False
+TagRecord|Rhaimundos of the Red Sword|False|False|False|True
+TagRecord|Rocket Hermos Cannon|True|False|False|False
+TagRecord|Rocket Warrior|True|False|False|False
+TagRecord|Rose Archer|False|False|False|True
+TagRecord|Rose Paladin|False|False|False|True
+TagRecord|Rose, Warrior of Revenge|False|False|False|True
+TagRecord|Royal Knight of the Ice Barrier|True|False|False|False
+TagRecord|Rush Warrior|True|False|False|False
+TagRecord|Ryu Senshi|False|False|False|True
+TagRecord|Sacred Noble Knight of King Artorigus|False|False|False|True
+TagRecord|Sacred Noble Knight of King Custennin|False|False|False|True
+TagRecord|Salvage Warrior|False|False|False|True
+TagRecord|Samurai of the Ice Barrier|False|False|False|True
+TagRecord|Samurai Sword Baron|False|False|False|True
+TagRecord|Sasuke Samurai|False|False|False|True
+TagRecord|Sasuke Samurai #2|True|False|False|False
+TagRecord|Sasuke Samurai #3|False|False|False|True
+TagRecord|Sasuke Samurai #4|False|False|False|True
+TagRecord|Satellarknight Alsahm|False|False|False|True
+TagRecord|Satellarknight Altair|False|False|False|True
+TagRecord|Satellarknight Betelgeuse|True|False|False|False
+TagRecord|Satellarknight Capella|True|False|False|False
+TagRecord|Satellarknight Deneb|False|False|False|True
+TagRecord|Satellarknight Procyon|True|False|False|False
+TagRecord|Satellarknight Rigel|False|False|False|True
+TagRecord|Satellarknight Sirius|False|False|False|True
+TagRecord|Satellarknight Unukalhai|True|False|False|False
+TagRecord|Satellarknight Vega|True|False|False|False
+TagRecord|Satellarknight Zefrathuban|False|False|False|True
+TagRecord|Scarred Warrior|False|False|False|True
+TagRecord|Science Soldier|True|False|False|False
+TagRecord|Scrap Soldier|False|False|False|True
+TagRecord|Search Striker|False|True|False|False
+TagRecord|Secret Six Samurai - Doji|False|False|False|True
+TagRecord|Secret Six Samurai - Fuma|False|False|False|True
+TagRecord|Secret Six Samurai - Genba|False|False|False|True
+TagRecord|Secret Six Samurai - Hatsume|False|False|False|True
+TagRecord|Secret Six Samurai - Kizaru|False|False|False|True
+TagRecord|Secret Six Samurai - Rihan|False|False|False|True
+TagRecord|Senior Silver Ninja|True|False|False|False
+TagRecord|Seven Swords Warrior|False|False|False|True
+TagRecord|Shadow of the Six Samurai - Shien|False|False|False|True
+TagRecord|Shadow Tamer|False|False|False|True
+TagRecord|Shien's Advisor|False|False|False|True
+TagRecord|Shien's Daredevil|False|False|False|True
+TagRecord|Shien's Squire|False|True|False|False
+TagRecord|Shine Knight|False|True|False|False
+TagRecord|Shore Knight|False|False|False|True
+TagRecord|Shura the Combat Star|False|False|False|True
+TagRecord|Shurit, Strategist of the Nekroz|False|False|False|True
+TagRecord|Signal Warrior|False|False|False|True
+TagRecord|Silent Swordsman|False|False|False|True
+TagRecord|Silent Swordsman LV3|True|False|False|False
+TagRecord|Silent Swordsman LV5|True|False|False|False
+TagRecord|Silent Swordsman LV7|True|False|False|False
+TagRecord|Silver Sentinel|False|False|False|True
+TagRecord|Skull Guardian|False|False|False|True
+TagRecord|Skull Mariner|True|False|False|False
+TagRecord|Skull Stalker|False|False|False|True
+TagRecord|Sky Striker Ace - Raye|False|False|True|False
+TagRecord|Sonic Maid|False|False|False|True
+TagRecord|Sonic Warrior|True|False|False|False
+TagRecord|Speed Warrior|True|False|False|False
+TagRecord|Spell Strider|False|False|False|True
+TagRecord|Spirit of the Six Samurai|True|False|False|False
+TagRecord|Spy-C-Spy|True|False|False|False
+TagRecord|SPYRAL Double Helix|False|False|False|True
+TagRecord|SPYRAL Super Agent|False|False|False|True
+TagRecord|SPYRAL Tough|False|False|False|True
+TagRecord|Stardust Assault Warrior|False|False|False|True
+TagRecord|Stardust Charge Warrior|False|False|False|True
+TagRecord|Stardust Warrior|False|False|False|True
+TagRecord|Starliege Lord Galaxion|False|False|False|True
+TagRecord|Starliege Paladynamo|False|False|False|True
+TagRecord|Stellarknight Delteros|False|False|False|True
+TagRecord|Stellarknight Triverr|False|False|False|True
+TagRecord|Stinging Swordsman|True|False|False|False
+TagRecord|Strike Ninja|False|True|False|False
+TagRecord|Stronghold Guardian|False|True|False|False
+TagRecord|Stuffed Animal|False|False|False|True
+TagRecord|Subterror Nemesis Warrior|False|False|False|True
+TagRecord|Succubus Knight|True|False|False|False
+TagRecord|Sunlit Sentinel|True|False|False|False
+TagRecord|Super Quantum Red Layer|False|False|False|True
+TagRecord|Super Soldier Soul|False|False|False|True
+TagRecord|Supply|True|False|False|False
+TagRecord|Swallowtail Butterspy|False|True|False|False
+TagRecord|Swamp Battleguard|True|False|False|False
+TagRecord|Swift Gaia the Fierce Knight|True|False|False|False
+TagRecord|Sword Breaker|False|False|False|True
+TagRecord|Sword Hunter|True|False|False|False
+TagRecord|Sword Master|False|False|False|True
+TagRecord|Swordsman from a Distant Land|True|False|False|False
+TagRecord|Swordsman of Landstar|True|False|False|False
+TagRecord|Swordsman of Revealing Light|False|False|False|True
+TagRecord|Swordstalker|True|False|False|False
+TagRecord|T.G. Power Gladiator|False|False|False|True
+TagRecord|T.G. Star Guardian|False|False|False|True
+TagRecord|T.G. Striker|False|False|False|True
+TagRecord|Tactical Espionage Expert|True|False|False|False
+TagRecord|Tasuke Knight|False|False|False|True
+TagRecord|Tatakawa Knight|False|False|False|True
+TagRecord|Tellarknight Ptolemaeus|False|False|False|True
+TagRecord|Tenma the Sky Star|False|False|False|True
+TagRecord|Tenmataitei|False|False|False|True
+TagRecord|Terratiger, the Empowered Warrior|True|False|False|False
+TagRecord|Teva|False|False|False|True
+TagRecord|The Creator Incarnate|True|False|False|False
+TagRecord|The Fiend Megacyber|False|True|False|False
+TagRecord|The Grand Jupiter|False|False|False|True
+TagRecord|The Hunter with 7 Weapons|True|False|False|False
+TagRecord|The Immortal Bushi|False|True|False|False
+TagRecord|The Judgement Hand|False|False|False|True
+TagRecord|The Last Warrior from Another Planet|False|False|False|True
+TagRecord|The Legendary Fisherman|True|False|False|False
+TagRecord|The Legendary Fisherman II|True|False|False|False
+TagRecord|The Legendary Fisherman III|True|False|False|False
+TagRecord|The Little Swordsman of Aile|True|False|False|False
+TagRecord|The Phantom Knights of Ancient Cloak|False|True|False|False
+TagRecord|The Phantom Knights of Break Sword|False|False|False|True
+TagRecord|The Phantom Knights of Cloven Helm|False|False|False|True
+TagRecord|The Phantom Knights of Cursed Javelin|False|False|False|True
+TagRecord|The Phantom Knights of Fragile Armor|False|True|False|False
+TagRecord|The Phantom Knights of Ragged Gloves|True|False|False|False
+TagRecord|The Phantom Knights of Rusty Bardiche|True|False|False|False
+TagRecord|The Phantom Knights of Silent Boots|False|True|False|False
+TagRecord|The Six Samurai - Irou|True|False|False|False
+TagRecord|The Six Samurai - Kamon|True|False|False|False
+TagRecord|The Six Samurai - Yariza|True|False|False|False
+TagRecord|The Six Samurai - Zanji|True|False|False|False
+TagRecord|The Unfriendly Amazon|True|False|False|False
+TagRecord|Therion "Bull" Ain|True|False|False|False
+TagRecord|Throwstone Unit|True|False|False|False
+TagRecord|Toon Buster Blader|True|False|False|False
+TagRecord|Toon Goblin Attack Force|False|False|False|True
+TagRecord|Torapart|False|False|False|True
+TagRecord|Total Defense Shogun|False|False|False|True
+TagRecord|Trap Master|True|False|False|False
+TagRecord|Trident Warrior|True|False|False|False
+TagRecord|Triple Star Trion|False|False|False|True
+TagRecord|Tune Warrior|True|False|False|False
+TagRecord|Turbo Warrior|False|True|False|False
+TagRecord|Twilight Ninja Getsuga, the Shogun|False|False|False|True
+TagRecord|Twilight Ninja Jogen|False|False|False|True
+TagRecord|Twilight Ninja Kagen|False|False|False|True
+TagRecord|Twilight Ninja Nichirin, the Chunin|True|False|False|False
+TagRecord|Twilight Ninja Shingetsu|True|False|False|False
+TagRecord|Twilight Rose Knight|False|False|False|True
+TagRecord|Twin-Shield Defender|True|False|False|False
+TagRecord|Twin-Sword Marauder|True|False|False|False
+TagRecord|Two-for-One Team|False|False|False|True
+TagRecord|Tyr of the Nordic Champions|True|False|False|False
+TagRecord|U.A. Blockbacker|False|False|False|True
+TagRecord|U.A. Dreadnought Dunker|True|False|False|False
+TagRecord|U.A. Goalkeeper|False|False|False|True
+TagRecord|U.A. Midfielder|False|False|False|True
+TagRecord|U.A. Mighty Slugger|False|False|False|True
+TagRecord|U.A. Perfect Ace|False|False|False|True
+TagRecord|U.A. Playmaker|False|False|False|True
+TagRecord|U.A. Rival Rebounder|True|False|False|False
+TagRecord|Ultimate Baseball Kid|True|False|False|False
+TagRecord|Underworld Fighter Balmung|False|False|False|True
+TagRecord|Unknown Warrior of Fiend|True|False|False|False
+TagRecord|Upstart Golden Ninja|True|False|False|False
+TagRecord|Valkyrian Knight|True|False|False|False
+TagRecord|Vampire Hunter|False|False|True|False
+TagRecord|Vengeful Shinobi|True|False|False|False
+TagRecord|Ventdra, the Empowered Warrior|True|False|False|False
+TagRecord|Vision HERO Adoration|False|False|False|True
+TagRecord|Vision HERO Faris|True|False|False|False
+TagRecord|Vision HERO Gravito|False|True|False|False
+TagRecord|Vision HERO Increase|False|False|False|True
+TagRecord|Vision HERO Minimum Ray|False|False|False|True
+TagRecord|Vision HERO Multiply Guy|False|False|False|True
+TagRecord|Vision HERO Poisoner|False|False|False|True
+TagRecord|Vision HERO Trinity|False|False|False|True
+TagRecord|Vision HERO Vyon|False|False|False|True
+TagRecord|Vision HERO Witch Raider|False|False|False|True
+TagRecord|Wall Shadow|True|False|False|False
+TagRecord|War Rock Skyler|True|False|False|False
+TagRecord|Warrior Dai Grepher|True|False|False|False
+TagRecord|Warrior Lady of the Wasteland|True|False|False|False
+TagRecord|Warrior of Tradition|False|False|False|True
+TagRecord|White Ninja|False|True|False|False
+TagRecord|Wind-Up Knight|False|False|False|True
+TagRecord|Wind-Up Soldier|False|True|False|False
+TagRecord|Wind-Up Warrior|True|False|False|False
+TagRecord|Wodan the Resident of the Forest|False|False|False|True
+TagRecord|X-Saber Galahad|False|False|False|True
+TagRecord|X-Saber Pashuul|True|False|False|False
+TagRecord|X-Saber Souza|False|False|False|True
+TagRecord|X-Saber Urbellum|False|False|False|True
+TagRecord|X-Saber Wayne|False|False|False|True
+TagRecord|Xtra HERO Cross Crusader|False|False|False|True
+TagRecord|Xtra HERO Dread Decimator|False|False|False|True
+TagRecord|Xtra HERO Wonder Driver|False|False|False|True
+TagRecord|XX-Saber Faultroll|False|False|False|True
+TagRecord|XX-Saber Fulhelmknight|False|False|False|True
+TagRecord|XX-Saber Hyunlei|False|False|False|True
+TagRecord|Yamato-no-Kami|False|False|False|True
+TagRecord|Yellow Ninja|False|False|False|True
+TagRecord|Yoko-Zuna Sumo Spirit|False|False|False|True
+TagRecord|Zero Gardna|False|False|False|True
+TagRecord|Zombyra the Dark|True|False|False|False
+TagRecord|ZS - Vanish Sage|True|False|False|False
+TagRecord|Zubaba Buster|False|False|False|True
+TagRecord|Zubaba General|False|True|False|False
+TagRecord|Zubaba Knight|True|False|False|False
+TagRecord|Zuijin of the Ice Barrier|True|False|False|False
+TagRecord|Zushin the Sleeping Giant|True|False|False|False
+TagRecord|Catapult Warrior|False|True|False|False
+TagRecord|Ninja Grandmaster Hanzo|False|False|False|True
+TagRecord|Ninja Grandmaster Saizo|False|False|False|True
+TagRecord|Nitro Warrior|False|False|False|True
+TagRecord|Noble Knight Artorigus|False|False|False|True
+TagRecord|Noble Knight Bedwyr|False|False|False|True
+TagRecord|Noble Knight Borz|False|False|False|True
+TagRecord|Noble Knight Brothers|False|False|False|True
+TagRecord|Edea the Heavenly Squire|False|False|True|False
+TagRecord|Knight of the Red Lotus|False|False|False|True
+TagRecord|Koa'ki Meiru Rooklord|False|True|False|False
