@@ -1,4 +1,4 @@
-7436
+7756
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -7435,3 +7435,323 @@ TagRecord|Z-ONE|False|False|False|True
 TagRecord|Heavy Storm|True|False|False|False
 TagRecord|Rank-Up-Magic Argent Chaos Force|True|False|False|False
 TagRecord|Foolish Burial Goods|False|False|True|False
+TagRecord|"A" Cell Breeding Device|False|True|False|False
+TagRecord|"A" Cell Incubator|False|True|False|False
+TagRecord|7|False|True|False|False
+TagRecord|Abyss Prop - Wild Wagon|False|True|False|False
+TagRecord|Abyss Script - Abysstainment|False|True|False|False
+TagRecord|Advance Force|False|True|False|False
+TagRecord|Advance Zone|False|True|False|False
+TagRecord|Alluring Mirror Split|True|False|False|False
+TagRecord|Amazoness Fighting Spirit|False|True|False|False
+TagRecord|Amorphage Infection|False|True|False|False
+TagRecord|Ancient Gear Castle|False|True|False|False
+TagRecord|Ancient Gear Fortress|False|False|False|True
+TagRecord|Aquarium Lighting|False|True|False|False
+TagRecord|Aquarium Set|False|True|False|False
+TagRecord|Aquarium Stage|False|True|False|False
+TagRecord|Arcane Barrier|True|False|False|False
+TagRecord|Archfiend's Oath|False|True|False|False
+TagRecord|Ascending Soul|False|True|False|False
+TagRecord|Asymmetaphys|False|True|False|False
+TagRecord|Attack Pheromones|True|False|False|False
+TagRecord|Attack the Moon!|False|True|False|False
+TagRecord|Attraffic Control|False|True|False|False
+TagRecord|Awakening of the Possessed|True|False|False|False
+TagRecord|Backup Squad|False|True|False|False
+TagRecord|Banner of Courage|True|False|False|False
+TagRecord|Battle Royal Mode - Joining|True|False|False|False
+TagRecord|Black Whirlwind|False|True|False|False
+TagRecord|Blaze Accelerator|True|False|False|False
+TagRecord|Blessings of the Nile|False|True|False|False
+TagRecord|Blockout Curtain|True|False|False|False
+TagRecord|Boot-Up Order - Gear Charge|False|True|False|False
+TagRecord|Borrel Supplier|True|False|False|False
+TagRecord|Boss Rush|True|False|False|False
+TagRecord|Branch!|True|False|False|False
+TagRecord|Branded in Central Dogmatika|True|False|False|False
+TagRecord|Brilliant Fusion|False|True|False|False
+TagRecord|Bubble Barrier|False|True|False|False
+TagRecord|Burden of the Mighty|True|False|False|False
+TagRecord|Burning Bamboo Sword|True|False|False|False
+TagRecord|Burning Land|True|False|False|False
+TagRecord|Call of the Mummy|True|False|False|False
+TagRecord|Card of Safe Return|True|False|False|False
+TagRecord|Card Shuffle|True|False|False|False
+TagRecord|Card Trader|True|False|False|False
+TagRecord|Cerulean Skyfire|True|False|False|False
+TagRecord|Chain Energy|True|False|False|False
+TagRecord|Child's Play|False|True|False|False
+TagRecord|Chronomaly Pyramid Eye Tablet|False|True|False|False
+TagRecord|Cloudian Squall|False|True|False|False
+TagRecord|Cocoon Rebirth|False|True|False|False
+TagRecord|Code A Ancient Ruins|False|False|False|True
+TagRecord|Constellar Belt|False|True|False|False
+TagRecord|Constellar Star Chart|False|True|False|False
+TagRecord|Constellar Tempest|False|True|False|False
+TagRecord|Continuous Destruction Punch|False|True|False|False
+TagRecord|Contract with Don Thousand|False|True|False|False
+TagRecord|Convulsion of Nature|True|False|False|False
+TagRecord|Core Overclock|False|True|False|False
+TagRecord|Core Transport Unit|False|False|False|True
+TagRecord|Corridor of Agony|False|True|False|False
+TagRecord|Court of Justice|True|False|False|False
+TagRecord|Cracking|True|False|False|False
+TagRecord|Crystal Tree|False|True|False|False
+TagRecord|Cubic Karma|False|False|True|False
+TagRecord|Cyberdark Realm|True|False|False|False
+TagRecord|Cynet Codec|False|False|True|False
+TagRecord|Cynet Optimization|False|True|False|False
+TagRecord|Cynet Recovery|True|False|False|False
+TagRecord|D - Formation|True|False|False|False
+TagRecord|D.D. Borderline|True|False|False|False
+TagRecord|Dark Contract with the Entities|False|True|False|False
+TagRecord|Dark Contract with the Gate|True|False|False|False
+TagRecord|Dark Contract with the Swamp King|True|False|False|False
+TagRecord|Dark Contract with the Yamimakai|True|False|False|False
+TagRecord|Dark Magical Circle|False|True|False|False
+TagRecord|Dark Room of Nightmare|True|False|False|False
+TagRecord|Dark Snake Syndrome|True|False|False|False
+TagRecord|Dark World Grimoire|False|True|False|False
+TagRecord|Deck Lockdown|False|True|False|False
+TagRecord|Degenerate Circuit|False|True|False|False
+TagRecord|Different Dimension Deepsea Trench|True|False|False|False
+TagRecord|Digit Jamming|True|False|False|False
+TagRecord|Dimensional Fissure|False|True|False|False
+TagRecord|Dinomist Charge|False|True|False|False
+TagRecord|Dirge of the Lost Dragon|False|True|False|False
+TagRecord|Disciples of the True Dracophoenix|True|False|False|False
+TagRecord|Domino Effect|False|True|False|False
+TagRecord|Don Thousand's Throne|False|True|False|False
+TagRecord|Double Defender|True|False|False|False
+TagRecord|Dracocension|True|False|False|False
+TagRecord|Dragon Mastery|True|False|False|False
+TagRecord|Dragonoid Generator|False|True|False|False
+TagRecord|Dream Mirror Phantasms|False|True|False|False
+TagRecord|Dust Barrier|True|False|False|False
+TagRecord|Earthshattering Event|False|True|False|False
+TagRecord|Ectoplasmer|True|False|False|False
+TagRecord|Electromagnetic Shield|False|True|False|False
+TagRecord|Endymion's Lab|True|False|False|False
+TagRecord|Everliving Underworld Cannon|True|False|False|False
+TagRecord|Evil Eye Repose|False|True|False|False
+TagRecord|Evo-Karma|False|True|False|False
+TagRecord|Evo-Price|False|True|False|False
+TagRecord|Exosister Carpedivem|False|True|False|False
+TagRecord|F.A. Winners|False|True|False|False
+TagRecord|Field Barrier|False|True|False|False
+TagRecord|Finite Cards|True|False|False|False
+TagRecord|Fire Formation - Domei|True|False|False|False
+TagRecord|Fire Formation - Gyokkou|True|False|False|False
+TagRecord|Fire Formation - Ingen|False|True|False|False
+TagRecord|Fire Formation - Tenki|False|True|False|False
+TagRecord|Fire Formation - Tensu|False|True|False|False
+TagRecord|Fire Formation - Yoko|False|True|False|False
+TagRecord|Forbidden Dark Contract with the Swamp King|False|True|False|False
+TagRecord|Fortissimo|True|False|False|False
+TagRecord|Fortune Vision|True|False|False|False
+TagRecord|Freezing Chains of the Ice Barrier|True|False|False|False
+TagRecord|Frightfur Factory|True|False|False|False
+TagRecord|Frightfur Sanctuary|False|True|False|False
+TagRecord|Frontline Base|True|False|False|False
+TagRecord|Future Glow|True|False|False|False
+TagRecord|Gagaku-P.U.N.K. Crash Beat|True|False|False|False
+TagRecord|Gagaku-P.U.N.K. Wild Picking|True|False|False|False
+TagRecord|Galaxy Wave|False|True|False|False
+TagRecord|Gearbreed|True|False|False|False
+TagRecord|Generalprobe|True|False|False|False
+TagRecord|Gingerbread House|False|True|False|False
+TagRecord|Goblin Circus|True|False|False|False
+TagRecord|Goddess Skuld's Oracle|False|True|False|False
+TagRecord|Goddess Urd's Verdict|False|True|False|False
+TagRecord|Goddess Verdande's Guidance|False|True|False|False
+TagRecord|Gogogo Talisman|True|False|False|False
+TagRecord|Gravekeeper's Servant|True|False|False|False
+TagRecord|Graydle Impact|False|True|False|False
+TagRecord|Ground Collapse|True|False|False|False
+TagRecord|Guarded Treasure|False|True|False|False
+TagRecord|Hazy Pillar|False|True|False|False
+TagRecord|Heart of the Underdog|True|False|False|False
+TagRecord|Herculean Power|False|True|False|False
+TagRecord|Heritage of the Light|True|False|False|False
+TagRecord|Hidden Temples of Necrovalley|True|False|False|False
+TagRecord|Hysteric Sign|False|True|False|False
+TagRecord|Icejade Curse|True|False|False|False
+TagRecord|Impenetrable Formation|False|True|False|False
+TagRecord|Incarnated Machine Angel|False|True|False|False
+TagRecord|Infected Mail|False|True|False|False
+TagRecord|Infernity Launcher|False|False|False|True
+TagRecord|Infinite Cards|True|False|False|False
+TagRecord|Insect Barrier|True|False|False|False
+TagRecord|Insect Neglect|False|True|False|False
+TagRecord|Inspection|True|False|False|False
+TagRecord|Iron Cage|False|True|False|False
+TagRecord|Jam Breeding Machine|False|True|False|False
+TagRecord|Jewels of the Valiant|False|True|False|False
+TagRecord|Kaiser Colosseum|False|True|False|False
+TagRecord|Karakuri Anatomy|True|False|False|False
+TagRecord|Kishido Spirit|False|True|False|False
+TagRecord|Legacy of the Duelist|False|True|False|False
+TagRecord|Level Limit - Area B|True|False|False|False
+TagRecord|Lighten the Load|True|False|False|False
+TagRecord|Lightsworn Sanctuary|False|False|True|False
+TagRecord|Live☆Twin Sunny's Snitch|True|False|False|False
+TagRecord|Machina Armored Unit|True|False|False|False
+TagRecord|Machina Defense Perimeter|True|False|False|False
+TagRecord|Madolche Ticket|False|True|False|False
+TagRecord|Magician's Left Hand|True|False|False|False
+TagRecord|Magician's Restage|True|False|False|False
+TagRecord|Magician's Right Hand|False|True|False|False
+TagRecord|Marshmallon Glasses|False|True|False|False
+TagRecord|Mask of Dispel|True|False|False|False
+TagRecord|Mass Driver|True|False|False|False
+TagRecord|Mayakashi Winter|False|True|False|False
+TagRecord|Messenger of Peace|False|True|False|False
+TagRecord|Miracle Fertilizer|False|True|False|False
+TagRecord|Miracle Stone|False|True|False|False
+TagRecord|Mirage of Nightmare|False|True|False|False
+TagRecord|Mokey Mokey Smackdown|False|True|False|False
+TagRecord|Morale Boost|False|True|False|False
+TagRecord|Mystical Cards of Light|False|True|False|False
+TagRecord|Mythical Institution|False|True|False|False
+TagRecord|Nagel's Protection|True|False|False|False
+TagRecord|Ninjitsu Art Notebook|False|True|False|False
+TagRecord|Non-Spellcasting Area|True|False|False|False
+TagRecord|Onomatopickup|True|False|False|False
+TagRecord|Opening of the Spirit Gates|False|True|False|False
+TagRecord|Orcustrated Einsatz|False|True|False|False
+TagRecord|Out of the Blue|False|True|False|False
+TagRecord|Outrigger Extension|False|True|False|False
+TagRecord|Paralyzing Chain|False|True|False|False
+TagRecord|Perform Puppet|False|True|False|False
+TagRecord|Phantom Knights' Spear|False|True|False|False
+TagRecord|Pinpoint Landing|False|False|False|True
+TagRecord|Poison Chain|False|True|False|False
+TagRecord|Poison Fangs|False|True|False|False
+TagRecord|Poisonous Winds|True|False|False|False
+TagRecord|Power Filter|False|True|False|False
+TagRecord|Prank-Kids Pranks|True|False|False|False
+TagRecord|Precious Cards from Beyond|False|False|True|False
+TagRecord|Predaponics|True|False|False|False
+TagRecord|Pride of the Weak|True|False|False|False
+TagRecord|Primordial Soup|False|True|False|False
+TagRecord|Prohibition|True|False|False|False
+TagRecord|Psi-Station|False|True|False|False
+TagRecord|Pyramid of Wonders|False|True|False|False
+TagRecord|Quarantine|False|True|False|False
+TagRecord|Quiet Life|False|True|False|False
+TagRecord|Raidraptor - Nest|True|False|False|False
+TagRecord|Recycle|True|False|False|False
+TagRecord|Reinforcement of the Army's Troops|True|False|False|False
+TagRecord|Resonant Destruction|True|False|False|False
+TagRecord|Return of the Monarchs|False|False|False|True
+TagRecord|Ritual Cage|False|True|False|False
+TagRecord|Ruins of the Divine Dragon Lords|True|False|False|False
+TagRecord|Runick Allure|True|False|False|False
+TagRecord|Samsara|False|True|False|False
+TagRecord|Scrap Lube|False|True|False|False
+TagRecord|Sea Lord's Amulet|False|True|False|False
+TagRecord|Sea Stealth II|True|False|False|False
+TagRecord|Second Coin Toss|False|False|True|False
+TagRecord|Secret Sanctuary of the Spellcasters|False|True|False|False
+TagRecord|Seed Cannon|False|True|False|False
+TagRecord|Senet Switch|True|False|False|False
+TagRecord|Senri Eye|False|True|False|False
+TagRecord|Shard of Greed|False|True|False|False
+TagRecord|Shien's Dojo|False|False|False|True
+TagRecord|Shifting Shadows|True|False|False|False
+TagRecord|Shinobird Power Spot|True|False|False|False
+TagRecord|Shiranui Style Solemnity|False|True|False|False
+TagRecord|Sky Striker Mecha Modules - Multirole|False|True|False|False
+TagRecord|Solidarity|False|True|False|False
+TagRecord|Soul Absorption|True|False|False|False
+TagRecord|Soul Devouring Bamboo Sword|False|True|False|False
+TagRecord|Soul Pendulum|False|True|False|False
+TagRecord|Spell Absorption|False|True|False|False
+TagRecord|Spell Chronicle|False|True|False|False
+TagRecord|Spell Economics|False|True|False|False
+TagRecord|Spellbook Star Hall|False|True|False|False
+TagRecord|Spiders' Lair|False|True|False|False
+TagRecord|Spiral Spear Strike|False|True|False|False
+TagRecord|Spirit Converter|False|True|False|False
+TagRecord|Spirit Message "A"|False|True|False|False
+TagRecord|Spirit Message "L"|True|False|False|False
+TagRecord|Spirit Message "N"|True|False|False|False
+TagRecord|Spiritual Energy Settle Machine|True|False|False|False
+TagRecord|Spiritual Forest|True|False|False|False
+TagRecord|Spring of Rebirth|True|False|False|False
+TagRecord|SPYRAL MISSION - Assault|False|True|False|False
+TagRecord|Star Pendulumgraph|False|True|False|False
+TagRecord|Staring Contest|True|False|False|False
+TagRecord|Stumbling|True|False|False|False
+TagRecord|Subterror Cave Clash|False|True|False|False
+TagRecord|Summon Cloud|True|False|False|False
+TagRecord|Summoning Curse|False|True|False|False
+TagRecord|Sunvine Cross Breed|True|False|False|False
+TagRecord|Super Solar Nutrient|False|True|False|False
+TagRecord|Supernatural Danger Zone|True|False|False|False
+TagRecord|Supply Squad|True|False|False|False
+TagRecord|Swords of Burning Light|True|False|False|False
+TagRecord|Synchronized Realm|True|False|False|False
+TagRecord|Talisman of Trap Sealing|False|True|False|False
+TagRecord|Teleport|False|True|False|False
+TagRecord|Temple of the Kings|True|False|False|False
+TagRecord|Temple of the Sun|False|True|False|False
+TagRecord|Terminal World|False|True|False|False
+TagRecord|Terminal World NEXT|True|False|False|False
+TagRecord|TGX300|False|True|False|False
+TagRecord|The A. Forces|False|True|False|False
+TagRecord|The Dark Door|True|False|False|False
+TagRecord|The Fountain in the Sky|True|False|False|False
+TagRecord|The Kaiju Files|False|True|False|False
+TagRecord|The Resolute Meklord Army|False|True|False|False
+TagRecord|The Second Sarcophagus|False|True|False|False
+TagRecord|The Third Sarcophagus|True|False|False|False
+TagRecord|The Weather Cloudy Canvas|False|True|False|False
+TagRecord|The Weather Rainy Canvas|False|True|False|False
+TagRecord|The Weather Snowy Canvas|False|True|False|False
+TagRecord|The Weather Sunny Canvas|False|True|False|False
+TagRecord|The World Tree|False|False|False|True
+TagRecord|Time Thief Hack|False|True|False|False
+TagRecord|Toll|True|False|False|False
+TagRecord|Toon World|False|True|False|False
+TagRecord|Toy Vendor|False|True|False|False
+TagRecord|Tri-Blaze Accelerator|False|True|False|False
+TagRecord|True Draco Heritage|False|False|False|True
+TagRecord|Two-Man Cell Battle|True|False|False|False
+TagRecord|Valhalla, Hall of the Fallen|True|False|False|False
+TagRecord|Vampire's Domain|False|True|False|False
+TagRecord|Vendread Nightmare|False|True|False|False
+TagRecord|Vengeful Bog Spirit|False|False|True|False
+TagRecord|Verdant Sanctuary|False|True|False|False
+TagRecord|Void Imagination|False|False|False|True
+TagRecord|Void Vanishment|False|False|False|True
+TagRecord|Vylon Element|False|True|False|False
+TagRecord|War Rock Medium|True|False|False|False
+TagRecord|War Rock Ordeal|True|False|False|False
+TagRecord|Water Hazard|True|False|False|False
+TagRecord|Wattcine|True|False|False|False
+TagRecord|Wave-Motion Cannon|False|True|False|False
+TagRecord|Wave-Motion Inferno|False|False|False|True
+TagRecord|Weapon Change|True|False|False|False
+TagRecord|Whitefish Salvage|False|True|False|False
+TagRecord|Will of the Salamangreat|False|True|False|False
+TagRecord|Wind-Up Factory|False|False|False|True
+TagRecord|Witchcrafter Bystreet|False|True|False|False
+TagRecord|Witchcrafter Scroll|False|True|False|False
+TagRecord|Wonder Balloons|True|False|False|False
+TagRecord|World Legacy Guardragon|True|False|False|False
+TagRecord|World Legacy Key|False|True|False|False
+TagRecord|World Legacy's Corruption|False|True|False|False
+TagRecord|Worm Call|False|True|False|False
+TagRecord|Xyz Change Tactics|False|True|False|False
+TagRecord|Yang Zing Prana|True|False|False|False
+TagRecord|Yellow Luster Shield|True|False|False|False
+TagRecord|Yosen Training Grounds|False|True|False|False
+TagRecord|Yosen Whirlwind|False|True|False|False
+TagRecord|You and A.I.|True|False|False|False
+TagRecord|Zefra Path|False|True|False|False
+TagRecord|Zero Extra Link|False|True|False|False
+TagRecord|Zerozerock|True|False|False|False
+TagRecord|Zoodiac Barrage|False|False|False|True
+TagRecord|Different Dimension Gate|False|True|False|False
