@@ -1,4 +1,4 @@
-7979
+8041
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -7978,3 +7978,65 @@ TagRecord|White Veil|False|True|False|False
 TagRecord|Wicked-Breaking Flamberge - Baou|True|False|False|False
 TagRecord|Wonder Wand|False|True|False|False
 TagRecord|Xyz Unit|False|True|False|False
+TagRecord|Advanced Ritual Art|False|True|False|False
+TagRecord|Beastly Mirror Ritual|True|False|False|False
+TagRecord|Black Illusion Ritual|True|False|False|False
+TagRecord|Black Magic Ritual|False|True|False|False
+TagRecord|Breath of Acclamation|True|False|False|False
+TagRecord|Chaos Form|True|False|False|False
+TagRecord|Commencement Dance|True|False|False|False
+TagRecord|Contract with the Abyss|False|True|False|False
+TagRecord|Contract with the Dark Master|True|False|False|False
+TagRecord|Curse of the Masked Beast|True|False|False|False
+TagRecord|Cycle of the World|False|True|False|False
+TagRecord|Cynet Ritual|False|True|False|False
+TagRecord|Dark Dragon Ritual|False|True|False|False
+TagRecord|Dawn of the Herald|False|True|False|False
+TagRecord|Doriado's Blessing|True|False|False|False
+TagRecord|Earth Chant|True|False|False|False
+TagRecord|Emblem of the Awakening|True|False|False|False
+TagRecord|End of the World|True|False|False|False
+TagRecord|Final Ritual of the Ancients|False|True|False|False
+TagRecord|Forbidden Arts of the Gishki|False|True|False|False
+TagRecord|Fortress Whale's Oath|False|True|False|False
+TagRecord|Garma Sword Oath|False|True|False|False
+TagRecord|Gishki Aquamirror|False|True|False|False
+TagRecord|Gishki Photomirror|False|True|False|False
+TagRecord|Good & Evil in the Burning Abyss|False|True|False|False
+TagRecord|Hamburger Recipe|True|False|False|False
+TagRecord|Hymn of Light|True|False|False|False
+TagRecord|Impcantation Inception|False|True|False|False
+TagRecord|Incandescent Ordeal|False|True|False|False
+TagRecord|Javelin Beetle Pact|False|True|False|False
+TagRecord|Litmus Doom Ritual|False|True|False|False
+TagRecord|Luminous Dragon Ritual|False|True|False|False
+TagRecord|Machine Angel Absolute Ritual|True|False|False|False
+TagRecord|Machine Angel Ritual|True|False|False|False
+TagRecord|Nekroz Cycle|False|True|False|False
+TagRecord|Nekroz Kaleidoscope|False|True|False|False
+TagRecord|Nekroz Mirror|False|True|False|False
+TagRecord|Novox's Prayer|False|True|False|False
+TagRecord|Odd-Eyes Advent|False|True|False|False
+TagRecord|Oracle of the Herald|False|True|False|False
+TagRecord|Prediction Ritual|False|True|False|False
+TagRecord|Primal Cry|True|False|False|False
+TagRecord|Rebirth of Nephthys|False|True|False|False
+TagRecord|Red-Eyes Transmigration|False|True|False|False
+TagRecord|Resurrection of Chakra|False|True|False|False
+TagRecord|Revendread Evolution|False|True|False|False
+TagRecord|Revendread Origin|False|True|False|False
+TagRecord|Revival of Dokurorider|True|False|False|False
+TagRecord|Rise of the Salamangreat|False|True|False|False
+TagRecord|Ritual of Destruction|False|True|False|False
+TagRecord|Ritual of Grace|True|False|False|False
+TagRecord|Shinato's Ark|True|False|False|False
+TagRecord|Shinobird's Calling|True|False|False|False
+TagRecord|Sonic Tracker|True|False|False|False
+TagRecord|Sprite's Blessing|True|False|False|False
+TagRecord|Super Soldier Ritual|False|True|False|False
+TagRecord|Super Soldier Synthesis|True|False|False|False
+TagRecord|Synthesis Spell|True|False|False|False
+TagRecord|Turtle Oath|True|False|False|False
+TagRecord|War-Lion Ritual|False|True|False|False
+TagRecord|White Dragon Ritual|True|False|False|False
+TagRecord|Zera Ritual|False|True|False|False

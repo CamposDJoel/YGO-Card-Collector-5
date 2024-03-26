@@ -1,4 +1,4 @@
-12792
+12829
 LOB-000|Secret Rare|Tri-Horned Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-001|Ultra Rare|Blue-Eyes White Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-002|Common|Hitotsu-Me Giant|LEGEND OF BLUE EYES WHITE DRAGON
@@ -12791,3 +12791,40 @@ HA06-EN057|Super Rare|Vylon Segment|HIDDEN ARSENAL 6 OMEGA XYZ
 TSHD-EN054|Common|Wattcube|THE SHINING DARKNESS
 DUSA-EN032|Ultra Rare (Duelist Saga Version)|White Veil|DUELIST SAGA
 INCH-EN054|Super Rare|Wonder Wand|THE INFINITY CHASERS
+STON-EN045|Common|Advanced Ritual Art|STRIKE OF NEOS
+MIL1-EN020|Common|Black Illusion Ritual|MILLENNIUM PACK
+SBTK-EN002|Common|Black Magic Ritual|SPEED DUEL: TRIALS OF THE KINGDOM
+LCYW-EN273|Common|Contract with the Abyss|LEGENDARY COLLECTION 3 YUGI'S WORLD MEGA PACK
+CYHO-EN056|Common|Cycle of the World|CYBERNETIC HORIZON
+CYHO-EN051|Rare|Cynet Ritual|CYBERNETIC HORIZON
+DRL2-EN019|Super Rare|Dark Dragon Ritual|DRAGONS OF LEGEND 2
+TSHD-EN059|Common|Dawn of the Herald|THE SHINING DARKNESS
+TLM-EN044|Common|Final Ritual of the Ancients|THE LOST MILLENNIUM
+HA06-EN027|Super Rare|Forbidden Arts of the Gishki|HIDDEN ARSENAL 6 OMEGA XYZ
+SBSC-EN016|Common|Fortress Whale's Oath|SPEED DUEL: SCARS OF BATTLE
+TP8-EN010|Common|Garma Sword Oath|TOURNAMENT PACK 8
+HA05-EN055|Super Rare|Gishki Aquamirror|HIDDEN ARSENAL 5 STEELSWARM INVASION
+HA07-EN026|Super Rare|Gishki Photomirror|HIDDEN ARSENAL 7 KNIGHT OF STARS
+SECE-EN086|Super Rare|Good & Evil in the Burning Abyss|SECRETS OF ETERNITY
+SAST-EN065|Common|Impcantation Inception|SAVAGE STRIKE
+DCR-085|Common|Incandescent Ordeal|DARK CRISIS
+PP01-EN012|Super Rare|Javelin Beetle Pact|PREMIUM PACK
+BLRR-EN014|Ultra Rare|Litmus Doom Ritual|BATTLES OF LEGEND: RELENTLESS REVENGE
+LVAL-EN062|Common|Luminous Dragon Ritual|LEGACY OF THE VALIANT
+SECE-EN060|Rare|Nekroz Cycle|SECRETS OF ETERNITY
+DUPO-EN098|Ultra Rare|Nekroz Kaleidoscope|DUEL POWER
+DUPO-EN097|Ultra Rare|Nekroz Mirror|DUEL POWER
+TP2-008|Rare|Novox's Prayer|TOURNAMENT PACK 2ND SEASON
+BOSH-EN066|Rare|Odd-Eyes Advent|BREAKERS OF SHADOW
+NECH-EN066|Common|Oracle of the Herald|THE NEW CHALLENGERS
+DRL2-EN036|Super Rare|Prediction Ritual|DRAGONS OF LEGEND 2
+HISU-EN009|Super Rare|Rebirth of Nephthys|HIDDEN SUMMONERS
+DRL2-EN017|Super Rare|Red-Eyes Transmigration|DRAGONS OF LEGEND 2
+NUMH-EN053|Super Rare|Resurrection of Chakra|NUMBER HUNTERS
+FLOD-EN084|Common|Revendread Evolution|FLAMES OF DESTRUCTION
+COTD-EN084|Common|Revendread Origin|CODE OF THE DUELIST
+SOFU-EN052|Common|Rise of the Salamangreat|SOUL FUSION
+ABPF-EN058|Common|Ritual of Destruction|ABSOLUTE POWERFORCE
+DOCS-EN056|Rare|Super Soldier Ritual|DIMENSION OF CHAOS
+PP02-EN002|Super Rare|War-Lion Ritual|PREMIUM PACK 2
+PP01-EN010|Super Rare|Zera Ritual|PREMIUM PACK
