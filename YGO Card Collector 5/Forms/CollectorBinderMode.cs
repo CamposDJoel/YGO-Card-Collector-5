@@ -759,6 +759,8 @@ namespace YGO_Card_Collector_5
                 else { _CurrentCardPage--; }
 
                 LoadPage();
+                _CurrentCardImageIndexSelected = 0;
+                InitializeSelectedCard(_CurrentCardImageIndexSelected);
             }          
         }
         private void GoNextPage()
