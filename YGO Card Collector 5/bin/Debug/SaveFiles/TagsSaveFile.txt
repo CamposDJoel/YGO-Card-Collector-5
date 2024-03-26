@@ -1,4 +1,4 @@
-7756
+7979
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -7755,3 +7755,226 @@ TagRecord|Zero Extra Link|False|True|False|False
 TagRecord|Zerozerock|True|False|False|False
 TagRecord|Zoodiac Barrage|False|False|False|True
 TagRecord|Different Dimension Gate|False|True|False|False
+TagRecord|7 Completed|True|False|False|False
+TagRecord|Abyss-scale of Cetus|True|False|False|False
+TagRecord|Abyss-scale of the Kraken|True|False|False|False
+TagRecord|Abyss-scale of the Mizuchi|False|True|False|False
+TagRecord|Air Cracking Storm|False|True|False|False
+TagRecord|Amazoness Heirloom|False|True|False|False
+TagRecord|Amplifier|False|True|False|False
+TagRecord|Amulet of Ambition|True|False|False|False
+TagRecord|Ancient Gear Fist|True|False|False|False
+TagRecord|Ancient Gear Tank|True|False|False|False
+TagRecord|Archfiend's Staff of Despair|True|False|False|False
+TagRecord|Armed Changer|True|False|False|False
+TagRecord|Assault Armor|False|True|False|False
+TagRecord|Autonomous Action Unit|False|True|False|False
+TagRecord|Axe of Despair|True|False|False|False
+TagRecord|Axe of Fools|False|True|False|False
+TagRecord|Ballista of Rampart Smashing|True|False|False|False
+TagRecord|Bashing Shield|False|True|False|False
+TagRecord|Beacon of White|True|False|False|False
+TagRecord|Beast Fangs|True|False|False|False
+TagRecord|Big Bang Shot|False|True|False|False
+TagRecord|Book of Secret Arts|True|False|False|False
+TagRecord|Borrel Regenerator|False|True|False|False
+TagRecord|Bound Wand|False|True|False|False
+TagRecord|Break! Draw!|True|False|False|False
+TagRecord|Broken Bamboo Sword|False|True|False|False
+TagRecord|Burning Spear|False|False|False|True
+TagRecord|Buster Rancher|False|True|False|False
+TagRecord|Butterfly Dagger - Elma|False|True|False|False
+TagRecord|Celestial Sword - Eatos|False|True|False|False
+TagRecord|Cestus of Dagla|False|True|False|False
+TagRecord|Chthonian Alliance|True|False|False|False
+TagRecord|Comic Hand|True|False|False|False
+TagRecord|Core Blaster|True|False|False|False
+TagRecord|Crystal Release|True|False|False|False
+TagRecord|Cursed Armaments|True|False|False|False
+TagRecord|Cursed Bamboo Sword|False|False|False|True
+TagRecord|Cursed Bill|False|True|False|False
+TagRecord|Cyber Shield|True|False|False|False
+TagRecord|Cyclon Laser|False|True|False|False
+TagRecord|D.D.R. - Different Dimension Reincarnation|True|False|False|False
+TagRecord|Danger! Feets of Strength!|False|True|False|False
+TagRecord|Dark Energy|True|False|False|False
+TagRecord|Darkworld Shackles|True|False|False|False
+TagRecord|Demotion|False|True|False|False
+TagRecord|Divine Sword - Phoenix Blade|True|False|False|False
+TagRecord|Double Tool C&D|False|True|False|False
+TagRecord|Dracoback, the Rideable Dragon|True|False|False|False
+TagRecord|Dragon Shield|True|False|False|False
+TagRecord|Dragon Treasure|True|False|False|False
+TagRecord|Dragonic Attack|True|False|False|False
+TagRecord|Dragunity Divine Lance|True|False|False|False
+TagRecord|Dunnell, the Noble Arms of Light|True|False|False|False
+TagRecord|Ekibyo Drakmord|True|False|False|False
+TagRecord|Electro-Whip|True|False|False|False
+TagRecord|Elf's Light|False|False|False|True
+TagRecord|Evil Eye of Selene|False|True|False|False
+TagRecord|Fairy Meteor Crush|True|False|False|False
+TagRecord|Falling Down|False|True|False|False
+TagRecord|Fighting Spirit|False|True|False|False
+TagRecord|Flint|False|True|False|False
+TagRecord|Follow Wind|True|False|False|False
+TagRecord|Fuhma Shuriken|True|False|False|False
+TagRecord|Fulfillment of the Contract|False|True|False|False
+TagRecord|Fusion Sword Murasame Blade|True|False|False|False
+TagRecord|Fusion Weapon|True|False|False|False
+TagRecord|Gagagarevenge|False|True|False|False
+TagRecord|Galaxy Zero|False|True|False|False
+TagRecord|Germ Infection|True|False|False|False
+TagRecord|Gladiator Beast's Battle Archfiend Shield|False|True|False|False
+TagRecord|Gladiator Beast's Battle Gladius|False|True|False|False
+TagRecord|Gladiator Beast's Battle Halberd|False|True|False|False
+TagRecord|Gladiator Beast's Battle Manica|False|True|False|False
+TagRecord|Glass Slippers|False|True|False|False
+TagRecord|Glowing Crossbow|False|True|False|False
+TagRecord|Gravity Blaster|True|False|False|False
+TagRecord|Grid Rod|True|False|False|False
+TagRecord|Gust Fan|False|False|False|True
+TagRecord|Heart of Clear Water|True|False|False|False
+TagRecord|Horn of Light|True|False|False|False
+TagRecord|Horn of the Unicorn|True|False|False|False
+TagRecord|Hydro Pressure Cannon|True|False|False|False
+TagRecord|Insect Armor with Laser Cannon|False|True|False|False
+TagRecord|Instant Neo Space|True|False|False|False
+TagRecord|Invigoration|True|False|False|False
+TagRecord|Inzektor Axe - Zektahawk|False|True|False|False
+TagRecord|Inzektor Crossbow - Zektarrow|False|True|False|False
+TagRecord|Inzektor Sword - Zektkaliber|True|False|False|False
+TagRecord|Iron Core Armor|False|True|False|False
+TagRecord|Junk Barrage|True|False|False|False
+TagRecord|Kozmo Lightsword|False|True|False|False
+TagRecord|Laser Cannon Armor|True|False|False|False
+TagRecord|Legendary Black Belt|False|True|False|False
+TagRecord|Legendary Ebon Steed|False|True|False|False
+TagRecord|Legendary Sword|True|False|False|False
+TagRecord|Life Extreme|True|False|False|False
+TagRecord|Lightning Blade|True|False|False|False
+TagRecord|Lightsworn Sabre|False|True|False|False
+TagRecord|Living Fossil|True|False|False|False
+TagRecord|Lucky Iron Axe|True|False|False|False
+TagRecord|Machine Conversion Factory|False|True|False|False
+TagRecord|Magic Formula|True|False|False|False
+TagRecord|Magical Labyrinth|True|False|False|False
+TagRecord|Magicalized Duston Mop|False|True|False|False
+TagRecord|Magnum Shield|True|False|False|False
+TagRecord|Malevolent Nuzzler|True|False|False|False
+TagRecord|Mark of the Rose|False|True|False|False
+TagRecord|Mask of Brutality|False|True|False|False
+TagRecord|Mask of the Accursed|False|True|False|False
+TagRecord|Megamorph|True|False|False|False
+TagRecord|Metalsilver Armor|True|False|False|False
+TagRecord|Mirror of Yata|False|True|False|False
+TagRecord|Molting Escape|False|True|False|False
+TagRecord|Moon Mirror Shield|False|True|False|False
+TagRecord|Mordschlag|False|True|False|False
+TagRecord|Morphtronic Cord|True|False|False|False
+TagRecord|Morphtronic Engine|True|False|False|False
+TagRecord|Morphtronic Repair Unit|False|True|False|False
+TagRecord|Morphtronic Rusty Engine|False|True|False|False
+TagRecord|Mystical Moon|True|False|False|False
+TagRecord|Necklace of Command|False|True|False|False
+TagRecord|Neos Force|False|True|False|False
+TagRecord|Nephe Shaddoll Fusion|True|False|False|False
+TagRecord|Nitro Unit|False|True|False|False
+TagRecord|Noble Arms - Arfeudutyr|False|True|False|False
+TagRecord|Noble Arms - Caliburn|False|True|False|False
+TagRecord|Noble Arms - Clarent|False|True|False|False
+TagRecord|Noble Arms - Excaliburn|False|False|False|True
+TagRecord|Noble Arms - Gallatin|False|True|False|False
+TagRecord|Noble Arms of Destiny|False|True|False|False
+TagRecord|Nordic Relic Draupnir|True|False|False|False
+TagRecord|Omega Goggles|False|True|False|False
+TagRecord|One-Shot Wand|True|False|False|False
+TagRecord|Opti-Camouflage Armor|False|True|False|False
+TagRecord|Orb of Yasaka|False|True|False|False
+TagRecord|Overdone Burial|False|True|False|False
+TagRecord|Parallel Panzer|False|True|False|False
+TagRecord|Paralyzing Potion|True|False|False|False
+TagRecord|Pestilence|False|True|False|False
+TagRecord|Phalanx Pike|False|True|False|False
+TagRecord|Phantasm Spiral Crash|True|False|False|False
+TagRecord|Phantasm Spiral Grip|True|False|False|False
+TagRecord|Phantasm Spiral Wave|False|True|False|False
+TagRecord|Power of Kaishin|True|False|False|False
+TagRecord|Power of the Guardians|False|False|False|True
+TagRecord|Power Pickaxe|False|True|False|False
+TagRecord|Predapruning|False|True|False|False
+TagRecord|Premature Burial|True|False|False|False
+TagRecord|Prevention Star|False|True|False|False
+TagRecord|Psychic Blade|True|False|False|False
+TagRecord|Psychic Sword|False|True|False|False
+TagRecord|Rainbow Veil|False|True|False|False
+TagRecord|Raise Body Heat|True|False|False|False
+TagRecord|Raptor's Ultimate Mace|False|True|False|False
+TagRecord|Raregold Armor|True|False|False|False
+TagRecord|Reaper Scythe - Dreadscythe|False|True|False|False
+TagRecord|Re-Fusion|False|True|False|False
+TagRecord|Reptilianne Rage|False|True|False|False
+TagRecord|Restoration of the Monarchs|False|True|False|False
+TagRecord|Reverse Breaker|True|False|False|False
+TagRecord|Ribbon of Rebirth|False|True|False|False
+TagRecord|Ring of Magnetism|True|False|False|False
+TagRecord|Rising Fire|True|False|False|False
+TagRecord|Rising Sun Slash|False|True|False|False
+TagRecord|Ritual Weapon|True|False|False|False
+TagRecord|Rocket Pilder|False|True|False|False
+TagRecord|Rod of Silence - Kay'est|True|False|False|False
+TagRecord|Rod of the Mind's Eye|True|False|False|False
+TagRecord|Saqlifice|False|True|False|False
+TagRecord|Scroll of Bewitchment|True|False|False|False
+TagRecord|Shine Palace|False|True|False|False
+TagRecord|Shooting Star Bow - Ceal|False|True|False|False
+TagRecord|Silver Bow and Arrow|True|False|False|False
+TagRecord|Silver Wing|True|False|False|False
+TagRecord|Sky Striker Mecharmory - Hercules Base|False|True|False|False
+TagRecord|Smoke Grenade of the Thief|True|False|False|False
+TagRecord|Snatch Steal|True|False|False|False
+TagRecord|Solitary Sword of Poison|False|True|False|False
+TagRecord|Spark Blaster|True|False|False|False
+TagRecord|Spellbook of Life|False|False|False|True
+TagRecord|Spirit Burner|False|True|False|False
+TagRecord|SPYRAL GEAR - Big Red|False|True|False|False
+TagRecord|SPYRAL GEAR - Fully Armed|False|True|False|False
+TagRecord|Starlit Papillon|True|False|False|False
+TagRecord|Steel Shell|False|False|False|True
+TagRecord|Stellarknight Alpha|True|False|False|False
+TagRecord|Stim-Pack|True|False|False|False
+TagRecord|Stoic Challenge|False|True|False|False
+TagRecord|Super Strident Blaze|False|True|False|False
+TagRecord|Sword of Dark Destruction|False|True|False|False
+TagRecord|Sword of Deep-Seated|True|False|False|False
+TagRecord|Sword of Dragon's Soul|False|True|False|False
+TagRecord|Sword of Kusanagi|False|True|False|False
+TagRecord|Sword of Sparkles|False|True|False|False
+TagRecord|Sword of the Soul-Eater|True|False|False|False
+TagRecord|Symbol of Heritage|True|False|False|False
+TagRecord|Symbols of Duty|True|False|False|False
+TagRecord|Synchro Boost|True|False|False|False
+TagRecord|Tailwind of Gusto|True|False|False|False
+TagRecord|Telekinetic Charging Cell|False|True|False|False
+TagRecord|Thorn of Malice|False|True|False|False
+TagRecord|Tokkosho of Ghost Destroying|False|True|False|False
+TagRecord|Train Connection|False|True|False|False
+TagRecord|Trial of the Princesses|False|True|False|False
+TagRecord|Trickstar Magical Laurel|False|True|False|False
+TagRecord|Twin Swords of Flashing Light - Tryce|False|True|False|False
+TagRecord|Two Toads with One Sting|True|False|False|False
+TagRecord|U.A. Powered Jersey|True|False|False|False
+TagRecord|United We Stand|False|False|True|False
+TagRecord|Vengeful Servant|False|True|False|False
+TagRecord|Vicious Claw|False|True|False|False
+TagRecord|Vile Germs|True|False|False|False
+TagRecord|Violet Crystal|True|False|False|False
+TagRecord|Vylon Component|False|True|False|False
+TagRecord|Vylon Filament|True|False|False|False
+TagRecord|Vylon Material|False|True|False|False
+TagRecord|Vylon Segment|False|True|False|False
+TagRecord|Wattcube|False|True|False|False
+TagRecord|Wattjustment|True|False|False|False
+TagRecord|White Veil|False|True|False|False
+TagRecord|Wicked-Breaking Flamberge - Baou|True|False|False|False
+TagRecord|Wonder Wand|False|True|False|False
+TagRecord|Xyz Unit|False|True|False|False
