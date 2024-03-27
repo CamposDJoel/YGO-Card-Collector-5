@@ -1,4 +1,4 @@
-8346
+8545
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -8345,3 +8345,202 @@ TagRecord|Xyz Double Back|False|True|False|False
 TagRecord|Xyz Encore|False|False|False|True
 TagRecord|Yosenju Wind Worship|True|False|False|False
 TagRecord|Called by the Grave|False|True|False|False
+TagRecord|A Legendary Ocean|True|False|False|False
+TagRecord|Abyss Playhouse - Fantastic Theater|False|True|False|False
+TagRecord|Acidic Downpour|False|True|False|False
+TagRecord|Advanced Dark|False|True|False|False
+TagRecord|Amazoness Village|False|True|False|False
+TagRecord|Amorphous Persona|False|True|False|False
+TagRecord|Ancient City - Rainbow Ruins|False|True|False|False
+TagRecord|Ancient Forest|False|True|False|False
+TagRecord|Archfiend Palabyrinth|False|True|False|False
+TagRecord|Aroma Garden|True|False|False|False
+TagRecord|Array of Revealing Light|True|False|False|False
+TagRecord|Augmented Heraldry|False|True|False|False
+TagRecord|B.E.F. Zelos|True|False|False|False
+TagRecord|Barian Untopia|True|False|False|False
+TagRecord|Beetrooper Formation|True|False|False|False
+TagRecord|Black Garden|False|True|False|False
+TagRecord|Boot Sector Launch|True|False|False|False
+TagRecord|Brain Research Lab|False|True|False|False
+TagRecord|Breaking of the World|False|True|False|False
+TagRecord|Bug Matrix|False|True|False|False
+TagRecord|Canyon|True|False|False|False
+TagRecord|Castle Link|False|True|False|False
+TagRecord|Catalyst Field|False|True|False|False
+TagRecord|Catapult Zone|True|False|False|False
+TagRecord|Celestia|True|False|False|False
+TagRecord|Centrifugal Field|False|True|False|False
+TagRecord|Chicken Game|False|True|False|False
+TagRecord|Chorus of Sanctuary|True|False|False|False
+TagRecord|Chronomaly City Babylon|False|True|False|False
+TagRecord|Clear World|False|True|False|False
+TagRecord|Clock Tower Prison|False|True|False|False
+TagRecord|Closed Forest|False|True|False|False
+TagRecord|Colosseum - Cage of the Gladiator Beasts|False|True|False|False
+TagRecord|Crusadia Revival|False|True|False|False
+TagRecord|Crystolic Potential|True|False|False|False
+TagRecord|Curse of the Shadow Prison|True|False|False|False
+TagRecord|Cyberdark Inferno|True|False|False|False
+TagRecord|Cynet Storm|True|False|False|False
+TagRecord|Cynet Universe|True|False|False|False
+TagRecord|Danger! Disturbance! Disorder!|True|False|False|False
+TagRecord|Dark Sanctuary|False|True|False|False
+TagRecord|Defense Zone|True|False|False|False
+TagRecord|Deskbot Base|True|False|False|False
+TagRecord|Dinomic Powerload|True|False|False|False
+TagRecord|Divine Wind of Mist Valley|True|False|False|False
+TagRecord|Dragon Ravine|True|False|False|False
+TagRecord|Dragonic Diagram|False|False|False|True
+TagRecord|Dream Mirror of Joy|True|False|False|False
+TagRecord|Dream Mirror of Terror|True|False|False|False
+TagRecord|Dreamland|False|True|False|False
+TagRecord|Dueltaining|False|True|False|False
+TagRecord|Earthbound Geoglyph|False|False|False|True
+TagRecord|Elborz, the Sacred Lands of Simorgh|True|False|False|False
+TagRecord|Empowerment|False|True|False|False
+TagRecord|Euler's Circuit|False|True|False|False
+TagRecord|Evil Eye Domain - Pareidolia|False|True|False|False
+TagRecord|Extra Net|True|False|False|False
+TagRecord|F.A. Circuit Grand Prix|False|True|False|False
+TagRecord|F.A. City Grand Prix|False|True|False|False
+TagRecord|F.A. Off-Road Grand Prix|False|True|False|False
+TagRecord|Fallen Paradise|True|False|False|False
+TagRecord|Fandora, the Flying Furtress|False|True|False|False
+TagRecord|Fire Fortress atop Liang Peak|False|True|False|False
+TagRecord|Fire King Island|True|False|False|False
+TagRecord|Fire Prison|False|True|False|False
+TagRecord|Flawless Perfection of the Tenyi|True|False|False|False
+TagRecord|Forest|True|False|False|False
+TagRecord|Forest of Lost Flowers|True|False|False|False
+TagRecord|Fortissimo the Mobile Fortress|False|True|False|False
+TagRecord|Fusion Gate|False|True|False|False
+TagRecord|Fusion Recycling Plant|False|True|False|False
+TagRecord|Future Visions|False|True|False|False
+TagRecord|Gateway to Chaos|False|True|False|False
+TagRecord|Ghostrick Mansion|True|False|False|False
+TagRecord|Ghostrick Museum|True|False|False|False
+TagRecord|Ghostrick Parade|False|True|False|False
+TagRecord|Giant Ballpark|False|True|False|False
+TagRecord|Golden Castle of Stromberg|False|True|False|False
+TagRecord|Gouki Cage Match|False|True|False|False
+TagRecord|Grand Spiritual Art - Ichirin|True|False|False|False
+TagRecord|Guardragon Shield|False|True|False|False
+TagRecord|Gunkan Sushipyard Seaside Supper Spot|True|False|False|False
+TagRecord|Harpies' Hunting Ground|True|False|False|False
+TagRecord|Heavy Metal Raiders|False|False|True|False
+TagRecord|Hexatellarknight|True|False|False|False
+TagRecord|Hidden Village of Ninjitsu Arts|False|True|False|False
+TagRecord|Ignition Phoenix|False|True|False|False
+TagRecord|Impcantation Thanatosis|False|True|False|False
+TagRecord|Iron Core Specimen Lab|False|True|False|False
+TagRecord|Jurassic World|False|False|True|False
+TagRecord|Karakuri Showdown Castle|False|True|False|False
+TagRecord|Kozmotown|False|True|False|False
+TagRecord|Kyoutou Waterfront|True|False|False|False
+TagRecord|Laser Qlip|True|False|False|False
+TagRecord|Lemuria, the Forgotten City|True|False|False|False
+TagRecord|Light Barrier|False|False|False|True
+TagRecord|Lost World|False|True|False|False
+TagRecord|Luminous Spark|True|False|False|False
+TagRecord|Madolche Chateau|True|False|False|False
+TagRecord|Magical Citadel of Endymion|True|False|False|False
+TagRecord|Magical Meltdown|False|True|False|False
+TagRecord|Magical Mid-Breaker Field|True|False|False|False
+TagRecord|Magnetic Field|False|False|True|False
+TagRecord|Majesty's Pegasus|False|True|False|False
+TagRecord|Malefic World|False|True|False|False
+TagRecord|Marincess Battle Ocean|False|True|False|False
+TagRecord|Mausoleum of the Emperor|True|False|False|False
+TagRecord|Mausoleum of White|True|False|False|False
+TagRecord|Megaroid City|True|False|False|False
+TagRecord|Meklord Fortress|False|True|False|False
+TagRecord|Metamorformation|False|True|False|False
+TagRecord|Metaphys Factor|False|True|False|False
+TagRecord|Molten Destruction|True|False|False|False
+TagRecord|Morphtronic Map|True|False|False|False
+TagRecord|Mound of the Bound Creator|False|True|False|False
+TagRecord|Mount Sylvania|False|True|False|False
+TagRecord|Mountain|True|False|False|False
+TagRecord|Mystic Mine|False|True|False|False
+TagRecord|Mystic Plasma Zone|True|False|False|False
+TagRecord|Naturia Forest|False|True|False|False
+TagRecord|Necrovalley|True|False|False|False
+TagRecord|Neo Space|False|True|False|False
+TagRecord|Noble Knights of the Round Table|False|True|False|False
+TagRecord|Ojama Country|False|True|False|False
+TagRecord|Onomatopia|False|True|False|False
+TagRecord|Oracle of Zefra|False|True|False|False
+TagRecord|Orcustrated Babel|False|True|False|False
+TagRecord|Otherworld - The "A" Zone|False|True|False|False
+TagRecord|Pacifis, the Phantasm City|False|True|False|False
+TagRecord|Palace of the Elemental Lords|False|True|False|False
+TagRecord|Prank-Kids Place|False|False|False|True
+TagRecord|PSY-Frame Circuit|False|True|False|False
+TagRecord|Realm of Danger!|False|True|False|False
+TagRecord|Realm of Light|True|False|False|False
+TagRecord|Reptilianne Recoil|True|False|False|False
+TagRecord|Revolving Switchyard|False|True|False|False
+TagRecord|Rising Air Current|True|False|False|False
+TagRecord|Ritual Sanctuary|False|True|False|False
+TagRecord|Saber Vault|False|False|False|True
+TagRecord|Sargasso the D.D. Battlefield|False|True|False|False
+TagRecord|Savage Colosseum|False|True|False|False
+TagRecord|Scrap Factory|False|True|False|False
+TagRecord|Secret Village of the Spellcasters|True|False|False|False
+TagRecord|Shien's Castle of Mist|True|False|False|False
+TagRecord|Shiranui Style Synthesis|False|True|False|False
+TagRecord|Shrine of Mist Valley|False|True|False|False
+TagRecord|Sky Striker Airspace - Area Zero|True|False|False|False
+TagRecord|Skyscraper 2 - Hero City|True|False|False|False
+TagRecord|Smile Action|True|False|False|False
+TagRecord|Sogen|True|False|False|False
+TagRecord|Sorcerous Spell Wall|True|False|False|False
+TagRecord|Spider Web|False|True|False|False
+TagRecord|SPYRAL Resort|False|True|False|False
+TagRecord|Stairway to a Fabled Realm|True|False|False|False
+TagRecord|Starlight Junktion|True|False|False|False
+TagRecord|Summon Breaker|True|False|False|False
+TagRecord|Summon Over|False|True|False|False
+TagRecord|Super Quantal Mech Ship Magnacarrier|False|True|False|False
+TagRecord|Supreme King's Castle|False|True|False|False
+TagRecord|Symph Amplifire|True|False|False|False
+TagRecord|Temple of the Mind's Eye|False|True|False|False
+TagRecord|Temple of the Six|True|False|False|False
+TagRecord|The Gates of Dark World|True|False|False|False
+TagRecord|The Grand Spellbook Tower|False|False|False|True
+TagRecord|The Hidden City|False|False|False|True
+TagRecord|The Most Distant, Deepest Depths|True|False|False|False
+TagRecord|The Nordic Lights|False|True|False|False
+TagRecord|The Sanctuary in the Sky|True|False|False|False
+TagRecord|The Seal of Orichalcos|False|False|True|False
+TagRecord|Toon Kingdom|False|False|False|True
+TagRecord|Traptrip Garden|True|False|False|False
+TagRecord|Triamid Cruiser|False|False|False|True
+TagRecord|Triamid Fortress|False|True|False|False
+TagRecord|Triamid Kingolem|False|True|False|False
+TagRecord|Trickstar Light Arena|False|True|False|False
+TagRecord|Trickstar Light Stage|False|False|False|True
+TagRecord|Trickstar Live Stage|False|False|False|True
+TagRecord|U.A. Stadium|True|False|False|False
+TagRecord|Umi|True|False|False|False
+TagRecord|Umiiruka|True|False|False|False
+TagRecord|Vampire Kingdom|True|False|False|False
+TagRecord|Vendread Nights|False|True|False|False
+TagRecord|Venom Swamp|False|True|False|False
+TagRecord|Void Expansion|False|True|False|False
+TagRecord|Wasteland|True|False|False|False
+TagRecord|Wattcastle|False|True|False|False
+TagRecord|Wetlands|False|True|False|False
+TagRecord|White Rose Cloister|True|False|False|False
+TagRecord|World Dino Wrestling|False|True|False|False
+TagRecord|World Legacy Discovery|False|True|False|False
+TagRecord|World Legacy in Shadow|False|True|False|False
+TagRecord|World Legacy Scars|False|True|False|False
+TagRecord|World Legacy's Nightmare|False|True|False|False
+TagRecord|Xyz Override|False|True|False|False
+TagRecord|Xyz Territory|False|True|False|False
+TagRecord|Yami|True|False|False|False
+TagRecord|Zexal Field|True|False|False|False
+TagRecord|Zodiac Sign|True|False|False|False
+TagRecord|Zombie World|True|False|False|False
