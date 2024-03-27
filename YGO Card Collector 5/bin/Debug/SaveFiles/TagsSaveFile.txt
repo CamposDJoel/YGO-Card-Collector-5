@@ -1,4 +1,4 @@
-8041
+8346
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -8040,3 +8040,308 @@ TagRecord|Turtle Oath|True|False|False|False
 TagRecord|War-Lion Ritual|False|True|False|False
 TagRecord|White Dragon Ritual|True|False|False|False
 TagRecord|Zera Ritual|False|True|False|False
+TagRecord|"A" Cell Recombination Device|False|True|False|False
+TagRecord|"A" Cell Scatter Burst|False|True|False|False
+TagRecord|A Deal with Dark Ruler|False|True|False|False
+TagRecord|Abyss Script - Romantic Terror|False|True|False|False
+TagRecord|Action Magic - Double Banking|False|True|False|False
+TagRecord|Action Magic - Full Turn|False|True|False|False
+TagRecord|Amazoness Call|False|True|False|False
+TagRecord|Anti-Magic Arrows|True|False|False|False
+TagRecord|Appliancer Conversion|True|False|False|False
+TagRecord|Armed Dragon Flash|True|False|False|False
+TagRecord|Arrivalrivals|False|True|False|False
+TagRecord|Artifact Ignition|False|True|False|False
+TagRecord|Artifacts Unleashed|True|False|False|False
+TagRecord|Asceticism of the Six Samurai|False|True|False|False
+TagRecord|Assault Mode Zero|False|True|False|False
+TagRecord|Assault Overload|True|False|False|False
+TagRecord|Assault Revival|False|True|False|False
+TagRecord|Basal Rose Shoot|True|False|False|False
+TagRecord|Battle Fusion|False|True|False|False
+TagRecord|Battle Tuned|True|False|False|False
+TagRecord|Beast Magic Attack|False|True|False|False
+TagRecord|Berserk Scales|False|True|False|False
+TagRecord|Berserker Crush|False|True|False|False
+TagRecord|Berserker Soul|False|True|False|False
+TagRecord|Black and White Wave|True|False|False|False
+TagRecord|Blind Spot Strike|True|False|False|False
+TagRecord|Book of Eclipse|True|False|False|False
+TagRecord|Book of Lunar Eclipse|True|False|False|False
+TagRecord|Book of Moon|True|False|False|False
+TagRecord|Branded in High Spirits|True|False|False|False
+TagRecord|Bubble Illusion|False|False|False|True
+TagRecord|Bug Signal|True|False|False|False
+TagRecord|Burial from a Different Dimension|True|False|False|False
+TagRecord|Cattle Call|False|True|False|False
+TagRecord|Celestial Transformation|True|False|False|False
+TagRecord|Chain Strike|False|True|False|False
+TagRecord|Chain Summoning|False|True|False|False
+TagRecord|Chaos Scepter Blast|False|False|False|True
+TagRecord|Circle of the Fire Kings|False|True|False|False
+TagRecord|Clashing Souls|False|True|False|False
+TagRecord|Cocoon of Ultra Evolution|False|False|True|False
+TagRecord|Cold Feet|False|True|False|False
+TagRecord|Column Switch|False|True|False|False
+TagRecord|Combination Attack|False|True|False|False
+TagRecord|Concentrating Current|False|True|False|False
+TagRecord|Contact Out|False|True|False|False
+TagRecord|Cosmic Cyclone|True|False|False|False
+TagRecord|Cosmic Flare|False|True|False|False
+TagRecord|Crashbug Road|True|False|False|False
+TagRecord|Crusadia Power|False|True|False|False
+TagRecord|Crusadia Testament|False|True|False|False
+TagRecord|Cunning of the Six Samurai|False|True|False|False
+TagRecord|Cyber Eternal|True|False|False|False
+TagRecord|Cyberload Fusion|True|False|False|False
+TagRecord|Cybernetic Fusion Support|False|True|False|False
+TagRecord|Cybernetic Zone|False|True|False|False
+TagRecord|Cybersal Cyclone|False|True|False|False
+TagRecord|Cynet Backdoor|False|True|False|False
+TagRecord|Cynet Crosswipe|True|False|False|False
+TagRecord|Dark Burning Magic|True|False|False|False
+TagRecord|Dark Magic Expanded|False|True|False|False
+TagRecord|Dedication through Light and Darkness|False|True|False|False
+TagRecord|De-Fusion|True|False|False|False
+TagRecord|Demise of the Land|False|True|False|False
+TagRecord|Destruction Swordsman Fusion|False|True|False|False
+TagRecord|Detonate|False|True|False|False
+TagRecord|Diamond-Dust Cyclone|False|True|False|False
+TagRecord|Dimension Explosion|False|True|False|False
+TagRecord|Double Cyclone|True|False|False|False
+TagRecord|Double Hero Attack|False|True|False|False
+TagRecord|Draco Face-Off|False|True|False|False
+TagRecord|Dragon Laser|True|False|False|False
+TagRecord|Dragon's Fighting Spirit|False|False|True|False
+TagRecord|Dragoroar|False|True|False|False
+TagRecord|Dream Mirror of Chaos|True|False|False|False
+TagRecord|Edge of the Ring|False|True|False|False
+TagRecord|Ego Boost|True|False|False|False
+TagRecord|El Shaddoll Fusion|False|True|False|False
+TagRecord|Emergency Provisions|True|False|False|False
+TagRecord|Emergency Teleport|True|False|False|False
+TagRecord|Enemy Controller|True|False|False|False
+TagRecord|ESP Amplifier|True|False|False|False
+TagRecord|Evo-Miracle|True|False|False|False
+TagRecord|Exosister Arment|True|False|False|False
+TagRecord|Extra Gate|False|True|False|False
+TagRecord|F.A. Downforce|False|True|False|False
+TagRecord|F.A. Pit Stop|False|True|False|False
+TagRecord|F.A. Test Run|False|True|False|False
+TagRecord|Factory of 100 Machines|True|False|False|False
+TagRecord|Fires of Doomsday|False|True|False|False
+TagRecord|First Step Towards Infestation|False|True|False|False
+TagRecord|Fist of Fate|False|False|True|False
+TagRecord|Flash Fusion|False|True|False|False
+TagRecord|Flint Missile|False|True|False|False
+TagRecord|Fog Control|False|True|False|False
+TagRecord|Foolish Return|True|False|False|False
+TagRecord|Forbidden Chalice|False|True|False|False
+TagRecord|Forbidden Dress|True|False|False|False
+TagRecord|Forbidden Lance|False|True|False|False
+TagRecord|Forbidden Scripture|False|True|False|False
+TagRecord|Form Change|True|False|False|False
+TagRecord|Frozen Rose|True|False|False|False
+TagRecord|Fullmetalfoes Fusion|False|True|False|False
+TagRecord|Gagagaback|False|True|False|False
+TagRecord|Galaxy Storm|True|False|False|False
+TagRecord|Gateway to Dark World|True|False|False|False
+TagRecord|Geargia Change|True|False|False|False
+TagRecord|Gemini Spark|True|False|False|False
+TagRecord|Ghost Meets Girl - A Shiranui's Story|False|True|False|False
+TagRecord|Gladiator Taming|False|False|False|True
+TagRecord|Glory of the Noble Knights|True|False|False|False
+TagRecord|Golden Gearbox|True|False|False|False
+TagRecord|Graceful Dice|False|True|False|False
+TagRecord|Grand Convergence|False|True|False|False
+TagRecord|Gravity Lash|False|True|False|False
+TagRecord|Greed Grado|False|True|False|False
+TagRecord|Guardragon Reincarnation|False|True|False|False
+TagRecord|Half Shut|False|True|False|False
+TagRecord|Hand Destruction|True|False|False|False
+TagRecord|Hidden Fangs of Revenge|True|False|False|False
+TagRecord|Hippo Carnival|True|False|False|False
+TagRecord|Igknight Reload|False|True|False|False
+TagRecord|Igknights Unite|False|True|False|False
+TagRecord|Illusion Balloons|True|False|False|False
+TagRecord|Illusion Magic|False|True|False|False
+TagRecord|Indomitable Gladiator Beast|False|True|False|False
+TagRecord|Inferno Reckless Summon|True|False|False|False
+TagRecord|Inferno Tempest|True|False|False|False
+TagRecord|Infestation Pandemic|False|False|False|True
+TagRecord|Intercept Wave|False|True|False|False
+TagRecord|Jar Robber|True|False|False|False
+TagRecord|Karakuri Gold Dust|True|False|False|False
+TagRecord|Karma of the Destruction Swordsman|False|True|False|False
+TagRecord|Koa'ki Meiru Initialize!|True|False|False|False
+TagRecord|Legendary Wind-Up Key|False|True|False|False
+TagRecord|Level Down!?|False|True|False|False
+TagRecord|Light Wing Shield|False|True|False|False
+TagRecord|Limit Overdrive|True|False|False|False
+TagRecord|Link Bound|False|True|False|False
+TagRecord|Magical Musket - Cross-Domination|False|False|False|True
+TagRecord|Magical Musket - Steady Hands|False|True|False|False
+TagRecord|Magical Spring|False|True|False|False
+TagRecord|Magikey Battle|True|False|False|False
+TagRecord|Magnet Reverse|True|False|False|False
+TagRecord|Magnificent Machine Angel|False|True|False|False
+TagRecord|Majespecter Cyclone|False|False|False|True
+TagRecord|Majespecter Sonics|False|True|False|False
+TagRecord|Malice Dispersion|True|False|False|False
+TagRecord|March Towards Ragnarok|False|True|False|False
+TagRecord|Mask Change|False|True|False|False
+TagRecord|Mask Change II|False|True|False|False
+TagRecord|Mayhem Fur Hire|True|False|False|False
+TagRecord|Mind Wipe|False|True|False|False
+TagRecord|Miraculous Rebirth|False|True|False|False
+TagRecord|Mirage Tube|False|True|False|False
+TagRecord|Mirror of the Ice Barrier|True|False|False|False
+TagRecord|Mischief of the Time Goddess|False|False|False|True
+TagRecord|Mistaken Accusation|True|False|False|False
+TagRecord|Mistaken Arrest|False|True|False|False
+TagRecord|Monster Recovery|False|True|False|False
+TagRecord|Multiply|False|True|False|False
+TagRecord|My Body as a Shield|True|False|False|False
+TagRecord|Mysterious Triangle|False|True|False|False
+TagRecord|Mystical Space Typhoon|True|False|False|False
+TagRecord|Mystical Wind Typhoon|True|False|False|False
+TagRecord|Mystik Wok|False|True|False|False
+TagRecord|Mythical Bestiary|False|True|False|False
+TagRecord|Ojamatch|False|True|False|False
+TagRecord|Order to Charge|False|True|False|False
+TagRecord|Over Fusion|True|False|False|False
+TagRecord|Pendulum Impenetrable|False|True|False|False
+TagRecord|Pendulum Shift|True|False|False|False
+TagRecord|Photon Generator Unit|True|False|False|False
+TagRecord|Photon Lead|True|False|False|False
+TagRecord|Photon Stream of Destruction|False|True|False|False
+TagRecord|Photon Trident|True|False|False|False
+TagRecord|Pianissimo|False|True|False|False
+TagRecord|Poison of the Old Man|True|False|False|False
+TagRecord|Pop-Up|False|True|False|False
+TagRecord|Pot of Acquisitiveness|False|True|False|False
+TagRecord|Prank-Kids Pandemonium|False|True|False|False
+TagRecord|Predaplast|True|False|False|False
+TagRecord|Predaprime Fusion|False|True|False|False
+TagRecord|Psychic Fervor|True|False|False|False
+TagRecord|Pyramid Energy|True|False|False|False
+TagRecord|Quick Booster|True|False|False|False
+TagRecord|Quick Charger|False|True|False|False
+TagRecord|Quick Launch|True|False|False|False
+TagRecord|Rage of Kairyu-Shin|True|False|False|False
+TagRecord|Rage with Eyes of Blue|False|False|False|True
+TagRecord|Raging Mad Plants|False|True|False|False
+TagRecord|Rainbow Refraction|False|True|False|False
+TagRecord|Rank-Up-Magic Cipher Ascension|True|False|False|False
+TagRecord|Rank-Up-Magic Doom Double Force|False|True|False|False
+TagRecord|Rank-Up-Magic Quick Chaos|True|False|False|False
+TagRecord|Rank-Up-Magic Raptor's Force|False|True|False|False
+TagRecord|Rank-Up-Magic Revolution Force|False|True|False|False
+TagRecord|Rapid Trigger|True|False|False|False
+TagRecord|Rebellion|False|True|False|False
+TagRecord|Relinquished Fusion|False|False|False|True
+TagRecord|Reload|True|False|False|False
+TagRecord|Ring of Defense|True|False|False|False
+TagRecord|Ritual Beast Return|True|False|False|False
+TagRecord|Ritual Beast's Bond|False|True|False|False
+TagRecord|Roulette Spider|False|True|False|False
+TagRecord|Runaway Karakuri|True|False|False|False
+TagRecord|Saber Reflection|False|True|False|False
+TagRecord|Sacred Serpent's Wake|True|False|False|False
+TagRecord|Sargasso Lighthouse|False|True|False|False
+TagRecord|Satellarknight Skybridge|False|False|False|True
+TagRecord|Scapegoat|False|False|True|False
+TagRecord|Scramble!! Scramble!!|False|True|False|False
+TagRecord|Scrap Fist|True|False|False|False
+TagRecord|Scrap Sheen|True|False|False|False
+TagRecord|Scrapstorm|False|True|False|False
+TagRecord|Searing Fire Wall|False|True|False|False
+TagRecord|Sebek's Blessing|True|False|False|False
+TagRecord|Secret Skills of the Six Samurai|False|False|False|True
+TagRecord|Security Block|False|True|False|False
+TagRecord|Seed of Deception|True|False|False|False
+TagRecord|Self-Mummification|False|True|False|False
+TagRecord|Serial Spell|False|True|False|False
+TagRecord|Set Rotation|False|True|False|False
+TagRecord|Shrink|True|False|False|False
+TagRecord|Silent Burning|False|False|False|True
+TagRecord|Silent Graveyard|True|False|False|False
+TagRecord|Silent Sword Slash|False|False|False|True
+TagRecord|Silver's Cry|False|True|False|False
+TagRecord|Six Scrolls of the Samurai|False|True|False|False
+TagRecord|Sky Striker Mecha - Eagle Booster|True|False|False|False
+TagRecord|Sky Striker Mecha - Hornet Drones|False|True|False|False
+TagRecord|Sky Striker Mecha - Shark Cannon|False|True|False|False
+TagRecord|Sky Striker Mecha - Widow Anchor|False|False|False|True
+TagRecord|Smile Universe|False|True|False|False
+TagRecord|Soul Crossing|True|False|False|False
+TagRecord|Soul Reversal|True|False|False|False
+TagRecord|Space Cyclone|False|True|False|False
+TagRecord|Speedlift|False|False|False|True
+TagRecord|Spell of Pain|False|False|False|True
+TagRecord|Spell Shattering Arrow|True|False|False|False
+TagRecord|Spellbook of Fate|False|False|True|False
+TagRecord|Spellbook of Judgment|False|False|False|True
+TagRecord|Spellbook of Wisdom|False|True|False|False
+TagRecord|Spellbook Organization|True|False|False|False
+TagRecord|Spirit Charmers|True|False|False|False
+TagRecord|Spool Code|False|True|False|False
+TagRecord|Spright Smashers|True|False|False|False
+TagRecord|Squib Draw|False|True|False|False
+TagRecord|Stand In|False|True|False|False
+TagRecord|Star Changer|False|True|False|False
+TagRecord|Star Power!!|True|False|False|False
+TagRecord|Strike of the Monarchs|True|False|False|False
+TagRecord|Super Double Summon|False|True|False|False
+TagRecord|Super Hippo Carnival|False|True|False|False
+TagRecord|Super Polymerization|False|False|True|False
+TagRecord|Super Quantal Alphancall Appeal|False|True|False|False
+TagRecord|Super Rejuvenation|True|False|False|False
+TagRecord|Super Rush Headlong|False|True|False|False
+TagRecord|Surprise Chain|True|False|False|False
+TagRecord|Swallow's Nest|False|True|False|False
+TagRecord|Swords at Dawn|False|True|False|False
+TagRecord|Synchro Control|False|True|False|False
+TagRecord|Tailor of the Fickle|True|False|False|False
+TagRecord|Telekinetic Power Well|False|True|False|False
+TagRecord|Tellarknight Genesis|False|True|False|False
+TagRecord|TGX1-HL|True|False|False|False
+TagRecord|The Big March of Animals|False|True|False|False
+TagRecord|The Book of the Law|False|True|False|False
+TagRecord|The Flute of Summoning Kuriboh|False|False|False|True
+TagRecord|The Phantom Knights' Rank-Up-Magic Launch|False|True|False|False
+TagRecord|The Reliable Guardian|True|False|False|False
+TagRecord|Thunderforce Attack|False|False|True|False
+TagRecord|Time Passage|True|False|False|False
+TagRecord|Tornado|False|True|False|False
+TagRecord|Trading Places|False|True|False|False
+TagRecord|Transcendent Wings|False|True|False|False
+TagRecord|Tri-Brigade Rendezvous|True|False|False|False
+TagRecord|Trickstar Bouquet|False|True|False|False
+TagRecord|Tricky Spell 4|True|False|False|False
+TagRecord|Tsukumo Slash|False|True|False|False
+TagRecord|Turning of the World|False|True|False|False
+TagRecord|Twin Twisters|True|False|False|False
+TagRecord|Twister|True|False|False|False
+TagRecord|Tyrant Dino Fusion|False|True|False|False
+TagRecord|U.A. Turnover Tactics|False|True|False|False
+TagRecord|Unacceptable Result|False|True|False|False
+TagRecord|Unauthorized Reactivation|False|False|True|False
+TagRecord|Uni-Song Tuning|False|True|False|False
+TagRecord|Unity|False|True|False|False
+TagRecord|Unleash Your Power!|False|True|False|False
+TagRecord|Urgent Schedule|False|False|True|False
+TagRecord|Vendread Charge|False|True|False|False
+TagRecord|Vertical Landing|False|True|False|False
+TagRecord|Void Seer|False|True|False|False
+TagRecord|Vylon Polytope|False|True|False|False
+TagRecord|Wavering Eyes|False|True|False|False
+TagRecord|Wild Fire|True|False|False|False
+TagRecord|Witchcrafter Draping|False|True|False|False
+TagRecord|World Legacy Clash|False|True|False|False
+TagRecord|World Legacy Monstrosity|False|False|False|True
+TagRecord|World Legacy's Memory|False|True|False|False
+TagRecord|Xyz Double Back|False|True|False|False
+TagRecord|Xyz Encore|False|False|False|True
+TagRecord|Yosenju Wind Worship|True|False|False|False
+TagRecord|Called by the Grave|False|True|False|False
