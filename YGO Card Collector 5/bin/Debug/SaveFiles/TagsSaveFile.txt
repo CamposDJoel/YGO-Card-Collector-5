@@ -1,4 +1,4 @@
-9856
+9988
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -9855,3 +9855,135 @@ TagRecord|Zoma the Spirit|False|True|False|False
 TagRecord|Zoodiac Gathering|False|True|False|False
 TagRecord|Infinite Light|False|True|False|False
 TagRecord|Barrage Blast|False|False|True|False
+TagRecord|Anti-Spell|False|True|False|False
+TagRecord|Armor Break|True|False|False|False
+TagRecord|Assault Counter|False|True|False|False
+TagRecord|Barrel Behind the Door|False|True|False|False
+TagRecord|Bending Destiny|False|True|False|False
+TagRecord|Black Horn of Heaven|False|True|False|False
+TagRecord|Blackbird Close|False|True|False|False
+TagRecord|Broken Line|False|True|False|False
+TagRecord|Burgeoning Whirlflame|True|False|False|False
+TagRecord|Cash Back|False|True|False|False
+TagRecord|Champion's Vigilance|True|False|False|False
+TagRecord|Chaos Trap Hole|False|True|False|False
+TagRecord|Chivalry|False|False|False|True
+TagRecord|Counter Counter|False|True|False|False
+TagRecord|Crimson Fire|False|True|False|False
+TagRecord|Curse of Royal|False|True|False|False
+TagRecord|Cursed Seal of the Forbidden Spell|True|False|False|False
+TagRecord|Cynet Conflict|False|True|False|False
+TagRecord|Damage Polarizer|False|False|False|True
+TagRecord|Dark Bribe|True|False|False|False
+TagRecord|Dark Illusion|True|False|False|False
+TagRecord|Debunk|False|True|False|False
+TagRecord|Destruction Jammer|False|False|False|True
+TagRecord|Dice Try!|False|True|False|False
+TagRecord|Disarm|False|True|False|False
+TagRecord|Divine Punishment|True|False|False|False
+TagRecord|Divine Wrath|True|False|False|False
+TagRecord|Do a Barrel Roll|False|True|False|False
+TagRecord|Drastic Drop Off|True|False|False|False
+TagRecord|Dream Mirror Oneiromancy|False|True|False|False
+TagRecord|Earthbound Wave|True|False|False|False
+TagRecord|Emergeroid Call|False|True|False|False
+TagRecord|Evil Eye Retribution|False|True|False|False
+TagRecord|Exterio's Fang|True|False|False|False
+TagRecord|Face-Off|False|True|False|False
+TagRecord|Feather Wind|True|False|False|False
+TagRecord|Flamvell Counter|True|False|False|False
+TagRecord|Floowandereeze and the Scary Sea|True|False|False|False
+TagRecord|Forced Back|False|False|False|True
+TagRecord|Frightfur March|True|False|False|False
+TagRecord|Gemini Counter|False|True|False|False
+TagRecord|Gladiator Beast War Chariot|False|False|False|True
+TagRecord|Goblin Out of the Frying Pan|True|False|False|False
+TagRecord|Grand Horn of Heaven|True|False|False|False
+TagRecord|Gravity Collapse|False|False|False|True
+TagRecord|Graydle Combat|False|True|False|False
+TagRecord|Heartless Drop Off|False|True|False|False
+TagRecord|Heraldry Record|False|True|False|False
+TagRecord|Hieratic Seal of Reflection|False|True|False|False
+TagRecord|Horn of Heaven|False|True|False|False
+TagRecord|Imperial Tombs of Necrovalley|True|False|False|False
+TagRecord|Infernity Barrier|False|True|False|False
+TagRecord|Intercept|False|True|False|False
+TagRecord|Iron Core Luster|False|True|False|False
+TagRecord|Jolt Counter|False|True|False|False
+TagRecord|Judgment of Anubis|False|False|True|False
+TagRecord|Karakuri Cash Shed|False|False|False|True
+TagRecord|Last Counter|True|False|False|False
+TagRecord|Link Restart|False|True|False|False
+TagRecord|Madolche Nights|False|False|False|True
+TagRecord|Madolche Tea Break|False|False|False|True
+TagRecord|Magic Drain|True|False|False|False
+TagRecord|Magic Jammer|True|False|False|False
+TagRecord|Magical Musket - Last Stand|False|False|False|True
+TagRecord|Majespecter Tempest|False|True|False|False
+TagRecord|Malfunction|False|True|False|False
+TagRecord|Mind Over Matter|False|True|False|False
+TagRecord|Morphtronic Forcefield|False|True|False|False
+TagRecord|Negate Attack|True|False|False|False
+TagRecord|Nega-Ton Corepanel|False|True|False|False
+TagRecord|Nine Pillars of Yang Zing|False|True|False|False
+TagRecord|Oh F!sh!|False|True|False|False
+TagRecord|Orcust Crescendo|False|False|False|True
+TagRecord|Overwhelm|False|False|False|True
+TagRecord|Paradox Fusion|False|True|False|False
+TagRecord|Parry|False|True|False|False
+TagRecord|Parthian Shot|False|True|False|False
+TagRecord|Pendulum Hole|False|True|False|False
+TagRecord|Pollinosis|False|True|False|False
+TagRecord|Pulling the Rug|False|True|False|False
+TagRecord|Raptor's Gust|False|True|False|False
+TagRecord|Rebirth of Parshath|True|False|False|False
+TagRecord|Rebound|False|False|False|True
+TagRecord|Recall|True|False|False|False
+TagRecord|Red Reboot|True|False|False|False
+TagRecord|Riryoku Field|True|False|False|False
+TagRecord|Royal Surrender|False|True|False|False
+TagRecord|Saber Hole|False|False|False|True
+TagRecord|Scrap-Iron Signal|True|False|False|False
+TagRecord|Seven Tools of the Bandit|True|False|False|False
+TagRecord|Shining Silver Force|False|True|False|False
+TagRecord|Showdown of the Secret Sense Scroll Techniques|False|True|False|False
+TagRecord|Smashing Horn|False|False|False|True
+TagRecord|Snake Deity's Command|False|False|False|True
+TagRecord|Solemn Judgment|False|False|True|False
+TagRecord|Solemn Scolding|False|False|False|True
+TagRecord|Solemn Strike|False|False|True|False
+TagRecord|Solemn Warning|True|False|False|False
+TagRecord|Spell Shield Type-8|True|False|False|False
+TagRecord|Spell Vanishing|False|False|False|True
+TagRecord|Spell-Stopping Statute|False|True|False|False
+TagRecord|Stellarnova Alpha|False|False|False|True
+TagRecord|Super Soldier Shield|False|False|False|True
+TagRecord|Swallow Flip|False|True|False|False
+TagRecord|Tachyon Transmigration|False|False|False|True
+TagRecord|Tearlaments Cryme|True|False|False|False
+TagRecord|The Huge Revolution is Over|False|True|False|False
+TagRecord|The Selection|False|True|False|False
+TagRecord|Trap of Board Eraser|False|True|False|False
+TagRecord|Tutan Mask|True|False|False|False
+TagRecord|Ultimate Fire Formation - Sinto|False|False|False|True
+TagRecord|Ultimate Providence|True|False|False|False
+TagRecord|United Front|False|True|False|False
+TagRecord|Unwavering Bond|True|False|False|False
+TagRecord|Vanity's Call|False|True|False|False
+TagRecord|Vanquishing Light|False|True|False|False
+TagRecord|Wattcancel|False|True|False|False
+TagRecord|Wiretap|True|False|False|False
+TagRecord|World Legacy's Sorrow|False|True|False|False
+TagRecord|XX-clusion|True|False|False|False
+TagRecord|Xyz Block|True|False|False|False
+TagRecord|Xyz Reflect|False|False|False|True
+TagRecord|Yosenjus' Secret Move|False|True|False|False
+TagRecord|Zefra Divine Strike|False|False|False|True
+TagRecord|Retort|False|False|False|True
+TagRecord|Tri-Horned Dragon|False|True|False|False
+TagRecord|Dark Gray|True|False|False|False
+TagRecord|Yosenju Kama 1|False|True|False|False
+TagRecord|T.G. Rush Rhino|False|True|False|False
+TagRecord|Kinka-byo|False|True|False|False
+TagRecord|Madolche Baaple|False|True|False|False
+TagRecord|Dark Garnex the Cubic Beast|False|True|False|False
