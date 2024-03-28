@@ -905,7 +905,6 @@ TagRecord|Assault Beast|False|True|False|False
 TagRecord|Assault Sentinel|False|True|False|False
 TagRecord|Aurkus, Lightsworn Druid|True|False|False|False
 TagRecord|Battle Ox|True|False|False|False
-TagRecord|Battle Steer|False|True|False|False
 TagRecord|Beast King Barbaros|True|False|False|False
 TagRecord|Beast Machine King Barbaros Ür|False|True|False|False
 TagRecord|Beast-Warrior Puma|False|True|False|False
@@ -2290,7 +2289,6 @@ TagRecord|Jowls of Dark Demise|False|True|False|False
 TagRecord|Kahkki, Guerilla of Dark World|True|False|False|False
 TagRecord|King Fog|True|False|False|False
 TagRecord|King of Yamimakai|True|False|False|False
-TagRecord|Kiseitai|False|True|False|False
 TagRecord|Knightmare Goblin|False|True|False|False
 TagRecord|Knightmare Gryphon|False|True|False|False
 TagRecord|Knightmare Mermaid|False|True|False|False
@@ -2332,7 +2330,6 @@ TagRecord|Malicevorous Fork|True|False|False|False
 TagRecord|Malicevorous Knife|False|True|False|False
 TagRecord|Malicevorous Spoon|True|False|False|False
 TagRecord|Man-Eating Treasure Chest|True|False|False|False
-TagRecord|Mask of Darkness|False|True|False|False
 TagRecord|Masked Beast Des Gardius|True|False|False|False
 TagRecord|Masterking Archfiend|False|True|False|False
 TagRecord|Mazera DeVille|False|True|False|False
@@ -2999,7 +2996,6 @@ TagRecord|Wind-Up Shark|False|True|False|False
 TagRecord|Wow Warrior|False|False|False|True
 TagRecord|Xyz Remora|True|False|False|False
 TagRecord|Gishki Abyss|False|True|False|False
-TagRecord|4-Starred Ladybug of Doom|False|True|False|False
 TagRecord|8-Claws Scorpion|True|False|False|False
 TagRecord|Alinsection|True|False|False|False
 TagRecord|Anteatereatingant|True|False|False|False
@@ -3055,7 +3051,6 @@ TagRecord|Drill Bug|True|False|False|False
 TagRecord|Dungeon Worm|False|True|False|False
 TagRecord|Earthbound Immortal Uru|False|False|False|True
 TagRecord|Electromagnetic Bagworm|False|True|False|False
-TagRecord|Empress Mantis|False|True|False|False
 TagRecord|Fiend Scorpion|False|True|False|False
 TagRecord|Fire Ant Ascator|False|True|False|False
 TagRecord|Flying "C"|True|False|False|False
@@ -3275,7 +3270,6 @@ TagRecord|B-Buster Drake|True|False|False|False
 TagRecord|Bicular|False|True|False|False
 TagRecord|Biofalcon|True|False|False|False
 TagRecord|Black Salvo|False|True|False|False
-TagRecord|Blast Juggler|False|True|False|False
 TagRecord|Blast Sphere|False|True|False|False
 TagRecord|Blocker|False|True|False|False
 TagRecord|Blowback Dragon|True|False|False|False
@@ -4629,7 +4623,6 @@ TagRecord|Mine Golem|False|True|False|False
 TagRecord|Moai Interceptor Cannons|True|False|False|False
 TagRecord|Monk Fighter|True|False|False|False
 TagRecord|Morphing Jar|False|True|False|False
-TagRecord|Morphing Jar #2|False|True|False|False
 TagRecord|Multiple Piece Golem|False|False|False|True
 TagRecord|Mystical Sand|True|False|False|False
 TagRecord|Naturia Cliff|False|False|False|True
@@ -6571,7 +6564,6 @@ TagRecord|Doomkaiser Dragon|False|False|False|True
 TagRecord|Doomkaiser Dragon/Assault Mode|False|False|False|True
 TagRecord|Doomking Balerdroch|False|False|True|False
 TagRecord|Double Coston|False|True|False|False
-TagRecord|Dragon Zombie|False|True|False|False
 TagRecord|Eldlich the Golden Lord|False|True|False|False
 TagRecord|Fear from the Dark|False|True|False|False
 TagRecord|Erebus the Underworld Monarch|False|False|False|True
@@ -7019,7 +7011,6 @@ TagRecord|Hidden Armory|True|False|False|False
 TagRecord|Hieratic Seal of Convocation|False|True|False|False
 TagRecord|Hieratic Seal of Supremacy|False|True|False|False
 TagRecord|Hieroglyph Lithograph|True|False|False|False
-TagRecord|Hinotama|False|True|False|False
 TagRecord|Hi-Speed Re-Level|False|True|False|False
 TagRecord|Hypernova Burst|True|False|False|False
 TagRecord|Icejade Cradle|True|False|False|False
@@ -7106,7 +7097,6 @@ TagRecord|Miracle Fusion|False|True|False|False
 TagRecord|Miracle Synchro Fusion|False|False|False|True
 TagRecord|Molten Conduction Field|False|False|False|True
 TagRecord|Monster Gate|True|False|False|False
-TagRecord|Monster Reborn|False|True|False|False
 TagRecord|Monster Reborn Reborn|False|True|False|False
 TagRecord|Monster Slots|False|True|False|False
 TagRecord|Mooyan Curry|False|False|False|True
@@ -7854,7 +7844,6 @@ TagRecord|Lightning Blade|True|False|False|False
 TagRecord|Lightsworn Sabre|False|True|False|False
 TagRecord|Living Fossil|True|False|False|False
 TagRecord|Lucky Iron Axe|True|False|False|False
-TagRecord|Machine Conversion Factory|False|True|False|False
 TagRecord|Magic Formula|True|False|False|False
 TagRecord|Magical Labyrinth|True|False|False|False
 TagRecord|Magicalized Duston Mop|False|True|False|False
@@ -9051,7 +9040,6 @@ TagRecord|Metaphys Ascension|False|True|False|False
 TagRecord|Metaverse|False|True|False|False
 TagRecord|Meteor Flare|False|True|False|False
 TagRecord|Meteorain|False|True|False|False
-TagRecord|Michizure|False|True|False|False
 TagRecord|Micro Ray|False|True|False|False
 TagRecord|Mind Crush|True|False|False|False
 TagRecord|Mind Haxorz|True|False|False|False
@@ -9174,7 +9162,6 @@ TagRecord|Raging Cloudian|False|True|False|False
 TagRecord|Raidraptor - Readiness|False|True|False|False
 TagRecord|Raidraptor - Return|True|False|False|False
 TagRecord|Raidraptor Replica|False|False|False|True
-TagRecord|Raigeki Break|False|True|False|False
 TagRecord|Rain Storm|False|True|False|False
 TagRecord|Rainbow Gravity|False|True|False|False
 TagRecord|Rainbow Life|False|True|False|False
@@ -9241,7 +9228,6 @@ TagRecord|Shadow of Eyes|True|False|False|False
 TagRecord|Shield Handler|False|True|False|False
 TagRecord|Shield Spear|True|False|False|False
 TagRecord|Shien's Scheme|True|False|False|False
-TagRecord|Shift|False|True|False|False
 TagRecord|Shiranui Style Success|False|True|False|False
 TagRecord|Shiranui Style Swallow's Slash|False|True|False|False
 TagRecord|Shooting Star|False|False|False|True
@@ -9480,7 +9466,6 @@ TagRecord|Ancient Warriors Saga - Chivalrous Path|True|False|False|False
 TagRecord|And the Band Played On|True|False|False|False
 TagRecord|Angel Statue - Azurune|True|False|False|False
 TagRecord|Anti-Spell Fragrance|True|False|False|False
-TagRecord|Appropriate|False|True|False|False
 TagRecord|Aqua Chorus|True|False|False|False
 TagRecord|Armor Ninjitsu Art of Freezing|False|True|False|False
 TagRecord|Armor Ninjitsu Art of Rust Mist|False|True|False|False
@@ -9662,7 +9647,6 @@ TagRecord|Metamorphortress|False|False|True|False
 TagRecord|Metaphys Dimension|False|False|False|True
 TagRecord|Mind Drain|False|True|False|False
 TagRecord|Miniaturize|True|False|False|False
-TagRecord|Minor Goblin Official|False|True|False|False
 TagRecord|Miraculous Descent|True|False|False|False
 TagRecord|Mirror Force Launcher|True|False|False|False
 TagRecord|Mirror Wall|False|True|False|False
@@ -9987,3 +9971,19 @@ TagRecord|T.G. Rush Rhino|False|True|False|False
 TagRecord|Kinka-byo|False|True|False|False
 TagRecord|Madolche Baaple|False|True|False|False
 TagRecord|Dark Garnex the Cubic Beast|False|True|False|False
+TagRecord|Monster Reborn|True|False|False|False
+TagRecord|Hinotama|True|False|False|False
+TagRecord|Machine Conversion Factory|True|False|False|False
+TagRecord|Battle Steer|True|False|False|False
+TagRecord|Blast Juggler|True|False|False|False
+TagRecord|Mask of Darkness|True|False|False|False
+TagRecord|4-Starred Ladybug of Doom|True|False|False|False
+TagRecord|Kiseitai|True|False|False|False
+TagRecord|Morphing Jar #2|True|False|False|False
+TagRecord|Minor Goblin Official|True|False|False|False
+TagRecord|Michizure|True|False|False|False
+TagRecord|Appropriate|True|False|False|False
+TagRecord|Shift|True|False|False|False
+TagRecord|Empress Mantis|True|False|False|False
+TagRecord|Dragon Zombie|True|False|False|False
+TagRecord|Raigeki Break|True|False|False|False
