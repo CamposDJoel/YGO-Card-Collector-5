@@ -43,17 +43,19 @@ namespace YGO_Card_Collector_5
         {
             if(!Initialized)
             {
-                bool FullDBMode = (DBType == "FULL") || (DBType == "2019Custom");
-                string jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\CardDB.json";
-                if (DBType == "2019Custom") { jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\2019CardDB.json"; }
+                string jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\CardDB.json";               
                 string rawdata = File.ReadAllText(jsonFilePath);
 
                 //Attempt to deserialize the JSON. If it fail simply show error.
                 try
                 {
-                    if(FullDBMode)
+                    if(DBType == "FULL")
                     {
                         MasterCards = JsonConvert.DeserializeObject<List<MasterCard>>(rawdata);
+                    }
+                    else if(DBType == "2019Custom")
+                    {
+                        Load2019CustomDB(rawdata);
                     }
                     else
                     {
@@ -364,6 +366,35 @@ namespace YGO_Card_Collector_5
                         MasterCard ThisCopyMasterCard = ThisMasterCard.GetCopyWithoutSets();
                         ThisCopyMasterCard.OverrideSetCards(CardsToAdd);
                         MasterCards.Add(ThisCopyMasterCard);
+                    }
+                }
+            }
+            void Load2019CustomDB(string rawdata)
+            {
+                //Read the 2019CardList file and create a list of cards to set the custom DB
+                StreamReader SR_SaveFile = new StreamReader(
+                Directory.GetCurrentDirectory() + "\\Database\\2019CardList.txt");
+
+                string line = SR_SaveFile.ReadLine();
+                int TotalCardCount = Convert.ToInt32(line);
+
+                List<string> CardList = new List<string>();
+
+                for (int i = 0; i < TotalCardCount; i++)
+                {
+                    line = SR_SaveFile.ReadLine();
+                    CardList.Add(line);
+                }
+
+                //Deserialize the FULL database into a tmp MasterCard List
+                List<MasterCard> TMPDB = JsonConvert.DeserializeObject<List<MasterCard>>(rawdata);
+
+                //Extract the Mastercards that are in the CardList
+                foreach (MasterCard ThisMasterCard in TMPDB)
+                {
+                    if (CardList.Contains(ThisMasterCard.Name))
+                    {
+                        MasterCards.Add(ThisMasterCard);
                     }
                 }
             }
