@@ -194,7 +194,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(640, 9);
+            this.label3.Location = new System.Drawing.Point(640, 6);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 17);
             this.label3.TabIndex = 231;
@@ -205,7 +205,7 @@
             this.PanelTagList.AutoScroll = true;
             this.PanelTagList.BackColor = System.Drawing.Color.Black;
             this.PanelTagList.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PanelTagList.Location = new System.Drawing.Point(641, 26);
+            this.PanelTagList.Location = new System.Drawing.Point(641, 23);
             this.PanelTagList.Name = "PanelTagList";
             this.PanelTagList.Size = new System.Drawing.Size(131, 248);
             this.PanelTagList.TabIndex = 233;
@@ -1810,7 +1810,7 @@
             this.picMuteButton.BackColor = System.Drawing.Color.White;
             this.picMuteButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picMuteButton.Image = ((System.Drawing.Image)(resources.GetObject("picMuteButton.Image")));
-            this.picMuteButton.Location = new System.Drawing.Point(750, 3);
+            this.picMuteButton.Location = new System.Drawing.Point(750, 0);
             this.picMuteButton.Name = "picMuteButton";
             this.picMuteButton.Size = new System.Drawing.Size(22, 22);
             this.picMuteButton.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

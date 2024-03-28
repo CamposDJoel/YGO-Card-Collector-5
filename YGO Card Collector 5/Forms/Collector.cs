@@ -272,10 +272,10 @@ namespace YGO_Card_Collector_5
                 foreach (Panel panel in _TagContainerList) { panel.Dispose(); }
                 _TagContainerList.Clear();
 
-                int SetCardCount = ThisMasterCard.SetCards.Count;
+                int SetCardCount = 0;
 
                 int Y_Location = 1;
-                for (int x = 0; x < SetCardCount; x++)
+                for (int x = 0; x < ThisMasterCard.SetCards.Count; x++)
                 {
                     string ActiveSetName = ThisMasterCard.GetCardAtIndex(x).Name;
                     string ActiveSetCode = ThisMasterCard.GetCardAtIndex(x).Code;
@@ -360,6 +360,7 @@ namespace YGO_Card_Collector_5
                     else
                     {
                         Y_Location += 36;
+                        SetCardCount++;
                     }
 
                     //Set Color base on if it is obtained or not
@@ -376,7 +377,7 @@ namespace YGO_Card_Collector_5
                 //Resize the TagList Container
                 int width = 133;
                 if (SetCardCount < 7) { width = 113; }
-                int height = 250;
+                int height = 255;
                 if (SetCardCount < 7) { height = ((SetCardCount * 36) + 4); }
                 PanelTagList.Size = new Size(width, height);
             }
