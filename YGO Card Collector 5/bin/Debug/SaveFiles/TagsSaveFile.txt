@@ -3323,7 +3323,6 @@ TagRecord|Cyber Dragon Infinity|False|False|False|True
 TagRecord|Cyber Dragon Nova|False|False|False|True
 TagRecord|Cyber Dragon Sieger|True|False|False|False
 TagRecord|Cyber Barrier Dragon|False|False|False|True
-TagRecord|Crystron Rosenix|True|False|False|True
 TagRecord|Crystron Quariongandrax|False|False|False|True
 TagRecord|Crystron Quandax|False|False|False|True
 TagRecord|Crystron Citree|False|False|False|True
@@ -9987,3 +9986,4 @@ TagRecord|Shift|True|False|False|False
 TagRecord|Empress Mantis|True|False|False|False
 TagRecord|Dragon Zombie|True|False|False|False
 TagRecord|Raigeki Break|True|False|False|False
+TagRecord|Crystron Rosenix|True|False|False|False
