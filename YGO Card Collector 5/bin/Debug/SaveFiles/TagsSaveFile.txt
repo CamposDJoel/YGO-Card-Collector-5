@@ -3050,7 +3050,6 @@ TagRecord|Dreadscythe Harvester|False|True|False|False
 TagRecord|Drill Bug|True|False|False|False
 TagRecord|Dungeon Worm|False|True|False|False
 TagRecord|Earthbound Immortal Uru|False|False|False|True
-TagRecord|Electromagnetic Bagworm|False|True|False|False
 TagRecord|Fiend Scorpion|False|True|False|False
 TagRecord|Fire Ant Ascator|False|True|False|False
 TagRecord|Flying "C"|True|False|False|False
@@ -6754,7 +6753,6 @@ TagRecord|Armor Ninjitsu Art of Alchemy|False|True|False|False
 TagRecord|Assault Teleport|True|False|False|False
 TagRecord|Ayers Rock Sunrise|False|False|True|False
 TagRecord|Back to Square One|True|False|False|False
-TagRecord|Back-Up Rider|False|True|False|False
 TagRecord|Bait Doll|False|True|False|False
 TagRecord|Banishment of the Darklords|False|True|False|False
 TagRecord|Barkion's Bark|True|False|False|False
@@ -7763,7 +7761,6 @@ TagRecord|Ballista of Rampart Smashing|True|False|False|False
 TagRecord|Bashing Shield|False|True|False|False
 TagRecord|Beacon of White|True|False|False|False
 TagRecord|Beast Fangs|True|False|False|False
-TagRecord|Big Bang Shot|False|True|False|False
 TagRecord|Book of Secret Arts|True|False|False|False
 TagRecord|Borrel Regenerator|False|True|False|False
 TagRecord|Bound Wand|False|True|False|False
@@ -9134,7 +9131,6 @@ TagRecord|Power Wall|True|False|False|False
 TagRecord|Power-Up Adapter|True|False|False|False
 TagRecord|Predaplanning|False|True|False|False
 TagRecord|Present Card|False|False|False|True
-TagRecord|Prideful Roar|False|True|False|False
 TagRecord|Prologue of the Destruction Swordsman|True|False|False|False
 TagRecord|Proof of Powerlessness|False|True|False|False
 TagRecord|Psi-Curse|False|True|False|False
@@ -9987,3 +9983,7 @@ TagRecord|Empress Mantis|True|False|False|False
 TagRecord|Dragon Zombie|True|False|False|False
 TagRecord|Raigeki Break|True|False|False|False
 TagRecord|Crystron Rosenix|True|False|False|False
+TagRecord|Electromagnetic Bagworm|True|False|False|False
+TagRecord|Prideful Roar|True|False|False|False
+TagRecord|Big Bang Shot|True|False|False|False
+TagRecord|Back-Up Rider|True|False|False|False
