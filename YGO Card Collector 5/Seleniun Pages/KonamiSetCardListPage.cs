@@ -30,6 +30,10 @@ namespace YGO_Card_Collector_5
             string text = Element.GetText(Xpath_SneakPeakMessage);
             return text.Contains("Sneak preview of selected cards");
         }
+        public static bool IsthiSSetComingSoon()
+        {
+            return Element.ElementExist("//div[@id=\"article_body\"]/div[@class=\"no_data\"]");
+        }
 
         public static int GetCardCount()
         {

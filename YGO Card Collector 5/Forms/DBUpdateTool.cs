@@ -134,55 +134,90 @@ namespace YGO_Card_Collector_5
             Driver.ClearLogs();
             var Masterwatch = new Stopwatch();
             Masterwatch.Start();
-            Driver.OpenBrowser();
+
+            //Try to open the Chrome Driver
+            try
+            {
+                Driver.OpenBrowser();
+            }
+            catch (Exception e)
+            {
+                LogIt(e.Message);
+                LogIt("Fix the issue below and try again...");
+                Masterwatch.Stop();
+                return;
+            }
             #endregion
 
             #region Step B: Extract All the recent Sets from Konami's DB
             //Obtain all the recent sets from all the groups
-            Driver.GoToKonamiSetsPage();
-            KonamiSetPacksPage.WaitUntilPageIsLoaded();
-            KonamiSetPacksPage.ClickProductsTab();
+            List<string> boosterpacks;
+            List<string> spboxes;
+            List<string> starterdecks;
+            List<string> structuredecks;
+            List<string> tins;
+            List<string> speedduel;
+            List<string> duelistpacks;
+            List<string> duelterminal;
+            List<string> other;
+            List<string> mbc;
+            List<string> tournmaments;
+            List<string> promos;
+            List<string> vgs;
+            try
+            {
+                Driver.GoToKonamiSetsPage();
+                KonamiSetPacksPage.WaitUntilPageIsLoaded();
+                KonamiSetPacksPage.ClickProductsTab();
 
-            StartExtractingSet("Booster Packs");
-            List<string> boosterpacks = KonamiSetPacksPage.GetGroupSetPacks("Booster Packs");
+                StartExtractingSet("Booster Packs");
+                boosterpacks = KonamiSetPacksPage.GetGroupSetPacks("Booster Packs");
 
-            StartExtractingSet("Sp. Edition Boxes");
-            List<string> spboxes = KonamiSetPacksPage.GetGroupSetPacks("Sp. Edition Boxes");
+                StartExtractingSet("Sp. Edition Boxes");
+                spboxes = KonamiSetPacksPage.GetGroupSetPacks("Sp. Edition Boxes");
 
-            StartExtractingSet("Starter Decks");
-            List<string> starterdecks = KonamiSetPacksPage.GetGroupSetPacks("Starter Decks");
+                StartExtractingSet("Starter Decks");
+                starterdecks = KonamiSetPacksPage.GetGroupSetPacks("Starter Decks");
 
-            StartExtractingSet("Structure Decks");
-            List<string> structuredecks = KonamiSetPacksPage.GetGroupSetPacks("Structure Decks");
+                StartExtractingSet("Structure Decks");
+                structuredecks = KonamiSetPacksPage.GetGroupSetPacks("Structure Decks");
 
-            StartExtractingSet("Tins");
-            List<string> tins = KonamiSetPacksPage.GetGroupSetPacks("Tins");
+                StartExtractingSet("Tins");
+                tins = KonamiSetPacksPage.GetGroupSetPacks("Tins");
 
-            StartExtractingSet("Speed Duel");
-            List<string> speedduel = KonamiSetPacksPage.GetGroupSetPacks("Speed Duel");
+                StartExtractingSet("Speed Duel");
+                speedduel = KonamiSetPacksPage.GetGroupSetPacks("Speed Duel");
 
-            StartExtractingSet("Duelist Packs");
-            List<string> duelistpacks = KonamiSetPacksPage.GetGroupSetPacks("Duelist Packs");
+                StartExtractingSet("Duelist Packs");
+                duelistpacks = KonamiSetPacksPage.GetGroupSetPacks("Duelist Packs");
 
-            StartExtractingSet("Duel Terminal");
-            List<string> duelterminal = KonamiSetPacksPage.GetGroupSetPacks("Duel Terminal");
+                StartExtractingSet("Duel Terminal");
+                duelterminal = KonamiSetPacksPage.GetGroupSetPacks("Duel Terminal");
 
-            StartExtractingSet("Others");
-            List<string> other = KonamiSetPacksPage.GetGroupSetPacks("Others");
+                StartExtractingSet("Others");
+                other = KonamiSetPacksPage.GetGroupSetPacks("Others");
 
-            KonamiSetPacksPage.ClickPerksTab();
+                KonamiSetPacksPage.ClickPerksTab();
 
-            StartExtractingSet("MBC");
-            List<string> mbc = KonamiSetPacksPage.GetGroupSetPacks("MBC");
+                StartExtractingSet("MBC");
+                mbc = KonamiSetPacksPage.GetGroupSetPacks("MBC");
 
-            StartExtractingSet("Tournaments");
-            List<string> tournmaments = KonamiSetPacksPage.GetGroupSetPacks("Tournaments");
+                StartExtractingSet("Tournaments");
+                tournmaments = KonamiSetPacksPage.GetGroupSetPacks("Tournaments");
 
-            StartExtractingSet("Promos");
-            List<string> promos = KonamiSetPacksPage.GetGroupSetPacks("Promos");
+                StartExtractingSet("Promos");
+                promos = KonamiSetPacksPage.GetGroupSetPacks("Promos");
 
-            StartExtractingSet("Video Games");
-            List<string> vgs = KonamiSetPacksPage.GetGroupSetPacks("Video Games");
+                StartExtractingSet("Video Games");
+                vgs = KonamiSetPacksPage.GetGroupSetPacks("Video Games");
+            }
+            catch (Exception e)
+            {
+                LogIt(e.Message);
+                LogIt("The issue below is most likely code updated related, please try with this is fixed.");
+                Masterwatch.Stop();
+                return;
+            }
             #endregion
 
             #region Step C: Find the new Sets from the extracted lists to populate the Card Records to Update list
@@ -190,32 +225,42 @@ namespace YGO_Card_Collector_5
             BarProgressStep1.Value = 0;
             BarProgressStep1.Maximum = 13;
             Dictionary<string, string> CardRecordsToUpdate = new Dictionary<string, string>();
-            StartFindingNew("Booster Packs");
-            FindNewSetsFromExtractedList(boosterpacks, Database.BoosterPacks);
-            StartFindingNew("Sp. Edition Boxes");
-            FindNewSetsFromExtractedList(spboxes, Database.SpEditionBoxes);
-            StartFindingNew("Starter Decks");
-            FindNewSetsFromExtractedList(starterdecks, Database.StarterDecks);
-            StartFindingNew("Structure Decks");
-            FindNewSetsFromExtractedList(structuredecks, Database.StructureDecks);
-            StartFindingNew("Tins");
-            FindNewSetsFromExtractedList(tins, Database.Tins);
-            StartFindingNew("Speed Duel");
-            FindNewSetsFromExtractedList(speedduel, Database.SpeedDuel);
-            StartFindingNew("Duelist Packs");
-            FindNewSetsFromExtractedList(duelistpacks, Database.DuelistPacks);
-            StartFindingNew("Duel Terminal");
-            FindNewSetsFromExtractedList(duelterminal, Database.DuelTerminal);
-            StartFindingNew("Others");
-            FindNewSetsFromExtractedList(other, Database.Others);
-            StartFindingNew("MBC");
-            FindNewSetsFromExtractedList(mbc, Database.MBC);
-            StartFindingNew("Tournaments");
-            FindNewSetsFromExtractedList(tournmaments, Database.Tournaments);
-            StartFindingNew("Promos");
-            FindNewSetsFromExtractedList(promos, Database.Promos);
-            StartFindingNew("Video Games");
-            FindNewSetsFromExtractedList(vgs, Database.VideoGames);
+            try
+            {
+                StartFindingNew("Booster Packs");
+                FindNewSetsFromExtractedList(boosterpacks, Database.BoosterPacks);
+                StartFindingNew("Sp. Edition Boxes");
+                FindNewSetsFromExtractedList(spboxes, Database.SpEditionBoxes);
+                StartFindingNew("Starter Decks");
+                FindNewSetsFromExtractedList(starterdecks, Database.StarterDecks);
+                StartFindingNew("Structure Decks");
+                FindNewSetsFromExtractedList(structuredecks, Database.StructureDecks);
+                StartFindingNew("Tins");
+                FindNewSetsFromExtractedList(tins, Database.Tins);
+                StartFindingNew("Speed Duel");
+                FindNewSetsFromExtractedList(speedduel, Database.SpeedDuel);
+                StartFindingNew("Duelist Packs");
+                FindNewSetsFromExtractedList(duelistpacks, Database.DuelistPacks);
+                StartFindingNew("Duel Terminal");
+                FindNewSetsFromExtractedList(duelterminal, Database.DuelTerminal);
+                StartFindingNew("Others");
+                FindNewSetsFromExtractedList(other, Database.Others);
+                StartFindingNew("MBC");
+                FindNewSetsFromExtractedList(mbc, Database.MBC);
+                StartFindingNew("Tournaments");
+                FindNewSetsFromExtractedList(tournmaments, Database.Tournaments);
+                StartFindingNew("Promos");
+                FindNewSetsFromExtractedList(promos, Database.Promos);
+                StartFindingNew("Video Games");
+                FindNewSetsFromExtractedList(vgs, Database.VideoGames);
+            }
+            catch (Exception e)
+            {
+                LogIt(e.Message);
+                LogIt("The issue below is most likely code updated related, please try with this is fixed.");
+                Masterwatch.Stop();
+                return;
+            }
             #endregion
 
             #region Step D: Update all the Cards in the Records to Update List
@@ -353,7 +398,7 @@ namespace YGO_Card_Collector_5
             //TODO: Do something with this data.
             List<string> CardsThatFailedManualSearch = new List<string>();
 
-            if(NewMasterCards.Count == 0)
+            if (NewMasterCards.Count == 0)
             {
                 LogIt("NO NEW MASTERCARDS TO UPDATE.");
             }
@@ -527,7 +572,7 @@ namespace YGO_Card_Collector_5
 
                     LogIt("---------------------------------------------------------");
                 }
-            }        
+            }
             #endregion
 
             #region Step G: Overide DB files
@@ -576,6 +621,12 @@ namespace YGO_Card_Collector_5
                             LogIt(string.Format(">>>>>>>Set: {0}", setname));
                             LogIt("is a sneak peak preview, this set will not be adding to the DB.");
                         }
+                        else if (KonamiSetCardListPage.IsthiSSetComingSoon())
+                        {
+                            //ignore it. we are not adding sneak preak preview sets
+                            LogIt(string.Format(">>>>>>>Set: {0}", setname));
+                            LogIt("This Set is Coming Soon, this set will not be adding to the DB.");
+                        }
                         else
                         {
                             LogIt(string.Format(">>>>>>>NEW SET: {0}", setname));
@@ -604,10 +655,10 @@ namespace YGO_Card_Collector_5
                         }
                     }
                 }
-            }           
+            }
             void StartExtractingSet(string group)
             {
-                LogIt(string.Format("Extracting: {0}...", group)); 
+                LogIt(string.Format("Extracting: {0}...", group));
                 BarProgressStep1.Value++;
                 lblActiveActionStep1.Text = string.Format("Update ({0}/{1}): {2}", BarProgressStep1.Value, BarProgressStep1.Maximum, group);
             }
@@ -1019,7 +1070,7 @@ namespace YGO_Card_Collector_5
                 checkProdeckEnableOverride3.Checked = false;
                 //Remove this card from the list now!!
                 Database.CardsWithUnavailableProdeckURL.Remove(ThisMasterCard.Name);
-                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);               
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
                 //Update DB file
                 Database.SaveDatabaseInJSON();
                 //Reload the UI
@@ -1059,7 +1110,7 @@ namespace YGO_Card_Collector_5
                 //Valid ulr, proceed
                 ThisSetCard.TCGPlayerURL = input;
                 checkTCGEnableOverride3.Checked = false;
-                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);               
+                SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
                 //Update DB file
                 Database.SaveDatabaseInJSON();
                 //reload stats
@@ -1085,7 +1136,7 @@ namespace YGO_Card_Collector_5
         private void btnStep4_Click(object sender, EventArgs e)
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click);
-            btnBackToMainMenu.Visible = false;           
+            btnBackToMainMenu.Visible = false;
             PanelSetPriceContainer.Visible = false;
             lblActiveActionStep4.Text = "";
             btnStep1.Visible = false;
@@ -1361,7 +1412,7 @@ namespace YGO_Card_Collector_5
             int index = listMissingProdeckStep2.SelectedIndex;
             MasterCard ThisMasterCard = MasterCardsWithMissingProdeck[index];
             string cardname = ThisMasterCard.Name;
-            Tools.LaunchURLIntoBrowser("https://ygoprodeck.com/card-database/?&name="+ cardname + "&num=24&offset=0");
+            Tools.LaunchURLIntoBrowser("https://ygoprodeck.com/card-database/?&name=" + cardname + "&num=24&offset=0");
         }
         private void btnTCGLaunch_Click(object sender, EventArgs e)
         {
