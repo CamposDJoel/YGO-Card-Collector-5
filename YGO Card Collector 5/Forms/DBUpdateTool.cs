@@ -612,8 +612,7 @@ namespace YGO_Card_Collector_5
                     {
                         //Go into this set's ULR
                         Driver.GoToURL(url);
-                        KonamiSetCardListPage.WaitUntilPageIsLoaded();
-                        KonamiSetCardListPage.ClickViewAsList();
+                        KonamiSetCardListPage.WaitUntilPageIsLoaded();                       
 
                         if (KonamiSetCardListPage.IsThisSetASneakPeakPreview())
                         {
@@ -629,6 +628,8 @@ namespace YGO_Card_Collector_5
                         }
                         else
                         {
+                            KonamiSetCardListPage.ClickViewAsList();
+
                             LogIt(string.Format(">>>>>>>NEW SET: {0}", setname));
                             //Add the set to the Group List
                             if (SettingsData.SetPackListSortingOLDToNEW)
