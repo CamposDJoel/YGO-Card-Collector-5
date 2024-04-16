@@ -65,6 +65,7 @@ namespace YGO_Card_Collector_5
                 }
                 else
                 {
+                    lblmissingtcgcount.Text = string.Format("Count: {0}", SetCardsWithMissingTCG.Count);
                     foreach (SetCard ThisSetCard in SetCardsWithMissingTCG)
                     {
                         listMissingTCGStep2.Items.Add(string.Format("[{0} | {1}] - {2}", ThisSetCard.Code, ThisSetCard.Rarity, ThisSetCard.GetCardName()));
@@ -612,7 +613,7 @@ namespace YGO_Card_Collector_5
                     {
                         //Go into this set's ULR
                         Driver.GoToURL(url);
-                        KonamiSetCardListPage.WaitUntilPageIsLoaded();                       
+                        KonamiSetCardListPage.WaitUntilPageIsLoaded();
 
                         if (KonamiSetCardListPage.IsThisSetASneakPeakPreview())
                         {
@@ -792,8 +793,15 @@ namespace YGO_Card_Collector_5
                 //Save a ref to the Master Card for quick access/clean code
                 MasterCard ThisMasterCard = Database.GetCard(CardName);
 
+                bool targetSets = false;
+                if (ThisSetCard.Code.StartsWith("BP01")) { targetSets = true; }
+                //if (ThisSetCard.Code.StartsWith("BP03")) { targetSets = true; }
+                //if (ThisSetCard.Code.StartsWith("SP13")) { targetSets = true; }
+                //if (ThisSetCard.Code.StartsWith("SP14")) { targetSets = true; }
+                //if (ThisSetCard.Code.StartsWith("SP15")) { targetSets = true; }
+
                 //Go to the Card's Prodeck URL, if available
-                if (ThisMasterCard.HasProDeckURL())
+                if (ThisMasterCard.HasProDeckURL() && targetSets)
                 {
                     //Go to the page
                     Driver.GoToURL(ThisMasterCard.ProdeckURL);
@@ -833,7 +841,18 @@ namespace YGO_Card_Collector_5
                         //Go to the test URL
                         try
                         {
+                            string modetesturl = "";
+                            if (ThisSetCard.Rarity == "Starfoil")
+                            {
+                                modetesturl = "-starfoil";
+                            }
+                            if (ThisSetCard.Rarity == "Shatterfoil")
+                            {
+                                modetesturl = "-shatterfoil";
+                            }
                             Driver.GoToURL(TestURL);
+                            string newURL = Driver.GetCurrentURL() + modetesturl;
+                            Driver.GoToURL(newURL);
                         }
                         catch (Exception)
                         {
@@ -852,7 +871,11 @@ namespace YGO_Card_Collector_5
                                 //If the page corresponds to the code AND Rarity, then extract its price
                                 string CodeInPage = TCGCardInfoPage.GetCode();
                                 string RarityInPage = TCGCardInfoPage.GetRarity();
-                                if (ThisSetCard.Code == CodeInPage && Tools.CompareInLowerCase(ThisSetCard.Rarity, RarityInPage))
+                                if (RarityInPage == "Starfoil Rare") { RarityInPage = "Starfoil"; }
+                                if (RarityInPage == "Shatterfoil Rare") { RarityInPage = "Shatterfoil"; }
+
+
+                                if (ThisSetCard.Code == CodeInPage && ThisSetCard.Rarity == RarityInPage)
                                 {
                                     //Save the URL and Update prices
                                     ThisSetCard.TCGPlayerURL = TestURL;
@@ -876,6 +899,7 @@ namespace YGO_Card_Collector_5
                     if (MathcURLFound)
                     {
                         LogIt("!!!Match URL FOUND - Prices Updated!!!");
+                        Database.SaveDatabaseInJSON();
                     }
                     else
                     {
@@ -1421,6 +1445,184 @@ namespace YGO_Card_Collector_5
             SetCard ThisSetCard = SetCardsWithMissingTCG[index];
             string cardname = ThisSetCard.GetCardName();
             Tools.LaunchURLIntoBrowser("https://www.tcgplayer.com/search/all/product?q=" + cardname + "&view=grid");
+        }
+
+        private void btntestupdate_Click(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Click);
+            btnBackToMainMenu.Visible = false;
+            PanelOverride.Visible = false;
+            lblActiveActionStep2.Text = "";
+            btnStep1.Visible = false;
+            btnStep2.Visible = false;
+            btnStep4.Visible = false;
+            PanelContainerStep2.Visible = true;
+            RunStep2UpdateCustom();
+            ReloadUI();
+            btnStep1.Visible = true;
+            btnStep2.Visible = true;
+            btnStep4.Visible = true;
+            PanelOverride.Visible = true;
+            btnBackToMainMenu.Visible = true;
+        }
+        private void RunStep2UpdateCustom()
+        {
+            #region Step A: Generate the card lists
+            List<SetCard> SetCardsWithMissingTCG = Database.GetSetCardListWithMissingTCGURLs();
+            #endregion
+
+            #region Step B: Start the Driver
+            LogSB = new StringBuilder();
+            LogIt("Starting Prodeck/TCG Searches retry...");
+            lblJobStep2.Text = "JOB 1/2: Search Prodeck URLs";
+            BarProgressStep2.Value = 0;
+            BarProgressStep2.Maximum = MasterCardsWithMissingProdeck.Count;
+            Driver.ClearLogs();
+            var Masterwatch = new Stopwatch();
+            Masterwatch.Start();
+            Driver.OpenBrowser();
+            #endregion
+
+            #region Step D: Find TCG Player URLs and Prices
+            lblJobStep1.Text = "JOB 1/1: Search TCG Player URLs...";
+            BarProgressStep2.Value = 0;
+            BarProgressStep2.Maximum = SetCardsWithMissingTCG.Count;
+
+            LogIt("-------SEARCHING NEW TCG PLAYER URLS------------");
+            foreach (SetCard ThisSetCard in SetCardsWithMissingTCG)
+            {
+                //set the card name for readibility and use
+                string CardName = ThisSetCard.GetCardName();
+                StartTCGURLSearch(CardName);
+
+                //Save a ref to the Master Card for quick access/clean code
+                MasterCard ThisMasterCard = Database.GetCard(CardName);
+
+                if (ThisSetCard.Code.StartsWith("RA01") && ThisSetCard.Rarity == "Platinum Secret Rare")
+                {                   
+                    //https://store.tcgplayer.com/yugioh/speed-duel-tournament-pack-7/metal-reflect-slime?partner=YGOPRODeck&utm_campaign=affiliate&utm_medium=card-database-set-prices&utm_source=YGOPRODeck
+                    string name = ThisMasterCard.Name;
+                    name = name.Replace(" ", "-");
+                    string url = string.Format("https://store.tcgplayer.com/yugioh/25th-anniversary-rarity-collection/{0}-secret-rare?partner=YGOPRODeck&utm_campaign=affiliate&utm_medium=card-database-set-prices&utm_source=YGOPRODeck", name);
+                    try
+                    {
+                        Driver.GoToURL(url);
+                        TCGCardInfoPage.WaitUntilPageIsLoaded(true);
+                        //Now validate the new URL
+                        string CodeInPage = TCGCardInfoPage.GetCode();
+                        string RarityInPage = TCGCardInfoPage.GetRarity();
+
+                        if (ThisSetCard.Code == CodeInPage && ThisSetCard.Rarity == RarityInPage)
+                        {
+                            //Save the URL and Update prices
+                            ThisSetCard.TCGPlayerURL = url;
+                            //Update prices since we are here.
+                            string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
+                            string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                            string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+                            ThisSetCard.OverridePrices(priceInPageFloorstr, priceInPageMarketstr, priceInPageMedianstr);
+                            LogIt("!!!Match URL FOUND - Prices Updated!!!");
+                            Database.SaveDatabaseInJSON();
+                        }
+                    }
+                    catch (Exception) 
+                    {
+                        LogIt("Something fail, next!");
+                    }
+
+
+                    /*
+                    //Find the matching setcard with the common rarity and gets its URL if it has one
+                    SetCard BaseSetCard = ThisMasterCard.GetCardWithCodeAndRarity(ThisSetCard.Code, "Common");
+                    if (BaseSetCard != null)
+                    {
+                        if (BaseSetCard.HasTCGURL())
+                        {
+                            //Go to the Base SetCard TCG PLayer page
+                            string baseSetCardURL = BaseSetCard.TCGPlayerURL;
+
+                            //Mod the URL to have the postfix rarity
+                            string modetesturl = "";
+                            if (ThisSetCard.Rarity == "Starfoil")
+                            {
+                                modetesturl = "-starfoil";
+                            }
+                            if (ThisSetCard.Rarity == "Shattefoil")
+                            {
+                                modetesturl = "-shatterfoil";
+                            }
+                            if (baseSetCardURL.Contains("-common")) { baseSetCardURL = baseSetCardURL.Replace("-common", ""); }
+                            baseSetCardURL += modetesturl;
+
+                            //Go to this new URL
+                            Driver.GoToURL(baseSetCardURL);
+                            TCGCardInfoPage.WaitUntilPageIsLoaded(true);
+
+                            //Now validate the new URL
+                            string CodeInPage = TCGCardInfoPage.GetCode();
+                            string RarityInPage = TCGCardInfoPage.GetRarity();
+
+                            if (ThisSetCard.Code == CodeInPage && "Shatterfoil Rare" == RarityInPage)
+                            {
+                                //Save the URL and Update prices
+                                ThisSetCard.TCGPlayerURL = baseSetCardURL;
+                                //Update prices since we are here.
+                                string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
+                                string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
+                                string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
+                                ThisSetCard.OverridePrices(priceInPageFloorstr, priceInPageMarketstr, priceInPageMedianstr);
+                                LogIt("!!!Match URL FOUND - Prices Updated!!!");
+                                Database.SaveDatabaseInJSON();
+                            }
+                            else
+                            {
+                                LogIt("Not Code/Rarity Match");
+                            }
+                        }
+                        else
+                        {
+                            LogIt("Base SetCard does not have a TCG Player URL - skip");
+                        }
+                    }
+                    else
+                    {
+                        LogIt("No base card found");
+                    }*/
+                }
+                else
+                {
+                    LogIt("NOT a BP01 set card - Skip");
+                }
+
+                LogIt("---------------------------------------------------------");
+            }
+            #endregion
+
+            #region Step E: Overide DB files
+            Database.SaveDatabaseInJSON(); LogIt("[[[CardDB.JSON Created]]]");
+            #endregion
+
+            #region Step F: Finalinze Logs and Close the Driver
+            LogIt("----------------------------------");
+            Masterwatch.Stop();
+            LogIt($"Execution Time for the WHOLE script was: {Masterwatch.Elapsed}");
+            Driver.WriteLogsFile();
+            Driver.CloseDriver();
+            SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
+            #endregion
+
+            void StartTCGURLSearch(string CardName)
+            {
+                LogIt(string.Format("Card Name: {0}", CardName));
+                BarProgressStep2.Value++;
+                lblActiveActionStep2.Text = string.Format("TCG URL Search: ({0}/{1}): {2}", BarProgressStep2.Value, BarProgressStep2.Maximum, CardName);
+            }
+            void LogIt(string message)
+            {
+                LogSB.Insert(0, message + "\n");
+                Driver.AddToFullLog(message);
+                lblLogStep2.Text = ">>" + LogSB.ToString();
+            }
         }
     }
 }

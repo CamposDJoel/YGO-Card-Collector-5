@@ -45,6 +45,11 @@ namespace YGO_Card_Collector_5
             ChromeDriver = drv;
 
         }
+
+        public static string GetCurrentURL()
+        {
+            return ChromeDriver.Url;
+        }
         public static void GoToURL(string url)
         {
             if(GoToCounter == GoToThreshold)

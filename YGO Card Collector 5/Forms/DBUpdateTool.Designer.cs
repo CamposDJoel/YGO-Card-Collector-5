@@ -41,7 +41,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TabStep2 = new System.Windows.Forms.TabPage();
+            this.btntestupdate = new System.Windows.Forms.Button();
             this.PanelOverride = new System.Windows.Forms.Panel();
+            this.lblmissingtcgcount = new System.Windows.Forms.Label();
             this.GroupUnavailableProdeckOverride = new System.Windows.Forms.GroupBox();
             this.btnProdeckLaunch = new System.Windows.Forms.Button();
             this.label62 = new System.Windows.Forms.Label();
@@ -240,6 +242,7 @@
             // TabStep2
             // 
             this.TabStep2.BackColor = System.Drawing.Color.Black;
+            this.TabStep2.Controls.Add(this.btntestupdate);
             this.TabStep2.Controls.Add(this.PanelOverride);
             this.TabStep2.Controls.Add(this.PanelContainerStep2);
             this.TabStep2.Controls.Add(this.btnStep2);
@@ -252,9 +255,24 @@
             this.TabStep2.TabIndex = 1;
             this.TabStep2.Text = "Step 2: Retry Prodeck/TCG Searches";
             // 
+            // btntestupdate
+            // 
+            this.btntestupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btntestupdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntestupdate.ForeColor = System.Drawing.Color.White;
+            this.btntestupdate.Location = new System.Drawing.Point(246, 150);
+            this.btntestupdate.Name = "btntestupdate";
+            this.btntestupdate.Size = new System.Drawing.Size(116, 30);
+            this.btntestupdate.TabIndex = 6;
+            this.btntestupdate.Text = "test";
+            this.btntestupdate.UseVisualStyleBackColor = false;
+            this.btntestupdate.Visible = false;
+            this.btntestupdate.Click += new System.EventHandler(this.btntestupdate_Click);
+            // 
             // PanelOverride
             // 
             this.PanelOverride.BackColor = System.Drawing.Color.Black;
+            this.PanelOverride.Controls.Add(this.lblmissingtcgcount);
             this.PanelOverride.Controls.Add(this.GroupUnavailableProdeckOverride);
             this.PanelOverride.Controls.Add(this.label5);
             this.PanelOverride.Controls.Add(this.GroupUnavailableTCGOverride);
@@ -265,6 +283,16 @@
             this.PanelOverride.Name = "PanelOverride";
             this.PanelOverride.Size = new System.Drawing.Size(387, 390);
             this.PanelOverride.TabIndex = 5;
+            // 
+            // lblmissingtcgcount
+            // 
+            this.lblmissingtcgcount.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblmissingtcgcount.ForeColor = System.Drawing.Color.White;
+            this.lblmissingtcgcount.Location = new System.Drawing.Point(231, 205);
+            this.lblmissingtcgcount.Name = "lblmissingtcgcount";
+            this.lblmissingtcgcount.Size = new System.Drawing.Size(141, 14);
+            this.lblmissingtcgcount.TabIndex = 64;
+            this.lblmissingtcgcount.Text = "Count:";
             // 
             // GroupUnavailableProdeckOverride
             // 
@@ -1012,5 +1040,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnProdeckLaunch;
         private System.Windows.Forms.Button btnTCGLaunch;
+        private System.Windows.Forms.Button btntestupdate;
+        private System.Windows.Forms.Label lblmissingtcgcount;
     }
 }
