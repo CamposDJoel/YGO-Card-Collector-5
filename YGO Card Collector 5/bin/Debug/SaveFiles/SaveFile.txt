@@ -1,4 +1,4 @@
-13856
+14365
 LOB-000|Secret Rare|Tri-Horned Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-001|Ultra Rare|Blue-Eyes White Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-002|Common|Hitotsu-Me Giant|LEGEND OF BLUE EYES WHITE DRAGON
@@ -13855,3 +13855,512 @@ FLOD-EN073|Super Rare|World Legacy's Sorrow|FLAMES OF DESTRUCTION
 THSF-EN009|Super Rare|Yosenjus' Secret Move|THE SECRET FORCES
 SP18-EN025|Shattefoil|Gateway Dragon|STAR PACK: VRAINS
 WISU-EN056|Rare|Pre-Preparation of Rites|WILD SURVIVORS
+LVAL-EN030|Super Rare|Bujingi Hare|LEGACY OF THE VALIANT
+MP14-EN070|Super Rare|Bujingi Quilin|2014 MEGA-TINS MEGA PACK
+RA01-EN013|Ultra Rare|Danger!? Jackalope?|25TH ANNIVERSARY RARITY COLLECTION
+PGLD-EN014|Gold Secret|Dynatherium|PREMIUM GOLD
+BLC1-EN017|Ultra Rare|Flying Elephant|BATTLES OF LEGEND - CHAPTER 1
+GLAS-EN017|Super Rare|Gladiator Beast Alexander|GLADIATOR'S ASSAULT
+TSHD-EN036|Common|Key Mouse|THE SHINING DARKNESS
+MAGO-EN068|Gold Rare|Madolche Hootcake|Gold Series: Maximum Gold
+HAC1-EN120|Ultra Rare|Naturia Beast|HIDDEN ARSENAL CHAPTER 1
+HAC1-EN119|Ultra Rare|Naturia Exterio|HIDDEN ARSENAL CHAPTER 1
+TP6-EN018|Common|Nekogal #1|TOURNAMENT PACK 6
+POTD-EN005|Super Rare|Neo-Spacian Dark Panther|POWER OF THE DUELIST
+FIGA-EN014|Secret Rare|Brotherhood of the Fire Fist - Eland|FISTS OF THE GADGETS
+MP14-EN207|Ultra Rare|Bujin Arasuda|2014 MEGA-TINS MEGA PACK
+LVAL-EN026|Ultra Rare|Bujin Arasuda|LEGACY OF THE VALIANT
+MP15-EN017|Ultra Rare|Bujin Hirume|2015 MEGA-TINS MEGA PACK
+MP14-EN144|Ultra Rare|Bujin Mikazuchi|2014 MEGA-TINS MEGA PACK
+MP14-EN163|Ultra Rare|Bujintei Kagutsuchi|2014 MEGA-TINS MEGA PACK
+HA07-EN021|Secret Rare|Constellar Hyades|HIDDEN ARSENAL 7 KNIGHT OF STARS
+HA07-EN045|Secret Rare|Constellar Kaus|HIDDEN ARSENAL 7 KNIGHT OF STARS
+SECE-EN000|Rare|Dragoons of Draconia|SECRETS OF ETERNITY
+TDGS-ENSE2|Super Rare|Gladiator Beast Heraklinos|THE DUELIST GENESIS SPECIAL EDITION
+FLOD-ENSE1|Super Rare|Grandsoil the Elemental Lord|FLAMES OF DESTRUCTION SPECIAL EDITION
+ABPF-EN025|Ultra Rare|Koa'ki Meiru Urnight|ABSOLUTE POWERFORCE
+SHVI-EN011|Common|Lunalight Black Sheep|SHINING VICTORIES
+SHVI-EN008|Rare|Lunalight Blue Cat|SHINING VICTORIES
+CIBR-EN091|Common|Lunalight Kaleido Chick|CIRCUIT BREAK
+LED4-EN053|Common|Lunalight Panther Dancer|LEGENDARY DUELISTS: SISTERS OF THE ROSE
+SHVI-EN009|Common|Lunalight Purple Butterfly|SHINING VICTORIES
+SHVI-EN013|Common|Lunalight Tiger|SHINING VICTORIES
+LED4-EN047|Rare|Lunalight Yellow Marten|LEGENDARY DUELISTS: SISTERS OF THE ROSE
+DR1-EN017|Super Rare|Mystical Knight of Jackal|DARK REVELATION Volume 1
+BLMR-EN080|Ultra Rare|Number 72: Shogi Rook|BATTLES OF LEGEND: MONSTROUS REVENGE
+SAST-EN002|Rare|Cyberse Synchron|SAVAGE STRIKE
+BLMR-EN057|Secret Rare|Knightmare Corruptor Iblee|BATTLES OF LEGEND: MONSTROUS REVENGE
+TOCH-EN042|Super Rare|Micro Coder|TOON CHAOS
+LCJW-EN159|Common|Bracchio-raidus|LEGENDARY COLLECTION 4 JOEY'S WORLD MEGA PACK
+WISU-EN010|Rare|Giant Rex|WILD SURVIVORS
+HA04-EN017|Super Rare|Jurrac Aeolo|HIDDEN ARSENAL 4 TRISHULA'S TRIUMPH
+HA02-EN057|Secret Rare|Jurrac Giganoto|HIDDEN ARSENAL 2
+ZTIN-EN003|Ultra Rare|Number 19: Freezadon|ZEXAL COLLECTION TIN
+PGLD-EN017|Gold Secret|Blackfeather Darkrage Dragon|PREMIUM GOLD
+LDS2-EN020|Ultra Rare|Blue-Eyes Spirit Dragon|LEGENDARY DUELISTS: SEASON 2
+RA01-EN033|Ultra Rare|Borreload Savage Dragon|25TH ANNIVERSARY RARITY COLLECTION
+TAEV-EN019|Ultra Rare|Chthonian Emperor Dragon|TACTICAL EVOLUTION
+LED8-EN001|Super Rare|Clear Wing Synchro Dragon|LEGENDARY DUELISTS: SYNCHRO STORM
+SR06-EN001|Ultra Rare|Darkest Diabolos, Lord of the Lair|STRUCTURE DECK : LAIR OF DARKNESS
+LEHD-ENC34|Common|Dark Requiem Xyz Dragon|LEGENDARY HERO DECKS
+LC06-EN003|Ultra Rare|Destruction Dragon|LEGENDARY COLLECTION KAIBA
+SHSP-EN092|Super Rare|Dragard|SHADOW SPECTERS
+HAC1-EN165|Ultra Rare|Dragunity Knight - Barcha|HIDDEN ARSENAL CHAPTER 1
+TSHD-EN008|Rare|Dread Dragon|THE SHINING DARKNESS
+DUSA-EN090|Ultra Rare (Duelist Saga Version)|Evilswarm Ophion|DUELIST SAGA
+MP21-EN034|Common|Feedran, the Winds of Mischief|2021 TIN OF ANCIENT BATTLES
+BLC1-EN114|Common|Flash Charge Dragon|BATTLES OF LEGEND - CHAPTER 1
+BLC1-EN071|Common|Gaia Dragon, the Thunder Charger|BATTLES OF LEGEND - CHAPTER 1
+WSUP-EN009|Super Rare|Galaxy-Eyes Cloudragon|WORLD SUPERSTARS
+DUPO-EN063|Ultra Rare|Galaxy-Eyes Full Armor Photon Dragon|DUEL POWER
+MVP1-EN049|Ultra Rare|Gandora-X the Dragon of Demolition|Yu-Gi-Oh! THE DARK SIDE OF DIMENSIONS MOVIE PACK
+SAST-EN051|Super Rare|Guardragon Elpy|SAVAGE STRIKE
+SAST-EN052|Super Rare|Guardragon Pisty|SAVAGE STRIKE
+GAOV-EN019|Super Rare|Hieratic Dragon of Gebeb|GALACTIC OVERLORD
+GAOV-EN025|Ultra Rare|Hieratic Dragon of Sutekh|GALACTIC OVERLORD
+DUPO-EN027|Ultra Rare|Hieratic Seal of the Heavenly Spheres|DUEL POWER
+EEN-ENSE1|Secret Rare|Horus the Black Flame Dragon LV8|ELEMENTAL ENERGY SPECIAL EDITION
+GFTP-EN047|Ultra Rare|Lavalval Dragon|GHOSTS FROM THE PAST
+RYMP-EN067|Super Rare|Light End Dragon|RA YELLOW MEGA PACK
+ANGU-EN045|Rare|Luster Pendulum, the Dracoslayer|ANCIENT　GUARDIANS
+ABPF-EN040|Ultra Rare|Majestic Red Dragon|ABSOLUTE POWERFORCE
+LDS2-EN005|Common|Malefic Blue-Eyes White Dragon|LEGENDARY DUELISTS: SEASON 2
+MOV2-EN001|Ultra Rare|Malefic Red-Eyes Black Dragon|Yu-Gi-Oh! 3D BONDS BEYOND TIME Promotional Card
+JUMP-EN043|Ultra Rare|Malefic Stardust Dragon|SHONEN JUMP Promotional Card - September 2010 -
+MP17-EN075|Ultra Rare|Master Peace, the True Dracoslayer|2017 MEGA-TINS MEGA PACK
+SDLI-EN036|Ultra Rare|Michael, the Arch-Lightsworn|REALM OF LIGHT STRUCTURE DECK
+HAC1-EN122|Ultra Rare|Naturia Barkion|HIDDEN ARSENAL CHAPTER 1
+THSF-EN019|Secret Rare|Nekroz of Decisive Armor|THE SECRET FORCES
+BLC1-EN070|Common|Neo Galaxy-Eyes Photon Dragon|BATTLES OF LEGEND - CHAPTER 1
+RA01-EN039|Super Rare|Number 100: Numeron Dragon|25TH ANNIVERSARY RARITY COLLECTION
+NUMH-EN030|Secret Rare|Number 57: Tri-Head Dust Dragon|NUMBER HUNTERS
+LDS2-EN053|Common|Number 62: Galaxy-Eyes Prime Photon Dragon|LEGENDARY DUELISTS: SEASON 2
+LVAL-EN050|Rare|Number C92: Heart-eartH Chaos Dragon|LEGACY OF THE VALIANT
+VASM-EN027|Rare|Angel of Zera|VALIANT SMASHERS
+DUSA-EN018|Celestial Double Star Shaman|Celestial Double Star Shaman|DUELIST SAGA
+RA01-EN042|Super Rare|Cherubini, Ebon Angel of the Burning Abyss|25TH ANNIVERSARY RARITY COLLECTION
+RATE-EN036|Super Rare|Cyber Angel Natasha|RAGING TEMPEST
+PGL3-EN058|Gold Rare|Dante, Pilgrim of the Burning Abyss|PREMIUM GOLD: INFINITE GOLD
+DESO-EN031|Secret Rare|Darklord Tezcatlipoca|DESTINY SOLDIERS
+CT12-EN003|Super Rare|Elder Entity Norden|2015 MEGA-TINS
+MP15-EN140|Rare|Fluffal Dog|2015 MEGA-TINS MEGA PACK
+RA01-EN036|Ultra Rare|Ghostrick Angel of Mischief|25TH ANNIVERSARY RARITY COLLECTION
+LC06-EN001|Ultra Rare|Goddess of Sweet Revenge|LEGENDARY COLLECTION KAIBA
+BLMR-EN078|Secret Rare|Herald of Pure Light|BATTLES OF LEGEND: MONSTROUS REVENGE
+GEIM-EN046|Rare|Herald of Ultimateness|GENESIS IMPACT
+TDGS-EN030|Super Rare|Izanagi|THE DUELIST GENESIS
+AP07-EN019|Common|Madolche Puddingcess|ASTRAL PACK SEVEN
+BLMR-EN076|Secret Rare|Madolche Queen Tiaramisu|BATTLES OF LEGEND: MONSTROUS REVENGE
+DESO-EN019|Super Rare|Abyss Actor - Sassy Rookie|DESTINY SOLDIERS
+TSHD-EN041|Ultra Rare|Chaos King Archfiend|THE SHINING DARKNESS
+DUEA-EN084|Rare|Cir, Malebranche of the Burning Abyss|DUELIST ALLIANCE
+LDS3-EN009|Secret Rare|Curse Necrofear|LEGENDARY DUELISTS: SEASON 3
+OP19-EN007|Super Rare|D/D Berfomet|OTS TOURNAMENT PACK 19
+SDPD-EN003|Common|D/D Savant Copernicus|PENDULUM DOMINATION STRUCTURE DECK
+MP17-EN065|Rare|D/D Savant Thomas|2017 MEGA-TINS MEGA PACK
+YS15-ENL00|Secret Rare|D/D/D Dragon King Pendragon|STARTER DECK DARK LEGION (US)
+COTD-EN040|Rare|D/D/D Gust High King Alexander|CODE OF THE DUELIST
+OP19-EN010|Super Rare|D/D/D Oracle King d'Arc|OTS TOURNAMENT PACK 19
+LDS3-EN010|Common|Dark Spirit of Banishment|LEGENDARY DUELISTS: SEASON 3
+LDS3-EN011|Common|Dark Spirit of Malice|LEGENDARY DUELISTS: SEASON 3
+MZMI-EN050|Rare|Earthbound Greater Linewalker|MAZE OF MILLENNIA
+CROS-EN014|Rare|Edge Imp Tomahawk|CROSSED SOULS
+LDS3-EN025|Ultra Rare|Evil HERO Adusted Gold|LEGENDARY DUELISTS: SEASON 3
+LDS3-EN026|Ultra Rare|Evil HERO Sinister Necrom|LEGENDARY DUELISTS: SEASON 3
+HAC1-EN129|Common|Fabled Krus|HIDDEN ARSENAL CHAPTER 1
+HAC1-EN144|Common|Fabled Valkyrus|HIDDEN ARSENAL CHAPTER 1
+SP17-EN037|Starfoil|Frightfur Leo|STAR PACK BATTLE ROYAL
+DUEA-EN083|Rare|Graff, Malebranche of the Burning Abyss|DUELIST ALLIANCE
+CRMS-EN098|Secret Rare|Greed Quasar|CRIMSON CRISIS
+GFP2-EN064|Ultra Rare|Ghostrick Lantern|GHOSTS FROM THE PAST: THE 2ND HAUNTING
+BPW2-EN030|Super Rare|Infernity Destroyer|BATTLE PACK 2 WAR OF THE GIANTS ROUND 2
+OP14-EN005|Super Rare|Infernity General|OTS TOURNAMENT PACK 14
+BROL-EN081|Ultra Rare|Infernoid Decatron|BROTHERS OF LEGEND
+SDMY-EN005|Common|Kuribohrn|STRUCTURE DECK : YUGI MUTO
+SECE-EN083|Rare|Libic, Malebranche of the Burning Abyss|SECRETS OF ETERNITY
+SPWA-EN022|Secret Rare|Magical Musket Mastermind Zakiel|SPIRIT WARRIORS
+GX03-EN003|Super Rare|Masked Chopper|Yu-Gi-Oh! GX SPIRIT CALLER Bundles
+MP20-EN233|Ultra Rare|Medusa, Watcher of the Evil Eye|2020 TIN OF LOST MEMORIES
+VASM-EN044|Rare|Number 41: Bagooska the Terribly Tired Tapir|VALIANT SMASHERS
+BLC1-EN038|Ultra Rare|Number 77: The Seven Sins|BATTLES OF LEGEND - CHAPTER 1
+AP06-EN016|Common|Amazon of the Seas|ASTRAL PACK SIX
+CP05-EN012|Common|Amazon of the Seas|CHAMPION PACK GAME FIVE
+MAMA-EN052|Ultra Rare|Beautunaful Princess|MAGNIFICENT MAVENS
+PRIO-EN036|Rare|Beautunaful Princess|PRIMAL ORIGIN
+GAOV-EN008|Rare|Hammer Shark|GALACTIC OVERLORD
+ABYR-EN081|Rare|Mermail Abyssmander|ABYSS RISING
+LDS3-EN043|Common|Earthbound Immortal Uru|LEGENDARY DUELISTS: SEASON 3
+TP1-017|Common|Giant Flea|TOURNAMENT PACK 1ST SEASON
+MDP2-EN009|Rare|Gokibore|Promotional Cards 2
+TAEV-EN022|Rare|Grasschopper|TACTICAL EVOLUTION
+OP19-EN012|Common|Hercules Beetle|OTS TOURNAMENT PACK 19
+ORCS-EN021|Ultra Rare|Inzektor Giga-Mantis|ORDER OF CHAOS
+TLM-EN009|Rare|Millennium Scorpion|THE LOST MILLENNIUM
+DUSA-EN013|Ultra Rare (Duelist Saga Version)|Number 28: Titanic Moth|DUELIST SAGA
+BLC1-EN151|Common|Number 84: Pain Gainer|BATTLES OF LEGEND - CHAPTER 1
+LED2-EN021|Super Rare|Armed Dragon Catapult Cannon|LEGENDARY DUELISTS: ANCIENT MILLENNIUM
+RATE-EN041|Super Rare|Chaos Ancient Gear Giant|RAGING TEMPEST
+LEDD-ENB28|Common|Chimeratech Fortress Dragon|LEGENDARY DRAGON DECKS
+LEDD-ENB00|Ultra Rare|Chimeratech Megafleet Dragon|LEGENDARY DRAGON DECKS
+WSUP-EN001|Secret Rare|Chronomaly Nebra Disk|WORLD SUPERSTARS
+INOV-EN016|Ultra Rare|Crystron Citree|INVASION: VENGEANCE
+INOV-EN046|Ultra Rare|Crystron Phoenix|INVASION: VENGEANCE
+INOV-EN044|Ultra Rare|Crystron Quandax|INVASION: VENGEANCE
+DP04-EN002|Rare|Cyber Barrier Dragon|DUELIST PACK - ZANE TRUESDALE -
+OP01-EN021|Common|Cyber Dragon Nova|OTS TOURNAMENT PACK 1
+DP04-EN003|Rare|Cyber Laser Dragon|DUELIST PACK - ZANE TRUESDALE -
+BLC1-EN067|Common|Galaxy Soldier|BATTLES OF LEGEND - CHAPTER 1
+STBL-EN095|Secret Rare|Genex Ally Duradark|STARSTRIKE BLAST
+LDS3-EN063|Common|Gimmick Puppet Bisque Doll|LEGENDARY DUELISTS: SEASON 3
+SOFU-EN044|Super Rare|Longirsu, the Orcust Orchestrator|SOUL FUSION
+OP22-EN014|Common|Morphtronic Remoten|OTS TOURNAMENT PACK 22
+GAOV-EN045|Ultra Rare|Number 25: Force Focus|GALACTIC OVERLORD
+YS13-ENV11|Common|Number 6: Chronomaly Atlandis|SUPER STARTER Power-Up Pack
+MAZE-EN052|Super Rare|Alsei, the Sylvan High Protector|MAZE OF MEMORIES
+CORE-EN037|Rare|Aromage Bergamot|CLASH OF REBELLIONS
+INOV-EN047|Rare|Aromaseraphy Rosemary|INVASION: VENGEANCE
+TAEV-EN009|Common|Chrysalis Pinny|TACTICAL EVOLUTION
+RGBT-EN004|Rare|Dark Verger|RAGING BATTLE
+PP02-EN005|Super Rare|Elemental HERO Knospe|PREMIUM PACK 2
+WC4-001|Secret Rare|Fairy King Truesdale|Yu-Gi-Oh! World Championship Tournament 2004 Bundles
+LVAL-EN055|Super Rare|Fairy Knight Ingunar|LEGACY OF THE VALIANT
+WISU-EN044|Rare|Impcantation Talismandra|WILD SURVIVORS
+CORE-EN097|Rare|Mandragon|CLASH OF REBELLIONS
+SESL-EN053|Super Rare|Mariña, Princess of Sunflowers|SECRET SLAYERS
+SHSP-EN055|Secret Rare|Meliae of the Trees|SHADOW SPECTERS
+LVAL-EN035|Common|Mystic Macrocarpa Seed|LEGACY OF THE VALIANT
+HAC1-EN111|Ultra Rare|Naturia Bamboo Shoot|HIDDEN ARSENAL CHAPTER 1
+HA02-EN042|Super Rare|Naturia Cosmobeet|HIDDEN ARSENAL 2
+EXVC-EN098|Super Rare|Naturia Eggplant|EXTREME VICTORY
+HA02-EN003|Secret Rare|Naturia Guardian|HIDDEN ARSENAL 2
+DT04-EN080|Common|Naturia Ragweed|DUEL TERMINAL 4
+HA03-EN013|Super Rare|Naturia Tulip|HIDDEN ARSENAL 3
+HA04-EN051|Secret Rare|Naturia White Oak|HIDDEN ARSENAL 4 TRISHULA'S TRIUMPH
+LED8-EN029|Common|Necro Fleur|LEGENDARY DUELISTS: SYNCHRO STORM
+HA05-EN054|Secret Rare|Daigusto Eguls|HIDDEN ARSENAL 5 STEELSWARM INVASION
+HA06-EN024|Secret Rare|Daigusto Sphreez|HIDDEN ARSENAL 6 OMEGA XYZ
+ANPR-EN030|Common|Genetic Woman|ANCIENT PROPHECY
+LTGY-EN085|Super Rare|Ghost Fairy Elfobia|LORD OF THE TACHYON GALAXY
+CRMS-EN020|Ultra Rare|Hyper Psychic Blaster/Assault Mode|CRIMSON CRISIS
+DUEA-EN043|Super Rare|Hypnosister|DUELIST ALLIANCE
+CRMS-EN026|Ultra Rare|Lifeforce Harmonizer|CRIMSON CRISIS
+EXFO-EN019|Super Rare|Mekk-Knight Indigo Eclipse|EXTREME FORCE
+EXFO-EN016|Common|Mekk-Knight Orange Sunset|EXTREME FORCE
+EXVC-EN024|Common|Mental Seeker|EXTREME VICTORY
+MP17-EN148|Ultra Rare|Metalfoes Mithrilium|2017 MEGA-TINS MEGA PACK
+TDIL-EN022|Common|Metalfoes Silverd|THE DARK ILLUSION
+TDIL-EN021|Common|Metalfoes Steelen|THE DARK ILLUSION
+HA06-EN045|Super Rare|Musto, Oracle of Gusto|HIDDEN ARSENAL 6 OMEGA XYZ
+BLHR-EN027|Ultra Rare|Number 26: Spaceway Octobypass|BATTLES OF LEGEND: HERO'S REVENGE
+LTGY-EN092|Rare|Number 69: Heraldry Crest|LORD OF THE TACHYON GALAXY
+HA06-EN054|Secret Rare|Daigusto Phoenix|HIDDEN ARSENAL 6 OMEGA XYZ
+DCR-006|Ultra Rare|Guardian Ceal|DARK CRISIS
+WISU-EN043|Rare|Impcantation Candoll|WILD SURVIVORS
+HA06-EN034|Secret Rare|Laval Lakeside Lady|HIDDEN ARSENAL 6 OMEGA XYZ
+GFTP-EN046|Ultra Rare|Laval Volcano Handmaiden|GHOSTS FROM THE PAST
+TAEV-EN001|Common|Alien Shocktrooper|TACTICAL EVOLUTION
+GLAS-EN034|Rare|Alien Telepath|GLADIATOR'S ASSAULT
+LDS3-EN042|Common|Earthbound Immortal Ccarayhua|LEGENDARY DUELISTS: SEASON 3
+AST-056|Common|Gigobyte|ANCIENT SANCTUARY
+ANGU-EN044|Rare|Lightserpent|ANCIENT　GUARDIANS
+STOR-EN036|Common|Majioshaleon|STORM OF RAGNAROK
+JOTL-EN038|Ultra Rare|Masked Chameleon|JUDGMENT OF THE LIGHT
+SDMY-EN004|Ultra Rare|Berserkion the Electromagna Warrior|STRUCTURE DECK : YUGI MUTO
+REDU-EN013|Rare|Chronomaly Crystal Skull|RETURN OF THE DUELIST
+CORE-EN012|Rare|Crystal Rose|CLASH OF REBELLIONS
+SDMY-EN003|Super Rare|Gamma The Electromagnet Warrior|STRUCTURE DECK : YUGI MUTO
+DT05-EN019|Super Rare|Gem-Knight Alexandrite|DUEL TERMINAL 5A
+SECE-EN046|Rare|Gem-Knight Lady Lapis Lazuli|SECRETS OF ETERNITY
+HA07-EN059|Secret Rare|Gem-Knight Master Diamond|HIDDEN ARSENAL 7 KNIGHT OF STARS
+BP03-EN126|Shattefoil|Giant Soldier of Steel|BATTLE PACK 3 MONSTER LEAGUE
+TDGS-EN038|Ultra Rare|Multiple Piece Golem|THE DUELIST GENESIS
+TOCH-EN051|Rare|Number 68: Sanaphond the Sky Prison|TOON CHAOS
+MP20-EN095|Super Rare|Mermail Abyssalacia|2020 TIN OF LOST MEMORIES
+SHVA-EN037|Super Rare|Mermail Abyssmegalo|SHADOWS IN VALHALLA
+CT11-EN004|Super Rare|Number 47: Nightmare Shark|2014 MEGA-TINS
+MP23-EN279|Super Rare|Number C32: Shark Drake Veiss|25TH ANNIVERSARY TIN: DUELING HEROES MEGA PACK
+ABPF-EN082|Ultra Rare|Alchemist of Black Spells|ABSOLUTE POWERFORCE
+CIBR-EN012|Ultra Rare|Altergeist Marionetter|CIRCUIT BREAK
+MGED-EN091|Gold Rare|Altergeist Marionetter|MAXIMUM GOLD: EL DORADO
+MP18-EN113|Ultra Rare|Altergeist Marionetter|2018 MEGA-TINS MEGA PACK
+SP18-EN028|Common|Altergeist Marionetter|STAR PACK: VRAINS
+MZMI-EN062|Rare|Altergeist Marionetter|MAZE OF MILLENNIA
+LDS3-EN087|Ultra Rare|Apprentice Illusion Magician|LEGENDARY DUELISTS: SEASON 3
+DUPO-EN028|Ultra Rare|Crowley, the First Propheseer|DUEL POWER
+SBC1-ENF05|Common|Dark Red Enchanter|SPEED DUEL: STREETS OF BATTLE CITY
+LCYW-EN027|Common|Dark Sage|LEGENDARY COLLECTION 3 YUGI'S WORLD MEGA PACK
+SOVR-EN039|Ultra Rare|Divine Grace - Northwemko|STARDUST OVERDRIVE
+SDMP-EN002|Common|Dragonpit Magician|MASTER OF PENDULUM STRUCTURE DECK
+LDS3-EN091|Ultra Rare|Ebon Illusion Magician|LEGENDARY DUELISTS: SEASON 3
+CIBR-EN039|Rare|Elemental Grace Doriado|CIRCUIT BREAK
+CBLZ-EN035|Super Rare|Fool of Prophecy|COSMO BLAZER
+SOVR-EN011|Rare|Fortune Lady Dark|STARDUST OVERDRIVE
+SOVR-EN012|Rare|Fortune Lady Earth|STARDUST OVERDRIVE
+SOVR-EN009|Rare|Fortune Lady Wind|STARDUST OVERDRIVE
+HAC1-EN036|Common|Geomancer of the Ice Barrier|HIDDEN ARSENAL CHAPTER 1
+LVAL-EN084|Rare|Gravekeeper's Heretic|LEGACY OF THE VALIANT
+LVAL-EN034|Ultra Rare|Gravekeeper's Oracle|LEGACY OF THE VALIANT
+LCJW-EN258|Rare|Gravekeeper's Priestess|LEGENDARY COLLECTION 4 JOEY'S WORLD MEGA PACK
+STBL-EN085|Rare|Gravekeeper's Recruiter|STARSTRIKE BLAST
+LVAL-EN033|Super Rare|Gravekeeper's Shaman|LEGACY OF THE VALIANT
+PGD-020|Ultra Rare|Great Dezard|PHARAONIC GUARDIAN
+THSF-EN011|Super Rare|Great Sorcerer of the Nekroz|THE SECRET FORCES
+NKRT-EN012|Platinum Rare|Gwenhwyfar, Queen of Noble Arms|NOBLE KNIGHTS OF THE ROUND TABLE BOX SET
+REDU-EN045|Ultimate Rare|Hierophant of Prophecy|RETURN OF THE DUELIST
+SDCL-EN020|Common|Jester Confit|STRUCTURE DECK : CYBERSE LINK
+SS01-ENA05|Common|Legion the Fiend Jester|SPEED DUEL STARTER DECK: DESTINY MASTERS
+GAOV-EN032|Rare|Lightray Sorcerer|GALACTIC OVERLORD
+LEHD-ENB31|Common|Loki, Lord of the Aesir|LEGENDARY HERO DECKS
+MP18-EN052|Secret Rare|Lumina, Twilightsworn Shaman|2018 MEGA-TINS MEGA PACK
+COTD-EN025|Super Rare|Lyla, Twilightsworn Enchantress|CODE OF THE DUELIST
+LIOV-EN049|Starlight Rare|Lyna the Light Charmer, Lustrous|LIGHTNING OVERDRIVE
+ANPR-EN031|Rare|Magicat|ANCIENT PROPHECY
+TSHD-EN023|Rare|Magidog|THE SHINING DARKNESS
+MZMI-EN072|Super Rare|Majespecter Raccoon - Bunbuku|MAZE OF MILLENNIA
+LC5D-EN188|Common|Mara of the Nordic Alfar|LEGENDARY COLLECTION 5D's MEGA PACK
+HISU-EN001|Super Rare|Matriarch of Nephthys|HIDDEN SUMMONERS
+RIRA-EN036|Common|Megistric Maginician|RISING RAMPAGE
+BLRR-EN073|Secret Rare|Merlin|BATTLES OF LEGEND: RELENTLESS REVENGE
+SDLI-EN002|Super Rare|Minerva, Lightsworn Maiden|REALM OF LIGHT STRUCTURE DECK
+DT01-EN067|Common|Mist Valley Watcher|DUEL TERMINAL 1
+SOFU-EN089|Ultra Rare|Morgan, the Enchantress of Avalon|SOUL FUSION
+PTDN-ENSE1|Super Rare|Mutant Mindmaster|PHANTOM DARKNESS SPECIAL EDITION
+SOFU-EN026|Super Rare|Mystrick Hulder|SOUL FUSION
+EXFO-EN025|Rare|Mythical Beast Bashilisk|EXTREME FORCE
+EXFO-EN022|Rare|Mythical Beast Jackal|EXTREME FORCE
+INCH-EN048|Super Rare|Mythical Beast Jackal King|THE INFINITY CHASERS
+DUPO-EN088|Ultra Rare|Nekroz of Unicore|DUEL POWER
+DUPO-EN089|Ultra Rare|Nekroz of Valkyrus|DUEL POWER
+SOD-EN002|Common|Neo Aqua Madoor|SOUL OF THE DUELIST
+HISU-EN040|Super Rare|Night's End Sorcerer|HIDDEN SUMMONERS
+GFP2-EN132|Ultra Rare|Nirvana High Paladin|GHOSTS FROM THE PAST: THE 2ND HAUNTING
+SDMP-EN003|Super Rare|Nobledragon Magician|MASTER OF PENDULUM STRUCTURE DECK
+BLRR-EN058|Ultra Rare|Norito the Moral Leader|BATTLES OF LEGEND: RELENTLESS REVENGE
+BLC1-EN110|Common|Number 75: Bamboozling Gossip Shadow|BATTLES OF LEGEND - CHAPTER 1
+DRL3-EN026|Ultra Rare|Number 78: Number Archive|DRAGONS OF LEGEND -UNLEASHED-
+PHSW-EN039|Super Rare|Number 83: Galaxy Queen|PHOTON SHOCKWAVE
+REDU-EN096|Rare|Mahunder|RETURN OF THE DUELIST
+HAC1-EN063|Common|Mist Valley Thunder Lord|HIDDEN ARSENAL CHAPTER 1
+HA01-EN004|Secret Rare|Mist Valley Thunderbird|HIDDEN ARSENAL
+SR01-EN011|Common|Mithra the Thunder Vassal|EMPEROR OF DARKNESS STRUCTURE DECK
+CSOC-EN011|Rare|Morphtronic Radion|CROSSROADS OF CHAOS
+CRMS-ENSP1|Super Rare|Colossal Fighter/Assault Mode|CRIMSON CRISIS Sneak Peek
+CBLZ-EN093|Rare|Crimson Blader|COSMO BLAZER
+LEHD-ENC39|Common|Dante, Traveler of the Burning Abyss|LEGENDARY HERO DECKS
+LCYW-EN049|Common|Dark Flare Knight|LEGENDARY COLLECTION 3 YUGI'S WORLD MEGA PACK
+INOV-EN051|Ultra Rare|Darktellarknight Batlamyus|INVASION: VENGEANCE
+DANE-EN009|Common|Destiny HERO - Drawhand|DARK NEOSTORM
+LODT-EN091|Super Rare|Divine Knight Ishzark|LIGHT OF DESTRUCTION
+DUEA-ENSP1|Ultra Rare|Dragon Horn Hunter|DUELIST ALLIANCE Sneak Peek
+ORCS-EN097|Secret Rare|Driven Daredevil|ORDER OF CHAOS
+STOR-EN016|Rare|Dverg of the Nordic Alfar|STORM OF RAGNAROK
+SAST-EN035|Super Rare|Elemental HERO Brave Neos|SAVAGE STRIKE
+FOTB-EN014|Ultra Rare|Elemental HERO Captain Gold|FORCE OF THE BREAKER
+SAST-EN036|Super Rare|Elemental HERO Cosmo Neos|SAVAGE STRIKE
+DP03-EN014|Super Rare|Elemental HERO Dark Neos|DUELIST PACK - JADEN YUKI 2 -
+BLC1-EN141|Common|Elemental HERO Escuridao|BATTLES OF LEGEND - CHAPTER 1
+LCGX-EN061|Rare|Elemental HERO Glow Neos|LEGENDARY COLLECTION 2 THE DUEL ACADEMY YEARS MEGA PACK
+DUPO-EN004|Ultra Rare|Elemental HERO Grandmerge|DUEL POWER
+BLC1-EN120|Common|Elemental HERO Honest Neos|BATTLES OF LEGEND - CHAPTER 1
+AP01-EN018|Common|Elemental HERO Ice Edge|ASTRAL PACK ONE
+BLC1-EN101|Common|Elemental HERO Neos Knight|BATTLES OF LEGEND - CHAPTER 1
+DP05-EN012|Rare|Elemental HERO Phoenix Enforcer|DUELIST PACK - ASTER PHOENIX -
+RYMP-EN012|Common|Elemental HERO Prisma|RA YELLOW MEGA PACK
+LCGX-EN139|Secret Rare|Elemental HERO Shining Phoenix Enforcer|LEGENDARY COLLECTION 2 THE DUEL ACADEMY YEARS MEGA PACK
+TOCH-EN040|Rare|Elemental HERO Solid Soldier|TOON CHAOS
+DP03-EN010|Rare|Elemental HERO Wildedge|DUELIST PACK - JADEN YUKI 2 -
+HA07-EN048|Super Rare|Evilswarm Castor|HIDDEN ARSENAL 7 KNIGHT OF STARS
+INOV-EN043|Rare|Flower Cardian Boardefly|INVASION: VENGEANCE
+RATE-EN045|Rare|Flower Cardian Lightflare|RAGING TEMPEST
+INOV-EN014|Common|Flower Cardian Peony with Butterfly|INVASION: VENGEANCE
+CBLZ-EN008|Super Rare|Gagaga Clerk|COSMO BLAZER
+SBC1-ENI05|Common|Gearfried the Red-Eyes Iron Knight|SPEED DUEL: STREETS OF BATTLE CITY
+FOTB-EN024|Rare|Goe Goe the Gallant Ninja|FORCE OF THE BREAKER
+MP19-EN101|Common|Gouki Heel Ogre|2019 GOLD SARCOPHAGUS TIN MEGA PACK
+DUPO-EN023|Ultra Rare|Gouki Jet Ogre|DUEL POWER
+COTD-EN011|Rare|Gouki Riscorpio|CODE OF THE DUELIST
+COTD-EN010|Rare|Gouki Suprex|CODE OF THE DUELIST
+MP19-EN102|Common|Gouki The Giant Ogre|2019 GOLD SARCOPHAGUS TIN MEGA PACK
+DUPO-EN073|Ultra Rare|Gouki The Great Ogre|DUEL POWER
+FLOD-EN041|Super Rare|Gouki The Master Ogre|FLAMES OF DESTRUCTION
+DANE-EN044|Common|Gouki The Solid Ogre|DARK NEOSTORM
+CIBR-EN045|Ultra Rare|Gouki Thunder Ogre|CIRCUIT BREAK
+COTD-EN009|Super Rare|Gouki Twistcobra|CODE OF THE DUELIST
+HSRD-EN038|Ultra Rare|Goyo Chaser|HIGH-SPEED RIDERS
+OP13-EN019|Common|Goyo Defender|OTS TOURNAMENT PACK 13
+BOSH-EN044|Rare|Goyo Emperor|BREAKERS OF SHADOW
+HSRD-EN039|Ultra Rare|Goyo Predator|HIGH-SPEED RIDERS
+EXFO-EN029|Common|Grappler Angler|EXTREME FORCE
+PRC1-EN020|Secret Rare|Gravity Warrior|PREMIUM COLLECTION TIN
+BLHR-EN075|Ultra Rare|Guardian of Order|BATTLES OF LEGEND: HERO'S REVENGE
+NUMH-EN010|Secret Rare|Heroic Challenger - Ambush Soldier|NUMBER HUNTERS
+CT09-EN002|Secret Rare|Heroic Champion - Excalibur|COLLECTIBLE TIN 2012 WAVE 1
+BLRR-EN039|Ultra Rare|Idaten the Conqueror Star|BATTLES OF LEGEND: RELENTLESS REVENGE
+CORE-EN033|Rare|Igknight Champion|CLASH OF REBELLIONS
+BLMR-EN073|Secret Rare|Junk Archer|BATTLES OF LEGEND: MONSTROUS REVENGE
+PRC1-EN009|Super Rare|Junk Forward|PREMIUM COLLECTION TIN
+EXVC-EN001|Rare|Junk Servant|EXTREME VICTORY
+HA05-EN023|Secret Rare|Laval the Greater|HIDDEN ARSENAL 5 STEELSWARM INVASION
+HA05-EN009|Super Rare|Laval Warrior|HIDDEN ARSENAL 5 STEELSWARM INVASION
+AST-067|Super Rare|Legacy Hunter|ANCIENT SANCTUARY
+SAST-EN093|Common|Legendary Secret of the Six Samurai|SAVAGE STRIKE
+SDWA-EN017|Common|Legendary Six Samurai - Enishi|SAMURAI WARLORDS STRUCTURE DECK
+STOR-EN022|Rare|Legendary Six Samurai - Kageki|STORM OF RAGNAROK
+STOR-EN020|Super Rare|Legendary Six Samurai - Kizan|STORM OF RAGNAROK
+GAOV-EN034|Rare|Lightray Gearfried|GALACTIC OVERLORD
+GAOV-EN084|Rare|Lightray Grepher|GALACTIC OVERLORD
+MVP1-EN050|Ultra Rare|Lord Gaia the Fierce Knight|Yu-Gi-Oh! THE DARK SIDE OF DIMENSIONS MOVIE PACK
+REDU-EN023|Rare|Madolche Chouxvalier|RETURN OF THE DUELIST
+ABYR-EN027|Rare|Madolche Messengelato|ABYSS RISING
+TOCH-EN045|Super Rare|Masked HERO Acid|TOON CHAOS
+LEHD-ENA36|Common|Masked HERO Anki|LEGENDARY HERO DECKS
+TOCH-EN047|Rare|Masked HERO Blast|TOON CHAOS
+TOCH-EN046|Rare|Masked HERO Dian|TOON CHAOS
+TOCH-EN043|Rare|Masked HERO Goka|TOON CHAOS
+LCJW-EN047|Common|Maximum Six|LEGENDARY COLLECTION 4 JOEY'S WORLD MEGA PACK
+TLM-EN024|Rare|Mid Shield Gardna|THE LOST MILLENNIUM
+LCJW-EN222|Common|Monster Tamer|LEGENDARY COLLECTION 4 JOEY'S WORLD MEGA PACK
+RIRA-EN087|Super Rare|Morpheus, the Dream Mirror White Knight|RISING RAMPAGE
+COTD-EN031|Rare|Motivating Captain|CODE OF THE DUELIST
+DUPO-EN085|Ultra Rare|Nekroz of Clausolas|DUEL POWER
+DUPO-EN087|Ultra Rare|Nekroz of Trishula|DUEL POWER
+TAEV-EN032|Rare|Neo Space Pathfinder|TACTICAL EVOLUTION
+NUMH-EN048|Super Rare|Night Papilloperative|NUMBER HUNTERS
+MP18-EN068|Secret Rare|Ningirsu the World Chalice Warrior|2018 MEGA-TINS MEGA PACK
+SHVA-EN022|Super Rare|Ninja Grandmaster Hanzo|SHADOWS IN VALHALLA
+OP20-EN010|Super Rare|Ninja Grandmaster Saizo|OTS TOURNAMENT PACK 20
+NKRT-EN009|Platinum Rare|Noble Knight Borz|NOBLE KNIGHTS OF THE ROUND TABLE BOX SET
+BLRR-EN072|Ultra Rare|Noble Knight Brothers|BATTLES OF LEGEND: RELENTLESS REVENGE
+PRIO-EN082|Super Rare|Noble Knight Eachtar|PRIMAL ORIGIN
+REDU-ENSP1|Ultra Rare|Noble Knight Gawayn|RETURN OF THE DUELIST Sneak Peek
+NKRT-EN007|Platinum Rare|Noble Knight Gwalchavad|NOBLE KNIGHTS OF THE ROUND TABLE BOX SET
+SOFU-EN088|Super Rare|Noble Knight Iyvanne|SOUL FUSION
+CBLZ-EN092|Rare|Noble Knight Joan|COSMO BLAZER
+BLRR-EN071|Ultra Rare|Noble Knight Medraut|BATTLES OF LEGEND: RELENTLESS REVENGE
+CYHO-EN090|Super Rare|Noble Knight Pellinore|CYBERNETIC HORIZON
+NKRT-EN010|Platinum Rare|Noble Knight Peredur|NOBLE KNIGHTS OF THE ROUND TABLE BOX SET
+GAOV-EN040|Common|Nomadic Force|GALACTIC OVERLORD
+CT08-EN004|Secret Rare|Number 10: Illumiknight|COLLECTIBLE TIN 2011 WAVE 2
+LD10-EN042|Common|Number 105: Battlin' Boxer Star Cestus|LEGENDARY DUELISTS: SOULBURNING VOLCANO
+MAGO-EN057|Gold Rare|Number 39: Utopia Beyond|Gold Series: Maximum Gold
+BLC1-EN037|Ultra Rare|Number 54: Lion Heart|BATTLES OF LEGEND - CHAPTER 1
+LD10-EN044|Rare|Number 79: Battlin' Boxer Nova Kaiser|LEGENDARY DUELISTS: SOULBURNING VOLCANO
+LEHD-ENC37|Ultra Rare|Number 86: Heroic Champion - Rhongomyniad|LEGENDARY HERO DECKS
+DOCS-EN018|Rare|Assault Blackwing - Kunai the Drizzle|DIMENSION OF CHAOS
+MP16-EN119|Rare|Assault Blackwing - Kunai the Drizzle|2016 MEGA-TINS MEGA PACK
+TDIL-EN049|Super Rare|Assault Blackwing - Onimaru the Divine Thunder|THE DARK ILLUSION
+TSHD-EN003|Ultra Rare|Blackwing - Breeze the Zephyr|THE SHINING DARKNESS
+BLCR-EN063|Ultra Rare|Blackwing - Gram the Shining Star|BATTLES OF LEGEND: CRYSTAL REVENGE
+BLCR-EN064|Ultra Rare|Blackwing Full Armor Master|BATTLES OF LEGEND: CRYSTAL REVENGE
+CT08-EN006|Super Rare|Dark Simorgh|COLLECTIBLE TIN 2011 WAVE 1
+LDS3-EN038|Ultra Rare|Earthbound Immortal Aslla piscu|LEGENDARY DUELISTS: SEASON 3
+PRIO-EN030|Rare|Gladiator Beast Augustus|PRIMAL ORIGIN
+MP15-EN051|Secret Rare|Gladiator Beast Nerokius|2015 MEGA-TINS MEGA PACK
+BLRR-EN008|Secret Rare|Glife the Phantom Bird|BATTLES OF LEGEND: RELENTLESS REVENGE
+DUSA-EN005|Ultra Rare (Duelist Saga Version)|Guard Penguin|DUELIST SAGA
+HA05-EN038|Super Rare|Gusto Egul|HIDDEN ARSENAL 5 STEELSWARM INVASION
+HA06-EN043|Super Rare|Gusto Falco|HIDDEN ARSENAL 6 OMEGA XYZ
+HA05-EN037|Super Rare|Gusto Gulldo|HIDDEN ARSENAL 5 STEELSWARM INVASION
+BLC1-EN041|Ultra Rare|Harpie Perfumer|BATTLES OF LEGEND - CHAPTER 1
+LTGY-EN049|Rare|Ice Beast Zerofyne|LORD OF THE TACHYON GALAXY
+CIBR-EN092|Common|Lyrilusc - Recital Starling|CIRCUIT BREAK
+GLD3-EN032|Common|Mist Condor|GOLD SERIES 3
+HAC1-EN062|Ultra Rare|Mist Valley Apex Avian|HIDDEN ARSENAL CHAPTER 1
+HISU-EN008|Secret Rare|Nephthys, the Sacred Flame|HIDDEN SUMMONERS
+MP18-EN004|Ultra Rare|Majesty Maiden, the True Dracocaster|2018 MEGA-TINS MEGA PACK
+MACR-EN025|Super Rare|Metaltron XII, the True Dracombatant|MAXIMUM CRISIS
+CIBR-EN024|Rare|Metaphys Daedalus|CIRCUIT BREAK
+CIBR-EN025|Super Rare|Metaphys Nephthys|CIRCUIT BREAK
+CIBR-EN023|Super Rare|Metaphys Ragnarok|CIRCUIT BREAK
+CIBR-EN026|Rare|Metaphys Tyrant Dragon|CIRCUIT BREAK
+RA01-EN028|Super Rare|Mudragon of the Swamp|25TH ANNIVERSARY RARITY COLLECTION
+MP15-EN153|Ultra Rare|Night Dragolich|2015 MEGA-TINS MEGA PACK
+BLCR-EN091|Ultra Rare|Avendread Savior|BATTLES OF LEGEND: CRYSTAL REVENGE
+BLCR-EN081|Secret Rare|Doomkaiser Dragon|BATTLES OF LEGEND: CRYSTAL REVENGE
+CRMS-EN019|Ultra Rare|Doomkaiser Dragon/Assault Mode|CRIMSON CRISIS
+SR01-EN001|Ultra Rare|Erebus the Underworld Monarch|EMPEROR OF DARKNESS STRUCTURE DECK
+PGD-031|Ultra Rare|Fushioh Richie|PHARAONIC GUARDIAN
+GFP2-EN115|Ultra Rare|Glow-Up Bloom|GHOSTS FROM THE PAST: THE 2ND HAUNTING
+GFP2-EN114|Ultra Rare|Necroworld Banshee|GHOSTS FROM THE PAST: THE 2ND HAUNTING
+OP20-EN019|Common|Number 22: Zombiestein|OTS TOURNAMENT PACK 20
+SHSP-EN060|Super Rare|Battlin' Boxing Spirits|SHADOW SPECTERS
+MP14-EN168|Super Rare|Battlin' Boxing Spirits|2014 MEGA-TINS MEGA PACK
+LD10-EN045|Common|Battlin' Boxing Spirits|LEGENDARY DUELISTS: SOULBURNING VOLCANO
+MAMA-EN087|Ultra Rare|Cyber Revsystem|MAGNIFICENT MAVENS
+MGED-EN148|Gold Rare|Cynet Mining|MAXIMUM GOLD: EL DORADO
+LDS3-EN017|Common|Dark Spirit's Mastery|LEGENDARY DUELISTS: SEASON 3
+GAOV-EN086|Ultra Rare|Draconnection|GALACTIC OVERLORD
+LC06-EN004|Ultra Rare|Dragon Revival Rhapsody|LEGENDARY COLLECTION KAIBA
+OP11-EN011|Super Rare|Fortune's Future|OTS TOURNAMENT PACK 11
+DPDG-EN007|Ultra Rare|Frightfur Reborn|DUELIST PACK - DIMENSIONAL GUARDIANS -
+PGLD-EN028|Gold Secret|Gagaga Academy Emergency Network|PREMIUM GOLD
+OP21-EN020|Common|Galaxy Expedition|OTS TOURNAMENT PACK 21
+BLHR-EN003|Ultra Rare|Gold Moon Coin|BATTLES OF LEGEND: HERO'S REVENGE
+SP18-EN039|Common|Gouki Re-Match|STAR PACK: VRAINS
+COTD-EN054|Super Rare|Gouki Re-Match|CODE OF THE DUELIST
+BOSH-EN089|Super Rare|Interrupted Kaiju Slumber|BREAKERS OF SHADOW
+BLC1-EN074|Common|Into the Void|BATTLES OF LEGEND - CHAPTER 1
+MGED-EN044|Premium Gold Rare|Invocation|MAXIMUM GOLD: EL DORADO
+PRIO-EN068|Common|Jackpot 7|PRIMAL ORIGIN
+SBC1-ENI17|Common|Last Day of Witch|SPEED DUEL: STREETS OF BATTLE CITY
+SBC1-ENF11|Common|Ledger of Legerdemain|SPEED DUEL: STREETS OF BATTLE CITY
+EEN-EN039|Common|Level Modulation|ELEMENTAL ENERGY
+LODT-EN059|Common|Level Tuning|LIGHT OF DESTRUCTION
+DUPO-EN019|Ultra Rare|Magic Gate of Miracles|DUEL POWER
+COTD-EN059|Ultra Rare|March of the Dark Brigade|CODE OF THE DUELIST
+MAMA-EN019|Ultra Rare|Mayakashi Return|MAGNIFICENT MAVENS
+ZTIN-EN015|Super Rare|Message in a Bottle|ZEXAL COLLECTION TIN
+DLCS-EN078|Ultra Rare|Mimicat|DRAGONS OF LEGEND: THE COMPLETE SERIES
+MAGO-EN148|Gold Rare|Miracle Contact|Gold Series: Maximum Gold
+DREV-EN057|Common|Miracle Synchro Fusion|DUELIST REVOLUTION
+HA07-EN025|Secret Rare|Molten Conduction Field|HIDDEN ARSENAL 7 KNIGHT OF STARS
+CSOC-EN050|Rare|Morphtronic Accelerator|CROSSROADS OF CHAOS
+DUSA-EN015|Ultra Rare (Duelist Saga Version)|Necroid Synchro|DUELIST SAGA
+SOFU-EN055|Super Rare|Necrovalley Throne|SOUL FUSION
+LCKC-EN041|Secret Rare|Neutron Blast|LEGENDARY COLLECTION KAIBA MEGA PACK
+DP1-EN024|Ultra Rare|Bubble Illusion|DUELIST PACK - JADEN YUKI -
+DUSA-EN025|Ultra Rare (Duelist Saga Version)|Chaos Scepter Blast|DUELIST SAGA
+EXVC-EN087|Secret Rare|Gladiator Taming|EXTREME VICTORY
+MZMI-EN075|Rare|Majespecter Cyclone|MAZE OF MILLENNIA
+STBL-EN063|Super Rare|D2 Shield|STARSTRIKE BLAST
+PTDN-EN070|Rare|Dark Spirit Art - Greed|PHANTOM DARKNESS
+DL16-EN020|Rare|Darkfall|DUELIST LEAGUE 16
+BLRR-EN103|Ultra Rare|Darklord Enchantment|BATTLES OF LEGEND: RELENTLESS REVENGE
+MP17-EN113|Common|Destruction Sword Memories|2017 MEGA-TINS MEGA PACK
+LODT-EN073|Rare|Froggy Forcefield|LIGHT OF DESTRUCTION
+PGLD-EN029|Gold Secret|Ghost of a Grudge|PREMIUM GOLD
+SR06-EN030|Super Rare|Grinning Grave Virus|STRUCTURE DECK : LAIR OF DARKNESS
+SAST-EN073|Rare|Guardragon Cataclysm|SAVAGE STRIKE
+RA01-EN073|Ultra Rare|Harpie's Feather Storm|25TH ANNIVERSARY RARITY COLLECTION
+LCYW-EN146|Rare|Hidden Soldiers|LEGENDARY COLLECTION 3 YUGI'S WORLD MEGA PACK
+SDDE-EN034|Common|Karma Cut|THE DARK EMPEROR STRUCTURE DECK
+DB2-EN206|Rare|Last Turn|DARK BEGINNING 2
+SHVI-EN071|Common|Lunalight Reincarnation Dance|SHINING VICTORIES
+LDS3-EN098|Common|Magician Navigation|LEGENDARY DUELISTS: SEASON 3
+OP24-EN026|Common|Majespecter Tornado|OTS TOURNAMENT PACK 24
+CROS-EN067|Rare|Melodious Illusion|CROSSED SOULS
+CP06-EN006|Rare|Call of Darkness|CHAMPION PACK GAME SIX
+GX05-EN002|Super Rare|Dark Cure|Yu-Gi-Oh! GX The Beginning of Destiny Bundles
+BLRR-EN027|Secret Rare|Empty Machine|BATTLES OF LEGEND: RELENTLESS REVENGE
+DOCS-EN074|Super Rare|Graydle Parasite|DIMENSION OF CHAOS
+SOD-EN055|Super Rare|Greed|SOUL OF THE DUELIST
+HA07-EN030|Secret Rare|Infestation Infection|HIDDEN ARSENAL 7 KNIGHT OF STARS
+GLAS-EN069|Common|Light-Imprisoning Mirror|GLADIATOR'S ASSAULT
+AP08-EN013|Super Rare|Lose 1 Turn|ASTRAL PACK EIGHT
+MVP1-ENG28|Gold Rare|Magicians' Defense|Yu-Gi-Oh! THE DARK SIDE OF DIMENSIONS MOVIE PACK GOLD EDITION
+MP17-EN112|Super Rare|Metalfoes Combination|2017 MEGA-TINS MEGA PACK
+CIBR-EN075|Rare|Metaphys Dimension|CIRCUIT BREAK
+CSOC-EN072|Common|Morphtronic Monitron|CROSSROADS OF CHAOS
+SHVA-EN015|Secret Rare|Ninjitsu Art of Mirage-Transformation|SHADOWS IN VALHALLA
+DREV-EN079|Ultra Rare|Chivalry|DUELIST REVOLUTION
+DP04-EN029|Ultra Rare|Damage Polarizer|DUELIST PACK - ZANE TRUESDALE -
+LODT-EN072|Rare|Destruction Jammer|LIGHT OF DESTRUCTION
+EOJ-EN060|Rare|Forced Back|ENEMY OF JUSTICE
+TU03-EN019|Common|Gladiator Beast War Chariot|TURBO PACK BOOSTER THREE
+VASM-EN030|Rare|Gravity Collapse|VALIANT SMASHERS
+MAGO-EN070|Gold Rare|Madolche Nights|Gold Series: Maximum Gold
+REDU-EN072|Rare|Madolche Tea Break|RETURN OF THE DUELIST
+NECH-EN068|Common|Cursed Bamboo Sword|THE NEW CHALLENGERS
+BLC1-EN125|Common|Dragonic Diagram|BATTLES OF LEGEND - CHAPTER 1
+MZMI-EN052|Rare|Earthbound Geoglyph|MAZE OF MILLENNIA
+SGX4-ENB12|Common|Light Barrier|SPEED DUEL GX: MIDTERM DESTRUCTION
