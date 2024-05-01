@@ -1512,7 +1512,6 @@ TagRecord|Master Peace, the True Dracoslayer|False|True|False|False
 TagRecord|Master Pendulum, the Dracoslayer|False|True|False|False
 TagRecord|Metalrokket Dragon|False|True|False|False
 TagRecord|Meteor Black Dragon|False|True|False|False
-TagRecord|Meteor Dragon|False|True|False|False
 TagRecord|Meteor Dragon Red-Eyes Impact|False|True|False|False
 TagRecord|Mikazukinoyaiba|False|True|False|False
 TagRecord|Miniborrel Dragon|True|False|False|False
@@ -1548,7 +1547,6 @@ TagRecord|Paladin of Dark Dragon|True|False|False|False
 TagRecord|Paladin of White Dragon|True|False|False|False
 TagRecord|Pandemic Dragon|True|False|False|False
 TagRecord|Parlor Dragonmaid|True|False|False|False
-TagRecord|Parrot Dragon|False|True|False|False
 TagRecord|Parsec, the Interstellar Dragon|False|True|False|False
 TagRecord|Performapal Coin Dragon|False|True|False|False
 TagRecord|Petit Dragon|True|False|False|False
@@ -1641,7 +1639,6 @@ TagRecord|Twin Photon Lizard|False|True|False|False
 TagRecord|Twin Triangle Dragon|False|True|False|False
 TagRecord|Tyhone #2|True|False|False|False
 TagRecord|Tyrant Burst Dragon|False|True|False|False
-TagRecord|Tyrant Dragon|False|True|False|False
 TagRecord|Van'Dalgyon the Dark Dragon Lord|False|True|False|False
 TagRecord|Vanguard of the Dragon|False|True|False|False
 TagRecord|Vector Pendulum, the Dracoverlord|False|True|False|False
@@ -2512,7 +2509,6 @@ TagRecord|Wandering King Wildwind|False|False|True|False
 TagRecord|Barox|False|False|False|True
 TagRecord|Blood Mefist|False|False|False|True
 TagRecord|Dark Diviner|False|False|False|True
-TagRecord|Evilswarm Exciton Knight|False|False|False|True
 TagRecord|Fabled Valkyrus|False|False|False|True
 TagRecord|Frightfur Daredevil|False|False|False|True
 TagRecord|Frightfur Kraken|False|False|False|True
@@ -2595,12 +2591,8 @@ TagRecord|Performapal Gongato|False|False|False|True
 TagRecord|Brotherhood of the Fire Fist - Eagle|False|False|False|True
 TagRecord|Brotherhood of the Fire Fist - Elephant|False|False|False|True
 TagRecord|Brotherhood of the Fire Fist - Panda|False|False|False|True
-TagRecord|Constellar Omega|False|False|False|True
 TagRecord|Gaia Drake, the Universal Force|False|False|False|True
 TagRecord|Garoozis|False|False|False|True
-TagRecord|Gladiator Beast Tamer Editor|False|False|False|True
-TagRecord|Great Long Nose|False|False|False|True
-TagRecord|Lunalight Sabre Dancer|False|False|False|True
 TagRecord|Meteo the Matchless|False|False|False|True
 TagRecord|Panther Warrior|False|False|False|True
 TagRecord|Performapal Corn|False|False|False|True
@@ -2637,14 +2629,12 @@ TagRecord|Salamangreat Spinny|False|False|False|True
 TagRecord|Topologic Gumblar Dragon|False|False|False|True
 TagRecord|Topologic Trisbaena|False|False|False|True
 TagRecord|Gladiator Beast Spartacus|False|False|False|True
-TagRecord|Jurrac Velphito|False|False|False|True
 TagRecord|Sword Arm of Dragon|False|False|False|True
 TagRecord|The Winged Dragon of Ra - Immortal Phoenix|False|False|False|True
 TagRecord|The Winged Dragon of Ra - Sphere Mode|False|False|False|True
 TagRecord|Amatsu-Okami of the Divine Peaks|False|False|False|True
 TagRecord|Ancient Pixie Dragon|False|False|False|True
 TagRecord|Blue-Eyes Chaos Dragon|False|False|False|True
-TagRecord|Borrelguard Dragon|False|False|False|True
 TagRecord|Brave-Eyes Pendulum Dragon|False|False|False|True
 TagRecord|Chaos Emperor, the Dragon of Armageddon|False|False|False|True
 TagRecord|Crystal Wing Synchro Dragon|False|False|False|True
@@ -2652,9 +2642,6 @@ TagRecord|Dark End Dragon|False|False|False|True
 TagRecord|Dark Magician Girl the Dragon Knight|False|False|False|True
 TagRecord|Darkness Metal, the Dragon of Dark Steel|False|False|False|True
 TagRecord|Dragon Queen of Tragic Endings|False|False|False|True
-TagRecord|Dragonecro Nethersoul Dragon|False|False|False|True
-TagRecord|Dragunity Arma Mystletainn|False|False|False|True
-TagRecord|Dragunity Knight - Ascalon|False|False|False|True
 TagRecord|Fantastical Dragon Phantazmay|False|False|False|True
 TagRecord|Galaxy-Eyes Cipher Dragon|False|False|False|True
 TagRecord|Greedy Venom Fusion Dragon|False|False|False|True
@@ -2716,7 +2703,6 @@ TagRecord|Apollousa, Bow of the Goddess|False|False|False|True
 TagRecord|Arcana Force EX - The Dark Ruler|False|False|False|True
 TagRecord|Arcana Force XXI - The World|False|False|False|True
 TagRecord|Avenging Knight Parshath|False|False|False|True
-TagRecord|Constellar Sombre|False|False|False|True
 TagRecord|Dancing Elf|False|False|False|True
 TagRecord|Dark Voltanis|False|False|False|True
 TagRecord|Darklord Amdusc|False|False|False|True
@@ -2726,9 +2712,7 @@ TagRecord|Fluffal Mouse|False|True|False|False
 TagRecord|Fluffal Octopus|False|False|False|True
 TagRecord|Fluffal Penguin|False|False|False|True
 TagRecord|Happy Lover|False|False|False|True
-TagRecord|Herald of Perfection|False|False|False|True
 TagRecord|Madolche Anjelly|False|False|False|True
-TagRecord|Madolche Fresh Sistart|False|False|False|True
 TagRecord|Madolche Puddingcess Chocolat-a-la-Mode|False|False|False|True
 TagRecord|Michion, the Timelord|False|False|False|True
 TagRecord|Minerva, the Exalted Lightsworn|False|False|False|True
@@ -2974,7 +2958,6 @@ TagRecord|Krawler Spine|False|True|False|False
 TagRecord|Kumongous, the Sticky String Kaiju|True|False|False|False
 TagRecord|Kumootoko|True|False|False|False
 TagRecord|Kuwagata α|False|False|False|True
-TagRecord|Kwagar Hercules|False|False|False|True
 TagRecord|Larvae Moth|True|False|False|False
 TagRecord|Leghul|True|False|False|False
 TagRecord|Level Eater|True|False|False|False
@@ -3238,7 +3221,6 @@ TagRecord|Dicelops|True|False|False|False
 TagRecord|Digvorzhak, King of Heavy Industry|False|True|False|False
 TagRecord|Dimension Fortress Weapon|False|True|False|False
 TagRecord|Dimension Jar|False|True|False|False
-TagRecord|Dingirsu, the Orcust of the Evening Star|False|False|False|True
 TagRecord|Dinomist Ankylos|True|False|False|False
 TagRecord|Dinomist Brachion|False|True|False|False
 TagRecord|Dinomist Ceratops|True|False|False|False
@@ -3948,7 +3930,6 @@ TagRecord|Crusadia Maximus|False|True|False|False
 TagRecord|D.D. Seeker|True|False|False|False
 TagRecord|D.D. Telepon|False|True|False|False
 TagRecord|Daigusto Falcos|False|True|False|False
-TagRecord|Daigusto Gulldos|False|False|False|True
 TagRecord|Daigusto Laplampilica|True|False|False|False
 TagRecord|Destructotron|False|True|False|False
 TagRecord|Doctor Cranium|False|True|False|False
@@ -3989,10 +3970,8 @@ TagRecord|Metalfoes Crimsonite|False|True|False|False
 TagRecord|Metalfoes Goldriver|False|True|False|False
 TagRecord|Metalfoes Orichalc|False|True|False|False
 TagRecord|Metalfoes Volflame|False|True|False|False
-TagRecord|Mind Master|False|False|False|True
 TagRecord|Mind Protector|True|False|False|False
 TagRecord|Naelshaddoll Ariel|True|False|False|False
-TagRecord|Number 18: Heraldry Patriarch|False|False|False|True
 TagRecord|Number 74: Master of Blades|True|False|False|False
 TagRecord|Number 8: Heraldic King Genom-Heritage|False|False|False|True
 TagRecord|Number 89: Diablosis the Mind Hacker|False|False|False|True
@@ -4120,7 +4099,6 @@ TagRecord|Laval Forest Sprite|False|True|False|False
 TagRecord|Laval Magma Cannoneer|False|True|False|False
 TagRecord|Laval Miller|False|True|False|False
 TagRecord|Laval Phlogis|False|True|False|False
-TagRecord|Laval Stennon|False|False|False|True
 TagRecord|Master Craftsman Gamil|False|True|False|False
 TagRecord|Molten Behemoth|False|True|False|False
 TagRecord|Molten Zombie|True|False|False|False
@@ -4351,7 +4329,6 @@ TagRecord|Gem-Knight Crystal|True|False|False|False
 TagRecord|Gem-Knight Emerald|False|True|False|False
 TagRecord|Gem-Knight Lady Brilliant Diamond|False|False|False|True
 TagRecord|Gem-Knight Lapis|True|False|False|False
-TagRecord|Gem-Knight Lazuli|False|False|False|True
 TagRecord|Gem-Knight Obsidian|True|False|False|False
 TagRecord|Gem-Knight Pearl|True|False|False|False
 TagRecord|Gem-Knight Phantom Quartz|True|False|False|False
@@ -4378,7 +4355,6 @@ TagRecord|Gorgonic Ghoul|False|True|False|False
 TagRecord|Gorgonic Golem|True|False|False|False
 TagRecord|Gorgonic Guardian|False|True|False|False
 TagRecord|Grandram|True|False|False|False
-TagRecord|Granmarg the Mega Monarch|False|False|False|True
 TagRecord|Granmarg the Rock Monarch|True|False|False|False
 TagRecord|Grave Ohja|False|True|False|False
 TagRecord|Great Spirit|True|False|False|False
@@ -4410,16 +4386,13 @@ TagRecord|Moai Interceptor Cannons|True|False|False|False
 TagRecord|Monk Fighter|True|False|False|False
 TagRecord|Morphing Jar|False|True|False|False
 TagRecord|Mystical Sand|True|False|False|False
-TagRecord|Naturia Cliff|False|False|False|True
 TagRecord|Naturia Gaiastrio|False|True|False|False
 TagRecord|Naturia Landoise|True|False|False|False
 TagRecord|Naturia Rock|False|True|False|False
 TagRecord|Neo-Spacian Grand Mole|True|False|False|False
 TagRecord|Nibiru, the Primal Being|False|True|False|False
 TagRecord|Number 106: Giant Hand|True|False|False|False
-TagRecord|Number 51: Finisher the Strong Arm|False|False|False|True
 TagRecord|Number 52: Diamond Crab King|False|False|False|True
-TagRecord|Number 55: Gogogo Goliath|False|False|False|True
 TagRecord|Number C106: Giant Red Hand|False|True|False|False
 TagRecord|Obsidian Dragon|False|True|False|False
 TagRecord|Performapal Thunderhino|True|False|False|False
@@ -4571,7 +4544,6 @@ TagRecord|Ceremonial Bell|True|False|False|False
 TagRecord|Chaos Command Magician|True|False|False|False
 TagRecord|Chaos Sorcerer|True|False|False|False
 TagRecord|Charioteer of Prophecy|True|False|False|False
-TagRecord|Chocolate Magician Girl|False|False|False|True
 TagRecord|Chow Len the Prophet|True|False|False|False
 TagRecord|Chronicler of Nephthys|False|True|False|False
 TagRecord|Chronograph Sorcerer|False|True|False|False
@@ -4619,7 +4591,6 @@ TagRecord|Disciple of Nephthys|False|True|False|False
 TagRecord|Doom Shaman|False|True|False|False
 TagRecord|Doomstar Magician|False|True|False|False
 TagRecord|Double Iris Magician|False|True|False|False
-TagRecord|Downerd Magician|False|False|False|True
 TagRecord|Dragoncaller Magician|True|False|False|False
 TagRecord|Droll & Lock Bird|False|False|True|False
 TagRecord|Ebon High Magician|False|True|False|False
@@ -4677,7 +4648,6 @@ TagRecord|Frontier Wiseman|True|False|False|False
 TagRecord|Gagaga Head|False|False|False|True
 TagRecord|Gagaga Magician|True|False|False|False
 TagRecord|Gagaga Mancer|False|True|False|False
-TagRecord|Gagaga Sister|False|False|False|True
 TagRecord|Galaxy Cleric|False|True|False|False
 TagRecord|Galaxy Mirror Sage|False|True|False|False
 TagRecord|Galaxy Wizard|False|False|True|False
@@ -4764,7 +4734,6 @@ TagRecord|Magical Plant Mandragola|True|False|False|False
 TagRecord|Magical Scientist|True|False|False|False
 TagRecord|Magical Something|False|True|False|False
 TagRecord|Magical Undertaker|False|True|False|False
-TagRecord|Magicalibra|False|False|False|True
 TagRecord|Magician of Black Chaos|False|True|False|False
 TagRecord|Magician of Black Chaos MAX|True|False|False|False
 TagRecord|Magician of Chaos|False|True|False|False
@@ -4800,7 +4769,6 @@ TagRecord|Mysterious Guard|True|False|False|False
 TagRecord|Mystic Lamp|False|True|False|False
 TagRecord|Mystic Piper|False|False|False|True
 TagRecord|Mystical Elf|True|False|False|False
-TagRecord|Mystical Fairy Elfuria|False|False|False|True
 TagRecord|Mythical Beast Cerberus|True|False|False|False
 TagRecord|Mythical Beast Garuda|False|False|False|True
 TagRecord|Mythical Beast Master Cerberus|False|False|False|True
@@ -5212,7 +5180,6 @@ TagRecord|Cú Chulainn the Awakened|True|False|False|False
 TagRecord|Curious, the Lightsworn Dominion|False|True|False|False
 TagRecord|CXyz Barian Hope|False|True|False|False
 TagRecord|CXyz Coach Lord Ultimatrainer|False|True|False|False
-TagRecord|CXyz Comics Hero Legend Arthur|False|True|False|False
 TagRecord|Cyber Blader|False|True|False|False
 TagRecord|Cyber Gymnast|True|False|False|False
 TagRecord|Cyber Tutu|False|True|False|False
@@ -5329,7 +5296,6 @@ TagRecord|Elemental HERO Steam Healer|False|True|False|False
 TagRecord|Elemental HERO Storm Neos|False|False|False|True
 TagRecord|Elemental HERO Stratos|False|True|False|False
 TagRecord|Elemental HERO Tempest|True|False|False|False
-TagRecord|Elemental HERO Terra Firma|False|False|False|True
 TagRecord|Elemental HERO The Shining|False|False|False|True
 TagRecord|Elemental HERO Thunder Giant|True|False|False|False
 TagRecord|Elemental HERO Wildheart|True|False|False|False
@@ -5346,7 +5312,6 @@ TagRecord|Energy Bravery|True|False|False|False
 TagRecord|Enishi, Shien's Chancellor|True|False|False|False
 TagRecord|Envoy of Chaos|True|False|False|False
 TagRecord|Etoile Cyber|True|False|False|False
-TagRecord|Evening Twilight Knight|False|False|False|True
 TagRecord|Exiled Force|True|False|False|False
 TagRecord|Exosister Kaspitell|True|False|False|False
 TagRecord|Extraceratops|False|True|False|False
@@ -5439,7 +5404,6 @@ TagRecord|Heroic Challenger - Thousand Blades|False|True|False|False
 TagRecord|Heroic Challenger - War Hammer|False|True|False|False
 TagRecord|Heroic Champion - Gandiva|False|True|False|False
 TagRecord|Heroic Champion - Jarngreipr|True|False|False|False
-TagRecord|Heroic Champion - Kusanagi|False|False|False|True
 TagRecord|Hibikime|True|False|False|False
 TagRecord|Hungry Burger|True|False|False|False
 TagRecord|Hydrotortoise, the Empowered Warrior|True|False|False|False
@@ -5462,7 +5426,6 @@ TagRecord|Iron Chain Blaster|True|False|False|False
 TagRecord|Iron Chain Repairman|False|True|False|False
 TagRecord|Iron Hans|False|True|False|False
 TagRecord|Iron Knight|False|True|False|False
-TagRecord|Isolde, Two Tales of the Noble Knights|False|False|False|True
 TagRecord|Jack's Knight|True|False|False|False
 TagRecord|Jain, Lightsworn Paladin|True|False|False|False
 TagRecord|Jain, Twilightsworn General|False|True|False|False
@@ -5501,7 +5464,6 @@ TagRecord|Lava Battleguard|True|False|False|False
 TagRecord|Laval Blaster|False|True|False|False
 TagRecord|Laval Cannon|False|True|False|False
 TagRecord|Laval Dual Slasher|True|False|False|False
-TagRecord|Laval Judgment Lord|False|False|False|True
 TagRecord|Laval Lancelord|True|False|False|False
 TagRecord|Lavalval Ignis|False|False|False|True
 TagRecord|Legendary Knight Critias|True|False|False|False
@@ -5511,10 +5473,8 @@ TagRecord|Legendary Six Samurai - Mizuho|True|False|False|False
 TagRecord|Legendary Six Samurai - Shi En|False|False|False|True
 TagRecord|Legendary Six Samurai - Shinai|True|False|False|False
 TagRecord|Level Warrior|True|False|False|False
-TagRecord|Lightning Warrior|False|False|False|True
 TagRecord|Litmus Doom Swordsman|False|True|False|False
 TagRecord|Little Trooper|False|True|False|False
-TagRecord|Luminous Soldier|False|False|False|True
 TagRecord|Majiosheldon|False|True|False|False
 TagRecord|Makyura the Destructor|False|True|False|False
 TagRecord|Marauding Captain|True|False|False|False
@@ -5527,7 +5487,6 @@ TagRecord|Masked HERO Vapor|False|True|False|False
 TagRecord|Masked Ninja Ebisu|True|False|False|False
 TagRecord|Master of the Flaming Dragonswords|False|True|False|False
 TagRecord|Mataza the Zapper|True|False|False|False
-TagRecord|Mighty Warrior|False|False|False|True
 TagRecord|Millennium Shield|True|False|False|False
 TagRecord|Mira the Star-Bearer|True|False|False|False
 TagRecord|Mirage Knight|False|False|False|True
@@ -5536,11 +5495,9 @@ TagRecord|Monster Egg|True|False|False|False
 TagRecord|Moon Envoy|False|True|False|False
 TagRecord|Morpheus, the Dream Mirror Black Knight|False|False|False|True
 TagRecord|Morpho Butterspy|True|False|False|False
-TagRecord|Muscle Medic|False|False|False|True
 TagRecord|Mushroom Man #2|True|False|False|False
 TagRecord|M-Warrior #1|True|False|False|False
 TagRecord|M-Warrior #2|True|False|False|False
-TagRecord|M-X-Saber Invoker|False|False|False|True
 TagRecord|Mysterious Puppeteer|True|False|False|False
 TagRecord|Mystic Swordsman LV2|False|True|False|False
 TagRecord|Mystic Swordsman LV6|False|False|False|True
@@ -5551,7 +5508,6 @@ TagRecord|Neo-Spacian Marine Dolphin|False|True|False|False
 TagRecord|Ninja Grandmaster Sasuke|False|False|True|False
 TagRecord|Noble Knight Custennin|False|False|True|False
 TagRecord|Noble Knight Drystan|True|False|False|False
-TagRecord|Nubian Guard|False|False|False|True
 TagRecord|Number 12: Crimson Shadow Armor Ninja|False|False|False|True
 TagRecord|Number 39: Utopia|True|False|False|False
 TagRecord|Number 39: Utopia Double|False|False|False|True
@@ -5822,7 +5778,6 @@ TagRecord|Zuijin of the Ice Barrier|True|False|False|False
 TagRecord|Zushin the Sleeping Giant|True|False|False|False
 TagRecord|Catapult Warrior|False|True|False|False
 TagRecord|Nitro Warrior|False|False|False|True
-TagRecord|Noble Knight Artorigus|False|False|False|True
 TagRecord|Noble Knight Bedwyr|False|False|False|True
 TagRecord|Edea the Heavenly Squire|False|False|True|False
 TagRecord|Knight of the Red Lotus|False|False|False|True
@@ -5858,7 +5813,6 @@ TagRecord|Blackwing - Gust the Backblast|True|False|False|False
 TagRecord|Blackwing - Harmattan the Dust|True|False|False|False
 TagRecord|Blackwing - Hillen the Tengu-wind|False|True|False|False
 TagRecord|Blackwing - Hurricane the Tornado|False|True|False|False
-TagRecord|Blackwing - Jetstream the Blue Sky|False|False|False|True
 TagRecord|Blackwing - Jin the Rain Shadow|False|True|False|False
 TagRecord|Blackwing - Kalut the Moon Shadow|True|False|False|False
 TagRecord|Blackwing - Kogarashi the Wanderer|False|True|False|False
@@ -5929,11 +5883,9 @@ TagRecord|Ghost Bird of Bewitchment|True|False|False|False
 TagRecord|Gladiator Beast Bestiari|False|True|False|False
 TagRecord|Gladiator Beast Dragases|False|True|False|False
 TagRecord|Gladiator Beast Equeste|False|True|False|False
-TagRecord|Gladiator Beast Gyzarus|False|False|False|True
 TagRecord|Gladiator Beast Lanista|True|False|False|False
 TagRecord|Gladiator Beast Octavius|False|True|False|False
 TagRecord|Gusto Codor|True|False|False|False
-TagRecord|Gusto Griffin|False|False|False|True
 TagRecord|Harpie Channeler|True|False|False|False
 TagRecord|Harpie Dancer|True|False|False|False
 TagRecord|Harpie Girl|True|False|False|False
@@ -5956,7 +5908,6 @@ TagRecord|Kujakujaku|True|False|False|False
 TagRecord|Kurama|True|False|False|False
 TagRecord|Lyrilusc - Assembled Nightingale|False|True|False|False
 TagRecord|Lyrilusc - Cobalt Sparrow|True|False|False|False
-TagRecord|Lyrilusc - Independent Nightingale|False|False|False|True
 TagRecord|Lyrilusc - Sapphire Swallow|True|False|False|False
 TagRecord|Lyrilusc - Turquoise Warbler|True|False|False|False
 TagRecord|Mahjong Munia Maidens|False|True|False|False
@@ -6042,7 +5993,6 @@ TagRecord|Soaring Eagle Above the Searing Land|False|False|False|True
 TagRecord|Sonic Bird|True|False|False|False
 TagRecord|Sonic Chick|True|False|False|False
 TagRecord|Sonic Duck|True|False|False|False
-TagRecord|Sonic Shooter|False|True|False|False
 TagRecord|Speed Bird|True|False|False|False
 TagRecord|Spirit of the Books|False|False|False|True
 TagRecord|Spiritual Whisper|False|False|False|True
@@ -6081,7 +6031,6 @@ TagRecord|Chaofeng, Phantom of the Yang Zing|True|False|False|False
 TagRecord|Chiwen, Light of the Yang Zing|False|False|False|True
 TagRecord|Denglong, First of the Yang Zing|False|False|False|True
 TagRecord|Dinomight Knight, the True Dracofighter|False|True|False|False
-TagRecord|Dreiath III, the True Dracocavalry General|False|False|False|True
 TagRecord|Giant Pairfish|False|True|False|False
 TagRecord|Ignis Heat, the True Dracowarrior|False|True|False|False
 TagRecord|Jiaotu, Darkness of the Yang Zing|False|False|False|True
@@ -6091,7 +6040,6 @@ TagRecord|Mare Mare|True|False|False|False
 TagRecord|Master Peace, the True Dracoslaying King|False|False|False|True
 TagRecord|Metaphys Armed Dragon|True|False|False|False
 TagRecord|Metaphys Horus|True|False|False|False
-TagRecord|Mariamne, the True Dracophoenix|False|False|False|True
 TagRecord|Metaphys Decoy Dragon|False|True|False|False
 TagRecord|Metaphys Executor|False|True|False|False
 TagRecord|Monk of the Tenyi|False|True|False|False
@@ -6188,7 +6136,6 @@ TagRecord|Necroface|True|False|False|False
 TagRecord|Nightmare Horse|False|False|False|True
 TagRecord|Nine-Tailed Fox|False|True|False|False
 TagRecord|Number 23: Lancelot, Dark Knight of the Underworld|False|False|False|True
-TagRecord|Number 45: Crumble Logos the Prophet of Demolition|False|False|False|True
 TagRecord|Number 48: Shadow Lich|False|True|False|False
 TagRecord|Oboro-Guruma, the Wheeled Mayakashi|False|False|False|True
 TagRecord|P.M. Captor|False|True|False|False
@@ -6532,7 +6479,6 @@ TagRecord|Fusion Sage|True|False|False|False
 TagRecord|Fusion Substitute|True|False|False|False
 TagRecord|Fusion Tag|False|True|False|False
 TagRecord|Gagagabolt|False|True|False|False
-TagRecord|Gagagadraw|False|False|False|True
 TagRecord|Gagagatag|True|False|False|False
 TagRecord|Gagagawind|False|True|False|False
 TagRecord|Galactic Charity|True|False|False|False
@@ -6618,8 +6564,6 @@ TagRecord|Link Hole|False|True|False|False
 TagRecord|Lucky Cloud|False|True|False|False
 TagRecord|Lucky Loan|False|True|False|False
 TagRecord|Lullaby of Obedience|False|False|False|True
-TagRecord|Luna Light Perfume|False|False|False|True
-TagRecord|Lunalight Fusion|False|False|False|True
 TagRecord|Machina Redeployment|True|False|False|False
 TagRecord|Machine Duplication|True|False|False|False
 TagRecord|Magic Planter|False|True|False|False
@@ -6638,7 +6582,6 @@ TagRecord|Materiactor Annulus|True|False|False|False
 TagRecord|Medallion of the Ice Barrier|True|False|False|False
 TagRecord|Mega Ton Magical Cannon|False|True|False|False
 TagRecord|Memories of Hope|False|True|False|False
-TagRecord|Merciful Machine Angel|False|False|False|True
 TagRecord|Mesmeric Control|True|False|False|False
 TagRecord|Metalfoes Fusion|False|True|False|False
 TagRecord|Metamorphosis|False|True|False|False
@@ -7196,7 +7139,6 @@ TagRecord|Secret Sanctuary of the Spellcasters|False|True|False|False
 TagRecord|Seed Cannon|False|True|False|False
 TagRecord|Senet Switch|True|False|False|False
 TagRecord|Senri Eye|False|True|False|False
-TagRecord|Shard of Greed|False|True|False|False
 TagRecord|Shien's Dojo|False|False|False|True
 TagRecord|Shifting Shadows|True|False|False|False
 TagRecord|Shinobird Power Spot|True|False|False|False
@@ -8545,7 +8487,6 @@ TagRecord|Magical Musket - Desperado|False|False|False|True
 TagRecord|Magistery Alchemist|True|False|False|False
 TagRecord|Majespecter Gust|False|True|False|False
 TagRecord|Major Riot|True|False|False|False
-TagRecord|Malefic Claw Stream|False|False|False|True
 TagRecord|Malevolent Catastrophe|True|False|False|False
 TagRecord|Mamemaki|True|False|False|False
 TagRecord|Marincess Wave|True|False|False|False
@@ -8573,13 +8514,11 @@ TagRecord|Miracle's Wake|False|True|False|False
 TagRecord|Mirror Force|True|False|False|False
 TagRecord|Mirror Gate|False|True|False|False
 TagRecord|Mirror Mail|False|True|False|False
-TagRecord|Mirror of Oaths|False|False|False|True
 TagRecord|Mischief of the Yokai|False|False|False|True
 TagRecord|Mispolymerization|False|True|False|False
 TagRecord|Morphtransition|False|True|False|False
 TagRecord|Morphtronic Mix-up|False|True|False|False
 TagRecord|Morphtronics, Scramble!|False|True|False|False
-TagRecord|Muko|False|False|False|True
 TagRecord|Multiple Destruction|False|False|False|True
 TagRecord|Mystic Probe|True|False|False|False
 TagRecord|Mystical Refpanel|False|False|False|True
@@ -9099,7 +9038,6 @@ TagRecord|Glorious Illusion|True|False|False|False
 TagRecord|Goblin Fan|False|True|False|False
 TagRecord|Gozen Match|True|False|False|False
 TagRecord|Graceful Revival|False|True|False|False
-TagRecord|Grave of the Super Ancient Organism|False|False|False|True
 TagRecord|Graverobber's Retribution|True|False|False|False
 TagRecord|Gravity Bind|True|False|False|False
 TagRecord|Guardragon Corewakening|False|True|False|False
@@ -9614,7 +9552,6 @@ TagRecord|Libic, Malebranche of the Burning Abyss|False|True|False|False
 TagRecord|Magical Musket Mastermind Zakiel|False|True|False|False
 TagRecord|Masked Chopper|False|True|False|False
 TagRecord|Medusa, Watcher of the Evil Eye|True|False|False|False
-TagRecord|Number 41: Bagooska the Terribly Tired Tapir|False|True|False|False
 TagRecord|Number 77: The Seven Sins|False|True|False|False
 TagRecord|Amazon of the Seas|False|True|False|False
 TagRecord|Beautunaful Princess|True|False|False|False
@@ -9633,7 +9570,6 @@ TagRecord|Armed Dragon Catapult Cannon|False|True|False|False
 TagRecord|Chaos Ancient Gear Giant|False|True|False|False
 TagRecord|Chimeratech Fortress Dragon|False|True|False|False
 TagRecord|Chimeratech Megafleet Dragon|True|False|False|False
-TagRecord|Chronomaly Nebra Disk|False|True|False|False
 TagRecord|Crystron Citree|False|True|False|False
 TagRecord|Crystron Phoenix|False|True|False|False
 TagRecord|Crystron Quandax|False|True|False|False
@@ -9646,7 +9582,6 @@ TagRecord|Gimmick Puppet Bisque Doll|False|False|True|False
 TagRecord|Longirsu, the Orcust Orchestrator|False|True|False|False
 TagRecord|Morphtronic Remoten|False|True|False|False
 TagRecord|Number 25: Force Focus|False|True|False|False
-TagRecord|Number 6: Chronomaly Atlandis|False|True|False|False
 TagRecord|Alsei, the Sylvan High Protector|True|False|False|False
 TagRecord|Aromaseraphy Rosemary|False|True|False|False
 TagRecord|Chrysalis Pinny|True|False|False|False
@@ -9735,7 +9670,6 @@ TagRecord|Great Sorcerer of the Nekroz|False|True|False|False
 TagRecord|Gwenhwyfar, Queen of Noble Arms|False|True|False|False
 TagRecord|Hierophant of Prophecy|False|True|False|False
 TagRecord|Jester Confit|False|True|False|False
-TagRecord|Legion the Fiend Jester|False|True|False|False
 TagRecord|Lightray Sorcerer|False|True|False|False
 TagRecord|Loki, Lord of the Aesir|False|True|False|False
 TagRecord|Lumina, Twilightsworn Shaman|False|True|False|False
@@ -9902,14 +9836,12 @@ TagRecord|Metaphys Tyrant Dragon|False|True|False|False
 TagRecord|Mudragon of the Swamp|False|True|False|False
 TagRecord|Night Dragolich|False|True|False|False
 TagRecord|Avendread Savior|False|True|False|False
-TagRecord|Doomkaiser Dragon|False|True|False|False
 TagRecord|Doomkaiser Dragon/Assault Mode|False|True|False|False
 TagRecord|Erebus the Underworld Monarch|False|True|False|False
 TagRecord|Fushioh Richie|False|True|False|False
 TagRecord|Glow-Up Bloom|False|False|True|False
 TagRecord|Necroworld Banshee|False|False|True|False
 TagRecord|Number 22: Zombiestein|False|True|False|False
-TagRecord|Cyber Revsystem|False|False|True|False
 TagRecord|Cynet Mining|False|False|True|False
 TagRecord|Dark Spirit's Mastery|True|False|False|False
 TagRecord|Dragon Revival Rhapsody|False|True|False|False
@@ -9980,10 +9912,78 @@ TagRecord|Damage Polarizer|False|True|False|False
 TagRecord|Destruction Jammer|False|True|False|False
 TagRecord|Forced Back|False|True|False|False
 TagRecord|Gladiator Beast War Chariot|False|True|False|False
-TagRecord|Gravity Collapse|False|True|False|False
 TagRecord|Madolche Nights|False|False|True|False
 TagRecord|Madolche Tea Break|False|True|False|False
 TagRecord|Cursed Bamboo Sword|False|True|False|False
 TagRecord|Dragonic Diagram|False|True|False|False
 TagRecord|Earthbound Geoglyph|True|False|False|False
 TagRecord|Light Barrier|False|True|False|False
+TagRecord|Chronomaly Nebra Disk|True|False|False|False
+TagRecord|Dingirsu, the Orcust of the Evening Star|False|True|False|False
+TagRecord|Chocolate Magician Girl|False|False|True|False
+TagRecord|Downerd Magician|False|False|True|False
+TagRecord|Gagaga Sister|False|True|False|False
+TagRecord|Magicalibra|False|False|True|False
+TagRecord|Mystical Fairy Elfuria|False|True|False|False
+TagRecord|CXyz Comics Hero Legend Arthur|True|False|False|False
+TagRecord|Elemental HERO Terra Firma|False|True|False|False
+TagRecord|Evening Twilight Knight|False|True|False|False
+TagRecord|Heroic Champion - Kusanagi|False|True|False|False
+TagRecord|Isolde, Two Tales of the Noble Knights|False|True|False|False
+TagRecord|Laval Judgment Lord|False|True|False|False
+TagRecord|Lightning Warrior|False|True|False|False
+TagRecord|Luminous Soldier|False|True|False|False
+TagRecord|M-X-Saber Invoker|False|True|False|False
+TagRecord|Mighty Warrior|False|True|False|False
+TagRecord|Muscle Medic|False|True|False|False
+TagRecord|Noble Knight Artorigus|False|True|False|False
+TagRecord|Nubian Guard|True|False|False|False
+TagRecord|Borrelguard Dragon|False|True|False|False
+TagRecord|Dragonecro Nethersoul Dragon|False|False|True|False
+TagRecord|Dragunity Arma Mystletainn|False|True|False|False
+TagRecord|Dragunity Knight - Ascalon|False|True|False|False
+TagRecord|Evilswarm Exciton Knight|False|True|False|False
+TagRecord|Cyber Revsystem|True|False|False|False
+TagRecord|Gagagadraw|False|True|False|False
+TagRecord|Luna Light Perfume|False|True|False|False
+TagRecord|Lunalight Fusion|False|False|True|False
+TagRecord|Merciful Machine Angel|False|False|True|False
+TagRecord|Malefic Claw Stream|False|True|False|False
+TagRecord|Mirror of Oaths|False|True|False|False
+TagRecord|Muko|False|True|False|False
+TagRecord|Grave of the Super Ancient Organism|False|True|False|False
+TagRecord|Constellar Omega|False|True|False|False
+TagRecord|Gladiator Beast Tamer Editor|False|True|False|False
+TagRecord|Great Long Nose|False|True|False|False
+TagRecord|Lunalight Sabre Dancer|False|False|True|False
+TagRecord|Blackwing - Jetstream the Blue Sky|False|True|False|False
+TagRecord|Gladiator Beast Gyzarus|False|True|False|False
+TagRecord|Gusto Griffin|False|True|False|False
+TagRecord|Lyrilusc - Independent Nightingale|False|True|False|False
+TagRecord|Constellar Sombre|False|True|False|False
+TagRecord|Herald of Perfection|False|True|False|False
+TagRecord|Madolche Fresh Sistart|False|True|False|False
+TagRecord|Gem-Knight Lazuli|False|True|False|False
+TagRecord|Granmarg the Mega Monarch|False|True|False|False
+TagRecord|Naturia Cliff|False|False|True|False
+TagRecord|Number 51: Finisher the Strong Arm|False|True|False|False
+TagRecord|Number 55: Gogogo Goliath|False|True|False|False
+TagRecord|Number 45: Crumble Logos the Prophet of Demolition|False|False|True|False
+TagRecord|Kwagar Hercules|False|True|False|False
+TagRecord|Jurrac Velphito|False|True|False|False
+TagRecord|Daigusto Gulldos|False|True|False|False
+TagRecord|Mind Master|False|True|False|False
+TagRecord|Number 18: Heraldry Patriarch|False|True|False|False
+TagRecord|Laval Stennon|False|True|False|False
+TagRecord|Dreiath III, the True Dracocavalry General|False|True|False|False
+TagRecord|Mariamne, the True Dracophoenix|False|True|False|False
+TagRecord|Number 6: Chronomaly Atlandis|False|False|True|False
+TagRecord|Legion the Fiend Jester|False|False|True|False
+TagRecord|Parrot Dragon|False|False|True|False
+TagRecord|Shard of Greed|False|False|True|False
+TagRecord|Tyrant Dragon|False|False|True|False
+TagRecord|Meteor Dragon|False|False|True|False
+TagRecord|Sonic Shooter|False|False|True|False
+TagRecord|Doomkaiser Dragon|False|False|True|False
+TagRecord|Gravity Collapse|False|False|True|False
+TagRecord|Number 41: Bagooska the Terribly Tired Tapir|False|False|True|False

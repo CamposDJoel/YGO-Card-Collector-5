@@ -1,4 +1,4 @@
-14365
+14423
 LOB-000|Secret Rare|Tri-Horned Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-001|Ultra Rare|Blue-Eyes White Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-002|Common|Hitotsu-Me Giant|LEGEND OF BLUE EYES WHITE DRAGON
@@ -14364,3 +14364,61 @@ NECH-EN068|Common|Cursed Bamboo Sword|THE NEW CHALLENGERS
 BLC1-EN125|Common|Dragonic Diagram|BATTLES OF LEGEND - CHAPTER 1
 MZMI-EN052|Rare|Earthbound Geoglyph|MAZE OF MILLENNIA
 SGX4-ENB12|Common|Light Barrier|SPEED DUEL GX: MIDTERM DESTRUCTION
+RA01-EN040|Super Rare|Dingirsu, the Orcust of the Evening Star|25TH ANNIVERSARY RARITY COLLECTION
+MVP1-EN052|Ultra Rare|Chocolate Magician Girl|Yu-Gi-Oh! THE DARK SIDE OF DIMENSIONS MOVIE PACK
+BROL-EN085|Ultra Rare|Downerd Magician|BROTHERS OF LEGEND
+WSUP-EN006|Secret Rare|Gagaga Sister|WORLD SUPERSTARS
+RIRA-EN037|Common|Magicalibra|RISING RAMPAGE
+AC18-EN010|Super Rare|Mystical Fairy Elfuria|YU-GI-OH! ADVENT CALENDAR 2018
+PP02-EN009|Secret Rare|Elemental HERO Terra Firma|PREMIUM PACK 2
+MP16-EN124|Super Rare|Evening Twilight Knight|2016 MEGA-TINS MEGA PACK
+ABYR-EN043|Super Rare|Heroic Champion - Kusanagi|ABYSS RISING
+AMDE-EN052|Super Rare|Isolde, Two Tales of the Noble Knights|AMAZING DEFENDERS
+HA05-EN014|Secret Rare|Laval Judgment Lord|HIDDEN ARSENAL 5 STEELSWARM INVASION
+LC5D-EN042|Ultra Rare|Lightning Warrior|LEGENDARY COLLECTION 5D's MEGA PACK
+DB2-EN113|Common|Luminous Soldier|DARK BEGINNING 2
+BLLR-EN063|Secret Rare|M-X-Saber Invoker|BATTLES OF LEGEND -LIGHT'S REVENGE-
+LVAL-EN096|Common|Mighty Warrior|LEGACY OF THE VALIANT
+MP18-EN130|Common|Muscle Medic|2018 MEGA-TINS MEGA PACK
+NKRT-EN003|Platinum Rare|Noble Knight Artorigus|NOBLE KNIGHTS OF THE ROUND TABLE BOX SET
+AST-066|Common|Nubian Guard|ANCIENT SANCTUARY
+BLC1-EN019|Ultra Rare|Borrelguard Dragon|BATTLES OF LEGEND - CHAPTER 1
+BLC1-EN023|Ultra Rare|Borrelsword Dragon|BATTLES OF LEGEND - CHAPTER 1
+MAMA-EN062|Ultra Rare|Dragonecro Nethersoul Dragon|MAGNIFICENT MAVENS
+SDDL-EN002|Super Rare|Dragunity Arma Mystletainn|DRAGUNITY LEGION STRUCTURE DECK
+CYHO-EN033|Ultra Rare|Dragunity Knight - Ascalon|CYBERNETIC HORIZON
+BLLR-EN068|Ultra Rare|Evilswarm Exciton Knight|BATTLES OF LEGEND -LIGHT'S REVENGE-
+CBLZ-EN055|Super Rare|Gagagadraw|COSMO BLAZER
+TDIL-EN054|Super Rare|Luna Light Perfume|THE DARK ILLUSION
+LDS2-EN130|Common|Lunalight Fusion|LEGENDARY DUELISTS: SEASON 2
+LDS2-EN092|Common|Merciful Machine Angel|LEGENDARY DUELISTS: SEASON 2
+YMP1-EN009|Secret Rare|Malefic Claw Stream|Yu-Gi-Oh! 3D BONDS BEYOND TIME MOVIE PACK
+RGBT-EN080|Common|Mirror of Oaths|RAGING BATTLE
+SOD-EN057|Super Rare|Muko|SOUL OF THE DUELIST
+OP20-EN012|Super Rare|Grave of the Super Ancient Organism|OTS TOURNAMENT PACK 20
+LTGY-EN091|Ultra Rare|Constellar Omega|LORD OF THE TACHYON GALAXY
+BLLR-EN023|Secret Rare|Gladiator Beast Tamer Editor|BATTLES OF LEGEND -LIGHT'S REVENGE-
+LOD-068|Common|Great Long Nose|LEGACY OF DARKNESS
+LDS2-EN129|Common|Lunalight Sabre Dancer|LEGENDARY DUELISTS: SEASON 2
+DP11-EN011|Ultra Rare|Blackwing - Jetstream the Blue Sky|DUELIST PACK - CROW -
+DABL-EN001|Super Rare|Blackwing - Vata the Emblem of Wandering|DARKWING BLAST
+LODT-EN044|Super Rare|Gladiator Beast Gyzarus|LIGHT OF DESTRUCTION
+HA07-EN004|Super Rare|Gusto Griffin|HIDDEN ARSENAL 7 KNIGHT OF STARS
+MACR-EN041|Super Rare|Lyrilusc - Independent Nightingale|MAXIMUM CRISIS
+LTGY-EN093|Super Rare|Constellar Sombre|LORD OF THE TACHYON GALAXY
+PGL2-EN085|Gold Rare|Herald of Perfection|PREMIUM GOLD: RETURN OF THE BLING
+FLOD-EN097|Common|Madolche Fresh Sistart|FLAMES OF DESTRUCTION
+HA07-EN039|Super Rare|Gem-Knight Lazuli|HIDDEN ARSENAL 7 KNIGHT OF STARS
+SHSP-EN041|Secret Rare|Granmarg the Mega Monarch|SHADOW SPECTERS
+HAC1-EN103|Common|Naturia Cliff|HIDDEN ARSENAL CHAPTER 1
+DRL3-EN024|Secret Rare|Number 51: Finisher the Strong Arm|DRAGONS OF LEGEND -UNLEASHED-
+WSUP-EN007|Super Rare|Number 55: Gogogo Goliath|WORLD SUPERSTARS
+DLCS-EN119|Ultra Rare|Number 45: Crumble Logos the Prophet of Demolition|DRAGONS OF LEGEND: THE COMPLETE SERIES
+OP18-EN009|Super Rare|Kwagar Hercules|OTS TOURNAMENT PACK 18
+HA03-EN027|Secret Rare|Jurrac Velphito|HIDDEN ARSENAL 3
+HA05-EN053|Secret Rare|Daigusto Gulldos|HIDDEN ARSENAL 5 STEELSWARM INVASION
+TDGS-EN016|Rare|Mind Master|THE DUELIST GENESIS
+WSUP-EN004|Super Rare|Number 18: Heraldry Patriarch|WORLD SUPERSTARS
+HA06-EN021|Secret Rare|Laval Stennon|HIDDEN ARSENAL 6 OMEGA XYZ
+MACR-EN023|Ultra Rare|Dreiath III, the True Dracocavalry General|MAXIMUM CRISIS
+MACR-EN026|Ultra Rare|Mariamne, the True Dracophoenix|MAXIMUM CRISIS
