@@ -14113,7 +14113,6 @@ GAOV-EN032|Rare|Lightray Sorcerer|GALACTIC OVERLORD
 LEHD-ENB31|Common|Loki, Lord of the Aesir|LEGENDARY HERO DECKS
 MP18-EN052|Secret Rare|Lumina, Twilightsworn Shaman|2018 MEGA-TINS MEGA PACK
 COTD-EN025|Super Rare|Lyla, Twilightsworn Enchantress|CODE OF THE DUELIST
-LIOV-EN049|Starlight Rare|Lyna the Light Charmer, Lustrous|LIGHTNING OVERDRIVE
 ANPR-EN031|Rare|Magicat|ANCIENT PROPHECY
 TSHD-EN023|Rare|Magidog|THE SHINING DARKNESS
 MZMI-EN072|Super Rare|Majespecter Raccoon - Bunbuku|MAZE OF MILLENNIA
@@ -14422,3 +14421,4 @@ WSUP-EN004|Super Rare|Number 18: Heraldry Patriarch|WORLD SUPERSTARS
 HA06-EN021|Secret Rare|Laval Stennon|HIDDEN ARSENAL 6 OMEGA XYZ
 MACR-EN023|Ultra Rare|Dreiath III, the True Dracocavalry General|MAXIMUM CRISIS
 MACR-EN026|Ultra Rare|Mariamne, the True Dracophoenix|MAXIMUM CRISIS
+LIOV-EN049|Super Rare|Lyna the Light Charmer, Lustrous|LIGHTNING OVERDRIVE
