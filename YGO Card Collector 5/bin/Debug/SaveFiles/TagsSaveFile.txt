@@ -9803,10 +9803,8 @@ TagRecord|Noble Knight Pellinore|False|True|False|False
 TagRecord|Noble Knight Peredur|False|True|False|False
 TagRecord|Nomadic Force|False|True|False|False
 TagRecord|Number 10: Illumiknight|False|True|False|False
-TagRecord|Number 105: Battlin' Boxer Star Cestus|False|True|False|False
 TagRecord|Number 39: Utopia Beyond|False|False|True|False
 TagRecord|Number 54: Lion Heart|False|True|False|False
-TagRecord|Number 79: Battlin' Boxer Nova Kaiser|False|True|False|False
 TagRecord|Number 86: Heroic Champion - Rhongomyniad|False|True|False|False
 TagRecord|Assault Blackwing - Onimaru the Divine Thunder|True|False|False|False
 TagRecord|Blackwing - Breeze the Zephyr|False|True|False|False
@@ -9987,3 +9985,5 @@ TagRecord|Sonic Shooter|False|False|True|False
 TagRecord|Doomkaiser Dragon|False|False|True|False
 TagRecord|Gravity Collapse|False|False|True|False
 TagRecord|Number 41: Bagooska the Terribly Tired Tapir|False|False|True|False
+TagRecord|Number 105: Battlin' Boxer Star Cestus|False|False|True|False
+TagRecord|Number 79: Battlin' Boxer Nova Kaiser|False|False|True|False
