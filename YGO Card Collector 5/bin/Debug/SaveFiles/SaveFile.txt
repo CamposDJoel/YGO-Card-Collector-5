@@ -1,4 +1,4 @@
-14455
+14511
 LOB-000|Secret Rare|Tri-Horned Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-001|Ultra Rare|Blue-Eyes White Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-002|Common|Hitotsu-Me Giant|LEGEND OF BLUE EYES WHITE DRAGON
@@ -14454,3 +14454,59 @@ MP18-EN208|Super Rare|Power of the Guardians|2018 MEGA-TINS MEGA PACK
 TDIL-EN063|Rare|Triamid Cruiser|THE DARK ILLUSION
 MP18-EN069|Ultra Rare|Trickstar Light Stage|2018 MEGA-TINS MEGA PACK
 MGED-EN045|Premium Gold Rare|Prank-Kids Place|MAXIMUM GOLD: EL DORADO
+PHNI-EN002|Common|Geistgrinder Golem|PHANTOM NIGHTMARE
+PHNI-EN003|Super Rare|Samsara D Lotus|PHANTOM NIGHTMARE
+PHNI-EN004|Common|Raidraptor - Noir Lanius|PHANTOM NIGHTMARE
+PHNI-EN005|Super Rare|Raidraptor - Bloom Vulture|PHANTOM NIGHTMARE
+PHNI-EN006|Common|White Sunfish|PHANTOM NIGHTMARE
+PHNI-EN009|Super Rare|Goblin Biker Clatter Sploder|PHANTOM NIGHTMARE
+PHNI-EN010|Common|Goblin Biker Boom Mach|PHANTOM NIGHTMARE
+PHNI-EN013|Common|Dark Guardian|PHANTOM NIGHTMARE
+PHNI-EN014|Common|Phantasmal Summoning Beast|PHANTOM NIGHTMARE
+PHNI-EN017|Common|Mementotlan Ghattic|PHANTOM NIGHTMARE
+PHNI-EN020|Ultra Rare|Saffira, Dragon Queen of the Voiceless Voice|PHANTOM NIGHTMARE
+PHNI-EN025|Common|Magmacho Dragon|PHANTOM NIGHTMARE
+PHNI-EN026|Common|Time Reloader|PHANTOM NIGHTMARE
+PHNI-EN027|Common|Berserk Archfiend|PHANTOM NIGHTMARE
+PHNI-EN028|Common|E Stranger Big Bang|PHANTOM NIGHTMARE
+PHNI-EN029|Common|Goblin Freefall Squad|PHANTOM NIGHTMARE
+PHNI-EN031|Common|Procession of the Tea Jar|PHANTOM NIGHTMARE
+PHNI-EN032|Ultra Rare|EM:P Meowmine|PHANTOM NIGHTMARE
+PHNI-EN034|Common|Principug|PHANTOM NIGHTMARE
+PHNI-EN035|Common|Jongleur-Ghoul Illusionist|PHANTOM NIGHTMARE
+PHNI-EN036|Common|Royal Rhino with Deceitful Dice|PHANTOM NIGHTMARE
+PHNI-EN040|Common|Master of Ham|PHANTOM NIGHTMARE
+PHNI-EN043|Common|Vagnawa the Moon-Eating Dragon|PHANTOM NIGHTMARE
+PHNI-EN044|Common|Fish Lamp|PHANTOM NIGHTMARE
+PHNI-EN048|Common|Goblin's Crazy Beast|PHANTOM NIGHTMARE
+PHNI-EN050|Super Rare|Aromalilith Rosemary|PHANTOM NIGHTMARE
+PHNI-EN054|Super Rare|Nightmare Pain|PHANTOM NIGHTMARE
+PHNI-EN055|Common|Mature Chronicle|PHANTOM NIGHTMARE
+PHNI-EN057|Common|Raidraptor - Roost|PHANTOM NIGHTMARE
+PHNI-EN058|Common|White Reincarnation|PHANTOM NIGHTMARE
+PHNI-EN059|Common|Ages of Stars and Frost|PHANTOM NIGHTMARE
+PHNI-EN062|Common|Dramatic Snake-Eye Chase|PHANTOM NIGHTMARE
+PHNI-EN063|Common|Dark Element|PHANTOM NIGHTMARE
+PHNI-EN064|Common|Earthbound Fusion|PHANTOM NIGHTMARE
+PHNI-EN066|Common|Prayers of the Voiceless Voice|PHANTOM NIGHTMARE
+PHNI-EN068|Common|Aroma Blend|PHANTOM NIGHTMARE
+PHNI-EN072|Common|Flock Together|PHANTOM NIGHTMARE
+PHNI-EN073|Common|Eternal Favorite|PHANTOM NIGHTMARE
+PHNI-EN074|Common|Raidraptor - Glorious Bright|PHANTOM NIGHTMARE
+PHNI-EN075|Common|Goblin Biker Grand Stampede|PHANTOM NIGHTMARE
+PHNI-EN076|Common|Radiance of the Voiceless Voice|PHANTOM NIGHTMARE
+PHNI-EN077|Common|Aroma Healing|PHANTOM NIGHTMARE
+PHNI-EN078|Secret Rare|The Black Goat Laughs|PHANTOM NIGHTMARE
+PHNI-EN082|Super Rare|Psychic Arsenal|PHANTOM NIGHTMARE
+PHNI-EN084|Common|Conbirdable|PHANTOM NIGHTMARE
+PHNI-EN083|Common|Emergency Apport|PHANTOM NIGHTMARE
+PHNI-EN085|Common|Swarm of Centipedes|PHANTOM NIGHTMARE
+PHNI-EN087|Common|Tricorn the Cacophonous Concert|PHANTOM NIGHTMARE
+PHNI-EN088|Common|Swallow's Cowrie|PHANTOM NIGHTMARE
+PHNI-EN089|Common|Xyz Force|PHANTOM NIGHTMARE
+PHNI-EN093|Ultra Rare|Priestess of the Ashened City|PHANTOM NIGHTMARE
+PHNI-EN096|Common|Ashened for Eternity|PHANTOM NIGHTMARE
+PHNI-EN097|Common|Three-Eyed Ghost|PHANTOM NIGHTMARE
+PHNI-EN098|Common|Mystic Potato|PHANTOM NIGHTMARE
+PHNI-EN099|Common|Junk Dragonlet|PHANTOM NIGHTMARE
+PHNI-EN100|Common|Ultimeat Offering|PHANTOM NIGHTMARE
