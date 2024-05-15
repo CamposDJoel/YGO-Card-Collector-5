@@ -1,4 +1,4 @@
-14511
+14566
 LOB-000|Secret Rare|Tri-Horned Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-001|Ultra Rare|Blue-Eyes White Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-002|Common|Hitotsu-Me Giant|LEGEND OF BLUE EYES WHITE DRAGON
@@ -14510,3 +14510,58 @@ PHNI-EN097|Common|Three-Eyed Ghost|PHANTOM NIGHTMARE
 PHNI-EN098|Common|Mystic Potato|PHANTOM NIGHTMARE
 PHNI-EN099|Common|Junk Dragonlet|PHANTOM NIGHTMARE
 PHNI-EN100|Common|Ultimeat Offering|PHANTOM NIGHTMARE
+LEDE-EN001|Secret Rare|Gandora-G the Dragon of Destruction|LEGACY OF DESTRUCTION
+LEDE-EN007|Common|Ancient Gear Tanker|LEGACY OF DESTRUCTION
+LEDE-EN008|Common|Ancient Gear Commander|LEGACY OF DESTRUCTION
+LEDE-EN009|Common|Refrain the Melodious Songstress|LEGACY OF DESTRUCTION
+LEDE-EN010|Common|Couplet the Melodious Songstress|LEGACY OF DESTRUCTION
+LEDE-EN014|Common|Ragnaraika Samurai Beetle|LEGACY OF DESTRUCTION
+LEDE-EN015|Common|Ragnaraika Armored Lizard|LEGACY OF DESTRUCTION
+LEDE-EN017|Common|Tenpai Dragon Fadra|LEGACY OF DESTRUCTION
+LEDE-EN018|Common|Tenpai Dragon Chundra|LEGACY OF DESTRUCTION
+LEDE-EN019|Common|Gruesome Grave Squirmer|LEGACY OF DESTRUCTION
+LEDE-EN021|Common|Centur-Ion Gargoyle II|LEGACY OF DESTRUCTION
+LEDE-EN022|Ultra Rare|Selettrice Vaalmonica|LEGACY OF DESTRUCTION
+LEDE-EN024|Common|Weiss, Lightsworn Archfiend|LEGACY OF DESTRUCTION
+LEDE-EN025|Common|Wightlord|LEGACY OF DESTRUCTION
+LEDE-EN027|Common|Mikazukinoyaiba, the Moon Fang Dragon|LEGACY OF DESTRUCTION
+LEDE-EN028|Common|Talons of Shurilane|LEGACY OF DESTRUCTION
+LEDE-EN030|Common|Dinovatus Docus|LEGACY OF DESTRUCTION
+LEDE-EN031|Common|Cyclos the Circular Sprite|LEGACY OF DESTRUCTION
+LEDE-EN032|Super Rare|Fishborg Harpooner|LEGACY OF DESTRUCTION
+LEDE-EN033|Common|Cooling Embers|LEGACY OF DESTRUCTION
+LEDE-EN035|Common|Bacha the Melodious Maestra|LEGACY OF DESTRUCTION
+LEDE-EN039|Common|Sangenpai Bident Dragion|LEGACY OF DESTRUCTION
+LEDE-EN042|Secret Rare|Centur-Ion Auxila|LEGACY OF DESTRUCTION
+LEDE-EN046|Common|Tantrum Toddler|LEGACY OF DESTRUCTION
+LEDE-EN047|Common|Ragnaraika Skeletal Soldier|LEGACY OF DESTRUCTION
+LEDE-EN055|Common|Ancient Gear Advance|LEGACY OF DESTRUCTION
+LEDE-EN056|Common|Melodious Concerto|LEGACY OF DESTRUCTION
+LEDE-EN057|Common|Sinful Spoils Struggle|LEGACY OF DESTRUCTION
+LEDE-EN059|Common|Sangen Summoning|LEGACY OF DESTRUCTION
+LEDE-EN060|Common|Sangen Kaimen|LEGACY OF DESTRUCTION
+LEDE-EN063|Common|Mementotlan Fusion|LEGACY OF DESTRUCTION
+LEDE-EN065|Common|Vaalmonica Invitare|LEGACY OF DESTRUCTION
+LEDE-EN066|Common|Vaalmonica Disarmonia|LEGACY OF DESTRUCTION
+LEDE-EN067|Super Rare|Way Where There's a Will|LEGACY OF DESTRUCTION
+LEDE-EN068|Common|Blink Out|LEGACY OF DESTRUCTION
+LEDE-EN070|Common|In Papa's Footsteps|LEGACY OF DESTRUCTION
+LEDE-EN071|Common|Stronghold the Hidden Fortress|LEGACY OF DESTRUCTION
+LEDE-EN072|Common|Ancient Gear Duel|LEGACY OF DESTRUCTION
+LEDE-EN073|Common|Goblin Biker Grand Pileup|LEGACY OF DESTRUCTION
+LEDE-EN074|Common|Sinful Spoils Subdual|LEGACY OF DESTRUCTION
+LEDE-EN075|Common|Sinful Spoils of Slumber - Morrian|LEGACY OF DESTRUCTION
+LEDE-EN076|Common|Ragnaraika Hunting Dance|LEGACY OF DESTRUCTION
+LEDE-EN077|Common|Lightsworn Aegis|LEGACY OF DESTRUCTION
+LEDE-EN079|Common|Zoma the Earthbound Spirit|LEGACY OF DESTRUCTION
+LEDE-EN080|Common|Simultaneous Equation Cannons|LEGACY OF DESTRUCTION
+LEDE-EN083|Common|Double Dai|LEGACY OF DESTRUCTION
+LEDE-EN084|Common|Krishnerd Witch|LEGACY OF DESTRUCTION
+LEDE-EN085|Common|Jungle Dweller|LEGACY OF DESTRUCTION
+LEDE-EN088|Common|Aiza the Dragoness of Deranged Devotion|LEGACY OF DESTRUCTION
+LEDE-EN089|Common|Haggard Lizardose|LEGACY OF DESTRUCTION
+LEDE-EN093|Super Rare|Embers of the Ashened|LEGACY OF DESTRUCTION
+LEDE-EN094|Super Rare|Rekindling the Ashened|LEGACY OF DESTRUCTION
+LEDE-EN095|Common|Extinguishing the Ashened|LEGACY OF DESTRUCTION
+LEDE-EN096|Common|Ashened to Endlessness|LEGACY OF DESTRUCTION
+LEDE-EN099|Super Rare|Code of Soul|LEGACY OF DESTRUCTION
