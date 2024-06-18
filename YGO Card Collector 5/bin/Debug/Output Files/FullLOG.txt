@@ -1,1331 +1,280 @@
-Extracting: Booster Packs...
-Extracting: Sp. Edition Boxes...
-Extracting: Starter Decks...
-Extracting: Structure Decks...
-Extracting: Tins...
-Extracting: Speed Duel...
-Extracting: Duelist Packs...
-Extracting: Duel Terminal...
-Extracting: Others...
-Extracting: MBC...
-Extracting: Tournaments...
-Extracting: Promos...
-Extracting: Video Games...
-Finding New: Booster Packs...
->>>>>>>NEW SET: LEGACY OF DESTRUCTION
->>>>>>>Set: 25TH ANNIVERSARY RARITY COLLECTION 2
-is a sneak peak preview, this set will not be adding to the DB.
-Finding New: Sp. Edition Boxes...
-Finding New: Starter Decks...
-Finding New: Structure Decks...
-Finding New: Tins...
-Finding New: Speed Duel...
-Finding New: Duelist Packs...
-Finding New: Duel Terminal...
-Finding New: Others...
-Finding New: MBC...
-Finding New: Tournaments...
->>>>>>>NEW SET: LEGACY OF DESTRUCTION Core Booster Premiere!
-Finding New: Promos...
->>>>>>>NEW SET: The Lost Art Promotion 9
-Finding New: Video Games...
--------UPDATING CARD RECORDS------------
-Card Name: Magicians of Bonds and Unity
-New SetCards: 1 | Code: LEDE-EN000 | 
-----------------------
-Card Name: Gandora-G the Dragon of Destruction
-New Card! | Sets Count 2 | Code: LEDE-EN001 | Code: LEDE-EN001 | 
-----------------------
-Card Name: Silent Swordsman Zero
-New Card! | Sets Count 2 | Code: LEDE-EN002 | Code: LEDE-EN002 | 
-----------------------
-Card Name: Silent Magician Zero
-New Card! | Sets Count 3 | Code: LEDE-EN003 | Code: LEDE-EN003 | Code: LEDE-ENSP1 | 
-----------------------
-Card Name: Gadget Trio
-New Card! | Sets Count 2 | Code: LEDE-EN004 | Code: LEDE-EN004 | 
-----------------------
-Card Name: Moremarshmallon
-New Card! | Sets Count 1 | Code: LEDE-EN005 | 
-----------------------
-Card Name: Ancient Gear Dark Golem
-New Card! | Sets Count 1 | Code: LEDE-EN006 | 
-----------------------
-Card Name: Ancient Gear Tanker
-New Card! | Sets Count 1 | Code: LEDE-EN007 | 
-----------------------
-Card Name: Ancient Gear Commander
-New Card! | Sets Count 1 | Code: LEDE-EN008 | 
-----------------------
-Card Name: Refrain the Melodious Songstress
-New Card! | Sets Count 1 | Code: LEDE-EN009 | 
-----------------------
-Card Name: Couplet the Melodious Songstress
-New Card! | Sets Count 1 | Code: LEDE-EN010 | 
-----------------------
-Card Name: Snake-Eyes Diabellstar
-New Card! | Sets Count 2 | Code: LEDE-EN011 | Code: LEDE-EN011 | 
-----------------------
-Card Name: Diabellze the Original Sinkeeper
-New Card! | Sets Count 2 | Code: LEDE-EN012 | Code: LEDE-EN012 | 
-----------------------
-Card Name: Ragnaraika the Evil Seed
-New Card! | Sets Count 2 | Code: LEDE-EN013 | Code: LEDE-EN013 | 
-----------------------
-Card Name: Ragnaraika Samurai Beetle
-New Card! | Sets Count 1 | Code: LEDE-EN014 | 
-----------------------
-Card Name: Ragnaraika Armored Lizard
-New Card! | Sets Count 1 | Code: LEDE-EN015 | 
-----------------------
-Card Name: Tenpai Dragon Paidra
-New Card! | Sets Count 1 | Code: LEDE-EN016 | 
-----------------------
-Card Name: Tenpai Dragon Fadra
-New Card! | Sets Count 1 | Code: LEDE-EN017 | 
-----------------------
-Card Name: Tenpai Dragon Chundra
-New Card! | Sets Count 1 | Code: LEDE-EN018 | 
-----------------------
-Card Name: Gruesome Grave Squirmer
-New Card! | Sets Count 1 | Code: LEDE-EN019 | 
-----------------------
-Card Name: Gold Pride - Eliminator
-New Card! | Sets Count 1 | Code: LEDE-EN020 | 
-----------------------
-Card Name: Centur-Ion Gargoyle II
-New Card! | Sets Count 1 | Code: LEDE-EN021 | 
-----------------------
-Card Name: Selettrice Vaalmonica
-New Card! | Sets Count 2 | Code: LEDE-EN022 | Code: LEDE-EN022 | 
-----------------------
-Card Name: Lightsworn Dragonling
-New Card! | Sets Count 2 | Code: LEDE-EN023 | Code: LEDE-EN023 | 
-----------------------
-Card Name: Weiss, Lightsworn Archfiend
-New Card! | Sets Count 1 | Code: LEDE-EN024 | 
-----------------------
-Card Name: Wightlord
-New Card! | Sets Count 1 | Code: LEDE-EN025 | 
-----------------------
-Card Name: Golgoil the Steel Seismic Smasher
-New Card! | Sets Count 1 | Code: LEDE-EN026 | 
-----------------------
-Card Name: Mikazukinoyaiba, the Moon Fang Dragon
-New Card! | Sets Count 1 | Code: LEDE-EN027 | 
-----------------------
-Card Name: Talons of Shurilane
-New Card! | Sets Count 1 | Code: LEDE-EN028 | 
-----------------------
-Card Name: Nightmare Apprentice
-New Card! | Sets Count 2 | Code: LEDE-EN029 | Code: LEDE-EN029 | 
-----------------------
-Card Name: Dinovatus Docus
-New Card! | Sets Count 1 | Code: LEDE-EN030 | 
-----------------------
-Card Name: Cyclos the Circular Sprite
-New Card! | Sets Count 1 | Code: LEDE-EN031 | 
-----------------------
-Card Name: Fishborg Harpooner
-New Card! | Sets Count 1 | Code: LEDE-EN032 | 
-----------------------
-Card Name: Cooling Embers
-New Card! | Sets Count 1 | Code: LEDE-EN033 | 
-----------------------
-Card Name: Saffira, Divine Dragon of the Voiceless Voice
-New Card! | Sets Count 2 | Code: LEDE-EN034 | Code: LEDE-EN034 | 
-----------------------
-Card Name: Bacha the Melodious Maestra
-New Card! | Sets Count 1 | Code: LEDE-EN035 | 
-----------------------
-Card Name: Flowering Etoile the Melodious Magnificat
-New Card! | Sets Count 1 | Code: LEDE-EN036 | 
-----------------------
-Card Name: Mementotlan Twin Dragon
-New Card! | Sets Count 1 | Code: LEDE-EN037 | 
-----------------------
-Card Name: Enlightenment Dragon
-New Card! | Sets Count 1 | Code: LEDE-EN038 | 
-----------------------
-Card Name: Sangenpai Bident Dragion
-New Card! | Sets Count 1 | Code: LEDE-EN039 | 
-----------------------
-Card Name: Sangenpai Transcendent Dragion
-New Card! | Sets Count 1 | Code: LEDE-EN040 | 
-----------------------
-Card Name: Gold Pride - Eradicator
-New Card! | Sets Count 2 | Code: LEDE-EN041 | Code: LEDE-EN041 | 
-----------------------
-Card Name: Centur-Ion Auxila
-New Card! | Sets Count 2 | Code: LEDE-EN042 | Code: LEDE-EN042 | 
-----------------------
-Card Name: Minerva, the Athenian Lightsworn
-New Card! | Sets Count 2 | Code: LEDE-EN043 | Code: LEDE-EN043 | 
-----------------------
-Card Name: Goblin Biker Troika Griare
-New Card! | Sets Count 1 | Code: LEDE-EN044 | 
-----------------------
-Card Name: Varudras, the Final Bringer of the End Times
-New Card! | Sets Count 2 | Code: LEDE-EN045 | Code: LEDE-EN045 | 
-----------------------
-Card Name: Tantrum Toddler
-New Card! | Sets Count 1 | Code: LEDE-EN046 | 
-----------------------
-Card Name: Ragnaraika Skeletal Soldier
-New Card! | Sets Count 1 | Code: LEDE-EN047 | 
-----------------------
-Card Name: Ragnaraika Mantis Monk
-New Card! | Sets Count 1 | Code: LEDE-EN048 | 
-----------------------
-Card Name: Ragnaraika Chain Coils
-New Card! | Sets Count 1 | Code: LEDE-EN049 | 
-----------------------
-Card Name: Ragnaraika Stag Sovereign
-New Card! | Sets Count 2 | Code: LEDE-EN050 | Code: LEDE-EN050 | 
-----------------------
-Card Name: Shining Sarcophagus
-New Card! | Sets Count 2 | Code: LEDE-EN051 | Code: LEDE-EN051 | 
-----------------------
-Card Name: Turn Silence
-New Card! | Sets Count 1 | Code: LEDE-EN052 | 
-----------------------
-Card Name: Ties That Bind
-New Card! | Sets Count 2 | Code: LEDE-EN053 | Code: LEDE-EN053 | 
-----------------------
-Card Name: Future Silence
-New Card! | Sets Count 2 | Code: LEDE-EN054 | Code: LEDE-EN054 | 
-----------------------
-Card Name: Ancient Gear Advance
-New Card! | Sets Count 1 | Code: LEDE-EN055 | 
-----------------------
-Card Name: Melodious Concerto
-New Card! | Sets Count 1 | Code: LEDE-EN056 | 
-----------------------
-Card Name: Sinful Spoils Struggle
-New Card! | Sets Count 1 | Code: LEDE-EN057 | 
-----------------------
-Card Name: Ragnaraika Bloom
-New Card! | Sets Count 2 | Code: LEDE-EN058 | Code: LEDE-EN058 | 
-----------------------
-Card Name: Sangen Summoning
-New Card! | Sets Count 1 | Code: LEDE-EN059 | 
-----------------------
-Card Name: Sangen Kaimen
-New Card! | Sets Count 1 | Code: LEDE-EN060 | 
-----------------------
-Card Name: Nightmare Throne
-New Card! | Sets Count 2 | Code: LEDE-EN061 | Code: LEDE-EN061 | 
-----------------------
-Card Name: Blessing of the Voiceless Voice
-New Card! | Sets Count 1 | Code: LEDE-EN062 | 
-----------------------
-Card Name: Mementotlan Fusion
-New Card! | Sets Count 1 | Code: LEDE-EN063 | 
-----------------------
-Card Name: Wake Up Centur-Ion!
-New Card! | Sets Count 2 | Code: LEDE-EN064 | Code: LEDE-EN064 | 
-----------------------
-Card Name: Vaalmonica Invitare
-New Card! | Sets Count 1 | Code: LEDE-EN065 | 
-----------------------
-Card Name: Vaalmonica Disarmonia
-New Card! | Sets Count 1 | Code: LEDE-EN066 | 
-----------------------
-Card Name: Way Where There's a Will
-New Card! | Sets Count 1 | Code: LEDE-EN067 | 
-----------------------
-Card Name: Blink Out
-New Card! | Sets Count 1 | Code: LEDE-EN068 | 
-----------------------
-Card Name: Metaltronus
-New Card! | Sets Count 1 | Code: LEDE-EN069 | 
-----------------------
-Card Name: In Papa's Footsteps
-New Card! | Sets Count 1 | Code: LEDE-EN070 | 
-----------------------
-Card Name: Stronghold the Hidden Fortress
-New Card! | Sets Count 1 | Code: LEDE-EN071 | 
-----------------------
-Card Name: Ancient Gear Duel
-New Card! | Sets Count 1 | Code: LEDE-EN072 | 
-----------------------
-Card Name: Goblin Biker Grand Pileup
-New Card! | Sets Count 1 | Code: LEDE-EN073 | 
-----------------------
-Card Name: Sinful Spoils Subdual
-New Card! | Sets Count 1 | Code: LEDE-EN074 | 
-----------------------
-Card Name: Sinful Spoils of Slumber - Morrian
-New Card! | Sets Count 1 | Code: LEDE-EN075 | 
-----------------------
-Card Name: Ragnaraika Hunting Dance
-New Card! | Sets Count 1 | Code: LEDE-EN076 | 
-----------------------
-Card Name: Lightsworn Aegis
-New Card! | Sets Count 1 | Code: LEDE-EN077 | 
-----------------------
-Card Name: Mirage Mirror Force
-New Card! | Sets Count 1 | Code: LEDE-EN078 | 
-----------------------
-Card Name: Zoma the Earthbound Spirit
-New Card! | Sets Count 1 | Code: LEDE-EN079 | 
-----------------------
-Card Name: Simultaneous Equation Cannons
-New Card! | Sets Count 1 | Code: LEDE-EN080 | 
-----------------------
-Card Name: Pyrite Knight
-New Card! | Sets Count 1 | Code: LEDE-EN081 | 
-----------------------
-Card Name: Battleguard Echoes
-New Card! | Sets Count 1 | Code: LEDE-EN082 | 
-----------------------
-Card Name: Double Dai
-New Card! | Sets Count 1 | Code: LEDE-EN083 | 
-----------------------
-Card Name: Krishnerd Witch
-New Card! | Sets Count 1 | Code: LEDE-EN084 | 
-----------------------
-Card Name: Jungle Dweller
-New Card! | Sets Count 1 | Code: LEDE-EN085 | 
-----------------------
-Card Name: Multi-Universe
-New Card! | Sets Count 1 | Code: LEDE-EN086 | 
-----------------------
-Card Name: Vouiburial, the Dragon Undertaker
-New Card! | Sets Count 2 | Code: LEDE-EN087 | Code: LEDE-EN087 | 
-----------------------
-Card Name: Aiza the Dragoness of Deranged Devotion
-New Card! | Sets Count 1 | Code: LEDE-EN088 | 
-----------------------
-Card Name: Haggard Lizardose
-New Card! | Sets Count 1 | Code: LEDE-EN089 | 
-----------------------
-Card Name: Shaman of the Ashened City
-New Card! | Sets Count 1 | Code: LEDE-EN090 | 
-----------------------
-Card Name: Spearhead of the Ashened City
-New Card! | Sets Count 1 | Code: LEDE-EN091 | 
-----------------------
-Card Name: Veidos the Dragon of Endless Darkness
-New Card! | Sets Count 2 | Code: LEDE-EN092 | Code: LEDE-EN092 | 
-----------------------
-Card Name: Embers of the Ashened
-New Card! | Sets Count 1 | Code: LEDE-EN093 | 
-----------------------
-Card Name: Rekindling the Ashened
-New Card! | Sets Count 1 | Code: LEDE-EN094 | 
-----------------------
-Card Name: Extinguishing the Ashened
-New Card! | Sets Count 1 | Code: LEDE-EN095 | 
-----------------------
-Card Name: Ashened to Endlessness
-New Card! | Sets Count 1 | Code: LEDE-EN096 | 
-----------------------
-Card Name: Dandy Whitelion
-New Card! | Sets Count 1 | Code: LEDE-EN097 | 
-----------------------
-Card Name: Pendulum Witch
-New Card! | Sets Count 1 | Code: LEDE-EN098 | 
-----------------------
-Card Name: Code of Soul
-New Card! | Sets Count 1 | Code: LEDE-EN099 | 
-----------------------
-Card Name: Supreme King Z-ARC - Synchro Universe
-New Card! | Sets Count 1 | Code: LEDE-EN100 | 
-----------------------
-Card Name: Eldlich the Golden Lord
-New SetCards: 1 | Code: LART-EN066 | 
-----------------------
--------SEARCHING NEW PRODECK URLS------------
-Card Name: Gandora-G the Dragon of Destruction
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Silent Swordsman Zero
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Silent Magician Zero
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Gadget Trio
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Moremarshmallon
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ancient Gear Dark Golem
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ancient Gear Tanker
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ancient Gear Commander
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Refrain the Melodious Songstress
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Couplet the Melodious Songstress
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Snake-Eyes Diabellstar
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Diabellze the Original Sinkeeper
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ragnaraika the Evil Seed
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ragnaraika Samurai Beetle
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ragnaraika Armored Lizard
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Tenpai Dragon Paidra
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Tenpai Dragon Fadra
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Tenpai Dragon Chundra
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Gruesome Grave Squirmer
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Gold Pride - Eliminator
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Centur-Ion Gargoyle II
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Selettrice Vaalmonica
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Lightsworn Dragonling
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Weiss, Lightsworn Archfiend
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Wightlord
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Golgoil the Steel Seismic Smasher
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Mikazukinoyaiba, the Moon Fang Dragon
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Talons of Shurilane
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Nightmare Apprentice
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Dinovatus Docus
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Cyclos the Circular Sprite
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Fishborg Harpooner
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Cooling Embers
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Saffira, Divine Dragon of the Voiceless Voice
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Bacha the Melodious Maestra
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Flowering Etoile the Melodious Magnificat
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Mementotlan Twin Dragon
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Enlightenment Dragon
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Sangenpai Bident Dragion
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Sangenpai Transcendent Dragion
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Gold Pride - Eradicator
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Centur-Ion Auxila
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Minerva, the Athenian Lightsworn
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Goblin Biker Troika Griare
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Varudras, the Final Bringer of the End Times
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Tantrum Toddler
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ragnaraika Skeletal Soldier
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ragnaraika Mantis Monk
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ragnaraika Chain Coils
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ragnaraika Stag Sovereign
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Shining Sarcophagus
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Turn Silence
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ties That Bind
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Future Silence
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ancient Gear Advance
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Melodious Concerto
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Sinful Spoils Struggle
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ragnaraika Bloom
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Sangen Summoning
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Sangen Kaimen
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Nightmare Throne
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Blessing of the Voiceless Voice
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Mementotlan Fusion
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Wake Up Centur-Ion!
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Vaalmonica Invitare
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Vaalmonica Disarmonia
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Way Where There's a Will
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Blink Out
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Metaltronus
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: In Papa's Footsteps
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Stronghold the Hidden Fortress
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ancient Gear Duel
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Goblin Biker Grand Pileup
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Sinful Spoils Subdual
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Sinful Spoils of Slumber - Morrian
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ragnaraika Hunting Dance
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Lightsworn Aegis
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Mirage Mirror Force
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Zoma the Earthbound Spirit
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Simultaneous Equation Cannons
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Pyrite Knight
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Battleguard Echoes
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Double Dai
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Krishnerd Witch
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Jungle Dweller
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Multi-Universe
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Vouiburial, the Dragon Undertaker
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Aiza the Dragoness of Deranged Devotion
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Haggard Lizardose
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Shaman of the Ashened City
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Spearhead of the Ashened City
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Veidos the Dragon of Endless Darkness
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Embers of the Ashened
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Rekindling the Ashened
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Extinguishing the Ashened
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Ashened to Endlessness
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Dandy Whitelion
-Prodeck search failed!
------------------------------------
-Card Name: Pendulum Witch
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Code of Soul
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
-Card Name: Supreme King Z-ARC - Synchro Universe
-Prodeck Search Success!
-Prodeck URL and Card's Passcode saved!
------------------------------------
 -------SEARCHING NEW TCG PLAYER URLS------------
-Card Name: Magicians of Bonds and Unity
-Searching For Code: LEDE-EN000 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
+Card Name: Apollousa, Bow of the Goddess
+NOT a RA02 set card - Skip
 ---------------------------------------------------------
-Card Name: Gandora-G the Dragon of Destruction
-Searching For Code: LEDE-EN001 Rarity: Secret Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN001 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
+Card Name: Apollousa, Bow of the Goddess
+NOT a RA02 set card - Skip
 ---------------------------------------------------------
-Card Name: Silent Swordsman Zero
-Searching For Code: LEDE-EN002 Rarity: Ultra Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN002 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
+Card Name: Apollousa, Bow of the Goddess
+NOT a RA02 set card - Skip
 ---------------------------------------------------------
-Card Name: Silent Magician Zero
-Searching For Code: LEDE-EN003 Rarity: Secret Rare |
-URLs extracted to check: 1|
-No Matches
-Searching For Code: LEDE-EN003 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
-Searching For Code: LEDE-ENSP1 Rarity: Ultra Rare |
-URLs extracted to check: 0|
-No Matches
+Card Name: Apollousa, Bow of the Goddess
+NOT a RA02 set card - Skip
 ---------------------------------------------------------
-Card Name: Gadget Trio
-Searching For Code: LEDE-EN004 Rarity: Ultra Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN004 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
+Card Name: Apollousa, Bow of the Goddess
+NOT a RA02 set card - Skip
 ---------------------------------------------------------
-Card Name: Moremarshmallon
-Searching For Code: LEDE-EN005 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
+Card Name: Apollousa, Bow of the Goddess
+Something fail, next!
 ---------------------------------------------------------
-Card Name: Ancient Gear Dark Golem
-Searching For Code: LEDE-EN006 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Ancient Gear Tanker
-Searching For Code: LEDE-EN007 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Ancient Gear Commander
-Searching For Code: LEDE-EN008 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Refrain the Melodious Songstress
-Searching For Code: LEDE-EN009 Rarity: Common |
-URLs extracted to check: 1|
-No Matches
----------------------------------------------------------
-Card Name: Couplet the Melodious Songstress
-Searching For Code: LEDE-EN010 Rarity: Common |
-URLs extracted to check: 1|
-No Matches
----------------------------------------------------------
-Card Name: Snake-Eyes Diabellstar
-Searching For Code: LEDE-EN011 Rarity: Ultra Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN011 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Diabellze the Original Sinkeeper
-Searching For Code: LEDE-EN012 Rarity: Secret Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN012 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Ragnaraika the Evil Seed
-Searching For Code: LEDE-EN013 Rarity: Secret Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN013 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Ragnaraika Samurai Beetle
-Searching For Code: LEDE-EN014 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Ragnaraika Armored Lizard
-Searching For Code: LEDE-EN015 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Tenpai Dragon Paidra
-Searching For Code: LEDE-EN016 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Tenpai Dragon Fadra
-Searching For Code: LEDE-EN017 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Tenpai Dragon Chundra
-Searching For Code: LEDE-EN018 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Gruesome Grave Squirmer
-Searching For Code: LEDE-EN019 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Gold Pride - Eliminator
-Searching For Code: LEDE-EN020 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Centur-Ion Gargoyle II
-Searching For Code: LEDE-EN021 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Selettrice Vaalmonica
-Searching For Code: LEDE-EN022 Rarity: Ultra Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN022 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Lightsworn Dragonling
-Searching For Code: LEDE-EN023 Rarity: Ultra Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN023 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Weiss, Lightsworn Archfiend
-Searching For Code: LEDE-EN024 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Wightlord
-Searching For Code: LEDE-EN025 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Golgoil the Steel Seismic Smasher
-Searching For Code: LEDE-EN026 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Mikazukinoyaiba, the Moon Fang Dragon
-Searching For Code: LEDE-EN027 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Talons of Shurilane
-Searching For Code: LEDE-EN028 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Nightmare Apprentice
-Searching For Code: LEDE-EN029 Rarity: Secret Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN029 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Dinovatus Docus
-Searching For Code: LEDE-EN030 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Cyclos the Circular Sprite
-Searching For Code: LEDE-EN031 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Fishborg Harpooner
-Searching For Code: LEDE-EN032 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Cooling Embers
-Searching For Code: LEDE-EN033 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Saffira, Divine Dragon of the Voiceless Voice
-Searching For Code: LEDE-EN034 Rarity: Ultra Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN034 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Bacha the Melodious Maestra
-Searching For Code: LEDE-EN035 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Flowering Etoile the Melodious Magnificat
-Searching For Code: LEDE-EN036 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Mementotlan Twin Dragon
-Searching For Code: LEDE-EN037 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Enlightenment Dragon
-Searching For Code: LEDE-EN038 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Sangenpai Bident Dragion
-Searching For Code: LEDE-EN039 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Sangenpai Transcendent Dragion
-Searching For Code: LEDE-EN040 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Gold Pride - Eradicator
-Searching For Code: LEDE-EN041 Rarity: Ultra Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN041 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
+Card Name: Blue-Eyes White Dragon
+NOT a RA02 set card - Skip
 ---------------------------------------------------------
 Card Name: Centur-Ion Auxila
-Searching For Code: LEDE-EN042 Rarity: Secret Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN042 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
+NOT a RA02 set card - Skip
 ---------------------------------------------------------
-Card Name: Minerva, the Athenian Lightsworn
-Searching For Code: LEDE-EN043 Rarity: Ultra Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN043 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Goblin Biker Troika Griare
-Searching For Code: LEDE-EN044 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Varudras, the Final Bringer of the End Times
-Searching For Code: LEDE-EN045 Rarity: Secret Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN045 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Tantrum Toddler
-Searching For Code: LEDE-EN046 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Ragnaraika Skeletal Soldier
-Searching For Code: LEDE-EN047 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Ragnaraika Mantis Monk
-Searching For Code: LEDE-EN048 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Ragnaraika Chain Coils
-Searching For Code: LEDE-EN049 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Ragnaraika Stag Sovereign
-Searching For Code: LEDE-EN050 Rarity: Ultra Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN050 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Shining Sarcophagus
-Searching For Code: LEDE-EN051 Rarity: Secret Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN051 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Turn Silence
-Searching For Code: LEDE-EN052 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Ties That Bind
-Searching For Code: LEDE-EN053 Rarity: Ultra Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN053 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Future Silence
-Searching For Code: LEDE-EN054 Rarity: Secret Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN054 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Ancient Gear Advance
-Searching For Code: LEDE-EN055 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Melodious Concerto
-Searching For Code: LEDE-EN056 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Sinful Spoils Struggle
-Searching For Code: LEDE-EN057 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Ragnaraika Bloom
-Searching For Code: LEDE-EN058 Rarity: Secret Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN058 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Sangen Summoning
-Searching For Code: LEDE-EN059 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Sangen Kaimen
-Searching For Code: LEDE-EN060 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Nightmare Throne
-Searching For Code: LEDE-EN061 Rarity: Ultra Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN061 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Blessing of the Voiceless Voice
-Searching For Code: LEDE-EN062 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Mementotlan Fusion
-Searching For Code: LEDE-EN063 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Wake Up Centur-Ion!
-Searching For Code: LEDE-EN064 Rarity: Ultra Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN064 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Vaalmonica Invitare
-Searching For Code: LEDE-EN065 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Vaalmonica Disarmonia
-Searching For Code: LEDE-EN066 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Way Where There's a Will
-Searching For Code: LEDE-EN067 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Blink Out
-Searching For Code: LEDE-EN068 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Metaltronus
-Searching For Code: LEDE-EN069 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: In Papa's Footsteps
-Searching For Code: LEDE-EN070 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Stronghold the Hidden Fortress
-Searching For Code: LEDE-EN071 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Ancient Gear Duel
-Searching For Code: LEDE-EN072 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Goblin Biker Grand Pileup
-Searching For Code: LEDE-EN073 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Sinful Spoils Subdual
-Searching For Code: LEDE-EN074 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Sinful Spoils of Slumber - Morrian
-Searching For Code: LEDE-EN075 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Ragnaraika Hunting Dance
-Searching For Code: LEDE-EN076 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Lightsworn Aegis
-Searching For Code: LEDE-EN077 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Mirage Mirror Force
-Searching For Code: LEDE-EN078 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Zoma the Earthbound Spirit
-Searching For Code: LEDE-EN079 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Simultaneous Equation Cannons
-Searching For Code: LEDE-EN080 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Pyrite Knight
-Searching For Code: LEDE-EN081 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Battleguard Echoes
-Searching For Code: LEDE-EN082 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Double Dai
-Searching For Code: LEDE-EN083 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Krishnerd Witch
-Searching For Code: LEDE-EN084 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Jungle Dweller
-Searching For Code: LEDE-EN085 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Multi-Universe
-Searching For Code: LEDE-EN086 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Vouiburial, the Dragon Undertaker
-Searching For Code: LEDE-EN087 Rarity: Ultra Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN087 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Aiza the Dragoness of Deranged Devotion
-Searching For Code: LEDE-EN088 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Haggard Lizardose
-Searching For Code: LEDE-EN089 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Shaman of the Ashened City
-Searching For Code: LEDE-EN090 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Spearhead of the Ashened City
-Searching For Code: LEDE-EN091 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Veidos the Dragon of Endless Darkness
-Searching For Code: LEDE-EN092 Rarity: Ultra Rare |
-URLs extracted to check: 2|
-!!!Match URL FOUND - Prices Updated!!!
-Searching For Code: LEDE-EN092 Rarity: Quarter Century Secret Rare |
-URLs extracted to check: 0|
-No Matches
----------------------------------------------------------
-Card Name: Embers of the Ashened
-Searching For Code: LEDE-EN093 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Rekindling the Ashened
-Searching For Code: LEDE-EN094 Rarity: Super Rare |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Extinguishing the Ashened
-Searching For Code: LEDE-EN095 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
----------------------------------------------------------
-Card Name: Ashened to Endlessness
-Searching For Code: LEDE-EN096 Rarity: Common |
-URLs extracted to check: 1|
-!!!Match URL FOUND - Prices Updated!!!
+Card Name: Couplet the Melodious Songstress
+NOT a RA02 set card - Skip
 ---------------------------------------------------------
 Card Name: Dandy Whitelion
-NO PRODECK URL - Search Skip until card has one.
+NOT a RA02 set card - Skip
 ---------------------------------------------------------
-Card Name: Pendulum Witch
-Searching For Code: LEDE-EN098 Rarity: Super Rare |
-URLs extracted to check: 1|
-No Matches
+Card Name: Diabellze the Original Sinkeeper
+NOT a RA02 set card - Skip
 ---------------------------------------------------------
-Card Name: Code of Soul
-Searching For Code: LEDE-EN099 Rarity: Super Rare |
-URLs extracted to check: 1|
+Card Name: Diviner of the Herald
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Diviner of the Herald
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Droll & Lock Bird
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Droll & Lock Bird
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Droll & Lock Bird
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Droll & Lock Bird
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Droll & Lock Bird
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Droll & Lock Bird
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Droll & Lock Bird
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Droll & Lock Bird
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Droll & Lock Bird
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Droll & Lock Bird
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Droll & Lock Bird
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Droll & Lock Bird
 !!!Match URL FOUND - Prices Updated!!!
 ---------------------------------------------------------
-Card Name: Supreme King Z-ARC - Synchro Universe
-Searching For Code: LEDE-EN100 Rarity: Super Rare |
-URLs extracted to check: 1|
-No Matches
+Card Name: Droll & Lock Bird
+!!!Match URL FOUND - Prices Updated!!!
 ---------------------------------------------------------
 Card Name: Eldlich the Golden Lord
-Searching For Code: LART-EN066 Rarity: Ultra Rare |
-URLs extracted to check: 18|
-No Matches
+NOT a RA02 set card - Skip
 ---------------------------------------------------------
-[[[SetsDB.JSON Created]]]
+Card Name: Fantastical Dragon Phantazmay
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Fantastical Dragon Phantazmay
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Fantastical Dragon Phantazmay
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Fantastical Dragon Phantazmay
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Fantastical Dragon Phantazmay
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Fantastical Dragon Phantazmay
+Something fail, next!
+---------------------------------------------------------
+Card Name: Future Silence
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Gadget Trio
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Gandora-G the Dragon of Destruction
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ghost Mourner & Moonlit Chill
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ghost Mourner & Moonlit Chill
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ghost Mourner & Moonlit Chill
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ghost Mourner & Moonlit Chill
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ghost Mourner & Moonlit Chill
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ghost Mourner & Moonlit Chill
+Something fail, next!
+---------------------------------------------------------
+Card Name: Ghost Ogre & Snow Rabbit
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ghost Ogre & Snow Rabbit
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ghost Ogre & Snow Rabbit
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ghost Ogre & Snow Rabbit
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ghost Ogre & Snow Rabbit
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ghost Ogre & Snow Rabbit
+Something fail, next!
+---------------------------------------------------------
+Card Name: Gold Pride - Eradicator
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: I:P Masquerena
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: I:P Masquerena
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: I:P Masquerena
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: I:P Masquerena
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: I:P Masquerena
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: I:P Masquerena
+Something fail, next!
+---------------------------------------------------------
+Card Name: Lightsworn Dragonling
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Minerva, the Athenian Lightsworn
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Nightmare Apprentice
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Nightmare Throne
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Number 38: Hope Harbinger Dragon Titanic Galaxy
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Number 38: Hope Harbinger Dragon Titanic Galaxy
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Number 38: Hope Harbinger Dragon Titanic Galaxy
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Number 38: Hope Harbinger Dragon Titanic Galaxy
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Number 38: Hope Harbinger Dragon Titanic Galaxy
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Number 38: Hope Harbinger Dragon Titanic Galaxy
+Something fail, next!
+---------------------------------------------------------
+Card Name: Number 60: Dugares the Timeless
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Number 60: Dugares the Timeless
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Number 60: Dugares the Timeless
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Number 60: Dugares the Timeless
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Number 60: Dugares the Timeless
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Number 60: Dugares the Timeless
+Something fail, next!
+---------------------------------------------------------
+Card Name: Pendulum Witch
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ragnaraika Bloom
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ragnaraika Stag Sovereign
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ragnaraika the Evil Seed
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Refrain the Melodious Songstress
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Rescue Cat
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Saffira, Divine Dragon of the Voiceless Voice
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Selettrice Vaalmonica
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Shining Sarcophagus
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Silent Magician Zero
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Silent Magician Zero
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Silent Magician Zero
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Silent Swordsman Zero
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Snake-Eyes Diabellstar
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Supreme King Z-ARC - Synchro Universe
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Ties That Bind
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Varudras, the Final Bringer of the End Times
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Veidos the Dragon of Endless Darkness
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Vouiburial, the Dragon Undertaker
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Wake Up Centur-Ion!
+NOT a RA02 set card - Skip
+---------------------------------------------------------
+Card Name: Xyz Encore
+!!!Match URL FOUND - Prices Updated!!!
+---------------------------------------------------------
 [[[CardDB.JSON Created]]]
-New Mastercards Found: 100
-Mastercards with new SetCards Found: 2
 ----------------------------------
-Cards that failed Prodeck Manual Search: 1
-Cards that TCG URL WERE NOT found from Prodeck: 31
-----------------------------------
-Execution Time for the WHOLE script was: 00:42:53.5252712
+Execution Time for the WHOLE script was: 00:00:49.7802869
