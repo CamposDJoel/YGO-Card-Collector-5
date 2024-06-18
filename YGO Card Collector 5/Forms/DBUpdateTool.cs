@@ -996,21 +996,26 @@ namespace YGO_Card_Collector_5
         {
             SoundServer.PlaySoundEffect(SoundEffect.Click2);
             int index = listMissingTCGStep2.SelectedIndex;
-            SetCard ThisSetCard = SetCardsWithMissingTCG[index];
+            string cardname = listMissingTCGStep2.Text;
 
-
-            if (ThisSetCard.TCGPlayerURLIsMissing())
+            if (cardname != "No Setcards missing TCG Player URLs")
             {
-                //Diplay the override submenu
-                GroupUnavailableTCGOverride.Visible = true;
+                SetCard ThisSetCard = SetCardsWithMissingTCG[index];
 
-                txtTCGURL3.Text = ThisSetCard.TCGPlayerURL;
-                checkTCGEnableOverride3.Checked = false;
-            }
-            else
-            {
-                GroupUnavailableTCGOverride.Visible = false;
-            }
+
+                if (ThisSetCard.TCGPlayerURLIsMissing())
+                {
+                    //Diplay the override submenu
+                    GroupUnavailableTCGOverride.Visible = true;
+
+                    txtTCGURL3.Text = ThisSetCard.TCGPlayerURL;
+                    checkTCGEnableOverride3.Checked = false;
+                }
+                else
+                {
+                    GroupUnavailableTCGOverride.Visible = false;
+                }
+            }         
         }
         private void checkPasscodeEnableOverride3_CheckedChanged(object sender, EventArgs e)
         {

@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Documents\\GitHub\\YGO-Card-Collector-5\\YGO Card Collector 5\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C253E3F4-09AF-48C2-9A08-9F20D4766B66}|YGO Card Collector 5.csproj|d:\\documents\\github\\ygo-card-collector-5\\ygo card collector 5\\forms\\dbupdatetool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C253E3F4-09AF-48C2-9A08-9F20D4766B66}|YGO Card Collector 5.csproj|solutionrelative:forms\\dbupdatetool.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DBUpdateTool.cs",
+              "DocumentMoniker": "D:\\Documents\\GitHub\\YGO-Card-Collector-5\\YGO Card Collector 5\\Forms\\DBUpdateTool.cs",
+              "RelativeDocumentMoniker": "Forms\\DBUpdateTool.cs",
+              "ToolTip": "D:\\Documents\\GitHub\\YGO-Card-Collector-5\\YGO Card Collector 5\\Forms\\DBUpdateTool.cs",
+              "RelativeToolTip": "Forms\\DBUpdateTool.cs",
+              "ViewState": "AQIAALoCAAAAAAAAAAAlwOgDAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-18T16:54:44.899Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
