@@ -1475,8 +1475,8 @@ namespace YGO_Card_Collector_5
             LogSB = new StringBuilder();
             LogIt("Starting Prodeck/TCG Searches retry...");
             lblJobStep2.Text = "JOB 1/2: Search Prodeck URLs";
-            BarProgressStep2.Value = 0;
-            BarProgressStep2.Maximum = MasterCardsWithMissingProdeck.Count;
+            //BarProgressStep2.Value = 0;
+            //BarProgressStep2.Maximum = MasterCardsWithMissingProdeck.Count;
             Driver.ClearLogs();
             var Masterwatch = new Stopwatch();
             Masterwatch.Start();
@@ -1498,12 +1498,14 @@ namespace YGO_Card_Collector_5
                 //Save a ref to the Master Card for quick access/clean code
                 MasterCard ThisMasterCard = Database.GetCard(CardName);
 
-                if (ThisSetCard.Code.StartsWith("RA01") && ThisSetCard.Rarity == "Platinum Secret Rare")
-                {                   
-                    //https://store.tcgplayer.com/yugioh/speed-duel-tournament-pack-7/metal-reflect-slime?partner=YGOPRODeck&utm_campaign=affiliate&utm_medium=card-database-set-prices&utm_source=YGOPRODeck
+                if (ThisSetCard.Code.StartsWith("RA02") && ThisSetCard.Rarity == "Quarter Century Secret Rare")
+                {
+                    //https://www.tcgplayer.com/product/551153/yugioh-25th-anniversary-rarity-collection-ii-accesscode-talker-platinum-secret-rare?page=1&Language=English
                     string name = ThisMasterCard.Name;
                     name = name.Replace(" ", "-");
-                    string url = string.Format("https://store.tcgplayer.com/yugioh/25th-anniversary-rarity-collection/{0}-secret-rare?partner=YGOPRODeck&utm_campaign=affiliate&utm_medium=card-database-set-prices&utm_source=YGOPRODeck", name);
+                    name = name.Replace(",", "");
+                    name = name.Replace("&", "and");
+                    string url = string.Format("https://store.tcgplayer.com/yugioh/25th-anniversary-rarity-collection-ii/{0}-quarter-century-secret-rare?partner=YGOPRODeck&utm_campaign=affiliate&utm_medium=card-database-set-prices&utm_source=YGOPRODeck", name);
                     try
                     {
                         Driver.GoToURL(url);
@@ -1512,7 +1514,8 @@ namespace YGO_Card_Collector_5
                         string CodeInPage = TCGCardInfoPage.GetCode();
                         string RarityInPage = TCGCardInfoPage.GetRarity();
 
-                        if (ThisSetCard.Code == CodeInPage && ThisSetCard.Rarity == RarityInPage)
+                        if(ThisSetCard.Code == CodeInPage && ThisSetCard.Rarity == RarityInPage)
+                        //if (ThisSetCard.Code == CodeInPage && "Prismatic Collector's Rare" == RarityInPage)
                         {
                             //Save the URL and Update prices
                             ThisSetCard.TCGPlayerURL = url;
@@ -1525,7 +1528,7 @@ namespace YGO_Card_Collector_5
                             Database.SaveDatabaseInJSON();
                         }
                     }
-                    catch (Exception) 
+                    catch (Exception)
                     {
                         LogIt("Something fail, next!");
                     }
@@ -1591,7 +1594,7 @@ namespace YGO_Card_Collector_5
                 }
                 else
                 {
-                    LogIt("NOT a BP01 set card - Skip");
+                    LogIt("NOT a RA02 set card - Skip");
                 }
 
                 LogIt("---------------------------------------------------------");

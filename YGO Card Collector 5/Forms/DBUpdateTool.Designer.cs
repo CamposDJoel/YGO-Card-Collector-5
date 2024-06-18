@@ -266,7 +266,6 @@
             this.btntestupdate.TabIndex = 6;
             this.btntestupdate.Text = "test";
             this.btntestupdate.UseVisualStyleBackColor = false;
-            this.btntestupdate.Visible = false;
             this.btntestupdate.Click += new System.EventHandler(this.btntestupdate_Click);
             // 
             // PanelOverride
