@@ -243,14 +243,34 @@ namespace YGO_Card_Collector_5
                 lblImportOutputlabel.Visible = true;
                 PanelLogsImport.Visible = true;
                 LogSB = new StringBuilder();
-                LogIt("Opening URL and Verifying that is valid...");
+                LogIt("Verifying ChromeDriver...");
                 Driver.ClearLogs();
                 var Masterwatch = new Stopwatch();
                 Masterwatch.Start();
-                Driver.OpenBrowser();
+
+                try
+                {
+                    Driver.OpenBrowser();
+                }
+                catch (Exception es)
+                {
+                    LogIt("ChromeDriver need to be updated...");
+                    LogIt("Exception Message: " + es.Message);
+                    Masterwatch.Stop();
+                    Driver.WriteLogsFile();
+                    SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
+
+                    btnBackToMainMenu.Visible = true;
+                    panelNewDeck.Visible = true;
+                    PanelDeckList.Visible = true;
+                    btnImport.Visible = true;
+                    btnChromeDriverGo.Visible = true;
+                    return;
+                }
                 #endregion
 
                 #region Step B: Validate URL routes to a deck Page
+                LogIt("Opening URL and Verifying that is valid...");
                 Driver.GoToURL(input);
 
                 try
@@ -367,6 +387,17 @@ namespace YGO_Card_Collector_5
                 Driver.AddToFullLog(message);
                 lblLogImport.Text = ">>" + LogSB.ToString();
             }
+        }
+        private void btnChromeDriverGo_Click(object sender, EventArgs e)
+        {
+            Tools.LaunchURLIntoBrowser("https://googlechromelabs.github.io/chrome-for-testing/");
+            btnChromeDriverGo.Visible = false;
+        }
+        private void btnImportHelp_Click(object sender, EventArgs e)
+        {
+            Hide();
+            DeckImportHelp CH = new DeckImportHelp(this);
+            CH.Show();
         }
     }
 }

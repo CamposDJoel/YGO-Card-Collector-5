@@ -66,6 +66,8 @@
             this.txtInputKonamiURL = new System.Windows.Forms.TextBox();
             this.btnImport = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.btnChromeDriverGo = new System.Windows.Forms.Button();
+            this.btnImportHelp = new System.Windows.Forms.Button();
             this.PanelDeckList.SuspendLayout();
             this.GroupDeckInfo.SuspendLayout();
             this.panelNewDeck.SuspendLayout();
@@ -432,6 +434,7 @@
             // 
             this.PanelLogsImport.AutoScroll = true;
             this.PanelLogsImport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PanelLogsImport.Controls.Add(this.btnChromeDriverGo);
             this.PanelLogsImport.Controls.Add(this.lblLogImport);
             this.PanelLogsImport.Location = new System.Drawing.Point(3, 196);
             this.PanelLogsImport.Name = "PanelLogsImport";
@@ -501,6 +504,34 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Import from Konami DB";
             // 
+            // btnChromeDriverGo
+            // 
+            this.btnChromeDriverGo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnChromeDriverGo.Enabled = false;
+            this.btnChromeDriverGo.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChromeDriverGo.ForeColor = System.Drawing.Color.Black;
+            this.btnChromeDriverGo.Location = new System.Drawing.Point(14, 180);
+            this.btnChromeDriverGo.Name = "btnChromeDriverGo";
+            this.btnChromeDriverGo.Size = new System.Drawing.Size(194, 23);
+            this.btnChromeDriverGo.TabIndex = 18;
+            this.btnChromeDriverGo.Text = "ChromeDriver Download Page";
+            this.btnChromeDriverGo.UseVisualStyleBackColor = false;
+            this.btnChromeDriverGo.Visible = false;
+            this.btnChromeDriverGo.Click += new System.EventHandler(this.btnChromeDriverGo_Click);
+            // 
+            // btnImportHelp
+            // 
+            this.btnImportHelp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnImportHelp.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImportHelp.ForeColor = System.Drawing.Color.White;
+            this.btnImportHelp.Location = new System.Drawing.Point(688, 19);
+            this.btnImportHelp.Name = "btnImportHelp";
+            this.btnImportHelp.Size = new System.Drawing.Size(114, 25);
+            this.btnImportHelp.TabIndex = 291;
+            this.btnImportHelp.Text = "Import Tool Help";
+            this.btnImportHelp.UseVisualStyleBackColor = false;
+            this.btnImportHelp.Click += new System.EventHandler(this.btnImportHelp_Click);
+            // 
             // DeckSelectorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -508,6 +539,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(804, 461);
+            this.Controls.Add(this.btnImportHelp);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelNewDeck);
             this.Controls.Add(this.btnBackToMainMenu);
@@ -571,5 +603,7 @@
         private System.Windows.Forms.Label lblImportOutputlabel;
         private System.Windows.Forms.Panel PanelLogsImport;
         private System.Windows.Forms.Label lblLogImport;
+        private System.Windows.Forms.Button btnChromeDriverGo;
+        private System.Windows.Forms.Button btnImportHelp;
     }
 }
