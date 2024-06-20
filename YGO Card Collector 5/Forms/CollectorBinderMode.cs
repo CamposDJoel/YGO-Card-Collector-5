@@ -762,7 +762,7 @@ namespace YGO_Card_Collector_5
                 LoadPage();
                 _CurrentCardImageIndexSelected = 0;
                 InitializeSelectedCard(_CurrentCardImageIndexSelected);
-            }          
+            }
         }
         private void GoNextPage()
         {
@@ -777,7 +777,7 @@ namespace YGO_Card_Collector_5
                 LoadPage();
                 _CurrentCardImageIndexSelected = 0;
                 InitializeSelectedCard(_CurrentCardImageIndexSelected);
-            }              
+            }
         }
         private int GetLastPage()
         {
@@ -1283,7 +1283,7 @@ namespace YGO_Card_Collector_5
                 InitializeSelectedCard(_CurrentCardImageIndexSelected);
 
                 LoadPage();
-            }          
+            }
         }
         #endregion       
 
@@ -1319,7 +1319,7 @@ namespace YGO_Card_Collector_5
                 if (_KeyInputEnable)
                 {
                     _KeyInputEnable = false;
-                    if (_CurrentCardImageIndexSelected > 6)
+                    if (_CurrentCardImageIndexSelected > 5)
                     {
                         //Do nothing it is the top row
                         SoundServer.PlaySoundEffect(SoundEffect.InvalidClick);
