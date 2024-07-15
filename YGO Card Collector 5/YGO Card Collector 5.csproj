@@ -62,6 +62,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DeckImportHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeckImportHelp.Designer.cs">
+      <DependentUpon>DeckImportHelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CollectorsHelp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +179,9 @@
       <DependentUpon>SettingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Utilities\Tools.cs" />
+    <EmbeddedResource Include="DeckImportHelp.resx">
+      <DependentUpon>DeckImportHelp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\CollectorsHelp.resx">
       <DependentUpon>CollectorsHelp.cs</DependentUpon>
     </EmbeddedResource>

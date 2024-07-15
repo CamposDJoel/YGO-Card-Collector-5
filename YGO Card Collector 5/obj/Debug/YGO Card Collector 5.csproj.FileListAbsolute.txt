@@ -64,3 +64,4 @@ D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card.5CAFD347.Up2Date
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.exe
 D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO Card Collector 5.pdb
+D:\Documents\GitHub\YGO-Card-Collector-5\YGO Card Collector 5\obj\Debug\YGO_Card_Collector_5.DeckImportHelp.resources
