@@ -2468,7 +2468,6 @@ TagRecord|Number 80: Rhapsody in Berserk|False|True|False|False
 TagRecord|Ryu-Kishin Powered|True|False|False|False
 TagRecord|D/D/D Destiny King Zero Laplace|False|False|True|False
 TagRecord|Wandering King Wildwind|False|False|True|False
-TagRecord|Barox|False|False|False|True
 TagRecord|Blood Mefist|False|False|False|True
 TagRecord|Dark Diviner|False|False|False|True
 TagRecord|Fabled Valkyrus|False|False|False|True
@@ -2561,9 +2560,7 @@ TagRecord|Performapal Corn|False|False|False|True
 TagRecord|Phantasos, the Dream Mirror Foe|False|False|False|True
 TagRecord|Phantasos, the Dream Mirror Friend|False|False|False|True
 TagRecord|Rampaging Rhynos|False|False|False|True
-TagRecord|Scrap Goblin|False|False|False|True
 TagRecord|Seal, Strategist Fur Hire|False|False|False|True
-TagRecord|Sengenjin|False|False|False|True
 TagRecord|Shiba-Warrior Taro|False|False|False|True
 TagRecord|Sky Cavalry Centaurea|False|False|False|True
 TagRecord|Vola-Chemicritter Methydraco|False|False|False|True
@@ -3217,7 +3214,6 @@ TagRecord|Geargiano|True|False|False|False
 TagRecord|Geargiano Mk-II|True|False|False|False
 TagRecord|Geargiarsenal|True|False|False|False
 TagRecord|Gearspring Spirit|False|False|False|True
-TagRecord|Genex Ally Axel|False|False|False|True
 TagRecord|Genex Ally Bellflame|False|True|False|False
 TagRecord|Genex Ally Birdman|True|False|False|False
 TagRecord|Genex Ally Changer|False|True|False|False
@@ -3698,7 +3694,6 @@ TagRecord|Aromage Cananga|True|False|False|False
 TagRecord|Aromage Jasmine|False|True|False|False
 TagRecord|Aromage Rosemary|False|True|False|False
 TagRecord|Aromaseraphy Angelica|False|True|False|False
-TagRecord|Aromaseraphy Jasmine|False|False|False|True
 TagRecord|Aromaseraphy Sweet Marjoram|False|True|False|False
 TagRecord|Baobaboon|True|False|False|False
 TagRecord|Battlecruiser Dianthus|False|True|False|False
@@ -3947,8 +3942,6 @@ TagRecord|Ritual Beast Tamer Lara|False|False|False|True
 TagRecord|Ritual Beast Tamer Wen|False|False|False|True
 TagRecord|Ritual Beast Tamer Zeframpilica|True|False|False|False
 TagRecord|Ritual Beast Tamer Zefrawendi|False|False|False|True
-TagRecord|Ritual Beast Ulti-Gaiapelio|False|False|False|True
-TagRecord|Ritual Beast Ulti-Kimunfalcos|False|False|False|True
 TagRecord|Serene Psychic Witch|False|False|False|True
 TagRecord|S-Force Professor DiGamma|True|False|False|False
 TagRecord|Silent Psychic Wizard|False|True|False|False
@@ -6090,7 +6083,6 @@ TagRecord|Shiranui Swordmaster|False|True|False|False
 TagRecord|Shiranui Swordsaga|False|True|False|False
 TagRecord|Shutendoji|True|False|False|False
 TagRecord|Skelesaurus|False|True|False|False
-TagRecord|Skelgon|False|False|False|True
 TagRecord|Skull Conductor|False|True|False|False
 TagRecord|Skull Flame|False|False|False|True
 TagRecord|Skull Servant|True|False|False|False
@@ -10033,3 +10025,11 @@ TagRecord|Salamandra|True|False|False|False
 TagRecord|Roulette Spider|True|False|False|False
 TagRecord|Dark Valkyria|True|False|False|False
 TagRecord|Phoenix Gearfried|True|False|False|False
+TagRecord|Scrap Goblin|False|True|False|False
+TagRecord|Barox|False|False|True|False
+TagRecord|Sengenjin|False|False|True|False
+TagRecord|Skelgon|False|False|True|False
+TagRecord|Ritual Beast Ulti-Gaiapelio|False|False|True|False
+TagRecord|Genex Ally Axel|False|False|True|False
+TagRecord|Ritual Beast Ulti-Kimunfalcos|False|False|True|False
+TagRecord|Aromaseraphy Jasmine|False|False|True|False
