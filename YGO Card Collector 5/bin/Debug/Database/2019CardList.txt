@@ -1,4 +1,4 @@
-9986
+10138
 "A" Cell Breeding Device
 "A" Cell Incubator
 "A" Cell Recombination Device
@@ -9985,3 +9985,155 @@ ZW - Sylphid Wing
 ZW - Tornado Bringer
 ZW - Ultimate Shield
 ZW - Unicorn Spear
+Fallen of the Tistina
+Gunkan Suship Ikura-class Dreadnought
+Gunkan Suship Shari
+Returned of the Tistina
+Master of Ham
+Principug
+Royal Rhino with Deceitful Dice
+Pitknight Filly
+Animadorned Archosaur
+Transcendosaurus Exaraptor
+Armed Dragon LV10 White
+Aiza the Dragoness of Deranged Devotion
+Baby Mudragon
+Converging Wills Dragon
+Gaiarmor Dragonshell
+Mikazukinoyaiba, the Moon Fang Dragon
+Sangenpai Bident Dragion
+Stardust Trail
+Supreme King Dragon Lightwurm
+Vagnawa the Moon-Eating Dragon
+Allvain the Essence of Vanity
+Aeropixthree
+Bacha the Melodious Maestra
+Couplet the Melodious Songstress
+Gem-Knight Lady Rose Diamond
+Konohanasakuya
+Origami Goddess
+Starring Knight
+Tarai
+Dispatchparazzi
+Earthbound Servant Geo Gremlina
+Gruesome Grave Squirmer
+Goblin's Crazy Beast
+Mementotlan Ghattic
+Phantasmal Summoning Beast
+Weiss, Lightsworn Archfiend
+Fish Lamp
+Jongleur-Ghoul Illusionist
+Master Tao the Chanter
+Talons of Shurilane
+UFOLight
+Asset Mountis
+Rose Papillon
+Ancient Gear Tanker
+Division
+Dyna Base
+Dyna Tank
+Electro Blaster
+Ragnaraika Skeletal Soldier
+Gaia Prominence, the Fierce Force
+Magmacho Dragon
+Cosmic Slicer Zer'oll
+Alien Stealthbuster
+I.A.S. -Invasive Alien Species-
+Ragnaraika Armored Lizard
+Chronomaly Acambaro Figures
+Flint Cragger
+Fossil Dragon Skullgios
+Fossil Machine Skull Buggy
+Fossil Warrior Skull Bone
+Fossil Warrior Skull Knight
+Shell Knight
+Weathering Soldier
+Cursed Bride Doll
+Glacier Aqua Madoor
+Saambell the Star Bonder
+Wattkyuki
+Wattuna
+Clavkiys, the Magikey Skyblaster
+Battle Shogun of the Six Samurai
+Dark Guardian
+E Stranger Big Bang
+Gen the Diamond Tiger
+Goblin Biker Boom Mach
+Ken the Warrior Dragon
+Ra'ten, the Heavenly General
+Toy Soldier
+Blackwing - Vata the Emblem of Wandering
+Conbirdable
+Gusto Vedir
+Raidraptor - Noir Lanius
+Shinobaron Shade Peacock
+Shinobaroness Shade Peacock
+Dragonlark Pairen
+Mirrorjade the Iceblade Dragon
+Doombearer Psychopompos
+Arcana Reading
+Branded Bond
+Dimer Synthesis
+EN Shuffle
+Extinguishing the Ashened
+Margin Trading
+Majestic Absorption
+Red Arrows
+Time Stream
+Vaalmonica Disarmonia
+Xyz Force
+Xyz Entrust
+Ancient Gear Advance
+Chronomaly Temple - Trilithon
+Card Scanner
+Lil-la Rap
+Mature Chronicle
+Pendulum Evolution
+Raidraptor - Roost
+The Immortal Bushi Mourns the Mortal Body
+Triamid Loading
+White Reincarnation
+Wattkingdom
+Generation Next
+Concours de Cuisine (Culinary Confrontation)
+Ogdoadic Daybreak
+Realm Eulogy
+Sinful Spoils of Doom - Rciela
+Play of the Tistina
+Wattsychic Fighting Porter
+Sweet Roommaid
+Spright Gamma Burst
+Mementotlan Fusion
+Earthbound Fusion
+Ages of Stars and Frost
+Swallow's Cowrie
+Angelica's Angelic Ring
+Despia, Theater of the Branded
+Stars Align Above the Shrine
+Prayers of the Voiceless Voice
+Alpha Summon
+Amaze Attraction Viking Vortex
+Chronomaly Esperanza Glyph
+D.D.D. - Different Dimension Derby
+Discordance of the Tistina
+Full-Armored Xyz
+Jar of Generosity
+Loka Samsara
+Magikey Duo
+Miracle of the Supreme King
+Monster Assortment
+Sharv Sarga
+Sinful Spoils of Slumber - Morrian
+Soul of the Supreme Celestial King
+Startling Stare of the Snake-Eyes
+Vanquish Soul Snow Devil
+Ashened for Eternity
+Beast King Unleashed
+Escapegoat
+Eternal Favorite
+Nemleria Repeter
+Radiance of the Voiceless Voice
+Synchro Panic
+Beetrooper Fly & Sting
+Magikey Unlocking
+T.G. Close

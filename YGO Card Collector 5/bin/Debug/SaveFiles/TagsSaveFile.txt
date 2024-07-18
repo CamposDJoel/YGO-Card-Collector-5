@@ -1,4 +1,4 @@
-10034
+10141
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -9923,42 +9923,6 @@ TagRecord|Draining Shield|True|False|False|False
 TagRecord|No Entry!!|True|False|False|False
 TagRecord|Fighting Spirit|True|False|False|False
 TagRecord|Skill Successor|True|False|False|False
-TagRecord|Gunkan Suship Shari|True|False|False|False
-TagRecord|Clavkiys, the Magikey Skyblaster|True|False|False|False
-TagRecord|Stardust Trail|True|False|False|False
-TagRecord|Chronomaly Acambaro Figures|True|False|False|False
-TagRecord|Converging Wills Dragon|True|False|False|False
-TagRecord|Gusto Vedir|True|False|False|False
-TagRecord|Alien Stealthbuster|True|False|False|False
-TagRecord|Glacier Aqua Madoor|True|False|False|False
-TagRecord|Konohanasakuya|True|False|False|False
-TagRecord|Doombearer Psychopompos|True|False|False|False
-TagRecord|Saambell the Star Bonder|True|False|False|False
-TagRecord|Aeropixthree|True|False|False|False
-TagRecord|Allvain the Essence of Vanity|True|False|False|False
-TagRecord|Gaiarmor Dragonshell|True|False|False|False
-TagRecord|Gunkan Suship Ikura-class Dreadnought|True|False|False|False
-TagRecord|Dragonlark Pairen|True|False|False|False
-TagRecord|Cosmic Slicer Zer'oll|True|False|False|False
-TagRecord|Dispatchparazzi|True|False|False|False
-TagRecord|Majestic Absorption|True|False|False|False
-TagRecord|Despia, Theater of the Branded|True|False|False|False
-TagRecord|Branded Bond|True|False|False|False
-TagRecord|Chronomaly Temple - Trilithon|True|False|False|False
-TagRecord|Triamid Loading|True|False|False|False
-TagRecord|Dimer Synthesis|True|False|False|False
-TagRecord|Margin Trading|True|False|False|False
-TagRecord|Magikey Duo|True|False|False|False
-TagRecord|Magikey Unlocking|True|False|False|False
-TagRecord|Chronomaly Esperanza Glyph|True|False|False|False
-TagRecord|Amaze Attraction Viking Vortex|True|False|False|False
-TagRecord|Monster Assortment|True|False|False|False
-TagRecord|Beast King Unleashed|True|False|False|False
-TagRecord|Jar of Generosity|True|False|False|False
-TagRecord|Baby Mudragon|True|False|False|False
-TagRecord|Ra'ten, the Heavenly General|True|False|False|False
-TagRecord|D.D.D. - Different Dimension Derby|True|False|False|False
-TagRecord|Beetrooper Fly & Sting|True|False|False|False
 TagRecord|Gouki Finishing Move|True|False|False|False
 TagRecord|Jurassic World|True|False|False|False
 TagRecord|Paleozoic Canadia|True|False|False|False
@@ -10000,22 +9964,13 @@ TagRecord|Fossil Tusker|True|False|False|False
 TagRecord|Medusa Worm|True|False|False|False
 TagRecord|Pot of Avarice|True|False|False|False
 TagRecord|Re-Fusion|True|False|False|False
-TagRecord|EN Shuffle|True|False|False|False
 TagRecord|NEXT|True|False|False|False
 TagRecord|Elemental HERO Grand Neos|True|False|False|False
 TagRecord|Elemental HERO Storm Neos|True|False|False|False
 TagRecord|Arcana Force XXI - The World|True|False|False|False
-TagRecord|Arcana Reading|True|False|False|False
-TagRecord|Animadorned Archosaur|True|False|False|False
 TagRecord|Survival Instinct|True|False|False|False
-TagRecord|Dyna Tank|True|False|False|False
 TagRecord|Gaia Plate the Earth Giant|True|False|False|False
-TagRecord|Flint Cragger|True|False|False|False
-TagRecord|Shell Knight|True|False|False|False
-TagRecord|Weathering Soldier|True|False|False|False
-TagRecord|Time Stream|True|False|False|False
 TagRecord|Release from Stone|True|False|False|False
-TagRecord|Armed Dragon LV10 White|True|False|False|False
 TagRecord|Alligator's Sword|True|False|False|False
 TagRecord|Alligator's Sword Dragon|True|False|False|False
 TagRecord|Silent Doom|True|False|False|False
@@ -10033,3 +9988,155 @@ TagRecord|Ritual Beast Ulti-Gaiapelio|False|False|True|False
 TagRecord|Genex Ally Axel|False|False|True|False
 TagRecord|Ritual Beast Ulti-Kimunfalcos|False|False|True|False
 TagRecord|Aromaseraphy Jasmine|False|False|True|False
+TagRecord|Fallen of the Tistina|True|False|False|False
+TagRecord|Gunkan Suship Ikura-class Dreadnought|True|False|False|False
+TagRecord|Gunkan Suship Shari|True|False|False|False
+TagRecord|Returned of the Tistina|True|False|False|False
+TagRecord|Master of Ham|True|False|False|False
+TagRecord|Principug|True|False|False|False
+TagRecord|Royal Rhino with Deceitful Dice|True|False|False|False
+TagRecord|Pitknight Filly|True|False|False|False
+TagRecord|Animadorned Archosaur|True|False|False|False
+TagRecord|Transcendosaurus Exaraptor|True|False|False|False
+TagRecord|Armed Dragon LV10 White|True|False|False|False
+TagRecord|Aiza the Dragoness of Deranged Devotion|True|False|False|False
+TagRecord|Baby Mudragon|True|False|False|False
+TagRecord|Converging Wills Dragon|True|False|False|False
+TagRecord|Gaiarmor Dragonshell|True|False|False|False
+TagRecord|Mikazukinoyaiba, the Moon Fang Dragon|True|False|False|False
+TagRecord|Sangenpai Bident Dragion|True|False|False|False
+TagRecord|Stardust Trail|True|False|False|False
+TagRecord|Supreme King Dragon Lightwurm|True|False|False|False
+TagRecord|Vagnawa the Moon-Eating Dragon|True|False|False|False
+TagRecord|Allvain the Essence of Vanity|True|False|False|False
+TagRecord|Aeropixthree|True|False|False|False
+TagRecord|Bacha the Melodious Maestra|True|False|False|False
+TagRecord|Couplet the Melodious Songstress|True|False|False|False
+TagRecord|Gem-Knight Lady Rose Diamond|True|False|False|False
+TagRecord|Konohanasakuya|True|False|False|False
+TagRecord|Origami Goddess|True|False|False|False
+TagRecord|Starring Knight|True|False|False|False
+TagRecord|Tarai|True|False|False|False
+TagRecord|Dispatchparazzi|True|False|False|False
+TagRecord|Earthbound Servant Geo Gremlina|True|False|False|False
+TagRecord|Gruesome Grave Squirmer|True|False|False|False
+TagRecord|Goblin's Crazy Beast|True|False|False|False
+TagRecord|Mementotlan Ghattic|True|False|False|False
+TagRecord|Phantasmal Summoning Beast|True|False|False|False
+TagRecord|Weiss, Lightsworn Archfiend|True|False|False|False
+TagRecord|Fish Lamp|True|False|False|False
+TagRecord|Jongleur-Ghoul Illusionist|True|False|False|False
+TagRecord|Master Tao the Chanter|True|False|False|False
+TagRecord|Talons of Shurilane|True|False|False|False
+TagRecord|UFOLight|True|False|False|False
+TagRecord|Asset Mountis|True|False|False|False
+TagRecord|Rose Papillon|True|False|False|False
+TagRecord|Ancient Gear Tanker|True|False|False|False
+TagRecord|Division|True|False|False|False
+TagRecord|Dyna Base|True|False|False|False
+TagRecord|Dyna Tank|True|False|False|False
+TagRecord|Electro Blaster|True|False|False|False
+TagRecord|Ragnaraika Skeletal Soldier|True|False|False|False
+TagRecord|Gaia Prominence, the Fierce Force|True|False|False|False
+TagRecord|Magmacho Dragon|True|False|False|False
+TagRecord|Cosmic Slicer Zer'oll|True|False|False|False
+TagRecord|Alien Stealthbuster|True|False|False|False
+TagRecord|I.A.S. -Invasive Alien Species-|True|False|False|False
+TagRecord|Ragnaraika Armored Lizard|True|False|False|False
+TagRecord|Chronomaly Acambaro Figures|True|False|False|False
+TagRecord|Flint Cragger|True|False|False|False
+TagRecord|Fossil Dragon Skullgios|True|False|False|False
+TagRecord|Fossil Machine Skull Buggy|True|False|False|False
+TagRecord|Fossil Warrior Skull Bone|True|False|False|False
+TagRecord|Fossil Warrior Skull Knight|True|False|False|False
+TagRecord|Shell Knight|True|False|False|False
+TagRecord|Weathering Soldier|True|False|False|False
+TagRecord|Cursed Bride Doll|True|False|False|False
+TagRecord|Glacier Aqua Madoor|True|False|False|False
+TagRecord|Saambell the Star Bonder|True|False|False|False
+TagRecord|Wattkyuki|True|False|False|False
+TagRecord|Wattuna|True|False|False|False
+TagRecord|Clavkiys, the Magikey Skyblaster|True|False|False|False
+TagRecord|Battle Shogun of the Six Samurai|True|False|False|False
+TagRecord|Dark Guardian|True|False|False|False
+TagRecord|E Stranger Big Bang|True|False|False|False
+TagRecord|Gen the Diamond Tiger|True|False|False|False
+TagRecord|Goblin Biker Boom Mach|True|False|False|False
+TagRecord|Ken the Warrior Dragon|True|False|False|False
+TagRecord|Ra'ten, the Heavenly General|True|False|False|False
+TagRecord|Toy Soldier|True|False|False|False
+TagRecord|Blackwing - Vata the Emblem of Wandering|True|False|False|False
+TagRecord|Conbirdable|True|False|False|False
+TagRecord|Gusto Vedir|True|False|False|False
+TagRecord|Raidraptor - Noir Lanius|True|False|False|False
+TagRecord|Shinobaron Shade Peacock|True|False|False|False
+TagRecord|Shinobaroness Shade Peacock|True|False|False|False
+TagRecord|Dragonlark Pairen|True|False|False|False
+TagRecord|Mirrorjade the Iceblade Dragon|True|False|False|False
+TagRecord|Doombearer Psychopompos|True|False|False|False
+TagRecord|Arcana Reading|True|False|False|False
+TagRecord|Branded Bond|True|False|False|False
+TagRecord|Dimer Synthesis|True|False|False|False
+TagRecord|EN Shuffle|True|False|False|False
+TagRecord|Extinguishing the Ashened|True|False|False|False
+TagRecord|Margin Trading|True|False|False|False
+TagRecord|Majestic Absorption|True|False|False|False
+TagRecord|Red Arrows|True|False|False|False
+TagRecord|Time Stream|True|False|False|False
+TagRecord|Vaalmonica Disarmonia|True|False|False|False
+TagRecord|Xyz Force|True|False|False|False
+TagRecord|Xyz Entrust|True|False|False|False
+TagRecord|Ancient Gear Advance|True|False|False|False
+TagRecord|Chronomaly Temple - Trilithon|True|False|False|False
+TagRecord|Card Scanner|True|False|False|False
+TagRecord|Lil-la Rap|True|False|False|False
+TagRecord|Mature Chronicle|True|False|False|False
+TagRecord|Pendulum Evolution|True|False|False|False
+TagRecord|Raidraptor - Roost|True|False|False|False
+TagRecord|The Immortal Bushi Mourns the Mortal Body|True|False|False|False
+TagRecord|Triamid Loading|True|False|False|False
+TagRecord|White Reincarnation|True|False|False|False
+TagRecord|Wattkingdom|True|False|False|False
+TagRecord|Generation Next|True|False|False|False
+TagRecord|Concours de Cuisine (Culinary Confrontation)|True|False|False|False
+TagRecord|Ogdoadic Daybreak|True|False|False|False
+TagRecord|Realm Eulogy|True|False|False|False
+TagRecord|Sinful Spoils of Doom - Rciela|True|False|False|False
+TagRecord|Play of the Tistina|True|False|False|False
+TagRecord|Wattsychic Fighting Porter|True|False|False|False
+TagRecord|Sweet Roommaid|True|False|False|False
+TagRecord|Spright Gamma Burst|True|False|False|False
+TagRecord|Mementotlan Fusion|True|False|False|False
+TagRecord|Earthbound Fusion|True|False|False|False
+TagRecord|Ages of Stars and Frost|True|False|False|False
+TagRecord|Swallow's Cowrie|True|False|False|False
+TagRecord|Angelica's Angelic Ring|True|False|False|False
+TagRecord|Despia, Theater of the Branded|True|False|False|False
+TagRecord|Stars Align Above the Shrine|True|False|False|False
+TagRecord|Prayers of the Voiceless Voice|True|False|False|False
+TagRecord|Alpha Summon|True|False|False|False
+TagRecord|Amaze Attraction Viking Vortex|True|False|False|False
+TagRecord|Chronomaly Esperanza Glyph|True|False|False|False
+TagRecord|D.D.D. - Different Dimension Derby|True|False|False|False
+TagRecord|Discordance of the Tistina|True|False|False|False
+TagRecord|Full-Armored Xyz|True|False|False|False
+TagRecord|Jar of Generosity|True|False|False|False
+TagRecord|Loka Samsara|True|False|False|False
+TagRecord|Magikey Duo|True|False|False|False
+TagRecord|Miracle of the Supreme King|True|False|False|False
+TagRecord|Monster Assortment|True|False|False|False
+TagRecord|Sharv Sarga|True|False|False|False
+TagRecord|Sinful Spoils of Slumber - Morrian|True|False|False|False
+TagRecord|Soul of the Supreme Celestial King|True|False|False|False
+TagRecord|Startling Stare of the Snake-Eyes|True|False|False|False
+TagRecord|Vanquish Soul Snow Devil|True|False|False|False
+TagRecord|Ashened for Eternity|True|False|False|False
+TagRecord|Beast King Unleashed|True|False|False|False
+TagRecord|Escapegoat|True|False|False|False
+TagRecord|Eternal Favorite|True|False|False|False
+TagRecord|Nemleria Repeter|True|False|False|False
+TagRecord|Radiance of the Voiceless Voice|True|False|False|False
+TagRecord|Synchro Panic|True|False|False|False
+TagRecord|Beetrooper Fly & Sting|True|False|False|False
+TagRecord|Magikey Unlocking|True|False|False|False
+TagRecord|T.G. Close|True|False|False|False

@@ -25,7 +25,7 @@ namespace YGO_Card_Collector_5
         public static Dictionary<string, SetCard> SetCardByKey = new Dictionary<string, SetCard>();
         public static List<SetCard> SetCards = new List<SetCard>();
         //Set Packs
-        public static Dictionary<string, SetPack> SetPackByName = new Dictionary<string, SetPack>();        
+        public static Dictionary<string, SetPack> SetPackByName = new Dictionary<string, SetPack>();
         public static List<SetPack> SetPacks = new List<SetPack>();
         //Missing URL lists
         public static List<string> CardsWithoutProdeckURL = new List<string>();
@@ -41,19 +41,19 @@ namespace YGO_Card_Collector_5
         #region Public Methods
         public static bool LoadDB(string DBType)
         {
-            if(!Initialized)
+            if (!Initialized)
             {
-                string jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\CardDB.json";               
+                string jsonFilePath = Directory.GetCurrentDirectory() + "\\Database\\CardDB.json";
                 string rawdata = File.ReadAllText(jsonFilePath);
 
                 //Attempt to deserialize the JSON. If it fail simply show error.
                 try
                 {
-                    if(DBType == "FULL")
+                    if (DBType == "FULL")
                     {
                         MasterCards = JsonConvert.DeserializeObject<List<MasterCard>>(rawdata);
                     }
-                    else if(DBType == "2019Custom")
+                    else if (DBType == "2019Custom")
                     {
                         Load2019CustomDB(rawdata);
                     }
@@ -61,7 +61,7 @@ namespace YGO_Card_Collector_5
                     {
                         LoadYearDB(rawdata, DBType);
                     }
-                    
+
                 }
                 catch (Exception)
                 {
@@ -184,7 +184,7 @@ namespace YGO_Card_Collector_5
                 string rawdata = File.ReadAllText(jsonFilePath);
                 SetsDB = JsonConvert.DeserializeObject<List<string>>(rawdata);
 
-                foreach(string set in SetsDB) 
+                foreach (string set in SetsDB)
                 {
                     //extract the set data
                     string[] tokens = set.Split('|');
@@ -302,11 +302,11 @@ namespace YGO_Card_Collector_5
                 SaveFileData.Add(line);
                 int cardCount = Convert.ToInt32(line);
 
-                for(int i = 0; i < cardCount; i++)
+                for (int i = 0; i < cardCount; i++)
                 {
                     line = SR_SaveFile.ReadLine();
                     SaveFileData.Add(line);
-                    if(SetCardByKey.ContainsKey(line))
+                    if (SetCardByKey.ContainsKey(line))
                     {
                         SetCard SetCardToMark = SetCardByKey[line];
                         SetCardToMark.FlipObtainedStatusNOUPDATE();
@@ -333,13 +333,29 @@ namespace YGO_Card_Collector_5
                     bool tag2 = Convert.ToBoolean(tokens[3]);
                     bool tag3 = Convert.ToBoolean(tokens[4]);
                     bool tag4 = Convert.ToBoolean(tokens[5]);
-                    if(MasterCardByName.ContainsKey(cardname)) 
+                    if (MasterCardByName.ContainsKey(cardname))
                     {
                         MasterCardByName[cardname].OverrideTagsFromSaveFile(tag1, tag2, tag3, tag4);
-                    }                   
+                    }
                 }
 
                 SR_SaveFile?.Close();
+
+                /* Test code to mark a bunch of card name with tags
+                StreamReader SR_SaveFile2 = new StreamReader(
+                Directory.GetCurrentDirectory() + "\\Database\\StarList.txt");
+                line = SR_SaveFile2.ReadLine();
+                int totalcount = Convert.ToInt32(line);
+                for (int i = 0; i < totalcount; i++)
+                {
+                    string cardname2 = SR_SaveFile2.ReadLine();
+                    if (MasterCardByName.ContainsKey(cardname2))
+                    {
+                        MasterCardByName[cardname2].OverrideTagsFromSaveFile(true, false, false, false);
+                        Database.UpdateTagsSaveFile(cardname2);
+                    }
+                }
+                SR_SaveFile2?.Close();*/
             }
             void LoadYearDB(string rawdata, string year)
             {
@@ -347,12 +363,12 @@ namespace YGO_Card_Collector_5
                 List<MasterCard> TMPDB = JsonConvert.DeserializeObject<List<MasterCard>>(rawdata);
 
                 //Step 2: Check all the mastercards and catch which Mastercards have Setcards release <= to the target year
-                foreach (MasterCard ThisMasterCard in TMPDB) 
+                foreach (MasterCard ThisMasterCard in TMPDB)
                 {
-                    List<SetCard> CardsToAdd = new List<SetCard>();  
-                    foreach (SetCard ThisSetCard in ThisMasterCard.SetCards) 
+                    List<SetCard> CardsToAdd = new List<SetCard>();
+                    foreach (SetCard ThisSetCard in ThisMasterCard.SetCards)
                     {
-                        if(ThisSetCard.WasReleasedBy(year)) 
+                        if (ThisSetCard.WasReleasedBy(year))
                         {
                             CardsToAdd.Add(ThisSetCard);
                         }
@@ -360,7 +376,7 @@ namespace YGO_Card_Collector_5
 
                     //Step 3: If any SetCard was added to the list, create a copy of the MasterCard Object
                     //Add only the extracted sets to it and add it to the MasterCardList
-                    if(CardsToAdd.Count > 0) 
+                    if (CardsToAdd.Count > 0)
                     {
                         //Add this card to the new DB
                         MasterCard ThisCopyMasterCard = ThisMasterCard.GetCopyWithoutSets();
@@ -407,7 +423,7 @@ namespace YGO_Card_Collector_5
         }
         public static void UpdateSaveFile(string cardData, bool markAsOwned)
         {
-            if(markAsOwned)
+            if (markAsOwned)
             {
                 SaveFileData.Add(cardData);
                 SaveFileData.RemoveAt(0);
@@ -433,7 +449,7 @@ namespace YGO_Card_Collector_5
         public static void UpdateTagsSaveFile(string cardName)
         {
             int index = -1;
-            for(int x = 0; x < TagsSaveFileData.Count; x++)
+            for (int x = 0; x < TagsSaveFileData.Count; x++)
             {
                 string record = TagsSaveFileData[x];
                 if (record.Contains(string.Format("|{0}|", cardName)))
@@ -444,17 +460,17 @@ namespace YGO_Card_Collector_5
             }
 
             bool[] tags = MasterCardByName[cardName].GetTags();
-            if(index != -1)
+            if (index != -1)
             {
                 //remove that record
                 TagsSaveFileData.RemoveAt(index);
-                
+
             }
 
             if (!MasterCardByName[cardName].HasNoTagMarked())
             {
                 //then add the record if the MasterCard HAS at least 1 tag marked.
-                TagsSaveFileData.Add(string.Format("TagRecord|{0}|{1}|{2}|{3}|{4}", cardName, tags[0], tags[1], tags[2], tags[3]));               
+                TagsSaveFileData.Add(string.Format("TagRecord|{0}|{1}|{2}|{3}|{4}", cardName, tags[0], tags[1], tags[2], tags[3]));
             }
 
             TagsSaveFileData.RemoveAt(0);
@@ -727,7 +743,7 @@ namespace YGO_Card_Collector_5
         public static List<MasterCard> GetCardListWithSearchTerm(string searchTerm)
         {
             List<MasterCard> matchList = new List<MasterCard>();
-            foreach(MasterCard ThisMasterCard in MasterCards) 
+            foreach (MasterCard ThisMasterCard in MasterCards)
             {
                 searchTerm = searchTerm.ToLower();
                 string cardname = ThisMasterCard.Name;
@@ -756,9 +772,9 @@ namespace YGO_Card_Collector_5
             List<SetCard> matchList = new List<SetCard>();
             foreach (MasterCard ThisMasterCard in MasterCards)
             {
-                foreach(SetCard thisSetCard in ThisMasterCard.SetCards) 
+                foreach (SetCard thisSetCard in ThisMasterCard.SetCards)
                 {
-                    if(thisSetCard.TCGPlayerURLIsMissing())
+                    if (thisSetCard.TCGPlayerURLIsMissing())
                     {
                         matchList.Add(thisSetCard);
                     }
@@ -771,9 +787,9 @@ namespace YGO_Card_Collector_5
             List<MasterCard> thisCardList = GroupCardListByGroupName[group];
 
             int count = 0;
-            foreach(MasterCard ThisMasterCard in thisCardList) 
+            foreach (MasterCard ThisMasterCard in thisCardList)
             {
-                if(ThisMasterCard.IsOwned())
+                if (ThisMasterCard.IsOwned())
                 {
                     count++;
                 }
@@ -784,11 +800,11 @@ namespace YGO_Card_Collector_5
         {
             List<string> resuls = new List<string>();
 
-            foreach(SetInfo setInfo in BoosterPacks)
+            foreach (SetInfo setInfo in BoosterPacks)
             {
-                if(setInfo.GetCode() == code) 
+                if (setInfo.GetCode() == code)
                 {
-                    resuls.Add(string.Format("Booster Pack: ({0}) {1}",setInfo.Year, setInfo.Name));
+                    resuls.Add(string.Format("Booster Pack: ({0}) {1}", setInfo.Year, setInfo.Name));
                 }
             }
             foreach (SetInfo setInfo in SpEditionBoxes)
@@ -881,9 +897,9 @@ namespace YGO_Card_Collector_5
         public static bool DeckWithNameExists(string name)
         {
             bool matchfound = false;
-            foreach(Deck thisDeck in Decks)
+            foreach (Deck thisDeck in Decks)
             {
-                if (thisDeck.Name == name) {  matchfound = true; break; } 
+                if (thisDeck.Name == name) { matchfound = true; break; }
             }
             return matchfound;
         }
@@ -935,13 +951,13 @@ namespace YGO_Card_Collector_5
                     else if (Group.Contains("Zombie")) { ZombieMonsters.Add(ThisMasterCard); }
                     //Subtypes
                     if (Group.Contains("Normal")) { Normal.Add(ThisMasterCard); }
-                    if (Group.Contains("Effect")) 
-                    { 
-                        if(!Group.Contains("Normal") && !Group.Contains("Fusion") && !Group.Contains("Ritual") && !Group.Contains("Synchro")
+                    if (Group.Contains("Effect"))
+                    {
+                        if (!Group.Contains("Normal") && !Group.Contains("Fusion") && !Group.Contains("Ritual") && !Group.Contains("Synchro")
                             && !Group.Contains("Xyz") && !Group.Contains("Pendulum") && !Group.Contains("Link"))
                         {
                             Effect.Add(ThisMasterCard);
-                        }                        
+                        }
                     }
                     if (Group.Contains("Fusion")) { Fusion.Add(ThisMasterCard); }
                     if (Group.Contains("Ritual")) { Ritual.Add(ThisMasterCard); }
@@ -955,11 +971,11 @@ namespace YGO_Card_Collector_5
                     if (Group.Contains("Toon")) { Toon.Add(ThisMasterCard); }
                     if (Group.Contains("Tuner")) { Tuner.Add(ThisMasterCard); }
                     if (Group.Contains("Union")) { Union.Add(ThisMasterCard); }
-                    if (Group.Contains("Gemini")) { Gemini.Add(ThisMasterCard); }                    
+                    if (Group.Contains("Gemini")) { Gemini.Add(ThisMasterCard); }
                     break;
             }
 
-            switch(Attribute)
+            switch (Attribute)
             {
                 case "LIGHT": Light.Add(ThisMasterCard); break;
                 case "DARK": Dark.Add(ThisMasterCard); break;
