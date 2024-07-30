@@ -1,4 +1,4 @@
-10141
+10140
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -2596,7 +2596,6 @@ TagRecord|Dark End Dragon|False|False|False|True
 TagRecord|Dark Magician Girl the Dragon Knight|False|False|False|True
 TagRecord|Darkness Metal, the Dragon of Dark Steel|False|False|False|True
 TagRecord|Dragon Queen of Tragic Endings|False|False|False|True
-TagRecord|Fantastical Dragon Phantazmay|False|False|False|True
 TagRecord|Galaxy-Eyes Cipher Dragon|False|False|False|True
 TagRecord|Greedy Venom Fusion Dragon|False|False|False|True
 TagRecord|Hieratic Dragon of Sutekh|False|False|False|True
@@ -5749,7 +5748,6 @@ TagRecord|Crimson Sunbird|True|False|False|False
 TagRecord|Crystal Beast Cobalt Eagle|True|False|False|False
 TagRecord|Cyber Harpie Lady|True|False|False|False
 TagRecord|Cyber Slash Harpie Lady|False|False|True|False
-TagRecord|D.D. Crow|False|True|False|False
 TagRecord|Danger! Thunderbird!|False|True|False|False
 TagRecord|Dark Bat|True|False|False|False
 TagRecord|Dark Nephthys|False|True|False|False
@@ -10140,3 +10138,4 @@ TagRecord|Synchro Panic|True|False|False|False
 TagRecord|Beetrooper Fly & Sting|True|False|False|False
 TagRecord|Magikey Unlocking|True|False|False|False
 TagRecord|T.G. Close|True|False|False|False
+TagRecord|D.D. Crow|False|True|False|False
