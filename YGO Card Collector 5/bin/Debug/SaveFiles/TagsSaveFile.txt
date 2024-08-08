@@ -1,4 +1,4 @@
-10140
+10141
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -10139,3 +10139,4 @@ TagRecord|Draconnection|False|True|False|False
 TagRecord|Number S39: Utopia the Lightning|False|False|True|False
 TagRecord|Sasuke Samurai #3|False|False|True|False
 TagRecord|The First Sarcophagus|False|False|True|False
+TagRecord|Fantastical Dragon Phantazmay|False|False|True|False
