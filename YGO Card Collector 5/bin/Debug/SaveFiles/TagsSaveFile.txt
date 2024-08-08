@@ -2470,7 +2470,6 @@ TagRecord|D/D/D Destiny King Zero Laplace|False|False|True|False
 TagRecord|Wandering King Wildwind|False|False|True|False
 TagRecord|Blood Mefist|False|False|False|True
 TagRecord|Dark Diviner|False|False|False|True
-TagRecord|Fabled Valkyrus|False|False|False|True
 TagRecord|Frightfur Daredevil|False|False|False|True
 TagRecord|Frightfur Kraken|False|False|False|True
 TagRecord|Ido the Supreme Magical Force|False|False|False|True
@@ -2591,14 +2590,12 @@ TagRecord|Ancient Pixie Dragon|False|False|False|True
 TagRecord|Blue-Eyes Chaos Dragon|False|False|False|True
 TagRecord|Brave-Eyes Pendulum Dragon|False|False|False|True
 TagRecord|Chaos Emperor, the Dragon of Armageddon|False|False|False|True
-TagRecord|Crystal Wing Synchro Dragon|False|False|False|True
 TagRecord|Dark End Dragon|False|False|False|True
 TagRecord|Dark Magician Girl the Dragon Knight|False|False|False|True
 TagRecord|Darkness Metal, the Dragon of Dark Steel|False|False|False|True
 TagRecord|Dragon Queen of Tragic Endings|False|False|False|True
 TagRecord|Galaxy-Eyes Cipher Dragon|False|False|False|True
 TagRecord|Greedy Venom Fusion Dragon|False|False|False|True
-TagRecord|Hieratic Dragon of Sutekh|False|False|False|True
 TagRecord|Infernity Doom Dragon|False|False|False|True
 TagRecord|Life Stream Dragon|False|False|False|True
 TagRecord|Malefic Paradox Dragon|False|False|False|True
@@ -2606,7 +2603,6 @@ TagRecord|Malefic Rainbow Dragon|False|False|False|True
 TagRecord|Meteor Black Comet Dragon|False|False|False|True
 TagRecord|Montage Dragon|False|False|False|True
 TagRecord|Neo Blue-Eyes Ultimate Dragon|False|False|False|True
-TagRecord|Number 38: Hope Harbinger Dragon Titanic Galaxy|False|False|False|True
 TagRecord|Number 46: Dragluon|False|False|False|True
 TagRecord|Number 91: Thunder Spark Dragon|False|False|False|True
 TagRecord|Number 92: Heart-eartH Dragon|False|False|False|True
@@ -3688,7 +3684,6 @@ TagRecord|Acorno|True|False|False|False
 TagRecord|Amarylease|False|True|False|False
 TagRecord|Angel Trumpeter|True|False|False|False
 TagRecord|Anti-Aircraft Flower|True|False|False|False
-TagRecord|Aromage Bergamot|False|False|False|True
 TagRecord|Aromage Cananga|True|False|False|False
 TagRecord|Aromage Jasmine|False|True|False|False
 TagRecord|Aromage Rosemary|False|True|False|False
@@ -4767,7 +4762,6 @@ TagRecord|Shaddoll Zefranaga|False|True|False|False
 TagRecord|Shadowpriestess of Ohm|False|False|False|True
 TagRecord|Shining Elf|False|False|False|True
 TagRecord|Shock Troops of the Ice Barrier|True|False|False|False
-TagRecord|Silent Magician|False|False|False|True
 TagRecord|Silent Magician LV4|False|True|False|False
 TagRecord|Silent Magician LV8|True|False|False|False
 TagRecord|Skilled Blue Magician|True|False|False|False
@@ -5422,7 +5416,6 @@ TagRecord|Number C73: Abyss Supra Splash|False|False|False|True
 TagRecord|Number F0: Utopic Future|True|False|False|False
 TagRecord|Number S0: Utopic ZEXAL|False|False|False|True
 TagRecord|Number S39: Utopia Prime|False|False|False|True
-TagRecord|Number S39: Utopia the Lightning|False|False|False|True
 TagRecord|Number XX: Utopic Dark Infinity|False|False|False|True
 TagRecord|Numeral Hunter|False|False|False|True
 TagRecord|Obnoxious Celtic Guard|False|True|False|False
@@ -5478,7 +5471,6 @@ TagRecord|Samurai of the Ice Barrier|False|False|False|True
 TagRecord|Samurai Sword Baron|False|False|False|True
 TagRecord|Sasuke Samurai|False|False|False|True
 TagRecord|Sasuke Samurai #2|True|False|False|False
-TagRecord|Sasuke Samurai #3|False|False|False|True
 TagRecord|Sasuke Samurai #4|False|False|False|True
 TagRecord|Satellarknight Alsahm|False|False|False|True
 TagRecord|Satellarknight Altair|False|False|False|True
@@ -5680,7 +5672,6 @@ TagRecord|Koa'ki Meiru Rooklord|False|True|False|False
 TagRecord|Alector, Sovereign of Birds|True|False|False|False
 TagRecord|An Owl of Luck|False|True|False|False
 TagRecord|Assault Blackwing - Chidori the Rain Sprinkling|True|False|False|False
-TagRecord|Assault Blackwing - Kunai the Drizzle|False|False|False|True
 TagRecord|Assault Blackwing - Raikiri the Rain Shower|False|False|False|True
 TagRecord|Assault Blackwing - Sayo the Rain Hider|False|True|False|False
 TagRecord|Assault Blackwing - Sohaya the Rain Storm|True|False|False|False
@@ -6179,7 +6170,6 @@ TagRecord|Banishment of the Darklords|False|True|False|False
 TagRecord|Barkion's Bark|True|False|False|False
 TagRecord|Battery Charger|True|False|False|False
 TagRecord|Battle Waltz|False|True|False|False
-TagRecord|Battlin' Boxing Spirits|False|False|False|True
 TagRecord|Beast Rage|True|False|False|False
 TagRecord|Beetrooper Descent|True|False|False|False
 TagRecord|Big Evolution Pill|True|False|False|False
@@ -6297,7 +6287,6 @@ TagRecord|Double Spell|True|False|False|False
 TagRecord|Double Summon|True|False|False|False
 TagRecord|Downbeat|False|True|False|False
 TagRecord|Dowsing Fusion|True|False|False|False
-TagRecord|Draconnection|False|False|False|True
 TagRecord|Dragged Down into the Grave|True|False|False|False
 TagRecord|Dragon Shrine|False|True|False|False
 TagRecord|Dragonic Tactics|True|False|False|False
@@ -9066,7 +9055,6 @@ TagRecord|The Dragon's Bead|True|False|False|False
 TagRecord|The Emperor's Holiday|True|False|False|False
 TagRecord|The Eye of Truth|True|False|False|False
 TagRecord|The First Monarch|False|False|False|True
-TagRecord|The First Sarcophagus|False|False|False|True
 TagRecord|The Monarchs Erupt|False|False|False|True
 TagRecord|The Prime Monarch|False|False|False|True
 TagRecord|The Regulation of Tribe|True|False|False|False
@@ -10139,3 +10127,15 @@ TagRecord|Beetrooper Fly & Sting|True|False|False|False
 TagRecord|Magikey Unlocking|True|False|False|False
 TagRecord|T.G. Close|True|False|False|False
 TagRecord|D.D. Crow|False|True|False|False
+TagRecord|Aromage Bergamot|False|True|False|False
+TagRecord|Crystal Wing Synchro Dragon|False|False|True|False
+TagRecord|Hieratic Dragon of Sutekh|False|True|False|False
+TagRecord|Number 38: Hope Harbinger Dragon Titanic Galaxy|False|False|True|False
+TagRecord|Silent Magician|False|False|True|False
+TagRecord|Assault Blackwing - Kunai the Drizzle|False|True|False|False
+TagRecord|Fabled Valkyrus|False|False|True|False
+TagRecord|Battlin' Boxing Spirits|True|False|False|False
+TagRecord|Draconnection|False|True|False|False
+TagRecord|Number S39: Utopia the Lightning|False|False|True|False
+TagRecord|Sasuke Samurai #3|False|False|True|False
+TagRecord|The First Sarcophagus|False|False|True|False
