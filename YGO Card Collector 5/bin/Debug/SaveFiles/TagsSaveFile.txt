@@ -1,4 +1,4 @@
-10141
+10159
 TagRecord|Alien Grey|True|False|False|False
 TagRecord|Synchro Barrier|True|False|False|False
 TagRecord|Flip Flop Frog|True|False|False|False
@@ -2740,7 +2740,6 @@ TagRecord|Gazer Shark|False|True|False|False
 TagRecord|Gladiator Beast Torax|False|True|False|False
 TagRecord|Great White|True|False|False|False
 TagRecord|Hyper-Ancient Shark Megalodon|False|True|False|False
-TagRecord|Man-eating Black Shark|False|False|False|True
 TagRecord|Mermaid Shark|False|True|False|False
 TagRecord|Mermail Abysslung|True|False|False|False
 TagRecord|Mermail Abyssnose|False|True|False|False
@@ -10140,3 +10139,22 @@ TagRecord|Number S39: Utopia the Lightning|False|False|True|False
 TagRecord|Sasuke Samurai #3|False|False|True|False
 TagRecord|The First Sarcophagus|False|False|True|False
 TagRecord|Fantastical Dragon Phantazmay|False|False|True|False
+TagRecord|Man-eating Black Shark|False|False|False|True
+TagRecord|Crossout Designator|True|False|False|False
+TagRecord|Drytron Nu II|True|False|False|False
+TagRecord|Aerial Eater|True|False|False|False
+TagRecord|Bettan Bat|True|False|False|False
+TagRecord|Dragon's Light and Darkness|True|False|False|False
+TagRecord|Fiendsmith's Lacrima|True|False|False|False
+TagRecord|Fiendsmith's Sequence|True|False|False|False
+TagRecord|Gimmick Puppet Cattle Scream|True|False|False|False
+TagRecord|Guardian of the Voiceless Voice|True|False|False|False
+TagRecord|Madolche Dessert|True|False|False|False
+TagRecord|Madolche Mini Meowcaroons|True|False|False|False
+TagRecord|Necroquip Princess|True|False|False|False
+TagRecord|Rucia of the White Forest|True|False|False|False
+TagRecord|The League of Uniform Nomenclature Strikes|True|False|False|False
+TagRecord|Vaalmonica Creation|True|False|False|False
+TagRecord|Vulmina, Statue of the Sacred Dragon|True|False|False|False
+TagRecord|Zapper Shrimp|True|False|False|False
+TagRecord|Gimmick Puppet Rouge Doll|True|False|False|False

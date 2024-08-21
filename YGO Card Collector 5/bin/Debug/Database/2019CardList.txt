@@ -1,4 +1,4 @@
-10138
+10156
 "A" Cell Breeding Device
 "A" Cell Incubator
 "A" Cell Recombination Device
@@ -10137,3 +10137,21 @@ Synchro Panic
 Beetrooper Fly & Sting
 Magikey Unlocking
 T.G. Close
+Crossout Designator
+Gimmick Puppet Cattle Scream
+Gimmick Puppet Rouge Doll
+Rucia of the White Forest
+Drytron Nu II
+Bettan Bat
+Fiendsmith's Lacrima
+Fiendsmith's Sequence
+Madolche Mini Meowcaroons
+Dragon's Light and Darkness
+Madolche Dessert
+Guardian of the Voiceless Voice
+Vaalmonica Creation
+Necroquip Princess
+Aerial Eater
+Vulmina, Statue of the Sacred Dragon
+The League of Uniform Nomenclature Strikes
+Zapper Shrimp
