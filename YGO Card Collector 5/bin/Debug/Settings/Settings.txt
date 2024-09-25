@@ -2,7 +2,7 @@
 SetSorting|True
 TestMode|False
 HeadlessMode|True
-Theme|4
+Theme|6
 Music|True
 SFX|True
 TagStarName|Second Copy in Master
