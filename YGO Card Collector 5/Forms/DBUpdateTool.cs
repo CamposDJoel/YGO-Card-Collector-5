@@ -1503,14 +1503,17 @@ namespace YGO_Card_Collector_5
                 //Save a ref to the Master Card for quick access/clean code
                 MasterCard ThisMasterCard = Database.GetCard(CardName);
 
-                if (ThisSetCard.Code.StartsWith("RA02") && ThisSetCard.Rarity == "Quarter Century Secret Rare")
+                string codetosearch = txtCode.Text;
+                string rarirytosearch = txtRarity.Text;
+
+                if (ThisSetCard.Code.StartsWith(codetosearch) && ThisSetCard.Rarity == rarirytosearch)
                 {
                     //https://www.tcgplayer.com/product/551153/yugioh-25th-anniversary-rarity-collection-ii-accesscode-talker-platinum-secret-rare?page=1&Language=English
                     string name = ThisMasterCard.Name;
                     name = name.Replace(" ", "-");
                     name = name.Replace(",", "");
                     name = name.Replace("&", "and");
-                    string url = string.Format("https://store.tcgplayer.com/yugioh/25th-anniversary-rarity-collection-ii/{0}-quarter-century-secret-rare?partner=YGOPRODeck&utm_campaign=affiliate&utm_medium=card-database-set-prices&utm_source=YGOPRODeck", name);
+                    string url = string.Format("https://store.tcgplayer.com/yugioh/the-infinite-forbidden/{0}?partner=YGOPRODeck&utm_campaign=affiliate&utm_medium=card-database-set-prices&utm_source=YGOPRODeck", name);
                     try
                     {
                         Driver.GoToURL(url);

@@ -97,6 +97,8 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
+            this.txtCode = new System.Windows.Forms.TextBox();
+            this.txtRarity = new System.Windows.Forms.TextBox();
             this.TabControlMaster.SuspendLayout();
             this.TabStep1.SuspendLayout();
             this.PanelContainerStep1.SuspendLayout();
@@ -242,6 +244,8 @@
             // TabStep2
             // 
             this.TabStep2.BackColor = System.Drawing.Color.Black;
+            this.TabStep2.Controls.Add(this.txtRarity);
+            this.TabStep2.Controls.Add(this.txtCode);
             this.TabStep2.Controls.Add(this.btntestupdate);
             this.TabStep2.Controls.Add(this.PanelOverride);
             this.TabStep2.Controls.Add(this.PanelContainerStep2);
@@ -258,13 +262,13 @@
             // btntestupdate
             // 
             this.btntestupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btntestupdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btntestupdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntestupdate.ForeColor = System.Drawing.Color.White;
-            this.btntestupdate.Location = new System.Drawing.Point(246, 150);
+            this.btntestupdate.Location = new System.Drawing.Point(169, 141);
             this.btntestupdate.Name = "btntestupdate";
-            this.btntestupdate.Size = new System.Drawing.Size(116, 30);
+            this.btntestupdate.Size = new System.Drawing.Size(109, 36);
             this.btntestupdate.TabIndex = 6;
-            this.btntestupdate.Text = "test";
+            this.btntestupdate.Text = "Run Code/Rarity search";
             this.btntestupdate.UseVisualStyleBackColor = false;
             this.btntestupdate.Click += new System.EventHandler(this.btntestupdate_Click);
             // 
@@ -553,7 +557,7 @@
             this.PanelContainerStep2.Controls.Add(this.lblJobStep2);
             this.PanelContainerStep2.Controls.Add(this.PanelLogsContainerStep2);
             this.PanelContainerStep2.Controls.Add(this.BarProgressStep2);
-            this.PanelContainerStep2.Location = new System.Drawing.Point(7, 183);
+            this.PanelContainerStep2.Location = new System.Drawing.Point(7, 187);
             this.PanelContainerStep2.Name = "PanelContainerStep2";
             this.PanelContainerStep2.Size = new System.Drawing.Size(371, 204);
             this.PanelContainerStep2.TabIndex = 4;
@@ -614,7 +618,7 @@
             this.btnStep2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnStep2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStep2.ForeColor = System.Drawing.Color.White;
-            this.btnStep2.Location = new System.Drawing.Point(124, 150);
+            this.btnStep2.Location = new System.Drawing.Point(7, 147);
             this.btnStep2.Name = "btnStep2";
             this.btnStep2.Size = new System.Drawing.Size(116, 30);
             this.btnStep2.TabIndex = 3;
@@ -922,6 +926,22 @@
             this.btnBackToMainMenu.UseVisualStyleBackColor = false;
             this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
             // 
+            // txtCode
+            // 
+            this.txtCode.Location = new System.Drawing.Point(284, 141);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(89, 20);
+            this.txtCode.TabIndex = 7;
+            this.txtCode.Text = "INFO";
+            // 
+            // txtRarity
+            // 
+            this.txtRarity.Location = new System.Drawing.Point(284, 162);
+            this.txtRarity.Name = "txtRarity";
+            this.txtRarity.Size = new System.Drawing.Size(89, 20);
+            this.txtRarity.TabIndex = 8;
+            this.txtRarity.Text = "Ultra Rare";
+            // 
             // DBUpdateTool
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1041,5 +1061,7 @@
         private System.Windows.Forms.Button btnTCGLaunch;
         private System.Windows.Forms.Button btntestupdate;
         private System.Windows.Forms.Label lblmissingtcgcount;
+        private System.Windows.Forms.TextBox txtRarity;
+        private System.Windows.Forms.TextBox txtCode;
     }
 }
