@@ -22,6 +22,7 @@ namespace YGO_Card_Collector_5
             InitializeCardViewImages();
             InitializeCustomTagNames();
             LoadMasterCardList(CardGroup.AllCards);
+            InitializeHoverEvents();
             listSetGroups.SetSelected(0, true);
 
             //Load Form theme
@@ -102,6 +103,82 @@ namespace YGO_Card_Collector_5
                 lblTagSquare.Text = SettingsData.SquareTagName;
                 lblTagTriangle.Text = SettingsData.TriangleTagName;
                 lblTagCircle.Text = SettingsData.CircleTagName;
+            }
+            void InitializeHoverEvents()
+            {
+                btnFilterAqua.MouseEnter += BtnHover_MouseEnter;
+                btnFilterBeast.MouseEnter += BtnHover_MouseEnter;
+                btnFilterBeastWarrior.MouseEnter += BtnHover_MouseEnter;
+                btnFilterCyberce.MouseEnter += BtnHover_MouseEnter;
+                btnFilterDinosaur.MouseEnter += BtnHover_MouseEnter;
+                btnFilterDragon.MouseEnter += BtnHover_MouseEnter;
+                btnFilterFairy.MouseEnter += BtnHover_MouseEnter;
+                btnFilterFiend.MouseEnter += BtnHover_MouseEnter;
+                btnFilterFish.MouseEnter += BtnHover_MouseEnter;
+                btnFilterIllusion.MouseEnter += BtnHover_MouseEnter;
+                btnFilterInsect.MouseEnter += BtnHover_MouseEnter;
+                btnFilterMachine.MouseEnter += BtnHover_MouseEnter;
+                btnFilterPlant.MouseEnter += BtnHover_MouseEnter;
+                btnFilterPsychic.MouseEnter += BtnHover_MouseEnter;
+                btnFilterPyro.MouseEnter += BtnHover_MouseEnter;
+                btnFilterReptile.MouseEnter += BtnHover_MouseEnter;
+                btnFilterRock.MouseEnter += BtnHover_MouseEnter;
+                btnFilterSeaSerpent.MouseEnter += BtnHover_MouseEnter;
+                btnFilterSpellcaster.MouseEnter += BtnHover_MouseEnter;
+                btnFilterThunder.MouseEnter += BtnHover_MouseEnter;
+                btnFilterWarrior.MouseEnter += BtnHover_MouseEnter;
+                btnFilterWingedBeast.MouseEnter += BtnHover_MouseEnter;
+                btnFilterWyrm.MouseEnter += BtnHover_MouseEnter;
+                btnFilterZombie.MouseEnter += BtnHover_MouseEnter;
+                btnNormalSpell.MouseEnter += BtnHover_MouseEnter;
+                btnContinousSpell.MouseEnter += BtnHover_MouseEnter;
+                btnEquipSpell.MouseEnter += BtnHover_MouseEnter;
+                btnFieldSpell.MouseEnter += BtnHover_MouseEnter;
+                btnRitualSpell.MouseEnter += BtnHover_MouseEnter;
+                btnQuickPlaySpell.MouseEnter += BtnHover_MouseEnter;
+                btnNormalTrap.MouseEnter += BtnHover_MouseEnter;
+                btnContinuosTrap.MouseEnter += BtnHover_MouseEnter;
+                btnCounterTrap.MouseEnter += BtnHover_MouseEnter;
+                btnMonster.MouseEnter += BtnHover_MouseEnter;
+                btnSpells.MouseEnter += BtnHover_MouseEnter;
+                btnTraps.MouseEnter += BtnHover_MouseEnter;
+                btnNormal.MouseEnter += BtnHover_MouseEnter;
+                btnFusion.MouseEnter += BtnHover_MouseEnter;
+                btnRitual.MouseEnter += BtnHover_MouseEnter;
+                btnSynchro.MouseEnter += BtnHover_MouseEnter;
+                btnXyz.MouseEnter += BtnHover_MouseEnter;
+                btnPendulum.MouseEnter += BtnHover_MouseEnter;
+                btnLink.MouseEnter += BtnHover_MouseEnter;
+                btnFlip.MouseEnter += BtnHover_MouseEnter;
+                btnSpirit.MouseEnter += BtnHover_MouseEnter;
+                btnToon.MouseEnter += BtnHover_MouseEnter;
+                btnUnion.MouseEnter += BtnHover_MouseEnter;
+                btnTuner.MouseEnter += BtnHover_MouseEnter;
+                btnGemini.MouseEnter += BtnHover_MouseEnter;
+                btnTextSearch.MouseEnter += BtnHover_MouseEnter;
+                btnDark.MouseEnter += BtnHover_MouseEnter;
+                btnLight.MouseEnter += BtnHover_MouseEnter;
+                btnWater.MouseEnter += BtnHover_MouseEnter;
+                btnFire.MouseEnter += BtnHover_MouseEnter;
+                btnEarth.MouseEnter += BtnHover_MouseEnter;
+                btnWind.MouseEnter += BtnHover_MouseEnter;
+                btnCodeSearch.MouseEnter += BtnHover_MouseEnter;
+                btnTagStar.MouseEnter += BtnHover_MouseEnter;
+                btnTagSquare.MouseEnter += BtnHover_MouseEnter;
+                btnTagTriangle.MouseEnter += BtnHover_MouseEnter;
+                btnTagCircle.MouseEnter += BtnHover_MouseEnter;
+                btnNoTags.MouseEnter += BtnHover_MouseEnter;
+                btnFilterSet.MouseEnter += BtnHover_MouseEnter;
+                PicTagStar.MouseEnter += BtnHover_MouseEnter;
+                PicTagSquare.MouseEnter += BtnHover_MouseEnter;
+                PicTagTriangle.MouseEnter += BtnHover_MouseEnter;
+                PicTagCircle.MouseEnter += BtnHover_MouseEnter;
+                lblKonamiLink.MouseEnter += BtnHover_MouseEnter;
+                lblProdeckLink.MouseEnter += BtnHover_MouseEnter;
+                lblTCGLink.MouseEnter += BtnHover_MouseEnter;
+                btnPreviousPage.MouseEnter += BtnHover_MouseEnter;
+                btnNextPage.MouseEnter += BtnHover_MouseEnter;
+                btnClear.MouseEnter += BtnHover_MouseEnter;
             }
         }
         #endregion
@@ -1286,6 +1363,13 @@ namespace YGO_Card_Collector_5
             }
         }
         #endregion       
+
+        #region Hover Event Listeners
+        private void BtnHover_MouseEnter(object sender, EventArgs e)
+        {
+            SoundServer.PlaySoundEffect(SoundEffect.Hover);
+        }
+        #endregion
 
         #region Keyboard Input Control
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
