@@ -14,9 +14,9 @@ namespace YGO_Card_Collector_5
 
         public static string Xpath_Code = "//ul[@class=\"product__item-details__attributes\"]/li[1]//span";
         public static string Xpath_Rarity = "//ul[@class=\"product__item-details__attributes\"]/li[2]//span";
-        public static string Xpath_FloorPrice = "//section[@class=\"product-details__listings-total\"]/div/section/span";
-        public static string Xpath_MarketPrice = "//section[@class=\"price-points price-guide__points\"]/table/tr[2]/td[2]/span";
-        public static string Xpath_MediamPrice = "//section[@class=\"price-points price-guide__points\"]/table/tr[4]/td[2]/span";
+        public static string Xpath_FloorPrice = "//section[@class=\"product-details__listings\"]//div[@class=\"product-details__listings-toolbar\"]//div[@class=\"top-listing-price\"]";
+        public static string Xpath_MarketPrice = "//section[@class=\"price-guide__points\"]/div/div[1]//table/tr[1]/td[2]/span";
+        public static string Xpath_MediamPrice = "//section[@class=\"price-guide__points\"]/div/div[2]/table/tr[1]/td[2]/span";
         public static string Xpath_ReadMore = "//div[@class=\"product__item-details__toggle masked\"]";
 
         public static string Xpath_InvalidPage = "//span[.='Sorry but that page does not exist on our site!']";
