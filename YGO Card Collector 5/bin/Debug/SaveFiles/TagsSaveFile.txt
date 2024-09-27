@@ -634,7 +634,6 @@ TagRecord|Ancient One of the Deep Forest|True|False|False|False
 TagRecord|Andro Sphinx|True|False|False|False
 TagRecord|Ape Fighter|False|True|False|False
 TagRecord|Ape Magician|False|True|False|False
-TagRecord|Archfiend Marmot of Nefariousness|False|True|False|False
 TagRecord|Assault Dog|True|False|False|False
 TagRecord|Awakening of the Possessed - Nefariouser Archfiend|True|False|False|False
 TagRecord|Baby Raccoon Ponpoko|True|False|False|False
@@ -1754,7 +1753,6 @@ TagRecord|Hecatrice|True|False|False|False
 TagRecord|Herald of Green Light|True|False|False|False
 TagRecord|Herald of Orange Light|False|True|False|False
 TagRecord|Herald of Purple Light|True|False|False|False
-TagRecord|Herald of the Arc Light|False|True|False|False
 TagRecord|Hip Hoshiningen|False|True|False|False
 TagRecord|Honest|True|False|False|False
 TagRecord|Hoshiningen|True|False|False|False
@@ -2667,7 +2665,6 @@ TagRecord|Desert Protector|False|True|False|False
 TagRecord|Deus X-Krawler|False|True|False|False
 TagRecord|Digital Bug Centibit|True|False|False|False
 TagRecord|Digital Bug Cocoondenser|True|False|False|False
-TagRecord|Digital Bug Corebage|False|True|False|False
 TagRecord|Digital Bug LEDybug|True|False|False|False
 TagRecord|Digital Bug Rhinosebus|False|True|False|False
 TagRecord|Digital Bug Scaradiator|True|False|False|False
@@ -10159,3 +10156,6 @@ TagRecord|Xyz Reborn|False|False|True|False
 TagRecord|Relinquished Fusion|False|False|True|False
 TagRecord|The Claw of Hermos|False|False|True|False
 TagRecord|Flower Cardian Lightshower|False|False|True|False
+TagRecord|Herald of the Arc Light|False|True|False|False
+TagRecord|Digital Bug Corebage|True|False|False|False
+TagRecord|Archfiend Marmot of Nefariousness|True|False|False|False
