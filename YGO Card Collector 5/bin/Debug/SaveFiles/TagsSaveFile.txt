@@ -4741,7 +4741,6 @@ TagRecord|Flame Swordsman|True|False|False|False
 TagRecord|Flash Knight|False|True|False|False
 TagRecord|Flower Cardian Cherry Blossom with Curtain|True|False|False|False
 TagRecord|Flower Cardian Clover with Boar|True|False|False|False
-TagRecord|Flower Cardian Lightshower|False|True|False|False
 TagRecord|Flower Cardian Maple with Deer|True|False|False|False
 TagRecord|Flower Cardian Moonflowerviewing|False|True|False|False
 TagRecord|Flower Cardian Paulownia|False|True|False|False
@@ -9952,7 +9951,6 @@ TagRecord|Supremacy Berry|False|True|False|False
 TagRecord|Sylvan Charity|False|True|False|False
 TagRecord|Synchro Change|False|True|False|False
 TagRecord|Tenacity of the Monarchs|False|True|False|False
-TagRecord|The Claw of Hermos|False|True|False|False
 TagRecord|The Forceful Sentry|False|False|True|False
 TagRecord|The Terminus of the Burning Abyss|False|True|False|False
 TagRecord|Thunder Dragon Fusion|False|True|False|False
@@ -10015,7 +10013,6 @@ TagRecord|Void Imagination|False|True|False|False
 TagRecord|Zoodiac Barrage|False|True|False|False
 TagRecord|Infestation Pandemic|False|True|False|False
 TagRecord|Rage with Eyes of Blue|False|False|True|False
-TagRecord|Relinquished Fusion|False|True|False|False
 TagRecord|Satellarknight Skybridge|False|True|False|False
 TagRecord|Secret Skills of the Six Samurai|False|True|False|False
 TagRecord|Sky Striker Mecha - Widow Anchor|False|False|True|False
@@ -10159,3 +10156,6 @@ TagRecord|Karakuri Klock|False|False|False|True
 TagRecord|Paleozoic Canadia|False|False|True|False
 TagRecord|Storming Mirror Force|False|False|True|False
 TagRecord|Xyz Reborn|False|False|True|False
+TagRecord|Relinquished Fusion|False|False|True|False
+TagRecord|The Claw of Hermos|False|False|True|False
+TagRecord|Flower Cardian Lightshower|False|False|True|False
