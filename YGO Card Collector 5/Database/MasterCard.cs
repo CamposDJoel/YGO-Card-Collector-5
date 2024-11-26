@@ -431,6 +431,7 @@ namespace YGO_Card_Collector_5
         public string MarketPrice { get { return _MarketPrice; } set { _MarketPrice = value; } }
         public string MediamPrice { get { return _MediamPrice; } set { _MediamPrice = value; } }
         public string TCGPlayerURL { get { return _TCGPlayerURL; } set { _TCGPlayerURL = value; } }
+        public MasterCard MasterCard { get { return Database.MasterCardByCode[_Code]; } }
         #endregion
 
         #region Internal Data

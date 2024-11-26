@@ -680,7 +680,9 @@ namespace YGO_Card_Collector_5
             }
             else
             {
-                _CurrentSetCardInView.FlipObtainedStatus();
+                //Need to obtain the master card of the current set card in view
+                MasterCard thisMasterCard = _CurrentSetCardInView.MasterCard;
+                thisMasterCard.GetCardAtIndex(Index).FlipObtainedStatus();
             }
 
             LoadPage();
