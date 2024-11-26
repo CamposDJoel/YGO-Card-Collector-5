@@ -4956,7 +4956,6 @@ TagRecord|Satellarknight Vega|True|False|False|False
 TagRecord|Science Soldier|True|False|False|False
 TagRecord|Search Striker|False|True|False|False
 TagRecord|Secret Six Samurai - Doji|False|False|False|True
-TagRecord|Secret Six Samurai - Hatsume|False|False|False|True
 TagRecord|Secret Six Samurai - Kizaru|False|False|False|True
 TagRecord|Secret Six Samurai - Rihan|False|False|False|True
 TagRecord|Senior Silver Ninja|True|False|False|False
@@ -10159,3 +10158,4 @@ TagRecord|Flower Cardian Lightshower|False|False|True|False
 TagRecord|Herald of the Arc Light|False|True|False|False
 TagRecord|Digital Bug Corebage|True|False|False|False
 TagRecord|Archfiend Marmot of Nefariousness|True|False|False|False
+TagRecord|Secret Six Samurai - Hatsume|False|False|True|False
