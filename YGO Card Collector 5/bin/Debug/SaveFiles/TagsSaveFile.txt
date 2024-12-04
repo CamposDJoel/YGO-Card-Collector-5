@@ -2495,7 +2495,6 @@ TagRecord|Galaxy-Eyes Cipher Dragon|False|False|False|True
 TagRecord|Malefic Rainbow Dragon|False|False|False|True
 TagRecord|Number 46: Dragluon|False|False|False|True
 TagRecord|Number 99: Utopic Dragon|False|False|False|True
-TagRecord|Odd-Eyes Arc Pendulum Dragon|False|False|False|True
 TagRecord|Orient Dragon|False|False|False|True
 TagRecord|Queen Dragun Djinn|False|False|False|True
 TagRecord|Red-Eyes Slash Dragon|False|False|False|True
@@ -10159,3 +10158,4 @@ TagRecord|Herald of the Arc Light|False|True|False|False
 TagRecord|Digital Bug Corebage|True|False|False|False
 TagRecord|Archfiend Marmot of Nefariousness|True|False|False|False
 TagRecord|Secret Six Samurai - Hatsume|False|False|True|False
+TagRecord|Odd-Eyes Arc Pendulum Dragon|False|False|True|False
