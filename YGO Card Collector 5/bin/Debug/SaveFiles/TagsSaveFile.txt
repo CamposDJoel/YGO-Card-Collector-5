@@ -9326,7 +9326,6 @@ TagRecord|Starliege Photon Blast Dragon|False|False|True|False
 TagRecord|Starving Venom Fusion Dragon|False|False|True|False
 TagRecord|Striker Dragon|True|False|False|False
 TagRecord|Tempest, Dragon Ruler of Storms|False|True|False|False
-TagRecord|Tidal, Dragon Ruler of Waterfalls|False|True|False|False
 TagRecord|Trishula, the Dragon of Icy Imprisonment|False|True|False|False
 TagRecord|Ultimaya Tzolkin|False|True|False|False
 TagRecord|White Rose Dragon|False|True|False|False
@@ -10159,3 +10158,4 @@ TagRecord|Atlantean Dragoons|True|False|False|False
 TagRecord|Grave of the Super Ancient Organism|True|False|False|False
 TagRecord|That Grass Looks Greener|True|False|False|False
 TagRecord|Deep Sea Diva|True|False|False|False
+TagRecord|Tidal, Dragon Ruler of Waterfalls|True|False|False|False
