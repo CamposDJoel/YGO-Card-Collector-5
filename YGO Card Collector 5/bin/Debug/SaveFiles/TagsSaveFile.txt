@@ -111,7 +111,6 @@ TagRecord|Six Strike - Thunder Blast|False|True|False|False
 TagRecord|Poseidra, the Atlantean Dragon|False|True|False|False
 TagRecord|Atlantean Marksman|False|True|False|False
 TagRecord|Atlantean Heavy Infantry|False|True|False|False
-TagRecord|Deep Sea Diva|False|True|False|False
 TagRecord|Mermaid Archer|False|True|False|False
 TagRecord|Reese the Ice Mistress|False|True|False|False
 TagRecord|Call of the Atlanteans|False|True|False|False
@@ -3982,7 +3981,6 @@ TagRecord|Airorca|True|False|False|False
 TagRecord|Aqua Dragon|False|True|False|False
 TagRecord|Armed Sea Hunter|True|False|False|False
 TagRecord|Atlantean Attack Squad|True|False|False|False
-TagRecord|Atlantean Dragoons|False|True|False|False
 TagRecord|Atlantean Pikeman|True|False|False|False
 TagRecord|Bahamut Shark|True|False|False|False
 TagRecord|Blue Dragon Ninja|False|True|False|False
@@ -5924,7 +5922,6 @@ TagRecord|System Down|False|True|False|False
 TagRecord|Tail Swipe|True|False|False|False
 TagRecord|Tannhauser Gate|False|True|False|False
 TagRecord|Terraforming|True|False|False|False
-TagRecord|That Grass Looks Greener|False|False|False|True
 TagRecord|That Wacky Magic!|False|True|False|False
 TagRecord|The Beginning of the End|True|False|False|False
 TagRecord|The Big Cattle Drive|False|True|False|False
@@ -8847,7 +8844,6 @@ TagRecord|Merciful Machine Angel|False|False|True|False
 TagRecord|Malefic Claw Stream|False|True|False|False
 TagRecord|Mirror of Oaths|False|True|False|False
 TagRecord|Muko|False|True|False|False
-TagRecord|Grave of the Super Ancient Organism|False|True|False|False
 TagRecord|Constellar Omega|False|True|False|False
 TagRecord|Gladiator Beast Tamer Editor|False|True|False|False
 TagRecord|Great Long Nose|False|True|False|False
@@ -10159,3 +10155,7 @@ TagRecord|Digital Bug Corebage|True|False|False|False
 TagRecord|Archfiend Marmot of Nefariousness|True|False|False|False
 TagRecord|Secret Six Samurai - Hatsume|False|False|True|False
 TagRecord|Odd-Eyes Arc Pendulum Dragon|False|False|True|False
+TagRecord|Atlantean Dragoons|True|False|False|False
+TagRecord|Grave of the Super Ancient Organism|True|False|False|False
+TagRecord|That Grass Looks Greener|True|False|False|False
+TagRecord|Deep Sea Diva|True|False|False|False
