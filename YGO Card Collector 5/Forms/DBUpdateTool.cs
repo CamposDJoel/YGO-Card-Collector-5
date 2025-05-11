@@ -392,11 +392,10 @@ namespace YGO_Card_Collector_5
             }
             #endregion
 
+            //CHECK POINT: OVERIDE SAVE FILES
             Database.SaveDatabaseInTxt();           
             Database.SaveDatabaseInJSON(); LogIt("[[[CardDB.JSON Created]]]");
             Database.OverrideSetsJSON(); LogIt("[[[SetsDB.JSON Created]]]");
-
-            /*
 
             #region Step E: Find New Card's Prodecks URLs/Passcodes
             lblJobStep1.Text = "JOB 4/5: Find Prodeck URLs for new MasterCards";
@@ -601,8 +600,6 @@ namespace YGO_Card_Collector_5
             Driver.CloseDriver();
             SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
             #endregion
-
-            */
 
             void FindNewSetsFromExtractedList(List<string> extractedList, List<SetInfo> DBGorupList)
             {
