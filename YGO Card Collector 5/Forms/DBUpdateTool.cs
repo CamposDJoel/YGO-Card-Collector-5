@@ -328,6 +328,7 @@ namespace YGO_Card_Collector_5
 
                                 //Add this set to it
                                 ThisMasterCard.InsertSetCard(releaseDate, code, setName, rarity);
+                                Database.MasterCardByCode.Add(code, ThisMasterCard);
                                 sb.Append(string.Format("Code: {0} | ", code));
                             }
                         }
