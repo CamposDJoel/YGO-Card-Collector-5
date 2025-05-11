@@ -4,6 +4,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace YGO_Card_Collector_5
 {
@@ -50,6 +51,18 @@ namespace YGO_Card_Collector_5
         public string ProdeckURL { get { return _ProdeckURL; } set { _ProdeckURL = value; } }
         public string KonamiURL { get { return _KonamiURL; } set { _KonamiURL = value; } }
         public List<SetCard> SetCards { get { return _SetCards; } }
+        public string SetCardsStringList()
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append(SetCards.Count);
+            foreach(SetCard thisSetCard in SetCards)
+            {
+                sb.Append(string.Format("|{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}", 
+                    thisSetCard.Code, thisSetCard.Name, thisSetCard.Rarity, thisSetCard.ReleaseDate, 
+                    thisSetCard.FloorPrice, thisSetCard.MediamPrice, thisSetCard.MarketPrice, thisSetCard.TCGPlayerURL));
+            }
+            return sb.ToString();
+        }
         #endregion
 
         #region Public Methods
@@ -420,6 +433,10 @@ namespace YGO_Card_Collector_5
                 return releaseYearInInt <= targetYearInInt;
             }          
         }
+        public MasterCard GetMasterCard()
+        {
+            return Database.MasterCardByCode[_Code];
+        }
         #endregion
 
         #region Public Accessors
@@ -431,7 +448,6 @@ namespace YGO_Card_Collector_5
         public string MarketPrice { get { return _MarketPrice; } set { _MarketPrice = value; } }
         public string MediamPrice { get { return _MediamPrice; } set { _MediamPrice = value; } }
         public string TCGPlayerURL { get { return _TCGPlayerURL; } set { _TCGPlayerURL = value; } }
-        public MasterCard MasterCard { get { return Database.MasterCardByCode[_Code]; } }
         #endregion
 
         #region Internal Data

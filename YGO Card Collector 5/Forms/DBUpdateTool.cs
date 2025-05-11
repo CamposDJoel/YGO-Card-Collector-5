@@ -391,6 +391,12 @@ namespace YGO_Card_Collector_5
             }
             #endregion
 
+            Database.SaveDatabaseInTxt();           
+            Database.SaveDatabaseInJSON(); LogIt("[[[CardDB.JSON Created]]]");
+            Database.OverrideSetsJSON(); LogIt("[[[SetsDB.JSON Created]]]");
+
+            /*
+
             #region Step E: Find New Card's Prodecks URLs/Passcodes
             lblJobStep1.Text = "JOB 4/5: Find Prodeck URLs for new MasterCards";
             BarProgressStep1.Value = 0;
@@ -594,6 +600,8 @@ namespace YGO_Card_Collector_5
             Driver.CloseDriver();
             SoundServer.PlaySoundEffect(SoundEffect.DBLoaded);
             #endregion
+
+            */
 
             void FindNewSetsFromExtractedList(List<string> extractedList, List<SetInfo> DBGorupList)
             {
@@ -1015,7 +1023,7 @@ namespace YGO_Card_Collector_5
                 {
                     GroupUnavailableTCGOverride.Visible = false;
                 }
-            }         
+            }
         }
         private void checkPasscodeEnableOverride3_CheckedChanged(object sender, EventArgs e)
         {
@@ -1522,7 +1530,7 @@ namespace YGO_Card_Collector_5
                         string CodeInPage = TCGCardInfoPage.GetCode();
                         string RarityInPage = TCGCardInfoPage.GetRarity();
 
-                        if(ThisSetCard.Code == CodeInPage && ThisSetCard.Rarity == RarityInPage)
+                        if (ThisSetCard.Code == CodeInPage && ThisSetCard.Rarity == RarityInPage)
                         //if (ThisSetCard.Code == CodeInPage && "Prismatic Collector's Rare" == RarityInPage)
                         {
                             //Save the URL and Update prices

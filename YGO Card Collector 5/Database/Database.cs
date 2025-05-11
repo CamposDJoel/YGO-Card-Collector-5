@@ -6,6 +6,7 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text;
 
 namespace YGO_Card_Collector_5
 {
@@ -489,6 +490,13 @@ namespace YGO_Card_Collector_5
         public static void SaveDatabaseInJSON()
         {
             string output = JsonConvert.SerializeObject(MasterCards);
+            /*
+            string output = JsonConvert.SerializeObject(Database.MasterCards, Formatting.Indented,
+                        new JsonSerializerSettings()
+                        {
+                            ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                        }
+                    );*/
 
             if (SettingsData.DBUpdateTestMode)
             {
@@ -499,6 +507,20 @@ namespace YGO_Card_Collector_5
                 //Override the actual DB file
                 File.WriteAllText(Directory.GetCurrentDirectory() + "\\Database\\CardDB.json", output);
             }
+        }
+        public static void SaveDatabaseInTxt()
+        {
+            List<string> output = new List<string>();
+            output.Add(MasterCards.Count.ToString());
+
+            foreach(MasterCard thisMasterCard in MasterCards)
+            {
+                output.Add(string.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|{9}|{10}",
+                    thisMasterCard.ID, thisMasterCard.Name, thisMasterCard.Attribute, thisMasterCard.Type, thisMasterCard.LevelRankLink,
+                    thisMasterCard.Attack, thisMasterCard.Defense, thisMasterCard.Pendulum, thisMasterCard.KonamiURL, thisMasterCard.ProdeckURL, thisMasterCard.SetCardsStringList()));
+            }
+
+            File.WriteAllLines(Directory.GetCurrentDirectory() + "\\Database\\CardDB.txt", output);
         }
         public static void OverrideSetsJSON()
         {
@@ -607,6 +629,11 @@ namespace YGO_Card_Collector_5
             MasterCards.Add(card);
             MasterCardByName.Add(card.Name, card);
             MasterCards.Sort(new MasterCard.SortByName());
+
+            foreach(SetCard setCard in card.SetCards)
+            {
+                MasterCardByCode.Add(setCard.Code, card);
+            }
 
             //This new card wont have a Prodeck URL, add it to the list of missing URLs
             CardsWithoutProdeckURL.Add(card.Name);
