@@ -117,6 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label2.Text" xml:space="preserve">
+    <value>This step will check for new Sets release since the last DB update.
+If new Sets are found, all the card records from those sets are going to be update (This include brand new MasterCards and new SetCards from already existing MasterCards).
+
+At the end of this step we should have a up to date MasterCard list.
+
+Appr. Execution time: 45 Mins. Per 100 new Mastercards.</value>
+  </data>
   <data name="label4.Text" xml:space="preserve">
     <value>This OPTIONAL step will retry the manual searches in Prodeck for Mastercards still missing their Prodeck URL/Passcodes.
 Try this again just to check if Prodeck has "Fix" some of their records.
@@ -125,14 +133,6 @@ This will also try to find the TCG Player URLs/Prices for any Setcard still miss
 At the end of this step we should have less cards with missing data.
 
 Appr. Execution time: TBD</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>This step will check for new Sets release since the last DB update.
-If new Sets are found, all the card records from those sets are going to be update (This include brand new MasterCards and new SetCards from already existing MasterCards).
-
-At the end of this step we should have a up to date MasterCard list.
-
-Appr. Execution time: 45 Mins. Per 100 new Mastercards.</value>
   </data>
   <data name="label7.Text" xml:space="preserve">
     <value>This step doesn't require an automation script to run in the background.

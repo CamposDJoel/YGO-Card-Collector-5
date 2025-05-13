@@ -41,6 +41,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.TabStep2 = new System.Windows.Forms.TabPage();
+            this.txtRarity = new System.Windows.Forms.TextBox();
+            this.txtCode = new System.Windows.Forms.TextBox();
             this.btntestupdate = new System.Windows.Forms.Button();
             this.PanelOverride = new System.Windows.Forms.Panel();
             this.lblmissingtcgcount = new System.Windows.Forms.Label();
@@ -97,8 +99,8 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.label9 = new System.Windows.Forms.Label();
             this.btnBackToMainMenu = new System.Windows.Forms.Button();
-            this.txtCode = new System.Windows.Forms.TextBox();
-            this.txtRarity = new System.Windows.Forms.TextBox();
+            this.txtSetName = new System.Windows.Forms.TextBox();
+            this.txtMod = new System.Windows.Forms.TextBox();
             this.TabControlMaster.SuspendLayout();
             this.TabStep1.SuspendLayout();
             this.PanelContainerStep1.SuspendLayout();
@@ -244,6 +246,8 @@
             // TabStep2
             // 
             this.TabStep2.BackColor = System.Drawing.Color.Black;
+            this.TabStep2.Controls.Add(this.txtMod);
+            this.TabStep2.Controls.Add(this.txtSetName);
             this.TabStep2.Controls.Add(this.txtRarity);
             this.TabStep2.Controls.Add(this.txtCode);
             this.TabStep2.Controls.Add(this.btntestupdate);
@@ -259,12 +263,28 @@
             this.TabStep2.TabIndex = 1;
             this.TabStep2.Text = "Step 2: Retry Prodeck/TCG Searches";
             // 
+            // txtRarity
+            // 
+            this.txtRarity.Location = new System.Drawing.Point(244, 162);
+            this.txtRarity.Name = "txtRarity";
+            this.txtRarity.Size = new System.Drawing.Size(59, 20);
+            this.txtRarity.TabIndex = 8;
+            this.txtRarity.Text = "Ultra Rare";
+            // 
+            // txtCode
+            // 
+            this.txtCode.Location = new System.Drawing.Point(244, 141);
+            this.txtCode.Name = "txtCode";
+            this.txtCode.Size = new System.Drawing.Size(59, 20);
+            this.txtCode.TabIndex = 7;
+            this.txtCode.Text = "INFO";
+            // 
             // btntestupdate
             // 
             this.btntestupdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btntestupdate.Font = new System.Drawing.Font("Arial Rounded MT Bold", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btntestupdate.ForeColor = System.Drawing.Color.White;
-            this.btntestupdate.Location = new System.Drawing.Point(169, 141);
+            this.btntestupdate.Location = new System.Drawing.Point(129, 141);
             this.btntestupdate.Name = "btntestupdate";
             this.btntestupdate.Size = new System.Drawing.Size(109, 36);
             this.btntestupdate.TabIndex = 6;
@@ -926,21 +946,20 @@
             this.btnBackToMainMenu.UseVisualStyleBackColor = false;
             this.btnBackToMainMenu.Click += new System.EventHandler(this.btnBackToMainMenu_Click);
             // 
-            // txtCode
+            // txtSetName
             // 
-            this.txtCode.Location = new System.Drawing.Point(284, 141);
-            this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(89, 20);
-            this.txtCode.TabIndex = 7;
-            this.txtCode.Text = "INFO";
+            this.txtSetName.Location = new System.Drawing.Point(306, 141);
+            this.txtSetName.Name = "txtSetName";
+            this.txtSetName.Size = new System.Drawing.Size(63, 20);
+            this.txtSetName.TabIndex = 9;
+            this.txtSetName.Text = "test";
             // 
-            // txtRarity
+            // txtMod
             // 
-            this.txtRarity.Location = new System.Drawing.Point(284, 162);
-            this.txtRarity.Name = "txtRarity";
-            this.txtRarity.Size = new System.Drawing.Size(89, 20);
-            this.txtRarity.TabIndex = 8;
-            this.txtRarity.Text = "Ultra Rare";
+            this.txtMod.Location = new System.Drawing.Point(306, 162);
+            this.txtMod.Name = "txtMod";
+            this.txtMod.Size = new System.Drawing.Size(63, 20);
+            this.txtMod.TabIndex = 10;
             // 
             // DBUpdateTool
             // 
@@ -1063,5 +1082,7 @@
         private System.Windows.Forms.Label lblmissingtcgcount;
         private System.Windows.Forms.TextBox txtRarity;
         private System.Windows.Forms.TextBox txtCode;
+        private System.Windows.Forms.TextBox txtSetName;
+        private System.Windows.Forms.TextBox txtMod;
     }
 }

@@ -756,7 +756,15 @@ namespace YGO_Card_Collector_5
                 ProDeckCardSearchPage.WaitUntilPageIsLoaded();
 
                 //Perform the search
-                bool SearchSucess = ProDeckCardSearchPage.SearchCard(CardName);
+                bool SearchSucess = false;
+                try
+                {
+                    SearchSucess = ProDeckCardSearchPage.SearchCard(CardName);
+                }
+                catch(Exception)
+                {
+                    //do nothing
+                }
 
                 //if successful, save the Prodeck URL and Card ID, otherwise flag the fail on the log
                 if (SearchSucess)
@@ -770,6 +778,9 @@ namespace YGO_Card_Collector_5
                     //save the url of this card so we dont have to search for it again
                     string currentURL = Driver.ChromeDriver.Url;
                     ThisMasterCard.ProdeckURL = currentURL;
+                    //CHECK POINT: OVERIDE SAVE FILES
+                    Database.SaveDatabaseInTxt();
+                    Database.SaveDatabaseInJSON();
                     LogIt("Prodeck URL and Card's Passcode saved!");
                 }
                 else
@@ -799,15 +810,8 @@ namespace YGO_Card_Collector_5
                 //Save a ref to the Master Card for quick access/clean code
                 MasterCard ThisMasterCard = Database.GetCard(CardName);
 
-                bool targetSets = false;
-                if (ThisSetCard.Code.StartsWith("BP01")) { targetSets = true; }
-                //if (ThisSetCard.Code.StartsWith("BP03")) { targetSets = true; }
-                //if (ThisSetCard.Code.StartsWith("SP13")) { targetSets = true; }
-                //if (ThisSetCard.Code.StartsWith("SP14")) { targetSets = true; }
-                //if (ThisSetCard.Code.StartsWith("SP15")) { targetSets = true; }
-
                 //Go to the Card's Prodeck URL, if available
-                if (ThisMasterCard.HasProDeckURL() && targetSets)
+                if (ThisMasterCard.HasProDeckURL())
                 {
                     //Go to the page
                     Driver.GoToURL(ThisMasterCard.ProdeckURL);
@@ -905,6 +909,7 @@ namespace YGO_Card_Collector_5
                     if (MathcURLFound)
                     {
                         LogIt("!!!Match URL FOUND - Prices Updated!!!");
+                        Database.SaveDatabaseInTxt();
                         Database.SaveDatabaseInJSON();
                     }
                     else
@@ -1511,15 +1516,30 @@ namespace YGO_Card_Collector_5
 
                 string codetosearch = txtCode.Text;
                 string rarirytosearch = txtRarity.Text;
+                string setNameToSearch = txtSetName.Text;
+                string rarityMode = txtMod.Text;
 
                 if (ThisSetCard.Code.StartsWith(codetosearch) && ThisSetCard.Rarity == rarirytosearch)
                 {
+                    LogIt(string.Format("Card Name: {0}", CardName));
                     //https://www.tcgplayer.com/product/551153/yugioh-25th-anniversary-rarity-collection-ii-accesscode-talker-platinum-secret-rare?page=1&Language=English
-                    string name = ThisMasterCard.Name;
-                    name = name.Replace(" ", "-");
+                    string name = ThisMasterCard.Name;                   
                     name = name.Replace(",", "");
+                    name = name.Replace(".", "");
+                    name = name.Replace("/", "-");
                     name = name.Replace("&", "and");
-                    string url = string.Format("https://store.tcgplayer.com/yugioh/the-infinite-forbidden/{0}?partner=YGOPRODeck&utm_campaign=affiliate&utm_medium=card-database-set-prices&utm_source=YGOPRODeck", name);
+                    name = name.Replace("☆", "");
+                    name = name.Replace("★", "");
+                    name = name.Replace("@", "");
+                    name = name.Replace("<", "");
+                    name = name.Replace(">", "");
+                    name = name.Replace("#", "");
+                    name = name.Replace(":", "");
+                    name = name.Replace("!", "");
+                    name = name.Replace("?", "");
+                    name = name.Replace(" - ", "-");
+                    name = name.Replace(" ", "-");
+                    string url = string.Format("https://store.tcgplayer.com/yugioh/{0}/{1}{2}?partner=YGOPRODeck&utm_campaign=affiliate&utm_medium=card-database-set-prices&utm_source=YGOPRODeck", setNameToSearch, name, rarityMode);
                     try
                     {
                         Driver.GoToURL(url);
@@ -1527,9 +1547,12 @@ namespace YGO_Card_Collector_5
                         //Now validate the new URL
                         string CodeInPage = TCGCardInfoPage.GetCode();
                         string RarityInPage = TCGCardInfoPage.GetRarity();
+                        string tcgModdedRarity = rarirytosearch;
+                        if (rarirytosearch == "Ultimate Rare") { tcgModdedRarity = "Prismatic Ultimate Rare"; }
+                        //if (rarirytosearch == "COLLECTOR'S RARE") { tcgModdedRarity = "Prismatic Collector's Rare"; }
+                        if (rarirytosearch == "COLLECTOR'S RARE") { tcgModdedRarity = "Collector's Rare"; }
 
-                        if (ThisSetCard.Code == CodeInPage && ThisSetCard.Rarity == RarityInPage)
-                        //if (ThisSetCard.Code == CodeInPage && "Prismatic Collector's Rare" == RarityInPage)
+                        if (ThisSetCard.Code == CodeInPage && RarityInPage == tcgModdedRarity)
                         {
                             //Save the URL and Update prices
                             ThisSetCard.TCGPlayerURL = url;
@@ -1544,74 +1567,9 @@ namespace YGO_Card_Collector_5
                     }
                     catch (Exception)
                     {
-                        LogIt("Something fail, next!");
+                        //LogIt("Something fail, next!");
                     }
-
-
-                    /*
-                    //Find the matching setcard with the common rarity and gets its URL if it has one
-                    SetCard BaseSetCard = ThisMasterCard.GetCardWithCodeAndRarity(ThisSetCard.Code, "Common");
-                    if (BaseSetCard != null)
-                    {
-                        if (BaseSetCard.HasTCGURL())
-                        {
-                            //Go to the Base SetCard TCG PLayer page
-                            string baseSetCardURL = BaseSetCard.TCGPlayerURL;
-
-                            //Mod the URL to have the postfix rarity
-                            string modetesturl = "";
-                            if (ThisSetCard.Rarity == "Starfoil")
-                            {
-                                modetesturl = "-starfoil";
-                            }
-                            if (ThisSetCard.Rarity == "Shattefoil")
-                            {
-                                modetesturl = "-shatterfoil";
-                            }
-                            if (baseSetCardURL.Contains("-common")) { baseSetCardURL = baseSetCardURL.Replace("-common", ""); }
-                            baseSetCardURL += modetesturl;
-
-                            //Go to this new URL
-                            Driver.GoToURL(baseSetCardURL);
-                            TCGCardInfoPage.WaitUntilPageIsLoaded(true);
-
-                            //Now validate the new URL
-                            string CodeInPage = TCGCardInfoPage.GetCode();
-                            string RarityInPage = TCGCardInfoPage.GetRarity();
-
-                            if (ThisSetCard.Code == CodeInPage && "Shatterfoil Rare" == RarityInPage)
-                            {
-                                //Save the URL and Update prices
-                                ThisSetCard.TCGPlayerURL = baseSetCardURL;
-                                //Update prices since we are here.
-                                string priceInPageFloorstr = TCGCardInfoPage.GetFloorPrice();
-                                string priceInPageMarketstr = TCGCardInfoPage.GetMarketPrice();
-                                string priceInPageMedianstr = TCGCardInfoPage.GetMediamPrice();
-                                ThisSetCard.OverridePrices(priceInPageFloorstr, priceInPageMarketstr, priceInPageMedianstr);
-                                LogIt("!!!Match URL FOUND - Prices Updated!!!");
-                                Database.SaveDatabaseInJSON();
-                            }
-                            else
-                            {
-                                LogIt("Not Code/Rarity Match");
-                            }
-                        }
-                        else
-                        {
-                            LogIt("Base SetCard does not have a TCG Player URL - skip");
-                        }
-                    }
-                    else
-                    {
-                        LogIt("No base card found");
-                    }*/
                 }
-                else
-                {
-                    LogIt("NOT a RA02 set card - Skip");
-                }
-
-                LogIt("---------------------------------------------------------");
             }
             #endregion
 
@@ -1630,7 +1588,7 @@ namespace YGO_Card_Collector_5
 
             void StartTCGURLSearch(string CardName)
             {
-                LogIt(string.Format("Card Name: {0}", CardName));
+                //LogIt(string.Format("Card Name: {0}", CardName));
                 BarProgressStep2.Value++;
                 lblActiveActionStep2.Text = string.Format("TCG URL Search: ({0}/{1}): {2}", BarProgressStep2.Value, BarProgressStep2.Maximum, CardName);
             }
