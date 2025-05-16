@@ -1283,6 +1283,11 @@ namespace YGO_Card_Collector_5
             }
             void LogIt(string message)
             {
+                if(LogSB.Length > 150)
+                {
+                    LogSB.Remove(LogSB.Length - 50, 50);
+                }
+
                 LogSB.Insert(0, message + "\n");
                 Driver.AddToFullLog(message);
                 lblLogStep4.Text = ">>" + LogSB.ToString();

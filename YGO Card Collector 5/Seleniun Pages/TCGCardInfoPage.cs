@@ -76,6 +76,7 @@ namespace YGO_Card_Collector_5
                 Element.WaitUntilElementIsVisble(Xpath_FloorPrice);
                 string price = Element.GetText(Xpath_FloorPrice);
                 price = price.Replace("As low as ", "");             
+                price = price.Replace(" ", "");             
                 return price;
             }
             catch (Exception)
