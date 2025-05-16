@@ -1,4 +1,4 @@
-15929
+15930
 LOB-000|Secret Rare|Tri-Horned Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-001|Ultra Rare|Blue-Eyes White Dragon|LEGEND OF BLUE EYES WHITE DRAGON
 LOB-002|Common|Hitotsu-Me Giant|LEGEND OF BLUE EYES WHITE DRAGON
@@ -15928,3 +15928,4 @@ RA03-EN069|COLLECTOR'S RARE|Madolche Salon|QUARTER CENTURY BONANZA
 RA03-EN009|Ultimate Rare|Tidal, Dragon Ruler of Waterfalls|QUARTER CENTURY BONANZA
 RA03-EN044|Ultimate Rare|Galatea, the Orcust Automaton|QUARTER CENTURY BONANZA
 RA03-EN042|Quarter Century Secret Rare|Knightmare Phoenix|QUARTER CENTURY BONANZA
+EDC1-EN001|Quarter Century Secret Rare|Harpie's Feather Duster|YU-GI-OH! EARLY DAYS COLLECTION
